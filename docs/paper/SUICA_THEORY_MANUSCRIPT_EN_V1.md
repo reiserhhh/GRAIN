@@ -111,8 +111,8 @@ an outcome under a specified sampling distribution. Psychological measurement
 additionally requires an account of the attribute, the response process, the
 observation method, the reference frame, error sources, and the intended
 interpretation. A predictive association can contribute evidence to a validity
-argument, but it does not define the construct (Cronbach & Meehl, 1955;
-Messick, 1995). This distinction is especially important when flexible models
+argument, but it does not define the construct (Borsboom et al., 2004;
+Cronbach & Meehl, 1955; Messick, 1995). This distinction is especially important when flexible models
 can exploit many unknown proxies.
 
 SUICA therefore separates four questions:
@@ -236,7 +236,7 @@ layer:
 Here \((\mathcal H,F)\) denotes unobserved history and current psychological
 processes; \(B\) is behavior made expressible by the design; \(X\) is the
 recorded text and metadata; \(Z\) is a computational representation; \(A\) is
-an anonymous technical object; \(M\) is a reference-relative measurement
+an uninterpreted technical variable; \(M\) is a reference-relative measurement
 candidate; \(\Theta\) is a psychologically interpreted construct; and \(D\)
 is a use-specific output. Every arrow is conditional on assumptions and
 evidence. When an arrow is unsupported, inference stops at the preceding
@@ -317,7 +317,8 @@ Three output types must be kept separate:
 A population structure can be recovered even when individual prediction is
 weak. This is mathematically possible because covariance patterns aggregate
 small, noisy signals over many observations. It remains a population-level
-finding. Factorizing a relation matrix, averaging group estimates, or asking
+finding, and group-to-individual generalization requires separate evidence
+(Fisher et al., 2018; Molenaar, 2004). Factorizing a relation matrix, averaging group estimates, or asking
 an LLM to narrate the result does not convert it into a calibrated person
 score.
 
@@ -328,7 +329,7 @@ measurement candidate is therefore defined as
 
 \[
 M_u
-=\Psi\left(widehat A_u;
+=\Psi\left(\widehat{\mathcal A}_u;
 P_0,Q_0,S_\lambda,R_v,\mathcal U,\mathcal C\right),
 \tag{7}
 \]
@@ -359,7 +360,7 @@ coefficient can be written
 \tag{8}
 \]
 
-whereas an average within-person coefficient is
+whereas the pooled within-person coefficient is
 
 \[
 \beta_W=
@@ -367,6 +368,10 @@ whereas an average within-person coefficient is
      {\sum_{u,t}(x_{ut}-\bar x_u)^2}.
 \tag{9}
 \]
+
+This is the fixed-effects within-person slope. It is weighted by each author's
+within-person variation in \(x\), rather than being an unweighted mean of the
+person-specific coefficients in Equation 10.
 
 A person-specific coefficient is
 
@@ -428,7 +433,7 @@ operator, and which remains unidentified.
 
 A study should begin with a construct theory, target population, intended use,
 and explicit output type. When no construct is yet justified, the study may
-instead declare anonymous technical candidates and a discovery objective. In
+instead declare uninterpreted technical variables and a discovery objective. In
 that case, candidate codes should remain semantically neutral until external
 evidence is obtained. Exploratory naming based on attractive text examples or
 LLM summaries is not construct validation.
@@ -573,7 +578,10 @@ structure, measurement, and psychological interpretation.
 The current evidence comes primarily from PANDORA, a large Reddit corpus with
 partial personality labels (Gjurković et al., 2021), together with controlled
 synthetic studies and smaller external corpora. The completed audit covers
-10,296 PANDORA authors and approximately 17.6 million comments. The Big Five
+10,296 PANDORA authors and 17,640,062 parseable comment rows. These are the
+repository's analysis-census counts under its frozen parser and eligibility
+rules, not replacements for the corpus article's published summary counts.
+The Big Five
 subset contains 1,401 eligible authors under the project's prepared protocol;
 8,895 other authors form a source-disjoint cohort for label-free structural
 checks. The principal findings relevant to the theory are summarized in Table
@@ -588,12 +596,16 @@ clinical or reusable personality instrument.
 | Does condition removal necessarily improve measurement? | Across the initial registered style measures, unconditional condition centering reduced disjoint-occasion stability (mean change approximately -.09). | Context cannot be treated globally as removable nuisance; selection and conditional response require separate models. |
 | Can a preregistered first instrument claim broad personality validity? | The sealed first test confirmed 2 of 7 directional hypotheses; its omnibus success criterion failed. | Narrow associations may exist, but the original broad claim was not supported. |
 | Is author-reproducible structure equivalent to Big Five structure? | Split-sample reproducibility was high for several author-level selection and timing coordinates, whereas registered multivariate Big Five links were mostly not detected. | Stable author information is not sufficient evidence of personality validity. |
-| Do between-person and within-person relations coincide? | For one registered relation, \(\beta_B=.069\), \(\beta_W=-.007\), and \(\Delta_T=.076\), 95% CI [.056, .097]. | A slope can reverse across levels; population and within-person interpretations must be separated. |
-| Can persistent person-specific response be estimated? | A person-by-context response component accounted for about .019 of the registered variance budget and had split-sample reproducibility \(r=.279\). | A small persistent response component exists at the tested horizon; it is not yet a named psychological trait. |
+| Do between-person and within-person relations coincide? | For one registered relation, \(\beta_B=.069\), \(\beta_W=-.007\), and \(\Delta_T=.076\), 95% CI [.056, .097]; both slope intervals excluded zero and the point estimates had opposite signs. | The relation differed across levels in this analysis; population and within-person interpretations must be separated. |
+| Can persistent person-specific response be estimated? | The registered person-by-context variance-component estimate was .019, 95% CI [.017, .019], and its split-sample reproducibility was \(r=.279\), 95% CI [.260, .293]. | A small positive component was estimated with modest split-sample reproducibility at the tested horizon; it is not yet a named psychological trait. |
 | Does current language geometry connect strongly to Big Five geometry? | A registered selection-distance relation was small (Mantel \(r\approx .049\)); several expression and dynamic coordinates were within realized null bands. | External links are weak and coordinate-specific; the framework is not a Big Five replacement. |
 
+The analysis provenance for every numerical statement in Table 1 is recorded
+in the companion reproducibility map
+`SUICA_THEORY_EVIDENCE_PROVENANCE.md`.
+
 The program also demonstrated an important positive methodological result: one
-dense event stream can support separate between-person, average within-person,
+dense event stream can support separate between-person, pooled within-person,
 and person-specific analyses in common physical units. However, common units
 did not imply measurement invariance, and repeated analyses of the same corpus
 were treated as analytical recurrence rather than independent replication.
@@ -613,19 +625,22 @@ any result. The following propositions can fail.
 
 ### Proposition 1: Context has separable selection and response roles
 
-When conditions are partly selected, a model that only residualizes condition
-cannot generally preserve both the person's selection distribution and their
-conditional response. This proposition is rejected in a domain if the two
-channels are empirically redundant under a design with observed opportunity
-sets.
+When conditions are partly selected, the person's selection distribution and
+conditional response are distinct estimands unless their empirical redundancy
+is demonstrated. For a prespecified target domain, the need for separate
+estimation is rejected if models that retain versus collapse the two channels
+yield equivalent out-of-sample quantities, within a declared tolerance, under
+designs that observe or experimentally control opportunity sets. Such a result
+is domain-specific; it does not establish universal redundancy.
 
 ### Proposition 2: Measurement conclusions are operator-indexed
 
-At least some technical structures will vary across admissible segmentation or
-representation operators. A claim of operator robustness requires equivalent
-relations or bounded sensitivity under a prespecified operator family. The
-proposition is rejected for a target if one operator-independent object is
-identified across the relevant family.
+For a prespecified target and operator family, measurement conclusions are
+operator-dependent when the relevant estimates vary beyond a declared
+tolerance. A claim of operator robustness instead requires equivalent
+relations or bounded sensitivity across that family. Either conclusion is
+target-specific: identifying one operator-invariant object does not imply that
+other structures are invariant.
 
 ### Proposition 3: Reference populations are part of the score definition
 
@@ -675,8 +690,8 @@ extrapolation.
 The framework does not require that language-derived dimensions reproduce the
 Big Five, MBTI, or any existing inventory. Existing measures can provide
 external evidence, but they are neither exhaustive descriptions of persons nor
-automatic ground truth for every language-derived object. Anonymous technical
-candidates can be studied first and later linked to behavior and established
+automatic ground truth for every language-derived object. Uninterpreted technical
+variables can be studied first and later linked to behavior and established
 constructs. This allows discovery while retaining the requirements of
 psychological measurement.
 
@@ -767,7 +782,7 @@ same participants, (a) naturalistic language across sampled contexts, (b)
 responses to repeated fixed conditions, (c) conversational interactions, (d)
 independent behavioral and psychological criteria, and (e) repeated occasions.
 Such a design would permit a generalizability study, a multitrait-multimethod
-analysis, and preregistered tests of which anonymous technical candidates earn
+analysis, and preregistered tests of which uninterpreted technical variables earn
 construct interpretations.
 
 ## 9. Conclusion

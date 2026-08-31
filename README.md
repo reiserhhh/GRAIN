@@ -17,6 +17,18 @@ falsified in its naive form (statistical condition-centering destroys
 signal) and then rebuilt as a design principle (control context by design;
 measure choice as a channel).*
 
+## Theory manuscript (2026-09-01)
+
+The completed framework is now expressed as a journal-neutral theoretical and
+methodological article in [English](docs/paper/SUICA_THEORY_MANUSCRIPT_EN_V1.md),
+[Japanese](docs/paper/SUICA_THEORY_MANUSCRIPT_JA_V1.md), and
+[Chinese](docs/paper/SUICA_THEORY_MANUSCRIPT_ZH_V1.md). The
+[trilingual crosswalk](docs/paper/SUICA_THEORY_MANUSCRIPT_CROSSWALK.md) fixes
+section, equation, terminology, and claim equivalence across the three drafts.
+[Evidence provenance](docs/paper/SUICA_THEORY_EVIDENCE_PROVENANCE.md) maps each
+headline number to its primary repository report.
+These drafts do not claim that SUICA is a validated scale or clinical tool.
+
 ## What is in the latest sealed release (v0.2.1)
 
 - **V7 technical core** — operator-indexed relative text geometry, frozen

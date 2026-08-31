@@ -13,6 +13,17 @@ SUICA 是一套面向文本测量研究的基础方法论:把一个人自发写�
 首先证伪了这一主张的朴素形式(统计上的条件中心化会摧毁信号),随后将其
 重建为设计原则(通过设计控制语境;把选择本身作为一个通道来测量)。*
 
+## 理论论文稿（2026-09-01）
+
+已将完成的框架整理为不预设投稿期刊的理论与方法论文，并分别提供
+[英文](docs/paper/SUICA_THEORY_MANUSCRIPT_EN_V1.md)、
+[日文](docs/paper/SUICA_THEORY_MANUSCRIPT_JA_V1.md)和
+[中文](docs/paper/SUICA_THEORY_MANUSCRIPT_ZH_V1.md)版本。
+[三语对照表](docs/paper/SUICA_THEORY_MANUSCRIPT_CROSSWALK.md)固定了章节、
+公式、专业术语和主张边界。三版均不声称 SUICA 已经是完成效度验证的量表或
+临床工具。[证据来源表](docs/paper/SUICA_THEORY_EVIDENCE_PROVENANCE.md)
+逐项记录主要数值与仓库内原始分析报告的对应关系。
+
 ## 最新封存发布包含的内容 (v0.2.1)
 
 - **V7 技术核心** — 由观测算子与参照群体索引的相对文本几何、冻结几何

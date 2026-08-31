@@ -16,6 +16,17 @@ SUICA はテキストに基づく測定研究のための基盤方法論であ�
 自ら反証し(統計的な条件中心化はシグナルを破壊する)、その後に設計原理として
 再構築した(文脈は設計で統制する。選択そのものを 1 つのチャネルとして測定する)。*
 
+## 理論論文稿（2026-09-01）
+
+完成した枠組みを，投稿誌に依存しない理論・方法論論文として
+[英語](docs/paper/SUICA_THEORY_MANUSCRIPT_EN_V1.md)，
+[日本語](docs/paper/SUICA_THEORY_MANUSCRIPT_JA_V1.md)，
+[中国語](docs/paper/SUICA_THEORY_MANUSCRIPT_ZH_V1.md)で整理した。
+[三言語対応表](docs/paper/SUICA_THEORY_MANUSCRIPT_CROSSWALK.md)は，節構成，
+数式，専門用語，主張範囲を固定する。いずれの原稿も，SUICA を妥当化済み尺度
+または臨床用具とは主張しない。[証拠出典対応表](docs/paper/SUICA_THEORY_EVIDENCE_PROVENANCE.md)
+は，主要数値と一次分析報告の対応を記録する。
+
 ## 封印済み最新リリースに含まれるもの (v0.2.1)
 
 - **V7 技術コア** — 観測演算子・参照集団で添字付けされた相対テキスト幾何、
