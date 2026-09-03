@@ -1,4 +1,4 @@
-# SUICA M4-B Endogenous Opportunity Ecology
+# GRAIN M4-B Endogenous Opportunity Ecology
 
 Date: 2026-07-31  
 Status: finite synthetic discovery passed with scope correction; spectral
@@ -248,13 +248,13 @@ G_u^{history},R_u^{refusal}
 \]
 
 \(J_u^O\) remains a defined local operator, but its spectral radius is an
-engineering diagnostic rather than a validated SUICA measurement coordinate.
+engineering diagnostic rather than a validated GRAIN measurement coordinate.
 No claim about ecological criticality, instability, burst threshold, or
 author rank in \(\rho(J_u^O)\) is licensed.
 
 ## 8. Claim boundary
 
-If the finite battery passes, SUICA may claim that:
+If the finite battery passes, GRAIN may claim that:
 
 - opportunity is an endogenous path object, not only a nuisance condition;
 - selection, creation, return, feedback, and history gating are distinct

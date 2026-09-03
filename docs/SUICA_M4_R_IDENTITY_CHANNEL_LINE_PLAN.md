@@ -1,4 +1,4 @@
-# SUICA M4-R — The Identity-Channel Line
+# GRAIN M4-R — The Identity-Channel Line
 
 Line opened 2026-08-14, on the Q-line's close. Question: **make the
 founding question posable.** This program began with the conjecture

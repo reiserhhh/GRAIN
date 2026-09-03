@@ -1,15 +1,15 @@
-# SUICA Development and Theory Route Index
+# GRAIN Development and Theory Route Index
 
 Opened: 2026-07-30; updated through 2026-08-22
 Status: active development map; not a release seal or a scientific promotion
 
 ## 1. Purpose
 
-This file is the single navigation entry for how SUICA was developed, what
+This file is the single navigation entry for how GRAIN was developed, what
 mathematical object each stage added, how those objects now connect, and which
 mechanisms remain to be invented.
 
-SUICA has three different maps. They must not be confused:
+GRAIN has three different maps. They must not be confused:
 
 1. the **development map** records how the method acquired new objects;
 2. the **mechanism map** records how text events may generate author and
@@ -40,7 +40,7 @@ larger object and retained the useful part of the earlier one.
 | --- | --- | --- | --- | --- |
 | MCD origin | Condition-relative deviation \(x_{u,c}-E[X\mid c]\) | How to compare authors after locating topic/situation regions | Common-condition comparison and population-relative position | Historical source incomplete; [MCD-style node experiment](../scripts/run_suica_p2_condition_centering_v2.py), [later worked example](WORKED_EXAMPLE_MANUAL.md), and [claims reconstruction](CLAIMS_LEDGER.md) are secondary sources |
 | H-MCD / V-HMCD bridge | Token slices, recursive clusters, local blocks, author aggregation | How to turn long text into many item-like observations and return local structure to an author profile | Slicing, recursive local structure, and author position in a reference population | Historical theory source incomplete; [surviving recursive implementation](../suica_core/suica.py), [slice preparation](../scripts/prepare_suica_v2_phase2_slices.py), and [later token-slice compatibility audit](V6_LINEAGE_TOKEN_SLICE_COMPATIBILITY_PROTOCOL.md) are secondary reconstruction sources |
-| SUICA V3/V4 rind theory | Choice \(\pi_u\), expression base \(f_u\), condition reaction \(\gamma_{u,c}\), distinctive residual | Why subtracting topic/situation also removes stable author information | Choice/base/react channels; free and fixed conditions expose different information | [Theory v3](THEORY.md), [Theory v4](THEORY_V4.md), [Lineage synthesis](../reports/V6_LINEAGE_COMPATIBILITY_SYNTHESIS.md) |
+| GRAIN V3/V4 rind theory | Choice \(\pi_u\), expression base \(f_u\), condition reaction \(\gamma_{u,c}\), distinctive residual | Why subtracting topic/situation also removes stable author information | Choice/base/react channels; free and fixed conditions expose different information | [Theory v3](THEORY.md), [Theory v4](THEORY_V4.md), [Lineage synthesis](../reports/V6_LINEAGE_COMPATIBILITY_SYNTHESIS.md) |
 | V6 path theory | Path \(w_k=p+k s+g_k\), response operator \(B_u\), nonlinear conditional law \(\Pi_u(dy\mid h)\) | How to represent movement, memory, switching, and position information lost by a mean | Path is a first-class object; dynamics are not merely static residuals | [Theory V6](THEORY_V6.md), [Measurement Objects](V6_MEASUREMENT_OBJECTS_FORMAL.md), [Nonlinear Path Objects](V6_NONLINEAR_PATH_OBJECTS.md) |
 | V7 operator geometry | Parallel observation operators \(\Phi_j\), shared/private subspaces, relative geometry bundle | Why no single slice or factor chart remains optimal across views | Multiple slices are parallel measurement planes; stable author information may be high-dimensional and axis-free | [Operator-indexed Multiview](V7_OPERATOR_INDEXED_MULTIVIEW_V71.md), [Geometry Object](V7_GEOMETRY_OBJECT.md), [Psychometric Projection](V7_PSYCHOMETRIC_PROJECTION.md) |
 | V8 conditional geometry | Response field \(G_u(z)\), stable position \(a_u\), response operator \([B_u]\), response sets, incidence, junctions, routing | How an author changes with condition rather than occupying one fixed coordinate | Author structure is a conditional field, path operator, and relation geometry | [Conditional Response Geometry](V8_CONDITIONAL_RESPONSE_GEOMETRY_THEORY.md), [Mathematical Route](V8_MATHEMATICAL_RESEARCH_ROUTE.md) |
@@ -328,7 +328,7 @@ and
 [the discovery report](../reports/SUICA_M4_CONDITION_MANIFOLD_DISCOVERY.md).
 
 Current \(z_c\) is usually supplied by topic, prompt, platform, or metadata.
-SUICA needs an author-independent and response-safe procedure for discovering
+GRAIN needs an author-independent and response-safe procedure for discovering
 which vector directions function as response conditions:
 
 \[
@@ -539,7 +539,7 @@ operator rather than a semigroup generator.
 
 ### M4-E. Multiscale coarse-graining and renormalization
 
-SUICA needs an explicit within-author coarse-graining chain:
+GRAIN needs an explicit within-author coarse-graining chain:
 
 \[
 \text{token}
@@ -737,7 +737,7 @@ Use the following only after a mechanism question is selected:
 
 The current research decision is therefore:
 
-> SUICA now has a typed object ontology, a finite mechanism grammar, an
+> GRAIN now has a typed object ontology, a finite mechanism grammar, an
 > event-to-relation seam, and explicit reference/applicability rules. The
 > fixed-coverage directional experiment closed the current chart-routing
 > branch negatively: neither scalar coverage nor the present 24-component

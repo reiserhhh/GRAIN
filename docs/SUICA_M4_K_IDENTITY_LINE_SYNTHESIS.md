@@ -1,4 +1,4 @@
-# SUICA M4-K — The Identity Line, Synthesized
+# GRAIN M4-K — The Identity Line, Synthesized
 
 Status: **IDT v1's registered empirical program completed 2026-08-09**,
 eleven executed legs (K1, K1b, K1c, K1c′, K1d, K2a, K2b, K2c, K2d, K2e,

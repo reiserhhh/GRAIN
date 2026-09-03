@@ -1,4 +1,4 @@
-# SUICA M4-G — The Objective Redesign Line, Closed
+# GRAIN M4-G — The Objective Redesign Line, Closed
 
 Status: **line closed 2026-08-03**, seven registered legs (M4-G1..M4-G7).
 Tier: EXPLORATORY, label-free, synthetic throughout. The claims ledger

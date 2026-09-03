@@ -1,4 +1,4 @@
-# SUICA Construct Registry v1
+# GRAIN Construct Registry v1
 
 Created: 2026-07-05 (referee sweep). Operational names ONLY — psychological
 names are earned at T4 (lockbox) or human-criterion evidence, not before

@@ -1,4 +1,4 @@
-# SUICA M4-P — The Penalty-Mechanism Line — SYNTHESIS
+# GRAIN M4-P — The Penalty-Mechanism Line — SYNTHESIS
 
 Opened 2026-08-14 on the N-line's close; closed 2026-08-14. Tier:
 EXPLORATORY, synthetic, instrument-world laws; the ledger controls;

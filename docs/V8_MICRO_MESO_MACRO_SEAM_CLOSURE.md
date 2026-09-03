@@ -1,4 +1,4 @@
-# SUICA V8 Micro-Meso-Macro Seam Closure
+# GRAIN V8 Micro-Meso-Macro Seam Closure
 
 Status:
 `SUPPORTED_SYNTHETIC_TYPED_CLOSURE__PSYCHOLOGICAL_MAPPING_OPEN`

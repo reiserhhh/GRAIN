@@ -1,4 +1,4 @@
-# SUICA M4-C.3.5-R2C Fixed-Coverage Directional Applicability
+# GRAIN M4-C.3.5-R2C Fixed-Coverage Directional Applicability
 
 Status: **prospective development protocol**
 

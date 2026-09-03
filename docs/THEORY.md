@@ -1,11 +1,11 @@
-# SUICA Rind Theory Base v3 (皮モデル)
+# GRAIN Rind Theory Base v3 (皮モデル)
 
 Created: 2026-07-05
 Status: predictions committed BEFORE the regime test run; results section appended after.
 
 ## 1. The model
 
-SUICA treats a body of spontaneous text as a watermelon (suika): a person-stable
+GRAIN treats a body of spontaneous text as a watermelon (suika): a person-stable
 interior ("flesh") wrapped in theme/situation shells ("rind", 皮). The 2026-07
 validation cycle established empirically what the rind is NOT: it is not a
 nuisance that can be subtracted away. Statistical condition-centering was
@@ -47,7 +47,7 @@ provisional until replicated on users outside the deep-extraction cohort.
 Consequence for instrument construction: a fixed-rind experiment yields a
 rind-specialized scale (皮特化尺度) whose C2 precision-per-token exceeds
 free-rind sampling; a free-rind sample yields C1, which no fixed-rind design
-can provide. A complete SUICA instrument therefore has two phases:
+can provide. A complete GRAIN instrument therefore has two phases:
 free-collection (C1) + fixed-prompt battery (C2), which is the corrected,
 defensible form of the original "scale + projective hybrid" ambition.
 
@@ -87,7 +87,7 @@ Falsification consequences, committed now:
   their principal justification; theory reverts to C1-only.
 - PRED-2 fail -> C1 does not miniaturize; domain-fixed deployments (e.g., the
   planned X/market agent line) get style-base only.
-- PRED-3 fail -> "flesh" is rind-specific; no universal base formula; SUICA
+- PRED-3 fail -> "flesh" is rind-specific; no universal base formula; GRAIN
   becomes a family of per-rind instruments with no cross-rind claims.
 
 ## 5. Governance for this test

@@ -1,10 +1,10 @@
-# SUICA V8 Conditional Response Geometry
+# GRAIN V8 Conditional Response Geometry
 
 Status: `TECHNICAL_MEASUREMENT_CORE__PSYCHOLOGICAL_INTERPRETATION_CLOSED`
 
 ## 1. Measurement object
 
-SUICA does not define a person as a single text vector or a short list of
+GRAIN does not define a person as a single text vector or a short list of
 named factors. It estimates how an author selects expression opportunities
 and how the author's observable response changes under shared conditions.
 
@@ -136,7 +136,7 @@ B_u=U_u\Lambda_uV_u^\mathsf T,
 
 where \(V_u\) gives condition directions, \(U_u\) gives response directions,
 and \(\Lambda_u\) gives response strengths. If directions rotate across
-samples, SUICA reports stable subspaces and principal angles rather than
+samples, GRAIN reports stable subspaces and principal angles rather than
 forcing a common named axis.
 
 Population topology is
@@ -179,7 +179,7 @@ one estimator cannot silently serve both purposes.
 
 ## 6. Evidence hierarchy
 
-SUICA claims advance in the following order:
+GRAIN claims advance in the following order:
 
 1. the technical object is identifiable under a declared design;
 2. the object is detectable above a calibrated noise floor;
@@ -193,7 +193,7 @@ Passing an earlier layer does not promote a later layer.
 
 ## 7. Role of the LLM
 
-Deterministic SUICA code estimates \(\mathfrak A_u\). A frozen LLM may observe
+Deterministic GRAIN code estimates \(\mathfrak A_u\). A frozen LLM may observe
 explicit behavior and render evidence-bound explanations, but it may not
 invent response operators, scores, construct names, diagnoses, or validity.
 
@@ -221,7 +221,7 @@ remains closed until supported by separately designed external evidence.
 
 ## 9. Current boundary
 
-SUICA is a method for estimating author choice structure, conditional response
+GRAIN is a method for estimating author choice structure, conditional response
 operators, population geometry, and stable individual deviation from text.
 It supplies a technical foundation from which future natural-language
 assessment instruments may be built. It is not itself a finished personality

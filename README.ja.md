@@ -1,33 +1,39 @@
-# Sliced Utterance In-Context Assessment (SUICA)
+# GRAIN：個人言語テクスチャ分析法
+
+**Group-Referenced Analysis of Individual Natural-Language Expression**<br>
+**参照集団に基づく個人自然言語表現分析法**
 
 [English](README.md) | **日本語** | [简体中文](README.zh.md)
 
-SUICA はテキストに基づく測定研究のための基盤方法論である。人の自発的な
-書き言葉を、自然に生じた文脈の中で測定された多数の小さな行動観察
-(スライスされた発話 = sliced utterances)として扱い、そこから監査可能・
-観測演算子相対・参照集団相対の技術的対象を構築する。SUICA 自体は尺度では
-なく、現行コーパスが尺度になることも要求しない。将来のテキスト・
-アセスメントは、それ自身の構成概念・母集団・妥当性・使用目的の証拠を
-揃えた場合にのみ、この基盤の上に構築されうる。
+GRAIN はテキストに基づく測定研究のための基盤分析法である。個人の自然言語
+イベントを複数の粒度で観測される局所的な「粒」とみなし、明示した参照集団に
+対する再現可能な分布、方向、条件応答、経路構造を分析する。それらが組織化
+された多尺度パターンを**言語テクスチャ**と呼ぶ。GRAIN 自体は尺度ではなく、
+現行コーパスが尺度になることも要求しない。将来のテキスト・アセスメントは、
+独自の構成概念・母集団・妥当性・使用目的の証拠を備えた場合にのみ、この基盤
+上に構築できる。
 
-*名称の SUICA は日本語の「スイカ(西瓜)」に掛けている。本手法の中核である
-「皮モデル」は、話題・状況をノイズとして除去するのではなく、自己選択を通じて
-人物シグナルを運ぶ「皮」とみなす。本プロジェクトはまずこの主張の素朴な形を
-自ら反証し(統計的な条件中心化はシグナルを破壊する)、その後に設計原理として
-再構築した(文脈は設計で統制する。選択そのものを 1 つのチャネルとして測定する)。*
+旧名称期の西瓜・皮モデルは方法の発展史として残る。話題と状況は単純に除去
+すべき包装ではなく、条件選択と条件内応答も個人情報を運びうる。GRAIN はこの
+知見を、一つの切片比喩に依存しない一般分析法へ拡張する。詳細は
+[名称移行・互換方針](docs/GRAIN_NAMING_MIGRATION.md)を参照。
+公開移行の範囲は [v1.1.0 リリースノート](docs/RELEASE_NOTES_V110.md)に記録する。
 
 ## 理論論文稿（2026-09-01）
 
-完成した枠組みを，投稿誌に依存しない理論・方法論論文として
-[英語](docs/paper/SUICA_THEORY_MANUSCRIPT_EN_V1.md)，
-[日本語](docs/paper/SUICA_THEORY_MANUSCRIPT_JA_V1.md)，
-[中国語](docs/paper/SUICA_THEORY_MANUSCRIPT_ZH_V1.md)で整理した。
-[三言語対応表](docs/paper/SUICA_THEORY_MANUSCRIPT_CROSSWALK.md)は，節構成，
-数式，専門用語，主張範囲を固定する。いずれの原稿も，SUICA を妥当化済み尺度
-または臨床用具とは主張しない。[証拠出典対応表](docs/paper/SUICA_THEORY_EVIDENCE_PROVENANCE.md)
+完成した理論体系を，投稿誌に依存しない理論・方法論論文として
+[英語](docs/paper/GRAIN_THEORY_MANUSCRIPT_EN_V1.md)，
+[日本語](docs/paper/GRAIN_THEORY_MANUSCRIPT_JA_V1.md)，
+[中国語](docs/paper/GRAIN_THEORY_MANUSCRIPT_ZH_V1.md)で整理した。
+[三言語対応表](docs/paper/GRAIN_THEORY_MANUSCRIPT_CROSSWALK.md)は，節構成，
+数式，専門用語，主張範囲を固定する。いずれの原稿も，GRAIN を妥当化済み尺度
+または臨床用具とは主張しない。[証拠出典対応表](docs/paper/GRAIN_THEORY_EVIDENCE_PROVENANCE.md)
 は，主要数値と一次分析報告の対応を記録する。
 
-## 封印済み最新リリースに含まれるもの (v0.2.1)
+## 旧名称期の封印済みリリース (v0.2.1)
+
+v0.2.1 とその識別子は旧名称のもとで封印された歴史的証拠であり、変更しない。
+科学的な意味は現在の GRAIN 理論に従って解釈する。
 
 - **V7 技術コア** — 観測演算子・参照集団で添字付けされた相対テキスト幾何、
   凍結幾何バンドル、拒否規則、多視点較正、不確実性および将来データ・ゲート。
@@ -58,8 +64,9 @@ SUICA はテキストに基づく測定研究のための基盤方法論であ�
   2026-07-29..30 の V8 実テキスト実験で読了済みであり、「本文未接触の
   確認コホート」ではもはやない — `docs/V8_PUSH_REMEDIATION_20260803.md`
   項目 2)。
-- **コード** — `suica_core/` + `suica_sim/` + `scripts/` + `tests/`。
-  制限付きコーパスなしで v0.2.1 のロックボックスを検証できる。
+- **コード** — 新規コードは `grain_core/` と `grain_sim/` を使用する。
+  `suica_core/`、`suica_sim/`、`run_suica_*` は凍結実験の互換識別子として
+  保持する。制限付きコーパスなしで v0.2.1 のロックボックスを検証できる。
 
 ## 封印後の main の現在地 (2026-08-03)
 
@@ -104,9 +111,9 @@ SUICA はテキストに基づく測定研究のための基盤方法論であ�
 pip install -r requirements.txt
 python -m pytest -q tests/test_suica.py          # 39件合格
 python -m pytest -q -p no:cacheprovider          # 970件合格 (2026-08-03; v0.2.1 タグ時点 318)
-python scripts/verify_suica_v021_lockbox.py       # 可搬 v0.2.1 封印検証
-python scripts/run_suica_synthetic_ground_truth_v2.py   # P0: 推定機構
-python scripts/run_suica_p0b_thin_cell_regime_v3.py     # P0-B: 薄セル
+python scripts/verify_grain_v021_lockbox.py       # 可搬 v0.2.1 封印検証
+python scripts/run_grain_synthetic_ground_truth_v2.py   # P0: 推定機構
+python scripts/run_grain_p0b_thin_cell_regime_v3.py     # P0-B: 薄セル
 ```
 
 これらの合成ハーネスは、実データを一切使わずに、推定層全体を植え込み正解に

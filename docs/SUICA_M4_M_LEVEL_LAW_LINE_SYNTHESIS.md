@@ -1,4 +1,4 @@
-# SUICA M4-M — The Level-Law Completion Line — SYNTHESIS
+# GRAIN M4-M — The Level-Law Completion Line — SYNTHESIS
 
 Line opened 2026-08-11 (`140e927`), closed 2026-08-11 (M3 adjudication).
 Seven legs, all registered before run, one commit each, never amended,

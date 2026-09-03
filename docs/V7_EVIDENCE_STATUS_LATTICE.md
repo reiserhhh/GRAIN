@@ -2,7 +2,7 @@
 
 ## Why a lattice
 
-SUICA evidence is not a single promotion ladder. Reproducible geometry,
+GRAIN evidence is not a single promotion ladder. Reproducible geometry,
 scoreability, uncertainty, repeated-measurement reliability, external
 construct validity, and cross-domain transport answer different questions.
 Passing one coordinate cannot promote another.

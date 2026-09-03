@@ -2,10 +2,10 @@
 
 <!-- v4 (2026-07-07): 按作者决定重构 — 理论论证 + 检验法开发 + 密封验证
      + 基准比较。新增: "检验法的开发""密封的验证性检验""同一语料库上的
-     测量对预测"(EXPL-1 拟合梯度, 表1)。与英文版 SUICA_JPA_MANUSCRIPT_V4.md
+     测量对预测"(EXPL-1 拟合梯度, 表1)。与英文版 JPA_MANUSCRIPT_V4.md
      逐节对应; 数字以英文版与主张台账为准。 -->
 
-# 被选情境中的行为之文本: Sliced Utterance In-Context Assessment(SUICA)的理论、开发与预注册首次检验
+# 被选情境中的行为之文本: Group-Referenced Analysis of Individual Natural-Language Expression (GRAIN)的理论、开发与预注册首次检验
 
 ## 摘要
 
@@ -490,6 +490,6 @@ Pearson 相关; 同类别与异类别变体按正文所述约束两部分的场�
 ---
 
 *Open Practices、Declarations 与参考文献(共 26 条)见英文版
-SUICA_JPA_MANUSCRIPT_V4.md(内容一致)。表1已在正文实体化; 表2(承诺
+JPA_MANUSCRIPT_V4.md(内容一致)。表1已在正文实体化; 表2(承诺
 与状态总表)将由台账生成。拟合梯度的一次记录在
 results/suica_expl_fit_gradient/(台账 EXPL-1、EXPL-1b 行)。*

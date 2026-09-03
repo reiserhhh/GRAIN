@@ -1,10 +1,10 @@
-# SUICA Trading-Text Measurement Audit v1
+# GRAIN Trading-Text Measurement Audit v1
 
 Date: 2026-07-10
 
 ## Ruling
 
-The trading archive can be analyzed with SUICA, but it must be treated as an
+The trading archive can be analyzed with GRAIN, but it must be treated as an
 observational measurement study before it is treated as a prediction feature.
 This audit found one reproducible author coordinate and several forward market
 associations worth preregistered replication. It did not find a market signal
@@ -27,7 +27,7 @@ that survived the full exploratory multiplicity gate.
    author-week rows as independent inferential units.
 7. Test market information as weekly cross-sectional Spearman IC. Separate past
    placebo, contemporaneous state sensitivity, future level, and future change.
-8. Keep SUICA discoveries, collection-volume controls, and market-persistence
+8. Keep GRAIN discoveries, collection-volume controls, and market-persistence
    controls in separate multiple-testing families.
 
 ## Data and implementation audit
@@ -40,7 +40,7 @@ that survived the full exploratory multiplicity gate.
   58,322 rows contained combined query rules. This is why query-group strings
   cannot be treated as psychological rinds.
 - Collector regimes changed on 2026-05-18 and 2026-06-22.
-- The fast scorer was bit-identical to the current SUICA v4 scorer on its audit
+- The fast scorer was bit-identical to the current GRAIN v4 scorer on its audit
   sample (`max_abs_diff=0`).
 - Mixed ISO timestamp precision, strict C3 history masking, feature-specific
   market gates, and incomplete final-week targets are covered by tests.
@@ -59,11 +59,11 @@ gate (`SB >= .60`):
 
 The defensible measurement claim is therefore narrow: context fixation improves
 the repeatability of first-person usage in trading text. The current archive does
-not support treating the full SUICA battery as stable trading-personality scores.
+not support treating the full GRAIN battery as stable trading-personality scores.
 
 ## Market-information findings
 
-No SUICA test passed family-wise BH control. The strongest descriptive candidates
+No GRAIN test passed family-wise BH control. The strongest descriptive candidates
 were:
 
 - Historical author-composition conflict/threat -> next-week volatility:
@@ -80,13 +80,13 @@ were:
 - Text-level certainty -> next-week return:
   IC `.126`, but the effect was concentrated in the 18-symbol regime.
 
-Market persistence was materially stronger than SUICA: current weekly volatility
-predicted next-week volatility at IC `.429`. Therefore the descriptive SUICA
+Market persistence was materially stronger than GRAIN: current weekly volatility
+predicted next-week volatility at IC `.429`. Therefore the descriptive GRAIN
 associations cannot yet be called incremental forecasts.
 
 ## What the other implementation must not do
 
-- Do not call one post one validated SUICA slice without preserving author,
+- Do not call one post one validated GRAIN slice without preserving author,
   context, and occasion boundaries.
 - Do not treat collector query-group combinations as latent psychological rinds.
 - Do not infer participant choice from collector-created symbol/query coverage.

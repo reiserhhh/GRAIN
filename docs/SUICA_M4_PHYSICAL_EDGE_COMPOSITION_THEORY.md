@@ -1,4 +1,4 @@
-# SUICA M4-C.3 Physical-Edge Composition Audit
+# GRAIN M4-C.3 Physical-Edge Composition Audit
 
 Date: 2026-07-31  
 Status: frozen `M4_C3_NO_GO_ERROR_ATTRIBUTION`; M4-C.2 remains NO-GO

@@ -1,4 +1,4 @@
-# SUICA V7.1 Operator-Indexed Multiview Measurement System
+# GRAIN V7.1 Operator-Indexed Multiview Measurement System
 
 ## Status
 

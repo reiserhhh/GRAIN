@@ -4,7 +4,7 @@
      研究1(方法/结果: 开发)、研究2(方法/结果: 密封检验)、探索性基准
      一节、总讨论。方法部分载明可复现全细节(分词器、切片器、泄漏屏蔽、
      类别映射、合格性、检验力、软件版本)。表1-4落实。与英文版
-     SUICA_JPA_MANUSCRIPT_V5.md 逐节对应。
+     JPA_MANUSCRIPT_V5.md 逐节对应。
      v5.6 (2026-07-11): 因子流动性猜想 (F10) + 三件工具(时间/文内位置/
      个人轴)。探索小节扩充并改题, A.7(iv) 新增。预测在运行前登记并
      提交(父仓库 60ce99c)。
@@ -15,7 +15,7 @@
      预登记): 形状因构念而异 — 第一人称真流动(单调), 张力/指令为
      边界微语域, 两个文体簇文中段下陷。 -->
 
-# 被选情境中的行为之文本: Sliced Utterance In-Context Assessment(SUICA)的理论、开发与预注册首次检验
+# 被选情境中的行为之文本: Group-Referenced Analysis of Individual Natural-Language Expression (GRAIN)的理论、开发与预注册首次检验
 
 ## 摘要
 
@@ -24,8 +24,8 @@
 操作去除的是信号, 因为写作者自行选择情境, 而选择本身就是一致的、
 表达人格的行为。我们建立一个框架, 把累积文本读作分布于被选情境之上
 的行为, 经由三条通道测量——情境选择、情境不变的风格基底、人×情境
-签名——并将其操作化为 SUICA(Sliced Utterance In-Context
-Assessment)。研究1(PANDORA; 1,760 万条 Reddit 评论; n = 3,183)中,
+签名——并将其操作化为 GRAIN（Group-Referenced Analysis of Individual
+Natural-Language Expression）。研究1(PANDORA; 1,760 万条 Reddit 评论; n = 3,183)中,
 去除情境均值使每个风格测度的分离时段稳定性下降(Δ = −.09), 纯度标准
 在十九个构念中只放行四个作为特质候选, 四者皆为形式习惯。研究2为密封
 预注册检验(n = 1,058): 七个方向假设确认两个——第一人称率预测神经质
@@ -787,6 +787,6 @@ Wρ/(1+(W−1)ρ−Wρ) = Wρ/(1−ρ)); 信度增长是射影坐标上的线性
 ---
 
 *Open Practices、Declarations 与参考文献(共 39 条)见英文版
-SUICA_JPA_MANUSCRIPT_V5.md(内容一致)。表1-4已在正文落实; 附录A与
+JPA_MANUSCRIPT_V5.md(内容一致)。表1-4已在正文落实; 附录A与
 v4.1 相同。一次记录: 开封 = results/suica_lockbox_opening_1/, 拟合
 梯度 = results/suica_expl_fit_gradient/(台账 EXPL-1、EXPL-1b 行)。*

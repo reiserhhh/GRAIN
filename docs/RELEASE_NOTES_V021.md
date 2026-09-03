@@ -2,6 +2,9 @@
 
 Release date: 2026-07-17
 
+> Historical release under the former project name. The current method is
+> GRAIN; the release identity and scientific record remain unchanged.
+
 ## Ruling
 
 v0.2.1 is a **remediation release**. It contains no new scientific results.

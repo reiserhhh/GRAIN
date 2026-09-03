@@ -1,4 +1,4 @@
-# SUICA THEORY V6 — Text as a Realized Path: the Unified Static + Motion Theory
+# GRAIN THEORY V6 — Text as a Realized Path: the Unified Static + Motion Theory
 
 Created 2026-07-12. Status: theory document, Tier-U/T1 throughout; no seals touched.
 v6.1 (same day): the F12/W2 correction cycle (Fable-planned, Sonnet-executed) struck
@@ -398,9 +398,9 @@ the V7 standard — its cross-fit re-audit is PENDING, its pre-V7-standard recor
 as recorded in its ledger row, and no stronger status may be cited until that re-audit
 runs.]
 
-## 3. Theorem-similarity table (advanced tools ↔ SUICA objects)
+## 3. Theorem-similarity table (advanced tools ↔ GRAIN objects)
 
-| mathematical tool / theorem | SUICA object | what transfers | where the analogy is bounded |
+| mathematical tool / theorem | GRAIN object | what transfers | where the analogy is bounded |
 |---|---|---|---|
 | Itô/semimartingale decomposition (drift + martingale) | (M): level + flow·k + gust | which statistics read which layer; differencing reads the martingale part | our "time" is token position; increments are windows, not infinitesimal |
 | Realized covariance vs microstructure noise; Epps-type locality | gust matrix Γ vs level/drift structure; T6 portability law | portable-fundamental vs local-texture split | no trading mechanism; "market" = register/genre; the bid-ask-bounce sub-analogy was tested and RETRACTED (W2a: axes white; wcl_60 the lone sparse-burst bouncer) |

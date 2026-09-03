@@ -1,4 +1,4 @@
-# SUICA V8 Hierarchical Evidence Stack
+# GRAIN V8 Hierarchical Evidence Stack
 
 Status: `DEVELOPMENT_THEORY__EXTERNAL_CONSTRUCT_NAMING_CLOSED`
 
@@ -7,7 +7,7 @@ Status: `DEVELOPMENT_THEORY__EXTERNAL_CONSTRUCT_NAMING_CLOSED`
 V8 is not one universal person vector. It is a hierarchy of frozen evidence
 objects connected by registered, lossy maps and task-specific read routes.
 Different tasks may require different resolutions. No route output becomes a
-new SUICA score merely because it predicts an external anchor.
+new GRAIN score merely because it predicts an external anchor.
 
 The hierarchy separates:
 
@@ -188,7 +188,7 @@ h_{q,\rho_q}\left(L_{u,k_1},\ldots,L_{u,k_m}\right),
 
 where \(\rho_q\) is a source-selected route. This is an external calibration
 map, not a natural coarse-graining step. A successful map does not rename the
-underlying SUICA coordinates.
+underlying GRAIN coordinates.
 
 ## 6. Task routes
 
@@ -297,6 +297,6 @@ H-ROUTE-DIRECT, and H-ROUTE-STRUCTURE require executable evaluation.
 
 This hierarchy is a technical measurement theory. It does not establish that
 any layer is a personality trait, that Big Five or MBTI is the final ontology,
-or that SUICA is clinically valid. A positive route result licenses a
+or that GRAIN is clinically valid. A positive route result licenses a
 task-specific external connection only. Psychological naming requires
 independent evidence designed for that purpose.

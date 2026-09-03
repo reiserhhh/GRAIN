@@ -1,4 +1,4 @@
-# SUICA M4-T — The 4W / Hierarchical-Selection Line — SYNTHESIS (measurement phase)
+# GRAIN M4-T — The 4W / Hierarchical-Selection Line — SYNTHESIS (measurement phase)
 
 Opened 2026-08-17 by Codex's T1 and the owner's 4W synthesis;
 measurement phase closed 2026-08-17 under the loop discipline.

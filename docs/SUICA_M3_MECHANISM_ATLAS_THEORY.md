@@ -1,4 +1,4 @@
-# SUICA M3 Micro-to-Meso Mechanism Atlas
+# GRAIN M3 Micro-to-Meso Mechanism Atlas
 
 Status: discovery theory after a synthetic `PASS`; not sealed confirmation and
 not a human-text or personality claim.

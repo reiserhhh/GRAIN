@@ -1,4 +1,4 @@
-# SUICA V8 Manual — Working With the System
+# GRAIN V8 Manual — Working With the System
 
 Status: living practitioner manual (2026-08-03). The sealed v0.2.1 worked
 example (`docs/WORKED_EXAMPLE_MANUAL.md`) remains the frozen construction
@@ -19,7 +19,7 @@ to mean.
 pip install -r requirements.txt        # or the CI pin set: requirements-lock-main.txt
 python -m pytest -q tests/test_suica.py                 # 39 passed
 python -m pytest -q -p no:cacheprovider                 # 970 passed (2026-08-03)
-python scripts/verify_suica_v021_lockbox.py             # portable v0.2.1 seal check
+python scripts/verify_grain_v021_lockbox.py             # portable v0.2.1 seal check
 ```
 
 Expected deviations you should NOT be surprised by:
@@ -98,8 +98,8 @@ The 2026-08-01 review demonstrated this end-to-end (15/15 headlines traced,
 
 ```bash
 # Estimator layer against planted ground truth (synthetic, no data):
-python scripts/run_suica_synthetic_ground_truth_v2.py
-python scripts/run_suica_p0b_thin_cell_regime_v3.py
+python scripts/run_grain_synthetic_ground_truth_v2.py
+python scripts/run_grain_p0b_thin_cell_regime_v3.py
 
 # Typed R->V bridge unit + calibration surface:
 python -m pytest -q tests/test_m4_relation_bridge.py tests/test_m4_bridge_hetero.py
@@ -171,7 +171,7 @@ Binding rules (V7 process audit + 2026-08-03 appendix):
 
 ```bash
 # Sealed release (content + identity when on the tag):
-python scripts/verify_suica_v021_lockbox.py            # --content-only for CI/archives
+python scripts/verify_grain_v021_lockbox.py            # --content-only for CI/archives
 
 # Source locks (protocol code frozen at run time):
 python -m pytest -q tests/test_v8_w0_calibration_v37h4c.py \

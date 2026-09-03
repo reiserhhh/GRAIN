@@ -1,4 +1,4 @@
-# SUICA M4-U — the When line: synthesis of the measurement phase
+# GRAIN M4-U — the When line: synthesis of the measurement phase
 
 Closed 2026-08-18. Four legs under the loop discipline (registration
 committed before every run; one commit per leg; suite 1021 → 1148; zero ID

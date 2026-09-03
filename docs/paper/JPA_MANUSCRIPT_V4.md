@@ -8,7 +8,7 @@
      full reference list (entries re-verified at round-12 audit).
      v3 register and v3.1 fixes carried forward. Blinding unchanged. -->
 
-# Text as Behavior in Chosen Situations: Theory, Development, and a Preregistered First Test of Sliced Utterance In-Context Assessment (SUICA)
+# Text as Behavior in Chosen Situations: Theory, Development, and a Preregistered First Test of Group-Referenced Analysis of Individual Natural-Language Expression (GRAIN)
 
 ## Abstract
 

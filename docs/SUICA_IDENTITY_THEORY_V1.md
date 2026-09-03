@@ -1,4 +1,4 @@
-# SUICA Identity Theory v1 (IDT) — Identity as the Reproducible Component of Deviation
+# GRAIN Identity Theory v1 (IDT) — Identity as the Reproducible Component of Deviation
 
 Status: **THEORY DRAFT v1, registered 2026-08-09.** Tier: EXPLORATORY.
 Empirical program: `docs/SUICA_M4_K_IDENTITY_LINE_PLAN.md` (legs K1..K3).
@@ -42,7 +42,7 @@ A **frame** is F = (P, O, h, U):
   ν, its support and design (shared vs person-specific occasion sets);
 - h — the horizon ("expiry"): the time span the universe covers;
 - U — the representation ("units"): coordinates in which behavior is a vector;
-  in SUICA, the frozen map plus basis.
+  in GRAIN, the frozen map plus basis.
 
 Objects, all P-type indexed by O in V8's typing discipline:
 

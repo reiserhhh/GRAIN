@@ -2,7 +2,7 @@
 
 ## Purpose
 
-V7 starts a new construction line for SUICA.  Its object is not a generic text
+V7 starts a new construction line for GRAIN.  Its object is not a generic text
 classifier, a replacement Big Five inventory, or an author-identification
 system.  Its object is a **frozen, inspectable mapping from repeated natural
 language observations to relative positions in a reference population**.
@@ -46,7 +46,7 @@ For a frozen bundle, a new author is scored without refitting:
 \]
 
 If the author has insufficient observation support, text falls outside the
-declared operator domain, or a required runtime artifact is absent, SUICA must
+declared operator domain, or a required runtime artifact is absent, GRAIN must
 return `SCORE_REFUSE` rather than fabricate precision.
 
 W4/W4b's high effective-rank result means that a small, rotated latent-factor

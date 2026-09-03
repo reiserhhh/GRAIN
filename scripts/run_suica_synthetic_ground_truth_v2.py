@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""P0: SUICA estimator correctness on synthetic ground truth (plan v2, Phase 1).
+"""P0: GRAIN estimator correctness on synthetic ground truth (plan v2, Phase 1).
 
 Generates bag-of-words corpora with planted person / condition / interaction
 effects on the REAL anchor lexicon categories, pushes them through the REAL
@@ -292,7 +292,7 @@ def main() -> None:
     results["criteria"] = criteria
     (OUT_DIR / "p0_results.json").write_text(json.dumps(results, indent=2, default=float) + "\n")
 
-    lines = ["# SUICA P0 Synthetic Ground Truth (v2)", "",
+    lines = ["# GRAIN P0 Synthetic Ground Truth (v2)", "",
              f"Scorer equivalence max diff: {equiv:.2e}", "",
              "## Recovery by world", "", world_frame.round(4).to_markdown(index=False), "",
              "## Null worlds", "",

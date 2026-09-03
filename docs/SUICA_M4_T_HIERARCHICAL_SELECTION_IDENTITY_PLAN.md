@@ -1,4 +1,4 @@
-# SUICA M4-T1: Hierarchical Selection Identity
+# GRAIN M4-T1: Hierarchical Selection Identity
 
 Status: exploratory mechanism discovery. This line is label-free by design.
 

@@ -1,4 +1,4 @@
-# SUICA M4-A Mechanism Composition Grammar
+# GRAIN M4-A Mechanism Composition Grammar
 
 Date: 2026-07-31  
 Status: finite synthetic discovery supported with scope correction; gate

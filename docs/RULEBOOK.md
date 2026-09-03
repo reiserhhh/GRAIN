@@ -1,9 +1,9 @@
-# SUICA Fixation Rulebook v1 (実験固定基準書)
+# GRAIN Fixation Rulebook v1 (実験固定基準書)
 
 > **Historical scope notice (2026-07-30).** This is the V1 local
-> instrument-design rulebook, not the constitution of SUICA as a foundational
+> instrument-design rulebook, not the constitution of GRAIN as a foundational
 > methodology. Its empirical rules remain part of the historical evidence
-> record, but they do not require SUICA to be a scale or every future study to
+> record, but they do not require GRAIN to be a scale or every future study to
 > use this battery design. All new V8 studies are governed first by
 > `docs/SUICA_FOUNDATIONAL_CLOSURE_STANDARD.md` and its layer/edge/refusal
 > contract. A local rule applies only after the new study declares the
@@ -12,10 +12,10 @@
 Created: 2026-07-05
 Purpose: the historical binding rule set for the V1 local
 instrument-development program — what was fixed, by what rule, and with which
-measured evidence. New SUICA foundation studies inherit a rule only when their
+measured evidence. New GRAIN foundation studies inherit a rule only when their
 foundation contract declares the corresponding design and estimand.
 This is the bridge between SUICA_RIND_THEORY_BASE_V3 and the planned
-experiment flow (fixed-prompt writing / fixed-prompt AI dialogue -> SUICA
+experiment flow (fixed-prompt writing / fixed-prompt AI dialogue -> GRAIN
 analysis -> factor identification -> new cohort -> external-scale validation).
 
 Every rule cites its evidence. Rules marked PROVISIONAL lack direct evidence

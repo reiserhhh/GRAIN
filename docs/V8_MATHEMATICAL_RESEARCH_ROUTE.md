@@ -1,4 +1,4 @@
-# SUICA V8 Mathematical Research Route and Evidence Archive
+# GRAIN V8 Mathematical Research Route and Evidence Archive
 
 Status:
 `EVENT_TO_RELATION_SEAM1B_SUPPORTED_SYNTHETIC__M3_V4_READY_FOR_CLEAN_SEAL__K_CMOSO_BACKGROUND_ONLY__M_FILTERED_CONCORDANCE_ALL_THREE__FILTERED_GLOBAL_AXES_NONE__PANDORA_SHORT_SCALE_AND_X_MULTI_SCALE_CONTEXT_STRATIFIED_RELATION_CORRESPONDENCE__CONTEXT_TRANSPORT_UNDERRESOLVED__PSYCHOLOGICAL_MAPPING_CLOSED`
@@ -16,13 +16,13 @@ object is personality.
 
 All new studies on this route are now subordinate to
 `docs/SUICA_FOUNDATIONAL_CLOSURE_STANDARD.md` and the executable
-`suica.foundation.study.v1` contract. This does not turn SUICA into a scale.
+`suica.foundation.study.v1` contract. This does not turn GRAIN into a scale.
 It prevents a local technical seam from being silently promoted into a
 measurement, psychological construct, or use claim.
 
 ## 1. Scientific target
 
-SUICA is a general methodology foundation for constructing and testing
+GRAIN is a general methodology foundation for constructing and testing
 natural-language measurements. It is not itself a personality scale, symptom
 scale, diagnostic system, or clinical instrument.
 

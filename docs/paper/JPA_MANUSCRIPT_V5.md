@@ -35,7 +35,7 @@
      first-person true flow (monotone), tension/directive boundary
      micro-registers, two style clusters mid-dip. -->
 
-# Text as Behavior in Chosen Situations: Theory, Development, and a Preregistered First Test of Sliced Utterance In-Context Assessment (SUICA)
+# Text as Behavior in Chosen Situations: Theory, Development, and a Preregistered First Test of Group-Referenced Analysis of Individual Natural-Language Expression (GRAIN)
 
 ## Abstract
 
@@ -48,7 +48,7 @@ personality-expressive behavior. We develop a framework that reads
 accumulated text as behavior distributed over chosen situations,
 measured through three channels — context choice, a context-invariant
 style base, and person-by-context signatures — and operationalize it as
-Sliced Utterance In-Context Assessment (SUICA). In Study 1 (PANDORA;
+Group-Referenced Analysis of Individual Natural-Language Expression (GRAIN). In Study 1 (PANDORA;
 17.6 million Reddit comments; n = 3,183), removing context means
 lowered disjoint-occasion stability for every style measure
 (Δ = −.09), and a purity criterion admitted four of nineteen

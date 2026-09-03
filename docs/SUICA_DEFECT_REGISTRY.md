@@ -1,4 +1,4 @@
-# SUICA Defect Registry — every recorded planner registration defect (#1-#41)
+# GRAIN Defect Registry — every recorded planner registration defect (#1-#41)
 
 Compiled by D5 (`scripts/run_suica_d5_rule_replay.py`), registered in
 `docs/SUICA_DEFENSE_PHASE_PLAN.md` section D5 (commit eb972ea, BEFORE run).

@@ -1,4 +1,4 @@
-# SUICA M4-M — The Level-Law Completion Line
+# GRAIN M4-M — The Level-Law Completion Line
 
 Line opened 2026-08-11. Question: **can the restored level law
 (`field ≈ λ′ − κ′·V_person`, K2f, interpolation-grade) be completed —

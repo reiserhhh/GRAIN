@@ -1,4 +1,4 @@
-# SUICA V6 Joint-Process Stage J1: Protocol
+# GRAIN V6 Joint-Process Stage J1: Protocol
 
 ## Correction to the old dynamic endpoint
 

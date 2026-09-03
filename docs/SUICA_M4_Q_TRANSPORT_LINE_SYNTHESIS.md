@@ -1,4 +1,4 @@
-# SUICA M4-Q — The Transport Line — SYNTHESIS
+# GRAIN M4-Q — The Transport Line — SYNTHESIS
 
 Opened 2026-08-14 on the P-line's close; closed 2026-08-14. Tier:
 EXPLORATORY, synthetic, instrument-world laws; the ledger controls;

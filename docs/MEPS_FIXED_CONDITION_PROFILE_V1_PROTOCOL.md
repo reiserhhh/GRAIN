@@ -83,7 +83,7 @@ The protocol is promoted only if all three fixed-prompt comparisons satisfy:
 A pass licenses **same-session, protocol-conditioned Japanese vector
 correspondence only**. A failure means this small single-session protocol did
 not demonstrate the defined correspondence; it does not invalidate Japanese
-embeddings or SUICA generally.
+embeddings or GRAIN generally.
 
 ## Execution
 

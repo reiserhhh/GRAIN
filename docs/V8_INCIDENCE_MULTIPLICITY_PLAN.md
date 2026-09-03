@@ -1,4 +1,4 @@
-# SUICA V8 Incidence Multiplicity and Latent-Group Plan
+# GRAIN V8 Incidence Multiplicity and Latent-Group Plan
 
 Status: `V2_REGISTERED_BEFORE_CONFIRMATION`
 

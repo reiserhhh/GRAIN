@@ -1,4 +1,4 @@
-# SUICA M4-C.3.3 Opportunity-Excitation Information Protocol
+# GRAIN M4-C.3.3 Opportunity-Excitation Information Protocol
 
 ## Status
 

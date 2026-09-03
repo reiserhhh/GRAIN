@@ -1,0 +1,22 @@
+{
+  "canonical_name": "GRAIN",
+  "canonical_expansion": "Group-Referenced Analysis of Individual Natural-Language Expression",
+  "policy": "docs/GRAIN_NAMING_MIGRATION.md",
+  "matching_file_count": 1354,
+  "occurrences_by_category": {
+    "active_documentation": 911,
+    "frozen_or_persisted_evidence": 1151,
+    "legacy_python_namespace": 245,
+    "legacy_technical_identifier": 5247,
+    "other": 37,
+    "registered_contract_or_schema": 272
+  },
+  "occurrences_by_spelling": {
+    "former_expansion": 29,
+    "legacy_lower_or_identifier": 7841,
+    "standalone_title": 1,
+    "standalone_upper": 975
+  },
+  "active_documentation_violations": [],
+  "status": "PASS"
+}

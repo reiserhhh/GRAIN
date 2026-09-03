@@ -1,4 +1,4 @@
-# SUICA and Scale-Development Methodology: Alignment Audit
+# GRAIN and Scale-Development Methodology: Alignment Audit
 
 Date: 2026-07-30  
 Status: external-methodology stress test, not a scale-development mandate or
@@ -6,24 +6,24 @@ scale-validation claim.
 
 ## Executive ruling
 
-SUICA is **not a scale and is not defined by scale construction**. It is a
+GRAIN is **not a scale and is not defined by scale construction**. It is a
 foundational methodology for making text-based observation, estimation,
 comparison, interpretation, and refusal explicit. Scale-development
 literature is used here as an adversarial source of requirements: if a future
-instrument is built on SUICA, it should not repeat known psychometric
+instrument is built on GRAIN, it should not repeat known psychometric
 mistakes. This audit therefore constrains downstream designs without changing
-SUICA's identity or requiring the current corpora to produce a scale.
+GRAIN's identity or requiring the current corpora to produce a scale.
 
 Classic scale-development requirements divide into three classes:
 
-1. requirements already applicable to SUICA's technical object and
+1. requirements already applicable to GRAIN's technical object and
    measurement interface;
 2. requirements that become mandatory only when a named psychological
    construct and intended use are declared; and
 3. questionnaire-specific procedures, such as item-response modeling, that
    are not yet applicable because natural text events are not fixed items.
 
-SUICA did not invent sampling, reliability, validity, or person-by-situation
+GRAIN did not invent sampling, reliability, validity, or person-by-situation
 reasoning. Its potentially original contribution is their methodological
 combination for **natural-language behavioral observations**, with typed
 inference layers, condition/opportunity provenance, axis-free relation
@@ -48,7 +48,7 @@ The closest historical lineage is:
 
 ## 1. Translation dictionary
 
-| Conventional assessment term | SUICA analogue | Important non-equivalence |
+| Conventional assessment term | GRAIN analogue | Important non-equivalence |
 | --- | --- | --- |
 | Item | text event, slice, prompt opportunity, or interaction turn | A text event is not a locally independent item with fixed difficulty. |
 | Item/content universe | admissible topic/situation/opportunity universe | Reddit comments are a convenience sample, not a designed domain sample. |
@@ -79,7 +79,7 @@ construction, and evaluation of dimensionality, reliability, and validity
 ([Boateng et al., 2018](https://doi.org/10.3389/fpubh.2018.00149);
 [DeVellis & Thorpe, 2021](https://uk.sagepub.com/en-gb/eur/scale-development/book269114)).
 
-For SUICA, the decisive extension is that **situations and text opportunities
+For GRAIN, the decisive extension is that **situations and text opportunities
 must be sampled as seriously as people**. Representative-design theory permits
 generalization only to the ecology that was sampled
 ([Brunswik, 1955](https://doi.org/10.1037/h0047470)). Generalizability Theory
@@ -91,7 +91,7 @@ Content evidence is also population- and use-specific. COSMIN operationalizes
 it as relevance, comprehensiveness, and comprehensibility for the target
 construct, population, and context of use
 ([Terwee et al., 2018](https://doi.org/10.1007/s11136-018-1829-0)).
-This requirement does not name SUICA's anonymous geometry; it becomes
+This requirement does not name GRAIN's anonymous geometry; it becomes
 mandatory when a future instrument claims to assess a psychological
 construct.
 
@@ -106,7 +106,7 @@ Status vocabulary:
 - `APPLICATION_STAGE`: required only after a named construct/use is declared.
 - `NOT_YET_APPLICABLE`: requires fixed items or a different response model.
 
-| Requirement | Status | Existing SUICA correspondence | Remaining gap |
+| Requirement | Status | Existing GRAIN correspondence | Remaining gap |
 | --- | --- | --- | --- |
 | Intended construct and score use | `PARTIAL` | V8 has typed technical estimands, evidence levels, and claim boundaries. | It has no named psychological construct or intended clinical decision rule. This is correct for a method foundation, but no personality validity claim can precede that declaration. |
 | Target population | `PARTIAL` | Corpus/support domains and refusal language are explicit. | No target-population sampling frame, inclusion probabilities, range-restriction analysis, or population coverage weights. PANDORA cannot stand for humanity. |
@@ -117,15 +117,15 @@ Status vocabulary:
 | Response-process evidence | `MISSING` | AI echo, prompt versioning, and opportunity variables are recognized. | No cognitive interview/think-aloud evidence shows how people interpret prompts, choose disclosures, react to audience or AI wording, and produce the scored text. |
 | Administration standardization | `PARTIAL` | Scorer, prompt, operator, and provenance hashes can be frozen. | Device, input modality, interaction partner/model, language, time pressure, assistance, quotations, and editing opportunities are not yet a complete administration manifest. |
 | Observation/sample size | `PARTIAL` | Resolution frontiers and the 4/6/8/10/12 information-budget experiment directly estimate local support. | A budget is not a universal sample-size rule. Required authors and events must be derived for each estimand and use through power simulation and a D-study. |
-| Internal structure/dimensionality | `COVERED` for current technical claim | SUICA refuses a factor chart when stable axes are not identified and retains axis-free relation geometry. | Any future scalar subscale still needs independent-sample dimensionality testing. Factor-analysis sample size depends on communalities and factor overdetermination, not one universal respondent:item ratio ([MacCallum et al., 1999](https://doi.org/10.1037/1082-989X.4.1.84)). |
+| Internal structure/dimensionality | `COVERED` for current technical claim | GRAIN refuses a factor chart when stable axes are not identified and retains axis-free relation geometry. | Any future scalar subscale still needs independent-sample dimensionality testing. Factor-analysis sample size depends on communalities and factor overdetermination, not one universal respondent:item ratio ([MacCallum et al., 1999](https://doi.org/10.1037/1082-989X.4.1.84)). |
 | Local dependence/autocorrelation | `PARTIAL` | Source-disjoint replicates, path operators, and block-aware diagnostics exist. | Texts from one thread/session are dependent. Classical alpha or ordinary item-factor assumptions are invalid without an explicit hierarchical/local-dependence model. |
 | Reliability and Generalizability Theory | `PARTIAL` | Split replicates, event-budget curves, uncertainty components, and future G-study schemas exist. | No fitted `person × context × occasion × method × interaction-partner` G-study and no D-study for a declared administration design. |
 | Standard error / minimum detectable difference | `PARTIAL` | V7 separates source, model, and reference uncertainty conceptually; L45 V3 propagates event, occasion, reference, and operator uncertainty and passes opened synthetic coverage/MDD gates for E45-V. | No sealed confirmation, real person-score SEM, relation-valued confidence region, smallest detectable human change, or decision consistency. |
-| State, trait, and responsiveness | `PARTIAL` | SUICA distinguishes level, path, state, choice, and condition response; affective tension was not mislabeled as trait. | Same-person repeated occasions are still insufficient. Latent state-trait theory requires separating consistency, occasion specificity, and measurement error probabilistically ([Steyer et al., 2015](https://doi.org/10.1146/annurev-clinpsy-032813-153719)). |
+| State, trait, and responsiveness | `PARTIAL` | GRAIN distinguishes level, path, state, choice, and condition response; affective tension was not mislabeled as trait. | Same-person repeated occasions are still insufficient. Latent state-trait theory requires separating consistency, occasion specificity, and measurement error probabilistically ([Steyer et al., 2015](https://doi.org/10.1146/annurev-clinpsy-032813-153719)). |
 | Measurement invariance / DIF | `PARTIAL` | Support drift, opportunity sensitivity, and refusal are modeled. | Equal support is not equal measurement. Group, language, culture, platform, device, operator, and interaction-partner invariance/DIF remain open ([Meredith, 1993](https://doi.org/10.1007/BF02294825)). |
 | Convergent/discriminant evidence | `APPLICATION_STAGE` | Big Five/MBTI links are kept external and claim-bounded. | A frozen future construct needs a nomological network and rival-construct tests, not one correlation. MTMM requires multiple traits and methods ([Campbell & Fiske, 1959](https://doi.org/10.1037/h0046016); [Cronbach & Meehl, 1955](https://doi.org/10.1037/h0040957)). |
 | Criterion/predictive/incremental evidence | `APPLICATION_STAGE` | Behavioral and external-anchor paths are architecturally possible. | No current criterion licenses personality, diagnosis, treatment choice, or change monitoring. Predicting an existing questionnaire is not the only nor necessarily the strongest criterion. |
-| Missingness and self-selection | `PARTIAL`, conceptually strong | SUICA treats choice of topic/situation as an estimand rather than automatically deleting it as nuisance. | Eligibility and nonresponse are still MNAR risks. Selection models, inclusion funnels, and refusal coverage must accompany any population claim. |
+| Missingness and self-selection | `PARTIAL`, conceptually strong | GRAIN treats choice of topic/situation as an estimand rather than automatically deleting it as nuisance. | Eligibility and nonresponse are still MNAR risks. Selection models, inclusion funnels, and refusal coverage must accompany any population claim. |
 | Cross-validation/replication | `PARTIAL`, technically strong | Synthetic falsification, D0/D1/D2 separation, source-disjoint tests, and builder/auditor separation exist. | The current RGC/transport/budget sequence repeatedly inspected the same panels. Fresh D3 or a new corpus is required for confirmation. |
 | Fairness and consequences | `MISSING` | Current reports prohibit clinical use. | No subgroup fairness, accessibility, adverse-impact, feedback-harm, or high-stakes decision analysis. Fairness is a primary testing requirement ([NCME Fair Testing Code](https://ncme.org/document/code-of-fair-testing-practices-in-education/)). |
 | Interpretability and LLM use | `PARTIAL` | Deterministic scoring is separated from LLM rendering; evidence and counterevidence can be attached. | Explanation fidelity, rater/model drift, calibrated uncertainty language, and human comprehension require direct validation. |
@@ -135,7 +135,7 @@ Status vocabulary:
 
 ### 4.1 Declare the universe of generalization
 
-SUICA should define every future measurement design against:
+GRAIN should define every future measurement design against:
 
 \[
 \mathcal U =
@@ -182,7 +182,7 @@ s_u=\Phi\!\left(\{k(u,r):r\in R\};\,\mathcal U,\nu\right),
 \]
 
 with population definition, sampling weights, version \(\nu\), conditional
-uncertainty, support checks, and drift rules. Without \(R\), SUICA can validly
+uncertainty, support checks, and drift rules. Without \(R\), GRAIN can validly
 describe geometry inside one cohort but cannot claim a stable normed personal
 score.
 
@@ -197,7 +197,7 @@ score.
 
 No level inherits the next level automatically.
 
-## 5. What SUICA already contributes
+## 5. What GRAIN already contributes
 
 1. It makes context, opportunity, and observation design explicit instead of
    silently treating naturally available text as interchangeable items.
@@ -210,7 +210,7 @@ No level inherits the next level automatically.
 5. It separates deterministic measurement from LLM explanation and keeps an
    auditable claims ledger.
 
-These are meaningful methodological differences. They do not exempt SUICA
+These are meaningful methodological differences. They do not exempt GRAIN
 from population sampling, response-process evidence, error theory,
 invariance, external validation, or fairness.
 
@@ -245,7 +245,7 @@ invariance, external validation, or fairness.
 
 ## Final judgment
 
-SUICA's current formulas correspond strongly to the **sampling and
+GRAIN's current formulas correspond strongly to the **sampling and
 generalizability problem** that traditional scale development often hides
 inside fixed items. They correspond partially to reliability, internal
 structure, and validation governance. They do not yet cover the full
@@ -254,7 +254,7 @@ target/reference population, response-process evidence, complete
 person-by-facet error theory, invariant scoring, norm uncertainty, and
 consequences of use.
 
-That is not evidence that SUICA is methodologically wrong. It locates its
+That is not evidence that GRAIN is methodologically wrong. It locates its
 current maturity precisely: a technically developed measurement foundation
 whose next theoretical advance should be a **generalization-universe and
 reference-score theory**, not another unconstrained factor search.

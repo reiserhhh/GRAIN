@@ -1,4 +1,4 @@
-# SUICA V8 Execution Plan
+# GRAIN V8 Execution Plan
 
 Status:
 `V8_ROUTING_OPERATOR_SYNTHETIC_PASS_WITH_INFERENCE_CAVEATS__BLIND_LOCALIZATION_CANONICAL_PASS__REAL_TEXT_CLOSED`
@@ -200,7 +200,7 @@ artifact hashes with zero failures: `V8_FULL_PROVENANCE_PASS`. See
 
 ### V8.4b constrained evidence-bound interpreter
 
-The architecture was then corrected so SUICA remained the only numerical
+The architecture was then corrected so GRAIN remained the only numerical
 measurement channel. The LLM was restricted to explicit behavior observation,
 candidate-bound interpretation rendering, and independent critique.
 

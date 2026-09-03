@@ -1,4 +1,4 @@
-# SUICA M3 Cross-Family Confirmation Protocol
+# GRAIN M3 Cross-Family Confirmation Protocol
 
 Status: draft only; not sealed and not executable as confirmation.
 

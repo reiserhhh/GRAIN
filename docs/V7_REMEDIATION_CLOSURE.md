@@ -1,4 +1,4 @@
-# SUICA V7 Remediation Closure
+# GRAIN V7 Remediation Closure
 
 ## Scope
 

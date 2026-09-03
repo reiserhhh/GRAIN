@@ -1,4 +1,4 @@
-# SUICA M4-C.3.5-R2B Lockbox Seal
+# GRAIN M4-C.3.5-R2B Lockbox Seal
 
 Sealed before opening any R2B confirmation response or oracle endpoint.
 

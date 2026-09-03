@@ -8,9 +8,7 @@ from suica_core.v7_release import build_lockbox_manifest, verify_lockbox_manifes
 
 
 def test_ci_runs_full_lockbox_verifier_and_closure_audit_on_release_tags():
-    """The per-push CI job is content-only; tag pushes must additionally run the
-    full verifier (identity check included) plus the theory closure audit, and
-    the test job must exercise the declared python-version matrix."""
+    """Tag CI verifies the legacy lockbox and current theory closure."""
     workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "ci.yml").read_text(encoding="utf-8")
     # Tag-triggered full verification job exists and is gated on v* tags.
     assert 'tags: ["v*"]' in workflow
@@ -18,14 +16,21 @@ def test_ci_runs_full_lockbox_verifier_and_closure_audit_on_release_tags():
     # The per-push job stays content-only, pointed at the CURRENT release
     # verifier (v0.2.1; the v0.2.0 lockbox is only verifiable at its tag).
     assert "verify_suica_v021_lockbox.py --content-only" in workflow
-    # The tag job runs the verifier WITHOUT --content-only (identity included)...
+    # Later tags verify the immutable legacy tree through the canonical wrapper.
     full_runs = [
         line for line in workflow.splitlines()
-        if "verify_suica_v021_lockbox.py" in line and "--content-only" not in line
+        if "verify_grain_v021_lockbox.py" in line and "--content-only" not in line
     ]
     assert len(full_runs) == 1
-    # ...and the closure audit.
-    assert "run_suica_v7_theory_closure_audit.py" in workflow
+    wrapper = (
+        Path(__file__).resolve().parents[1]
+        / "scripts"
+        / "verify_grain_v021_lockbox.py"
+    ).read_text(encoding="utf-8")
+    assert 'TAG = "v0.2.1"' in wrapper
+    assert '"worktree", "add"' in wrapper
+    # The tag job also runs the current canonical closure entrypoint.
+    assert "run_grain_v7_theory_closure_audit.py" in workflow
     # Python version matrix on the test job.
     assert '"3.12", "3.14"' in workflow
     assert "${{ matrix.python-version }}" in workflow

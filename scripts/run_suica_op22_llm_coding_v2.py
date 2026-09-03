@@ -3,9 +3,9 @@
 
 Providers (4 model families — the same-family flaw of the v1 panel is retired):
   deepseek   : DeepSeek API (OpenAI-compatible; key/base from .env)
-  qwen30     : qwen3:8b via SUICA_OLLAMA_QWEN_HOST
-  llama30    : llama3.1:8b via SUICA_OLLAMA_LLAMA_HOST
-  mistral20  : base Mistral via SUICA_OLLAMA_MISTRAL_HOST
+  qwen30     : qwen3:8b via GRAIN_OLLAMA_QWEN_HOST
+  llama30    : llama3.1:8b via GRAIN_OLLAMA_LLAMA_HOST
+  mistral20  : base Mistral via GRAIN_OLLAMA_MISTRAL_HOST
 
 Tasks: t1 (7-way label identification + salience 0-3), t2 (pair intensity).
 Coders never see the key files. Temperature 0. <think> blocks stripped.
@@ -30,23 +30,29 @@ PROVIDERS = {
     "deepseek": {"kind": "openai", "model_env": "DEEPSEEK_LEADER_MODEL", "fallback_model": "deepseek-chat"},
     "qwen30": {
         "kind": "ollama",
-        "host_env": "SUICA_OLLAMA_QWEN_HOST",
+        "host_env": "GRAIN_OLLAMA_QWEN_HOST",
+        "legacy_host_env": "SUICA_OLLAMA_QWEN_HOST",
         "fallback_host": "http://127.0.0.1:11434",
-        "model_env": "SUICA_QWEN_MODEL",
+        "model_env": "GRAIN_QWEN_MODEL",
+        "legacy_model_env": "SUICA_QWEN_MODEL",
         "fallback_model": "qwen3:8b",
     },
     "llama30": {
         "kind": "ollama",
-        "host_env": "SUICA_OLLAMA_LLAMA_HOST",
+        "host_env": "GRAIN_OLLAMA_LLAMA_HOST",
+        "legacy_host_env": "SUICA_OLLAMA_LLAMA_HOST",
         "fallback_host": "http://127.0.0.1:11434",
-        "model_env": "SUICA_LLAMA_MODEL",
+        "model_env": "GRAIN_LLAMA_MODEL",
+        "legacy_model_env": "SUICA_LLAMA_MODEL",
         "fallback_model": "llama3.1:8b",
     },
     "mistral20": {
         "kind": "ollama",
-        "host_env": "SUICA_OLLAMA_MISTRAL_HOST",
+        "host_env": "GRAIN_OLLAMA_MISTRAL_HOST",
+        "legacy_host_env": "SUICA_OLLAMA_MISTRAL_HOST",
         "fallback_host": "http://127.0.0.1:11434",
-        "model_env": "SUICA_MISTRAL_MODEL",
+        "model_env": "GRAIN_MISTRAL_MODEL",
+        "legacy_model_env": "SUICA_MISTRAL_MODEL",
         "fallback_model": "persona-mistral-7b-q8:latest",
     },
 }
@@ -91,8 +97,16 @@ def call_provider(cfg: dict, env: dict, system: str, user: str, *, retries: int 
                                   timeout=90)
                 r.raise_for_status()
                 return r.json()["choices"][0]["message"]["content"]
-            host = env.get(cfg.get("host_env", ""), cfg.get("fallback_host", "http://127.0.0.1:11434")).rstrip("/")
-            model = env.get(cfg.get("model_env", ""), cfg.get("fallback_model", cfg.get("model", "")))
+            host = (
+                env.get(cfg.get("host_env", ""))
+                or env.get(cfg.get("legacy_host_env", ""))
+                or cfg.get("fallback_host", "http://127.0.0.1:11434")
+            ).rstrip("/")
+            model = (
+                env.get(cfg.get("model_env", ""))
+                or env.get(cfg.get("legacy_model_env", ""))
+                or cfg.get("fallback_model", cfg.get("model", ""))
+            )
             r = requests.post(f"{host}/api/chat",
                               json={"model": model, "stream": False,
                                     "options": {"temperature": 0},

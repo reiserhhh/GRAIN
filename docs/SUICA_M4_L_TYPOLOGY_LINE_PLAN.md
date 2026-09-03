@@ -1,4 +1,4 @@
-# SUICA M4-L — The Typology Line (IDT-R: the reverse reading)
+# GRAIN M4-L — The Typology Line (IDT-R: the reverse reading)
 
 Line opened 2026-08-09 (evening) on the program owner's directive: study
 the REVERSE direction — does removing identity make correct personality

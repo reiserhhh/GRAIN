@@ -1,4 +1,4 @@
-# SUICA V8: LLM-native Evidence-Carrying Assessment
+# GRAIN V8: LLM-native Evidence-Carrying Assessment
 
 Status: `V8_CANONICAL_GEOMETRY_CONFIRMED__CURRENT_BEHAVIOR_OBJECT_STOP`
 This document reports technical experiments only. It reports no new
@@ -10,7 +10,7 @@ validation.
 
 ## 1. Purpose
 
-V8 extends SUICA from an operator-indexed text geometry into an
+V8 extends GRAIN from an operator-indexed text geometry into an
 **LLM-native, evidence-carrying psychological measurement compiler**.
 
 The intended system may use black-box representations internally, but every
@@ -150,7 +150,7 @@ artifact.
 | Adaptation | Compile a new request into a proposed operator, estimand, null, MDE, and candidate bundle | Mutate the active bundle, open a lockbox, or promote its own candidate |
 | Audit | Attack a separately produced candidate with independent code/model context | Audit an output produced by the same agent identity |
 
-This adds `R-SEMANTIC-TRANSDUCER` to the existing SUICA role architecture.
+This adds `R-SEMANTIC-TRANSDUCER` to the existing GRAIN role architecture.
 The active scorer remains deterministic.
 
 ## 5. Explanation Certificate
@@ -228,7 +228,7 @@ Audit independence is bound to agent, session, runtime, implementation, and a
 separate attestation artifact. Different display names alone do not constitute
 an independent audit.
 
-Therefore “LLM can iterate SUICA” means it can generate and test versioned
+Therefore “LLM can iterate GRAIN” means it can generate and test versioned
 candidates. It never means that a deployed measurement silently changes.
 
 ## 8. V7 Inheritance

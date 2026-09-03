@@ -1,9 +1,9 @@
-# SUICA AI Analyst Guide v1 (AI活用分析手引き)
+# GRAIN AI Analyst Guide v1 (AI活用分析手引き)
 
-Created: 2026-07-06. Purpose: SUICA is designed to be operated primarily BY
+Created: 2026-07-06. Purpose: GRAIN is designed to be operated primarily BY
 AI agents over document volumes no human can read. This guide fixes the role
 architecture, the verbatim prompts, and the guardrails so that any capable AI
-agent (or team of agents) can run a SUICA analysis that inherits the
+agent (or team of agents) can run a GRAIN analysis that inherits the
 project's audited discipline. Six adversarial audit rounds produced this
 design; every rule below traces to a caught failure.
 
@@ -155,7 +155,7 @@ python scripts/build_suica_op22_item_bank_v2.py
 python scripts/run_suica_op22_llm_coding_v2.py --provider <p> --task t1|t2
 python scripts/evaluate_suica_op22_coding_v2.py
 # 6. estimator sanity on this corpus's cell layout
-python scripts/run_suica_p0b_thin_cell_regime_v3.py
+python scripts/run_grain_p0b_thin_cell_regime_v3.py
 # 7. audit round (R-AUDITOR, fresh session) -> ledger statuses
 # 8. only then: frozen prereg + external anchors (T4, budgeted)
 ```

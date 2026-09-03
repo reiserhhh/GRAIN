@@ -1,4 +1,4 @@
-# SUICA Foundation Gap Ledger
+# GRAIN Foundation Gap Ledger
 
 Date: 2026-07-30  
 Authority: `docs/SUICA_FOUNDATIONAL_CLOSURE_STANDARD.md`

@@ -1,4 +1,4 @@
-# SUICA Theory Formal Notes v3 — F11: the motion layer at scale (V6 program)
+# GRAIN Theory Formal Notes v3 — F11: the motion layer at scale (V6 program)
 
 Created 2026-07-12. Extends F1–F6 (V1) and F7–F10 (V2). Operator directive: mount a
 large-scale program on the F10.8 discovery (coherence that exists only in motion), reach
@@ -918,10 +918,10 @@ label tier.** EXPLORATORY banner, ledger row, mandatory gate-replication assert
 recomputed to <1e-9 against OPENING_REPORT.json BEFORE any fitting — the EXPL-1/EXPL-3
 assert block, copied verbatim, not reimplemented.
 (ii) **PANDORA official MBTI axes (EI/SN/TF/JP cont; data_sets/prepared/pandora_
-official/mbti_axes/*.csv, ~9,042 users) — FIRST correlational use in the SUICA
+official/mbti_axes/*.csv, ~9,042 users) — FIRST correlational use in the GRAIN
 construct-vs-anchor sense.** These labels were used to TRAIN the official MBTI LoRA CV
 line (a separate, model-training spend) but have never been fit or correlated against
-SUICA constructs before; there is no prior H2/H6-equivalent to replicate. Governed by
+GRAIN constructs before; there is no prior H2/H6-equivalent to replicate. Governed by
 the same EXPLORATORY banner + ledger-row discipline as (i), WITHOUT a replication
 assert (none exists yet to reproduce) — and this run ITSELF becomes the reference point
 any future reuse must replicate. Record explicitly: this run SPENDS the MBTI axis
@@ -1054,7 +1054,7 @@ shortcut taken here.
 confined to one hand-tuned composite: at least one of its constituent RAW constructs
 (wcl_07) independently clears a real external-anchor bar that its own static channel
 misses, on an axis (MBTI Thinking/Feeling) this program had never previously tested
-against SUICA constructs. The effect is modest (|r| ~ .09, one cell out of 266) and
+against GRAIN constructs. The effect is modest (|r| ~ .09, one cell out of 266) and
 must not be oversold as a validated MBTI-T/F motion marker — it is a single BH-surviving
 exploratory cell on spent/first-use labels, one data point toward the class of claim,
 not a sealed finding. The larger, more actionable result of this cycle may be the

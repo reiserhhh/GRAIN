@@ -129,7 +129,7 @@ The relation-matrix estimand follows the same general logic as centered
 kernel alignment and representational-similarity analysis: compare relations
 among observations rather than demanding coordinate-wise axis identity. RBF
 KRC is related to kernel dependence methods such as HSIC. Multiscale graph
-correlation motivates the registered local-scale follow-up, but SUICA retains
+correlation motivates the registered local-scale follow-up, but GRAIN retains
 its context-restricted exchangeability null rather than importing an
 independent-observation asymptotic test.
 

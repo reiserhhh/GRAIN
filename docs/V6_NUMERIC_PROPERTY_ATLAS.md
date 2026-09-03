@@ -1,7 +1,7 @@
 # V6 Numeric Property Atlas
 
 Status: 2026-07-14. This document is a text-blind evidence map. It describes
-only what can be established about SUICA V6 numeric objects in the current
+only what can be established about GRAIN V6 numeric objects in the current
 PANDORA design. It neither names a psychological construct nor claims a
 personality score.
 

@@ -1,3 +1,7 @@
-"""Sliced Utterance In-Context Assessment public package."""
+"""Legacy implementation namespace for the GRAIN analysis method.
 
-__version__ = "0.2.0"
+New code should import :mod:`grain_core`. This namespace remains available so
+frozen experiments and previously published commands stay reproducible.
+"""
+
+__version__ = "1.1.0"

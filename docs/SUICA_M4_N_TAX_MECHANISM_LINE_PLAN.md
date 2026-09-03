@@ -1,4 +1,4 @@
-# SUICA M4-N — The Tax-Mechanism Line
+# GRAIN M4-N — The Tax-Mechanism Line
 
 Line opened 2026-08-11, on the M-line's close. Question: **WHY is the
 tax a curve?** Appendix CC (planner derivation, committed before this

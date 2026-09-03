@@ -1,4 +1,4 @@
-# SUICA M4-S — The Selection Line — SYNTHESIS
+# GRAIN M4-S — The Selection Line — SYNTHESIS
 
 Opened 2026-08-16 by the owner's direction (synthetic + real);
 closed 2026-08-16. Tier: EXPLORATORY throughout; corpus-level only

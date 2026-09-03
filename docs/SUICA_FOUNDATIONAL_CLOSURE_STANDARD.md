@@ -1,23 +1,23 @@
-# SUICA Foundational Closure Standard
+# GRAIN Foundational Closure Standard
 
 Date: 2026-07-30  
 Status: binding V8 pre-experiment methodology constitution
 
 ## 1. Identity and purpose
 
-SUICA is **not a scale** and is not a pipeline whose purpose is to produce one
+GRAIN is **not a scale** and is not a pipeline whose purpose is to produce one
 scale. It is foundational methodology for making natural-language observation
 mathematically explicit enough that a future researcher may construct,
 falsify, compare, or refuse a text-based measurement.
 
 Questionnaire development, projective methods, behavioral observation,
 Generalizability Theory, construct validation, and high-stakes assessment are
-used here as adversarial sources of requirements. They do not define SUICA's
+used here as adversarial sources of requirements. They do not define GRAIN's
 identity. A future scale, state monitor, clinical aid, or other instrument is
-an application built on SUICA and must bring its own construct, population,
+an application built on GRAIN and must bring its own construct, population,
 administration, validity, and use evidence.
 
-SUICA's foundational question is:
+GRAIN's foundational question is:
 
 > Given language produced by people under partially observed conditions, what
 > mathematical object is identified, under which operator and reference
@@ -145,7 +145,7 @@ If two latent worlds induce the same observable distribution,
 P_{\theta_1}(X)=P_{\theta_2}(X),
 \]
 
-SUICA identifies the equivalence class
+GRAIN identifies the equivalence class
 \([\theta]=\{\theta':P_{\theta'}(X)=P_\theta(X)\}\), not a unique essence.
 Naming one member requires additional intervention, anchor, or external
 evidence.
@@ -338,7 +338,7 @@ Independence may not be assumed merely to make the decomposition additive.
 
 ## 7. Pre-experiment gates
 
-No new SUICA study may access expensive data or compute until its foundation
+No new GRAIN study may access expensive data or compute until its foundation
 contract passes these gates:
 
 | Gate | Question |
@@ -386,7 +386,7 @@ The weakest transitions are:
 - L5 -> L6: external psychological interpretation;
 - L6 -> L7: field use, consequences, fairness, and authority.
 
-This does not make V8 a failed scale. It correctly locates SUICA as a
+This does not make V8 a failed scale. It correctly locates GRAIN as a
 foundation whose technical core is more mature than its downstream
 measurement and interpretation interfaces.
 
@@ -409,5 +409,5 @@ measurement and interpretation interfaces.
 10. A bounded opening may motivate an experiment, but it may not support the
     conclusion the experiment is intended to test.
 
-This standard is the SUICA foundation constitution. Local protocols may add
+This standard is the GRAIN foundation constitution. Local protocols may add
 stricter rules, but they may not weaken these boundaries.

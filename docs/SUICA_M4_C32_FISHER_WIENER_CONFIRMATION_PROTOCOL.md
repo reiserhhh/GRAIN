@@ -1,4 +1,4 @@
-# SUICA M4-C.3.2 Fisher-Wiener Confirmation Protocol
+# GRAIN M4-C.3.2 Fisher-Wiener Confirmation Protocol
 
 ## Status
 

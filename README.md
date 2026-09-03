@@ -1,35 +1,43 @@
-# Sliced Utterance In-Context Assessment (SUICA)
+# GRAIN: Individual Language Texture Analysis
+
+**Group-Referenced Analysis of Individual Natural-Language Expression**
 
 **English** | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
-SUICA is a foundational methodology for text-based measurement research: it treats a person's
-spontaneous writing as many small behavioral observations ("sliced
-utterances") measured inside their naturally occurring contexts, and builds
-auditable, operator- and reference-relative objects from them. It is not a
-scale and does not require the current corpora to become one. Future
-text-based assessments may be constructed on this foundation only after
-their own construct, population, validity, and use evidence is supplied.
+GRAIN is a foundational analysis method for text-based measurement research.
+It treats a person's natural-language events as local grains observed at
+multiple resolutions, then studies their reproducible distribution,
+orientation, conditional response, and path structure relative to an explicit
+reference population. Their organized multiscale pattern is the person's
+**language texture**. GRAIN is not a scale and does not require the current
+corpora to become one. Future text-based assessments may be constructed on
+this foundation only after their own construct, population, validity, and use
+evidence is supplied.
 
-*Suica (スイカ) is Japanese for watermelon: the method's core "rind model"
-holds that topic/situation is not noise to strip away but the rind that
-carries person signal through self-selection — a claim this project first
-falsified in its naive form (statistical condition-centering destroys
-signal) and then rebuilt as a design principle (control context by design;
-measure choice as a channel).*
+The earlier watermelon/rind metaphor remains part of the method's development
+history: topic and situation are not packaging to strip away, because
+condition selection and condition-specific response can carry person-relevant
+information. The current GRAIN name generalizes that insight beyond one
+slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_NAMING_MIGRATION.md).
+The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 
 ## Theory manuscript (2026-09-01)
 
-The completed framework is now expressed as a journal-neutral theoretical and
-methodological article in [English](docs/paper/SUICA_THEORY_MANUSCRIPT_EN_V1.md),
-[Japanese](docs/paper/SUICA_THEORY_MANUSCRIPT_JA_V1.md), and
-[Chinese](docs/paper/SUICA_THEORY_MANUSCRIPT_ZH_V1.md). The
-[trilingual crosswalk](docs/paper/SUICA_THEORY_MANUSCRIPT_CROSSWALK.md) fixes
+The completed theory is now expressed as a journal-neutral theoretical and
+methodological article in [English](docs/paper/GRAIN_THEORY_MANUSCRIPT_EN_V1.md),
+[Japanese](docs/paper/GRAIN_THEORY_MANUSCRIPT_JA_V1.md), and
+[Chinese](docs/paper/GRAIN_THEORY_MANUSCRIPT_ZH_V1.md). The
+[trilingual crosswalk](docs/paper/GRAIN_THEORY_MANUSCRIPT_CROSSWALK.md) fixes
 section, equation, terminology, and claim equivalence across the three drafts.
-[Evidence provenance](docs/paper/SUICA_THEORY_EVIDENCE_PROVENANCE.md) maps each
+[Evidence provenance](docs/paper/GRAIN_THEORY_EVIDENCE_PROVENANCE.md) maps each
 headline number to its primary repository report.
-These drafts do not claim that SUICA is a validated scale or clinical tool.
+These drafts do not claim that GRAIN is a validated scale or clinical tool.
 
-## What is in the latest sealed release (v0.2.1)
+## What is in the legacy sealed release (v0.2.1)
+
+The v0.2.1 release and its identifiers were sealed under the former project
+name. They remain unchanged as historical evidence and are interpreted under
+the current GRAIN theory.
 
 - **V7 technical core** — operator-indexed relative text geometry, frozen
   geometry bundles, refusal rules, multiview calibration, uncertainty and
@@ -62,8 +70,10 @@ These drafts do not claim that SUICA is a validated scale or clinical tool.
   confirm-half labels are still untouched, though its text was read by V8
   realtext loaders on 2026-07-29..30 and it is no longer a text-blind cohort
   (`docs/V8_PUSH_REMEDIATION_20260803.md`, item 2).
-- **Code** — `suica_core/` + `suica_sim/` + `scripts/` + `tests/`. The V7
-  release lockbox is independently verifiable without restricted corpora.
+- **Code** — new work imports `grain_core/` and `grain_sim/`; the
+  `suica_core/`, `suica_sim/`, and `run_suica_*` names remain compatibility
+  identifiers for frozen experiments. The V7 release lockbox is independently
+  verifiable without restricted corpora.
 
 ## State of main after the sealed release (2026-08-03)
 
@@ -121,9 +131,9 @@ is unchanged and remains the verification anchor):
 pip install -r requirements.txt
 python -m pytest -q tests/test_suica.py          # 39 passed
 python -m pytest -q -p no:cacheprovider          # release audit: 970 passed (2026-08-03; 318 at the v0.2.1 tag)
-python scripts/verify_suica_v021_lockbox.py       # portable v0.2.1 seal
-python scripts/run_suica_synthetic_ground_truth_v2.py   # P0: estimator
-python scripts/run_suica_p0b_thin_cell_regime_v3.py     # P0-B: thin cells
+python scripts/verify_grain_v021_lockbox.py       # portable v0.2.1 seal
+python scripts/run_grain_synthetic_ground_truth_v2.py   # P0: estimator
+python scripts/run_grain_p0b_thin_cell_regime_v3.py     # P0-B: thin cells
 ```
 
 These synthetic harnesses verify the entire estimator layer against planted
@@ -134,7 +144,7 @@ user IDs; SHA-256 manifests allow byte-identical preparation checks).
 ## Current development route and foundation contract
 
 The canonical integrated statement of the current system is
-`docs/SUICA_UNIFIED_THEORY_SYSTEM_V8.md`. It defines SUICA's type system,
+`docs/SUICA_UNIFIED_THEORY_SYSTEM_V8.md`. It defines GRAIN's type system,
 reference-relative measurement spine, micro/meso/macro formulas, residual and
 applicability theory, version lineage, evidence boundaries, and the procedure
 for building future study-specific natural-language measurement systems.
@@ -400,7 +410,7 @@ all 1,020 earlier V7 authors, five operators and word/char representations
 showed same-source transport in a synchronized max-T family. The decisive
 boundary is source-disjoint replication: fine-grained linear coordinate maps
 did not transport, but source-disjoint own-vs-stranger position alignment did
-(AUC .719--.805; 48-comment sensitivity .791--.862). SUICA therefore has
+(AUC .719--.805; 48-comment sensitivity .791--.862). GRAIN therefore has
 evidence for reproducible **relative text geometry**, not fixed named axes or
 personality measurement. See `reports/V7_OPERATOR_FAMILY.md`.
 
@@ -570,7 +580,7 @@ checks. See also `docs/V8_EXECUTION_PLAN.md`. V8.5 human repeated-measurement
 and external construct validation were not run.
 
 A subsequent constrained-interpreter experiment implemented the corrected
-role split in which SUICA is the sole numerical channel and the LLM only
+role split in which GRAIN is the sole numerical channel and the LLM only
 observes explicit behavior, renders compiled evidence-bound atoms, and audits
 them. The 200-profile planted formal gate passed (observer macro-F1 0.943,
 Fleiss kappa 0.988, interpretation coverage 0.988, evidence-edge F1 lower
@@ -1065,9 +1075,9 @@ The entire RGC/transport/budget chain remains opened-panel development. See
 `docs/V8_NESTED_INFORMATION_BUDGET_PROTOCOL.md`, and
 `reports/V8_NESTED_INFORMATION_BUDGET.md`.
 
-A historical scale-development alignment audit stress-tests SUICA against
+A historical scale-development alignment audit stress-tests GRAIN against
 representative design, Generalizability Theory, construct validation,
-state-trait theory, invariance, and argument-based validation. SUICA is a
+state-trait theory, invariance, and argument-based validation. GRAIN is a
 methodology foundation rather than a scale-development project. Its most important
 unclosed technical requirements are a declared generalization universe,
 frozen reference-population scoring, person-by-facet error decomposition,

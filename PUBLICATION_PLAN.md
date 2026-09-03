@@ -1,4 +1,4 @@
-# SUICA Publication Plan v1 (REVISED 2026-07-07: JPA primary)
+# GRAIN Publication Plan v1 (REVISED 2026-07-07: JPA primary)
 
 Created: 2026-07-07. Decision basis: the 2026 SJR top-3% list (user-provided)
 x Waseda read-and-publish agreements x topical fit. REVISION: the user
@@ -12,7 +12,7 @@ satisfying ALL stated criteria** (international x top-3% list x Waseda-free):
 - SJR 1.287, on the top-3% list.
 - Official journal of the Society for Personality Assessment — the community
   whose central discourse IS the integration of self-report and
-  performance-based (projective-tradition) assessment. SUICA's founding
+  performance-based (projective-tradition) assessment. GRAIN's founding
   ambition ("the advantages of questionnaires and projective tests
   combined") is native language here: the pitch is a STANDARDIZED,
   FROZEN-SCORED performance-based measure of spontaneous verbal behavior.
@@ -99,7 +99,7 @@ next study.
 
 1. LEAD with the falsification result (centering destroys signal + the F4
    theorem): it contradicts the default topic-residualization practice in
-   language-based assessment — that is the paper's hook, not SUICA's
+   language-based assessment — that is the paper's hook, not GRAIN's
    correlations.
 2. The adversarial builder/auditor protocol (11 rounds, 13 caught builder
    errors) is reported as a METHOD contribution with its error taxonomy —

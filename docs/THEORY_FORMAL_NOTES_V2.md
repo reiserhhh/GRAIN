@@ -1,4 +1,4 @@
-# SUICA Theory Formal Notes v2 — F7–F10: invariance, aggregation geometry, spectral nulls, factor fluidity
+# GRAIN Theory Formal Notes v2 — F7–F10: invariance, aggregation geometry, spectral nulls, factor fluidity
 
 Created 2026-07-11. Extends F1–F6 (SUICA_THEORY_FORMAL_NOTES_V1.md). Source of the
 mathematical apparatus: the field program's T-geometry reformulation
@@ -126,7 +126,7 @@ names by default (vector interpretation unlicensed until calibrated).
 
 **F10.3 (individuality as axes).** Person frame: U_u = leading eigenvector (or top-k frame)
 of person u's WITHIN-person slice correlation. The conjecture's positive content: U_u is
-trait-like — orientation, not only scores, is a personal signature. If it holds, the SUICA
+trait-like — orientation, not only scores, is a personal signature. If it holds, the GRAIN
 person representation extends from the score vector f_u to the pair (f_u, U_u) ∈ R^p ×
 Gr(1, p), and interperson distance gains a principal-angle term. Deployment is AI-native by
 construction: an axis needs no name to be used.

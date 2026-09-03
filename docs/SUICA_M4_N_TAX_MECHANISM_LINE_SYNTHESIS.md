@@ -1,4 +1,4 @@
-# SUICA M4-N — The Tax-Mechanism Line — SYNTHESIS
+# GRAIN M4-N — The Tax-Mechanism Line — SYNTHESIS
 
 Opened 2026-08-11 on the M-line's close; closed 2026-08-14. Tier:
 EXPLORATORY, synthetic, instrument-world laws; the ledger controls;

@@ -664,7 +664,7 @@ is attributable to composition alone and not to size.
 free-response composition each author's events are their own idiosyncratic
 occasions, so part of the between-author difference the field rides on is
 occasion-SAMPLING nuisance, independent between halves and therefore pure
-noise on the split-half gauge. SUICA's own opportunity theory says the fix is
+noise on the split-half gauge. GRAIN's own opportunity theory says the fix is
 to control the condition by design. A shared-occasion panel (every author in
 a context observed on the same occasion grid) removes that nuisance by
 construction at identical budget.

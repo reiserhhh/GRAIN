@@ -1,4 +1,4 @@
-# SUICA V6 Residual Metric Diagnostic: Post-Hoc Protocol
+# GRAIN V6 Residual Metric Diagnostic: Post-Hoc Protocol
 
 ## Trigger and status
 

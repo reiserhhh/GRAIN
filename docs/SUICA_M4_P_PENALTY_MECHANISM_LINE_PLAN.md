@@ -1,4 +1,4 @@
-# SUICA M4-P — The Penalty-Mechanism Line
+# GRAIN M4-P — The Penalty-Mechanism Line
 
 Line opened 2026-08-14, on the N-line's close. Question: **WHY does
 the level price concentrate where cards read best?** The readability

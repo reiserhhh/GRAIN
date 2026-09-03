@@ -2,7 +2,7 @@
 
 This directory is intentionally committed as an empty skeleton only.
 
-The SUICA release does not redistribute user text, user identifiers, prepared
+The GRAIN release does not redistribute user text, user identifiers, prepared
 PANDORA/Essays files, X/Twitter market text, or lockbox data. Put locally
 obtained datasets under the paths below when reproducing the full analyses:
 

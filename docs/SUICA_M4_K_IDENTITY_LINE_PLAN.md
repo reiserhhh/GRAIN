@@ -1,4 +1,4 @@
-# SUICA M4-K — The Identity Line (IDT empirical program)
+# GRAIN M4-K — The Identity Line (IDT empirical program)
 
 Line opened 2026-08-09. Question: does the Identity Theory
 (`docs/SUICA_IDENTITY_THEORY_V1.md`) survive contact with the deployed

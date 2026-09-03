@@ -1,5 +1,8 @@
 # SUICA v0.2.0 V7 Technical Lockbox
 
+> Historical lockbox under the former project name. The current method is
+> GRAIN; this lockbox retains its original identity and estimands.
+
 Status: sealed by the annotated `v0.2.0` tag and
 `release/v0.2.0/LOCKBOX_MANIFEST.json`.
 

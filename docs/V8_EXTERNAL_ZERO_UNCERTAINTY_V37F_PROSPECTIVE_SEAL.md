@@ -4,7 +4,7 @@ Status: `SEALED_BEFORE_CONFIRMATION`
 
 ## Frozen estimand
 
-V3.7F tests whether SUICA can use an author-disjoint external score origin,
+V3.7F tests whether GRAIN can use an author-disjoint external score origin,
 calibrate nested technical uncertainty, detect stable information omitted by
 hard projection, and separate event-sampling decay from positive capacity or
 state floors.

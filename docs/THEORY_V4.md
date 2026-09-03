@@ -1,4 +1,4 @@
-# SUICA Rind Theory Base v4 (皮モデル第4版 — 統合改訂)
+# GRAIN Rind Theory Base v4 (皮モデル第4版 — 統合改訂)
 
 Created: 2026-07-07. Supersedes V3+its section-7 amendments as the READING
 copy; V3 remains unchanged as the historical record (every claim's audit

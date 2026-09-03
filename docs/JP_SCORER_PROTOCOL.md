@@ -1,4 +1,4 @@
-# SUICA Japanese Scorer — Equivalence Protocol v1 (OP-8)
+# GRAIN Japanese Scorer — Equivalence Protocol v1 (OP-8)
 
 Created: 2026-07-07. Governs `scripts/suica_ja_scorer_v1.py`.
 Rulebook anchor: D1 (population- and language-relative measurement; no

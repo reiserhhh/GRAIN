@@ -1,4 +1,4 @@
-# SUICA L4-to-L5 Reference-Frame Protocol
+# GRAIN L4-to-L5 Reference-Frame Protocol
 
 Date: 2026-07-30  
 Opening: `F05-L45-REFERENCE-FRAME`  
@@ -209,7 +209,7 @@ The protocol aligns with established work in three limited ways:
 - reference-sample weighting research shows that alignment to the target
   population matters for comparable scores.
 
-SUICA's original contribution here is the combined interface over
+GRAIN's original contribution here is the combined interface over
 facet-indexed high-dimensional technical vectors, explicit alias worlds,
 operator-gauge refusal, and observable reference/occasion/event uncertainty.
 This is an original composition of supported principles, not proof that every

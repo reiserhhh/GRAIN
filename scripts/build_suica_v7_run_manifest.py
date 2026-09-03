@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from suica_core.v7_governance import write_run_manifest  # noqa: E402
+from grain_core.v7_governance import write_run_manifest  # noqa: E402
 
 
 def main() -> int:
@@ -26,9 +26,11 @@ def main() -> int:
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--external-labels-read", action="store_true")
     parser.add_argument("--raw-identifiers-persisted", action="store_true")
-    parser.add_argument("--pseudonym-salt-env", default="SUICA_V7_PSEUDONYM_SALT")
+    parser.add_argument("--pseudonym-salt-env", default="GRAIN_PSEUDONYM_SALT")
     args = parser.parse_args()
     secret = os.environ.get(args.pseudonym_salt_env, "")
+    if not secret and args.pseudonym_salt_env == "GRAIN_PSEUDONYM_SALT":
+        secret = os.environ.get("SUICA_V7_PSEUDONYM_SALT", "")
     fingerprint = hashlib.sha256(secret.encode("utf-8")).hexdigest() if secret else None
     payload = write_run_manifest(
         args.output,

@@ -1,4 +1,4 @@
-# SUICA M4-L — The Typology Line, Synthesized
+# GRAIN M4-L — The Typology Line, Synthesized
 
 Status: **line closed 2026-08-10**, three executed legs (L1, L2, L3) on
 the IDT-R theory (appendices P/Q/R/S). Tier: EXPLORATORY, label-free,

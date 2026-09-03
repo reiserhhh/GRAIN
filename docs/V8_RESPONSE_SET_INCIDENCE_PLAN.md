@@ -1,4 +1,4 @@
-# SUICA V8 Response-Set Incidence Geometry Plan
+# GRAIN V8 Response-Set Incidence Geometry Plan
 
 Status:
 `PLANTED_AFFINE_V1_CODE_GATE_PASS__INDEPENDENT_METHOD_AUDIT_PARTIAL`
@@ -128,7 +128,7 @@ decision. Confirmation results are not used to change thresholds.
 
 ## 6. Claim boundary
 
-A pass would show that SUICA can technically estimate line/surface/volume
+A pass would show that GRAIN can technically estimate line/surface/volume
 dimension and distinguish same-condition incidence, cross-condition-only
 incidence, overlap, near miss, parallel offset, and 3D skew geometry in
 registered planted affine worlds.

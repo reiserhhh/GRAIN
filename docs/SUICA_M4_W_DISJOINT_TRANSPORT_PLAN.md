@@ -1,4 +1,4 @@
-# SUICA M4-W — the disjoint-cohort transport line
+# GRAIN M4-W — the disjoint-cohort transport line
 
 Opened 2026-08-18, directly after the U-line's full close. The U-line left
 one interval open (whether the common mass outlasts the distinctive tail —

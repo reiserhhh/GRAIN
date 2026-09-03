@@ -1,4 +1,4 @@
-# SUICA Defense Phase — Charter (v1)
+# GRAIN Defense Phase — Charter (v1)
 
 Status: **CHARTER ONLY, opened 2026-08-09.** No leg is registered by this
 document; every future defense leg gets its own registration under the

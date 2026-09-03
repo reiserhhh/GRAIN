@@ -1,4 +1,4 @@
-# SUICA M4-C.3.5-R2C Boundary Ecology Development Protocol
+# GRAIN M4-C.3.5-R2C Boundary Ecology Development Protocol
 
 ## Status
 

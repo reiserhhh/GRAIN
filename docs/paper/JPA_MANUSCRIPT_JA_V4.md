@@ -3,9 +3,9 @@
 <!-- v4 (2026-07-07): 著者決定による再構成 — 理論論証+検査法開発+
      封印検証+ベンチマーク比較。新設: 「検査法の開発」「封印された
      確認的検定」「同一コーパス上の測定対予測」(EXPL-1 適合勾配、表1)。
-     v3 文体と v3.1 修正は継承。英語版 SUICA_JPA_MANUSCRIPT_V4.md と対応。 -->
+     v3 文体と v3.1 修正は継承。英語版 JPA_MANUSCRIPT_V4.md と対応。 -->
 
-# 選ばれた状況の中の行動としてのテキスト: Sliced Utterance In-Context Assessment(SUICA)の理論・開発・事前登録による最初の検定
+# 選ばれた状況の中の行動としてのテキスト: Group-Referenced Analysis of Individual Natural-Language Expression (GRAIN)の理論・開発・事前登録による最初の検定
 
 ## 要旨
 
@@ -608,6 +608,6 @@ Cov(f, m) = 0 なら正確、正結合の下では上界寄りである。結合
 ---
 
 *Open Practices・Declarations・参考文献(全26点)は英語版
-SUICA_JPA_MANUSCRIPT_V4.md を参照(内容は同一)。表1は本文中に実体化
+JPA_MANUSCRIPT_V4.md を参照(内容は同一)。表1は本文中に実体化
 済み。表2(公約と状態の総括)は台帳から作成予定。適合勾配の一次記録は
 results/suica_expl_fit_gradient/(台帳 EXPL-1・EXPL-1b 行)。*

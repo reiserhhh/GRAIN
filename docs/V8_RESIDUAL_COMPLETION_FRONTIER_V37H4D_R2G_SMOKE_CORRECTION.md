@@ -1,7 +1,7 @@
 # R2G Smoke Correction Before Formal Seeds
 
 The first executable smoke completed only after two software-only seed-width
-repairs. Scikit-learn requires 32-bit `random_state` values, while the SUICA
+repairs. Scikit-learn requires 32-bit `random_state` values, while the GRAIN
 seed ledger uses `SeedSequence` uint64 values. All sklearn seeds are now
 mapped deterministically modulo \(2^{32}\), and regression tests cover both
 RFF and the overfit trap.

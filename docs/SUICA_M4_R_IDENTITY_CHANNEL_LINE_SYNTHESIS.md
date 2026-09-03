@@ -1,4 +1,4 @@
-# SUICA M4-R — The Identity-Channel Line — SYNTHESIS (measurement phase)
+# GRAIN M4-R — The Identity-Channel Line — SYNTHESIS (measurement phase)
 
 Opened 2026-08-14 on the Q-line's close; measurement phase closed
 2026-08-14. Tier: EXPLORATORY, synthetic, instrument-world laws; the

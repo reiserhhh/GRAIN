@@ -1,4 +1,4 @@
-# SUICA M4-C Response-Safe Condition-Manifold Discovery
+# GRAIN M4-C Response-Safe Condition-Manifold Discovery
 
 Date: 2026-07-31  
 Status: synthetic discovery route; psychological interpretation closed

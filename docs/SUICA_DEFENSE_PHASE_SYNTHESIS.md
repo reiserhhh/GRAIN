@@ -1,4 +1,4 @@
-# SUICA Defense Phase — Synthesized
+# GRAIN Defense Phase — Synthesized
 
 Status: **phase complete 2026-08-10** — D1, D2, D3, D4, D5, D-open.
 Charter: `docs/SUICA_DEFENSE_PHASE_CHARTER.md`; every registration,

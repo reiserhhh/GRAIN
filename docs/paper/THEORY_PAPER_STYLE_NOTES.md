@@ -13,7 +13,7 @@ support. Exemplars studied and the argumentation devices to borrow.
 - Device 2: **make the error term the phenomenon** — situational
   variability, treated for decades as noise, IS the personality signature
   (if A then X, if B then Y).
-- Direct lineage for us: SUICA repeats the move one level down — the
+- Direct lineage for us: GRAIN repeats the move one level down — the
   variance that language-based assessment deletes as "topic nuisance" IS
   the choice channel; and our C3 is literally their behavioral signature,
   in text. The paper should claim this ancestry explicitly.

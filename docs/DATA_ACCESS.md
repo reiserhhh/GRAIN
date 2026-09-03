@@ -66,7 +66,7 @@ Byte-identical preparation can be verified against:
 Without any dataset you can still verify the estimator layer:
 
 ```bash
-python scripts/run_suica_synthetic_ground_truth_v2.py   # P0
-python scripts/run_suica_p0b_thin_cell_regime_v3.py     # P0-B
+python scripts/run_grain_synthetic_ground_truth_v2.py   # P0
+python scripts/run_grain_p0b_thin_cell_regime_v3.py     # P0-B
 python -m pytest -q tests/test_suica.py                 # 39 tests
 ```

@@ -53,5 +53,5 @@ response support. These are planted-world gates only.
 This test does not establish that Reddit topic choice is personality, that every
 format feature is an opportunity, or that a future human study will reproduce
 these magnitudes. It establishes a counterexample to universal condition
-subtraction and motivates a two-phase SUICA collection design: report free
+subtraction and motivates a two-phase GRAIN collection design: report free
 selection and fixed-condition conditional expression separately.

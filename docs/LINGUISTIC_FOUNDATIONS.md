@@ -1,4 +1,4 @@
-# SUICA Linguistic & Psycholinguistic Foundations v1 — literature map
+# GRAIN Linguistic & Psycholinguistic Foundations v1 — literature map
 
 Created: 2026-07-07, on the user's two theses: (1) constructs should have a
 linguistic-theoretical base — the current inventory may be under-connected
@@ -6,17 +6,17 @@ to psycholinguistics; (2) personality is fingerprint-like: no factor set
 exhausts a person, but the person is CODABLE, and what remains after
 subtracting the group is the individuality (residual = 個性).
 
-Verdict up front: thesis (1) is partially right — SUICA's constructs were
+Verdict up front: thesis (1) is partially right — GRAIN's constructs were
 data-discovered (OP-5) and validation-first, but several sit on
 long-standing literatures the docs never cited; connecting them costs
 little and strengthens the paper. Thesis (2) has an exact formal home
 (Furr's distinctiveness; Molenaar's non-ergodicity; the forensic stylome)
-and SUICA already possesses the machinery and two prior lessons (E6/E9b
+and GRAIN already possesses the machinery and two prior lessons (E6/E9b
 stranger nulls) needed to measure it — see OP-32.
 
-## 1. What each SUICA component already stands on (and should cite)
+## 1. What each GRAIN component already stands on (and should cite)
 
-| SUICA component | Existing literature base | Key sources |
+| GRAIN component | Existing literature base | Key sources |
 |---|---|---|
 | Function-word / style-base channel (C2; first_person) | Function words as unconscious, stable style markers; "linguistic style" as an individual difference; I-usage <-> negative emotionality meta-analytically | Pennebaker & King 1999; Mosteller & Wallace (function-word attribution); Edwards & Holtzman meta (already cited in prereg H2) |
 | Open-vocabulary discovery (OP-5 wcl clusters) | Open-vocabulary beats closed dictionaries for personality prediction (r .31-.41 vs .21-.29); differential language analysis | Schwartz et al. 2013 PLoS ONE; Park et al. 2015 JPSP (LBA validity: self/informant agreement, 6-month stability); Eichstaedt et al. 2021 closed-vs-open review |
@@ -32,7 +32,7 @@ stranger nulls) needed to measure it — see OP-32.
 
 ## 2. Where the psycholinguistics is genuinely thin (gaps worth owning)
 
-1. **Production mechanisms.** SUICA counts surface rates; it has no model of
+1. **Production mechanisms.** GRAIN counts surface rates; it has no model of
    WHY a trait raises a rate (lexical access, planning, affect-priming).
    Psycholinguistic production models (Levelt-tradition) are not engaged.
    Cost of the gap: construct interpretations stay correlational. Cheap fix:
@@ -41,7 +41,7 @@ stranger nulls) needed to measure it — see OP-32.
 2. **Register theory formalization.** The rind model reinvented pieces of
    Biber's MD framework with self-selection added. A mapping section
    (rind regimes <-> MD dimensions; class map <-> register taxonomy) would
-   let reviewers locate SUICA in a 40-year literature instead of treating
+   let reviewers locate GRAIN in a 40-year literature instead of treating
    the rind model as ad hoc.
 3. **Lexicon construction.** The 7-11-word lexicons are ad hoc where LIWC
    categories went through psychometric development (OP-19 already tracks

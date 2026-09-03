@@ -1,4 +1,4 @@
-# SUICA M4-X — the expression-response line (Where × What, What × When on metadata)
+# GRAIN M4-X — the expression-response line (Where × What, What × When on metadata)
 
 Opened 2026-08-19, after the R-line's full close. The 4W empirical state
 (`SUICA_4W_EMPIRICAL_STATE.md`) records crossings #2 (Where × What,

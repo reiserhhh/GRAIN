@@ -1,15 +1,16 @@
 cff-version: 1.2.0
-title: "Sliced Utterance In-Context Assessment (SUICA)"
+title: "GRAIN: Group-Referenced Analysis of Individual Natural-Language Expression"
 message: "If you use this method or code, please cite it."
 type: software
 authors:
   - family-names: "HUO"
     given-names: "Kean"
-version: 0.2.0
-date-released: 2026-07-15
+version: 1.1.0
+date-released: 2026-09-03
 abstract: >
-  A technical foundation for operator-indexed, reference-relative text
-  geometry. Version 0.2.0 freezes the V7 mathematical object, refusal rules,
-  portable aggregate evidence, and future empirical gates without claiming
-  named personality factors, reliability, clinical validity, or universal
-  cross-domain coordinates.
+  A group-referenced analysis method for constructing multiscale individual
+  language-texture objects from natural-language behavior. GRAIN integrates
+  condition selection, conditional expression, temporal paths, interaction,
+  reference-relative geometry, uncertainty, and inference-level safeguards
+  without claiming a finished scale, diagnosis, or validated personality
+  taxonomy.

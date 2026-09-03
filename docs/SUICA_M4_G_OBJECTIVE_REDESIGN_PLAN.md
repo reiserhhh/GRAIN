@@ -1,4 +1,4 @@
-# SUICA M4-G — Objective Redesign Line: registrations and outcomes
+# GRAIN M4-G — Objective Redesign Line: registrations and outcomes
 
 Opened 2026-08-03, immediately after the M4-F panel design line closed
 (`docs/SUICA_M4_F_PANEL_DESIGN_SYNTHESIS.md`). This document holds every

@@ -1,21 +1,31 @@
-# SUICA Unified Theory System V8
+# GRAIN Unified Theory System V8
 
 Status: **canonical theory integration, 2026-08-01**
 
-This document is the shortest authoritative path through the current SUICA
+This document is the shortest authoritative path through the current GRAIN
 theory. Detailed protocols and reports remain the evidence record; when an old
 headline conflicts with this document, the claims ledger, or the
 [Cross-Level Inference Contract](SUICA_CROSS_LEVEL_INFERENCE_CONTRACT.md), the
 narrower audited claim controls.
 
-## 1. What SUICA is
+## 1. What GRAIN is
 
-SUICA is a foundational methodology for developing future natural-language
+GRAIN (Group-Referenced Analysis of Individual Natural-Language Expression) is
+a foundational analysis method for developing future natural-language
 measurement systems. It specifies how text may be converted into reproducible,
 reference-relative, condition-aware technical objects and how those objects
 may later be connected to psychological constructs.
 
-SUICA is not:
+Its central technical object is **individual language texture**: the
+multiscale organization of a person's local language events relative to a
+declared population, opportunity distribution, observation operator, and
+calibration version. A sentence or embedding is not itself a texture. Texture
+appears in the reproducible arrangement of distributions, orientations,
+condition choices, conditional responses, interactions, and paths across
+multiple observations. The binding terminology and compatibility boundary are
+defined in [GRAIN_NAMING_MIGRATION.md](GRAIN_NAMING_MIGRATION.md).
+
+GRAIN is not:
 
 - a finished scale or personality test;
 - a universal set of named factors;
@@ -32,7 +42,7 @@ replace it.
 
 ## 2. Type system
 
-SUICA forbids silent conversion between the following types:
+GRAIN forbids silent conversion between the following types:
 
 \[
 (\mathcal H,F)
@@ -256,7 +266,7 @@ The sequence
 is a family of coarse-graining maps. Averaging can preserve position while
 destroying order, transitions, hysteresis, and coupling. Conversely, very fine
 resolution may be dominated by technical variation and insufficient
-opportunity. SUICA therefore treats resolution as a filtration and asks which
+opportunity. GRAIN therefore treats resolution as a filtration and asks which
 properties persist across scales.
 
 This is different from the relation lift in Section 6: coarse graining changes
@@ -344,7 +354,7 @@ threshold tuning is licensed on these outcomes.
 
 ## 10. LLM role
 
-Stable scoring must remain a deterministic, versioned SUICA path. An LLM may:
+Stable scoring must remain a deterministic, versioned GRAIN path. An LLM may:
 
 - assist construct discovery and blind coding;
 - translate frozen technical evidence into human-readable explanations;
@@ -415,15 +425,15 @@ rules or design constraints.
 
 ### Explicitly not claimed
 
-- SUICA is a clinical instrument, diagnostic system, or finished scale.
-- Big Five or MBTI correlations validate the full SUICA ontology.
+- GRAIN is a clinical instrument, diagnostic system, or finished scale.
+- Big Five or MBTI correlations validate the full GRAIN ontology.
 - Same-author retrieval is personality validity.
 - Synthetic identifiability establishes human prevalence.
 - Cross-language embedding compatibility removes cultural bias.
 
 ## 13. Building a future study-specific measurement system
 
-SUICA supplies a development method, not a ready item bank. A future study must:
+GRAIN supplies a development method, not a ready item bank. A future study must:
 
 1. Define the intended construct and decision use before collecting outcomes.
 2. Declare population, language/culture, setting, interlocutor, prompt,
@@ -444,8 +454,8 @@ SUICA supplies a development method, not a ready item bank. A future study must:
 10. Publish the refusal domain and calibration provenance with every score.
 
 This procedure can later produce many topic- or setting-specific natural
-language measures. Those instruments are applications built under SUICA, not
-SUICA itself.
+language measures. Those instruments are applications built under GRAIN, not
+GRAIN itself.
 
 ## 14. Evidence governance
 
@@ -466,7 +476,7 @@ tests, and concise reports belong in version control.
 
 ## 15. Current theory boundary
 
-SUICA V8 now has a coherent typed chain:
+GRAIN V8 now has a coherent typed chain:
 
 \[
 \mathcal N_u^\ast

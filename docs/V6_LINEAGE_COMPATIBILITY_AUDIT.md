@@ -1,7 +1,7 @@
-# SUICA V6 Lineage Compatibility Audit: Frozen Protocol
+# GRAIN V6 Lineage Compatibility Audit: Frozen Protocol
 ## Purpose
 
-This is not a contest between SUICA versions. It asks whether three distinct
+This is not a contest between GRAIN versions. It asks whether three distinct
 objects that were easy to conflate remain distinguishable under V6 safeguards:
 
 \[

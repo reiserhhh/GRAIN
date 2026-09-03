@@ -4,7 +4,7 @@ Status: `PROSPECTIVE_SYNTHETIC_PROTOCOL__NO_HUMAN_LABELS`
 
 ## 1. Question
 
-SUICA V8 must not be represented as one chain ending in a questionnaire
+GRAIN V8 must not be represented as one chain ending in a questionnaire
 score. The object is a typed graph:
 
 \[
@@ -208,5 +208,5 @@ contexts.
 The mathematical alignment is with Blackwell comparison of experiments,
 information bottleneck/data processing, canonical relation analysis, and the
 ecological-correlation warning. These precedents justify the restrictions;
-the SUICA contribution is their combination in one evidence-carrying
+the GRAIN contribution is their combination in one evidence-carrying
 natural-language measurement graph.

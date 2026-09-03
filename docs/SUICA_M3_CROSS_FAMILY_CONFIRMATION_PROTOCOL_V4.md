@@ -1,4 +1,4 @@
-# SUICA M3-V4 Cross-Family Confirmation Protocol
+# GRAIN M3-V4 Cross-Family Confirmation Protocol
 
 Status: **M3_CROSS_FAMILY_V4_READY_FOR_CLEAN_SEAL; formal confirmation not
 sealed**

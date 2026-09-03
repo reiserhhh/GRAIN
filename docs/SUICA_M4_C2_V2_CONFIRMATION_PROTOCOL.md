@@ -1,4 +1,4 @@
-# SUICA M4-C.2 V2 Confirmation Protocol
+# GRAIN M4-C.2 V2 Confirmation Protocol
 
 ## Status
 

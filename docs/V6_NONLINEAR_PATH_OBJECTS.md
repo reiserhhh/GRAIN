@@ -205,7 +205,7 @@ Permitted now:
 
 Not permitted now:
 
-- "SUICA discovered a dynamic personality dimension."
+- "GRAIN discovered a dynamic personality dimension."
 - "The residual is a stable author dynamics parameter."
 - Any individual score, clinical interpretation, or cross-language transport claim.
 

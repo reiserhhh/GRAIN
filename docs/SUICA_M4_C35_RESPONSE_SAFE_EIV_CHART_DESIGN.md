@@ -1,4 +1,4 @@
-# SUICA M4-C.3.5 Response-Safe Cross-View EIV Chart Design
+# GRAIN M4-C.3.5 Response-Safe Cross-View EIV Chart Design
 
 ## Status
 

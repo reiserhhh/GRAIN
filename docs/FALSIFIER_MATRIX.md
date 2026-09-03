@@ -1,4 +1,4 @@
-# SUICA Falsifier Matrix v1 — no-lock theory falsification program
+# GRAIN Falsifier Matrix v1 — no-lock theory falsification program
 
 Created: 2026-07-07. Purpose: enumerate every proposition the theory commits
 to, and for each one name the falsifier that could kill it WITHOUT spending

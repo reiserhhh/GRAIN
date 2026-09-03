@@ -1,4 +1,4 @@
-# SUICA M4-S — The Selection Line
+# GRAIN M4-S — The Selection Line
 
 Line opened 2026-08-16, by the owner's direction: pursue the
 selection conjecture on BOTH synthetic and real data. The

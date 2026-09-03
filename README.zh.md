@@ -1,30 +1,36 @@
-# Sliced Utterance In-Context Assessment (SUICA)
+# GRAIN：个体语言纹理分析法
+
+**Group-Referenced Analysis of Individual Natural-Language Expression**<br>
+**基于群体参照的个体自然语言表达分析法**
 
 [English](README.md) | [日本語](README.ja.md) | **简体中文**
 
-SUICA 是一套面向文本测量研究的基础方法论:把一个人自发写下的文字视为
-大量在自然语境中测得的小型行为观察("切片话语",sliced utterances),
-并在其上构建可审计、随观测算子与参照群体相对化的技术对象。SUICA 本身
-不是量表,也不要求现有语料成为量表;未来的文本测评只有在补齐其自身的
-构念、人群、效度与用途证据之后,才可以建立在这一地基之上。
+GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然语言事件看成在
+多种粒度上被观察的局部“颗粒”，并在明确参照群体下分析这些颗粒可复现的
+分布、方向、条件响应与路径结构；它们组织起来的多尺度模式，就是个体的
+**语言纹理**。GRAIN 本身不是量表，也不要求现有语料成为量表。未来的文本
+测评只有在补齐自身的构念、人群、效度与用途证据后，才能建立在这一基础上。
 
-*Suica(スイカ)在日语中意为"西瓜":本方法核心的"瓜皮模型"主张,话题/
-情境不是需要剥除的噪声,而是通过自我选择承载个人信号的"瓜皮"——本项目
-首先证伪了这一主张的朴素形式(统计上的条件中心化会摧毁信号),随后将其
-重建为设计原则(通过设计控制语境;把选择本身作为一个通道来测量)。*
+早期的西瓜与瓜皮模型仍作为方法发展史保留：话题和情境不是应被直接剥除的
+包装，因为条件选择与条件内反应也可能承载个人信息。GRAIN 将这一发现扩展
+为不依赖单一切片隐喻的通用分析法。参见[名称迁移与兼容规则](docs/GRAIN_NAMING_MIGRATION.md)。
+公开迁移范围记录于 [v1.1.0 发布说明](docs/RELEASE_NOTES_V110.md)。
 
 ## 理论论文稿（2026-09-01）
 
-已将完成的框架整理为不预设投稿期刊的理论与方法论文，并分别提供
-[英文](docs/paper/SUICA_THEORY_MANUSCRIPT_EN_V1.md)、
-[日文](docs/paper/SUICA_THEORY_MANUSCRIPT_JA_V1.md)和
-[中文](docs/paper/SUICA_THEORY_MANUSCRIPT_ZH_V1.md)版本。
-[三语对照表](docs/paper/SUICA_THEORY_MANUSCRIPT_CROSSWALK.md)固定了章节、
-公式、专业术语和主张边界。三版均不声称 SUICA 已经是完成效度验证的量表或
-临床工具。[证据来源表](docs/paper/SUICA_THEORY_EVIDENCE_PROVENANCE.md)
+已将完成的理论体系整理为不预设投稿期刊的理论与方法论文，并分别提供
+[英文](docs/paper/GRAIN_THEORY_MANUSCRIPT_EN_V1.md)、
+[日文](docs/paper/GRAIN_THEORY_MANUSCRIPT_JA_V1.md)和
+[中文](docs/paper/GRAIN_THEORY_MANUSCRIPT_ZH_V1.md)版本。
+[三语对照表](docs/paper/GRAIN_THEORY_MANUSCRIPT_CROSSWALK.md)固定了章节、
+公式、专业术语和主张边界。三版均不声称 GRAIN 已经是完成效度验证的量表或
+临床工具。[证据来源表](docs/paper/GRAIN_THEORY_EVIDENCE_PROVENANCE.md)
 逐项记录主要数值与仓库内原始分析报告的对应关系。
 
-## 最新封存发布包含的内容 (v0.2.1)
+## 旧名称时期的封存发布 (v0.2.1)
+
+v0.2.1 及其中的标识符是在旧名称下封存的历史证据，因此保持不变；其科学
+含义统一由当前 GRAIN 理论解释。
 
 - **V7 技术核心** — 由观测算子与参照群体索引的相对文本几何、冻结几何
   bundle、拒绝规则、多视图校准、不确定性协议与未来数据闸门。最高受支持
@@ -51,8 +57,9 @@ SUICA 是一套面向文本测量研究的基础方法论:把一个人自发写�
   **正文**已在 2026-07-29..30 的 V8 真实文本实验中被完整读取,不再是
   "正文未接触"的保留集 — 见 `docs/V8_PUSH_REMEDIATION_20260803.md`
   第 2 项)。
-- **代码** — `suica_core/` + `suica_sim/` + `scripts/` + `tests/`。
-  无需受限语料即可验证 v0.2.1 锁箱。
+- **代码** — 新代码使用 `grain_core/` 与 `grain_sim/`；`suica_core/`、
+  `suica_sim/` 和 `run_suica_*` 仅作为冻结实验的兼容标识保留。无需受限
+  语料即可验证 v0.2.1 锁箱。
 
 ## 封存发布之后 main 的现状 (2026-08-03)
 
@@ -95,9 +102,9 @@ main 在三个层面向前推进:
 pip install -r requirements.txt
 python -m pytest -q tests/test_suica.py          # 39 个通过
 python -m pytest -q -p no:cacheprovider          # 970 个通过 (2026-08-03; v0.2.1 标签树为 318)
-python scripts/verify_suica_v021_lockbox.py       # 便携式 v0.2.1 封存校验
-python scripts/run_suica_synthetic_ground_truth_v2.py   # P0:估计器
-python scripts/run_suica_p0b_thin_cell_regime_v3.py     # P0-B:薄单元
+python scripts/verify_grain_v021_lockbox.py       # 便携式 v0.2.1 封存校验
+python scripts/run_grain_synthetic_ground_truth_v2.py   # P0:估计器
+python scripts/run_grain_p0b_thin_cell_regime_v3.py     # P0-B:薄单元
 ```
 
 这些合成装置在不使用任何真实数据的情况下,以植入真值验证整个估计层。

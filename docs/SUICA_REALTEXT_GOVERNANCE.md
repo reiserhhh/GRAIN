@@ -1,4 +1,4 @@
-# SUICA Real-Text Governance Rule (D4)
+# GRAIN Real-Text Governance Rule (D4)
 
 Status: **NORMATIVE, append-only** (changes by dated note only).
 Written 2026-08-10 as defense leg D4, operationalizing IDT §8's ethics

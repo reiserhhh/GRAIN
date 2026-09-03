@@ -1,4 +1,4 @@
-# SUICA M4-F — The Panel Design Line, Closed
+# GRAIN M4-F — The Panel Design Line, Closed
 
 Status: **line closed 2026-08-03**, eight registered legs (M4-F1..M4-F9,
 counting the voided M4-F8). Tier: EXPLORATORY, label-free,

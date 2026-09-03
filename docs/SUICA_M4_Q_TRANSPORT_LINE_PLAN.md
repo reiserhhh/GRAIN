@@ -1,4 +1,4 @@
-# SUICA M4-Q — The Transport Line
+# GRAIN M4-Q — The Transport Line
 
 Line opened 2026-08-14, on the P-line's close. Question: **what
 survives frame refreshment?** The P-line proved the deployed

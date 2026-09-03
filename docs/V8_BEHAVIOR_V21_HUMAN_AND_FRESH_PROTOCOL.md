@@ -53,7 +53,7 @@ The existing 576 segments are reused without new model calls:
   cannot estimate natural prevalence or headline accuracy.
 
 Two coders work independently. They cannot see author, half, subreddit,
-model prediction, SUICA score, personality labels, or psychological
+model prediction, GRAIN score, personality labels, or psychological
 interpretations. A third adjudicator reviews every coding/evidence
 disagreement and a deterministic 10% sample of agreements.
 

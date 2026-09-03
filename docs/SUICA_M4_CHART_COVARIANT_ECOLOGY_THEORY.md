@@ -1,4 +1,4 @@
-# SUICA M4-C.2 Chart-Covariant Opportunity Ecology
+# GRAIN M4-C.2 Chart-Covariant Opportunity Ecology
 
 Date: 2026-07-31  
 Status: V2 frozen `M4_C2_NO_GO_CHART_TRANSPORT`; V1 development NO-GO

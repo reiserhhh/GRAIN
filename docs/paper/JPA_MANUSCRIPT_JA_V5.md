@@ -4,7 +4,7 @@
      Study 1(Method/Results: 開発)、Study 2(Method/Results: 封印検定)、
      探索的ベンチマーク節、総合考察。Method に再現可能性の全詳細
      (トークナイザ・スライサー・リーク遮蔽・クラス写像・適格性・検定力・
-     ソフトウェア版数)。表1〜4実体化。英語版 SUICA_JPA_MANUSCRIPT_V5.md 対応。
+     ソフトウェア版数)。表1〜4実体化。英語版 JPA_MANUSCRIPT_V5.md 対応。
      v5.6 (2026-07-11): 因子流動性予想 (F10) + 3装置(時間/文中位置/
      個人軸)。探索小節を拡張・改題、A.7(iv) 追加。予測は実行前に登録・
      コミット済み(親リポジトリ 60ce99c)。
@@ -15,7 +15,7 @@
      で事前登録): 形は構成概念ごと — 一人称は真の流動(単調)、緊張/
      指示は境界マイクロレジスタ、文体クラスタ2つは中間陥没。 -->
 
-# 選ばれた状況の中の行動としてのテキスト: Sliced Utterance In-Context Assessment(SUICA)の理論・開発・事前登録による最初の検定
+# 選ばれた状況の中の行動としてのテキスト: Group-Referenced Analysis of Individual Natural-Language Expression (GRAIN)の理論・開発・事前登録による最初の検定
 
 ## 要旨
 
@@ -25,8 +25,8 @@
 と論じる。書き手は文脈を自ら選び、その選択自体が一貫した、パーソナ
 リティを表現する行動だからである。蓄積テキストを選ばれた状況の上に
 分布した行動として読み、三チャネル——文脈選択・文脈不変のスタイル
-基底・人物×文脈シグネチャ——で測定する枠組みを立て、SUICA(Sliced
-Utterance In-Context Assessment)として操作化する。研究1(PANDORA、
+基底・人物×文脈シグネチャ——で測定する分析法を立て、GRAIN
+(Group-Referenced Analysis of Individual Natural-Language Expression)として操作化する。研究1(PANDORA、
 Reddit コメント1,760万件、n = 3,183)では、文脈平均の除去が全スタイル
 測度で分離機会安定性を下げ(Δ = −.09)、純度基準は十九構成概念中
 四つだけを特性候補として入場させた——四つとも形式の習慣である。
@@ -956,7 +956,7 @@ Gr(k, p) 上の一点——が標本雑音の範囲で t に依らず一定」�
 ---
 
 *Open Practices・Declarations・参考文献(全39点)は英語版
-SUICA_JPA_MANUSCRIPT_V5.md を参照(内容は同一)。表1〜4は本文中に
+JPA_MANUSCRIPT_V5.md を参照(内容は同一)。表1〜4は本文中に
 実体化済み。付録Aは v4.1 と同一。一次記録: 開封 =
 results/suica_lockbox_opening_1/、適合勾配 =
 results/suica_expl_fit_gradient/(台帳 EXPL-1・EXPL-1b 行)。*

@@ -8,10 +8,10 @@ replace the sealed V3.7F result.
 
 ## 1. Theory upgrade
 
-V3.7A-F no longer support a deletion-oriented definition of SUICA. The
+V3.7A-F no longer support a deletion-oriented definition of GRAIN. The
 appropriate candidate definition is:
 
-> SUICA is a reference-conditioned, resolution-indexed,
+> GRAIN is a reference-conditioned, resolution-indexed,
 > information-conserving measurement process for author-relative response
 > structure.
 
@@ -28,7 +28,7 @@ G_u(c)
 \mathbb E_{U\sim P_0}[\phi(X)\mid c].
 \]
 
-At event budget \(m\), SUICA returns a score and its uncertainty:
+At event budget \(m\), GRAIN returns a score and its uncertainty:
 
 \[
 \mathcal M_u(m)
@@ -100,7 +100,7 @@ budget-specific event moment \(N_m\) directly; it does not estimate a
 budget-invariant \(\Sigma_E\) and then multiply the reliability ratio by
 \(m\) a second time.
 
-Because SUICA scores displacement from an external reference origin
+Because GRAIN scores displacement from an external reference origin
 \(\widehat\mu_0\), the stable object is an external-origin second moment,
 not a covariance centered on the calibration sample:
 
@@ -594,7 +594,7 @@ fresh-seed prospective confirmation passes.
 
 If one procedure cannot be noninferior in exact-rank worlds while improving
 dense worlds, a universal information-conserving estimator is rejected.
-SUICA must then use an observable spectrum-shape gate to select hard, soft,
+GRAIN must then use an observable spectrum-shape gate to select hard, soft,
 or `UNRESOLVED`, rather than hide the incompatibility in one default model.
 
 ## 10. Subsequent experiments
@@ -629,7 +629,7 @@ The theory candidate can be summarized as:
 
 \[
 \boxed{
-\mathrm{SUICA}
+\mathrm{GRAIN}
 =
 \text{an externally normed, resolution-indexed,
 information-conserving author-response measurement process}

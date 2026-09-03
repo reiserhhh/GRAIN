@@ -1,4 +1,4 @@
-# SUICA Cross-Level Inference Contract
+# GRAIN Cross-Level Inference Contract
 
 Status: `CANONICAL_SCOPE_CONTRACT__TEMPORAL_AUDIT_COMPLETE`
 
@@ -198,7 +198,7 @@ earlier gate.
 | G4 Construct connection | Does the technical object connect to an external psychological or behavioral instrument? | frozen label join on held-out or controlled data | X3 primary coupling not detected; exploratory cells unconfirmed |
 | G5 Person applicability | Is an individual reading calibrated, stable, fair, and decision-valid? | prospective repeated-person and use-specific validation | not licensed |
 
-This gate order preserves SUICA's personality-interpreter objective. Metadata
+This gate order preserves GRAIN's personality-interpreter objective. Metadata
 and text geometry can be strong technical objects without yet being named
 personality constructs.
 
@@ -383,7 +383,7 @@ the within-slope temporal class.
 Full aggregate evidence:
 `reports/SUICA_M4_X5_TEMPORAL_TRANSPORT_AUDIT.md`.
 
-## 10. Consequence for future SUICA theory
+## 10. Consequence for future GRAIN theory
 
 The three-series system remains a useful methodological contribution, but its
 canonical output is now typed:

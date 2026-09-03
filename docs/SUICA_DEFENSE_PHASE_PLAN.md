@@ -1,4 +1,4 @@
-# SUICA Defense Phase — Plan (registrations and outcomes)
+# GRAIN Defense Phase — Plan (registrations and outcomes)
 
 Phase opened per the charter (`docs/SUICA_DEFENSE_PHASE_CHARTER.md`);
 resumed 2026-08-10 after the M4-L line closed. All standing rules 1–21

@@ -1,4 +1,4 @@
-"""Consistency checks for the trilingual SUICA theory manuscript."""
+"""Consistency checks for the trilingual GRAIN theory manuscript."""
 
 from __future__ import annotations
 
@@ -9,11 +9,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PAPER_DIR = ROOT / "docs" / "paper"
 FILES = {
-    "EN": PAPER_DIR / "SUICA_THEORY_MANUSCRIPT_EN_V1.md",
-    "JA": PAPER_DIR / "SUICA_THEORY_MANUSCRIPT_JA_V1.md",
-    "ZH": PAPER_DIR / "SUICA_THEORY_MANUSCRIPT_ZH_V1.md",
+    "EN": PAPER_DIR / "GRAIN_THEORY_MANUSCRIPT_EN_V1.md",
+    "JA": PAPER_DIR / "GRAIN_THEORY_MANUSCRIPT_JA_V1.md",
+    "ZH": PAPER_DIR / "GRAIN_THEORY_MANUSCRIPT_ZH_V1.md",
 }
-PROVENANCE = PAPER_DIR / "SUICA_THEORY_EVIDENCE_PROVENANCE.md"
+PROVENANCE = PAPER_DIR / "GRAIN_THEORY_EVIDENCE_PROVENANCE.md"
 EXPECTED_EQUATIONS = [str(i) for i in range(1, 16)]
 KEY_NUMERIC_CLAIMS = (
     "10,296",
@@ -85,7 +85,7 @@ def test_internal_development_metaphors_do_not_reenter_manuscript() -> None:
 
 def test_evidence_provenance_is_linked_and_sources_exist() -> None:
     for language in FILES:
-        assert "SUICA_THEORY_EVIDENCE_PROVENANCE.md" in _read(language)
+        assert "GRAIN_THEORY_EVIDENCE_PROVENANCE.md" in _read(language)
 
     source_paths = re.findall(r"`((?:reports|docs)/[^`]+\.md)`", PROVENANCE.read_text())
     assert source_paths

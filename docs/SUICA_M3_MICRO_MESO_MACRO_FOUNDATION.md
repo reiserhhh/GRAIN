@@ -1,4 +1,4 @@
-# SUICA M3 Micro-Meso-Macro Foundation
+# GRAIN M3 Micro-Meso-Macro Foundation
 
 Status: prospective mathematical contract, not sealed and not a psychological
 claim.
@@ -12,7 +12,7 @@ closure requirements.
 
 ## 1. Purpose
 
-SUICA currently mixes three kinds of objects:
+GRAIN currently mixes three kinds of objects:
 
 1. author-process objects such as choice, stable position, and conditional
    response;

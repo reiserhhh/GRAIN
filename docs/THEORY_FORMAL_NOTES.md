@@ -1,4 +1,4 @@
-# SUICA Theory Formal Notes v1 — derivations, biases, boundary conditions
+# GRAIN Theory Formal Notes v1 — derivations, biases, boundary conditions
 
 Created: 2026-07-07 (no-lock falsification program; FALSIFIER_MATRIX rows
 T4/T6/T9). Model: for author u, slice i, venue r(i):

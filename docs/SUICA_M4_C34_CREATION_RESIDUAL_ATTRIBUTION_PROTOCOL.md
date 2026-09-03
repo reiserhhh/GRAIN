@@ -1,4 +1,4 @@
-# SUICA M4-C.3.4 Creation Residual Attribution Protocol
+# GRAIN M4-C.3.4 Creation Residual Attribution Protocol
 
 ## Status
 

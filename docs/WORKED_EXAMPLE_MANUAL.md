@@ -1,7 +1,7 @@
-# SUICA Worked-Example Manual v1 — Building the Instrument on PANDORA
+# GRAIN Worked-Example Manual v1 — Building the Instrument on PANDORA
 
 Created: 2026-07-06. Role: paper Section 2 — the existence proof. Section 1
-(the method) says what SUICA is; this manual shows one complete, audited
+(the method) says what GRAIN is; this manual shows one complete, audited
 construction on a real corpus, with every number traceable to a script and a
 ledger row. Companion docs: THEORY (rind model), RULEBOOK (fixation rules),
 AI_ANALYST_GUIDE (operating standard), CLAIMS_LEDGER (audit trail),

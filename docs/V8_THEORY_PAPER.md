@@ -1,4 +1,4 @@
-# SUICA V8: A Typed, Refusal-First Foundation for Text-Based Measurement
+# GRAIN V8: A Typed, Refusal-First Foundation for Text-Based Measurement
 
 **Status: DRAFT (2026-08-03) — internal paper draft, not submitted.**
 Claim tiers in this draft are bound by `docs/CLAIMS_LEDGER.md`; where wording
@@ -12,10 +12,13 @@ pass is queued work.
 Text produced spontaneously by a person is an attractive measurement medium
 and a treacherous one: the same corpus supports author identification,
 stylistics, and topic inference, and it is easy to relabel any of these as
-"personality assessment". SUICA (Sliced Utterance In-Context Assessment) is a
-foundational methodology that treats a person's writing as many small
-behavioral observations measured inside their naturally occurring contexts,
-and specifies — as a typed chain with machine-enforced refusals — what may be
+"personality assessment". GRAIN (Group-Referenced Analysis of Individual Natural-Language Expression) is a
+foundational analysis method that treats a person's writing as many small
+behavioral observations measured inside their naturally occurring contexts.
+Their reproducible multiscale organization is the person's **language
+texture**: distributions, orientations, condition choices, conditional
+responses, interactions, and paths defined relative to an explicit reference
+frame. GRAIN specifies — as a typed chain with machine-enforced refusals — what may be
 constructed from them and what may not. Its central design commitment is that
 topic and situation are not noise to strip away but the "rind" that carries
 person signal through self-selection; its central epistemic commitment is
@@ -47,7 +50,7 @@ The failure modes are well known in outline — construct-irrelevant variance
 coordinates, post-hoc selection — but they are usually treated as caveats
 rather than as objects the measurement system itself must represent.
 
-SUICA starts from the opposite end. It is not a scale; it is a specification
+GRAIN starts from the opposite end. It is not a scale; it is a specification
 of the conversions that stand between a human process and a defensible
 assessment output, with each conversion typed, each type equipped with the
 evidence it requires, and each unlicensed shortcut turned into an explicit
@@ -76,7 +79,7 @@ conceptual positioning (§8), and limitations with open problems (§9).
 
 ## 2. The measurement chain and type system
 
-SUICA forbids silent conversion along the chain
+GRAIN forbids silent conversion along the chain
 
 (H,F) → B → X → Z → 𝔄^(τ) → 𝔐^(τ) → Θ^(τ) → D^(τ),  τ ∈ {V, R, P},
 
@@ -206,7 +209,7 @@ never promotes group-only structure to an individual claim. Second, the
 author-AUC deflator: in synthetic worlds with zero individual structure,
 author-identification AUC .864 is still attainable from shared machinery;
 author separability therefore cannot serve as personality validity, and no
-SUICA claim is allowed to lean on it.
+GRAIN claim is allowed to lean on it.
 
 ### 6.2 The typed R→V bridge and its operating curve
 
@@ -294,19 +297,19 @@ resource.
 
 ## 8. Conceptual positioning (reference pass pending)
 
-SUICA's spine is deliberately continuous with the classical measurement
+GRAIN's spine is deliberately continuous with the classical measurement
 tradition: the reference-relative score, the demand for
 generalizability-style decomposition before reuse, and minimum detectable
 difference requirements correspond to reliability/G-study discipline; the
 insistence that construct interpretation is a separate, later evidence layer
-is classical validity theory taken literally. What SUICA adds is
+is classical validity theory taken literally. What GRAIN adds is
 (i) types with enforcement — the V/R/P distinction and stage-wise refusals
 exist as raised exceptions, not prose; (ii) opportunity and self-selection as
 first-class measured channels rather than confounds; (iii) path/dynamics
 retained through the coarse-graining filtration instead of averaged away; and
 (iv) governance artifacts (ledger, seals, registered pivots) as part of the
 method's identity. Relative to the language-based assessment literature that
-optimizes prediction of questionnaire scores, SUICA inverts the default: it
+optimizes prediction of questionnaire scores, GRAIN inverts the default: it
 treats predictive correlation without construct, invariance, and use evidence
 as the *beginning* of an argument, and its own strongest real-text
 direct-prediction result is currently a null that it reports as such. A
@@ -334,7 +337,7 @@ first external version of this draft.
 
 ## 10. Conclusion
 
-SUICA V8 is a measurement foundation whose primary artifacts are a typed
+GRAIN V8 is a measurement foundation whose primary artifacts are a typed
 chain with enforceable refusals, an author object that separates what text
 pipelines habitually collapse, a mechanism hierarchy disciplined by synthetic
 ground truth, and a governance layer that makes the program's own failures —

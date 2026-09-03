@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit the registered SUICA V7 theoretical-closure evidence set."""
+"""Audit the registered GRAIN V7 theoretical-closure evidence set."""
 from __future__ import annotations
 
 import argparse
@@ -22,7 +22,7 @@ def _report(result: dict[str, object]) -> str:
         for row in evidence
     )
     return (
-        "# SUICA V7 Theory Closure Audit\n\n"
+        "# GRAIN V7 Theory Closure Audit\n\n"
         f"Status: {result['status']}\n\n"
         "## Evidence\n\n"
         "| Evidence | Corrected decision | Portable release snapshot |\n"

@@ -139,7 +139,7 @@ def main() -> None:
                                   for k, v in g.iterrows()}}
     out.to_csv(OUT_DIR / "p0b_thin_cell.csv", index=False)
     (OUT_DIR / "p0b_results.json").write_text(json.dumps(criteria, indent=2, default=float) + "\n")
-    REPORT.write_text("# SUICA P0-B Thin-Cell Estimator Regime (OP-10b)\n\n"
+    REPORT.write_text("# GRAIN P0-B Thin-Cell Estimator Regime (OP-10b)\n\n"
                       + out.round(4).to_markdown(index=False)
                       + "\n\n```json\n" + json.dumps(criteria, indent=2, default=float) + "\n```\n")
     print(json.dumps(criteria, indent=2, default=float))

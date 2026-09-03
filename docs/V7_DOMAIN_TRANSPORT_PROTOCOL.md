@@ -2,7 +2,7 @@
 
 ## Non-Negotiable Boundary
 
-SUICA V7 can transfer a procedure to a new corpus. It cannot transfer PANDORA
+GRAIN V7 can transfer a procedure to a new corpus. It cannot transfer PANDORA
 numerical coordinates, landmark vectors, reference norms, named factors, or
 psychological interpretations merely because both corpora were embedded. A
 different language, trading corpus, platform, tokenizer, runtime, operator or

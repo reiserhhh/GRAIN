@@ -2,7 +2,7 @@
 
 ## Boundary
 
-External labels may test a frozen SUICA object; they may never select its
+External labels may test a frozen GRAIN object; they may never select its
 operator, representation, rank, loading rotation, norm, score sign, or name.
 The first contact with labels follows a pre-written manifest and an untouched
 anchor cohort.

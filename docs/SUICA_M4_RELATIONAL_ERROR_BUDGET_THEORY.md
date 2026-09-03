@@ -1,4 +1,4 @@
-# SUICA M4-C.3.1 Relational Error Budget
+# GRAIN M4-C.3.1 Relational Error Budget
 
 Date: 2026-07-31  
 Status: frozen `M4_C31_GO_RELATIONAL_BUDGET`

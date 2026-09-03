@@ -1,5 +1,8 @@
 # SUICA Lockbox Opening #1 — PREREGISTRATION (SEALED)
 
+> Historical preregistration under the former project name. Its terminology
+> and identifiers remain part of the sealed record; the current method is GRAIN.
+
 Status: FINAL as of the v0.1.0 freeze. The lockbox is NOT opened; budget
 2/2 openings remain. The initial commit hash of the independent release
 repository is the seal for this document.

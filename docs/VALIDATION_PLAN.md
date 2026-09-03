@@ -1,11 +1,11 @@
-# SUICA Method Validation Plan v2
+# GRAIN Method Validation Plan v2
 
 Created: 2026-07-04
 Status: PROPOSED (from external review session 2026-07-04)
 
 ## 0. Purpose and framing
 
-Goal of this plan: establish whether the SUICA methodology is scientifically
+Goal of this plan: establish whether the GRAIN methodology is scientifically
 sound, **before** any real scale development or field experiment.
 
 "The methodology is correct" is not one provable statement. This plan
@@ -34,12 +34,12 @@ Key framing decisions:
 
 | ID | Claim (the u9061's thought, made testable) | Decisive test | Success criterion | On failure |
 |----|---|---|---|---|
-| P0 | The SUICA estimator chain (slice -> rate -> condition-center -> base/react/residual -> variance shares) is computationally correct | Synthetic corpora with planted person/condition/interaction effects + null worlds | Recovered variance shares within +-20% relative of planted; planted-vs-estimated base rank r >= 0.9; false-positive rate <= 5% on null worlds | Fix estimator (or replace ad-hoc G approximation with mixed model) before touching real data |
-| P1 | Author text carries stable person-level signal extractable by SUICA scores | Disjoint-text, time-gapped test-retest of base scores on Tier-U users (early vs late comment halves, >= 3-month gap) | Spearman-Brown-corrected r >= 0.60 for >= 3 constructs, 95% CI reported; median across constructs >= 0.50 | Constructs are too noisy at current text volumes; report required-text-volume curve instead of claiming traits |
+| P0 | The GRAIN estimator chain (slice -> rate -> condition-center -> base/react/residual -> variance shares) is computationally correct | Synthetic corpora with planted person/condition/interaction effects + null worlds | Recovered variance shares within +-20% relative of planted; planted-vs-estimated base rank r >= 0.9; false-positive rate <= 5% on null worlds | Fix estimator (or replace ad-hoc G approximation with mixed model) before touching real data |
+| P1 | Author text carries stable person-level signal extractable by GRAIN scores | Disjoint-text, time-gapped test-retest of base scores on Tier-U users (early vs late comment halves, >= 3-month gap) | Spearman-Brown-corrected r >= 0.60 for >= 3 constructs, 95% CI reported; median across constructs >= 0.50 | Constructs are too noisy at current text volumes; report required-text-volume curve instead of claiming traits |
 | P2a | Condition-fixed deviation (the MCD core idea) adds measurement value for **lexicon-rate constructs** | Paired comparison: base-score stability across disjoint condition sets, centered vs uncentered; pooled delta, cluster bootstrap | 95% CI of (centered - raw) stability delta > 0 | Centering is neutral for style-rate features (consistent with v2 G-theory 89/90 neutral cells); restrict the mechanism claim to P2b |
 | P2b | Condition-fixed deviation adds value for **content-coupled features** (region-occupancy / MCD-style node scores) | Same paired design on node-occupancy scores | Same criterion | The core mechanism claim is not supported as operationalized; publish the negative result and revise theory |
-| P3 | SUICA scores are not redundant with existing lexica (LIWC/Empath category space) | Regress each frozen SUICA base score on full Empath (+LIWC-like) category set, Tier-U | R^2 <= 0.75 for the majority of constructs | Reposition SUICA as "condition-normalized administration layer over existing lexica" (still publishable, different claim) |
-| P4 | base and react are separable: person x condition variance exists beyond sampling noise | Crossed random-effects decomposition (>= 5 real subreddit conditions per user); react-signature split-half across time halves within shared conditions | person x condition share CI excluding 0; react signature stability r >= 0.30 for >= 2 constructs | Drop the projective/CAPS branch from claims; SUICA is base-only until richer designs exist |
+| P3 | GRAIN scores are not redundant with existing lexica (LIWC/Empath category space) | Regress each frozen GRAIN base score on full Empath (+LIWC-like) category set, Tier-U | R^2 <= 0.75 for the majority of constructs | Reposition GRAIN as "condition-normalized administration layer over existing lexica" (still publishable, different claim) |
+| P4 | base and react are separable: person x condition variance exists beyond sampling noise | Crossed random-effects decomposition (>= 5 real subreddit conditions per user); react-signature split-half across time halves within shared conditions | person x condition share CI excluding 0; react signature stability r >= 0.30 for >= 2 constructs | Drop the projective/CAPS branch from claims; GRAIN is base-only until richer designs exist |
 | P5 | Frozen construct scores show preregistered directional external relations | <= 10 preregistered directional hypotheses, single lockbox opening, BH-FDR within the set | >= 50% of the set significant at q < 0.05, all significant effects in preregistered direction | External meaning unestablished; internal measurement claims (P0-P4) stand on their own |
 
 ## 2. Data tiers and contamination rules
@@ -78,7 +78,7 @@ Rules:
 
 ### Phase 1 - Estimator correctness on synthetic ground truth (P0)
 
-Build `scripts/run_suica_synthetic_ground_truth_v2.py`:
+Build `scripts/run_grain_synthetic_ground_truth_v2.py`:
 
 1. Generate synthetic authors: word-category base tendencies b_u (planted
    person effects), condition effects c_c, interactions g_uc, slice noise.
@@ -239,7 +239,7 @@ doc should cite them as such.
 
 - If P0 fails and cannot be fixed in two iterations: halt all real-data work;
   the problem is machinery, not psychology.
-- If P1 fails at all text volumes available: SUICA on PANDORA is
+- If P1 fails at all text volumes available: GRAIN on PANDORA is
   volume-limited; publish the reliability-vs-volume curve as the finding.
 - If both P2a and P2b fail on the honest design: the condition-fixed-deviation
   mechanism claim is retired in its current form. This outcome is a real

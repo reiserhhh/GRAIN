@@ -1,4 +1,4 @@
-# SUICA Comparison Licenses v1 — how far each score may be compared
+# GRAIN Comparison Licenses v1 — how far each score may be compared
 
 Created: 2026-07-07, in answer to the user's concern after PRED-4: "if tiny
 details can be determinants, cross-document comparison becomes impossible,
@@ -7,7 +7,7 @@ and even within-dataset cross-theme comparison feels unreliable."
 Position: the concern is half right and half overcorrection. What the
 evidence killed is UNIVERSAL comparability (levels and covariance geometry
 across regimes, and any covariate shortcut). What the evidence KEPT is a
-measured, graded ladder of valid comparisons. SUICA's answer to context
+measured, graded ladder of valid comparisons. GRAIN's answer to context
 dependence is not despair but a LICENSE SYSTEM: every score carries an
 explicit, evidence-priced statement of how far its comparisons reach.
 (No questionnaire states this; they implicitly claim the widest license
@@ -73,9 +73,9 @@ lower than" across regimes; permitted: "in the same direction as",
 
 ## Honest statement of the current limits
 
-Within-platform, SUICA comparisons are in reliability territory normal for
+Within-platform, GRAIN comparisons are in reliability territory normal for
 short psychological instruments (cross-theme flesh 0.17-0.37 uncorrected;
-within-register up to SB 0.86 at volume). Across platforms, SUICA today
+within-register up to SB 0.86 at volume). Across platforms, GRAIN today
 supports directional and rank-order claims only — which is exactly what it
 proved at T4. Level-comparable cross-regime measurement is not impossible
 in principle; it requires the within-person multi-regime design (OP-35),

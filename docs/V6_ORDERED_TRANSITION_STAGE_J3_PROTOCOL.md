@@ -1,4 +1,4 @@
-# SUICA V6 Ordered-Transition Stage J3: Protocol
+# GRAIN V6 Ordered-Transition Stage J3: Protocol
 
 ## Why J3 exists
 

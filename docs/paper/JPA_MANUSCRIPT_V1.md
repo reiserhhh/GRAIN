@@ -7,18 +7,18 @@
      Every number in this manuscript must trace to a CLAIMS_LEDGER row; the
      pre-submission round-12 audit re-verifies the full sweep. -->
 
-# Sliced Utterance In-Context Assessment (SUICA): A falsification-first framework for personality assessment from spontaneous language
+# Group-Referenced Analysis of Individual Natural-Language Expression (GRAIN): A falsification-first method for personality assessment from spontaneous language
 
 ## Abstract
 
 Personality assessment has long wanted one instrument to combine the
 standardization of self-report with the spontaneous behavioral richness of
-performance-based measures. We present SUICA, a framework that treats a
+performance-based measures. We present GRAIN, an analysis method that treats a
 person's everyday writing as a performance-based test with frozen,
 mechanical scoring: spontaneous text is sliced into many small utterances
 inside the contexts the person chose, and read through three channels —
 context choice, a context-invariant style base, and person-by-context
-signatures. The framework rests on a falsification: the field's default of
+signatures. The method rests on a falsification: the field's default of
 statistically removing topic/venue variance is shown, empirically and then
 algebraically, to DELETE person signal whenever contexts are self-selected
 (the removed retest covariance equals the choice-mediated share); context
@@ -95,7 +95,7 @@ et al., 2013). A person's accumulated everyday writing is, we argue, the
 performance sample the tradition was missing: abundant, ecologically
 produced, impossible to rehearse item-by-item — and, unlike a projective
 protocol, scorable by FROZEN mechanical rules whose every count can be
-audited. SUICA's founding ambition is exactly this synthesis: the
+audited. GRAIN's founding ambition is exactly this synthesis: the
 standardization of the questionnaire applied to the spontaneous behavior of
 the performance tradition. Frameworks are cheap, however; what we
 principally offer the assessment community is the validation machinery that

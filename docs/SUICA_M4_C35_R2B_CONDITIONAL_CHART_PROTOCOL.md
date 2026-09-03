@@ -1,4 +1,4 @@
-# SUICA M4-C.3.5-R2B Conditional Response-Safe Chart Protocol
+# GRAIN M4-C.3.5-R2B Conditional Response-Safe Chart Protocol
 
 ## Status
 

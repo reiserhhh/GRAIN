@@ -1,4 +1,4 @@
-# SUICA V6 Lineage Token-Slice Compatibility: Frozen Protocol
+# GRAIN V6 Lineage Token-Slice Compatibility: Frozen Protocol
 
 ## Why this second audit exists
 

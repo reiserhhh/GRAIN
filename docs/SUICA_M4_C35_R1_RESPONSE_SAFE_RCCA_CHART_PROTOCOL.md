@@ -1,4 +1,4 @@
-# SUICA M4-C.3.5-R1 Response-Safe RCCA Chart Protocol
+# GRAIN M4-C.3.5-R1 Response-Safe RCCA Chart Protocol
 
 ## Status
 

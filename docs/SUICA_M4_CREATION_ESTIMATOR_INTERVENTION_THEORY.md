@@ -1,4 +1,4 @@
-# SUICA M4-C.3.2 Creation-Estimator Intervention
+# GRAIN M4-C.3.2 Creation-Estimator Intervention
 
 ## 1. Question
 

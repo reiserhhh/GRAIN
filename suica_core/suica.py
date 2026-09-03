@@ -1,4 +1,4 @@
-"""SUICA: Sliced Utterance In-Context Assessment.
+"""Legacy implementation module for the GRAIN analysis method.
 
 Core slicing/scoring utilities for turning free-form author text into
 comparable text-behavior coordinates (sliced utterances measured in their

@@ -1,4 +1,4 @@
-# SUICA V8 Interpreter Stability Experiment
+# GRAIN V8 Interpreter Stability Experiment
 
 Status: `EXECUTED__PLANTED_PASS__PANDORA_RENDERER_ONLY`
 
@@ -19,7 +19,7 @@ corrections before the primary real-text gate:
   left and right halves before they can become registered links;
 - dense real-text profiles are deterministically limited to eight candidates,
   matching the frozen output schema, ranked by observed support density,
-  SUICA support clarity, discovery association strength, and stable ID;
+  GRAIN support clarity, discovery association strength, and stable ID;
 - the critic uses a literal pass/qualify/reject rubric and may not invent
   hypothetical counterevidence or state-trait concerns;
 - targeted event deletion treats every atom sharing that event code as
@@ -29,15 +29,15 @@ corrections before the primary real-text gate:
   and same-author comparisons use strangers matched first on hashed condition
   overlap and then text volume.
 
-These amendments do not alter SUICA scores, prompts, event codes, reference
+These amendments do not alter GRAIN scores, prompts, event codes, reference
 bands, or planted API outputs. The formal planted run is recomputed from its
 frozen cache under the corrected summary rules before PANDORA starts.
 
 ## Objective
 
-Test whether an LLM can repeatedly translate frozen SUICA measurements and
+Test whether an LLM can repeatedly translate frozen GRAIN measurements and
 source-bound behavior observations into stable, evidence-constrained
-interpretations. SUICA remains the sole scoring channel. The LLM is not
+interpretations. GRAIN remains the sole scoring channel. The LLM is not
 licensed to create person-level scores, personality types, diagnoses, or
 construct names.
 
@@ -45,7 +45,7 @@ construct names.
 
 1. The behavior observer reads raw, deidentified segments only and emits
    discrete event codes with exact span provenance.
-2. SUICA produces anonymous reference-relative dimensions, support status,
+2. GRAIN produces anonymous reference-relative dimensions, support status,
    and uncertainty without LLM modification.
 3. Discovery data register dimension-to-event links. Calibration may compare
    at most two semantically equivalent interpreter prompts. Confirmation data
@@ -61,7 +61,7 @@ construct names.
 - `E1`: five repeated full-pipeline runs on identical input.
 - `E2`: source-disjoint halves from the same author versus nuisance-matched
   strangers.
-- `E3`: agreement as a function of frozen SUICA neighborhood distance.
+- `E3`: agreement as a function of frozen GRAIN neighborhood distance.
 - `E4`: irrelevant formatting and metadata perturbations.
 - `E5`: targeted key-evidence removal versus random evidence removal.
 

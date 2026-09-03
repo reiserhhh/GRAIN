@@ -1,4 +1,4 @@
-# SUICA M4-U — the When line (order, path, and slow time)
+# GRAIN M4-U — the When line (order, path, and slow time)
 
 Opened 2026-08-18 by the planner, directly continuing the owner's 4W program
 (`docs/SUICA_4W_PERSON_INTERPRETER_THEORY.md`) after the T-line measurement
@@ -785,7 +785,7 @@ precision note, repeated).
 
 ### Theory reading
 
-**The first slow-time measurement in SUICA, and it is neither a fixed point
+**The first slow-time measurement in GRAIN, and it is neither a fixed point
 nor a random walk.** U1 found the fast-time channel dwell-dominated; U2 finds
 the slow-time marginal decaying to a large but non-flat residue: 53% of the
 near-gap personal excess survives three years, with the drift and the core

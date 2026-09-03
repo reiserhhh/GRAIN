@@ -2,6 +2,9 @@
 
 Release date: 2026-07-15
 
+> Historical release under the former project name. The current method is
+> GRAIN; the release identity and scientific record remain unchanged.
+
 ## Ruling
 
 `V7_THEORETICAL_CORE_CLOSED_WITH_EMPIRICAL_GATES`

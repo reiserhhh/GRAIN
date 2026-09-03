@@ -3,7 +3,7 @@
 Status: prospective synthetic discovery protocol.
 
 V3.7H.3 identified registered components in a balanced additive world. This
-protocol deliberately breaks that coordinate system and asks whether SUICA
+protocol deliberately breaks that coordinate system and asks whether GRAIN
 can refuse interpretation before a saturated observed-cell decomposition is
 mistaken for a transportable response function.
 
