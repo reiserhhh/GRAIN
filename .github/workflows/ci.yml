@@ -52,8 +52,9 @@ jobs:
           python scripts/verify_suica_v021_lockbox.py --content-only
 
   # Tag-triggered job: preserve the legacy scientific lockbox independently
-  # of later naming/software releases, then run the current theory closure
-  # audit. A future scientific lockbox must add its own manifest and verifier;
+  # of later naming/software releases, then run its historical V7 closure
+  # audit inside the matching release tree. A future scientific lockbox must
+  # add its own manifest and verifier;
   # it must not reinterpret the immutable v0.2.1 evidence bundle.
   release-lockbox:
     if: startsWith(github.ref, 'refs/tags/v')
@@ -75,7 +76,7 @@ jobs:
       - run: python -m pip install -r requirements-lock-main.txt
       - name: Verify immutable legacy v0.2.1 lockbox
         run: python scripts/verify_grain_v021_lockbox.py
-      # Closure audit over the registered theoretical-closure evidence set.
+      # Historical closure audit over the registered V7 evidence set.
       - run: >-
           python scripts/run_grain_v7_theory_closure_audit.py
           --output-dir "$RUNNER_TEMP/closure_audit"

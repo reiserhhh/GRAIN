@@ -29,8 +29,15 @@ def test_ci_runs_full_lockbox_verifier_and_closure_audit_on_release_tags():
     ).read_text(encoding="utf-8")
     assert 'TAG = "v0.2.1"' in wrapper
     assert '"worktree", "add"' in wrapper
-    # The tag job also runs the current canonical closure entrypoint.
+    # The tag job also runs the canonical wrapper for the historical closure.
     assert "run_grain_v7_theory_closure_audit.py" in workflow
+    closure_wrapper = (
+        Path(__file__).resolve().parents[1]
+        / "scripts"
+        / "run_grain_v7_theory_closure_audit.py"
+    ).read_text(encoding="utf-8")
+    assert 'TAG = "v0.2.0"' in closure_wrapper
+    assert '"worktree", "add"' in closure_wrapper
     # Python version matrix on the test job.
     assert '"3.12", "3.14"' in workflow
     assert "${{ matrix.python-version }}" in workflow

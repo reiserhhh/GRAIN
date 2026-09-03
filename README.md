@@ -20,6 +20,7 @@ condition selection and condition-specific response can carry person-relevant
 information. The current GRAIN name generalizes that insight beyond one
 slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_NAMING_MIGRATION.md).
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
+The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Theory manuscript (2026-09-01)
 

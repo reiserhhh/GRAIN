@@ -14,7 +14,7 @@ def test_grain_namespace_loads_existing_core_modules() -> None:
     import grain_core.v7_release
     import grain_sim
 
-    assert grain_core.__version__ == "1.1.0"
+    assert grain_core.__version__ == "1.1.1"
     assert callable(grain_core.v7_release.sha256_file)
     assert callable(grain_sim.conditional_innovation)
 

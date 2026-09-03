@@ -10,5 +10,4 @@ from __future__ import annotations
 import suica_core as _legacy_core
 
 __path__ = _legacy_core.__path__
-__version__ = "1.1.0"
-
+__version__ = "1.1.1"
