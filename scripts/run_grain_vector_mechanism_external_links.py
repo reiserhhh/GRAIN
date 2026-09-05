@@ -19,6 +19,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from grain_research.vector_mechanisms.controls import material_hash
+from grain_research.vector_mechanisms.external_controls import (
+    exclude_reference,
+    frozen_masked_features,
+    inner_selector,
+    train_selection,
+)
 from grain_research.vector_mechanisms.external_heads import (
     AXES,
     TRAITS,
@@ -30,7 +36,6 @@ from grain_research.vector_mechanisms.external_heads import (
     task_score,
 )
 from grain_research.vector_mechanisms.external_material import (
-    raw_author_features,
     unpack_features,
 )
 from grain_research.vector_mechanisms.inventory import archive_source, code_fingerprint
@@ -43,22 +48,13 @@ def dense_features(bundles, common_source, common, a):
     """Read only complete, checksum-verified observer caches; no score interpolation."""
     if a.feature == "grain_intermediate":
         if a.arm != "raw":
-            pre = json.loads((a.preflight_dir / "manifest.json").read_text())
-            path = (
-                ROOT
-                / "results/v7_multiview_projection/e1_v72_full_20260715/artifacts/common_source_comment_representation.joblib"
+            return frozen_masked_features(
+                ROOT,
+                a.preflight_dir,
+                bundles,
+                a.arm,
+                getattr(a, "feature_cache_dir", None),
             )
-            if hashlib.sha256(path.read_bytes()).hexdigest() != pre["runtime_sha256"]:
-                raise ValueError("Frozen intermediate operator changed")
-            runtime = joblib.load(path)
-            rows = [
-                raw_author_features(
-                    runtime.transform(bundle_arms(b)[a.arm])[None, :, :],
-                    pre["feature_names"],
-                )[0]
-                for b in bundles
-            ]
-            return np.stack(rows)
         with np.load(
             a.preflight_dir / "grain_frozen_features.npz", allow_pickle=False
         ) as z:
@@ -142,6 +138,7 @@ def main():
     p.add_argument("--parent-dir", type=Path, required=True)
     p.add_argument("--prepared-root", type=Path, required=True)
     p.add_argument("--vector-dir", type=Path)
+    p.add_argument("--feature-cache-dir", type=Path)
     p.add_argument("--task", choices=["big5", *AXES], required=True)
     p.add_argument(
         "--feature",
@@ -161,6 +158,13 @@ def main():
     p.add_argument("--output-dir", type=Path, required=True)
     p.add_argument("--permutation-seed", type=int)
     p.add_argument("--no-pca", action="store_true")
+    p.add_argument("--exclude-reference", action="store_true")
+    p.add_argument(
+        "--thread-control",
+        choices=["retain", "purge", "random_count"],
+        default="retain",
+    )
+    p.add_argument("--drop-seed", type=int, choices=range(731, 736), default=731)
     p.add_argument("--max-seconds", type=int, default=7200)
     a = p.parse_args()
     if not 1 <= a.max_seconds <= 28800:
@@ -177,6 +181,13 @@ def main():
         raise ValueError("Common material changed")
     group = "big5_only" if a.task == "big5" else "mbti_only"
     bundles = [b for b in source if b["source_group"] == group]
+    if a.exclude_reference:
+        bundles = exclude_reference(
+            bundles,
+            pd.read_csv(
+                a.preflight_dir / "budget_by_author.csv", dtype={"author_id": str}
+            ),
+        )
     ids = np.asarray([b["author_id"] for b in bundles])
     if len(set(ids)) != len(ids) or set(ids) & {
         b["author_id"] for b in source if b["source_group"] == "bridge"
@@ -203,6 +214,10 @@ def main():
         "code_sha256": code_fingerprint(ROOT),
         "seed": 731,
         "pca": not a.no_pca,
+        "pca_applied": feature_kind == "dense" and not a.no_pca,
+        "exclude_reference": a.exclude_reference,
+        "thread_control": a.thread_control,
+        "drop_seed": a.drop_seed,
         "permutation_seed": a.permutation_seed,
         "bridge_labels_used": False,
         "inner_cv": "3 author folds, seed731",
@@ -225,15 +240,43 @@ def main():
     if set(folds) != set(range(5)):
         raise ValueError("All five official folds required")
     pred = np.full(y.shape, np.nan)
-    selected, fold_rows = [], []
+    selected, fold_rows, control_log = [], [], []
     started = time.monotonic()
     with threadpool_limits(limits=4):
         for fold in range(5):
             train, test = np.flatnonzero(folds != fold), np.flatnonzero(folds == fold)
             if set(ids[train]) & set(ids[test]):
                 raise ValueError("Outer author overlap")
+            shadow = None
+            if a.thread_control == "random_count":
+                clean, _ = train_selection(
+                    [bundles[i] for i in train], [bundles[i] for i in test], "purge"
+                )
+                shadow = [bundles[train[i]] for i in clean]
+            local, control = train_selection(
+                [bundles[i] for i in train],
+                [bundles[i] for i in test],
+                a.thread_control,
+                a.drop_seed,
+                f"outer:{fold}",
+            )
+            train = train[local]
+            control_log.append(control)
             model, search, parameter = select_head(
-                x[train], y[train], ids[train], feature_kind, a.task, pca=not a.no_pca
+                x[train],
+                y[train],
+                ids[train],
+                feature_kind,
+                a.task,
+                pca=not a.no_pca,
+                on_inner=inner_selector(
+                    [bundles[i] for i in train],
+                    a.thread_control,
+                    a.drop_seed,
+                    f"outer:{fold}",
+                    control_log,
+                    reference_bundles=shadow,
+                ),
             )
             pred[test] = predict_head(model, x[test], a.task)
             selected.append(
@@ -250,6 +293,7 @@ def main():
             )
             joblib.dump(model, out / f"private_fold_{fold}.joblib", compress=3)
             write_json(out / "selection.json", selected)
+            write_json(out / "discussion_control.json", control_log)
             write_json(
                 out / "run_status.json",
                 {
@@ -279,11 +323,39 @@ def main():
         score = task_score(y, pred, a.task)
         uncertainty = bootstrap_score(y, pred, a.task)
         # This full-source parameter is selected inside source data only.
+        full_train, full_control = train_selection(
+            bundles,
+            [b for b in source if b["source_group"] == "bridge"],
+            a.thread_control,
+            a.drop_seed,
+            "bridge_source_fit",
+        )
+        full_shadow = None
+        if a.thread_control == "random_count":
+            clean, _ = train_selection(
+                bundles, [b for b in source if b["source_group"] == "bridge"], "purge"
+            )
+            full_shadow = [bundles[i] for i in clean]
+        control_log.append(full_control)
         full, full_search, full_parameter = select_head(
-            x, y, ids, feature_kind, a.task, pca=not a.no_pca
+            x[full_train],
+            y[full_train],
+            ids[full_train],
+            feature_kind,
+            a.task,
+            pca=not a.no_pca,
+            on_inner=inner_selector(
+                [bundles[i] for i in full_train],
+                a.thread_control,
+                a.drop_seed,
+                "bridge_source_fit",
+                control_log,
+                reference_bundles=full_shadow,
+            ),
         )
         full_path = out / "private_full_source_head.joblib"
         joblib.dump(full, full_path, compress=3)
+    write_json(out / "discussion_control.json", control_log)
     pd.DataFrame(result).to_csv(out / "metrics_by_trait.csv", index=False)
     pd.DataFrame(fold_rows).to_csv(out / "metrics_by_fold.csv", index=False)
     rows = []
@@ -317,6 +389,10 @@ def main():
         "parent_identity": manifest["identity"],
         "bridge_labels_used": False,
         "permutation_seed": a.permutation_seed,
+        "exclude_reference": a.exclude_reference,
+        "thread_control": a.thread_control,
+        "drop_seed": a.drop_seed,
+        "full_train_authors": len(full_train),
         "open_controls": [
             "paired observer increments",
             "cue/placebo contrasts",

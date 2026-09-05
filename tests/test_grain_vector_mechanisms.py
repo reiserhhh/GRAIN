@@ -1696,3 +1696,106 @@ def test_external_paired_audit_rejects_different_targets_and_keeps_zero_delta():
         paired_delta(
             a, a | {"manifest": {"task": "big5", "permutation_seed": 731}}, draws=20
         )
+
+
+def test_external_thread_controls_are_label_blind_and_match_inner_counts():
+    from sklearn.model_selection import KFold
+
+    from grain_research.vector_mechanisms.external_controls import (
+        inner_selector,
+        train_selection,
+    )
+
+    def bundle(i, thread):
+        return {
+            "author_id": str(i),
+            "views": [[{"thread_id": thread}]],
+            "ignored_label": i % 2,
+        }
+
+    train = [bundle(i, f"pair{i // 2}" if i < 40 else f"unique{i}") for i in range(80)]
+    test = [bundle(100 + i, f"pair{i}") for i in range(10)]
+    purge, pr = train_selection(train, test, "purge")
+    random, rr = train_selection(train, test, "random_count")
+    assert len(purge) == len(random) == 60
+    assert pr["retained_shared_thread_authors"] == 0
+    assert rr["retained_shared_thread_authors"] > 0
+    changed = [b | {"ignored_label": 1000 - b["ignored_label"]} for b in train]
+    np.testing.assert_array_equal(
+        random, train_selection(changed, test, "random_count")[0]
+    )
+    p, r = [train[i] for i in purge], [train[i] for i in random]
+    plog, rlog = [], []
+    ps = inner_selector(p, "purge", 731, "outer:0", plog)
+    rs = inner_selector(r, "random_count", 731, "outer:0", rlog, reference_bundles=p)
+    for tr, va in KFold(3, shuffle=True, random_state=731).split(p):
+        assert len(ps(tr, va)) == len(rs(tr, va))
+    assert [x["train_retained"] for x in plog] == [x["train_retained"] for x in rlog]
+    with pytest.raises(ValueError, match="overlap"):
+        train_selection(train, train[:20])
+
+
+def test_external_reference_filter_does_not_treat_false_strings_as_true():
+    from grain_research.vector_mechanisms.external_controls import exclude_reference
+
+    bs = [{"author_id": "a"}, {"author_id": "b"}]
+    audit = pd.DataFrame(
+        {"author_id": ["a", "b"], "old_reference_member": [True, False]}
+    )
+    assert exclude_reference(bs, audit) == [bs[1]]
+    audit["old_reference_member"] = ["True", "False"]
+    with pytest.raises(ValueError, match="encoding"):
+        exclude_reference(bs, audit)
+
+
+@pytest.mark.parametrize("feature_kind", ["dense", "word_char"])
+@pytest.mark.parametrize("task", ["big5", "EI_cont"])
+def test_external_cached_null_replays_full_nested_selection(feature_kind, task):
+    from grain_research.vector_mechanisms.external_heads import (
+        predict_head,
+        select_head,
+    )
+    from grain_research.vector_mechanisms.external_null import (
+        nested_predict_cached,
+        prepare_nested_folds,
+    )
+
+    rng = np.random.default_rng(11)
+    ids = np.array([str(i) for i in range(75)])
+    folds = np.arange(75) % 5
+    x = (
+        rng.normal(size=(75, 6))
+        if feature_kind == "dense"
+        else np.asarray(
+            [f"shared common author word{i % 7} other{i % 11}" for i in range(75)]
+        )
+    )
+    y = rng.normal(size=(75, 5)) if task == "big5" else np.arange(75) % 2
+    plans = prepare_nested_folds(x, ids, folds, feature_kind, task)
+    for permuted in [y, y[rng.permutation(75)]]:
+        cached, selected = nested_predict_cached(plans, permuted, task)
+        plain = np.empty(y.shape, dtype=float)
+        expected_parameters = []
+        for f in range(5):
+            train, test = np.flatnonzero(folds != f), np.flatnonzero(folds == f)
+            model, _, parameter = select_head(
+                x[train], permuted[train], ids[train], feature_kind, task
+            )
+            plain[test] = predict_head(model, x[test], task)
+            expected_parameters.append(parameter)
+        np.testing.assert_allclose(cached, plain, atol=1e-12, rtol=0)
+        assert selected == expected_parameters
+
+
+def test_external_control_batch_covers_all_axes_arms_and_five_count_seeds():
+    from scripts.run_grain_vector_mechanism_source_controls import cases
+
+    items = cases()
+    assert len(items) == len({x["id"] for x in items}) == 102
+    for task in ["EI_cont", "SN_cont", "TF_cont", "JP_cont"]:
+        for arm in ["raw", "cue_mask", "placebo_mask"]:
+            chosen = [x for x in items if x["task"] == task and x["arm"] == arm]
+            assert len(chosen) == 7 and all(x["exclude_reference"] for x in chosen)
+            assert {x["seed"] for x in chosen if x["mode"] == "random_count"} == set(
+                range(731, 736)
+            )
