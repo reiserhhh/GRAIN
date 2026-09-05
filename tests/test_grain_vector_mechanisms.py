@@ -1417,3 +1417,49 @@ def test_external_material_audit_rejects_cross_author_duplicate_and_wrong_fold()
     f.loc[0, "big5_fold"] = 2
     with pytest.raises(ValueError, match="Source-specific fold"):
         validate_materials(bundles, f, members, folds)
+
+
+def test_external_mask_is_count_matched_nonoverlapping_and_source_preserving():
+    from grain_research.vector_mechanisms.external_material import masked_comment
+
+    text = "I am INFP.\nMy test results were surprising but daily life keeps moving."
+    arms, counts = masked_comment(text, "c1")
+    assert arms["raw"] == text
+    assert counts["cue_words"] == counts["placebo_words"] == 4
+    assert counts["cue_placebo_overlap"] == 0
+    assert all(len(t.split()) == len(text.split()) for t in arms.values())
+    assert all("\n" in t for t in arms.values())
+    assert masked_comment(text, "c1") == (arms, counts)
+    assert "INFP" not in arms["cue_mask"]
+    assert "INFP" in arms["placebo_mask"]
+    neutral, c = masked_comment("We took a walk after work.", "c2")
+    assert len(set(neutral.values())) == 1 and c["cue_words"] == 0
+    with pytest.raises(ValueError, match="Insufficient noncue"):
+        masked_comment("INFP ENTP", "c3")
+
+
+def test_external_named_feature_aggregation_matches_frozen_implementation():
+    from grain_research.vector_mechanisms.external_material import raw_author_features
+    from suica_core.v7_psychometric import author_features_from_embeddings
+
+    h = np.arange(24).reshape(3, 4, 2).astype(float)
+    names = ["std::svd_001", "mean::svd_000", "std::svd_000", "mean::svd_001"]
+    frame = pd.DataFrame(
+        {"user_id": np.repeat(["z", "a", "b"], 4), "split": "all", "token_count": 40}
+    )
+    expected = author_features_from_embeddings(frame, h.reshape(-1, 2))[
+        names
+    ].to_numpy()
+    np.testing.assert_array_equal(raw_author_features(h, names), expected)
+
+
+def test_external_thread_purge_counts_do_not_use_author_or_label_as_proxy():
+    from grain_research.vector_mechanisms.external_material import purge_counts
+
+    train = [{"author_id": "a", "views": [[{"thread_id": "x"}, {"thread_id": "y"}]]}]
+    test = [{"author_id": "b", "views": [[{"thread_id": "y"}]]}]
+    result = purge_counts(train, test)
+    assert result["removed_comments"] == 1
+    assert result["remaining_min_median_max"] == [1, 1, 1]
+    with pytest.raises(ValueError, match="author overlap"):
+        purge_counts(train, train)
