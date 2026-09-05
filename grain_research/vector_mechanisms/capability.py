@@ -14,6 +14,12 @@ def parse_binary_answer(text):
     return None if match is None else int(match.group(1).lower() == "yes")
 
 
+def leading_binary_diagnostic(text):
+    """Read only a leading binary sentence for post-hoc format diagnosis, not gates."""
+    match = re.match(r"^\s*(Yes|No)(?:[.!](?:\s|$)|\s*$)", str(text), re.IGNORECASE)
+    return None if match is None else int(match.group(1).lower() == "yes")
+
+
 def capability_cases():
     """Retain both original batteries and eight outcome-independent repeats."""
     rows = []

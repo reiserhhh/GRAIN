@@ -15,7 +15,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from grain_research.vector_mechanisms.analysis import grouped_bootstrap
-from grain_research.vector_mechanisms.capability import capability_cases
+from grain_research.vector_mechanisms.capability import (
+    capability_cases,
+    leading_binary_diagnostic,
+    parse_binary_answer,
+)
 from grain_research.vector_mechanisms.inventory import archive_source, code_fingerprint
 from scripts.run_grain_vector_mechanism_controls import write_json
 
@@ -94,6 +98,53 @@ def summarize_run(frame):
     return summary, rows
 
 
+def audit_recorded_responses(frame):
+    """Recompute recorded primary scores from responses and frozen material metadata."""
+    lookup = {r["case_id"]: r for r in capability_cases()}
+    for row in frame.to_dict("records"):
+        expected = lookup[row["case_id"]]
+        for column in (
+            "battery",
+            "group_id",
+            "family",
+            "variant",
+            "split",
+            "expected_yes",
+        ):
+            if row[column] != expected[column]:
+                raise ValueError("Response metadata differs from frozen material")
+        parsed = parse_binary_answer(row["content"])
+        correct = parsed is not None and parsed == expected["expected_yes"]
+        if (
+            bool(row["parse_ok"]) != (parsed is not None)
+            or bool(row["correct"]) != correct
+        ):
+            raise ValueError("Recorded primary score differs from strict recomputation")
+        stored = row["parsed_yes"]
+        if (parsed is None and not pd.isna(stored)) or (
+            parsed is not None and stored != parsed
+        ):
+            raise ValueError(
+                "Recorded parsed response differs from strict recomputation"
+            )
+
+
+def format_diagnostic(frame):
+    """Separate format violations from leading responses without rewriting acceptance."""
+    facts = frame[(~frame.repeat) & (frame.battery == "semantic_fact")].copy()
+    leading = facts.content.map(leading_binary_diagnostic)
+    return {
+        "scope": "Post-hoc leading-answer diagnostic only; primary gates unchanged; explanation truth not evaluated",
+        "fact_n": len(facts),
+        "strict_errors": int((~facts.correct).sum()),
+        "leading_binary_accuracy": float((leading == facts.expected_yes).mean()),
+        "strict_invalid_with_correct_leading_answer": int(
+            (~facts.parse_ok & (leading == facts.expected_yes)).sum()
+        ),
+        "fact_accuracy_by_scenario": facts.groupby("group_id").correct.mean().to_dict(),
+    }
+
+
 def main():
     """Keep observers and readout modes separate and preserve every failed condition."""
     p = argparse.ArgumentParser(description=__doc__)
@@ -114,6 +165,7 @@ def main():
         if status["status"] != "COMPLETE":
             raise ValueError("Partial battery cannot be treated as complete capability")
         frame = pd.read_csv(directory / "responses.csv")
+        audit_recorded_responses(frame)
         summary, rows = summarize_run(frame)
         backend = manifest["backend"]
         summaries.append(
@@ -122,6 +174,7 @@ def main():
                 "mode": "generated",
                 "parent_identity": manifest["identity"],
                 "runtime": status,
+                "format_diagnostic": format_diagnostic(frame),
                 **summary,
             }
         )

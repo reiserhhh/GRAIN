@@ -1280,6 +1280,40 @@ def test_capability_summary_counts_invalid_responses_as_errors():
     assert not summary["next_observer_qualified"]
 
 
+def test_capability_format_diagnostic_cannot_change_primary_gates():
+    from grain_research.vector_mechanisms.capability import (
+        capability_cases,
+        leading_binary_diagnostic,
+    )
+    from scripts.summarize_grain_vector_capability import (
+        audit_recorded_responses,
+        format_diagnostic,
+        summarize_run,
+    )
+
+    f = pd.DataFrame(capability_cases())
+    f["parsed_yes"] = f.expected_yes.astype(float)
+    f["parse_ok"] = True
+    f["correct"] = True
+    f["content"] = np.where(f.expected_yes == 1, "Yes", "No")
+    mask = (
+        (f.battery == "semantic_fact")
+        & (f.family == "composition")
+        & (f.expected_yes == 0)
+    )
+    f.loc[mask, "content"] = "No.\nThis adds an explanation."
+    f.loc[mask, ["parse_ok", "correct"]] = False
+    f.loc[mask, "parsed_yes"] = np.nan
+    audit_recorded_responses(f)
+    assert format_diagnostic(f)["leading_binary_accuracy"] == 1
+    assert not summarize_run(f)[0]["next_observer_qualified"]
+    for text in ("Nobody", "Not Yes", "Yes, but no", "Reason: No."):
+        assert leading_binary_diagnostic(text) is None
+    f.loc[0, "correct"] = False
+    with pytest.raises(ValueError, match="strict recomputation"):
+        audit_recorded_responses(f)
+
+
 def test_external_partitions_reserve_bridge_missing_from_official_axis_members():
     from grain_research.vector_mechanisms.external_sources import (
         exclusive_source_groups,
@@ -1330,3 +1364,55 @@ def test_external_cohort_loads_only_ids_and_separate_source_folds(tmp_path):
     )
     with pytest.raises(ValueError, match="Invalid official"):
         load_source_folds(tmp_path)
+
+
+def test_external_material_audit_rejects_cross_author_duplicate_and_wrong_fold():
+    import copy
+    from grain_research.vector_mechanisms.cohort import ID_SEED
+    from grain_research.vector_mechanisms.data_views import stable_key
+    from scripts.summarize_grain_vector_external_cohort import validate_materials
+
+    members = {"big5": {"u0"}, "bridge": {"u1"}}
+    members.update({a + "_cont": set() for a in ("EI", "SN", "TF", "JP")})
+    folds = {k: {u: 0 for u in v} for k, v in members.items()}
+    bundles, ledger = [], []
+    for i, group in enumerate(("big5_only", "bridge")):
+        uid = stable_key(f"u{i}", ID_SEED)[:24]
+        units = [
+            {
+                "author_id": uid,
+                "comment_id": f"c{i}_{j}",
+                "thread_id": f"t{i}_{j}",
+                "body": f"author{i} unit{j} " + "text " * 38,
+                "word_count": 40,
+                "timestamp": float(j),
+                "leakage_flags": {"report_clue": False},
+            }
+            for j in range(36)
+        ]
+        bundles.append(
+            {
+                "author_id": uid,
+                "source_group": group,
+                "views": [units[j : j + 12] for j in (0, 12, 24)],
+                "official_folds": {k: 0 for k, m in members.items() if f"u{i}" in m},
+            }
+        )
+        ledger.append(
+            {
+                "author_id": uid,
+                "source_group": group,
+                "eligible": True,
+                **{k + "_fold": m.get(f"u{i}", np.nan) for k, m in folds.items()},
+            }
+        )
+    f = pd.DataFrame(ledger)
+    _, checks = validate_materials(bundles, f, members, folds)
+    assert checks["eligible_authors"] == 2
+    bad = copy.deepcopy(bundles)
+    bad[1]["views"][0][0]["body"] = bad[0]["views"][0][0]["body"]
+    with pytest.raises(ValueError, match="Normalized text shared"):
+        validate_materials(bad, f, members, folds)
+    f.loc[0, "big5_fold"] = 2
+    with pytest.raises(ValueError, match="Source-specific fold"):
+        validate_materials(bundles, f, members, folds)
