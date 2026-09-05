@@ -12,6 +12,23 @@ from grain_research.vector_mechanisms.controls import build_controls, validate_c
 from grain_research.vector_mechanisms.inventory import inspect_csv
 
 
+def test_scope_controls_separate_performed_reported_and_quoted_actions():
+    from grain_research.vector_mechanisms.scope import build_scope_controls
+
+    rows = build_scope_controls()
+    assert len(rows) == 288
+    assert len({r["case_id"] for r in rows}) == 288
+    for task in ("enacted_guidance", "reported_guidance"):
+        own = [r for r in rows if r["task"] == task]
+        assert sum(r["expected_yes"] for r in own) == 48
+        assert all(
+            r["expected_yes"] == 0 for r in own if r["variant"] == "other_quoted"
+        )
+    a = {r["group_id"] for r in rows if r["split"] == "scope_development"}
+    b = {r["group_id"] for r in rows if r["split"] == "scope_holdout"}
+    assert len(a) == 8 and len(b) == 4 and not a & b
+
+
 def test_memory_summary_citation_is_not_semantic_acceptance():
     import json
 
@@ -977,3 +994,70 @@ def test_relational_kernel_is_psd_and_adds_the_missing_interaction():
         False,
         True,
     ]
+
+
+def test_natural_patch_basis_and_row_matched_random():
+    from grain_research.vector_mechanisms.natural_patch import (
+        current_difference_basis,
+        matched_random_rows,
+        project_rows,
+    )
+
+    delta = np.random.default_rng(72).normal(size=(9, 16))
+    q, energy = current_difference_basis(delta, 4)
+    projected = project_rows(delta, q)
+    assert 0 < energy <= 1
+    np.testing.assert_allclose(q.T @ q, np.eye(4), atol=1e-12)
+    np.testing.assert_allclose(
+        np.linalg.norm(projected) ** 2 / np.linalg.norm(delta) ** 2, energy
+    )
+    random = matched_random_rows(delta, projected, 4, "fixed")
+    np.testing.assert_allclose(
+        np.linalg.norm(random, axis=1), np.linalg.norm(projected, axis=1)
+    )
+    np.testing.assert_array_equal(
+        random, matched_random_rows(delta, projected, 4, "fixed")
+    )
+    assert np.linalg.matrix_rank(random, tol=1e-8) <= 4
+    with pytest.raises(ValueError, match="numerical rank"):
+        current_difference_basis(np.zeros((8, 16)), 2)
+
+
+def test_natural_patch_prompt_preserves_evidence_and_explicit_interval():
+    from grain_research.vector_mechanisms.natural_patch import patch_message
+
+    current = "Earlier excerpt: I quoted that phrase. This is my current message :("
+    a, ia = patch_message("Older words.", current, "disposition")
+    b, ib = patch_message("Older words.", current, "current_guidance")
+    assert ia == ib
+    assert a[slice(*ia)] == b[slice(*ib)] == current
+    assert a.split("Question: ")[0] == b.split("Question: ")[0]
+    c, ic = patch_message("A longer historical account.", current, "disposition")
+    assert c[slice(*ic)] == current
+
+
+def test_source_ambiguity_bounds_do_not_select_favorable_codes():
+    from scripts.summarize_grain_vector_scope import ambiguity_bounds
+
+    sample = pd.DataFrame({"expected_yes": [0, 1, np.nan], "margin": [-1, 1, 2]})
+    bounds = ambiguity_bounds(sample, 0)
+    assert bounds["assignments"] == 2
+    assert bounds["accuracy_min"] == pytest.approx(2 / 3)
+    assert bounds["accuracy_max"] == 1
+    assert bounds["raw_margin_auc_min"] == 0.5
+    assert bounds["raw_margin_auc_max"] == 1
+
+
+def test_natural_patch_summary_weights_authors_not_forwards():
+    from scripts.summarize_grain_vector_natural_patch import aggregate
+
+    sample = pd.DataFrame(
+        {
+            "task": ["a"] * 5,
+            "author_id": ["u"] * 4 + ["v"],
+            "delta": [1] * 4 + [0],
+        }
+    )
+    result = aggregate(sample, ["task"], ["delta"])
+    assert result.iloc[0]["delta_mean"] == 0.5
+    assert result.iloc[0]["delta_clusters"] == 2
