@@ -78,3 +78,36 @@ def test_profile_is_query_batch_independent_and_retains_refusal():
         np.testing.assert_allclose(a[key][:1], b[key], atol=1e-12)
     assert a["status"][1] != READY
     assert np.max(abs(a["canonical_shape"].mean(1))) < 1e-12
+
+
+def test_profile_condition_grid_preserves_all_channels_and_complexity_rules():
+    from scripts.run_grain_vector_profile_heads import condition_grid
+
+    raw, masked = condition_grid("raw_ready"), condition_grid("all_arms_ready")
+    assert len(raw) == 40 and len(masked) == 120
+    assert len({r["id"] for r in raw}) == 40
+    assert {r["arm"] for r in raw} == {"raw"}
+    assert {r["pca"] for r in raw} == {True, False}
+
+
+def test_profile_oof_model_does_not_fit_heldout_author_features_or_labels():
+    from scripts.run_grain_vector_profile_heads import nested_fit
+
+    rng = np.random.default_rng(193)
+    x = rng.normal(size=(80, 8))
+    y = rng.normal(size=(80, 5)) + x[:, :5]
+    ids, folds = np.asarray([str(i) for i in range(80)]), np.arange(80) % 5
+    models = []
+
+    def save_first(fold, model, selection):
+        if fold == 0:
+            models.append(model)
+
+    first = nested_fit(x, y, ids, folds, "big5", True, save_first)
+    xx, yy = x.copy(), y.copy()
+    xx[folds == 0] *= 100
+    yy[folds == 0] += 100
+    nested_fit(xx, yy, ids, folds, "big5", True, save_first)
+    np.testing.assert_array_equal(models[0].predict(x), models[1].predict(x))
+    assert np.isfinite(first[0]).all()
+    assert len(first[1]) == 5 and len(first[2]) == 25

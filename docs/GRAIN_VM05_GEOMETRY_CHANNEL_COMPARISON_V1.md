@@ -58,3 +58,12 @@ A_j=l_j-l_0，则：
 
 输出：results/grain_vector_mechanisms/vm05_profile_material_r1/，私有向量和
 作者ID不得提交。来源控制/null/CUDA活跃计分代码不变。
+
+执行头规则在本轮profile成绩出现前固定：run_grain_vector_profile_heads.py，
+raw_ready四通道x五任务x两复杂度规则共40条件。主复杂度规则沿用训练侧
+PCA min(16,n_train//10,p)，无PCA全列作为事先指定敏感性；不能在二者里选
+外层最高者充当主成绩。小ready Big5的PCA可能再压到7--11维，须列出而
+不能归咎于地标变换。三臂共同ready批次120条件另外完整执行，不能把同名
+raw但作者子集不同的两个批次拼接。默认CPU四线程、3600秒逐fold边界检查，
+不修改原source头算法，输出每fold模型、inner搜索、source full-head及OOF。
+两通道的比较是观察器变换连同该读出器的联合效应，不是无条件信息论估计。
