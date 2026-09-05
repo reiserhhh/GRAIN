@@ -269,3 +269,68 @@ semantic_decisions.json必须在任何下游读出前，按完整引用源文重
 span干预；独立mechanism holdout与VM05外部联系、VM06 MEPS无标签/
 Essays/X、VM07 atlas仍未做。本轮没有访问这96人的模型结果或心理标签。
 仍有具体可执行问题，goal不完成、不blocked，也不需要用户现在提供新idea。
+
+## 第六轮：证据范围与自然内部状态干预
+
+2026-09-06。实现初次提交28bfae5，BF16强度修正7eef40a；
+本轮仍为progress，未push。
+文档：[证据范围](../reports/grain_vector_mechanisms/VM03_EVIDENCE_SCOPE_REPORT.md)、
+[自然状态干预](../reports/grain_vector_mechanisms/VM04_NATURAL_PATCH_REPORT.md)、
+[VM04协议及修正](GRAIN_VM04_NATURAL_PATCH_PROTOCOL.md)。
+
+### 完成产物
+
+以下目录都在results/grain_vector_mechanisms/：
+
+| Canonical目录 | 完成内容 |
+|---|---|
+| vm03_scope_materials_r1 | 48 calibration当前原文、先验语义编码、288合成范围控制 |
+| vm03_scope_trace_r1 | 480条件，481forward，36.016s，重播/prefix误差0 |
+| vm03_scope_analysis_r2 | 两问法、冻结阈值、LOO分析、8未决编码全部256种分配敏感性 |
+| vm04_natural_patch_r1 | 6目标作者，12当前，24donor配对，2496干预行/2640forward，404.515s |
+| vm04_natural_norm_repair_r1 | 384 endpoint随机控制修正，672forward，102.859s |
+| vm04_natural_patch_analysis_r2 | 替换修正行后的作者cluster分析，其他原始干预不变 |
+
+正文/标签访问：48 calibration作者的第三视图第一条评论已打开并进入模型。
+它们不是未使用样本了。语义编码仅源文证据，不是心理量表值。仍有48
+mechanism-holdout作者未打开；没有用MEPS或问卷，本轮不更新心理预测headline。
+
+### 得到的结论
+
+- 当前提供建议与报告过去建议必须分开。自然48条有8条明确当前建议、8未决；
+  过去建议没有正例。原始答案偏Yes；合成阈值在40明确样本上BA=.6719，
+  但accuracy=.850只略高于多数类.800，召回仅3/8；自然LOO BA=.6563。
+- 主问法自然margin AUC=.709 [.478,.920]，不确立稳定自然判别力。
+  次级definition AUC=.811但LOO BA=.500，不允许只挑排序优点。
+- 源CSV本来已有类型词占位符和少量mojibake。“raw不变”不表示最原始Reddit文本。
+- 自然上下文差在rank4仅保留36%至40%能量。完整block16判断状态对倾向margin
+  有小的donor定向作用，+.1771 [.0625,.2813]；几何候选多数不强于随机。
+  不是共享人格轴、人格准确率，亦不否定所有上下文计算。
+- 数值修正：precast等强度不能保证BF16 postcast等强度。判断位置随机重复
+  均值范数失配最高24.66%；全部384行按原方向/种子缩放后，逐行误差最多
+  0.375%，原基线和192候选输出严格重播0误差。未经修正版endpoint随机对比
+  降为provisional，不能继续作为主结论。
+
+### 工程与复现状态
+
+模型任务均完成，产物已拷回Mac。两端61专项测试通过；完整历史测试未跑。
+所有模型任务使用既有Qwen缓存，没有训练、下载、收费API或服务重新配置。
+私有材料、source coding及96状态缓存不进git。
+
+两个轻微启动问题已修：Windows pytest需要仓库cwd；修正脚本最初命名
+不在source archive allowlist内，未启动模型即报文件缺失，已改为
+run_grain_vector_mechanism_natural_norm_repair.py并用新zip同步。
+这没有改变实验材料或产生可纳入分析的失败模型结果。
+
+### 下一轮具体队列
+
+1. 保留两种候选：任务敏感方向与历史读取路径。用已有开发材料评估
+   局部导数/有限差分是否预测低剂量内部效应，与几何方向和随机方向比较。
+   不把从同一输出梯度优化出的控制方向当独立心理发现。
+2. 检查自然历史的影响是否经“当前正文更新”以外的后续注意力路径进入判断。
+   未换历史状态的单位置patch不是完整中介分解，不能把低恢复率直接称失败。
+3. 冻结端点、数值控制与选择规则，再开独立mechanism holdout。
+   外部量表链接VM05、第二观察器、VM06 MEPS无标签/Essays/X、VM07 atlas仍待做。
+
+GRAIN计分器和既往MCD/VHMCD/SUICA实证没有被替换或推翻。该循环目前仍有
+明确可执行问题，不需用户补新idea，不应把goal标为complete或blocked。

@@ -31,6 +31,13 @@ It adds an exact input-token boundary control and shows that changed readout wor
 can change errors with identical pre-question representations. See its
 [protocol](GRAIN_VM03_MEMORY_AUDIT_PROTOCOL.md); natural personality validity remains open.
 
+The [evidence-scope follow-up](../reports/grain_vector_mechanisms/VM03_EVIDENCE_SCOPE_REPORT.md)
+opens 48 calibration sources for semantic coding, not questionnaire evaluation.
+The [first natural state-intervention pilot](../reports/grain_vector_mechanisms/VM04_NATURAL_PATCH_REPORT.md)
+separates geometric displacement from task-conditioned functional use and
+repairs low-precision random-control strength. Neither establishes a shared
+personality axis. The remaining 48 mechanism-holdout authors are unopened.
+
 ## 1. Purpose
 
 This file is the single navigation entry for how GRAIN was developed, what

@@ -52,7 +52,9 @@ improved real-person personality prediction. The full VM02-VM07 program remains 
 
 The [independent multi-comment discovery](reports/grain_vector_mechanisms/VM02_MULTICOMMENT_DISCOVERY_REPORT.md)
 now covers 144 development authors (48 reference, 96 comparison), drawn from a
-new 240-author cohort; the other 96 authors remain unused for model analysis.
+new 240-author cohort. That comparison did not use the remaining 96 authors;
+the later scope audit below opens 48 calibration authors, leaving 48 mechanism
+holdout authors unopened.
 With 12 comments per view, Qwen content mean (.950 author rank) is not clearly
 better than E5 (.947), while its decision-position representation is much weaker.
 The frozen full GRAIN score refuses this material outside its reference envelope;
@@ -64,6 +66,15 @@ Citation correctness does not ensure faithful propositions; changes in question
 wording can improve some event decisions while damaging others. The numerical
 observer passed exact token-boundary and causal-prefix controls. These findings
 locate evidence-selection and readout problems, not improved personality accuracy.
+
+The [evidence-scope audit](reports/grain_vector_mechanisms/VM03_EVIDENCE_SCOPE_REPORT.md)
+separates enacted speech acts from reported past behavior. Answer ranking and
+decision calibration differ, with sparse and uncertain natural positive evidence.
+The first [natural-history activation pilot](reports/grain_vector_mechanisms/VM04_NATURAL_PATCH_REPORT.md)
+is complete, including post-BF16 random-norm repair. Leading geometric directions
+are not established as stable functional or personality directions. Fixed GRAIN
+scoring is unchanged; independent mechanism confirmation and new external
+personality links remain open.
 
 ## Theory manuscript (2026-09-01)
 
