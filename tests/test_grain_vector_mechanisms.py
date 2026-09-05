@@ -1116,3 +1116,48 @@ def test_derivative_regions_use_complete_disjoint_double_precision_norms():
     )
     with pytest.raises(ValueError, match="partition"):
         region_derivative_stats(h, g, {"a": [0, 1], "b": [1, 2]})
+
+
+def test_independent_access_keeps_evidence_and_changes_code_only_after_question():
+    from grain_research.vector_mechanisms.independent_access import (
+        ACCESS_SYSTEM,
+        access_message,
+        answer_code_controls,
+    )
+
+    a, hi, ci = access_message("Old history.", "Current text :(", "disposition")
+    b, hj, cj = access_message(
+        "Old history.", "Current text :(", "disposition", swapped=True
+    )
+    assert hi == hj and ci == cj
+    assert a[slice(*hi)] == b[slice(*hi)] == "Old history."
+    assert a[slice(*ci)] == b[slice(*ci)] == "Current text :("
+    assert a.split("Question:")[0] == b.split("Question:")[0]
+    assert "Yes means supported" not in ACCESS_SYSTEM
+    controls = answer_code_controls()
+    assert len(controls) == 16
+    assert sum(c["expected_yes"] for c in controls) == 8
+    for a, b in zip(controls[::2], controls[1::2], strict=True):
+        assert a["expected_yes"] != b["expected_yes"]
+
+
+def test_independent_access_norms_and_fixed_direction_are_reproducible():
+    from scripts.run_grain_vector_mechanism_independent_access import make_arms
+
+    h = np.zeros((3, 4))
+    g = np.arange(12).reshape(3, 4) + 1.0
+    arms = make_arms(h, g, 0.1, "synthetic", np.asarray)
+    assert len(arms) == 6
+    repeat = make_arms(h, g, 0.1, "synthetic", np.asarray)
+    for arm, other in zip(arms, repeat, strict=True):
+        assert np.linalg.norm(arm[2]) == pytest.approx(0.1, rel=1e-8)
+        np.testing.assert_array_equal(arm[2], other[2])
+        assert arm[3] < 0.01
+
+
+def test_independent_access_sign_flip_is_two_sided_and_keeps_zero():
+    from scripts.summarize_grain_vector_independent_access import sign_flip_p
+
+    assert sign_flip_p(np.zeros(12)) == 1
+    assert sign_flip_p(np.ones(12)) < 0.005
+    assert sign_flip_p(-np.ones(12)) == sign_flip_p(np.ones(12))
