@@ -334,3 +334,47 @@ run_grain_vector_mechanism_natural_norm_repair.py并用新zip同步。
 
 GRAIN计分器和既往MCD/VHMCD/SUICA实证没有被替换或推翻。该循环目前仍有
 明确可执行问题，不需用户补新idea，不应把goal标为complete或blocked。
+
+## 第七轮：局部敏感性与历史访问路径
+
+2026-09-06。实现提交86df977；没有训练、下载、付费API或push。
+见[协议](GRAIN_VM04_SENSITIVITY_PROTOCOL.md)和
+[敏感性报告](../reports/grain_vector_mechanisms/VM04_SENSITIVITY_REPORT.md)。
+
+仍为6名discovery作者、12当前评论，不是独立确认。固定Qwen revision、
+block10/16、rank2/4、BF16 eager、pad1536；Windows .20完成全部计算。
+
+| Canonical目录（results/grain_vector_mechanisms/下） | 可复现内容 |
+|---|---|
+| vm04_sensitivity_capture_r1 | 24 own-history/task条件，48状态/梯度缓存；96 forward含48 backward；151.422s |
+| vm04_sensitivity_interventions_r1 | 2880行干预，2976 forward，525.812s；恢复、自替换、旧条件重播误差0 |
+| vm04_sensitivity_analysis_r1 | 作者cluster汇总、等范数随机对照、局部预测、符号剂量、分区重算 |
+
+总3072 forward，3744512输入tokens，4718592执行tokens，677.234s。
+采集GPU峰值4.52GB；冻结参数、仅对中间状态求导，CPU卸载保存张量。
+所有384随机配对实际post-BF16范数误差低于1%，最大0.775%。
+原区域CSV整体范数float32的微小累积误差由冻结缓存float64重算修正，
+不覆盖原始文件，不重跑模型；所有互斥区域比例和通过1e-10检查。
+
+### 新证据与边界
+
+- rank4梯度能量约.739/.929，但与几何子空间重合度仅.00542/.00629。
+  这是坐标及标量输出条件下的子空间量，不是心理方差比例或因子数。
+- 自然敏感投影仍未稳定超出随机；放大至几何等强度后目标绝对margin变化
+  2.672/2.156，非目标也达1.146/1.906，且局部线性预测明显失准。
+  不将优化输出梯度的可控性称为人格方向发现。
+- block10小预算0.2%的历史正/反向操作：目标+.8125/-.8229，
+  一阶预测+.8085/-.8085；MAE约.139/.143。相同目标方向作用于当前
+  建议任务为+.0521/-.1354，并非完全无副作用。
+  这支持历史位置尚有可访问计算路径，不证明必要性、完整中介或心理因果。
+- 后置问题/回答状态的梯度较大不意味着模型忽略正文，因为这些状态已上下文化。
+
+专项Mac63 tests已通过；最终源码通过source_sensitivity_final_c.zip同步到
+隔离Windows目录，同一专项63 tests通过（11.35s）。
+完整历史测试未重跑。私有梯度缓存、源文和行级作者材料不进git。
+
+### 下一裁决
+
+结束同一6作者上的自由方向探索，先冻结独立作者的有限确认及答案极性控制，
+再推进VM05同材料外部联系和第二观察器。48 mechanism holdout尚未打开；
+MEPS问卷和用途边界不变。已有代码仍可运行，不需要用户的新idea；goal保持active。

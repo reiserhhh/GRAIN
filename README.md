@@ -76,6 +76,14 @@ are not established as stable functional or personality directions. Fixed GRAIN
 scoring is unchanged; independent mechanism confirmation and new external
 personality links remain open.
 
+The [local-sensitivity follow-up](reports/grain_vector_mechanisms/VM04_SENSITIVITY_REPORT.md)
+separates high-variance contextual displacement from task-sensitive directions.
+Small early-layer history-state interventions have reasonably predictable local
+effects; amplified directions also change collateral judgments. These are
+model-access results on six discovery authors, not personality accuracy or a
+validated scoring channel. Open-ended direction search on those authors is now
+closed in favor of independent confirmation and external links.
+
 ## Theory manuscript (2026-09-01)
 
 The completed theory is now expressed as a journal-neutral theoretical and

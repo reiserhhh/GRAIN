@@ -38,6 +38,13 @@ separates geometric displacement from task-conditioned functional use and
 repairs low-precision random-control strength. Neither establishes a shared
 personality axis. The remaining 48 mechanism-holdout authors are unopened.
 
+The [local-sensitivity experiment](../reports/grain_vector_mechanisms/VM04_SENSITIVITY_REPORT.md)
+adds a task-conditioned readout operator to the mechanism map: geometric
+displacement and output sensitivity are different objects. Small history-state
+effects can be locally predicted, whereas amplified control is nonlinear and
+nonselective. This does not replace reference-normed GRAIN measurement or prove
+personality validity. Independent confirmation and VM05 external links are next.
+
 ## 1. Purpose
 
 This file is the single navigation entry for how GRAIN was developed, what
