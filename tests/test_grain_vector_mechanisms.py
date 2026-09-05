@@ -1299,3 +1299,34 @@ def test_external_partitions_reserve_bridge_missing_from_official_axis_members()
     assert p["both_nonreport_reserved"] == {"reserved"}
     groups = exclusive_source_groups(sets)
     assert sum(len(v) for v in groups.values()) == len(set().union(*groups.values()))
+
+
+def test_external_cohort_loads_only_ids_and_separate_source_folds(tmp_path):
+    from scripts.run_grain_vector_mechanism_external_cohort import load_source_folds
+
+    (tmp_path / "bridge").mkdir()
+    (tmp_path / "mbti_axes").mkdir()
+    pd.DataFrame(
+        {
+            "user_id": ["b", "x"],
+            "official_fold": [0, 1],
+            "openness": ["not parsed", "not parsed"],
+        }
+    ).to_csv(tmp_path / "pandora_official_big5_prepared.csv", index=False)
+    pd.DataFrame({"user_id": ["x"], "bridge_fold": [4]}).to_csv(
+        tmp_path / "bridge/pandora_official_bridge_strict377.csv", index=False
+    )
+    for i, axis in enumerate(("EI_cont", "SN_cont", "TF_cont", "JP_cont")):
+        pd.DataFrame({"user_id": ["m", "x"], "official_fold": [i, 4]}).to_csv(
+            tmp_path / "mbti_axes" / f"pandora_official_{axis}_prepared.csv",
+            index=False,
+        )
+    members, folds, meta = load_source_folds(tmp_path)
+    assert members["big5"] == {"b", "x"}
+    assert [folds[a + "_cont"]["m"] for a in ("EI", "SN", "TF", "JP")] == [0, 1, 2, 3]
+    assert meta["big5"]["columns_read"] == ["user_id", "official_fold"]
+    pd.DataFrame({"user_id": ["b"], "official_fold": [5]}).to_csv(
+        tmp_path / "pandora_official_big5_prepared.csv", index=False
+    )
+    with pytest.raises(ValueError, match="Invalid official"):
+        load_source_folds(tmp_path)
