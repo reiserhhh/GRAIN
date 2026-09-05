@@ -36,6 +36,7 @@ def main():
     """Require complete controls; compare paired candidate/random effects."""
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--parent-dir", type=Path, required=True)
+    p.add_argument("--endpoint-repair", type=Path)
     p.add_argument("--output-dir", type=Path, required=True)
     a = p.parse_args()
     read = lambda name: json.loads((a.parent_dir / name).read_text(encoding="utf-8"))
@@ -57,6 +58,48 @@ def main():
         raise ValueError("Unexpected paired experiment population")
     if frame.duplicated(ids + ["arm", "rank", "alpha"]).any():
         raise ValueError("Duplicated intervention rows")
+    repair_identity = None
+    if a.endpoint_repair:
+        load_repair = lambda name: json.loads(
+            (a.endpoint_repair / name).read_text(encoding="utf-8")
+        )
+        repair, repair_status = (
+            load_repair("manifest.json"),
+            load_repair("run_status.json"),
+        )
+        if (
+            repair_status["status"] != "COMPLETE"
+            or repair["parent_identity"] != manifest["identity"]
+        ):
+            raise ValueError("Repair incomplete or attached to a different parent")
+        for key in (
+            "candidate_replay_max_error",
+            "baseline_replay_max_error",
+            "restore_max_error",
+        ):
+            if repair_status[key] != 0:
+                raise ValueError("Repair does not replay the original instrument")
+        replacement = pd.read_csv(a.endpoint_repair / "replacement_rows.csv")
+        mask = (frame.span == "decision_endpoint") & frame.arm.str.startswith("random_")
+        keys = ids + ["arm", "rank", "alpha"]
+        expected = frame[mask]
+        check = expected.merge(
+            replacement, on=keys, validate="one_to_one", suffixes=("_old", "_new")
+        )
+        if len(check) != 384 or len(replacement) != 384 or len(expected) != 384:
+            raise ValueError(
+                "Repair must replace every endpoint random row exactly once"
+            )
+        for key in ("baseline_margin", "natural_donor_margin"):
+            if not (check[key + "_old"] == check[key + "_new"]).all():
+                raise ValueError("Repair changed the natural reference")
+        if (
+            replacement.postcast_match_relative_error.max()
+            > repair["matching_tolerance"]
+        ):
+            raise ValueError("Postcast random control remains unmatched")
+        frame = pd.concat([frame[~mask], replacement], ignore_index=True)
+        repair_identity = repair["identity"]
     out = a.output_dir
     out.mkdir(parents=True, exist_ok=True)
     if any(out.iterdir()):
@@ -186,6 +229,10 @@ def main():
         "status": "COMPLETE",
         "parent_identity": manifest["identity"],
         "code_sha256": code_fingerprint(ROOT),
+        "endpoint_repair_identity": repair_identity,
+        "endpoint_random_control": "postcast_matched"
+        if repair_identity
+        else "provisional_precast_only",
         "runtime": runtime,
         "authors": 6,
         "current_comments": 12,

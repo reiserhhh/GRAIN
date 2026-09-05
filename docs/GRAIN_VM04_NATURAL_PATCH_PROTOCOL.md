@@ -88,3 +88,23 @@ Activation-patching conclusions depend on corruption and metric choices:
 [Zhang and Nanda, ICLR 2024](https://openreview.net/forum?id=Hf17y6u9BC).
 Our task-specific donor, norm and collateral controls address part of that
 problem, not a guarantee that the intervention identifies a unique mechanism.
+
+## Post-Run Instrument Repair
+
+The first complete run showed pre-cast norm matching below 3e-14 relative
+error but endpoint post-cast mismatch up to 24.66% after averaging random
+replicates. Current-span mismatch was below 0.05%. Therefore the original
+endpoint candidate/random comparison is provisional.
+
+Before repair readouts, fix the following: rerun every endpoint random row
+(384), not an outcome-selected subset; keep its direction/rank/seed and scale
+the whole row to match the candidate's actual BF16 displacement. Use bounded
+40-step monotone search; choose the nearest discrete norm, not coordinate edits.
+Desired relative mismatch is <=1% per row. If rounding makes this unattainable,
+report NEEDS_RETRY_NORM rather than claiming exact matching.
+
+Replay all 192 endpoint candidate outputs and all 48 original baselines exactly,
+with restoration after each job. Budget <=1024 calls and 10 minutes. This repair
+does not change target directions, prompts, authors, decision thresholds, or
+the original complete/current-span results. Preserve both versions and identify
+the repaired rows explicitly in downstream summaries.

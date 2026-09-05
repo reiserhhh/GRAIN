@@ -1061,3 +1061,18 @@ def test_natural_patch_summary_weights_authors_not_forwards():
     result = aggregate(sample, ["task"], ["delta"])
     assert result.iloc[0]["delta_mean"] == 0.5
     assert result.iloc[0]["delta_clusters"] == 2
+
+
+def test_quantized_norm_match_reports_discrete_limits():
+    from grain_research.vector_mechanisms.natural_patch import match_quantized_row_norms
+
+    h = np.zeros((2, 2))
+    direction = np.array([[0.2, 0.0], [0.1, 0.0]])
+    target = np.array([[0.0, 1.0], [1.0, 1.0]])
+    value, scale, error = match_quantized_row_norms(h, direction, target, np.round)
+    assert error[0] == 0
+    assert error[1] > 0.1
+    assert np.array_equal(value[:, 1], np.zeros(2))
+    assert np.all(scale > 0)
+    with pytest.raises(ValueError, match="zero direction"):
+        match_quantized_row_norms(h, np.zeros_like(h), target, np.round)

@@ -71,3 +71,38 @@ def matched_random_rows(
     if np.any((have < 1e-12) & (need > 1e-12)):
         raise ValueError("Random subspace cannot match a nonzero candidate effect")
     return random * (need / np.maximum(have, 1e-12))
+
+
+def match_quantized_row_norms(current, direction, target, quantize, *, steps=40):
+    """Match rounded displacement by bounded monotone row-scale search.
+
+    Scaling preserves the random subspace before rounding. Discrete rounding
+    can prevent exact matching; report the mismatch without editing coordinates.
+    """
+    h, d, target = (np.asarray(x, dtype=float) for x in (current, direction, target))
+    if h.ndim != 2 or h.shape != d.shape or h.shape != target.shape:
+        raise ValueError("Need aligned row matrices")
+    if not np.array_equal(quantize(h), h):
+        raise ValueError("Current state is not exactly representable")
+    need = np.linalg.norm(quantize(target) - h, axis=1)
+    if np.any((np.linalg.norm(d, axis=1) == 0) & (need > 0)):
+        raise ValueError("Cannot scale a zero direction to a nonzero target")
+    lo, hi = np.zeros(len(h)), np.ones(len(h))
+    norms = lambda scale: np.linalg.norm(quantize(h + scale[:, None] * d) - h, axis=1)
+    for _ in range(12):
+        missing = norms(hi) < need
+        if not missing.any():
+            break
+        hi[missing] *= 2
+    if np.any(norms(hi) < need):
+        raise ValueError("Quantized norm match exceeds scaling budget")
+    for _ in range(steps):
+        mid = (lo + hi) / 2
+        below = norms(mid) < need
+        lo = np.where(below, mid, lo)
+        hi = np.where(below, hi, mid)
+    scale = np.where(np.abs(norms(lo) - need) <= np.abs(norms(hi) - need), lo, hi)
+    scale = np.where(need == 0, 0, scale)
+    value = h + scale[:, None] * d
+    error = np.abs(norms(scale) - need) / np.maximum(need, 1e-12)
+    return value, scale, error
