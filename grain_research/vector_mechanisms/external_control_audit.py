@@ -41,6 +41,13 @@ def paired_seed_average(candidate, references, draws=1000):
     base = [r["p"] for r in references]
     score = task_score(y, pred, task)
     scores = [task_score(y, p, task) for p in base]
+    fold_candidate, fold_reference = [], []
+    for fold in range(5):
+        selected = candidate["folds"] == fold
+        fold_candidate.append(task_score(y[selected], pred[selected], task))
+        fold_reference.append(
+            np.mean([task_score(y[selected], p[selected], task) for p in base])
+        )
     rng, samples = np.random.default_rng(731), []
     for _ in range(draws):
         ix = rng.integers(len(y), size=len(y))
@@ -58,6 +65,12 @@ def paired_seed_average(candidate, references, draws=1000):
         "reference_seed_min": float(min(scores)),
         "reference_seed_max": float(max(scores)),
         "reference_count": len(base),
+        "candidate_mean_fold_score": float(np.mean(fold_candidate)),
+        "reference_mean_fold_score": float(np.mean(fold_reference)),
+        "mean_fold_delta": float(np.mean(np.subtract(fold_candidate, fold_reference))),
+        "positive_fold_count": int(
+            np.sum(np.subtract(fold_candidate, fold_reference) > 0)
+        ),
         "delta": float(score - np.mean(scores)),
         "lower": float(np.quantile(valid, 0.025)),
         "upper": float(np.quantile(valid, 0.975)),

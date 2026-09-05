@@ -1864,3 +1864,18 @@ def test_external_null_batch_preserves_full_axis_arm_family(tmp_path):
         sum(r["task"] == task for r in rows) == 3
         for task in ("big5", "EI_cont", "SN_cont", "TF_cont", "JP_cont")
     )
+
+
+def test_external_null_family_does_not_overstate_monte_carlo_resolution():
+    from scripts.summarize_grain_vector_null_family import (
+        adjust_family,
+        exceedance_interval,
+    )
+
+    holm, bh = adjust_family(np.repeat(0.005, 15))
+    np.testing.assert_allclose(holm, 0.075)
+    np.testing.assert_allclose(bh, 0.005)
+    lo, hi = exceedance_interval(0, 199)
+    assert lo == 0 and 0.005 < hi < 0.05
+    with pytest.raises(ValueError, match="Invalid"):
+        adjust_family([0.01, np.nan])
