@@ -50,6 +50,14 @@ distributed causal use. Explicit product kernels recover the controlled relation
 without language-model training. These are synthetic mechanism results, not
 improved real-person personality prediction. The full VM02-VM07 program remains open.
 
+The [independent multi-comment discovery](reports/grain_vector_mechanisms/VM02_MULTICOMMENT_DISCOVERY_REPORT.md)
+now covers 144 development authors (48 reference, 96 comparison), drawn from a
+new 240-author cohort; the other 96 authors remain unused for model analysis.
+With 12 comments per view, Qwen content mean (.950 author rank) is not clearly
+better than E5 (.947), while its decision-position representation is much weaker.
+The frozen full GRAIN score refuses this material outside its reference envelope;
+the report quantifies observation-volume effects without relaxing that gate.
+
 ## Theory manuscript (2026-09-01)
 
 The completed theory is now expressed as a journal-neutral theoretical and

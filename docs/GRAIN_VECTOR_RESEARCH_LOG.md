@@ -150,3 +150,54 @@ python -m pytest -q tests/test_grain_vector_mechanisms.py
 每份 GRAIN 视图最少 12 个单位，三份互不重叠视图至少 36 条有效评论；同时必须报告 LLM 与 encoder 的 token 上限，不能为了对齐偷偷截断。若此支持不足，先给不足清单，再保留适用的一般 embedding/LLM 观察，不冒充完整 GRAIN。
 
 之后仍需：自然事实摘要/检索/随机历史及反证更新；冻结候选后的自然激活干预；VM05 外部联系；VM06 MEPS 无标签与 Essays/X 冻结复测；VM07 机制图和规范。当前有可执行路径，不需要用户提供新 idea，也没有将整个理论标为完成。
+
+## 第四轮：独立多评论开发与参照支持
+
+代码提交：`1d68c8b`；未 push。报告与协议作为随后独立文档提交。
+
+2026-09-06。上一 goal turn 分类为 progress；本轮亦完成新数据、模型执行、统计
+与修正，不是状态复述。无新训练，无付费 API，无 MEPS 问卷读取。
+
+完整结果：[VM02 多评论报告](../reports/grain_vector_mechanisms/VM02_MULTICOMMENT_DISCOVERY_REPORT.md)。
+图：`reports/grain_vector_mechanisms/figures/multicomment_discovery.png`，已渲染检查。
+
+- 新 240 人，8,640 条 raw 评论；与原 32 人零重叠。144 development 分为 48
+  reference /96 comparison。48 calibration、48 mechanism holdout 仅准备文件，
+  未进入模型和效应分析。所有主体标签仍未用于选择。
+- `vm02_multicomment_cohort_r1`：54.4 秒流读全库，745/1024 eligible；
+  每作者时间跨度中位数约 3 年，不能称短期重测。
+- `vm02_multicomment_base_r2`：完整 GRAIN + reference-only 词汇/风格。
+  12 条视图全部超出旧半径；没有绕过拒绝规则。r1 交错曾重拟合词表/
+  scaler，r2 固定 chronology reference 变换，隔离分组方式。
+- `vm02_multicomment_bge_r1`：Windows FP32 6,916 文本、191 秒；
+  `vm02_multicomment_e5_r1`：Mac FP32 相同文本、1,186 秒。
+- `vm02_multicomment_qwen_r2`：864 条件、865 forward、382 秒；
+  原文 max1993 tokens、padding3072、GPU peak4.31GB；全部已拷回 Mac。
+  pre-question 与 replay 误差 0。r1 在 preflight 被嵌套引文重复子串挡住，
+  r2 改为明确 span 定位，无作者删减。Windows 另一处 GBK 默认解码已修 UTF-8。
+- `vm02_multicomment_analysis_r3`：62 条件完整汇总。Qwen10 正文 .9499，
+  E5 独立 .9473，配对差 .00256 [-.01103,.01580]；Qwen16 判断 .6507、
+  final norm .5951。名义 Qwen–BGE 小幅差不作多重校正后优势。
+- `vm02_multicomment_support_r2`：36 条时仅 26/144 在旧域内。标准有限总体
+  均值二次型公式与真实向量 Monte Carlo 相符，解释观察量导致的一部分距离
+  膨胀；不证明完整 score 的拒绝完全由误差造成，不直接减去所谓噪声。
+- Mac 与 Windows 机制专项测试均 **48 passed**；scoped ruff 与 diff check
+  通过。完整历史仓库测试未在本轮重跑。
+
+复现入口（新目录，不覆盖 canonical）：
+
+```bash
+python scripts/run_grain_vector_mechanism_cohort.py --data-root '/Volumes/mobile3/projects/project persona/data_sets' --exclude-views results/grain_vector_mechanisms/vm02_raw_views_r1/author_views.json --output-dir results/grain_vector_mechanisms/new_cohort
+python scripts/run_grain_vector_mechanism_multicomment.py --views results/grain_vector_mechanisms/new_cohort/discovery_views.json --stage base --output-dir results/grain_vector_mechanisms/new_base
+python scripts/run_grain_vector_mechanism_multicomment.py --views results/grain_vector_mechanisms/new_cohort/discovery_views.json --stage e5_large --device mps --output-dir results/grain_vector_mechanisms/new_e5
+python scripts/run_grain_vector_mechanism_multicomment.py --views results/grain_vector_mechanisms/new_cohort/discovery_views.json --stage bge_large --device cuda --group-plan-dir results/grain_vector_mechanisms/new_e5 --output-dir results/grain_vector_mechanisms/new_bge
+python scripts/run_grain_vector_mechanism_multicomment_qwen.py --views results/grain_vector_mechanisms/new_cohort/discovery_views.json --output-dir results/grain_vector_mechanisms/new_qwen
+python scripts/summarize_grain_vector_multicomment.py --views results/grain_vector_mechanisms/new_cohort/discovery_views.json --parent-dirs results/grain_vector_mechanisms/new_base results/grain_vector_mechanisms/new_e5 results/grain_vector_mechanisms/new_bge results/grain_vector_mechanisms/new_qwen --output-dir results/grain_vector_mechanisms/new_analysis
+python scripts/run_grain_vector_mechanism_support_audit.py --parent-dir results/grain_vector_mechanisms/new_base --output-dir results/grain_vector_mechanisms/new_support
+```
+
+下一入口不再是扩同一作者匹配 leaderboard：执行 VM03 最多 12 个 hash 固定
+development case 的自然原文/事实摘要/冻结检索/随机历史与主体、否定、矛盾
+更新；先审核事实保真。之后 calibration 固定两个候选、自然激活干预，再开
+VM05 量表链接与 VM06/07。保留 Qwen10 内容与 Qwen16 判断的既定机制位置，
+不因 block5 在 discovery 最高而重新选层。仍有可执行工作，goal 保持 active。

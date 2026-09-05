@@ -167,6 +167,14 @@ m_{u,k}=A_k(\{\Delta h_{u,l},I_{u,k},\Delta s_{u,k}\}),\quad
 
 验收：先能区分被操纵的已知语义事实，再对其内部位置作解释；报告方向一致率、配对效应和 bootstrap 区间。若模型连事实主体都不能区分，当前模型/任务进入 revise，不据此评价 GRAIN 或人的人格。
 
+2026-09-06 多评论执行增补：已按作者新抽样完成 240 人材料，执行 144 development
+（48 reference +96 comparison）；calibration48/holdout48 未做模型分析。
+完整 GRAIN 计分被冻结半径拒绝，已完成文量敏感性和均值二次型解析，不放宽门槛。
+同预算 BGE/E5/Qwen 全部完成，正文保留与判断 suffix 存在明显差别。
+见 [多评论报告](../reports/grain_vector_mechanisms/VM02_MULTICOMMENT_DISCOVERY_REPORT.md)
+和[执行协议](GRAIN_VM02_MULTICOMMENT_PROTOCOL.md)。这不替代下面的 VM03 自然摘要/
+证据归属与反证更新、calibration 固定、VM04 自然干预、VM05–07。
+
 ### TASK-GRAIN-VM02：真实文本逐层可读性图谱
 
 预计 1–2 天。24 作者 pilot，单模型抽 6 个预定层/阶段和固定 suffix 位置。比较同预算 BGE/E5、LLM 输入层/中间层/末层以及既有 GRAIN 特征；保留 raw 与聚合视图。

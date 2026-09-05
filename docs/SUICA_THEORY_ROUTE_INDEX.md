@@ -19,6 +19,12 @@ adds same-word relational controls, exact token-span interventions, and a
 standard product-kernel comparator. Readability, causal use, and personality
 validity remain separate claims; the frozen GRAIN scorer is unchanged.
 
+The [multi-comment follow-up](../reports/grain_vector_mechanisms/VM02_MULTICOMMENT_DISCOVERY_REPORT.md)
+adds an independent author cohort, complete-evidence encoder/whitebox comparisons,
+and a finite-population calculation of sampling-induced reference-distance
+inflation. It does not identify that fluctuation with psychological noise or
+delete it from scores. Natural evidence composition and external links remain open.
+
 ## 1. Purpose
 
 This file is the single navigation entry for how GRAIN was developed, what
