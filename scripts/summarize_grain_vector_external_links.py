@@ -134,7 +134,7 @@ def main():
                 "task": m["task"],
                 "feature": m["feature"],
                 "arm": m["arm"],
-                "pca": m["pca"],
+                "pca_applied": m["pca"] and m["feature"] != "word_char",
                 "permutation_seed": m["permutation_seed"],
                 "authors": m["authors"],
                 "pooled_score": s["score"],
@@ -170,6 +170,22 @@ def main():
                     **paired_delta(objects[keys[candidate]], objects[keys[baseline]]),
                 }
             )
+    for task in ("EI_cont", "SN_cont", "TF_cont", "JP_cont"):
+        for candidate, baseline in (
+            ("cue_mask", "raw"),
+            ("placebo_mask", "raw"),
+            ("cue_mask", "placebo_mask"),
+        ):
+            ck = (task, "grain_intermediate", candidate, True, None)
+            bk = (task, "grain_intermediate", baseline, True, None)
+            if ck in objects and bk in objects:
+                comparisons.append(
+                    {
+                        "candidate": f"{task}_{candidate}",
+                        "baseline": f"{task}_{baseline}",
+                        **paired_delta(objects[ck], objects[bk]),
+                    }
+                )
     pd.DataFrame(rows).to_csv(out / "source_comparison.csv", index=False)
     pd.DataFrame(comparisons).to_csv(out / "paired_comparison.csv", index=False)
     summary = {
