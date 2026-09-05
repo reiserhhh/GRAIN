@@ -1917,3 +1917,41 @@ def test_external_auc_partition_reconstructs_cross_fold_pairs_and_ties():
     assert (
         tied["pooled_auc"] == tied["within_pair_auc"] == tied["cross_pair_auc"] == 0.5
     )
+
+
+def test_external_sparse_batch_covers_every_axis_and_mask_arm():
+    from scripts.run_grain_vector_mechanism_sparse_baselines import cases
+
+    rows = cases()
+    assert len(rows) == len({r["id"] for r in rows}) == 12
+    for task in ("EI_cont", "SN_cont", "TF_cont", "JP_cont"):
+        assert {r["arm"] for r in rows if r["task"] == task} == {
+            "raw",
+            "cue_mask",
+            "placebo_mask",
+        }
+
+
+def test_external_sparse_supervisor_terminates_only_owned_timed_out_child(tmp_path):
+    import os
+    import sys
+
+    from scripts.run_grain_vector_mechanism_sparse_baselines import bounded_child
+
+    if sys.platform not in ("darwin", "linux"):
+        pytest.skip("POSIX CPU supervisor")
+    seen = []
+    with (
+        (tmp_path / "child.log").open("w") as log,
+        pytest.raises(RuntimeError, match="budget"),
+    ):
+        bounded_child(
+            [sys.executable, "-c", "import time; time.sleep(30)"],
+            log,
+            0.15,
+            8 * 1024**3,
+            lambda pid, *rest: seen.append(pid),
+        )
+    assert seen and len(set(seen)) == 1
+    with pytest.raises(ProcessLookupError):
+        os.kill(seen[0], 0)
