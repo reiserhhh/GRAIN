@@ -505,3 +505,8 @@ FAILED_STOP或PARTIAL_RESOURCE_BOUND不能直接重复启动/覆盖，应先核�
 下一执行：完整向量/源头头→旧参照排除/共享讨论/完整置换→冻结头再bridge。
 其后仍有代码语义实验、VM06许可范围跨语料、VM07atlas。本轮不是理论完成，
 也没有需要用户新idea的阻塞。goal保持active，没有push。
+
+本轮末全量队列的shard_00三个观察器各303人均已完成，随后进入shard_01。
+首批1829文件已备份回Mac的同名vm05_full_vectors_r1目录，三份manifest及
+全部909份向量cache SHA验证通过；local_backup_status.json明确whole_queue_complete=false。
+Mac目前只是首批副本，不能据此尝试完整源头observer head。Windows原队列继续运行。
