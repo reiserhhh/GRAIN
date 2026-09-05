@@ -94,7 +94,10 @@ def main():
         if feature_kind == "word_char"
         else hashlib.sha256(np.ascontiguousarray(x).tobytes()).hexdigest()
     )
-    if input_sha != m["feature_input_sha256"]:
+    if (
+        m.get("feature_input_sha256") is not None
+        and input_sha != m["feature_input_sha256"]
+    ):
         raise ValueError("Null input features differ from the frozen source parent")
     fields = {
         "protocol": "VM05_AUTHOR_PERMUTATION_199_V1",
@@ -104,6 +107,8 @@ def main():
         "arm": m["arm"],
         "feature": m["feature"],
         "feature_input_sha256": input_sha,
+        "input_commitment_in_parent": "feature_input_sha256" in m,
+        "legacy_input_verification": "canonical material/operator plus exact observed OOF replay",
         "pca_applied": feature_kind == "dense" and m["pca"],
         "exclude_reference": m.get("exclude_reference", False),
         "draws": 199,
