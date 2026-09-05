@@ -36,7 +36,7 @@ opens 48 calibration sources for semantic coding, not questionnaire evaluation.
 The [first natural state-intervention pilot](../reports/grain_vector_mechanisms/VM04_NATURAL_PATCH_REPORT.md)
 separates geometric displacement from task-conditioned functional use and
 repairs low-precision random-control strength. Neither establishes a shared
-personality axis. The remaining 48 mechanism-holdout authors are unopened.
+personality axis. The remaining 48 authors were reserved until the confirmation below.
 
 The [local-sensitivity experiment](../reports/grain_vector_mechanisms/VM04_SENSITIVITY_REPORT.md)
 adds a task-conditioned readout operator to the mechanism map: geometric
@@ -44,6 +44,14 @@ displacement and output sensitivity are different objects. Small history-state
 effects can be locally predicted, whereas amplified control is nonlinear and
 nonselective. This does not replace reference-normed GRAIN measurement or prove
 personality validity. Independent confirmation and VM05 external links are next.
+
+The [independent access confirmation](../reports/grain_vector_mechanisms/VM04_INDEPENDENT_ACCESS_REPORT.md)
+now supports cross-current computational transfer in 44 budget-eligible reserved
+authors. Answer-code capability fails its frozen check, so semantic and personality
+interpretation remain unresolved. Mechanistic controllability, evidence fidelity,
+and psychometric validity must remain distinct. A second observer and adequately
+sized, same-budget external links are next; the [VM05 coverage note](GRAIN_VM05_RESOURCE_AND_COVERAGE_NOTE.md)
+documents why the current mechanism cohort cannot stand in for a full Big5/H2 test.
 
 ## 1. Purpose
 

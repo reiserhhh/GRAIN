@@ -378,3 +378,35 @@ block10/16、rank2/4、BF16 eager、pad1536；Windows .20完成全部计算。
 结束同一6作者上的自由方向探索，先冻结独立作者的有限确认及答案极性控制，
 再推进VM05同材料外部联系和第二观察器。48 mechanism holdout尚未打开；
 MEPS问卷和用途边界不变。已有代码仍可运行，不需要用户的新idea；goal保持active。
+
+## 第八轮：独立历史访问确认与VM05容量盘点
+
+2026-09-06。先提交协议4d69362，再实现d443c7f、预检修正7e1d2b7；
+分析器端到端测试422f352。见
+[独立报告](../reports/grain_vector_mechanisms/VM04_INDEPENDENT_ACCESS_REPORT.md)。
+
+48机制保留作者已全部打开指定材料，4人超长整组排除，44完整执行。
+canonical vm04_independent_access_r2：1777 forward含176 backward，1056行，
+690.703秒；恢复、自替换、梯度前向/历史前缀重播0误差。
+总范数随机匹配最大相对误差6.70e-6。220私有缓存已拷回、manifest哈希通过。
+vm04_independent_access_analysis_r1是统一作者级分析；不是心理量表结果。
+
+第二当前相对随机定向margin优势+.5909 [.5284,.6556]，Holm p约.00010。
+说明源当前定义的历史方向能影响另一当前文本的相同任务，而非在那里再优化。
+但普通/交换代码语义控制仅5/8、4/8，反转1/8，未达预定条件。不能把交换
+端点反向效应当作已识别纯答案偏置，也不能把机械确认升级为人格特异性。
+非目标仍有明确效应。停止同样本prompt/方向搜索，第二观察器能力预检优先。
+
+r1在模型前向前因tokenizer Mapping返回类型差异停止，0调用；保留
+FAILED_PREFLIGHT并修复兼容处理，无门槛/条件改变。Mac与最终同步Windows
+专项68 tests通过（Windows12.62s），完整历史测试未跑，无训练/API/push。
+
+额外完成vm05_membership_inventory_r1（代码/说明873b192）：仅读官方文件
+user_id，240作者有22 Big5-only、207 MBTI-only、10 strict bridge。
+不读心理值，不将240错误当成Big5样本量。下一步正确来源扩样、同预算采集，
+不能用小bridge承担主H2。Mistral7B本地3权重文件14.50GB存在，未加载；
+Mac24GiB/Windows可用6.9GB需先资源预检，不贸然全精度反向。
+具体见[GRAIN_VM05_RESOURCE_AND_COVERAGE_NOTE](GRAIN_VM05_RESOURCE_AND_COVERAGE_NOTE.md)。
+
+仍需第二观察器、VM05外部联系、VM06 MEPS无标签/Essays/X、VM07atlas。
+本轮没有需要用户补新idea的阻塞，goal保持active。

@@ -54,7 +54,7 @@ The [independent multi-comment discovery](reports/grain_vector_mechanisms/VM02_M
 now covers 144 development authors (48 reference, 96 comparison), drawn from a
 new 240-author cohort. That comparison did not use the remaining 96 authors;
 the later scope audit below opens 48 calibration authors, leaving 48 mechanism
-holdout authors unopened.
+holdout authors initially unopened; the independent confirmation below now opens them.
 With 12 comments per view, Qwen content mean (.950 author rank) is not clearly
 better than E5 (.947), while its decision-position representation is much weaker.
 The frozen full GRAIN score refuses this material outside its reference envelope;
@@ -83,6 +83,15 @@ effects; amplified directions also change collateral judgments. These are
 model-access results on six discovery authors, not personality accuracy or a
 validated scoring channel. Open-ended direction search on those authors is now
 closed in favor of independent confirmation and external links.
+
+The [independent confirmation](reports/grain_vector_mechanisms/VM04_INDEPENDENT_ACCESS_REPORT.md)
+has now opened the 48 reserved authors: 44 meet the frozen token budget and
+complete all interventions. Cross-current historical access exceeds matched
+random controls, but answer-code/semantic controls are weak (5/8 and 4/8).
+This supports repeatable internal access, not personality-specific interpretation.
+Next priorities are a second observer's capability check and expanded external-link
+materials; the 240-author mechanism cohort has only 22 Big5-only and 10 bridge
+members. See the [coverage note](docs/GRAIN_VM05_RESOURCE_AND_COVERAGE_NOTE.md).
 
 ## Theory manuscript (2026-09-01)
 
