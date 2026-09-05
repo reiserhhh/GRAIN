@@ -1,6 +1,6 @@
 # GRAIN 向量推论机制研究日志
 
-日期：2026-09-05。研究 loop：进行中。正式 GRAIN scorer、历史 lockbox 与论文结论未被替换。
+更新：2026-09-06。研究 loop：进行中。正式 GRAIN scorer、历史 lockbox 与论文结论未被替换。
 
 ## 目标与当前裁决
 
@@ -98,3 +98,55 @@ python scripts/run_grain_vector_mechanism_endpoint_audit.py --output-dir results
 ```
 
 这些是执行过的设计的重播命令，不是要求后续 agent 再跑一遍。先利用已保存激活推进未完成机制，避免重复消耗。
+
+## 第三轮：同预算比较、关系组合和计算路径
+
+代码提交：`343def6`。详细证据见 [VM02 同预算报告](../reports/grain_vector_mechanisms/VM02_SAME_MATERIAL_BASELINES.md)与[VM03 关系绑定报告](../reports/grain_vector_mechanisms/VM03_RELATIONAL_BINDING_REPORT.md)。聚合图为 `reports/grain_vector_mechanisms/figures/relational_layer_map.png`，已渲染检查。
+
+| 当前 canonical 目录（同一 results/grain_vector_mechanisms/ 前缀） | 实际完成内容 |
+|---|---|
+| `vm02_baselines_full_r1` | 24 作者 × 3 独立评论；8 reference 作者；28 条表示条件；本机缓存 BGE/E5，无下载、无截断 |
+| `vm02_baselines_sensitivity_r2` | source/length/embedding-neighbor/类型词敏感性；严格 source 匹配仅 2 边，不验收为充分控制 |
+| `vm03_binding_full_r1` | 288 合成关系条件，12 场景，289 forward，22.61 秒；token 多重集一致、前缀/重播误差 0 |
+| `vm03_binding_analysis_r1` | lexical、独立记录相加、联合编码、全部层 probe、二阶有限差分 |
+| `vm03_binding_patch_r3` | 单 marker / rank2 / 随机 /恢复，544 forward，31.05 秒，三个控制误差 0 |
+| `vm03_binding_spans_r2` | 身份/行动/全部证据/全 prompt 对照，1,120 forward，60.89 秒，完整 donor/自身/恢复误差 0 |
+| `vm03_binding_patch_analysis_r3` | 当前单点、span、collateral、discovery-only 阈值校准汇总 |
+| `vm03_relational_kernel_r1` | 加性、乘积、组合核；固定 α=.01，8/4 场景；无 LLM 训练 |
+| `vm01_patch_exactcopy_r4` | 新精确 copy 实现复跑原 VM01；16 目标、3,264 forward、167.89 秒；旧有限作用方向保留 |
+
+主发现：
+
+1. 自然作者匹配 E5=.7319、TF-IDF=.7107、Qwen block10=.7041；Qwen 相对 E5/TF-IDF/BGE 的配对 CI 均跨 0。不能把 LLM 中层当成自然人格推理优势。旧 GRAIN 仅做 24 维单位投影；完整 score 最少 12 单位，当前每份 1 单位不适用。
+2. 同词汇但主体关系不同的四格材料中，独立编码相加 AUC=.5，联合 E5=.9883、Qwen block16 的 pre-question probe=1。词 bigram 乘积核也可=1，说明必须区分“缺少关系交互”和“模型没有语义信息”；不证明特殊人格能力。
+3. 默认回答有顺序/阈值偏差；先身份后行动留出准确率 .8125、校准后 .875；逆序 .5/.6875。问题否定仍脆弱。
+4. 句末单点干预很弱；block10 多 token 证据替换的目标朝向作用明显，block16 晚期替换很弱。易读位置与因果使用位置不重合。语义专属性尚未闭环，存在 collateral。
+5. 修复 BF16 完整替换用 `x+(y-x)` 的舍入误差，改成直接 copy。旧 span r1 完整 donor error=.375，修正 r2=0；增加 BF16 与多 token 单元测试。Mac 40 tests passed；Windows 最近完整套件 39 passed（多出一个纯 numpy 关系核测试尚未在 Windows 执行），不是声称全仓库测试完成。
+
+失败/修正溯源：sensitivity r1 的 flag 字典真假判断错误，r2 已修；binding point r1 发现双候选重复 forward 成本后中止，r2 改为单次 logit contrast，r3 再应用精确复制；span r1 控制失败，r2 才可使用。源快照现在包含 tests/config allowlist，避免远端仍执行旧 28-test 文件；不包含 .env 或原数据。
+
+旧 VM01 复核的 block16 decision / rank2 / α=1：ownership 配对差 .593750 [.468750,.708333]，voluntary 1.531250 [1.364583,1.697917]；自身/恢复为 0，有限功能作用未被新代码推翻。远端原 VM01 parent 实际在 `results/vm01_static256_r3`，不是新实验所用的 `results/grain_vector_mechanisms/` 子层；首次路径检查失败没有启动模型，修正路径后完成。Mac canonical copy 仍统一放在后者。
+
+### 第三轮命令
+
+以下 Windows 推理脚本应在独立研究 checkout 内运行；本机 encoders 使用 `--device mps`。父目录必须是已验证、相同材料的 canonical 结果，不覆盖旧目录。
+
+```bash
+python scripts/run_grain_vector_mechanism_baselines.py --views results/grain_vector_mechanisms/vm02_raw_views_r1/author_views.json --parent-dir results/grain_vector_mechanisms/vm03_independent_history_r1 --output-dir results/grain_vector_mechanisms/new_baselines --device mps
+python scripts/summarize_grain_vector_baselines.py --parent-dir results/grain_vector_mechanisms/new_baselines --output-dir results/grain_vector_mechanisms/new_sensitivity
+python scripts/run_grain_vector_mechanism_binding.py --output-dir results/grain_vector_mechanisms/new_binding
+python scripts/summarize_grain_vector_binding.py --parent-dir results/grain_vector_mechanisms/new_binding --output-dir results/grain_vector_mechanisms/new_binding_analysis --device mps
+python scripts/run_grain_vector_mechanism_binding_patch.py --parent-dir results/grain_vector_mechanisms/new_binding --output-dir results/grain_vector_mechanisms/new_point_patch
+python scripts/run_grain_vector_mechanism_binding_spans.py --parent-dir results/grain_vector_mechanisms/new_binding --output-dir results/grain_vector_mechanisms/new_span_patch
+python scripts/summarize_grain_vector_binding_patch.py --parent-dir results/grain_vector_mechanisms/new_binding --patch-dir results/grain_vector_mechanisms/new_point_patch --span-dir results/grain_vector_mechanisms/new_span_patch --output-dir results/grain_vector_mechanisms/new_patch_analysis
+python scripts/run_grain_vector_mechanism_relational_kernel.py --parent-dir results/grain_vector_mechanisms/new_binding --output-dir results/grain_vector_mechanisms/new_kernel --device mps
+python -m pytest -q tests/test_grain_vector_mechanisms.py
+```
+
+### 尚未完成及下一执行入口
+
+现在不能继续只在已看到的 24 作者/4 合成场景上找高分。下一主任务是**独立自然作者扩样、完整 GRAIN 多评论计分域及 joint-vs-pooled 关系通道**。沿原 VM02 的 144 discovery / 48 calibration / 48 mechanism holdout 目标准备，先做 eligibility/来源覆盖审计；不足则明确实际 N，不改为伪造完整规模。新作者不得与本次 8+24 重叠；PANDORA 历史接触仍记录，不称整个语料是 pristine lockbox。
+
+每份 GRAIN 视图最少 12 个单位，三份互不重叠视图至少 36 条有效评论；同时必须报告 LLM 与 encoder 的 token 上限，不能为了对齐偷偷截断。若此支持不足，先给不足清单，再保留适用的一般 embedding/LLM 观察，不冒充完整 GRAIN。
+
+之后仍需：自然事实摘要/检索/随机历史及反证更新；冻结候选后的自然激活干预；VM05 外部联系；VM06 MEPS 无标签与 Essays/X 冻结复测；VM07 机制图和规范。当前有可执行路径，不需要用户提供新 idea，也没有将整个理论标为完成。

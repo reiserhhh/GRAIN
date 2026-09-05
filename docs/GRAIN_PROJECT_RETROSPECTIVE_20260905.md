@@ -1,6 +1,6 @@
 # Project Persona 到 GRAIN：研究回顾与下一阶段机制地图
 
-日期：2026-09-05。状态：`SOURCE_REVIEW_COMPLETE__NEXT_PROGRAM_PLANNED_NOT_RUN`。
+日期：2026-09-05。回顾状态：`SOURCE_REVIEW_COMPLETE`。新机制计划随后开始执行；最新状态以[研究日志](GRAIN_VECTOR_RESEARCH_LOG.md)为准。本文以下历史阶段表描述制定计划时的基线，不作为执行仪表盘。
 
 本次回顾结合本会话的连续研究意图、两个本地仓库的路线文档、主要报告和当前代码入口。它不声称重新运行了历史实验，也不声称穷尽所有版本的代码审计。数值属于各自原协议，不能合成一个跨版本排行榜。
 

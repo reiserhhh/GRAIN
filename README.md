@@ -22,9 +22,9 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
-## Vector inference research loop (2026-09-05)
+## Vector inference research loop (2026-09-06)
 
-The next research program studies how an LLM's internal representations use
+The active research program studies how an LLM's internal representations use
 author context and combine evidence during personality inference. The
 [project retrospective](docs/GRAIN_PROJECT_RETROSPECTIVE_20260905.md) connects
 Project Persona, MCD, the historical method versions, and the current GRAIN
@@ -41,6 +41,14 @@ shared-current controls, and nonoverlapping-history follow-ups. See the
 It separates retained context from cross-comment author correspondence; it
 does not establish personality validity. Historical release and lockbox
 results retain their original scope.
+
+The [same-material baseline comparison](reports/grain_vector_mechanisms/VM02_SAME_MATERIAL_BASELINES.md)
+does not establish LLM superiority over E5 or TF-IDF. A new
+[relational-binding pilot](reports/grain_vector_mechanisms/VM03_RELATIONAL_BINDING_REPORT.md)
+separates additive pooling, contextual interaction, output calibration, and
+distributed causal use. Explicit product kernels recover the controlled relation
+without language-model training. These are synthetic mechanism results, not
+improved real-person personality prediction. The full VM02-VM07 program remains open.
 
 ## Theory manuscript (2026-09-01)
 

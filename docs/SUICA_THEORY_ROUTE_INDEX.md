@@ -14,6 +14,10 @@ LLM's internal computation. The [execution log](GRAIN_VECTOR_RESEARCH_LOG.md)
 records the completed instrument and first natural-context cycles, including
 the shared-input confound and independent-history correction. This does not
 mean all VM02-VM07 requirements or external personality links are complete.
+The 2026-09-06 [relational-binding report](../reports/grain_vector_mechanisms/VM03_RELATIONAL_BINDING_REPORT.md)
+adds same-word relational controls, exact token-span interventions, and a
+standard product-kernel comparator. Readability, causal use, and personality
+validity remain separate claims; the frozen GRAIN scorer is unchanged.
 
 ## 1. Purpose
 
