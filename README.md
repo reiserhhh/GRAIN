@@ -58,6 +58,13 @@ better than E5 (.947), while its decision-position representation is much weaker
 The frozen full GRAIN score refuses this material outside its reference envelope;
 the report quantifies observation-volume effects without relaxing that gate.
 
+The [natural-memory audit](reports/grain_vector_mechanisms/VM03_NATURAL_MEMORY_REPORT.md)
+adds source-checked summaries, retrieval, and 1,080 natural/controlled prompts.
+Citation correctness does not ensure faithful propositions; changes in question
+wording can improve some event decisions while damaging others. The numerical
+observer passed exact token-boundary and causal-prefix controls. These findings
+locate evidence-selection and readout problems, not improved personality accuracy.
+
 ## Theory manuscript (2026-09-01)
 
 The completed theory is now expressed as a journal-neutral theoretical and

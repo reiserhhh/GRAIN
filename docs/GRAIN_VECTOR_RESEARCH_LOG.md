@@ -201,3 +201,71 @@ development case 的自然原文/事实摘要/冻结检索/随机历史与主体
 更新；先审核事实保真。之后 calibration 固定两个候选、自然激活干预，再开
 VM05 量表链接与 VM06/07。保留 Qwen10 内容与 Qwen16 判断的既定机制位置，
 不因 block5 在 discovery 最高而重新选层。仍有可执行工作，goal 保持 active。
+
+## 第五轮：自然记忆保真和判断读出
+
+2026-09-06。实现提交 e9cc7b6，未push。本轮仍为progress。
+报告：[VM03自然记忆](../reports/grain_vector_mechanisms/VM03_NATURAL_MEMORY_REPORT.md)；
+设计：[bounded protocol](GRAIN_VM03_MEMORY_AUDIT_PROTOCOL.md)。
+
+从96 comparison作者按新hash选6人，历史12条、后来2条，每个数据选择不读
+量表值。先运行6次Qwen事实摘要并冻结源文审核，再运行数值读出；
+没有独立新作者确认或心理量表准确率。
+
+| Canonical目录，results/grain_vector_mechanisms/下 | 完成内容 |
+|---|---|
+| vm03_memory_materials_r1 | 12cases、96人donor池、24条E5检索query、预读出语义审核 |
+| vm03_memory_summaries_r1 | 6次greedy生成，106.5s；严格可用1/6、单括号修复后2/6 |
+| vm03_memory_trace_r2 | 312自然+384虚构事件，697forward，302.5s |
+| vm03_memory_analysis_r3 | 作者配对/位移/半历史交互、引用和语义分开审计 |
+| vm03_memory_statement_r1 | 等价陈述式诊断384条件，385forward，167.0s |
+| vm03_memory_wording_analysis_r2 | 配对问法效应；3种pre-question表示差均0 |
+
+主要结果：
+
+- 12可解析事实句中7句符合引文规则、4句通过一位源文审核者的语义核验。
+  原文引用正确仍可能把行动者、接收者、时间状态写错。未达到schema的4份不伪造
+  成“没有证据”；全部作者和2位可用作者的结果分开。
+- 自然具体社交行为任务全部No，但历史仍产生明显上下文化位移；未获得自然
+  truth，不能说准确率为0或100%。同历史逆序使倾向margin +.8229，
+  2/12回答翻转；n=6、多重探索，不宣称普遍人格不稳定。
+- 人工事件准确率 .8411、AUC .9428；陈述式 .8750/.9579，
+  Δaccuracy +.03385 [−.00260,.07292]。局部改善伴随简单肯定例退化，
+  否定后更正为肯定在两种问法均只50%。不继续用同一故事调到满分。
+- block10/16问题前状态在两问法严格相等；这定位了任务suffix的计算边界，
+  不是额外证明模型之前已经正确理解，更不是证明人类心理因果。
+
+修正溯源：
+
+1. trace_r1在第145条件被负控制停止。raw当前文本未变，但表情符号在单/
+   双换行下末token分别549/39524，token数同为108。统一CURRENT_END、
+   增加完整token ID preflight，从头运行r2。r1已标FAILED_CONTROL并两端同步。
+2. analysis_r1把字符串case索引用于numpy，运行失败；显式feature_row修复。
+   r3增加分析自身source snapshot/hash后重播，26个CSV与前版逐字节一致。
+3. Mac/Windows专项测试均55 passed，scoped ruff、格式化和diff check通过。
+   完整历史测试未重跑。所有模型进程已结束，输出已拷回Mac。
+
+重播入口：使用新输出目录，模型运行用隔离Windows，E5检索用Mac缓存。
+每个脚本的 --help 给出必需参数；按顺序执行：
+
+1. scripts/run_grain_vector_mechanism_memory_prepare.py：--views discovery_views.json，--e5-parent 上轮E5目录，--output-dir 新材料目录。
+2. scripts/run_grain_vector_mechanism_memory_summaries.py：--sources summarization_sources.json，--output-dir 新生成目录。
+3. scripts/run_grain_vector_mechanism_memory_review.py：--sources、--generated、--decisions、--output semantic_review.json。
+4. scripts/run_grain_vector_mechanism_memory.py：--materials、--generated、--review、--output-dir；另跑 --controlled-only --question-style statement 到新目录。
+5. scripts/summarize_grain_vector_memory.py：--parent-dir trace目录、--review、--output-dir。
+6. scripts/summarize_grain_vector_memory_wording.py：--original trace目录、--statement 复测目录、--output-dir。
+
+semantic_decisions.json必须在任何下游读出前，按完整引用源文重新审核；
+不能自动照搬本次评级到新生成，也不把阅卷agent的一次判断叫专家金标准。
+
+### 下一轮的可执行队列
+
+先作小范围证据范围审计：区分“文本报告的一次行动”“文本本身正在实施的
+言语行为”“一般倾向推论”。固定材料与task定义后，用已知操纵/先验语义
+标注校准两种预定读出，不把模型自身答案作truth。还要检查1.5B观察器的
+能力限制，不能把它等同于用户所举ChatGPT研究。
+
+随后在48 calibration固定端点（不重选block10/16），推进自然matched
+span干预；独立mechanism holdout与VM05外部联系、VM06 MEPS无标签/
+Essays/X、VM07 atlas仍未做。本轮没有访问这96人的模型结果或心理标签。
+仍有具体可执行问题，goal不完成、不blocked，也不需要用户现在提供新idea。

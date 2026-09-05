@@ -25,6 +25,12 @@ and a finite-population calculation of sampling-induced reference-distance
 inflation. It does not identify that fluctuation with psychological noise or
 delete it from scores. Natural evidence composition and external links remain open.
 
+The [natural-memory audit](../reports/grain_vector_mechanisms/VM03_NATURAL_MEMORY_REPORT.md)
+separates source selection, proposition fidelity, and task-conditioned decisions.
+It adds an exact input-token boundary control and shows that changed readout wording
+can change errors with identical pre-question representations. See its
+[protocol](GRAIN_VM03_MEMORY_AUDIT_PROTOCOL.md); natural personality validity remains open.
+
 ## 1. Purpose
 
 This file is the single navigation entry for how GRAIN was developed, what
