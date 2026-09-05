@@ -1076,3 +1076,43 @@ def test_quantized_norm_match_reports_discrete_limits():
     assert np.all(scale > 0)
     with pytest.raises(ValueError, match="zero direction"):
         match_quantized_row_norms(h, np.zeros_like(h), target, np.round)
+
+
+def test_local_margin_derivative_matches_central_difference_and_restores(observer):
+    from grain_research.vector_mechanisms.sensitivity import (
+        local_margin_gradient,
+        local_prediction,
+    )
+    from grain_research.vector_mechanisms.trace import Patch
+
+    ids = [1, 2, 7]
+    flags = [p.requires_grad for p in observer.model.parameters()]
+    before, logits = observer.capture(ids, positions=[0, 1, 2])
+    state, grad, margin = local_margin_gradient(observer, ids, "block_00", 1, 2)
+    np.testing.assert_allclose(state, before["block_00"], atol=1e-6)
+    assert margin == pytest.approx(float(logits[1] - logits[2]), abs=1e-6)
+    delta = np.random.default_rng(93).normal(size=state.shape)
+    delta *= 1e-4 / np.linalg.norm(delta)
+    _, plus = observer.capture(ids, patch=Patch("block_00", [0, 1, 2], state + delta))
+    _, minus = observer.capture(ids, patch=Patch("block_00", [0, 1, 2], state - delta))
+    actual = float((plus[1] - plus[2] - minus[1] + minus[2]) / 2)
+    expected = local_prediction(grad, state, state + delta)
+    assert actual == pytest.approx(expected, rel=0.02, abs=1e-7)
+    assert flags == [p.requires_grad for p in observer.model.parameters()]
+    assert not observer.sites["block_00"]._forward_hooks
+    assert all(p.grad is None for p in observer.model.parameters())
+    _, restored = observer.capture(ids)
+    np.testing.assert_array_equal(logits, restored)
+
+
+def test_derivative_regions_use_complete_disjoint_double_precision_norms():
+    from grain_research.vector_mechanisms.sensitivity import region_derivative_stats
+
+    h = np.ones((3, 4), dtype=np.float32)
+    g = np.arange(12, dtype=np.float32).reshape(3, 4) / 10
+    rows = region_derivative_stats(h, g, {"a": [0, 2], "b": [1]})
+    assert sum(r["gradient_energy_fraction"] for r in rows) == pytest.approx(
+        1, abs=1e-12
+    )
+    with pytest.raises(ValueError, match="partition"):
+        region_derivative_stats(h, g, {"a": [0, 1], "b": [1, 2]})
