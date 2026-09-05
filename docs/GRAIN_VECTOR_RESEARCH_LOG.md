@@ -510,3 +510,40 @@ FAILED_STOP或PARTIAL_RESOURCE_BOUND不能直接重复启动/覆盖，应先核�
 首批1829文件已备份回Mac的同名vm05_full_vectors_r1目录，三份manifest及
 全部909份向量cache SHA验证通过；local_backup_status.json明确whole_queue_complete=false。
 Mac目前只是首批副本，不能据此尝试完整源头observer head。Windows原队列继续运行。
+
+## 第十一轮：来源敏感性、完整置换与OOF尺度诊断
+
+2026-09-06。规则8eb26e9/0c5414b，独立审计235cea7/e558d1f，
+数学分解c619693。详见VM05_SOURCE_CONTROLS_AND_NULL_REPORT。
+
+- 102条件串行批次运行，MBTI的84条件完成（6294作者、旧参照99人已排除）；
+  Big5 raw六控制完成，其余12个cue/placebo控制仍运行。不是102全完成。
+- 独立重建85个已完成条件的2040次成员选择，60个随机/purge对照逐24处
+  人数匹配；420个MBTI保存fold模型重播最大误差1.11e-16。
+- 同人数raw purge比随机平均的AUC：EI -.01128 [-.02041,-.00142]、
+  SN +.00184 [-.00963,+.01293]、TF -.00436 [-.00720,-.00116]、
+  JP -.00441 [-.01132,+.00187]。cue+purge的TF AUC=.67123，
+  但不称纯人格信号；EI/SN BA仍约.5。
+- Big5 raw purge r=.07990 vs随机五seed均值.10966，差-.02976
+  [-.05255,-.00783]；mean-fold差仅-.00463。原参照r=.13697。
+  精确协方差分解查明主要差异不只是均值偏移，还包括各折预测尺度/相关权重。
+  没有改test预测、没有用居中后的诊断值取代主成绩。
+- 旧中间特征Big5完整199置换：r=.05679，经验p=.010；seed731与之前
+  完整重拟合完全相同。12个MBTI retained null共2388次全部重算通过，
+  p均触及.005分辨率下限。15条件家族Holm受限于.075，不能偷换为p=0。
+  三个Big5 sparse完整null仍在执行，未用弱中间特征null替代。
+- Windows冻结aa51b06代码继续正常采集，最新核对Qwen shard_02仍有作者增加；
+  Mac备份shard_00/01每模型606人，6份observer shard完整校验。
+  shard01归档两机SHA=0795ae6927c45d9fb39fae46bd43db0ced228e94a365128b375f763f76936523。
+- Mac专项101 tests通过；完整历史测试未跑。没有语言模型训练/下载/API/push，
+  bridge心理值及MEPS问卷未打开，不改变发布GRAIN分数。
+
+复现入口与canonical目录在新报告第6节。正在运行的本地两个批次：
+vm05_source_controls_r1（source controls）、vm05_null_family_r1（完整null）；
+不得修改计分文件或为查询超时重启。观察器仍使用Windows独立冻结代码，禁止同步覆盖。
+输出PARTIAL的审计对应当时已完条件快照，不是当前整批失败。
+
+继续次序：收尾现有批次/采集；完整源头observer与同材料强MBTI sparse参照、
+正式ready GRAIN比较；封存来源头再bridge，随后语义/使用机制与VM06/07。
+新的可执行问题包括读出尺度稳定性；先诊断，若要校准须只在来源训练侧拟合，
+对所有候选同规则另立分析，不能为救测试数值调参。goal保持active。

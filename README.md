@@ -105,6 +105,16 @@ are not the full GRAIN scoring system, and LLM superiority is not established.
 Bridge outcomes remain unopened; source controls and full observer comparisons
 are still required. See the [frozen execution supplement](docs/GRAIN_VM05_FULL_RUN_AND_CONTROLS_V1.md).
 
+The [source-control follow-up](reports/grain_vector_mechanisms/VM05_SOURCE_CONTROLS_AND_NULL_REPORT.md)
+now completes 84 reference-excluded MBTI conditions and 12 full 199-draw nulls.
+Shared-discussion sensitivity differs by axis; cue-masked TF remains readable
+(AUC .6712 after thread purging), but this is not a verified personality mechanism.
+All 420 saved MBTI fold models replay within 1.12e-16. Big5 controls reveal that
+pooled correlation changes also depend on fold-specific prediction dispersion;
+an exact covariance decomposition prevents interpreting all loss as lost signal.
+Big5 masked controls/nulls and full observer collection remain in progress.
+No test predictions were recalibrated and bridge outcomes remain unopened.
+
 ## Theory manuscript (2026-09-01)
 
 The completed theory is now expressed as a journal-neutral theoretical and

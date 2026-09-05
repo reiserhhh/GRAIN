@@ -68,6 +68,15 @@ intermediate representation differs from cue-sensitive EI/SN/JP patterns.
 This is not a complete GRAIN assessment or LLM mechanism result. Full vector
 collection is running; bridge outcomes, thread/refit controls, and VM06/07 remain open.
 
+The [source-control and OOF decomposition](../reports/grain_vector_mechanisms/VM05_SOURCE_CONTROLS_AND_NULL_REPORT.md)
+adds 84 reference-excluded MBTI conditions, complete 199-permutation nulls for the
+12 retained axis/arm combinations, and exact covariance/ranking partitions.
+Discussion context affects source readability differently across axes. A loss of
+pooled correlation can also reflect fold-specific score dispersion, not simply
+the destruction of an underlying signal. These are source-readout diagnostics,
+not new personality constructs or a post-hoc replacement of the primary metric.
+Big5 remaining controls, full observer comparisons and bridge are still open.
+
 ## 1. Purpose
 
 This file is the single navigation entry for how GRAIN was developed, what

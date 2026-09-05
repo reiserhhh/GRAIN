@@ -4,6 +4,9 @@
 
 2026-09-06最新进展：VM05同证据预检/三个观察器技术资格完成，7,266共同
 作者进入24分片全量采集；18个初始源头条件已跑完且配对复算。
+第十一轮完成84个MBTI来源控制与12个199次置换，420个fold模型重播通过；
+Big5 raw六控制完成，其余控制/null运行中。新增OOF协方差/排名分解说明
+预测尺度变化不能直接当人格信号消失，见[来源控制报告](../reports/grain_vector_mechanisms/VM05_SOURCE_CONTROLS_AND_NULL_REPORT.md)。
 见[当前报告](../reports/grain_vector_mechanisms/VM05_PREFLIGHT_AND_SOURCE_REPORT.md)
 与[全量执行补充](GRAIN_VM05_FULL_RUN_AND_CONTROLS_V1.md)。后文早期“外部心理值
 未读取”是对应阶段历史；当前已读取独立源头训练/OOF标签，bridge结果仍未开。
