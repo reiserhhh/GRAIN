@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from grain_research.vector_mechanisms.controls import material_hash
+from grain_research.vector_mechanisms.external_controls import exclude_reference
 from grain_research.vector_mechanisms.external_heads import TRAITS, predict_head
 from grain_research.vector_mechanisms.inventory import archive_source
 from scripts.run_grain_vector_mechanism_controls import write_json
@@ -33,6 +34,7 @@ def main():
     p.add_argument("--views", type=Path, required=True)
     p.add_argument("--preflight-dir", type=Path, required=True)
     p.add_argument("--vector-dir", type=Path)
+    p.add_argument("--feature-cache-dir", type=Path)
     p.add_argument("--output-dir", type=Path, required=True)
     a = p.parse_args()
     out = a.output_dir
@@ -50,9 +52,17 @@ def main():
             result = load_oof(folder)
             m = result["manifest"]
             bundles = [b for b in source if b["source_group"] == m["source_group"]]
+            if m.get("exclude_reference"):
+                bundles = exclude_reference(
+                    bundles,
+                    pd.read_csv(
+                        a.preflight_dir / "budget_by_author.csv",
+                        dtype={"author_id": str},
+                    ),
+                )
             if material_hash(bundles) != m["source_material_sha256"]:
                 raise ValueError("Changed source author evidence")
-            key = (m["source_group"], m["feature"], m["arm"])
+            key = (m["source_material_sha256"], m["feature"], m["arm"])
             if key not in cache:
                 if m["feature"] == "word_char":
                     x = np.asarray(
@@ -64,6 +74,7 @@ def main():
                         arm=m["arm"],
                         preflight_dir=a.preflight_dir,
                         vector_dir=a.vector_dir,
+                        feature_cache_dir=a.feature_cache_dir,
                     )
                     x = dense_features(bundles, source, common, opts)
                 ix = {b["author_id"]: i for i, b in enumerate(bundles)}

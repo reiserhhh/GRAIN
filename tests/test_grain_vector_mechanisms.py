@@ -1799,3 +1799,68 @@ def test_external_control_batch_covers_all_axes_arms_and_five_count_seeds():
             assert {x["seed"] for x in chosen if x["mode"] == "random_count"} == set(
                 range(731, 736)
             )
+
+
+def test_external_control_audit_reconstructs_all_nested_records_and_detects_mismatch():
+    from grain_research.vector_mechanisms.external_control_audit import (
+        audit_count_match,
+        independent_control_records,
+    )
+
+    bundles = [
+        {
+            "author_id": str(i),
+            "official_folds": {"EI_cont": i % 5},
+            "views": [[{"thread_id": f"shared{i // 2}" if i < 20 else f"u{i}"}]],
+        }
+        for i in range(150)
+    ]
+    bridge = [{"author_id": "bridge", "views": [[{"thread_id": "shared1"}]]}]
+    purge = independent_control_records(bundles, bridge, "EI_cont", "purge", 731)
+    random = independent_control_records(
+        bundles, bridge, "EI_cont", "random_count", 734
+    )
+    assert len(purge) == len(random) == 24
+    assert all(r["retained_shared_thread_authors"] == 0 for r in purge)
+    assert audit_count_match(purge, random) == 24
+    bad = [dict(r) for r in random]
+    bad[1]["train_retained"] += 1
+    with pytest.raises(ValueError, match="counts"):
+        audit_count_match(purge, bad)
+
+
+def test_external_control_pairing_matches_authors_and_does_not_blend_probabilities():
+    from grain_research.vector_mechanisms.external_control_audit import (
+        paired_seed_average,
+        restrict_oof,
+    )
+    from grain_research.vector_mechanisms.external_heads import task_score
+
+    y = np.tile([0, 1], 10)
+    a = {
+        "manifest": {"task": "EI_cont", "permutation_seed": None},
+        "ids": np.arange(20),
+        "y": y,
+        "p": y * 0.8 + 0.1,
+        "folds": np.arange(20) % 5,
+    }
+    b = a | {"p": 1 - a["p"]}
+    r = paired_seed_average(a, [a, b], draws=20)
+    assert r["reference_score"] == pytest.approx(
+        (task_score(y, a["p"], "EI_cont") + task_score(y, b["p"], "EI_cont")) / 2
+    )
+    assert r["delta"] == pytest.approx(0.5)
+    np.testing.assert_array_equal(restrict_oof(a, [7, 4])["ids"], [7, 4])
+    with pytest.raises(ValueError, match="Unpaired"):
+        paired_seed_average(a, [b | {"y": 1 - y}], draws=20)
+
+
+def test_external_null_batch_preserves_full_axis_arm_family(tmp_path):
+    from scripts.run_grain_vector_mechanism_null_batch import cases
+
+    rows = cases(tmp_path, tmp_path)
+    assert len(rows) == len({r["id"] for r in rows}) == 15
+    assert all(
+        sum(r["task"] == task for r in rows) == 3
+        for task in ("big5", "EI_cont", "SN_cont", "TF_cont", "JP_cont")
+    )
