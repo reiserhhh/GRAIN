@@ -1,0 +1,9 @@
+# Optional white-box research environment; not the frozen GRAIN release lock.
+# Tested runtime versions are recorded per run, including GPU backend/dtype.
+numpy>=2.0,<3
+pandas>=2.2,<3
+scipy>=1.13,<2
+scikit-learn>=1.5,<2
+torch>=2.6,<3
+transformers>=5.1,<6
+pytest>=8,<10

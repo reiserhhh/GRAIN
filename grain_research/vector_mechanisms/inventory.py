@@ -64,6 +64,7 @@ def code_fingerprint(root: Path) -> str:
     """Bind resumable runs to the actual observer/runner code, even off-git."""
     paths = sorted((root / "grain_research/vector_mechanisms").glob("*.py"))
     paths += sorted((root / "scripts").glob("run_grain_vector_mechanism*.py"))
+    paths += sorted((root / "scripts").glob("summarize_grain_vector*.py"))
     digest = hashlib.sha256()
     for path in paths:
         digest.update(path.relative_to(root).as_posix().encode())
@@ -77,6 +78,7 @@ def archive_source(root: Path, output: Path) -> None:
         return
     paths = sorted((root / "grain_research/vector_mechanisms").glob("*.py"))
     paths += sorted((root / "scripts").glob("run_grain_vector_mechanism*.py"))
+    paths += sorted((root / "scripts").glob("summarize_grain_vector*.py"))
     with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as archive:
         for path in paths:
             archive.write(path, path.relative_to(root).as_posix())

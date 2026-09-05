@@ -175,7 +175,7 @@ class DecoderObserver:
         return position
 
     @contextmanager
-    def hooks(self, positions: list[int], patch: Patch | None = None):
+    def hooks(self, positions: list[int], patch: Patch | None = None, pools=None):
         """Capture/patch selected absolute positions and always remove all hooks."""
         captured = {}
         handles = []
@@ -202,9 +202,17 @@ class DecoderObserver:
                         )
                         delta = basis @ (basis.T @ delta)
                     hidden[0, patch.position] = current + patch.alpha * delta
-                captured[name] = (
-                    hidden[0, positions].detach().float().cpu().numpy().copy()
-                )
+                values = [hidden[0, positions].detach().float()]
+                for method, indices in pools or []:
+                    selected = hidden[0, indices].detach().float()
+                    if method == "mean":
+                        pooled = selected.mean(dim=0)
+                    elif method == "std":
+                        pooled = selected.std(dim=0, correction=0)
+                    else:
+                        raise ValueError(f"Unknown pool {method}")
+                    values.append(pooled[None])
+                captured[name] = torch.cat(values).cpu().numpy().copy()
                 if isinstance(output, tuple):
                     return (hidden, *output[1:])
                 return hidden
@@ -248,17 +256,47 @@ class DecoderObserver:
         output.logits = output.logits[:, : len(ids)]
         return output
 
-    def capture(self, ids: list[int], *, positions=None, patch=None):
+    def capture(self, ids: list[int], *, positions=None, patch=None, pools=None):
         """Capture pre-answer states and last-position logits without generation."""
         positions = positions if positions is not None else [len(ids) - 1]
         if not ids or any(p < 0 or p >= len(ids) for p in positions):
             raise ValueError("Capture position outside prompt")
         if patch is not None and not 0 <= patch.position < len(ids):
             raise ValueError("Patch position outside sequence")
-        with self.hooks(positions, patch) as captured:
+        if any(
+            not indices or any(p < 0 or p >= len(ids) for p in indices)
+            for _, indices in pools or []
+        ):
+            raise ValueError("Pool positions must be nonempty and inside prompt")
+        with self.hooks(positions, patch, pools) as captured:
             output = self._forward(ids)
         logits = output.logits[0, len(ids) - 1].detach().float().cpu().numpy()
         return captured, logits
+
+    def content_indices(self, system: str, user: str, content: str) -> list[int]:
+        """Return complete token spans inside unique raw content, without delimiters."""
+        text = self.tokenizer.apply_chat_template(
+            [{"role": "system", "content": system}, {"role": "user", "content": user}],
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+        if not content or text.count(content) != 1:
+            raise ValueError("Content must occur exactly once")
+        begin = text.index(content)
+        end = begin + len(content)
+        encoded = self.tokenizer(
+            text, add_special_tokens=False, return_offsets_mapping=True
+        )
+        if list(encoded["input_ids"]) != self.prompt_ids(system, user):
+            raise ValueError("Offset tokenization differs from chat-template tokens")
+        indices = [
+            i
+            for i, (a, b) in enumerate(encoded["offset_mapping"])
+            if b > a >= begin and b <= end
+        ]
+        if not indices:
+            raise ValueError("No complete token inside content")
+        return indices
 
     def score(self, ids: list[int], answer: str, *, patch=None) -> float:
         """Sum teacher-forced log probabilities for ALL candidate answer tokens."""

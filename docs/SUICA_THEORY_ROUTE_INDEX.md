@@ -3,14 +3,17 @@
 Opened: 2026-07-30; historical route through 2026-08-22; next-program links added 2026-09-05
 Status: active development map; not a release seal or a scientific promotion
 
-Next program (planned, not executed): the
+Current vector research program (in progress): the
 [Project Persona-to-GRAIN retrospective](GRAIN_PROJECT_RETROSPECTIVE_20260905.md)
 reconciles historical results and the scope of the completed cycle. The
 [LLM vector inference mechanism plan](GRAIN_VECTOR_INFERENCE_MECHANISM_PLAN_V1.md)
 extends the observation layer with task-conditioned hidden states, personal
 context contrasts, and activation interventions. The historical objects below
 remain the foundation; an event-process generator is not itself evidence of an
-LLM's internal computation.
+LLM's internal computation. The [execution log](GRAIN_VECTOR_RESEARCH_LOG.md)
+records the completed instrument and first natural-context cycles, including
+the shared-input confound and independent-history correction. This does not
+mean all VM02-VM07 requirements or external personality links are complete.
 
 ## 1. Purpose
 

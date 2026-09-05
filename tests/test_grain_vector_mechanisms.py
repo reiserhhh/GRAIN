@@ -189,6 +189,7 @@ def test_yes_no_logodds_is_an_unembedding_projection(observer):
 
 
 def test_subspace_algebra_and_validation():
+    pytest.importorskip("torch")
     from grain_research.vector_mechanisms.trace import patch_delta
 
     current, donor = np.zeros(3), np.array([2.0, 3.0, 4.0])
@@ -310,3 +311,90 @@ def test_context_bundle_rejects_missing_author_and_insufficient_threads():
         for i in range(8)
     ]
     assert select_context_bundle(comments) is None
+
+
+def test_pooled_capture_is_exact_and_cannot_read_padding(observer):
+    ids = [1, 2, 7, 8]
+    full, _ = observer.capture(ids, positions=list(range(4)))
+    pooled, _ = observer.capture(
+        ids, positions=[3], pools=[("mean", [1, 2]), ("std", [1, 2])]
+    )
+    for site in full:
+        np.testing.assert_allclose(
+            pooled[site][1], full[site][[1, 2]].mean(axis=0), atol=1e-6
+        )
+        np.testing.assert_allclose(
+            pooled[site][2], full[site][[1, 2]].std(axis=0), atol=1e-6
+        )
+    with pytest.raises(ValueError, match="Pool positions"):
+        observer.capture(ids, pools=[("mean", [4])])
+
+
+def test_context_tasks_have_identical_evidence_prefix():
+    from grain_research.vector_mechanisms.context import render_context
+
+    a, anchor_a = render_context("prior event", "current event", "behavior")
+    b, anchor_b = render_context("prior event", "current event", "disposition")
+    assert a.split("Question:")[0] == b.split("Question:")[0]
+    assert anchor_a == anchor_b
+
+
+def test_donor_matching_excludes_future_self_overlap_and_split_crossing():
+    from grain_research.vector_mechanisms.context import match_donors
+
+    def bundle(uid, start):
+        comments = [
+            {
+                "author_id": uid,
+                "comment_id": f"{uid}{i}",
+                "thread_id": f"t{uid}{i}",
+                "timestamp": start + i,
+                "body": f"{uid} event {i}",
+                "subreddit": "common",
+            }
+            for i in range(5)
+        ]
+        return {
+            "author_id": uid,
+            "split": "dev",
+            "history": comments[:3],
+            "current": comments[3:],
+        }
+
+    a, b, future = bundle("a", 100), bundle("b", 99), bundle("f", 1000)
+    matches = match_donors([a, b, future], len)
+    assert {r.get("donor_id") for r in matches if r["author_id"] == "a"} == {"b"}
+    b["history"][0]["thread_id"] = a["current"][0]["thread_id"]
+    matches = match_donors([a, b, future], len)
+    assert all(
+        r["status"] == "NO_ELIGIBLE_PRIOR_DONOR"
+        for r in matches
+        if r["author_id"] == "a"
+    )
+    future["split"] = "test"
+    with pytest.raises(ValueError, match="crosses"):
+        match_donors([a, future], len)
+
+
+def test_author_rank_is_half_for_shared_input_and_one_for_identity():
+    from grain_research.vector_mechanisms.context import paired_author_rank
+
+    assert (
+        paired_author_rank(np.ones((4, 8)), np.ones((4, 8)))["author_rank_auc"] == 0.5
+    )
+    assert paired_author_rank(np.eye(4), np.eye(4))["author_rank_auc"] == 1
+
+
+def test_anchored_partition_reconstructs_additive_and_interaction_responses():
+    from grain_research.vector_mechanisms.context import anchored_decomposition
+
+    ref, context, current = np.ones(3), np.arange(3.0), np.array([2.0, 3.0, 4.0])
+    additive = ref + context + current
+    parts = anchored_decomposition(additive, ref + context, ref + current, ref)
+    np.testing.assert_allclose(parts["interaction"], 0)
+    full = additive + context * current
+    parts = anchored_decomposition(full, ref + context, ref + current, ref)
+    np.testing.assert_allclose(parts["interaction"], context * current)
+    np.testing.assert_allclose(sum(parts.values()), full)
+    with pytest.raises(ValueError, match="identical shapes"):
+        anchored_decomposition(full, [1.0, 2.0], current, ref)

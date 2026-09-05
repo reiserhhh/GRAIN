@@ -35,9 +35,12 @@ is complete: 192 synthetic fact prompts, layer probes, 3,264 activation-patch
 forwards, and an execution-shape numerical audit. See the
 [research log](docs/GRAIN_VECTOR_RESEARCH_LOG.md) and
 [VM01 report](reports/grain_vector_mechanisms/VM01_RESEARCH_REPORT.md).
-This validates a research instrument, not human personality inference. Natural
-author-context work is next; historical release and lockbox results retain
-their original scope.
+The first natural-text pilot is also complete: 24 authors, matched histories,
+shared-current controls, and nonoverlapping-history follow-ups. See the
+[context report](reports/grain_vector_mechanisms/VM02_VM03_CONTEXT_REPORT.md).
+It separates retained context from cross-comment author correspondence; it
+does not establish personality validity. Historical release and lockbox
+results retain their original scope.
 
 ## Theory manuscript (2026-09-01)
 

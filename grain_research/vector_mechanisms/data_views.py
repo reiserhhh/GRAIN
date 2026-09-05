@@ -97,9 +97,15 @@ def validate_context_bundle(bundle: dict) -> None:
     for field in ["comment_id", "thread_id"]:
         if {c[field] for c in history} & {c[field] for c in current}:
             raise ValueError(f"History/current overlap: {field}")
+        if len({c[field] for c in history + current}) != len(history + current):
+            raise ValueError(f"Duplicate within history/current views: {field}")
     if {normalized_text_key(c["body"]) for c in history} & {
         normalized_text_key(c["body"]) for c in current
     }:
         raise ValueError("History repeats current text")
+    if len({normalized_text_key(c["body"]) for c in history + current}) != len(
+        history + current
+    ):
+        raise ValueError("Duplicate body inside context views")
     if max(c["timestamp"] for c in history) >= min(c["timestamp"] for c in current):
         raise ValueError("History must strictly precede both current fragments")

@@ -1,0 +1,15 @@
+{
+  "protocol": "GRAIN_VM02_CONTEXT_PILOT_V1",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "max_tokens": 2048,
+  "pad_to_length": 2048,
+  "local_files_only": true,
+  "seed": 731,
+  "maximum_seconds": 21600,
+  "maximum_calls": 1500,
+  "maximum_cache_bytes": 1000000000,
+  "labels_allowed": false
+}
