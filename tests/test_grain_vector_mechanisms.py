@@ -12,6 +12,138 @@ from grain_research.vector_mechanisms.controls import build_controls, validate_c
 from grain_research.vector_mechanisms.inventory import inspect_csv
 
 
+def test_dual_cka_agrees_with_primal_formula():
+    from grain_research.vector_mechanisms.multicomment import linear_cka_dual
+
+    rng = np.random.default_rng(14)
+    x, y = rng.normal(size=(12, 3)), rng.normal(size=(12, 5))
+    xc, yc = x - x.mean(0), y - y.mean(0)
+    expected = np.linalg.norm(xc.T @ yc) ** 2 / (
+        np.linalg.norm(xc.T @ xc) * np.linalg.norm(yc.T @ yc)
+    )
+    assert linear_cka_dual(x, y) == pytest.approx(expected)
+    assert linear_cka_dual(x, x) == pytest.approx(1.0)
+
+
+def test_finite_population_quadratic_moment_matches_all_subsets():
+    from itertools import combinations
+
+    from grain_research.vector_mechanisms.multicomment import (
+        finite_population_mean_radius,
+    )
+
+    h = np.array([[[1.0, 2.0], [3.0, 1.0], [-2.0, 4.0], [0.0, -1.0]]])
+    center, metric = np.array([0.1, 0.5]), np.array([[2.0, 0.2], [0.2, 1.0]])
+    for n in (1, 2, 3, 4):
+        base, inflation = finite_population_mean_radius(h, n, center, metric)
+        actual = []
+        for indices in combinations(range(4), n):
+            d = h[0, list(indices)].mean(0) - center
+            actual.append(d @ metric @ d)
+        assert base[0] + inflation[0] == pytest.approx(np.mean(actual))
+    assert inflation[0] == 0
+
+
+def test_explicit_intervals_handle_repeated_and_nested_quotations():
+    from grain_research.vector_mechanisms.multicomment import interval_token_indices
+    from scripts.run_grain_vector_mechanism_multicomment_qwen import render_evidence
+
+    comments = [{"body": "same words"}, {"body": "I quoted: same words"}]
+    user, _, spans = render_evidence(comments, "behavior")
+    assert [user[a:b] for a, b in spans] == [c["body"] for c in comments]
+    offsets = [(i, i + 1) for i in range(len(user))]
+    indices = interval_token_indices(offsets, spans)
+    assert len(indices) == sum(len(c["body"]) for c in comments)
+    with pytest.raises(ValueError, match="Overlapping"):
+        interval_token_indices(offsets, [(1, 5), (4, 8)])
+
+
+def test_fast_permutation_matches_original_null():
+    from grain_research.vector_mechanisms.comparison import shuffled_author_null
+    from scripts.summarize_grain_vector_multicomment import fast_null
+
+    values = np.random.default_rng(9).normal(size=(8, 3, 4))
+    a = fast_null(values, draws=19, seed=17)
+    b = shuffled_author_null(values, draws=19, seed=17)
+    assert a == pytest.approx(b)
+
+
+def test_common_groups_do_not_drop_or_duplicate_records():
+    from grain_research.vector_mechanisms.multicomment import common_groups, pool_groups
+
+    groups = common_groups(["a" * i for i in (5, 10, 15, 20)], [len], max_tokens=32)
+    assert groups == [[0, 1], [2], [3]]
+    assert np.allclose(
+        pool_groups(np.array([[2, 4], [4, 6], [6, 8]]), groups, 4), [3.5, 5.5]
+    )
+    with pytest.raises(ValueError, match="Single comment"):
+        common_groups(["a" * 33], [len], max_tokens=32)
+    with pytest.raises(ValueError, match="exactly once"):
+        pool_groups(np.ones((2, 2)), [[0, 1], [1, 2]], 3)
+
+
+def test_view_layout_has_identical_material_and_distinct_exposure():
+    from grain_research.vector_mechanisms.multicomment import view_layout
+
+    bundle = {"views": [list(range(i * 12, (i + 1) * 12)) for i in range(3)]}
+    c, i = view_layout(bundle, "chronological"), view_layout(bundle, "interleaved")
+    assert c != i
+    assert (
+        sorted(x for g in c for x in g)
+        == sorted(x for g in i for x in g)
+        == list(range(36))
+    )
+
+
+def test_multicomment_views_are_disjoint_and_label_blind():
+    from grain_research.vector_mechanisms.cohort import select_multicomment_bundle
+    from grain_research.vector_mechanisms.data_views import normalized_text_key
+
+    rows = [
+        {
+            "author_id": "a",
+            "comment_id": str(i),
+            "thread_id": str(i),
+            "timestamp": i + 1,
+            "body": f"distinct words {i}",
+        }
+        for i in range(50)
+    ]
+    a = select_multicomment_bundle(rows)
+    b = select_multicomment_bundle(list(reversed(rows)))
+    assert a == b
+    assert [len(v) for v in a["views"]] == [12, 12, 12]
+    assert len({c["thread_id"] for v in a["views"] for c in v}) == 36
+    forbidden = [normalized_text_key(c["body"]) for c in rows[:20]]
+    assert select_multicomment_bundle(rows, forbidden_texts=forbidden) is None
+    assert select_multicomment_bundle(rows[:35]) is None
+
+
+def test_multicomment_views_reject_bad_author_or_thread():
+    from grain_research.vector_mechanisms.cohort import (
+        select_multicomment_bundle,
+        validate_multicomment_bundle,
+    )
+
+    rows = [
+        {
+            "author_id": "a",
+            "comment_id": str(i),
+            "thread_id": str(i),
+            "timestamp": i + 1,
+            "body": f"unique item {i}",
+        }
+        for i in range(36)
+    ]
+    b = select_multicomment_bundle(rows)
+    b["views"][2][0]["thread_id"] = b["views"][0][0]["thread_id"]
+    with pytest.raises(ValueError, match="thread_id"):
+        validate_multicomment_bundle(b, units=12)
+    rows[0]["author_id"] = "b"
+    with pytest.raises(ValueError, match="mix authors"):
+        select_multicomment_bundle(rows)
+
+
 def test_controls_have_disjoint_scenario_splits():
     rows = build_controls()
     info = validate_controls(rows)

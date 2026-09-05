@@ -321,6 +321,29 @@ class DecoderObserver:
             raise ValueError("No complete token inside content")
         return indices
 
+    def content_intervals(self, system: str, user: str, intervals) -> list[int]:
+        """Locate explicitly constructed user-body spans, not substring guesses."""
+        from .multicomment import interval_token_indices
+
+        text = self.tokenizer.apply_chat_template(
+            [{"role": "system", "content": system}, {"role": "user", "content": user}],
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+        if not user or text.count(user) != 1:
+            raise ValueError("User message must occur exactly once")
+        if any(not 0 <= a < b <= len(user) for a, b in intervals):
+            raise ValueError("Content interval outside user message")
+        start = text.index(user)
+        encoded = self.tokenizer(
+            text, add_special_tokens=False, return_offsets_mapping=True
+        )
+        if list(encoded["input_ids"]) != self.prompt_ids(system, user):
+            raise ValueError("Offset tokenization differs from chat-template tokens")
+        return interval_token_indices(
+            encoded["offset_mapping"], [(start + a, start + b) for a, b in intervals]
+        )
+
     def score(self, ids: list[int], answer: str, *, patch=None) -> float:
         """Sum teacher-forced log probabilities for ALL candidate answer tokens."""
         answer_ids = self.candidate_ids(ids, answer)
