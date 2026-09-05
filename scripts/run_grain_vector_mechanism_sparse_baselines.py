@@ -43,6 +43,14 @@ def current_rss(pid):
     return int(result.stdout.strip()) * 1024
 
 
+def has_substantive_outputs(folder):
+    """Ignore the execution lock and macOS AppleDouble metadata, not actual outputs."""
+    return any(
+        q.name != ".execution.lock" and not q.name.startswith("._")
+        for q in folder.iterdir()
+    )
+
+
 def bounded_child(command, log, seconds, max_rss_bytes, update):
     """Bound time/memory and stop only the subprocess created by this call."""
     start, peak = time.monotonic(), 0
@@ -114,7 +122,7 @@ def main():
     if path.exists():
         if not a.resume_completed or json.loads(path.read_text()) != fields:
             raise ValueError("Existing sparse batch requires explicit identical resume")
-    elif any(q.name != ".execution.lock" for q in out.iterdir()):
+    elif has_substantive_outputs(out):
         raise ValueError("Use a new sparse output directory")
     else:
         write_json(path, fields)

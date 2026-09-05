@@ -1932,6 +1932,18 @@ def test_external_sparse_batch_covers_every_axis_and_mask_arm():
         }
 
 
+def test_external_sparse_output_guard_ignores_only_lock_and_appledouble(tmp_path):
+    from scripts.run_grain_vector_mechanism_sparse_baselines import (
+        has_substantive_outputs,
+    )
+
+    (tmp_path / ".execution.lock").touch()
+    (tmp_path / "._.execution.lock").touch()
+    assert not has_substantive_outputs(tmp_path)
+    (tmp_path / "manifest.json").write_text("{}")
+    assert has_substantive_outputs(tmp_path)
+
+
 def test_external_sparse_supervisor_terminates_only_owned_timed_out_child(tmp_path):
     import os
     import sys
