@@ -22,6 +22,18 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
+## Vector inference research plan (2026-09-05)
+
+The next research program studies how an LLM's internal representations use
+author context and combine evidence during personality inference. The
+[project retrospective](docs/GRAIN_PROJECT_RETROSPECTIVE_20260905.md) connects
+Project Persona, MCD, the historical method versions, and the current GRAIN
+theory. The [experiment plan](docs/GRAIN_VECTOR_INFERENCE_MECHANISM_PLAN_V1.md)
+specifies layer measurements, context contrasts, activation interventions,
+external links, resource limits, and deliverables. These experiments are
+planned, not completed; historical release and lockbox results retain their
+original scope.
+
 ## Theory manuscript (2026-09-01)
 
 The completed theory is now expressed as a journal-neutral theoretical and

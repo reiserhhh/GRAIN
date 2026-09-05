@@ -1,7 +1,16 @@
 # GRAIN Development and Theory Route Index
 
-Opened: 2026-07-30; updated through 2026-08-22
+Opened: 2026-07-30; historical route through 2026-08-22; next-program links added 2026-09-05
 Status: active development map; not a release seal or a scientific promotion
+
+Next program (planned, not executed): the
+[Project Persona-to-GRAIN retrospective](GRAIN_PROJECT_RETROSPECTIVE_20260905.md)
+reconciles historical results and the scope of the completed cycle. The
+[LLM vector inference mechanism plan](GRAIN_VECTOR_INFERENCE_MECHANISM_PLAN_V1.md)
+extends the observation layer with task-conditioned hidden states, personal
+context contrasts, and activation interventions. The historical objects below
+remain the foundation; an event-process generator is not itself evidence of an
+LLM's internal computation.
 
 ## 1. Purpose
 
