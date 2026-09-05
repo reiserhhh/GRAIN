@@ -29,7 +29,10 @@ from grain_research.vector_mechanisms.external_heads import (
     select_head,
     task_score,
 )
-from grain_research.vector_mechanisms.external_material import unpack_features
+from grain_research.vector_mechanisms.external_material import (
+    raw_author_features,
+    unpack_features,
+)
 from grain_research.vector_mechanisms.inventory import archive_source, code_fingerprint
 from scripts.run_grain_vector_mechanism_controls import write_json
 from scripts.run_grain_vector_mechanism_external_features import bundle_arms
@@ -40,9 +43,22 @@ def dense_features(bundles, common_source, common, a):
     """Read only complete, checksum-verified observer caches; no score interpolation."""
     if a.feature == "grain_intermediate":
         if a.arm != "raw":
-            raise ValueError(
-                "Frozen raw GRAIN intermediate cache cannot serve masked text"
+            pre = json.loads((a.preflight_dir / "manifest.json").read_text())
+            path = (
+                ROOT
+                / "results/v7_multiview_projection/e1_v72_full_20260715/artifacts/common_source_comment_representation.joblib"
             )
+            if hashlib.sha256(path.read_bytes()).hexdigest() != pre["runtime_sha256"]:
+                raise ValueError("Frozen intermediate operator changed")
+            runtime = joblib.load(path)
+            rows = [
+                raw_author_features(
+                    runtime.transform(bundle_arms(b)[a.arm])[None, :, :],
+                    pre["feature_names"],
+                )[0]
+                for b in bundles
+            ]
+            return np.stack(rows)
         with np.load(
             a.preflight_dir / "grain_frozen_features.npz", allow_pickle=False
         ) as z:
@@ -192,6 +208,10 @@ def main():
         "inner_cv": "3 author folds, seed731",
         "outer_cv": "5 source-specific official folds",
         "goal": "External readability; not proof that the LLM uses a personality direction",
+        "grain_comparison_scope": "Frozen V7 lexical projection mean/std, not the entire current GRAIN 4W theory or released profile",
+        "feature_input_sha256": material_hash(x.tolist())
+        if feature_kind == "word_char"
+        else hashlib.sha256(np.ascontiguousarray(x).tobytes()).hexdigest(),
     }
     manifest["identity"] = material_hash(manifest)
     write_json(out / "manifest.json", manifest)

@@ -1675,3 +1675,24 @@ def test_external_nested_head_is_author_disjoint_and_reselects():
     assert model.predict(x).shape == (60, 5)
     with pytest.raises(ValueError, match="unique"):
         select_head(x, y, np.array(["same"] * 60), "dense", "big5")
+
+
+def test_external_paired_audit_rejects_different_targets_and_keeps_zero_delta():
+    from scripts.summarize_grain_vector_external_links import paired_delta
+
+    x = np.arange(30).reshape(6, 5).astype(float)
+    a = {
+        "manifest": {"task": "big5", "permutation_seed": None},
+        "ids": np.arange(6),
+        "y": x,
+        "p": x,
+        "folds": np.arange(6) % 5,
+    }
+    r = paired_delta(a, a, draws=20)
+    assert r["delta"] == r["lower"] == r["upper"] == 0
+    with pytest.raises(ValueError, match="Unpaired"):
+        paired_delta(a, a | {"y": x + 1}, draws=20)
+    with pytest.raises(ValueError, match="Different"):
+        paired_delta(
+            a, a | {"manifest": {"task": "big5", "permutation_seed": 731}}, draws=20
+        )
