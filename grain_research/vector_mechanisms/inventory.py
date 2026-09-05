@@ -60,13 +60,29 @@ def data_inventory(data_root: Path) -> dict:
     }
 
 
-def code_fingerprint(root: Path) -> str:
-    """Bind resumable runs to the actual observer/runner code, even off-git."""
+def research_source_paths(root: Path) -> list[Path]:
+    """Explicit source/test/config allowlist; never include .env or raw datasets."""
     paths = sorted((root / "grain_research/vector_mechanisms").glob("*.py"))
     paths += sorted((root / "scripts").glob("run_grain_vector_mechanism*.py"))
     paths += sorted((root / "scripts").glob("summarize_grain_vector*.py"))
+    paths += [
+        root / name
+        for name in (
+            "grain_research/__init__.py",
+            "tests/test_grain_vector_mechanisms.py",
+            "configs/grain_vector_contexts_v1.json",
+            "configs/grain_vector_mechanisms_v1.json",
+            "requirements-vector-research.txt",
+        )
+        if (root / name).is_file()
+    ]
+    return sorted(set(paths))
+
+
+def code_fingerprint(root: Path) -> str:
+    """Bind resumable runs to the actual observer/runner code, even off-git."""
     digest = hashlib.sha256()
-    for path in paths:
+    for path in research_source_paths(root):
         digest.update(path.relative_to(root).as_posix().encode())
         digest.update(path.read_bytes())
     return digest.hexdigest()
@@ -76,9 +92,6 @@ def archive_source(root: Path, output: Path) -> None:
     """Preserve exact experiment code at launch; no datasets or secrets included."""
     if output.exists():
         return
-    paths = sorted((root / "grain_research/vector_mechanisms").glob("*.py"))
-    paths += sorted((root / "scripts").glob("run_grain_vector_mechanism*.py"))
-    paths += sorted((root / "scripts").glob("summarize_grain_vector*.py"))
     with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as archive:
-        for path in paths:
+        for path in research_source_paths(root):
             archive.write(path, path.relative_to(root).as_posix())

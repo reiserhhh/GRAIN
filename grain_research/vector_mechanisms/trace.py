@@ -21,7 +21,7 @@ class Patch:
     """Intervention at a decoder block output, in that model's coordinates."""
 
     site: str
-    position: int
+    position: int | list[int]
     donor: np.ndarray
     alpha: float = 1.0
     basis: np.ndarray | None = None
@@ -39,7 +39,18 @@ def patch_delta(
         raise ValueError("Subspace shape does not match hidden dimension")
     if not np.allclose(basis.T @ basis, np.eye(basis.shape[1]), atol=1e-5):
         raise ValueError("Subspace basis must have orthonormal columns")
-    return basis @ (basis.T @ delta)
+    return basis @ (basis.T @ delta) if delta.ndim == 1 else (delta @ basis) @ basis.T
+
+
+def validate_patch_positions(patch: Patch, length: int) -> None:
+    """Reject ambiguous/repeated positions and never patch padding or answer tokens."""
+    positions = patch.position if isinstance(patch.position, list) else [patch.position]
+    if not positions or any(
+        not isinstance(p, int) or p < 0 or p >= length for p in positions
+    ):
+        raise ValueError("Patch position outside sequence")
+    if len(set(positions)) != len(positions):
+        raise ValueError("Patch positions must be unique")
 
 
 class DecoderObserver:
@@ -188,20 +199,32 @@ class DecoderObserver:
             def callback(_module, _args, output):
                 hidden = output[0] if isinstance(output, tuple) else output
                 if patch is not None and patch.site == name:
-                    if not 0 <= patch.position < hidden.shape[1]:
-                        raise ValueError("Patch position outside sequence")
+                    validate_patch_positions(patch, hidden.shape[1])
                     hidden = hidden.clone()
                     current = hidden[0, patch.position]
                     donor = torch.as_tensor(
                         patch.donor, device=current.device, dtype=current.dtype
                     )
+                    if donor.shape != current.shape:
+                        raise ValueError(
+                            "Donor shape must match selected positions exactly"
+                        )
                     delta = donor - current
                     if patch.basis is not None:
                         basis = torch.as_tensor(
                             patch.basis, device=current.device, dtype=current.dtype
                         )
-                        delta = basis @ (basis.T @ delta)
-                    hidden[0, patch.position] = current + patch.alpha * delta
+                        delta = (
+                            basis @ (basis.T @ delta)
+                            if delta.ndim == 1
+                            else (delta @ basis) @ basis.T
+                        )
+                    # BF16 x + (y - x) need not equal y. A full replacement is
+                    # an exact copy, not a numerically approximate interpolation.
+                    if patch.basis is None and patch.alpha == 1:
+                        hidden[0, patch.position] = donor
+                    else:
+                        hidden[0, patch.position] = current + patch.alpha * delta
                 values = [hidden[0, positions].detach().float()]
                 for method, indices in pools or []:
                     selected = hidden[0, indices].detach().float()
@@ -261,8 +284,8 @@ class DecoderObserver:
         positions = positions if positions is not None else [len(ids) - 1]
         if not ids or any(p < 0 or p >= len(ids) for p in positions):
             raise ValueError("Capture position outside prompt")
-        if patch is not None and not 0 <= patch.position < len(ids):
-            raise ValueError("Patch position outside sequence")
+        if patch is not None:
+            validate_patch_positions(patch, len(ids))
         if any(
             not indices or any(p < 0 or p >= len(ids) for p in indices)
             for _, indices in pools or []
@@ -301,8 +324,8 @@ class DecoderObserver:
     def score(self, ids: list[int], answer: str, *, patch=None) -> float:
         """Sum teacher-forced log probabilities for ALL candidate answer tokens."""
         answer_ids = self.candidate_ids(ids, answer)
-        if patch is not None and not 0 <= patch.position < len(ids):
-            raise ValueError("Patch must target a pre-answer prompt position")
+        if patch is not None:
+            validate_patch_positions(patch, len(ids))
         with self.hooks([len(ids) - 1], patch):
             # The final answer token is a target, not an input. In particular,
             # single-token answers must use the exact same prefill as capture.

@@ -398,3 +398,199 @@ def test_anchored_partition_reconstructs_additive_and_interaction_responses():
     np.testing.assert_allclose(sum(parts.values()), full)
     with pytest.raises(ValueError, match="identical shapes"):
         anchored_decomposition(full, [1.0, 2.0], current, ref)
+
+
+def test_node_rank_matches_original_directed_view_statistic():
+    from grain_research.vector_mechanisms.comparison import (
+        pair_concordance,
+        weighted_rank,
+    )
+    from grain_research.vector_mechanisms.context import paired_author_rank
+
+    values = np.random.default_rng(18).normal(size=(6, 3, 10))
+    expected = np.mean(
+        [
+            paired_author_rank(values[:, a], values[:, b])["author_rank_auc"]
+            for a, b in ((0, 1), (0, 2), (1, 2))
+        ]
+    )
+    assert weighted_rank(pair_concordance(values), np.ones(6))[0] == pytest.approx(
+        expected
+    )
+
+
+def test_node_bootstrap_never_counts_cloned_author_as_impostor():
+    from grain_research.vector_mechanisms.comparison import (
+        node_bootstrap_weights,
+        pair_concordance,
+        weighted_rank,
+    )
+
+    values = np.repeat(np.eye(4)[:, None, :], 3, axis=1)
+    weights = node_bootstrap_weights(4, draws=20)
+    np.testing.assert_allclose(weighted_rank(pair_concordance(values), weights), 1)
+    np.testing.assert_allclose(
+        weighted_rank(pair_concordance(np.ones((4, 3, 4))), weights), 0.5
+    )
+    with pytest.raises(ValueError, match="distinct author"):
+        weighted_rank(pair_concordance(values), [4, 0, 0, 0])
+
+
+def test_conditional_rank_excludes_self_and_reports_empty_support():
+    from grain_research.vector_mechanisms.comparison import (
+        conditional_rank,
+        pair_concordance,
+    )
+
+    values = np.repeat(np.eye(4)[:, None, :], 3, axis=1)
+    concordance = pair_concordance(values)
+    np.testing.assert_allclose(
+        conditional_rank(concordance, np.ones((3, 4, 4)), np.ones(4)), 1
+    )
+    assert np.isnan(
+        conditional_rank(concordance, np.zeros((3, 4, 4)), np.ones(4))
+    ).all()
+
+
+def test_binding_quartets_have_same_words_but_opposite_relational_answers():
+    import re
+    from collections import Counter
+
+    from grain_research.vector_mechanisms.binding import build_binding_controls
+
+    rows = build_binding_controls()
+    assert len(rows) == 288
+    assert len({r["case_id"] for r in rows}) == 288
+    groups = {}
+    for row in rows:
+        groups.setdefault((row["group_id"], row["order"], row["task"]), []).append(row)
+    for quartet in groups.values():
+        assert len(quartet) == 4
+        counts = [Counter(re.findall(r"\w+", r["passage"])) for r in quartet]
+        assert all(c == counts[0] for c in counts)
+        assert sum(r["expected_yes"] for r in quartet) == 2
+
+
+def test_binding_second_difference_is_zero_for_additive_records():
+    from grain_research.vector_mechanisms.binding import factorial_interaction
+
+    additive = {
+        (a, b): np.array([1.0 + 2 * a + b, a - b]) for a in (0, 1) for b in (0, 1)
+    }
+    np.testing.assert_allclose(factorial_interaction(additive), 0)
+    assert (
+        factorial_interaction({(a, b): int(a == b) for a in (0, 1) for b in (0, 1)})
+        == 2
+    )
+    with pytest.raises(ValueError, match="quartet"):
+        factorial_interaction({(0, 0): 1})
+
+
+def test_leakage_matching_uses_flag_values_not_nonempty_dictionary():
+    from scripts.summarize_grain_vector_baselines import condition_masks
+
+    authors = ["a", "b", "c"]
+    rows = [
+        {
+            "author_id": u,
+            "history_index": i,
+            "word_count": 60,
+            "subreddit": "source",
+            "leakage_flags": {"clue": u == "c"},
+        }
+        for u in authors
+        for i in range(3)
+    ]
+    vectors = {
+        k: np.repeat(np.eye(3)[:, None, :], 3, axis=1)
+        for k in ("bge_large", "e5_large")
+    }
+    masks = condition_masks(rows, authors, vectors)
+    assert masks["no_clue_author"].sum() == 6
+
+
+def test_additive_record_probe_cannot_solve_balanced_xnor():
+    from scripts.summarize_grain_vector_binding import fit_probe
+
+    rows = [(g, a, b) for g in range(4) for a in (0, 1) for b in (0, 1)]
+    x = np.array([[a, b, 1, g] for g, a, b in rows], dtype=float)
+    y = np.array([a == b for g, a, b in rows], dtype=int)
+    train = np.array([g < 3 for g, a, b in rows])
+    np.testing.assert_array_equal(fit_probe(x, y, train, ~train), 0)
+
+
+def test_span_self_patch_and_full_sequence_donor_equivalence(observer):
+    from grain_research.vector_mechanisms.trace import Patch
+
+    ids, donor_ids = [1, 2, 7], [2, 1, 7]
+    positions = [0, 1, 2]
+    original, logits = observer.capture(ids, positions=positions)
+    donor, donor_logits = observer.capture(donor_ids, positions=positions)
+    _, self_logits = observer.capture(
+        ids, patch=Patch("block_00", positions, original["block_00"])
+    )
+    np.testing.assert_allclose(self_logits, logits, atol=1e-6)
+    _, changed = observer.capture(
+        ids, patch=Patch("block_00", positions, donor["block_00"])
+    )
+    np.testing.assert_allclose(changed, donor_logits, atol=1e-6)
+    _, restored = observer.capture(ids)
+    np.testing.assert_allclose(restored, logits, atol=1e-6)
+
+
+def test_span_patch_rejects_duplicate_and_broadcast_donors(observer):
+    from grain_research.vector_mechanisms.trace import Patch
+
+    with pytest.raises(ValueError, match="unique"):
+        observer.capture([1, 2, 7], patch=Patch("block_00", [0, 0], np.zeros((2, 16))))
+    with pytest.raises(ValueError, match="Donor shape"):
+        observer.capture([1, 2, 7], patch=Patch("block_00", [0, 1], np.zeros(16)))
+    assert not observer.sites["block_00"]._forward_hooks
+
+
+def test_span_projected_patch_algebra(observer):
+    from grain_research.vector_mechanisms.trace import Patch, patch_delta
+
+    ids = [1, 2, 7]
+    states, _ = observer.capture(ids, positions=[0, 1])
+    donor = states["block_00"] + 1
+    basis = np.eye(16)[:, :2]
+    effect = patch_delta(states["block_00"], donor, basis)
+    np.testing.assert_allclose(effect[:, 2:], 0)
+    _, a = observer.capture(ids, patch=Patch("block_00", [0, 1], donor, basis=basis))
+    _, b = observer.capture(
+        ids, patch=Patch("block_00", [0, 1], states["block_00"] + effect)
+    )
+    np.testing.assert_allclose(a, b, atol=1e-6)
+
+
+def test_bfloat16_full_replacement_is_copy_not_subtract_add(observer):
+    import torch
+
+    from grain_research.vector_mechanisms.trace import Patch
+
+    observer.model.to(torch.bfloat16)
+    donor = np.full((3, 16), 0.0001)
+    expected = torch.as_tensor(donor, dtype=torch.bfloat16).float().numpy()
+    captured, _ = observer.capture(
+        [1, 2, 7], positions=[0, 1, 2], patch=Patch("block_00", [0, 1, 2], donor)
+    )
+    np.testing.assert_array_equal(captured["block_00"], expected)
+
+
+def test_relational_kernel_is_psd_and_adds_the_missing_interaction():
+    from grain_research.vector_mechanisms.binding import relational_grams
+
+    a = np.array([[-1.0], [-1.0], [1.0], [1.0]])
+    b = np.array([[-1.0], [1.0], [-1.0], [1.0]])
+    truth = np.array([1.0, -1.0, -1.0, 1.0])
+    kernels = relational_grams(a, b, np.ones(4, dtype=bool))
+    for matrix in kernels.values():
+        assert np.linalg.eigvalsh(matrix).min() > -1e-10
+    np.testing.assert_allclose(kernels["additive"] @ truth, 0)
+    assert (kernels["tensor_product"] @ truth > 0).tolist() == [
+        True,
+        False,
+        False,
+        True,
+    ]
