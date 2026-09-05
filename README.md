@@ -22,7 +22,7 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
-## Vector inference research plan (2026-09-05)
+## Vector inference research loop (2026-09-05)
 
 The next research program studies how an LLM's internal representations use
 author context and combine evidence during personality inference. The
@@ -30,9 +30,14 @@ author context and combine evidence during personality inference. The
 Project Persona, MCD, the historical method versions, and the current GRAIN
 theory. The [experiment plan](docs/GRAIN_VECTOR_INFERENCE_MECHANISM_PLAN_V1.md)
 specifies layer measurements, context contrasts, activation interventions,
-external links, resource limits, and deliverables. These experiments are
-planned, not completed; historical release and lockbox results retain their
-original scope.
+external links, resource limits, and deliverables. The first instrument cycle
+is complete: 192 synthetic fact prompts, layer probes, 3,264 activation-patch
+forwards, and an execution-shape numerical audit. See the
+[research log](docs/GRAIN_VECTOR_RESEARCH_LOG.md) and
+[VM01 report](reports/grain_vector_mechanisms/VM01_RESEARCH_REPORT.md).
+This validates a research instrument, not human personality inference. Natural
+author-context work is next; historical release and lockbox results retain
+their original scope.
 
 ## Theory manuscript (2026-09-01)
 

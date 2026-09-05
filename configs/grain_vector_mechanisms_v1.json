@@ -1,0 +1,17 @@
+{
+  "protocol": "GRAIN_VM01_FACT_CONTROLS_V1",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "max_tokens": 2048,
+  "pad_to_length": 256,
+  "local_files_only": true,
+  "seed": 731,
+  "maximum_seconds": 21600,
+  "maximum_calls": 4096,
+  "maximum_cache_bytes": 10000000000,
+  "output_dir": "results/grain_vector_mechanisms/vm01_qwen15b_v1",
+  "label_scope": "synthetic_semantic_facts_only",
+  "source": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
+}
