@@ -1242,3 +1242,39 @@ def test_independent_summary_keeps_swapped_polarity_and_all_authors(
     assert endpoints["transfer"]["mean"] == pytest.approx(0.45)
     assert endpoints["code_swapped"]["mean"] == pytest.approx(0.55)
     assert all(r["clusters"] == 4 for r in endpoints.values())
+
+
+def test_capability_cases_and_strict_parse_do_not_extract_explanations():
+    from grain_research.vector_mechanisms.capability import (
+        capability_cases,
+        parse_binary_answer,
+    )
+
+    rows = capability_cases()
+    assert len(rows) == 216
+    assert len({r["case_id"] for r in rows}) == 208
+    assert sum(r["repeat"] for r in rows) == 8
+    assert parse_binary_answer(" Yes.\n") == 1
+    assert parse_binary_answer("no!") == 0
+    for text in ("Yes, because", "Not Yes", "No then Yes", "", None):
+        assert parse_binary_answer(text) is None
+
+
+def test_capability_summary_counts_invalid_responses_as_errors():
+    from grain_research.vector_mechanisms.capability import capability_cases
+    from scripts.summarize_grain_vector_capability import summarize_run
+
+    f = pd.DataFrame(capability_cases())
+    f["parsed_yes"] = f.expected_yes.astype(float)
+    f["parse_ok"] = True
+    f["correct"] = True
+    f["content"] = np.where(f.expected_yes == 1, "Yes", "No")
+    summary, _ = summarize_run(f)
+    assert summary["next_observer_qualified"]
+    assert summary["repeat_exact_matches"] == 8
+    mask = (f.battery == "semantic_fact") & (f.family == "composition")
+    f.loc[mask, "correct"] = False
+    f.loc[mask, "parse_ok"] = False
+    summary, _ = summarize_run(f)
+    assert summary["facts_accuracy"] == 0.75
+    assert not summary["next_observer_qualified"]
