@@ -69,6 +69,9 @@ def research_source_paths(root: Path) -> list[Path]:
         root / name
         for name in (
             "grain_research/__init__.py",
+            "suica_core/__init__.py",
+            "suica_core/v7_psychometric.py",
+            "suica_core/v7_geometry.py",
             "tests/test_grain_vector_mechanisms.py",
             "configs/grain_vector_contexts_v1.json",
             "configs/grain_vector_mechanisms_v1.json",

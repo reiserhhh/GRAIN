@@ -1463,3 +1463,40 @@ def test_external_thread_purge_counts_do_not_use_author_or_label_as_proxy():
     assert result["remaining_min_median_max"] == [1, 1, 1]
     with pytest.raises(ValueError, match="author overlap"):
         purge_counts(train, train)
+
+
+def test_external_model_signature_ignores_time_not_precision_or_site():
+    from scripts.run_grain_vector_mechanism_external_features import model_signature
+
+    a = {"dtype": "bfloat16", "sites": ("block_10",), "unix_time": 1}
+    b = {"dtype": "bfloat16", "sites": ["block_10"], "unix_time": 2}
+    assert model_signature(a) == model_signature(b)
+    assert model_signature(a) != model_signature(b | {"dtype": "float32"})
+
+
+def test_external_encoder_reuses_equal_texts_but_preserves_all_arm_views(monkeypatch):
+    import scripts.run_grain_vector_mechanism_external_features as module
+
+    class Tokenizer:
+        def __call__(self, texts, **_):
+            return {"input_ids": [[len(t)] for t in texts]}
+
+    calls = []
+
+    def encode(texts, *_args, **_kwargs):
+        calls.append(len(texts))
+        return np.array([[len(t), 1.0] for t in texts], dtype=np.float32)
+
+    monkeypatch.setattr(module, "collect_encoder", encode)
+    raw = [f"unit {i}" for i in range(36)]
+    arms = {"raw": raw, "cue_mask": raw, "placebo_mask": raw}
+    features, metrics = module.encoder_author(
+        arms, Tokenizer(), None, "", "cls", "cpu", repeat=True
+    )
+    assert calls == [36, 36]
+    assert metrics["unique_comments"] == 36 and metrics["logical_comments"] == 108
+    assert features["raw_comment_vectors"].shape == (3, 12, 2)
+    np.testing.assert_array_equal(
+        features["raw_view_mean"], features["cue_mask_view_mean"]
+    )
+    assert len(set(metrics["token_signatures"].values())) == 1
