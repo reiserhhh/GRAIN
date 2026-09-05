@@ -1550,3 +1550,128 @@ def test_external_queue_never_accepts_a_status_flag_without_manifest(tmp_path):
     (tmp_path / "run_status.json").write_text(json.dumps({"status": "COMPLETE"}))
     with pytest.raises(FileNotFoundError):
         verify_completed(tmp_path, [{"author_id": "a"}], {}, "qwen", 1, 0, "x")
+
+
+def test_external_heads_pool_all_moments_not_just_mean_of_stds():
+    from grain_research.vector_mechanisms.external_heads import pooled_moments
+
+    pieces = [
+        np.array([[1.0, 2.0], [2.0, 3.0]]),
+        np.array([[20.0, 6.0], [22.0, 8.0], [24.0, 10.0]]),
+    ]
+    means, stds = (
+        np.stack([x.mean(0) for x in pieces]),
+        np.stack([x.std(0) for x in pieces]),
+    )
+    counts = np.array([2.0, 3.0])
+    pooled = pooled_moments(means, stds, counts)
+    joined = np.concatenate(pieces)
+    np.testing.assert_allclose(pooled, np.r_[joined.mean(0), joined.std(0)])
+    np.testing.assert_array_equal(counts, [2.0, 3.0])
+
+
+def test_external_heads_correlations_are_bounded_and_constants_undefined():
+    from grain_research.vector_mechanisms.external_heads import correlation, metrics
+
+    y = np.arange(20) / 20
+    assert correlation(y, y) == pytest.approx(1.0)
+    assert correlation(y, -y) == pytest.approx(-1.0)
+    assert np.isnan(correlation(y, np.ones(20)))
+    binary = np.tile([0, 1], 10)
+    result = metrics(binary, binary * 0.8 + 0.1, "EI_cont")[0]
+    assert result["auc"] == 1.0 and result["balanced_accuracy"] == 1.0
+
+
+def test_external_heads_fit_vocabulary_and_scaler_only_on_training_rows():
+    from grain_research.vector_mechanisms.external_heads import make_head
+
+    x = np.arange(200).reshape(40, 5).astype(float)
+    dense = make_head("dense", "big5", 1.0, 40, 5)
+    dense.fit(x, np.c_[x[:, 0], x[:, 1], x[:, 2], x[:, 3], x[:, 4]])
+    np.testing.assert_allclose(dense.named_steps["scale"].mean_, x.mean(0))
+    dense.predict(x + 10000)
+    np.testing.assert_allclose(dense.named_steps["scale"].mean_, x.mean(0))
+    sparse = make_head("word_char", "big5", 1.0, 10)
+    sparse.fit(["common phrase repeated"] * 10, np.arange(10))
+    sparse.predict(["heldoutcanary common phrase"])
+    assert (
+        "heldoutcanary"
+        not in sparse.named_steps["features"].transformer_list[0][1].vocabulary_
+    )
+
+
+def test_external_source_label_loader_skips_bridge_and_checks_polarity(tmp_path):
+    import csv
+    import hashlib
+
+    from grain_research.vector_mechanisms.cohort import ID_SEED
+    from grain_research.vector_mechanisms.data_views import stable_key
+    from grain_research.vector_mechanisms.external_heads import load_source_labels
+
+    path = tmp_path / "axis.csv"
+    with path.open("w", newline="") as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                "user_id",
+                "official_fold",
+                "positive_probability",
+                "mbti_type",
+            ],
+        )
+        writer.writeheader()
+        writer.writerow(
+            {
+                "user_id": "training",
+                "official_fold": 2,
+                "positive_probability": 1,
+                "mbti_type": "ENFJ",
+            }
+        )
+        writer.writerow(
+            {
+                "user_id": "bridge",
+                "official_fold": 0,
+                "positive_probability": "DO_NOT_CONVERT",
+                "mbti_type": "BAD",
+            }
+        )
+    source = {
+        "EI_cont": {
+            "path": "axis.csv",
+            "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        }
+    }
+    bundle = {
+        "author_id": stable_key("training", ID_SEED)[:24],
+        "source_group": "mbti_only",
+        "official_folds": {"EI_cont": 2},
+    }
+    y, audit = load_source_labels(tmp_path, [bundle], "EI_cont", source)
+    assert y.tolist() == [1.0] and audit["type_polarity_verified"] == 1
+    with pytest.raises(ValueError, match="Wrong source"):
+        load_source_labels(
+            tmp_path, [bundle | {"source_group": "bridge"}], "EI_cont", source
+        )
+
+
+def test_external_nested_head_is_author_disjoint_and_reselects():
+    from grain_research.vector_mechanisms.external_heads import select_head
+
+    rng = np.random.default_rng(20)
+    x = rng.normal(size=(60, 6))
+    y = x[:, :5] + rng.normal(scale=0.1, size=(60, 5))
+    ids = np.array([str(i) for i in range(60)])
+    observed = []
+
+    def inspect(train, valid):
+        assert not set(ids[train]) & set(ids[valid])
+        observed.append((len(train), len(valid)))
+        return train
+
+    model, scores, selected = select_head(x, y, ids, "dense", "big5", on_inner=inspect)
+    assert observed == [(40, 20)] * 3
+    assert len(scores) == 5 and selected in [0.1, 1.0, 10.0, 100.0, 1000.0]
+    assert model.predict(x).shape == (60, 5)
+    with pytest.raises(ValueError, match="unique"):
+        select_head(x, y, np.array(["same"] * 60), "dense", "big5")
