@@ -1161,3 +1161,19 @@ def test_independent_access_sign_flip_is_two_sided_and_keeps_zero():
     assert sign_flip_p(np.zeros(12)) == 1
     assert sign_flip_p(np.ones(12)) < 0.005
     assert sign_flip_p(-np.ones(12)) == sign_flip_p(np.ones(12))
+
+
+def test_independent_preflight_accepts_mapping_and_list_tokenizer_results():
+    from grain_research.vector_mechanisms.independent_access import unbounded_prompt_ids
+
+    class Tokenizer:
+        def __init__(self, value):
+            self.value = value
+
+        def apply_chat_template(self, *args, **kwargs):
+            return self.value
+
+    for value in ([1, 2, 3], {"input_ids": [1, 2, 3], "attention_mask": [1, 1, 1]}):
+        assert unbounded_prompt_ids(Tokenizer(value), "source") == [1, 2, 3]
+    with pytest.raises(ValueError, match="flat"):
+        unbounded_prompt_ids(Tokenizer(["input_ids"]), "source")

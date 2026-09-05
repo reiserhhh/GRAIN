@@ -22,6 +22,7 @@ from grain_research.vector_mechanisms.independent_access import (
     answer_code_controls,
     confirmation_bundle,
     confirmation_conditions,
+    unbounded_prompt_ids,
 )
 from grain_research.vector_mechanisms.inventory import archive_source, code_fingerprint
 from grain_research.vector_mechanisms.natural_patch import match_quantized_row_norms
@@ -125,15 +126,8 @@ def main():
         conditions = confirmation_conditions(bundle)
         lengths = []
         for condition in conditions:
-            condition["ids"] = list(
-                observer.tokenizer.apply_chat_template(
-                    [
-                        {"role": "system", "content": ACCESS_SYSTEM},
-                        {"role": "user", "content": condition["user"]},
-                    ],
-                    tokenize=True,
-                    add_generation_prompt=True,
-                )
+            condition["ids"] = unbounded_prompt_ids(
+                observer.tokenizer, condition["user"]
             )
             lengths.append(len(condition["ids"]))
         eligible = max(lengths) <= 1536

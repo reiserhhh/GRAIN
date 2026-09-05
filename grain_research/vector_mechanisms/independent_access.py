@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
+
 from .context import SYSTEM
 from .data_views import validate_context_bundle
 from .memory import render_records
@@ -19,6 +21,22 @@ CODE_SWAPPED = (
     "by the excerpts; output Yes if not supported. "
     "Not supported is not proof of the opposite."
 )
+
+
+def unbounded_prompt_ids(tokenizer, user):
+    """Count actual IDs before applying eligibility, across tokenizer versions."""
+    encoded = tokenizer.apply_chat_template(
+        [
+            {"role": "system", "content": ACCESS_SYSTEM},
+            {"role": "user", "content": user},
+        ],
+        tokenize=True,
+        add_generation_prompt=True,
+    )
+    ids = encoded["input_ids"] if isinstance(encoded, Mapping) else encoded
+    if not ids or not all(isinstance(i, int) for i in ids):
+        raise ValueError("Need a flat token ID list")
+    return list(ids)
 
 
 def access_message(history, current, task, *, swapped=False):
