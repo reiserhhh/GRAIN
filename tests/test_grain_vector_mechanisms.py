@@ -12,6 +12,257 @@ from grain_research.vector_mechanisms.controls import build_controls, validate_c
 from grain_research.vector_mechanisms.inventory import inspect_csv
 
 
+def test_memory_summary_citation_is_not_semantic_acceptance():
+    import json
+
+    from grain_research.vector_mechanisms.memory import parse_summary, summary_text
+
+    text = "I watched while my neighbor invited people to a long walk."
+    raw = json.dumps(
+        {"facts": [{"excerpt": 1, "fact": "The writer invited people.", "quote": text}]}
+    )
+    audit = parse_summary(raw, [{"body": text}])
+    assert audit["facts"][0]["status"] == "EXACT_QUOTE_SUPPORTED"
+    assert "No supported" in summary_text(audit, reviewed=True)
+    audit["facts"][0]["semantic_review"] = "REJECT"
+    assert "No supported" in summary_text(audit, reviewed=True)
+    assert parse_summary("garbage", [])["status"] == "PARSE_FAILED"
+
+
+def test_memory_controls_are_scoped_and_mixed_polarity():
+    from grain_research.vector_mechanisms.memory import update_controls, update_message
+
+    rows = update_controls()
+    assert len(rows) == 8
+    assert {r["expected_yes"] for r in rows} == {0, 1}
+    for r in rows:
+        for placement in ("before", "after"):
+            text = update_message(
+                "unrelated natural writing", r["text"], placement=placement
+            )
+            assert "fabricated experimental event" in text
+            assert text.count("unrelated natural writing") == 1
+            assert "final account of Record Z7" in text
+            statement = update_message(
+                "background",
+                r["text"],
+                placement=placement,
+                negative_question=True,
+                question_style="statement",
+            )
+            assert "Is that statement supported" in statement
+            assert "the writer did not personally initiate" in statement
+
+
+def test_summary_repair_does_not_hide_invalid_generation_or_excess_facts():
+    import json
+
+    from grain_research.vector_mechanisms.memory import recover_summary
+
+    fact = {
+        "excerpt": 1,
+        "fact": "A report.",
+        "quote": "One two three four five six seven eight.",
+    }
+    raw = json.dumps({"facts": [fact]})[:-1]
+    repaired = recover_summary(raw, [{"body": fact["quote"]}])
+    assert repaired["strict_status"] == "PARSE_FAILED"
+    assert repaired["repair"] == "APPEND_ONE_CLOSING_OBJECT_BRACE"
+    assert repaired["facts"][0]["semantic_review"] == "PENDING"
+    excess = recover_summary(
+        json.dumps({"facts": [fact] * 7})[:-1], [{"body": fact["quote"]}]
+    )
+    assert excess["status"] == "SCHEMA_FAILED"
+    assert excess["facts"] == []
+
+
+def test_memory_current_has_identical_right_boundary_in_every_placement():
+    from grain_research.vector_mechanisms.memory import (
+        CURRENT_END,
+        natural_message,
+        update_message,
+    )
+
+    current = "An emoticon at the boundary :("
+    prompts = [natural_message(None, current, "behavior")]
+    prompts += [
+        update_message(current, "Record Z7: test.", placement=p)
+        for p in ("before", "after")
+    ]
+    for prompt in prompts:
+        assert current + CURRENT_END in prompt
+
+
+def test_memory_material_keeps_natural_and_fabricated_truth_separate():
+    from scripts.run_grain_vector_mechanism_memory import make_material
+
+    history = [{"body": f"Evidence number {i}."} for i in range(12)]
+    case = {
+        "case_id": "c",
+        "author_id": "a",
+        "current_index": 0,
+        "history": history,
+        "current": {"body": "Unchanged current."},
+        "retrieval": {
+            task: {"indices": [0, 4, 8]} for task in ("behavior", "disposition")
+        },
+        "random3": [1, 5, 9],
+        "donors": {
+            key: {"status": "MATCHED", "history": history}
+            for key in ("other_length", "other_condition")
+        },
+    }
+    rows = make_material([case], {"a": {"audit": {"facts": []}}})
+    natural = [r for r in rows if r["kind"] == "natural"]
+    controlled = [r for r in rows if r["kind"] == "synthetic_on_natural"]
+    assert len(natural) == 26
+    assert len(controlled) == 32
+    assert all(r["expected_yes"] is None for r in natural)
+    assert sum(r["expected_yes"] for r in controlled) == 16
+    for variant in {r["arm"] for r in controlled}:
+        for placement in ("before", "after"):
+            pair = [
+                r
+                for r in controlled
+                if r["arm"] == variant and r["placement"] == placement
+            ]
+            assert sum(r["expected_yes"] for r in pair) == 1
+
+
+def test_memory_analysis_pairs_features_by_integer_row_not_case_string(
+    tmp_path, monkeypatch
+):
+    import json
+
+    from grain_research.vector_mechanisms.controls import material_hash
+    from scripts.run_grain_vector_mechanism_memory import make_material
+    from scripts.summarize_grain_vector_memory import main
+
+    history = [{"body": f"Some unchanging words in excerpt {i}."} for i in range(12)]
+    review = {
+        "reviews": [
+            {
+                "author_id": uid,
+                "audit": {
+                    "strict_status": "PARSED",
+                    "status": "PARSED",
+                    "repair": "NONE",
+                    "facts": [
+                        {
+                            "fact_id": 0,
+                            "status": "EXACT_QUOTE_SUPPORTED",
+                            "semantic_review": "ACCEPT",
+                            "review_reason": "Synthetic fixture.",
+                            "fact": "One claim.",
+                            "quote": history[0]["body"],
+                            "excerpt": 1,
+                        }
+                    ],
+                },
+            }
+            for uid in ("a", "b")
+        ]
+    }
+    cases = [
+        {
+            "case_id": "case_" + uid,
+            "author_id": uid,
+            "current_index": 0,
+            "history": history,
+            "current": {"body": "Same current."},
+            "retrieval": {
+                task: {"indices": [0, 1, 2]} for task in ("behavior", "disposition")
+            },
+            "random3": [3, 4, 5],
+            "donors": {
+                key: {"status": "MATCHED", "history": history}
+                for key in ("other_length", "other_condition")
+            },
+        }
+        for uid in ("a", "b")
+    ]
+    rows = make_material(cases, {r["author_id"]: r for r in review["reviews"]})
+    for i, r in enumerate(rows):
+        r.update(
+            job_id=f"j{i:04d}",
+            margin=float(i % 5 - 2),
+            conditional_yes=0.5,
+            predicted_yes=int(i % 5 > 2),
+            prompt_tokens=100,
+            yes_no_probability_mass=0.9,
+            current_tokens=10,
+        )
+        r["correct"] = (
+            int(r["predicted_yes"] == r["expected_yes"])
+            if r["expected_yes"] is not None
+            else None
+        )
+    parent = tmp_path / "parent"
+    parent.mkdir()
+    pd.DataFrame(rows).to_csv(parent / "readouts.csv", index=False)
+    (parent / "run_status.json").write_text(
+        json.dumps({"status": "COMPLETE", "cases": len(rows)})
+    )
+    (parent / "manifest.json").write_text(
+        json.dumps(
+            {
+                "identity": "test",
+                "review_sha256": material_hash(review),
+                "jobs": [{"job_id": r["job_id"]} for r in rows],
+            }
+        )
+    )
+    review_path = tmp_path / "review.json"
+    review_path.write_text(json.dumps(review))
+    features = np.random.default_rng(1).normal(size=(len(rows), 4))
+    np.savez(
+        parent / "representations.npz",
+        block_10_current_mean=features,
+        block_16_decision=features,
+    )
+    out = tmp_path / "out"
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "summary",
+            "--parent-dir",
+            str(parent),
+            "--review",
+            str(review_path),
+            "--output-dir",
+            str(out),
+        ],
+    )
+    main()
+    result = pd.read_csv(out / "context_displacement.csv")
+    assert (result[result.arm == "raw_full"].relative_displacement_mean == 0).all()
+    assert (result[result.arm == "none"].relative_displacement_mean > 0).all()
+    assert json.loads((out / "summary.json").read_text())["status"] == "COMPLETE"
+
+
+def test_summary_review_cannot_change_a_fact_or_accept_bad_citation():
+    import json
+
+    from grain_research.vector_mechanisms.memory import (
+        recover_summary,
+        validate_summary_review,
+    )
+
+    comments = [{"body": "One two three four five six seven eight."}]
+    raw = json.dumps(
+        {"facts": [{"excerpt": 1, "fact": "A claim.", "quote": comments[0]["body"]}]}
+    )
+    generated = [{"author_id": "a", "raw": raw}]
+    sources = [{"author_id": "a", "history": comments}]
+    audit = recover_summary(raw, comments)
+    audit["facts"][0]["semantic_review"] = "ACCEPT"
+    reviews = [{"author_id": "a", "audit": audit}]
+    assert validate_summary_review(generated, reviews, sources)["a"]["audit"] == audit
+    audit["facts"][0]["fact"] = "A different claim."
+    with pytest.raises(ValueError, match="changed generated"):
+        validate_summary_review(generated, reviews, sources)
+
+
 def test_dual_cka_agrees_with_primal_formula():
     from grain_research.vector_mechanisms.multicomment import linear_cka_dual
 
