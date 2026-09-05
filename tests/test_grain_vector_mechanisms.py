@@ -1278,3 +1278,24 @@ def test_capability_summary_counts_invalid_responses_as_errors():
     summary, _ = summarize_run(f)
     assert summary["facts_accuracy"] == 0.75
     assert not summary["next_observer_qualified"]
+
+
+def test_external_partitions_reserve_bridge_missing_from_official_axis_members():
+    from grain_research.vector_mechanisms.external_sources import (
+        exclusive_source_groups,
+        source_partitions,
+    )
+
+    sets = {
+        "big5": {"b", "both", "bridge_extra", "reserved"},
+        "bridge": {"both", "bridge_extra"},
+    }
+    sets.update(
+        {a + "_cont": {"m", "both", "reserved"} for a in ("EI", "SN", "TF", "JP")}
+    )
+    p = source_partitions(sets)
+    assert p["big5_only"] == {"b"}
+    assert p["bridge_outside_official_mbti"] == {"bridge_extra"}
+    assert p["both_nonreport_reserved"] == {"reserved"}
+    groups = exclusive_source_groups(sets)
+    assert sum(len(v) for v in groups.values()) == len(set().union(*groups.values()))

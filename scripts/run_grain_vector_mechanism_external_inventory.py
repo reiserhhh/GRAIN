@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT))
 
 from grain_research.vector_mechanisms.cohort import ID_SEED
 from grain_research.vector_mechanisms.data_views import stable_key
+from grain_research.vector_mechanisms.external_sources import source_partitions
 from grain_research.vector_mechanisms.inventory import archive_source, code_fingerprint
 from scripts.run_grain_vector_mechanism_controls import write_json
 
@@ -54,16 +55,7 @@ def main():
             "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
             "columns_loaded": ["user_id"],
         }
-    mbti_union = set().union(*(sets[k] for k in sets if k.endswith("_cont")))
-    sources = {
-        "big5_all": sets["big5"],
-        "big5_only": sets["big5"] - mbti_union,
-        "bridge_strict_report": sets["bridge"],
-        "any_both_membership": sets["big5"] & mbti_union,
-    }
-    sources.update(
-        {k + "_only": v - sets["big5"] for k, v in sets.items() if k.endswith("_cont")}
-    )
+    sources = source_partitions(sets)
     rows = []
     cohort_ids = set()
     for split in ("discovery", "calibration", "mechanism_holdout"):
