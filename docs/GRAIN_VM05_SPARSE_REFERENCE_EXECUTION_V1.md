@@ -32,6 +32,9 @@ Mac24GiB内存；统计头CPU线程4，子进程RSS上限8GiB、默认整批7200
 预算不足1800秒不再启动下一条件；单条件不能完成时保留并诊断，不缩小数据
 冒充完成、不替换同材料对照。全12条件结束前只报告部分进展。
 
-Canonical目标：results/grain_vector_mechanisms/vm05_sparse_mbti_r1。
+Canonical目标：results/grain_vector_mechanisms/vm05_sparse_mbti_r2。
+r1在任何拟合前因ExFAT自动产生的._.execution.lock被误判旧结果而停止，
+保留PRELAUNCH_FILESYSTEM_GUARD_FAILED记录。937f914只修正新队列的
+AppleDouble识别，未改变词表/统计头/数据；r2已重新启动并记录独占PID/RSS。
 控制/null批次及CUDA队列各自拥有的运行代码保持冻结。强基线较弱或较强都完整
 报告；其目的在于避免“胜过薄弱旧投影”被偷换成“LLM拥有独特推论机制”。
