@@ -6,7 +6,7 @@
 
 对现有prepared official CSV仅读取user_id，用相同ID_SEED连接240作者。
 没有读取Big5/MBTI数值、类别比例、fold结果或新问卷。
-结果保存在results/grain_vector_mechanisms/vm05_membership_inventory_r1；
+当前结果保存在results/grain_vector_mechanisms/vm05_membership_inventory_r2（r1保留）；
 脚本为scripts/run_grain_vector_mechanism_external_inventory.py。
 
 | 子集 | discovery144 | calibration48 | mechanism holdout48 | 合计240 |
@@ -17,7 +17,7 @@
 | MBTI-only，每轴相同成员数 | 122 | 43 | 42 | 207 |
 
 这里是文件成员覆盖，不是标签完整率、统计功效或每类数目。Big5-only排除
-所有MBTI来源成员，MBTI-only排除所有Big5来源成员，避免把不在strict
+所有MBTI来源和显式bridge成员，MBTI-only排除所有Big5来源和bridge成员，避免把不在strict
 报告集的both-label作者重新混进源头训练。主代码仍需读取标签后验证缺失与极性。
 
 不能把240误当成240个Big5带标作者，更不能在10个bridge上重估并宣称
@@ -49,3 +49,16 @@ c170c708c41dac9275d15a8fff4eca08d52bab71的3个safetensors均存在，
 量化行为对照不是相同坐标系白箱复现；不能混合向量或把能力差全归因于规模。
 不要停止其他项目服务、强行加载造成OOM、下载新权重或付费API后不记账。
 目前无需用户的新idea，明确的实施队列仍是独立确认、扩样外部联系、第二观察器。
+
+## 第九轮更新：两项准备已完成
+
+独立确认已完成；第二观察器也已完成216合成prompt，见
+[能力报告](../reports/grain_vector_mechanisms/VM03_SECOND_OBSERVER_REPORT.md)。
+既有Llama3.1:8b量化模型使用评估机.30:11434，不是.30:8229。
+事实内容、答案代码、严格输出格式需分开；尚未取得代码不变语义资格。
+
+完整来源扫描得到636 Big5-only、6453 MBTI-only、254 bridge合格作者，
+见[全来源取材报告](../reports/grain_vector_mechanisms/VM05_FULL_SOURCE_MATERIAL_REPORT.md)。
+未读取心理标签值。375 bridge中多出的11人不在Big5/MBTI任一任务源中，
+不是11人漏入Big5-only；原计数1037保持不变。显式排除是防护性补强。
+已经完成的是取材与独立核验，不是同预算表示采集、统计头或心理效度检验。

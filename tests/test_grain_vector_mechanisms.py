@@ -1368,6 +1368,7 @@ def test_external_cohort_loads_only_ids_and_separate_source_folds(tmp_path):
 
 def test_external_material_audit_rejects_cross_author_duplicate_and_wrong_fold():
     import copy
+
     from grain_research.vector_mechanisms.cohort import ID_SEED
     from grain_research.vector_mechanisms.data_views import stable_key
     from scripts.summarize_grain_vector_external_cohort import validate_materials

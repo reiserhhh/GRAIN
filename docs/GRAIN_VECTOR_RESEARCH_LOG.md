@@ -410,3 +410,52 @@ Mac24GiB/Windows可用6.9GB需先资源预检，不贸然全精度反向。
 
 仍需第二观察器、VM05外部联系、VM06 MEPS无标签/Essays/X、VM07atlas。
 本轮没有需要用户补新idea的阻塞，goal保持active。
+
+## 第九轮：第二观察器与完整来源取材
+
+2026-09-06。协议cd99ee7/0405492先于执行；实现d32984b/a972f55，
+独立审计实现830395f。无模型训练、下载、付费API、服务重配或push。
+
+1. Llama和Qwen实际生成各216prompt完成，分别101.142s和82.485s。
+   Llama普通/交换代码7/8、4/8，反转5/8；Qwen5/8、4/8，反转1/8。
+   均未取得代码不变语义资格；不改VM04的机械确认，也不赋予人格解释。
+2. Llama严格事实.875的全部24错例都是正确No后附加解释。事后首句诊断1.0
+   不能改主门槛，更不保证解释真实。Qwen实际生成.8958与margin .8802
+   的差异全部来自三个margin=0；16个旧代码margin重播误差0。
+3. 全来源一次扫描17,640,062行、112.091秒。10,090来源作者中7,343
+   合格：636 Big5-only、6453 MBTI-only、254 bridge，共264,348评论。
+   每人36评论/3时间视图；未读心理值。Mac峰值RSS约5.30GB。
+4. 独立核验来源、fold、文本hash、时序和讨论分离通过；源作者无重叠，
+   跨作者评论/归一化正文重复0。旧240人中239进入，不是新lockbox。
+   人均跨度中位约1170天，不能偷换成同时点trait稳定性。
+5. 源群间有2041个共享讨论，其中1096连接bridge与训练来源。人格线索
+   覆盖bridge作者55.9%、Big5-only23.0%、MBTI-only17.9%；它们仍是
+   自动线索，不是已确认标签报告。后续须做消融及讨论重叠敏感性。
+
+更正：375 bridge比官方交集364多11人，但这11人也不在Big5主文件中。
+早先即时更新中“会漏入Big5-only”的推断错误；没有实际训练污染证据。
+显式bridge优先排除是防护加强，Big5-only来源1037不变，没有按旧盘点拟合头。
+
+Canonical目录均在results/grain_vector_mechanisms/：
+
+| 目录 | 状态/内容 |
+| --- | --- |
+| vm03_second_observer_llama_r1 | 完成；原合成回复/服务模型identity |
+| vm03_second_observer_qwen_r1 | 完成；原生成回复及first margin |
+| vm03_second_observer_analysis_r2 | 主结果、逐family、配对及独立格式诊断；r1保留 |
+| vm05_membership_inventory_r2 | 仅读ID的来源盘点；r1保留 |
+| vm05_full_source_cohort_r1 | 完成；来源/排除/fold台账与私有原文 |
+| vm05_full_source_audit_r1 | 完成；独立hash、来源、时序、线索与共享讨论核验 |
+
+复现入口为run_grain_vector_mechanism_capability.py、
+summarize_grain_vector_capability.py、run_grain_vector_mechanism_external_cohort.py、
+summarize_grain_vector_external_cohort.py；协议文件列明固定参数。每次新建输出目录。
+正式解读见VM03_SECOND_OBSERVER_REPORT与VM05_FULL_SOURCE_MATERIAL_REPORT。
+Mac专项74 tests通过；最终source_vm03_vm05_final_c.zip同步Windows后74 tests
+通过（11.78s）。scoped ruff与diff检查通过；完整历史测试未重跑。
+
+下一执行按[GRAIN_VM05_SAME_EVIDENCE_DESIGN_V1](GRAIN_VM05_SAME_EVIDENCE_DESIGN_V1.md)：
+同预算表示/来源统计头/bridge后验。另保留事实与倾向的代码因子实验、
+VM06获准用途内异域复测和VM07机制图谱。代码能力不足不能否定独立统计头
+所检测的信息；这两个对象必须分开。不改GRAIN正式计分、不读MEPS问卷。
+当前仍有明确可执行问题，goal保持active，不需要用户新增idea。

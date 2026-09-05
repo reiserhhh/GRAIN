@@ -46,6 +46,16 @@
 来源样本（当前240仅22 Big5-only、10 bridge），见
 [容量说明](GRAIN_VM05_RESOURCE_AND_COVERAGE_NOTE.md)。计分主线不变，VM05–07未闭环。
 
+2026-09-06 第九轮增补：第二观察器和同材料Qwen实际生成各216prompt完成。
+两者仍未通过答案代码反转；Llama的24个事实失败是附加解释导致的严格格式
+失败，单列事后诊断，不改主门槛。Qwen三例改善仅为零margin的判定差异。
+见[能力报告](../reports/grain_vector_mechanisms/VM03_SECOND_OBSERVER_REPORT.md)。
+完整扫描1764万原评论，636 Big5-only、6453 MBTI-only、254 bridge合格；
+未读心理值、独立来源/fold/重复核验通过。线索比例和共享讨论须纳入VM05。
+见[取材报告](../reports/grain_vector_mechanisms/VM05_FULL_SOURCE_MATERIAL_REPORT.md)。
+下一步进入同证据表示采集与外部联系，不在44已开作者上继续调prompt。
+VM05预测、VM06/07及代码不变语义通路仍待完成，goal保持进行中。
+
 目标：解释模型如何从同一作者的内容、历史和对话中获得可用于人格判断的信息，并将可重复的机制接回 GRAIN 的个体语言纹理分析。
 
 需要同时保留两个对象：作者产生的语言过程，以及模型在阅读语言时发生的计算过程。我们干预后者，观察它如何利用前者；模型内部因果作用本身不证明人类心理因果。

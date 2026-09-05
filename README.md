@@ -89,9 +89,15 @@ has now opened the 48 reserved authors: 44 meet the frozen token budget and
 complete all interventions. Cross-current historical access exceeds matched
 random controls, but answer-code/semantic controls are weak (5/8 and 4/8).
 This supports repeatable internal access, not personality-specific interpretation.
-Next priorities are a second observer's capability check and expanded external-link
-materials; the 240-author mechanism cohort has only 22 Big5-only and 10 bridge
-members. See the [coverage note](docs/GRAIN_VM05_RESOURCE_AND_COVERAGE_NOTE.md).
+The [second-observer check](reports/grain_vector_mechanisms/VM03_SECOND_OBSERVER_REPORT.md)
+is now complete. Neither Qwen nor Llama passes answer recoding; Llama's apparent
+fact failures are predominantly output-format failures, not wrong leading answers.
+The [full-source preparation](reports/grain_vector_mechanisms/VM05_FULL_SOURCE_MATERIAL_REPORT.md)
+also completed: 636 Big5-only, 6,453 MBTI-only and 254 bridge authors meet the
+36-comment rule. Source identities and folds pass independent checks, while
+unequal personality cues and shared discussion threads require explicit controls.
+VM05 personality outcomes on this material remain uncomputed; next comes the
+same-evidence readout design and preflight. See the [coverage note](docs/GRAIN_VM05_RESOURCE_AND_COVERAGE_NOTE.md).
 
 ## Theory manuscript (2026-09-01)
 
