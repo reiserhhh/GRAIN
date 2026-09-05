@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import io
 import json
 import sys
 import time
@@ -19,7 +20,12 @@ sys.path.insert(0, str(ROOT))
 
 from grain_research.vector_mechanisms.context import QUESTIONS, SYSTEM
 from grain_research.vector_mechanisms.controls import material_hash
-from grain_research.vector_mechanisms.external_material import ARMS, masked_comment
+from grain_research.vector_mechanisms.external_material import (
+    ARMS,
+    masked_comment,
+    pack_features,
+    shard_material,
+)
 from grain_research.vector_mechanisms.inventory import archive_source, code_fingerprint
 from grain_research.vector_mechanisms.trace import DecoderObserver
 from scripts.run_grain_vector_mechanism_baselines import MODELS
@@ -210,9 +216,14 @@ def main():
     p.add_argument("--technical-parent", type=Path)
     p.add_argument("--model-dir", type=Path)
     p.add_argument("--max-seconds", type=int, default=28800)
+    p.add_argument("--max-cache-bytes", type=int, default=10_000_000_000)
+    p.add_argument("--shard-count", type=int, default=1)
+    p.add_argument("--shard-index", type=int, default=0)
     a = p.parse_args()
     if not 1 <= a.max_seconds <= 28800:
         raise ValueError("Invalid execution time budget")
+    if not 0 < a.max_cache_bytes <= 10_000_000_000:
+        raise ValueError("Invalid cache budget")
     source = json.loads(a.views.read_text(encoding="utf-8"))
     common = json.loads(a.preflight_manifest.read_text(encoding="utf-8"))
     allowed = set(common["author_ids"])
@@ -228,6 +239,10 @@ def main():
             raise ValueError("Expected frozen 12-author technical panel")
     elif material_hash(source) != common["material_sha256"]:
         raise ValueError("Full source differs from common material")
+    if a.technical and (a.shard_count != 1 or a.shard_index != 0):
+        raise ValueError("Technical panel cannot be sharded")
+    if not a.technical:
+        source = shard_material(source, a.shard_count, a.shard_index)
     out = a.output_dir
     out.mkdir(parents=True, exist_ok=True)
     if any(out.iterdir()):
@@ -325,11 +340,15 @@ def main():
         "technical": a.technical,
         "model": model_meta,
         "source_material_sha256": material_hash(source),
+        "full_material_sha256": common["material_sha256"],
+        "shard_count": a.shard_count,
+        "shard_index": a.shard_index,
         "common_parent_identity": common["parent_identity"],
         "authors": [b["author_id"] for b in source],
         "code_sha256": code_fingerprint(ROOT),
         "all_arms": ARMS,
         "max_seconds": a.max_seconds,
+        "max_cache_bytes": a.max_cache_bytes,
         "gpu_free_before": free,
         "gpu_total": total,
         "labels_read": False,
@@ -349,12 +368,32 @@ def main():
             )
         )
         path = cache_dir / (b["author_id"] + ".npz")
-        np.savez_compressed(path, **features)
+        stored, aliases = pack_features(features)
+        buffer = io.BytesIO()
+        np.savez_compressed(buffer, **stored)
         metrics.update(
             author_id=b["author_id"],
             source_group=b["source_group"],
-            feature_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+            feature_sha256=hashlib.sha256(buffer.getvalue()).hexdigest(),
+            feature_aliases=aliases,
+            cache_format="lossless_aliases_v1",
         )
+        # Reserve generous metadata space, and refuse before writing past the shared cap.
+        projected = buffer.tell() + len(json.dumps(metrics, indent=2).encode()) + 1024
+        if cache_bytes + projected > a.max_cache_bytes:
+            write_json(
+                out / "run_status.json",
+                {
+                    "status": "PARTIAL_RESOURCE_BOUND",
+                    "authors": i,
+                    "planned": len(source),
+                    "cache_bytes": cache_bytes,
+                    "reason": "shared cache budget",
+                    "labels_read": False,
+                },
+            )
+            return
+        path.write_bytes(buffer.getvalue())
         write_json(cache_dir / (b["author_id"] + ".json"), metrics)
         cache_bytes += (
             path.stat().st_size
@@ -374,12 +413,13 @@ def main():
             if observer
             else sum(r["forward_batches"] for r in records),
             "logical_comments": (i + 1) * 36,
+            "cache_bytes": cache_bytes,
             "labels_read": False,
         }
         write_json(out / "run_status.json", status)
         if (i + 1) % 12 == 0 or i == 0:
             print(json.dumps(status), flush=True)
-        if peak > free * 0.8 or elapsed > a.max_seconds or cache_bytes > 10_000_000_000:
+        if peak > free * 0.8 or elapsed > a.max_seconds:
             write_json(
                 out / "run_status.json", status | {"status": "PARTIAL_RESOURCE_BOUND"}
             )

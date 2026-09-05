@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import re
 from collections.abc import Mapping
 
@@ -18,6 +19,47 @@ CUE_PATTERN = re.compile(
 ARMS = ("raw", "cue_mask", "placebo_mask")
 MASK = "[MASKED]"
 MASK_SEED = "grain_vm05_equal_word_mask_20260906"
+
+
+def pack_features(features):
+    """Losslessly store identical arrays once; aliases preserve every logical field."""
+    unique, aliases, seen = {}, {}, {}
+    for name, value in features.items():
+        x = np.ascontiguousarray(value)
+        if not np.isfinite(x).all():
+            raise ValueError("Nonfinite feature cannot enter cache")
+        key = (x.shape, x.dtype.str, hashlib.sha256(x.tobytes()).hexdigest())
+        if key in seen:
+            target = seen[key]
+            if not np.array_equal(x, unique[target]):
+                raise ValueError("Feature hash collision")
+            aliases[name] = target
+        else:
+            unique[name] = x
+            seen[key] = name
+    return unique, aliases
+
+
+def unpack_features(stored, aliases):
+    """Restore exactly named logical arrays, rejecting malformed cache references."""
+    result = dict(stored)
+    for name, target in aliases.items():
+        if name in result or target not in stored:
+            raise ValueError("Invalid feature alias")
+        result[name] = stored[target]
+    return result
+
+
+def shard_material(source, count=1, index=0):
+    """Partition a complete label-blind cohort once, independent of source order."""
+    if not 1 <= count <= min(256, len(source)) or not 0 <= index < count:
+        raise ValueError("Invalid deterministic shard")
+    if len({b["author_id"] for b in source}) != len(source):
+        raise ValueError("Repeated source author")
+    ordered = sorted(
+        source, key=lambda b: stable_key(b["author_id"], "grain_vm05_shards_731")
+    )
+    return ordered[index::count]
 
 
 def masked_comment(text, identity):

@@ -1500,3 +1500,53 @@ def test_external_encoder_reuses_equal_texts_but_preserves_all_arm_views(monkeyp
         features["raw_view_mean"], features["cue_mask_view_mean"]
     )
     assert len(set(metrics["token_signatures"].values())) == 1
+
+
+def test_external_shards_are_exhaustive_disjoint_and_order_independent():
+    from grain_research.vector_mechanisms.external_material import shard_material
+
+    source = [{"author_id": str(i)} for i in range(17)]
+    shards = [shard_material(source, 4, j) for j in range(4)]
+    assert sorted(b["author_id"] for shard in shards for b in shard) == sorted(
+        str(i) for i in range(17)
+    )
+    assert max(map(len, shards)) - min(map(len, shards)) == 1
+    assert shard_material(list(reversed(source)), 4, 0) == shards[0]
+    with pytest.raises(ValueError, match="Invalid"):
+        shard_material(source, 18, 0)
+    with pytest.raises(ValueError, match="Repeated"):
+        shard_material(source + [source[0]])
+
+
+def test_external_feature_aliases_are_lossless_not_approximate():
+    from grain_research.vector_mechanisms.external_material import (
+        pack_features,
+        unpack_features,
+    )
+
+    x = np.arange(12, dtype=np.float32).reshape(3, 4)
+    features = {
+        "raw": x,
+        "same": x.copy(),
+        "different_shape": x.ravel(),
+        "different_dtype": x.astype(float),
+        "changed": x + 1,
+    }
+    stored, aliases = pack_features(features)
+    assert aliases == {"same": "raw"} and len(stored) == 4
+    recovered = unpack_features(stored, aliases)
+    for k, value in features.items():
+        np.testing.assert_array_equal(recovered[k], value)
+        assert recovered[k].dtype == value.dtype
+    with pytest.raises(ValueError, match="Invalid"):
+        unpack_features(stored, {"bad": "missing"})
+
+
+def test_external_queue_never_accepts_a_status_flag_without_manifest(tmp_path):
+    import json
+
+    from scripts.run_grain_vector_mechanism_external_queue import verify_completed
+
+    (tmp_path / "run_status.json").write_text(json.dumps({"status": "COMPLETE"}))
+    with pytest.raises(FileNotFoundError):
+        verify_completed(tmp_path, [{"author_id": "a"}], {}, "qwen", 1, 0, "x")
