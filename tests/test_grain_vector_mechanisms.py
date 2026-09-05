@@ -1177,3 +1177,68 @@ def test_independent_preflight_accepts_mapping_and_list_tokenizer_results():
         assert unbounded_prompt_ids(Tokenizer(value), "source") == [1, 2, 3]
     with pytest.raises(ValueError, match="flat"):
         unbounded_prompt_ids(Tokenizer(["input_ids"]), "source")
+
+
+def test_independent_summary_keeps_swapped_polarity_and_all_authors(
+    tmp_path, monkeypatch
+):
+    import json
+    import sys
+
+    from grain_research.vector_mechanisms.independent_access import answer_code_controls
+    from scripts.summarize_grain_vector_independent_access import main
+
+    parent, output = tmp_path / "parent", tmp_path / "analysis"
+    parent.mkdir()
+    (parent / "manifest.json").write_text(
+        json.dumps({"identity": "synthetic", "eligible_authors": 4})
+    )
+    (parent / "run_status.json").write_text(
+        json.dumps(
+            {"status": "COMPLETE", "authors": 4, "all_instrument_controls_exact": True}
+        )
+    )
+    rows = []
+    for author in range(4):
+        for condition, effect in (
+            ("source", 1.0),
+            ("transfer", 0.5),
+            ("code_swapped", -0.5),
+            ("collateral", 0.1),
+        ):
+            for method in ("candidate", "random_0", "random_1"):
+                for sign in (-1, 1):
+                    delta = sign * (effect if method == "candidate" else 0.05)
+                    rows.append(
+                        {
+                            "author_id": f"u{author}",
+                            "condition": condition,
+                            "method": method,
+                            "sign": sign,
+                            "polarity": -1 if condition == "code_swapped" else 1,
+                            "delta": delta,
+                            "predicted_delta": delta,
+                            "norm_match_error": 0,
+                            "gradient_cosine": 1,
+                        }
+                    )
+    pd.DataFrame(rows).to_csv(parent / "interventions.csv", index=False)
+    codes = [
+        {k: v for k, v in c.items() if k != "user"}
+        | {"margin": 2 if c["expected_yes"] else -2, "correct": True}
+        for c in answer_code_controls()
+    ]
+    pd.DataFrame(codes).to_csv(parent / "code_controls.csv", index=False)
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        ["summarize", "--parent-dir", str(parent), "--output-dir", str(output)],
+    )
+    main()
+    summary = json.loads((output / "summary.json").read_text())
+    assert summary["authors"] == 4
+    assert summary["code_control"]["limited_code_control_qualified"]
+    endpoints = {r["condition"]: r for r in summary["confirmation_endpoints"]}
+    assert endpoints["transfer"]["mean"] == pytest.approx(0.45)
+    assert endpoints["code_swapped"]["mean"] == pytest.approx(0.55)
+    assert all(r["clusters"] == 4 for r in endpoints.values())
