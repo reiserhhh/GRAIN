@@ -2,6 +2,13 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-06最新进展：VM05同证据预检/三个观察器技术资格完成，7,266共同
+作者进入24分片全量采集；18个初始源头条件已跑完且配对复算。
+见[当前报告](../reports/grain_vector_mechanisms/VM05_PREFLIGHT_AND_SOURCE_REPORT.md)
+与[全量执行补充](GRAIN_VM05_FULL_RUN_AND_CONTROLS_V1.md)。后文早期“外部心理值
+未读取”是对应阶段历史；当前已读取独立源头训练/OOF标签，bridge结果仍未开。
+完整LLM/embedding预测对比、来源控制、bridge、VM06/07仍未完成。
+
 这是研究设计和实施交接，不是注册封印或新发布版本。背景与历史证据见[项目回顾](GRAIN_PROJECT_RETROSPECTIVE_20260905.md)。
 
 第一轮执行记录：VM00 的 PANDORA/模型预检、VM01 的 192 个事实控制以及一轮有限的合成激活干预已完成。数值审计发现并控制了 BF16 的计算长度效应。VM02 当时已准备 8 个技术作者和24个开发作者的原评论视图。后续扩样与VM04进展以下面的逐轮增补和[研究日志](GRAIN_VECTOR_RESEARCH_LOG.md)为准，不能把早期“尚未执行”当当前状态。

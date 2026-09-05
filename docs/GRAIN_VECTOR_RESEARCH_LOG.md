@@ -459,3 +459,49 @@ Mac专项74 tests通过；最终source_vm03_vm05_final_c.zip同步Windows后74 t
 VM06获准用途内异域复测和VM07机制图谱。代码能力不足不能否定独立统计头
 所检测的信息；这两个对象必须分开。不改GRAIN正式计分、不读MEPS问卷。
 当前仍有明确可执行问题，goal保持active，不需要用户新增idea。
+
+## 第十轮：VM05技术资格、源头读出与全量向量启动
+
+2026-09-06。04a1dbb/2195fa8实现预检与observer，aa51b06在全量采集前
+冻结资源/同材料/无损缓存规则；e9c0109在源头标签转换前实现嵌套统计头。
+f6b759c/f90ac25补同一冻结算子的遮蔽与独立配对复算。
+
+- 7,343作者中7,266三版本三模型完整适用：624 Big5-only、6393 MBTI-only、
+  249 bridge；没有截断后拼成“同材料”。
+- Qwen/BGE/E5各12技术作者通过，跨机288个token签名一致、数值重播0误差。
+  E5从Mac已有缓存复制，权重/metadata SHA相同；没有模型下载或训练。
+- 原预计11.582GB缓存超预算，r1不合格；无损别名逐值还原通过，r2预计
+  6.462GB。24固定分片、三模型顺序采集，单队列最多8h、每片最多30min。
+  Windows canonical vm05_full_vectors_r1正在运行，不能报告为已完成。
+- 正式冻结GRAIN all36 ready只有1772/7266，12评论视图几乎全部拒绝；
+  未放宽门槛。99旧参照/168旧E1作者全部在MBTI-only，需补排除敏感性。
+- 18个源头条件及18项配对复算完成，见
+  [VM05报告](../reports/grain_vector_mechanisms/VM05_PREFLIGHT_AND_SOURCE_REPORT.md)。
+  Big5 sparse raw/cue/placebo pooled r=.1370/.1386/.1368；配对差均未明确。
+  旧V7词法投影48列中间特征PCA16 r=.0568，无额外PCA=.0819，差CI跨0；
+  两者弱于稀疏参照，不是对完整当前GRAIN理论的否定。
+- 90个已保存fold模型独立重播，最大绝对差1.11e-16；没有重拟合或新标签访问。
+  canonical vm05_prediction_replay_r1，稀疏pipeline无PCA亦核验。
+- 中间特征MBTI AUC raw→cue：EI .5876→.5699，SN .5958→.5845，
+  TF .6776→.6790，JP .5706→.5659；placebo几乎不变。TF为值得继续检查
+  的线索，不是已识别人格方向。EI/SN BA@.5仍近.5，不能只报AUC。
+- 原始data已有TYPE_MENTION，8944命中评论含此标记，不能声称未处理原文。
+  词汇遮蔽也不保证全部报告/语义泄漏清除。共同讨论与参照暴露仍需控制。
+- 单次重选参数的置换r=-.0380，不足以关闭完整null。常数训练均值的
+  pooled OOF也可为负：真实标签-.0850，因此不能把任意负r当“反人格”。
+
+Canonical新增：vm05_preflight_r1、vm05_technical_{qwen,bge,e5}_r1、
+vm05_qualification_r2、vm05_source_audit_r2及报告列出的18个源头目录。
+全部私有原文/标签/逐人预测/向量与head均gitignored。
+Mac专项88 tests通过；Windows冻结采集源码82 tests通过。完整历史测试未跑。
+
+运行纪律：**不要把当前Mac研究源码同步覆盖Windows的冻结采集目录**；其
+queue校验代码指纹。运行根为D:/projects/GRAIN-vector-research-vm01，
+结果results/grain_vector_mechanisms/vm05_full_vectors_r1。原队列PID28172；
+恢复时先核对queue_status及子shard/run_status，PID只是本次记录不是恒定ID。
+预算到期后使用原同参数命令加--resume-completed，保留原源代码与三技术父目录；
+FAILED_STOP或PARTIAL_RESOURCE_BOUND不能直接重复启动/覆盖，应先核对具体原因。
+
+下一执行：完整向量/源头头→旧参照排除/共享讨论/完整置换→冻结头再bridge。
+其后仍有代码语义实验、VM06许可范围跨语料、VM07atlas。本轮不是理论完成，
+也没有需要用户新idea的阻塞。goal保持active，没有push。

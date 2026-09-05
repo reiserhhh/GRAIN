@@ -57,9 +57,16 @@ The [second-observer audit](../reports/grain_vector_mechanisms/VM03_SECOND_OBSER
 now separates representation access, semantic evidence, answer recoding and output
 serialization. No invariant personality direction follows from controllable logits.
 [Full-source preparation](../reports/grain_vector_mechanisms/VM05_FULL_SOURCE_MATERIAL_REPORT.md)
-expands VM05 to 7,343 eligible authors, but psychological outcomes remain unread.
+expanded VM05 to 7,343 eligible authors without psychological outcome use at preparation time.
 Shared discussion context and unequal explicit personality cues are new empirical
 design constraints, not grounds to erase context or replace GRAIN's reference.
+
+The [VM05 preflight/source report](../reports/grain_vector_mechanisms/VM05_PREFLIGHT_AND_SOURCE_REPORT.md)
+now records 7,266 common-material authors, qualified observers, and 18 initial
+source-readout conditions. A cue-robust TF association in the frozen lexical
+intermediate representation differs from cue-sensitive EI/SN/JP patterns.
+This is not a complete GRAIN assessment or LLM mechanism result. Full vector
+collection is running; bridge outcomes, thread/refit controls, and VM06/07 remain open.
 
 ## 1. Purpose
 

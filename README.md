@@ -96,8 +96,14 @@ The [full-source preparation](reports/grain_vector_mechanisms/VM05_FULL_SOURCE_M
 also completed: 636 Big5-only, 6,453 MBTI-only and 254 bridge authors meet the
 36-comment rule. Source identities and folds pass independent checks, while
 unequal personality cues and shared discussion threads require explicit controls.
-VM05 personality outcomes on this material remain uncomputed; next comes the
-same-evidence readout design and preflight. See the [coverage note](docs/GRAIN_VM05_RESOURCE_AND_COVERAGE_NOTE.md).
+The [same-evidence preflight and initial source readouts](reports/grain_vector_mechanisms/VM05_PREFLIGHT_AND_SOURCE_REPORT.md)
+are now complete on 7,266 common eligible authors. Three observers pass numerical
+qualification; full vector collection is running in bounded serial shards.
+Initial lexical source heads show a TF association that survives the specified
+cue masking, while other axes are more cue-sensitive. These intermediate heads
+are not the full GRAIN scoring system, and LLM superiority is not established.
+Bridge outcomes remain unopened; source controls and full observer comparisons
+are still required. See the [frozen execution supplement](docs/GRAIN_VM05_FULL_RUN_AND_CONTROLS_V1.md).
 
 ## Theory manuscript (2026-09-01)
 
