@@ -1879,3 +1879,41 @@ def test_external_null_family_does_not_overstate_monte_carlo_resolution():
     assert lo == 0 and 0.005 < hi < 0.05
     with pytest.raises(ValueError, match="Invalid"):
         adjust_family([0.01, np.nan])
+
+
+def test_external_pearson_partition_exposes_fold_offset_reversal():
+    from grain_research.vector_mechanisms.external_oof_geometry import pearson_partition
+
+    rng = np.random.default_rng(731)
+    folds = np.repeat(np.arange(5), 40)
+    z = rng.normal(size=200)
+    y, p = folds * 10 + z, -folds * 10 + z
+    result = pearson_partition(y, p, folds)
+    assert result["pooled_pearson"] < -0.9
+    assert result["mean_fold_pearson"] == pytest.approx(1)
+    assert result["within_r_component"] > 0
+    assert result["between_r_component"] < 0
+    assert result["within_r_component"] + result[
+        "between_r_component"
+    ] == pytest.approx(result["pooled_pearson"])
+    with pytest.raises(ValueError, match="Undefined"):
+        pearson_partition(y, np.ones_like(y), folds)
+
+
+def test_external_auc_partition_reconstructs_cross_fold_pairs_and_ties():
+    from sklearn.metrics import roc_auc_score
+
+    from grain_research.vector_mechanisms.external_oof_geometry import auc_partition
+
+    folds = np.repeat(np.arange(5), 40)
+    y = np.tile([0, 1], 100)
+    p = y * 2 + folds * 10
+    result = auc_partition(y, p, folds)
+    assert result["pooled_auc"] == pytest.approx(roc_auc_score(y, p))
+    assert result["within_pair_auc"] == pytest.approx(1)
+    assert result["cross_pair_auc"] == pytest.approx(0.5)
+    assert result["pooled_auc"] == pytest.approx(0.6)
+    tied = auc_partition(y, np.repeat(0.42, 200), folds)
+    assert (
+        tied["pooled_auc"] == tied["within_pair_auc"] == tied["cross_pair_auc"] == 0.5
+    )
