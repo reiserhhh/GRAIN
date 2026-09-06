@@ -135,20 +135,28 @@ def cosine(left, right):
 class ResponseObserver:
     """Observe current-token states and likelihood without generating or fitting."""
 
-    def __init__(self, model, tokenizer):
+    def __init__(
+        self, model, tokenizer, *, blocks=(10, 16), capture_sites=("block_10",)
+    ):
         self.model, self.tokenizer = model.eval(), tokenizer
         self.calls = 0
         self.sites = {
             "input_embedding": model.model.embed_tokens,
-            "block_10": model.model.layers[10],
-            "block_16": model.model.layers[16],
+            **{f"block_{i:02d}": model.model.layers[i] for i in blocks},
             "final_norm": model.model.norm,
         }
+        self.capture_sites = set(capture_sites)
+        if not self.capture_sites <= self.sites.keys():
+            raise ValueError("State capture site is not registered")
 
-    def forward(self, prefix, body, *, compact=False, patch=None):
-        """Optional full-current-span block10 replacement; all target logits are causal."""
+    def forward(
+        self, prefix, body, *, compact=False, patch=None, patch_site="block_10"
+    ):
+        """Replace one current-token span; default remains the frozen RC1 block10."""
         import torch
 
+        if patch is not None and patch_site not in self.sites:
+            raise ValueError("Patch site is not registered")
         ids, mask, indices = packed_sequence(
             prefix, body, self.tokenizer.pad_token_id, compact=compact
         )
@@ -159,7 +167,7 @@ class ResponseObserver:
         def hook(name):
             def apply(_module, _inputs, output):
                 hidden = output[0] if isinstance(output, tuple) else output
-                if name == "block_10" and patch is not None:
+                if name == patch_site and patch is not None:
                     donor = torch.as_tensor(patch, device=device, dtype=hidden.dtype)
                     if donor.shape != hidden[0, ix].shape:
                         raise ValueError("Patch does not match current-token span")
@@ -169,7 +177,7 @@ class ResponseObserver:
                 if not np.isfinite(current).all():
                     raise ValueError("Nonfinite user-token state")
                 captures[name] = {"mean": current.mean(axis=0)}
-                if name == "block_10":
+                if name in self.capture_sites:
                     captures[name]["states"] = current
                 return (hidden, *output[1:]) if isinstance(output, tuple) else hidden
 
