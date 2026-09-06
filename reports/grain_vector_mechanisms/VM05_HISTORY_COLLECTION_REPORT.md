@@ -1,5 +1,21 @@
 # VM05 history observation: production path and qualified limits
 
+## Round29: four shards independently backed up, fifth completed remotely
+
+Latest remote snapshot: queue65840 and child60648 alive,5/128 complete,280 authors,
+shard005 started. This is a moving snapshot, not a permanent process identifier.
+Mac backup now independently verifies000-003:224 authors,20,160 arrays. New002/003
+contain1,670/1,706 unique layouts and1,671/1,707 actual forwards, respectively.
+Their archive is277,781,390 bytes, SHA
+`8e5b738e2687654d3631d991d8972325e62ceb12a52e5d738209f2e1c49fa1cd`.
+The previous000/001 archive remains unchanged. local_backup_status.json records
+both archives and remains VERIFIED_PARTIAL_BACKUP; remote004 is not yet part of
+this local acceptance. No partial current shard is copied or scored.
+
+The full direct queue has been separately staged but remains token-only. Do not
+start its real semantic panel/model until history stops at the accepted budget
+boundary. Full history source readout/bridge conclusions remain open.
+
 ## Round28 live collection and verified partial backup
 
 Windows queue65840 is alive, completed shards000/001 (112 authors), and currently

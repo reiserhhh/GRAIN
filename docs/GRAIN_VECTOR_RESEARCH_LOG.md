@@ -1419,3 +1419,40 @@ arm完整家族都已执行，但最新三个placebo seed的独立审计/15fold�
 语义/全量采集、strong null、封头后bridge和VM07。此轮没有为凑突破新开
 无边界因子/层搜索，已按完整对照收窄一个机制解释。无新模型训练、下载、
 付费API、bridge/MEPS心理值或push，goal active，当前不需用户新idea。
+
+## 第二十九轮：真实计算接续、direct全队列与读出范围补全（2026-09-06）
+
+- 601fa58完成direct128分片有界队列，独立重建语义父包、原生概率/缓存/
+  完整网格/资格/代码/模型，拒绝token-only冒充神经结果。实际Mac token
+  执行两次预算暂停/显式续跑到114作者4356提示；Windows第一片57作者
+  2151提示，独立验收与Mac语义逐行相同；全部0forward。两队列identity
+  75b1d8014d0583ca47e00898c306fd0bcfd4b6e0d1e862309620778c077bbbbe。
+  四文件独立stage11841bytes，SHA
+  4f5252daec04ed6fb7bf4b8157aaffab3b308fa0f01f1bedb8182f93a91e844f。
+- a5b91d9完成45主源头神经fit+逐fold独立重播的有界CPU接续监督器，真实
+  PID81895已存活等待原54651自然预算退出，而非排队意图/新拟合成绩。
+  identity2dc7c3334582497d13257073b65025db61dd0892e38bbbcfdc3bb6f79196bd27。
+  只有原owner/child退出且终态正确才持有其锁接管CPU。每fit1h/8GiB，
+  replay10min，实际执行预算8h从等待结束开始。不得同时手动resume强batch。
+  45条件仅primary，不取消剩余84强对照、同ready/次级/历史/direct/null。
+- 原强batch快照26/84执行完，SN raw count734子进程实际CPU推进；已验收
+  仍为EI21条件105fold。所有接续清单评分文件SHA重新核对一致，未改live
+  算法。Windows原先仅约7GB可用RAM时未挤入额外8GiB拟合，保留其他服务。
+- history000-003已经本地独立verify：224作者、20160arrays。002/003新增
+  压缩包277781390bytes，SHA
+  8e5b738e2687654d3631d991d8972325e62ceb12a52e5d738209f2e1c49fa1cd。
+  后续远端快照5/128完成280作者，queue65840/child60648真实存活，第六片
+  开始；本地仍只验收到前4片，不能把remote完成记作本地全部通过。
+- 发现原同证据设计明确写有原维Ridge与固定层敏感性，但remaining表漏写。
+  补回9 Big5原维Ridge+45固定层条件，状态未跑；现45主queue保持指纹不动。
+  新GRAIN_VM05_READOUT_SENSITIVITY_SCOPE_V1给出保留/丢弃子空间读出恒等式，
+  并区分3072维body mean/std与1536维decision gradient。弱PCA读出不是
+  原始向量无信号的证明，原维优势也不自动证明LLM使用了对应方向。
+- 新队列与直接读出/缓存回归组合35tests通过（含旧项目，不能与19/11
+  相加），两个旧SWIG警告；Ruff及diff检查通过。合成fixture、真实文本
+  token预检、真实CUDA资格与外部预测四种证据分别记录。
+
+接下来首先接收45主比较的实际拟合/重播结果，随后固定敏感性与同ready，
+继续history全采集及GPU边界后的direct180语义forward/全量。强null、source
+freeze后的bridge及VM07仍需完成。研究仍有明确可执行内容，无需用户新idea；
+本轮没有新增人格效度结论，没有读取bridge/MEPS心理值或训练/下载新LLM。

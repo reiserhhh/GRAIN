@@ -1,5 +1,30 @@
 # VM05 direct trait readout: protocol and deployment readiness
 
+## Round29: full queue implemented and native token resume exercised
+
+601fa58 adds the128-shard bounded queue and independent semantic-parent/cache
+verifier. It retains all7,266 supported authors, same qualified observer and frozen
+prompt grid. No original collector or active history code was changed. COMPLETE
+requires all real source shards; a token-only packet cannot authorize that claim.
+
+Actual Mac token-only execution paused after shard0 and explicitly resumed to
+two completed shards:114 authors,4,356 logical prompts,0 forwards. Windows paused
+after its first shard:57 authors,2,151 prompts,0 forwards. Mac independently
+verified Windows shard membership/arithmetic and exact semantic rows against its
+own shard0. Both queue manifests have identity
+`75b1d8014d0583ca47e00898c306fd0bcfd4b6e0d1e862309620778c077bbbbe`.
+Artifacts: vm05_direct_queue_token_preflight_r1,
+vm05_direct_queue_windows_token_preflight_r1 and
+vm05_direct_queue_cross_platform_audit_r1. The isolated four-file stage is11,841
+bytes, SHA `4f5252daec04ed6fb7bf4b8157aaffab3b308fa0f01f1bedb8182f93a91e844f`.
+
+Before real source collection, the90-case/180-forward semantic panel is still
+required and waits for history's verified idle boundary. Numerical completeness,
+not a positive semantic result, authorizes collection; flat/negative contrasts
+must remain reported without prompt rescue or axis deletion. See
+GRAIN_VM05_DIRECT_QUEUE_V1.md for the exact full command, budgets and resume rules.
+These are execution-readiness results, not improved personality inference.
+
 ## Round28: bounded semantics control prepared, not yet inferred
 
 `9fe358e` adds `GRAIN_VM05_DIRECT_SEMANTICS_V1.md`, a90-case frozen invented panel:
@@ -167,8 +192,8 @@ bounded by per-run time and cache limits; a failed/partial directory is preserve
 The independent verifier checks case membership, complete grids, raw-to-derived
 arithmetic, view aggregation and output commitments before accepting a parent.
 
-**Still open:** semantic anchors and answer-order sensitivity, the bounded full
-direct collection queue, complete source metrics,
+**Still open:** actual semantic anchors and answer-order inference, full real
+direct source collection (queue implemented in round29), complete source metrics,
 paired GRAIN/vector comparisons and source-frozen bridge evaluation. Do not filter
 low-compliance cases or tune wording on natural outcomes. This pinned1.5B observer
 cannot settle the capability of a different or much larger model family.
