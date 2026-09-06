@@ -959,6 +959,8 @@ GRAIN_VECTOR_REMAINING_REQUIREMENTS.md逐项对回完整原计划：MEPS264views
   Win32_Process.Create脱离SSH，launcher7748/queue61296活跃核验旧shards，
   仍原冻结aa51b06、同参数加resume-completed、独立8h上限。以下续跑状态
   以实际queue更新为准，不以返回PID为验收。
+  后续实测queue61296已RUNNING bge_large/shard14，旧42全部复核通过，
+  seconds107.59，进程持续存在；不是仅launcher返回成功。来源代码未同步覆盖。
 
 未读取MEPS量表/bridge结果，无付费API/新模型下载/LLM训练/push。
 下一轮优先完整JP及source representations，再做真正强头的来源控制、
