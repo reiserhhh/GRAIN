@@ -75,6 +75,15 @@ only; no source-label table load, bridge values, MEPS questionnaire data, new LL
 training, neural forwards or calibration. All outputs are private/gitignored.
 The current mainline is unchanged and whole-program completion remains false.
 
+Qualification artifact `vm05_secondary_analysis_qualification_r1` has identity
+dcf82562a36ff87e8cca23567c4b4b7bbdc7e58ece738a7f275d5ea4ad399894.
+The real33/315 snapshot failed before OOF/output creation. Separately, existing
+Big5 block10 and TF block04 body readers passed on624 and6,294 authors, with all
+five source folds and prior artifact/replay checks; these are not secondary
+outcomes. Seven new synthetic analysis tests plus existing frozen-layer/ready
+tests passed15; the combined direct/readout suite passed29 with two old SWIG
+deprecations. Full315-case comparison is still waiting, not marked complete.
+
 ## Decision after complete results
 
 Assess all contrasts, mask consistency, effect magnitudes and fold signs before

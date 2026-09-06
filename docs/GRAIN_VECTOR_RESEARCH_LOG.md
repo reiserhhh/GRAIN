@@ -1711,3 +1711,52 @@ SSH session39668、child57820在030实测RUNNING，72s时CPU69.69s。
 最新24/315、child2954实测CPU；strong29/84仍暂停。full直接source、完整
 history、同ready其余、强null、封头后bridge、VM07仍待完成。bridge/MEPS
 心理值未开，无新LLM训练/下载/API/push；goal继续，无用户新idea阻塞。
+
+## 第三十五轮：回答编码交互与完整读出比较入口（2026-09-07）
+
+881a615/20a669a：利用已完成90case模拟panel，无新forward/标签/校准参数，
+测试编码效应是否只是一个固定候选logit偏置。先按声明的trait方向重排候选
+（Big5反编码必须反序），只减公共logit均值固定softmax gauge；不从作者
+表征中删topic。令d(x)=u_counter(x)-u_primary(x)，r=d(x)-d(no_evidence)，
+J=d(high)-d(low)。固定加性bias模型要求r=J=0；J与无证据锚点及任意固定
+偏置扣除无关。不能用概率混合差分判断，因为sigmoid曲率可以制造它。
+
+全9任务18个记录向量J非零；Big5混合RMS范围1.1996-7.6763，MBTI
+log-odds两对分别EI+2.125/-.125、SN-3.125/-2、TF+1.375/-1.5、
+JP+5.375/+1。EI弱-.125接近logit量化粒度，没有FP32误差上界检验；
+不把全部非零宣称精度稳健。这些是logit单位，不是相关/p值/人格效应。
+no-evidence偏置与残差大小比不是方差分解或中介比例。固定bias不够恢复
+这些例子的精确完整语义响应，但校准仍可能改善标量排名/准确度；固定
+问法重复forward的数值稳定性不受此反例推翻。也没有识别内部attention
+电路、排除长度位置效应或得到真人效度。
+
+`vm05_encoding_interaction_r1` identity
+533bc4e9437caf67b243ac8186dc9d8b6f3a9b4207b1606bbf4d94fa6297dd49。
+独立从保存的conditional probability取log重算全部表格及contrast，最大
+误差6.22e-15；独立packet identity
+1f7a0f9e7cbdce11ded61b3eef751e8484db2a84998496c93d1b7fd8a6746091。
+不是新的神经重复。报告与理论note/18项atlas中的既有条目更新，没有膨胀新因子。
+文献仅用于解释边界：Zhao et al2021 contextual calibration；Holtzman
+et al2021 surface-form competition，不把本次当它们的复现或反驳。
+
+81432a0：补齐analysis-only完整315 cached readout比较入口。严格要求
+所有case/原代码/源头/fold/缓存fit/旧body审计及重播；同site/task/arm
+配对60body头，共375成绩与870配对行（315主对比+120明确探索性对比，
+各2estimand）。1000同fold作者bootstrap只给条件于OOF的pointwise CI，
+不是familywise确认或fit uncertainty。新版packet与旧body summary的
+checksum格式不一致已按原审计哈希链兼容，未修改旧结果或活动评分代码。
+真实33/315快照在OOF前拒绝且无output；另两类body读取624/6294通过。
+qualification identity dcf82562a36ff87e8cca23567c4b4b7bbdc7e58ece738a7f275d5ea4ad399894。
+全配对尚未运行。7新tests及旧组15通过，全组合29通过/2旧SWIG warnings，
+Ruff/diff通过，活动queue17冻结源码hash全部无变。
+
+04:34 JST实测CPU98301/session88190仍FIT34/315、child5041，不能恢复
+强control29/84来抢锁；Windows628/session39668实测32/128、child46440
+采032。新030已完整重采验收，旧partial42人仍隔离保留。新增030-031
+备份266,902,831bytes，SHA
+6f3f052a81f50ceee4d34cd3c0013aa72941a7a4238760c397e7d48817110cd1。
+SHA/CRC/安全非覆盖解包后，原frozen verifier独立重验所有000-031：32片
+1792作者161280arrays。不是把远端status直接抄成本地验收。完整历史采集/
+source heads、native source、strong null、同ready其余、源头封头后bridge、
+VM07继续；无新LLM训练/下载/付费API/push/bridge或MEPS心理值。goal未完成，
+仍有确定的可执行工作，无需用户新idea来解锁。

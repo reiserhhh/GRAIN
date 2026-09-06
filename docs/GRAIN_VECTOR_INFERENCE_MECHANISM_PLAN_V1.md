@@ -2,6 +2,20 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-07第三十五轮：完成90case已存语义panel的有界post-hoc logit检验，
+无新forward/标签/校准。按声明语义对齐后，高低行为对的编码混合差分不为0，
+不支持全部变化只是固定回答先验偏置；独立log-probability复算max6.22e-15。
+弱EI值仍需精度敏感性，不把18个非零都说成稳健效应。固定提示重播仍成立，
+也不排除校准改善排名。见[交互报告](../reports/grain_vector_mechanisms/VM05_ENCODING_INTERACTION_REPORT.md)。
+881a615/20a669a已提交。81432a0补齐完整315读出族分析入口：同site/task/arm
+配对60旧body头，375成绩/870配对行的预定表格；完整队列未齐则先拒绝。
+真实33/315快照拒绝、两类旧body格式读取已核验，未运行全量配对；29组合
+tests通过，运行队列17冻结代码hash全部不变。见[完整分析手续](GRAIN_VM05_SECONDARY_ANALYSIS_V1.md)。
+04:34 JST快照：CPU98301实际34/315、child5041；Windows628实际32/128、
+child46440在032。Mac已独立备份/重验000-031，1792人161280数组；030完整
+重采已验收，旧partial仍独立保留。完整history/direct/strong null/同ready
+其余/封头后bridge/VM07未闭环；goal继续，未需要用户新idea。下面均为历史。
+
 2026-09-07第三十四轮：真实direct语义90case/180forward完成并独立复算
 max4.11e-15。原问法17/18行为对排序正确，但Big5数值编码反转且正确换算后
 0/10正确；MBTI反向列举仍7/8排序正确、绝对分数大变。90/90首token合规
