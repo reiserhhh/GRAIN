@@ -1,5 +1,15 @@
 # VM05: exact common eligibility for the missing neural/profile comparison
 
+Round31 execution update,2026-09-07: the raw reference-free34-head stage is
+implemented/tested (80bcb90) and its real supervisor90901 has started, waiting
+for54 sensitivity conditions and the previous owner to finish. This is not an
+actual ready-fit result yet. Output`vm05_raw_ready_primary_r1`, identity
+`77d1d31511f51c54ffe98163835726d7ae9d68c71e5aff0ef8a4bdf676422f7c`.
+The unchanged144-person Big5 profile was independently replayed across all5
+saved folds (max8.33e-17), not refitted. See
+[bounded raw stage](../../docs/GRAIN_VM05_RAW_READY_BATCH_V1.md). The historical
+preflight report below remains separate from future empirical comparisons.
+
 2026-09-06. **Label-free material and membership complete; comparator fitting
 still pending.** This executes the original same-ready requirement, without
 changing a frozen GRAIN support rule, opening bridge outcomes or using MEPS scales.

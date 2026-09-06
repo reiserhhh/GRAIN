@@ -1541,3 +1541,25 @@ Qwen CI[-.031705,.041042]，mean-fold-.002555[-.037826,.035689]。
 
 54敏感性仍实际执行，最近16完成、SN raw block16；未触碰active源码或
 抢占其CPU锁。下一步仍为固定层完整比较及同ready实际拟合，未新增搜索。
+
+本轮后续：80bcb90实现raw reference-free同ready有界34-fit监督器；六个
+预定比较器×五task及四个改变样本的MBTI profile；Big5纯profile样本没变，
+独立重播原144人/5fold max8.326672684688674e-17，不重复拟合。四项专测、
+ready/projection/sensitivity组合19tests通过，旧SWIG warnings保留；Ruff与
+diff检查通过。监督器只在54全部完成、旧owner退出后接三CPU锁，3h等待/
+8h执行/每child1h8GiB，拒绝partial重试或未退出孤儿child。等待时不保留全量
+文本矩阵，防止为排队占用大量RAM。未改source冻结代码。
+
+真实启动`vm05_raw_ready_primary_r1`，identity
+77d1d31511f51c54ffe98163835726d7ae9d68c71e5aff0ef8a4bdf676422f7c，
+session31627/parent90901，当前WAITING无新fit。最近敏感性21/54、JP raw
+block04，旧strong29/84继续暂停。此34条件只是raw严格源头阶段，allarm/
+reference-inclusive/其他readout仍保留，不能用该stage替代整个same-ready。
+
+Windows history仍live，快照65840/child66900、16片896人；新增008-015
+backup1,130,406,771bytes，SHA
+22a9788a87dae122366d766159512d7e385acc523b3f9c634c7a14bc3afbf074。
+只打包COMPLETE片，拷回后SHA/CRC、安全路径/非symlink/不覆盖解包均通过；
+逐份重验全部000-015（含旧八片），完整registry/资格/生产重播/model/source
+及cache通过。Mac累计896作者/80,640数组，16/128仍PARTIAL。未读心理标签，
+未训练/下载新LLM、未启动付费API、未push；goal仍active，仍有实质任务。

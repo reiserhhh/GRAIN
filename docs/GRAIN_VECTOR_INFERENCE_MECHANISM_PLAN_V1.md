@@ -7,6 +7,10 @@
 没有“取消压缩即救回预测”的证据，也不能据此宣称低方差方向无信息。
 固定层队列继续（当时16/54），后续任务/历史/同ready读出不缩减。见
 [投影敏感性报告](../reports/grain_vector_mechanisms/VM05_PROJECTION_SENSITIVITY_REPORT.md)。
+本轮后续：raw同ready34-fit监督器90901已启动等待54敏感性完成，最新
+敏感性23/54；不抢占CPU、不重复原Big5 profile。Windows history16/128
+完成896人，Mac000-015全部重新独立验收80,640数组；仍partial而非效度结果。
+见[raw同ready执行](GRAIN_VM05_RAW_READY_BATCH_V1.md)及剩余任务表。
 
 2026-09-07第三十轮（前日开始）：45主源头神经头全完成、225保存fold重播
 max1.11e-16，15完整三观察器组/90配对行全量报告已出。此协议未支持Qwen

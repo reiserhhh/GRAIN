@@ -1,5 +1,26 @@
 # VM05 history observation: production path and qualified limits
 
+## Round31: sixteen local shards independently verified
+
+2026-09-07. Completed008-015 were archived and copied only after their remote
+COMPLETE records. The archive is1,130,406,771 bytes, SHA256
+`22a9788a87dae122366d766159512d7e385acc523b3f9c634c7a14bc3afbf074`.
+SHA/CRC, allowed shard paths, absence of symlinks/overwrites and extraction
+size bounds passed. All000-015 were then reverified, including the previous
+eight shards, against the strict registry, qualification, production replay,
+frozen source and model identity plus every cache invariant.
+
+The accepted local total is896 authors and80,640 arrays,16/128 shards.
+New unique layouts by shard008-015 are1858/1664/1828/1756/1720/1768/1856/1564;
+each shard has one additional native replay forward. Local status remains
+VERIFIED_PARTIAL_BACKUP. This is successful data collection, not a new external
+prediction result. Actual history heads still wait for the complete material.
+
+At the remote read, queue65840 and child66900 were live,16 complete and shard016
+running (about4.15h elapsed). The SSH supervisor remains open; direct scoring
+must still wait for the normal GPU budget/termination boundary. No partial
+shard or extra model was started for this backup. Older snapshots follow.
+
 ## Round30: eight local shards independently verified
 
 2026-09-07. Completed004-007 were archived only after their remote COMPLETE
