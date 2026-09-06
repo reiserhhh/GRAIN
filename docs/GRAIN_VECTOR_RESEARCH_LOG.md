@@ -1324,3 +1324,59 @@ VM05_EI_COUNT_MATCHED_SOURCE_REPORT.md。当前代码资格和真实队列仍需
 据真实时间/cache开启有界全registry历史采集。然后同支持源头/同ready比较，
 直接LLM trait研究对照与强null，封头后bridge，最后综合VM07。没有改变目标
 为“多通过几个小测试”，现在仍有明确可执行工作，不需用户新idea。
+
+## 第二十七轮：完整向量、真实历史仪器与直接trait读出（2026-09-06）
+
+原Windows aa51b06队列72/72完成。21/22/23备份经过SHA、CRC、安全不覆盖
+解包及全部72manifest/cache重验，每个observer精确7,266作者无遗漏/重复。
+local_backup_status=VERIFIED_COMPLETE_BACKUP，remote_queue_status_final已存。
+最后23包315446739bytes，SHA
+8b4b75457faace6e7f7243dc41d6c4c492de999a3c399e1dbf881476e3661f7d。
+
+- 1873cc3/e2095ae：冻结直接Big5/MBTI提示，完成有界作者采集及独立概率
+  重算；保存candidate logits、全词表lognormalizer、条件概率/熵、概率
+  质量、首token合规率。标准softmax导数不是人格轴。7266人278397逻辑/
+  143045唯一提示全支持，无截断/排除；176.76s。独立角色/网格重数通过。
+- 实际预检发现direct与history的tokenizer清单字段不一致，新增direct
+  schema校验修复，不改历史材料。Mac r2 / Windows r1相同6人234提示、
+  代码与语义记录一致。direct新目录157文件78316630bytes；SHA
+  5554b7a5482f9dd6d7d81c30ac9d0401b8ce1f078dde087bd4e0ebe1b27b362c。
+  一次解包白名单漏列requirements，在解包前停止，明确修正后完成。
+- 原72完成才执行真实history资格：648forward/308.81s/峰值CUDA4.31GB；
+  108行五项误差全部0。生产采集器153forward重播324布局，2268组一致；
+  另独立别名/索引重建7465608坐标误差0。真实资格、生产重播与两个独立
+  审计包均已复制Mac核验，详见VM05_HISTORY_COLLECTION_REPORT。
+- 技术panel并非所有输出都为0：raw18view的input embedding对历史变化
+  完全不变，block10的current均值18/18发生变化，平均相对L2变化.161826。
+  decision task interaction也非零。仅说明中间层确实在使用历史及问题，
+  不是人格信号提升16%、也不是6作者之外的泛化。记录在
+  vm05_history_technical_nontriviality_r1；不按跨层原始L2大小选赢家。
+- 根据6作者76.91s/11694822bytes，估算全history约25.3h/13.85GB，非保证。
+  保持128shard/7108strict，每shard2400s/500MB，总24GB，每次8h。首次
+  detached SSH子进程未存活，空log保留，未当运行成功。改为保持连接的
+  受控父进程：vm05_full_history_vectors_r2，queue65840/首child64464，
+  CPU/内存与5/56首分片作者真实推进已确认。完整采集仍在运行。
+- history资格与全量之间串行完成direct真实资格：234逻辑提示、86唯一
+  输入每次、重复共172forward，83.72s；native重播误差0，独立概率复算
+  max3.55e-15。首token合规1.0、candidate mass中位.999441，非语义正确率
+  或人格效度，无目标标签读取。direct权重退出后才启动全history。
+- 全72 cache真实source读出preflight：Big5-only624/EI reference-free6294
+  作者，各3072列equal-view block10；27.53/44.21s，0标签/0拟合。保存于
+  vm05_complete_neural_{big5,ei}_readout_preflight_r1，不能称预测结果。
+- 新EI placebo前4条件20fold重播max9.71445e-17；累计18条件90fold、432
+  选择记录/12count配对/14对比独立审计。live到20/84，最后seed735尚在跑。
+  余下3count须验收齐再报告完整安慰剂/跨mask差异，不挑部分seed。
+- 10 direct专项tests通过；direct/history/readout组合51tests通过。
+  c93d117将后续source/same-ready JSON读取设UTF-8后，影响范围25tests
+  再通过（不能相加）；两个旧SWIG警告。六个active评分文件SHA未变化。
+
+更新主计划、剩余要求及历史报告，新增VM05_DIRECT_TRAIT_READOUT_REPORT。
+下一轮继续真实全量history、源头神经/同ready比较、direct语义/order与
+完整采集、强null、封头后bridge和VM07。不改released scorer，不读bridge
+outcomes/MEPS量表，不新LLM训练/下载/付费API/push。goal active，当前仍有
+明确可执行工作，不需要用户提出新idea。
+
+本轮最终进程快照：history queue65840/child64464均实测存活，首分片推进
+35/56作者；Mac完成21/84，已转入SN_cont_raw_retain_731（75233）。EI三
+arm完整家族都已执行，但最新三个placebo seed的独立审计/15fold重播和
+整家族gap报告留作下一执行块；当前仍只把18条件/90fold列为已审计。

@@ -1,8 +1,48 @@
 # VM05 history observation: production path and qualified limits
 
-2026-09-06, round26. **Implementation and token preflights complete; real history
-neural qualification and collection not yet run.** This extends the material
+2026-09-06, updated round27. **Real history qualification and exact production
+replay passed; full-registry collection is the next running stage, not yet complete.**
+This extends the material
 report without replacing its7,108-person strict registry or reopening outcomes.
+
+## Round27 actual acceptance
+
+- The original BGE/E5/Qwen queue completed all72 shards. Mac backup verification
+  checked every manifest/cache hash and the exact7,266-author union per observer.
+- `vm05_history_real_qualification_r1`: six source authors,324 layouts,648 actual
+  CUDA BF16 forwards in308.81s; peak allocated CUDA memory4,311,216,128 bytes.
+  All108 rows of the five error checks were exactly0: native replay, masked-token
+  irrelevance, native equivalence, input embedding and causal prefix invariance.
+  Identity `292edd8364a589f6c283178982e1cd5aca9147784a3a7cfbadc7f8d588edc8ce`.
+- `vm05_history_production_replay_r1`: same324 layouts,152 unique complete inputs,
+  153 forwards including the first-input replay,76.91s and11,694,822 cache bytes.
+  All2,268 state/logit comparison groups matched exactly. Independent local alias/
+  index reconstruction checked7,465,608 scalar coordinates with error0.
+  Identity `d61ffdf830db6dc2d5d740006120c7eb49e0b94e5b92acaba0d5dc315f1418c1`.
+- Evidence is copied locally; `vm05_history_real_qualification_audit_r1` and
+  `vm05_history_production_independent_replay_r1` hold aggregate rechecks. These
+  establish a working instrument, not a context-driven personality improvement.
+- The technical panel also rules out a trivial all-zero observation: across its
+  raw18 views, input-embedding context differences are0 but block10 current
+  differences are nonzero in18/18 views (mean relative L2 change.161826).
+  Decision task interactions are nonzero. `vm05_history_technical_nontriviality_r1`
+  records these descriptive checks; this is not a16% gain in personality signal,
+  a cross-layer magnitude ranking or population-level external validity.
+- Six-author throughput suggests roughly25.3 hours and13.85GB for7,108 authors.
+  This is a small-panel planning estimate, not a runtime or support guarantee.
+  The worst56-author x54-layout shard at observed throughput is about1,520s;
+  full collection therefore allows2,400s/shard,500MB/shard,24GB total and8h per
+  queue invocation. Same128 shards and all predeclared readouts; no score-based
+  sampling. See `vm05_history_full_collection_capacity_r1`.
+- First detached SSH launch did not remain alive and produced no queue status;
+  preserve its empty launch log rather than claiming it ran. The replacement
+  keeps an owned SSH parent open: `vm05_full_history_vectors_r2`, queue PID65840.
+  Inspect its actual child/run status before resume; never reuse the failed r1
+  launch or the historical token-only queue as a completed experiment.
+
+The following sections retain the original design, repaired failures and executed
+technical commands for reproducibility. The full collection still precedes
+source-head fitting, same-ready increments and source-frozen bridge evaluation.
 
 ## What will be measured
 
@@ -99,7 +139,7 @@ were copied. Staging and cross-platform records are in
 `vm05_history_windows_stage_r1`, operational checks in
 `vm05_history_collection_operational_audit_r1`.
 
-## Next executable step
+## Executed technical commands
 
 Wait for the original72-observer-shard queue to be COMPLETE, not merely idle or
 time-paused. The real loader enforces this and at least6GB free CUDA memory.

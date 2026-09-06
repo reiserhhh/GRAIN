@@ -2,6 +2,18 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-06第二十七轮：原BGE/E5/Qwen全量72分片完成，并在Mac逐份验收
+cache及精确作者并集，每个观察器均为7,266人。真实历史648-forward资格
+通过，生产采集器2268组/7465608坐标独立重播误差0；Windows全历史128
+分片已开始实际采集，仍未完成。直接Big5/MBTI读出协议、全量token支持、
+采集器与独立概率复算完成；7,266人/278,397逻辑提示全部支持，Mac/Windows
+同6人234提示一致，实际172forward重复评分也通过，但外部预测尚未评估。见
+[直接读出报告](../reports/grain_vector_mechanisms/VM05_DIRECT_TRAIT_READOUT_REPORT.md)。
+源头控制18条件/90保存fold已审计重播，live推进21条件，更新部分仍需验收。
+下面第二十六轮及以前为历史快照，以[剩余要求](GRAIN_VECTOR_REMAINING_REQUIREMENTS.md)
+的最新状态及实际run_status为准；完整源头/同ready预测、history/直接读出、
+strong null、封头后bridge及最终机制综合仍未完成。
+
 2026-09-06第二十六轮：完成真实历史采集器、有界队列及独立cache验收代码；
 280人/15,120布局队列预检与暂停/重验通过，均为零神经forward。修复独立
 Windows打包依赖与GBK解码问题后，两机324技术布局语义完全一致。
