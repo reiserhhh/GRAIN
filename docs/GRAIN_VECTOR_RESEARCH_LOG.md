@@ -1760,3 +1760,31 @@ SHA/CRC/安全非覆盖解包后，原frozen verifier独立重验所有000-031�
 source heads、native source、strong null、同ready其余、源头封头后bridge、
 VM07继续；无新LLM训练/下载/付费API/push/bridge或MEPS心理值。goal未完成，
 仍有确定的可执行工作，无需用户新idea来解锁。
+
+## 第三十六轮：完整队列有效等待与缓存保全（2026-09-07）
+
+上一轮分类为progress；本轮先实时核对98301/628及实际子进程。随后20min
+有界等待，CPU36→46、Windows33→34。未为等待制造额外试验或用partial
+样本挑赢家。再执行只读7200s监督器，300s间隔、25实际进程快照，private
+`vm05_supervision_round36_r1/events.jsonl`与summary保留完整记录。没有观察
+错误、PID错配或attention；终止只是监视窗口届满，不是训练/采集终止。
+该窗口CPU47→104/315，Windows35→44/128。07:06 JST parent98301/
+child9969与parent628/child67156均live；Mac在block04 equal-view、Windows
+在044。所有block10的90条件完整，但全315比较仍待，不降低该门槛。
+
+重新从实际registry/profile/source母集无标签复算四种同ready成员：
+raw144/1566、raw ref-free144/1539；all-arm143/1495、all-arm ref-free
+143/1469。不可与history143/1459混用。三臂共同人群和raw人群不同，
+后续必须在143/1469真正重拟合，不能筛旧144/1539 OOF冒充同人估计器。
+现有单条件实现支持这些比较，当前CPU锁释放前不另开重拟合。
+
+新增032-043归档1,697,417,446bytes，SHA
+a84eae5bad818d07b34d74a7e63e789215de267c54bbadb5431ad1f03acb591e。
+只归档完成且非活动分片；远端SHA/本地SHA、CRC、展开大小、无symlink/
+路径越界/覆盖全部检查后，原frozen history verifier重验000-043。
+Mac已验44片2464人221760数组；不是用远端status替代本地验收。临时032
+以后的采集中片不动，030旧partial继续隔离保存。
+
+本轮不新增心理结论、prompt、LLM训练或label读取，不重跑已完成模型，
+不改冻结评分代码。原全secondary/history/direct/strong null/同ready其余/
+源头封头后bridge/VM07仍保持；goal active，并非阻塞，不需用户新idea。

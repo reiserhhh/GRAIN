@@ -2,6 +2,16 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-07第三十六轮：主要为verified wait，不新增理论假设或小实验。
+两小时25次真实进程监督，无观察错误或attention；CPU98301由47到104/315，
+Windows628由35到44/128。07:06 JST均实际运行：Mac child9969在block04
+equal-view末条件，Windows child67156在044。block10全部90条件已完成，
+不改变全315配对门槛来提前挑赢家。新增032-043安全备份并原verifier重验
+全部000-043，Mac44片2464作者221760数组。监督与备份是执行证据，不是
+人格机制新结论。重新无标签核实同ready成员：raw ref-free144/1539，
+all-arm ref-free143/1469，非history的143/1459；掩码比较仍须真正重拟合
+同人cohort。代码/神经模型未改，原完整scope与bridge/MEPS边界保持。
+
 2026-09-07第三十五轮：完成90case已存语义panel的有界post-hoc logit检验，
 无新forward/标签/校准。按声明语义对齐后，高低行为对的编码混合差分不为0，
 不支持全部变化只是固定回答先验偏置；独立log-probability复算max6.22e-15。

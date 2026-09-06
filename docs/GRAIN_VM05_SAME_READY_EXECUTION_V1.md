@@ -13,6 +13,13 @@ Raw comparisons use the former; raw/cue/placebo contrasts use the latter.
 The already observed counts are144/1566/62 and143/1495/61 for Big5-only/MBTI-only/
 bridge respectively. They are support-selected populations, not all PANDORA.
 
+Round36 verified registry reminder: excluding historical references gives
+raw-ready144 Big5 /1,539 MBTI and all-arms-ready143 Big5 /1,469 MBTI.
+Those latter counts are not the143 /1,459 intersection with the stricter history
+material. Match source IDs, not just similar counts or an older ready estimate.
+The complete raw-ready fits cannot be restricted after prediction and treated as
+all-arms-ready retraining. No new outcomes were consulted for this count check.
+
 Before any comparator fitting, seal the eligible author indices, official axis
 folds, reference overlap and outcome-blind purge/count feasibility. Include a
 strict branch excluding the99 historical reference members, without recomputing
