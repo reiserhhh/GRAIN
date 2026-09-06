@@ -45,3 +45,43 @@ def test_undefined_is_not_zero_evidence():
     assert np.isnan(a).all()
     with pytest.raises(ValueError):
         association([1, 2], [1, 2], [1, 2])
+
+
+def test_independent_correlation_algebra_matches_ols():
+    from scripts.audit_grain_domain_geometry import independent_associations
+
+    rng = np.random.default_rng(4)
+    x, y, z = rng.normal(size=(3, 31))
+    y = y + x + 0.7 * z
+    np.testing.assert_allclose(
+        independent_associations(x, y, z), association(x, y, z), atol=1e-12
+    )
+    np.testing.assert_allclose(
+        independent_associations(x, y, np.ones(31)),
+        association(x, y, np.ones(31)),
+        atol=1e-12,
+    )
+
+
+def test_independent_bootstrap_matches_frozen_runner():
+    import pandas as pd
+
+    from scripts.audit_grain_domain_geometry import replay_aggregate
+
+    rng = np.random.default_rng(51)
+    x, y, z = rng.normal(size=(3, 16))
+    frame = pd.DataFrame(
+        {
+            "model": "synthetic",
+            "corpus": "test",
+            "language": "en",
+            "delta_cosine": x,
+            "delta_tail_logp": y,
+            "delta_log_context_length": z,
+            "within_cell_percentile": rng.random(16),
+        }
+    )
+    replay = replay_aggregate(frame).iloc[0]
+    expected = association_bootstrap(x, y, z)
+    for key, value in expected.items():
+        assert replay[key] == pytest.approx(value, abs=1e-10)
