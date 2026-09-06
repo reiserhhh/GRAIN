@@ -35,3 +35,19 @@ def test_nuisance_only_is_undefined_and_residual_recoverable():
     r, rank, dof = residual_correlation(x + residual, 2 * x + residual, z)
     assert r == pytest.approx(1)
     assert rank == 4 and dof == 96
+
+
+def test_independent_coverage_and_svd_replay():
+    from scripts.audit_grain_domain_overlap import brute_coverage, svd_partial
+
+    rng = np.random.default_rng(31)
+    body, context = rng.integers(0, 5, size=(2, 80))
+    for n in (1, 4):
+        np.testing.assert_array_equal(
+            brute_coverage(body, context, n), ngram_coverage(body, context, n)
+        )
+    z = np.column_stack((np.ones(31), rng.normal(size=(31, 4))))
+    x, y = rng.normal(size=(2, 31))
+    assert svd_partial(x, y, z) == pytest.approx(
+        residual_correlation(x, y, z)[0], abs=1e-12
+    )

@@ -24,7 +24,16 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Vector inference research loop (2026-09-06)
 
-Latest: [complete MEPS fixed/free comparison](reports/grain_vector_mechanisms/VM06_FIXED_FREE_REPORT.md)
+Latest: the [Essays/X context and geometry packet](reports/grain_vector_mechanisms/VM06_DOMAIN_CONTEXT_GEOMETRY_REPORT.md)
+is complete on167 frozen cases. Correct context improves the supplied-text
+likelihood; independent embedding similarity tracks this benefit. English X's
+E5 association is .899 before and .490 after exploratory lexical/length/cell
+conditioning. These are model-function associations, not personality accuracy;
+Japanese adjusted evidence remains underresolved. Three saved-data audits pass.
+The [working mechanism atlas](reports/grain_vector_mechanisms/MECHANISM_ATLAS.md)
+separates these findings from still-pending full-source and bridge validation.
+
+The [complete MEPS fixed/free comparison](reports/grain_vector_mechanisms/VM06_FIXED_FREE_REPORT.md)
 uses all46 people,264 views and1,609 lossless windows. User-only fixed/free
 correspondence is modest (.5908 percentile), whereas user/assistant matching
 inside the same conversation is .9942 and does not establish personality validity.
@@ -32,7 +41,8 @@ Naive token-weighted mixing mostly follows the assistant channel. The
 [current Essays/X inventory](reports/grain_vector_mechanisms/VM06_DOMAIN_INVENTORY_REPORT.md)
 shows material is available but silent document truncation, duplicated text,
 and Japanese coverage in English encoders require explicit handling.
-New neural domain tests and complete source/bridge comparisons remain pending.
+The bounded neural domain comparison now handles these constraints explicitly;
+complete source/bridge comparisons remain pending.
 
 [Continued context access](reports/grain_vector_mechanisms/VM06_RESPONSE_ACCESS_REPORT.md)
 and [exact final-readout geometry](reports/grain_vector_mechanisms/VM06_RESPONSE_READOUT_REPORT.md)
@@ -43,7 +53,7 @@ nat/token; exact softmax/KL identities separate target alignment and vocabulary
 normalization. Independent audits and 209 focused tests pass. These are scoped
 model-function results, not personality validity. The short-reply RC packet is now
 closed; [remaining requirements](docs/GRAIN_VECTOR_REMAINING_REQUIREMENTS.md)
-include full source comparisons, domain checks, and VM07 synthesis.
+include full source comparisons, bridge evaluation, and final VM07 synthesis.
 
 The active research program studies how an LLM's internal representations use
 author context and combine evidence during personality inference. The

@@ -17,7 +17,8 @@ are a bounded mechanism packet inside VM06, not a substitute for the full plan.
   comparison now covers all264 views (VM06_FIXED_FREE_REPORT), independently
   replayed from saved vectors. The44-reply RC packet remains a distinct experiment.
 - Source-only sparse SN has three completed/replayed arms; EI has its prior
-  completed packet; TF/JP remain a partial active batch. Full source BGE/E5/Qwen
+  completed packet; TF now has three completed/replayed arms; JP remains active.
+  Full source BGE/E5/Qwen
   collection is also active and incomplete. Never choose partial-source winners.
 
 ## Required closure, in order
@@ -25,22 +26,23 @@ are a bounded mechanism packet inside VM06, not a substitute for the full plan.
 | Requirement | Authoritative evidence needed | Current status / next action |
 |---|---|---|
 | RC access/readout packet | Complete44 cases, native replay, instrument endpoints, independent scalar audit, public aggregate report | RC4/RC5 complete; this packet is closed without new layer search |
-| Full common-material representations | All24 shards x3 observers, matching material/model/template/precision, every cache checksum, exact author union | Local00-11 verified (36 observer shards,3,636 people per stage); queue incomplete. Resume only after terminal budget status/PID checks |
-| Strong source comparisons | Four axes and permitted Big5 source heads; all frozen inner choices, OOF, saved head replay, appropriate controls | TF/JP batch live; do not modify/restart active source code |
+| Full common-material representations | All24 shards x3 observers, matching material/model/template/precision, every cache checksum, exact author union | Local00-13 verified (42 observer shards,4,242 people per stage); queue incomplete. First bounded queue exited normally. SSH Start-Process attempt62444 died before queue startup; detached CIM launcher7748/queue61296 is revalidating completed shards. Recheck actual status/PIDs before any further resume |
+| Strong source comparisons | Four axes and permitted Big5 source heads; all frozen inner choices, OOF, saved head replay, appropriate controls | TF three arms complete and15 fold heads replayed; JP raw complete (AUC .610766) and5 saved folds replayed, other JP arms live. Strong-head source controls remain required; do not modify/restart active source code |
 | Same-ready GRAIN comparison | Identical authors, text budget and permitted auxiliary inputs, fixed reference/scorer gates; paired increments | Formal-ready143 Big5/1495 MBTI/61 bridge must not be pooled with larger eligibility as one score; final full-source comparison pending |
 | Source-head freeze then bridge | Immutable source model/feature/calibration choices and exposure log, then corrected bridge-only evaluation | Bridge outcome values remain unopened. Do not use the bridge to pick layer, blend, thresholds or directions |
 | MEPS fixed/free condition comparison | Same-person direct answers/user-only conversation views, assistant-context arms distinguished, no questionnaire use; lossless or declared-budget processing | Complete264-view multilingual-E5 packet and independent pooling/matrix/permutation audit. Modest cross-task correspondence, very strong within-chat user/AI matching; no personality or cross-day retest claim |
-| Essays and X domain sensitivity | Current corpus inventories, allowed inputs, shared stimulus/observer definitions, language/length gates, descriptive transport contrasts | Current inventory complete:2,467 Essays,37,435 X posts;8,124 tokenizer calls. Neural comparison pending. Essays need windows; X exact copies and English-encoder Japanese UNK require controls; no invented pairing/labels |
+| Essays and X domain sensitivity | Current corpus inventories, allowed inputs, shared stimulus/observer definitions, language/length gates, descriptive transport contrasts | Frozen167-case context/function and469 case-observer geometry packet complete and independently replayed. Post-hoc lexical/cell follow-up also replayed. See VM06_DOMAIN_CONTEXT_GEOMETRY_REPORT; only16 X-ja accounts, no psychological/invariance claim |
 | Model/prompt stability | Independent/cross-prompt controls linked to a specific measured function and model identity | Existing model-access evidence is scoped; English BGE/E5 token coverage on Japanese cannot be waved away. Assess suitable cached observers, do not mix coordinate bases |
-| VM07 atlas and reusable specification | MECHANISM_ATLAS.md, mechanism_evidence.json, GRAIN_VECTOR_OBSERVER_SPEC.md, runnable commands, limitations/failed candidates | Still pending. Summarize only audited observed functions; no automatic change to the released scorer |
+| VM07 atlas and reusable specification | MECHANISM_ATLAS.md, mechanism_evidence.json, GRAIN_VECTOR_OBSERVER_SPEC.md, runnable commands, limitations/failed candidates | Working atlas,11-entry evidence index and observer contract drafted. Schema/link validation is not scientific acceptance. Finalization awaits full-source/same-ready/bridge evidence and scoped model/prompt synthesis; released scorer unchanged |
 
 ## Next working block after complete MEPS fixed/free comparison
 
 1. Verify the two live source jobs and checkpoint completed shards/arms. Preserve
    bounded stop states, never launch a duplicate because a status read times out.
-2. While the source queue runs, freeze and execute the **Essays/X domain** packet
-   using the completed inventory. MEPS fixed/free now has its complete32-contrast
-   saved-vector audit; do not substitute RC44 replies or expand their layer search.
+2. The **Essays/X domain** context, geometry and declared lexical follow-up are
+   complete. Do not grow another free layer/feature search from their positives.
+   Carry forward the content-continuity and Japanese-small-N limits; MEPS remains
+   a separate46-person fixed/free packet, not a substitute for source/bridge work.
 3. Freeze common observation budgets, role handling, per-person aggregation and
    failure reasons; run nonprivate instruments before new private neural work.
    MEPS stays on Mac, no scale/mood values, no new training or external API.

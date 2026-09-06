@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-06",
+  "status": "WORKING_SYNTHESIS",
+  "program_complete": false,
+  "released_scorer_changed": false,
+  "entries": [
+    {
+      "id": "evidence_fidelity",
+      "domain": "natural_memory",
+      "source_report": "VM03_NATURAL_MEMORY_REPORT.md",
+      "instrument": "observed",
+      "function": "underresolved",
+      "psychological_validity": "not_tested",
+      "finding": "Citation correctness does not imply faithful proposition selection or stable evidence updates.",
+      "not_claimed": ["memory_summary_equals_ground_truth", "uniform_reasoning_improvement"]
+    },
+    {
+      "id": "relation_binding",
+      "domain": "controlled_synthetic_relations",
+      "source_report": "VM03_RELATIONAL_BINDING_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Joint relation use differs from additive summaries; standard product kernels are an alternative explanation.",
+      "not_claimed": ["unique_llm_reasoning", "personality_synergy"]
+    },
+    {
+      "id": "independent_history_access",
+      "domain": "pandora_current_history",
+      "source_report": "VM04_INDEPENDENT_ACCESS_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "semantic_code_fidelity": "unsupported",
+      "psychological_validity": "not_tested",
+      "finding": "A frozen local history intervention transfers to another current text; answer-code and selectivity problems remain.",
+      "not_claimed": ["personality_specific_circuit", "cross_person_common_direction"]
+    },
+    {
+      "id": "answer_code_qualification",
+      "domain": "public_facts_and_dispositions",
+      "source_report": "VM03_SECOND_OBSERVER_REPORT.md",
+      "instrument": "observed",
+      "function": "unsupported",
+      "semantic_code_fidelity": "unsupported",
+      "psychological_validity": "not_tested",
+      "finding": "Neither tested observer qualifies for code-invariant disposition-intervention claims; formatting and recoding errors differ.",
+      "not_claimed": ["all_models_incapable", "all_errors_are_parser_bugs"]
+    },
+    {
+      "id": "continued_context_access",
+      "domain": "meps_44_fixed_replies",
+      "source_report": "VM06_RESPONSE_ACCESS_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Intermediate body states rely on later access/computation; cutting access mid-network can be more harmful than never reading it.",
+      "not_claimed": ["additive_information_fraction", "personality_layer"]
+    },
+    {
+      "id": "final_readout_geometry",
+      "domain": "meps_44_fixed_replies",
+      "source_report": "VM06_RESPONSE_READOUT_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Near-identical pooled states can have different next-token function; target/partition and KL decompositions replay exactly within numerical error.",
+      "not_claimed": ["new_softmax_theorem", "kl_is_psychological_distance"]
+    },
+    {
+      "id": "geometry_and_regularization",
+      "domain": "source_only_saved_heads",
+      "source_report": "VM05_READOUT_AND_RANDOM_SUBSPACE_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "underresolved",
+      "finding": "Transporting an invertible coordinate change preserves the readout; refitting changes the regularization problem. Unobserved landmark directions are not uniquely identified.",
+      "not_claimed": ["unique_personality_subspace", "all_coordinate_transforms_discard_information"]
+    },
+    {
+      "id": "role_separated_fixed_free",
+      "domain": "meps_46_all_264_views",
+      "source_report": "VM06_FIXED_FREE_REPORT.md",
+      "instrument": "observed",
+      "author_correspondence": "observed",
+      "function": "not_tested",
+      "psychological_validity": "not_tested",
+      "finding": "Modest cross-task user correspondence is distinct from near-perfect within-conversation user/assistant matching.",
+      "not_claimed": ["personality_accuracy", "independent_retest", "whole_dialogue_context_encoding"]
+    },
+    {
+      "id": "source_only_external_heads",
+      "domain": "pandora_source_exclusive",
+      "source_report": "VM05_PREFLIGHT_AND_SOURCE_REPORT.md",
+      "instrument": "observed",
+      "external_association": "observed",
+      "full_neural_comparison": "not_tested",
+      "psychological_validity": "underresolved",
+      "finding": "Completed heads show task-dependent label ranking; all full-source neural heads and bridge results are still pending.",
+      "not_claimed": ["llm_personality_reasoning", "completed_bridge_validation", "full_pandora_benchmark_replication"]
+    },
+    {
+      "id": "domain_compatibility",
+      "domain": "essays_and_x_snapshot",
+      "source_report": "VM06_DOMAIN_INVENTORY_REPORT.md",
+      "instrument": "observed",
+      "function": "not_tested",
+      "psychological_validity": "not_tested",
+      "finding": "Current material is available, but single-document structure, copy overlap, sparse accounts and tokenizer coverage constrain inference.",
+      "not_claimed": ["language_invariance", "paired_cross_corpus_people", "clinical_generalization"]
+    },
+    {
+      "id": "domain_geometry_function",
+      "domain": "essays_96_x_en_55_x_ja_16",
+      "source_report": "VM06_DOMAIN_CONTEXT_GEOMETRY_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Standalone source-context similarity tracks Qwen continuation benefit; lexical and collector-cell conditioning reduces X associations. Japanese adjusted evidence remains underresolved.",
+      "not_claimed": ["personality_accuracy", "causal_mediation", "language_invariance", "preregistered_overlap_followup"]
+    }
+  ],
+  "remaining": [
+    "Complete all 24 x 3 common-source representation shards.",
+    "Complete strong source-only heads, controls and saved-head replay.",
+    "Compare candidates on identical eligibility/reference-ready sets.",
+    "Freeze source-only choices before opening bridge outcome values.",
+    "Synthesize the completed domain packet with function-specific model/prompt limits.",
+    "Finalize observer specification and evidence atlas after empirical closure."
+  ]
+}

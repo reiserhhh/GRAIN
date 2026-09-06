@@ -898,3 +898,69 @@ GRAIN_VECTOR_REMAINING_REQUIREMENTS.md逐项对回完整原计划：MEPS264views
 下一轮冻结并运行Essays/X现有机制domain包，同时看源任务边界；只在已终止
 且PID退出后恢复剩余冻结条件。完整source vectors/strong heads/同ready/
 封头后bridge和VM07 atlas/spec仍未完成。Goal active，无需用户新idea阻塞。
+
+## 第二十轮：跨域功能、独立几何与词句复用机制
+
+2026-09-06。本轮是progress，完成VM06域内机制比较，原goal保持active。
+不是人格预测完成，不变更正式GRAIN scorer，也不扩张RC44自由层位搜索。
+
+- 511367a冻结Essays/X材料及六条件Qwen实验。全量源容器hash不变，仅读
+  允许的文本/来源列。最终167cases=96 Essays+55 X-en+16 X-ja；X同语言/
+  symbol内完整case匹配，去精确跨作者复制/同作者重复，未宣称去完近重复。
+  material identity f24273f868d793db6d909324db51f68013bb630e4bc5585634ebcad6b0cd3d5f。
+  第二次材料准备同算法重跑得到完全相同hash，不是独立抽样算法。
+- 首次public context为15tokens，不足16，在第一forward前拒绝；保留r1
+  FAILED_STOP。4e49395只扩展公开英文fixture，未放宽门槛/私有case规则。
+  r2完整1008forwards、1339.99秒、MPS6.175GB；EN/JA selfpatch误差0，
+  compact/fixed最大4.054e-6。identity 3be6da509f36028c6ba9ea2aa7a698cc48909363276c0f005e54f0ef54023da7。
+- 正确/条件匹配其他作者的tail logp增益：Essays .16815 [.14006,.19451]；
+  X-en .93911 [.65858,1.25144]；X-ja .27123 [.03704,.62521]。打乱context
+  block8后仍有.11964/.77480/.17894；顺序交互.04851/.16430/.09229。
+  同一current input embedding完全相同，final pooled cosine仍.990-.994。
+  这是teacher-forced原文可预测性，不是心理量表正确率/自由生成质量。
+- e4eac66在效果表查看前冻结独立geometry对照：mE5全167，英语BGE/E5各151；
+  356全字符覆盖共同窗口、938 pooled向量、469case-observer pairs。
+  每模型独立原文encode，统一字符权重，1020forwards/176.83秒，MPS2.248GB。
+  tokenizer/weights/旧整数position buffer核验；public pad/repeat误差0，
+  compact/fixed<=1.57e-7。identity 7b2b7f7d30efd3ba7ffec4eb566e7033bccfa933fbf207e75a44ca5825d5f283。
+- 独立context相似度优势与Qwen功能增益相连：Essays BGE/E5/mE5 r=.350/.447/.411；
+  X-en=.721/.899/.815，X-ja mE5=.806。长度差控制后X-en E5=.906。
+  此相关不是Big5 r，也不是两个模型内部向量坐标相同/人格机制已定位。
+- 334efea明确事后探索：在计算overlap前固定1/4-gram、四个token分区及
+  长度/stratum/复用联合条件设计，无新神经前向。排除任一context中精确重复
+  4-gram后：Essays .16222 [.13465,.18792]；X-en .34793 [.18367,.54943]；
+  X-ja .05947 [-.03679,.14247]。前两有剩余功能，日文小N underresolved。
+  不能把不同有效N/权重的分区均值相加当因果成分。
+- 联合条件化后X-en E5 r=.49025 [.12792,.74310]，BGE/mE5区间跨零；
+  Essays三模型.320/.397/.352。X-ja .600但CI[-.750,.946]、df10，一次bootstrap
+  undefined，不能称稳定调整效果。残差不是自动的reasoning/personality。
+  overlap identity 376c1819b4a5256b31ba823b48a39af5d93d292d4b2337136f22fe3a7be7e108。
+- 三项独立保存数据audit均通过：context36,000 bootstrap、几何7000，
+  overlap668逐token masks+668case partitions+19000bootstrap。后两分别用
+  独立相关代数、SVD投影替代原OLS；最大差3.06e-15/2.39e-14。
+  这些不是独立神经重复提取，也不把条件bootstrap解释为全总体推断。
+  新报告VM06_DOMAIN_CONTEXT_GEOMETRY_REPORT；28项域/MEPS/顺序回归tests通过。
+- TF三臂完整且15保存fold重播：raw/cue/placebo AUC=.767212/.765381/.767227，
+  cue-raw=-.001831 CI[-.002377,-.001294]，placebo-raw CI跨零。强TF对cue
+  有小敏感性，不同于弱投影头；不能继承弱头的全部来源控制。新TF报告入库。
+  JP raw也完成AUC=.610766，5fold重播误差8.33e-17；cue运行，placebo待执行。
+- VM07工作版MECHANISM_ATLAS、11项machine-readable evidence与observer spec
+  已整理，schema/link检验通过只代表文件结构，不是科学验收。主结论是
+  区分来源匹配、上下文功能、语义/输出代码、外部效度，不硬揉成一个人格轴。
+- Windows原PID28172在42observer shards后按8h预算门槛退出，27,431.98秒，
+  queue.lock已释放。shard13归档323245028bytes，SHA
+  a81b696e38d525eaf5b548e995b19618500546f716e472ddd17b594aae1abff6。
+  传输SHA/CRC/安全不覆盖解包通过，00--13全部42shards缓存/manifest再核验，
+  每模型4242人。本地保存旧暂停status；whole_queue_complete=false。
+  首次获取远端归档metadata时遇Windows进度stderr编码问题，归档已成功；
+  只补读SHA与传输，不重复创建/覆盖。随后关进度流并按bytes读取，问题解决。
+  Start-Process首个恢复PID62444在SSH会话结束后、更新queue前退出；stdout/
+  stderr0字节、无lock/observer子进程，不能称续跑成功。保留该次记录；改
+  Win32_Process.Create脱离SSH，launcher7748/queue61296活跃核验旧shards，
+  仍原冻结aa51b06、同参数加resume-completed、独立8h上限。以下续跑状态
+  以实际queue更新为准，不以返回PID为验收。
+
+未读取MEPS量表/bridge结果，无付费API/新模型下载/LLM训练/push。
+下一轮优先完整JP及source representations，再做真正强头的来源控制、
+同ready比较与冻结后bridge。不因域内显著关联继续无限搜新切法或新层位；
+也不把未完成的source/bridge工作改名成不需要。当前不需用户新idea介入。
