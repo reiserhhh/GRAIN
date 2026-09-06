@@ -120,10 +120,21 @@ def test_baseline_preflight_requires_every_packet_and_exact_users(
             }
     monkeypatch.setattr(runner, "load_oof", lambda path: packets[path])
     assert len(runner.baseline_index(paths, "common", bundles)) == 12
+    from scripts import summarize_grain_sparse_mbti as summarizer
+
+    monkeypatch.setattr(summarizer, "load_oof", lambda path: packets[path])
+    manifest, resolved = summarizer.complete_explicit_batch(paths)
+    assert len(manifest["cases"]) == len(resolved) == 12
+    with pytest.raises(ValueError, match="all12"):
+        summarizer.complete_explicit_batch(paths[:-1])
+    with pytest.raises(ValueError, match="duplicate"):
+        summarizer.complete_explicit_batch([*paths, paths[0]])
     with pytest.raises(ValueError, match="All12"):
         runner.baseline_index(paths[:-1], "common", bundles)
     with pytest.raises(ValueError, match="Duplicate"):
         runner.baseline_index([*paths, paths[0]], "common", bundles)
     packets[paths[-1]]["ids"] = np.asarray(["unexpected"])
+    with pytest.raises(ValueError, match="source cohort"):
+        summarizer.complete_explicit_batch(paths)
     with pytest.raises(ValueError, match="exact complete source cohort"):
         runner.baseline_index(paths, "common", bundles)
