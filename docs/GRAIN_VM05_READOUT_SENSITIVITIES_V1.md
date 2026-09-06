@@ -85,3 +85,18 @@ script writes a source-bound private derived-feature NPZ, aggregate numerical
 diagnostics, protocol/source snapshots and checksums. Tests and an independent
 reconstruction validate exact axes, weights and task pairing. Later full-source
 execution must expose the readout identity, not reuse a body-only feature name.
+
+## Implemented qualification and execution path
+
+The existing12-author technical packet passed all75 feature transformations and
+an independent reconstruction of900 author-channel rows. These operators are
+implemented in`external_readouts.py`; the verified full-cache loader is
+`external_readout_cache.py`. The same-ready runner now has an explicit`--readout`
+argument. It leaves default body_token untouched and refuses incomplete observer
+queues before any target conversion or fitting. It still uses the same regularized
+head, not a new representation learner or calibrated direct LLM scorer.
+
+Full-source secondary-readout orchestration and true same-current history-effect
+collection are separate pending work. Do not conflate the existing source-only
+body runner with these new secondary channels. Qualification is not full-corpus
+feature evaluation, and a technical case is not another independent experiment.

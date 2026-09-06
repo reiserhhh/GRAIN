@@ -2,13 +2,20 @@
 """Cached task/pooling transformations preserve views, dimensions and identities."""
 
 import copy
+import hashlib
+import json
 
 import numpy as np
 import pytest
 
+from grain_research.vector_mechanisms.controls import material_hash
 from grain_research.vector_mechanisms.external_material import (
     pack_features,
+    shard_material,
     unpack_features,
+)
+from grain_research.vector_mechanisms.external_readout_cache import (
+    cached_readout_matrix,
 )
 from grain_research.vector_mechanisms.external_readouts import (
     ARMS,
@@ -128,3 +135,92 @@ def test_metadata_or_array_corruption_is_not_silently_imputed():
         channel(h, meta, "raw", "block_10", "own_minus_none_history")
     with pytest.raises(ValueError):
         variance_parts(np.ones((3, 4)), np.full((3, 4), -1), [1, 1, 1])
+
+
+def test_complete_cache_readout_preserves_order_and_rejects_unused_corruption(tmp_path):
+    source = [
+        {"author_id": f"toy_{i:03d}", "source_group": "mbti_only"} for i in range(24)
+    ]
+    common = {"material_sha256": material_hash(source)}
+    queue = {
+        "shards": 24,
+        "material_sha256": common["material_sha256"],
+        "code_sha256": "frozen_test",
+    }
+    (tmp_path / "manifest.json").write_text(json.dumps(queue))
+    expected, paths = {}, {}
+    for i in range(24):
+        shard = shard_material(source, 24, i)
+        uid = shard[0]["author_id"]
+        for stage in ("bge_large", "e5_large", "qwen"):
+            folder = tmp_path / stage / f"shard_{i:02d}"
+            folder.mkdir(parents=True)
+            m = {
+                "authors": [uid],
+                "stage": stage,
+                "shard_count": 24,
+                "shard_index": i,
+                "code_sha256": "frozen_test",
+                "full_material_sha256": common["material_sha256"],
+                "source_material_sha256": material_hash(shard),
+            }
+            m["identity"] = material_hash(m)
+            (folder / "manifest.json").write_text(json.dumps(m))
+            (folder / "run_status.json").write_text(
+                json.dumps(
+                    {
+                        "status": "COMPLETE",
+                        "authors": 1,
+                        "parent_identity": m["identity"],
+                    }
+                )
+            )
+            if stage != "qwen":
+                continue
+            h, meta = fixture()
+            h["raw_block_10_decision_disposition"] += i
+            expected[uid] = channel(h, meta, "raw", "block_10", "decision_task_delta")
+            cache = folder / "private_cache"
+            cache.mkdir()
+            path = cache / (uid + ".npz")
+            np.savez_compressed(path, **h)
+            paths[uid] = path
+            meta.update(
+                author_id=uid,
+                feature_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+            )
+            (cache / (uid + ".json")).write_text(json.dumps(meta))
+    subset = [source[9], source[2], source[7]]
+    got = cached_readout_matrix(
+        subset, source, common, tmp_path, "raw", "block_10", "decision_task_delta"
+    )
+    np.testing.assert_allclose(
+        got, np.stack([expected[b["author_id"]] for b in subset])
+    )
+    margins = cached_readout_matrix(
+        subset, source, common, tmp_path, "raw", "block_10", "logit_margins"
+    )
+    assert margins.shape == (3, 4)
+    with pytest.raises(ValueError, match="site-independent"):
+        cached_readout_matrix(
+            subset, source, common, tmp_path, "raw", "block_04", "logit_margins"
+        )
+    paths[source[0]["author_id"]].write_bytes(b"corrupted nonselected author")
+    with pytest.raises(ValueError, match="checksum"):
+        cached_readout_matrix(
+            subset, source, common, tmp_path, "raw", "block_10", "decision_task_delta"
+        )
+
+
+def test_energy_partition_is_descriptive_not_a_new_noise_estimator():
+    from scripts.summarize_grain_readout_qualification import energy_partition
+
+    x = np.asarray([[1.0, 1.0], [1.0, -1.0]])
+    row = energy_partition(x)
+    assert row["common_energy_fraction"] == 0.5
+    assert row["between_bundle_residual_fraction"] == 0.5
+    assert energy_partition(x * 7)["common_energy_fraction"] == 0.5
+    shifted = energy_partition(x + [10, 0])
+    assert shifted["common_energy_fraction"] > 0.99
+    zero = energy_partition(np.zeros((3, 2)))
+    assert zero["zero_total_energy"] and zero["common_energy_fraction"] is None

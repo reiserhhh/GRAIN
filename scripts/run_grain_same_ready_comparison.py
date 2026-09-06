@@ -27,6 +27,10 @@ from grain_research.vector_mechanisms.external_heads import (
     predict_head,
     task_score,
 )
+from grain_research.vector_mechanisms.external_readout_cache import (
+    cached_readout_matrix,
+)
+from grain_research.vector_mechanisms.external_readouts import KINDS as READOUT_KINDS
 from grain_research.vector_mechanisms.inventory import archive_source
 from grain_research.vector_mechanisms.ready_comparison import (
     FEATURES,
@@ -53,6 +57,11 @@ def execute(a):
     out = a.output_dir / "fit"
     out.mkdir(exist_ok=False)
     start = time.monotonic()
+    readout = getattr(a, "readout", "body_token")
+    if readout != "body_token" and not a.feature.removeprefix("grain_").startswith(
+        "qwen_"
+    ):
+        raise ValueError("Nondefault readout applies only to a Qwen feature block")
     source, common, reg, profiles, registry_manifest = load_registry_inputs(
         a.views, a.registry_dir, a.registry_audit_dir, a.profile_dir, a.preflight_dir
     )
@@ -77,6 +86,16 @@ def execute(a):
         observer_evidence["queue_manifest_sha256"] = digest(
             a.vector_dir / "manifest.json"
         )
+        if readout != "body_token":
+            return cached_readout_matrix(
+                bundles,
+                source,
+                common,
+                a.vector_dir,
+                arm,
+                feature.removeprefix("qwen_"),
+                readout,
+            )
         opts = SimpleNamespace(
             feature=feature,
             arm=arm,
@@ -100,6 +119,7 @@ def execute(a):
         "protocol": "VM05_SAME_READY_COMPARISON_V1",
         "task": a.task,
         "feature": a.feature,
+        "readout": readout if "qwen_" in a.feature else "not_qwen",
         "arm": a.arm,
         "cohort": a.cohort,
         "authors": len(ids),
@@ -137,6 +157,8 @@ def execute(a):
                 "scripts/run_grain_vector_mechanism_external_links.py",
                 "scripts/run_grain_vector_mechanism_external_features.py",
                 "scripts/run_grain_vector_mechanism_external_queue.py",
+                "grain_research/vector_mechanisms/external_readouts.py",
+                "grain_research/vector_mechanisms/external_readout_cache.py",
             )
         },
     }
@@ -224,6 +246,7 @@ def execute(a):
         "feature": a.feature,
         "arm": a.arm,
         "score": task_score(y, pred, a.task),
+        "readout": fields["readout"],
         "bootstrap": bootstrap_score(y, pred, a.task),
         "full_parameter": parameter,
         "full_search": search,
@@ -270,6 +293,9 @@ def main():
     p.add_argument("--feature", choices=FEATURES, required=True)
     p.add_argument("--arm", choices=("raw", "cue_mask", "placebo_mask"), default="raw")
     p.add_argument("--no-pca", action="store_true")
+    p.add_argument(
+        "--readout", choices=(*READOUT_KINDS, "logit_margins"), default="body_token"
+    )
     p.add_argument("--preflight-only", action="store_true")
     p.add_argument("--max-seconds", type=int, default=3600)
     p.add_argument("--worker", action="store_true", help=argparse.SUPPRESS)

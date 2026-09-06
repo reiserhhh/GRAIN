@@ -110,8 +110,16 @@ when the single-Mac heavy-fit queue is available. Dense observers additionally
 require `--vector-dir .../vm05_full_vectors_r1`: all72 stage-shards must be complete
 and checksum-verified first. `grain_qwen_block_10` and `grain_bge_large` mean plain
 concatenation, with explicit block boundaries, not tuned blending. Body layer
-sensitivities retain their exact feature names. Equal-view and post-question
-readouts are not implemented by this entrypoint and remain separate open items.
+sensitivities retain their exact feature names. The subsequent cached-readout
+extension accepts`--readout body_equal_view`, `body_variance_parts`,
+`decision_behavior`, `decision_disposition` and `decision_task_delta` for Qwen
+blocks, including their GRAIN concatenations. Default`body_token` keeps the
+original pooling path. `logit_margins` is a four-scalar diagnostic accepted only
+under the single block10 identifier, since it is site-independent. The readout
+identity is explicit in both manifest and summary; it is not selected by outer
+labels. See GRAIN_VM05_READOUT_SENSITIVITIES_V1.md. This closes the cache-to-head
+implementation gap, not the unrun full-source/same-ready comparisons, genuine
+same-current history-effect collection or direct LLM Big5/MBTI scoring.
 
 Existing non-reference-excluded sorted profiles are reused, not refitted. The
 `sorted_distances` feature here only permits a genuinely changed reference-free
