@@ -1456,3 +1456,26 @@ arm完整家族都已执行，但最新三个placebo seed的独立审计/15fold�
 继续history全采集及GPU边界后的direct180语义forward/全量。强null、source
 freeze后的bridge及VM07仍需完成。研究仍有明确可执行内容，无需用户新idea；
 本轮没有新增人格效度结论，没有读取bridge/MEPS心理值或训练/下载新LLM。
+
+第二十九轮后续验收：实际等待40min期间原batch自然到29/84预算边界，
+owner退出；81895随后获得CPU锁。首6主头、30fold保存模型重播完成，max
+1.1102230246251565e-16；Big5 raw BGE/E5/Qwen mean r=.176915/.202323/.150330，
+EI raw AUC=.618367/.639579/.627869。完整人数分别624/6294，非6人pilot。
+
+新增summarize_grain_neural_source_primary.py只读取完成且重播过的完整三
+观察器组，同一1000次fold内作者抽样同时估计pooled和meanfold差，保存所有
+预定比较、不据正负选组。首2组packet为PARTIAL（6/45），13组还未齐全。
+E5-BGE pooled Big5差+.025408[.004469,.046188]，EI+.021212[.011933,.030662]；
+Qwen-BGE pooled两项均CI跨0。meanfold另列，不能挑选跨0与否。点估计源码
+与scipy/sklearn独立公式对照通过；CI为pointwise固定OOF条件、不多重/重拟合。
+实现时间在首组结果之后，明确事后统计实现，不宣称新的事前注册。
+
+真实输出发现Mac ._sidecar被glob纳入hash列表，改为三CSV明确白名单。
+保留r1并产r2，3个科学CSV SHA完全相同；r2 identity
+179723b32f8c5efd177d7e707a4269297a6da806306bcbf26b15403076e230dd。
+paired CSV SHA c52b960b8cacb67350bb5011206dc493c3a957c4ca641370712a83616a4ca6bd。
+先20项组合tests通过，再加sidecar regression后5项summarizer tests通过，
+不能相加；无active评分源码变动。新增VM05_PRIMARY_NEURAL_SOURCE_REPORT。
+截至后续快照队列到SN原文E5、7/45完成；Windows7/128片392人完成仍live，
+本地history备份仍224人。仍需完整神经/敏感性/same-ready/history/direct/
+强null/封头后bridge/VM07。没有生产模型切换或追加LLM训练。
