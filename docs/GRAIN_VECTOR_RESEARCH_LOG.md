@@ -1069,3 +1069,60 @@ external_heads/links/controls及Windows aa51b06均未修改；只新增独立入
 继续现有强来源对照、全量向量归档，再真实同ready源头/增量比较；原计划
 equal-view/decision/context等缺项仍需补齐。强null和封头后bridge未完成。
 当前问题是研究执行与来源机制分离，不需要用户新idea；不将active目标标完结。
+
+## 第二十三轮：任务读出补齐、共同位移诊断与未观测反事实定位
+
+2026-09-06 16:45 JST。本轮progress。开始时验证Mac owned58532在CPU运行，
+Windows61296存在且进入BGE17；上一轮不是只做状态复述。本轮未更改任何
+active source-estimator/Windows aa51b06文件，未另开Mac真人重拟合。
+
+- 复查原计划发现两问差、正文equal-view与真正history对照必须分开。
+  当前全量缓存有相同12评论下behavior/disposition两问，没有同一current
+  在own/matched/none历史下的表示。原计划“内部context增量”尚未观测，
+  不能拿task delta或三view方差改名完成。直接LLM Big5/MBTI评分对照也
+  不能由两条社交主动性Yes/No问题替代，已在remaining map显式补列。
+- 92162dd在全量neural标签分析前冻结readout sensitivities；ba3adce实现
+  external_readouts、qualify/audit脚本。4sites x3arms x6channels加3个非重复
+  logit诊断=75矩阵。total variance按within+between分解，等view不是平均
+  std；paired task delta逐view先作disposition-behavior再聚合，非两std相减。
+  这是标准矩/差分运算，不称新心理法则，不新命名人格因子。
+- 真实技术12人vm05_cached_readout_qualification_r1 COMPLETE，identity
+  f4cf9aefbd142c913535a5b64dc7ef71958098ec800d5072c63e8668ce2a7505；
+  75矩阵/900作者channel行，0.89秒、零新forward/fit/target values。
+  token原pool重播max1.17e-13，总方差max4.55e-13。
+  vm05_cached_readout_audit_r1用独立second-moment和逐task代数重建全部75
+  矩阵，max1.95e-13，无refit；不是只测测试fixture或信任生成方summary。
+- 419a0df新增完整缓存readout loader与same-ready --readout入口，默认
+  body_token走原路径；新渠道只限Qwen/GRAIN+Qwen，logit指标只允许一次
+  block10标签，不当4个层模型。每作者/完整shard union核验，显式保存
+  readout identity。full-source次级编排和实际同ready外部比较仍待做。
+  不修改现有full-source body runner去中断84来源控制。
+- 对不完整真实全量cache执行preflight-only的decision_task_delta，正确
+  在All72 gate拒绝；vm05_readout_incomplete_queue_guard_r1保留FAILED_STOP，
+  无source_label_audit/模型文件。此为预期边界验收，不是人格实验失败。
+- posthoc技术几何诊断vm05_readout_technical_geometry_r1另立身份
+  e149fd04869c6565030017de6129153fb7e8e4098cc832439005a1f1bba71dc3。
+  全3arms/4sites保留；raw block04/10/16/final的common task energy fraction
+  .7198/.8455/.9616/.8713。标准energy恒等式，不等于prompt纯因果份额、
+  作者信号百分比、人格解释方差或噪声率。余量也混有材料/情景/状态。
+  技术群均值不进入正式评分/去噪；不根据12人共向量去删“共同噪声”。
+  body between-view variance仅.34%/.64%/.78%/1.95%，提醒Qwen token-level
+  std与BGE comment-level std测量层次不同，不能仅靠同文量称纯架构比较。
+  source内no-PCA敏感性仍预定，不依技术结果加新调参池。
+- 新51项readout/ready/source/resource/domain回归tests通过；随后14focused
+  tests加energy translation/zero边界通过；两旧SWIG warnings，非全仓库。
+  Ruff/whitespace通过。合成完整cache测试会拒绝未选作者缓存被篡改，而
+  非只检查这次ready子集；新特征同作者顺序重排及alias均精确可重建。
+- Mac来源count732/.645304、count733/.647596完成；当前count734/60520
+  运行460秒。vm05_strong_source_audit_three_counts_r1独立5case/120成员
+  记录/3nested count配对，purge-vs-five-count仍正确pending。新732/733
+  重播10fold max9.71e-17；累计本batch25保存fold通过。原84还未完成。
+- Windows61296持续Qwen17，远端53stage-shards完成；新shard16归档
+  325480518bytes SHA1163751dfcbeb7d9243927e241ea01ccee19c74840d7924661f662f21d8ae2e3。
+  传输SHA/CRC/不覆盖安全解包、00--16全51shard cache及manifest复核通过；
+  每模型5151作者。53远端完成不能当53本地归档；全7266尚未齐。
+
+无bridge outcome/MEPS问卷访问、付费API、下载、LLM训练或push。
+下一步继续完成live来源控制和向量队列，接入完整source次级readout与真正
+same-current历史采集设计；不能以已完成task/mean特征缩小VM05原始范围。
+当前仍有明确可执行机制缺口，无需用户新idea，goal继续active。
