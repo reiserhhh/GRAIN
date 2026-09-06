@@ -1659,3 +1659,55 @@ GPU8h自然边界后再做真实direct180forward语义panel，绝不能第二模
 并发抢显存。direct/fullhistory、strong null、同ready其余家族、源头
 封头后bridge、VM07仍是原scope。未训练/下载新LLM、未读bridge/MEPS
 心理值、未付费API或push。尚有可执行工作，不需要用户新idea。
+
+## 第三十四轮：历史读出接口、I/O故障恢复与原生编码敏感性（2026-09-07）
+
+c93063e新增完整history源头接口，冻结8既有通道，当前view均值差及其跨view
+std为3072维，不把它当token残差方差。全620Big5/6239MBTI与all-ready
+143/1459成员及官方fold已无标签重算；需同人重拟合原baseline。g为16排序
+地标，非整个GRAIN；foreign-history参考文本额外预算须披露。真实缺片预检
+在读标签/fit前拒绝（当时104/128缺失），无模型/target文件。12相关tests。
+
+Windows原历史queue65840在26,043.844s发生PermissionError/WinError5：
+queue_status.json.tmp替换queue_status.json失败。已完成30片1680人；
+030子进程被原监督器清理，partial记录42/56、1183forward，不予验收。
+direct等待器依规停止，未启动模型。保存原FAILED_STOP及89文件inventory，
+将partial目录/log/tmp隔离到vm05_history_io_recovery_r1，全部SHA/字节重验。
+未删除、未择人补采，后续完整重采原56人。非模型失败、非自然budget暂停。
+
+594b3ea/9dc3085加独立操作wrapper：只对queue status的WinError5/32/33
+做最多5次重试，总等待1.55s，别的文件/错误立即失败。原collector/queue
+源码及manifest完全不改；每次wrapper另存源码、hash、旧status和append-only
+事件日志。Windows真实文件句柄复现3次WinError5，.359s成功、payload一致；
+不据此断定原占用来自哪一进程。先用60s显式resume仅重验30片，原queue
+自己写PAUSED_BUDGET_BETWEEN_SHARDS、next030、0新forward，再确认owner退出。
+
+历史备份新增024-028 ZIP721,015,912bytes，SHA
+03ebbffb417260f25ea5c2141cdae6ea8d148ea845f6c2f91286d2c7e5df6f6b。
+其后029直接SCP，原冻结verifier重验000-029，Mac30片1680人151200arrays。
+恢复89文件亦拷回逐hash检查，partial不合入正式缓存或样本。恢复/锁测试
+证据位于本地同名结果目录；不是只保存远端计数。
+
+GPU闲置后未改提示运行原90case/180forward语义panel，85.625s COMPLETE，
+identity cae61a997fb36bd5d94605b9117ebfd9a089169c537f248963e2c6fdcc09fe9b。
+按原Mac token preflight逐case/token/alphabet对齐，独立指数归一化和全部
+36对比/9任务表复算max4.11e-15；audit r2 identity
+196b21250296c304b1f64085c81ffd96aad954b3ceb57d63ac26aaf66ad4fb07。
+r1输出hash误含AppleDouble元数据，保留；r2显式只列两CSV，数值不变。
+原生全vocab logits未保存，不伪称独立重算全vocab argmax；原collector双
+forward精确重播、首token成员检查、保存算术复算是分开的证据。
+
+科学结果：primary行为排序17/18，Big5反编码且正确换算后0/10；MBTI
+反列举7/8但分数平均绝对改变.400-.705。首token90/90合规，候选mass
+min.9924，说明格式/候选质量不是稳定语义的替代指标。没有无证据=0.5
+假定、没有p值、没有prompt rescue或轴翻转。primary锚点正向不是真人
+人格效度，反编码失败也不证明hidden state无心理相关信息。独立报告、
+理论note第6节、18项atlas已更新，73dcaec提交；最终24组合tests/Ruff/diff
+均通过，schema仅接受公共结构不是科学闭环。
+
+直接语义原进程已退出，恢复完整history有界8h任务：parent628/
+SSH session39668、child57820在030实测RUNNING，72s时CPU69.69s。
+必须保持SSH，不启动第二GPU模型。Mac98301/session88190继续315secondary，
+最新24/315、child2954实测CPU；strong29/84仍暂停。full直接source、完整
+history、同ready其余、强null、封头后bridge、VM07仍待完成。bridge/MEPS
+心理值未开，无新LLM训练/下载/API/push；goal继续，无用户新idea阻塞。

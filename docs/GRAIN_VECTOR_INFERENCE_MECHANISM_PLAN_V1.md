@@ -2,6 +2,19 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-07第三十四轮：真实direct语义90case/180forward完成并独立复算
+max4.11e-15。原问法17/18行为对排序正确，但Big5数值编码反转且正确换算后
+0/10正确；MBTI反向列举仍7/8排序正确、绝对分数大变。90/90首token合规
+不等于稳定计分语义，详见[语义报告](../reports/grain_vector_mechanisms/VM05_DIRECT_SEMANTICS_REPORT.md)。
+新增完整history源头接口：全样本620/6239，同ready143/1459；128片未齐
+不得读标签或拟合，必须重拟合同人baseline。24组合tests/18项atlas检查通过。
+history原65840发生WinError5状态文件替换错误，完整30片安全、030部分42人
+隔离89文件并校验；仅加状态I/O有界重试，Windows实测复现并修复。30片
+零forward重新验收后才做direct panel。新628/session39668、child57820
+实际从原030分片完整重采；Mac30片1680人151200数组已独立重验。
+CPU98301继续secondary，最新24/315；完整source/history/direct/null/
+同ready其余/封头后bridge/VM07仍未闭环，不改scope。下文旧轮次保留历史。
+
 2026-09-07第三十三轮：raw/reference-free同ready34新拟合完成，复用1个
 Big5历史profile，35头/175保存fold全部验收、90配对行。GRAIN增量20个
 区间19跨0；Big5 g+BGE pooled+.008295的下界仅.000022，而mean-fold
