@@ -97,3 +97,29 @@ def test_all_conditions_and_interaction_identity():
     with pytest.raises(ValueError):
         summarize(pd.DataFrame(rows[:-1]))
     np.testing.assert_array_equal(spread_indices(6), np.arange(6))
+
+
+def test_independent_endpoint_bootstrap_replay():
+    from scripts.audit_grain_domain_context import replay_summary
+
+    rng = np.random.default_rng(4)
+    rows = []
+    for language in ("en", "ja"):
+        for code in range(7):
+            for condition in CONDITIONS:
+                value = float(rng.normal())
+                rows.append(
+                    {
+                        "corpus": "test",
+                        "language": language,
+                        "case_code": f"A{code}",
+                        "condition": condition,
+                        "tail_logp": value,
+                        "mean_logp": value + 0.1,
+                    }
+                )
+    frame = pd.DataFrame(rows)
+    keys = ["corpus", "language", "score", "endpoint"]
+    actual = summarize(frame).sort_values(keys).reset_index(drop=True)
+    independent = replay_summary(frame).sort_values(keys).reset_index(drop=True)
+    pd.testing.assert_frame_equal(actual, independent, atol=1e-14, rtol=1e-14)
