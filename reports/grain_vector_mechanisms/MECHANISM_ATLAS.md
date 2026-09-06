@@ -1,7 +1,7 @@
 # GRAIN vector mechanism atlas
 
 2026-09-07, round32. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
-The45 primary source-head comparisons are complete; fixed-layer, same-ready,
+The45 primary and45 fixed-layer source-head comparisons are complete; same-ready,
 task/history/direct comparisons, strong controls/nulls, bridge evaluation and
 final reusable-observer acceptance remain open. The bounded domain-function packet is complete. This atlas records
 what the experiments distinguish; it does not turn every positive statistic
@@ -31,7 +31,7 @@ theoretical refinement so far, not a claim to a newly discovered universal law.
 | External-label readout | All45 primary neural heads/225 fold replays and15 three-observer paired comparisons complete; raw Big5 BGE/E5/Qwen10 r=.177/.202/.150 | No primary Qwen-minus-BGE positive pointwise interval. These are trained source-head readouts, not the LLM's native decisions; task/history/direct controls remain open. Strong sparse controls are a separate head family |
 | Ranking versus probability | All36 primary MBTI heads improve log loss and Brier over fold-trained prevalence priors, including near-majority EI/SN classifiers | Weak probability differentiation can exist without crossing the0.5 decision threshold. Proper-score gain is not mutual information, calibrated personality probability or native LLM reasoning |
 | Projection/readout restriction | All9 Big5 original-dimension versus PCA pairs complete; all18 pooled/mean-fold intervals cross0 | No demonstrated simple compression rescue, not equivalence or proof that low-variance directions contain no signal. Removing PCA also changes the regularization problem |
-| Fixed-layer accessibility | All15 raw layer heads/75 saved-fold replays accepted: EI/SN highest Qwen point estimates at04, TF/Big5 at16, JP at final norm | Nonmonotone, outcome-specific readability is not trait localization or causal layer use. Pointwise comparisons; two other text arms still pending; no outcome-selected layer/blend |
+| Fixed-layer accessibility | All45 layer heads/225 saved-fold replays accepted across three arms: EI/SN highest Qwen point estimates at04, TF/Big5 at16, JP at final norm | Nonmonotone, outcome-specific readability is not trait localization or causal layer use. No added Qwen layer's pooled interval has a positive lower bound versus E5. Pointwise comparisons; no outcome-selected layer/blend |
 | Cross-domain scope | Frozen167-case Essays/X context gains;469 case-observer geometry comparisons; lexical/cell follow-up independently replayed | Source similarity and model function correlate, partly through repeated content. Japanese adjusted effect remains underresolved; no language/cultural measurement invariance |
 
 ## Where the mathematics helps
@@ -78,7 +78,7 @@ D(t)   = direct_candidate_readout(F_last(x, q_t)).
 
 R depends on source labels, pooling, compression and fitted regularization.
 D depends on the task prompt, native model computation and output coding.
-Neither a high R nor a small R identifies D. The raw fixed-layer profile varies
+Neither a high R nor a small R identifies D. The complete fixed-layer profile varies
 by outcome, without a uniform depth advantage; removing PCA did not establish
 a general rescue. These findings make the already planned task/history/direct
 contrasts more informative than adding an outcome-selected layer search. See
@@ -114,7 +114,8 @@ here, and no new state experiment is silently counted as completed.
 ## Open synthesis work
 
 The atlas is not yet the final conclusion. Full common-material observers and
-the45 primary source heads are complete. Finish declared source sensitivities,
+the45 primary source heads, no-PCA and fixed-layer comparisons are complete. Finish
+declared task-conditioned source sensitivities,
 same-ready and task/history/direct comparisons, stronger controls/nulls, then
 freeze source choices before the untouched bridge outcome evaluation. Carry
 forward the completed domain packet's role/genre limitations;

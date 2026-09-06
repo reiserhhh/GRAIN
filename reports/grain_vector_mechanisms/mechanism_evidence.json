@@ -131,13 +131,13 @@
     },
     {
       "id": "fixed_layer_accessibility",
-      "domain": "pandora_same_source_raw_arm_only",
+      "domain": "pandora_same_source_all_three_arms",
       "source_report": "VM05_FIXED_LAYER_REPORT.md",
       "instrument": "observed",
       "external_association": "observed",
       "psychological_validity": "underresolved",
-      "finding": "All15 raw layer heads and75 saved-fold replays have paired comparisons against primary observers. Qwen readability profiles vary by outcome rather than improving uniformly with depth; the other two arms are pending.",
-      "not_claimed": ["trait_localization", "native_llm_layer_use", "full_layer_family_complete", "optimal_layer_selection", "multiplicity_adjusted_significance"]
+      "finding": "All45 layer heads and225 saved-fold replays have270 paired comparisons against primary observers. Qwen readability profiles vary by outcome across all three arms rather than improving uniformly with depth; no added layer has a positive pooled interval lower bound versus E5.",
+      "not_claimed": ["trait_localization", "native_llm_layer_use", "optimal_layer_selection", "multiplicity_adjusted_significance", "independent_mask_replications"]
     },
     {
       "id": "domain_compatibility",
@@ -161,7 +161,7 @@
     }
   ],
   "remaining": [
-    "Finish all declared fixed-layer and task-conditioned source comparisons; the45 primary heads and all common-source shards are complete.",
+    "Finish declared task-conditioned source comparisons; primary, original-dimension and fixed-layer families and all common-source shards are complete.",
     "Complete strong source-only controls, full selection-aware nulls and saved-head replay.",
     "Compare candidates on identical eligibility/reference-ready sets; the bounded raw stage is queued, not complete.",
     "Complete real history/direct collection and source readouts, preserving prompt/site and source boundaries.",

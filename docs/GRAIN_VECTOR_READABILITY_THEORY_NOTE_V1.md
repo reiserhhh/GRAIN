@@ -47,7 +47,7 @@ is developed further by Pimentel and Cotterell. [EMNLP2021 paper](https://aclant
 - All9 no-PCA/PCA comparisons have intervals crossing0. This does not establish
   that projection was the main bottleneck or that discarded coordinates carry
   no signal. It changes compression and the fitted regularization problem.
-- The raw fixed-layer profiles vary by outcome, with no common depth winner.
+- The complete three-arm fixed-layer profiles vary by outcome, with no common depth winner.
   This is compatible with reorganization of accessibility. It does not identify
   an EI layer, a TF circuit, or total psychological information at each depth.
 - All36 primary MBTI heads improve proper probability losses over fold-trained
@@ -86,8 +86,9 @@ substituted for the fixed source-head protocol.
 
 ## 4. Questions the existing queue can resolve
 
-1. Complete all fixed layers/masks: does the descriptive depth profile persist
-   under the declared input changes, without selecting a new primary layer?
+1. Fixed layers/masks are complete: the descriptive profile persists across
+   the three arms. Carry this forward without selecting a new primary layer;
+   masks on the same authors do not count as independent replications.
 2. Compare task-conditioned and body channels on the same source authors:
    does the fixed question expose more readable outcome information, or just
    inject common prompt/position variance? Two social-initiation prompts do

@@ -2,6 +2,18 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-07第三十二轮：54敏感性全部完成、270保存fold重播max2.22e-16；
+完整45层位比较覆盖三臂、270配对行。EI浅层/TF中间较深层/JP最终层的
+相对block10模式保留，但新增层位均无相对E5的正向pooled CI下界，不选层。
+新增36主MBTI头的概率损失诊断：log loss/Brier均优于训练折类别比例基线，
+说明近乎多数类分类并不等于零概率预测信息；不等于已校准人格概率或LLM
+原生使用。见[层位报告](../reports/grain_vector_mechanisms/VM05_FIXED_LAYER_REPORT.md)、
+[概率分数报告](../reports/grain_vector_mechanisms/VM05_PRIMARY_PROPER_SCORE_REPORT.md)及
+[可读性理论](GRAIN_VECTOR_READABILITY_THEORY_NOTE_V1.md)。
+strong29条件/145fold现已全部独立审计重播；仍29/84未全完。raw同ready监督器
+90901已接CPU实际FIT，最近7/34，不再等待。Windows历史23/128完成，Mac
+验收前18片1,008作者90,720数组；完整剩余scope不变。下文均为历史快照。
+
 2026-09-07第三十一轮：9组原维Big5对PCA的配对比较已完成，18个区间全部
 跨0。Qwen原文pooled仅+.002450[-.031705,.041042]，mean-fold为-.002555；
 没有“取消压缩即救回预测”的证据，也不能据此宣称低方差方向无信息。

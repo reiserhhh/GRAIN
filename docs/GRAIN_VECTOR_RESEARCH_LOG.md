@@ -1563,3 +1563,46 @@ backup1,130,406,771bytes，SHA
 逐份重验全部000-015（含旧八片），完整registry/资格/生产重播/model/source
 及cache通过。Mac累计896作者/80,640数组，16/128仍PARTIAL。未读心理标签，
 未训练/下载新LLM、未启动付费API、未push；goal仍active，仍有实质任务。
+
+## 第三十二轮：完整层位比较与概率信息边界（2026-09-07）
+
+7300a06实现固定层分析及独立数值测试，先完整raw15头/75fold；随后等待
+原54敏感性自然COMPLETE并核对owner退出，全部270保存fold重播max2.22e-16。
+完整`vm05_fixed_layer_comparison_full_r1`验收45候选与45主观察器、90分数行/
+270配对行，identity feabc914359c19f0f3b7fa9a1d7c040898b5558454a56c6a14e6c05d96ad30d7，
+paired CSV SHA bd406663b1401bdea5c9d2017793ca804d97fd1ff08c2001cf969f4e3f2b4c75。
+原raw包三张表与完整包raw部分逐元素一致；不是补齐时重算出更好结果。
+
+- EI04-10、TF16-10、JPfinal-10在三臂两estimand均保留正pointwise区间；
+  无新增Qwen层的pooled区间下界超过E5，不能形成选层/原生人格计算结论。
+- 8b102bd新增proper-score诊断。全部36主MBTI头在144个logloss/Brier、
+  pooled/meanfold行均优于训练折类别比例基线，区间下界为正。Qwen原文
+  EI/SN/TF/JP的logloss gain为.016511/.011446/.082174/.017699 nats。
+  EI/SN近乎全majority不代表没有弱的概率预测增益；这不重判旧生成probe。
+  后验诊断、固定OOF与prior条件区间，无新calibration/head selection。
+  packet identity d4bd4024152e7843a33b2c8b9a900c1d78946d87042b0768e863539f01071f1d；
+  CSV SHA6655ebe9295ee54cb19d6851c8770aee3c54e63b340270b51f62333ea934a2cb。
+  36头/144行另用sklearn直接读OOF复算max3.45592e-14；bootstrap端点独立
+  重算在synthetic测试，非全真人draws第二遍。3专测、10组合tests通过。
+- 新可读性理论note对接Pimentel2020/2021、Belinkov2022、Hewitt2019、
+  Voita2020：完整状态数据处理不等式不等于pooled状态顺序，更不等于有限
+  线性probe分数；用简单符号反例区分信息有无/可读性/原生使用。是标准
+  数学与我们证据的对接，不声称发明信息论或证明人格因果机制。15项atlas
+  更新且schema/链接通过，仍working，不是全计划acceptance。
+- 新SN8头40fold独立重播max1.11e-16，累计strong29头145fold；696选择
+  记录、20count配对已核验。SNraw purge-retain -.047670，但purge-count
+  -.012661[-.026569,.001470]，不能把训练量与来源变化全部当人格噪声。
+  `vm05_strong_source_audit_first29_r1`与`vm05_strong_source_replay_sn_first8_r1`。
+
+54完成后原90901/session31627自动取得三CPU锁进入真实raw同ready拟合；
+最新7/34、EIword_char/child95723实测CPU运行。旧strong仍29/84暂停。
+history远端queue65840/child19804实测live，23/128完成1,288作者；本地
+新016/017 ZIP257,836,550bytes，SHA2171bfa45a8080fe693cf6c8f3d0fed3d94da3ce000cd6433046ceddd78bc1fa。
+SHA/CRC/安全路径/不覆盖解包后，全部000-017再次独立verify；本地18片
+1,008人90,720数组，仍partial，不把remote1,288当本地验收。
+
+当前direct缓存只含候选logits/normalizer，没有九trait任务的状态数组；
+secondary状态只对应两条social-initiation问法，不能把它们冒充九trait
+内部计算。未改任何活跃collector/frozen评分源码，bridge/MEPS心理值未开，
+无LLM训练/下载/付费API/push。继续同ready及secondary/history/direct/
+strong null/源头封头后bridge/VM07；goal仍active，尚不需要用户新idea。

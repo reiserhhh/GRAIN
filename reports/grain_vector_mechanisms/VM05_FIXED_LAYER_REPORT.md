@@ -1,8 +1,9 @@
 # VM05 fixed layers: external-label readability is not monotone in depth
 
-2026-09-07, round32. **Raw arm complete; the full three-arm sensitivity remains
-PARTIAL.** This report accepts all15 raw sensitivity heads and their75 saved
-official-fold replays, compared with all15 corresponding primary heads. It
+2026-09-07, round32. **All45 three-arm layer sensitivity heads and225 saved
+official-fold replays COMPLETE**, compared with all45 corresponding primary
+heads. The full54-case execution also includes the9 separately reported
+no-PCA heads:270 saved-fold replays, maximum error2.220446049250313e-16. It
 does not select a replacement layer or imply that an LLM uses these statistical
 readouts to generate a personality answer.
 
@@ -27,11 +28,34 @@ The largest descriptive Qwen values occur at04 for EI/SN,16 for TF/Big5 and
 final norm for JP. Such a rank pattern is not a statistical interaction test,
 a selected optimal model, a trait localization result or a universal depth law.
 
+## Complete three-arm comparison
+
+The full packet now covers raw/cue_mask/placebo_mask,90 observer-score rows and
+270 paired rows. The same descriptive Qwen site pattern occurs in all three
+arms. Pooled deltas against primary Qwen10:
+
+| Contrast | Raw delta [95% CI] | Cue-mask delta [95% CI] | Placebo-mask delta [95% CI] |
+|---|---|---|---|
+| EI:04-10 |+.010293 [.002571,.017767]|+.013595 [.005955,.021714]|+.012757 [.005027,.020654]|
+| TF:16-10 |+.005035 [.001924,.007778]|+.004595 [.001458,.007304]|+.003849 [.000566,.006670]|
+| JP:final-10 |+.011691 [.003715,.019450]|+.014130 [.005555,.022308]|+.010736 [.002538,.018537]|
+
+Their mean-official-fold intervals also stay positive in all arms. These are
+the same previously highlighted raw contrasts carried through the complete
+declared family, not three independent replications or a multiplicity-adjusted
+claim. All other positive and negative contrasts remain in the full CSV.
+
+No new layer has a positive pooled interval lower bound versus E5 on any task
+or arm. Only EI04/final have positive pooled lower bounds versus BGE across
+all three arms. No Qwen Big5 layer's point estimate exceeds BGE or E5 in any
+arm. Thus the full results support an outcome-dependent accessibility profile,
+not a general decoder-layer advantage or a new selected layer mixture.
+
 ## Paired evidence and uncertainty
 
 All six observers share1,000 author-within-official-fold bootstrap draws per
-task, seed731. Nine declared contrasts (each new layer versus10/BGE/E5) give90
-rows across five tasks and pooled/mean-fold estimands. These intervals are
+task/arm, seed731. Nine declared contrasts (each new layer versus10/BGE/E5) give270
+rows across five tasks, three arms and pooled/mean-fold estimands. These intervals are
 pointwise, not family-adjusted, and conditional on saved fitted OOF models.
 They do not include retraining uncertainty or prove equivalence when crossing0.
 The analysis implementation followed some point estimates; layer conditions
@@ -78,7 +102,7 @@ depth. It supports studying outcome-specific readability profiles instead.
 It does not identify total information in a layer, the LLM's native decision
 rule, causal necessity of a layer, or a unique psychological construct. The
 no-PCA result also did not establish compression as the main bottleneck. Keep
-the originally fixed10 primary comparison and complete the other two arms;
+the originally fixed10 primary comparison; all three arms are now complete,
 do not build an outcome-selected04/16/final ensemble from this table.
 
 Proceed with the already specified task-conditioned decision states, genuine
@@ -95,7 +119,14 @@ Without the flag, all45 layer heads must be available. The script validates
 the full primary audit, sensitivity manifest/code, exact source memberships,
 paired IDs/targets/folds, model hashes and all saved-fold replay records.
 
-Private packet: `results/grain_vector_mechanisms/vm05_fixed_layer_comparison_raw_r1`.
+Full private packet: `results/grain_vector_mechanisms/vm05_fixed_layer_comparison_full_r1`.
+Identity: `feabc914359c19f0f3b7fa9a1d7c040898b5558454a56c6a14e6c05d96ad30d7`.
+Full `paired_layers.csv` SHA256:
+`bd406663b1401bdea5c9d2017793ca804d97fd1ff08c2001cf969f4e3f2b4c75`.
+All45 sensitivity source heads/225 replays and complete primary commitments
+were revalidated without new fits or outcome-table reads.
+
+Earlier raw-only packet is preserved: `results/grain_vector_mechanisms/vm05_fixed_layer_comparison_raw_r1`.
 Identity: `72103af3e46bdb81eea9fcf4033ccc26e1ae72b04717eeeff2b14825f6e78eb2`.
 `paired_layers.csv` SHA256:
 `cf364026b6f148eaa61a65f2aacc8ab8db6c515b244242f86e97f15b49c9e1f9`.
