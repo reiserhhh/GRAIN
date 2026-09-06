@@ -135,3 +135,22 @@ new r2 directory. Its invisible history mask includes these same separator token
 this convention must be kept in qualification and every real forward. Repeat the
 complete support and independent matching/copy audit; panel recovery alone does
 not establish full support. No labels or real model responses chose this repair.
+
+## Subreddit-overlap feasibility diagnostic, before history forwards
+
+The repaired material shows median subreddit Jaccard0 in all three source groups.
+Call the existing donor a **length/time-optimized reference history**, not an
+exactly topic-matched history. Subreddit is itself only a noisy context proxy;
+zero overlap does not prove different semantic topics, and positive overlap does
+not prove the same topic or situation. The soft penalty did not ensure overlap.
+
+Without changing any existing selection, inspect an additional candidate rule:
+require at least one shared subreddit, then minimize the original cost among
+otherwise temporally/provenance-eligible reference histories. Report per-view and
+complete-three-view author support, candidate counts, time/length costs and
+paired cost changes. Do not read outcomes, silently replace the primary donor,
+or declare this a qualified neural arm: token-layout/copy audits must be rerun
+for any new donor before extraction. This is a bounded feasibility diagnostic,
+not an improvement selected on source accuracy. Preserve both broad and
+context-restricted estimands because condition selection can itself carry author
+information. Further semantic matching waits for the complete observer material.

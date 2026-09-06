@@ -359,3 +359,28 @@ def test_real_history_observer_rejects_live_queue_before_loading(tmp_path):
     (tmp_path / "manifest.json").write_text("{}")
     with pytest.raises(ValueError, match="must finish"):
         load_observer(SimpleNamespace(observer_queue_dir=tmp_path), {})
+
+
+def test_overlap_feasibility_retains_time_and_material_exclusions():
+    from scripts.probe_grain_history_topic_support import overlap_match
+
+    target = comments("target", 100)
+    hist, current = split_view(target)
+    pf = profile(hist, lambda s: len(s.split()))
+    candidates = []
+    for uid, offset in (("unshared", 0), ("future", 200), ("valid", 20)):
+        h, _ = split_view(comments(uid, offset))
+        d = {
+            "author_id": uid,
+            "view": 0,
+            "history": h,
+            "profile": profile(h, lambda s: len(s.split())),
+        }
+        if uid == "unshared":
+            d["profile"]["subreddits"] = {"different"}
+        candidates.append(d)
+    selected, n = overlap_match(pf, current, target, candidates)
+    assert selected[1] == "valid" and n == 1
+    assert overlap_match(pf, current, target, candidates[:2]) is None
+    candidates[-1]["history"][0]["thread_id"] = target[0]["thread_id"]
+    assert overlap_match(pf, current, target, candidates) is None
