@@ -184,6 +184,7 @@ def test_tiny_decoder_mask_is_invisible_and_native_replays():
 
 def test_full_layout_arm_task_completeness_and_reference_role():
     import pandas as pd
+
     from scripts.prepare_grain_source_history import check_layouts, reference_ids
 
     own, current = split_view(comments("own"))

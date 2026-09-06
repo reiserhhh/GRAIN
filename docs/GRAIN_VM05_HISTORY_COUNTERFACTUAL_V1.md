@@ -94,3 +94,25 @@ plumbing but cannot replace pinned-real-checkpoint qualification.
 This protocol addresses model-side context effects, not human trait causality,
 temporal test-retest or clinical assessment validity. A null or support failure
 is evidence about this explicitly defined candidate, not the whole GRAIN theory.
+
+## Additional material safety gate, before any real history forward
+
+The original normalized-text check rejects exact duplicates, not near copies.
+Keep the initial material registry intact and independently audit all selected
+histories. Also flag raw-text word-four-gram overlap for own-current versus its
+history, and matched-history versus any target comment. A pair is flagged when
+both texts have at least12 words, share at least8 distinct four-grams, and either
+Jaccard is at least.8 or containment of the shorter four-gram set is at least.9.
+These are declared heuristic copy controls, not a semantic paraphrase detector.
+They can flag shared boilerplate as well as quotation; preserve their separate
+diagnostic records and make no claim that all paraphrases have been excluded.
+
+Create a strict registry excluding whole flagged authors without rematching or
+changing their texts. No new source result chooses this threshold. Subsequent
+history qualification and comparisons must identify whether they use the original
+supported registry or this strict registry; primary extraction uses the strict
+registry. All baseline/source/readiness intersections must be recalculated on the
+same retained authors, not borrowed from a larger population. Independent lineage
+and matching reconstruction is distinct from full independent tokenizer replay;
+report coverage of each audit explicitly, then test token layouts on the pinned
+technical panel before scaling.
