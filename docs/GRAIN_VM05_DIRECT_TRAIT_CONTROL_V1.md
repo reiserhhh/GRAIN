@@ -58,6 +58,11 @@ repair, answer extraction retries, self-reported confidence or free chain-of-tho
    source technical cases. Repeated native states/logits must agree before full
    collection. Semantic anchor examples diagnose prompt/model capability, not
    human personality validity, and cannot tune the prompt on natural outcomes.
+   Direct technical cases are two Big5-only and four MBTI-only authors selected
+   by the fixed `vm05_direct_technical_731` hash order, without outcomes. Replay
+   every one of their234 logical task/view/arm readouts, not just the first row.
+   The full-vocabulary log normalizer is saved so a separate implementation can
+   reconstruct conditional scores, entropy and candidate mass from raw logits.
 3. Bounded, cached full-supported source collection after existing GPU jobs. Save
    every native candidate logit, mass and first-token compliance, not only the
    conditional probability. No competing weights or new model download.

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import time
 from collections.abc import Mapping
 
 import numpy as np
@@ -142,6 +143,7 @@ def native_readout(logits, alphabet):
     return {
         "conditional_score": float(q @ values),
         "candidate_logits": local.tolist(),
+        "full_vocab_log_normalizer": float(logsumexp(z)),
         "conditional_probabilities": q.tolist(),
         "candidate_mass": float(np.exp(log_mass)),
         "candidate_log_mass": log_mass,
@@ -154,7 +156,7 @@ def native_readout(logits, alphabet):
     }
 
 
-def collect_author(arms, tasks, observer, *, repeat=False):
+def collect_author(arms, tasks, observer, *, repeat=False, deadline=None):
     """Score complete views; cache only identical token prompts within an author."""
     if set(arms) != {"raw", "cue_mask", "placebo_mask"} or any(
         len(v) != 36 for v in arms.values()
@@ -170,6 +172,8 @@ def collect_author(arms, tasks, observer, *, repeat=False):
         for view in range(3):
             excerpt = texts[12 * view : 12 * (view + 1)]
             for task in tasks:
+                if deadline is not None and time.monotonic() >= deadline:
+                    raise TimeoutError("Preserve incomplete direct-trait author")
                 ids, _, _ = tokenize_prompt(
                     excerpt, task, observer.tokenizer, observer.max_tokens
                 )
