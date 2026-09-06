@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Post-hoc pooled-versus-within-fold audit of the complete fixed EI/raw controls."""
+"""Post-hoc pooled-versus-within-fold audit of complete fixed EI arm controls."""
 
 from __future__ import annotations
 
 import argparse
 import json
 import sys
+import zipfile
 from pathlib import Path
 
 import numpy as np
@@ -69,6 +70,17 @@ NAMES = (
 )
 
 
+def control_names(arm):
+    """Require all five frozen count seeds, never an outcome-selected subset."""
+    if arm not in ("raw", "cue_mask", "placebo_mask"):
+        raise ValueError("Unknown fixed EI arm")
+    return [
+        f"EI_cont_{arm}_retain_731",
+        f"EI_cont_{arm}_purge_731",
+        *[f"EI_cont_{arm}_random_count_{seed}" for seed in range(731, 736)],
+    ]
+
+
 def analyze(y, predictions, folds, draws=1000):
     """Resample authors within fixed folds; retain both pooled and mean-fold estimands."""
     y, predictions, folds = np.asarray(y), np.asarray(predictions), np.asarray(folds)
@@ -126,6 +138,7 @@ def main():
     p.add_argument("--batch-dir", type=Path, required=True)
     p.add_argument("--audit-dir", type=Path, required=True)
     p.add_argument("--output-dir", type=Path, required=True)
+    p.add_argument("--arm", choices=("raw", "cue_mask", "placebo_mask"), default="raw")
     a = p.parse_args()
     batch = json.loads((a.batch_dir / "batch_manifest.json").read_text())
     audit = json.loads((a.audit_dir / "summary.json").read_text())
@@ -135,11 +148,14 @@ def main():
         or audit["random_count_pairs_verified"] < 5
     ):
         raise ValueError("Require independently audited complete first seven controls")
-    names = [
-        "EI_cont_raw_retain_731",
-        "EI_cont_raw_purge_731",
-        *[f"EI_cont_raw_random_count_{seed}" for seed in range(731, 736)],
-    ]
+    names = control_names(a.arm)
+    scores = pd.read_csv(a.audit_dir / "source_control_scores.csv")
+    if (
+        scores["case"].duplicated().any()
+        or not set(names) <= set(scores["case"])
+        or set(names) & set(audit["pending_cases"])
+    ):
+        raise ValueError("This arm has not completed independent source audit")
     packets = [load_oof(a.batch_dir / name) for name in names]
     parent = packets[0]
     for i, obj in enumerate(packets):
@@ -148,12 +164,14 @@ def main():
         seed = 731 if i < 2 else 731 + i - 2
         if (
             m["task"] != "EI_cont"
-            or m["arm"] != "raw"
+            or m["arm"] != a.arm
             or m["feature"] != "word_char"
             or m["thread_control"] != mode
             or m["drop_seed"] != seed
             or not m["exclude_reference"]
             or m["permutation_seed"] is not None
+            or scores.loc[scores["case"] == names[i], "source_identity"].item()
+            != m["identity"]
             or any(not np.array_equal(obj[k], parent[k]) for k in ("ids", "y", "folds"))
         ):
             raise ValueError("Changed or unpaired frozen EI source controls")
@@ -161,8 +179,10 @@ def main():
     fields = {
         "protocol": "VM05_EI_SOURCE_GAP_POSTHOC_V1",
         "posthoc": True,
+        "arm": a.arm,
         "batch_identity": batch["identity"],
         "audit_sha256": digest(a.audit_dir / "summary.json"),
+        "audit_scores_sha256": digest(a.audit_dir / "source_control_scores.csv"),
         "inputs": {
             name: {
                 "identity": obj["manifest"]["identity"],
@@ -181,6 +201,11 @@ def main():
     fields["identity"] = material_hash(fields)
     write_json(a.output_dir / "manifest.json", fields)
     archive_source(ROOT, a.output_dir / "source_snapshot.zip")
+    # Legacy archive allowlist omits this analysis entrypoint; bind it explicitly.
+    with zipfile.ZipFile(
+        a.output_dir / "source_snapshot.zip", "a", zipfile.ZIP_DEFLATED
+    ) as z:
+        z.write(__file__, Path(__file__).relative_to(ROOT).as_posix())
     rows, folds = analyze(
         parent["y"], np.stack([p["p"] for p in packets]), parent["folds"]
     )
@@ -197,6 +222,7 @@ def main():
         "status": "COMPLETE",
         "parent_identity": fields["identity"],
         "posthoc": True,
+        "arm": a.arm,
         "authors": len(parent["ids"]),
         "controls": 7,
         "draws": 1000,

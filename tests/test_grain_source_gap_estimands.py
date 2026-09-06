@@ -5,7 +5,22 @@ import numpy as np
 import pytest
 from sklearn.metrics import roc_auc_score
 
-from scripts.analyze_grain_ei_source_gap import analyze, gap_values, rank_auc
+from scripts.analyze_grain_ei_source_gap import (
+    analyze,
+    control_names,
+    gap_values,
+    rank_auc,
+)
+
+
+def test_control_names_preserve_all_frozen_seeds_and_reject_unplanned_arm():
+    for arm in ("raw", "cue_mask", "placebo_mask"):
+        names = control_names(arm)
+        assert len(set(names)) == 7
+        assert names[-1] == f"EI_cont_{arm}_random_count_735"
+        assert names[0] == f"EI_cont_{arm}_retain_731"
+    with pytest.raises(ValueError):
+        control_names("selected_winner")
 
 
 def test_rank_auc_ties_and_invalid_support():
