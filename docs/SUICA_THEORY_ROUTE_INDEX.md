@@ -75,7 +75,14 @@ Discussion context affects source readability differently across axes. A loss of
 pooled correlation can also reflect fold-specific score dispersion, not simply
 the destruction of an underlying signal. These are source-readout diagnostics,
 not new personality constructs or a post-hoc replacement of the primary metric.
-Big5 remaining controls, full observer comparisons and bridge are still open.
+The twelfth cycle completes all 102 controls and replays 510 saved fold models.
+Full observer comparisons, two remaining nulls and bridge are still open.
+
+The [geometry-information study](../reports/grain_vector_mechanisms/VM05_GEOMETRY_INFORMATION_REPORT.md)
+adds supported-author component comparisons and an exact landmark-distance
+information boundary. Relative geometry, readable information under a chosen
+head, and psychological interpretation are separate objects. Distance decoding
+and perpendicular-coordinate tests must not be renamed as new personality factors.
 
 ## 1. Purpose
 

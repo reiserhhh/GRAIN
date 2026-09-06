@@ -106,14 +106,23 @@ Bridge outcomes remain unopened; source controls and full observer comparisons
 are still required. See the [frozen execution supplement](docs/GRAIN_VM05_FULL_RUN_AND_CONTROLS_V1.md).
 
 The [source-control follow-up](reports/grain_vector_mechanisms/VM05_SOURCE_CONTROLS_AND_NULL_REPORT.md)
-now completes 84 reference-excluded MBTI conditions and 12 full 199-draw nulls.
+now completes all 102 source-control conditions and 13 full 199-draw nulls.
 Shared-discussion sensitivity differs by axis; cue-masked TF remains readable
 (AUC .6712 after thread purging), but this is not a verified personality mechanism.
-All 420 saved MBTI fold models replay within 1.12e-16. Big5 controls reveal that
+All 510 saved control fold models replay within 1.12e-16. Big5 controls reveal that
 pooled correlation changes also depend on fold-specific prediction dispersion;
 an exact covariance decomposition prevents interpreting all loss as lost signal.
-Big5 masked controls/nulls and full observer collection remain in progress.
+Two Big5 nulls, the strong sparse MBTI reference and full observer collection remain in progress.
 No test predictions were recalibrated and bridge outcomes remain unopened.
+
+The [frozen geometry comparison](reports/grain_vector_mechanisms/VM05_GEOMETRY_INFORMATION_REPORT.md)
+separates intermediate author vectors, identified landmark distances, sorted
+profiles and normalized shapes on the same supported authors. The 16 landmarks
+span only 15 dimensions of the 48-dimensional space: perpendicular direction is
+not generally recoverable from distances. The source readouts also distinguish
+information removal from coordinate-dependent PCA and regularization. These are
+component-level exploratory findings, not a replacement scorer or proof of a
+personality-specific residual subspace.
 
 ## Theory manuscript (2026-09-01)
 
