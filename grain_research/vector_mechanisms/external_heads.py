@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import gc
 import hashlib
 from pathlib import Path
 
@@ -246,6 +247,10 @@ def select_head(x, y, ids, feature_kind, task, *, pca=True, on_inner=None):
             head.fit(fit_x, y[fit_train])
             pred = predict_head(head, valid_x, task)
             collected[parameter].append(task_score(y[valid], pred, task))
+        # Do not retain the last inner split's large CSR matrices during the
+        # next split or final full-source fit. Only scalar search scores survive.
+        del fit_x, valid_x, transform, prototype, candidate, head, pred
+        gc.collect()
     scores = [
         {"parameter": p, "inner_scores": values, "inner_mean": float(np.mean(values))}
         for p, values in collected.items()

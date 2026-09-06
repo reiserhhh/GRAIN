@@ -6,9 +6,57 @@ import pytest
 from grain_research.vector_mechanisms.response_context import (
     context_derangements,
     cosine,
+    native_parts,
     packed_sequence,
     paired_interval,
+    select_responses,
 )
+
+
+class CharacterChatTokenizer:
+    """A tiny native template with mapping-valued tokenization results."""
+
+    def apply_chat_template(self, messages, *, tokenize, add_generation_prompt):
+        assert not add_generation_prompt
+        text = "".join("[" + m["role"] + "]\n" + m["content"] + "\n" for m in messages)
+        return {"input_ids": self.encode(text)} if tokenize else text
+
+    def encode(self, text, **kwargs):
+        return [ord(c) for c in text]
+
+    def __call__(self, text, **kwargs):
+        return {
+            "input_ids": self.encode(text),
+            "offset_mapping": [(i, i + 1) for i in range(len(text))],
+        }
+
+
+def test_native_body_is_identical_and_accepts_mapping_api():
+    tokenizer = CharacterChatTokenizer()
+    _, actual = native_parts(tokenizer, "a current response", "a previous response")
+    _, alone = native_parts(tokenizer, "a current response")
+    assert actual == alone == tokenizer.encode("a current response")
+
+
+def test_last_eligible_pair_selected_without_truncation():
+    tokenizer = CharacterChatTokenizer()
+    turns = [
+        {"role": "assistant", "text": "a" * 24, "source_sequence": 0},
+        {"role": "user", "text": "x" * 24, "source_sequence": 1},
+        {"role": "assistant", "text": "b" * 24, "source_sequence": 2},
+        {"role": "user", "text": "y" * 20, "source_sequence": 3},
+        {"role": "assistant", "text": "c" * 24, "source_sequence": 4},
+        {"role": "user", "text": "ok", "source_sequence": 5},
+    ]
+    views = [
+        {
+            "metadata": {"view_kind": "free_chat", "participant_code": "P001"},
+            "turns": turns,
+        }
+    ]
+    cases, coverage = select_responses(views, tokenizer)
+    assert cases[0]["response_sequence"] == 3 and cases[0]["response"] == "y" * 20
+    assert coverage[0]["length_rejected"] == 1
 
 
 def test_assignments_are_complete_fixed_point_free_and_reproducible():

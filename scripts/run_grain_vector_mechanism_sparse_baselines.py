@@ -21,11 +21,11 @@ from scripts.run_grain_vector_mechanism_source_controls import scoring_commitmen
 from scripts.summarize_grain_vector_external_links import load_oof
 
 
-def cases():
+def cases(tasks=None):
     """All four independent axes and all three predeclared text arms."""
     return [
         {"id": f"{task}_{arm}", "task": task, "arm": arm}
-        for task in ("EI_cont", "SN_cont", "TF_cont", "JP_cont")
+        for task in (tasks or ("EI_cont", "SN_cont", "TF_cont", "JP_cont"))
         for arm in ("raw", "cue_mask", "placebo_mask")
     ]
 
@@ -62,7 +62,10 @@ def bounded_child(command, log, seconds, max_rss_bytes, update):
                 peak = max(peak, rss or 0)
                 update(child.pid, elapsed, rss, peak)
                 if elapsed > seconds or peak > max_rss_bytes:
-                    raise RuntimeError("Owned sparse child exceeded time/RSS budget")
+                    raise RuntimeError(
+                        f"Owned sparse child exceeded time/RSS budget: elapsed={elapsed:.3f}; "
+                        f"peak_rss_bytes={peak}; time_limit={seconds}; rss_limit={max_rss_bytes}"
+                    )
                 try:
                     child.wait(timeout=min(10, max(0.05, seconds - elapsed)))
                 except subprocess.TimeoutExpired:
@@ -93,7 +96,12 @@ def main():
     p.add_argument("--max-seconds", type=int, default=7200)
     p.add_argument("--max-child-rss-gb", type=float, default=8)
     p.add_argument("--resume-completed", action="store_true")
+    p.add_argument(
+        "--tasks", nargs="+", choices=("EI_cont", "SN_cont", "TF_cont", "JP_cont")
+    )
     a = p.parse_args()
+    if a.tasks and len(a.tasks) != len(set(a.tasks)):
+        raise ValueError("Do not schedule duplicate source tasks")
     if not 600 <= a.max_seconds <= 28800 or not 1 <= a.max_child_rss_gb <= 8:
         raise ValueError("Require bounded CPU time and at most 8 GiB per sparse child")
     if sys.platform not in ("darwin", "linux"):
@@ -106,7 +114,7 @@ def main():
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     fields = {
         "protocol": "VM05_STRONG_SPARSE_MBTI_V1",
-        "cases": cases(),
+        "cases": cases(a.tasks),
         "scoring_code": scoring_commitment(),
         "supervisor_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "views_sha256": hashlib.sha256(a.views.read_bytes()).hexdigest(),
@@ -234,6 +242,8 @@ def main():
             },
         )
     except Exception as error:
+        last_path = out / "batch_status.json"
+        last_status = json.loads(last_path.read_text()) if last_path.is_file() else {}
         write_json(
             out / "batch_status.json",
             {
@@ -241,6 +251,9 @@ def main():
                 "current": current,
                 "completed": completed,
                 "error": str(error),
+                "last_child_observation": last_status
+                if last_status.get("status") == "RUNNING"
+                else None,
                 "planned": len(fields["cases"]),
             },
         )
