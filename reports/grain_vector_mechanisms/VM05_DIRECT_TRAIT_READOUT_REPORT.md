@@ -1,5 +1,18 @@
 # VM05 direct trait readout: protocol and deployment readiness
 
+## Round34: real semantic panel complete
+
+The frozen90 cases/180 forwards completed in85.625s after a verified idle history
+boundary. Primary wording orders17/18 invented behavior pairs as expected, but
+recoded Big5 numeric inversion orders0/10; MBTI listing reversal retains7/8 while
+absolute scores shift markedly. First-token compliance90/90 and candidate mass
+minimum.9924 show that format success is not stable score semantics. Independent
+arithmetic/table replay max4.11e-15. See
+[complete semantic report](VM05_DIRECT_SEMANTICS_REPORT.md).
+Full real source collection/metrics remain open. Preserve the fixed prompt and
+negative/encoding-sensitive controls; do not select a rescue variant. The older
+"semantic panel pending" entries below are historical snapshots, not current status.
+
 ## Round29: full queue implemented and native token resume exercised
 
 601fa58 adds the128-shard bounded queue and independent semantic-parent/cache

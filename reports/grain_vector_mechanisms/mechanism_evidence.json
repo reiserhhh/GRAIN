@@ -163,6 +163,16 @@
       "not_claimed": ["trait_localization", "native_llm_layer_use", "optimal_layer_selection", "multiplicity_adjusted_significance", "independent_mask_replications"]
     },
     {
+      "id": "native_direct_code_sensitivity",
+      "domain": "invented_90_case_qwen_1_5b_panel",
+      "source_report": "VM05_DIRECT_SEMANTICS_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "All180 forwards and independent arithmetic replay complete. Primary behavior ordering17/18, recoded Big5 inversion0/10, MBTI listing reversal7/8 with large score shifts; high first-token compliance is not stable measurement semantics.",
+      "not_claimed": ["human_personality_validity", "natural_text_accuracy", "internal_circuit_localization", "general_llm_incapacity", "calibrated_trait_probability"]
+    },
+    {
       "id": "domain_compatibility",
       "domain": "essays_and_x_snapshot",
       "source_report": "VM06_DOMAIN_INVENTORY_REPORT.md",
@@ -186,7 +196,7 @@
   "remaining": [
     "Finish declared task-conditioned source comparisons; primary, original-dimension and fixed-layer families and all common-source shards are complete.",
     "Complete strong source-only controls, full selection-aware nulls and saved-head replay.",
-    "Compare candidates on identical eligibility/reference-ready sets; the bounded raw stage is queued, not complete.",
+    "Compare candidates on identical eligibility/reference-ready sets; the raw/reference-free stage is complete, other declared families remain open.",
     "Complete real history/direct collection and source readouts, preserving prompt/site and source boundaries.",
     "Freeze source-only choices before opening bridge outcome values.",
     "Synthesize the completed domain packet with function-specific model/prompt limits.",

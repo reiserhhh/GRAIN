@@ -104,6 +104,14 @@ here, and no new state experiment is silently counted as completed.
 
 ## What may enter a future GRAIN observer
 
+Round34's [native semantic panel](VM05_DIRECT_SEMANTICS_REPORT.md) separates
+behavioral ordering from output-code invariance:17/18 primary pairs, but0/10
+correctly recoded Big5 inversion pairs, despite high candidate mass and90/90
+first-token compliance. MBTI ordering mostly survives listing reversal while
+absolute scores shift strongly. These are invented capability/encoding controls,
+not natural personality accuracy or circuit identification. A native score must
+retain its question/encoding identity instead of being treated as author-only.
+
 - Separate records of user evidence, interaction context and evidence-selection
   transformations, rather than treating all conversation tokens as one author.
 - Anonymous function-specific contextual response features with model, task,

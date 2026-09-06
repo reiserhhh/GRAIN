@@ -153,3 +153,25 @@ rank/regularization chosen only inside source-inner folds, matched additive and
 label-permuted controls, and no bridge-driven selection. That follow-up is not
 run, not retrospectively part of the completed comparison and not required to
 call this additive instrument audit complete.
+
+## 6. Native output convention is part of the measured function
+
+Round34's complete invented semantic panel separates correct behavioral ordering
+from invariant score meaning. The standard wording orders17/18 pairs correctly.
+Correctly recoded Big5 scale inversion gives0/10 positive pairs, while MBTI
+preference/answer-list reversal retains7/8 but produces large absolute shifts.
+Candidate mass remains above.9924.
+
+Write `s_e(x)=v_e^T softmax_Ae(logits_theta(x,question_e))`, where e identifies
+the response convention and v_e its declared decoding. A measurement-like
+invariance would preserve s_e after legitimate recoding. It fails in this panel.
+Evidence sensitivity, coding compliance, numerical interpretation and natural-text
+external validity therefore need separate status fields. Neither candidate mass
+nor readable source labels settle the other properties.
+
+This does not imply absent relevant hidden-state distinctions: MBTI ordering can
+persist with a shifted output prior. Nor does the panel localize a reasoning
+circuit or establish a general LLM limitation. Keep the unchanged direct source
+control and planned history/task comparisons to separate contextual representation
+from native answer behavior.
+[Full results](../reports/grain_vector_mechanisms/VM05_DIRECT_SEMANTICS_REPORT.md).
