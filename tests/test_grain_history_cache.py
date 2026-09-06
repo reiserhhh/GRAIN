@@ -68,6 +68,9 @@ def test_history_json_readers_do_not_depend_on_windows_locale():
             "history_collection",
             "history_cache",
             "ready_comparison",
+            "direct_material",
+            "direct_cache",
+            "external_readout_cache",
         )
     ]
     names += [
@@ -76,6 +79,9 @@ def test_history_json_readers_do_not_depend_on_windows_locale():
             "qualify_grain_source_history",
             "collect_grain_source_history",
             "run_grain_history_queue",
+            "run_grain_full_source_readout",
+            "run_grain_same_ready_comparison",
+            "collect_grain_direct_traits",
         )
     ]
     calls = 0

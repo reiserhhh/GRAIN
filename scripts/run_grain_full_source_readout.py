@@ -49,9 +49,11 @@ def source_inputs(a):
     """Validate complete original material, then select exactly one source group."""
     if a.readout == "logit_margins" and a.site != "block_10":
         raise ValueError("Margins are site-independent; use one block10 identifier")
-    source = json.loads(a.views.read_text())
-    common = json.loads((a.preflight_dir / "common_material_manifest.json").read_text())
-    parent = json.loads((a.parent_dir / "manifest.json").read_text())
+    source = json.loads(a.views.read_text(encoding="utf-8"))
+    common = json.loads(
+        (a.preflight_dir / "common_material_manifest.json").read_text(encoding="utf-8")
+    )
+    parent = json.loads((a.parent_dir / "manifest.json").read_text(encoding="utf-8"))
     ids = [b["author_id"] for b in source]
     if (
         len(ids) != len(set(ids))
@@ -324,7 +326,9 @@ def main():
                 8 * 1024**3,
                 update,
             )
-        status = json.loads((a.output_dir / "fit/run_status.json").read_text())
+        status = json.loads(
+            (a.output_dir / "fit/run_status.json").read_text(encoding="utf-8")
+        )
         if status["status"] not in ("COMPLETE", "PREFLIGHT_COMPLETE"):
             raise ValueError("Child did not finish the declared operation")
         result = {

@@ -109,7 +109,7 @@ def execute(a):
     )
     ids, folds = reg["author_ids"][ix], reg[a.task + "_fold"][ix]
     kind = "word_char" if a.feature == "word_char" else "dense"
-    parent = json.loads((a.parent_dir / "manifest.json").read_text())
+    parent = json.loads((a.parent_dir / "manifest.json").read_text(encoding="utf-8"))
     if (
         material_hash({k: v for k, v in parent.items() if k != "identity"})
         != parent["identity"]
@@ -339,7 +339,9 @@ def main():
                 8 * 1024**3,
                 update,
             )
-        status = json.loads((a.output_dir / "fit/run_status.json").read_text())
+        status = json.loads(
+            (a.output_dir / "fit/run_status.json").read_text(encoding="utf-8")
+        )
         if status["status"] not in ("COMPLETE", "PREFLIGHT_COMPLETE"):
             raise ValueError("Child did not complete declared operation")
         result = {
