@@ -2,7 +2,15 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
-2026-09-06第二十五轮：完成完整目标材料的same-current历史登记与独立审计，
+2026-09-06第二十六轮：完成真实历史采集器、有界队列及独立cache验收代码；
+280人/15,120布局队列预检与暂停/重验通过，均为零神经forward。修复独立
+Windows打包依赖与GBK解码问题后，两机324技术布局语义完全一致。
+EI raw/cue两组14条件、70保存fold重播完成；cue清除共享讨论相对count的
+mean-fold AUC差-.00918，CI仅略低于0，2/5折反向，不作因果或人格定论。
+见[历史采集报告](../reports/grain_vector_mechanisms/VM05_HISTORY_COLLECTION_REPORT.md)。
+真实648-forward历史资格仍待原GPU queue COMPLETE；剩余任务不缩减。
+
+第二十五轮：完成完整目标材料的same-current历史登记与独立审计，
 修复token边界误排后7,108人进入strict材料；不是新预测精度。另发现软匹配
 未保证subreddit重合，已做5,910人具备完整备选匹配的可行性诊断。真实神经
 历史资格/采集仍待原GPU队列完成。最新完整状态见

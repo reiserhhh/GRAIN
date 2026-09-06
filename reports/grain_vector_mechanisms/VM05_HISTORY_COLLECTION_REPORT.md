@@ -1,0 +1,122 @@
+# VM05 history observation: production path and qualified limits
+
+2026-09-06, round26. **Implementation and token preflights complete; real history
+neural qualification and collection not yet run.** This extends the material
+report without replacing its7,108-person strict registry or reopening outcomes.
+
+## What will be measured
+
+For each current excerpt x, layer l, question q and registered history H, retain
+both the mean current-token state C_l(x,H,q) and final decision state D_l(x,H,q).
+Each author has three disjoint original12-comment views, each partitioned into
+11 earlier comments and one current comment. No source text is dropped to make
+the experiment appear successful.
+
+The declared contrasts are:
+
+```
+current_context = C_l(x,H_own,q_behavior) - C_l(x,H_matched,q_behavior)
+current_visibility = C_l(x,H_own,q_behavior) - C_l(x,H_invisible,q_behavior)
+decision_context(q) = D_l(x,H_own,q) - D_l(x,H_matched,q)
+task_interaction = decision_context(q_disposition) - decision_context(q_behavior)
+```
+
+There are eight channels including own-current, own-decision and the contrasts
+above. Each channel is an equal-view mean plus standard deviation, not a trait
+score. The five recorded sites include input embeddings as a negative control,
+blocks4/10/16 and final norm; block10 remains the primary neural site. No layer
+was selected using new outcomes.
+
+The current excerpt precedes the question in this causal decoder. Thus current
+states can reflect history but cannot reflect a later question. The interaction
+belongs at the decision position, not the current-token position. The technical
+panel's162 paired-question layouts also have exactly equal current and decision
+positions. This removes a position difference in these tested layouts, not all
+semantic differences between questions.
+
+Variation across three view-level mean effects is not token-level effect
+variance. In particular, Var(C_own - C_matched) at the token level requires the
+cross-history covariance; subtracting two separately stored standard deviations
+does not recover it. No such covariance was measured by the current cache.
+
+## Implemented acceptance chain
+
+1. `qualify_grain_source_history.py`: fixed six source-only authors,324 layouts,
+   planned648 actual Qwen forwards; exact replay, masking and causal controls.
+2. `collect_grain_source_history.py --qualification-replay`: production capture
+   must reconstruct the qualification states and diagnostic logits exactly:
+   2,268 comparison groups across six authors. These include matrix groups, not
+   2,268 scalar coordinates. Token-only packets cannot authorize this step.
+3. Full collection: all strict-registry authors partitioned into128 fixed shards,
+   same donors/masks/layouts. Each author retains90 arrays of shape3x3x1536
+   (view x decision/current mean/current std x coordinate). Identical complete
+   inputs and identical arrays may be cached/aliased only losslessly.
+4. `history_cache.py` independently verifies parent/role/author/shard identities,
+   exact output/checksum sets, all54 logical readouts, array shapes and finite
+   values, causal/input invariants, forward counts and byte bounds.
+5. `run_grain_history_queue.py` uses one owned child, a lock, an eight-hour maximum
+   invocation and24GB maximum cache budget. It stops before an unaffordable
+   shard. Only completely verified shards may be resumed; partial output is
+   preserved and causes a stop, never an overwrite or fake COMPLETE.
+
+Raw diagnostic Yes/No margins concern the existing social-initiation questions.
+They are **not direct Big5/MBTI LLM scores**, which remain a separate open control.
+
+## Actual checks and repaired failures
+
+- cb851d0 and b3a82d8 implemented the collector/cache/queue. Five token-only queue
+  shards covered280 authors and15,120 layouts (8,656 unique complete layouts),
+  then paused correctly. An explicit short resume reverified all five before
+  pausing again. This is not all128 shards and has zero neural forwards.
+- A real command pointing the production replay at an old token-only parent was
+  rejected before model loading or output-directory creation. The original
+  six-author layout bytes are unchanged across local loader refactors.
+- Exported-source execution on Windows first failed because artifact helpers
+  eagerly imported unrelated V8 geometry modules omitted by the history archive.
+  d0206a3 made those imports local to the geometry functions and bound the helper
+  source in the instrument/collector fingerprints. Three entrypoints now have
+  isolated exported-tree import tests; no extra legacy scorer was copied.
+- Windows next exposed a real GBK-default decoding error on UTF-8 participant
+  text, before any model forward. adb66fd makes the history JSON readers explicit
+  UTF-8 and adds an encoding regression test. No text was rewritten or lost.
+- Current Mac r4 and Windows r3 technical preflights both pass324 layouts with
+  identical instrument code and semantic layout SHA
+  `b3d2368a760d54661f547d4bd9c4958c19308646177c3ccc5ee575033765a45b`.
+  Their raw JSON byte hashes differ due to platform newline serialization;
+  semantic equality was checked separately, not assumed from green statuses.
+- The scoped suite passes61 tests, including geometry/readout regressions and
+  exported-source imports. Two existing SWIG deprecation warnings remain. These
+  tests do not replace actual pinned-CUDA qualification.
+
+The separate Windows root is `D:/projects/GRAIN-vector-history-vm05`. Original
+`D:/projects/GRAIN-vector-research-vm01` stays at its frozen running source.
+The material archive SHA is
+`ed3c29a202b5a9125c7a2cf1e73fccd41a566e0a1c02240061acf8db69dcdebb`;
+current source update r3 SHA is
+`11256afddc3bcb51231365ad147496bc98bc548c8a439f15b22c0d6052366437`.
+Private PANDORA material only; no secrets, MEPS files or questionnaire outcomes
+were copied. Staging and cross-platform records are in
+`vm05_history_windows_stage_r1`, operational checks in
+`vm05_history_collection_operational_audit_r1`.
+
+## Next executable step
+
+Wait for the original72-observer-shard queue to be COMPLETE, not merely idle or
+time-paused. The real loader enforces this and at least6GB free CUDA memory.
+In the separate Windows root, with fresh output names:
+
+```powershell
+$py = 'C:/Users/huoke/AppData/Local/Programs/Python/Python311/python.exe'
+$R = 'results/grain_vector_mechanisms'
+$old = 'D:/projects/GRAIN-vector-research-vm01/results/grain_vector_mechanisms/vm05_full_vectors_r1'
+& $py scripts/qualify_grain_source_history.py --views "$R/vm05_qualification_r2/common_views.json" --material-dir "$R/vm05_source_history_material_r2" --audit-dir "$R/vm05_source_history_audit_r2" --qwen-tokenizer "$R/local_model_metadata/qwen_989aa798" --observer-queue-dir $old --output-dir "$R/vm05_history_real_qualification_r1"
+& $py scripts/collect_grain_source_history.py --views "$R/vm05_qualification_r2/common_views.json" --material-dir "$R/vm05_source_history_material_r2" --audit-dir "$R/vm05_source_history_audit_r2" --qwen-tokenizer "$R/local_model_metadata/qwen_989aa798" --observer-queue-dir $old --qualification-dir "$R/vm05_history_real_qualification_r1" --qualification-replay --output-dir "$R/vm05_history_production_replay_r1"
+```
+
+Do not submit the second command unless the first actually qualifies. Estimate
+full runtime/cache from these real six-author observations before starting the
+bounded128-shard queue with that production replay as `--technical-parent`.
+Only after complete collection fit source-only official-fold heads on the same
+supported author/text budgets, followed by same-ready GRAIN increments. Donor
+reference dependence, imperfect topic/time match and near-copy exclusions remain
+in force. Source-head choices must be frozen before any bridge outcome read.

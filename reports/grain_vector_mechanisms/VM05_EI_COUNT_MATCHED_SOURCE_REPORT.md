@@ -1,4 +1,45 @@
-# EI/raw: complete five-seed source sensitivity
+# EI/raw and cue mask: complete five-seed source sensitivity
+
+## Round26 update: complete cue-mask family
+
+Both raw and cue-mask EI control families are now complete:14/84 conditions.
+They use identical6,294 MBTI-only test authors and the same frozen source
+selection protocol. The original raw analysis below remains preserved.
+
+| Cue-mask condition | Pooled OOF AUC | Mean official-fold AUC |
+|---|---:|---:|
+| Retain | .672089 | .672321 |
+| Mean of five count-deletion AUCs | .651767 | .653832 |
+| Purge shared discussions | .634684 | .644656 |
+
+The same explicitly post-hoc, fixed-fold author bootstrap gives:
+
+| Cue-mask contrast | Pooled estimate [95% CI] | Mean-fold estimate [95% CI] |
+|---|---:|---:|
+| Mean count minus retain | -.020321 [-.025361,-.014867] | -.018489 [-.023441,-.013055] |
+| Purge minus mean count | -.017083 [-.027455,-.007058] | -.009176 [-.018336,-.000234] |
+| Purge minus retain | -.037404 [-.048095,-.026830] | -.027665 [-.037408,-.018388] |
+
+This is evidence that source-composition sensitivity remains after the declared
+explicit-personality-cue mask. It does not identify the residual as leakage or
+personality. The mean-fold purge-minus-count upper endpoint is barely below0,
+intervals are not multiplicity-adjusted, and two folds still favor purge:
+-.034814,-.009768,+.014526,+.008307,-.024132. Nor is the small difference between
+raw and cue-mask point estimates evidence that masking improves prediction.
+Placebo and other axes remain pending; do not promote a masking winner.
+
+All14 runs now have independent membership/count audits (336 selection records,
+10 count-matched pairs) and70 saved outer-head replays. The four new cue seed
+replays have maximum error9.80119e-17. `vm05_ei_cue_count_gap_r1` contains the
+complete7-model,1,000-draw analysis, identity
+`9a4dd4c43e2d9556f3b5cb1a447105caa9e312368cc703167a81b53fa013e966`.
+`vm05_ei_cue_gap_independent_rank_audit_r1` recomputes42 observed scalars with
+sklearn rather than tied-rank arithmetic; maximum error1.94289e-16. It does not
+independently regenerate bootstrap draws. This extends an EI sensitivity audit,
+not a new neural or bridge experiment. Source labels were already authorized;
+no new label table or bridge outcomes were opened by this follow-up.
+
+## Earlier raw family, retained in full
 
 2026-09-06. **One control family complete:7/84 planned strong-source conditions.**
 This report supersedes the unfinished five-seed interpretation in

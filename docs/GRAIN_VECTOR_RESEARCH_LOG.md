@@ -1257,3 +1257,70 @@ TOKENIZERS_PARALLELISM=false "$PY" scripts/qualify_grain_source_history.py --vie
 上挑“有效”作者。直接LLM trait研究对照、strong null、神经/同ready读出、
 封头后bridge、最终VM07仍需执行。无bridge outcomes/MEPS量表访问，无新
 付费API/模型下载/LLM训练/push，整体goal仍active，目前不需用户新idea。
+
+## 第二十六轮：历史采集可运行性闭环与完整EI cue控制（2026-09-06）
+
+范围：不碰运行中的原Windows队列、不改六个active source评分文件；补真实
+history采集与验收路径。同步审计新完成的源头条件。仍不读bridge outcomes
+或MEPS量表，不开新LLM训练/付费API/下载，不推送远端git。
+
+- cb851d0：全strict registry采集器，3view x3文本arm x2问题 x3历史条件，
+  每人54逻辑布局、90组3x3x1536数组。只对完整输入完全相同的布局去重，
+  只对完全相同数组无损alias；所有8读出通道保存，不能据效果挑一个丢掉。
+  真实648-forward资格必须先通过，再用同6人生产重播比较2268组状态/候选
+  logits。修正technical model signature从summary取，不从manifest猜。
+- b3a82d8：独立cache验收与串行有界queue。复核整套manifest、作者集合、
+  来源角色、54布局、数组形状/有限性、因果/embedding不变量、forward计数
+  与byte预算；即使篡改后重新签hash，结构错误仍拒绝。最多8h/次、24GB；
+  仅复用完成且重验的分片，partial一律保留停止，不覆盖/冒充complete。
+- vm05_history_queue_preflight_r1：5分片280人、15120逻辑布局、8656唯一
+  布局，62.64s后按预算在分片边界暂停。显式60s resume重验原5分片，仅
+  0.136s即再次预算暂停。都是forwards0，不是模型资格。该preflight保存
+  b3a82d8时源码，后续跨平台修复改变fingerprint，不能拿旧queue继续新代码。
+- 实际错误父包命令把token-only r1当qualification-replay输入，返回
+  ValueError且未建输出目录、未载入模型。Mac r1-r4资格preflight技术作者
+  和布局内容相同；r4 identity08c70e7945dfa1c6e900a92f7cdcfdaadc8d973b2225a2f0cc4a8cbdaf061a75。
+- 明确当前token读出与decision读出不同；当前不能受到后置问题影响。
+  另查技术panel162对问题布局，current位置和decision位置全部相同。三份
+  view均值差的std不等于逐token差的std，后者需跨历史协方差，当前没有采集。
+- 新独立Windows目录D:/projects/GRAIN-vector-history-vm05，原root不改。
+  初次导入失败暴露ready_comparison eager引入未打包v8_bridge依赖。
+  d0206a3把几何依赖移到实际调用函数内，并把artifact helper纳入资格/
+  collector源码指纹；新增三个入口在纯导出源码目录的隔离启动测试。
+- 第二次Windows预检在读取common UTF-8文本时遇GBK默认编码异常。
+  adb66fd为history/相关artifact读取显式指定UTF-8，静态回归测试覆盖所有
+  相关read_text，不重写原文、不借截断或丢弃失败作者绕过。两次失败均发生
+  在模型载入/创建实验输出前；它们是工程可移植性问题，不是神经科学结果。
+- 当前Windows token preflight r3 COMPLETE，324布局、8.312s、forwards0；
+  identity2ac2531505a3f6b0ead0843140e52f69c5d6a7f64a937d7cccfe69287386189c。
+  Mac/Windows代码指纹和semantic layout hash完全一致：
+  b3d2368a760d54661f547d4bd9c4958c19308646177c3ccc5ee575033765a45b。
+  JSON原始byte hash因平台换行不同，未把byte不同误当token不同。
+  archive材料SHAed3c29a202b5a9125c7a2cf1e73fccd41a566e0a1c02240061acf8db69dcdebb；
+  当前代码update_r3 SHA11256afddc3bcb51231365ad147496bc98bc548c8a439f15b22c0d6052366437。
+  只复制既准许的PANDORA材料/源码/本地tokenizer，不含MEPS/心理值/env。
+- 新cue count732-735四条件20fold保存模型复算max9.80119e-17；两组EI raw/
+  cue全部14控制现累计70fold重播。独立source审计336条选择记录、10count
+  配对、8对比，整体仍14/84 PARTIAL。其他轴/安慰剂不能从这14条推定完成。
+- 8c5a050扩展原EI posthoc gap脚本支持预定arm，要求7条全五seed且audited
+  source_identity逐一对应，不选择个别seed。cue retained=.672089，五count
+  平均=.651767，purge=.634684。pooled purge-count=-.017083
+  CI[-.027455,-.007058]；meanfold=-.009176 CI[-.018336,-.000234]，但2/5
+  折反向。这是来源敏感性提示，不是已隔离的泄漏/人格因果作用；raw的
+  meanfold CI仍跨0，保留多重检验、拟合条件固定与fold异质性边界。
+  vm05_ei_cue_count_gap_r1 identity9a4dd4c43e2d9556f3b5cb1a447105caa9e312368cc703167a81b53fa013e966。
+  sklearn独立复算42观测量max1.94289e-16；未另重建全部bootstrap draws。
+- Windows原queue61296最新到shard22 BGE，远端66/72已完成；本地只到20。
+  shard20压缩包309111711bytes，SHA61b9bacedc7959a202a0d5684eb7929975362e628a47978935b3c9e5b9b0b762。
+  CRC/安全不覆盖解包/00-20全部63manifest与cache重验通过，每observer6360人。
+  修正本地备份状态各计数字段一致。21尚待备份，不能把远端完成当本地齐全。
+- 结束前Mac68908执行EI placebo retain，14/84完成；六个active评分文件
+  SHA仍全相同。61专项tests通过（含独立导出启动/历史/ready/readout回归），
+  两个旧SWIG警告。Ruff/diff检查通过；不是全历史仓库或真实CUDA通过。
+
+正式报告新增VM05_HISTORY_COLLECTION_REPORT.md，更新
+VM05_EI_COUNT_MATCHED_SOURCE_REPORT.md。当前代码资格和真实队列仍需实际
+运行：待原72shard COMPLETE -> 六作者648forward资格 -> 生产2268组重播 ->
+据真实时间/cache开启有界全registry历史采集。然后同支持源头/同ready比较，
+直接LLM trait研究对照与强null，封头后bridge，最后综合VM07。没有改变目标
+为“多通过几个小测试”，现在仍有明确可执行工作，不需用户新idea。
