@@ -1,5 +1,12 @@
 # VM05 primary neural readouts: complete source comparison
 
+Round33 status correction: all54 projection/layer sensitivities and the35-head
+raw/reference-free same-ready comparison are complete and replay-audited.
+See [fixed layers](VM05_FIXED_LAYER_REPORT.md) and
+[same-ready increments](VM05_RAW_READY_COMPARISON_REPORT.md). The cached secondary
+readout family is now running. Execution snapshots below are historical; they
+must not be used to restart an already completed sensitivity owner.
+
 Round31 update: all nine original-dimension Big5 comparisons have now been
 paired against the primary PCA heads. Every interval crosses zero; raw Qwen
 pooled delta is+.002450[-.031705,.041042], with mean-fold delta-.002555.

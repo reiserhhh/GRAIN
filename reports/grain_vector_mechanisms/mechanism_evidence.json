@@ -6,6 +6,29 @@
   "released_scorer_changed": false,
   "entries": [
     {
+      "id": "hybrid_additive_capacity",
+      "domain": "saved_source_head_algebra",
+      "source_report": "VM05_RAW_READY_COMPARISON_REPORT.md",
+      "instrument": "observed",
+      "function": "not_tested",
+      "measurement_scope": "saved_head_algebra_only",
+      "psychological_validity": "not_tested",
+      "finding": "All60 saved hybrid heads reproduce affine/logit additivity within4.44e-16 on480 artificial rectangles. Weak additive increments cannot exclude nonlinear complementarity.",
+      "not_claimed": ["nonlinear_personality_synergy", "plausible_person_causal_intervention", "novel_additivity_theorem", "native_llm_mechanism"]
+    },
+    {
+      "id": "same_ready_increment",
+      "domain": "pandora_reference_free_raw_ready_source",
+      "source_report": "VM05_RAW_READY_COMPARISON_REPORT.md",
+      "instrument": "observed",
+      "function": "underresolved",
+      "psychological_validity": "not_tested",
+      "external_association": "underresolved",
+      "measurement_scope": "source_readability_only",
+      "finding": "All35 matched heads accepted.19/20 profile-increment intervals include zero; the small Big5 pooled lead does not persist across both estimands. Combinations minus a weak profile do not establish unique profile information.",
+      "not_claimed": ["full_grain_framework_failure", "robust_unique_profile_increment", "native_llm_trait_inference", "independent_bridge_validity"]
+    },
+    {
       "id": "evidence_fidelity",
       "domain": "natural_memory",
       "source_report": "VM03_NATURAL_MEMORY_REPORT.md",

@@ -1,7 +1,7 @@
 # GRAIN vector mechanism atlas
 
-2026-09-07, round32. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
-The45 primary and45 fixed-layer source-head comparisons are complete; same-ready,
+2026-09-07, round33. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
+The45 primary,45 fixed-layer and35 raw same-ready source-head comparisons are complete; other same-ready,
 task/history/direct comparisons, strong controls/nulls, bridge evaluation and
 final reusable-observer acceptance remain open. The bounded domain-function packet is complete. This atlas records
 what the experiments distinguish; it does not turn every positive statistic
@@ -30,6 +30,8 @@ theoretical refinement so far, not a claim to a newly discovered universal law.
 | Author vs conversation | Complete46-person MEPS fixed/free user correspondence .5908; same-chat user/AI correspondence .9942 | Conversation content can dominate pooled vectors. Role-separated source evidence is required; neither value is personality accuracy |
 | External-label readout | All45 primary neural heads/225 fold replays and15 three-observer paired comparisons complete; raw Big5 BGE/E5/Qwen10 r=.177/.202/.150 | No primary Qwen-minus-BGE positive pointwise interval. These are trained source-head readouts, not the LLM's native decisions; task/history/direct controls remain open. Strong sparse controls are a separate head family |
 | Ranking versus probability | All36 primary MBTI heads improve log loss and Brier over fold-trained prevalence priors, including near-majority EI/SN classifiers | Weak probability differentiation can exist without crossing the0.5 decision threshold. Proper-score gain is not mutual information, calibrated personality probability or native LLM reasoning |
+| Same-ready incremental evidence | Identical144 Big5 /1,539 MBTI authors,35 heads/175 saved folds:19/20 GRAIN-increment intervals include0; Big5 g+BGE pooled+.008295 has a barely positive lower endpoint, mean-fold interval includes0 | g is16 sorted landmark distances, not the full GRAIN framework. Joint-PCA/readout and support-selected population constrain interpretation. Strong combinations minus g do not establish unique g contribution; see [same-ready report](VM05_RAW_READY_COMPARISON_REPORT.md) |
+| Additive head capacity | All60 saved hybrid heads have zero mixed block differences on the identity/logit scale within4.44e-16; coefficient pullback replayed | An affine PCA/head cannot test arbitrary cross-block interactions. Nonlinear complementarity remains possible, not demonstrated. Curvature of the logistic probability link is not a log-odds interaction |
 | Projection/readout restriction | All9 Big5 original-dimension versus PCA pairs complete; all18 pooled/mean-fold intervals cross0 | No demonstrated simple compression rescue, not equivalence or proof that low-variance directions contain no signal. Removing PCA also changes the regularization problem |
 | Fixed-layer accessibility | All45 layer heads/225 saved-fold replays accepted across three arms: EI/SN highest Qwen point estimates at04, TF/Big5 at16, JP at final norm | Nonmonotone, outcome-specific readability is not trait localization or causal layer use. No added Qwen layer's pooled interval has a positive lower bound versus E5. Pointwise comparisons; no outcome-selected layer/blend |
 | Cross-domain scope | Frozen167-case Essays/X context gains;469 case-observer geometry comparisons; lexical/cell follow-up independently replayed | Source similarity and model function correlate, partly through repeated content. Japanese adjusted effect remains underresolved; no language/cultural measurement invariance |

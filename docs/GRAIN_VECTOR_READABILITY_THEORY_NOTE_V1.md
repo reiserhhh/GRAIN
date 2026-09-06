@@ -106,3 +106,50 @@ The core mechanism question becomes: **which computation turns available
 author evidence into a task-usable representation, under which readout and
 source conditions?** If no native advantage appears, report that limit for
 the tested observer rather than declaring that all LLMs lack such a mechanism.
+
+## 5. A hybrid linear probe does not test arbitrary complementarity
+
+Round33 completed the raw same-ready comparison. With a frozen fitted model,
+standardization and unwhitened PCA are affine maps. Ridge's output and the
+binary logistic head's log odds therefore have the form
+
+```
+z = D^(-1)([g,h] - m)
+eta = b + beta^T V(z - m_pca)
+    = b_star + a^T g + c^T h.
+```
+
+Consequently the mixed rectangular difference is exactly zero on this scale:
+
+```
+eta(g+u,h+v) - eta(g+u,h) - eta(g,h+v) + eta(g,h) = 0.
+```
+
+This is a standard algebraic limitation, not a new psychometric theorem. PCA
+mixes coordinates but cannot create products between the two input blocks.
+Logistic probabilities can show nonzero mixed differences because the sigmoid
+is curved; that alone is not an interaction term in the log-odds model. Each
+upstream embedding/profile may itself be nonlinear in text: the limitation is
+specifically the fitted head's cross-block function, not all text processing.
+
+The actual60 saved hybrid heads (two representations x five tasks x five folds
+plus full-source head) pass480 synthetic rectangles, maximum4.44e-16, and exact
+coefficient pullback within4.43e-16. No real feature rows, new target tables,
+refits or neural forwards are used. These artificial inputs verify the saved
+implementation against the algebra; they are not plausible-person interventions.
+Packet: vm05_raw_ready_additivity_audit_r1,
+identityd156388e913a7c5b1327f726135fd69186bfe4b3db575876c902db7dd10a184b.
+
+Thus the observed19/20 zero-crossing GRAIN-increment intervals narrow the claim
+to **weak or uncertain additive usefulness under this projection/cohort**. They
+do not refute nonlinear complementarity. Conversely, the capacity limitation
+does not demonstrate that a useful nonlinear interaction exists in these data.
+Source-trained nonlinear probes would still not prove native LLM causal use.
+
+The current task/history/direct queues remain the next actions, not an expanded
+search for a favorable source score. If interaction becomes a targeted follow-up,
+a declared low-rank bilinear term `g^T U V^T h` is one bounded alternative, with
+rank/regularization chosen only inside source-inner folds, matched additive and
+label-permuted controls, and no bridge-driven selection. That follow-up is not
+run, not retrospectively part of the completed comparison and not required to
+call this additive instrument audit complete.
