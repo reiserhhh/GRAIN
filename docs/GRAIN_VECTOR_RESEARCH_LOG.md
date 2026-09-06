@@ -1479,3 +1479,45 @@ paired CSV SHA c52b960b8cacb67350bb5011206dc493c3a957c4ca641370712a83616a4ca6bd�
 截至后续快照队列到SN原文E5、7/45完成；Windows7/128片392人完成仍live，
 本地history备份仍224人。仍需完整神经/敏感性/same-ready/history/direct/
 强null/封头后bridge/VM07。没有生产模型切换或追加LLM训练。
+
+## 第三十轮：完整45主比较验收，原维/固定层真正接续（2026-09-06至07）
+
+上一轮为有效进展。本轮先验证81895及实际child存活，随后两次有界等待
+观察其完成固定三arm×五task×三observer全45条件；225保存fold重播max
+1.1102230246251565e-16。原队列COMPLETE且进程退出，不是超时当终止。
+
+- full paired packet `vm05_primary_neural_comparison_full_r1`验收全部15三模型
+  组，90配对行；identity
+  d72bc1ddadee26a2588c9e5d9b6940143e06a2f0167fd68e9100361ef2d7c1c7。
+  原文Big5 BGE/E5/Qwen r=.176915/.202323/.150330；四轴AUC依次为
+  EI .618367/.639579/.627869，SN .652762/.655146/.638585，
+  TF .748528/.750560/.735316，JP .615172/.615935/.609213。
+  15个primary Qwen-BGE中只有EI三arm正点估计，全部CI跨0；无正向CI下界。
+  pointwise/固定OOF条件，不多重校正/重拟合/等效性证明。不能宣称Qwen
+  正文pool普遍优势，也不能据此否定任务/历史/直接决策信息。
+- 全量paired CSV SHA
+  e3980b97dc09b32e2233f185da2d30d700144ab89fc8e2b169db4f7adf1fda7f。
+  更新VM05_PRIMARY_NEURAL_SOURCE_REPORT，保留首6模型时间快照，分清
+  全45主比较COMPLETE与全goal未完成。未新增观察器、mask或选层规则。
+- a0c0da3实现预定54敏感性：9 Big5 no-PCA与45 block04/block16/finalnorm。
+  必须45主头完整audit后才开始；验证原源头/模型/hash/投影/五fold重播，
+  同时占用primary和strongCPU锁。未改active评分源码；原强batch继续29/84。
+  4项专测和19项组合回归通过（不可相加），含无PCA真实标记、固定54grid、
+  partial parent拒绝、fit/replay/resume、损坏输出及竞争锁不覆盖。旧SWIG
+  warnings仍在。真实CLI启动后88595/child实测存活，8h/1h每fit/8GiB限制。
+  `vm05_neural_sensitivities_r1` identity
+  f202d8094fd6ea8983f7e01d833ef3cac95d8750f46e14df484daa758e90013b。
+  首12完成时含全部9无PCA/45fold；原文BGE .160954、E5 .181133、Qwen .152780。
+  相对PCA没有明显rescue，未计算完整paired sensitivity前只作描述，不
+  宣称无低方差信号。固定层继续；当前不能手动resume strong或primary。
+- Windows history持续真实执行，最后快照queue65840/child60600存活，
+  13/128完成728作者；已完成004-007新包559599707bytes，SHA
+  32143f91c98ee8e826175525346b5d201ec313e651e8c74aa5b076006fc2e631。
+  拷回Mac后SHA/CRC/安全不覆盖解包、全registry/模型资格/source指纹与
+  每cache独立verify。Mac累计8片448人40320arrays，仍partial。没有复制
+  正在写入的分片，也不把remote728等同本地448验收。
+
+下一块：完成54敏感性及其配对解释、same-ready实际fit、secondary/history
+读出；GPU预算边界后真实direct语义panel与全采集；补strongsource与null，
+源头规则完整冻结后bridge，最终VM07。仍有明确可执行任务，不需用户新idea。
+未打开bridge/MEPS心理值、未训练/下载新LLM、未使用付费API或push。

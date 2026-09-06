@@ -1,4 +1,71 @@
-# VM05 primary neural readouts: first complete source triads
+# VM05 primary neural readouts: complete source comparison
+
+## Round30 complete45-head acceptance
+
+2026-09-07 (execution began September6). **All45 primary heads completed, with225
+saved official-fold replays.** The CPU parent exited normally; maximum absolute
+replay error is1.1102230246251565e-16. The full three-mask/five-task/three-observer
+grid was retained. No missing axis, failed-condition exclusion, best-mask selection
+or new LLM training occurred.
+
+Full paired packet: `vm05_primary_neural_comparison_full_r1`, identity
+`d72bc1ddadee26a2588c9e5d9b6940143e06a2f0167fd68e9100361ef2d7c1c7`.
+It revalidates45 source packets/full-head hashes and225 saved-replay records,
+then compares15 complete observer triads in90 paired estimand rows. All observers
+share1,000 within-official-fold author draws per task/arm. COMPLETE applies to
+this primary comparison, not the program, other readouts, sensitivities or bridge.
+
+| Raw source task | Authors | BGE | E5 | Qwen block10 |
+|---|---:|---:|---:|---:|
+| Big5 mean Pearson |624|.176915|.202323|.150330|
+| EI AUC |6294|.618367|.639579|.627869|
+| SN AUC |6294|.652762|.655146|.638585|
+| TF AUC |6294|.748528|.750560|.735316|
+| JP AUC |6294|.615172|.615935|.609213|
+
+Across the15 primary Qwen-minus-BGE contrasts, only the three EI point estimates
+are positive; their intervals all cross zero for both pooled and mean-fold
+estimands. No primary contrast has a pointwise95% interval wholly above zero.
+Raw TF Qwen-minus-BGE is-.013212[-.018400,-.008065]; SN is-.014177
+[-.031581,.001336] and JP is-.005959[-.013353,.000969]. Big5/EI intervals remain
+in the historical section below. These are not family-adjusted or equivalence
+tests; do not interpret every nonpositive contrast as a demonstrated true deficit.
+
+E5's raw gains over BGE are clearest for Big5 and EI in these pointwise fixed-head
+intervals; SN/TF/JP gains are small with intervals crossing zero. This is not a
+global model-ranking result. Raw TF is relatively readable for all observers,
+while Big5 dimensions remain heterogeneous; no new trait naming follows.
+
+The complete cue/placebo rows remain in observer_scores.csv and metrics_by_trait.csv.
+Their scores are numerically close to raw, but this table does not independently
+estimate mask-effect intervals or establish freedom from shared-discussion/source
+effects. Those controls remain separate.
+
+### Mechanism ruling and immediate execution
+
+The proposition that this LLM's pre-answer body pooling is generally more
+predictive than ordinary embeddings is **not supported by this protocol**. That
+narrows the candidate location of an advantage; it does not establish that task
+conditioning, history-dependent decision states or direct trait answers cannot
+use information differently. Those are still required tests.
+
+The declared54 no-PCA/fixed-layer checks are now actually executing through
+run_grain_neural_sensitivity_batch.py (a0c0da3), holding both CPU resource leases.
+`vm05_neural_sensitivities_r1` identity
+`f202d8094fd6ea8983f7e01d833ef3cac95d8750f46e14df484daa758e90013b`.
+The first12 cases completed/replayed at the latest snapshot, including all9
+no-PCA cases; this is not completed54-case acceptance. Original source scoring
+fingerprints remain unchanged. Do not restart the paused29/84 strong batch now.
+
+Complete-table SHA256 values:
+- observer_scores.csv: `939e2a601743a914a4d71f21f97c0137ed7c61662545ab980ac2fbe7967fa7e0`
+- metrics_by_trait.csv: `d0eb0eedc90afc900e0d0f36e157d2dcc67dcf2f58f2645c975e2746ca69aa38`
+- paired_observer_comparison.csv: `e3980b97dc09b32e2233f185da2d30d700144ab89fc8e2b169db4f7adf1fda7f`
+
+The first-six-head section below is historical. Its partial status is superseded
+for the45-primary grid only, not the whole plan.
+
+## Round29 first-triad snapshot
 
 2026-09-06, round29 extension. **Partial comparison:6 of45 primary heads accepted
 in this snapshot.** These are complete source cohorts for two tasks, not six

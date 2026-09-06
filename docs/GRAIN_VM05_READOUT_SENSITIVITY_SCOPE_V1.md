@@ -96,6 +96,13 @@ Use common input arguments from the primary source queue, plus:
 The named full audit is required, not assumed to exist. Four scoped tests cover
 the54-condition grid, source/PCA/fold rejection, partial-primary rejection and
 synthetic bounded fit/replay/resume including corrupt-output and competing-lock
-preservation. Real sensitivity fits have **not run** at this implementation
-checkpoint. No new human-outcome result is reported here. Bridge outcomes and
-MEPS scale values stay closed under the existing source-head freeze gate.
+preservation. Real sensitivity fits had **not run** at that implementation checkpoint.
+
+Round30 execution update (September7): after complete45-primary/225-replay audit,
+the54-case batch started; parent88595 and its child were verified live. Output
+`vm05_neural_sensitivities_r1`, identity
+`f202d8094fd6ea8983f7e01d833ef3cac95d8750f46e14df484daa758e90013b`.
+First12 cases completed/replayed, including all9 no-PCA, at this snapshot; not a
+finished54-case result or complete paired sensitivity analysis. The19-test combined
+regression suite passed with two old SWIG warnings. Bridge outcomes and MEPS scale
+values remain closed; no primary scoring file was edited or new LLM trained.
