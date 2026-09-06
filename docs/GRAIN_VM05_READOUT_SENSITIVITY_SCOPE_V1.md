@@ -67,6 +67,35 @@ saved-five-fold replay, not just an apparently successful process exit.
   direct scoring and stronger source nulls remain separate requirements. Neither
   a compression advantage nor a layer advantage alone closes the mechanism claim.
 
-Current status: protocol coverage explicit;54 follow-up fits **not run**. No new
-human-outcome result is reported here. Bridge outcomes and MEPS scale values stay
-closed under the existing source-head freeze gate.
+## Bounded implementation (round30)
+
+`scripts/run_grain_neural_sensitivity_batch.py` implements the exact54 conditions,
+starting with all9 original-dimension Ridge checks. It requires the primary queue
+to be COMPLETE and the paired primary audit to contain all45 heads/15 triads.
+It verifies that audit's source output hashes, current scoring code, original
+resource identity and input commitments. It then acquires both the primary and
+strong-source CPU locks before any child; no live scoring file is changed.
+
+Each condition runs through the existing source fitter and five-fold saved-model
+replay. The verifier checks the actual PCA flag as well as source membership,
+official folds and numerical replay. Budget8h/invocation,1h/8GiB per fit and10min
+per replay. Identical explicit resume verifies completed outputs; partial/corrupt
+outputs are preserved and stop the batch, never automatically overwritten/refit.
+Lock refusal must leave an existing result status unchanged.
+
+Use common input arguments from the primary source queue, plus:
+
+```text
+--primary-dir results/grain_vector_mechanisms/vm05_full_neural_source_heads_r1
+--audit-dir results/grain_vector_mechanisms/vm05_primary_neural_comparison_full_r1
+--resource-dir results/grain_vector_mechanisms/vm05_strong_source_controls_r1
+--output-dir results/grain_vector_mechanisms/vm05_neural_sensitivities_r1
+--max-seconds 28800
+```
+
+The named full audit is required, not assumed to exist. Four scoped tests cover
+the54-condition grid, source/PCA/fold rejection, partial-primary rejection and
+synthetic bounded fit/replay/resume including corrupt-output and competing-lock
+preservation. Real sensitivity fits have **not run** at this implementation
+checkpoint. No new human-outcome result is reported here. Bridge outcomes and
+MEPS scale values stay closed under the existing source-head freeze gate.
