@@ -36,8 +36,8 @@ def archive_instrument(root, output):
                 z.write(p, p.relative_to(root).as_posix())
 
 
-def technical_cases(views, material_dir, audit_dir):
-    """Bind complete material/audit and select two Big5/four MBTI cases label-blind."""
+def registered_cases(views, material_dir, audit_dir):
+    """Bind complete material/audit and return the entire strict label-free registry."""
     m, _ = verified_packet(material_dir)
     am, audit = verified_packet(audit_dir)
     source = json.loads(Path(views).read_text())
@@ -66,11 +66,23 @@ def technical_cases(views, material_dir, audit_dir):
     ):
         raise ValueError("Invalid strict-registry membership")
     allowed = set(table.loc[table.strict_no_near_copy, "author_id"])
+    selected = [b for b in cases if b["author_id"] in allowed]
+    by_author = {b["author_id"]: b for b in source}
+    if len(selected) != len(allowed) or any(
+        b["author_id"] not in by_author
+        or b["source_group"] != by_author[b["author_id"]]["source_group"]
+        for b in selected
+    ):
+        raise ValueError("Strict source roles differ")
+    return by_author, selected, m, am
+
+
+def technical_cases(views, material_dir, audit_dir):
+    """Select the same two Big5/four MBTI cases without using outcome values."""
+    source, cases, m, am = registered_cases(views, material_dir, audit_dir)
     selected = []
     for group, count in (("big5_only", 2), ("mbti_only", 4)):
-        eligible = [
-            b for b in cases if b["source_group"] == group and b["author_id"] in allowed
-        ]
+        eligible = [b for b in cases if b["source_group"] == group]
         if len(eligible) < count:
             raise ValueError("Insufficient source-only technical support")
         selected.extend(
@@ -79,7 +91,7 @@ def technical_cases(views, material_dir, audit_dir):
                 key=lambda b: stable_key(b["author_id"], "history_instrument_731"),
             )[:count]
         )
-    return {b["author_id"]: b for b in source}, selected, m, am
+    return source, selected, m, am
 
 
 def material_layouts(case, by_author, tokenizer):
