@@ -1,0 +1,96 @@
+# VM05 source-safe same-current history counterfactual
+
+2026-09-06. New material/instrument protocol, before any new neural history
+features are compared with source outcomes. This implements the missing context
+object from GRAIN_VECTOR_INFERENCE_MECHANISM_PLAN_V1, not another task-difference
+or author-matching substitute. The existing observer/source jobs remain unchanged.
+
+## Object and question
+
+For each of the three original12-comment views, keep the latest comment as
+current x and all11 earlier comments as own history H. Require strict time order,
+distinct discussions and no normalized duplicate bodies. All36 own comments are
+preserved across the three views; reject an unsupported author rather than
+changing the input budget or replacing an awkward comment.
+
+Compare current-token representations and decision positions under own history,
+one matched other-author history and a history-invisible control:
+
+```
+delta_history(x,q) = h(x | H_own,q) - h(x | H_matched,q)
+delta_visibility(x,q) = h(x | H_own,q) - h(x | history invisible,q)
+task_interaction = delta_history(x,q_disposition) - delta_history(x,q_behavior)
+```
+
+The first is relative to a particular matched donor, not an exactly evaluated
+population expectation. Matching conditions on topic/time/length proxies and may
+remove meaningful choice variation. Preserve all arms; never interpret a residual
+as pure personality, or a common component as disposable noise.
+
+## Reference and support rules
+
+The99 historical geometry-reference authors in the original common-material
+budget table are a **fixed, label-unused history dictionary**. Exclude them from
+all source prediction/evaluation rows for this experiment. They are MBTI-only and
+not culturally/personality representative; report this reference dependence.
+No source/test author donates to another test/train author. No bridge donor,
+questionnaire value, source label, newly learned embedding or outer-CV score is
+used to select histories. Existing reference exposure remains disclosed.
+
+Candidate histories consist of the11 prior comments of each reference view.
+They must predate the target current, share no discussion/comment/normalized body
+with any of the target's36 comments, and have a different author. Reuse the
+earlier fixed matching rule: absolute log token-length ratio plus .15 times
+log-time-gap difference plus .5 times one-minus-subreddit-Jaccard. Break ties
+deterministically. Choose once on raw input, then reuse the same donor under
+raw/cue/placebo; no outcome- or mask-dependent rematching. Report reuse, support,
+length/time/topic mismatch rather than claiming these proxies perfectly match.
+
+## Token and numerical controls
+
+Build own and matched prompts with identical system/task/current. Tokenize the
+actual pinned Qwen chat template, locate the full history block via character
+offsets and split the token stream into prefix/history/suffix. Include boundary-
+straddling history tokens in the history block. Prefix/suffix and all current
+token IDs must match exactly; otherwise reject the view before forwards.
+
+Reserve the longer history block's token count as one fixed slot. Shorter arms
+use invisible masked padding inside that slot. The no-history arm is **the same
+layout with history keys masked**, not a newly tokenized shorter prompt and not
+the instruction "No history". All visible current/suffix positions are identical
+within the comparison. Use explicit absolute position IDs, no KV cache, fixed
+3072 execution length and the original16-token safety margin. Never silently
+truncate. This is an attention-mask intervention, not ordinary conversational
+memory removal; record both the mask and the retained token positions.
+
+Keep all four originally declared Qwen sites in the protocol; block10 remains
+primary. Capture input-embedding equality as an instrument, not an author score.
+Pre-question current states must be question-invariant under the same layout.
+Qualification must test replay, changing only masked token IDs, exact current
+token/position equality, all-visible agreement with the existing observer when
+layouts coincide, and masking/restoring history. Tiny synthetic models can test
+plumbing but cannot replace pinned-real-checkpoint qualification.
+
+## Execution phases and comparisons
+
+1. Label-free complete-source material audit, including support in each group,
+   reference exclusion, official folds, same-ready overlap and token budget.
+   No weights are loaded during this phase. Save source hashes and private
+   selection/layout commitments. Unavailable cases remain explicit.
+2. Synthetic instrument controls, then a fixed technical panel on the pinned
+   Qwen checkpoint after the current GPU collector reaches its terminal state.
+   Do not resync a running remote repository. Budget actual forwards/cache bytes
+   before committing a full source queue; each invocation remains bounded.
+3. Collect the complete supported source/bridge material without target values.
+   Compare original observers restricted/refitted to the **same** supported
+   authors and36-comment budget. Source heads: Big5-only and MBTI-only separately,
+   official outer folds/inner source selection, same frozen readout family.
+4. Compare GRAIN, history effect and their combination on the matching accepted
+   GRAIN subset. A support restriction is not a whole-population improvement.
+   Freeze all source-side choices before bridge outcomes. Direct LLM Big5/MBTI
+   scoring is a separate still-open research control, not these two initiation
+   questions. No new LLM weight training or paid API use.
+
+This protocol addresses model-side context effects, not human trait causality,
+temporal test-retest or clinical assessment validity. A null or support failure
+is evidence about this explicitly defined candidate, not the whole GRAIN theory.
