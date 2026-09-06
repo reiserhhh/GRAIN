@@ -124,6 +124,7 @@ def run(a):
                 "grain_research/vector_mechanisms/trace.py",
                 "grain_research/vector_mechanisms/external_material.py",
                 "grain_research/vector_mechanisms/context.py",
+                "grain_research/vector_mechanisms/ready_comparison.py",
             )
         },
         "labels_read": False,

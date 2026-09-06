@@ -3,6 +3,10 @@
 
 import copy
 import json
+import subprocess
+import sys
+import zipfile
+from pathlib import Path
 from types import SimpleNamespace
 
 import numpy as np
@@ -19,6 +23,33 @@ from grain_research.vector_mechanisms.history_collection import (
     observation_signature,
 )
 from grain_research.vector_mechanisms.ready_comparison import digest
+
+
+def test_history_archive_imports_without_unrelated_legacy_scoring_modules(tmp_path):
+    """Execute entrypoints only from exported source, not the full development tree."""
+    from grain_research.vector_mechanisms.history_instrument import archive_instrument
+
+    archive = tmp_path / "source.zip"
+    archive_instrument(Path(__file__).resolve().parents[1], archive)
+    isolated = tmp_path / "isolated"
+    with zipfile.ZipFile(archive) as z:
+        z.extractall(isolated)
+    assert not (isolated / "suica_core/v8_bridge.py").exists()
+    for script in (
+        "qualify_grain_source_history.py",
+        "collect_grain_source_history.py",
+        "run_grain_history_queue.py",
+    ):
+        p = subprocess.run(
+            [sys.executable, "-I", str(isolated / "scripts" / script), "--help"],
+            cwd=isolated,
+            capture_output=True,
+            text=True,
+            check=False,
+            timeout=30,
+        )
+        assert p.returncode == 0, p.stderr
+        assert "--views" in p.stdout
 
 
 def write(path, value):

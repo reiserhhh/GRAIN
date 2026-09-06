@@ -12,7 +12,6 @@ from sklearn.model_selection import KFold
 
 from .controls import material_hash
 from .external_heads import metrics, predict_head, select_head
-from .ready_registry import registry_arrays, source_indices
 
 FEATURES = (
     "word_char",
@@ -75,6 +74,7 @@ def load_registry_inputs(views, registry_dir, audit_dir, profile_dir, preflight_
     import pandas as pd
 
     from .external_controls import exclude_reference
+    from .ready_registry import registry_arrays
 
     source = json.loads(Path(views).read_text())
     common = json.loads(
@@ -125,6 +125,8 @@ def feature_matrix(
 ):
     """Return aligned source-only rows; concatenation never fits a transform here."""
     from scripts.run_grain_vector_mechanism_external_features import bundle_arms
+
+    from .ready_registry import source_indices
 
     if feature not in FEATURES or arm not in ("raw", "cue_mask", "placebo_mask"):
         raise ValueError("Unsupported frozen feature/arm")
