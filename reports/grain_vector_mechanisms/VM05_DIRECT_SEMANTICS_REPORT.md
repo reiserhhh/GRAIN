@@ -71,6 +71,12 @@ scores, context effects, readout controls and source-frozen bridge remain requir
 
 ## Evidence and limits
 
+Round35's bounded post-hoc [logit interaction diagnostic](VM05_ENCODING_INTERACTION_REPORT.md)
+finds that the change is not merely a constant candidate-bias shift on these
+examples. It does not apply a calibration or invalidate repeatability under a
+fixed prompt. Cross-convention invariance and fixed-protocol repeatability are
+distinct requirements; the latter passed the original double-forward check.
+
 - Packet vm05_direct_semantics_real_r1, identity
   cae61a997fb36bd5d94605b9117ebfd9a089169c537f248963e2c6fdcc09fe9b.
   All90 cases repeated exactly by the collector;180 forwards in85.625s.

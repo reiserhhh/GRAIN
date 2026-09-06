@@ -112,6 +112,12 @@ absolute scores shift strongly. These are invented capability/encoding controls,
 not natural personality accuracy or circuit identification. A native score must
 retain its question/encoding identity instead of being treated as author-only.
 
+The [bounded post-hoc logit analysis](VM05_ENCODING_INTERACTION_REPORT.md) further
+separates a fixed response prior from input-dependent coding effects. The latter
+remain after fixing only the common-logit gauge; this is not a new personality
+factor, no calibrated predictions were substituted, and fixed-prompt numerical
+repeatability remains intact. Whole-program requirements are unchanged.
+
 - Separate records of user evidence, interaction context and evidence-selection
   transformations, rather than treating all conversation tokens as one author.
 - Anonymous function-specific contextual response features with model, task,

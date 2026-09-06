@@ -175,3 +175,14 @@ circuit or establish a general LLM limitation. Keep the unchanged direct source
 control and planned history/task comparisons to separate contextual representation
 from native answer behavior.
 [Full results](../reports/grain_vector_mechanisms/VM05_DIRECT_SEMANTICS_REPORT.md).
+
+Round35 adds a bounded post-hoc necessary-condition check. Align candidate logits
+by declared semantic score, then subtract the common logit mean to fix only the
+softmax gauge. Under `u_e(x)=b_e+g(x)`, the mixed contrast
+`[u_c(high)-u_p(high)]-[u_c(low)-u_p(low)]` is zero and independent of the
+no-evidence reference. Actual recorded contrasts are nonzero, so a fixed vector
+bias cannot restore exact semantic response invariance on these authored cases.
+This is not proof that calibration cannot improve rankings, nor a new personality
+law or localization of the responsible computation. Probability-scale mixed
+differences alone would be insufficient because the sigmoid is nonlinear.
+See [the complete diagnostic](../reports/grain_vector_mechanisms/VM05_ENCODING_INTERACTION_REPORT.md).

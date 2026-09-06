@@ -169,7 +169,7 @@
       "instrument": "observed",
       "function": "observed",
       "psychological_validity": "not_tested",
-      "finding": "All180 forwards and independent arithmetic replay complete. Primary behavior ordering17/18, recoded Big5 inversion0/10, MBTI listing reversal7/8 with large score shifts; high first-token compliance is not stable measurement semantics.",
+      "finding": "All180 forwards and independent arithmetic replay complete. Primary behavior ordering17/18, recoded Big5 inversion0/10, MBTI listing reversal7/8 with large score shifts. Post-hoc semantic-logit mixed contrasts are not explained by a constant bias alone; this does not negate fixed-prompt repeatability or all calibration benefits.",
       "not_claimed": ["human_personality_validity", "natural_text_accuracy", "internal_circuit_localization", "general_llm_incapacity", "calibrated_trait_probability"]
     },
     {
