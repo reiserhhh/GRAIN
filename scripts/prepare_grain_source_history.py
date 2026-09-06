@@ -47,7 +47,7 @@ def reference_ids(source, budget):
     return reference
 
 
-def check_layouts(tokenizer, own, donor, current):
+def check_layouts(tokenizer, own, donor, current, *, enclose_separator=False):
     """Build every arm/task without rematching; save commitments, not token arrays."""
     masked = {
         c["comment_id"]: masked_comment(c["body"], c["comment_id"])[0]
@@ -60,8 +60,12 @@ def check_layouts(tokenizer, own, donor, current):
         x = masked[current["comment_id"]][arm]
         previous = None
         for task in QUESTIONS:
-            a = tokenize_parts(tokenizer, h, x, task)
-            b = tokenize_parts(tokenizer, d, x, task)
+            a = tokenize_parts(
+                tokenizer, h, x, task, enclose_separator=enclose_separator
+            )
+            b = tokenize_parts(
+                tokenizer, d, x, task, enclose_separator=enclose_separator
+            )
             triplet = aligned_triplet(a, b, tokenizer.pad_token_id or 0)
             cur = {
                 name: (r["current_positions"], r["current_token_sha256"])
@@ -102,6 +106,12 @@ def main():
     ):
         p.add_argument("--" + name, type=Path, required=True)
     p.add_argument("--max-seconds", type=int, default=1800)
+    p.add_argument(
+        "--history-envelope",
+        choices=("body_only", "body_and_separator"),
+        default="body_only",
+        help="History interval only; does not change native text or tokenization.",
+    )
     a = p.parse_args()
     if not 60 <= a.max_seconds <= 1800 or not a.output_dir.resolve().is_relative_to(
         ROOT / "results"
@@ -170,6 +180,7 @@ def main():
         "dictionary_views": len(donors),
         "target_authors": len(targets),
         "matching_rule": "raw:log_length+.15log_gap+.5(1-jaccard)",
+        "history_envelope": a.history_envelope,
         "qwen_revision": preflight["qwen_revision"],
         "qwen_tokenizer_files": preflight["qwen_tokenizer_files"],
         "pad_length": 3072,
@@ -208,7 +219,13 @@ def main():
                     profile(history, token_count), current, all_comments, donors
                 )
                 d = choice["donor"]
-                layouts = check_layouts(tokenizer, history, d["history"], current)
+                layouts = check_layouts(
+                    tokenizer,
+                    history,
+                    d["history"],
+                    current,
+                    enclose_separator=a.history_envelope == "body_and_separator",
+                )
                 rows.append(
                     {
                         "view": vi,

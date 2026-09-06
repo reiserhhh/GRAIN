@@ -98,6 +98,51 @@ class CharTokenizer:
         }
 
 
+class BoundaryTokenizer(CharTokenizer):
+    """Mimic punctuation/newline merges that cross the raw history boundary."""
+
+    def __call__(self, text, **kwargs):
+        ids, offsets = [], []
+        i = 0
+        while i < len(text):
+            if text[i : i + 3] == ".\n\n":
+                ids.append(1000)
+                offsets.append((i, i + 3))
+                i += 3
+            else:
+                ids.append(ord(text[i]))
+                offsets.append((i, i + 1))
+                i += 1
+        return {"input_ids": ids, "offset_mapping": offsets}
+
+    def apply_chat_template(self, messages, tokenize, add_generation_prompt):
+        text = super().apply_chat_template(messages, False, add_generation_prompt)
+        return self(text)["input_ids"] if tokenize else text
+
+
+def test_separator_envelope_repairs_boundary_without_retokenizing():
+    tok = BoundaryTokenizer()
+    own, donor = comments("own")[:11], comments("donor")[:11]
+    own[-1]["body"] += "."
+    donor[-1]["body"] += "!"
+    before = [tokenize_parts(tok, h, "fixed current", "behavior") for h in (own, donor)]
+    with pytest.raises(ValueError, match="differ"):
+        aligned_triplet(*before, 0, max_length=4096)
+    after = [
+        tokenize_parts(tok, h, "fixed current", "behavior", enclose_separator=True)
+        for h in (own, donor)
+    ]
+    for a, b in zip(before, after):
+        assert a["native_ids"] == b["native_ids"]
+        assert [a["suffix"][i] for i in a["current_in_suffix"]] == [
+            b["suffix"][i] for i in b["current_in_suffix"]
+        ]
+    rows = aligned_triplet(*after, 0, max_length=4096)
+    assert len({tuple(r["current_positions"]) for r in rows.values()}) == 1
+    assert len({r["current_token_sha256"] for r in rows.values()}) == 1
+    assert after[0]["suffix"] == after[1]["suffix"]
+
+
 def test_chat_boundaries_and_fixed_current_triplet():
     tok = CharTokenizer()
     own = tokenize_parts(tok, comments("a")[:11], "constant current words", "behavior")

@@ -111,9 +111,13 @@ def render(history, current, task):
     return user, (len(pre), len(pre) + len(h)), (start, start + len(current))
 
 
-def tokenize_parts(tokenizer, history, current, task):
+def tokenize_parts(tokenizer, history, current, task, *, enclose_separator=False):
     """Split native chat tokens; absorb boundary-straddling tokens into history."""
     user, history_span, current_span = render(history, current, task)
+    if enclose_separator:
+        if user[history_span[1] : history_span[1] + 2] != "\n\n":
+            raise ValueError("Expected exact history/current separator")
+        history_span = (history_span[0], history_span[1] + 2)
     rendered = tokenizer.apply_chat_template(
         [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}],
         tokenize=False,

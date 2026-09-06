@@ -116,3 +116,22 @@ same retained authors, not borrowed from a larger population. Independent lineag
 and matching reconstruction is distinct from full independent tokenizer replay;
 report coverage of each audit explicitly, then test token layouts on the pinned
 technical panel before scaling.
+
+## Token-boundary instrument repair, 2026-09-06
+
+The first full material pass (r1, body-only history interval) supported4551 of7167
+target authors;2569 were rejected by prefix/suffix/current-token equality. An
+outcome-blind hashed panel of64 rejected authors per source group (192 total)
+identified a boundary-bookkeeping problem: punctuation can merge with the two
+newlines after history, so one native token crosses the interval while another
+prompt leaves the separator in its suffix. Enclosing the **exact existing two
+newlines** in both history intervals restored all192 authors/3456 arm-task layouts,
+with zero native token changes. This is not a prompt rewrite or a loosened
+equality gate. The current excerpt, template and matching rule remain unchanged.
+
+Retain r1 and its independent audit. The next complete preparation uses an
+explicit `--history-envelope body_and_separator`, recorded in the manifest, in a
+new r2 directory. Its invisible history mask includes these same separator tokens;
+this convention must be kept in qualification and every real forward. Repeat the
+complete support and independent matching/copy audit; panel recovery alone does
+not establish full support. No labels or real model responses chose this repair.
