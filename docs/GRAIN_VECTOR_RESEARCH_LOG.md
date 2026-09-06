@@ -1016,3 +1016,56 @@ GRAIN_VECTOR_REMAINING_REQUIREMENTS.md逐项对回完整原计划：MEPS264views
 下一步保持单Mac重拟合，审计完成的强来源条件；继续核验Windows完整神经
 表示。完整强null、神经源头/同ready/封头后bridge/最终VM07仍必须做。
 当前无需用户新idea，没有外部阻塞；不以本轮方法工程修复替代人格机制发现。
+
+## 第二十二轮：同ready身份闭环、比较入口落地与强来源首批审计
+
+2026-09-06 16:15 JST检查点。本轮progress，goal active。正在拟合的
+external_heads/links/controls及Windows aa51b06均未修改；只新增独立入口。
+
+- 750c6ac冻结same-ready protocol/registry/独立auditor。真实7,266人材料
+  生成registry，identity d125e4a3e6d5e20fabd71419bb9b31da5585517971a4f4857848aa92798dc079。
+  raw_ready Big5/MBTI/bridge=144/1566/62；all-arm=143/1495/61；排除旧参照
+  后分别144/1539/62、143/1469/61。旧99人中只有27/26落在ready集，不能
+  从每个子集机械减99。未读取source/bridge标签值、零forward/fit。
+- vm05_same_ready_registry_audit_r1独立重构12数组、840内外训练成员记录、
+  12coverage/20training-support行，全部一致。最小训练人数Big5=65、
+  MBTI=486；只达到算法最低样本门槛，不等于类别支持/统计功效验收。
+  registry相关119tests通过，2历史SWIG warnings；非全仓库测试。
+- fae1273新增run_grain_same_ready_comparison.py及ready_comparison模块。
+  同36评论/合格作者，支持TF-IDF、BGE/E5、Qwen各冻结body层、[g,q10]/[g,b]。
+  g=16 sorted distances，不把完整GRAIN4W理论等同此旧profile。原已完成
+  profile父项不重复拟合；真正改变作者集的reference-free分支才允许新g头。
+  内外折/全源47target-support检查、内折scaler/PCA及原参数grid、5保存fold
+  和全源head、原生概率状态、输出hash/重播。单owned子进程8GiB/默认1h，
+  partial不覆盖；所有72神经shards完成/hash通过才允许神经比较。
+- 新入口全synthetic Big5/MBTI各5fold+full/replay通过，未touch真人标签；
+  12focused tests及46项ready/source/resource/domain regression通过，Ruff/
+  diff检查通过。equal-view/任务后decision states未被这个入口悄悄视为完成。
+- 实际preflight-only：vm05_ready_big5_sparse_preflight_r1，144人6.37sec，
+  identity64e52a0211b830ed26f18c759e6f0a8b84ab90a8844c31e96c0203c09527d3dc；
+  vm05_ready_ei_sparse_preflight_r1，1539人9.88sec，identity
+  0e2ce2a26e9ba40f12db62f3d075d5c1324717d661f410ebc848bc0583716f7e。
+  零标签转换/模型拟合/神经forward，不以preflight替代实际同ready比较。
+- 强来源batch已完成EI raw retain/purge/count731共3/84。AUC分别
+  .670973/.637082/.644727，meanfold .671157/.646169/.655628。
+  vm05_strong_source_audit_first_count_r1独立验3case/72成员记录/1count配对；
+  三个独立重播packet共15保存fold max9.71e-17。全5count种子尚未完成，
+  auditor正确保留purge-vs-five-count对比为pending，不采用第一个seed结论。
+- EI同6294评估作者：排参照重拟合vs原模型同作者限制，delta=-.000462
+  CI[-.001932,.001063]。purge-retain=-.033891 CI[-.044132,-.023754]，
+  但训练人数从约5,000变约2,400，不能称已证明线程泄漏。first count同样
+  下跌只是中途观察；当前count732/58532真实运行310秒，session89662持续。
+  新VM05_STRONG_SOURCE_CONTROL_CHECKPOINT明确保留样本量/组成替代解释。
+- 复核Brier定义并修正文档：Logistic原生概率可以直接用Brier，不要求先
+  calibrator；但Brier混合校准/区分度/不确定性，不能单凭Brier宣称已校准。
+  依据sklearn官方calibration说明；仅解释修正，没有改旧代码/阈值/结果。
+- Windows61296实测Qwen16已279作者/1109sec，父queue50shards完成，持续
+  活跃而非卡死。shard15备份304224683bytes，SHA
+  be714f17b0a88a9d57bc031bf70c9097ddeab2502f8238bfd4c08e04f7b2d3f3。
+  传输SHA/CRC/安全不覆盖解包及00--15全48缓存/manifest重验完成，每模型
+  4848人。50远端完成不等于50本地归档；whole_queue_complete=false。
+
+本轮无bridge outcome/MEPS问卷访问、付费API、模型下载、新LLM训练或push。
+继续现有强来源对照、全量向量归档，再真实同ready源头/增量比较；原计划
+equal-view/decision/context等缺项仍需补齐。强null和封头后bridge未完成。
+当前问题是研究执行与来源机制分离，不需要用户新idea；不将active目标标完结。

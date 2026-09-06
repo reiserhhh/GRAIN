@@ -275,7 +275,7 @@ m_{u,k}=A_k(\{\Delta h_{u,l},I_{u,k},\Delta s_{u,k}\}),\quad
 
 核心比较为：GRAIN、传统 TF-IDF/BGE、LLM pooled、内部上下文效应、GRAIN+内部效应，共同材料预算和同类正则头。记录原文直接 LLM 打分为研究对照，不替换正式确定性计分器。
 
-Big5 用 Pearson/Spearman/MAE/RMSE/校准偏差，MBTI 用 AUC/PR-AUC/balanced accuracy/Brier/校准；Brier 只对训练侧校准的概率用，不对 raw Ridge 分数用。按维度报告 Δ 与作者 bootstrap CI，不把标签 0/1 当作“概率真值连续尺度”。
+Big5 用 Pearson/Spearman/MAE/RMSE/校准偏差，MBTI 用 AUC/PR-AUC/balanced accuracy/Brier/校准。2026-09-06 解释修正：Brier 可用于模型原生的概率输出（如 Logistic predict_proba），不要求先做额外校准，也不能用于 raw Ridge 分数。Brier 同时受校准、区分度和标签不确定性影响，低 Brier 不等于已校准；单独记录是否额外校准及校准证据。任何额外校准只能在 source 训练侧完成，不得用 outer/bridge 标签拟合。本修正不更换正在运行的估计器、阈值或评分数值。参见 [scikit-learn probability calibration](https://scikit-learn.org/stable/modules/calibration.html)。按维度报告 Δ 与作者 bootstrap CI，不把标签 0/1 当作“概率真值连续尺度”。
 
 若复用 corrected H2：Big5-only 训练相应头、MBTI-only 训练相应头、bridge 用于结构评估；bridge 不参与方向/权重选择。对于主要个人预测任务，可按对应官方 trait/axis folds；不能把 per-axis folds 强行拼成一个四轴统一 split。所有内部选择与外部评估分开。
 
