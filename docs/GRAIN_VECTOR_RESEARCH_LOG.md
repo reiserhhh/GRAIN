@@ -1606,3 +1606,56 @@ secondary状态只对应两条social-initiation问法，不能把它们冒充九
 内部计算。未改任何活跃collector/frozen评分源码，bridge/MEPS心理值未开，
 无LLM训练/下载/付费API/push。继续同ready及secondary/history/direct/
 strong null/源头封头后bridge/VM07；goal仍active，尚不需要用户新idea。
+
+## 第三十三轮：同ready完整增量与加性读出的边界（2026-09-07）
+
+175f307实现完整同ready配对分析器及315-case缓存读出监督器。实际source
+无标签预检624 Big5/6294每MBTI轴；five vector readouts x4sites x3arms
+x5tasks=300，加15个只记block10的site-independent margins，不重复
+body_token。先完整90个block10再225其它层，非选层。每child1h8GiB/
+每invocation8h/等待3h，需剩余3660s才开新child。必须等raw-ready整组
+paired完成、owner退出后持有四前驱CPU锁；原单条件runner完全未改。
+
+原90901/session31627正常COMPLETE并退出，34新头实际fit阶段2517.25s。
+170保存fold重播均0；复用原Big5 profile并独立重播8.33e-17，合175fold。
+完整paired包`vm05_raw_ready_paired_comparison_r1`，identity
+d5e55b439997d64bb2e8dc88dbe4ba22d3fb56781ff958c7f3197c0adb292cb8；
+35分数行/90配对行，paired CSV SHA
+d44f1a4e52549a13fc3fae051f02a116018dfc3c28727c7a5f6dd2b5cb46a5bc。
+Big5 n144，MBTI各n1539；20个g增量区间19跨0。唯一Big5 g+BGE pooled
++.008295[.000022,.016776]，mean-fold+.008001[-.000291,.016802]，
+不能凭一个几乎贴0的pointwise下界升格。g仅16维排序地标距离，非完整
+GRAIN4W；联合PCA/支持选择人群均是估计对象限制，不把弱结果泛化成
+整个GRAIN无效或没有非线性交互。source只有OOF重用，bridge仍闭合。
+
+另从35个source OOF CSV用SciPy Pearson/sklearn AUC直接独立复算70标量，
+max9.71e-17；`vm05_raw_ready_scalar_audit_r1` identity
+afae3c1e1a12763cbbbfdaa1547e671807cf489d85c166d4b9c2ac17343cad8a。
+这不宣称真人bootstrap所有draw另算一遍；端点独立复算在synthetictests。
+
+bf9caad把一个遗漏的解释边界数学化：当前scale/PCA/Ridge或logistic头的
+identity/logit = b+a'g+c'h，无cross-block乘积。审计60保存组合头、480
+人工矩形，混合差分max4.44e-16，系数拉回max4.43e-16；没有真人特征输入
+或新fit。这是标准仿射代数的实际实现核验，不是发现心理定理或证明
+非线性互补存在。概率sigmoid自身曲率不能冒充logit交互。三专测含此
+反例；全组合25tests通过（旧SWIG两条deprecation），Ruff/diff通过。
+完整报告VM05_RAW_READY_COMPARISON_REPORT.md，可读性理论note与17项atlas
+更新；修正新增status为现有schema值后验证通过，非科学效度acceptance。
+低秩bilinear只是未来针对性follow-up，未膨胀当前冻结family。
+
+新队列`vm05_secondary_cached_readouts_r1`已真实接续：identity
+7edc2cc6eed10fe5a91b13cfee7ae66ce8e4b0ebe960e152191736dc202010fe，
+parent98301/session88190；最近3/315完成，TF raw equal-view child98696
+实际FIT。所有原CPU前驱继续保持完成/暂停，禁止并行重启strong29/84。
+该queue只在全缓存上拟合统计读出，无新增神经forwards；两prompt只对应
+social initiation，不伪称九trait内部问答状态。
+
+Windows history保持SSH session79842；parent65840/child63092实测live，
+27/128完成1,512人。新增已完成018-023备份851,157,254bytes，SHA
+591dce5ab05906aa54229406f0a5fa086a3da5270f5bc3099be3d489635ea7d9。
+SHA/CRC/安全非symlink不覆盖解包后，全000-023独立再verify，Mac24片
+1,344人120,960arrays。保留远端/本地验收数区分，未碰当前分片。
+GPU8h自然边界后再做真实direct180forward语义panel，绝不能第二模型
+并发抢显存。direct/fullhistory、strong null、同ready其余家族、源头
+封头后bridge、VM07仍是原scope。未训练/下载新LLM、未读bridge/MEPS
+心理值、未付费API或push。尚有可执行工作，不需要用户新idea。

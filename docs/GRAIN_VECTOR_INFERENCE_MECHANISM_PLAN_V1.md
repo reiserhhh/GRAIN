@@ -2,6 +2,20 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-07第三十三轮：raw/reference-free同ready34新拟合完成，复用1个
+Big5历史profile，35头/175保存fold全部验收、90配对行。GRAIN增量20个
+区间19跨0；Big5 g+BGE pooled+.008295的下界仅.000022，而mean-fold
+仍跨0，不升格稳定互补。该g只指16维排序地标距离，不是完整GRAIN理论。
+另用SciPy/sklearn直接复算35头70分数max9.71e-17；60保存组合头480人工
+矩形的logit/identity混合差分max4.44e-16，证实当前头只检验加性而非
+任意非线性交互。见[同ready报告](../reports/grain_vector_mechanisms/VM05_RAW_READY_COMPARISON_REPORT.md)。
+代码175f307/bf9caad；25组合tests与17项atlas schema检查通过。
+完整315 cached secondary队列已接CPU，98301/session88190，最近3完成，
+TF raw equal-view正在实际拟合；只用缓存、无新神经forward。Windows
+history27/128、1,512人完成；Mac000-023独立验收1,344人120,960数组。
+bridge/MEPS心理值仍未开；full同ready/history/direct/null/bridge/VM07
+scope不变，goal继续。下面第三十二轮及更早均为历史快照。
+
 2026-09-07第三十二轮：54敏感性全部完成、270保存fold重播max2.22e-16；
 完整45层位比较覆盖三臂、270配对行。EI浅层/TF中间较深层/JP最终层的
 相对block10模式保留，但新增层位均无相对E5的正向pooled CI下界，不选层。
