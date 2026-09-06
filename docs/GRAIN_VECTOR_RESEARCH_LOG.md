@@ -1380,3 +1380,42 @@ outcomes/MEPS量表，不新LLM训练/下载/付费API/push。goal active，当�
 35/56作者；Mac完成21/84，已转入SN_cont_raw_retain_731（75233）。EI三
 arm完整家族都已执行，但最新三个placebo seed的独立审计/15fold重播和
 整家族gap报告留作下一执行块；当前仍只把18条件/90fold列为已审计。
+
+## 第二十八轮：完整EI对照解释收窄与直接评分语义资格（2026-09-06）
+
+- all21 EI audit完成：504选择记录、15count配对；最后三个placebo
+  seed15fold独立重播max9.71445e-17，累计105fold。placebo purge-count
+  pooled差-.014081，meanfold差-.008171且CI跨0，保留两种estimand。
+- 92ff53f：全21头共用1000次author-within-fold抽样，直接估计mask差异
+  与source-gap交互，不能减CI端点。cue-placebo保留AUC差-.000165
+  [-.001868,.001354]；purge-count交互pooled-.003002
+  [-.005568,-.000451]、meanfold-.001005[-.003118,.001022]。
+  无人格词特异机制/遮蔽赢家；来源构成和信息量效应仍是替代解释。
+  18观测对比另用sklearn/显式循环重算max1.96891e-16，未另重跑bootstrap。
+  vm05_ei_mask_specificity_r2 identity
+  f877d6824558237b53e08faf22df6d7e7da74fc61d9851e1baabb0b29cbab029。
+  r1元数据labels_read=false过宽，r2明确复用既审计OOF标签而不打开新标签
+  表；两次CSV SHA完全相同，原r1保留。CI事后、未多重校正、条件于固定
+  拟合头及seed，不是重拟合不确定性/因果分解。
+- 9fe358e：冻结90条人工虚构的行为高低/无证据×主要/反向编码面板；
+  9任务各2pair，Big5数值编码反转而MBTI仅答案列举顺序反转，两者不混同。
+  同原生提示/单字符概率，所有结果保留，无证据不设.5真值。180真实
+  forward尚未做，明确等待history停在预算边界且owner/child结束，无第二
+  套GPU权重。真实结果若弱不改提示/翻轴/删task，外部预测仍需完整采集。
+- 90case实际Mac token预检2.859s、Windows7.016s，0forwards，全部代码/
+  token语义行一致。rowSHA900b8ff60062a59f0df03aad6432e35ed4eb5873aa1e0563bae23338aa6ab91b。
+  vm05_direct_semantics_cross_platform_audit_r1记录；新4文件只入direct独立
+  root，9246bytes ZIP SHAba013966acee6ef9338d00084b64afa762483b90672914e633e89f9b2688a7f0。
+- history完成前2/128shard：112人、10080arrays，本地verify_history_shard
+  对完整registry、parent资格及所有cache重验通过。备份292691489bytes，
+  SHA6166d9eeb6f56843666701b1afccb9aaa292c749a6827e26e0fa4b9db6caa4e1。
+  最后实测queue65840/child31392活跃，shard002推进45/56；不能把112人当
+  7108全量完成，也不能把已完成首child退出误判成queue死亡。
+- Mac强batch23/84执行完，SN random_count731（77559）实际推进；只有
+  前21 EI已正式验收。六个active评分文件SHA未变。15项direct/mask相关
+  tests通过（含原有10项），Ruff/diff检查通过；两个旧SWIG警告。
+
+下一步依旧source/same-ready真实拟合、history全采集/源头比较、direct实际
+语义/全量采集、strong null、封头后bridge和VM07。此轮没有为凑突破新开
+无边界因子/层搜索，已按完整对照收窄一个机制解释。无新模型训练、下载、
+付费API、bridge/MEPS心理值或push，goal active，当前不需用户新idea。

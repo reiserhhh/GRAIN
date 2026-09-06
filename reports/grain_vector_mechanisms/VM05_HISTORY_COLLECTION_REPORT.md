@@ -1,5 +1,26 @@
 # VM05 history observation: production path and qualified limits
 
+## Round28 live collection and verified partial backup
+
+Windows queue65840 is alive, completed shards000/001 (112 authors), and currently
+collecting shard002: child31392 alive,45/56 authors at the final observed snapshot.
+This replaces the old first-child64464 snapshot below; that completed child is
+not supposed to remain alive. No restart or active-code update occurred.
+
+Completed000/001 copied to Mac and independently passed `verify_history_shard`
+against the full strict registry, material/audit, real qualification, production
+replay, source hashes and model identity. Total10,080 feature arrays; unique
+layouts1800/1764 and forwards1801/1765. Backup292,691,489 bytes, SHA
+`6166d9eeb6f56843666701b1afccb9aaa292c749a6827e26e0fa4b9db6caa4e1`.
+Local `vm05_full_history_vectors_r2/local_backup_status.json` is
+`VERIFIED_PARTIAL_BACKUP`,2/128, not a complete collection. Do not copy or score
+partial shard002. Original whole BGE/E5/Qwen collection remains72/72 complete.
+
+No source or bridge prediction conclusion follows from this checkpoint. Preserve
+the8h invocation boundary and explicitly resume identical settings only after
+the owner exits and completed shards are verified. Direct semantic code was
+staged in a separate root with token-only execution, not a competing GPU model.
+
 2026-09-06, updated round27. **Real history qualification and exact production
 replay passed; full-registry collection is the next running stage, not yet complete.**
 This extends the material

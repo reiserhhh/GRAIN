@@ -1,5 +1,50 @@
 # VM05 direct trait readout: protocol and deployment readiness
 
+## Round28: bounded semantics control prepared, not yet inferred
+
+`9fe358e` adds `GRAIN_VM05_DIRECT_SEMANTICS_V1.md`, a90-case frozen invented panel:
+two low/high pairs and a no-evidence input for each of nine tasks, primary/counter
+variants. Counter means numeric-code inversion for Big5 and answer-listing reversal
+for MBTI; they are different interventions. Positive MBTI coding remains E/N/F/J.
+This asks whether compliant outputs track their intended meaning, not whether
+the model validly measures people. The no-evidence output is a prior, not a0.5 target.
+
+Actual Mac and Windows token-only runs both complete all90 cases with0 forwards;
+all code fingerprints and semantic rows agree. Local2.859s, Windows7.016s.
+`vm05_direct_semantics_cross_platform_audit_r1` records semantic row SHA
+`900b8ff60062a59f0df03aad6432e35ed4eb5873aa1e0563bae23338aa6ab91b`.
+Mac parent `10894db80012f5bea7725cc96a8e4e3ed86583763dba6e41941d0676b31e90b2`;
+Windows parent `f39bdaaacab45a240a72d022c17ef654c212627f3a3a7422d0852b356172b94b`.
+Four new files were staged only to the separate direct root;9246-byte archive SHA
+`ba013966acee6ef9338d00084b64afa762483b90672914e633e89f9b2688a7f0`.
+No active history or original observer code was overwritten.
+
+The180-forward real panel is **pending**, not passed. It must wait for history's
+terminal budget/complete boundary, absent lock and dead owner/child, then use the
+same qualified pinned CUDA observer. Every native result is repeated; all pairs,
+recoded sensitivity, candidate mass/entropy and compliance are retained, including
+negative results. Do not redesign the prompt, flip polarity or omit a task after
+seeing outputs. Full direct source collection and external metrics are still required.
+
+Command in `D:/projects/GRAIN-vector-direct-vm05`, only after the idle gate:
+
+```text
+python scripts/qualify_grain_direct_traits_semantics.py
+  --views results/grain_vector_mechanisms/vm05_qualification_r2/common_views.json
+  --material-dir results/grain_vector_mechanisms/vm05_direct_trait_material_r1
+  --tokenizer-dir results/grain_vector_mechanisms/local_model_metadata/qwen_989aa798
+  --qualification-dir results/grain_vector_mechanisms/vm05_direct_real_qualification_r1
+  --observer-queue-dir D:/projects/GRAIN-vector-research-vm01/results/grain_vector_mechanisms/vm05_full_vectors_r1
+  --history-queue-dir D:/projects/GRAIN-vector-history-vm05/results/grain_vector_mechanisms/vm05_full_history_vectors_r2
+  --output-dir results/grain_vector_mechanisms/vm05_direct_semantics_real_r1
+  --max-seconds 900
+```
+
+Shown wrapped for readability; pass arguments as one subprocess argv, not separate
+shell commands. Add `--preflight-only` only for explicitly non-neural readiness.
+
+## Round27 completed qualification
+
 2026-09-06, round27. **Full material support, cross-platform token checks and
 six-author real direct readout qualification are complete; source prediction
 evaluation is not yet run.** This is a research

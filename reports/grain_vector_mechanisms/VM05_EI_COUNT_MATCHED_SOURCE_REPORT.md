@@ -1,4 +1,69 @@
-# EI/raw and cue mask: complete five-seed source sensitivity
+# EI: complete three-mask, five-seed source sensitivity
+
+## Round28: placebo and paired specificity
+
+All21 EI conditions are now complete and independently audited:504 reconstructed
+membership records,15 count-matched pairs and105 saved outer-fold replays. The
+final three placebo count seeds replay with maximum error9.71445e-17. The entire
+84-condition/four-axis batch remains incomplete; SN's first two executions do
+not establish an entire SN family result.
+
+| Text arm | Retained pooled AUC | Mean five count-deletion AUCs | Purged pooled AUC |
+|---|---:|---:|---:|
+| Raw | .670973 | .648344 | .637082 |
+| Cue mask | .672089 | .651767 | .634684 |
+| Placebo mask | .672254 | .649762 | .635681 |
+
+These count scores average five AUCs, not predictions. The placebo purge-minus-
+count gap is-.014081[-.024020,-.004253] pooled, but-.008171[-.016901,+.000511]
+when averaging official-fold AUCs. Thus source sensitivity also occurs without
+the designated personality-cue mask; its strength depends on the estimand.
+
+An explicitly post-hoc comparison uses the **same1,000 author-within-fold draws
+for all21 fitted heads**, rather than subtracting unrelated CI endpoints:
+
+| Cue minus placebo contrast | Pooled estimate [95% CI] | Mean-fold estimate [95% CI] |
+|---|---:|---:|
+| Retained AUC | -.000165[-.001868,+.001354] | -.000038[-.001785,+.001528] |
+| Purge-minus-count gap | -.003002[-.005568,-.000451] | -.001005[-.003118,+.001022] |
+| Purge-minus-retain gap | -.000832[-.003257,+.001348] | -.000835[-.002980,+.001268] |
+
+There is no established cue-mask prediction advantage. The pooled gap interaction
+is small and does not survive the mean-fold estimand as an interval excluding0.
+This does not prove equivalence or prove that personality cues have zero effect.
+It **does** require narrowing the explanation: these controls support sensitivity
+to training-source composition and sample removal, not a uniquely identified
+personality-cue mechanism or causal leakage decomposition. General information
+loss, changed source composition, proxy cues and fold score comparability remain
+possible explanations. Results cannot select a new mask/layer/seed winner.
+
+Intervals are conditional on already fitted heads and fixed five count seeds,
+unadjusted across18 exploratory contrasts, not uncertainty from rerunning nested
+selection. Independent sklearn/explicit-loop reconstruction of all18 observed
+contrasts differs by at most1.96891e-16; it does not independently rerun all
+bootstrap draws. New tests separately check contrast indexing and exactly zero
+paired differences/intervals when every arm's predictions are identical.
+
+Artifacts under `results/grain_vector_mechanisms/`:
+
+- `vm05_strong_source_audit_ei_all_arms_r1` and
+  `vm05_strong_source_replay_ei_placebo_remaining3_r1` close EI's source/replay family.
+- `vm05_ei_placebo_count_gap_r1`, identity
+  `e65af3d63b7459bde4fe11d83977dbaed89678deaca6184a9a47095a3f3bc665`.
+- `vm05_ei_mask_specificity_r2`, identity
+  `f877d6824558237b53e08faf22df6d7e7da74fc61d9851e1baabb0b29cbab029`,
+  paired CSV SHA`17a8b344fe08f5729cf3573a0b3ddb99f3aecdcbb4577165aa770b255471ec39`.
+- `vm05_ei_mask_specificity_independent_scalar_audit_r1` checks observed contrasts.
+
+The earlier specificity r1 is retained: its generic `labels_read=false` metadata
+was too broad because this analysis reuses previously audited OOF outcomes. r2
+states `source_label_tables_read=false`, `new_label_values_read=false`, and
+`previously_audited_oof_outcomes_reused=true`. Re-execution produced the identical
+paired CSV SHA. No new source table, bridge values or model refit was used.
+
+Next scientific step remains the complete source/same-ready vector comparisons,
+followed by history/direct readouts and source-frozen bridge evaluation. Do not
+grow a new free masking search from this small post-hoc interaction.
 
 ## Round26 update: complete cue-mask family
 
