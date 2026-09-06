@@ -1,5 +1,22 @@
 # VM05 history observation: production path and qualified limits
 
+## Round30: eight local shards independently verified
+
+2026-09-07. Completed004-007 were archived only after their remote COMPLETE
+statuses, copied back and checked for SHA/CRC, safe nonoverwriting extraction,
+full registry, parent qualification/model/code and every saved cache invariant.
+Archive559,599,707 bytes, SHA
+`32143f91c98ee8e826175525346b5d201ec313e651e8c74aa5b076006fc2e631`.
+Their unique layouts are1,716/1,864/1,700/1,624, with one extra native replay
+forward per shard. The local verified total is now000-007:448 authors and40,320
+arrays. local_backup_status.json remains VERIFIED_PARTIAL_BACKUP,8/128.
+
+At the latest remote snapshot queue65840/child60600 were verified live,13 shards
+complete728 authors. Remote progress is not local acceptance;008 onward are not
+included in this backup claim. The direct model is still not started while this
+queue owns the GPU. Full history collection and source/bridge comparisons remain
+open. Older snapshots below are retained chronologically, not current counts.
+
 ## Round29: four shards independently backed up, fifth completed remotely
 
 Latest remote snapshot: queue65840 and child60648 alive,5/128 complete,280 authors,
