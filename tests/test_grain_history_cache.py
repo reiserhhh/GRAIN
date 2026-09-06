@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Re-signed corruption and bounded queue tests with synthetic, nonprivate caches."""
 
+import ast
 import copy
 import json
 import subprocess
@@ -54,7 +55,45 @@ def test_history_archive_imports_without_unrelated_legacy_scoring_modules(tmp_pa
 
 def write(path, value):
     """Create only synthetic JSON fixtures."""
-    path.write_text(json.dumps(value))
+    path.write_text(json.dumps(value, ensure_ascii=False), encoding="utf-8")
+
+
+def test_history_json_readers_do_not_depend_on_windows_locale():
+    """The Windows GBK locale must never reinterpret UTF-8 participant text."""
+    root = Path(__file__).resolve().parents[1]
+    names = [
+        f"grain_research/vector_mechanisms/{n}.py"
+        for n in (
+            "history_instrument",
+            "history_collection",
+            "history_cache",
+            "ready_comparison",
+        )
+    ]
+    names += [
+        f"scripts/{n}.py"
+        for n in (
+            "qualify_grain_source_history",
+            "collect_grain_source_history",
+            "run_grain_history_queue",
+        )
+    ]
+    calls = 0
+    for name in names:
+        for node in ast.walk(ast.parse((root / name).read_text(encoding="utf-8"))):
+            if (
+                isinstance(node, ast.Call)
+                and isinstance(node.func, ast.Attribute)
+                and node.func.attr == "read_text"
+            ):
+                assert any(
+                    k.arg == "encoding"
+                    and isinstance(k.value, ast.Constant)
+                    and k.value.value == "utf-8"
+                    for k in node.keywords
+                ), (name, node.lineno)
+                calls += 1
+    assert calls >= 15
 
 
 def seal(folder, manifest, summary):

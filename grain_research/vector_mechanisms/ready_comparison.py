@@ -36,8 +36,8 @@ def digest(path):
 def verified_packet(folder):
     """Verify manifest identity and complete packet outputs before using arrays."""
     folder = Path(folder).resolve()
-    m = json.loads((folder / "manifest.json").read_text())
-    s = json.loads((folder / "summary.json").read_text())
+    m = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    s = json.loads((folder / "summary.json").read_text(encoding="utf-8"))
     if (
         material_hash({k: v for k, v in m.items() if k != "identity"}) != m["identity"]
         or s["status"] != "COMPLETE"
@@ -55,7 +55,7 @@ def verified_packet(folder):
 def require_observer_completion(vector_dir, material_sha256):
     """Require every planned observer before selecting any ready-only neural arm."""
     root = Path(vector_dir)
-    queue = json.loads((root / "manifest.json").read_text())
+    queue = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
     if queue["shards"] != 24 or queue["material_sha256"] != material_sha256:
         raise ValueError("Require original24-shard common observation protocol")
     for stage in ("bge_large", "e5_large", "qwen"):
@@ -63,7 +63,8 @@ def require_observer_completion(vector_dir, material_sha256):
             status = root / stage / f"shard_{shard:02d}" / "run_status.json"
             if (
                 not status.exists()
-                or json.loads(status.read_text())["status"] != "COMPLETE"
+                or json.loads(status.read_text(encoding="utf-8"))["status"]
+                != "COMPLETE"
             ):
                 raise ValueError("All72 observer shards must finish before comparison")
     return queue
@@ -76,13 +77,15 @@ def load_registry_inputs(views, registry_dir, audit_dir, profile_dir, preflight_
     from .external_controls import exclude_reference
     from .ready_registry import registry_arrays
 
-    source = json.loads(Path(views).read_text())
+    source = json.loads(Path(views).read_text(encoding="utf-8"))
     common = json.loads(
-        (Path(preflight_dir) / "common_material_manifest.json").read_text()
+        (Path(preflight_dir) / "common_material_manifest.json").read_text(
+            encoding="utf-8"
+        )
     )
     m, _ = verified_packet(registry_dir)
     pm, ps = verified_packet(profile_dir)
-    audit = json.loads((Path(audit_dir) / "summary.json").read_text())
+    audit = json.loads((Path(audit_dir) / "summary.json").read_text(encoding="utf-8"))
     if (
         m["protocol"] != "VM05_SAME_READY_REGISTRY_V1"
         or m["material_sha256"] != material_hash(source)

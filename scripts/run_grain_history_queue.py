@@ -117,7 +117,10 @@ def run(a):
     out.mkdir(parents=True, exist_ok=True)
     manifest = out / "manifest.json"
     if manifest.exists():
-        if not a.resume_completed or json.loads(manifest.read_text()) != fields:
+        if (
+            not a.resume_completed
+            or json.loads(manifest.read_text(encoding="utf-8")) != fields
+        ):
             raise ValueError("Existing history queue needs identical explicit resume")
     elif any(out.iterdir()):
         raise ValueError("Use fresh history queue output")

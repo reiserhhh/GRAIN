@@ -39,8 +39,12 @@ def load_observer(a, material):
     """Refuse concurrent collection and require the original CUDA/BF16 observer."""
     if a.observer_queue_dir is None:
         raise ValueError("Real qualification requires the completed observer queue")
-    q = json.loads((a.observer_queue_dir / "queue_status.json").read_text())
-    qm = json.loads((a.observer_queue_dir / "manifest.json").read_text())
+    q = json.loads(
+        (a.observer_queue_dir / "queue_status.json").read_text(encoding="utf-8")
+    )
+    qm = json.loads(
+        (a.observer_queue_dir / "manifest.json").read_text(encoding="utf-8")
+    )
     if (
         q["status"] != "COMPLETE"
         or len(q["completed"]) != 72

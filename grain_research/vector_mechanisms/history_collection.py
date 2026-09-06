@@ -49,7 +49,9 @@ def qualification_packet(folder, material, audit, root):
     for name, sha in m["code_sha256"].items():
         if digest(Path(root) / name) != sha:
             raise ValueError("Qualified instrument implementation changed")
-    model = json.loads((Path(folder) / "actual_observer.json").read_text())
+    model = json.loads(
+        (Path(folder) / "actual_observer.json").read_text(encoding="utf-8")
+    )
     if (
         model["dtype"] != "torch.bfloat16"
         or not model["device"].startswith("cuda")

@@ -40,7 +40,7 @@ def registered_cases(views, material_dir, audit_dir):
     """Bind complete material/audit and return the entire strict label-free registry."""
     m, _ = verified_packet(material_dir)
     am, audit = verified_packet(audit_dir)
-    source = json.loads(Path(views).read_text())
+    source = json.loads(Path(views).read_text(encoding="utf-8"))
     if (
         material_hash(source) != m["common_material_sha256"]
         or m.get("history_envelope") != "body_and_separator"
@@ -53,7 +53,9 @@ def registered_cases(views, material_dir, audit_dir):
         or audit["bridge_outcomes_read"]
     ):
         raise ValueError("Require audited separator-envelope material with no outcomes")
-    cases = json.loads((Path(material_dir) / "private_history_cases.json").read_text())
+    cases = json.loads(
+        (Path(material_dir) / "private_history_cases.json").read_text(encoding="utf-8")
+    )
     table = pd.read_csv(
         Path(audit_dir) / "private_strict_history_registry.csv",
         dtype={"author_id": str},

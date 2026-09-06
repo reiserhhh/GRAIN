@@ -74,7 +74,7 @@ def verify_history_shard(
         or digest(folder / "source_snapshot.zip") != m["source_snapshot_sha256"]
     ):
         raise ValueError("History shard protocol/parent/registry mismatch")
-    status = json.loads((folder / "run_status.json").read_text())
+    status = json.loads((folder / "run_status.json").read_text(encoding="utf-8"))
     if status != s:
         raise ValueError("History completion status differs from summary")
     files = {
@@ -92,7 +92,7 @@ def verify_history_shard(
     }
     if files != set(s["outputs_sha256"]):
         raise ValueError("History outputs missing or uncommitted")
-    records = json.loads((folder / "private_records.json").read_text())
+    records = json.loads((folder / "private_records.json").read_text(encoding="utf-8"))
     if len(records) != len(cases):
         raise ValueError("Missing history author records")
     if preflight:
@@ -111,7 +111,7 @@ def verify_history_shard(
             "cache_bytes": 0,
             "arrays": 0,
         }
-    model = json.loads((folder / "actual_observer.json").read_text())
+    model = json.loads((folder / "actual_observer.json").read_text(encoding="utf-8"))
     if observation_signature(model) != model_signature:
         raise ValueError("Actual history model signature changed")
     expected_files = {"private_records.json", "actual_observer.json"}
@@ -130,7 +130,7 @@ def verify_history_shard(
         expected_files.update(
             p.relative_to(folder).as_posix() for p in (npz_path, meta_path)
         )
-        meta = json.loads(meta_path.read_text())
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
         if (
             record["cache_key"] != key
             or record["author_id"] != case["author_id"]
