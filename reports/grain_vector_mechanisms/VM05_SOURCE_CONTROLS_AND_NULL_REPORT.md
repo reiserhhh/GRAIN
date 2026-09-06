@@ -159,6 +159,8 @@ run_status，不能为观察超时重启活跃任务。源码8eb26e9/0c5414b封�
 
 ## 7. 第十二轮闭环更新
 
+本节保留当轮过程快照；最新完成状态见第8节。
+
 全部102条件已完成。vm05_source_control_audit_final_r1独立重建2448次成员
 选择，75组随机/purge逐24处人数完全匹配，72个配对对比可复算。
 vm05_source_control_replay_big5_r1补齐18条件/90个保存fold模型，最大重播
@@ -206,3 +208,42 @@ Windows全向量采集继续。Mac已验收shard_00/01/02三观察器备份，�
 下一：完整null/稀疏/observer源头比较、同ready神经观察器对照与增量，
 封存规则再bridge；区分可读信息与LLM功能使用，再VM06/07。仍有可执行
 研究问题，不需要用户先提供新idea。未改发布scorer、锁箱、MEPS用途或push。
+
+## 8. 第十四轮：完整null家族与EI强稀疏三臂
+
+2026-09-06。15/15条件均完成：每条件199次完整inner-refit置换，共2985次。
+`vm05_null_family_audit_final_r1`独立复算，无pending、无新标签值读取。
+最后Big5 placebo：n624，observed r=.136794，null均值-.014530，
+95%分位[-.068690,.035943]，observed重播误差8.33e-17。
+
+15项均0/199 null达到observed，修正Monte Carlo p均=.005；15项Holm
+调整均=.075，**该家族未达到FWER .05**。探索BH=.005不是全局机制证明。
+0/199对应尾概率二项区间上限约.01837；.005是分辨率下限，不是精确p，
+不能以此给信号强度排序，也不为“补星号”追加置换或缩小家族。
+这些控制支持来源标签关联的继续研究，不能替代语境、模型使用或外部机制验证。
+
+强稀疏MBTI三臂EI全部完成，n6393，所有15个保存fold模型已独立重播，
+最大误差9.72e-17。三臂由完全相同作者/标签/官方fold配对：
+
+| EI arm | pooled AUC | mean-fold AUC | BA @ .5 | 预测E比例 |
+| --- | ---: | ---: | ---: | ---: |
+| raw | .672221 | .672640 | .503630 | .003285 |
+| cue mask | .672686 | .672972 | .503809 | .003754 |
+| placebo mask | .673967 | .674037 | .504858 | .003598 |
+
+真实E比例=.207727。1000次条件于已拟合OOF的配对作者bootstrap：
+cue-raw +.000465[-.001543,.002563]；placebo-raw +.001746
+[-.000046,.003550]；cue-placebo -.001281[-.003000,.000385]。
+所有差异区间跨0，**没有人格线索特异的遮罩改善证据**，但也不能据此
+证明其他泄漏/语境均已排除。排序AUC约.67不等于类别判定已经可靠。
+
+canonical：`vm05_sparse_ei_three_arm_comparison_r1`，三份
+`vm05_sparse_ei_{raw,cue,placebo}_replay_r1`。新
+`scripts/summarize_grain_sparse_mbti.py`只汇总完整子任务并保留pending。
+原2小时队列在3/12完整后`PAUSED_BUDGET`，核对原进程退出才以同协议
+`--resume-completed --max-seconds 14400`继续，8GiB上限不变。
+SN/TF/JP尚不能报告，强稀疏MBTI的自身null/来源控制也未完成。
+
+MEPS只完成独立材料预检及无损说话者分段，见
+[MEPS报告](VM06_MEPS_MATERIAL_PREFLIGHT_REPORT.md)。Windows完整神经观察器
+仍在采集，来源封存、bridge和冻结机制复测依次在后；本节不宣布全线闭环。

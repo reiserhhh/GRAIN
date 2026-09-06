@@ -633,3 +633,46 @@ R=results/grain_vector_mechanisms
 三臂；完成三个观察器同材料采集、源头/ready重拟合及来源控制，再封头开bridge。
 几何子线本轮收束；VM06/07及读出语义不变性/实际使用接口仍待做。当前没有
 需要用户新idea才能继续的阻塞，goal保持active，不能声明理论闭环。
+
+## 第十四轮：完整null、EI三臂与MEPS材料算子
+
+2026-09-06。没有改动运行中的来源头、Windows冻结aa51b06代码或发布计分器。
+
+- 完整null15/15、2985次inner-refit置换均独立复算。所有p=.005为采样下限，
+  Holm15=.075；不能叫家族显著或为更小p追加运行。最后Big5 placebo
+  r=.136794、null均值-.014530、区间[-.068690,.035943]。
+- EI强稀疏raw/cue/placebo三臂完成AUC=.672221/.672686/.673967。
+  3配对差的95%区间均跨0；没有cue特异改进。BA仍.5036至.5049，
+  排序与阈值分类分开。15保存fold全重播9.72e-17以内。其余9条件继续。
+- 原稀疏进程已退出、状态PAUSED_BUDGET才以同manifest续跑4小时预算，
+  每子进程8GiB不变，session96177；当前SN raw，绝不重复启动。
+- 修复历史MEPS默认加载mood表的问题；调用方不用值不等于从未读取。
+  明确opt-in与默认file-open canary；历史报告追加勘误，未改原结果。
+- 新MEPS白名单路线只提取三类CSV允许字段与直接回答段。混合Markdown
+  容器扫描/哈希如实披露；无问卷/mood CSV值、邻接registry表访问。
+  264视图、1539tokenizer条件，日语英文tokenizer UNK约20%至23%；
+  多语E5三问UNK为0。完整自由对话46/46均超512。
+- 自由相谈AI字符占88.30%；不能等同AI对向量的贡献百分比。来源归属与
+  条件上下文必须分开。138直接回答+1462聊天轮组成1600单元，逐说话者
+  1609窗口覆盖366385字符，损失0。没有模型forward或embedding输出。
+- ts_iso实际1462条全部clock-only，未推断日期/跨日间隔；5重复内容、
+  3字符计数异常均保留。r1至r3来源/token/角色统计不变，独立元数据audit通过。
+  windows_r2曾因错误本地路径拟合前退出，canonical使用r3。
+- 136项专项tests通过；scoped ruff（ExFAT权限EXE002单列忽略）与diff通过。
+  未跑全部历史suite；未下载/训练LLM、调用付费API、打开bridge或push。
+
+完整报告：VM05_SOURCE_CONTROLS_AND_NULL_REPORT第8节、
+VM06_MEPS_MATERIAL_PREFLIGHT_REPORT；新增CLI为meps_preflight、meps_windows、
+audit_grain_meps_material、summarize_grain_sparse_mbti。
+canonical目录：vm06_meps_preflight_r3、vm06_meps_windows_r3、
+vm06_meps_material_audit_r1、vm05_sparse_ei_three_arm_comparison_r1、
+vm05_null_family_audit_final_r1。MEPSpreflightidentity：
+2a1a13248f7bc74984ad1e4eab1f72aa80fd53993f4f26d146530bfa8121bebb。
+
+Windows队列PID28172仍存活，20个observer shards完成，Qwen shard06
+最近265/303、GPU峰值4.311GB；Mac已验收备份仍00--04每模型1515人。
+不能将新远端完成部分说成本地已备份，不同步覆盖冻结源代码。
+
+下一：完整来源观察器与剩余稀疏/同ready比较；在不改变来源头选择的前提下
+准备角色组合与上下文干预的区分设计。冻结来源规则后才bridge和VM06实际
+机制验证。仍有可执行研究工作，不需用户新idea，goal保持active。

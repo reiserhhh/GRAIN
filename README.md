@@ -24,11 +24,11 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Vector inference research loop (2026-09-06)
 
-Latest: [exact readout transport and random-subspace controls](reports/grain_vector_mechanisms/VM05_READOUT_AND_RANDOM_SUBSPACE_REPORT.md)
-show why coordinate/readout changes must not be called information loss.
-200 dimension-matched controls do not establish a special personality residual
-subspace. A formula and archive-coverage issue are corrected without changing
-the released scorer or opening bridge outcomes. Full observer collection continues.
+Latest: [the completed 15-condition null family and EI sparse comparison](reports/grain_vector_mechanisms/VM05_SOURCE_CONTROLS_AND_NULL_REPORT.md#8-第十四轮完整null家族与ei强稀疏三臂),
+plus a [46-participant MEPS material and speaker audit](reports/grain_vector_mechanisms/VM06_MEPS_MATERIAL_PREFLIGHT_REPORT.md).
+The audit fixes implicit mood-table access and identifies AI-text dominance and
+tokenizer/context-budget constraints; lossless speaker windows are ready, but
+no MEPS mechanism forward pass has run. Full observer collection continues.
 
 The active research program studies how an LLM's internal representations use
 author context and combine evidence during personality inference. The
@@ -112,13 +112,16 @@ Bridge outcomes remain unopened; source controls and full observer comparisons
 are still required. See the [frozen execution supplement](docs/GRAIN_VM05_FULL_RUN_AND_CONTROLS_V1.md).
 
 The [source-control follow-up](reports/grain_vector_mechanisms/VM05_SOURCE_CONTROLS_AND_NULL_REPORT.md)
-now completes all 102 source-control conditions and 14 full 199-draw nulls.
+now completes all 102 source-control conditions and 15 full 199-draw nulls.
 Shared-discussion sensitivity differs by axis; cue-masked TF remains readable
 (AUC .6712 after thread purging), but this is not a verified personality mechanism.
 All 510 saved control fold models replay within 1.12e-16. Big5 controls reveal that
 pooled correlation changes also depend on fold-specific prediction dispersion;
 an exact covariance decomposition prevents interpreting all loss as lost signal.
-The final Big5 null, the strong sparse MBTI reference and full observer collection remain in progress.
+All raw Monte Carlo p values hit .005; Holm across 15 gives .075, not familywise
+support at .05. EI sparse raw/cue/placebo AUCs are .6722/.6727/.6740, with all
+paired difference intervals spanning zero and near-chance balanced accuracy at .5.
+The remaining sparse MBTI axes and full observer collection remain in progress.
 No test predictions were recalibrated and bridge outcomes remain unopened.
 
 The [frozen geometry comparison](reports/grain_vector_mechanisms/VM05_GEOMETRY_INFORMATION_REPORT.md)
