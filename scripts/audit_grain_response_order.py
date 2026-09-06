@@ -142,6 +142,14 @@ def audit(run, parent_dir):
         or not grouped[invariant].nunique().eq(1).all().all()
     ):
         raise ValueError("Same context received recipient-dependent corruption")
+    origin = [
+        "bag_sha256",
+        "native_context_order_sha256",
+        "isolated_context_tokens",
+        "fixed_boundary_crossing_tokens",
+    ]
+    if not meta.groupby("context_code")[origin].nunique().eq(1).all().all():
+        raise ValueError("Native context identity differs across order conditions")
     old = pd.read_csv(parent_dir / "private_response_metrics.csv").set_index(
         "participant_code"
     )
@@ -192,6 +200,17 @@ def audit(run, parent_dir):
     technical = json.loads((run / "technical_order_gate.json").read_text())
     if len(numerical) != 2 or len(technical) != 8:
         raise ValueError("Incomplete technical controls")
+    expected_technical = {
+        (lang, m, s) for lang in ("en", "ja") for m in MODES for s in SEEDS
+    }
+    if {(x["language"], x["mode"], x["seed"]) for x in technical} != expected_technical:
+        raise ValueError("Synthetic language/order coverage differs")
+    for x in technical:
+        expected, groups = replay_permutation(
+            x["language"], x["mode"], x["seed"], x["isolated_context_tokens"]
+        )
+        if x["permutation_sha256"] != expected or x["permutation_groups"] != groups:
+            raise ValueError("Synthetic order permutation did not replay")
     if any(
         not x["passed"]
         or x["self_patch_max_logp_error"] != 0
