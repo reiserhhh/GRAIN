@@ -1,5 +1,15 @@
 # MEPS + AI Conversation: SUICA Feasibility Audit
 
+## Historical access clarification (2026-09-06)
+
+This historical feasibility report included the export's within-session mood
+table. It is not a no-label VM06 result. The importer now defaults to text-only;
+reproducing the state-table portion requires the explicit `--include-mood` option
+and separate authorization. No state-table rerun was performed in the current
+mechanism loop. The newer route does not open adjacent registry/scale tables;
+mixed Markdown containers are scanned only to retain direct-answer sections.
+See [the VM06 material audit](grain_vector_mechanisms/VM06_MEPS_MATERIAL_PREFLIGHT_REPORT.md).
+
 ## Decision
 
 **PILOT_READY_WITH_BOUNDARIES**. This private 46-participant corpus is suitable for a bounded

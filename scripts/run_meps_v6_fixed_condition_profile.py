@@ -235,7 +235,7 @@ def main() -> None:
     os.environ["TRANSFORMERS_OFFLINE"] = "1"
     device = resolve_device(args.device)
     model = load_frozen_encoder(cfg, device)
-    views, _mood, loader_metadata = load_meps_ai_conv(args.input_root)
+    views, _mood, loader_metadata = load_meps_ai_conv(args.input_root, include_mood=False)
     participant_codes, answer_tables = _answer_views(views, list(analysis["primary_conditions"]))
 
     embeddings: dict[str, np.ndarray] = {}

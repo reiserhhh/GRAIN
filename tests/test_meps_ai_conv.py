@@ -93,7 +93,7 @@ gamma
 
 def test_loader_excludes_assistant_text_and_pseudonymizes(tmp_path: Path) -> None:
     _make_participant(tmp_path)
-    views, mood, metadata = load_meps_ai_conv(tmp_path)
+    views, mood, metadata = load_meps_ai_conv(tmp_path, include_mood=True)
     assert metadata["n_loaded_participants"] == 1
     assert set(views["participant_code"]) == {"P001"}
     assert "private-subject-01" not in " ".join(views["participant_code"])
@@ -107,6 +107,25 @@ def test_loader_excludes_assistant_text_and_pseudonymizes(tmp_path: Path) -> Non
     assert "ALSO_DO_NOT_SCORE" not in free_chat["text"]
     assert set(mood["phase"]) == {"baseline", "pre", "mid", "post"}
     assert "text" not in public_metadata(views).columns
+
+
+def test_default_loader_never_opens_state_or_adjacent_questionnaire_files(tmp_path, monkeypatch):
+    folder = _make_participant(tmp_path)
+    for suffix in ("mood", "events", "meps_followup", "split_chat_by_question", "summary"):
+        (folder / f"{folder.name}_{suffix}.csv").unlink()
+    original = Path.open
+    opened = []
+
+    def guarded(path, *args, **kwargs):
+        assert path.name.endswith(("_questions.csv", "_free_chat.csv", "_split_chat.csv", ".md"))
+        opened.append(path.name)
+        return original(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "open", guarded)
+    views, mood, metadata = load_meps_ai_conv(tmp_path)
+    assert len(views) > 0 and mood.empty
+    assert metadata["mood_csv_loaded"] is False
+    assert len(opened) == 4
 
 
 def test_complete_bundle_auto_resolves_decrypted_output_and_registers_withheld_references(tmp_path: Path) -> None:

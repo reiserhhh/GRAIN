@@ -32,6 +32,8 @@ def parse_args() -> argparse.Namespace:
                         default=ROOT / "results/meps_ai_conv_feasibility_audit")
     parser.add_argument("--report", type=Path,
                         default=ROOT / "reports/MEPS_AI_CONV_FEASIBILITY_AUDIT.md")
+    parser.add_argument("--include-mood", action="store_true",
+                        help="Explicit state-table opt-in; requires a separately authorized analysis.")
     return parser.parse_args()
 
 
@@ -195,7 +197,7 @@ integrity check rather than a text-score denominator.
 
 def main() -> None:
     args = parse_args()
-    views, mood, metadata = load_meps_ai_conv(args.input_root)
+    views, mood, metadata = load_meps_ai_conv(args.input_root, include_mood=args.include_mood)
     qc = metadata.pop("direct_answer_qc")
     layout = resolve_meps_experiment_layout(args.input_root)
     references = reference_registry(layout)

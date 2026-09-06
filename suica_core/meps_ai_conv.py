@@ -92,11 +92,22 @@ def parse_direct_answers_markdown(markdown: str) -> dict[int, DirectAnswer]:
     deliberately conservative: unfamiliar non-empty lines are retained as an
     ``unlabeled`` slot rather than discarded.
     """
+    return parse_direct_answers_lines(markdown.splitlines())
+
+
+def parse_direct_answers_lines(lines: Iterable[str]) -> dict[int, DirectAnswer]:
+    """Extract response sections while discarding unrelated mixed-export sections.
+
+    A Markdown container can include state summaries. Iterating its lines is
+    still a file read, but only direct-response sections are retained/parsed as
+    content. This must not be described as never accessing the mixed container.
+    """
     collected: dict[int, list[str]] = {}
     current_question: int | None = None
     collecting_question: int | None = None
 
-    for raw_line in markdown.splitlines():
+    for raw_line in lines:
+        raw_line = raw_line.rstrip("\r\n")
         heading = HEADING_RE.match(raw_line)
         if heading:
             level = len(heading.group("level"))
@@ -188,9 +199,9 @@ def _mood_rows(rows: Iterable[dict[str, str]], participant_code: str) -> list[di
 
 
 def load_meps_ai_conv(
-    input_root: Path,
+    input_root: Path, *, include_mood: bool = False,
 ) -> tuple[pd.DataFrame, pd.DataFrame, dict[str, Any]]:
-    """Load private MEPS data into separated response and state tables.
+    """Load private MEPS text; state tables require explicit opt-in.
 
     ``views`` contains raw participant text *only in memory*.  It includes no
     source participant ID.  The stable ``P001`` coding is sufficient for
@@ -212,7 +223,8 @@ def load_meps_ai_conv(
     for position, folder in enumerate(participants, start=1):
         participant_code = f"P{position:03d}"
         files = {suffix: folder / f"{folder.name}_{suffix}.csv" for suffix in EXPECTED_SUFFIXES}
-        missing = [suffix for suffix, path in files.items() if not path.exists()]
+        required = ("questions", "free_chat", "split_chat") + (("mood",) if include_mood else ())
+        missing = [suffix for suffix in required if not files[suffix].exists()]
         if missing:
             missing_files[participant_code] = missing
             continue
@@ -222,7 +234,8 @@ def load_meps_ai_conv(
             continue
 
         questions = _question_char_counts(_read_csv(files["questions"]))
-        direct_answers = parse_direct_answers_markdown(markdown_path.read_text(encoding="utf-8", errors="replace"))
+        with markdown_path.open(encoding="utf-8", errors="strict") as handle:
+            direct_answers = parse_direct_answers_lines(handle)
         for question_index in (1, 2, 3):
             answer = direct_answers.get(question_index)
             if answer is None:
@@ -319,15 +332,21 @@ def load_meps_ai_conv(
                 "reported_answer_chars": np.nan,
             })
 
-        mood_rows.extend(_mood_rows(_read_csv(files["mood"]), participant_code))
+        if include_mood:
+            mood_rows.extend(_mood_rows(_read_csv(files["mood"]), participant_code))
 
     views = pd.DataFrame(view_rows)
-    mood = pd.DataFrame(mood_rows)
+    mood = pd.DataFrame(mood_rows, columns=[
+        "participant_code", "phase", "source_scale", "n_items", "mean_response",
+    ])
     qc = pd.DataFrame(direct_answer_qc)
     metadata: dict[str, Any] = {
         "layout_manifest": layout.public_manifest(),
         "n_discovered_participants": len(participants),
         "n_loaded_participants": len(participants) - len(missing_files),
+        "mood_csv_loaded": bool(include_mood),
+        "mixed_markdown_container_scanned": True,
+        "non_response_markdown_sections_retained": False,
         "missing_files": missing_files,
         "direct_answer_qc": qc,
         "source_schema": {

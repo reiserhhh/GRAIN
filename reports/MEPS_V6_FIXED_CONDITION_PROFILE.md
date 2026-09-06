@@ -1,5 +1,16 @@
 # SUICA V6 MEPS Fixed-Condition Vector Profile v1
 
+## Access-boundary erratum (2026-09-06)
+
+The historical runner discarded `_mood`, but its shared loader still opened and
+parsed `mood.csv`. Those values were not supplied to the embedding or correspondence
+statistics; "unused as outcomes" must not be read as "never loaded". The loader now
+defaults to `include_mood=False`, and this runner specifies that explicitly.
+Mixed Markdown exports are still scanned to recover direct answers; non-answer
+sections are discarded, not interpreted. Original metrics below are preserved,
+not relabeled as a rerun. The new text-only access and speaker-window audit is in
+[VM06 material preflight](grain_vector_mechanisms/VM06_MEPS_MATERIAL_PREFLIGHT_REPORT.md).
+
 ## Decision boundary
 
 This is a local-only, same-session Japanese **vector correspondence** pilot. It tests whether the frozen multilingual embedding places a participant's answers to two shared MEPS prompts closer than other participants' answers. It does not estimate personality, clinical state, external validity, cross-language numerical equivalence, or a cross-session response operator.

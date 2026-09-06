@@ -1,5 +1,16 @@
 # MEPS Fixed-Condition Vector Profile v1: Frozen Protocol
 
+## Implementation erratum, not a retrospective protocol change
+
+2026-09-06: the original shared loader implicitly parsed `mood.csv` even though
+the fixed-profile runner did not use its returned values. The corrected runner
+uses `include_mood=False`; the loader defaults to that setting, with a synthetic
+file-open guard test. Historical outcome values and this protocol's original
+decisions are unchanged. Reading the mixed Markdown container is necessary to
+recover answers and must be disclosed separately from extracting scale values.
+New role-separated material/window work is specified in
+[VM06 material protocol](GRAIN_VM06_MATERIAL_AND_ROLE_PROTOCOL_V1.md).
+
 ## Question
 
 With one frozen multilingual embedding, do Japanese responses from the same
