@@ -713,3 +713,45 @@ vm06_response_context_audit_r1、vm05_sparse_memory_fix_audit_r1。
 下一：末层读出正控制、少数固定层的状态/上下文利用路径；完整源头采集、
 强稀疏与同ready比较、来源封存后bridge仍需完成。新机制只解释上下文
 兼容/利用，不直接命名Who或人格；goal保持active，不需要用户先给新idea。
+
+## 第十六轮：正文状态的层位充分性
+
+2026-09-06。上一轮为progress；本轮完成新干预与真实资源问题闭环。
+
+- 9cd659a先冻结RC2六个站点，0e6b728实现后才运行。复用RC1完全相同的
+  44回复/前文/错排；没有层选择、新材料筛选、心理标签或LLM训练。
+- 日/英非私人final_norm正控制tail误差均0；正式628forward、832.3秒、
+  MPS采样6.175GB。264次自替换和首词不变均精确通过；末block/末norm
+  88次tail恢复全0误差。88个实际/错配原始forward重做RC1标量差<=4.44e-16。
+- block4/10/16/22搬运的平均tail改善为.011616/.024313/.168065/.343169；
+  完整实际前文gap=.419749。block16和22的固定材料描述区间均正，
+  但不叫人格效度。末层100%是逐位置读出的预期恒等式，不是语义发现。
+- 独立scalar/material audit通过全部264站点行与44成员、SHA、效果/区间。
+  未独立重跑628forward。完成预设结果后检查发现仅13/44深度序列单调，
+  block22有11人超过原真实前文结果；不能解释为各人恒定比例的信息积累。
+  当前证据支持状态可用性依赖层位，持续前文访问/非线性组合/词汇重合仍待分辨。
+- 152项专项tests通过。新故障fixture曾在pandas整数列写小数前失败，
+  明确float后6个攻击/重播测试通过；真实模型实验未受影响。scoped ruff/diff通过。
+- SN强稀疏raw真实内存修复完成：6393人、AUC=.669877，mean-fold=.672291，
+  RSS采样6.756GB<不变8GiB。5保存模型独立重播最大差1.11e-16。
+  0.5阈值全N、BA=.5，排名与实用决策分开；未在OOF/bridge上调阈值。
+  r3在11:39 JST核对为SN cue_mask，child37622仍活跃；其余8条件未验收。
+- WindowsPID28172存活，28observer shards完成、E5 shard09推进；8h包尚未停。
+  新备份shard07为324287567字节，远端/本地SHA
+  70f292ed26e6fa7b6d2c602a7fa169cf72ce759a92443fa6db51506668df22af。
+  Mac00--07全部24shard作者/cache/来源/fingerprint核验，各模型2424人。
+  远端08完成但未本地备份；不可把本地完整度与远端进度混为一谈。
+- 未改发布scorer、Windows aa51b06或活跃来源计算代码；未开bridge/MEPS量表；
+  未push，无关dirty报告和legacy锁文件删除保留。
+
+canonical：vm06_response_depth_r1（identity
+991a2673c0e65aa8105ed0f5616c86e34c6cf87f9ea6a27879297397122c92b4）、
+vm06_response_depth_audit_r1、vm06_response_depth_technical_r1、
+vm05_sparse_sn_raw_summary_r1、vm05_sparse_sn_raw_replay_r1。
+完整方法/表格：VM06_RESPONSE_DEPTH_REPORT；CLI：run_grain_response_depth、
+audit_grain_response_depth，复现命令见报告，不重跑已完成包。
+
+下一轮先复核两个活跃计算，不重复启动。机制侧不再追加层位搜索，固定材料
+上设计词袋/词序与持续前文访问对照，并用逐位置读出几何解释高余弦/大作用。
+这仍是未完成的新实验，不能写成已有证据。完整来源观察器、强稀疏三臂、
+同ready比较、来源封头后bridge和VM07仍需完成。Goal仍active，本轮无阻塞。
