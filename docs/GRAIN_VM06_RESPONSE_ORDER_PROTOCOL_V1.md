@@ -24,6 +24,8 @@ nonidentity group permutation, rotating by one only if a random identity occurs.
 Do not search seeds. Repeated token strings can still yield identical sequences;
 record the actual changed-token fraction and duplicate order hashes, not fake
 independent replications.
+If only one eight-token block is isolatable, that block remains unchanged and
+is explicitly counted as a degenerate control, not silently resampled or removed.
 
 Only complete tokens strictly within the rendered assistant-body character span
 move. Any boundary-crossing token stays fixed and is counted. A contiguous,
