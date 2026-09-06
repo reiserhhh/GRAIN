@@ -1521,3 +1521,23 @@ paired CSV SHA c52b960b8cacb67350bb5011206dc493c3a957c4ca641370712a83616a4ca6bd�
 读出；GPU预算边界后真实direct语义panel与全采集；补strongsource与null，
 源头规则完整冻结后bridge，最终VM07。仍有明确可执行任务，不需用户新idea。
 未打开bridge/MEPS心理值、未训练/下载新LLM、未使用付费API或push。
+
+## 第三十一轮：原维对PCA的完整配对解释（2026-09-07）
+
+新增analyze_grain_projection_sensitivity.py与3项专测，主比较/敏感性组合
+12tests通过。实际读取已保存OOF，不新开标签表、不重新拟合。验证完整45
+主比较父包、9个候选/45保存fold、投影flag、共同feature bytes与作者/标签/
+官方fold一致；输出vm05_projection_sensitivity_r1共9对18行。
+identity1ed460b5b01f407849ad829eb088a6d943e7a137b630cecc37872eb693b8f558，
+paired_projection.csv SHA7312785141506c8da8cc9512db01c04f2e0185d4ed4eb9ddad4661fa166dd0e5。
+
+原文BGE/E5/Qwen no-PCA减PCA pooled分别-.015961/-.021190/+.002450；
+Qwen CI[-.031705,.041042]，mean-fold-.002555[-.037826,.035689]。
+所有三臂、两estimand的18个区间均跨0，不能证明PCA造成主要预测瓶颈，
+也不能证明等价或低方差方向无信息。此比较同时改变压缩/正则读出，
+不是向量信息有无的因果识别。分析实现晚于点估计，九条件本身早已预定。
+完整报告VM05_PROJECTION_SENSITIVITY_REPORT.md，固定OOF条件bootstrap1000，
+不包含重新拟合误差，不把三mask当独立复现。
+
+54敏感性仍实际执行，最近16完成、SN raw block16；未触碰active源码或
+抢占其CPU锁。下一步仍为固定层完整比较及同ready实际拟合，未新增搜索。

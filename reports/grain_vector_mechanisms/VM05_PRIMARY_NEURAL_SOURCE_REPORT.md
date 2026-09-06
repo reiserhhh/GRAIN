@@ -1,5 +1,11 @@
 # VM05 primary neural readouts: complete source comparison
 
+Round31 update: all nine original-dimension Big5 comparisons have now been
+paired against the primary PCA heads. Every interval crosses zero; raw Qwen
+pooled delta is+.002450[-.031705,.041042], with mean-fold delta-.002555.
+See [projection sensitivity](VM05_PROJECTION_SENSITIVITY_REPORT.md). The original
+fixed-layer queue continues; this update does not select a new primary readout.
+
 ## Round30 complete45-head acceptance
 
 2026-09-07 (execution began September6). **All45 primary heads completed, with225
