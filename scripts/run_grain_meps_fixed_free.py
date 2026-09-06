@@ -60,17 +60,39 @@ class WindowObserver:
         self.tokenizer = AutoTokenizer.from_pretrained(
             snapshot, local_files_only=True, trust_remote_code=False
         )
-        self.model = (
-            AutoModel.from_pretrained(
-                snapshot,
-                local_files_only=True,
-                trust_remote_code=False,
-                dtype=torch.float32,
-                attn_implementation="eager",
-            )
-            .to("mps")
-            .eval()
+        self.model, loading = AutoModel.from_pretrained(
+            snapshot,
+            local_files_only=True,
+            trust_remote_code=False,
+            dtype=torch.float32,
+            attn_implementation="eager",
+            output_loading_info=True,
         )
+        from safetensors import safe_open
+
+        with safe_open(
+            str(Path(snapshot) / "model.safetensors"), framework="pt", device="cpu"
+        ) as f:
+            positions = f.get_tensor("embeddings.position_ids")
+        if (
+            loading.get("missing_keys")
+            or loading.get("mismatched_keys")
+            or loading.get("error_msgs")
+            or set(loading.get("unexpected_keys", [])) != {"embeddings.position_ids"}
+        ):
+            raise ValueError("Unexpected model-load discrepancy")
+        if positions.shape != (1, 514) or not torch.equal(
+            positions, torch.arange(514)[None, :]
+        ):
+            raise ValueError(
+                "Legacy nonlearned position buffer is not the standard integer sequence"
+            )
+        self.model = self.model.to("mps").eval()
+        self.loading_audit = {
+            "only_unexpected_key": "embeddings.position_ids",
+            "nonlearned_arange_verified": True,
+            "missing_keys": [],
+        }
         self.calls = 0
         self.peak = 0
 
@@ -145,6 +167,7 @@ def technical(observer):
         "threshold": 1e-5,
         "public_checks": rows,
         "model_forwards": observer.calls,
+        "loading_audit": observer.loading_audit,
     }
 
 
