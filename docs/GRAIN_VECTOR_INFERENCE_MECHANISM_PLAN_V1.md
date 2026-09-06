@@ -2,7 +2,7 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
-第十二轮更新：102来源控制及510个保存fold模型全部验收，13个完整null已
+第十二轮更新：102来源控制及510个保存fold模型全部验收，14个完整null已
 重算；稀疏MBTI强参照与三个神经观察器全量提取继续。新增160个同ready
 几何通道条件及50个后续解码条件，见[几何信息报告](../reports/grain_vector_mechanisms/VM05_GEOMETRY_INFORMATION_REPORT.md)。
 带身份距离并不保留所有方向，PCA/正则又会改变可读性；这不是人格专属

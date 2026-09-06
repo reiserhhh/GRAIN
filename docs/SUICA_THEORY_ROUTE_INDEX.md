@@ -76,7 +76,7 @@ pooled correlation can also reflect fold-specific score dispersion, not simply
 the destruction of an underlying signal. These are source-readout diagnostics,
 not new personality constructs or a post-hoc replacement of the primary metric.
 The twelfth cycle completes all 102 controls and replays 510 saved fold models.
-Full observer comparisons, two remaining nulls and bridge are still open.
+Full observer comparisons, the final null and bridge are still open.
 
 The [geometry-information study](../reports/grain_vector_mechanisms/VM05_GEOMETRY_INFORMATION_REPORT.md)
 adds supported-author component comparisons and an exact landmark-distance

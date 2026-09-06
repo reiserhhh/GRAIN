@@ -586,3 +586,7 @@ vm05_source_controls_r1（source controls）、vm05_null_family_r1（完整null�
 子空间和条件控制，区分信息损失与读出惩罚，不把新探索写成已验证机制。
 来源头/控制封存后才bridge；随后VM06/07和功能使用连接。没有需要用户新idea
 才能推进的阻塞，goal继续active。已完成批次不再重跑，未完成批次不重复启动。
+
+本轮收尾：cue sparse null完成并独立复算，raw+cue+12MBTI共14条件/2786次
+已验收（vm05_null_family_audit_partial_r3），仅placebo继续。EI raw稀疏
+5个模型独立重播最大差9.72e-17，cue正运行。上述更早的13项是过程快照。
