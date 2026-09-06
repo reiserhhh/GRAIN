@@ -1126,3 +1126,53 @@ active source-estimator/Windows aa51b06文件，未另开Mac真人重拟合。
 下一步继续完成live来源控制和向量队列，接入完整source次级readout与真正
 same-current历史采集设计；不能以已完成task/mean特征缩小VM05原始范围。
 当前仍有明确可执行机制缺口，无需用户新idea，goal继续active。
+
+## 第二十四轮：全源读出入口与EI人数/来源差值的估计对象审查
+
+2026-09-06 17:05 JST快照。本轮progress。开始先确认上一轮5d08cee确已提交，
+未重复commit或误称丢失。Mac第五count seed61202实测运行，随后正常完成；
+新cue_mask retain/62122接续。Windows61296实测存在且进入shard18，不重启。
+
+- a65bc4e新增run_grain_full_source_readout，补齐全源次级读出工程入口。
+  源头624/6393或明确排参照624/6294，非same-ready子集；同fold/统计头，
+  retain-thread独立声明。全72缓存sha、原作者union、源材料与parent先核验，
+  然后才能转换源标签。1个8GiB/限时owned child，不动正在跑的旧评分文件。
+  每条件保存5外折/full source模型、私有预测/支持度、代码/输入/输出sha，
+  保存模型重播必须<=1e-10。合成Big5/MBTI端到端与边界 tests通过。
+- 真实vm05_full_source_readout_incomplete_guard_r1在All72 gate正确拒绝；
+  无source_label_audit/模型输出。该FAILED_STOP是预期验收，不是拟合失败。
+  默认正文与次级readout入口虽齐，真实完整神经拟合尚未跑，不能标完成。
+  真正same-current历史反事实及直接LLM Big5/MBTI对照仍是未实现的机制缺项。
+- EI raw count734=.660838、735=.643254完成，固定五seed均值=.648344；
+  retain=.670973，purge=.637082。vm05_strong_source_audit_ei_raw_complete_r1
+  独立7cases/168成员记录/5nested count匹配/3eligible contrasts，84总计划
+  仍PARTIAL。新734/735的10保存fold max9.71445e-17，累计35fold重播通过。
+- 原预定purge-vs-five-count pooled delta=-.011262 CI[-.021184,-.001484]，
+  相比purge-retain总-.033891，人数/随机组成损失占相当部分，但不是心理
+  信号份额或纯因果中介。五count AUC范围.643254--.660838，不能选最好seed。
+- 978b28e在已看全七case后明确posthoc增加rank-AUC独立计算与按折重采样。
+  vm05_ei_source_gap_posthoc_r1 identity
+  0b74773c9a18e43c1105a17e2e590e69fea5f52043480dd21195a137d3be695e。
+  1000次fold内author bootstrap：pooled purge-count -.011262
+  [-.021749,-.001395]，meanfold -.006444[-.015413,+.002832]。
+  个别fold符号不同（purge较好2/5），不能把pool显著当稳健线程泄漏定论；
+  也不把跨0当等效证明。不调test calibration去“修”这个估计对象差异。
+- 人数/来源差值的加减恒等式逐fold误差0；标准统计运算不是新人格定理。
+  independent sklearn按保存CSV重算36observed标量 max2.26e-16；单列
+  vm05_ei_source_gap_rank_audit_r1并写明没有重算所有bootstrap draws。
+  支持度E比例.207658，retain预测E仅.003654，BA=.503971；purge无E预测、
+  BA=.5。排序信息存在不等于已可用个体分类，亦非LLM人格reasoning证据。
+- Windows新shard17 zip305416275bytes，SHA
+  f8f733463add7a4652a4e3a6a2141c62441fa12f8d8513557a53d55f21848837。
+  SHA/CRC/安全不覆盖解包、00--17全54manifest/作者cache全部再核验，每模型
+  5454作者。备份status的旧complete计数与新增verified计数已从实际分片
+  统一为54及indices0..17，避免状态页自身矛盾；whole_queue_complete=false。
+- 收尾27项full-source/readout/ready/gap/strong-control专项tests通过，
+  两条既有SWIG deprecation；Ruff及git diff --check通过，非全仓库测试。
+  62122最后实测cue-mask retain运行510秒；active scoring六文件SHA与
+  batch冻结承诺仍完全一致。没有因增加新入口改变正在执行的对照方法。
+
+无bridge outcome/MEPS量表/付费API/下载/新LLM训练/push。发布scorer不变。
+正式报告新增VM05_EI_COUNT_MATCHED_SOURCE_REPORT；下一步继续其余axis/arm
+和全向量队列，执行现已备齐的全源/同ready读出，并冻结真实history反事实
+和直接trait打分的仪器方案。未达到需要用户新idea或总计划闭合的终点。

@@ -96,7 +96,11 @@ argument. It leaves default body_token untouched and refuses incomplete observer
 queues before any target conversion or fitting. It still uses the same regularized
 head, not a new representation learner or calibrated direct LLM scorer.
 
-Full-source secondary-readout orchestration and true same-current history-effect
-collection are separate pending work. Do not conflate the existing source-only
-body runner with these new secondary channels. Qualification is not full-corpus
-feature evaluation, and a technical case is not another independent experiment.
+Full-source secondary readouts now have an independent bounded entrypoint,
+`run_grain_full_source_readout.py`, with its own execution contract. Synthetic
+source-only Big5/MBTI fits and saved-head replay passed; the real incomplete queue
+was correctly refused before labels. Actual full-corpus fits remain pending.
+True same-current history-effect collection is separate pending work. Neither
+runner invents that contrast from task differences. Qualification is not
+full-corpus feature evaluation, and a technical case is not another independent
+experiment.
