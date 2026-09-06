@@ -35,7 +35,8 @@ def main():
         if isinstance(n, ast.FunctionDef) and n.name == "select_head"
     )
     namespace = dict(vars(heads))
-    exec(
+    # Only the named function from our fixed, trusted repository commit is loaded.
+    exec(  # noqa: S102
         compile(ast.Module(body=[definition], type_ignores=[]), ref, "exec"), namespace
     )
     previous = namespace["select_head"]
