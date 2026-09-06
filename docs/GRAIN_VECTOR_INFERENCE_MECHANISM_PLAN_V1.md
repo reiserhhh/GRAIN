@@ -2,6 +2,14 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-06第二十五轮：完成完整目标材料的same-current历史登记与独立审计，
+修复token边界误排后7,108人进入strict材料；不是新预测精度。另发现软匹配
+未保证subreddit重合，已做5,910人具备完整备选匹配的可行性诊断。真实神经
+历史资格/采集仍待原GPU队列完成。最新完整状态见
+[剩余要求](GRAIN_VECTOR_REMAINING_REQUIREMENTS.md)与
+[历史材料报告](../reports/grain_vector_mechanisms/VM05_HISTORY_MATERIAL_REPORT.md)。
+以下逐轮旧进展按历史保留，不代表当前仍停在早期小样本。
+
 第十三轮：[坐标与随机子空间报告](../reports/grain_vector_mechanisms/VM05_READOUT_AND_RANDOM_SUBSPACE_REPORT.md)
 完成100折/20头精确读出搬运，以及200个同维随机条件/1000折独立重播。
 修正距离坐标仿射性表述；垂直33维尚无超出随机方向范围的特殊性。

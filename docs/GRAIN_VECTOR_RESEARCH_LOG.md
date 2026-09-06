@@ -1176,3 +1176,84 @@ same-current历史采集设计；不能以已完成task/mean特征缩小VM05原�
 正式报告新增VM05_EI_COUNT_MATCHED_SOURCE_REPORT；下一步继续其余axis/arm
 和全向量队列，执行现已备齐的全源/同ready读出，并冻结真实history反事实
 和直接trait打分的仪器方案。未达到需要用户新idea或总计划闭合的终点。
+
+## 第二十五轮：完整历史材料、token边界修复与条件匹配可行性
+
+2026-09-06，至18:05 JST后续归档。本轮为实质progress，未关闭整体goal。
+核验本轮起点的运行与git状态，保留无关报告修改。未重启Windows队列，
+未修改正在运行的Mac源头估计器，active scoring六文件SHA再次全部一致。
+
+- 82ca8ba/5fb48d8冻结source-safe history设计、原生token/固定当前位置/
+  遮罩工具及独立匹配、词四元组近复制审计。原99参照MBTI作者仅作字典，
+  不进入本实验预测/测试行；7,167目标为624 Big5-only/6294 MBTI-only/249
+  bridge材料。每view保持本人11历史+1当前，三view原36评论，不重采替代。
+- vm05_source_history_material_r1 COMPLETE，4551人支持。独立audit_r1
+  重建13653匹配view，误差0；12人/38对近复制，旧strict4539。初次大量
+  排除来自2569人prefix/suffix token边界不一致，不是原文或人格信息不足。
+- 0cd3523：192名哈希失败作者的3456布局中，原1432布局失败；仅将历史后
+  原有两个换行归入历史槽，192全恢复、native/current token零改变。加入
+  --history-envelope显式版本字段，旧r1保留，启动完整r2不放宽任何等式。
+- vm05_source_history_material_r2 COMPLETE，685.386s，7120支持，47人
+  无合法先前字典历史；identity
+  3b65bb734a57b778a38e1d2cf1651b39fd9885d922bb5f3f51bfbc72c2d8a2ea。
+  audit_r2独立21360view/384480布局承诺完整性、匹配误差0，157.102s；
+  identity6955200ed63692f9a242af818b2fca19b07f2edcbbde320bb1551f08151c37d5。
+  同12人近复制排除，strict620/6239/249，共7108；同GRAIN all-arm ready
+  交集143/1459/61。此audit不冒称全量独立tokenizer重播，也未重算47排除。
+- d462713：新history instrument入口；6源头作者(2 Big5/4 MBTI)324布局
+  preflight重播通过，identity
+  1a3c9ee6111d301ea75aba3cf0e8385dfefc3740c20879fa317ce360211c475b。
+  real_neural_qualification_passed=false、forwards=0，不能写成神经验收。
+  真CUDA资格计划648forwards，需原72shard queue COMPLETE才准加载。
+  真实capture仍未运行；发布scorer未改。
+- e70fe8e：旧新交集13653view的当前/历史/donor/cost逐项相同；恢复2569人、
+  损失0。comparison identity
+  e90dae0b213db7ee8815feeed58f7bc86bb18d622bb18429c38a25625cec559e。
+  原99字典作者均使用，最大份额1.94%，逆Simpson90.23。不是独立被试N。
+- 新问题：三组原donor的subreddit Jaccard中位数均0。先前soft-cost主要
+  实现长度/时间优化，不能叫topic控制完成。冻结额外共享subreddit候选
+  (保留原最小代价/时间/来源条件，不改原材料)，44.806s完成21324strict
+  view可行性；完整三view作者Big5=448、MBTI=5253、bridge材料=209，合5910。
+  新J中位数.083/.083/.100；时间误差中位数1.355/.897/.981变差，单位是
+  log1p天数差而不是天。不能把共享subreddit等同共享语义topic或situation。
+  identityba0fd483e4c0f53a3cfbbaeca3e68e07acdfd9bbb2671f6ce568f68acb16e362。
+  备选donor尚无新token/近复制资格；不得直接投入正式采集或替换主结果。
+- vm05_history_metadata_independent_audit_r1独立csv分位数/计数54项误差0，
+  另108triplets/324保存token布局不变量检查通过。不是第二遍神经采集，
+  也不是独立重做新donor的全候选最优化。
+- 区分三种数学对象：未上下文化input token相同应为0差异；当前token
+  可以受历史影响，但不能受后置问题影响；task-history交互应读decision。
+  不把一个设计上必为0的pre-question task差值当推翻人格reasoning。
+- 再发现旧source archive窄glob漏收新history脚本。原档不动，按manifest
+  12项源码hash从git blob精确补档r1，SHA06ee0b24186a9108edfaec8e8d79dd50f55427b80a8ad1519b96d93c30e15abd；
+  audit_r2另2项补档SHA0d58b50b67a46e858ce8df3ae15c99ecb7ddee500a07597c4ccc7d523e31fe6e。
+  都明确retrospective，不冒称事前封存。新history入口已用完整allowlist。
+- 新cue retain/purge/count731 AUC=.672089/.634684/.660677；三条件15保存
+  fold重播max9.71445e-17，累计本84batch50fold已重播。独立source audit
+  first3-cue共10cases/240成员记录/6count配对/7对比，整体PARTIAL。
+  随后count732完成，最新11/84，未作其重播；66763/cue count733实测
+  99.1%CPU，仍在推进。不能从首个cue-count seed宣布稳定优势。
+- Windows61296继续shard20。shard18及19三observer均拷回并逐层验收；
+  新shard19 zip330105362bytes，SHA
+  9999689c037df9bd1478dfe23e693fdedcbfcf317d1c52d5124777374c81679c。
+  SHA/CRC、安全不覆盖解包、00--19全60manifest及作者cache逐一再核验；
+  每observer6058人，whole_queue_complete=false。不得把远端活跃20当已备份。
+- 最终专项122 tests通过、2项既有SWIG弃用警告。Ruff/差异检查通过；这不是
+  全历史仓库测试。新增正式报告VM05_HISTORY_MATERIAL_REPORT。
+
+可复现入口（在独立GRAIN根目录；新输出目录，不覆盖本轮证据）：
+
+```bash
+PY='/Volumes/mobile3/projects/project persona/.venv/bin/python'
+R=results/grain_vector_mechanisms
+TOKENIZERS_PARALLELISM=false "$PY" scripts/prepare_grain_source_history.py --views "$R/vm05_qualification_r2/common_views.json" --preflight-dir "$R/vm05_preflight_r1" --profile-dir "$R/vm05_profile_material_r1" --qwen-tokenizer "$R/local_model_metadata/qwen_989aa798" --history-envelope body_and_separator --output-dir "$R/new_history_material"
+TOKENIZERS_PARALLELISM=false "$PY" scripts/audit_grain_source_history_material.py --views "$R/vm05_qualification_r2/common_views.json" --preflight-dir "$R/vm05_preflight_r1" --qwen-tokenizer "$R/local_model_metadata/qwen_989aa798" --material-dir "$R/new_history_material" --output-dir "$R/new_history_audit"
+TOKENIZERS_PARALLELISM=false "$PY" scripts/qualify_grain_source_history.py --views "$R/vm05_qualification_r2/common_views.json" --material-dir "$R/new_history_material" --audit-dir "$R/new_history_audit" --qwen-tokenizer "$R/local_model_metadata/qwen_989aa798" --output-dir "$R/new_history_token_preflight" --preflight-only
+```
+
+下一步：继续完成live源头/observer条件；原queue完成后在新Windows历史目录
+做真实仪器资格，再进入完整历史向量采集与同支持源头比较。共享subreddit
+候选先补新的近复制/布局核验；语义匹配需完整observer资料，不在片段队列
+上挑“有效”作者。直接LLM trait研究对照、strong null、神经/同ready读出、
+封头后bridge、最终VM07仍需执行。无bridge outcomes/MEPS量表访问，无新
+付费API/模型下载/LLM训练/push，整体goal仍active，目前不需用户新idea。

@@ -154,3 +154,25 @@ for any new donor before extraction. This is a bounded feasibility diagnostic,
 not an improvement selected on source accuracy. Preserve both broad and
 context-restricted estimands because condition selection can itself carry author
 information. Further semantic matching waits for the complete observer material.
+
+## Reading-site distinction and technical execution
+
+The question is **after** the current excerpt. In this causal decoder, current
+token states cannot incorporate that later question. Therefore pre-question
+current-state task differences must be zero under equal prefixes/positions;
+this is an instrument identity, not a null finding about personality reasoning.
+History effects can occur at these current states. The task-by-history contrast
+is meaningful at the later decision site, which can access both. Input-embedding
+equality, current-state context effects and decision-site task interactions are
+three different objects; never pool their interpretations.
+
+`qualify_grain_source_history.py` selects two Big5-only and four MBTI-only authors
+from the audited strict registry using a fixed hash, not outcomes. All324 native
+layouts must replay their commitments. The real pinned-CUDA qualification plans
+648 forwards: each triplet plus masked-token replacement, original restoration
+and native all-visible comparison. Require zero errors at the original four
+sites plus input embedding, and current-state invariance across later questions.
+The Mac `--preflight-only` path has no forwards and cannot pass this neural gate.
+Real execution refuses a still-running/incomplete72-shard observation queue.
+Use a new remote history work directory after that queue finishes; do not resync
+the running aa51b06 repository or overwrite its completed evidence.
