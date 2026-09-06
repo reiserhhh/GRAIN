@@ -91,12 +91,12 @@
     {
       "id": "source_only_external_heads",
       "domain": "pandora_source_exclusive",
-      "source_report": "VM05_PREFLIGHT_AND_SOURCE_REPORT.md",
+      "source_report": "VM05_COMPLETE_SPARSE_SOURCE_REPORT.md",
       "instrument": "observed",
       "external_association": "observed",
       "full_neural_comparison": "not_tested",
       "psychological_validity": "underresolved",
-      "finding": "Completed heads show task-dependent label ranking; all full-source neural heads and bridge results are still pending.",
+      "finding": "All12 strong sparse arms and60 fold replays show axis-dependent ranking; EI/SN are near/all majority at the fixed threshold. Strong-source controls, full neural comparisons and bridge results remain pending.",
       "not_claimed": ["llm_personality_reasoning", "completed_bridge_validation", "full_pandora_benchmark_replication"]
     },
     {

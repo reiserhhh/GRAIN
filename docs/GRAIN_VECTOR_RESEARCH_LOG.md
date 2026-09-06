@@ -966,3 +966,53 @@ GRAIN_VECTOR_REMAINING_REQUIREMENTS.md逐项对回完整原计划：MEPS264views
 下一轮优先完整JP及source representations，再做真正强头的来源控制、
 同ready比较与冻结后bridge。不因域内显著关联继续无限搜新切法或新层位；
 也不把未完成的source/bridge工作改名成不需要。当前不需用户新idea介入。
+
+## 第二十一轮：四轴强稀疏参考闭环，启动真实强头来源控制
+
+2026-09-06。本轮progress；goal active，不是全研究结束。未改发布scorer/
+正在运行的source估计器，也未碰Windows冻结aa51b06代码。
+
+- JP cue完整AUC=.6048405，五fold重播8.33e-17。旧r3在8/9后正常预算
+  暂停；核验旧PID退出后以相同协议续跑最后placebo，session34410现exit0。
+  placebo AUC=.6094635、meanfold=.6166650，1644.09秒/RSSpeak7.167GB；
+  五fold重播8.33e-17。EI/SN/TF/JP共12完整arm、60保存fold已全部重播，
+  全局max1.11e-16。旧r2失败SN仍保留，不加入完整汇总。
+- a10842a新增显式12父目录汇总入口，拒绝缺失/重复/错cohort；输出
+  vm05_sparse_all_axes_summary_r1，identity
+  ce9738f884515cff51cabcaf3a992bcc44e009246e86734b0fecd3320f656748。
+  raw AUC EI/SN/TF/JP=.672221/.669877/.767212/.610766；BA@.5=
+  .503630/.500000/.657990/.556540。两者必须区分，不称67%分类准确率。
+  JP cue-raw=-.005926 CI[-.010618,-.001723]，cue-placebo=-.004623
+  CI[-.009100,-.000503]。TF有更小cue差异，EI/SN相应区间跨0。
+  全12个预设对比/1000 paired bootstrap保留，条件于OOF模型、非全流程
+  refit推断/多重比较确认。新报告VM05_COMPLETE_SPARSE_SOURCE_REPORT。
+- 493e3d9冻结强来源控制：4轴x3臂x7来源条件=84，剔除99历史reference
+  后每条件6294评估作者。retain/purge/5随机count controls内外折重做选择；
+  使用word_char真强头，不从旧弱projection的84条件继承安全性结论。
+  一Mac CPU child、8GiB RSS、1h/条件、8h/批，剩余<3660秒不新开条件。
+  预计数十CPU小时，不缩样本/种子/模型来冒充全量完成。
+- 独立来源auditor兼容新父目录并重构完整84设计，拒绝错误头/来源/暴露/
+  重复条件。原102条件2448selection records/75配对控制/72差异全部重算，
+  vm05_source_control_audit_regression_r1的四CSV+summary与原final逐字节一致。
+- 发现null原实现同时缓存全部内外折矩阵的RAM风险。新增无损磁盘缓存，
+  每次仅载一个outer折；input值/顺序/dtype、代码、父identity、40矩阵SHA
+  绑定，开始/恢复/正常退出均验hash。20/199、完整inner选参、作者数全不变。
+  dense Big5/MBTI+sparse MBTI的观察与置换预测/选参在合成数据精确一致，
+  mutation/跨fold释放也测试。真实强null尚未跑，不能把合成PASS当经验null。
+  老15个完成null保持旧snapshot，不在新代码下恢复其输出。
+- 相关115tests通过，两历史SWIG警告；新增汇总后11focused tests通过；
+  Ruff/diff检查通过，非全仓库测试。atlas11条schema/link检验通过，仅文档
+  合法性，不是科学验收。
+- 12父packet完整+最后重播通过后启动vm05_strong_source_controls_r1：
+  identity de681be2cd42022737c3cf542d0f211876d2442c81b3d85c03b0dae25422ccf0，
+  session89662/child54674，EI_cont_raw_retain_731实测260秒、99.8%CPU、
+  RSSpeak6.666GB。不是只有shell启动成功；未完成任何新控制时不报PASS。
+- Windows61296继续至BGE15；已完成shard14三observer。新归档309514599
+  bytes，SHA c1d168d27543c401278cc8dd3f5da6a3415a15dd3bd3f7f559771bd8bcdd5d4e。
+  远端/本地SHA、CRC、安全不覆盖解包及00--14全部45shards的manifest与
+  private cache hashes通过；每观察器4545作者，whole_queue_complete=false。
+
+无MEPS量表/bridge outcome访问、付费API、模型下载、新LLM训练或push。
+下一步保持单Mac重拟合，审计完成的强来源条件；继续核验Windows完整神经
+表示。完整强null、神经源头/同ready/封头后bridge/最终VM07仍必须做。
+当前无需用户新idea，没有外部阻塞；不以本轮方法工程修复替代人格机制发现。

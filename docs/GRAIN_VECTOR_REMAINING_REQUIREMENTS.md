@@ -16,8 +16,9 @@ are a bounded mechanism packet inside VM06, not a substitute for the full plan.
   and an audited text-only loader. The complete multilingual-E5 fixed/free neural
   comparison now covers all264 views (VM06_FIXED_FREE_REPORT), independently
   replayed from saved vectors. The44-reply RC packet remains a distinct experiment.
-- Source-only sparse SN has three completed/replayed arms; EI has its prior
-  completed packet; TF now has three completed/replayed arms; JP remains active.
+- Source-only sparse EI/SN/TF/JP now have all12 completed arms and60 replayed
+  fold heads. See VM05_COMPLETE_SPARSE_SOURCE_REPORT. Their84 stronger-head
+  discussion/reference controls have started; they are not yet complete.
   Full source BGE/E5/Qwen
   collection is also active and incomplete. Never choose partial-source winners.
 
@@ -26,8 +27,8 @@ are a bounded mechanism packet inside VM06, not a substitute for the full plan.
 | Requirement | Authoritative evidence needed | Current status / next action |
 |---|---|---|
 | RC access/readout packet | Complete44 cases, native replay, instrument endpoints, independent scalar audit, public aggregate report | RC4/RC5 complete; this packet is closed without new layer search |
-| Full common-material representations | All24 shards x3 observers, matching material/model/template/precision, every cache checksum, exact author union | Local00-13 verified (42 observer shards,4,242 people per stage); queue incomplete. First bounded queue exited normally. SSH Start-Process attempt62444 died before queue startup; detached CIM launcher7748/queue61296 passed old-shard verification and is RUNNING BGE shard14. Recheck actual status/PIDs before any further resume |
-| Strong source comparisons | Four axes and permitted Big5 source heads; all frozen inner choices, OOF, saved head replay, appropriate controls | TF three arms complete and15 fold heads replayed; JP raw complete (AUC .610766) and5 saved folds replayed, other JP arms live. Strong-head source controls remain required; do not modify/restart active source code |
+| Full common-material representations | All24 shards x3 observers, matching material/model/template/precision, every cache checksum, exact author union | Local00-14 verified (45 observer shards,4,545 people per stage); queue incomplete. Detached Windows queue61296 last observed RUNNING BGE shard15. Keep aa51b06 unchanged; recheck actual status/PIDs before any resume |
+| Strong source comparisons | Four axes and permitted Big5 source heads; all frozen inner choices, OOF, saved head replay, appropriate controls | All12 sparse arms/60 saved fold replays complete. New84-condition vm05_strong_source_controls_r1 started with EI raw retain, child54674/session89662. All nulls for these stronger MBTI heads still pending; disk-backed exact cache has synthetic tests only. Preserve old weak-head controls/nulls as distinct evidence |
 | Same-ready GRAIN comparison | Identical authors, text budget and permitted auxiliary inputs, fixed reference/scorer gates; paired increments | Formal-ready143 Big5/1495 MBTI/61 bridge must not be pooled with larger eligibility as one score; final full-source comparison pending |
 | Source-head freeze then bridge | Immutable source model/feature/calibration choices and exposure log, then corrected bridge-only evaluation | Bridge outcome values remain unopened. Do not use the bridge to pick layer, blend, thresholds or directions |
 | MEPS fixed/free condition comparison | Same-person direct answers/user-only conversation views, assistant-context arms distinguished, no questionnaire use; lossless or declared-budget processing | Complete264-view multilingual-E5 packet and independent pooling/matrix/permutation audit. Modest cross-task correspondence, very strong within-chat user/AI matching; no personality or cross-day retest claim |
@@ -37,7 +38,7 @@ are a bounded mechanism packet inside VM06, not a substitute for the full plan.
 
 ## Next working block after complete MEPS fixed/free comparison
 
-1. Verify the two live source jobs and checkpoint completed shards/arms. Preserve
+1. Verify the two live source jobs and checkpoint completed shards/controls. Preserve
    bounded stop states, never launch a duplicate because a status read times out.
 2. The **Essays/X domain** context, geometry and declared lexical follow-up are
    complete. Do not grow another free layer/feature search from their positives.
