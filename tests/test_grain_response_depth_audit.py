@@ -94,7 +94,7 @@ def test_independent_depth_scalar_replay(synthetic_audit):
 def test_depth_audit_rejects_material_and_claim_errors(synthetic_audit, attack):
     run, parent, result = synthetic_audit
     path = run / "private_depth_metrics.csv"
-    frame = pd.read_csv(path)
+    frame = pd.read_csv(path, dtype={"patch_first_token_change": float})
     if attack == "drop_row":
         frame = frame.iloc[1:]
     elif attack == "first_token":
