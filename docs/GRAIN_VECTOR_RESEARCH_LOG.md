@@ -849,3 +849,52 @@ GRAIN_VECTOR_REMAINING_REQUIREMENTS.md逐项对回完整原计划：MEPS264views
 机制复测、全部源观察器/强稀疏/同ready/封头后bridge和VM07也仍缺。
 下一轮先核验活跃任务，随后利用等待时间准备这些缺项的同预算/角色/语言
 材料协议，不再仅围绕44回复打转。原goal保持active，当前没有真实阻塞。
+
+## 第十九轮：完整同人固定/自由比较与跨域材料闭环
+
+2026-09-06。本轮是progress：补原计划VM06，而非扩张RC44回复层位实验。
+
+- 966d4ce先冻结multilingual-E5模型/512定长/角色聚合/七项主对比；ea553c1
+  在私人提取前增加旧position_ids校验。该唯一unexpected key是[1,514]
+  的整数arange非学习buffer，无缺失学习权重。公开EN/JA重复/pad污染误差0，
+  compact/fixed最大1.30e-7，原1e-5容差不变。
+- 正式vm06_fixed_free_r1覆盖46人264views、1600turns、1609完整窗口，
+  366385字符不丢失。1617forward(8公开+1609私人)，269.33秒，MPS采样2.242GB。
+  identity ac077428fbd6d8b73c5c39f934c955b7d4b86cda24aa739077bcefccdf64e51b。
+  这不是整段对话context forward；未读取心理量表，也不是心理人格打分。
+- 三个固定问题与free用户文本都有微弱作者对应；全固定/自由主percentile
+  .590821 [.547366,.638377]，cos gap .002465 [.001287,.003730]，Holm p=.0035。
+  等turn敏感性.593720。七个one-sided permutation/Holm均<=.025，但Q2/free
+  gap双侧bootstrap下限-.000018。两统计不同，不能写七个确认人格机制。
+  长度匹配后全固定/free gap降至.001593；长度/主题/AI辅助等仍是替代解释。
+- free user/assistant同对话对应percentile=.994203，不能解释为人格。
+  固定答案/free assistant=.522464；固定答案/token-mixed=.533575，均CI跨.5。
+  assistant占平均87.04%内容tokens，mixed与AI cosine=.999308，与user=.968539，
+  部分是加权平均的机械结果。等turn mixed=.578744，不据此选择最优人格头。
+  关键分离：跨任务作者对应≠同对话内容回声；AI上下文要保留但不能混成作者证据。
+- 独立audit vm06_fixed_free_audit_r1：1394view向量/32矩阵/七项1999置换/
+  Holm全重播；pool error8.33e-17、matrix9.99e-16、point3.33e-16、p误差0。
+  不重复神经提取或所有bootstrap；节点bootstrap有合成单测。14相关tests通过，
+  连同RC5回归选择34tests通过，非全仓库tests。新报告VM06_FIXED_FREE_REPORT。
+- 49936b7冻结当前Essays/X inventory脚本：Essays2467人一人一文；X37435篇、
+  19954作者，无post ID冲突，但84种原文跨作者共享。X en/ja至少12贴作者
+  91/52，尚未做长度/重复/同条件门槛。时间全有zone且可解析，collector group
+  不是作者自由choice或实验控制。Essays全CSV被hash，但仅user_id/text列解析。
+- vm06_domain_inventory_r1 identity
+  d60f6acd95eba9124bf497b5009e6143832710639cdda73747eed7bfb909b12f。
+  固定hash抽样2708条、8124tokenizer调用，0神经前向。Essays200条仅mE5
+  36条<=512；X日文BGE/E5 UNK~23%，mE5 .001609。低UNK不是跨语言测量等价。
+  新报告VM06_DOMAIN_INVENTORY_REPORT；当前神经跨域实验仍未完成。
+- 稀疏TF cue也完整：6393人AUC=.765381，meanfold=.765561，1634.85秒，
+  RSSpeak6.434GB；5fold独立重播1.11e-16。TF placebo仍运行，child45866，
+  最近611秒、RSS5.534GB；JP三臂未完成，不从TF raw/cue部分结果选模型。
+- WindowsPID28172仍活跃：38observer shards完成，Qwen12进到84/303，
+  374.5秒。冻结aa51b06不改。Mac新增shard11归档313878651bytes，SHA
+  f3d63c4654d77e2847c799bcc021c47c53fa8dfa48a9a44e73c31307e24a6964。
+  传输SHA/CRC/安全不覆盖解包后，00--11共36shards所有manifest/缓存SHA重核验，
+  各观察器3636人。远端38不等于本地38，whole_queue_complete仍false。
+
+未改正在运行的source模块/发布scorer；无训练/新模型下载/paid API/push。
+下一轮冻结并运行Essays/X现有机制domain包，同时看源任务边界；只在已终止
+且PID退出后恢复剩余冻结条件。完整source vectors/strong heads/同ready/
+封头后bridge和VM07 atlas/spec仍未完成。Goal active，无需用户新idea阻塞。
