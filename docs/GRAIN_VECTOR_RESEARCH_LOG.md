@@ -799,3 +799,53 @@ run_grain_response_access.py、audit_grain_response_access.py。
 最终要用独立audit重算834forward的标量证据，不能以42非私人控制代替。
 随后逐位置读出几何与完整源集合比较，不能一直在44短回复上追加自由探索。
 完整来源采集、TF/JP稀疏、同ready、冻结来源后bridge及VM07未完成；goal active。
+
+## 第十八轮：持续读取与精确读出闭环
+
+2026-09-06。本轮完成RC4/RC5并独立审计，是progress，不是仅等候。
+
+- RC4正式44人834forward结束，1113.02秒，identity
+  7e802bdadf5b0a056ea4b861126927028896f87349e413a731743fd5d6c6651e。
+  792私人标量行、36非私人访问条件行完整核验。cut=-1独立、132patch+cut、
+  88sham、首词不变端点均0误差；RC1/RC2原值重播<=4.44e-16。
+- 阻断after10/16/22时，保留优势D=-.053701/.083854/.315516，原值.419749。
+  D10区间跨0，D16/22固定材料区间正。实际臂NLL损伤分别1.980/1.062/.413，
+  从第一层就阻断仅.642。中途切断的计算失配非常明显，不能把I当信息百分比。
+  这把RC2的“状态充分性”收窄为依赖剩余可访问前文的功能，而非固有人格含量。
+- RC5先fdfb342冻结标准softmax/KL问题，167cbae实现。最初非私人英文
+  head按8行重算出现4.254924e-5误差，超过不变1e-5，保留technical_r1失败。
+  非私人2forward诊断定位为head矩阵形状；改为原始T行、保留tail行号，
+  第0行填忽略的0向量。只把CPUfloat64归约分为8行；e450c27在私人前冻结
+  修正。technical_r2 EN/JA通过，head误差4.42e-7/2.68e-7，不放宽门槛。
+- RC5正式44人98forward+92head调用，151.88秒；1808tail标量位置，identity
+  15ed75e0bbe420a9a8a71c61665692ca784a11cf6c2b8b379bf03727c371d16e。
+  独立audit最大代数误差1.92624e-14，head逐token误差<=1.21336e-6，
+  与RC1人均tail差<=6.97e-7。原式有舍入差而非信息变化，不混写不同精度。
+- mean-state cosine=.991758、mean token cosine=.974518，净logp差=.419749。
+  精确分解=.756678-.336929=1.072463-.652713=-.198688+.618437。
+  净作用为正但actual端局部梯度平均负，说明有限位移不能用一个端点线性化
+  代替。KL是模型词分布差，不是心理距离/噪声；数学恒等式是器械，不是首创。
+- 209专项tests通过，两条历史SWIG警告。未跑完整历史测试。RC4/RC5均在Mac，
+  MPS采样6.175GB；未读MEPS量表/bridge，无LLM训练/付费API/额外下载。
+- TF raw完整完成：6393人，AUC=.767212、mean-fold=.767390、BA@.5=.657990、
+  macro-F1=.665807；正率预测.215705、真实.352417。5fold重播<=1.11e-16，
+  RSS6.015GB，1874.6秒。不同于SN全多数类，但其cue/placebo尚未完成。
+  snapshot vm05_sparse_sn_tf_partial_summary_r1；replay vm05_sparse_tf_raw_replay_r1。
+- 12:59 JST稀疏r3仍运行TF cue_mask（child43574，100%CPU，510秒）；其余
+  五条件未验收。WindowsPID28172最近35shards完成，Qwen shard11推进。
+  Mac新增shard10归档310567598bytes，SHA
+  31430db1cf3c044d73722452a8fffe9ffbaa545f4af86e83033716e7aaa0d10e；
+  CRC/不覆盖安全解包后00--10共33完整shards全部重核验，每观察器3333人。
+  远端35不等于本地35；whole_queue_complete=false。
+
+新报告VM06_RESPONSE_ACCESS_REPORT、VM06_RESPONSE_READOUT_REPORT；独立audit
+包分别vm06_response_access_audit_r1和vm06_response_readout_audit_r1。
+两正式神经进程已exit0，不重跑。保留所有失败technical目录与源snapshot。
+未改活跃稀疏来源模块/Windows aa51b06、发布scorer；未push，无关dirty保留。
+
+RC1-RC5短回复机制包现在关闭，不追加自由层搜索。新建
+GRAIN_VECTOR_REMAINING_REQUIREMENTS.md逐项对回完整原计划：MEPS264views的
+固定/自由神经比较还没做，不能以44份free-chat回复替代；Essays/X当前模型
+机制复测、全部源观察器/强稀疏/同ready/封头后bridge和VM07也仍缺。
+下一轮先核验活跃任务，随后利用等待时间准备这些缺项的同预算/角色/语言
+材料协议，不再仅围绕44回复打转。原goal保持active，当前没有真实阻塞。

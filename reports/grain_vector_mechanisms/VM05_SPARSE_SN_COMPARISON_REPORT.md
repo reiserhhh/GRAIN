@@ -71,3 +71,15 @@ bounded conditions and full three-observer collection; then compare identical
 eligible source material and formalGRAIN-ready subsets. Freeze final source
 heads before reading bridge outcomes. AUC thresholds and cue choices are not
 to be tuned against this three-arm readout.
+
+## Later TF raw snapshot (2026-09-06)
+
+TF raw subsequently completed on the same6393 source authors: pooled AUC=.767212,
+mean-fold AUC=.767390, BA@.5=.657990, macro-F1=.665807. Predicted positive rate
+.215705 versus true.352417. Unlike SN, it is not majority-only at the fixed
+threshold, but calibrated probability quality has not been established.
+All5 saved fold predictions replay within1.11e-16
+(`vm05_sparse_tf_raw_replay_r1`). Sampled RSS peak6.015GB, supervisor1874.6sec.
+The four-arm snapshot is`vm05_sparse_sn_tf_partial_summary_r1`. TF cue/placebo
+and JP remain incomplete; this is not a three-arm TF comparison or an accepted
+all-axis/head/bridge result. The active supervisor continues without retuning.

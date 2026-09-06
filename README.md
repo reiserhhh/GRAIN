@@ -24,15 +24,16 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Vector inference research loop (2026-09-06)
 
-Latest: [exact-token-bag context-order contrasts](reports/grain_vector_mechanisms/VM06_RESPONSE_ORDER_REPORT.md)
-on the same 44 MEPS responses, with no psychological labels. Native actual-context
-advantage over mismatched context is .436 nat/token; it falls to .302 after
-eight-token-block shuffling and .067 after token shuffling (fixed two-seed means).
-All 446 forwards and the independent scalar/assignment audit are complete.
-Token counts alone do not explain the native advantage, but this does not isolate
-reasoning from grammatical disruption or establish personality validity.
-The [previous depth interventions](reports/grain_vector_mechanisms/VM06_RESPONSE_DEPTH_REPORT.md)
-remain the state-sufficiency evidence; full source collection and comparison continue.
+Latest: [continued context access](reports/grain_vector_mechanisms/VM06_RESPONSE_ACCESS_REPORT.md)
+and [exact final-readout geometry](reports/grain_vector_mechanisms/VM06_RESPONSE_READOUT_REPORT.md)
+are complete on the fixed 44 MEPS replies, without psychological labels.
+Intermediate body states are not automatically self-contained context summaries.
+Mean-state cosine remains .9918 while actual-context tail logp improves .4197
+nat/token; exact softmax/KL identities separate target alignment and vocabulary
+normalization. Independent audits and 209 focused tests pass. These are scoped
+model-function results, not personality validity. The short-reply RC packet is now
+closed; [remaining requirements](docs/GRAIN_VECTOR_REMAINING_REQUIREMENTS.md)
+include full source comparisons, fixed/free and domain checks, and VM07 synthesis.
 
 The active research program studies how an LLM's internal representations use
 author context and combine evidence during personality inference. The
