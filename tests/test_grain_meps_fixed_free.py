@@ -7,6 +7,7 @@ import pytest
 
 from grain_research.vector_mechanisms.meps_fixed_free import (
     aggregate_windows,
+    compare_views,
     correspondence,
     holm,
     length_matched,
@@ -91,3 +92,37 @@ def test_speaker_isolation_turn_pooling_and_no_fake_assistant():
     assert meta.loc[i, "chars"] == 5
     only, _ = aggregate_windows(frame.iloc[:3], vectors[:3])
     assert "assistant" not in set(only.role)
+
+
+def test_complete_family_and_independent_pooling_audit():
+    from scripts.audit_grain_meps_fixed_free import replay_pooling
+
+    rows, vectors = [], []
+    for person in range(5):
+        for condition in ("meps_q1", "meps_q2", "meps_q3", "free_chat"):
+            kind = "free_chat" if condition == "free_chat" else "direct_answer"
+            for role in ["user", "assistant"] if kind == "free_chat" else ["user"]:
+                rows.append(
+                    {
+                        "participant_code": str(person),
+                        "view_kind": kind,
+                        "condition": condition,
+                        "role": role,
+                        "turn_sequence": 0,
+                        "start": 0,
+                        "end": 5,
+                        "content_tokens": 3,
+                    }
+                )
+                vectors.append(np.eye(5)[person])
+    frame = pd.DataFrame(rows)
+    metadata, pooled = aggregate_windows(frame, np.stack(vectors))
+    np.testing.assert_allclose(
+        replay_pooling(frame, np.stack(vectors), metadata), pooled
+    )
+    result, _, _ = compare_views(metadata, pooled, draws=10, permutations=19)
+    primary = result[result.primary]
+    assert len(primary) == 7
+    assert set(primary.status) == {"COMPLETE"}
+    np.testing.assert_allclose(primary.same_person_percentile, 1)
+    assert (result.status == "INSUFFICIENT").sum() == 12
