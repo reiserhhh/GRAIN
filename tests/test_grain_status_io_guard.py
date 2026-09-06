@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """No-result-changing retry, terminal failure and path isolation tests."""
 
 import pytest

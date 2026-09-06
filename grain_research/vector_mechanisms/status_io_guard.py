@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Bounded operational retry for one Windows status-file replacement only."""
 
 from pathlib import Path
