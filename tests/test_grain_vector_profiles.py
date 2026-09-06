@@ -88,6 +88,31 @@ def test_profile_condition_grid_preserves_all_channels_and_complexity_rules():
     assert len({r["id"] for r in raw}) == 40
     assert {r["arm"] for r in raw} == {"raw"}
     assert {r["pca"] for r in raw} == {True, False}
+    assert len(condition_grid("raw_ready", "geometry_information")) == 50
+    with pytest.raises(ValueError, match="family"):
+        condition_grid("raw_ready", "other")
+
+
+def test_distance_only_decoder_recovers_projection_not_perpendicular_direction():
+    from grain_research.vector_mechanisms.external_geometry_coordinates import (
+        coordinate_channels,
+        decode_identified_distances,
+    )
+    from suica_core.v8_bridge import canonical_orbit_distance_signatures
+
+    rng = np.random.default_rng(819)
+    l, q = rng.normal(size=(7, 15)), rng.normal(size=(40, 15))
+    d, _, _ = canonical_orbit_distance_signatures(q, l)
+    channels, audit = coordinate_channels(q, d, l)
+    assert channels["parallel"].shape == (40, 6)
+    assert channels["perpendicular"].shape == (40, 9)
+    assert audit["distance_decoder_max_error"] < 1e-12
+    assert audit["perpendicular_norm_squared_max_error"] < 1e-12
+    assert not audit["basis_uses_query_authors"]
+    bad = d.copy()
+    bad[0, 0] = -1
+    with pytest.raises(ValueError, match="distances"):
+        decode_identified_distances(bad, l)
 
 
 def test_profile_oof_model_does_not_fit_heldout_author_features_or_labels():

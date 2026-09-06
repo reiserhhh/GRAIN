@@ -41,9 +41,22 @@ CHANNELS = (
 )
 
 
-def condition_grid(cohort):
+def condition_grid(cohort, family="profiles"):
     """Freeze all transformations, tasks and complexity sensitivities before fitting."""
     arms = ("raw",) if cohort == "raw_ready" else ("raw", "cue_mask", "placebo_mask")
+    channels = (
+        CHANNELS
+        if family == "profiles"
+        else (
+            "whitened",
+            "parallel",
+            "parallel_norm",
+            "perpendicular",
+            "squared_distances",
+        )
+    )
+    if family not in ("profiles", "geometry_information"):
+        raise ValueError("Unknown geometry readout family")
     return [
         {
             "id": f"{task}_{arm}_{channel}_{'pca' if pca else 'no_pca'}",
@@ -55,7 +68,7 @@ def condition_grid(cohort):
         for task in ("big5", *AXES)
         for arm in arms
         for pca in (True, False)
-        for channel in CHANNELS
+        for channel in channels
     ]
 
 
@@ -103,6 +116,9 @@ def main():
     p.add_argument(
         "--cohort", choices=("raw_ready", "all_arms_ready"), default="raw_ready"
     )
+    p.add_argument(
+        "--family", choices=("profiles", "geometry_information"), default="profiles"
+    )
     p.add_argument("--output-dir", type=Path, required=True)
     p.add_argument("--resume-completed", action="store_true")
     p.add_argument("--max-seconds", type=int, default=3600)
@@ -138,10 +154,38 @@ def main():
         arrays = {k: z[k] for k in z.files}
     if arrays["author_ids"].tolist() != [b["author_id"] for b in source]:
         raise ValueError("Different profile author order")
+    geometry_diagnostics = {}
+    if a.family == "geometry_information":
+        from grain_research.vector_mechanisms.external_geometry_coordinates import (
+            coordinate_channels,
+        )
+
+        geometry_path = (
+            ROOT
+            / "results/v7_geometry/g1_corrected_v2_full_20260715/geometry_bundle.json"
+        )
+        if (
+            hashlib.sha256(geometry_path.read_bytes()).hexdigest()
+            != pm["geometry_sha256"]
+        ):
+            raise ValueError("Different frozen landmarks")
+        landmarks = json.loads(geometry_path.read_text())["reference_landmarks"]
+        for arm in (
+            ("raw",) if a.cohort == "raw_ready" else ("raw", "cue_mask", "placebo_mask")
+        ):
+            values, diagnostic = coordinate_channels(
+                arrays[arm + "_whitened"],
+                arrays[arm + "_canonical_distances"],
+                landmarks,
+                relative_tolerance=pm["relative_tolerance"],
+            )
+            arrays.update({arm + "_" + key: value for key, value in values.items()})
+            geometry_diagnostics[arm] = diagnostic
     fields = {
         "protocol": "VM05_READY_PROFILE_SOURCE_HEADS_V1",
         "cohort": a.cohort,
-        "cases": condition_grid(a.cohort),
+        "cases": condition_grid(a.cohort, a.family),
+        "family": a.family,
         "profile_identity": pm["identity"],
         "profile_npz_sha256": ps["outputs_sha256"]["private_profile_features.npz"],
         "material_sha256": pm["material_sha256"],
@@ -151,6 +195,7 @@ def main():
             for name in (
                 "scripts/run_grain_vector_profile_heads.py",
                 "grain_research/vector_mechanisms/external_heads.py",
+                "grain_research/vector_mechanisms/external_geometry_coordinates.py",
             )
         },
         "bridge_labels_used": False,
@@ -170,6 +215,8 @@ def main():
     else:
         write_json(path, fields)
         archive_source(ROOT, out / "source_snapshot.zip")
+        if geometry_diagnostics:
+            write_json(out / "geometry_decoder_audit.json", geometry_diagnostics)
     start, completed, objects, label_cache = time.monotonic(), [], {}, {}
     with threadpool_limits(limits=4):
         for case in fields["cases"]:
@@ -320,14 +367,15 @@ def main():
             print(json.dumps(row | {"completed": len(completed)}), flush=True)
     contrasts = []
     for (task, arm, channel, pca), result in objects.items():
-        if channel != "intermediate":
-            baseline = objects[(task, arm, "intermediate", pca)]
+        baseline_name = "intermediate" if a.family == "profiles" else "whitened"
+        if channel != baseline_name:
+            baseline = objects[(task, arm, baseline_name, pca)]
             contrasts.append(
                 {
                     "task": task,
                     "arm": arm,
                     "candidate": channel,
-                    "baseline": "intermediate",
+                    "baseline": baseline_name,
                     "pca": pca,
                     **paired_delta(result, baseline),
                 }

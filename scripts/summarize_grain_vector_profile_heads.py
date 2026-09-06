@@ -51,6 +51,31 @@ def main():
         arrays = {k: z[k] for k in z.files}
     if arrays["author_ids"].tolist() != [b["author_id"] for b in material]:
         raise ValueError("Changed profile row order")
+    family = batch.get("family", "profiles")
+    if family == "geometry_information":
+        from grain_research.vector_mechanisms.external_geometry_coordinates import (
+            coordinate_channels,
+        )
+
+        profile_manifest = json.loads((a.profile_dir / "manifest.json").read_text())
+        geometry_path = (
+            ROOT
+            / "results/v7_geometry/g1_corrected_v2_full_20260715/geometry_bundle.json"
+        )
+        if (
+            hashlib.sha256(geometry_path.read_bytes()).hexdigest()
+            != profile_manifest["geometry_sha256"]
+        ):
+            raise ValueError("Different frozen geometry at replay")
+        landmarks = json.loads(geometry_path.read_text())["reference_landmarks"]
+        for arm in sorted({case["arm"] for case in batch["cases"]}):
+            values, _ = coordinate_channels(
+                arrays[arm + "_whitened"],
+                arrays[arm + "_canonical_distances"],
+                landmarks,
+                relative_tolerance=profile_manifest["relative_tolerance"],
+            )
+            arrays.update({arm + "_" + key: value for key, value in values.items()})
     objects, records, rows = {}, [], []
     with threadpool_limits(limits=4):
         for case in batch["cases"]:
@@ -133,10 +158,11 @@ def main():
                 }
             )
     contrasts = []
+    baseline_name = "intermediate" if family == "profiles" else "whitened"
     for (task, arm, channel, pca), result in objects.items():
         refs = (
-            [("versus_intermediate", (task, arm, "intermediate", pca))]
-            if channel != "intermediate"
+            [("versus_" + baseline_name, (task, arm, baseline_name, pca))]
+            if channel != baseline_name
             else []
         )
         if arm == "cue_mask":
