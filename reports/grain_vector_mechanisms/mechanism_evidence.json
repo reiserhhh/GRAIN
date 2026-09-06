@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-09-06",
+  "updated": "2026-09-07",
   "status": "WORKING_SYNTHESIS",
   "program_complete": false,
   "released_scorer_changed": false,
@@ -94,10 +94,50 @@
       "source_report": "VM05_COMPLETE_SPARSE_SOURCE_REPORT.md",
       "instrument": "observed",
       "external_association": "observed",
-      "full_neural_comparison": "not_tested",
       "psychological_validity": "underresolved",
-      "finding": "All12 strong sparse arms and60 fold replays show axis-dependent ranking; EI/SN are near/all majority at the fixed threshold. Strong-source controls, full neural comparisons and bridge results remain pending.",
+      "finding": "All12 strong sparse arms and60 fold replays show axis-dependent ranking; EI/SN are near/all majority at the fixed threshold. Strong-source controls and bridge results remain pending; neural primary results have a separate entry.",
       "not_claimed": ["llm_personality_reasoning", "completed_bridge_validation", "full_pandora_benchmark_replication"]
+    },
+    {
+      "id": "primary_neural_external_heads",
+      "domain": "pandora_624_big5_6294_reference_free_mbti",
+      "source_report": "VM05_PRIMARY_NEURAL_SOURCE_REPORT.md",
+      "instrument": "observed",
+      "external_association": "observed",
+      "full_neural_comparison": "observed",
+      "psychological_validity": "underresolved",
+      "finding": "All45 primary heads and225 saved-fold replays are complete. No primary Qwen10-minus-BGE pointwise interval has a positive lower bound; this does not test native task/history/direct decisions.",
+      "not_claimed": ["llm_personality_reasoning", "all_readouts_completed", "observer_equivalence", "completed_bridge_validation"]
+    },
+    {
+      "id": "primary_neural_proper_scores",
+      "domain": "pandora_6294_reference_free_mbti_three_masks",
+      "source_report": "VM05_PRIMARY_PROPER_SCORE_REPORT.md",
+      "instrument": "observed",
+      "external_association": "observed",
+      "psychological_validity": "underresolved",
+      "finding": "All36 primary binary heads improve log loss and Brier over fold-training prevalence, even for almost-majority EI/SN decisions. All144 pointwise conditional OOF/prior intervals are positive; this is a post-hoc diagnostic, not144 independent studies.",
+      "not_claimed": ["mutual_information_estimate", "individual_calibration_validated", "native_llm_personality_reasoning", "new_selected_scorer"]
+    },
+    {
+      "id": "projection_sensitivity",
+      "domain": "pandora_624_big5_three_masks_three_observers",
+      "source_report": "VM05_PROJECTION_SENSITIVITY_REPORT.md",
+      "instrument": "observed",
+      "external_association": "observed",
+      "psychological_validity": "underresolved",
+      "finding": "All9 no-PCA versus PCA pairs are complete; all18 pointwise pooled/mean-fold intervals cross zero. Compression removal did not demonstrate a general rescue under the frozen readout protocol.",
+      "not_claimed": ["observer_equivalence", "low_variance_directions_have_no_signal", "causal_information_erasure", "independent_mask_replications"]
+    },
+    {
+      "id": "fixed_layer_accessibility",
+      "domain": "pandora_same_source_raw_arm_only",
+      "source_report": "VM05_FIXED_LAYER_REPORT.md",
+      "instrument": "observed",
+      "external_association": "observed",
+      "psychological_validity": "underresolved",
+      "finding": "All15 raw layer heads and75 saved-fold replays have paired comparisons against primary observers. Qwen readability profiles vary by outcome rather than improving uniformly with depth; the other two arms are pending.",
+      "not_claimed": ["trait_localization", "native_llm_layer_use", "full_layer_family_complete", "optimal_layer_selection", "multiplicity_adjusted_significance"]
     },
     {
       "id": "domain_compatibility",
@@ -121,9 +161,10 @@
     }
   ],
   "remaining": [
-    "Complete all 24 x 3 common-source representation shards.",
-    "Complete strong source-only heads, controls and saved-head replay.",
-    "Compare candidates on identical eligibility/reference-ready sets.",
+    "Finish all declared fixed-layer and task-conditioned source comparisons; the45 primary heads and all common-source shards are complete.",
+    "Complete strong source-only controls, full selection-aware nulls and saved-head replay.",
+    "Compare candidates on identical eligibility/reference-ready sets; the bounded raw stage is queued, not complete.",
+    "Complete real history/direct collection and source readouts, preserving prompt/site and source boundaries.",
     "Freeze source-only choices before opening bridge outcome values.",
     "Synthesize the completed domain packet with function-specific model/prompt limits.",
     "Finalize observer specification and evidence atlas after empirical closure."

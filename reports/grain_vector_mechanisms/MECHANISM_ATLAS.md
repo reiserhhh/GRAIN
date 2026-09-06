@@ -1,8 +1,9 @@
 # GRAIN vector mechanism atlas
 
-2026-09-06. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
-The full source-head comparisons, bridge evaluation and final reusable-observer
-acceptance remain open. The bounded domain-function packet is complete. This atlas records
+2026-09-07, round32. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
+The45 primary source-head comparisons are complete; fixed-layer, same-ready,
+task/history/direct comparisons, strong controls/nulls, bridge evaluation and
+final reusable-observer acceptance remain open. The bounded domain-function packet is complete. This atlas records
 what the experiments distinguish; it does not turn every positive statistic
 into a new personality construct. See the [remaining requirements](../../docs/GRAIN_VECTOR_REMAINING_REQUIREMENTS.md).
 
@@ -27,7 +28,10 @@ theoretical refinement so far, not a claim to a newly discovered universal law.
 | Mean geometry vs output | RC5 mean-state cosine .9918 coexists with +.4197 tail logp; final readout admits exact target/partition and KL identities | Euclidean closeness does not imply functional equivalence. The identities are standard softmax mathematics, not new personality formulas |
 | Continued access | Cutting later prefix attention can harm more than never reading the prefix | Intermediate states depend on remaining computation; cut damage cannot be interpreted as an additive information percentage |
 | Author vs conversation | Complete46-person MEPS fixed/free user correspondence .5908; same-chat user/AI correspondence .9942 | Conversation content can dominate pooled vectors. Role-separated source evidence is required; neither value is personality accuracy |
-| External-label readout | All12 strong sparse arms and60 fold replays complete: raw AUC EI/SN/TF/JP=.672/.670/.767/.611; full neural comparisons pending | Readable ranking is not necessarily balanced classification (EI/SN near/all majority at .5), nor LLM use of a personality concept. Source controls remain head-specific |
+| External-label readout | All45 primary neural heads/225 fold replays and15 three-observer paired comparisons complete; raw Big5 BGE/E5/Qwen10 r=.177/.202/.150 | No primary Qwen-minus-BGE positive pointwise interval. These are trained source-head readouts, not the LLM's native decisions; task/history/direct controls remain open. Strong sparse controls are a separate head family |
+| Ranking versus probability | All36 primary MBTI heads improve log loss and Brier over fold-trained prevalence priors, including near-majority EI/SN classifiers | Weak probability differentiation can exist without crossing the0.5 decision threshold. Proper-score gain is not mutual information, calibrated personality probability or native LLM reasoning |
+| Projection/readout restriction | All9 Big5 original-dimension versus PCA pairs complete; all18 pooled/mean-fold intervals cross0 | No demonstrated simple compression rescue, not equivalence or proof that low-variance directions contain no signal. Removing PCA also changes the regularization problem |
+| Fixed-layer accessibility | All15 raw layer heads/75 saved-fold replays accepted: EI/SN highest Qwen point estimates at04, TF/Big5 at16, JP at final norm | Nonmonotone, outcome-specific readability is not trait localization or causal layer use. Pointwise comparisons; two other text arms still pending; no outcome-selected layer/blend |
 | Cross-domain scope | Frozen167-case Essays/X context gains;469 case-observer geometry comparisons; lexical/cell follow-up independently replayed | Source similarity and model function correlate, partly through repeated content. Japanese adjusted effect remains underresolved; no language/cultural measurement invariance |
 
 ## Where the mathematics helps
@@ -65,6 +69,37 @@ positive context gains for Essays/English X, but Japanese X is underresolved.
 This joins geometry to a measured function while showing why the join is not
 itself personality-specific. See [domain report](VM06_DOMAIN_CONTEXT_GEOMETRY_REPORT.md).
 
+The source tests now distinguish two further objects:
+
+```
+R(l,t) = score(y_t, fitted_source_head(l,t)(pool(F_l(x))))
+D(t)   = direct_candidate_readout(F_last(x, q_t)).
+```
+
+R depends on source labels, pooling, compression and fitted regularization.
+D depends on the task prompt, native model computation and output coding.
+Neither a high R nor a small R identifies D. The raw fixed-layer profile varies
+by outcome, without a uniform depth advantage; removing PCA did not establish
+a general rescue. These findings make the already planned task/history/direct
+contrasts more informative than adding an outcome-selected layer search. See
+[primary comparison](VM05_PRIMARY_NEURAL_SOURCE_REPORT.md),
+[projection sensitivity](VM05_PROJECTION_SENSITIVITY_REPORT.md) and
+[fixed layers](VM05_FIXED_LAYER_REPORT.md).
+The [proper-score diagnostic](VM05_PRIMARY_PROPER_SCORE_REPORT.md) rules out
+the stronger claim that all near-majority source classifiers merely repeat
+the training prior. The [theory note](../../docs/GRAIN_VECTOR_READABILITY_THEORY_NOTE_V1.md)
+connects these distinctions to information-theoretic probing and states the
+full-state versus pooled-state data-processing assumptions explicitly.
+
+Observation boundary: the current direct-score collector saves candidate
+logits and the vocabulary normalizer, not hidden-state arrays for each of the
+nine trait prompts. The secondary state cache uses two social-initiation
+questions, not nine trait-specific prompts. Those artifacts can compare output
+behavior and the declared task-state channels; they cannot by themselves
+localize an internal Big5/MBTI computation or justify subtracting coordinates
+from different prompt/pooling protocols. No active collector/schema is changed
+here, and no new state experiment is silently counted as completed.
+
 ## What may enter a future GRAIN observer
 
 - Separate records of user evidence, interaction context and evidence-selection
@@ -78,9 +113,11 @@ itself personality-specific. See [domain report](VM06_DOMAIN_CONTEXT_GEOMETRY_RE
 
 ## Open synthesis work
 
-The atlas is not yet the final conclusion. Complete full source observers and
-frozen source heads, same-ready comparisons, then the untouched bridge outcome
-evaluation. Carry forward the completed domain packet's role/genre limitations;
+The atlas is not yet the final conclusion. Full common-material observers and
+the45 primary source heads are complete. Finish declared source sensitivities,
+same-ready and task/history/direct comparisons, stronger controls/nulls, then
+freeze source choices before the untouched bridge outcome evaluation. Carry
+forward the completed domain packet's role/genre limitations;
 link every accepted observer function to an audited artifact and explicit
 failure/refusal state. The [draft observer specification](../../docs/GRAIN_VECTOR_OBSERVER_SPEC.md)
 is a contract for that integration, not a release-ready personality instrument.
