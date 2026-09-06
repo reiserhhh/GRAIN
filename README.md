@@ -24,14 +24,15 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Vector inference research loop (2026-09-06)
 
-Latest: [fixed-site response-state interventions](reports/grain_vector_mechanisms/VM06_RESPONSE_DEPTH_REPORT.md)
-on the same 44 MEPS responses used in the prior no-label context experiment.
-Transferring actual-context body states into mismatched-context forwards improves
-tail log likelihood by .024/.168/.343 nat/token at blocks 10/16/22; final-layer
-replacement restores it exactly, as expected from the readout architecture.
-This separates context use from intermediate-state sufficiency, not personality
-validity. Only 13/44 individual depth profiles are monotone. Full source observer
-collection and external-comparison work continue.
+Latest: [exact-token-bag context-order contrasts](reports/grain_vector_mechanisms/VM06_RESPONSE_ORDER_REPORT.md)
+on the same 44 MEPS responses, with no psychological labels. Native actual-context
+advantage over mismatched context is .436 nat/token; it falls to .302 after
+eight-token-block shuffling and .067 after token shuffling (fixed two-seed means).
+All 446 forwards and the independent scalar/assignment audit are complete.
+Token counts alone do not explain the native advantage, but this does not isolate
+reasoning from grammatical disruption or establish personality validity.
+The [previous depth interventions](reports/grain_vector_mechanisms/VM06_RESPONSE_DEPTH_REPORT.md)
+remain the state-sufficiency evidence; full source collection and comparison continue.
 
 The active research program studies how an LLM's internal representations use
 author context and combine evidence during personality inference. The

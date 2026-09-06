@@ -755,3 +755,47 @@ audit_grain_response_depth，复现命令见报告，不重跑已完成包。
 上设计词袋/词序与持续前文访问对照，并用逐位置读出几何解释高余弦/大作用。
 这仍是未完成的新实验，不能写成已有证据。完整来源观察器、强稀疏三臂、
 同ready比较、来源封头后bridge和VM07仍需完成。Goal仍active，本轮无阻塞。
+
+## 第十七轮：词袋固定的顺序扰动与持续访问器械
+
+2026-09-06。本轮有新实验/独立审计/资源闭环，不是等待或阻塞。
+
+- RC3协议9372ff1、实现049233f在私人forward前冻结。同RC1的44人，
+  446forward、591.14秒、MPS采样6.175GB。全部token词袋精确保留。
+  native实际-错配优势.43643；block8双seed平均.30248，token平均.06707。
+  差中之差.13395 [.08061,.19581]、.36936 [.26418,.49445]。
+  tail敏感性同方向。不能把大降幅叫人格占比：语法/子词破坏是实在的替代解释。
+- 独立审计440标量行/352排列记录/全部效果CI，native重播RC1最大差0。
+  44个上下文无边界交叉，无重复seed或原样排列；block8/token改位率.9675/.9870。
+  没有独立神经重跑，不把hash审计说成重新读取token验证。
+  文献对照支持精确子词级打乱和保留顺序推断风险，详见RC3报告。
+- SN三强稀疏臂完成：6393人，raw/cue/placebo AUC=.669877/.669909/.668310。
+  cue-raw=.000033 [-.001567,.001536]；placebo-raw=-.001567
+  [-.003144,-.000073]；cue-placebo=.001599 [-.000151,.003256]。
+  条件于已拟合OOF，不多重显著性宣称、不追加调参。全N，BA@.5=.5。
+  15fold保存模型分别重播误差<=1.11e-16；三臂RSS采样均<8GiB，生命周期
+  修复在SN三臂均已验收。r3进入TF raw，其他六条件仍待完成。
+- Mac新增08/09备份640160018bytes，SHA
+  3aab6c88cd31998f67a9942d0d2be989db18e2fa2b03b0cbb8d68da43d06dded。
+  CRC/安全路径/不覆盖检查通过，全部00--09共30observer shards逐manifest/
+  作者/cache/source/fingerprint重核验，各观察器3030人；整队列仍未完成。
+  Windows最近32shards完成、Qwen shard10运行，aa51b06未改。
+- 新RC4协议659d638，代码72dbc3b；固定after{-1,10,16,22,27}，只阻断
+  后续层body-query到全部prefix-key的访问，不删词/换role/动position。
+  EN/JA共42非私人forward的layer0独立、patch+cut恒等式、mask/self sham、
+  首词不变检查均0误差。189专项tests通过（两条历史SWIG warning）。
+  正式834forward包已启动`vm06_response_access_r1`，session76500；**未验收**。
+  一项攻击fixture在整数列写小数时提前报错，改为float后测试通过；不是模型失败。
+- 未读MEPS心理字段/bridge outcomes，未新训练LLM、付费API或push；不改
+  发布scorer、活跃稀疏来源代码/Windows冻结代码，无关dirty报告原样保留。
+
+报告：VM06_RESPONSE_ORDER_REPORT、VM05_SPARSE_SN_COMPARISON_REPORT。
+canonical：vm06_response_order_r1、vm06_response_order_audit_r1、
+vm05_sparse_sn_three_arm_summary_r1与三个SN replay包。
+RC4器械：vm06_response_access_technical_r1；运行/审计CLI为
+run_grain_response_access.py、audit_grain_response_access.py。
+
+下一先验收RC4，不重复启动，若失败先查身份/预算/掩码而非删除被试。
+最终要用独立audit重算834forward的标量证据，不能以42非私人控制代替。
+随后逐位置读出几何与完整源集合比较，不能一直在44短回复上追加自由探索。
+完整来源采集、TF/JP稀疏、同ready、冻结来源后bridge及VM07未完成；goal active。
