@@ -253,3 +253,109 @@ def test_full_layout_arm_task_completeness_and_reference_role():
     source[0]["source_group"] = "bridge"
     with pytest.raises(ValueError, match="MBTI-only"):
         reference_ids(source, budget)
+
+
+def test_instrument_reconstructs_frozen_layouts_without_rematching():
+    from grain_research.vector_mechanisms.history_instrument import material_layouts
+    from scripts.prepare_grain_source_history import check_layouts
+
+    tok = BoundaryTokenizer()
+    own = {"author_id": "own", "source_group": "big5_only", "views": []}
+    donor = {"author_id": "donor", "source_group": "mbti_only", "views": []}
+    case = {"author_id": "own", "source_group": "big5_only", "views": []}
+    for vi in range(3):
+        view = comments(f"own:{vi}", 100)
+        other = comments(f"donor:{vi}")
+        own["views"].append(view)
+        donor["views"].append(other)
+        h, c = split_view(view)
+        d, _ = split_view(other)
+        case["views"].append(
+            {
+                "view": vi,
+                "current_id": c["comment_id"],
+                "own_history_ids": [x["comment_id"] for x in h],
+                "donor_author_id": "donor",
+                "donor_view": vi,
+                "donor_history_ids": [x["comment_id"] for x in d],
+                "layouts": check_layouts(tok, h, d, c, enclose_separator=True),
+            }
+        )
+    source = {"own": own, "donor": donor}
+    assert len(material_layouts(case, source, tok)) == 54
+    bad = copy.deepcopy(case)
+    bad["views"][0]["layouts"][0]["layout_sha256"] = "changed"
+    with pytest.raises(ValueError, match="commitment"):
+        material_layouts(bad, source, tok)
+
+
+def test_full_history_triplet_instrument_with_interior_padding():
+    from grain_research.vector_mechanisms.history_instrument import qualify_triplet
+
+    torch.manual_seed(731)
+    model = Qwen2ForCausalLM(
+        Qwen2Config(
+            vocab_size=64,
+            hidden_size=16,
+            intermediate_size=24,
+            num_hidden_layers=2,
+            num_attention_heads=2,
+            num_key_value_heads=2,
+            max_position_embeddings=64,
+            attention_dropout=0.0,
+        )
+    ).eval()
+    model.config._attn_implementation = "eager"
+    obs = DecoderObserver(
+        model, SimpleNamespace(pad_token_id=0), max_tokens=64, pad_to_length=48
+    )
+    own = {
+        "prefix": [2, 3],
+        "history": [4, 5, 6],
+        "suffix": [7, 8, 9, 10],
+        "current_in_suffix": [0, 1],
+    }
+    matched = own | {"history": [11, 12, 13, 14, 15]}
+    rows = aligned_triplet(own, matched, 0, max_length=48)
+    captured, checks = qualify_triplet(obs, rows)
+    assert checks["forwards"] == 6
+    assert all(v == 0 for k, v in checks.items() if k.endswith("error"))
+    assert not np.array_equal(
+        captured["own"][0]["block_01"], captured["matched"][0]["block_01"]
+    )
+
+
+def test_instrument_archive_includes_entrypoints_not_secrets(tmp_path):
+    import zipfile
+
+    from grain_research.vector_mechanisms.history_instrument import archive_instrument
+
+    for name in (
+        "scripts/qualify_grain_source_history.py",
+        "scripts/prepare_grain_source_history.py",
+        "docs/GRAIN_VM05_HISTORY_COUNTERFACTUAL_V1.md",
+        "tests/test_grain_source_history.py",
+        ".env",
+    ):
+        p = tmp_path / name
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text("synthetic fixture")
+    output = tmp_path / "archive.zip"
+    archive_instrument(tmp_path, output)
+    with zipfile.ZipFile(output) as z:
+        names = set(z.namelist())
+        assert "scripts/qualify_grain_source_history.py" in names
+        assert "scripts/prepare_grain_source_history.py" in names
+        assert "tests/test_grain_source_history.py" in names
+        assert ".env" not in names
+
+
+def test_real_history_observer_rejects_live_queue_before_loading(tmp_path):
+    import json
+
+    from scripts.qualify_grain_source_history import load_observer
+
+    (tmp_path / "queue_status.json").write_text(json.dumps({"status": "RUNNING"}))
+    (tmp_path / "manifest.json").write_text("{}")
+    with pytest.raises(ValueError, match="must finish"):
+        load_observer(SimpleNamespace(observer_queue_dir=tmp_path), {})
