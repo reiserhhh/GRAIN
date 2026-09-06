@@ -69,3 +69,54 @@ saved-head replay match. Reuse them as explicit parents rather than hidden refit
 This registry does not complete source head comparison, source controls/nulls,
 same-ready neural fitting, bridge evaluation or the final mechanism claim. It
 prevents mismatched populations from being treated as a representation effect.
+
+## Executable comparator entrypoint
+
+`scripts/run_grain_same_ready_comparison.py` runs one condition in an owned,
+time/RSS-bounded CPU subprocess. It never modifies the existing source runner.
+`--preflight-only` checks exact feature/cohort inputs without converting labels
+or fitting a model. Without this flag it checks target support in all47 outer/
+inner/full-source partitions, then uses the unchanged inner selection grid,
+five official outer folds and a source-only final head. Retain-thread is explicit;
+this entrypoint does not claim the pending discussion controls are unnecessary.
+
+Outputs live in a fresh `results/.../<condition>/fit/` directory: manifest,
+source_label_audit, private_target_support, selection, five private_fold models,
+private_full_source_head, private_oof_predictions, metrics_by_trait/metrics_by_fold,
+saved_head_replay, summary and source_snapshot. The parent directory holds
+execution.log and supervisor_status. Summary binds output checksums; saved heads
+must reproduce predictions within1e-10 before COMPLETE. Partial runs are preserved,
+not overwritten or automatically counted as completed. No outer/bridge calibration.
+
+Example, from the independent GRAIN repository (substitute the appropriate local
+Python; this preflight does not run a new experiment):
+
+```bash
+python scripts/run_grain_same_ready_comparison.py \
+  --views results/grain_vector_mechanisms/vm05_qualification_r2/common_views.json \
+  --registry-dir results/grain_vector_mechanisms/vm05_same_ready_registry_r1 \
+  --registry-audit-dir results/grain_vector_mechanisms/vm05_same_ready_registry_audit_r1 \
+  --profile-dir results/grain_vector_mechanisms/vm05_profile_material_r1 \
+  --preflight-dir results/grain_vector_mechanisms/vm05_preflight_r1 \
+  --parent-dir results/grain_vector_mechanisms/vm05_full_source_cohort_r1 \
+  --prepared-root '../project persona/data_sets/prepared/pandora_official' \
+  --cohort raw_ready --task big5 --feature word_char --arm raw \
+  --output-dir results/grain_vector_mechanisms/new_ready_big5_preflight \
+  --preflight-only --max-seconds 600
+```
+
+Actual fitting uses a different fresh output and omits `--preflight-only`, only
+when the single-Mac heavy-fit queue is available. Dense observers additionally
+require `--vector-dir .../vm05_full_vectors_r1`: all72 stage-shards must be complete
+and checksum-verified first. `grain_qwen_block_10` and `grain_bge_large` mean plain
+concatenation, with explicit block boundaries, not tuned blending. Body layer
+sensitivities retain their exact feature names. Equal-view and post-question
+readouts are not implemented by this entrypoint and remain separate open items.
+
+Existing non-reference-excluded sorted profiles are reused, not refitted. The
+`sorted_distances` feature here only permits a genuinely changed reference-free
+cohort; if exclusion changes no eligible author, reuse its original profile parent.
+Synthetic tests verify column alignment, source isolation, support failures,
+fold-local scaling/PCA, exact agreement with the old head, complete-queue gating,
+packet mutation rejection and full Big5/MBTI output replay. Passing tests does not
+establish a positive neural increment on the actual corpus.
