@@ -86,7 +86,7 @@ def state_geometry(actual, matched):
 
 
 def pair_readout(model, actual, matched, body):
-    """Replay the LM head in bounded batches and return only coded scalar rows."""
+    """Preserve native head shape, then reduce logits in bounded float64 batches."""
     import torch
 
     ha = actual["trace"]["final_norm"]["states"][:-1]
@@ -96,22 +96,21 @@ def pair_readout(model, actual, matched, body):
     geometry, mean_cos = state_geometry(ha, hm)
     rows, algebra_error, replay_error, batches = [], 0.0, 0.0, 0
     device = next(model.parameters()).device
+    outputs = []
+    for h in (ha, hm):
+        # Keep the native T-row GEMM and original tail row indices on MPS.
+        predictor = np.concatenate([np.zeros_like(h[:1]), h], axis=0)
+        with torch.inference_mode():
+            outputs.append(
+                model.lm_head(torch.as_tensor(predictor, device=device))
+                .float()
+                .cpu()
+                .numpy()[1:]
+            )
     for start in range(0, len(ha), 8):
         stop = min(start + 8, len(ha))
-        with torch.inference_mode():
-            za = (
-                model.lm_head(torch.as_tensor(ha[start:stop], device=device))
-                .float()
-                .cpu()
-                .numpy()
-            )
-            zm = (
-                model.lm_head(torch.as_tensor(hm[start:stop], device=device))
-                .float()
-                .cpu()
-                .numpy()
-            )
-        batches += 2
+        za, zm = outputs[0][start:stop], outputs[1][start:stop]
+        batches += 1
         values, error = decompose_logits(za, zm, body[start + 1 : stop + 1])
         algebra_error = max(algebra_error, error)
         for role, native in (("actual", actual), ("matched", matched)):
@@ -138,7 +137,9 @@ def pair_readout(model, actual, matched, body):
             f"Independent final-head token logp replay failed: {replay_error}"
         )
     return rows, {
-        "head_batches": batches,
+        "head_batches": 2,
+        "head_execution_rows": len(body),
+        "vocabulary_reduction_batches": batches,
         "algebra_max_error": algebra_error,
         "head_replay_max_error": replay_error,
         "mean_predictor_state_cosine": mean_cos,

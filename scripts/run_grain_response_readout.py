@@ -132,7 +132,8 @@ def main():
             "attention": "eager",
             "use_cache": False,
             "readout_reduction_dtype": "float64",
-            "head_batch_rows": 8,
+            "head_execution": "native_reply_length",
+            "vocabulary_reduction_rows": 8,
             "max_forwards": 110,
             "max_seconds": 1800,
             "max_mps_allocated_gib": 9,
@@ -156,6 +157,8 @@ def main():
 
         def pair(pa, pm, body):
             guard()
+            if observer.calls + 2 > 110:
+                raise RuntimeError("Insufficient budget for the next paired forwards")
             va, vm = observer.forward(pa, body), observer.forward(pm, body)
             rows, checks = pair_readout(model, va, vm, body)
             guard()

@@ -35,7 +35,9 @@ def ledger():
             {
                 "participant_code": str(i),
                 "response_tokens": length,
-                "head_batches": 2 * ((length + 6) // 8),
+                "head_batches": 2,
+                "head_execution_rows": length,
+                "vocabulary_reduction_batches": (length + 6) // 8,
                 "algebra_max_error": error,
                 "head_replay_max_error": 0,
                 "mean_predictor_state_cosine": 0.99,

@@ -41,7 +41,11 @@ def audit_frame(frame, checks):
             np.sort(f.response_token_position), np.arange(2, count + 1)
         ):
             raise ValueError("Tail position coverage or off-by-one mismatch")
-        if c.loc[code, "head_batches"] != 2 * ((count - 1 + 7) // 8):
+        if (
+            c.loc[code, "head_batches"] != 2
+            or c.loc[code, "head_execution_rows"] != count
+            or c.loc[code, "vocabulary_reduction_batches"] != (count - 1 + 7) // 8
+        ):
             raise ValueError("Unrecorded head-only batches")
     if (
         not c.algebra_max_error.between(0, 1e-9).all()
@@ -105,7 +109,8 @@ def audit(run, parent):
     if (
         m["model_files"] != old_manifest["model_files"]
         or m["template_sha256"] != old_manifest["template_sha256"]
-        or m["head_batch_rows"] != 8
+        or m["head_execution"] != "native_reply_length"
+        or m["vocabulary_reduction_rows"] != 8
         or m["readout_reduction_dtype"] != "float64"
     ):
         raise ValueError("Readout instrument identity changed")

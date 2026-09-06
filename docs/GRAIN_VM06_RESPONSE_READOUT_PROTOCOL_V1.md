@@ -5,6 +5,21 @@ does not choose layers, cases, or metrics using its results. Reuse only RC1's
 44 exposed replies, actual/matched preceding turns, and fixed assignment.
 This closes the readout question, not the entire personality-mechanism program.
 
+### Instrument amendment before private forwards
+
+The first nonprivate EN gate (8 full forwards, no private parsing) failed with
+head-replay error4.254924e-5 > unchanged1e-5. Diagnostic re-extraction using the
+native T-row LM-head shape reduced errors to3.805079e-7/4.417356e-7. Preserve this
+execution shape rather than widening tolerance: construct T predictor rows,
+with an ignored zero row0 followed by body states0..T-2. Each subsequent row
+matches its original matrix position; the LM head acts independently by row.
+Compute two full-shape heads per context pair, then reduce vocabulary results
+in CPUfloat64 batches of8. Record both head calls and reduction batches, rather
+than pretending these are the same operation. Transient float32 logits may have
+T rows (T<=256); no probability/state tensor is saved. All scientific contrasts,
+cases, gates and tolerances remain unchanged. The old technical packet remains
+FAILED_STOP; use a fresh technical packet and require EN/JA gates before private data.
+
 ## Mathematical object
 
 Use **post-final-normalization, per-token** hidden states, never mean states as
@@ -41,7 +56,7 @@ Per token save coded position, never token ID/text: two logp values, their
 difference, target-logit/partition shifts, two endpoint-gradient terms, both KLs,
 matched-directional curvature, hidden displacement norm, and state cosine.
 Compute vocabulary reductions in CPUfloat64 with stable logsumexp, using at most
-eight token rows at a time after the existing MPS LM head. Full vocabulary
+eight token rows at a time after the native-shape MPS LM head. Full vocabulary
 probabilities and hidden vectors are transient, not serialized.
 
 Independently check both logp identities and KL definitions (<=1e-9), nonnegative
