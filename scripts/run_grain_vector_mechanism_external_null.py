@@ -43,6 +43,11 @@ def main():
     p.add_argument("--output-dir", type=Path, required=True)
     p.add_argument("--max-seconds", type=int, default=7200)
     p.add_argument("--resume", action="store_true")
+    p.add_argument(
+        "--disk-fold-cache",
+        action="store_true",
+        help="Lossless one-outer-fold RAM plans; unchanged nested estimator",
+    )
     a = p.parse_args()
     if not 60 <= a.max_seconds <= 28800:
         raise ValueError("Invalid null execution budget")
@@ -136,6 +141,15 @@ def main():
         },
     }
     fields["identity"] = material_hash(fields)
+    if a.disk_fold_cache:
+        fields.pop("identity")
+        fields["fold_cache_storage"] = "lossless_disk_one_outer_v1"
+        fields["disk_cache_code_sha256"] = hashlib.sha256(
+            (
+                ROOT / "grain_research/vector_mechanisms/external_null_disk.py"
+            ).read_bytes()
+        ).hexdigest()
+        fields["identity"] = material_hash(fields)
     out = a.output_dir
     out.mkdir(parents=True, exist_ok=True)
     mp = out / "manifest.json"
@@ -173,9 +187,42 @@ def main():
         {"status": "PREPARING_FOLDS", "completed": len(records), "target": 199},
     )
     with threadpool_limits(limits=4):
-        plans = prepare_nested_folds(
-            x, ids, folds, feature_kind, m["task"], pca=m["pca"]
-        )
+        if a.disk_fold_cache:
+            from grain_research.vector_mechanisms.external_null_disk import (
+                prepare_disk_folds,
+            )
+
+            plans = prepare_disk_folds(
+                out / "private_fold_cache",
+                x,
+                ids,
+                folds,
+                feature_kind,
+                m["task"],
+                parent_identity=fields["identity"],
+                pca=m["pca"],
+            )
+        else:
+            plans = prepare_nested_folds(
+                x, ids, folds, feature_kind, m["task"], pca=m["pca"]
+            )
+
+        def validate_cache(stage):
+            """Seal cache integrity at every return boundary, not every draw."""
+            if a.disk_fold_cache:
+                plans.validate_files()
+                write_json(
+                    out / "fold_cache_audit.json",
+                    {
+                        "stage": stage,
+                        "identity": plans.manifest["identity"],
+                        "arrays": len(plans.manifest["arrays"]),
+                        "bytes": plans.manifest["bytes"],
+                        "sha256_verified": True,
+                        "labels_used": False,
+                    },
+                )
+
         observed, parameters = nested_predict_cached(plans, y, m["task"])
         max_error = float(np.max(abs(observed - expected)))
         if max_error > 1e-10:
@@ -188,6 +235,7 @@ def main():
         )
         for j in range(len(records), 199):
             if time.monotonic() - start > a.max_seconds:
+                validate_cache("PAUSED_BUDGET")
                 write_json(
                     out / "run_status.json",
                     {
@@ -234,6 +282,7 @@ def main():
                     },
                 )
                 if alert:
+                    validate_cache("SANITY_REVIEW_REQUIRED")
                     write_json(
                         out / "run_status.json",
                         status | {"status": "SANITY_REVIEW_REQUIRED"},
@@ -241,6 +290,7 @@ def main():
                     return
             if j % 20 == 19:
                 print(json.dumps(status), flush=True)
+        validate_cache("COMPLETE")
     values = np.asarray([r["score"] for r in records])
     score = task_score(y, observed, m["task"])
     summary = {

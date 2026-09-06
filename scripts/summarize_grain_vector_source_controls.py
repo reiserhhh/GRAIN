@@ -36,17 +36,59 @@ def legacy_path(root, task, arm):
     return root / f"vm05_{task[:2].lower()}_grain_intermediate_{suffix}_r1"
 
 
+def reference_path(batch, legacy_root, task, arm):
+    """Resolve the actual comparison head, never silently substitute a weaker one."""
+    if batch["protocol"] == "VM05_STRONG_SPARSE_SOURCE_CONTROLS_V1":
+        records = [
+            r for r in batch["baselines"] if (r["task"], r["arm"]) == (task, arm)
+        ]
+        if len(records) != 1:
+            raise ValueError("Missing or ambiguous strong baseline")
+        return Path(records[0]["path"])
+    if batch["protocol"] != "VM05_SOURCE_CONTROLS_V1" or legacy_root is None:
+        raise ValueError("Unknown control protocol or missing historical baseline root")
+    return legacy_path(legacy_root, task, arm)
+
+
+def verify_strong_design(batch):
+    """Reconstruct the complete design independently of the execution generator."""
+    expected = {
+        (task, arm, mode, seed, "word_char", True)
+        for task in ("EI_cont", "SN_cont", "TF_cont", "JP_cont")
+        for arm in ("raw", "cue_mask", "placebo_mask")
+        for mode, seeds in (
+            ("retain", [731]),
+            ("purge", [731]),
+            ("random_count", range(731, 736)),
+        )
+        for seed in seeds
+    }
+    rows = batch["cases"]
+    observed = {
+        tuple(
+            row[key]
+            for key in ("task", "arm", "mode", "seed", "feature", "exclude_reference")
+        )
+        for row in rows
+    }
+    if len(rows) != 84 or len({r["id"] for r in rows}) != 84 or observed != expected:
+        raise ValueError("Strong source-control conditions differ from protocol")
+
+
 def main():
     """Require actual completed results; optionally publish an explicitly partial audit."""
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--batch-dir", type=Path, required=True)
     p.add_argument("--views", type=Path, required=True)
     p.add_argument("--preflight-dir", type=Path, required=True)
-    p.add_argument("--legacy-dir", type=Path, required=True)
+    p.add_argument("--legacy-dir", type=Path)
     p.add_argument("--output-dir", type=Path, required=True)
     p.add_argument("--allow-partial", action="store_true")
     a = p.parse_args()
     batch = json.loads((a.batch_dir / "batch_manifest.json").read_text())
+    strong = batch["protocol"] == "VM05_STRONG_SPARSE_SOURCE_CONTROLS_V1"
+    if not strong and batch["protocol"] != "VM05_SOURCE_CONTROLS_V1":
+        raise ValueError("Unknown source-control protocol")
     if (
         material_hash({k: v for k, v in batch.items() if k != "identity"})
         != batch["identity"]
@@ -55,6 +97,33 @@ def main():
         != batch["preflight_manifest_sha256"]
     ):
         raise ValueError("Changed batch material identity")
+    if strong:
+        verify_strong_design(batch)
+        keys = [(r["task"], r["arm"]) for r in batch["baselines"]]
+        expected = {
+            (t, arm)
+            for t in ("EI_cont", "SN_cont", "TF_cont", "JP_cont")
+            for arm in ("raw", "cue_mask", "placebo_mask")
+        }
+        if len(keys) != 12 or set(keys) != expected or len(batch["cases"]) != 84:
+            raise ValueError("Incomplete strong baseline/control design")
+        for r in batch["baselines"]:
+            path = Path(r["path"])
+            base = load_oof(path)
+            m = base["manifest"]
+            if (
+                m["identity"] != r["identity"]
+                or m["feature"] != "word_char"
+                or m["exclude_reference"]
+                or m["pca_applied"]
+                or m["thread_control"] != "retain"
+                or m["permutation_seed"] is not None
+                or (m["task"], m["arm"]) != (r["task"], r["arm"])
+                or base["summary"]["full_head_sha256"] != r["full_head_sha256"]
+                or hashlib.sha256((path / "summary.json").read_bytes()).hexdigest()
+                != r["summary_sha256"]
+            ):
+                raise ValueError("Strong baseline identity or method changed")
     source = json.loads(a.views.read_text())
     budget = pd.read_csv(
         a.preflight_dir / "budget_by_author.csv", dtype={"author_id": str}
@@ -114,10 +183,11 @@ def main():
     if pending and not a.allow_partial:
         raise ValueError(f"{len(pending)} source cases remain; not a complete audit")
     # The older Big5 baseline has the same evaluation authors; it is not rerun or selected.
-    for arm in ("raw", "cue_mask", "placebo_mask"):
-        objects[("big5", arm, "retain", 731)] = load_oof(
-            legacy_path(a.legacy_dir, "big5", arm)
-        )
+    if not strong:
+        for arm in ("raw", "cue_mask", "placebo_mask"):
+            objects[("big5", arm, "retain", 731)] = load_oof(
+                reference_path(batch, a.legacy_dir, "big5", arm)
+            )
     contrasts, count_rows = [], []
 
     def compare(name, key, ref_keys):
@@ -134,7 +204,9 @@ def main():
             }
         )
 
-    tasks = ("big5", "EI_cont", "SN_cont", "TF_cont", "JP_cont")
+    tasks = ("EI_cont", "SN_cont", "TF_cont", "JP_cont")
+    if not strong:
+        tasks = ("big5", *tasks)
     arms = ("raw", "cue_mask", "placebo_mask")
     for task in tasks:
         for arm in arms:
@@ -158,7 +230,8 @@ def main():
             if task != "big5" and retained in objects:
                 current = objects[retained]
                 old = restrict_oof(
-                    load_oof(legacy_path(a.legacy_dir, task, arm)), current["ids"]
+                    load_oof(reference_path(batch, a.legacy_dir, task, arm)),
+                    current["ids"],
                 )
                 contrasts.append(
                     {
