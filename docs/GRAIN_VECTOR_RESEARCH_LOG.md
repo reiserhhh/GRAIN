@@ -676,3 +676,40 @@ Windows队列PID28172仍存活，20个observer shards完成，Qwen shard06
 下一：完整来源观察器与剩余稀疏/同ready比较；在不改变来源头选择的前提下
 准备角色组合与上下文干预的区分设计。冻结来源规则后才bridge和VM06实际
 机制验证。仍有可执行研究工作，不需用户新idea，goal保持active。
+
+## 第十五轮：真实回复的上下文利用与内存修复
+
+2026-09-06。上一轮为实质progress；本轮新增机制证据而非只做材料审计。
+
+- 先提交3b4b463冻结RC1。Qwen旧Windows缓存七文件复制到Mac并逐SHA校验，
+  未下载新模型，MEPS未传出Mac。r1是BatchEncoding接口拒绝、无forward；
+  r2 BF16日语器械未过位置平移容差；改FP32、不放宽门槛，r3误差<=3.58e-6。
+  dfb835b提交器械实现后才启动真人forward。
+- 46自由相谈中44人满足完整最后回复规则，每人一条16--243 tokens。
+  四上下文臂+block10自替换/搬运共270forward，346.8秒、MPS采样6.175GB。
+  实际/错排/随机/无前文的当前token逐个相同，输入embedding差0。
+- 真实相对长度匹配的平均logp差+.43643[.31067,.57494]，39/44正。
+  相对随机+.41975，相对无前文+.82192。区间条件于固定材料/错排，
+  不是人口p值/人格效度。完整用户平均向量的高余弦不排除逐位置读出效应。
+- block10正文全状态搬运仅+.02431[-.01639,.06162]tail改善；完整真实
+  tail差+.41975。不能认定中层用户向量是因果瓶颈，仍要补末层正控制。
+  自替换44/44逐token重播0；独立审计核对44成员/528几何行，复算错排、差/CI。
+  没有独立重跑270forward，也未保存激活或心理值。
+- SN强稀疏旧r2完成5个外折后在全来源阶段触发8GiB保护。原childPID33463
+  已退出，父FAILED_STOP；子RUNNING只是旧快照，不可误判仍在跑。
+  发现最后inner CSR矩阵仍留在final fit期间，显式释放+GC，不改数学。
+  旧14505a7与新函数4个合成fixture的inner分数、参数及预测完全相同，
+  weakref测试确认矩阵已释放。4b668db提交；8GiB不放宽。
+- 新r3只跑SN/TF/JP九条件，session73299、child35968，4小时上限。
+  不重跑EI，旧SN五fold保留但未验收为完整头。真实内存改善仍待任务完成。
+- Windows最近24个observer shards完成、BGE shard08继续。新增05/06备份
+  648872260字节，两机SHA=32a3d34354195345a5ae3f198af39cb63e626286b0c4cb69ce975b45398364ed。
+  Mac00--06共21observer shard逐文件核验、各模型2121人；整个队列未完成。
+- 143项专项测试通过。未改Windows aa51b06、发布scorer、锁箱；未训练
+  LLM、读取bridge/MEPS量表或push。无关dirty报告原样保留。
+
+核心报告VM06_RESPONSE_CONTEXT_REPORT；canonical vm06_response_context_r1、
+vm06_response_context_audit_r1、vm05_sparse_memory_fix_audit_r1。
+下一：末层读出正控制、少数固定层的状态/上下文利用路径；完整源头采集、
+强稀疏与同ready比较、来源封存后bridge仍需完成。新机制只解释上下文
+兼容/利用，不直接命名Who或人格；goal保持active，不需要用户先给新idea。

@@ -24,11 +24,12 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Vector inference research loop (2026-09-06)
 
-Latest: [the completed 15-condition null family and EI sparse comparison](reports/grain_vector_mechanisms/VM05_SOURCE_CONTROLS_AND_NULL_REPORT.md#8-第十四轮完整null家族与ei强稀疏三臂),
-plus a [46-participant MEPS material and speaker audit](reports/grain_vector_mechanisms/VM06_MEPS_MATERIAL_PREFLIGHT_REPORT.md).
-The audit fixes implicit mood-table access and identifies AI-text dominance and
-tokenizer/context-budget constraints; lossless speaker windows are ready, but
-no MEPS mechanism forward pass has run. Full observer collection continues.
+Latest: [a no-label response-context experiment](reports/grain_vector_mechanisms/VM06_RESPONSE_CONTEXT_REPORT.md)
+on 44 eligible MEPS participants. Actual preceding AI replies improve identical
+user-response log likelihood by .436 nat/token over length-matched mismatches.
+However, block10 current-token state transfer gives only a small, inconclusive
+gain. This separates context use from a self-contained intermediate user vector;
+it does not establish personality validity. Full source observer collection continues.
 
 The active research program studies how an LLM's internal representations use
 author context and combine evidence during personality inference. The
