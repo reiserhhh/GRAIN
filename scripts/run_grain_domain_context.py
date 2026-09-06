@@ -75,7 +75,7 @@ def public_gate(observer):
     examples = [
         (
             "en",
-            "Earlier I walked around the park and observed the trees near a quiet pond.",
+            "Earlier I walked around the park and observed the trees near a quiet pond. Several people were walking slowly along the path, and I stopped beside a wooden bench to take notes.",
             "Later I wrote a short description of the trees and the quiet path next to the water.",
         ),
         (
