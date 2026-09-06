@@ -590,3 +590,46 @@ vm05_source_controls_r1（source controls）、vm05_null_family_r1（完整null�
 本轮收尾：cue sparse null完成并独立复算，raw+cue+12MBTI共14条件/2786次
 已验收（vm05_null_family_audit_partial_r3），仅placebo继续。EI raw稀疏
 5个模型独立重播最大差9.72e-17，cue正运行。上述更早的13项是过程快照。
+
+## 第十三轮：精确读出搬运与同维随机反证
+
+2026-09-06。机制报告：VM05_READOUT_AND_RANDOM_SUBSPACE_REPORT.md。
+
+- 100折/20全来源头在白化或总半径lift中精确搬运，误差2.89e-15；全材料
+  7266人的坐标恒等式通过。TF主PCA原头.6485，重拟合白化头.5859，但
+  正确搬运仍.6485。不可用可逆白化后的成绩下降证明信息消失。
+- 勘误：parallel+垂直范数平方与地标平方距离不是仿射关系，缺少parallel
+  平方范数。换成总半径平方才仿射等价。原代码解码/原OOF成绩不变。
+  该修正与同维控制计划先提交292314c，再执行后续200条件。
+- 20固定随机正交分解×15/33维×五来源任务全部完成，1000折/200全来源头
+  保存。独立重建随机基底并重播1000折，误差0。TF垂直.62473，随机33均值
+  .61389、范围.54383至.63955；尚非特殊人格方向。Big5144来源仍很弱。
+- 随机批次identity：2a22bac7779f611dad32d188ed7e7f8afa81ca90394e78ace25c4f98656d5ba2。
+  完整目录vm05_random_subspaces_r1，独立审计vm05_random_subspace_audit_r1。
+  搬运目录vm05_readout_transport_r1；支持门槛、官方fold、发布scorer均不变。
+- 发现历史源码归档glob漏收新命名runner/audit。新增只读补档工具，原件保留；
+  6项原manifest代码SHA验证通过，110允许文件写到vm05_source_archive_repair_r1。
+  这是事后补档，不补造预注册。活跃队列结束后再统一修订共享归档器allowlist。
+- 强稀疏EI cue完成AUC=.672686，raw=.672221；差+.000465
+  [-.001543,.002563]。placebo已启动，三臂不能提前宣布完成。完整null家族
+  仍14项已验收、Big5 placebo执行中，不重启在跑的子进程。
+- Windows继续运行，新增03/04备份SHA=f010529498275b5fe60a07adcf43640cc0a2aea9909797f015e806ea81ee1812。
+  本地00至04共15份observer shards逐作者cache SHA通过，各模型1515人；
+  完整7266队列尚未完成，禁止同步改动冻结Windows代码或提前用部分替代全量。
+- 122项专项测试通过，scoped ruff/diff通过。未进行LLM训练/下载/付费API，
+  未读bridge/MEPS心理值，未push。新的代码与完整报告分批commit。
+
+本轮具体复现入口（所有路径在独立GRAIN仓库，输出需新目录）：
+
+```bash
+PY='/Volumes/mobile3/projects/project persona/.venv/bin/python'
+R=results/grain_vector_mechanisms
+"$PY" scripts/audit_grain_vector_readout_transport.py --profile-dir "$R/vm05_profile_material_r1" --profile-batch "$R/vm05_profile_heads_raw_r1" --geometry-batch "$R/vm05_geometry_information_raw_r1" --views "$R/vm05_qualification_r2/common_views.json" --output-dir "$R/new_transport_audit"
+"$PY" scripts/run_grain_vector_random_subspaces.py --profile-dir "$R/vm05_profile_material_r1" --geometry-batch "$R/vm05_geometry_information_raw_r1" --views "$R/vm05_qualification_r2/common_views.json" --output-dir "$R/new_random_controls" --max-seconds 1200
+"$PY" scripts/audit_grain_vector_random_subspaces.py --batch-dir "$R/new_random_controls" --geometry-batch "$R/vm05_geometry_information_raw_r1" --profile-dir "$R/vm05_profile_material_r1" --views "$R/vm05_qualification_r2/common_views.json" --output-dir "$R/new_random_audit"
+```
+
+上述是复现说明，不意味着应重跑已完成200条件。下一轮收尾最后null/强稀疏
+三臂；完成三个观察器同材料采集、源头/ready重拟合及来源控制，再封头开bridge。
+几何子线本轮收束；VM06/07及读出语义不变性/实际使用接口仍待做。当前没有
+需要用户新idea才能继续的阻塞，goal保持active，不能声明理论闭环。

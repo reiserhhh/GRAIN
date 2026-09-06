@@ -3,6 +3,13 @@
 Opened: 2026-07-30; historical route through 2026-08-22; next-program links added 2026-09-05
 Status: active development map; not a release seal or a scientific promotion
 
+Latest follow-up: the [coordinate/readout and random-subspace audit](../reports/grain_vector_mechanisms/VM05_READOUT_AND_RANDOM_SUBSPACE_REPORT.md)
+separates invertible coordinate changes, estimator changes, and lost landmark
+directions. Exact readout transport passes; dimension-matched random controls
+do not establish a personality-specific residual space. A radial-lift formula
+and a source-archive coverage gap are explicitly corrected. The released scorer
+and unopened bridge outcomes remain unchanged.
+
 Current vector research program (in progress): the
 [Project Persona-to-GRAIN retrospective](GRAIN_PROJECT_RETROSPECTIVE_20260905.md)
 reconciles historical results and the scope of the completed cycle. The

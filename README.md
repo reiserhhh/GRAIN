@@ -24,6 +24,12 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Vector inference research loop (2026-09-06)
 
+Latest: [exact readout transport and random-subspace controls](reports/grain_vector_mechanisms/VM05_READOUT_AND_RANDOM_SUBSPACE_REPORT.md)
+show why coordinate/readout changes must not be called information loss.
+200 dimension-matched controls do not establish a special personality residual
+subspace. A formula and archive-coverage issue are corrected without changing
+the released scorer or opening bridge outcomes. Full observer collection continues.
+
 The active research program studies how an LLM's internal representations use
 author context and combine evidence during personality inference. The
 [project retrospective](docs/GRAIN_PROJECT_RETROSPECTIVE_20260905.md) connects

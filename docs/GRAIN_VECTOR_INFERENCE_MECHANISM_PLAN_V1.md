@@ -2,6 +2,12 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+第十三轮：[坐标与随机子空间报告](../reports/grain_vector_mechanisms/VM05_READOUT_AND_RANDOM_SUBSPACE_REPORT.md)
+完成100折/20头精确读出搬运，以及200个同维随机条件/1000折独立重播。
+修正距离坐标仿射性表述；垂直33维尚无超出随机方向范围的特殊性。
+新发现归档器漏收部分脚本，已保留原件并作显式事后补档，不能称事前封存。
+几何支线到此先收束，等待同证据完整神经观察器与稀疏参照，不改scorer。
+
 第十二轮更新：102来源控制及510个保存fold模型全部验收，14个完整null已
 重算；稀疏MBTI强参照与三个神经观察器全量提取继续。新增160个同ready
 几何通道条件及50个后续解码条件，见[几何信息报告](../reports/grain_vector_mechanisms/VM05_GEOMETRY_INFORMATION_REPORT.md)。
