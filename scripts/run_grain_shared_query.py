@@ -26,6 +26,7 @@ from grain_research.vector_mechanisms.prefix import (
 from grain_research.vector_mechanisms.query_decomposition import (
     fold_query_references,
     mix_raw_query,
+    pairing_query_expansion,
 )
 from grain_research.vector_mechanisms.trace import DecoderObserver
 from scripts.analyze_grain_author_discovery import scalar_metrics
@@ -68,7 +69,7 @@ def prepare(args):
     write(
         out / "manifest.json",
         {
-            "protocol": "GRAIN_S14_SHARED_QUERY_V1",
+            "protocol": "GRAIN_S14_SHARED_QUERY_V2",
             "collection": str(source),
             "collection_manifest_sha256": sha(source / "manifest.json"),
             "source_packet_hashes": packet_hashes,
@@ -247,6 +248,12 @@ def run(args):
                     native, axis=1
                 )
                 predictions, vector_error = {}, None
+                reference_rotated = rotate_query(
+                    reference,
+                    cache["last_cos"],
+                    cache["last_sin"],
+                    cache["scaling"],
+                )
                 for alpha in ALPHAS:
                     mixed = mix_raw_query(reference, native, alpha)
                     query = (
@@ -267,6 +274,15 @@ def run(args):
                         )
                 if vector_error > 1e-5 or trace["forbidden_calls"]:
                     raise ValueError("Native replay or prefix boundary failed")
+                expansion = pairing_query_expansion(
+                    cache, groups, reference_rotated, coef
+                )
+                increment_error = abs(
+                    expansion["exact_increment"]
+                    - (predictions["1.0"] - predictions["0.0"])
+                )
+                if increment_error > 1e-8:
+                    raise ValueError("Centered-value derivative readout disagrees")
                 rows.append(
                     {
                         "view": view,
@@ -274,6 +290,8 @@ def run(args):
                         "native_vector_error": vector_error,
                         "query_cosines": cosine.tolist(),
                         "query_relative_changes": relative.tolist(),
+                        "query_expansion": expansion,
+                        "expansion_identity_error": increment_error,
                     }
                 )
             native_mean = float(np.mean([v["scores"]["1.0"] for v in rows]))
@@ -325,6 +343,13 @@ def evaluate(args):
                 np.mean([v["scores"][str(alpha)] for v in packet["views"]])
             )
         row["query_increment"] = row["1.0"] - row["0.0"]
+        row["first_order"] = float(
+            np.mean([v["query_expansion"]["first"] for v in packet["views"]])
+        )
+        row["second_derivative"] = float(
+            np.mean([v["query_expansion"]["second"] for v in packet["views"]])
+        )
+        row["second_order"] = row["first_order"] + 0.5 * row["second_derivative"]
         rows.append(row)
         packets.append(packet)
         for v in packet["views"]:
@@ -345,7 +370,7 @@ def evaluate(args):
     frame = frame.merge(labels, on="author_id", validate="one_to_one")
     if not np.isfinite(frame.y_true).all():
         raise ValueError("Source label mismatch")
-    metrics, pairs, moments = [], [], []
+    metrics, pairs, moments, taylor = [], [], [], []
     ix = np.random.default_rng(734).integers(len(frame), size=(1000, len(frame)))
     for measure in ("0.0", "0.5", "1.0", "query_increment"):
         y, pred = frame.y_true.to_numpy(), frame[measure].to_numpy()
@@ -388,10 +413,30 @@ def evaluate(args):
         - covariance(frame.y_true, frame["0.0"])
         - covariance(frame.y_true, frame.query_increment)
     )
+    for alpha in (0.5, 1.0):
+        truth = frame[str(alpha)] - frame["0.0"]
+        for order in (1, 2):
+            pred = alpha * frame.first_order
+            if order == 2:
+                pred = pred + 0.5 * alpha**2 * frame.second_derivative
+            detail = scalar_metrics(truth, pred)
+            mse = float(np.mean((truth - pred) ** 2))
+            zero = float(np.mean(truth**2))
+            taylor.append(
+                {
+                    "alpha": alpha,
+                    "order": order,
+                    "increment_r": detail["pearson_r"],
+                    "mse": mse,
+                    "mse_over_zero": mse / zero if zero else None,
+                    "source_r": scalar_metrics(frame.y_true, pred)["pearson_r"],
+                }
+            )
     for name, records in (
         ("metrics", metrics),
         ("paired_intervals", pairs),
         ("covariance_split", moments),
+        ("query_taylor", taylor),
     ):
         pd.DataFrame(records).to_csv(out / f"{name}.csv", index=False)
     summary = {
@@ -410,14 +455,19 @@ def evaluate(args):
         "query_cosine_10_90": [float(v) for v in np.quantile(cosines, [0.1, 0.9])],
         "median_relative_query_change": float(np.median(changes)),
         "covariance_identity_error": identity,
+        "max_expansion_identity_error": max(
+            v["expansion_identity_error"] for p in packets for v in p["views"]
+        ),
         "metrics": metrics,
         "paired_intervals": pairs,
         "covariance_split": moments,
+        "query_taylor": taylor,
         "scope": "frozen native reader under author-out prototype query intervention; source discovery",
     }
     write(out / "summary.json", summary)
     print(pd.DataFrame(metrics).to_string(index=False), flush=True)
     print(pd.DataFrame(moments).to_string(index=False), flush=True)
+    print(pd.DataFrame(taylor).to_string(index=False), flush=True)
 
 
 def main():

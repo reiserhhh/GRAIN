@@ -57,6 +57,35 @@ guarantee for these human traits. No new theorem is asserted for the algebra.
 
 ## Analysis and resource contract
 
+### Pre-collection extension: directional cumulants
+
+V2 adds no neural calls and no new fitting. The V1 r1 directory was prepared
+but never collected; r2 supersedes it before any intervention results exist.
+For the fixed affine head coefficient beta, set R=beta^T Vtilde and
+U=(q_native-q_reference)^T K. Under p_reference, record
+
+\[
+L=\operatorname{Cov}(R,U),\quad
+Q=E[(R-E R)(U-E U)^2],\quad
+\Delta S(\alpha)\approx\alpha L+\alpha^2Q/2.
+\]
+
+Sum heads and average views. Compare first/second-order approximations to the
+exact score increment at both fixed doses .5 and1, reporting correlation and
+MSE relative to zero increment. No approximation order is selected using Y.
+The exact finite response is the exponential tilt
+E_reference[R exp(alpha U)]/E_reference[exp(alpha U)]-E_reference[R].
+Large steps can invalidate a truncated Taylor series; that is an informative
+result about query geometry, not a failed identity.
+
+The conditional covariance/cumulant identities follow from log-partition
+calculus ([Wainwright & Jordan2008](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/reading/WainwrightJordan2008.pdf)).
+[Le et al.2026, CCQ](https://arxiv.org/abs/2606.01294) independently motivates
+query-side curvature as a reading mechanism, but targets linear-attention
+retrieval. We borrow the geometric question, not its contraction rule: our
+Qwen path already uses normalized softmax and no high-variance direction is
+declared noise. This experiment is not a test of CCQ or proof of its claims.
+
 Collector:639 prefix calls,0 full decoder scores,0 backwards;35-minute cap.
 Build and freeze reference queries before collection. One neural collector only.
 Primary: teacher-C r/MSE of alpha0/.5/1 and paired differences vs alpha1.
@@ -72,5 +101,5 @@ If personalized query adds useful response, retain it and localize its geometry.
 Either finding is a mainline result; neither alone proves all author identity is
 query-based. Do not run new labels, API, LoRA, old queues or external lockboxes.
 
-Outputs: results/grain_vector_mechanisms/shared_query_s14_r1/
+Outputs: results/grain_vector_mechanisms/shared_query_s14_r2/
 Report: reports/grain_vector_mechanisms/S14_SHARED_QUERY_REPORT.md.
