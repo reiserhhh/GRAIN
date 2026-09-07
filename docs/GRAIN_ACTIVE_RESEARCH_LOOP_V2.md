@@ -46,8 +46,11 @@ See `reports/grain_vector_mechanisms/ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md`.
 The early-evidence/late-query replacement pattern survived new actions/settings
 and query paraphrases. Frozen small-operator coefficients did not transfer
 universally. The old source queues stay paused; no new human-label or private-text
-scope was opened. Next P1G: zero-forward decomposition of query-coordinate,
-response-shape and endpoint-gap differences before another neural packet.
+scope was opened. P1G also completed with zero forwards: frozen gap/shape error
+cancellation explains misleading apparent improvements. The new next P1H is
+`GRAIN_QUERY_COORDINATE_P1H_PLAN.md`: clause-order manipulation separates semantic
+query role from suffix position. Exact collector/material must be frozen before
+that packet runs; it is not yet executed. No user/Claude intervention needed now.
 
 The relevant decision is no longer merely where information resides, but what
 question-conditioned operator uses it. Preserve all old coding/venue/opportunity

@@ -9,6 +9,11 @@
 见[本轮报告](../reports/grain_vector_mechanisms/ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md)。
 goal最初为paused，后重新检查已无旧goal，成功新建active；下方paused说明保留历史。
 
+**同轮后续：P1G零forward分解完成，下一P1H。**
+误差抵消得到确切数值见证，不能把错误幅度抵消错误形状说成更正确的表示。
+P1H拟交换问题/答案约定的顺序，区分语义路由和普通后缀信息累积；未运行，
+详见GRAIN_QUERY_COORDINATE_P1H_PLAN.md。GRAIN469tests及P1G另2tests通过。
+
 **2026-09-07 本轮工作目标更新：独立机制研究 loop V2。**
 按用户指示执行角色绑定、条件诊断性与局部证据作用实验，监控时同时评估
 剩余计算的科学价值。以 `GRAIN_ACTIVE_RESEARCH_LOOP_V2.md` 为当前执行目标，
