@@ -293,3 +293,7 @@ labels. The research goal remains active; no user decision is needed now.
 
 Read`reports/grain_vector_mechanisms/S12_QUERY_REPRESENTATION_REPORT.md` for
 all comparisons, exact formula, source references and reproduction commands.
+
+Final focused validation after S12:225 tests passed in18.72seconds, with only
+two existing SWIG deprecation warnings. Ruff and whitespace checks passed.
+S12 finding commit:f40a650; parent handoff sync:5f5a94c. No remote push.
