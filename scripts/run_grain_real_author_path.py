@@ -120,6 +120,34 @@ def variants(texts, selected, control):
     }
 
 
+def select_membership(registry, excluded, counts, holdout_only=False):
+    """Select source-only authors without overlap or outcome-dependent ordering."""
+    ids = registry["author_ids"]
+    chosen = []
+    for task, group, number in counts:
+        eligible = [
+            i
+            for i, uid in enumerate(ids)
+            if registry["all_arms_ready_reference_free"][i]
+            and registry["source_group"][i] == group
+            and uid not in excluded
+        ]
+        ranked = sorted(eligible, key=lambda i: key(ids[i]))[:number]
+        if number < 2 or len(ranked) != number or (number % 2 and not holdout_only):
+            raise ValueError("Insufficient source-ready authors or invalid split count")
+        for rank, i in enumerate(ranked):
+            chosen.append(
+                {
+                    "author_id": str(ids[i]),
+                    "task": task,
+                    "source_group": group,
+                    "split": "held_author" if holdout_only or rank % 2 else "discovery",
+                    "profile_index": i,
+                }
+            )
+    return chosen
+
+
 def prepare(args):
     """Freeze new source-author material, independent profiles and query selection."""
     out = args.output_dir
@@ -129,6 +157,10 @@ def prepare(args):
             "private_author_ids"
         ]
     )
+    extra_exclusions = {}
+    for path in args.exclude_membership:
+        excluded.update(row["author_id"] for row in read(path))
+        extra_exclusions[str(path)] = sha(path)
     registry = np.load(
         BASE / "vm05_same_ready_registry_r1/private_ready_registry.npz",
         allow_pickle=False,
@@ -140,31 +172,11 @@ def prepare(args):
     ids = registry["author_ids"]
     if not np.array_equal(ids, profiles["author_ids"]):
         raise ValueError("Profile and author registry mismatch")
-    chosen = []
-    for task, group, number in (
+    counts = (
         ("TF_cont", "mbti_only", args.tf_authors),
         ("neuroticism", "big5_only", args.n_authors),
-    ):
-        eligible = [
-            i
-            for i, uid in enumerate(ids)
-            if registry["all_arms_ready_reference_free"][i]
-            and registry["source_group"][i] == group
-            and uid not in excluded
-        ]
-        ranked = sorted(eligible, key=lambda i: key(ids[i]))[:number]
-        if len(ranked) != number or number % 2:
-            raise ValueError("Need enough source-ready new authors and an even count")
-        for rank, i in enumerate(ranked):
-            chosen.append(
-                {
-                    "author_id": str(ids[i]),
-                    "task": task,
-                    "source_group": group,
-                    "split": "discovery" if rank % 2 == 0 else "held_author",
-                    "profile_index": i,
-                }
-            )
+    )
+    chosen = select_membership(registry, excluded, counts, args.holdout_only)
     # Commit membership before model scoring; this stage does not read any labels.
     write(out / "membership.json", chosen)
     material_path = BASE / "vm05_qualification_r2/common_views.json"
@@ -260,6 +272,8 @@ def prepare(args):
         "common_views_sha256": sha(material_path),
         "encoder_cache_sha256": inputs,
         "d1_excluded": True,
+        "extra_excluded_membership_sha256": extra_exclusions,
+        "holdout_only": args.holdout_only,
         "labels_read": False,
         "bridge_outcomes_read": False,
         "model_dir": str(MODEL),
@@ -447,6 +461,8 @@ def main():
     parser.add_argument("--tf-authors", type=int, default=40)
     parser.add_argument("--n-authors", type=int, default=24)
     parser.add_argument("--max-seconds", type=int, default=1800)
+    parser.add_argument("--exclude-membership", type=Path, action="append", default=[])
+    parser.add_argument("--holdout-only", action="store_true")
     args = parser.parse_args()
     if not args.output_dir.resolve().is_relative_to(ROOT / "results"):
         raise ValueError("Private material must remain in ignored results/")

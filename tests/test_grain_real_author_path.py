@@ -4,7 +4,11 @@
 import numpy as np
 import pytest
 
-from scripts.run_grain_real_author_path import choose_comments, variants
+from scripts.run_grain_real_author_path import (
+    choose_comments,
+    select_membership,
+    variants,
+)
 
 
 def test_query_poles_select_both_directions():
@@ -35,3 +39,14 @@ def test_evidence_order_and_counts():
 def test_invalid_vectors_rejected():
     with pytest.raises(ValueError):
         choose_comments(np.ones((4, 2)), np.ones((2, 2)), [2] * 4)
+
+
+def test_new_membership_excludes_prior_authors_and_keeps_all_held():
+    registry = {
+        "author_ids": np.array(["a", "b", "c", "d", "e", "f"]),
+        "source_group": np.array(["mbti_only"] * 5 + ["bridge"]),
+        "all_arms_ready_reference_free": np.array([True] * 4 + [False, True]),
+    }
+    rows = select_membership(registry, {"a", "b"}, [("TF_cont", "mbti_only", 2)], True)
+    assert {r["author_id"] for r in rows} == {"c", "d"}
+    assert {r["split"] for r in rows} == {"held_author"}
