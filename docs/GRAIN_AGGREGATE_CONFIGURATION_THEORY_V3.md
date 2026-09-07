@@ -323,7 +323,32 @@ trait word and not a human trait coordinate.
 
 Implementation and eight algebra tests are in `query_tilt.py` and its tests;
 two tiny random Qwen CPU tests verify native reconstruction, copying and hook
-cleanup. The planned real-model patch subtracts sum_G C_G at layer17's final
+cleanup. The real-model patch subtracts sum_G C_G at layer17's final
 query head output and observes downstream trait-query scores. This connects
 covariance geometry to an intervention without assuming that attention weight
-alone is an explanation. No S10 real-model result has been collected yet.
+alone is an explanation. S10 has now completed72 forwards: the numerical covariance
+integral reconstructs actual head changes with maximum relative MSE6.46e-13,
+and N/confirmation final-score intervention effects share r=.8070 [.5252,.9710].
+
+## 11. Empirical source connection and the remaining representation problem
+
+[S9](../reports/grain_vector_mechanisms/S9_SOURCE_REMAINDER_REPORT.md) connects
+the defined configuration response to213 source N labels: r=.2116,
+Cov(Y,C)=.001046 [.000284,.002054]. Preserving native configuration rather than
+the projected endpoint improves source N r by .0773 [.0236,.1330]. This supports
+a useful model route linked to human measurements; it is not merely a theorem
+about arbitrary differentiable functions.
+
+[S11](../reports/grain_vector_mechanisms/S11_CONTRAST_STUDENT_REPORT.md) changes
+the student's target from the complete teacher to this measured contrast. E5-mean
+PCA64/PLS2 students recover projected-background scores (target r=.6338/.6110),
+but not C (target r=-.0187/-.0183). Thus improved background prediction does not
+recover the useful source relation in these finite classes. The exact fixed-
+linear-operator check P(M+C)=P(M)+P(C) explains why decomposition by name alone
+cannot solve the problem.
+
+The next mechanistic distinction is between unconditional author means and
+query-conditioned/joint representations. Contextualized query states and KV
+coupling are now mathematically specified candidates, not unnamed noise to erase.
+Their source-outcome connection and compact recoverability must be measured;
+S10's small separate panel does not yet partition S9's covariance among heads.

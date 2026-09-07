@@ -185,7 +185,7 @@ Deliverables at that checkpoint: S5/S6/S7 reports, theory V3, four runners and t
 189 focused tests plus four exact-geometry tests pass. All private artifacts remain ignored. Continue from
 these paths, not the dated training instructions in the parent AGENTS file.
 
-## Current checkpoint: S8 complete, S9 source experiment running
+## Historical checkpoint: S8 complete, S9 source experiment running
 
 S8 completed384 forwards,0 backwards in544.8seconds. A small-radius quadratic
 predicts N full-radius internal effects with r=.7537 and MSE/zero=.7177, but
@@ -211,3 +211,38 @@ only; no bridge/MEPS/lockbox, retraining, external API, or old-queue restart.
 S9 output: `results/grain_vector_mechanisms/source_remainder_s9_r1/`.
 S9 protocol/code are locally committed as431db14. Use `run_status.json` for live
 progress, not the historic checkpoint above. The overall goal remains active.
+
+## Current checkpoint: S9/S10/S11 complete, source configuration link found
+
+S9 completed all277 authors/1662 forwards in2431.4seconds. N configuration
+contrast C=S_new-M has r=.2116 with source Y, p=.00191; Cov(Y,C)=.001046 with
+paired bootstrap CI[.000284,.002054]. Native-versus-projected N delta r=.0773
+[.0236,.1330]. On64 T/F controls, native-versus-projected delta AUC=.0380
+[.0049,.0774]. This is the first direct source-outcome connection for this
+mean-null intervention, not just internal response fidelity. Old/new observer
+differences remain explicitly separated; no bridge/MEPS/lockbox was opened.
+
+S10 completed72 forwards/0 backwards in104.8seconds. The exact fixed-head
+query-response derivative is the KV cross-covariance. Its numerical integral
+reconstructs captured head changes (maximum relative MSE6.46e-13). Removing
+within-comment KV pairing while holding keys, group mass and query fixed changes
+final scores; N/confirmation effects correlate .8070 [.5252,.9710]. S10's
+eight-author panel is not the same as S9's full source cohort.
+
+S11's zero-forward contrast students completed in6.4seconds. PCA64/PLS2 E5-mean
+students cannot recover C here (target r=-.0187/-.0183; external N r=-.0058/.0311),
+while projected-background target r=.6338/.6110. Fixed-operator additivity error
+2.22e-16. Stop this finite mean-student family, retain the positive native C result.
+
+No experiment remains running at this checkpoint. Next is a **bounded source
+representation collector**, not more ordinary hyperparameters: same213 N authors,
+three views, body-state mean versus contextualized query state versus layer17
+KV-pairing vector. Reuse S9 origins and targets, record observer identity; save
+representations in the same pass, then compare frozen author-out learners. Inspect
+the current capture APIs and write the finite protocol before collection. Avoid
+claiming that a model-derived prefix encoder is fully LLM-independent.
+
+Read the S9/S10/S11 aggregate reports under `reports/grain_vector_mechanisms/`.
+All code/result-source references are committed locally; no remote push. The
+active objective remains open because compact recovery of the useful component
+has not yet been established. Proceed independently from this mainline question.
