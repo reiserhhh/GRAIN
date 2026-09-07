@@ -1847,3 +1847,27 @@ Ruff/diff通过。真实2/128状态在任何OOF前拒绝且无输出，首片15t
 聚合无标签检查通过。qualification identity
 7a5a40313d2474d223d67f8dc8fc959afb65887adc357c647e0c70fb839b02d9。
 完整源头成绩尚未运行。执行命令和解释边界见GRAIN_VM05_DIRECT_SOURCE_ANALYSIS_V1。
+
+### 第三十七轮转向：不盯盘，补线索利用与条件推论理论（2026-09-07）
+
+用户要求长跑先继续，转做其它理论工作。本节不报告新的live进度，不停止/改参/
+扩充活动队列，不恢复history争用GPU，不读取bridge或MEPS量表，不调用API。
+
+新增GRAIN_CUE_UTILIZATION_AND_CONTEXTUAL_INFERENCE_V1，连接Funder RAM、
+Tucker/lens-model、Hamm-Yang交叉协方差与Murphy概率分解。核心区分是线索对
+目标的可预测性、LLM对相同线索的利用与两者对齐；Ridge/折外预测保留四项，
+不能继承同样本OLS正交性。扩展4W的choice/expression条件似然，展示完全重复
+证据不应独立累积；PSR/预测等价类作为作者条件响应函数的理论先例，而非宣布
+LLM或真人已经实现某种Bayesian人格算法。task operator、author配置、输出
+编码分开。本文是机制假说与数学账目，不新增人格效度或神经因果主张。
+
+新增check_grain_cue_utilization_theory.py及5 tests。9个确定性合成见证：相同
+可读性可得r=.64/0/-.64；坐标可逆运输不改函数；遗漏线索令残差贡献.96，加入
+后归零；收缩两项简化错.5；概率AUC=.8但bal=.5；重复LR误当独立使后验.8变
+.941176。最大协方差闭合误差2.220446049250313e-16。数据未读、forward=0。
+packet：results/grain_vector_mechanisms/cue_utilization_theory_r1。
+code sha7e7e3e6e6cea518d292c7b179a3312d31d6cfbec5ce2d18c3b269fef0d3f2637；
+witness sha feb4e7a3659d9306f32706c784b579c9e6918960a0053d9ce53d76667675b527。
+5 tests/0.18s、Ruff、format check、git diff check通过；没有重跑全repo测试。
+可读性note和4W目录增加互链；待长跑完成再做既定source配对，不提前用部分
+结果拟合新线索模型。真实作者的完整四项分解与响应函数识别仍未运行。

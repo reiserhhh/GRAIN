@@ -186,3 +186,15 @@ This is not proof that calibration cannot improve rankings, nor a new personalit
 law or localization of the responsible computation. Probability-scale mixed
 differences alone would be insufficient because the sigmoid is nonlinear.
 See [the complete diagnostic](../reports/grain_vector_mechanisms/VM05_ENCODING_INTERACTION_REPORT.md).
+
+## 7. Cue utilization and contextual inference
+
+The [cue-utilization note](GRAIN_CUE_UTILIZATION_AND_CONTEXTUAL_INFERENCE_V1.md)
+adds a standard lens-model interpretation: target predictability from cues,
+native-output predictability from those same cues, and alignment of the two
+functions are distinct. For Ridge or held-out fitted predictors, retain all four
+covariance terms rather than importing same-sample OLS orthogonality. Nine small
+synthetic witnesses check these identities and counterexamples, not human
+personality mechanisms. The note also links 4W to dependent evidence updates and
+conditional predictive response functions. Existing long queues remain unchanged;
+no completed native/source lens decomposition or neural causal circuit is claimed.

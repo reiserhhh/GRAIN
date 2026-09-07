@@ -575,6 +575,9 @@ shared-frame artifact。
 - [M4-T1 Hierarchical Selection Identity Plan](SUICA_M4_T_HIERARCHICAL_SELECTION_IDENTITY_PLAN.md)
 - [M4-T1 Quantitative Report](../reports/SUICA_M4_T1_HIERARCHICAL_SELECTION_IDENTITY_REPORT.md)
 - [Claims Ledger](CLAIMS_LEDGER.md)
+- [线索利用与情境化作者推论](GRAIN_CUE_UTILIZATION_AND_CONTEXTUAL_INFERENCE_V1.md)：
+  2026-09-07 理论扩展，将选择/表达分解连接到条件证据更新与作者响应函数；
+  包含数学反例，不替代本节所引用的真实作者证据。
 
 本文的作用是提供一张理论地图。任何具体实验结论仍须回到对应报告、代码、产物和
 claims ledger，而不能只引用本文的综合叙述。
