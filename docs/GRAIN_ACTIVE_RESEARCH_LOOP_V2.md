@@ -1,5 +1,13 @@
 # GRAIN active research loop V2
 
+## Superseding user direction, 2026-09-07
+
+The user redirected work to discovery-first real-author research after the pause.
+Follow `GRAIN_DISCOVERY_FIRST_RESEARCH_POLICY.md` and
+`GRAIN_MAINLINE_DISCOVERY_PLAN_V3.md`. P1U and further synthetic controls are parked;
+the old long queues stay paused. The status/history below is preserved as an
+execution record, not a requirement to finish all defenses before new discovery.
+
 2026-09-07. User-authorized independent Codex execution; no Claude call in this loop.
 
 **Latest execution state: PAUSED.** After completing and committing P1R/S/T,

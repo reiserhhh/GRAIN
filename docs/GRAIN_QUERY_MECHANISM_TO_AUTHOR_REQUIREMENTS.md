@@ -1,5 +1,12 @@
 # From synthetic query mechanisms to GRAIN author/group mechanisms
 
+**2026-09-07 user-directed priority change:** read
+`GRAIN_DISCOVERY_FIRST_RESEARCH_POLICY.md` and `GRAIN_MAINLINE_DISCOVERY_PLAN_V3.md`.
+The requirements below are a strengthening checklist, not serial entrance gates.
+D1 real-author discovery is complete; D2 TF/neuroticism pathways take priority
+over the historical next-P1U proposal. All source discovery remains within the
+existing data permissions, with bridge/MEPS questionnaire outcomes unused.
+
 2026-09-07. Working requirements, not authorization to use new people or labels.
 The current mechanism loop leaves the released GRAIN scorer unchanged.
 

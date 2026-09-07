@@ -1,5 +1,16 @@
 # GRAIN vector mechanism atlas
 
+## Discovery-first mainline update, 2026-09-07
+
+D1 now directly connects cached real-author native queries to source labels and
+paired vector heads:213 Big5 users, native mean r=.1993 versus E5 .1372;
+2,328 MBTI users, native TF AUC=.6600 and query/E5 r=.5127. See
+[D1 report](D1_REAL_AUTHOR_DISCOVERY_REPORT.md) and
+[current plan](../../docs/GRAIN_MAINLINE_DISCOVERY_PLAN_V3.md).
+TF shared-path and neuroticism different-access experiments are next. The P1U
+continuations below are historical and parked under the user's discovery-first
+rule; the synthetic series is instrumentation support, not the primary endpoint.
+
 2026-09-07, updated through independently audited P1R/P1S/P1T. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
 The45 primary,45 fixed-layer and35 raw same-ready source-head comparisons are complete; other same-ready,
 task/history/direct comparisons, strong controls/nulls, bridge evaluation and
