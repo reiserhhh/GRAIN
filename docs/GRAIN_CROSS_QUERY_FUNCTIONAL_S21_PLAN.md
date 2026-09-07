@@ -1,6 +1,6 @@
 # S21: locate shared versus query-specific functional reading
 
-2026-09-08. Planned next after S19/S20, not yet executed. The transported N
+2026-09-08. Implementing after S19/S20, no S21 response observed at specification. The transported N
 gradient has actual-effect r=.943 on24 new authors and source N r=.200 on the
 primary189. Do not replace this result with another ordinary prediction search.
 
@@ -36,11 +36,13 @@ No new causal or psychological meaning is assigned to an SVD axis by its rank.
 - Reference: first12 S19 source authors, view0. Transfer: source indices24:36,
   view0. Same exact comment bodies for all queries, no labels.
 - Four digit0-9 queries: unchanged native N; existing confirmation-seeking
-  wording; a fixed numeric Thinking/Feeling preference wording; one non-trait
-  literal-language-property query, such as average sentence length.
-  Before any new call, inspect/reuse the earlier S1B numeric wording if available,
-  document the exact control question, score units and code hashes. This
-  preparation is mandatory, not permission to select among outcome variants.
+  wording; fixed numeric Thinking/Feeling preference; S1B's quantitative-content
+  question reused verbatim (numerical quantities, measurements, prices or
+  calculations). S1B supplies the content control, not numeric T/F wording.
+  Exact strings are frozen in cross_query_functional.QUESTIONS and copied to the
+  manifest, with prompt hashes for all24authors. Scores are conditional digit
+  expectations divided by9; no query-specific calibration. No result-driven
+  wording alternatives. The control wording is tested against its old source.
 - Every task uses the same system, body order, evidence template and native digit
   alphabet. Preserve native T/F binary positive-control results unchanged;
   numeric T/F is a separate mechanism condition, not its replacement.
