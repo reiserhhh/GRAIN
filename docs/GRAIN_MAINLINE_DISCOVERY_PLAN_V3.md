@@ -76,3 +76,19 @@ subspace overlap .2724 but functional cosine .0895. See
 `GRAIN_SHARED_AND_TRAIT_SPECIFIC_PATHS_V1.md`. A future same-author multi-query
 response matrix develops this result; it is not already running. No source-label
 outcomes were read in D2-D4/D3B, and no old queue is to be resumed automatically.
+
+## Mathematical development after D3B (2026-09-08)
+
+Two read-only Codex/Claude seminars are complete, each with two discussion rounds.
+The integrated argument and eight discriminating hypotheses are in
+`GRAIN_TWO_SEMINAR_THEORY_NETWORK_V1.md`; primary sources and their assumptions are
+mapped in `GRAIN_MATH_SOURCE_MAP_V2.md`. Fifteen finite mathematical witnesses/tests
+have been run across the two seminars; these are not new human-data findings.
+
+Next execution remains S0 cached functional-basis comparison, S1 same-author
+multi-query response sampling, then S2 value-and-response students. The amended
+S1 plan adds24 joint-edit forwards to test compositional effects:750F+144B total,
+within the same60-minute acquisition cap. See
+`GRAIN_FUNCTIONAL_PATH_NEXT_PLAN_V1.md` and
+`../reports/grain_vector_mechanisms/MATH_SEMINAR_II_20260908.md`.
+None of these new neural collections has been started by the seminar task.

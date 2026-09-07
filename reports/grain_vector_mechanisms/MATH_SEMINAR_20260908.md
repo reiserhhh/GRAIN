@@ -3,6 +3,11 @@
 2026-09-08。结论：下一步优先识别“证据位移×输出敏感度”，再做同人多查询
 的共享/专属响应分解，最后训练保持证据效应的轻量学生。不是继续盲目加维度。
 
+后续：同日第二次数学研讨扩展并核对了信息几何、群论、组合信息与分布表示。
+本页保留第一次讨论的历史结论；统一论证见
+`docs/GRAIN_TWO_SEMINAR_THEORY_NETWORK_V1.md`，新报告见
+`MATH_SEMINAR_II_20260908.md`。下一包预算已在计划中更新为750F+144B。
+
 ## 1. 本轮实际完成
 
 - Codex独立核对当前D1–D3B结果及主要数学论文，再与Claude进行两轮讨论。
@@ -136,7 +141,7 @@ Claude和Codex共同接受：标量线性读出不意味着只有一个潜在心
 最值得追的新对象是“同一证据在不同查询下的敏感度分布”，而不是一个无条件
 通用的人格向量。共同定式可以成立，具体特质的函数与证据覆盖仍允许不同。
 
-## 一次文献与使用位置
+## 一手文献与使用位置
 
 1. Otto, Padovan, Rowley. *Model Reduction for Nonlinear Systems by Balanced
    Truncation of State and Gradient Covariance*. CoBRAS，原始算法与局限：
