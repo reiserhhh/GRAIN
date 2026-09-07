@@ -1,7 +1,7 @@
 # Next P1M: query target and record-order control
 
-2026-09-07. Prospective protocol; exact collector and tests now ready for freeze.
-Continue independently; no new user/Claude input needed for these authored records.
+2026-09-07. Frozen in8a89fd0, now complete and independently audited. Original
+prospective protocol retained below; results in TARGET_RECENCY_REPORT.md.
 
 ## Why this changes a decision
 

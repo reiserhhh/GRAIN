@@ -2,14 +2,23 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
-**当前独立loop续轮：P1J/P1K/P1L完成并独立审计。**
+**当前独立loop续轮：P1M/P1N完成并独立审计。**
+明确查询对象后无关锚点影响大减；对调两条行为记录没有推翻行为方向。独立
+交叉行为与房间真值后，锚点对相关/无关属性的效应RMS比约18.5（行为）、15.6
+（归因）、7.0（房间）；这是局部功能选择，不是人格预测准确度。联合干预用
+自然/加性合成向量拆为表征组合偏差与读出非线性，出现正负抵消。
+本轮984forward/415.96秒，审计零forward。见TARGET_RECENCY_REPORT和
+ATTRIBUTE_ROUTING_REPORT。下一GRAIN_ATTRIBUTE_GEOMETRY_P1O_PLAN.md只用缓存，
+尚未执行；进入作者/群体机制的前提已另行整理，不自动恢复旧长跑。
+
+**前轮P1J/P1K/P1L完成并独立审计。**
 共同人物状态可复用，但会污染无关房间问题；极性×答案编码分解显示N干预主要
 随Yes/No而非充分随问题含义反转。缓存人物差向量的4场景留出误差为均值基线
 .1911，向量长度基线.4334；置换2/24，不能宣称普遍规律或人格预测成功。
 见[人物状态/编码报告](../reports/grain_vector_mechanisms/ENTITY_STATE_AND_CODING_REPORT.md)
 及[缓存算子报告](../reports/grain_vector_mechanisms/ENTITY_OPERATOR_REPORT.md)。
 本轮776forward/316.59秒，L及审计零forward；旧大队列仍暂停，未新增私人用途。
-下一GRAIN_TARGET_RECENCY_P1M_PLAN.md检验查询对象与记录顺序；尚未执行。
+当时的下一步为P1M；现已完成，见上方最新状态。
 以下更早next步骤和状态保留历史，不能当最新启动指令。
 
 **2026-09-07 20:08 JST 当前进度：P1B–P1F完成，活动goal已重建。**

@@ -1,6 +1,7 @@
 # P1N: crossed evidence attributes and conditional vector composition
 
-2026-09-07. Prospective continuation after audited P1M, before this packet's results.
+2026-09-07. Frozen in8f0673f, now complete and independently audited. Original
+prospective protocol retained below; results in ATTRIBUTE_ROUTING_REPORT.md.
 No external people, labels, new model, downloads, API, training or layer search.
 
 ## Decision

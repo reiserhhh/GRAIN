@@ -1,6 +1,6 @@
 # GRAIN vector mechanism atlas
 
-2026-09-07, updated through independently audited P1J/P1K/P1L. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
+2026-09-07, updated through independently audited P1M/P1N. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
 The45 primary,45 fixed-layer and35 raw same-ready source-head comparisons are complete; other same-ready,
 task/history/direct comparisons, strong controls/nulls, bridge evaluation and
 final reusable-observer acceptance remain open. The bounded domain-function packet is complete. This atlas records
@@ -26,7 +26,9 @@ theoretical refinement so far, not a claim to a newly discovered universal law.
 | Binding/combination | Controlled entity/relation conditions distinguish additive summaries from joint encoding; simple product kernels can also recover the relation | Controlled non-additivity is not proof of uniquely LLM reasoning or personality synergy |
 | Query-position transport | P1C/F: early evidence replacement and late query-suffix replacement restore counterfactual judgment across new settings/question paraphrases | Position of causal model dependence, not erasure from other states, unique circuit or personality-specific pathway |
 | Query role and entity state | P1H/I semantic-role/count controls and P1J exact common-prefix entity-state reuse completed | A reusable state is not selectively read: person-prefixed venue is strongly contaminated. No personality name-vector or unique binding subspace |
-| Criterion and output-code response | P1K exact polarity x code contrasts: N code-only energy event.779/attribution.853, with nonzero semantic and venue effects | Descriptive finite responses, not information shares. Semantic-parity does not imply relevance; query-target and recency controls planned |
+| Criterion and output-code response | P1K exact polarity x code contrasts: N code-only energy event.779/attribution.853, with nonzero semantic and venue effects | Descriptive finite responses, not information shares. P1M subsequently localizes much venue leakage to the person-foregrounded query family; coding failures remain |
+| Target-conditioned evidence selection | P1M explicit room query reduces B anchor influence; reversed action order retains behavior direction. P1N independently crossed B/R anchor effect ratios about18.5/15.6/7.0 for event/attribution/room | Canonical finite panel, not personality selectivity or complete mediation. Room anchor R response.255 versus full8.208; state/readout geometry distinction is next |
+| Conditional composition | P1N natural versus artificial additive anchor yields exact state-departure plus readout-interaction identity; event SSE .6895+.1225-.3752=.4367 | Reference-dependent decomposition with signed cancellation, not additive information shares. Synthetic anchor may be off-manifold; no personality synergy |
 | Cached conditional operator | P1L full-vector held-setting SSE/mean=.1911 versus norm.4334; independent sklearn replay | Only4 authored settings, permutation2/24; predicts native judgments and some unwanted effects. Not human accuracy, unique mechanism or LLM-free inference |
 | Local operator transfer | P1D/E approximate finite query interventions on held settings, but P1F fixed coefficients do not transfer universally; P1G proves shape/gap errors can cancel | Conditional approximations using LLM activations, not LLM-free prediction. Lower aggregate error need not imply a more accurate component mechanism |
 | Contextual access | Small frozen history-state interventions transfer to a second current text on independent authors | The answers fail code-reversal controls and non-target effects exist; causal model access is not semantic or psychological specificity |
@@ -50,8 +52,12 @@ This is an architectural decomposition and an experimentally localized candidate
 not a proof that one entity vector is sufficient. [P1J/K](ENTITY_STATE_AND_CODING_REPORT.md)
 now verify shared-prefix reuse but expose irrelevant-control and polarity failures.
 [P1L](ENTITY_OPERATOR_REPORT.md) links cached vectors to conditional response
-coefficients with held-setting readouts. The next planned P1M controls query target
-and action-record order before enlarging author-group mechanism work.
+coefficients with held-setting readouts. [P1M](TARGET_RECENCY_REPORT.md) and
+[P1N](ATTRIBUTE_ROUTING_REPORT.md) now control query target/order and independently
+cross behavior/room facts. Some finite target selection survives, but the selected
+anchor is incomplete. Next P1O separates encoding geometry from downstream gain
+using cache only; [author/group prerequisites](../../docs/GRAIN_QUERY_MECHANISM_TO_AUTHOR_REQUIREMENTS.md)
+keep functional model evidence separate from psychological validation.
 
 The [P1B-P1G report](ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md) keeps the distinction
 between transport location and a transferable small formula. Finite binary-region

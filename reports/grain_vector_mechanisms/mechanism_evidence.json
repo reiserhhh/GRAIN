@@ -6,6 +6,26 @@
   "released_scorer_changed": false,
   "entries": [
     {
+      "id": "query_target_and_recency",
+      "domain": "four_authored_settings_two_action_orders_p1m",
+      "source_report": "TARGET_RECENCY_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Explicit room query/anchor greatly reduces unrelated behavior effects compared with person-foregrounded venue questions. Reversing action-line order retains8/8 behavioral role directions; remaining native venue margins are nonzero.",
+      "not_claimed": ["isolated_target_token_cause", "complete_order_invariance", "all_queries_selective", "human_personality_validity"]
+    },
+    {
+      "id": "crossed_attribute_selection_and_composition",
+      "domain": "four_settings_behavior_room_factorial_p1n",
+      "source_report": "ATTRIBUTE_ROUTING_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Crossed B/R worlds show finite target-selective anchor influence, but anchors are incomplete mediators. Natural versus additive state interventions yield an exact reference-dependent composition/readout identity with signed cancellation.",
+      "not_claimed": ["unique_binding_subspace", "complete_mediation", "causal_information_shares", "natural_additive_counterfactual", "personality_synergy"]
+    },
+    {
       "id": "entity_state_reuse_and_coding",
       "domain": "authored_four_settings_both_entities_p1j_p1k",
       "source_report": "ENTITY_STATE_AND_CODING_REPORT.md",
@@ -246,7 +266,7 @@
   ],
   "remaining": [
     "Old full-source queues remain paused by explicit value-priority override; incomplete requirements below are not waived or current automatic restart instructions.",
-    "P1J/K/L complete: before author-group expansion, execute the planned P1M query-target/record-order controls; reusable common states and predicted response coefficients are not selective personality evidence.",
+    "P1M/N complete: planned P1O cache geometry/gain decomposition distinguishes encoding from conditional readout; real-author/group prerequisites are documented and not yet validated.",
     "Finish declared task-conditioned source comparisons; primary, original-dimension and fixed-layer families and all common-source shards are complete.",
     "Complete strong source-only controls, full selection-aware nulls and saved-head replay.",
     "Compare candidates on identical eligibility/reference-ready sets; the raw/reference-free stage is complete, other declared families remain open.",

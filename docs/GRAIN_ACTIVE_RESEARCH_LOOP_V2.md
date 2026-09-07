@@ -71,11 +71,19 @@ zero-forward cached readout: held-setting full-vector SSE=.1911 of training mean
 norm-only=.4334, setting-permutation tail2/24. This is functional predictability,
 not selective personality evidence. See ENTITY_OPERATOR_REPORT.md.
 
-Next P1M in GRAIN_TARGET_RECENCY_P1M_PLAN.md distinguishes the awkward person-room
-query target and action-record recency. Planned340 forwards/cap400/600s, exact
-collector not yet frozen. No new data permission or Claude input needed. Goal
-remains active: this cycle is progress, not full theory completion. No long queue
-was resumed and no monotonic claim of improving personality accuracy is made.
+P1M is complete/audited (340 forwards/129.41s): explicit room targeting sharply
+reduces unrelated anchor effects; reversing action order preserves behavior-role
+directions. P1N is complete/audited (644/286.55s): crossed behavior/room truth shows
+finite target-selective anchor use, not complete mediation. The natural-versus-
+additive-anchor response decomposition exposes state/readout error cancellation.
+See TARGET_RECENCY_REPORT.md and ATTRIBUTE_ROUTING_REPORT.md.
+
+Next P1O in GRAIN_ATTRIBUTE_GEOMETRY_P1O_PLAN.md is a zero-forward cache analysis
+of encoding geometry versus downstream finite gain; planned only. Author/group
+expansion requirements are in GRAIN_QUERY_MECHANISM_TO_AUTHOR_REQUIREMENTS.md.
+No new data permission or Claude input needed for P1O. Goal remains active: this
+cycle is progress, not full theory completion. No old long queue was resumed and
+no monotonic claim of improving personality accuracy is made.
 
 The relevant decision is no longer merely where information resides, but what
 question-conditioned operator uses it. Preserve all old coding/venue/opportunity

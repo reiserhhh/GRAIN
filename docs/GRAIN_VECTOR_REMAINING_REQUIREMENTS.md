@@ -1,6 +1,18 @@
 # Vector mechanism program: remaining requirements
 
-## Current independent continuation: P1J/P1K/P1L complete
+## Current independent continuation: P1M/P1N complete
+
+Explicit query targeting weakens the prior nonselectivity interpretation; action
+order reversal retains behavior-role direction. Crossed behavior/room evidence
+shows finite target-selective anchor use, while full native effects are much larger
+and existing code/polarity limitations remain. Natural versus additive anchors
+separate reference-dependent state-composition and readout interactions, with
+signed energy cancellation.984 forwards/415.96s, independent zero-forward audits.
+See TARGET_RECENCY_REPORT and ATTRIBUTE_ROUTING_REPORT. Next planned P1O uses
+cache-only geometry/finite gains. See GRAIN_QUERY_MECHANISM_TO_AUTHOR_REQUIREMENTS
+for real-author/group prerequisites; no real-data expansion is authorized here.
+
+## Previous continuation: P1J/P1K/P1L
 
 Common-prefix entity-state reuse is observed, but the unchanged venue is strongly
 contaminated. P1K crosses polarity and answer code: the N effect is dominated by
@@ -8,8 +20,7 @@ code-only rather than criterion-and-code-equivariant contrasts. P1L predicts som
 responses from cached vectors on4 held-setting folds, not human personality.
 Independent token/state/scalar/sklearn/null audits passed.776 new neural forwards
 in316.59seconds for J/K, zero for L. See ENTITY_STATE_AND_CODING_REPORT and
-ENTITY_OPERATOR_REPORT. Next planned P1M checks query target and action order;
-exact collector still needs freeze. No new private data or Claude input required.
+ENTITY_OPERATOR_REPORT. The then-next P1M has since completed; see latest section.
 Old queues and all uncompleted source/group/personality requirements remain unchanged.
 
 ## Historical mechanism cycle: 2026-09-07 20:08 JST

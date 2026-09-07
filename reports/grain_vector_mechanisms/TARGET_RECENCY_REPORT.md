@@ -42,8 +42,8 @@ role contrasts/84 order contrasts/24 venue comparisons. Max raw arithmetic7.11e-
 metric4.44e-16, full/parent/prefix errors0; no new neural forwards.
 
 Data: `results/grain_vector_mechanisms/target_recency_r1/`; audit receipt initially
-`target_recency_audit_r1/summary.json` (a later style-only audit revision has its own
-receipt). Identity:
+`target_recency_audit_r1/summary.json`; the style-only `next()` audit revision is
+replayed in `target_recency_audit_r2/summary.json` with identical metrics. Identity:
 `82f51877c204cab10ab28901c3e4fac7c71e4c3d0fc1f966d43345e7a00dbf38`.
 Four authored settings; repeated names and two orders are not independent people.
 
