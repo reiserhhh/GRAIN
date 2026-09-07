@@ -250,6 +250,29 @@ S18 tests that difference directly, retaining selected/null interaction instead
 of forcing linear additivity. See `GRAIN_READER_PATTERN_S18_PLAN.md` for the
 source literature, metric assumptions, finite tests and fixed intervention.
 
+## 10. A readout-null vector can remain functionally active
+
+S18 has now performed that intervention on24 source authors/view0. Native and
+self patches replay exactly. Full pairing-removal effect RMS=.001319; Euclidean
+and covariance-selected components give.0000168/.0002687. Their reader-null
+components retain.001314/.001245 and correlate.99994/.98377 with full effects.
+The interaction RMS is only.00124/.00289 of full effect RMS. Pattern norms differ,
+so their effect-size contrast is not a norm-matched geometry test.
+
+The useful distinction is between beta, learned to decode the body-collapse
+contrast, and the actual suffix covector grad_h F for a pairing intervention.
+For d_s=a beta^T d and d_n=d-d_s, beta^T d_n=0 does not imply grad_h F^T d_n=0.
+S18 makes the latter response empirically visible. It does not negate S9's
+source association, S12's learned target recovery, or S17's approximation.
+
+This separates three mathematical levels: the joint KV evidence, a statistical
+reader of that evidence, and the decoder's functional response operator. They
+can overlap without being identical. The next exact expression is
+F_u(h)-F_u(h-d)=<integral_0^1 grad F_u(h-t d)dt,d>.
+S19 tests how much of that covector can be shared across authors, using a
+training-only mean or active-gradient subspace rather than another ordinary
+regression-weight interpretation. See `GRAIN_FUNCTIONAL_GRADIENT_S19_PLAN.md`.
+
 S15 now completes that comparison at the common query: exact-mass covariance
 reader fidelity r=.847179,MSE/exact-author-variance=.701136; uniform masses
 r=.415440,error ratio1034.28; Gaussian masses r=.594964,error ratio3.797855.

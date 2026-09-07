@@ -368,7 +368,7 @@ formulas, with explicit finite approximations.67 focused tests pass, Ruff and
 diff whitespace checks pass. Active goal remains open; private outputs ignored,
 no remote push, protected-label restrictions and source T/F control unchanged.
 
-## Current checkpoint: S16-S17 complete; S18 reader-pattern intervention
+## Historical checkpoint: S16-S17 complete; S18 reader-pattern intervention
 
 S16 completed24 authors/72prefixes/67.12seconds, no questionnaire join. Gain,
 relative comment allocation and conditional curvature each contribute. Fixed
@@ -395,3 +395,25 @@ S16-S17 reports and theory V4 are updated. S17 code/protocol a306320; S18
 code/protocol62d4da0.42 focused tests pass after the new geometry/continuation
 modules. One neural collector only; no Claude, remote push, LoRA, private text
 upload, protected data or old queue. Active goal remains open.
+
+## Current checkpoint: S18 complete; S19 functional-gradient recovery next
+
+S18 completed24source authors/view0,168forwards,0backwards in242.76seconds.
+No human outcomes. Covariance-pattern selected effect RMS=.0002687 versus
+Euclidean.0000168 and full pairing-removal.001319. But reader-null components
+retain.001245/.001314; correlations with full effects.98377/.99994. Their
+linear-reader scores vanish below9e-18. Source native/vector/self replays are0.
+This is the observed readout-versus-functional-response gap, not a failed source
+configuration signal. See the S18 report for all magnitudes, CIs and norm caveat.
+
+No neural collector remains running. Next implement the frozen scope in
+`GRAIN_FUNCTIONAL_GRADIENT_S19_PLAN.md`: actual suffix gradients along the same
+pairing path, integrated completeness, author-out mean-gradient prediction and
+fixed-rank active-gradient diagnostics.24authors, view0, up to144forwards and
+120backwards,15-minute cap; first8 numerical/resource checkpoint. This is a new
+mechanism question, not another label-selected prediction grid.
+
+S16/S17/S18 reports and theory V4 are current.42 focused tests pass. S17 finding
+commit1e798b6; S18 code62d4da0. Keep T/F and exact N reference unchanged. Goal
+active; no user decision is needed. Do not reopen protected labels, run Claude,
+push private artifacts, restart old queues or alter frozen S12-S18 implementations.
