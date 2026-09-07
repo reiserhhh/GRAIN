@@ -1948,3 +1948,18 @@ query是任务入口，不提供个人真实分数或引导高分。先受控语
 标记再检测标记；分开计算机制、真人心理联系、数学替代三层。非语言化输出不等于
 没有LLM，冻结encoder+小算子仍带预训练依赖。本轮仅目标文档化，无新实验或性能
 结论；不调用Claude、不改后台、不push。
+
+### Persona 双向读写与 GRAIN 群体机制证据综合（2026-09-07）
+
+新增 GRAIN_PERSONA_RECIPROCITY_AND_GROUP_MECHANISMS_V1.md。核对 Persona Vectors、
+TalkTuner、Emotion Concepts、Function Vectors、Sparse Feature Circuits、Jacobian
+Lens 的原始来源与代码说明。将“persona 到表达”与“作者文本到判断”连接为共享
+表征／不同读写操作的待检验假设，而非假设可逆或相同向量。2026 技术报告明确
+保留证据等级，文档列出定向阅读范围，不声称已复现。
+
+提出 2x2 跨任务干预、独立文本定义 GRAIN 邻域、作者等权后的条件化效应聚合。
+指出 E[r^T v] 与 E[r]^T E[v] 可因协方差不同：平均方向为零不排除稳定读写作用。
+数学恒等式不是新数据结论。VM05 的16维 g 只是几何代理，不能称为完整 GRAIN。
+
+所有实验面板和输出文件均为拟议；没有新模型结果、依赖安装、私人材料读取或
+bridge 标签使用。不调用 Claude、不改后台队列、不 push。保留他人未提交报告。
