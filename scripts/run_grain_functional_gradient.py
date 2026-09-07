@@ -390,7 +390,7 @@ def main():
     parser.add_argument("mode", choices=["prepare", "run", "inspect", "evaluate"])
     parser.add_argument("--source", type=Path, default=BASE / "reader_pattern_s18_r1")
     parser.add_argument(
-        "--output-dir", type=Path, default=BASE / "functional_gradient_s19_r1"
+        "--output-dir", type=Path, default=BASE / "functional_gradient_s19_r2"
     )
     parser.add_argument("--device", default="mps")
     parser.add_argument("--max-authors", type=int, default=8)

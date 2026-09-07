@@ -84,8 +84,16 @@ not a questionnaire-selected ranking.
 
 Files to add: `grain_research/vector_mechanisms/head_gradient.py`,
 `scripts/run_grain_functional_gradient.py`, `tests/test_grain_head_gradient.py`.
-Output `results/grain_vector_mechanisms/functional_gradient_s19_r1/`.
+Output `results/grain_vector_mechanisms/functional_gradient_s19_r2/`.
 Report `reports/grain_vector_mechanisms/S19_FUNCTIONAL_GRADIENT_REPORT.md`.
-Current status: planned, not collected. Preserve T/F, exact N reference, release
+Current status: implementation and synthetic checks complete; source pilot next.
+The first r1 attempt stopped before any complete author: MPS cannot cast a GPU
+tensor to Float64 before moving it to CPU. Two forwards were consumed; one
+autograd completed before export failed (the successful-export backward counter
+remained0). Preserve r1 and code6f22ed9. The r2 retry only reverses CPU-transfer
+and Float64-conversion order and adds an actual MPS test; scientific scope and
+choices are unchanged. No response or outcome was selected from that failed run.
+
+Preserve T/F, exact N reference, release
 scorer, protected bridge/MEPS/lockbox and all previously frozen code. Local commits
 only; no cloud text upload, Claude invocation, LoRA or old queues.

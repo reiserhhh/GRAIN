@@ -42,7 +42,7 @@ def projection_gradient(projection, donor, forward_score):
             (gradient,) = torch.autograd.grad(score, leaf)
         if not torch.isfinite(gradient).all():
             raise ValueError("Finite head gradient required")
-        return float(score.detach().cpu()), gradient.detach().double().cpu().numpy()
+        return float(score.detach().cpu()), gradient.detach().cpu().double().numpy()
     finally:
         handle.remove()
 

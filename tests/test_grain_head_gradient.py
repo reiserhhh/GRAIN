@@ -75,6 +75,19 @@ def test_five_node_simpson_and_invalid_inputs():
         simpson_gradient({0.0: np.ones(3), 1.0: np.ones(3)})
 
 
+@pytest.mark.skipif(not torch.backends.mps.is_available(), reason="MPS unavailable")
+def test_mps_gradient_moves_to_cpu_before_float64_export():
+    projection = torch.nn.Linear(3, 3, bias=False).to("mps").requires_grad_(False)
+    donor = torch.ones(3, device="mps")
+    state = torch.ones((1, 2, 3), device="mps")
+    value, gradient = projection_gradient(
+        projection, donor, lambda: projection(state)[0, -1].square().sum()
+    )
+    assert np.isfinite(value) and np.isfinite(gradient).all()
+    assert gradient.dtype == np.float64
+    assert not projection._forward_pre_hooks
+
+
 def test_tiny_qwen_native_gradient_replay_and_finite_difference():
     from transformers import Qwen2Config, Qwen2ForCausalLM
 
