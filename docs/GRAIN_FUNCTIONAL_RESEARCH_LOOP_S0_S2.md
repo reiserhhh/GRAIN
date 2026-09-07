@@ -57,3 +57,28 @@ responses never enter model selection. Both value-only and response-matching
 students use nested author CV, with shared/partly shared/independent task kernels.
 Targets remain the frozen observer's readouts. A final student is selected using
 development CV before any independent psychological outcome connection.
+
+## Bounded follow-ups chosen after the complete S1/S2 tables
+
+S1 is complete:750F/144B/1046.9seconds. S2 is complete with zero new neural calls.
+Frozen S0 PLS transfers to new authors/common edits at r=.8420/.8715 (TF/N).
+Full-panel N/confirmation response sharing is .7033 for the internal patch and
+.2567 for natural edits after cell centering. A single query endpoint captures
+only part of natural edits; N's removed-body gradient-times-state surrogate adds
+useful information. S2 has some TF value/response fidelity but little N fidelity.
+
+Two finite next questions, fixed before collecting their new results:
+
+1. S2 source connection: apply the ONE already frozen all-query student to D1's
+   source-only cue-mask three-view caches. Join existing TF/N outcomes only after
+   freezing the student. Compare native query and label-trained E5 controls on
+   identical authors; zero new fits/forwards, no sign flips or calibration.
+   These D1 outcomes were previously exposed; this is an exploratory connection,
+   not a new untouched external confirmation. Do not choose a different student
+   from its outcome performance. No bridge/MEPS/lockbox access.
+2. S1B: query numerical/quantitative content using the identical0-9 alphabet,
+   first8 S1 authors/view0/common edits.42F+8B, ten-minute acquisition cap. Compare
+   the SAME subpanel's N/confirmation/control responses to distinguish content
+   effects from shared numeric-answer machinery. This is not a zero-correlation
+   acceptance gate and does not assume the control content is independent of
+   personality. Do not expand to a prompt-grid or restart old queues.
