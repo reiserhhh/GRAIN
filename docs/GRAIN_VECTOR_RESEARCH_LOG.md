@@ -2005,3 +2005,17 @@ next=SN_cont_placebo_mask_final_norm_decision_disposition，child_pid=null；未
 下一P1B拟角色/位置与自由-强制机会面板，保守1788 forward加212余量，硬限2000；
 未执行、未冻结材料，不用历史平均记录比当预算。边级patch与群体功能聚合后继。
 没有改后台队列、读参与者原文或外部量表、重训或push；他人未提交报告保持原样。
+
+### 旧后台队列价值复核与暂停决定（2026-09-07 19:11 JST）
+
+用户允许停止不再影响研究方向的长跑。SSH实时核对Windows：direct自然预算
+暂停47/128、2679作者、52815forward，18:49:29写状态、launcher返回0；
+history自然暂停65/128、3640作者，相关Python进程空。Mac15034已不存在，
+secondary为297/315预算暂停。因此未kill、未重启、未清锁、未新跑模型。
+
+决定旧三队列保持暂停，P1B角色/条件/位置成为下一执行优先级。不是已证明
+剩余估计不会变化：native和history完整源头成绩仍未知，complete-only门槛
+保持，未读部分native标签来选择停止。主45头及54敏感性完成证据仍有效。
+Mac仅1个完整native片，旧本地RUNNING/2片状态不可当当前；其余46片本地
+备份/重验仍待做，远端47片原件保留。报告BACKGROUND_PAUSE_DECISION_20260907.md；
+计划及requirements顶端加入执行覆盖说明，避免下一agent按旧快照自动续跑。

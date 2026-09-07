@@ -1,5 +1,17 @@
 # Vector mechanism program: remaining requirements
 
+## Execution priority override: 2026-09-07 19:11 JST
+
+The user requested stopping low-information long runs and advancing mechanism work.
+All three old queues have already paused naturally with no live owners/children:
+direct47/128 (2679 authors), history65/128 (3640), cached readouts297/315.
+Do not resume them automatically. Below RUNNING snapshots and continue/wait steps
+are historical, not current launch instructions. Preserve all full-data acceptance
+requirements as unresolved, not failed or silently reduced. Prioritize the bounded
+role/opportunity/location P1B packet in INNOVATION_SEMINAR_20260907.md.
+See reports/grain_vector_mechanisms/BACKGROUND_PAUSE_DECISION_20260907.md for
+live evidence, local-native backup gap, and conditional future resumption criteria.
+
 2026-09-07, round37. This is a scope-preserving execution map, not a completion claim.
 The binding plan remains GRAIN_VECTOR_INFERENCE_MECHANISM_PLAN_V1.md. RC1-RC5
 are a bounded mechanism packet inside VM06, not a substitute for the full plan.
