@@ -69,7 +69,10 @@ selection using observed effect, trait labels, or favorable head names.
    identical coupling. This does not yet identify a minimal causal circuit.
 
 Algebra implementation: `grain_research/vector_mechanisms/query_tilt.py`.
-Seven synthetic tests check finite differences, integration, matched marginal
-counterexample, full small-group averaging, total covariance, and group validity.
+Eight synthetic tests check finite differences, integration, matched marginal
+counterexample, full small-group averaging, total covariance, group validity,
+and the comment-conditional integral with native group mass fixed.
+Two tiny random-Qwen CPU tests additionally validate the actual hook/reconstruction
+path without source data or loading the full pretrained checkpoint.
 Outputs will remain under ignored `results/grain_vector_mechanisms/` with a
 tracked aggregate report. Proceed only after S9's live collector has ended.

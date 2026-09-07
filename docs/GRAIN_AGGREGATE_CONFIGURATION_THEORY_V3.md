@@ -288,3 +288,42 @@ the remaining projected-suffix/student difference. The last term can include
 retained query-state information, not just comment means. None is automatically
 an independent fraction of human personality variance. Scores are frozen before
 the already authorized source outcomes are joined; no estimator is selected on Y.
+
+## 10. A concrete connection: within-comment key/value coupling
+
+S10's [source-grounded plan](GRAIN_QUERY_COVARIANCE_S10_PLAN.md) now supplies
+an elementary link beneath the suffix derivatives. For fixed, position-resolved
+keys/values and effective scaled query q, A(q)=sum_i p_i(q)v_i,
+p_i(q)=exp(q'k_i)/sum_j exp(q'k_j). The finite exponential-family derivative is
+J(q)=Cov_p(V,K); integrating J along a query segment recovers its readout change.
+These are actual vector operations, not a generated verbal explanation.
+
+For a comment group G, let P_G=sum_{i in G}p_i(q), and let A_G(q) be the
+conditional weighted value within that group. Hold **native group mass** fixed
+while considering its within-group response. The exact coupling is
+
+\[
+C_G(q)=P_G[A_G(q)-\bar v_G]
+=P_G\int_0^1\operatorname{Cov}_{p_G(tq)}(V,K)q\,dt
+=\sum_{i\in G}(p_i-P_G/|G|)v_i.
+\]
+
+The entire head vector therefore separates non-comment output, group-level
+mean values weighted by P_G, and sum_G C_G. This preserves the choice/coverage
+mass of every comment while measuring within-comment relational contribution.
+It is a controlled computational comparison, not a proposal to erase the
+remaining text or a claim that P_G is a psychological importance score.
+
+The same raw keys and values with different pairing can change A(q), despite
+identical marginal distributions. A joint KV object differs from two independent
+bags. Contextualized embeddings could already contain such relations, so this
+counterexample does not establish that a particular encoder has lost them.
+Likewise, the q above is a head's contextualized query, not literally a single
+trait word and not a human trait coordinate.
+
+Implementation and eight algebra tests are in `query_tilt.py` and its tests;
+two tiny random Qwen CPU tests verify native reconstruction, copying and hook
+cleanup. The planned real-model patch subtracts sum_G C_G at layer17's final
+query head output and observes downstream trait-query scores. This connects
+covariance geometry to an intervention without assuming that attention weight
+alone is an explanation. No S10 real-model result has been collected yet.

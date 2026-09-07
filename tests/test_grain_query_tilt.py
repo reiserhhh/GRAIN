@@ -70,3 +70,15 @@ def test_pairing_disappears_for_uniform_within_group_weights():
 def test_overlapping_groups_rejected():
     with pytest.raises(ValueError, match="disjoint"):
         pairing_component(np.array([0.3, 0.7]), np.ones((2, 2)), [[0, 1], [1]])
+
+
+def test_group_integrals_recover_pairing_with_native_group_mass_fixed():
+    k, v, q = fixture()
+    _, p = tilted_readout(k, v, q)
+    groups = [list(range(0, 5)), list(range(5, 11))]
+    response = sum(
+        p[ix].sum()
+        * integrated_query_response(k[ix], v[ix], np.zeros_like(q), q, order=32)
+        for ix in groups
+    )
+    assert np.allclose(response, pairing_component(p, v, groups), atol=1e-10)
