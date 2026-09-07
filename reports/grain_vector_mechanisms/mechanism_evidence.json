@@ -6,6 +6,36 @@
   "released_scorer_changed": false,
   "entries": [
     {
+      "id": "attribute_encoding_and_finite_gain",
+      "domain": "twelve_four_world_anchor_rectangles_p1o",
+      "source_report": "ATTRIBUTE_GEOMETRY_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Encoding displacement and conditional finite gain both contribute to target selectivity. The room state changes with behavior while its behavioral output response stays small; four-world vector expansion replays exactly.",
+      "not_claimed": ["information_fractions", "semantic_axis_independence", "absent_irrelevant_encoding", "psychological_factors"]
+    },
+    {
+      "id": "fixed_attribute_direction_transfer",
+      "domain": "four_new_authored_settings_two_new_wordings_p1p",
+      "source_report": "ATTRIBUTE_DIRECTION_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Frozen rank-one directions carry intended relevant effects but meet approximation bounds in only2/4 person settings, versus4/4 room. Native attribution always Yes; new-wording and order dependence are confounded and queued for paired reversal.",
+      "not_claimed": ["sufficient_personality_direction", "native_attribution_accuracy", "random_subspace_significance", "unique_circuit", "isolated_wording_cause"]
+    },
+    {
+      "id": "direction_complement_readout_interaction",
+      "domain": "one_hundred_sixty_finite_counterfactual_cells_p1q",
+      "source_report": "ATTRIBUTE_DIRECTION_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Vector-additive direction/complement patches have nonadditive outputs. Complement and interaction partly cancel in person queries; low projected error does not make the remaining vector causally irrelevant.",
+      "not_claimed": ["new_mathematical_theorem", "additive_information_shares", "personality_synergy", "residual_is_noise"]
+    },
+    {
       "id": "query_target_and_recency",
       "domain": "four_authored_settings_two_action_orders_p1m",
       "source_report": "TARGET_RECENCY_REPORT.md",
@@ -266,7 +296,7 @@
   ],
   "remaining": [
     "Old full-source queues remain paused by explicit value-priority override; incomplete requirements below are not waived or current automatic restart instructions.",
-    "P1M/N complete: planned P1O cache geometry/gain decomposition distinguishes encoding from conditional readout; real-author/group prerequisites are documented and not yet validated.",
+    "P1O/P/Q complete: next planned P1R tests direction-transfer order versus wording confounding. Native attribution/code limitations remain; real-author/group prerequisites are documented and not yet validated.",
     "Finish declared task-conditioned source comparisons; primary, original-dimension and fixed-layer families and all common-source shards are complete.",
     "Complete strong source-only controls, full selection-aware nulls and saved-head replay.",
     "Compare candidates on identical eligibility/reference-ready sets; the raw/reference-free stage is complete, other declared families remain open.",

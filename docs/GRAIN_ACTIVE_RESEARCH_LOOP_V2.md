@@ -78,12 +78,22 @@ finite target-selective anchor use, not complete mediation. The natural-versus-
 additive-anchor response decomposition exposes state/readout error cancellation.
 See TARGET_RECENCY_REPORT.md and ATTRIBUTE_ROUTING_REPORT.md.
 
-Next P1O in GRAIN_ATTRIBUTE_GEOMETRY_P1O_PLAN.md is a zero-forward cache analysis
-of encoding geometry versus downstream finite gain; planned only. Author/group
-expansion requirements are in GRAIN_QUERY_MECHANISM_TO_AUTHOR_REQUIREMENTS.md.
-No new data permission or Claude input needed for P1O. Goal remains active: this
-cycle is progress, not full theory completion. No old long queue was resumed and
-no monotonic claim of improving personality accuracy is made.
+P1O is now complete/audited (zero forwards/.248s): name-anchor selectivity combines
+about7x encoding displacement and2.2--2.7x finite gain; room selectivity is mainly
+in finite gain rather than absent B encoding. P1P fixed rank-one directions transfer
+intended intervention signs to new settings/words, but only2/4 person settings meet
+both approximation bounds; room4/4. Native attribution is always Yes (16/32 correct).
+P1Q (zero forwards/.333s) shows complementary effects and readout interaction partly
+cancel. See ATTRIBUTE_GEOMETRY_REPORT.md and ATTRIBUTE_DIRECTION_REPORT.md.
+
+P1P used732 forwards/311.41s, not an extended queue; all outputs independently
+replayed. Wording family and record order coincide with its setting successes, so
+next P1R in GRAIN_DIRECTION_ORDER_P1R_PLAN.md reverses order within existing
+records, with frozen directions and a268-forward complete panel. Planned only;
+no new data permission or Claude input needed. Author/group requirements remain
+in GRAIN_QUERY_MECHANISM_TO_AUTHOR_REQUIREMENTS.md. Goal active: this is progress,
+not full theory completion. No old long queue was resumed, and no monotonic claim
+of improving personality accuracy is made.
 
 The relevant decision is no longer merely where information resides, but what
 question-conditioned operator uses it. Preserve all old coding/venue/opportunity

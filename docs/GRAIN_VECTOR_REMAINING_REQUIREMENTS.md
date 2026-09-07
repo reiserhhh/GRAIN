@@ -1,6 +1,18 @@
 # Vector mechanism program: remaining requirements
 
-## Current independent continuation: P1M/P1N complete
+## Current independent continuation: P1O/P1P/P1Q complete
+
+P1O: selectivity includes encoding and finite readout gain. P1P: old rank-one
+directions carry intended shifts in new material but fail the person approximation
+gate (2/4 settings); room4/4. Native attribution is always Yes. P1Q: meaningful
+complement and nonlinear interaction partly cancel, so the complement is not noise.
+732 forwards/311.41s; cache analyses and independent audits add zero forwards.
+See ATTRIBUTE_GEOMETRY_REPORT and ATTRIBUTE_DIRECTION_REPORT. Next planned P1R
+reverses existing action order to separate it from wording-family differences;
+frozen directions, no rank/layer search. Real-author/group prerequisites and all
+uncompleted original source requirements below remain unchanged; goal active.
+
+## Previous continuation: P1M/P1N complete
 
 Explicit query targeting weakens the prior nonselectivity interpretation; action
 order reversal retains behavior-role direction. Crossed behavior/room evidence

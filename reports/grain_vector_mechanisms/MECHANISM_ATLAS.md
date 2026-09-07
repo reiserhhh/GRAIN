@@ -1,6 +1,6 @@
 # GRAIN vector mechanism atlas
 
-2026-09-07, updated through independently audited P1M/P1N. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
+2026-09-07, updated through independently audited P1O/P1P/P1Q. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
 The45 primary,45 fixed-layer and35 raw same-ready source-head comparisons are complete; other same-ready,
 task/history/direct comparisons, strong controls/nulls, bridge evaluation and
 final reusable-observer acceptance remain open. The bounded domain-function packet is complete. This atlas records
@@ -27,7 +27,10 @@ theoretical refinement so far, not a claim to a newly discovered universal law.
 | Query-position transport | P1C/F: early evidence replacement and late query-suffix replacement restore counterfactual judgment across new settings/question paraphrases | Position of causal model dependence, not erasure from other states, unique circuit or personality-specific pathway |
 | Query role and entity state | P1H/I semantic-role/count controls and P1J exact common-prefix entity-state reuse completed | A reusable state is not selectively read: person-prefixed venue is strongly contaminated. No personality name-vector or unique binding subspace |
 | Criterion and output-code response | P1K exact polarity x code contrasts: N code-only energy event.779/attribution.853, with nonzero semantic and venue effects | Descriptive finite responses, not information shares. P1M subsequently localizes much venue leakage to the person-foregrounded query family; coding failures remain |
-| Target-conditioned evidence selection | P1M explicit room query reduces B anchor influence; reversed action order retains behavior direction. P1N independently crossed B/R anchor effect ratios about18.5/15.6/7.0 for event/attribution/room | Canonical finite panel, not personality selectivity or complete mediation. Room anchor R response.255 versus full8.208; state/readout geometry distinction is next |
+| Target-conditioned evidence selection | P1M explicit room query reduces B anchor influence; reversed action order retains behavior direction. P1N independently crossed B/R anchor effect ratios about18.5/15.6/7.0 for event/attribution/room | Canonical finite panel, not personality selectivity or complete mediation. Room anchor R response.255 versus full8.208 |
+| Encoding versus finite gain | P1O's exact four-world geometry: person B/R displacement ratio7.00, gain2.65/2.23; room R/B displacement1.26, gain5.57 | Ratio factorization, not independent causal percentages. Weak use does not imply absent encoding; angles/norms are not psychological axes |
+| Fixed attribute direction transfer | P1P intended projected signs32/32 for event/attribution; room16/16. Only2/4 person settings meet fixed approximation bounds, room4/4 | Wording/order confounded; native attribution always Yes16/32. Partial functional sensitivity, not sufficient personality direction. P1R planned paired reversal |
+| Projected versus remaining interaction | P1Q: event projected-error SSE2.3683=2.5643+.9924-1.1884; attribution1.7418=1.6939+1.0529-1.0049 | Exact finite identity; relevant complement and nonlinear readout can cancel. Not nonnegative information shares, unique mediation or dispensable noise |
 | Conditional composition | P1N natural versus artificial additive anchor yields exact state-departure plus readout-interaction identity; event SSE .6895+.1225-.3752=.4367 | Reference-dependent decomposition with signed cancellation, not additive information shares. Synthetic anchor may be off-manifold; no personality synergy |
 | Cached conditional operator | P1L full-vector held-setting SSE/mean=.1911 versus norm.4334; independent sklearn replay | Only4 authored settings, permutation2/24; predicts native judgments and some unwanted effects. Not human accuracy, unique mechanism or LLM-free inference |
 | Local operator transfer | P1D/E approximate finite query interventions on held settings, but P1F fixed coefficients do not transfer universally; P1G proves shape/gap errors can cancel | Conditional approximations using LLM activations, not LLM-free prediction. Lower aggregate error need not imply a more accurate component mechanism |
@@ -55,8 +58,10 @@ now verify shared-prefix reuse but expose irrelevant-control and polarity failur
 coefficients with held-setting readouts. [P1M](TARGET_RECENCY_REPORT.md) and
 [P1N](ATTRIBUTE_ROUTING_REPORT.md) now control query target/order and independently
 cross behavior/room facts. Some finite target selection survives, but the selected
-anchor is incomplete. Next P1O separates encoding geometry from downstream gain
-using cache only; [author/group prerequisites](../../docs/GRAIN_QUERY_MECHANISM_TO_AUTHOR_REQUIREMENTS.md)
+anchor is incomplete. [P1O](ATTRIBUTE_GEOMETRY_REPORT.md) separates encoding
+geometry from downstream gain using cache only. [P1P/Q](ATTRIBUTE_DIRECTION_REPORT.md)
+test frozen directions on new material and expose remaining effects and interaction;
+P1R next separates the observed order/wording confound. [Author/group prerequisites](../../docs/GRAIN_QUERY_MECHANISM_TO_AUTHOR_REQUIREMENTS.md)
 keep functional model evidence separate from psychological validation.
 
 The [P1B-P1G report](ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md) keeps the distinction

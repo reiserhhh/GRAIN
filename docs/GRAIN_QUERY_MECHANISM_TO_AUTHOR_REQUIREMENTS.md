@@ -20,8 +20,10 @@ The mathematical objects are finite response operators, not personality axes:
       -> R_(criterion,code,other_states)(n_target) -> native output.
 
 P1N separates additive-state departure from downstream finite nonadditivity on a
-fixed reference path. P1O is planned to separate geometric changes from functional
-gain. Both require that the relevant representations already exist in the LLM;
+fixed reference path. Completed P1O separates geometric changes from functional
+gain. P1P/Q find a transferable but incomplete fixed direction, with consequential
+complement and signed readout interaction; native attribution stays always Yes.
+All require that the relevant representations already exist in the LLM;
 neither constitutes an LLM-free personality inference system.
 
 ## Requirements before a real-author group comparison
@@ -52,8 +54,11 @@ neither constitutes an LLM-free personality inference system.
 
 ## What can proceed now without new permissions
 
-Cache mathematics and bounded authored examples remain available. The immediate
-P1O geometry/gain analysis needs no new forwards. Old full-source queues remain
+Cache mathematics and bounded authored examples remain available. P1O/Q are
+complete with no new forwards. Next P1R tests the P1P order/wording confound using
+existing records with reversed action order and unchanged direction estimates.
+It does not correct the native attribution/code limitations by assumption.
+Old full-source queues remain
 paused by value priority; their incomplete benchmarks are not declared finished.
 No real-author/MEPS label expansion, Claude seminar, model download or API spending
 is implied by the next protocol. If those become necessary, record the exact
