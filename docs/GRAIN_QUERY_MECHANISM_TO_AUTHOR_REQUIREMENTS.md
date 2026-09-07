@@ -55,9 +55,12 @@ neither constitutes an LLM-free personality inference system.
 ## What can proceed now without new permissions
 
 Cache mathematics and bounded authored examples remain available. P1O/Q are
-complete with no new forwards. Next P1R tests the P1P order/wording confound using
-existing records with reversed action order and unchanged direction estimates.
-It does not correct the native attribution/code limitations by assumption.
+complete with no new forwards. P1R/S are now complete: order changes are not
+amplitude-only and the paired reversal does not remove remaining effects. P1T uses clearer
+avoidance cues, improving authored role ordering under both codes, but threshold
+preferences remain unstable. Waiting/avoidance are not measured personality labels.
+Next P1U uses cache only to distinguish target-change from other-actor-change
+contributions to the native role gap, before claiming target-specific extraction.
 Old full-source queues remain
 paused by value priority; their incomplete benchmarks are not declared finished.
 No real-author/MEPS label expansion, Claude seminar, model download or API spending

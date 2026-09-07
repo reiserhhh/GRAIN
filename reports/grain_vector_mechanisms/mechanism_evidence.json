@@ -6,6 +6,26 @@
   "released_scorer_changed": false,
   "entries": [
     {
+      "id": "paired_order_and_finite_gain",
+      "domain": "sixty_four_paired_person_cases_p1r_p1s",
+      "source_report": "ORDER_GAIN_AND_CUE_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Order reversal retains projected signs but does not grant sufficient rank-one transfer. Symmetric amplitude/gain terms oppose; original-gain prediction improves pooled event error but worsens attribution versus unchanged response.",
+      "not_claimed": ["universal_amplitude_calibration", "independent_causal_shares", "isolated_wording_cause", "human_personality_accuracy"]
+    },
+    {
+      "id": "cue_diagnosticity_vs_answer_code",
+      "domain": "two_behavioral_contrasts_both_orders_codes_p1t",
+      "source_report": "ORDER_GAIN_AND_CUE_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Explicit avoidance strengthens behavioral-attribution role ordering under both codes/orders, but categorical code-preference disagreement persists. Waiting is not a psychological label; own versus other-actor contributions remain to be separated.",
+      "not_claimed": ["human_trait_truth", "calibrated_big5_accuracy", "code_invariant_instrument", "target_only_evidence_use", "population_significance"]
+    },
+    {
       "id": "attribute_encoding_and_finite_gain",
       "domain": "twelve_four_world_anchor_rectangles_p1o",
       "source_report": "ATTRIBUTE_GEOMETRY_REPORT.md",
@@ -296,7 +316,7 @@
   ],
   "remaining": [
     "Old full-source queues remain paused by explicit value-priority override; incomplete requirements below are not waived or current automatic restart instructions.",
-    "P1O/P/Q complete: next planned P1R tests direction-transfer order versus wording confounding. Native attribution/code limitations remain; real-author/group prerequisites are documented and not yet validated.",
+    "P1R/S/T complete: next planned P1U separates target-change versus other-actor-change from native cue effects using cache only. Code and psychological-validity limits remain; real-author/group prerequisites are not yet validated.",
     "Finish declared task-conditioned source comparisons; primary, original-dimension and fixed-layer families and all common-source shards are complete.",
     "Complete strong source-only controls, full selection-aware nulls and saved-head replay.",
     "Compare candidates on identical eligibility/reference-ready sets; the raw/reference-free stage is complete, other declared families remain open.",

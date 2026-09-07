@@ -1,6 +1,16 @@
 # Vector mechanism program: remaining requirements
 
-## Current independent continuation: P1O/P1P/P1Q complete
+## Current independent continuation: P1R/P1S/P1T complete
+
+Paired order effects are not reducible to amplitude change or simple last-record
+dependence. Stronger avoidance cues improve native behavioral-attribution role
+ordering under both codes, without fixing categorical code fidelity or establishing
+human trait truth. See ORDER_GAIN_AND_CUE_REPORT.528 forwards/227.92s; all audits
+and P1S use cache only. Next planned P1U separates self-change and other-change
+contributions using P1T's complete native panel, before further anchor intervention.
+Goal active; no old queue, private-data expansion, new model or released-scorer change.
+
+## Previous continuation: P1O/P1P/P1Q complete
 
 P1O: selectivity includes encoding and finite readout gain. P1P: old rank-one
 directions carry intended shifts in new material but fail the person approximation

@@ -87,10 +87,18 @@ P1Q (zero forwards/.333s) shows complementary effects and readout interaction pa
 cancel. See ATTRIBUTE_GEOMETRY_REPORT.md and ATTRIBUTE_DIRECTION_REPORT.md.
 
 P1P used732 forwards/311.41s, not an extended queue; all outputs independently
-replayed. Wording family and record order coincide with its setting successes, so
-next P1R in GRAIN_DIRECTION_ORDER_P1R_PLAN.md reverses order within existing
-records, with frozen directions and a268-forward complete panel. Planned only;
-no new data permission or Claude input needed. Author/group requirements remain
+replayed. P1R now complete (268 forwards/106.49s): paired order reversal changes
+errors without simply reversing setting successes; projected signs survive, while
+complementary effects remain. P1S cache accounting (.467s) exposes opposing
+amplitude/gain changes; original-gain scaling does not generally transfer.
+
+P1T complete (260 forwards/121.43s): clearer avoidance versus waiting improves
+attribution role ordering to8/8 pairs under both codes and orders, but categorical
+preferences remain code-dependent. This narrows the old failure interpretation:
+waiting is not a logical definition of reserved behavior or a psychological label.
+See ORDER_GAIN_AND_CUE_REPORT.md. Next P1U in GRAIN_TARGET_CUE_P1U_PLAN.md uses
+the existing cache to separate own-behavior change from other-actor change. Planned
+only; no new data permission or Claude input needed. Author/group requirements remain
 in GRAIN_QUERY_MECHANISM_TO_AUTHOR_REQUIREMENTS.md. Goal active: this is progress,
 not full theory completion. No old long queue was resumed, and no monotonic claim
 of improving personality accuracy is made.
