@@ -6,6 +6,27 @@
   "released_scorer_changed": false,
   "entries": [
     {
+      "id": "entity_state_reuse_and_coding",
+      "domain": "authored_four_settings_both_entities_p1j_p1k",
+      "source_report": "ENTITY_STATE_AND_CODING_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "semantic_code_fidelity": "unsupported",
+      "psychological_validity": "not_tested",
+      "finding": "A literally common entity-prefix state affects multiple later criteria. Polarity/coding contrasts reveal dominant code-only role responses and substantial unchanged-venue contamination; shared-state reuse is not selective evidence use.",
+      "not_claimed": ["personality_vector", "unique_binding_id_subspace", "semantic_parity_guarantees_relevance", "all_prompt_families_fail", "human_external_validity"]
+    },
+    {
+      "id": "cached_entity_response_operator",
+      "domain": "eight_entity_contrasts_four_setting_folds_p1l",
+      "source_report": "ENTITY_OPERATOR_REPORT.md",
+      "instrument": "observed",
+      "function": "underresolved",
+      "psychological_validity": "not_tested",
+      "finding": "Frozen full-vector Ridge predicts24 finite response coefficients with held-setting SSE=.1911 of training mean versus norm-only=.4334, but only4 authored settings and permutation tail2/24. Some unwanted venue effects are also predictable.",
+      "not_claimed": ["population_significance", "personality_accuracy", "llm_free_inference", "universal_fixed_operator", "seven_psychological_factors"]
+    },
+    {
       "id": "query_conditioned_transport",
       "domain": "authored_role_swaps_qwen_1_5b_p1b_p1f",
       "source_report": "ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md",
@@ -225,7 +246,7 @@
   ],
   "remaining": [
     "Old full-source queues remain paused by explicit value-priority override; incomplete requirements below are not waived or current automatic restart instructions.",
-    "Execute the bounded P1J common-entity-prefix test before claiming reusable criterion-independent entity evidence; author-group mechanism expansion and psychological specificity remain untested.",
+    "P1J/K/L complete: before author-group expansion, execute the planned P1M query-target/record-order controls; reusable common states and predicted response coefficients are not selective personality evidence.",
     "Finish declared task-conditioned source comparisons; primary, original-dimension and fixed-layer families and all common-source shards are complete.",
     "Complete strong source-only controls, full selection-aware nulls and saved-head replay.",
     "Compare candidates on identical eligibility/reference-ready sets; the raw/reference-free stage is complete, other declared families remain open.",

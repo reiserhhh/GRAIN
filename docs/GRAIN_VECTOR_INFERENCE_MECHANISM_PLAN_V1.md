@@ -2,11 +2,14 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
-**当前独立loop续轮：P1H/P1I完成并独立审计。**
-查询内容的作用不只追随后方位置；归因中人物位置比人格判据词更突出，后者未
-稳定胜过等token随机对照。728forward/138.91秒，无新拟合/私人材料/旧队列恢复。
-见[角色与绑定报告](../reports/grain_vector_mechanisms/QUERY_ROLE_AND_BINDING_REPORT.md)。
-下一GRAIN_ENTITY_STATE_P1J_PLAN.md检验共同人物前缀与后续不同判据；尚未执行。
+**当前独立loop续轮：P1J/P1K/P1L完成并独立审计。**
+共同人物状态可复用，但会污染无关房间问题；极性×答案编码分解显示N干预主要
+随Yes/No而非充分随问题含义反转。缓存人物差向量的4场景留出误差为均值基线
+.1911，向量长度基线.4334；置换2/24，不能宣称普遍规律或人格预测成功。
+见[人物状态/编码报告](../reports/grain_vector_mechanisms/ENTITY_STATE_AND_CODING_REPORT.md)
+及[缓存算子报告](../reports/grain_vector_mechanisms/ENTITY_OPERATOR_REPORT.md)。
+本轮776forward/316.59秒，L及审计零forward；旧大队列仍暂停，未新增私人用途。
+下一GRAIN_TARGET_RECENCY_P1M_PLAN.md检验查询对象与记录顺序；尚未执行。
 以下更早next步骤和状态保留历史，不能当最新启动指令。
 
 **2026-09-07 20:08 JST 当前进度：P1B–P1F完成，活动goal已重建。**

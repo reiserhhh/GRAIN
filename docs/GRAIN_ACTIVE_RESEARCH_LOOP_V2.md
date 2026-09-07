@@ -64,10 +64,18 @@ not a discovered personality-name vector. See QUERY_ROLE_AND_BINDING_REPORT.md.
 
 P1J is now complete and independently audited:196 forwards/87.28s, common-prefix
 state error0. The reused entity state affects both behavioral criteria, but also
-strongly shifts the unchanged-venue control. Reuse is observed; selective evidence
-reading is not established. See ENTITY_STATE_AND_CODING_REPORT.md. Next P1K crosses
-criterion polarity and answer coding to diagnose this carryover, with580 planned
-forwards and a650-call/600s cap. No new data permission or Claude input needed.
+strongly shifts the unchanged-venue control. P1K also complete/audited (580/229.31s):
+code-only contrasts dominate N response energy, while a semantic-parity component
+also contaminates venue. See ENTITY_STATE_AND_CODING_REPORT.md. P1L completes the
+zero-forward cached readout: held-setting full-vector SSE=.1911 of training mean,
+norm-only=.4334, setting-permutation tail2/24. This is functional predictability,
+not selective personality evidence. See ENTITY_OPERATOR_REPORT.md.
+
+Next P1M in GRAIN_TARGET_RECENCY_P1M_PLAN.md distinguishes the awkward person-room
+query target and action-record recency. Planned340 forwards/cap400/600s, exact
+collector not yet frozen. No new data permission or Claude input needed. Goal
+remains active: this cycle is progress, not full theory completion. No long queue
+was resumed and no monotonic claim of improving personality accuracy is made.
 
 The relevant decision is no longer merely where information resides, but what
 question-conditioned operator uses it. Preserve all old coding/venue/opportunity

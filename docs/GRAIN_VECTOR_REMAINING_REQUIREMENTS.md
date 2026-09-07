@@ -1,15 +1,18 @@
 # Vector mechanism program: remaining requirements
 
-## Current independent continuation: P1H/P1I complete
+## Current independent continuation: P1J/P1K/P1L complete
 
-P1H clause-order and P1I entity/criterion/remainder factorial packets completed,
-728 forwards in138.91s total. Independent token/scalar/control audits verified.
-Semantic query role matters beyond simply later position; person-bound state is a
-candidate, not a personality score. Next P1J common-prefix test is planned only.
-See QUERY_ROLE_AND_BINDING_REPORT and GRAIN_ENTITY_STATE_P1J_PLAN.
+Common-prefix entity-state reuse is observed, but the unchanged venue is strongly
+contaminated. P1K crosses polarity and answer code: the N effect is dominated by
+code-only rather than criterion-and-code-equivariant contrasts. P1L predicts some
+responses from cached vectors on4 held-setting folds, not human personality.
+Independent token/state/scalar/sklearn/null audits passed.776 new neural forwards
+in316.59seconds for J/K, zero for L. See ENTITY_STATE_AND_CODING_REPORT and
+ENTITY_OPERATOR_REPORT. Next planned P1M checks query target and action order;
+exact collector still needs freeze. No new private data or Claude input required.
 Old queues and all uncompleted source/group/personality requirements remain unchanged.
 
-## Current mechanism cycle: 2026-09-07 20:08 JST
+## Historical mechanism cycle: 2026-09-07 20:08 JST
 
 P1B–P1F complete with independent numerical audits. Early-E/late-Q transport
 replicated in a fresh48-prompt panel; fixed small-operator transfer is conditional,

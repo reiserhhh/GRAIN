@@ -1,6 +1,6 @@
 # GRAIN vector mechanism atlas
 
-2026-09-07, updated through independent P1H/P1I. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
+2026-09-07, updated through independently audited P1J/P1K/P1L. **WORKING SYNTHESIS, NOT PROGRAM COMPLETION.**
 The45 primary,45 fixed-layer and35 raw same-ready source-head comparisons are complete; other same-ready,
 task/history/direct comparisons, strong controls/nulls, bridge evaluation and
 final reusable-observer acceptance remain open. The bounded domain-function packet is complete. This atlas records
@@ -25,7 +25,9 @@ theoretical refinement so far, not a claim to a newly discovered universal law.
 | Evidence selection | Natural memory summaries could contain unsupported propositions despite valid quotations; corrections and question wording did not provide uniform gains | Memory fidelity must be checked at proposition/attribution level, not citation-presence alone |
 | Binding/combination | Controlled entity/relation conditions distinguish additive summaries from joint encoding; simple product kernels can also recover the relation | Controlled non-additivity is not proof of uniquely LLM reasoning or personality synergy |
 | Query-position transport | P1C/F: early evidence replacement and late query-suffix replacement restore counterfactual judgment across new settings/question paraphrases | Position of causal model dependence, not erasure from other states, unique circuit or personality-specific pathway |
-| Query role and entity state | P1H content-clause effect survives order reversal. P1I attribution is more sensitive to contextualized entity positions than to trait-criterion words; count-matched controls retained | Evidence-binding candidate, not a personality name-vector. Remainder positions matter; common-prefix criterion test is next, not completed |
+| Query role and entity state | P1H/I semantic-role/count controls and P1J exact common-prefix entity-state reuse completed | A reusable state is not selectively read: person-prefixed venue is strongly contaminated. No personality name-vector or unique binding subspace |
+| Criterion and output-code response | P1K exact polarity x code contrasts: N code-only energy event.779/attribution.853, with nonzero semantic and venue effects | Descriptive finite responses, not information shares. Semantic-parity does not imply relevance; query-target and recency controls planned |
+| Cached conditional operator | P1L full-vector held-setting SSE/mean=.1911 versus norm.4334; independent sklearn replay | Only4 authored settings, permutation2/24; predicts native judgments and some unwanted effects. Not human accuracy, unique mechanism or LLM-free inference |
 | Local operator transfer | P1D/E approximate finite query interventions on held settings, but P1F fixed coefficients do not transfer universally; P1G proves shape/gap errors can cancel | Conditional approximations using LLM activations, not LLM-free prediction. Lower aggregate error need not imply a more accurate component mechanism |
 | Contextual access | Small frozen history-state interventions transfer to a second current text on independent authors | The answers fail code-reversal controls and non-target effects exist; causal model access is not semantic or psychological specificity |
 | Mean geometry vs output | RC5 mean-state cosine .9918 coexists with +.4197 tail logp; final readout admits exact target/partition and KL identities | Euclidean closeness does not imply functional equivalence. The identities are standard softmax mathematics, not new personality formulas |
@@ -45,9 +47,11 @@ The [P1H/P1I analysis](QUERY_ROLE_AND_BINDING_REPORT.md) refines the current can
 chain to `evidence -> entity-indexed contextual state -> criterion-conditioned
 readout`, while retaining other query states as necessary possible contributors.
 This is an architectural decomposition and an experimentally localized candidate,
-not a proof that one entity vector is sufficient. A common-prefix, different-later-
-criterion experiment is planned in P1J. Both named persons and unchanged-fact
-controls are required before enlarging author-group mechanism work.
+not a proof that one entity vector is sufficient. [P1J/K](ENTITY_STATE_AND_CODING_REPORT.md)
+now verify shared-prefix reuse but expose irrelevant-control and polarity failures.
+[P1L](ENTITY_OPERATOR_REPORT.md) links cached vectors to conditional response
+coefficients with held-setting readouts. The next planned P1M controls query target
+and action-record order before enlarging author-group mechanism work.
 
 The [P1B-P1G report](ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md) keeps the distinction
 between transport location and a transferable small formula. Finite binary-region

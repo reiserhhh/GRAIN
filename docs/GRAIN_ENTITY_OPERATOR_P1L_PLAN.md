@@ -1,6 +1,7 @@
 # P1L: cached entity differences to conditional response coefficients
 
-2026-09-07. Prospective bounded follow-up after P1K, before fitting these readouts.
+2026-09-07. Frozen ine300353 before fitting; now complete and independently audited.
+Results in ENTITY_OPERATOR_REPORT.md; prospective design retained below.
 No new neural forwards. Decision: do entity-state vector differences predict
 held-setting response components beyond template/person-name means and vector norm?
 
