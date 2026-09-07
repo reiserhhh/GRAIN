@@ -128,3 +128,31 @@ and the path is a declared internal-state intervention, not an input-word
 explanation. [Janizek, Sturmfels & Lee, JMLR2021](https://www.jmlr.org/papers/v22/20-1223.html)
 motivates keeping interactions distinct from single-feature effects; S6 does not
 implement Integrated Hessians or estimate a full Hessian.
+
+## S6 result and S7 group-action split
+
+S6 completed in318seconds with154 forward/backward pairs. Mean-preserving token
+collapse has TF/N/confirmation effect RMS=.01355/.02471/.00900. Integrated-path
+r=.9980/.9998/.9994. Matched N/confirmation effect r=.9717 (author bootstrap
+CI .8094-.9928). This establishes a useful configuration response at the fixed
+decoder site. It does not yet separate order from within-comment dispersion.
+
+S7 uses the same eight authors and all three queries. Permute states only within
+each selected comment, preserving the complete multiset, all moments, count,
+and other/query states. Three uniform seeded permutations per E1/E2,168 total
+forwards including24 self checks, zero backwards, ten-minute cap.
+
+For finite permutation group G, define Rf(H)=mean_g f(gH) and Pi H=mean_g gH.
+The exact identity is f(H)-f(Pi H)=[f(H)-Rf(H)]+[Rf(H)-f(Pi H)]. The first term
+is location on the permutation orbit; the second is nonlinear response to a
+distribution rather than its averaged state. S7 estimates Rf with only three
+draws, so its numerical split is exploratory Monte Carlo, not an exact full-group
+average or orthogonal psychological variance partition.
+
+Sources: finite-group averaging in
+[Etingof et al., Introduction to Representation Theory](https://math.mit.edu/~etingof/reprbook.pdf)
+and the invariant-function perspective in
+[Zaheer et al., Deep Sets, NeurIPS2017](https://papers.nips.cc/paper/2017/hash/f22e4747da1aa27e363d86d40ff442fe-Abstract.html).
+Do not infer that a mean is sufficient for every invariant nonlinear function.
+This experiment can decide whether the next lightweight representation should
+prioritize ordering/positions, distributional spread, or both.
