@@ -229,7 +229,7 @@ def group_analysis(natural, profiles, membership):
             "patch_remove_selected_1.0",
             "patch_remove_control_1.0",
         ]
-        y = means[columns].to_numpy()
+        y = means[columns].to_numpy(copy=True)
         y[:, 1:] -= y[:, [0]]
         train = np.array([role[uid] == "discovery" for uid in ids])
         test = ~train

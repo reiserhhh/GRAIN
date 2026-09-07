@@ -55,9 +55,15 @@ query-conditioned states and selected-evidence interventions, followed by GRAIN
 neighborhood pooling. Old queues and P1U remain parked; GRAIN's released
 deterministic scorer is unchanged.
 
-D2 is now RUNNING:64 new source authors,128 two-view units,1156-forward budget.
+D2 is COMPLETE:64 new source authors,128 two-view units,1156 forwards in1422s.
 See `GRAIN_REAL_AUTHOR_PATH_D2_PLAN.md` and `GRAIN_QUERY_PATH_MATHEMATICS_V1.md`.
-The same frozen packet feeds D3's independent-neighborhood comparison and D4's
-held-author rank2/rank8 response operators; their analysis script is implemented
-and tested while neural collection proceeds. No source-label outcomes are read
-in D2-D4.
+The same packet completed D3/D4 analysis. Rank8 held-author response r=.5314 (TF)
+and .5584 (neuroticism); selected-evidence/full-score r=.6104/.8193. Group connections
+are response-specific: TF selected-only change r=.4549 and neuroticism selected-
+patch change r=.5838 in the GRAIN whitened neighborhood, with no uniform aggregate
+neighbor advantage. See `../reports/grain_vector_mechanisms/D234_REAL_AUTHOR_PATH_REPORT.md`.
+
+Next is `GRAIN_CONDITIONAL_GROUP_OPERATOR_D3B_PLAN.md`: connect independent GRAIN
+coordinates to the gain of the successful vector response operator, using a small
+new-author final panel. The goal stays active for this connection and final theory
+integration. No source-label outcomes were read in D2-D4.

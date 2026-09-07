@@ -2,6 +2,13 @@
 
 ## Discovery-first mainline update, 2026-09-07
 
+2026-09-08: [D2-D4 real-author pathway](D234_REAL_AUTHOR_PATH_REPORT.md) is complete.
+Query-selected/full-text author ordering r=.6104/.8193 (TF/neuroticism), intermediate
+vector effects track natural evidence effects, and rank8 operators predict held-
+author interventions at r=.5314/.5584. GRAIN group connections are response-specific;
+conditional group gain is the next development packet. These are functional
+mechanism quantities linked to D1's personality associations, not new label scores.
+
 D1 now directly connects cached real-author native queries to source labels and
 paired vector heads:213 Big5 users, native mean r=.1993 versus E5 .1372;
 2,328 MBTI users, native TF AUC=.6600 and query/E5 r=.5127. See
