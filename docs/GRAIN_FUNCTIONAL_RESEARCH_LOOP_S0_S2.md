@@ -38,13 +38,12 @@ both. Exposed development data are not a new untouched confirmation sample.
 
 S0 COMPLETE: PLS response r=.8021/.7882 vs SVD .4586/.3883 (TF/N), with approximately
 55% lower MSE in both queries. See `../reports/grain_vector_mechanisms/S0_FUNCTIONAL_BASIS_REPORT.md`.
-S1 material frozen:24 fresh source authors,48 views, one view outside20% length
+S1 COMPLETE:24 fresh source authors,48 views, one view outside20% length
 matching tolerance retained and flagged. The8-author pilot completed270 forwards
-and48 backwards in354seconds. All three query-end local responses correlate
-.993-.996 with their actual g*d prediction. Joint-edit RMS is56%-88% of the joint
-natural response RMS, motivating a small quadratic feature branch in S2.
-Continue the24-person panel to resolve shared-author effects, not merely repeat
-the near-linear local result. The observer budget remains750F+144B/60minutes.
+and48 backwards in354seconds; the full panel completed750F/144B in1046.9seconds.
+All three query-end local responses correlate .9936-.9956 with g*d.
+Joint-edit RMS is56%-88% of the joint natural response RMS, motivating the small
+quadratic feature branch subsequently tested in S2. No acquisition remains active.
 Block16 suffix gradients are primary on the24GB Mac; comment attributions use
 block16 gradient-times-state rather than retaining the whole input graph.
 
@@ -105,3 +104,19 @@ available, mean/query pooling + training-only PCA(up to64)/Ridge. Same outer5
 authors across sizes, inner3 teacher-MSE selection, natural questionnaire labels
 joined after all OOF predictions are saved. No new neural calls, ten-minute cap.
 Earlier D1 psychological outcomes were exposed; keep this discovery status.
+
+## Final closure
+
+S0-S4 and the small S1B/source-connection follow-ups are COMPLETE, with no running
+jobs. Total Qwen cost792F/152B/1105seconds, apart from load/preparation.
+S4 mean student TF AUC=.7173 vs teacher .6591, paired delta95%CI[.0398,.0774];
+N r=.0673 vs .1765. The source-trained E5 control remains stronger on TF (.7537).
+The teacher-only student preserves about94% of TF teacher-label covariance,
+but26% of N covariance. This is an exact scale-declared covariance accounting,
+not a causal fraction or explained personality variance.
+
+Public synthesis: `../reports/grain_vector_mechanisms/S0_S4_FUNCTIONAL_LOOP_REPORT.md`.
+Theory/finite hypothesis rulings: `GRAIN_FUNCTIONAL_MECHANISM_THEORY_V2.md`.
+Next: identify the N teacher-minus-student remainder using multi-position
+query-conditioned evidence, retaining TF as a positive compression reference.
+Do not extend the present parameter grid or claim the entire theory is finished.

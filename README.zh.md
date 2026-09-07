@@ -17,6 +17,15 @@ GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然�
 公开迁移范围记录于 [v1.1.0 发布说明](docs/RELEASE_NOTES_V110.md)。
 标签门禁修正记录于 [v1.1.1](docs/RELEASE_NOTES_V111.md)。
 
+## 功能路径研究（2026-09-08）
+
+[S0–S4研究loop](reports/grain_vector_mechanisms/S0_S4_FUNCTIONAL_LOOP_REPORT.md)已完成。
+功能坐标算子在24名新作者上的TF/N内部响应r=.842/.871。仅用LLM评分训练、
+不使用问卷标签拟合的E5/PCA/Ridge学生，在2328名source作者上TF AUC=.717，
+同文本教师为.659；神经质没有同样收益。两类数字分别是计算响应与心理指标关联。
+[新理论](docs/GRAIN_FUNCTIONAL_MECHANISM_THEORY_V2.md)分开描述局部功能、证据组合
+与特质专属的剩余信息。旧D1标签为已使用的探索资料，发布scorer和历史lockbox不变。
+
 ## 理论论文稿（2026-09-01）
 
 已将完成的理论体系整理为不预设投稿期刊的理论与方法论文，并分别提供

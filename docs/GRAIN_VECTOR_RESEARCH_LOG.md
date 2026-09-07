@@ -1,6 +1,16 @@
 # GRAIN 向量推论机制研究日志
 
-更新：2026-09-06。研究 loop：进行中。正式 GRAIN scorer、历史 lockbox 与论文结论未被替换。
+更新：2026-09-08。最新S0–S4研究loop已完成；无后台采集任务。正式 GRAIN scorer、历史 lockbox 与论文结论未被替换。
+
+## 最新主线结果：功能路径与轻量学生
+
+[本轮报告](../reports/grain_vector_mechanisms/S0_S4_FUNCTIONAL_LOOP_REPORT.md)与
+[理论V2](GRAIN_FUNCTIONAL_MECHANISM_THEORY_V2.md)记录全部新结果。
+24新作者上冻结功能算子TF/N响应r=.842/.871；792F+152B完成真实梯度、共同编辑
+与查询内容小面板。利用旧教师缓存的轻量学生TF AUC=.7173（教师.6591），且从未
+用问卷标签拟合；N没有同等收益。协方差分账说明两者保留程度约94%/26%。
+后续应定位N的教师剩余作用，旧大队列、MEPS问卷、bridge和lockbox保持原状态。
+以下是各轮历史记录，原“下一队列”不自动成为当前队列。
 
 ## 目标与当前裁决
 

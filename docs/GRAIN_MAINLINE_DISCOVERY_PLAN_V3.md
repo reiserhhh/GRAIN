@@ -92,3 +92,17 @@ within the same60-minute acquisition cap. See
 `GRAIN_FUNCTIONAL_PATH_NEXT_PLAN_V1.md` and
 `../reports/grain_vector_mechanisms/MATH_SEMINAR_II_20260908.md`.
 None of these new neural collections has been started by the seminar task.
+
+## Completed functional loop after the seminars (2026-09-08)
+
+The subsequent execution task completed S0/S1/S2 and bounded S1B/S3/S4 follow-ups.
+No observer process remains active. See
+`../reports/grain_vector_mechanisms/S0_S4_FUNCTIONAL_LOOP_REPORT.md` and
+`GRAIN_FUNCTIONAL_MECHANISM_THEORY_V2.md` for the complete outcome/claim ledger.
+S0 frozen PLS transfers at TF/N response r=.8420/.8715. The large teacher-only
+student has TF AUC=.7173 vs native .6591 (paired deltaCI .0398-.0774), but N
+r=.0673 vs native .1765. Teacher/label covariance retention is approximately
+94%/26%; this distinguishes successful compression from trait-specific remainder.
+Keep the simple TF path. Next neural work should locate the N remainder through
+multi-position, query-conditioned evidence relations, not resume old queues.
+H5 persona-writing/readout duality remains unexecuted in this packet.

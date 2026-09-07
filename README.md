@@ -24,6 +24,16 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Real-author mechanism result (2026-09-08)
 
+The [functional S0-S4 loop](reports/grain_vector_mechanisms/S0_S4_FUNCTIONAL_LOOP_REPORT.md)
+is now complete. Functional-coordinate operators transfer to24 new authors at
+TF/N response r=.842/.871. A teacher-score-only E5/PCA/Ridge student reaches
+TF AUC=.717 versus its paired teacher .659 on2328 source authors; neuroticism
+does not show the same benefit. These are distinct response and psychological
+connection results. The [updated theory](docs/GRAIN_FUNCTIONAL_MECHANISM_THEORY_V2.md)
+separates local function, evidence interactions, and trait-specific remainder.
+No questionnaire labels trained the student; existing D1 outcomes remain
+exploratory. The following D1-D4 results retain their original scope.
+
 The finite [D1-D4 mainline](docs/GRAIN_MAINLINE_MECHANISM_THEORY_V1.md) is complete:
 real-author trait-query associations, query-guided evidence organization,
 intermediate-vector intervention, and a compact response formula tested on new
