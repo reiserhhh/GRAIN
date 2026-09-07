@@ -268,7 +268,7 @@ projection derivation in`GRAIN_QUERY_INFORMATION_GEOMETRY_V1.md`;3 new finite
 tests pass. This describes token-weighted local value access, not personality
 variance. Source/outcome conclusions await S12; no new protected data are needed.
 
-## Current checkpoint: S12 complete, compact relational readout found
+## Historical checkpoint: S12 complete, compact relational readout found
 
 All213 N authors/639views collected in953.63seconds,0 backwards. Native S9
 score replay error0; head reconstruction max4.42e-6.90 fixed affine readers,
@@ -297,3 +297,25 @@ all comparisons, exact formula, source references and reproduction commands.
 Final focused validation after S12:225 tests passed in18.72seconds, with only
 two existing SWIG deprecation warnings. Ruff and whitespace checks passed.
 S12 finding commit:f40a650; parent handoff sync:5f5a94c. No remote push.
+
+## S13 complete; S14 shared-query collection
+
+S13 replays72/72 source views and48/48 frozen reader predictions with the
+prefix-only execution path. Maximum vector error0, reader error1.31e-16;
+forbidden suffix calls0. Paired median prefix/full extraction time ratio.6121.
+This is a measured execution shortcut, not a new human prediction score.
+See `reports/grain_vector_mechanisms/S13_PREFIX_READOUT_REPORT.md`.
+
+S14 now fixes all213 N authors,3views and the existing KV/PCA C readers.
+Replace native per-author queries with author-out fold references at alpha0/.5/1,
+keeping KV fixed. Add first/second query directional cumulants from the same
+cache,0 extra forwards. Protocol V2/code committed as d4b0948 before collection.
+Private r1 was prepared but never collected; r2 is the live source.
+Inspect `results/grain_vector_mechanisms/shared_query_s14_r2/run_status.json`.
+Do not launch another neural collector or read interim questionnaire outcomes.
+
+Theory V4, `GRAIN_RELATIONAL_READOUT_THEORY_V4.md`, connects paired KV evidence,
+shared-query exponential tilting and conditional moment compression. Two new
+finite tests verify that identical key/value marginals can yield opposite
+paired readouts, and that the zero-query derivative is a within-comment joint
+moment. The source experiment decides how much of this geometry is useful.
