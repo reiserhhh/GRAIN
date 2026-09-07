@@ -68,3 +68,22 @@ Lines are wrapped for reading, not separate shell commands. Keep the SSH parent
 open for Windows execution, as the earlier detached launch did not survive logout.
 Do not launch this real command while history is still running or the semantic
 panel is only token-checked. Source evaluation and bridge acceptance remain separate.
+
+## Status-only operational wrapper (round37)
+
+Use `scripts/run_grain_direct_queue_io_guard.py` with the same arguments for the
+next Windows invocation. This applies the existing tested Windows access/sharing
+retry only to this queue's queue_status.json. It does not change the frozen
+collector/queue, prompt coding, shard manifests, caches, predictions or numerical
+gates. Five bounded waits total1.55s for WinError5/32/33; other paths/errors pass
+through immediately and permanent failure keeps the original exception.
+
+The wrapper journals beside the output in `<output_name>_io_guard/<UTC>_<pid>`.
+It must not prepopulate a fresh output directory, since the original queue's
+nonempty-directory rejection remains intact. Fresh and explicit-resume modes,
+history-idle checks and the original queue lock stay in force. Each journal keeps
+argv, original/wrapper code hashes, source snapshot, any prior status and
+append-only retry/exit events. The original queue writer is restored on return
+or exception. This is the known history I/O remedy, not a new scientific protocol
+or a reason to alter a negative result. Full real direct collection remains pending
+until history reaches its natural budget boundary and the owner actually exits.
