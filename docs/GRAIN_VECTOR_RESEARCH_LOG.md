@@ -1896,3 +1896,28 @@ Codex重视这条新理论线，Claude坚持绑定实证先行；最终执行顺
 df8506c47bbc045614ac79016a2dddc78dd81df97df998ddd258f772008f0e5a。
 仅核实VM04 author_effects表头，未做新作者级拟合；不虚构九trait hidden缓存。
 完整结论见reports/grain_vector_mechanisms/CODEX_CLAUDE_VECTOR_SEMINAR_20260907.md。
+
+### Claude 配额暂停后的 Codex 独立理论续研（2026-09-07）
+
+用户要求不再调用Claude，只检查一次旧后台后继续自己的理论工作。14:25–14:27
+JST实测Mac secondary FIT253/315，parent15034/child28326；Windows direct
+RUNNING18/128，parent48952/child6324，3秒CPU增量2.891秒、status age1.8秒。
+均相对旧231/315和12/128推进，不重启/改参/扩充，不开启监控循环；没有恢复
+history争GPU。本段是有时点的状态快照，不把未完队列判为完整结果。
+
+新增GRAIN_EVIDENCE_STATE_AND_WEIGHT_IDENTIFIABILITY_V1。由固定单head的
+softmax导出非证据/证据竞争，明确只能识别质量比、非完整LLM定律；将分数升级为
+(Z,T)可更新矩，但精确去重还需来源状态P，不能声称任意历史有固定维数充分状态。
+多查询kernel矩沿用Katharopoulos等2020的标准工具，不占用公式首创。共同正gate
+保留Pearson/AUC，因此“更多记忆统一放大”不解释相关提升；作者特异gate则有
+内容/覆盖/交互三项协方差账目。覆盖可能也是Where选择，不全部当噪声消掉。
+
+新增check_grain_evidence_state_theory.py及9tests，与前10共19通过，Ruff/format/
+diff通过；零神经forward、零文本/作者标签/MEPS问卷读取。固定KV恒等误差5.55e-17；
+相同分数.5而质量1/9，更新后.75/.55；相同矩不同来源，更新.5/2/3；正核三query
+重播误差5.55e-17；共同gate的r=.894427不变但MAE.4→.76；覆盖-only可有r=1。
+均为有限合成世界，不是人格验证。没有对不完整真实结果作新的选择或因果解释。
+packet：results/grain_vector_mechanisms/evidence_state_theory_r1；source快照保留。
+code sha17aa116a7e3cbe61b9a12a8eade22e5cc18bf39821f94103a1afb30006e511d3；
+witness sha b8a83a06d50e26e5ffe890946add60ff36ad320c5210d09fbb4cfbfdbcf0b0b3。
+报告EVIDENCE_STATE_THEORY_REPORT.md；本轮本地提交、不push，活动研究goal仍未完成。

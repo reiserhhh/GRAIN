@@ -204,3 +204,8 @@ G(h,q)\approx\widetilde G(\phi(h),q).
 [Codex 独立立场](../../docs/GRAIN_CODEX_VECTOR_SEMINAR_POSITION_20260907.md)、
 [第二轮质询](../../docs/GRAIN_CODEX_CLAUDE_VECTOR_SEMINAR_ROUND2_20260907.md)、
 [最终短核对](../../docs/GRAIN_CODEX_CLAUDE_VECTOR_SEMINAR_FINAL_CHECK_20260907.md)。
+
+后续 Codex-only 推导见
+[证据状态续研](EVIDENCE_STATE_THEORY_REPORT.md)。它不是新增 Claude 研讨回合或
+两方共同裁决：补入来源状态与可更新一阶矩，并限制“权重竞争解释预测相关提升”
+的适用范围。原三轮讨论记录与数值不回写。
