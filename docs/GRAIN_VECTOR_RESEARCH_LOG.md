@@ -1988,3 +1988,20 @@ Ruff排除外置盘权限造成的EXE002后通过，git模式保持与既有脚�
 旁路状态核对：旧Mac cached readout队列已按原预算自行PAUSED_BUDGET，297/315，
 next=SN_cont_placebo_mask_final_norm_decision_disposition，child_pid=null；未重启。
 本轮未核对Windows最新进度，不作当前运行宣称。已有无关报告改动继续保留，不push。
+
+### Claude 冷却后双轮创新研讨（2026-09-07）
+
+按用户要求恢复只读研讨，沿用开发背景分叉会话；实际 claude-fable-5-1/max，
+两轮成功，第一轮4次Read、第二轮无工具，不改原CLI终端。独立Codex立场先写，
+再互提修正。档案：reports/grain_vector_mechanisms/INNOVATION_SEMINAR_20260907.md。
+
+新优先对象：角色绑定、条件诊断性、查询选择性作用图、群体参照、联合线索。
+提出编码微扰的有限差分功能核，将“显影剂”落到可量化操作；仅在线性有限世界
+验算，尚无新神经/真人结论。四格不变、注意负斜率、顺序环和patch相减均不能
+独立识别心理机制；第二轮仍有强推断，报告逐项标成主持人修正而非共同结论。
+
+新增有限见证15 tests，合并既有理论/reciprocity共51通过，Ruff/format通过；
+规范本地包 claude_innovation_seminar_20260907/finite_final_replay 有源码/输出hash。
+下一P1B拟角色/位置与自由-强制机会面板，保守1788 forward加212余量，硬限2000；
+未执行、未冻结材料，不用历史平均记录比当预算。边级patch与群体功能聚合后继。
+没有改后台队列、读参与者原文或外部量表、重训或push；他人未提交报告保持原样。
