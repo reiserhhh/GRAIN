@@ -39,6 +39,21 @@ both. Exposed development data are not a new untouched confirmation sample.
 S0 COMPLETE: PLS response r=.8021/.7882 vs SVD .4586/.3883 (TF/N), with approximately
 55% lower MSE in both queries. See `../reports/grain_vector_mechanisms/S0_FUNCTIONAL_BASIS_REPORT.md`.
 S1 material frozen:24 fresh source authors,48 views, one view outside20% length
-matching tolerance retained and flagged. S1/S2 model acquisition not yet started.
+matching tolerance retained and flagged. The8-author pilot completed270 forwards
+and48 backwards in354seconds. All three query-end local responses correlate
+.993-.996 with their actual g*d prediction. Joint-edit RMS is56%-88% of the joint
+natural response RMS, motivating a small quadratic feature branch in S2.
+Continue the24-person panel to resolve shared-author effects, not merely repeat
+the near-linear local result. The observer budget remains750F+144B/60minutes.
 Block16 suffix gradients are primary on the24GB Mac; comment attributions use
 block16 gradient-times-state rather than retaining the whole input graph.
+
+Before S1 scoring, S0's final candidate choices were frozen on the96 development
+authors. S1 evaluates them under a new common-edit rule as well as on new authors.
+
+S2 implementation compares mean, query pooling, distribution, and the now-motivated
+rank4 quadratic block. It fits only full scores and E1 differences; E2 and joint
+responses never enter model selection. Both value-only and response-matching
+students use nested author CV, with shared/partly shared/independent task kernels.
+Targets remain the frozen observer's readouts. A final student is selected using
+development CV before any independent psychological outcome connection.
