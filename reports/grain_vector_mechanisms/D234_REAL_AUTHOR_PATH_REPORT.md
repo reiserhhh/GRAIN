@@ -3,6 +3,10 @@
 2026-09-08. Discovery-first mainline:64 new source authors,128 text views,
 1156 neural forwards,1422.01seconds. All planned observations completed.
 
+Follow-up status: D3B is now complete and the finite mainline goal is closed.
+See [final new-author report](D3B_MAINLINE_CLOSURE_REPORT.md). The next-step section
+below preserves the decision made at the end of this earlier discovery packet.
+
 ## What was discovered
 
 **A real-author evidence -> intermediate vector -> query judgment route is now

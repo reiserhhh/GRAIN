@@ -63,7 +63,16 @@ are response-specific: TF selected-only change r=.4549 and neuroticism selected-
 patch change r=.5838 in the GRAIN whitened neighborhood, with no uniform aggregate
 neighbor advantage. See `../reports/grain_vector_mechanisms/D234_REAL_AUTHOR_PATH_REPORT.md`.
 
-Next is `GRAIN_CONDITIONAL_GROUP_OPERATOR_D3B_PLAN.md`: connect independent GRAIN
-coordinates to the gain of the successful vector response operator, using a small
-new-author final panel. The goal stays active for this connection and final theory
-integration. No source-label outcomes were read in D2-D4.
+D3B is COMPLETE on32 additional new authors: shared response r=.3917/.3694 and
+MSE/zero=.8699/.4987. GRAIN gain conditioning does not improve MSE, so retain the
+query-specific, author-shared operator. All580 forwards completed in649.63seconds.
+The mainline theory goal is COMPLETE at its defined finite mechanism level.
+See `GRAIN_MAINLINE_MECHANISM_THEORY_V1.md` and
+`../reports/grain_vector_mechanisms/D3B_MAINLINE_CLOSURE_REPORT.md`.
+
+The user's extension now includes narrower traits and shared/private pathways,
+not only Big5/MBTI prediction. A completed cache geometry analysis found TF/N
+subspace overlap .2724 but functional cosine .0895. See
+`GRAIN_SHARED_AND_TRAIT_SPECIFIC_PATHS_V1.md`. A future same-author multi-query
+response matrix develops this result; it is not already running. No source-label
+outcomes were read in D2-D4/D3B, and no old queue is to be resumed automatically.

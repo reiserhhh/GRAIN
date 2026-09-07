@@ -35,4 +35,10 @@ Saved shared and conditional models, development-CV table, new-author prediction
 response metrics, and an integrated D1-D4 theory record. This is a mechanism
 development decision, not a requirement to eliminate all remaining error.
 
-Status: planned, not run. No new private data use or external resource is needed.
+Status: COMPLETE, 2026-09-08.32 fresh authors,64 views,580 forwards,649.63seconds.
+Shared response r=.391710/.369447; MSE/zero=.869855/.498677 (TF/N).
+Conditioned response r=.364596/.399893; MSE/zero=.893827/.573477.
+Decision: retain the shared per-query operator; group gain does not improve MSE.
+All conditions, paired author intervals and reproduction commands are in
+`../reports/grain_vector_mechanisms/D3B_MAINLINE_CLOSURE_REPORT.md`.
+The finite mainline goal is closed; no new private data use or external resource.

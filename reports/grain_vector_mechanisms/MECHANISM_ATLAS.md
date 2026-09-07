@@ -2,11 +2,20 @@
 
 ## Discovery-first mainline update, 2026-09-07
 
+2026-09-08: [D3B final new-author test](D3B_MAINLINE_CLOSURE_REPORT.md) closes the
+finite D1-D4 mainline goal. Shared per-query response r=.3917/.3694 on32 fresh
+authors, MSE/zero=.8699/.4987. GRAIN-conditioned gain does not improve MSE; retain
+the simple operator. [Integrated theory](../../docs/GRAIN_MAINLINE_MECHANISM_THEORY_V1.md)
+separates exact identities, observed vector effects and predictive approximation.
+The user's narrower-trait extension is recorded in the
+[shared/specific-path note](../../docs/GRAIN_SHARED_AND_TRAIT_SPECIFIC_PATHS_V1.md):
+TF/N path-space overlap .2724 coexists with functional cosine .0895.
+
 2026-09-08: [D2-D4 real-author pathway](D234_REAL_AUTHOR_PATH_REPORT.md) is complete.
 Query-selected/full-text author ordering r=.6104/.8193 (TF/neuroticism), intermediate
 vector effects track natural evidence effects, and rank8 operators predict held-
 author interventions at r=.5314/.5584. GRAIN group connections are response-specific;
-conditional group gain is the next development packet. These are functional
+conditional group gain was subsequently tested in D3B above. These are functional
 mechanism quantities linked to D1's personality associations, not new label scores.
 
 D1 now directly connects cached real-author native queries to source labels and
@@ -14,7 +23,7 @@ paired vector heads:213 Big5 users, native mean r=.1993 versus E5 .1372;
 2,328 MBTI users, native TF AUC=.6600 and query/E5 r=.5127. See
 [D1 report](D1_REAL_AUTHOR_DISCOVERY_REPORT.md) and
 [current plan](../../docs/GRAIN_MAINLINE_DISCOVERY_PLAN_V3.md).
-TF shared-path and neuroticism different-access experiments are next. The P1U
+TF shared-path and neuroticism different-access experiments are now complete. The P1U
 continuations below are historical and parked under the user's discovery-first
 rule; the synthetic series is instrumentation support, not the primary endpoint.
 

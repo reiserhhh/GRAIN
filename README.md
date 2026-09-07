@@ -22,7 +22,23 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
-## Vector inference research loop (2026-09-06)
+## Real-author mechanism result (2026-09-08)
+
+The finite [D1-D4 mainline](docs/GRAIN_MAINLINE_MECHANISM_THEORY_V1.md) is complete:
+real-author trait-query associations, query-guided evidence organization,
+intermediate-vector intervention, and a compact response formula tested on new
+authors. The [final32-author packet](reports/grain_vector_mechanisms/D3B_MAINLINE_CLOSURE_REPORT.md)
+gives TF/neuroticism intervention-response r=.392/.369, with MSE reduced13%/50%
+against a zero-response predictor. These are model-response metrics, distinct from
+D1's questionnaire associations (native Big5 mean r=.199, TF AUC=.660).
+
+Retain the simple per-query operator; current GRAIN gain conditioning does not
+improve MSE. The [shared/specific-path extension](docs/GRAIN_SHARED_AND_TRAIT_SPECIFIC_PATHS_V1.md)
+finds partial overlap of query-specific vector spaces with different functional
+readout directions, and extends the research scope to narrower traits. Released
+deterministic GRAIN scoring is unchanged; old long queues remain parked.
+
+## Earlier vector inference research loop (2026-09-06)
 
 Latest: the [Essays/X context and geometry packet](reports/grain_vector_mechanisms/VM06_DOMAIN_CONTEXT_GEOMETRY_REPORT.md)
 is complete on167 frozen cases. Correct context improves the supplied-text
