@@ -1,6 +1,8 @@
 # P1K: separate criterion reading from answer-code carryover
 
-2026-09-07. Frozen before this packet's neural results. Independent continuation
+2026-09-07. Frozen in8156864 before results; now complete and independently audited.
+See ENTITY_STATE_AND_CODING_REPORT.md. Original protocol retained below.
+Independent continuation
 after audited P1J. P1J's common entity state affects event and outgoing-attribution
 questions, but also the unchanged room question. Its venue role gap is3.0047,
 larger than event2.3593. This prevents a selective-evidence interpretation.
