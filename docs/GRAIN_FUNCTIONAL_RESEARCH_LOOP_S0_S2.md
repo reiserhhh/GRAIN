@@ -96,3 +96,12 @@ products. Five outer/three inner author folds, Ridge1/10/100, target-attribution
 MSE selection only. Natural E1/E2 responses are evaluated but never fitted. This
 distinguishes learnable evidence sensitivity from mere score similarity; it is
 not another prompt grid or an attempt to tune on the D1 questionnaire outcomes.
+
+S3 completed: content/context features did not reliably beat position/length in
+TF or N sensitivity decoding. Do not expand that surrogate into a large model.
+S4 is the one remaining cheap discriminating question: is24 teacher authors too
+few? Use D1's already cached native scores as targets, sizes24/96/384/all when
+available, mean/query pooling + training-only PCA(up to64)/Ridge. Same outer5
+authors across sizes, inner3 teacher-MSE selection, natural questionnaire labels
+joined after all OOF predictions are saved. No new neural calls, ten-minute cap.
+Earlier D1 psychological outcomes were exposed; keep this discovery status.
