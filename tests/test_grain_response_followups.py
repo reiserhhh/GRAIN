@@ -14,7 +14,7 @@ def test_external_connection_requires_identical_control_labels():
         {
             "author_id": str(i),
             "task": "big5",
-            "trait": "neuroticism",
+            "trait": "Neuroticism",
             "arm": "cue_mask",
             "observer": o,
             "y_true": i / 3,

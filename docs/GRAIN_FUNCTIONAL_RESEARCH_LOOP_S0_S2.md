@@ -82,3 +82,17 @@ Two finite next questions, fixed before collecting their new results:
    effects from shared numeric-answer machinery. This is not a zero-correlation
    acceptance gate and does not assume the control content is independent of
    personality. Do not expand to a prompt-grid or restart old queues.
+
+S1B completed42F/8B: N/confirmation patch r=.6303 on the common8-person subpanel;
+N/quantitative-content r=-.0280 with the same0-9 alphabet. S2's frozen source
+connection retains TF AUC=.6286 (2328authors) but N r=.0362 (213authors), while
+the cue-mask teacher is .6591/.1765 respectively. Student-to-teacher N r=.4702
+does not by itself preserve the teacher's psychological linkage.
+
+S3, the final bounded mechanism locator in this loop, uses ONLY existing caches:
+learn per-comment signed block16 gradient-times-state per token, comparing
+position/length, append E5 comment content, then append within-view mean/context
+products. Five outer/three inner author folds, Ridge1/10/100, target-attribution
+MSE selection only. Natural E1/E2 responses are evaluated but never fitted. This
+distinguishes learnable evidence sensitivity from mere score similarity; it is
+not another prompt grid or an attempt to tune on the D1 questionnaire outcomes.

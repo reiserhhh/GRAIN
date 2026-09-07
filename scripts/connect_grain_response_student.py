@@ -30,7 +30,7 @@ def paired_source(frame, query):
     task = "TF_cont" if query == "TF_cont" else "big5"
     rows = frame[
         (frame.task == task)
-        & (frame.trait == query)
+        & (frame.trait.str.casefold() == query.casefold())
         & (frame.arm == "cue_mask")
         & frame.observer.isin(["native_query", "e5_large"])
     ]
