@@ -352,3 +352,26 @@ query-conditioned/joint representations. Contextualized query states and KV
 coupling are now mathematically specified candidates, not unnamed noise to erase.
 Their source-outcome connection and compact recoverability must be measured;
 S10's small separate panel does not yet partition S9's covariance among heads.
+
+## 12. Source recovery from joint KV vectors
+
+S12 completed the same213 N source authors and three views. The body-state mean,
+contextualized query state and within-comment KV-pairing component were captured
+in the same forward. All three have1536 dimensions. Same-fold teacher-only
+PCA/Ridge applied to the pairing vector recovers C at target r=.3203 and
+MSE/null=.9063, versus body means r=.0074 and prior E5 means -.0187.
+The paired fidelity gain over body means is .3128 [.1177,.4878]. This is a
+concrete compact relational representation of part of the source intervention.
+
+Source Y association is positive (KV/PCA r=.1429, query/PLS r=.1695) but modest;
+the primary gain is target recoverability, not established external superiority.
+Full source/uncertainty distinctions are in the S12 report. Actual implementation
+is an author mean of head-concatenated within-comment pairing contributions,
+followed by a saved affine reader. No generated reasoning is required, though
+the source vectors still depend on pretrained contextual computation.
+
+The new`GRAIN_QUERY_INFORMATION_GEOMETRY_V1.md` adds I=Cov(K,K) and
+J=Cov(V,K), deriving Fisher-constrained accessible value variance J I^+ J'.
+These are exact local fixed-head/weighted-projection statements with numerical
+tests, not new general theorems or author-level personality variance estimates.
+The next computation is a prefix-only replay, not another score-generation grid.

@@ -251,7 +251,7 @@ Final focused validation for this cycle:216 tests passed in18.23seconds; Ruff
 passed for all newly added/modified mechanism code. Only two existing SWIG
 deprecation warnings were reported. Unrelated worktree changes were preserved.
 
-## Current checkpoint: S12 collection running
+## Historical resource checkpoint: S12 collection
 
 The frozen source representation protocol is locally committed as0c3c046 and
 its paired readers as8f866f9. Same213 N authors,3views; one forward captures
@@ -267,3 +267,29 @@ Parallel theory work adds Fisher-metric query accessibility and its weighted
 projection derivation in`GRAIN_QUERY_INFORMATION_GEOMETRY_V1.md`;3 new finite
 tests pass. This describes token-weighted local value access, not personality
 variance. Source/outcome conclusions await S12; no new protected data are needed.
+
+## Current checkpoint: S12 complete, compact relational readout found
+
+All213 N authors/639views collected in953.63seconds,0 backwards. Native S9
+score replay error0; head reconstruction max4.42e-6.90 fixed affine readers,
+3834 OOF rows,18 declared arms, no questionnaire fitting. KV/PCA64 recovers the
+source configuration contrast at target r=.3203, MSE/null=.9063; body/PCA
+target r=.0074 and E5/PCA -.0187. Paired target delta versus body .3128
+[.1177,.4878], versus E5 .3390 [.0919,.5246]. This is the positive localization
+needed to leave the ordinary-mean failure behind.
+
+KV/PCA's source N r=.1429 (FisherCI[.0086,.2721], bootstrapCI[-.0055,.2702]);
+query/PLS's N r=.1695. External gains over matched body/native controls are not
+established, and all arms are displayed. Choose KV/PCA for the next mechanism
+shortcut by target fidelity, not the largest external r. The configuration
+contrast itself retains S9's r=.2116; full-source T/F control is unchanged.
+
+No background collection remains. Next implement a prefix-only KV extractor
+and replay the existing affine readers on a fixed small source subset, checking
+that upper decoder blocks/lm_head are not executed and vectors/scores match.
+Then inspect joint/query interaction and lower-rank response compression from
+existing caches. Do not reopen ordinary mean grids, old queues, or protected
+labels. The research goal remains active; no user decision is needed now.
+
+Read`reports/grain_vector_mechanisms/S12_QUERY_REPRESENTATION_REPORT.md` for
+all comparisons, exact formula, source references and reproduction commands.
