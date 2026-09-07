@@ -1963,3 +1963,28 @@ Lens 的原始来源与代码说明。将“persona 到表达”与“作者文�
 
 所有实验面板和输出文件均为拟议；没有新模型结果、依赖安装、私人材料读取或
 bridge 标签使用。不调用 Claude、不改后台队列、不 push。保留他人未提交报告。
+
+### Persona reciprocity P1 首轮落地与验收（2026-09-07）
+
+实现 reciprocity 材料／方向／群体加权原语、离线限时 runner、独立完整性与问法
+分解 audit；d54cb36 冻结采集，5caa51c 冻结审计。使用本地同 hash Qwen1.5B、
+MPS FP32；不调用 Claude、API，不下载，不训练模型，不读取人类标签／私人文本。
+
+smoke r1：28 prompts，240 干预，375 forward，110.6sec，数值重播0。
+完整 r1：24开发+96评估=120 prompts，2688干预，3563 forward，716.1sec；
+两个固定层均报告。方向重建0误差，delta重算误差3.62e-15。126 tests通过，
+Ruff排除外置盘权限造成的EXE002后通过，git模式保持与既有脚本一致的100644。
+
+技术通过不等于共享人格路径通过：block16 persona→正向人格归因 slope1.2010，
+反向语义重编码后-.8671，无关事实+.7006。Even/odd=.1670/1.0341；even减随机
++.1506 [.1417,.1600]，有小候选但并非已识别的心理机制。主体归属仅1/6配对方向
+正确；全体+方向不改善稳定区分度，正向trait间距变化+.0336 CI跨0。
+
+报告 PERSONA_RECIPROCITY_P1_REPORT.md 写明案例共享句式、固定候选、pointwise
+区间和事后问法分解限制；不把合成trait符号一致率当作人格效度。P1B拟前移至
+问题前证据位点并完善角色材料；未执行。群体权重数学原语已测，真人GRAIN通路
+聚合未放行，不用合成作者假装完成。主identity a4003b0088b1f86508c83aa981d7d99a656d6beddb22b554a76c489833093cca。
+
+旁路状态核对：旧Mac cached readout队列已按原预算自行PAUSED_BUDGET，297/315，
+next=SN_cont_placebo_mask_final_norm_decision_disposition，child_pid=null；未重启。
+本轮未核对Windows最新进度，不作当前运行宣称。已有无关报告改动继续保留，不push。
