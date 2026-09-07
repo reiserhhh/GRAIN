@@ -1,5 +1,9 @@
 # Vector mechanism program: remaining requirements
 
+Latest live execution state after P1R/S/T: goal PAUSED; no reason returned.
+P1U remains planned and unstarted. Earlier active snapshots are historical.
+Do not auto-resume/recreate the goal or old queues; scientific requirements remain.
+
 ## Current independent continuation: P1R/P1S/P1T complete
 
 Paired order effects are not reducible to amplitude change or simple last-record

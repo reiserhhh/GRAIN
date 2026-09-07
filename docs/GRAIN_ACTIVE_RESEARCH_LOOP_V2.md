@@ -2,6 +2,12 @@
 
 2026-09-07. User-authorized independent Codex execution; no Claude call in this loop.
 
+**Latest execution state: PAUSED.** After completing and committing P1R/S/T,
+the live goal tool returned `status=paused`. No reason was returned. This overrides
+the earlier active snapshots below; it is not scientific completion or a blocker.
+All current child processes had exited. Do not recreate/resume a goal or launch
+P1U automatically while paused. The full objective and P1U cache-only plan remain.
+
 ## Updated objective
 
 Identify how a frozen LLM uses role-bound, condition-dependent behavioral evidence

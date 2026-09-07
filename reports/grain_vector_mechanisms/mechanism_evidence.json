@@ -315,6 +315,7 @@
     }
   ],
   "remaining": [
+    "Latest live goal state after P1R/S/T is PAUSED; P1U is planned but not started. Do not automatically resume or recreate the goal. Scientific requirements are unchanged.",
     "Old full-source queues remain paused by explicit value-priority override; incomplete requirements below are not waived or current automatic restart instructions.",
     "P1R/S/T complete: next planned P1U separates target-change versus other-actor-change from native cue effects using cache only. Code and psychological-validity limits remain; real-author/group prerequisites are not yet validated.",
     "Finish declared task-conditioned source comparisons; primary, original-dimension and fixed-layer families and all common-source shards are complete.",
