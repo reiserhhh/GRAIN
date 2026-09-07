@@ -217,3 +217,11 @@ within-comment higher-order relationships. If the approximation succeeds, it
 offers a concrete sufficient-statistic candidate for this readout and data,
 not universal sufficiency for all psychology. S14 decides whether the frozen
 common query or native query should be the fixed operating point for that test.
+
+S15 now completes that comparison at the common query: exact-mass covariance
+reader fidelity r=.847179,MSE/exact-author-variance=.701136; uniform masses
+r=.415440,error ratio1034.28; Gaussian masses r=.594964,error ratio3.797855.
+The source questionnaire association is not improved. This retains the exact
+normalizer in the active mechanism, and treats covariance as a useful but
+incomplete conditional approximation. Next split P_G=B*r_G into total body gain
+and relative comment allocation, as specified in the S16 plan.

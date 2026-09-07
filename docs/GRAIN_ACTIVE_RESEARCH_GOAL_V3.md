@@ -320,7 +320,7 @@ finite tests verify that identical key/value marginals can yield opposite
 paired readouts, and that the zero-query derivative is a within-comment joint
 moment. The source experiment decides how much of this geometry is useful.
 
-## Current checkpoint: S14 complete; S15 conditional-moment pilot
+## Historical checkpoint: S14 complete; S15 conditional-moment pilot
 
 S14 completed639 prefix calls in590.30seconds,0 suffix/backward calls. Common
 query target-C r=.315627 versus native.320283; paired delta-.004656
@@ -342,3 +342,28 @@ The full run cap is639 calls/25minutes. Do not launch another neural process.
 
 S13/S14 reports, theory V4 and S15 protocol/code are committed locally.
 The active research goal remains open. No new user input is required.
+
+## Current checkpoint: S13-S15 complete, S16 gain decomposition next
+
+S15 completed all213 authors/639prefix calls in583.01seconds, including the
+label-free24-author resource pilot. Exact-mass joint covariance reconstructs
+the exact common-query reader at r=.847179,MSE/exact-author-variance=.701136.
+Uniform weighting r=.415440,error ratio1034.28; Gaussian mass approximation
+r=.594964,error ratio3.797855. Keep exact attention mass and exact reading as
+the active source route; retain covariance as an explanatory approximation.
+Source N r=.104370 for exact-mass covariance versus exact.133706, no advantage.
+All four methods and paired source differences are reported; no recalibration.
+
+No neural experiment remains running at this checkpoint. Next implement the
+fixed24-author S16 gain/allocation/conditional-moment pilot in
+`GRAIN_READOUT_GAIN_S16_PLAN.md`. It separates total body attention from
+which comment is selected, then tests one fixed second-order conditional term.
+72prefix calls maximum, no human outcomes. Do not expand it before seeing which
+mechanism is decision-relevant. Primary sources are verified in the attention
+mass note; no need to invoke Claude or ask the user for a new idea now.
+
+Latest results: S13/S14/S15 reports in `reports/grain_vector_mechanisms/`.
+Theory V4 preserves the exact relational, conditional and exponential-tilt
+formulas, with explicit finite approximations.67 focused tests pass, Ruff and
+diff whitespace checks pass. Active goal remains open; private outputs ignored,
+no remote push, protected-label restrictions and source T/F control unchanged.
