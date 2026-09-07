@@ -48,6 +48,12 @@ are a bounded mechanism packet inside VM06, not a substitute for the full plan.
 
 ## Next working block after complete MEPS fixed/free comparison
 
+The native source analysis entry is implemented, not executed: see
+GRAIN_VM05_DIRECT_SOURCE_ANALYSIS_V1. It rejects actual2/128 material before OOF
+access;24 combined tests pass. Run the full fixed120 paired contrasts only after
+complete native caches and CPU availability. A tested reader is not a source
+prediction result, nor does this neural comparison close the entire program.
+
 1. Verify the two live source jobs and checkpoint completed shards/controls. Preserve
    bounded stop states, never launch a duplicate because a status read times out.
 2. The **Essays/X domain** context, geometry and declared lexical follow-up are

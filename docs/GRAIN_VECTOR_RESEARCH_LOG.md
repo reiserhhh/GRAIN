@@ -1835,3 +1835,15 @@ sha acf5a89ea77d5ce27db3d81d409c7561b14074db07e0ecff7449037b19bd8ac1。
 全315配对/history其余及源头/direct源头/同ready其余/strong199 null/
 源头封头后bridge/VM07仍待。桥接标签与MEPS量表值仍未开，无新LLM训练/
 下载/API/push。活动goal继续；当前没有需要用户新idea或新权限的阻塞。
+
+第三十七轮后续补齐direct源头analysis-only入口，不改活动评分源码。全部
+128真实分片/资格/语义/缓存复算通过后才读取已审计45源头OOF；60条件成绩、
+108trait、540fold、120配对、27质量行，1000同fold作者bootstrap，两估计量。
+原生三view均值固定，候选mass/首token质量不用于筛人；常量Big5保留未定义
+而非剔除，MBTI常量保留AUC.5。无新头/校准/bridge标签。此比较不是隔离
+reasoning因果，数字tendency与量表percentile也未建立共同心理标尺。
+8新增tests通过，与direct旧测试组合24通过，两个旧SWIG warnings；格式/
+Ruff/diff通过。真实2/128状态在任何OOF前拒绝且无输出，首片15task/arm
+聚合无标签检查通过。qualification identity
+7a5a40313d2474d223d67f8dc8fc959afb65887adc357c647e0c70fb839b02d9。
+完整源头成绩尚未运行。执行命令和解释边界见GRAIN_VM05_DIRECT_SOURCE_ANALYSIS_V1。
