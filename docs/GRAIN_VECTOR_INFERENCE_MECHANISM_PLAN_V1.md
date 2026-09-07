@@ -2,6 +2,13 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+**2026-09-07 20:08 JST 当前进度：P1B–P1F完成，活动goal已重建。**
+本轮3252 forward/709.17秒，外加零forward缓存分析与独立审计。早层证据→晚层
+查询传递在新场景/改写问法中复现；小算子并非通用，幅度读出和问题坐标都有限制。
+下一P1G先解剖查询条件化算子，不恢复旧队列、不调用Claude、不新增私人材料用途。
+见[本轮报告](../reports/grain_vector_mechanisms/ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md)。
+goal最初为paused，后重新检查已无旧goal，成功新建active；下方paused说明保留历史。
+
 **2026-09-07 本轮工作目标更新：独立机制研究 loop V2。**
 按用户指示执行角色绑定、条件诊断性与局部证据作用实验，监控时同时评估
 剩余计算的科学价值。以 `GRAIN_ACTIVE_RESEARCH_LOOP_V2.md` 为当前执行目标，

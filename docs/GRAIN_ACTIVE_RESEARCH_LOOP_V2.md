@@ -31,13 +31,27 @@ original complete-only comparisons remain unresolved; do not weaken them or use
 partial test labels to choose a winner/stop. Any value-based stop is logged as
 prioritization, not statistical equivalence/futility. Never discard null conditions.
 
-## App goal limitation
+## App goal and completed cycle
 
-The existing app goal was read on this date and is still `paused`. Available goal
-tools can inspect it or mark genuine completion/blockage, but cannot replace an
-unfinished objective or resume it. This document updates the executable project
-objective; it does not claim to change the app scheduler. The current user-requested
-turn proceeds independently. The user controls app goal resume.
+Initially the existing app goal was `paused` and could not be resumed by the goal
+tools. At20:08 JST a fresh read returned no existing goal. A new goal was then
+successfully created and is **active**, with the independent, resource-bounded
+query-conditioned mechanism objective. The earlier limitation is historical;
+this is a verified goal-creation receipt, not a claim to have unpaused the old one.
+
+P1B/P1C/P1D/P1E/P1F are now COMPLETE and independently replayed. Four neural packets
+used3252 forwards/709.17s total; P1E and audits used no new neural forwards.
+See `reports/grain_vector_mechanisms/ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md`.
+
+The early-evidence/late-query replacement pattern survived new actions/settings
+and query paraphrases. Frozen small-operator coefficients did not transfer
+universally. The old source queues stay paused; no new human-label or private-text
+scope was opened. Next P1G: zero-forward decomposition of query-coordinate,
+response-shape and endpoint-gap differences before another neural packet.
+
+The relevant decision is no longer merely where information resides, but what
+question-conditioned operator uses it. Preserve all old coding/venue/opportunity
+failures; no personality-specific or LLM-free inference claim has been accepted.
 
 ## Handoff boundary
 

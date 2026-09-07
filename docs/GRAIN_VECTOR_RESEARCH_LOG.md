@@ -1874,7 +1874,7 @@ witness sha feb4e7a3659d9306f32706c784b579c9e6918960a0053d9ce53d76667675b527。
 
 ### 用户指定 Claude 只读研讨（2026-09-07）
 
-复用已打开的SUICA system review and analysis开发上下文，经官方CLI fork为
+复用已打开的旧会话SUICA system review and analysis开发上下文，经官方CLI fork为
 d29dc2b0-f298-4891-a182-85bf073ca827，原交互会话不接管、不并发改写。三轮实际
 claude-fable-5-1、effort max；前两轮工具白名单Read/Glob/Grep、第三轮无工具，
 全部plan+safe/restricted，无执行/写入/MCP。实际18 Read+1 Grep覆盖18文档，
@@ -2019,3 +2019,28 @@ secondary为297/315预算暂停。因此未kill、未重启、未清锁、未新
 Mac仅1个完整native片，旧本地RUNNING/2片状态不可当当前；其余46片本地
 备份/重验仍待做，远端47片原件保留。报告BACKGROUND_PAUSE_DECISION_20260907.md；
 计划及requirements顶端加入执行覆盖说明，避免下一agent按旧快照自动续跑。
+
+### 独立研究循环P1B–P1F（2026-09-07晚）
+
+按用户要求独立执行、监控边际科研价值；没有Claude/API/下载/LLM训练/新私人
+文本与标签用途。旧三队列未恢复。本地缓存Qwen1.5B MPS FP32，五个有限包中
+四个神经包共3252forward/709.17秒，P1E及独立审计零forward。
+
+P1B明确角色材料12/12配对正确但绝对16/24；编码/极性失稳保留。安排行为对
+归因的放大也出现在事实识别，不能当人格诊断性。P1C完整E/Q/D三层替换显示
+早层证据、晚层查询后缀承载对结果的主要作用，全donor恢复0。P1D四片query
+16mask后，局部加性形状用真donor-gap在3留出场景误差比事实.1916/归因.07313；
+P1E以缓存Q向量估计gap改为.3316/.3831，仍不是LLM-free人格预测。
+
+P1F全新4场景×新动作×2问法×3任务×2归属：482forward/86.28秒。早E/晚Q
+传递复现，但旧公式事实改写oracle误差比1.6740；归因原式形状仍.0643，Q向量
+幅度读出却.8098。故定位机制比固定系数更稳，下一对象是查询条件化响应算子。
+所有情况包括venue与失败一起存储，未反过来调参。报告ROLE_QUERY_TRANSPORT_RESEARCH_REPORT。
+
+独立P1F算术最大7.11e-15、float64读出重播4.41e-9、全恢复0；P1E重建P1D系数
+最大2.22e-16。品牌回归发现旧研讨名/兼容路径5处未标历史，添加明确旧称说明，
+不改原引用。未触及他人report改动，不push。
+
+goal首次读为paused，20:08复读已null，按用户授权成功创建新active goal；仓库
+目标同步为独立、有界、价值敏感的查询机制研究。下一P1G零forward拆分形状、
+幅度和查询坐标，再决定最小新干预，不用无限扩层来逃避理论问题。

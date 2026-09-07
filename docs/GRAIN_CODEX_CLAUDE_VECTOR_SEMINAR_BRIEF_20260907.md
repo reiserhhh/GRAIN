@@ -20,7 +20,7 @@ when/路径与更新。人格命名与外部效度另需证据，但这不是阻
 
 ## 会话与权限
 
-- 源会话：`SUICA system review and analysis`，ID `582bb33b-a072-47a1-a24f-93e8ae8a88a1`。
+- 源会话（保留旧名称便于定位）：`SUICA system review and analysis`，ID `582bb33b-a072-47a1-a24f-93e8ae8a88a1`。
 - 原交互会话保持不动，官方 CLI fork/resume 继承其开发上下文用于只读研讨。
 - 用户选择的模型为 Fable 5.1，已在本地模型设置核实 ID `claude-fable-5-1[1m]`；effort=max。
 - 只允许 Read / Glob / Grep；没有 Bash、编辑、写入、代理、API、MCP、网络或执行工具。
@@ -30,7 +30,7 @@ when/路径与更新。人格命名与外部效度另需证据，但这不是阻
 
 ## 资料定位
 
-当前 GRAIN repo：`/Volumes/mobile3/projects/Sliced Utterance In-Context Assessment`。
+当前 GRAIN repo（兼容旧目录名）：`/Volumes/mobile3/projects/Sliced Utterance In-Context Assessment`。
 历史 repo：`/Volumes/mobile3/projects/project persona`。以下路径默认相对当前 GRAIN repo。
 
 必读（按顺序；若内容过长，读取有关段落并列明范围）：

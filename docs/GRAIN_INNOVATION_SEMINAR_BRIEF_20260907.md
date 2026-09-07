@@ -19,12 +19,12 @@ LLM 可以由人的会话、上下文、记忆形成与人格指标有一定关�
 ## 会话与边界
 
 继承上次只读研讨会话 d29dc2b0-f298-4891-a182-85bf073ca827；它继承原
-SUICA system review and analysis。新 fork 不写原会话。只允许读取公开汇总
+SUICA system review and analysis（保留旧会话名）。新 fork 不写原会话。只允许读取公开汇总
 文档、理论与源码；不读取 .env、凭证、原始作者文本、results 内逐人数组或
 私人量表。不得调用 Bash、编辑、写文件、网络、MCP、其它代理或重启实验。
 旧会话中的执行指令不适用于本次。只返回正式分析，不返回隐藏思考过程。
 
-资料根：/Volumes/mobile3/projects/Sliced Utterance In-Context Assessment。
+资料根（兼容旧目录名）：/Volumes/mobile3/projects/Sliced Utterance In-Context Assessment。
 优先阅读且最多六份，不重复全仓库：
 
 1. reports/grain_vector_mechanisms/PERSONA_RECIPROCITY_P1_REPORT.md

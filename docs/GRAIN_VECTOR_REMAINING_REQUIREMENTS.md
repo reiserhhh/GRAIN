@@ -1,5 +1,16 @@
 # Vector mechanism program: remaining requirements
 
+## Current mechanism cycle: 2026-09-07 20:08 JST
+
+P1B–P1F complete with independent numerical audits. Early-E/late-Q transport
+replicated in a fresh48-prompt panel; fixed small-operator transfer is conditional,
+not universal. Active goal recreated after the prior goal disappeared. Next P1G
+is cached query-coordinate/shape/gap decomposition, not old-queue resumption.
+See ROLE_QUERY_TRANSPORT_RESEARCH_REPORT and GRAIN_ACTIVE_RESEARCH_LOOP_V2.
+No new human personality validity, group mechanism or source-family completion
+is implied. Every older full-data requirement below remains open or completed
+exactly as recorded; resource reprioritization does not waive them.
+
 ## Execution priority override: 2026-09-07 19:11 JST
 
 The user requested stopping low-information long runs and advancing mechanism work.
