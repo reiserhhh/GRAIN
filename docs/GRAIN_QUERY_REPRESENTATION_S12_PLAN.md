@@ -75,3 +75,27 @@ with exact native head reconstruction retained as an implementation check.
 
 Outputs: results/grain_vector_mechanisms/query_representation_s12_r1/
 Report: reports/grain_vector_mechanisms/S12_QUERY_REPRESENTATION_REPORT.md.
+
+## Resource checkpoint and next-question routing
+
+24 authors/72 views complete in105.36seconds. S9 native replay error0;
+maximum native head reconstruction error2.83e-6. Full213 collection is worthwhile
+because it connects representations to the same defined useful source contrast;
+estimated total16minutes, within45-minute cap. No interim outcomes inspected.
+
+Interpret the paired comparisons, not only the largest number:
+- Query-state recovery beyond body mean supports a query-conditioned shortcut.
+  Next use a frozen prefix plus affine readout; verify exact prefix feature replay
+  and retained source association before claiming reduced computation.
+- Body mean recovering C as well as query state favors earlier-layer contextual
+  encoding over a uniquely query-created route. It differs from the failed E5
+  means because the underlying encoder and text context differ.
+- KV-pairing recovery ties the already specified relational vector to the source
+  contrast and motivates the Fisher-metric direction in the new theory note.
+- No recovery in these finite linear readers retains S9's positive intervention
+  result and points to a bounded joint/nonlinear readout comparison, not an
+  infinite ordinary-mean hyperparameter search or a claim of impossible recovery.
+
+Across all routes, a complete-teacher fit alone does not establish recovered C.
+Do not choose representation or sign on source Y. Report exposed-source evidence
+as discovery; leave new-domain and small-trait coverage for later mainline steps.
