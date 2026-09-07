@@ -1871,3 +1871,28 @@ witness sha feb4e7a3659d9306f32706c784b579c9e6918960a0053d9ce53d76667675b527。
 5 tests/0.18s、Ruff、format check、git diff check通过；没有重跑全repo测试。
 可读性note和4W目录增加互链；待长跑完成再做既定source配对，不提前用部分
 结果拟合新线索模型。真实作者的完整四项分解与响应函数识别仍未运行。
+
+### 用户指定 Claude 只读研讨（2026-09-07）
+
+复用已打开的SUICA system review and analysis开发上下文，经官方CLI fork为
+d29dc2b0-f298-4891-a182-85bf073ca827，原交互会话不接管、不并发改写。三轮实际
+claude-fable-5-1、effort max；前两轮工具白名单Read/Glob/Grep、第三轮无工具，
+全部plan+safe/restricted，无执行/写入/MCP。实际18 Read+1 Grep覆盖18文档，
+均成功；不是盲审或独立数据复现。三轮正式答复与metadata/tool audit保存在
+results/grain_vector_mechanisms/claude_seminar_20260907，不提交原始stream。
+
+讨论从用户“非语言化的向量推论”命题分出归属绑定、依赖证据聚合、功能读出与
+响应闭合。修正Claude提出的零跨CI即否定、Δ残差相关判据、只换输出编码向量、
+KL/MMD混同、BF16通用.125阈值等过强表述。保留新的非证据槽竞争候选：
+m(k)=(a0*m0+k*A*mbar)/(a0+k*A)。它是有效模型假说，不是完整LLM定律。
+Codex重视这条新理论线，Claude坚持绑定实证先行；最终执行顺序先绑定再聚合，
+不以两agent赞同代替数据。原长跑队列未改/未人工监督，本轮零神经forward。
+
+新增check_grain_seminar_witnesses.py及5 tests，连同上一轮5 tests共10通过。
+四类有限算术：残差r从.894升到1但固定分母贡献降至.224；当前读出相同但下一步
+不同；来源条件LR与平均均可有-.8重叠交互；null-slot平均与L2归一化均可饱和。
+首次packet/source.py保留，扩展写finite_witnesses_with_sink新目录。源sha
+862adbca3f7ff66b425614ddb75f0f871184739689469fa930f2dd2c0be4bb9d；输出sha
+df8506c47bbc045614ac79016a2dddc78dd81df97df998ddd258f772008f0e5a。
+仅核实VM04 author_effects表头，未做新作者级拟合；不虚构九trait hidden缓存。
+完整结论见reports/grain_vector_mechanisms/CODEX_CLAUDE_VECTOR_SEMINAR_20260907.md。
