@@ -36,6 +36,15 @@ Finalize exact clauses and token accounting in a new collector before any neural
 results. Verify that templates really have identical input-token prefix through N;
 no marker tricks or selecting a successful name/layer. No fit/no private data.
 
+## Collector freeze details
+
+All prompts use256 execution tokens (right padding and attention mask), MPS FP32,
+to avoid prefix comparisons with different GEMM shapes. Actual unpadded positions
+remain authoritative. State tolerance1e-5 is numerical, not psychological. N donors
+for every criterion come from the event-query cache of the same entity/opposite
+evidence after verifying shared N states. Q/EQD donors match the criterion. Report
+intended behavior direction separately from restoration of a possibly wrong donor.
+
 ## Decision
 
 If a common entity state affects factual and tendency queries in the correct
