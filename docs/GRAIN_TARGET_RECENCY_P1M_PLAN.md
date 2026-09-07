@@ -1,7 +1,7 @@
 # Next P1M: query target and record-order control
 
-2026-09-07. Planned, not executed. Continue independently; no new user/Claude input
-needed for these authored records. Freeze exact collector/material before forwards.
+2026-09-07. Prospective protocol; exact collector and tests now ready for freeze.
+Continue independently; no new user/Claude input needed for these authored records.
 
 ## Why this changes a decision
 
@@ -50,3 +50,16 @@ to this prompt family rather than declaring a generic yes-only mechanism. If rol
 effects reverse with action order, treat recency as a major alternative. If both
 controls survive, next test fresh compositional events/operators; do not yet expand
 to real authors/groups. No new private data, labels, model downloads, training or API.
+
+## Exact collector accounting
+
+`run_grain_target_recency.py` derives112 distinct prompts from the immutable P1J
+material, preserving every original person query byte-for-byte in the original
+order. Room is an object, not a third psychological subject: its signed contrast
+uses original record-level sign only as an indexing convention; report magnitude.
+Anchor patches are always within the same line order and named target. No state
+is swapped across changed prompt lengths or a different lexical entity. The source
+event-cache anchor is shared across the person's three criteria. Object anchors
+have no cross-criterion shared-state claim. One person and one object case receive
+self/restore controls. Order-reversal token layouts must match before any forward;
+failure is retained without silently trying a different wording or model.
