@@ -1,6 +1,8 @@
 # Next P1J: common-prefix entity state and criterion-conditioned reading
 
-2026-09-07. Planned, not executed. Motivation: audited P1I found substantial
+2026-09-07. Original prospective plan, frozen in dcc2eec; now executed and audited.
+Results are in ENTITY_STATE_AND_CODING_REPORT.md; the design below is retained.
+Motivation: audited P1I found substantial
 person-name-state effects in trait attribution, not stable criterion-word superiority.
 
 ## Remaining distinction

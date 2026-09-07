@@ -62,9 +62,12 @@ criterion phrase did not consistently beat equal-count random controls. Remainde
 positions retain effects. This motivates entity-bound evidence then criterion reading,
 not a discovered personality-name vector. See QUERY_ROLE_AND_BINDING_REPORT.md.
 
-Next P1J is GRAIN_ENTITY_STATE_P1J_PLAN.md: identical entity prefix before distinct
-criteria, both queried persons, finite paired interventions. Planned only; collector
-and exact materials still need freeze. No new data permission or Claude input needed.
+P1J is now complete and independently audited:196 forwards/87.28s, common-prefix
+state error0. The reused entity state affects both behavioral criteria, but also
+strongly shifts the unchanged-venue control. Reuse is observed; selective evidence
+reading is not established. See ENTITY_STATE_AND_CODING_REPORT.md. Next P1K crosses
+criterion polarity and answer coding to diagnose this carryover, with580 planned
+forwards and a650-call/600s cap. No new data permission or Claude input needed.
 
 The relevant decision is no longer merely where information resides, but what
 question-conditioned operator uses it. Preserve all old coding/venue/opportunity

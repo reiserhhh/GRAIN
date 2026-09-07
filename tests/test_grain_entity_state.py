@@ -1,9 +1,11 @@
 """Common-prefix material, ownership orientation and future-token safeguards."""
 
 import numpy as np
+import pandas as pd
 import pytest
 
-from scripts.run_grain_entity_state import material, verify_common_prefix
+from scripts.audit_grain_entity_state import scalar_audit
+from scripts.run_grain_entity_state import material, summarize, verify_common_prefix
 from scripts.run_grain_query_coordinate import material as parent_material
 
 
@@ -47,3 +49,54 @@ def test_shared_state_check_rejects_changed_prefix_or_state():
     layouts["trait"]["ids"][0] = 7
     with pytest.raises(ValueError):
         verify_common_prefix(rows, layouts, states)
+
+
+def test_independent_audit_rejects_incomplete_and_corrupted_scores():
+    rows = material(parent_material())
+    lookup = {
+        (r["group_id"], r["level"], r["entity"], r["criterion"]): r["case_id"]
+        for r in rows
+    }
+    base = pd.DataFrame(
+        [
+            {
+                **r,
+                "margin": float(r["role_sign"]),
+                "high_logit": float(r["role_sign"]),
+                "low_logit": 0.0,
+            }
+            for r in rows
+        ]
+    )
+    effects = pd.DataFrame(
+        [
+            {
+                **r,
+                "margin": float(-r["role_sign"]),
+                "high_logit": float(-r["role_sign"]),
+                "low_logit": 0.0,
+                "patch": patch,
+                "donor_case": lookup[
+                    r["group_id"], -r["level"], r["entity"], r["criterion"]
+                ],
+                "state_source_case": lookup[
+                    r["group_id"],
+                    -r["level"],
+                    r["entity"],
+                    "event" if patch == "N" else r["criterion"],
+                ],
+            }
+            for r in rows
+            for patch in ("N", "Q", "EQD")
+        ]
+    )
+    tables = summarize(base, effects)
+    args = [
+        tables[k] for k in ("transport_summary", "native_summary", "native_role_pairs")
+    ]
+    assert scalar_audit(base, effects, *args)["metric_replay_max"] == 0
+    with pytest.raises(ValueError, match="Incomplete"):
+        scalar_audit(base, effects.iloc[:-1], *args)
+    effects.loc[0, "high_logit"] += 1
+    with pytest.raises(ValueError, match="Scalar"):
+        scalar_audit(base, effects, *args)
