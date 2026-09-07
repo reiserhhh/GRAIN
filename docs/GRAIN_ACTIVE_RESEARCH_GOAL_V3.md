@@ -418,7 +418,7 @@ commit1e798b6; S18 code62d4da0. Keep T/F and exact N reference unchanged. Goal
 active; no user decision is needed. Do not reopen protected labels, run Claude,
 push private artifacts, restart old queues or alter frozen S12-S18 implementations.
 
-## Current checkpoint: S19-S20 complete; functional source link transported
+## Historical checkpoint: S19-S20 complete; functional source link transported
 
 S19 completed24authors,96forwards/72backwards,183.26seconds. Path completeness
 r=.99999977, endpoint replay0. Leave-author-out mean-gradient reconstruction
@@ -445,3 +445,50 @@ S19/S20 reports and theoryV4 are current;52 focused tests pass, two existing SWI
 warnings only. Code8b8d5f2/4bbbd7c. Active goal remains open; no user decision is
 needed. Preserve T/F, release scorer, protected labels, old queues and unrelated
 changes. Local commits only. Continue independently; do not request a new idea.
+
+## Current checkpoint: S21-S24 complete; S25 actual configuration source link next
+
+S21 completes12reference/12transfer authors across four matched numeric queries.
+216newforwards/108backwards,411.41seconds. Own-query reconstruction r is
+.9307/.9486/.8015/.6374 (N/confirmation/Feeling/content). N with the content
+reader gives-.0716, but with confirmation.8266. This finds shared and distinct
+operative directions despite very similar author/query pairing vectors.
+
+S22 defines the empirical response-function metric K=G Sigma_D G^T, invariant
+under invertible coordinate changes, and retains both content-aligned and
+orthogonal functions. Primary N/confirmation functional correlation.7150;
+first two query-function combinations contain94.76% of reference Gram trace.
+The N orthogonal function still reconstructs its transfer response at.9247.
+This is reference-defined function geometry, not newly named personality factors.
+
+S23 preserves S20's original24-author gradient and all213source predictions.
+On189 reference-excluded authors, total/aligned/orthogonal source N r is
+.2000/-.0344/.1946. Orthogonal p=.00730, bootstrapCI[.0529,.3298]; its paired
+delta versus total-.0054[-.0472,.0346]. The exact covariance identity locates
+the association primarily outside this content-reader function. Keep both
+parts; do not declare a noise deletion or a prediction-accuracy breakthrough.
+S22 andS23 need no new neural calls, no outcome-based fit or sign selection.
+
+S24 code/protocol d51628c completes the actual S9 native/projected body contrast
+on24authors/view0 with four hidden-state factorial cells. Total96forwards,
+0backwards,139.51seconds. All source endpoint and additive replay errors0.
+The original S20 gradient predicts the new symmetric head allocation at
+r=.95433[.88975,.97925], error/allocation-energy=.022989. The allocation itself
+correlates with C at.70647; other paths remain important. Head and other signed
+means partly cancel, so no RMS ratio is called a human variance fraction.
+No source questionnaire join or new fitting in this24-author mechanism packet.
+
+No neural collector is running. Next implement `GRAIN_CONFIGURATION_SOURCE_S25_PLAN.md`:
+one prefix plus local KV reprojection per view recovers the native/projected
+head difference, then uses fixed S20 gradient on all213three-view authors.
+Pilot8S24authors checks this shortcut's head replay, zero final-query change
+and forbidden suffix calls before continuing. Preferred639prefix calls,20minute
+cap; conservative fallback at most1278prefixes. Freeze scores before source N.
+Do not add overlapping pairing/configuration scores or fit a blend on source Y.
+
+Reports S21-S24, theoryV4 sections12-13 and the S25 plan are the current reasoning
+chain.85 focused tests pass, Ruff passes, two existing SWIG warnings only.
+Goal remains active; continue independently. The next step follows the measured
+source configuration path rather than enlarging the prompt/gradient grid.
+T/F and released scoring unchanged; old queues/protected data/cloud uploads/push
+remain off. No new user decision is required at this checkpoint.

@@ -318,3 +318,118 @@ Sources: the internal-path completeness adaptation of
 and finite sensitivity-spectrum algebra from
 [Constantine & Gleich2015](https://arxiv.org/abs/1408.0545).
 Reports: `S19_FUNCTIONAL_GRADIENT_REPORT.md`, `S20_FUNCTIONAL_TRANSFER_REPORT.md`.
+
+## 12. Shared evidence does not imply the same functional reader
+
+S21 holds numeric answers, native template and author text fixed across N,
+confirmation-seeking, numeric Feeling and quantitative-content questions.
+It measures12 reference and12 different transfer authors. Transfer pairing
+vectors have same-author cosine .891-.983 across questions, yet own-query
+functional effect reconstruction r=.931/.949/.801/.637. For N, borrowing
+confirmation gives .827, Feeling -.256 and content -.072. The response reading
+direction is therefore part of the mechanism, not only the retrieved evidence.
+Question length is not equalized; these are query-condition comparisons.
+
+An ordinary cosine between covectors depends on the chosen coordinates.
+For the actual reference displacement distribution, define the empirical
+response-function Gram matrix
+
+\[
+K_{rs}=\frac{1}{nQ}\sum_{u,q}
+ \big[g_r^T(d_{uq}-\bar d_q)\big]
+ \big[g_s^T(d_{uq}-\bar d_q)\big]
+ =g_r^T\Sigma_D g_s.
+\]
+
+This is positive semidefinite and invariant under d'=Ad, g'=A^{-T}g for any
+invertible A. It is a reference-specific L2 geometry, not a coordinate-free
+claim about every text distribution. Authors, not their repeated questions,
+are the independent units. Singular support is allowed; no covariance inverse
+is needed. The question-conditional centering controls query mean differences
+without removing within-query author variation.
+
+S22 finds functional N/confirmation correlation .715, N/Feeling -.578 and
+N/content -.379, versus native covector cosines .850/.316/.371. Thus a positive
+coordinate angle need not mean positive response covariation on the observed
+evidence. The first two of four function-space eigenvalues contain94.76% of
+Gram trace; these are combinations of query functions, not personality factors.
+
+Fix the content anchor c without using human outcomes. The retained decomposition
+
+\[
+\lambda_r=K_{rc}/K_{cc},\quad g_r^{\parallel}=\lambda_r g_c,
+\quad g_r^{\perp}=g_r-g_r^{\parallel},\quad
+z_{ur}=z_{ur}^{\parallel}+z_{ur}^{\perp}
+\]
+
+has zero pooled reference covariance between anchor and perpendicular function.
+It does not guarantee orthogonality on other populations or within each query.
+No channel is discarded. Own-query transfer response r for perpendicular parts
+remains .925/.924/.784 (N/confirmation/Feeling), versus .072/.475/.207 for
+aligned parts. This reveals distinct functional content without requiring an
+arbitrary Euclidean vector-space split.
+
+S23 uses S20's original24-author g_N, preserving its213 scores exactly, and
+the S21 content anchor/reference displacement distribution. Lambda=-.4810823.
+On189 nonreference authors, source N r=.2000 total, -.0344 aligned, .1946
+perpendicular (p=.00730, bootstrapCI [.0529,.3298]). The covariance identity is
+.0000610554=-.0000032820+.0000643374. Both signed parts remain in the formula.
+The source association resides primarily in the function distinct from this
+content anchor, not merely in a common numeric-answer direction. It is a source
+mechanism connection, not a new prediction gain or a pure psychological axis.
+
+The metric choice is informed by the distinction between measurement and
+intervention representations in
+[Park, Choe & Veitch2024](https://arxiv.org/html/2311.03658v2).
+Their causal inner-product identification requires extra conceptual and
+unembedding assumptions; this empirical displacement metric does not inherit
+that causal interpretation. The earlier readout/pattern distinction also
+follows [Haufe et al.2014](https://pubmed.ncbi.nlm.nih.gov/24239590/).
+Reports S21-S23 contain full matrices, uncertainty, retained components and
+source provenance. The next mainline target is the actual larger S9 C pathway,
+not further polishing of the already useful small pairing response E.
+
+## 13. The actual configuration contrast reaches the measured functional head
+
+S24 directly measures the useful S9 C, not just the pairing effect E. On24
+authors/view0, B denotes native/projected block16 body states, and H donates
+their corresponding layer17 final-query head. The four final scores yield
+
+\[
+C_u=F_{11}-F_{00}=\phi_{H,u}+\phi_{B,u},\qquad
+\phi_{H,u}=\tfrac12[(F_{11}-F_{10})+(F_{01}-F_{00})].
+\]
+
+The other allocation is the analogous average for B. Keep the interaction
+I=F11-F10-F01+F00 explicitly. This is the exact two-player order average of the
+declared computational game, as in
+[Lundberg & Lee2017, Eq4](https://proceedings.neurips.cc/paper_files/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf).
+It is not a unique natural mediation estimand for every possible intervention.
+
+Writing delta_h=h1-h0 and h(t)=h0+t*delta_h, the head allocation itself is
+
+\[
+\phi_{H,u}=\left\langle
+\frac12\int_0^1[\nabla F_{1,u}(h(t))+\nabla F_{0,u}(h(t))]dt,
+\Delta h_u\right\rangle.
+\]
+
+This exact differential expression averages two body backgrounds. Substituting
+the frozen S20 g_N gives a concrete error term: the covector difference dotted
+with delta_h. S24 finds that this approximation predicts the actual allocation
+at r=.95433[.88975,.97925], MSE/allocation-energy=.022989 without further fitting.
+Thus the shared functional direction transfers to a larger, source-relevant
+configuration displacement, not only the small pairing direction it was built on.
+
+Head/C r=.70647; head and other RMS=.00659190/.01165312 against C=.01350153.
+Their means .00577776 and-.00313095 partly cancel. RMS ratios are not variance
+fractions, and other/C r=.97978 includes an algebraic part-whole relation.
+Interaction RMS=.00113006. All source endpoint and allocation replays are0.
+Full runtime96forwards/139.51seconds; no new human outcomes are used.
+
+The next practical source score is mean_v g_N^T delta_h_uv, extracted with
+native/projected prefixes and no upper decoder. It must be compared with the
+existing pairing score rather than blindly added to it, because both read the
+same head space. S25 tests its source N connection; no new gradient grid is
+justified by S24's already small head approximation error. Other-path structure
+remains a separate useful mechanism, not a discarded nuisance term.
