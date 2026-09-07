@@ -246,3 +246,7 @@ Read the S9/S10/S11 aggregate reports under `reports/grain_vector_mechanisms/`.
 All code/result-source references are committed locally; no remote push. The
 active objective remains open because compact recovery of the useful component
 has not yet been established. Proceed independently from this mainline question.
+
+Final focused validation for this cycle:216 tests passed in18.23seconds; Ruff
+passed for all newly added/modified mechanism code. Only two existing SWIG
+deprecation warnings were reported. Unrelated worktree changes were preserved.

@@ -75,7 +75,7 @@ def test_overlapping_groups_rejected():
 def test_group_integrals_recover_pairing_with_native_group_mass_fixed():
     k, v, q = fixture()
     _, p = tilted_readout(k, v, q)
-    groups = [list(range(0, 5)), list(range(5, 11))]
+    groups = [list(range(5)), list(range(5, 11))]
     response = sum(
         p[ix].sum()
         * integrated_query_response(k[ix], v[ix], np.zeros_like(q), q, order=32)
