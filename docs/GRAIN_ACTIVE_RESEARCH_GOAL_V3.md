@@ -446,7 +446,7 @@ warnings only. Code8b8d5f2/4bbbd7c. Active goal remains open; no user decision i
 needed. Preserve T/F, release scorer, protected labels, old queues and unrelated
 changes. Local commits only. Continue independently; do not request a new idea.
 
-## Current checkpoint: S21-S24 complete; S25 actual configuration source link next
+## Historical checkpoint: S21-S24 complete; S25 actual configuration source link next
 
 S21 completes12reference/12transfer authors across four matched numeric queries.
 216newforwards/108backwards,411.41seconds. Own-query reconstruction r is
@@ -492,3 +492,23 @@ Goal remains active; continue independently. The next step follows the measured
 source configuration path rather than enlarging the prompt/gradient grid.
 T/F and released scoring unchanged; old queues/protected data/cloud uploads/push
 remain off. No new user decision is required at this checkpoint.
+
+## Current checkpoint: S25 source collection running; S26 retained-path accounting ready
+
+S25 implementation b6d2a53 is prepared and its eight-author/three-view pilot
+passes:24prefix calls plus24local KV reprojections in25.40seconds. Actual S24
+head replay error3.02e-6, scalar replay5.14e-8. No final-query change or suffix
+calls. The24-author functional gradient stays frozen.213-author collection
+is now running, with a projected676second cost inside the1200second cap.
+Inspect `configuration_source_s25_r1/run_status.json` and the live process handle
+before any new collector. Do not inspect source outcomes before complete scores.
+
+During collection S26 was specified and implemented without viewing S25 outcomes:
+Delta_head=d_pairing+r_remaining, so the shared covector gives
+z_config=z_pair+z_remaining. No part is deleted or declared independent.
+The zero-neural-call follow-up checks exact source covariance and variance
+accounting to locate reinforcement/cancellation. It will run only after S25
+scores freeze. See `GRAIN_CONFIGURATION_ACCOUNTING_S26_PLAN.md`.
+
+Focused S25 plus inherited tests:88passed. S26 adds3 passing finite algebra
+tests. No new model fit, protected labels, remote transmission or old queue.
