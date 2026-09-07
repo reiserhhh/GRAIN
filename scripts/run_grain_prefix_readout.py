@@ -64,7 +64,7 @@ def main():
     out = args.output_dir.resolve()
     if not out.is_relative_to(BASE):
         raise ValueError("Keep private outputs ignored")
-    manifest, material = verify(args.collection, args.device)
+    _manifest, material = verify(args.collection, args.device)
     analysis = args.collection / "analysis"
     oof_path = analysis / "private_oof_before_outcomes.csv"
     if sha(oof_path) != read(analysis / "summary.json")["oof_sha256"]:
@@ -129,7 +129,7 @@ def main():
                 raise ValueError("Source prompt changed")
             groups = token_groups(observer, user, spans, ids)
 
-            def prefix():
+            def prefix(ids=ids, groups=groups):
                 cache, trace = capture_prefix(observer, ids)
                 body, query = state_summaries(cache["boundary"], groups)
                 return {
@@ -138,7 +138,7 @@ def main():
                     "kv_pairing": prefix_pairing(cache, groups),
                 }, trace
 
-            def full():
+            def full(ids=ids, groups=groups):
                 return capture_representations(observer, ids, alphabet, groups)
 
             if i == 0 and view == 0:
