@@ -53,4 +53,11 @@ D2 now prioritizes TF's shared route and neuroticism's different-access route
 (native r=.2244 versus E5 .0417 on this Big5 subset). Use bounded real-author
 query-conditioned states and selected-evidence interventions, followed by GRAIN
 neighborhood pooling. Old queues and P1U remain parked; GRAIN's released
-deterministic scorer is unchanged. No D2 model run has been started yet.
+deterministic scorer is unchanged.
+
+D2 is now RUNNING:64 new source authors,128 two-view units,1156-forward budget.
+See `GRAIN_REAL_AUTHOR_PATH_D2_PLAN.md` and `GRAIN_QUERY_PATH_MATHEMATICS_V1.md`.
+The same frozen packet feeds D3's independent-neighborhood comparison and D4's
+held-author rank2/rank8 response operators; their analysis script is implemented
+and tested while neural collection proceeds. No source-label outcomes are read
+in D2-D4.

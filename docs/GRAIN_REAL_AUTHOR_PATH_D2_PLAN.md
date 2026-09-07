@@ -1,6 +1,6 @@
 # D2: real-author evidence and vector pathway discovery
 
-2026-09-08. Implements the discovery-first mainline after D1.
+2026-09-07. Implements the discovery-first mainline after D1.
 
 ## Question and finite packet
 
@@ -64,3 +64,22 @@ last-token vocabulary readout avoids allocating logits at every text token.
 All texts/author IDs/arrays remain in ignored results/. Publish aggregate results
 and formulas. Retain all fixed conditions. Source labels are unnecessary for this
 mechanism packet because D1 supplies the external association anchor.
+
+## Fixed cache analysis for D3/D4
+
+Declared while collection is running and before inspecting response outcomes:
+
+- D3 uses3-nearest discovery-author neighbors to predict held-author response
+  profiles. Compare frozen GRAIN whitened48 coordinates, identified16 landmark
+  distances, and cached E5 mean coordinates. The baseline is the discovery-author
+  mean profile. Scale response coordinates on discovery authors only.
+- The response profile has full score plus six changes: two removal, two retained-
+  subset, and two full-dose patch changes. Report every coordinate and aggregate.
+- D4 fits origin-preserving rank2 and rank8 linear operators on discovery-author
+  intervention vectors, using uncentered training SVD and ridge1. Compare a
+  norm-only scalar readout and zero-change baseline. Keep both ranks in the report.
+- Held-author results are descriptive response-generalization evidence. No held
+  results select ranks, neighbors, regularization, directions, or author membership.
+
+Execution: material64 authors/128 views prepared; process running with max1156
+forwards. Analysis entry: `scripts/analyze_grain_real_author_path.py`.
