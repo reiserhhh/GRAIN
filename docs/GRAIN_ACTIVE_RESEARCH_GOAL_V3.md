@@ -493,7 +493,7 @@ source configuration path rather than enlarging the prompt/gradient grid.
 T/F and released scoring unchanged; old queues/protected data/cloud uploads/push
 remain off. No new user decision is required at this checkpoint.
 
-## Current checkpoint: S25 source collection running; S26 retained-path accounting ready
+## Historical checkpoint: S25 source collection running; S26 retained-path accounting ready
 
 S25 implementation b6d2a53 is prepared and its eight-author/three-view pilot
 passes:24prefix calls plus24local KV reprojections in25.40seconds. Actual S24
@@ -512,3 +512,41 @@ scores freeze. See `GRAIN_CONFIGURATION_ACCOUNTING_S26_PLAN.md`.
 
 Focused S25 plus inherited tests:88passed. S26 adds3 passing finite algebra
 tests. No new model fit, protected labels, remote transmission or old queue.
+
+## Current checkpoint: S25-S26 complete; S27 query-carried configuration next
+
+S25 completes213authors/639views with639prefix calls plus639local KV reprojections
+in590.43seconds. No suffix/backward calls. All24S24/view0 actual heads replay
+to3.78e-6 and frozen scores to5.14e-8; query differences0. The compute shortcut
+is now verified, with no dual-prefix fallback. Code b6d2a53.
+
+Primary189 source N r: new configuration head.1160,p=.1119; pairing.2000,p=.0058;
+full S9 C.1989. Paired new-minus-pair delta-.0840[-.2131,.0315]. All213 new.1104
+versus pairing.1749. These are exposed source observations, not a new benchmark.
+The useful pairing route remains the reference; no source-selected blend.
+
+S26, pre-outcome plan/code e5d51e2, needs no new neural calls and.81seconds
+analysis. New configuration=pairing+retained remainder exactly. Primary source
+covariance retention96.20%, variance ratio2.74935: this yields the observed
+r ratio.580168. Remaining scalar N r=-.0060 but all three view-pair r are near.39.
+This is criterion-relative variance dilution, not evidence that stable remaining
+structure is globally noise. All213 remaining N r=.00039. Exact accounts and
+all source cohorts are retained. Vector addition error5.55e-17.
+
+Normalization-order prework e0fc5f8 proves a concrete mathematical candidate:
+within-group dispersion can become a mean shift through R(PH)-P(RH). Its
+Hessian formula agrees with autograd and has the predicted small-scale error
+on finite examples. It has not been measured as the cause of the source
+remainder. Defer a broad normalization experiment; prioritize the actual C path.
+
+No neural process remains running. Next implement `GRAIN_QUERY_CARRIER_S27_PLAN.md`:
+24authors/view0, native/projected residual-query states at blocks16/17/20/23/26/27;
+cross-patch the four interior cuts and measure two-order query-carried allocation.
+At most240forwards,0backwards,10minutes; first8resource checkpoint. No source Y
+join. Endpoint27 recovers C by construction, so finding useful earlier transport
+is the discriminating question, not claiming the mandatory endpoint as success.
+
+Reports S25/S26 and theoryV4 section14 are current.94focused tests pass, Ruff
+and whitespace checks pass, two existing SWIG warnings only. Goal active;
+continue independently without Claude or a new user idea. T/F, released scores,
+old queues, protected questionnaires/lockboxes and unrelated changes preserved.

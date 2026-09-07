@@ -433,3 +433,60 @@ existing pairing score rather than blindly added to it, because both read the
 same head space. S25 tests its source N connection; no new gradient grid is
 justified by S24's already small head approximation error. Other-path structure
 remains a separate useful mechanism, not a discarded nuisance term.
+
+## 14. A larger, more stable configuration is not automatically a better trait readout
+
+S25 completes the no-fit actual configuration-head readout on all213source N
+authors and three views. One native prefix plus local projected KV computation
+replays the actual S24 heads to3.78e-6 and scores to5.14e-8; it takes639prefixes,
+639local reprojections,590.43seconds, with no suffix or backward calls.
+The layer17 query is unchanged by the body-only block16 projection. The local
+computation uses original RMSNorm and K,V maps, not a new learned encoder.
+
+On189authors outside the gradient reference, z_config has N r=.1160 versus
+z_pair=.2000; paired delta-.0840[-.2131,.0315]. Full S9 C has r=.1989. The
+configuration-head score correlates with C only.0811 on this three-view source
+panel. Preserve S24's strong internal head reconstruction at its measured scope;
+do not substitute it for population-wide recovery of C or human predictions.
+
+S26 provides the exact retained-path account, fixed before S25 outcomes:
+
+\[
+\Delta h=d_{pair}+r,\quad
+r=\sum_G P_G\bar V_G+\sum_{i\notin body}p_iV_i-h_{projected},\quad
+z_{config}=z_{pair}+z_r.
+\]
+
+Primary189 N covariance is5.87345e-5=6.10554e-5-2.32094e-6. The new score keeps
+96.20% of pairing's signed covariance, but has2.74935times its variance. Hence
+
+\[
+\frac{\operatorname{Corr}(Y,z_{config})}{\operatorname{Corr}(Y,z_{pair})}
+=\frac{\operatorname{Cov}(Y,z_{config})}{\operatorname{Cov}(Y,z_{pair})}
+\sqrt{\frac{\operatorname{Var}(z_{pair})}{\operatorname{Var}(z_{config})}}
+=.580168.
+\]
+
+This explains the observed .1160/.2000 ratio as mainly variance dilution, not
+destruction of the useful covariance. It is sample accounting, not evidence
+that the population performance difference is significant. Remaining score
+source N r=-.0060,p=.9347, while its three view-pair correlations are all near
+.39. Greater cross-text consistency alone therefore does not identify the
+criterion-relevant component. This result favors keeping stable components
+separate and trait-conditioned rather than treating every stable axis as the
+same psychological signal or deleting it globally as noise.
+
+The native-coordinate pairing/remaining cosine is about-.30, yet the functional
+scalar cross-covariance is small and positive on primary189. Vector angles,
+functional response covariance and human criterion covariance are different
+levels of the formula. S26 leaves all three visible without demanding that
+they agree. No new source-label-trained blend is introduced.
+
+One mathematical candidate within r is noncommutation of normalization and
+within-comment averaging: J=R(PH)-P(RH), with PJ=J. It converts within-group
+dispersion into a group-mean shift. The closed second-order Hessian contraction
+and finite tests are in `GRAIN_NORMALIZATION_ORDER_MECHANISM_NOTE.md`, based on
+the [RMSNorm equation](https://papers.nips.cc/paper_files/paper/2019/file/1e8a19426224ca89e83cef47f1e7f53b-Paper.pdf).
+Its real-source size remains a later question; do not label all remaining
+variation normalization. The immediate source-relevant target is the later
+query-carried portion of C, described in `GRAIN_QUERY_CARRIER_S27_PLAN.md`.
