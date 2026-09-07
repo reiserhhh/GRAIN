@@ -138,3 +138,92 @@ are complete. S6 follows the bounded protocol in
 actual mean-preservation error, endpoint effects, quadrature gaps and computation
 cost before choosing a further experiment. Do not resume the old observer queues
 or interpret student-grid exhaustion as proof that the mainline is impossible.
+
+## 6. Group averaging separates two mechanisms inside that configuration
+
+The mean-null effect combines a change of dispersion with a change of arrangement.
+Take G to be the product of permutation groups acting within the selected comment
+rows. Every gH preserves the complete unordered multiset of states per comment.
+There are two distinct averages:
+
+\[
+\Pi H=|G|^{-1}\sum_{g\in G}gH,
+\qquad (\mathcal R s_q)(H)=|G|^{-1}\sum_{g\in G}s_q(gH).
+\]
+
+The first averages representations; the second averages judgments. They commute
+for an affine readout, but not for a general nonlinear readout. The identity
+
+\[
+s_q(H)=s_q(\Pi H)
++\underbrace{[s_q(H)-(\mathcal R s_q)(H)]}_{\text{arrangement-sensitive response}}
++\underbrace{[(\mathcal R s_q)(H)-s_q(\Pi H)]}_{\text{nonlinear distribution response}}
+\]
+
+keeps both mechanisms without declaring either to be noise. The last term is
+a signed Jensen-type gap; a neural readout is not assumed convex. The middle
+term describes this state's position on its permutation orbit, not an author's
+population norm or a psychological score in its own right.
+
+The exact group-average function is invariant because multiplication by a group
+element only reorders the sum. Under an appropriate group-invariant measure,
+averaging is also an orthogonal projection on invariant functions. The natural
+author/text distribution is not assumed to have that symmetry, so the three
+components above are not reported as independent psychological variances.
+
+S7 approximates the judgment average with three fixed uniform permutations per
+comment set. The empirical accounting remains algebraically exact; approximation
+to the full group average has Monte Carlo error, which is recorded separately.
+An effect under permutation directly shows sensitivity beyond the unordered bag
+of these hidden states. It can include the decoder's positional machinery; it
+does not mean that shuffling real words preserves their meaning.
+
+This draws on finite-group representation theory (Etingof et al.,
+[Sections4.1 and4.6](https://math.mit.edu/~etingof/reprbook.pdf)) and
+[Deep Sets](https://papers.nips.cc/paper/6931-deep-sets.pdf). The latter motivates
+the distinction between invariant functions and order-sensitive functions; its
+sum-representation results have domain/size assumptions and do not make our
+finite256-feature bag approximation universally sufficient.
+
+## 7. S7 points to a curvature-weighted covariance operator
+
+[S6](../reports/grain_vector_mechanisms/S6_MEAN_NULL_PATH_REPORT.md) and
+[S7](../reports/grain_vector_mechanisms/S7_ORBIT_RESPONSE_REPORT.md) are complete.
+The matched N/confirmation association lies mainly in the nonlinear distribution
+component (r=.9730), not the estimated arrangement component (r=-.0776).
+
+Write r_g=vec(gH-Pi H), K_q=Hessian(s_q)(Pi H). Under a twice differentiable
+local expansion with a controlled remainder,
+
+\[
+(\mathcal R s_q)(H)-s_q(\Pi H)
+=\tfrac12\operatorname{tr}(K_q\Sigma_G)+E_g[\mathrm{Rem}_q(r_g)],
+\qquad \Sigma_G=E_g[r_g r_g^T].
+\]
+
+The linear term cancels because the orbit displacement has zero group mean.
+This expression is a proposed approximation when the remainder is omitted,
+not a claim that S7 already estimated a Hessian. Functional sensitivity selects
+which variance matters, reconnecting S0's function-preserving reduction to the
+token-configuration mechanism.
+
+There is useful exact structure in Sigma_G. For a selected comment of n>1
+centered state rows R_i with C=(1/n)sum_i R_i R_i^T, uniform permutation gives
+
+\[
+\operatorname{Cov}(R_{g(i)},R_{g(j)})=
+\begin{cases}C&i=j,\\-C/(n-1)&i\ne j.\end{cases}
+\]
+
+Different independently permuted comments have zero cross-covariance. For n=1
+the residual is zero. This permits an analytical covariance or matrix-vector
+product without materializing a gigantic token-by-hidden covariance matrix.
+The corresponding Hessian contraction combines diagonal token sensitivity and
+cross-token interactions with known coefficients. This is the next experiment,
+not yet an established lightweight personality predictor.
+
+Implementation seed: `grain_research/vector_mechanisms/orbit_geometry.py`
+applies Sigma_G without constructing the full covariance. Four synthetic tests
+enumerate complete small permutation groups and verify both the covariance
+action and the quadratic Hessian contraction. The proposed neural S8 curvature
+experiment has not run yet.

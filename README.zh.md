@@ -19,6 +19,13 @@ GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然�
 
 ## 功能路径研究（2026-09-08）
 
+[S5学生扩展](reports/grain_vector_mechanisms/S5_STUDENT_REMAINDER_REPORT.md)与
+[S6/S7构型实验](reports/grain_vector_mechanisms/S7_ORBIT_RESPONSE_REPORT.md)已完成。
+保持评论向量均值不变，仍能测到解码器判断的变化。8名作者上，神经质/寻求确认
+的共享作用主要位于非线性分布响应（r=.973），而非排列响应。这是内部干预指标，
+不是人格预测相关。[理论V3](docs/GRAIN_AGGREGATE_CONFIGURATION_THEORY_V3.md)
+据此发展群平均与曲率—协方差算子。
+
 [S0–S4研究loop](reports/grain_vector_mechanisms/S0_S4_FUNCTIONAL_LOOP_REPORT.md)已完成。
 功能坐标算子在24名新作者上的TF/N内部响应r=.842/.871。仅用LLM评分训练、
 不使用问卷标签拟合的E5/PCA/Ridge学生，在2328名source作者上TF AUC=.717，

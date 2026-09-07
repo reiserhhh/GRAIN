@@ -156,3 +156,31 @@ and the invariant-function perspective in
 Do not infer that a mean is sufficient for every invariant nonlinear function.
 This experiment can decide whether the next lightweight representation should
 prioritize ordering/positions, distributional spread, or both.
+
+## Current checkpoint after S7
+
+S5A, S5B, S6 and S7 are COMPLETE. No child experiment remains running. S7 took
+239seconds/168 forwards and localized the shared N/confirmation response to
+the nonlinear distribution term: r=.9730 [.8575,.9928]; ordering term r=-.0776.
+Together S6/S7 cost322 forwards and154 backwards, about9.3minutes after loading.
+The active goal remains open; this is a completed cycle, not universal closure.
+
+Next: S8 tests the curvature-times-orbit-covariance expression in theory V3.
+The exact matrix-free permutation covariance and its quadratic contraction now
+pass four synthetic full-group enumeration tests (`orbit_geometry.py`). These
+are mathematical witnesses, not new neural data. Next use a bounded fixed
+author/query panel and symmetric finite differences or
+supported Hessian-vector products to compare the quadratic approximation with
+actual distribution response at multiple radii. Keep the same queries and
+authors, no outcome-driven reselection. Distinguish small-radius approximation
+from full-radius performance. If useful, fit a low-rank query-specific operator.
+
+After that mechanism step, connect it to N's actual teacher-minus-student
+covariance on the authorized D1 source authors. Verify D1 observer/text identity
+before making any new neural measurements; match the same three views. S6/S7
+used different authors, so do not claim they have already explained the D1
+external remainder. Do not open bridge/MEPS/lockbox or resume old queues.
+
+Current deliverables: S5/S6/S7 reports, theory V3, four runners and their tests.
+189 focused tests plus four exact-geometry tests pass. All private artifacts remain ignored. Continue from
+these paths, not the dated training instructions in the parent AGENTS file.

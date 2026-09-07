@@ -24,6 +24,14 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Real-author mechanism result (2026-09-08)
 
+The autonomous [S5 follow-up](reports/grain_vector_mechanisms/S5_STUDENT_REMAINDER_REPORT.md)
+and [S6/S7 configuration experiments](reports/grain_vector_mechanisms/S7_ORBIT_RESPONSE_REPORT.md)
+are complete. Preserving comment means still permits measurable decoder-response
+changes. N/confirmation sharing localizes mainly to nonlinear distribution
+response (r=.973 on8 authors), rather than ordering response. These are internal
+intervention metrics. [Theory V3](docs/GRAIN_AGGREGATE_CONFIGURATION_THEORY_V3.md)
+develops the corresponding group-average and curvature/covariance operators.
+
 The [functional S0-S4 loop](reports/grain_vector_mechanisms/S0_S4_FUNCTIONAL_LOOP_REPORT.md)
 is now complete. Functional-coordinate operators transfer to24 new authors at
 TF/N response r=.842/.871. A teacher-score-only E5/PCA/Ridge student reaches

@@ -106,3 +106,15 @@ r=.0673 vs native .1765. Teacher/label covariance retention is approximately
 Keep the simple TF path. Next neural work should locate the N remainder through
 multi-position, query-conditioned evidence relations, not resume old queues.
 H5 persona-writing/readout duality remains unexecuted in this packet.
+
+## Autonomous continuation: S5-S7
+
+S5A/S5B/S6/S7 are complete. The new active goal is tracked in
+`GRAIN_ACTIVE_RESEARCH_GOAL_V3.md`. Response-directed PLS and kernel-distribution
+students improve some teacher-fit metrics but do not recover the N external
+remainder. S6 directly identifies mean-preserving token-configuration effects;
+S7 places the N/confirmation shared response in the nonlinear distribution
+component (r=.9730), not the permutation-sensitive component (r=-.0776).
+See `GRAIN_AGGREGATE_CONFIGURATION_THEORY_V3.md` and the S5/S6/S7 reports.
+Next is a bounded curvature-times-permutation-covariance test; four synthetic
+operator tests already pass. No old queue or protected label set was reopened.

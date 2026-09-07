@@ -22,6 +22,14 @@ GRAIN はテキストに基づく測定研究のための基盤分析法であ�
 
 ## 機能的経路の研究（2026-09-08）
 
+[S5の学習器比較](reports/grain_vector_mechanisms/S5_STUDENT_REMAINDER_REPORT.md)と
+[S6/S7の配置実験](reports/grain_vector_mechanisms/S7_ORBIT_RESPONSE_REPORT.md)が完了した。
+コメントのベクトル平均を保存しても，デコーダーの判断は変化した。8名の著者では，
+神経症傾向と確認希求の共通応答は，配置順序よりも分布への非線形応答に現れた
+（r=.973）。これは内部介入の指標であり，人格予測の相関ではない。
+[理論V3](docs/GRAIN_AGGREGATE_CONFIGURATION_THEORY_V3.md)で群平均と
+曲率・共分散に基づく演算子を整理している。
+
 [S0–S4の研究](reports/grain_vector_mechanisms/S0_S4_FUNCTIONAL_LOOP_REPORT.md)が完了した。
 機能に基づく座標で学習した演算子は，新規24名のTF/N介入応答をr=.842/.871で再現した。
 質問紙ラベルを学習に使わず，LLMの評定だけから学習したE5/PCA/Ridgeモデルは，
