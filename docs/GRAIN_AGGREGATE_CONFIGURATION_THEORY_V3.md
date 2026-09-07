@@ -219,11 +219,72 @@ Different independently permuted comments have zero cross-covariance. For n=1
 the residual is zero. This permits an analytical covariance or matrix-vector
 product without materializing a gigantic token-by-hidden covariance matrix.
 The corresponding Hessian contraction combines diagonal token sensitivity and
-cross-token interactions with known coefficients. This is the next experiment,
-not yet an established lightweight personality predictor.
+cross-token interactions with known coefficients. This supplies the local
+approximation tested in S8, not an established lightweight personality predictor.
 
 Implementation seed: `grain_research/vector_mechanisms/orbit_geometry.py`
 applies Sigma_G without constructing the full covariance. Four synthetic tests
 enumerate complete small permutation groups and verify both the covariance
-action and the quadratic Hessian contraction. The proposed neural S8 curvature
-experiment has not run yet.
+action and the quadratic Hessian contraction. The neural S8 curvature experiment
+is now complete; see the refinement below.
+
+## 8. S8 refines local curvature into a path-dependent operator
+
+[S8](../reports/grain_vector_mechanisms/S8_ORBIT_CURVATURE_REPORT.md) estimates
+one fixed directional contraction per condition, not a full Hessian trace.
+Small-radius coefficients predict N's held full-radius response with r=.7537
+and MSE/zero=.7177. T/F gives r=-.2056 and MSE/zero=6.2142. Confirmation shows
+half-radius ordering (.7338) but miscalibrated amplitude (MSE/zero=1.8611).
+Shared N/confirmation local quadratic response is r=.7117 [.4245,.8717].
+
+The correct global object, for a C2 suffix, is the integral remainder:
+
+\[
+s_q(m+r)-s_q(m)=\nabla s_q(m)^T r+
+\int_0^1(1-t)r^T K_q(m+tr)r\,dt.
+\]
+
+Uniform averaging over the finite group eliminates only the initial linear term:
+
+\[
+(\mathcal R s_q)(H)-s_q(m)
+=\int_0^1(1-t)E_g[r_g^T K_q(m+t r_g)r_g]\,dt.
+\]
+
+The Hessian can depend on the direction and the position along its path. Pulling
+it outside that expectation and integral is an approximation, not an identity.
+Thus S8 narrows the constant-curvature proposal without discarding the established
+configuration effect. It directs development toward query-conditioned integrated
+operators rather than assuming one quadratic law for all traits.
+
+`integrated_hessian_contraction` in `orbit_geometry.py` now implements bounded
+Gauss-Legendre integration of an externally supplied Hessian-vector product.
+Four synthetic tests cover exact quadratic contraction, a quartic mean-null
+effect with zero local curvature, full finite-group nonlinear averaging, and
+invalid outputs. The quartic witness shows why a zero Hessian at the center
+does not imply no nonlinear configuration signal. This is verified algebra and
+reusable numerical code, not an additional neural collection or psychometric result.
+
+Important representational boundary: Pi H retains the query and unselected token
+states, which already contain earlier-layer contextual information. The mean-null
+experiment tests a suffix's use of selected token configurations conditional on
+that retained information. It does not turn the whole decoder into a mean-only
+encoder and does not exhaust all routes that carried configuration upstream.
+
+## 9. Connect the operator to the observed source remainder
+
+[S9](GRAIN_SOURCE_REMAINDER_S9_PLAN.md) keeps the frozen S4 student f, the exact
+old three-view texts, and all213 N source authors, with64 hash-selected T/F controls.
+Let S_old be the original CUDA/BF16 score, S_new the paired MPS/FP32 origin,
+and M the all-comment projected suffix score. Then
+
+\[
+S_{old}-f=(S_{old}-S_{new})+(S_{new}-M)+(M-f).
+\]
+
+Linearity gives the same equality after Cov(Y,.) is applied. The terms measure
+observer-condition difference, token-configuration intervention response, and
+the remaining projected-suffix/student difference. The last term can include
+retained query-state information, not just comment means. None is automatically
+an independent fraction of human personality variance. Scores are frozen before
+the already authorized source outcomes are joined; no estimator is selected on Y.

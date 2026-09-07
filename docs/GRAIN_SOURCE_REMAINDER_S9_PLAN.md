@@ -34,6 +34,11 @@ noise or independent personality variance. S_new-M is a function intervention,
 not a human-trait intervention. It includes all token configuration, not just
 S7's estimated nonlinear permutation component.
 
+Clarification before outcome inspection: the projected endpoint retains query
+states already contextualized in earlier layers. Thus M-f is the **projected
+suffix** remainder, not pure mean-embedding error. The CSV name `mean_remainder`
+refers to the intervention endpoint, not information-theoretic sufficiency.
+
 ## Execution and resource decisions
 
 Prepare and verify277 authors/831 views without labels or neural inference.

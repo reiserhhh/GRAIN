@@ -157,7 +157,7 @@ Do not infer that a mean is sufficient for every invariant nonlinear function.
 This experiment can decide whether the next lightweight representation should
 prioritize ordering/positions, distributional spread, or both.
 
-## Current checkpoint after S7
+## Historical checkpoint after S7
 
 S5A, S5B, S6 and S7 are COMPLETE. No child experiment remains running. S7 took
 239seconds/168 forwards and localized the shared N/confirmation response to
@@ -181,6 +181,33 @@ before making any new neural measurements; match the same three views. S6/S7
 used different authors, so do not claim they have already explained the D1
 external remainder. Do not open bridge/MEPS/lockbox or resume old queues.
 
-Current deliverables: S5/S6/S7 reports, theory V3, four runners and their tests.
+Deliverables at that checkpoint: S5/S6/S7 reports, theory V3, four runners and their tests.
 189 focused tests plus four exact-geometry tests pass. All private artifacts remain ignored. Continue from
 these paths, not the dated training instructions in the parent AGENTS file.
+
+## Current checkpoint: S8 complete, S9 source experiment running
+
+S8 completed384 forwards,0 backwards in544.8seconds. A small-radius quadratic
+predicts N full-radius internal effects with r=.7537 and MSE/zero=.7177, but
+not T/F (r=-.2056; MSE/zero=6.2142). Shared N/confirmation curvature r=.7117.
+The exact general formula retains a Hessian that varies along each path; its
+one-point covariance contraction is a useful local approximation, not universal.
+See [S8 report](../reports/grain_vector_mechanisms/S8_ORBIT_CURVATURE_REPORT.md).
+
+S9 now directly targets the actual213 N source authors and64 fixed T/F controls.
+The old teacher used CUDA/BF16/padding3072; the paired new collector uses the
+same model checkpoint on MPS/FP32 without padding. Decompose the frozen student
+remainder into observer-condition difference, all-comment configuration response,
+and projected-suffix/student remainder. Keep the query state unchanged and state
+that it can carry earlier-layer contextual information. This is not a mean-only
+encoder sufficiency test.
+
+Prepared277 authors/831 views with exact old token hashes. Run48 authors as a
+resource-only checkpoint, then decide whether to finish the fixed cohort. At most
+1662 forwards,0 backwards, one-hour cap; no parallel GPU collectors. No Y connection
+until all cohort components have been written and hashed. Existing source outcomes
+only; no bridge/MEPS/lockbox, retraining, external API, or old-queue restart.
+
+S9 output: `results/grain_vector_mechanisms/source_remainder_s9_r1/`.
+S9 protocol/code are locally committed as431db14. Use `run_status.json` for live
+progress, not the historic checkpoint above. The overall goal remains active.
