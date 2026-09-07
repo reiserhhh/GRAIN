@@ -212,7 +212,7 @@ S9 output: `results/grain_vector_mechanisms/source_remainder_s9_r1/`.
 S9 protocol/code are locally committed as431db14. Use `run_status.json` for live
 progress, not the historic checkpoint above. The overall goal remains active.
 
-## Current checkpoint: S9/S10/S11 complete, source configuration link found
+## Completed checkpoint: S9/S10/S11, source configuration link found
 
 S9 completed all277 authors/1662 forwards in2431.4seconds. N configuration
 contrast C=S_new-M has r=.2116 with source Y, p=.00191; Cov(Y,C)=.001046 with
@@ -250,3 +250,20 @@ has not yet been established. Proceed independently from this mainline question.
 Final focused validation for this cycle:216 tests passed in18.23seconds; Ruff
 passed for all newly added/modified mechanism code. Only two existing SWIG
 deprecation warnings were reported. Unrelated worktree changes were preserved.
+
+## Current checkpoint: S12 collection running
+
+The frozen source representation protocol is locally committed as0c3c046 and
+its paired readers as8f866f9. Same213 N authors,3views; one forward captures
+block16 equal-comment body mean, final query state, and layer17 KV-pairing vector.
+The24-author pilot completed72 forwards in105.36seconds, origin replay error0,
+head reconstruction error2.83e-6. Full213 collection resumed; inspect
+`results/grain_vector_mechanisms/query_representation_s12_r1/run_status.json`.
+Do not launch another neural collector. Analysis runs after COMPLETE via
+`scripts/analyze_grain_query_representation.py`, using all18 frozen teacher-only
+arms, then the same exposed source outcomes. Source T/F success remains frozen.
+
+Parallel theory work adds Fisher-metric query accessibility and its weighted
+projection derivation in`GRAIN_QUERY_INFORMATION_GEOMETRY_V1.md`;3 new finite
+tests pass. This describes token-weighted local value access, not personality
+variance. Source/outcome conclusions await S12; no new protected data are needed.
