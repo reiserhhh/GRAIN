@@ -343,7 +343,7 @@ The full run cap is639 calls/25minutes. Do not launch another neural process.
 S13/S14 reports, theory V4 and S15 protocol/code are committed locally.
 The active research goal remains open. No new user input is required.
 
-## Current checkpoint: S13-S15 complete, S16 gain decomposition next
+## Historical checkpoint: S13-S15 complete, S16 gain decomposition next
 
 S15 completed all213 authors/639prefix calls in583.01seconds, including the
 label-free24-author resource pilot. Exact-mass joint covariance reconstructs
@@ -367,3 +367,31 @@ Theory V4 preserves the exact relational, conditional and exponential-tilt
 formulas, with explicit finite approximations.67 focused tests pass, Ruff and
 diff whitespace checks pass. Active goal remains open; private outputs ignored,
 no remote push, protected-label restrictions and source T/F control unchanged.
+
+## Current checkpoint: S16-S17 complete; S18 reader-pattern intervention
+
+S16 completed24 authors/72prefixes/67.12seconds, no questionnaire join. Gain,
+relative comment allocation and conditional curvature each contribute. Fixed
+second-order conditional expansion improves exact-reader r=.773 -> .948 and
+MSE/exact-author-variance=.742 -> .222 on this pilot.
+
+S17 reused those24 authors and collected189 more/567prefixes/520.33seconds.
+New189: second-order r=.920711,error=.318792; first-order .854969/.708774.
+All213: second-order .925021/.301820. Target-C r=.307056; source N r=.125430
+versus exact.133706, paired delta-.008276[-.062050,.046117]. Formula selection
+preceded continuation; full scores froze before exposed source Y connection.
+Keep exact reading as reference, second order as useful mechanism approximation.
+
+S18 is now prepared and running as a separate168-forward/24-author/view0 pilot.
+Read `results/grain_vector_mechanisms/reader_pattern_s18_r1/run_status.json` for
+live state. It converts each frozen fold reader beta into a training-covariance
+activation pattern and compares it with Euclidean projection. Remove the
+reader-selected and reader-null pairing components separately at the actual
+layer17 head output. Keep nonlinear interaction; no outcome fit or label access.
+The question is whether the learned readout corresponds to an operative vector
+pathway, not whether another hyperparameter improves a benchmark.
+
+S16-S17 reports and theory V4 are updated. S17 code/protocol a306320; S18
+code/protocol62d4da0.42 focused tests pass after the new geometry/continuation
+modules. One neural collector only; no Claude, remote push, LoRA, private text
+upload, protected data or old queue. Active goal remains open.

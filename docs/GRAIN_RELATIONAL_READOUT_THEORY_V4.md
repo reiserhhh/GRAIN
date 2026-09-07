@@ -1,8 +1,8 @@
 # GRAIN V4: a relational readout of contextual evidence
 
 2026-09-08. Continuation of the aggregate/configuration theory V3, not a new
-release of the GRAIN measurement system. S9-S13 provide the empirical starting
-point; S14 tests the shared-query decomposition below.
+release of the GRAIN measurement system. S9-S17 connect the empirical source
+response, shared-query decomposition and conditional-curvature approximation.
 
 ## 1. The object is a joint relation, not just a bag of vectors
 
@@ -217,6 +217,38 @@ within-comment higher-order relationships. If the approximation succeeds, it
 offers a concrete sufficient-statistic candidate for this readout and data,
 not universal sufficiency for all psychology. S14 decides whether the frozen
 common query or native query should be the fixed operating point for that test.
+
+## 9. Empirical closure of the finite moment question: S15-S17
+
+S15 found that preserving exact comment mass is critical: uniform covariance
+has MSE/exact-author-variance1034.28; exact-mass covariance.7011. Gaussian mass
+approximation gives3.7979. S16 independently decomposed A=B sum_G r_G D_G,
+where B=sum_G P_G and r_G=P_G/B. Total body gain repairs most scale distortion,
+but conditional comment allocation and response curvature still contribute.
+
+The working finite approximation is now
+
+\[
+\widehat C^{(2)}_u=b_f+\frac13\sum_{v,h,G}\beta_{f,h}^T P_{u,v,h,G}(q_0)
+\left[\operatorname{Cov}_G(V,L)
++\frac12 E_G[(V-E_GV)(L-E_GL)^2]\right],\quad L=q_0^TK.
+\]
+
+S17 reuses24 pilot authors and measures189 additional source authors. Internal
+exact-reader correlation is.9207 on new189 and.9250 on all213; corresponding
+normalized errors.3188/.3018. Source N r=.1254 versus exact.1337; paired delta
+-.0083[-.0621,.0461]. This supports a finite mathematical approximation to the
+relational readout, not a human prediction advantage or a universal truncation.
+It still uses contextualized prefix K,V and exact masses; it is not yet a
+standalone raw-text formula or a complete replacement for pretrained semantics.
+
+The next mathematical distinction is between a decoding covector beta and an
+intervention vector. A training-covariance forward pattern
+a=Sigma beta/(beta^T Sigma beta) defines d_s=a beta^T d and d_n=d-d_s;
+the reader sees d_s and annihilates d_n. The nonlinear suffix need not do so.
+S18 tests that difference directly, retaining selected/null interaction instead
+of forcing linear additivity. See `GRAIN_READER_PATTERN_S18_PLAN.md` for the
+source literature, metric assumptions, finite tests and fixed intervention.
 
 S15 now completes that comparison at the common query: exact-mass covariance
 reader fidelity r=.847179,MSE/exact-author-variance=.701136; uniform masses
