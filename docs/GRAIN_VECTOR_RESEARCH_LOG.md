@@ -1788,3 +1788,50 @@ Mac已验44片2464人221760数组；不是用远端status替代本地验收。�
 本轮不新增心理结论、prompt、LLM训练或label读取，不重跑已完成模型，
 不改冻结评分代码。原全secondary/history/direct/strong null/同ready其余/
 源头封头后bridge/VM07仍保持；goal active，并非阻塞，不需用户新idea。
+
+## 第三十七轮：两队列预算交接与直接评分实际启动（2026-09-07）
+
+只读监督32次/9313.595s保存于vm05_supervision_round37_r1。结束attention
+来自Mac原98301自然预算暂停而非卡死，159/315、exit0、owner/child均退出。
+在vm05_secondary_resume_round37_r1保留旧manifest/status及其hash后，显式
+相同argv --resume-completed。原159验收记录逐项相等，manifest identity
+7edc2cc6eed10fe5a91b13cfee7ae66ce8e4b0ebe960e152191736dc202010fe
+不变。新15034/session79587于09:58实测161，11:32已192/315；保持原
+8h invocation/1h child/8GiB限制及全部CPU前驱锁。部分成绩不用于选赢家。
+
+37f2f7e仅加direct queue状态I/O wrapper，不改原collector/queue等冻结
+评分源码。只对指定queue_status.json的WinError5/32/33做五次等待，总计
+1.55s；其它错误立即抛出，永久失败保留原异常。journal放输出旁边，避免
+破坏fresh非空目录拒绝。13组合tests/format/Ruff/diff通过；Mac fresh+
+explicit resume和Windows fresh真实零forward资格均由原budget gate
+暂停，无partial shard、无标签读取。Windows六证据文件复制后逐sha验。
+wrapper sha ab084f1bdf1d102718dce253cd9e25f8e3160509d77d1b92f1397b65bac34064；
+原通用guard c3e450cd0b57d1492a82e83e89c944b4c3bedc911843d074a50663180765ef56。
+
+Windows history628在65/128、3640作者、9,169,691,024 cachebytes处
+PAUSED_BUDGET_BETWEEN_SHARDS、next065，owner与child均退出。等待launcher
+69244于11:25:42确认原require_idle_history及16源码hash后才启动direct
+48952/session23843。11:35实测首片完成、child58760在001继续，非仅进程
+存在。queue identity d4ab99f0c1fba79c4c07aa14a588242bdc93605886c6cf98a2317030c7097296。
+完整scope仍7266作者/128片/143045unique/278397logical，8h/2400s；不改
+原语义失败提示，不恢复history抢GPU。直接source统计成绩尚未评估。
+
+首片已复制并用原verify_shard独立核验57作者/2151logical/1160forward，
+cache2,008,365bytes，算术max3.552713678800501e-15。备份ZIP1,107,007bytes，
+sha acf5a89ea77d5ce27db3d81d409c7561b14074db07e0ecff7449037b19bd8ac1。
+保存于vm05_full_direct_traits_r1；这是无标签采集验收，不是人格效度。
+临时launcher元数据含字面backslash-n，remote_metadata_snapshot保留原字节
+及hash，使用JSONDecoder只在对象边界消化分隔符后另存canonical323events/
+1command与hash。科学queue/缓存/manifest和运行launcher源文件不动。
+
+历史本地备份先增044-056，ZIP1,787,475,143bytes，sha
+3b711b79df2e79f253b4e8fb35dec3426bca758945f8da7bee84fb3a914e1248；
+再增057-064，ZIP1,097,910,332bytes，sha
+2161cddf10455d0b8dce64e74626138b43f68ddc6bcf61c2fb343ddaacea50a9。
+完成/非活动分片、远端本地SHA、CRC、展开上限、路径/symlink/非覆盖均检查。
+原verifier重验全部000-064：65片3640人327600arrays。旧失败partial030
+继续隔离，未合并。监督、备份和运行修复没有产生新心理学主张。
+
+全315配对/history其余及源头/direct源头/同ready其余/strong199 null/
+源头封头后bridge/VM07仍待。桥接标签与MEPS量表值仍未开，无新LLM训练/
+下载/API/push。活动goal继续；当前没有需要用户新idea或新权限的阻塞。

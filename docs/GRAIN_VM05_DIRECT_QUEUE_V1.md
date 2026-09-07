@@ -85,5 +85,25 @@ history-idle checks and the original queue lock stay in force. Each journal keep
 argv, original/wrapper code hashes, source snapshot, any prior status and
 append-only retry/exit events. The original queue writer is restored on return
 or exception. This is the known history I/O remedy, not a new scientific protocol
-or a reason to alter a negative result. Full real direct collection remains pending
-until history reaches its natural budget boundary and the owner actually exits.
+or a reason to alter a negative result.
+
+Round37 qualification:13 wrapper/generic tests pass; Mac fresh and explicit-resume
+zero-forward runs and a Windows fresh zero-forward run all stop at the original
+budget gate. Windows six copied qualification files were independently hashed.
+No source/bridge label values or neural forwards were used in these checks.
+
+Actual full collection began11:25 JST on2026-09-07, after history628 naturally
+paused65/128 and its owner/child and lock disappeared. Remote wrapper48952,
+SSH session23843, retains the frozen128-shard command above. First shard000
+completed57 authors/2,151 logical prompts/1,160 native forwards and was copied
+to Mac and independently replayed:maximum saved-arithmetic error3.55e-15.
+No native full-vocabulary logits were newly reconstructed by this arithmetic
+check. Full source prediction accuracy and all128-shard acceptance remain pending.
+Do not resume history or launch a second GPU model while this queue is active.
+
+The one-off waiting launcher's events and command metadata contained literal
+backslash-n separators. Raw snapshots are retained under
+`vm05_direct_launch_round37_r1/remote_metadata_snapshot`; a JSON-decoder-based
+derived canonical copy and raw/canonical hashes preserve all323 recorded events.
+Only inter-object separators were normalized. The actual queue journals,
+manifests, scientific caches and frozen launcher source were not modified.

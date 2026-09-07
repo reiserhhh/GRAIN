@@ -2,6 +2,20 @@
 
 日期：2026-09-05。状态：`IN_PROGRESS`。
 
+2026-09-07第三十七轮：两条队列完成安全预算交接，scope不缩减。
+Mac原98301以159/315自然暂停并退出；显式相同参数resume逐项核实原159
+验收记录不变，新15034/session79587继续，11:32 JST已192/315。
+Windows历史628在65/128、3640作者处自然暂停并退出，GPU随后交给原定
+直接评分：48952/session23843，首片57人2151逻辑提示/1160forward已完整。
+Mac独立复算首片max3.55e-15，未读source或bridge标签；这只是采集验收，
+不是人格预测精度。完整历史65片327600数组已全部本地重验，旧partial030
+继续隔离。37f2f7e仅为direct状态JSON加入已测试有界I/O重试，原冻结
+collector/queue与提示不变；13组合tests及两机零forward fresh/resume检查
+通过。GPU直接队列在跑时不恢复history；Mac15034持前驱CPU锁。
+完整315配对、history其余/源头头、direct源头成绩、同ready其余、strong
+null、封头后bridge和VM07仍待完成；没有新心理结论或需用户新idea的阻塞。
+下文第三十六轮及以前是历史快照，以实际状态文件和剩余要求表为准。
+
 2026-09-07第三十六轮：主要为verified wait，不新增理论假设或小实验。
 两小时25次真实进程监督，无观察错误或attention；CPU98301由47到104/315，
 Windows628由35到44/128。07:06 JST均实际运行：Mac child9969在block04
