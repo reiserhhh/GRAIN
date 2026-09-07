@@ -1,8 +1,8 @@
 # GRAIN V4: a relational readout of contextual evidence
 
 2026-09-08. Continuation of the aggregate/configuration theory V3, not a new
-release of the GRAIN measurement system. S9-S17 connect the empirical source
-response, shared-query decomposition and conditional-curvature approximation.
+release of the GRAIN measurement system. S9-S20 connect the empirical source
+response, shared-query decomposition, conditional curvature and functional reader.
 
 ## 1. The object is a joint relation, not just a bag of vectors
 
@@ -273,10 +273,48 @@ S19 tests how much of that covector can be shared across authors, using a
 training-only mean or active-gradient subspace rather than another ordinary
 regression-weight interpretation. See `GRAIN_FUNCTIONAL_GRADIENT_S19_PLAN.md`.
 
-S15 now completes that comparison at the common query: exact-mass covariance
-reader fidelity r=.847179,MSE/exact-author-variance=.701136; uniform masses
-r=.415440,error ratio1034.28; Gaussian masses r=.594964,error ratio3.797855.
-The source questionnaire association is not improved. This retains the exact
-normalizer in the active mechanism, and treats covariance as a useful but
-incomplete conditional approximation. Next split P_G=B*r_G into total body gain
-and relative comment allocation, as specified in the S16 plan.
+## 11. The functional covector can be estimated and transported
+
+S19 recovers the actual integrated suffix gradient on24source authors. The
+path integral reconstructs their pairing effects at r=.99999977, maximum
+completeness gap2.32e-6, and native gradients already give.99954. The first
+uncentered gradient second-moment direction contains95.117% of energy; median
+between-author cosine=.9593. This is response geometry, not human trait variance.
+
+Using other23 authors' mean gradient gives held-author effect r=.8865,
+bootstrap95%CI[.7149,.9675], error/effect-energy=.2147. Let g_ref be the mean
+over a fixed reference panel. The exact finite error equation is
+
+E_u-g_ref^T d_u=(g_bar_u-g_ref)^T d_u,
+
+up to numerical path integration error. A shared direction is useful without
+assuming that all authors have identical gradients or identical evidence.
+Author-specific displacement and gradient variation remain distinct terms.
+
+S20 freezes the24-author reference and computes z_u=mean_v(g_ref^T d_uv) from
+all213 cached prefix vectors. On24 different authors, actual effect transport
+has r=.9431[.9009,.9809] and error/effect-energy=.1653. On the189 authors outside
+the reference panel, z has source N r=.2000,p=.0058,FisherCI[.0589,.3332].
+All213 r=.1749; discovery24 r=-.0079. These exposed source results are reported
+without human-label fitting, calibration or outcome-chosen sign.
+
+The formula is therefore connected to both actual vector intervention and a
+real-author source outcome. It no longer relies only on a fitted statistical
+reader beta. Prediction still uses a pretrained prefix for contextual K,V;
+the frozen suffix direction replaces the upper decoder at readout time.
+
+E and C remain different interventions. z-C correlation is.2212 on primary189;
+this route need not recover all of C to carry useful source association.
+The primary difference versus S12's statistical-reader source r is+.0425 with
+CI[-.1521,.2377], so do not turn the association into an established superiority.
+
+The next question is query specificity: E_uq=g_bar_uq^T d_uq, compared with
+crossed readers g_ref,r^T d_uq. Numeric-answer controls distinguish a shared
+suffix scoring direction from trait-specific evidence retrieval or a distinct
+trait covector. See `GRAIN_CROSS_QUERY_FUNCTIONAL_S21_PLAN.md`.
+
+Sources: the internal-path completeness adaptation of
+[Sundararajan et al.2017](https://proceedings.mlr.press/v70/sundararajan17a.html)
+and finite sensitivity-spectrum algebra from
+[Constantine & Gleich2015](https://arxiv.org/abs/1408.0545).
+Reports: `S19_FUNCTIONAL_GRADIENT_REPORT.md`, `S20_FUNCTIONAL_TRANSFER_REPORT.md`.

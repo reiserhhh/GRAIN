@@ -396,7 +396,7 @@ code/protocol62d4da0.42 focused tests pass after the new geometry/continuation
 modules. One neural collector only; no Claude, remote push, LoRA, private text
 upload, protected data or old queue. Active goal remains open.
 
-## Current checkpoint: S18 complete; S19 functional-gradient recovery next
+## Historical checkpoint: S18 complete; S19 functional-gradient recovery next
 
 S18 completed24source authors/view0,168forwards,0backwards in242.76seconds.
 No human outcomes. Covariance-pattern selected effect RMS=.0002687 versus
@@ -417,3 +417,31 @@ S16/S17/S18 reports and theory V4 are current.42 focused tests pass. S17 finding
 commit1e798b6; S18 code62d4da0. Keep T/F and exact N reference unchanged. Goal
 active; no user decision is needed. Do not reopen protected labels, run Claude,
 push private artifacts, restart old queues or alter frozen S12-S18 implementations.
+
+## Current checkpoint: S19-S20 complete; functional source link transported
+
+S19 completed24authors,96forwards/72backwards,183.26seconds. Path completeness
+r=.99999977, endpoint replay0. Leave-author-out mean-gradient reconstruction
+r=.8865[.7149,.9675], first sensitivity direction95.117% energy. Preserve r1's
+MPS export failure; r2 fixes CPU/Float64 ordering only, with an actual MPS test.
+
+S20 freezes that24-author mean and all213x3 source scores, then measures24
+new authors with48forwards/0backwards in67.24seconds. Functional response
+transport r=.9431[.9009,.9809]. On the189 authors outside the gradient reference,
+the frozen three-view score has source N r=.2000,p=.0058,CI[.0589,.3332].
+All213 r=.1749; reference24 r=-.0079. The +.0425 primary difference versus the
+S12 statistical reader has CI[-.1521,.2377]. Useful functional source association
+is established on the exposed source, not a new benchmark superiority claim.
+
+No neural collector remains running. Next implement
+`GRAIN_CROSS_QUERY_FUNCTIONAL_S21_PLAN.md`: a matched numeric-format query
+family and cross-reader matrix to locate shared versus query-specific pathways.
+Use12reference and12transfer authors, reuse N caches, at most288newforwards and
+180backwards with adaptive nodes,ten-minute cap. Finalize exact question texts
+and hashes before preparation; no outcome-based selection or questionnaire join.
+This is a mainline location-of-specificity question, not more defensive controls.
+
+S19/S20 reports and theoryV4 are current;52 focused tests pass, two existing SWIG
+warnings only. Code8b8d5f2/4bbbd7c. Active goal remains open; no user decision is
+needed. Preserve T/F, release scorer, protected labels, old queues and unrelated
+changes. Local commits only. Continue independently; do not request a new idea.
