@@ -1,0 +1,163 @@
+# GRAIN：以心理查询为入口追踪向量推论
+
+2026-09-07。文献定向研读与代码对照；不是新实验结果。Claude 未调用，活动长跑
+未改动，没有下载新模型或读取私人文本/心理标签。
+
+## 1. 对用户猜想的判断
+
+用户提出：先用外向性、神经质等查询作引子，再回到作者文本寻找跨句连接，可能比
+先无目标地找所有节点再解释人格有效。最可研究的版本是：
+
+> **人格任务可能通过查询相关的检索、主体绑定和关系组合，把已有信息转换成可读出的
+> 证据；我们应从指定判断追踪其依赖，同时尝试用紧凑数学算子保留这种转换。**
+
+这有直接的方法论先例，但本轮没有发现论文已经证明“真人 Big5 推断就是一条
+关键词向量链”。应保留与修正的部分：
+
+- 保留：查询可以改变信息的选择与使用；跨句关系有可干预的向量机制；从输出回溯
+  计算是正规的机制研究入口。
+- 修正：query 不是单个关键词向量，关系不一定是一条链，也不是每层对应一步推理。
+- 修正：输出外向性相关判断，不等于最终隐藏状态离“外向性”词向量最近。答案还可能
+  是数字、Yes/No 或字母，相关计算可能分布在不同位置、层和方向。
+- 不推翻 GRAIN：从下往上的作者结构发现与从上往下的目标功能追踪互补。Big5/MBTI
+  是本轮已知语义查询，不要求 GRAIN 的所有构念都被它们命名或穷尽。
+
+## 2. 定向研读：哪些论文真正接近这个问题
+
+以下均为原作者、正式会刊或原始预印本。不是完整系统综述，也没有复现这些论文。
+正文阅读集中在问题、方法与限制；“摘要核对”明确不代表全文精读。
+
+| 研究 | 阅读范围与状态 | 对本项目的实际启发 |
+|---|---|---|
+| [Feng & Steinhardt, How do Language Models Bind Entities in Context?](https://proceedings.iclr.cc/paper_files/paper/2024/hash/9d1b7fc578c0d2d6431fc26d736ecaf3-Abstract-Conference.html) | ICLR 2024；正文引言、形式设定、干预说明及限制 | 在受控任务中，实体与属性可以借助 binding-ID 向量关联；但作者也展示了替代机制。先辨别“谁的行为”，不能只找相似词。 |
+| [Wu et al., Retrieval Head Mechanistically Explains Long-Context Factuality](https://arxiv.org/html/2404.15574) | 原始论文；摘要、§2 检测定义、§3 与干预结论 | 特定头参与上下文检索。但检测目标主要是 needle 的复制/提取，不能直接把这种检索分数当作心理推论能力。 |
+| [Geva et al., Transformer Feed-Forward Layers Are Key-Value Memories](https://aclanthology.org/2021.emnlp-main.446/) | EMNLP 2021；原文首页、公式说明与摘要 | MLP 的模式匹配和输出贡献补充 attention 的位置间读取；“行为如何变成概念判断”不能只研究注意力或词余弦。结论限其研究模型。 |
+| [Yang et al., Do Large Language Models Latently Perform Multi-Hop Reasoning?](https://aclanthology.org/2024.acl-long.550/) | ACL 2024，另查 arXiv v2；正文两跳方法与限制 | 分别检验桥接实体是否可读、是否被下一跳使用；整体两跳证据明显依赖关系类型。中介出现不等于中介真的被用来答题。 |
+| [Ameisen et al., Circuit Tracing](https://transformer-circuits.pub/2025/attribution-graphs/methods.html) | Anthropic 2025 技术研究；正文替代模型、归因图与限制 | 可从输出追踪跨 token/层的贡献，但局部归因图固定 attention 和归一化，恰会漏掉“为何查这里”的 QK 机制。不能直接当完整思维图。 |
+| [Lindsey et al., On the Biology of a Large Language Model](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) | Anthropic 2025 技术研究；引言、方法与案例概述 | 展示隐藏中介、目标影响后续生成等存在性案例；不是代表全部问题的成功率，也不是人格推论验证。可借鉴“先追踪、后干预”的步骤。 |
+| [Gur-Arieh et al., Mixing Mechanisms](https://arxiv.org/html/2510.06182v2) | 2025 预印本，2026-05 v2；引言、方法设定 | 较复杂绑定检索中位置、词汇和直接指针机制可以混合。不要把成功归结为唯一关键词方向；没有迁移其行为拟合数字为人格准确率。 |
+| [Liu et al., Layer-Order Inversion](https://arxiv.org/html/2601.03542v1) | 2026-01 预印本；摘要与引言 | 后一跳答案有时比中介更早可解码。提示“按层找一条顺序链”过强；其 recall-and-extract 解释仍是作者提出的模型，非领域定论。 |
+| [Su et al., One Embedder, Any Task](https://aclanthology.org/2023.findings-acl.71/) | Findings ACL 2023；正式摘要与作者实现说明 | INSTRUCTOR 展示任务条件化 embedding 的实际模式。它经过专门 instruction/contrastive 训练，不是把任意编码器加上关键词就自动有效，也不识别 LLM 内部机制。 |
+| [Turpin et al., Language Models Don't Always Say What They Think](https://arxiv.org/abs/2305.04388) | NeurIPS 2023；原文首页与摘要 | 生成的解释可能遗漏真正影响答案的输入偏置。因此 LLM 自述的证据链可作候选，不应作内部机制记录。 |
+| [Zhang & Nanda, Towards Best Practices of Activation Patching](https://arxiv.org/abs/2309.16042) | 原始论文；摘要与方法引言 | donor/corruption 和指标选择能改变定位结果；需要多个对照，不把任一 patch 效果直接叫人格通路。 |
+
+基础结构另核对 [Vaswani et al., Attention Is All You Need](https://arxiv.org/html/1706.03762v7)。
+其中较新的两篇预印本用于扩展竞争解释，不用于否定既有研究或宣布统一机制已确立。
+
+## 3. 把“关键词引子”改写成数学上更准确的对象
+
+### 3.1 查询相关的读出，而非裸词近邻
+
+在一个 attention head 内，忽略偏置并把归一化后的输入记为 \(h\)，对当前位置 \(t\)：
+
+\[
+q_t=W_Qh_t,\quad k_i=W_Kh_i,\quad v_i=W_Vh_i,\qquad
+\alpha_{ti}=\operatorname{softmax}_{i\le t}\left(q_t^Tk_i/\sqrt d\right),
+\quad o_t=\sum_{i\le t}\alpha_{ti}v_i.
+\]
+
+这是标准 attention 表达式。\(q_t\) 可以含问题、主体和此前计算的信息，不是
+输入“extraversion”一个词的 embedding。Q/K 的内积也不是正文向量与人格词的
+普通余弦；value、output projection、MLP 与后续层会继续改变它的影响。
+
+适合作为 GRAIN 近似候选的形式是
+
+\[
+H_u=E(X_u),\quad
+z_{u,q}=R_q(H_u,\mathcal P_u,F),\quad
+s_{u,q}=D_q(z_{u,q}).
+\]
+
+\(X_u\) 为作者多段文本，\(\mathcal P_u\) 保存主体/来源关系，\(F\) 为声明的
+条件与参照框架；\(R_q\) 是待识别的查询相关读取/组合算子，\(D_q\) 是明确的
+输出规则。该式是研究分工，不是我们已拟合成功的模型。
+
+我们要找的“数学特征对”更可能是**查询相关的关系方向、绑定运算与读出方向之间
+的配合**，而非“一个人格词对应一个唯一神经元”。一个可测试的有限形式是上轮的
+核矩读出 \(m(q)=\phi(q)^TM/[\phi(q)^Tz]\)，但是否足够必须测，不能先假定。
+
+### 3.2 三种“倒着看”必须分开
+
+1. 任务条件化：模型根据问题选择、组合上下文。这仍是正常 forward 运算。
+2. 研究者反向归因：从固定分数算梯度/依赖或做 patching，定位哪些状态改变输出。
+   这是我们的分析操作，不是声称模型在推断时运行了 backprop。
+3. 以结论搜证：预先说“此人外向，请找证据”。这会引导支持性解释，不能用来验证
+   人格推论机制。应问程度/支持与反证，且不告诉模型该作者的真实量表结果。
+
+研究对象要能保留否定、条件、他人行为及缺乏证据，而不是只让相关词相互吸引。
+“没有找到支持外向的材料”不等价于“证明内向”。
+
+## 4. 一个对当前仓库很重要的因果边界
+
+已核对 `grain_research/vector_mechanisms/context.py::render_context`、
+`direct_traits.py::render` 与 `scripts/run_grain_vector_mechanism_multicomment_qwen.py`。
+当前都把证据放在问题之前，且 shared system 没有随具体 trait 问题变化。
+
+在确定性因果 decoder、相同前缀 token/位置/计算条件下，后置问题 \(q\) 无法改变
+前缀位置 \(i\) 的状态：
+
+\[
+h_i^{(\ell)}(X;q_1)=h_i^{(\ell)}(X;q_2),\qquad i\text{ 在问题之前}.
+\]
+
+因为每层该位置只能依赖它之前和本位置的状态，逐层归纳即得；不是新定理。数值
+后端若 padding/batching 不一致，可有计算差异，需要与概念依赖分开。
+现有 multicomment collector 已有 `prequestion_error` 检查，本轮没有重跑。
+
+所以“问题触发回头读取”发生在问题/答案等后续位置读取前缀的路径上，而不是让
+过去 token 状态逆时间改变。若将问题放到正文前，正文表征才可能随任务变化；
+该设计又改变了位置和编码条件，不能与 suffix 设计混为同一个效应。
+
+这也说明当前方向并非完全反了：已有 behavior/disposition 两查询及五 Big5、四 MBTI
+的直接输出。但两条 social-initiation 查询不能代表全套心理查询的向量机制，
+direct 缓存的 logits 也不提供全部 query/KV/hidden。真正缺的是**同一材料、多查询、
+可干预的使用通路比较**，而不是再算一遍正文 mean。
+
+## 5. 最小后续设计：先以已知概念定位，不让概念替代证据
+
+本轮只提出设计，不修改活动采集或启动新 GPU/付费任务。
+
+| 条件 | 如何做 | 区分什么 |
+|---|---|---|
+| 无特定心理查询 | 固定正文编码/原有 pooling | 基础可读性，不是“没有任何任务先验” |
+| trait 名称查询 | 中性询问外向性/神经质，而非断言高分 | 名称提示与已有知识 |
+| 不含 trait 名的行为定义 | 用主动接触、持续担忧等候选定义，独立保留多种改写 | 依赖概念还是标签词；操作定义本身不是外部效度 |
+| 不相关但等格式的查询 | 固定答案格式与语义难度尽量匹配 | 通用 prompt/格式作用 |
+| 同词、不同关系 | 交换本人/朋友、事实/引用、肯定/否定及机会条件 | 词汇匹配还是关系使用 |
+| 相同证据、不同来源重复 | 同源复述与独立机会分别记录 | 检索总量还是可用证据增量 |
+
+优先用已构造的 VM03 关系范式发展小型中性语义面板；用未参与发现的场景/改写
+检验，而不是不断挑同一作者上的最佳提示。trait 与行为定义不能事后挑最有利的
+词；负向、矛盾及证据不足材料同样进入。
+
+观测顺序：先确认语义输出随正确关系变化；再在问题/答案相关位置看查询相关的
+读出与 QK/OV/MLP 路径；用自然配对 donor、自身替换与作用恢复测试；最后考虑
+低秩双线性/核矩是否能跨查询与场景复现这组作用。不立即训练大型 SAE/CLT。
+
+attention map 可定位候选，但高权重不保证有用 value 或真实输出贡献。反过来，
+固定 attention 的归因图无法独自解释 query 如何选择位置，正是 Circuit Tracing
+正文明确承认的缺口。因此本轮不把“画出图”当机制闭环。
+
+最小差异统计可定义为固定语义方向下的 logits 混合差分：
+
+\[
+I=[s(X_1,q_1)-s(X_0,q_1)]-[s(X_1,q_0)-s(X_0,q_0)].
+\]
+
+它能排除 \(s(X,q)=f(X)+b(q)\) 的简单加性输出解释，但非零仍不单独证明发生检索，
+也可能来自别的非线性。跨 query 的答案语义/代码必须先对齐；概率尺度的 sigmoid
+即可制造交互，不能当作 logit 交互。不同心理构念没有天然可相减的心理单位。
+
+最后才连接外部量表：同一批 source 作者上，比较查询条件表征与等预算基线；
+按作者切分、查询/秩只在训练内部确定，再检验冻结分数与外部指标的关联。
+**模仿 LLM 的判断、在受控语义题上正确、对真人心理指标有预测性，是三个结果。**
+
+## 6. 本轮方向更新
+
+保留自底向上的 GRAIN 作者几何与 4W；补上自顶向下的查询相关通路分析。已知
+Big5/MBTI 可作入口，但搜索对象是“哪些证据经什么组合改变指定判断”。不把框架
+收缩为既有量表分类器，也不再预设一个全任务通用 mean vector 就足以表示推论。
+
+新读到的研究支持我们寻找这些关系；**没有**证明必须有关键词、每跳有唯一向量、
+最终判断只由距离决定，或现在的长跑已经检验了全部机制。本轮是文献和代码核对，
+未产生新的模型性能数字，未调用 Claude、未打开 bridge 或 MEPS 问卷。

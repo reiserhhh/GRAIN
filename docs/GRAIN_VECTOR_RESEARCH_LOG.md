@@ -1921,3 +1921,22 @@ packet：results/grain_vector_mechanisms/evidence_state_theory_r1；source快照
 code sha17aa116a7e3cbe61b9a12a8eade22e5cc18bf39821f94103a1afb30006e511d3；
 witness sha b8a83a06d50e26e5ffe890946add60ff36ad320c5210d09fbb4cfbfdbcf0b0b3。
 报告EVIDENCE_STATE_THEORY_REPORT.md；本轮本地提交、不push，活动研究goal仍未完成。
+
+### 以心理查询为入口的 LLM 推理论文续读（2026-09-07）
+
+用户猜想以trait查询定位跨句向量链，比先无目标发现所有节点再命名更有效。
+本轮Codex核对binding IDs、retrieval heads、latent multi-hop、MLP key-value、
+Circuit Tracing及Biology、INSTRUCTOR、CoT faithfulness、patching方法；另查
+2026版Mixing Mechanisms与Layer-Order Inversion两预印本。区分正文定向阅读与
+摘要核对，不声称系统综述/逐篇复现。新增GRAIN_QUERY_CONDITIONED_REASONING_
+LITERATURE_NOTE_V1，保留“查询相关证据使用”而不接受“唯一关键词向量链”。
+
+代码核实context.render_context/direct_traits.render/multicomment collector均
+证据在前、问题在后；相同前缀的状态不能被后置query改写，已有prequestion_error
+检查。新机制观察应聚焦问题/答案读取路径，不能指望正文mean随suffix问题变化。
+现有两条social initiation任务不等于全部trait机制；direct logits不提供完整KV。
+
+最小下一面板区分trait名/无trait行为定义/无关查询、同词主体关系交换、来源重复；
+query是任务入口，不提供个人真实分数或引导高分。先受控语义与干预，再紧凑算子
+替代，最后外部作者关联。保留4W/底向上作者结构，不改活动长跑、不重跑神经实验、
+不读私人文本/量表、不调用Claude、不push。本轮仅文档修改，非新实验结论。

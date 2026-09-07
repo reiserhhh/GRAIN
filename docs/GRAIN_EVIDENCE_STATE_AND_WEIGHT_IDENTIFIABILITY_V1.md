@@ -218,3 +218,8 @@ S_u=m_0+g_u(b_u-m_0).
 共 19 项有限数学测试通过。数值与精确边界见
 [本轮报告](../reports/grain_vector_mechanisms/EVIDENCE_STATE_THEORY_REPORT.md)。
 这是真正新增的理论连接和反例，不是新的预测成绩，也没有宣布整条研究完成。
+
+用户后续提出以人格查询反向寻找跨句连接。同日
+[查询条件化推理论文研读](GRAIN_QUERY_CONDITIONED_REASONING_LITERATURE_NOTE_V1.md)
+将本节的可查询矩与 binding/retrieval/circuit tracing 对照，并明确 suffix query
+只能影响后续位置的读取，不能逆向改写前缀状态；该文没有启动新实验。
