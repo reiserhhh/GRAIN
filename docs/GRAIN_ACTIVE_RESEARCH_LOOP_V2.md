@@ -52,6 +52,20 @@ cancellation explains misleading apparent improvements. The new next P1H is
 query role from suffix position. Exact collector/material must be frozen before
 that packet runs; it is not yet executed. No user/Claude intervention needed now.
 
+## Current continuation: P1H/P1I complete
+
+The preceding next-P1H paragraph is historical. P1H (340 forwards/65.59s) and P1I
+(388/73.32s) completed with independent offset, scalar, factorial and control audits.
+Query-content effects persisted when its order relative to answer instructions was
+reversed. Within queries, the entity state was important for attribution; the trait
+criterion phrase did not consistently beat equal-count random controls. Remainder
+positions retain effects. This motivates entity-bound evidence then criterion reading,
+not a discovered personality-name vector. See QUERY_ROLE_AND_BINDING_REPORT.md.
+
+Next P1J is GRAIN_ENTITY_STATE_P1J_PLAN.md: identical entity prefix before distinct
+criteria, both queried persons, finite paired interventions. Planned only; collector
+and exact materials still need freeze. No new data permission or Claude input needed.
+
 The relevant decision is no longer merely where information resides, but what
 question-conditioned operator uses it. Preserve all old coding/venue/opportunity
 failures; no personality-specific or LLM-free inference claim has been accepted.

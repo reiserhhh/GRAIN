@@ -6,6 +6,36 @@
   "released_scorer_changed": false,
   "entries": [
     {
+      "id": "query_conditioned_transport",
+      "domain": "authored_role_swaps_qwen_1_5b_p1b_p1f",
+      "source_report": "ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Early evidence and late query-suffix replacement restore donor judgments on original and fresh synthetic materials. Late evidence-only replacement is weak, without proving absent decodable evidence there.",
+      "not_claimed": ["unique_circuit", "personality_specificity", "erased_evidence_information", "human_external_validity"]
+    },
+    {
+      "id": "conditional_operator_error",
+      "domain": "synthetic_query_patch_p1d_p1g",
+      "source_report": "ROLE_QUERY_TRANSPORT_RESEARCH_REPORT.md",
+      "instrument": "observed",
+      "function": "underresolved",
+      "psychological_validity": "not_tested",
+      "finding": "Small activation-based operators approximate held-setting interventions but frozen transfer is query/material dependent. Exact shape/gap error accounting identifies compensating errors behind some apparent oracle-comparator improvements.",
+      "not_claimed": ["universal_fixed_coefficients", "llm_free_personality_inference", "independent_human_validation", "causal_error_partition"]
+    },
+    {
+      "id": "semantic_query_role_and_entity_binding",
+      "domain": "48_authored_cases_each_p1h_p1i",
+      "source_report": "QUERY_ROLE_AND_BINDING_REPORT.md",
+      "instrument": "observed",
+      "function": "observed",
+      "psychological_validity": "not_tested",
+      "finding": "Query-content effects follow semantic role under clause-order reversal. Contextualized person-name states affect attribution more than equal-count random controls; trait-criterion words lack consistent superiority and remainder states retain effects.",
+      "not_claimed": ["name_vector_is_personality", "unique_mediation", "common_prefix_reuse_already_proven", "all_position_effects_excluded", "new_personality_factor"]
+    },
+    {
       "id": "hybrid_additive_capacity",
       "domain": "saved_source_head_algebra",
       "source_report": "VM05_RAW_READY_COMPARISON_REPORT.md",
@@ -194,6 +224,8 @@
     }
   ],
   "remaining": [
+    "Old full-source queues remain paused by explicit value-priority override; incomplete requirements below are not waived or current automatic restart instructions.",
+    "Execute the bounded P1J common-entity-prefix test before claiming reusable criterion-independent entity evidence; author-group mechanism expansion and psychological specificity remain untested.",
     "Finish declared task-conditioned source comparisons; primary, original-dimension and fixed-layer families and all common-source shards are complete.",
     "Complete strong source-only controls, full selection-aware nulls and saved-head replay.",
     "Compare candidates on identical eligibility/reference-ready sets; the raw/reference-free stage is complete, other declared families remain open.",

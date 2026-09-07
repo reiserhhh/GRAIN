@@ -1,5 +1,14 @@
 # Vector mechanism program: remaining requirements
 
+## Current independent continuation: P1H/P1I complete
+
+P1H clause-order and P1I entity/criterion/remainder factorial packets completed,
+728 forwards in138.91s total. Independent token/scalar/control audits verified.
+Semantic query role matters beyond simply later position; person-bound state is a
+candidate, not a personality score. Next P1J common-prefix test is planned only.
+See QUERY_ROLE_AND_BINDING_REPORT and GRAIN_ENTITY_STATE_P1J_PLAN.
+Old queues and all uncompleted source/group/personality requirements remain unchanged.
+
 ## Current mechanism cycle: 2026-09-07 20:08 JST
 
 P1B–P1F complete with independent numerical audits. Early-E/late-Q transport
