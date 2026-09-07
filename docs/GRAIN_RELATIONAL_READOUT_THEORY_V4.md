@@ -162,8 +162,12 @@ TF/N/attachment query or a universal psychological readout.
   mean. Source N r=.1429, not a demonstrated external superiority over all controls.
 - S13: exact vector/reader replay with prefix-only execution; paired time ratio
   .6121. No additional prediction-accuracy claim from the replay itself.
-- S14: collection/analysis is governed by `GRAIN_SHARED_QUERY_S14_PLAN.md`;
-  final numeric evidence belongs in `S14_SHARED_QUERY_REPORT.md` after completion.
+- S14 complete: common/native query target-C r=.315627/.320283, source N
+  r=.133706/.142869; paired differences span zero. Native queries are already
+  close to the reference (median cosine.999191). Second-order covariance/cumulant
+  formula reconstructs the small personalized query increment at r=.999416,
+  MSE/zero=.001185. This is internal response reconstruction, not personality r.
+  Details: `S14_SHARED_QUERY_REPORT.md`. The next test uses the common query.
 
 The contribution is the experimentally connected chain from mean-null response
 to source outcome, joint KV access, and a cheaper mathematical readout. The

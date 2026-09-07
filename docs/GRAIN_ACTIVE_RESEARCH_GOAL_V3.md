@@ -298,7 +298,7 @@ Final focused validation after S12:225 tests passed in18.72seconds, with only
 two existing SWIG deprecation warnings. Ruff and whitespace checks passed.
 S12 finding commit:f40a650; parent handoff sync:5f5a94c. No remote push.
 
-## S13 complete; S14 shared-query collection
+## Historical checkpoint: S13 complete; S14 shared-query collection
 
 S13 replays72/72 source views and48/48 frozen reader predictions with the
 prefix-only execution path. Maximum vector error0, reader error1.31e-16;
@@ -319,3 +319,26 @@ shared-query exponential tilting and conditional moment compression. Two new
 finite tests verify that identical key/value marginals can yield opposite
 paired readouts, and that the zero-query derivative is a within-comment joint
 moment. The source experiment decides how much of this geometry is useful.
+
+## Current checkpoint: S14 complete; S15 conditional-moment pilot
+
+S14 completed639 prefix calls in590.30seconds,0 suffix/backward calls. Common
+query target-C r=.315627 versus native.320283; paired delta-.004656
+[-.030492,.036014]. Source N r=.133706/.142869, all fixed doses reported.
+Query references are already near native (median cosine.999191). Their small
+personalized increment is reconstructed by the unfitted second-order cumulant
+formula at r=.999416,MSE/zero=.001185. No new human prediction-accuracy gain is
+claimed from that internal reconstruction. All source scores froze before Y.
+
+S15 now tests four fixed operators at the common query: exact pairing, uniform
+mass plus joint covariance, exact mass plus joint covariance, and Gaussian
+mass approximation plus joint covariance. This separates within-comment higher
+moments from normalization. The24-author/72-prefix-call resource pilot runs
+without outcome access. Inspect progress in
+`results/grain_vector_mechanisms/conditional_moments_s15_r1/run_status.json`.
+Use `run_grain_conditional_moments.py inspect` after the pilot, and decide the
+value of completing213 authors before resuming with `--max-authors 213`.
+The full run cap is639 calls/25minutes. Do not launch another neural process.
+
+S13/S14 reports, theory V4 and S15 protocol/code are committed locally.
+The active research goal remains open. No new user input is required.

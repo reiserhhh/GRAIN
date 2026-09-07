@@ -52,3 +52,14 @@ source hashes, private per-author arm scores, progress, pilot diagnostics and
 optional full analysis. Report `S15_CONDITIONAL_MOMENTS_REPORT.md` states whether
 the24-author checkpoint or full213-author cohort was actually executed.
 No new labels, protected datasets, LoRA, downloads, external APIs or push.
+
+## Resource decision after the frozen24-author pilot
+
+72 calls,67.17seconds, no questionnaire join. Exact reader replay passed.
+Uniform-mass covariance r=.3683, MSE/exact-author-variance=902.60;
+exact-mass covariance r=.7730, error ratio=.7419; Gaussian-mass covariance
+r=.6540, error ratio=3.5132. The exact-mass arm has meaningful internal fidelity,
+while the other arms expose a normalization mechanism. Complete the already
+fixed213 cohort, all four arms unchanged, rather than select a new weight or
+calibration on this pilot. This is a scientific resource-value decision, not
+an interim significance claim or external-personality selection.
