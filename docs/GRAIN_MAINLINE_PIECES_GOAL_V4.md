@@ -1,11 +1,13 @@
 # GRAIN mainline pieces: conditional evidence to author traits
 
-> **Progress 2026-09-09:** M23/M23B/M24/M24B completed. Actual query-configuration
-> effects and the old frozen functional matrix now connect (TF/N r=.953/.961).
-> See `../reports/grain_vector_mechanisms/CONDITIONAL_COORDINATE_PATH_REPORT.md`.
-> Next is M25 same-material shared/private functions and fixed-reference author
-> profiles. Goal remains ACTIVE; no neural collector currently running. The
-> first-packet protocol below records the design, not an unstarted queue.
+> **Delivery 2026-09-09:** M23/M23B/M24/M24B/M25/M25B/M26 completed.
+> The finite five-piece construction is delivered. Three-query natural response
+> r=.796/.678/.827; fixed author norms, signed cross-query covariance and a
+> suffix-free readout bundle are executable. Scalar shared-factor transport and
+> low-rank SVD were tested, not promoted.
+> [Report](../reports/grain_vector_mechanisms/SHARED_AUTHOR_FUNCTIONAL_CONSTRUCTION_REPORT.md),
+> [build/API](GRAIN_FUNCTIONAL_PROFILE_BUILD_V2.md). No collector is running.
+> The protocol below records completed work, not an unstarted queue.
 
 2026-09-09. New user-authorized active goal. The reference-function v1 remains
 delivered; this is development of its useful mechanisms, not a reset of v1.
@@ -13,8 +15,9 @@ delivered; this is development of its useful mechanisms, not a reset of v1.
 ## Objective and decisions
 
 Real author text -> conditional vector evidence -> trait judgment -> declared
-group-relative author position. Keep Ridge as the readout tool. Nonlinear readers
-remain archived alternatives, not a competing optimization queue. A larger
+group-relative author position. Keep the affine readout class: Ridge is the fixed
+score-learning baseline, while old functional matrices read observed actions.
+Nonlinear readers remain archived alternatives, not an optimization queue. A larger
 population estimates a reference more precisely; it does not set individual or
 systematic errors to zero. Small differences need not block useful construction.
 
@@ -95,7 +98,8 @@ cross-observer generality are later expansions, not entrance gates.
 
 ## Completion and state
 
-The goal remains active until the new five-piece construction has executable
-examples and an explicit shared/private scope, or a genuine external/theoretical
-block requires the user's seminar. A finite packet can complete without claiming
-the whole goal complete. Current first action: implement and execute M23.
+The goal's executable-construction completion criterion is now met. M23 locates
+coordinates; M24 intervenes; M25/M25B builds shared/private scope and fixed author
+coordinates; M26 exports and replays the functions. Full coefficients are retained
+and query-dependent limits are explicit. This is not universal compression or
+completion of all human personality theory. No automatic candidate queue remains.

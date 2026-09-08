@@ -22,7 +22,21 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
-## Real-author mechanism result (2026-09-08)
+## Conditional functional construction (2026-09-09)
+
+The [five-piece extension](reports/grain_vector_mechanisms/SHARED_AUTHOR_FUNCTIONAL_CONSTRUCTION_REPORT.md)
+now connects query-coordinate intervention, matched-query relationships, fixed
+author positions, and a reusable suffix-free mathematical readout. On12 held
+authors, natural model-response agreement is .796/.678/.827 across T/F,
+neuroticism and confirmation queries. These are mechanism metrics, not human
+questionnaire accuracy. N/confirmation response structure is retained at r=.322
+versus native .374; signed condition-specific covariance separates common action
+from query-specific effects. The [build/API guide](docs/GRAIN_FUNCTIONAL_PROFILE_BUILD_V2.md)
+provides a432-state exact replay and fixed, batch-independent author coordinates.
+Full functional matrices are retained; low-rank SVD and a universal scalar shared
+factor are not promoted. Released deterministic scoring remains unchanged.
+
+## Earlier real-author mechanism result (2026-09-08)
 
 The [reference-function framework v1](docs/GRAIN_REFERENCE_FRAMEWORK_DELIVERY_V1.md)
 now connects fixed author-text states, query-specific mathematical readouts,

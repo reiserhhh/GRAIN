@@ -1,5 +1,16 @@
 # GRAIN mainline discovery V3
 
+> **Latest delivery: M25/M25B/M26 COMPLETE (2026-09-09).**
+> The five-piece finite goal is delivered: three-query natural response
+> r=.796/.678/.827 on12 held authors, fixed reference positions, signed conditional
+> cross-path covariance, and a432-state portable readout replay (error3.89e-16).
+> N/confirmation native/function response correlations .374/.322; within-query
+> configuration importance differs from between-query sharing. Full matrices are
+> retained; scalar shared projection and SVD compression are not promoted.
+> [Report](../reports/grain_vector_mechanisms/SHARED_AUTHOR_FUNCTIONAL_CONSTRUCTION_REPORT.md),
+> [build/API](GRAIN_FUNCTIONAL_PROFILE_BUILD_V2.md). No automatic queue remains.
+> Earlier active/next statements below are historical checkpoints, not live tasks.
+
 > **Latest execution: M23/M23B/M24/M24B COMPLETE (2026-09-09).**
 > Fixed linear readers localized mean/configuration/Q on277 authors; actual
 > 12-author cube interventions locate configuration action (TF/N r=.925/.957
