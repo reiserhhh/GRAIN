@@ -1,7 +1,7 @@
 # All-factor mathematical atlas: construction and evidence layers
 
-2026-09-09. Working M31 synthesis. The expanded goal remains active until the
-source-function and adapted-state packets finish. This document distinguishes
+2026-09-09. COMPLETE M31 synthesis. All source-function, adapted-state and
+34-function equation packets are complete. This document distinguishes
 exact mathematical identities, implemented estimators, and empirical transport.
 It does not declare that a finite collection of correlations proves every
 personality-inference use case.
@@ -24,11 +24,11 @@ direction. Target availability and target utilization are different parts of the
 chain, following [Funder's realistic accuracy model](https://pubmed.ncbi.nlm.nih.gov/7480467/).
 
 This resolves an important scope issue:9 Big5/MBTI functions,22 relational/session
-queries, and3 adapted mood queries are different levels of completion. Nine have
-frozen affine coefficient arrays and measured transport. The others currently
-have a native query program plus saved states, not interchangeable coefficient
-arrays. The catalog records this instead of treating query expansion as completed
-function transport.
+queries, and3 adapted mood queries are distinct target specifications. All34 now
+have frozen affine coefficient arrays and measured native transport, following
+M28 and M30B. The narrower functions also have external MEPS associations; the
+all-nine PANDORA source connection is also complete. The arrays share a
+construction, not interchangeable coordinates or uniform psychological validity.
 
 ## 2. From an exact path to a reusable function
 
@@ -152,19 +152,39 @@ study, not a randomized test of our prompt construction.
 M30C now adds actual state links: free-chat endpoint r=.427/.536/.518 and partial
 r controlling preceding state=.408/.512/.526. Thus the occasion argument in L
 has empirical content, not just notation. There is no need to call these stable
-traits. M30B is constructing all25 narrower query functions independently of
-the participants; their mathematical transport test is the next connection.
+traits. M30B constructed all25 narrower query functions independently of the
+participants. State-function external r=.422/.564/.555; median native fidelity
+is .899 across all25 free-chat queries. Configuration contributes .217/.329/.375
+to the respective state external r under the declared partition.
 
-## 7. Remaining construction decisions
+## 7. Complete source and coefficient ledger
+
+M29 connects all nine fixed functions to source labels: Big5 mean r=.1406 on213
+authors; EI/SN/TF/JP AUC=.497/.563/.620/.532 on64 other authors. The cached native
+Big5 mean is .1671; paired differences include zero and precision/backend effects
+remain in the comparator provenance. Configuration contributes .244 to TF's
+external r=.207, offset by -.009 mean and -.028 final-state terms. E/A/O also
+have configuration-heavy associations; N/C have different allocations. No human
+labels fit any operator. [Source report](../reports/grain_vector_mechanisms/ALL_FACTOR_SOURCE_CONNECTION_REPORT.md).
+
+`all_factor_equation_atlas_m31_v1/factor_equation_ledger.json` indexes all34
+functions with actual array keys/shapes, anchors, references, source hashes,
+native fidelity and external associations. The companion manifest lists43 human
+criteria with occasions. M31's narrow atlas contains1700 cross-target links,
+600 matched query pairs and9600 signed covariance terms, max error3.47e-18.
+The equation ledger is reproducible with `scripts/build_grain_all_factor_atlas.py`.
+
+## 8. Remaining construction decisions
 
 | Piece | Evidence now | Next executable question |
 |---|---|---|
-| Common core formula | Nine functions, reference coefficients, natural-response transport | M29: which M/C/Q terms retain human source relations? |
-| Narrow targets |22 queries x2 views; complete external matrix and shared/specific score split | Build externally referenced G/g maps, then test their saved P/Q states; no46-person label fit |
-| State targets |13 adapted items x4 phases audited; M30C state r=.427-.536 | Does independently referenced vector readout retain the occasion-sensitive link? |
+| Common core formula |34 functions; nine natural-response tests; complete human source links and M/C/Q accounting | Extend evidence-response tests to narrower state/relational targets on independent material |
+| Narrow targets |25 independent-reference functions; median native fidelity .899/.895 across two views | Why do configuration versus final-state terms differ across targets? |
+| State targets |13 adapted items x4 phases; state-function external r=.422-.564 | Develop the occasion-sensitive operator rather than forcing it into a stable trait |
 | Query identity | E and EI edit responses nearly unrelated (.047 native on M28 panel) | Separate construct wording from digit/letter response coding in a bounded all-axis packet |
 | Cross-target sharing | Exact signed covariance ledger; no common scalar forced | Determine whether source-linked shared terms recur across evidence opportunities |
 | Reference-relative author positions |12-author fixed norm exists for core queries | Keep future scoring independent of the incoming batch; do not reuse descriptive MEPS norms as a deployable reference |
+| Shared context computation |All34 currently use the same frozen observer, but separate query-conditioned forwards | Test reusable context prefix/KV plus query-specific transforms; this optimization is proposed, not implemented |
 
 Do not replace these questions with another Ridge/LightGBM accuracy grid. The
 mainline is an observable mathematical path from author evidence to a specified

@@ -156,13 +156,16 @@ are the minimum correctness floor. Local commits per packet, no automatic push.
 
 ## Current execution
 
-Goal active. M27 completed (492 source links; all46 Study2 participants and22
+Finite goal delivery COMPLETE. M27 completed (492 source links; all46 Study2 participants and22
 scores audited). M28 completed: nine functions, held level r=.776-.991 and
 natural-response r=.550-.976, no human fitting. See
 [M28 report](../reports/grain_vector_mechanisms/ALL_FACTOR_FUNCTIONS_REPORT.md).
-M29 all-source277-author prefix collection reached574/1321 query units and a
-bounded20-minute checkpoint; it resumes after the short M30 extensions, without
-changing its fixed sample. M30 both46-author/
+M29 completed all1321 source query units on277 authors, with3132 new prefix
+calls in2806.81seconds over three bounded invocations. The fixed Big5 functions
+have mean human r=.1406 versus cached native .1671; MBTI function AUCs are
+EI/SN/TF/JP=.497/.563/.620/.532 on64 authors. All paired differences retain
+their uncertainty and observer provenance. [Source report](../reports/grain_vector_mechanisms/ALL_FACTOR_SOURCE_CONNECTION_REPORT.md).
+M30 both46-author/
 22-query views and their paired comparison are COMPLETE. Free-chat external
 AI trust r=.324, attachment anxiety r=.308, overall session evaluation r=.319;
 phase-family BH minimum q=.149. The full report retains every target and both
@@ -176,6 +179,9 @@ Free-chat state functions retain external r=.422/.564/.555; all25 functions'
 median native fidelity=.899 in free chat and.895 in direct answers. M31 includes
 1700 complete narrow query/criterion links and9600 signed cross-path terms.
 [Function report](../reports/grain_vector_mechanisms/NARROW_VECTOR_FUNCTION_REPORT.md).
-M29 has resumed its fixed source collection. M31's final34-function equation
-index waits for that source packet; the smaller constructs are now constructed,
-not merely proposed. The goal remains active pending this final connection.
+M31's34-function equation index and coefficient/hash ledger are COMPLETE,
+covering43 human criterion occasions across disjoint sources. No collector or
+automatic grid remains.809 GRAIN tests passed (nonlinear_readout excluded for
+the documented Mac native-library conflict). [Complete round and next questions](../reports/grain_vector_mechanisms/ALL_FACTOR_ROUND_DELIVERY_REPORT.md).
+This closes the requested finite all-factor construction, not a claim that all
+targets are significant or the entire personality theory is universally proven.

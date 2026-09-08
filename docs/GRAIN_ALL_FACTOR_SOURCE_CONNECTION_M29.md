@@ -1,6 +1,10 @@
 # M29: human-source connection of the nine frozen functions
 
-2026-09-09. Planned, not yet collected. Prerequisite: M28 function transport report.
+2026-09-09. COMPLETE. [Results and full nine-target comparison](../reports/grain_vector_mechanisms/ALL_FACTOR_SOURCE_CONNECTION_REPORT.md).
+All1321 units completed;3132 new prefix calls,2806.81seconds. Big5 function mean
+human r=.1406; TF AUC=.6196. Other results, including weak axes, remain recorded.
+The protocol below is retained as the pre-execution specification.
+Prerequisite: M28 function transport report.
 Decision: do the newly constructed query functions retain the external author
 information that motivated expansion, and which M/C/Q terms carry it?
 

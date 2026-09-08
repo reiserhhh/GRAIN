@@ -1,6 +1,17 @@
 # GRAIN mainline discovery V3
 
-> **Active 2026-09-09: [all-factor goal V5](GRAIN_ALL_FACTOR_RESEARCH_GOAL_V5.md).**
+> **2026-09-09 all-factor goal V5 COMPLETE: M27-M31 delivered.**
+>34 independent-reference vector functions now have coefficient/evidence cards.
+> Free-chat state-function external r=.422/.564/.555 on46 participants;
+> PANDORA fixed-function Big5 mean r=.141 on213 authors, TF AUC=.620 on64.
+>1700 narrow cross-target links and9600 signed cross-path terms are recorded.
+>809 GRAIN tests passed. No collector remains; do not restart a historical queue.
+> [Final round report](../reports/grain_vector_mechanisms/ALL_FACTOR_ROUND_DELIVERY_REPORT.md),
+> [mathematical atlas](GRAIN_ALL_FACTOR_MATHEMATICAL_ATLAS_M31.md).
+> Next questions: narrow-target evidence responses, E/EI query identity, and
+> shared context with target-specific functions; no new accuracy-search grid.
+
+> **Earlier checkpoint: [all-factor goal V5](GRAIN_ALL_FACTOR_RESEARCH_GOAL_V5.md).**
 > M27 complete: nine PANDORA targets, 492 cross-target cells, 22 Study 2 scored
 > criteria recomputed exactly for all46 participants. New local exploratory
 > counseling scale linkage is explicitly authorized in this branch, not training.
@@ -11,8 +22,8 @@
 > attachment anxiety r=.308 and overall session evaluation r=.319; full p/q,
 > paired context contrasts and common/specific decomposition are recorded in
 > [M30 report](../reports/grain_vector_mechanisms/COUNSELING_ALL_FACTOR_EXTERNAL_REPORT.md).
-> M29 source connection is now collecting277 authors' frozen function scores.
-> Do not treat earlier "no queue" statements as current instructions.
+> M29 source connection subsequently completed277 authors' frozen function scores.
+> Historical active/queue statements below are superseded by the completion above.
 
 > **Latest delivery: M25/M25B/M26 COMPLETE (2026-09-09).**
 > The five-piece finite goal is delivered: three-query natural response
