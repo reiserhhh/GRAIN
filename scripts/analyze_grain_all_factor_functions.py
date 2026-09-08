@@ -230,6 +230,11 @@ def covariance_atlas(events):
 
 def run(source, out):
     """Write all per-query results and arrays before any external scale linkage."""
+    source, out = Path(source).resolve(), Path(out).resolve()
+    if not source.is_relative_to(BASE.resolve()) or not out.is_relative_to(
+        BASE.resolve()
+    ):
+        raise ValueError("Use ignored mechanism result paths")
     out.mkdir(parents=True, exist_ok=False)
     rows, functions, arrays, hashes = load(source)
     frame, events = summarize_states(rows, functions)

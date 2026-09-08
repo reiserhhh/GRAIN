@@ -5,8 +5,10 @@
 > criteria recomputed exactly for all46 participants. New local exploratory
 > counseling scale linkage is explicitly authorized in this branch, not training.
 > [Inventory report](../reports/grain_vector_mechanisms/ALL_FACTOR_INVENTORY_REPORT.md).
-> M28 seven new functional queries collecting; M30 both views/22 occasion-specific
-> queries prepared with complete text coverage. M29 source connection planned.
+> M28 all nine functional queries COMPLETE: held level r=.776-.991, natural
+> response r=.550-.976. [Report](../reports/grain_vector_mechanisms/ALL_FACTOR_FUNCTIONS_REPORT.md).
+> M30 free-chat/22 occasion-specific queries collecting, direct answers prepared
+> with complete text coverage. M29 source connection prepared, not collected.
 > Do not treat earlier "no queue" statements as current instructions.
 
 > **Latest delivery: M25/M25B/M26 COMPLETE (2026-09-09).**

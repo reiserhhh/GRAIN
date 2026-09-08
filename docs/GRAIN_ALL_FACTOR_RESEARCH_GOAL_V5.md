@@ -152,4 +152,11 @@ are the minimum correctness floor. Local commits per packet, no automatic push.
 
 ## Current execution
 
-Goal active. M27 implementation started; M28-M31 follow from its recorded output.
+Goal active. M27 completed (492 source links; all46 Study2 participants and22
+scores audited). M28 completed: nine functions, held level r=.776-.991 and
+natural-response r=.550-.976, no human fitting. See
+[M28 report](../reports/grain_vector_mechanisms/ALL_FACTOR_FUNCTIONS_REPORT.md).
+M29 all-source 277-author collection prepared. M30 free-chat collection running;
+direct answers prepared. Both46-author/22-query views fit without text clipping.
+M31 nine-query signed covariance accounting is done; external-linked synthesis
+and the smaller constructs' function cards remain. The goal is not yet complete.
