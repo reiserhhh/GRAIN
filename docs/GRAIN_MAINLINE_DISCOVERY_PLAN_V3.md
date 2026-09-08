@@ -1,5 +1,14 @@
 # GRAIN mainline discovery V3
 
+> **Active 2026-09-09: [all-factor goal V5](GRAIN_ALL_FACTOR_RESEARCH_GOAL_V5.md).**
+> M27 complete: nine PANDORA targets, 492 cross-target cells, 22 Study 2 scored
+> criteria recomputed exactly for all46 participants. New local exploratory
+> counseling scale linkage is explicitly authorized in this branch, not training.
+> [Inventory report](../reports/grain_vector_mechanisms/ALL_FACTOR_INVENTORY_REPORT.md).
+> M28 seven new functional queries collecting; M30 both views/22 occasion-specific
+> queries prepared with complete text coverage. M29 source connection planned.
+> Do not treat earlier "no queue" statements as current instructions.
+
 > **Latest delivery: M25/M25B/M26 COMPLETE (2026-09-09).**
 > The five-piece finite goal is delivered: three-query natural response
 > r=.796/.678/.827 on12 held authors, fixed reference positions, signed conditional
