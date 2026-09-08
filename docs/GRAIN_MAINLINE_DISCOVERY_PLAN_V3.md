@@ -1,5 +1,12 @@
 # GRAIN mainline discovery V3
 
+> **Current routing, 2026-09-08 after the Claude/Codex seminar:** S0-S26 remain
+> complete. S27 is deferred, not the automatic next experiment. The research goal
+> is paused. Next planned packet: [functional construction bridge V1](GRAIN_FUNCTIONAL_CONSTRUCTION_BRIDGE_PLAN_V1.md),
+> a zero-neural-call connection analysis of natural multi-query responses.
+> [Seminar decisions](../reports/grain_vector_mechanisms/MAINLINE_REORIENTATION_SEMINAR_20260908.md).
+> Older next-step statements below are historical, not execution instructions.
+
 2026-09-07. User-directed return to discovery after the synthetic P1R/S/T packet.
 
 ## One finite first experiment: D1 real-author query readout

@@ -1,5 +1,10 @@
 # S27: locate when the useful configuration contrast becomes query-carried
 
+> **DEFERRED, 2026-09-08:** the mainline reorientation seminar selected the
+> zero-neural-call [functional construction bridge](GRAIN_FUNCTIONAL_CONSTRUCTION_BRIDGE_PLAN_V1.md)
+> first. This protocol is preserved but has not run. Resume it only if a defined
+> connection result makes tracking this specific C contrast decision-relevant.
+
 2026-09-08. Planned next, not run. S25/S26 preserve the useful paired route
 but show that the larger layer17 head vector adds dispersion with little N
 covariance. Do not keep refining that head or launch a broad normalization grid.

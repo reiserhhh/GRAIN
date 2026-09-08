@@ -1,5 +1,12 @@
 # GRAIN autonomous research: functional information left behind
 
+> **2026-09-08 seminar override:** the app goal is paused. S25-S26 are complete;
+> S27 remains unrun and is now deferred. Next planned work is
+> [GRAIN_FUNCTIONAL_CONSTRUCTION_BRIDGE_PLAN_V1](GRAIN_FUNCTIONAL_CONSTRUCTION_BRIDGE_PLAN_V1.md),
+> using existing caches to connect local functions to natural cross-query
+> responses. Do not resume the later-layer or accuracy-refinement loop from a
+> historical checkpoint below. No new neural experiment was run by the seminar.
+
 2026-09-08. New user-authorized goal, following completed S0-S4. Discovery first;
 not a restart of the old neural queues. No bridge, MEPS questionnaires, or lockbox.
 
