@@ -69,7 +69,8 @@ is assumed to converge to zero automatically.
 - MEPS Study 2: the latest user request explicitly adds local exploratory
   questionnaire linkage. This is a *new branch-specific authorization*, not a
   retroactive change to text-only VM06 or sealed analyses. Read only selected
-  numeric columns in processed pre/post scored files and the authoritative
+  numeric columns in processed pre/post scored files, the newly item-audited
+  `processed/mood_long.csv` under M30C, and the authoritative
   decrypted user-text exports. No training, API upload, raw survey export,
   identity reconstruction, Study 1 merge, or public participant-level output.
 - The local study explanation describes correlations/regressions of user
@@ -85,6 +86,9 @@ is assumed to converge to zero automatically.
   change by definition. Disclosure levels are ordered single indicators.
 - Agency/experience splits and disclosure-level means are explicitly exploratory.
   Mood trajectories enter only after checking adapted items and time alignment.
+  This audit is now complete for13 adapted items at baseline/pre/mid/post;
+  [M30C](GRAIN_MEPS_MOOD_EXTENSION_M30C.md) adds3 state queries and12 occasion
+  composites in a separate finite packet. They are not additional trait scales.
   Essays/X without matching labels can test geometry/transport, not missing
   anthropomorphism or attachment criteria.
 
@@ -156,7 +160,12 @@ Goal active. M27 completed (492 source links; all46 Study2 participants and22
 scores audited). M28 completed: nine functions, held level r=.776-.991 and
 natural-response r=.550-.976, no human fitting. See
 [M28 report](../reports/grain_vector_mechanisms/ALL_FACTOR_FUNCTIONS_REPORT.md).
-M29 all-source 277-author collection prepared. M30 free-chat collection running;
-direct answers prepared. Both46-author/22-query views fit without text clipping.
+M29 all-source 277-author prefix collection is running. M30 both46-author/
+22-query views and their paired comparison are COMPLETE. Free-chat external
+AI trust r=.324, attachment anxiety r=.308, overall session evaluation r=.319;
+phase-family BH minimum q=.149. The full report retains every target and both
+common/specific covariance contributions:
+[M30 report](../reports/grain_vector_mechanisms/COUNSELING_ALL_FACTOR_EXTERNAL_REPORT.md).
+Both views fit without text clipping; no human-outcome fitting was performed.
 M31 nine-query signed covariance accounting is done; external-linked synthesis
 and the smaller constructs' function cards remain. The goal is not yet complete.

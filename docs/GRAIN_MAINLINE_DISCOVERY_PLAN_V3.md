@@ -7,8 +7,11 @@
 > [Inventory report](../reports/grain_vector_mechanisms/ALL_FACTOR_INVENTORY_REPORT.md).
 > M28 all nine functional queries COMPLETE: held level r=.776-.991, natural
 > response r=.550-.976. [Report](../reports/grain_vector_mechanisms/ALL_FACTOR_FUNCTIONS_REPORT.md).
-> M30 free-chat/22 occasion-specific queries collecting, direct answers prepared
-> with complete text coverage. M29 source connection prepared, not collected.
+> M30 both46-author/22-query views COMPLETE: free-chat external trust r=.324,
+> attachment anxiety r=.308 and overall session evaluation r=.319; full p/q,
+> paired context contrasts and common/specific decomposition are recorded in
+> [M30 report](../reports/grain_vector_mechanisms/COUNSELING_ALL_FACTOR_EXTERNAL_REPORT.md).
+> M29 source connection is now collecting277 authors' frozen function scores.
 > Do not treat earlier "no queue" statements as current instructions.
 
 > **Latest delivery: M25/M25B/M26 COMPLETE (2026-09-09).**
