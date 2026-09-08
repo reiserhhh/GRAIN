@@ -1,13 +1,22 @@
 # GRAIN autonomous research: functional information left behind
 
+> **Latest goal, 2026-09-08:** a new user-requested goal-tool object is ACTIVE:
+> complete the whole GRAIN reference-function framework, not another local accuracy
+> packet. Two Claude Fable5.1/max read-only seminar rounds complete. M8 has connected
+> frozen P/Q matrices to complete scores and natural edits on12 new evaluation authors.
+> The outcome-blind prefix-only source connection is RUNNING; after completion,
+> integrate with author configuration, old external evidence and the4W theory.
+> Governing plan: `GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md`.
+> Historical goals/next experiments below do not override this route.
+
 > **2026-09-08 execution update:** query-region functional matrices are COMPLETE:
 > 2 reference / 2 evaluation authors, 72 suffix forward/backward pairs plus six
 > preserved endpoint-preflight pairs, 77.30 seconds total. Frozen matrices read
 > 6/6 held-author effect directions correctly; token averaging loses useful action.
 > [Report](../reports/grain_vector_mechanisms/QUERY_REGION_FUNCTIONAL_REPORT.md),
 > [milestones](GRAIN_MAINLINE_MILESTONES_20260908.md).
-> Next: [12-author frozen transport](GRAIN_QUERY_REGION_TRANSPORT_PLAN_V1.md),
-> PLANNED_NOT_RUN, forward only. No labels, training or new goal-tool object.
+> This proposed P-only transport is now superseded by the complete M8 packet.
+> The earlier statement that no new goal object existed is historical.
 > Do not resume S27 or a source-label accuracy search.
 > Historical execution instructions below are not the current queue.
 

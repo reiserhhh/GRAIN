@@ -1,6 +1,16 @@
 # GRAIN mainline discovery V3
 
-> **Current routing, 2026-09-08:** the query-region functional matrix is COMPLETE.
+> **Current routing, 2026-09-08:** two Claude read-only seminar rounds are complete;
+> a new whole-framework goal is ACTIVE. M8 full-level/response connection is COMPLETE:
+> 12 evaluation authors, three queries, 288F/204.17s, zero new gradients or labels.
+> Frozen P+Q full-score r=.817/.761/.920 (TF/N/confirmation), natural response
+> r=.886/.681/.717. [Result](../reports/grain_vector_mechanisms/COMPLETE_LEVEL_RESPONSE_REPORT.md).
+> The next approved packet, [prefix source connection](GRAIN_PREFIX_SOURCE_CONNECTION_PLAN_V1.md),
+> is RUNNING on the frozen S9 source cohort, after six exact prefix replays.
+> See [whole-framework plan](GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md).
+> Do not resume the superseded P-only 12-author packet or old S27 queues.
+
+> **Previous checkpoint:** the query-region functional matrix is COMPLETE.
 > Two reference authors supply frozen matrices; two evaluation authors have 6/6
 > correctly signed effects across three queries. Error/zero energy is .137/.023/.0075
 > (TF/N/confirmation); token means are substantially worse. These are P-region
@@ -8,8 +18,7 @@
 > [Report](../reports/grain_vector_mechanisms/QUERY_REGION_FUNCTIONAL_REPORT.md);
 > [theory](GRAIN_TOKEN_FUNCTIONAL_CONSTRUCTION_THEORY_V1.md);
 > [mainline milestones](GRAIN_MAINLINE_MILESTONES_20260908.md).
-> Next: [frozen query-region transport](GRAIN_QUERY_REGION_TRANSPORT_PLAN_V1.md),
-> PLANNED_NOT_RUN. One forward-only 12-author check, no re-estimation of matrices.
+> Its proposed P-only transport was merged into M8 above, not separately run.
 > S0-S26, construction bridge and full-state/carrier results remain; S27 is deferred.
 > Historical next-step statements below are not the current queue.
 

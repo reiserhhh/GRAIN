@@ -1,6 +1,9 @@
 # GRAIN：冻结提问区矩阵的作者外运输 V1
 
-2026-09-08。**PLANNED_NOT_RUN**。只解决一个主线连接：4人pilot得到的函数，
+2026-09-08。**SUPERSEDED / MERGED INTO M8**。
+两轮研讨后并入[完整水平/响应闭环](GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md)，
+已按12作者×3查询执行288F，而非单独执行以下252F计划。
+以下保留原提案：只解决一个主线连接，4人pilot得到的函数，
 能否在不重新求作者梯度的情况下读出更多作者的同一种作用。
 依据：[已完成功能矩阵](../reports/grain_vector_mechanisms/QUERY_REGION_FUNCTIONAL_REPORT.md)。
 
