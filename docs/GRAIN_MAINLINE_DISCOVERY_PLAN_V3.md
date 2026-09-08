@@ -1,5 +1,13 @@
 # GRAIN mainline discovery V3
 
+> **Latest execution: M23/M23B/M24/M24B COMPLETE (2026-09-09).**
+> Fixed linear readers localized mean/configuration/Q on277 authors; actual
+> 12-author cube interventions locate configuration action (TF/N r=.925/.957
+> versus conditional totals). Old frozen functional matrices recover that action
+> at .953/.961 with no refitting. See [report](../reports/grain_vector_mechanisms/CONDITIONAL_COORDINATE_PATH_REPORT.md).
+> New goal remains active. Next M25: shared/private configuration functions and
+> fixed-reference author profiles, not a nonlinear model grid. No collector running.
+
 > **Active goal, 2026-09-09: [five-piece development V4](GRAIN_MAINLINE_PIECES_GOAL_V4.md).**
 > The user freezes linear readout as a working tool. Execute M23 cached P/Q and
 > token-configuration localization, then targeted evidence effects, shared/private

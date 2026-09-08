@@ -1,0 +1,168 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "GRAIN：从分数可读到配置作用",
+    "generatedAt": "2026-09-09",
+    "sources": [
+      {
+        "id": "m24",
+        "label": "M24 固定上下文干预，12作者×2查询",
+        "path": "query_coordinate_cube_m24_v1/native_component_metrics.csv",
+        "query": {
+          "sql": "SELECT CASE query WHEN 'TF_cont' THEN 'T/F' ELSE 'N' END AS query, CASE effect WHEN 'mean' THEN '查询均值' WHEN 'configuration' THEN '内部配置' ELSE '末token' END AS component, predicted_rms AS rms, authors FROM native_component_metrics WHERE effect IN ('mean', 'configuration', 'final') ORDER BY query, effect",
+          "engine": "sqlite",
+          "language": "sql",
+          "tables_used": [
+            "native_component_metrics"
+          ],
+          "description": "从已验证的原模型区块干预汇总中读取三种独立作用的RMS",
+          "filters": [
+            "effect in mean/configuration/final",
+            "12 existing authors per query"
+          ],
+          "metric_definitions": {
+            "rms": "sqrt(mean(effect^2)) across 12 authors; original model score units; not additive variance shares"
+          }
+        }
+      },
+      {
+        "id": "m24b",
+        "label": "M24B 冻结功能矩阵重放",
+        "path": "cube_reference_m24b_v1/reference_effect_metrics.csv"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# GRAIN：从分数可读到配置作用\n\n新的五拼图 goal 已启动。四个有界实验完成；下一步研究共享/专属功能与作者参照，不重开模型精度竞赛。"
+      },
+      {
+        "id": "finding",
+        "type": "markdown",
+        "body": "## 配置变化是实际作用载体\n\n在固定其余上下文的12位作者中，查询 token 内部配置变化与整体 P/Q 作用对应：T/F r=0.925，N r=0.957。下图展示三个独立干预的作用幅度（RMS），不是可相加的方差解释比例。",
+        "sourceId": "m24"
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "chartId": "rms"
+      },
+      {
+        "id": "reuse",
+        "type": "markdown",
+        "body": "## 旧功能矩阵成功接回新分解\n\n无需重新拟合，旧矩阵对配置作用的读出为 T/F r=0.953、N r=0.961；相对零预测的MSE比为0.103和0.093。这些数值衡量模型内部作用，不是人格问卷预测准确率。完整自然编辑响应仍保留旧结果r=0.886和0.681。",
+        "sourceId": "m24b"
+      },
+      {
+        "id": "method",
+        "type": "markdown",
+        "body": "## 对象与构造\n\nM23使用277名既有源作者、作者级五折、固定Ridge读取，问卷只在输出冻结后连接。M24复用另外12人的自然编辑，固定原证据上下文和布局，把查询变化分为整体均值、零均值配置和末token，计算8端点。192次前向、零梯度。六种统计读出全部保留。"
+      },
+      {
+        "id": "scope",
+        "type": "markdown",
+        "body": "## 解释与下一步\n\n同样是线性方法，分数拟合与作用构造读取的关系不同。配置效应是这批材料上的可操作机制。沿它建立共享/专属响应地图，再放回固定群体参照；不把小样本机制相关当成人格常模。新增15项数值测试和共776项GRAIN测试通过。"
+      },
+      {
+        "id": "questions",
+        "type": "markdown",
+        "body": "## 接下来要回答的问题\n\n哪些配置响应是跨特性共享的？作者差异来自位置、证据选择还是响应方式？固定编码器能否形成同样的功能坐标？这些是活动goal的后续任务。"
+      }
+    ],
+    "charts": [
+      {
+        "id": "rms",
+        "type": "bar",
+        "title": "独立区块干预的作用幅度",
+        "sourceId": "m24",
+        "encodings": {
+          "x": {
+            "field": "component"
+          },
+          "y": {
+            "field": "rms"
+          },
+          "color": {
+            "field": "query"
+          }
+        },
+        "options": {
+          "grouping": "grouped",
+          "legend": {
+            "show": true
+          }
+        },
+        "dataset": "rms",
+        "source": {
+          "id": "m24",
+          "label": "M24 固定上下文干预，12作者×2查询",
+          "path": "query_coordinate_cube_m24_v1/native_component_metrics.csv",
+          "query": {
+            "sql": "SELECT CASE query WHEN 'TF_cont' THEN 'T/F' ELSE 'N' END AS query, CASE effect WHEN 'mean' THEN '查询均值' WHEN 'configuration' THEN '内部配置' ELSE '末token' END AS component, predicted_rms AS rms, authors FROM native_component_metrics WHERE effect IN ('mean', 'configuration', 'final') ORDER BY query, effect",
+            "engine": "sqlite",
+            "language": "sql",
+            "tables_used": [
+              "native_component_metrics"
+            ],
+            "description": "从已验证的原模型区块干预汇总中读取三种独立作用的RMS",
+            "filters": [
+              "effect in mean/configuration/final",
+              "12 existing authors per query"
+            ],
+            "metric_definitions": {
+              "rms": "sqrt(mean(effect^2)) across 12 authors; original model score units; not additive variance shares"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "status": "ready",
+    "generatedAt": "2026-09-09",
+    "datasets": {
+      "rms": [
+        {
+          "query": "N",
+          "component": "内部配置",
+          "rms": 0.0202763450376577,
+          "authors": 12
+        },
+        {
+          "query": "N",
+          "component": "末token",
+          "rms": 0.0123511885427854,
+          "authors": 12
+        },
+        {
+          "query": "N",
+          "component": "查询均值",
+          "rms": 0.004657687973748,
+          "authors": 12
+        },
+        {
+          "query": "T/F",
+          "component": "内部配置",
+          "rms": 0.0755524689507585,
+          "authors": 12
+        },
+        {
+          "query": "T/F",
+          "component": "末token",
+          "rms": 0.0249751770689753,
+          "authors": 12
+        },
+        {
+          "query": "T/F",
+          "component": "查询均值",
+          "rms": 0.0156285533573073,
+          "authors": 12
+        }
+      ]
+    }
+  }
+}

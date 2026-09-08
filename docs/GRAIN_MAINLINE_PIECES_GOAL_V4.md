@@ -1,5 +1,12 @@
 # GRAIN mainline pieces: conditional evidence to author traits
 
+> **Progress 2026-09-09:** M23/M23B/M24/M24B completed. Actual query-configuration
+> effects and the old frozen functional matrix now connect (TF/N r=.953/.961).
+> See `../reports/grain_vector_mechanisms/CONDITIONAL_COORDINATE_PATH_REPORT.md`.
+> Next is M25 same-material shared/private functions and fixed-reference author
+> profiles. Goal remains ACTIVE; no neural collector currently running. The
+> first-packet protocol below records the design, not an unstarted queue.
+
 2026-09-09. New user-authorized active goal. The reference-function v1 remains
 delivered; this is development of its useful mechanisms, not a reset of v1.
 
