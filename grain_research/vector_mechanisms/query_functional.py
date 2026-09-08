@@ -7,6 +7,17 @@ import numpy as np
 import torch
 
 
+def path_state(origin, endpoint, fraction):
+    """Preserve cached endpoints exactly; interpolate only at interior nodes."""
+    if origin.shape != endpoint.shape or not 0 <= fraction <= 1:
+        raise ValueError("Matched endpoints and fraction in [0,1] required")
+    if fraction == 0:
+        return origin
+    if fraction == 1:
+        return endpoint
+    return origin + fraction * (endpoint - origin)
+
+
 def region_gradient(observer, context, region, mask, kwargs, alphabet, block=16):
     """Differentiate only a query-region leaf through the frozen suffix, no prefix."""
     model = observer.model

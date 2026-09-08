@@ -28,6 +28,7 @@ from grain_research.vector_mechanisms.query_functional import (
     integrated_matrix,
     matrix_response,
     matrix_variants,
+    path_state,
     region_gradient,
     response_quality,
 )
@@ -226,7 +227,7 @@ def run(out):
                         value, g = region_gradient(
                             observer,
                             context,
-                            z0 + t * (z1 - z0),
+                            path_state(z0, z1, t),
                             mask,
                             kwargs,
                             d["alphabet"],

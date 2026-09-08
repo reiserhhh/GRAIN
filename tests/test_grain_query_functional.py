@@ -16,9 +16,20 @@ from grain_research.vector_mechanisms.query_functional import (
     integrated_matrix,
     matrix_response,
     matrix_variants,
+    path_state,
     region_gradient,
     response_quality,
 )
+
+
+def test_path_nodes_preserve_exact_cached_endpoints():
+    origin, endpoint = torch.tensor([1e8]), torch.tensor([1.0])
+    assert not torch.equal(origin + (endpoint - origin), endpoint)
+    assert path_state(origin, endpoint, 0) is origin
+    assert path_state(origin, endpoint, 1) is endpoint
+    torch.testing.assert_close(
+        path_state(origin, endpoint, 0.5), origin + 0.5 * (endpoint - origin)
+    )
 
 
 def test_simpson_recovers_two_condition_cubic_paths():
