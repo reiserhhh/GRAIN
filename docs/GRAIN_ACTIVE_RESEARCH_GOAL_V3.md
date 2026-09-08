@@ -7,8 +7,11 @@
 > Prefix-only source connection and48-author actual anchor diagnosis are COMPLETE.
 > New function retains46%/44% of TF/N label covariance; N remainder largely links
 > to old S9 configuration. Actual anchors locate a useful conditional-baseline
-> term. Next execute `GRAIN_CONDITIONAL_BASELINE_CONSTRUCTION_NEXT.md` from cached
-> states, no old queue or further generic seminar. Goal remains ACTIVE, not closed
+> term. M12/M13 now complete: simple b readers mainly remove N's offset. M14/M15
+> actual interventions then locate N's conditional E configuration (r=.521 on24)
+> and preserve the distinct TF query arm. Next execute
+> `GRAIN_CENTERED_ADJOINT_FIELD_PLAN_V1.md`: construct a token-state-dependent
+> sensitivity field, not another mean/readout accuracy search. Goal remains ACTIVE, not closed
 > by teacher-score fidelity. No neural collector remains running at this checkpoint.
 > Governing plan: `GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md`.
 > Historical goals/next experiments below do not override this route.

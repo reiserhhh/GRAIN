@@ -1,6 +1,7 @@
 # GRAIN 下一构造：条件基线的向量估计
 
-2026-09-08。PLANNED_NOT_RUN。当前whole-framework goal的唯一下一执行包。
+2026-09-08。历史计划，**M12/M13已完成**。当前唯一下一包为
+[M16中心化条件敏感度场](GRAIN_CENTERED_ADJOINT_FIELD_PLAN_V1.md)。
 已完成前序：M8完整水平 -> M10源连接 -> M11实际锚定。
 
 ## 该包改变什么决定
@@ -44,5 +45,6 @@ b的误差（例如固定小rank的PLS/Ridge，先核对旧S2不同目标以免�
 - 保留运输余项c，不以b可估宣称整链全部完成。
 - 代码、测试、缓存、报告与主线理论更新，本地commit，不push。
 
-当前没有启动这条构造，也没有运行中的旧队列。goal保持active，下一自动
-研究回合应直接从该包开始，不再发起一次新的泛泛研讨会。
+历史计划已执行。M12结果见`CONDITIONAL_BASELINE_CONSTRUCTION_REPORT.md`，
+M13见`MATERIAL_FIRST_BASELINE_REPORT.md`（均在reports/grain_vector_mechanisms）。
+随后M14/M15已定位新的条件配置对象。不要因本文件原题名而重跑本包。

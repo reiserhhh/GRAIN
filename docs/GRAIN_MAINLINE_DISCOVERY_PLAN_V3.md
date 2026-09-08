@@ -9,8 +9,13 @@
 > but only46%/44% of label covariance retained. The48-author actual anchor
 > diagnosis is also COMPLETE: both conditional baselines and transport remainders
 > carry author association, with different leading terms by query.
-> Next: [conditional baseline construction](GRAIN_CONDITIONAL_BASELINE_CONSTRUCTION_NEXT.md),
-> PLANNED_NOT_RUN, cache-first. No neural collector is currently running.
+> M12/M13 conditional-moment and material-order constructions are COMPLETE; N's
+> association remains mostly outside those simple readers. M14 retains the old
+> pairing mechanism but it is not the main conditional baseline route. M15's
+> completed four-cell intervention locates N's old configuration in fixed-query
+> E_main (24-source-author r=.521), while TF primarily uses the query-state arm.
+> Next: [centered conditional sensitivity field](GRAIN_CENTERED_ADJOINT_FIELD_PLAN_V1.md),
+> PLANNED_NOT_RUN. No neural collector is currently running. Do not repeat M12 fits.
 > See [whole-framework plan](GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md).
 > Do not resume the superseded P-only 12-author packet or old S27 queues.
 

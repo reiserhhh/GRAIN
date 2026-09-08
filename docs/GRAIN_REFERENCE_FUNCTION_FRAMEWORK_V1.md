@@ -1,6 +1,6 @@
 # GRAIN：参照功能读出的理论框架 V1
 
-2026-09-08。**工作版，完整水平、源连接、遗漏通路定位已完成；条件函数构造为下一步。**
+2026-09-08。**工作版，M8-M15已完成；下一步为中心化条件敏感度场构造。**
 本文件整合既有GRAIN/4W与新查询矩阵机制，不取代历史方法与发布计分器。
 当前执行和完成条件见[闭环计划](GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md)。
 
@@ -154,10 +154,43 @@ Who是显式参照中的位置与响应配置，When是顺序、状态变化和�
 | 同查询不同文本的配置完全稳定 | 未作为前提 | 需要按条件和采样研究 |
 | 临床量表、所有语言/观察器通用 | 后续应用域 | 不设为当前发现入口 |
 
-M11已作实际锚定：TF/N各24作者的baseline_shift和transport_remainder都与
-已知源Y有描述性关联；N余项约64%标签协方差在基线，TF约67%在运输。
-所以下一步为[条件基线构造](GRAIN_CONDITIONAL_BASELINE_CONSTRUCTION_NEXT.md)，
-不把这些项删成噪声，也不以符号定义代替可运行估计器。框架goal仍ACTIVE。
+M11实际锚定后，M12/M13尝试条件基线矩：TF可读，N主要只修正截距。
+M14保留了旧KV配对结构，但一个层/位置的配对不占据主要N基线关联。
+M15补齐配置×查询四格，将N旧配置协方差约85.8%定位为固定查询下的E主效应
+（24人r=.521），而TF约82.4%完整分数标签协方差在X主效应。见
+[M15结果](../reports/grain_vector_mechanisms/CONFIGURATION_QUERY_FACTORIAL_REPORT.md)。
+共同构造程序得到进一步支持，主作用入口随查询不同。框架goal仍ACTIVE。
+
+### 7.1 配置与查询的交互，不是两个独立读数相加
+
+令C(E)保留每条评论均值但抹平其内部token偏移，固定同一作者布局：
+`f11=F(E,x), f01=F(C(E),x), f10=F(E,xbar), f00=F(C(E),xbar)`。
+则`E_main=f10-f00, X_main=f01-f00, I=f11-f10-f01+f00`，
+`s=f00+E_main+X_main+I`。旧S9配置项=E_main+I，查询位移=X_main+I。
+
+在F二阶连续可微的固定布局矩形上，设dE=E-C(E)、dx=x-xbar：
+
+```
+I = integral_0^1 integral_0^1
+    dE' Hessian_(E,x) F(C(E)+a*dE, xbar+b*dx) dx da db.
+```
+
+证明为两次微积分基本定理。这与
+[Janizek等(2021)的交互归因工作](https://jmlr.org/papers/v22/20-1223.html)
+相关，但这里是两组变量的矩形锚定差分，不冒称实现了该文的Integrated Hessians
+分配规则。M15计算的是四个端点，尚未直接估出高维混合Hessian矩阵。
+
+### 7.2 为什么均值保持时仍有有用作用
+
+固定xbar，令各评论G内d_t=h_t-m_G，定义沿C(E)到E的积分梯度g_t，则
+`E_main=sum_t d_t'g_t=sum_G |G| trace(Cov_G(h,g))`。
+每组sum d_t=0，所以任何组内常数敏感度都会抵消；真正作用来自token状态
+偏移与敏感度偏移的联合配置。它不是普通token均值，也不必等于一个attention
+head的权重。该敏感度是对整个固定后缀的导数，包含后续层的直接/间接作用。
+
+[下一包M16](GRAIN_CENTERED_ADJOINT_FIELD_PLAN_V1.md)先保存这一完整条件场，再
+验证低秩状态依赖场能否跨作者运输。符号恒等式已成立，低秩可压缩性是要测试
+的机制假说；两者不混为一项“理论已全部证实”。
 
 ## 8. 从零构造与重放入口
 
