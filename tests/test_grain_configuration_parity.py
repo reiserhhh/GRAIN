@@ -42,3 +42,24 @@ def test_conditioned_quadratic_is_even_for_any_fixed_context():
     assert np.sum((d @ v) ** 2 * weights) == pytest.approx(
         np.sum((-d @ v) ** 2 * weights)
     )
+
+
+def test_anchor_coordinates_cast_float64_on_actual_mps_when_available():
+    import torch
+
+    from scripts.run_grain_configuration_parity import anchor_coordinates
+
+    devices = ["cpu"] + (["mps"] if torch.backends.mps.is_available() else [])
+    for device in devices:
+        state = torch.zeros((1, 6, 4), dtype=torch.float32, device=device)
+        mask = np.array([False, False, True, True, False, False])
+        anchored = anchor_coordinates(
+            state,
+            mask,
+            np.ones((2, 4), dtype=np.float64),
+            np.full(4, 2.0, dtype=np.float64),
+        )
+        assert anchored.dtype == torch.float32
+        assert anchored[0, 2].cpu().numpy() == pytest.approx(np.ones(4))
+        assert anchored[0, -1].cpu().numpy() == pytest.approx(np.full(4, 2.0))
+        assert torch.count_nonzero(state).item() == 0

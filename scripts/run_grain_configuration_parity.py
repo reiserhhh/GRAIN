@@ -34,6 +34,18 @@ FIELD = BASE / "centered_adjoint_field_v1"
 PLAN = ROOT / "docs/GRAIN_CONFIGURATION_PARITY_PLAN_V1.md"
 
 
+def anchor_coordinates(native, pmask, z_reference, h_reference):
+    """Cast CPU reference coordinates directly to the observer's supported dtype."""
+    anchored = native.clone()
+    anchored[:, pmask] = torch.as_tensor(
+        z_reference, device=native.device, dtype=native.dtype
+    )
+    anchored[:, -1] = torch.as_tensor(
+        h_reference, device=native.device, dtype=native.dtype
+    )
+    return anchored
+
+
 def prepare(out):
     """Freeze the existing48-author panel and this single sign-reflection contrast."""
     parent = verify(FIELD)
@@ -159,10 +171,9 @@ def run(out):
                     i, groups = view["view"], view["groups"]
                     native = torch.tensor(a[f"view_{i}"][None], device=device)
                     pmask = np.asarray(view["p_mask"], bool)
-                    native[:, pmask] = torch.as_tensor(
-                        refs[f"{query}__Z"], device=device
+                    native = anchor_coordinates(
+                        native, pmask, refs[f"{query}__Z"], refs[f"{query}__h"]
                     )
-                    native[:, -1] = torch.as_tensor(refs[f"{query}__h"], device=device)
                     collapsed = (
                         native
                         + mean_null_direction(
@@ -381,7 +392,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("phase", choices=("prepare", "run", "analyze"))
     parser.add_argument(
-        "--output-dir", type=Path, default=BASE / "configuration_parity_v1"
+        "--output-dir", type=Path, default=BASE / "configuration_parity_v1_r2"
     )
     args = parser.parse_args()
     out = args.output_dir.resolve()
