@@ -171,7 +171,11 @@ common/specific covariance contributions:
 Both views fit without text clipping; no human-outcome fitting was performed.
 M30C completed276 calls: free-chat adapted state r=.427/.536/.518, all endpoint
 BH q<=.0031. [State report](../reports/grain_vector_mechanisms/COUNSELING_STATE_EXTERNAL_REPORT.md).
-M30B's25 narrower derivative functions are collecting on two independent source
-references, no MEPS training. Their external transport remains to be measured.
-M31 nine-query signed covariance accounting is done; external-linked synthesis
-and the smaller constructs' function cards remain. The goal is not yet complete.
+M30B's25 narrower derivative functions and their2300-state transport are COMPLETE.
+Free-chat state functions retain external r=.422/.564/.555; all25 functions'
+median native fidelity=.899 in free chat and.895 in direct answers. M31 includes
+1700 complete narrow query/criterion links and9600 signed cross-path terms.
+[Function report](../reports/grain_vector_mechanisms/NARROW_VECTOR_FUNCTION_REPORT.md).
+M29 has resumed its fixed source collection. M31's final34-function equation
+index waits for that source packet; the smaller constructs are now constructed,
+not merely proposed. The goal remains active pending this final connection.
