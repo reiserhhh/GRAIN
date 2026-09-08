@@ -5,8 +5,12 @@
 > 12 evaluation authors, three queries, 288F/204.17s, zero new gradients or labels.
 > Frozen P+Q full-score r=.817/.761/.920 (TF/N/confirmation), natural response
 > r=.886/.681/.717. [Result](../reports/grain_vector_mechanisms/COMPLETE_LEVEL_RESPONSE_REPORT.md).
-> The next approved packet, [prefix source connection](GRAIN_PREFIX_SOURCE_CONNECTION_PLAN_V1.md),
-> is RUNNING on the frozen S9 source cohort, after six exact prefix replays.
+> The prefix source connection is COMPLETE: TF/N teacher fidelity .910/.805,
+> but only46%/44% of label covariance retained. The48-author actual anchor
+> diagnosis is also COMPLETE: both conditional baselines and transport remainders
+> carry author association, with different leading terms by query.
+> Next: [conditional baseline construction](GRAIN_CONDITIONAL_BASELINE_CONSTRUCTION_NEXT.md),
+> PLANNED_NOT_RUN, cache-first. No neural collector is currently running.
 > See [whole-framework plan](GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md).
 > Do not resume the superseded P-only 12-author packet or old S27 queues.
 

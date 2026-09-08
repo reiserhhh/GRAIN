@@ -4,8 +4,12 @@
 > complete the whole GRAIN reference-function framework, not another local accuracy
 > packet. Two Claude Fable5.1/max read-only seminar rounds complete. M8 has connected
 > frozen P/Q matrices to complete scores and natural edits on12 new evaluation authors.
-> The outcome-blind prefix-only source connection is RUNNING; after completion,
-> integrate with author configuration, old external evidence and the4W theory.
+> Prefix-only source connection and48-author actual anchor diagnosis are COMPLETE.
+> New function retains46%/44% of TF/N label covariance; N remainder largely links
+> to old S9 configuration. Actual anchors locate a useful conditional-baseline
+> term. Next execute `GRAIN_CONDITIONAL_BASELINE_CONSTRUCTION_NEXT.md` from cached
+> states, no old queue or further generic seminar. Goal remains ACTIVE, not closed
+> by teacher-score fidelity. No neural collector remains running at this checkpoint.
 > Governing plan: `GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md`.
 > Historical goals/next experiments below do not override this route.
 
