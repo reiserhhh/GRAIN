@@ -1,14 +1,16 @@
 # GRAIN mainline discovery V3
 
-> **Current routing, 2026-09-08 after resumed execution:** S0-S26 are retained and the
-> [functional construction bridge V1](../reports/grain_vector_mechanisms/FUNCTIONAL_CONSTRUCTION_BRIDGE_REPORT.md)
-> is now COMPLETE. Frozen local functions transport, while natural N/confirmation
-> responses combine shared positive terms with negative cross-terms. No new neural
-> calls, questionnaire joins, or source-label optimization were performed.
-> [Theory increment](GRAIN_NATURAL_RESPONSE_CONSTRUCTION_THEORY_V1.md).
-> Next: [full-state edit connection](GRAIN_FULL_STATE_EDIT_CONNECTION_PLAN_V1.md),
-> PLANNED_NOT_RUN; S27 remains deferred. The previous seminar and older next-step
-> statements below are historical, not execution instructions.
+> **Current routing, 2026-09-08:** the full-state factorial pilot and context-carrier
+> split are COMPLETE: four fixed authors, three queries, 84+36 calls, 77.92 seconds.
+> Nine of twelve units have opposing context/final-query allocations. The unchanged
+> question-token region carries substantial effects: its allocated RMS is
+> 2.38/4.44/2.86 times evidence-side RMS (TF/N/confirmation). These are finite mechanism
+> observations, not population effect ratios or new questionnaire accuracy.
+> [Report](../reports/grain_vector_mechanisms/FULL_STATE_CONTEXT_CARRIER_REPORT.md);
+> [theory](GRAIN_QUERY_CONTEXT_CARRIER_THEORY_V1.md).
+> Next: [query-region functional matrix](GRAIN_QUERY_REGION_FUNCTIONAL_PLAN_V1.md),
+> PLANNED_NOT_RUN. S0-S26 and the preceding bridge are retained; S27 remains deferred.
+> Historical next-step statements below are not the current queue.
 
 2026-09-07. User-directed return to discovery after the synthetic P1R/S/T packet.
 

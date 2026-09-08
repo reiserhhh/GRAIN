@@ -1,6 +1,9 @@
 # GRAIN 上下文作用的证据区/提问区分解 V1
 
-2026-09-08。**IMPLEMENTED_NOT_RUN**。在完整状态四格包之后固定的新问题。
+2026-09-08。**COMPLETE**。36次后缀、0前缀、16.70秒；冻结版本`ace2247`。
+[完整结果](../reports/grain_vector_mechanisms/FULL_STATE_CONTEXT_CARRIER_REPORT.md)。
+下一问题为[提问区功能矩阵](GRAIN_QUERY_REGION_FUNCTIONAL_PLAN_V1.md)，尚未执行。
+在完整状态四格包之后固定的问题如下。
 前包4作者/12单元已完成：9单元上下文与末查询分配反向、2单元查询边际方向
 随上下文改变。TF/确认的上下文RMS明显大于末查询项。现在只定位其传播区域。
 

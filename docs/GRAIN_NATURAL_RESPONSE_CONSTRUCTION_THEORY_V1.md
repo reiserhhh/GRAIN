@@ -4,6 +4,9 @@
 [查询功能V2](GRAIN_FUNCTIONAL_MECHANISM_THEORY_V2.md)。
 [本轮数据](../reports/grain_vector_mechanisms/FUNCTIONAL_CONSTRUCTION_BRIDGE_REPORT.md)。
 
+后续更新：本页规划的完整状态四格已完成，并进一步定位了提问区载体；见
+[新的理论增量](GRAIN_QUERY_CONTEXT_CARRIER_THEORY_V1.md)。以下保留形成该实验的原始推导。
+
 ## 1. 共通公式不要求共用一个人格方向
 
 用户的原始目标是找到“作者文本经向量运算到特质判断”的可计算联系，包括

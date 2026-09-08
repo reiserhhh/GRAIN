@@ -1,13 +1,13 @@
 # GRAIN autonomous research: functional information left behind
 
-> **2026-09-08 execution update:** the user resumed bounded research after the seminar.
-> The [functional construction bridge](../reports/grain_vector_mechanisms/FUNCTIONAL_CONSTRUCTION_BRIDGE_REPORT.md)
-> is COMPLETE: 12-reference/12-evaluation S1 authors, 2.88 seconds, zero neural calls
-> and no new goal-tool object created. Frozen local response r=.878-.942; natural
-> N/confirmation covariance=.06999-.03391-.06271+.15444=.12781. The new finding is
-> signed multi-path sharing/cancellation, not another source-label accuracy record.
-> Next: [full-state edit connection](GRAIN_FULL_STATE_EDIT_CONNECTION_PLAN_V1.md),
-> PLANNED_NOT_RUN. S27 and old accuracy-refinement queues remain deferred.
+> **2026-09-08 execution update:** after the completed construction bridge, the
+> four-author full-state and evidence/question-region interventions are COMPLETE.
+> Actual within-input opposition occurs in 9/12 units; the nonfinal question region
+> is a useful carrier despite identical wording. See the
+> [report](../reports/grain_vector_mechanisms/FULL_STATE_CONTEXT_CARRIER_REPORT.md).
+> Total 120 calls, 77.92 seconds; no labels, training or new goal-tool object.
+> Next is the [query-region functional matrix](GRAIN_QUERY_REGION_FUNCTIONAL_PLAN_V1.md),
+> PLANNED_NOT_RUN. Do not resume S27 or a source-label accuracy search.
 > Historical execution instructions below are not the current queue.
 
 2026-09-08. New user-authorized goal, following completed S0-S4. Discovery first;

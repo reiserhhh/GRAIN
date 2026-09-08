@@ -1,6 +1,8 @@
 # GRAIN 完整状态编辑连接 V1
 
-2026-09-08。**IMPLEMENTED_NOT_RUN**。继功能构造连接包后的唯一候选神经采集；
+2026-09-08。**COMPLETE_PILOT**。4作者、84调用、61.22秒；冻结执行版本`74d0226`。
+[结果及后继分区](../reports/grain_vector_mechanisms/FULL_STATE_CONTEXT_CARRIER_REPORT.md)。
+继功能构造连接包后的神经采集；
 不是S27续跑。动机和数字见
 [已完成报告](../reports/grain_vector_mechanisms/FUNCTIONAL_CONSTRUCTION_BRIDGE_REPORT.md)。
 
@@ -82,7 +84,7 @@ I_RQ单报，不能再加进最后一式。分解依赖声明的干预与对齐�
 输出拟定`results/grain_vector_mechanisms/full_state_edit_connection_v1/`：
 manifest、对齐核验、同次重放、四端点、精确分账、跨查询作用表、成本与机制
 决议。逐人内容继续私有；公开报告只包含聚合和公式。先验证删除恒等变换、
-2×2交互、方向和重放，再开始神经采集。尚未启动该采集。
+2×2交互、方向和重放，再开始神经采集。上方状态更新对应已完成的下述有限包。
 
 ### 本次实际冻结的有限包
 
