@@ -1,5 +1,18 @@
 # GRAIN mainline discovery V3
 
+> **NAV first loop DELIVERED; goal V6 stays ACTIVE.** Synthetic references preserve
+> free-chat dejected-state external r=.569 on46 participants. Actual upstream
+> interventions locate query-slot attention/MLP action. A separate token-only,
+> no-Transformer program gives T/F AUC .677-.705 on64 source authors; E/state
+> transport remains weak. [Report](../reports/grain_vector_mechanisms/NAVIGATION_ROUND1_REPORT.md).
+> No collector remains;835 tests passed,3 skipped. Resume the [V6 work ledger](GRAIN_NAVIGATION_RESEARCH_GOAL_V6.md),
+> not a human-label accuracy grid. All12 pieces are not yet closed.
+
+> **2026-09-09 execution RESUMED: [navigation goal V6](GRAIN_NAVIGATION_RESEARCH_GOAL_V6.md) ACTIVE.**
+> User requests all NAV-01–12 pieces. Start controlled-world construction and
+> both state/projection routes; real-text connection follows each useful local
+> result. Earlier pause statements below are historical, not current routing.
+
 > **2026-09-09 literature and pending-plan update COMPLETE; no experiments started.**
 > [NAV-01–12 execution cards](GRAIN_PENDING_PUZZLE_EXECUTION_PLAN_V2.md) now include
 > controlled event worlds, real-versus-synthetic reference construction, BOTH

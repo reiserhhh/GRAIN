@@ -40,6 +40,11 @@ block on the next experiment. Never silently open a sealed lockbox.
 
 ## Immediate application
 
+2026-09-09 subsequent instruction: execution is now explicitly authorized under
+[navigation goal V6](GRAIN_NAVIGATION_RESEARCH_GOAL_V6.md). Complete the bounded
+NAV-01–12 packets and both routes; prior pause text below records the earlier
+planning checkpoint. MEPS remains external-only; old queues stay parked.
+
 2026-09-09: [all-factor goal V5](GRAIN_ALL_FACTOR_RESEARCH_GOAL_V5.md) is complete.
 The user has paused unfinished work; both [text-to-function routes](GRAIN_TEXT_TO_FUNCTION_TWO_ROUTES_PLAN_V1.md)
 are recorded as PENDING. There is no active research queue to resume automatically.
