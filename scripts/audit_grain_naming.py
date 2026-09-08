@@ -72,6 +72,20 @@ def historical_context(line: str) -> bool:
     return any(marker.casefold() in folded for marker in HISTORICAL_MARKERS)
 
 
+def stale_brand_prose(line: str) -> bool:
+    """Exclude a persisted directory component, but still inspect remaining prose."""
+    prose = re.sub(
+        r"(?<=[/\\])" + re.escape(FORMER_EXPANSION),
+        "__legacy_repository_directory__",
+        line,
+    )
+    return bool(
+        FORMER_EXPANSION in prose
+        or FORMER_BRAND_RE.search(prose)
+        or FORMER_TITLE_RE.search(prose)
+    )
+
+
 def inspect() -> dict[str, object]:
     """Build a machine-readable migration inventory."""
     by_category: Counter[str] = Counter()
@@ -107,11 +121,7 @@ def inspect() -> dict[str, object]:
             file_matched = True
             by_category[cat] += total
             by_spelling.update({key: value for key, value in spellings.items() if value})
-            stale_brand = (
-                spellings["former_expansion"]
-                or spellings["standalone_upper"]
-                or spellings["standalone_title"]
-            )
+            stale_brand = stale_brand_prose(line)
             if cat == "active_documentation" and stale_brand and not historical_context(line):
                 violations.append(
                     {

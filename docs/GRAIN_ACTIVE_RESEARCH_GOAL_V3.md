@@ -1,27 +1,21 @@
 # GRAIN autonomous research: functional information left behind
 
-> **Latest goal, 2026-09-08:** a new user-requested goal-tool object is ACTIVE:
-> complete the whole GRAIN reference-function framework, not another local accuracy
-> packet. Two Claude Fable5.1/max read-only seminar rounds complete. M8 has connected
-> frozen P/Q matrices to complete scores and natural edits on12 new evaluation authors.
-> Prefix-only source connection and48-author actual anchor diagnosis are COMPLETE.
-> New function retains46%/44% of TF/N label covariance; N remainder largely links
-> to old S9 configuration. Actual anchors locate a useful conditional-baseline
-> term. M12/M13 now complete: simple b readers mainly remove N's offset. M14/M15
-> actual interventions then locate N's conditional E configuration (r=.521 on24)
-> and preserve the distinct TF query arm. M16-M18 are now COMPLETE: full adjoints,
-> same-basis action-space projection, and condition-dependent fields. TF/N effect
-> transport reaches .689/.574 with action fitting; source linkage remains a
-> separate object. M19 is now COMPLETE:148 suffix calls/93s; odd and even actions
-> both carry source N association (.451/.453 on20 nonreference authors), while
-> the origin derivative does not approximate the odd action. Quadratic-only
-> construction thus omits a relevant orientation channel. Original zero-call
-> dtype failure retained; r2 complete. Next execute
-> `GRAIN_ODD_ACTION_CONSTRUCTION_PLAN_V1.md` (M20,PLANNED_NOT_RUN): symmetric
-> positive/negative-path adjoints and a transported odd function, max70 new pairs.
-> Goal remains ACTIVE; no running neural queue or rank/alpha/label-accuracy search.
-> Governing plan: `GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md`.
-> Historical goals/next experiments below do not override this route.
+> **Latest checkpoint, 2026-09-08: reference-function framework v1 DELIVERED.**
+> Two actual Claude read-only seminars and M8-M21 are COMPLETE. The fixed complete
+> score/natural-response API, author reference coordinates, source-covariance
+> connections,4W and mathematical assumptions now have a single delivery ledger:
+> `GRAIN_REFERENCE_FRAMEWORK_DELIVERY_V1.md`. M20 adds70 forward/backward pairs;
+> M21 is cached-only. Correcting endpoint completeness does not fix the finite
+> odd-field family. Preserve that result and the real directional association.
+> The working theory is a reproducible conditional construction with demonstrated
+> partial readers, not a universal perfect predictor or unique hidden neural chain.
+> Final cache replay matches108 scores and12 author configurations. No collector,
+> training job or new automatic candidate is queued. Do not resume S27 or turn
+> conditional/directional compression into an unbounded label-accuracy search.
+> Frozen governing plan remains `GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md`; it is not
+> rewritten after execution. Historical instructions below are not current tasks.
+> Final acceptance:760 GRAIN tests pass; Ruff/diff pass. The finite framework goal
+> closes with this delivery, not with a claim that universal compression is solved.
 
 > **2026-09-08 execution update:** query-region functional matrices are COMPLETE:
 > 2 reference / 2 evaluation authors, 72 suffix forward/backward pairs plus six

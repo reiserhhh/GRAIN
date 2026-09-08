@@ -24,6 +24,20 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Real-author mechanism result (2026-09-08)
 
+The [reference-function framework v1](docs/GRAIN_REFERENCE_FRAMEWORK_DELIVERY_V1.md)
+now connects fixed author-text states, query-specific mathematical readouts,
+complete scores/natural changes, reference author configurations, and existing
+psychological associations. Three-query full-score agreement is .817/.761/.920
+on12 new construction-evaluation authors; these are **model agreement**, not human
+personality correlations. A277-author source connection retains part of the
+teacher's external association. Directional and symmetric configuration effects
+both carry source links, but the finite directional-reader family remains weak.
+The [theory](docs/GRAIN_REFERENCE_FUNCTION_FRAMEWORK_V1.md) separates exact
+functional identities from usable approximations and their errors; the
+[build/replay guide](docs/GRAIN_REFERENCE_FRAMEWORK_BUILD_V1.md) provides a frozen
+API and zero-neural replay. No new scale, universal predictor, or unique neural
+reasoning chain is claimed. Earlier results below remain historical evidence.
+
 The autonomous [S5 follow-up](reports/grain_vector_mechanisms/S5_STUDENT_REMAINDER_REPORT.md)
 and [S6/S7 configuration experiments](reports/grain_vector_mechanisms/S7_ORBIT_RESPONSE_REPORT.md)
 are complete. Preserving comment means still permits measurable decoder-response

@@ -1,32 +1,21 @@
 # GRAIN mainline discovery V3
 
-> **Current routing, 2026-09-08:** two Claude read-only seminar rounds are complete;
-> a new whole-framework goal is ACTIVE. M8 full-level/response connection is COMPLETE:
-> 12 evaluation authors, three queries, 288F/204.17s, zero new gradients or labels.
-> Frozen P+Q full-score r=.817/.761/.920 (TF/N/confirmation), natural response
-> r=.886/.681/.717. [Result](../reports/grain_vector_mechanisms/COMPLETE_LEVEL_RESPONSE_REPORT.md).
-> The prefix source connection is COMPLETE: TF/N teacher fidelity .910/.805,
-> but only46%/44% of label covariance retained. The48-author actual anchor
-> diagnosis is also COMPLETE: both conditional baselines and transport remainders
-> carry author association, with different leading terms by query.
-> M12/M13 conditional-moment and material-order constructions are COMPLETE; N's
-> association remains mostly outside those simple readers. M14 retains the old
-> pairing mechanism but it is not the main conditional baseline route. M15's
-> completed four-cell intervention locates N's old configuration in fixed-query
-> E_main (24-source-author r=.521), while TF primarily uses the query-state arm.
-> M16-M18 are COMPLETE: the conditional field transports some N ordering; changing
-> to action-space fitting improves held-author TF/N effect r to .689/.574. Conditional
-> background/layout fields reveal author associations but do not improve effect fidelity.
-> All these quadratic fields are even under a comment-centered sign reflection.
-> M19 [configuration parity](GRAIN_CONFIGURATION_PARITY_PLAN_V1.md) is COMPLETE:
->148 suffix calls/93s. N odd/even source r=.451/.453 on20 nonreference authors;
-> the origin gradient cannot substitute for the odd action. Original zero-call
-> dtype failure retained, r2 complete. Next:
-> [odd-action construction](GRAIN_ODD_ACTION_CONSTRUCTION_PLAN_V1.md), PLANNED_NOT_RUN.
-> No neural collector is running; build the missing signed functional channel.
-> Do not repeat M12 or launch a rank/alpha/background grid.
-> See [whole-framework plan](GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md).
-> Do not resume the superseded P-only 12-author packet or old S27 queues.
+> **Current routing, 2026-09-08: reference-function framework v1 delivery.**
+> Two Claude Fable5.1/max read-only seminars and M8-M21 are COMPLETE. Frozen P+Q
+> reads full scores and natural edits across three queries; M10 connects277 source
+> authors. M11-M19 locate conditional baselines, configuration, query interactions
+> and source-linked odd/even effects. M20 transports finite odd fields weakly;
+> M21 endpoint constraints barely change this. Keep useful partial source links,
+> but do not call the entire conditional field compressed or a unique neural chain.
+> Unified value/response/reference API replays108 scores to9.80e-17, fixed author
+> coordinates to3.29e-14, with zero new neural calls/labels.
+> [Delivery and open scope](GRAIN_REFERENCE_FRAMEWORK_DELIVERY_V1.md),
+> [theory](GRAIN_REFERENCE_FUNCTION_FRAMEWORK_V1.md),
+> [build/replay guide](GRAIN_REFERENCE_FRAMEWORK_BUILD_V1.md).
+> No new collector or automatic rank/alpha extension is queued. Universal conditional
+> and directional compression is an open next-stage construction problem, not a
+> reason to restart S27, old training, or new questionnaires/lockboxes.
+> Historical next-step statements below are not the current queue.
 
 > **Previous checkpoint:** the query-region functional matrix is COMPLETE.
 > Two reference authors supply frozen matrices; two evaluation authors have 6/6
