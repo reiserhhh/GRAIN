@@ -1,5 +1,13 @@
 # MEPS + AI Conversation: Data Layout and Reference Map
 
+> 2026-09-09 scope addition: the user has now authorized a separate **local
+> exploratory external-linkage branch** for Study 2 scored pre/post measures.
+> See [the V5 all-factor plan](../docs/GRAIN_ALL_FACTOR_RESEARCH_GOAL_V5.md).
+> Only its allowlisted numeric items/scores may enter that branch, with no
+> training, private API upload, Study 1 merge or old lockbox opening. The
+> reference-only policies below remain the historical VM06/default importer
+> contract; they do not retroactively describe the new M27/M30 branch.
+
 ## Authoritative route
 
 `decrypted_output/` is the sole SUICA text source for
