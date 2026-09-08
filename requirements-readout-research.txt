@@ -1,0 +1,3 @@
+# Optional CPU readout experiments; leave released scorer/lockfiles unchanged.
+-r requirements-vector-research.txt
+lightgbm==4.7.0

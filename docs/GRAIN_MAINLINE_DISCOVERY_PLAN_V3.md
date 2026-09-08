@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **Latest: M22/M22B completed (2026-09-09 JST; started Sep8).**
+> The cited linear/nonlinear/conditional literature is now in the research plan.
+> Five cached readers compared on2541 source authors plus277 matched prefix authors;
+> T/F retains Ridge AUC .7173. For N, matched query-conditioned prefix+Ridge gives
+> teacher r .7134 vs E5 .5726; external r .1629 vs .0400 (deltaCI .0249-.2204).
+> Frozen readers then tested natural edits on24 separate authors: T/F retains
+> partial edit tracking, but tree-level gains do not ensure N response transfer.
+> [Report](../reports/grain_vector_mechanisms/LINEAR_NONLINEAR_READOUT_REPORT.md),
+> [plan and literature](GRAIN_LINEAR_NONLINEAR_READOUT_PLAN_V1.md),
+> [edit ledger](GRAIN_NONLINEAR_EDIT_CONNECTION_M22B.md).
+> Next: M23 conditional-coordinate localization, not more tree-grid optimization.
+> No collector is running; release/reference framework, source-label boundaries,
+> bridge/MEPS restrictions and lockboxes remain unchanged.
+
 > **Current routing, 2026-09-08: reference-function framework v1 delivery.**
 > Two Claude Fable5.1/max read-only seminars and M8-M21 are COMPLETE. Frozen P+Q
 > reads full scores and natural edits across three queries; M10 connects277 source
