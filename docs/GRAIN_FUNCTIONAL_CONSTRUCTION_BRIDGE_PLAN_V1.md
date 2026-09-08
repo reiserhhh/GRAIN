@@ -1,6 +1,8 @@
 # GRAIN 功能构造连接实验 V1
 
-2026-09-08。状态：**IMPLEMENTED_NOT_RUN**。本次研讨选定的唯一下一研究包。
+2026-09-08。状态：**COMPLETE**。冻结执行版本为`cd4ae0d`，本行仅更新状态。
+报告：[自然响应构造结果](../reports/grain_vector_mechanisms/FUNCTIONAL_CONSTRUCTION_BRIDGE_REPORT.md)。
+主计算2.88秒、0新神经调用；后继为[完整状态编辑连接](GRAIN_FULL_STATE_EDIT_CONNECTION_PLAN_V1.md)，尚未采集。
 替代S27的默认续跑位置，不撤销S0-S26成果，不启动旧长队列。
 研讨记录：[主线重定向](../reports/grain_vector_mechanisms/MAINLINE_REORIENTATION_SEMINAR_20260908.md)。
 
