@@ -9,10 +9,17 @@
 > to old S9 configuration. Actual anchors locate a useful conditional-baseline
 > term. M12/M13 now complete: simple b readers mainly remove N's offset. M14/M15
 > actual interventions then locate N's conditional E configuration (r=.521 on24)
-> and preserve the distinct TF query arm. Next execute
-> `GRAIN_CENTERED_ADJOINT_FIELD_PLAN_V1.md`: construct a token-state-dependent
-> sensitivity field, not another mean/readout accuracy search. Goal remains ACTIVE, not closed
-> by teacher-score fidelity. No neural collector remains running at this checkpoint.
+> and preserve the distinct TF query arm. M16-M18 are now COMPLETE: full adjoints,
+> same-basis action-space projection, and condition-dependent fields. TF/N effect
+> transport reaches .689/.574 with action fitting; source linkage remains a
+> separate object. M19 is now COMPLETE:148 suffix calls/93s; odd and even actions
+> both carry source N association (.451/.453 on20 nonreference authors), while
+> the origin derivative does not approximate the odd action. Quadratic-only
+> construction thus omits a relevant orientation channel. Original zero-call
+> dtype failure retained; r2 complete. Next execute
+> `GRAIN_ODD_ACTION_CONSTRUCTION_PLAN_V1.md` (M20,PLANNED_NOT_RUN): symmetric
+> positive/negative-path adjoints and a transported odd function, max70 new pairs.
+> Goal remains ACTIVE; no running neural queue or rank/alpha/label-accuracy search.
 > Governing plan: `GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md`.
 > Historical goals/next experiments below do not override this route.
 

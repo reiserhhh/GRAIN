@@ -14,8 +14,17 @@
 > pairing mechanism but it is not the main conditional baseline route. M15's
 > completed four-cell intervention locates N's old configuration in fixed-query
 > E_main (24-source-author r=.521), while TF primarily uses the query-state arm.
-> Next: [centered conditional sensitivity field](GRAIN_CENTERED_ADJOINT_FIELD_PLAN_V1.md),
-> PLANNED_NOT_RUN. No neural collector is currently running. Do not repeat M12 fits.
+> M16-M18 are COMPLETE: the conditional field transports some N ordering; changing
+> to action-space fitting improves held-author TF/N effect r to .689/.574. Conditional
+> background/layout fields reveal author associations but do not improve effect fidelity.
+> All these quadratic fields are even under a comment-centered sign reflection.
+> M19 [configuration parity](GRAIN_CONFIGURATION_PARITY_PLAN_V1.md) is COMPLETE:
+>148 suffix calls/93s. N odd/even source r=.451/.453 on20 nonreference authors;
+> the origin gradient cannot substitute for the odd action. Original zero-call
+> dtype failure retained, r2 complete. Next:
+> [odd-action construction](GRAIN_ODD_ACTION_CONSTRUCTION_PLAN_V1.md), PLANNED_NOT_RUN.
+> No neural collector is running; build the missing signed functional channel.
+> Do not repeat M12 or launch a rank/alpha/background grid.
 > See [whole-framework plan](GRAIN_FRAMEWORK_CLOSURE_PLAN_V1.md).
 > Do not resume the superseded P-only 12-author packet or old S27 queues.
 
