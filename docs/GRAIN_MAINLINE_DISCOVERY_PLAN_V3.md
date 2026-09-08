@@ -1,5 +1,11 @@
 # GRAIN mainline discovery V3
 
+> **Active goal, 2026-09-09: [five-piece development V4](GRAIN_MAINLINE_PIECES_GOAL_V4.md).**
+> The user freezes linear readout as a working tool. Execute M23 cached P/Q and
+> token-configuration localization, then targeted evidence effects, shared/private
+> functions, author reference profiles and compact use. No tree-grid extension.
+> Reference-function v1 stays delivered; the new goal develops its open links.
+
 > **Latest: M22/M22B completed (2026-09-09 JST; started Sep8).**
 > The cited linear/nonlinear/conditional literature is now in the research plan.
 > Five cached readers compared on2541 source authors plus277 matched prefix authors;
