@@ -149,9 +149,11 @@ opportunity supplies a concrete axis of variation in L, consistent with
 establish a causal treatment effect because these are different tasks in one
 study, not a randomized test of our prompt construction.
 
-M30C adds state composites with occasion-matched endpoints rather than pretending
-all text-derived quantities are traits. There is no need to force a label before
-identifying an observable response function and its behavioral connections.
+M30C now adds actual state links: free-chat endpoint r=.427/.536/.518 and partial
+r controlling preceding state=.408/.512/.526. Thus the occasion argument in L
+has empirical content, not just notation. There is no need to call these stable
+traits. M30B is constructing all25 narrower query functions independently of
+the participants; their mathematical transport test is the next connection.
 
 ## 7. Remaining construction decisions
 
@@ -159,7 +161,7 @@ identifying an observable response function and its behavioral connections.
 |---|---|---|
 | Common core formula | Nine functions, reference coefficients, natural-response transport | M29: which M/C/Q terms retain human source relations? |
 | Narrow targets |22 queries x2 views; complete external matrix and shared/specific score split | Build externally referenced G/g maps, then test their saved P/Q states; no46-person label fit |
-| State targets |13 adapted items x4 phases audited; M30C prepared | Which actual state endpoints are visible in the appropriate view? |
+| State targets |13 adapted items x4 phases audited; M30C state r=.427-.536 | Does independently referenced vector readout retain the occasion-sensitive link? |
 | Query identity | E and EI edit responses nearly unrelated (.047 native on M28 panel) | Separate construct wording from digit/letter response coding in a bounded all-axis packet |
 | Cross-target sharing | Exact signed covariance ledger; no common scalar forced | Determine whether source-linked shared terms recur across evidence opportunities |
 | Reference-relative author positions |12-author fixed norm exists for core queries | Keep future scoring independent of the incoming batch; do not reuse descriptive MEPS norms as a deployable reference |

@@ -160,12 +160,18 @@ Goal active. M27 completed (492 source links; all46 Study2 participants and22
 scores audited). M28 completed: nine functions, held level r=.776-.991 and
 natural-response r=.550-.976, no human fitting. See
 [M28 report](../reports/grain_vector_mechanisms/ALL_FACTOR_FUNCTIONS_REPORT.md).
-M29 all-source 277-author prefix collection is running. M30 both46-author/
+M29 all-source277-author prefix collection reached574/1321 query units and a
+bounded20-minute checkpoint; it resumes after the short M30 extensions, without
+changing its fixed sample. M30 both46-author/
 22-query views and their paired comparison are COMPLETE. Free-chat external
 AI trust r=.324, attachment anxiety r=.308, overall session evaluation r=.319;
 phase-family BH minimum q=.149. The full report retains every target and both
 common/specific covariance contributions:
 [M30 report](../reports/grain_vector_mechanisms/COUNSELING_ALL_FACTOR_EXTERNAL_REPORT.md).
 Both views fit without text clipping; no human-outcome fitting was performed.
+M30C completed276 calls: free-chat adapted state r=.427/.536/.518, all endpoint
+BH q<=.0031. [State report](../reports/grain_vector_mechanisms/COUNSELING_STATE_EXTERNAL_REPORT.md).
+M30B's25 narrower derivative functions are collecting on two independent source
+references, no MEPS training. Their external transport remains to be measured.
 M31 nine-query signed covariance accounting is done; external-linked synthesis
 and the smaller constructs' function cards remain. The goal is not yet complete.
