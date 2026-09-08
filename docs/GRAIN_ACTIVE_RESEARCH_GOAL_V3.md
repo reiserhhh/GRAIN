@@ -1,6 +1,7 @@
 # GRAIN autonomous research: functional information left behind
 
-> **2026-09-08 seminar override:** the app goal is paused. S25-S26 are complete;
+> **2026-09-08 seminar override:** the loop was not resumed. A prior status check
+> showed paused; the closing goal-tool check returned no current goal. S25-S26 are complete;
 > S27 remains unrun and is now deferred. Next planned work is
 > [GRAIN_FUNCTIONAL_CONSTRUCTION_BRIDGE_PLAN_V1](GRAIN_FUNCTIONAL_CONSTRUCTION_BRIDGE_PLAN_V1.md),
 > using existing caches to connect local functions to natural cross-query
