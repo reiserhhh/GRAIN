@@ -5,6 +5,12 @@ recorded, then paused research to discuss other questions. M27-M31 remain
 complete. Do not create a goal, dispatch agents, run collectors, or resume old
 experiments from this document without a subsequent instruction to proceed.
 
+The user's subsequent planning request adds a controlled-world construction
+platform for BOTH routes. The [full pending register and execution cards](GRAIN_PENDING_PUZZLE_EXECUTION_PLAN_V2.md)
+and [22-source literature synthesis](GRAIN_NAVIGATION_LITERATURE_REVIEW_V1.md)
+now specify NAV-01 through NAV-12. Literature/planning are complete; experiments
+remain pending. Neither route has been replaced by the synthetic-world idea.
+
 ## Objective and starting point
 
 Ultimate objective: explain and independently implement the useful computation
@@ -80,6 +86,13 @@ B targets a smaller task-specific independent computation. Neither is already
 proven to be possible for all targets. They can share localization evidence
 without forcing identical intermediate coordinates or a single universal scalar.
 
+Use controlled event/role/opportunity worlds to identify local computations.
+Compare the existing real-text reference functions with separately constructed
+synthetic-only reference functions before transport to real authors. Synthetic
+event facts are known; psychological attributions are model responses to explain,
+not generator-supplied human personality ground truth. After each useful local
+map, test real-text connection rather than finishing all targets first.
+
 After the user resumes: choose a bounded set of already useful target functions
 and independent reference materials; freeze their existing readers. Locate a
 useful upstream operation, implement it, then test changes in evidence and
@@ -109,4 +122,3 @@ by recording this plan. Current coefficients and completed evidence stay intact.
 - [Current construction and equation atlas](GRAIN_ALL_FACTOR_MATHEMATICAL_ATLAS_M31.md).
 - [Completed all-factor round](../reports/grain_vector_mechanisms/ALL_FACTOR_ROUND_DELIVERY_REPORT.md).
 - [A Mathematical Framework for Transformer Circuits](https://transformer-circuits.pub/2021/framework/index.html): distinguishes attention routing (QK) from information writing (OV); motivates analysis, not proof that attention alone replaces the full prefix.
-

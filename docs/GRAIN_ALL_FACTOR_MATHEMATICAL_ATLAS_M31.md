@@ -180,6 +180,12 @@ User pause,2026-09-09: all entries below are PENDING, not a live queue. The next
 two mainline routes are [state-producing reconstruction and direct useful-projection construction](GRAIN_TEXT_TO_FUNCTION_TWO_ROUTES_PLAN_V1.md).
 Recording them does not launch experiments or change the completed M27-M31 results.
 
+The subsequent planning-only update organizes these questions plus synthetic
+world construction into [NAV-01–12 work packages](GRAIN_PENDING_PUZZLE_EXECUTION_PLAN_V2.md),
+with [primary-source literature](GRAIN_NAVIGATION_LITERATURE_REVIEW_V1.md).
+Both real-reference controls and synthetic-only reference functions are planned.
+The table below records the M31 evidence, not additional executed experiments.
+
 | Piece | Evidence now | Next executable question |
 |---|---|---|
 | Common core formula |34 functions; nine natural-response tests; complete human source links and M/C/Q accounting | Extend evidence-response tests to narrower state/relational targets on independent material |

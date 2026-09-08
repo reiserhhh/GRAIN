@@ -1,5 +1,13 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-09 literature and pending-plan update COMPLETE; no experiments started.**
+> [NAV-01–12 execution cards](GRAIN_PENDING_PUZZLE_EXECUTION_PLAN_V2.md) now include
+> controlled event worlds, real-versus-synthetic reference construction, BOTH
+> state and useful-projection routes, local maps and real-author connection.
+> [Literature synthesis](GRAIN_NAVIGATION_LITERATURE_REVIEW_V1.md) links22 primary
+> studies to the actual gaps. All execution packages remain PENDING; no new goal,
+> agent, model run or dependency installation was launched by this planning task.
+
 > **2026-09-09 user pause: all unfinished work PENDING.**
 > Both next routes are recorded in [text-to-function plan](GRAIN_TEXT_TO_FUNCTION_TWO_ROUTES_PLAN_V1.md):
 > A reconstructs the useful P/Q-producing computation; B directly reconstructs
