@@ -176,6 +176,10 @@ The equation ledger is reproducible with `scripts/build_grain_all_factor_atlas.p
 
 ## 8. Remaining construction decisions
 
+User pause,2026-09-09: all entries below are PENDING, not a live queue. The next
+two mainline routes are [state-producing reconstruction and direct useful-projection construction](GRAIN_TEXT_TO_FUNCTION_TWO_ROUTES_PLAN_V1.md).
+Recording them does not launch experiments or change the completed M27-M31 results.
+
 | Piece | Evidence now | Next executable question |
 |---|---|---|
 | Common core formula |34 functions; nine natural-response tests; complete human source links and M/C/Q accounting | Extend evidence-response tests to narrower state/relational targets on independent material |

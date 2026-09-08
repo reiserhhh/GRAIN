@@ -40,7 +40,9 @@ block on the next experiment. Never silently open a sealed lockbox.
 
 ## Immediate application
 
-2026-09-09: the current queue is [all-factor goal V5](GRAIN_ALL_FACTOR_RESEARCH_GOAL_V5.md).
+2026-09-09: [all-factor goal V5](GRAIN_ALL_FACTOR_RESEARCH_GOAL_V5.md) is complete.
+The user has paused unfinished work; both [text-to-function routes](GRAIN_TEXT_TO_FUNCTION_TWO_ROUTES_PLAN_V1.md)
+are recorded as PENDING. There is no active research queue to resume automatically.
 The new user-authorized MEPS local exploratory linkage is scoped there; the
 withheld-MEPS instruction in the historical D1 paragraph below is unchanged for
 that earlier packet, not a prohibition on the newly authorized branch.

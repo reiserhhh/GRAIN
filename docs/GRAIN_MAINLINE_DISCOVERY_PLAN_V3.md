@@ -1,5 +1,11 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-09 user pause: all unfinished work PENDING.**
+> Both next routes are recorded in [text-to-function plan](GRAIN_TEXT_TO_FUNCTION_TWO_ROUTES_PLAN_V1.md):
+> A reconstructs the useful P/Q-producing computation; B directly reconstructs
+> only the projections needed by the frozen score. Neither is started. Do not
+> create a goal or resume collectors until the user asks to proceed.
+
 > **2026-09-09 all-factor goal V5 COMPLETE: M27-M31 delivered.**
 >34 independent-reference vector functions now have coefficient/evidence cards.
 > Free-chat state-function external r=.422/.564/.555 on46 participants;
