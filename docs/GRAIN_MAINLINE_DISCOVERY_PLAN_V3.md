@@ -1,15 +1,16 @@
 # GRAIN mainline discovery V3
 
-> **Current routing, 2026-09-08:** the full-state factorial pilot and context-carrier
-> split are COMPLETE: four fixed authors, three queries, 84+36 calls, 77.92 seconds.
-> Nine of twelve units have opposing context/final-query allocations. The unchanged
-> question-token region carries substantial effects: its allocated RMS is
-> 2.38/4.44/2.86 times evidence-side RMS (TF/N/confirmation). These are finite mechanism
-> observations, not population effect ratios or new questionnaire accuracy.
-> [Report](../reports/grain_vector_mechanisms/FULL_STATE_CONTEXT_CARRIER_REPORT.md);
-> [theory](GRAIN_QUERY_CONTEXT_CARRIER_THEORY_V1.md).
-> Next: [query-region functional matrix](GRAIN_QUERY_REGION_FUNCTIONAL_PLAN_V1.md),
-> PLANNED_NOT_RUN. S0-S26 and the preceding bridge are retained; S27 remains deferred.
+> **Current routing, 2026-09-08:** the query-region functional matrix is COMPLETE.
+> Two reference authors supply frozen matrices; two evaluation authors have 6/6
+> correctly signed effects across three queries. Error/zero energy is .137/.023/.0075
+> (TF/N/confirmation); token means are substantially worse. These are P-region
+> effects conditional on Q0, not new questionnaire accuracy or full natural effects.
+> [Report](../reports/grain_vector_mechanisms/QUERY_REGION_FUNCTIONAL_REPORT.md);
+> [theory](GRAIN_TOKEN_FUNCTIONAL_CONSTRUCTION_THEORY_V1.md);
+> [mainline milestones](GRAIN_MAINLINE_MILESTONES_20260908.md).
+> Next: [frozen query-region transport](GRAIN_QUERY_REGION_TRANSPORT_PLAN_V1.md),
+> PLANNED_NOT_RUN. One forward-only 12-author check, no re-estimation of matrices.
+> S0-S26, construction bridge and full-state/carrier results remain; S27 is deferred.
 > Historical next-step statements below are not the current queue.
 
 2026-09-07. User-directed return to discovery after the synthetic P1R/S/T packet.

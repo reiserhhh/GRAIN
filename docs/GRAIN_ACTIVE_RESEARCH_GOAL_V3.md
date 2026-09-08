@@ -1,13 +1,14 @@
 # GRAIN autonomous research: functional information left behind
 
-> **2026-09-08 execution update:** after the completed construction bridge, the
-> four-author full-state and evidence/question-region interventions are COMPLETE.
-> Actual within-input opposition occurs in 9/12 units; the nonfinal question region
-> is a useful carrier despite identical wording. See the
-> [report](../reports/grain_vector_mechanisms/FULL_STATE_CONTEXT_CARRIER_REPORT.md).
-> Total 120 calls, 77.92 seconds; no labels, training or new goal-tool object.
-> Next is the [query-region functional matrix](GRAIN_QUERY_REGION_FUNCTIONAL_PLAN_V1.md),
-> PLANNED_NOT_RUN. Do not resume S27 or a source-label accuracy search.
+> **2026-09-08 execution update:** query-region functional matrices are COMPLETE:
+> 2 reference / 2 evaluation authors, 72 suffix forward/backward pairs plus six
+> preserved endpoint-preflight pairs, 77.30 seconds total. Frozen matrices read
+> 6/6 held-author effect directions correctly; token averaging loses useful action.
+> [Report](../reports/grain_vector_mechanisms/QUERY_REGION_FUNCTIONAL_REPORT.md),
+> [milestones](GRAIN_MAINLINE_MILESTONES_20260908.md).
+> Next: [12-author frozen transport](GRAIN_QUERY_REGION_TRANSPORT_PLAN_V1.md),
+> PLANNED_NOT_RUN, forward only. No labels, training or new goal-tool object.
+> Do not resume S27 or a source-label accuracy search.
 > Historical execution instructions below are not the current queue.
 
 2026-09-08. New user-authorized goal, following completed S0-S4. Discovery first;

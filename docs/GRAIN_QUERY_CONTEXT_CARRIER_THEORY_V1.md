@@ -3,6 +3,9 @@
 2026-09-08。继自然响应构造V1；依据
 [两个实际干预包](../reports/grain_vector_mechanisms/FULL_STATE_CONTEXT_CARRIER_REPORT.md)。
 
+后续：提问区功能矩阵包已完成，见[token功能构造理论](GRAIN_TOKEN_FUNCTIONAL_CONSTRUCTION_THEORY_V1.md)。
+以下保留形成该包的推导。
+
 ## 1. 从相关分账到同输入反事实
 
 上一轮识别到不同查询的有符号协方差抵消，本轮通过实际状态替换看到同输入
