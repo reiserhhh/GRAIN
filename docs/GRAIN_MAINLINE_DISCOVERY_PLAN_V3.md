@@ -10,8 +10,13 @@
 > rather than inferring unread information from a different change statistic.
 > Native effect remains real and94.1% of its log-odds response energy is common
 > shift. This is compatible with a valid common axis, not evidence against it.
-> Next test different author positions/natural changes under the shared operator,
-> retaining query-readable residuals and fixed reference positions.
+> The next finite test is now delivered: [natural material transport and query
+> residuals](../reports/grain_vector_mechanisms/NATURAL_TRANSPORT_LOGIC_REPORT_V1.md).
+> Shared fixed f tracks native deletion responses at r=.886/.681 (T/F/N), while
+> historical GRAIN transition maps give -.412/.294. Query-position configuration
+> residuals give .775/.642 and now have explicit source-fixed scoring references.
+> Next: lightweight extraction of this defined object, not another GRAIN alpha
+> grid. See the [active goal ledger](GRAIN_LOGIC_RESEARCH_GOAL_V1.md).
 > No old collector or parameter queue restarted; release scoring unchanged.
 
 > **2026-09-10 latest: bounded dynamic/channel investigation COMPLETE.**

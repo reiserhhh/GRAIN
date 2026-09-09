@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, first finite pass delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, two finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -19,14 +19,47 @@ No new neural inference, training, APIs, raw MEPS reads or lockbox opening.
 The full numerical panel uses276 previously exposed source authors, not a new
 blind replication. No literal all-author/theory-global exhaustion is claimed.
 
+## Second pass: actual material transport and a usable residual
+
+- NEXT01's bounded experiment complete: source-only maps fitted on276 authors;
+ 12 disjoint (previously reused) held authors scored on exact full/E1/E2 materials.
+ Shared fixed function/native deletion-change r=.886 T/F and.681 neuroticism,
+ while GRAIN transition transport is -.412/.294. Artificial unit displacement
+ and the actual natural-material path are not interchangeable. Source-OOF
+ estimands and the three fixed map alternatives are all retained.
+- NEXT02's first candidate complete: source-referenced residuals of mean,
+ configuration and final-query components, with separate level/change estimands.
+ Configuration remainder/native change r=.775/.642; no model or human-label
+ fitting on held authors. Factor-part coefficients sum to the total within
+ 1.57e-17. Exact closure is not a unique causal attribution.
+- NEXT03 initial distinction complete: availability mixture identity verified
+ within2.61e-18; a semantic-relevance deletion control is not a functional null.
+ This does not identify free preference or person-by-situation psychology.
+- NEXT04 initial same-material pair complete: T/F configuration->T/F r=.775,
+ ->N .428; N configuration->N .642, ->T/F .056. Two-query asymmetric shared/
+ specific structure, not an all-personality map or newly estimated scale bridge.
+
+Read [the aggregate report](../reports/grain_vector_mechanisms/NATURAL_TRANSPORT_LOGIC_REPORT_V1.md)
+and the staged [transport](GRAIN_LOGIC_NATURAL_TRANSPORT_PLAN_V1.md)/
+[residual](GRAIN_LOGIC_QUERY_RESIDUAL_PLAN_V1.md) plans. All computations use
+existing caches. The residual score still requires model P/Q; it is a target for
+future lightweight extraction, not an already standalone text encoder.
+
+Validation: 16 new synthetic tests and 83 focused tests overall pass; Ruff and
+diff whitespace checks pass. Current linted transport code replays eight saved
+numerical artifacts byte-for-byte (`code_replay_audit.json`). The first broader
+pytest command named obsolete test filenames and collected no tests; corrected
+to the existing paths before the 83-test run. No full-suite claim is made.
+Implementation, both staged plans and aggregate report: local commit `12eb6f4`.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT01 | Does the shared GRAIN operator explain author-specific natural positions/changes? | Inventory12-author original/edit caches and corresponding frozen GRAIN scores; compare matched finite changes and existing fixed/native targets. First use caches; only new calls when they discriminate an actual alternative | Compare shared-operator/different-input and author-conditioned-operator accounts; do not require different gradients or retry until a desired r is obtained |
-| NEXT02 | Which query-readable residual is a usable new GRAIN observation? | Keep separate source-fitted represented and residual function channels; compare same-level distribution/condition statistics, query selectivity and reference positions | Add a scoreable candidate with exact dependencies or locate a concrete missing condition; no full hidden-state reconstruction prerequisite |
-| NEXT03 | Does condition selection change the route or only the material mix? | Existing same-author metadata/support and condition edits; separate observed choice/exposure from controlled response | Develop identifiable mixture/response term; do not infer free preference without available opportunities |
-| NEXT04 | How do query-specific and shared effects supply psychological meaning? | Reuse all-factor same-material signed functional terms after NEXT01/02; compare same target/level, not unaligned factor names | Deliver shared/private functional relation with a named source and endpoint |
+| NEXT05 | Can a lighter vector program obtain the now-defined configuration remainder? | Inventory existing non-LLM/B0/B4/encoder source caches; fix R_configuration as target rather than another vague score or alpha grid. Compare source-author-held level and available natural changes | Find a working local extraction or a concrete missing query interaction; no claim that the current P/Q score is already model-free |
+| NEXT04b | Which residual functions share information across all available queries? | Source five-Big5 and four-MBTI panels have matched materials within each population. Analyze signed components and source-referenced residual relations separately; native held response extension only when matching caches exist | Do not combine disjoint populations into a nine-query same-person covariance. Separate model selectivity from psychological-criterion relations |
+| NEXT03b | Why can low-pole-similarity text still change the reader? | Reuse S1 full/E1/E2 query-conditioned contribution and readout caches; test content-position/configuration vs an unweighted pole mean | Locate a useful context/reading operation, not classify all low-similarity material as noise; this is availability, not author preference |
+| NEXT06 | Which candidate observation supplies criterion-relevant rather than only model-readable information? | After the technical score/reference is frozen, reuse permitted author criteria under the explicit exploratory source protocol; distinguish incremental information, mediation assumptions and actual action channel | Keep discovered components even when a queried scale is weak; no outcome-directed redefinition of the same held score |
 
 All four are local computational/mechanism questions and remain actionable.
 If a card cannot change the next mainline decision, record it and move on; do

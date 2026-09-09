@@ -32,7 +32,13 @@ without new neural calls. Same-level T/F comparison distinguishes F02 mean
 linkage to the model (r=-.548) from F02 dispersion linkage to self-report
 (exploratory r=.375; model-level r=.073). Existing native intervention mainly
 measures a common unit response. That remains compatible with a useful shared
-axis; author positions and natural changes on it are the next connection.
+axis. The [next actual-material test](reports/grain_vector_mechanisms/NATURAL_TRANSPORT_LOGIC_REPORT_V1.md)
+now finds fixed query-function/native deletion response r=.886 (T/F) and .681
+(neuroticism) on12 source-disjoint authors. Historical GRAIN changes transfer
+less well; query-position configuration residuals retain r=.775/.642 and have
+explicit source-fixed reference scores. These are model-response results, not
+human-trait accuracy. The new observation still requires cached model states;
+lightweight vector extraction is the next mechanism question.
 The [active research plan](docs/GRAIN_LOGIC_RESEARCH_PLAN_V1.md) develops the
 remaining interfaces; finite algebraic closure is not complete identification.
 
