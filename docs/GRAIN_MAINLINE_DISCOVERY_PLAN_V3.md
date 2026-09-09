@@ -1,6 +1,21 @@
 # GRAIN mainline discovery V3
 
-> **2026-09-09 conditional navigation goal V7 ACTIVE.** Two real Claude/Codex
+> **2026-09-09 conditional navigation goal V7 COMPLETE.** CON00–04 now delivered.
+> Matched conditional objectives recover T/F denial r .343->.585 and state time
+> response -.184->.789; E's one-summary augmentation stopped with a located
+> negative result.48 source-denied raw score replays pass within5.04e-11;
+>284 shared external forwards preserve the distinction: new response models do
+>not replace B0 T/F AUC .705 or B4 free-chat state r .351. New exact insight:
+>within-author difference constraints leave author offsets invisible; the next
+>join is reference-level author positioning plus conditional response.
+> [Delivery](../reports/grain_vector_mechanisms/CONDITIONAL_NAVIGATION_DELIVERY_REPORT.md),
+> [formula/build/next pieces](GRAIN_CONDITIONAL_NAVIGATION_THEORY_V1.md),
+> [ledger](GRAIN_CONDITIONAL_NAVIGATION_GOAL_V7.md).
+> Full suite2780pass/3skip;2 later mathematical tests separately pass; final
+> focused22pass. No collector or automatic parameter queue. All earlier ACTIVE
+> headers below are historical. Finite delivery does not imply universal theory.
+
+> **2026-09-09 earlier conditional navigation goal V7 checkpoint.** Two real Claude/Codex
 > read-only seminar rounds complete. New finding: controlled construction did
 > not vary denial/time, while natural evaluation did. Next distinguish conditional
 > support, value-versus-response loss, model family and early-input coverage.
