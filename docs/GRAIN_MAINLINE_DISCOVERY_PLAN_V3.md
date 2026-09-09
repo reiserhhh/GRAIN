@@ -1,5 +1,16 @@
 # GRAIN mainline discovery V3
 
+> **NAV round4 DELIVERED; goal ACTIVE.** Group/reference/cache/raw-text export
+> packets are now executed. Fixed-author scores have zero batch drift; old
+> GRAIN groups do not justify automatic route-sharing weights. Exact-prefix
+> caching gives median1.372x speedup with increased memory. Four exported
+> programs replay60 raw-text scores to2.95e-15; token mode uses no Torch or
+> Transformers, other modes execute four extracted blocks without teacher P/Q.
+> [Round4](../reports/grain_vector_mechanisms/NAVIGATION_ROUND4_REPORT.md),
+> [build guide](GRAIN_NAVIGATION_RUNTIME_BUILD_V1.md).2759tests pass/3skip.
+> Next: [source-span coverage experiment](GRAIN_NAVIGATION_SOURCE_SPAN_EXTENSION_PLAN_V1.md),
+> not another human-label accuracy grid. NAV02/03/10 broader construction remains.
+
 > **NAV evidence packets and first route-A constructor DELIVERED; goal ACTIVE.**
 > Synthetic-reference functions follow12-author natural edits at r=.646-.990.
 > Query coding decomposes into a large logit prior plus target-specific evidence

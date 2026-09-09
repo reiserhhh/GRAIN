@@ -35,16 +35,38 @@ heavier work only after verifying checkpoint/autograd compatibility on the hosts
 | NAV-03 | IN_PROGRESS | Token-only T/F link retained; extracted 1/4/8-block programs evaluated; 4-block state r=.351 [.038,.601] on46 free chats |
 | NAV-04 | COMPLETE_FIRST_PACKET | Twelve held PANDORA authors,8conditions,3queries; synthetic-reference natural response r=.646-.990; shallow programs attenuate edits |
 | NAV-05 | COMPLETE_FIRST_PACKET |384 native queries,8 own-coordinate references; coding prior separated from evidence-response differences |
-| NAV-06 | IN_PROGRESS | 162 actual cross-query endpoint interventions complete; node overlap/CKA and functional use differ; real-author GRAIN grouping remains |
+| NAV-06 | COMPLETE_FIRST_PACKET | 162 endpoint exchanges plus separate-view GRAIN groups; primary native grouping gain3.4%, author-permutation p=.2784; no automatic group multiplier |
 | NAV-07 | COMPLETE_FIRST_PACKET | Same-criterion material comparison plus66-call controlled time/order packet; present-state time-effect r=.854 |
-| NAV-08 | PENDING | Fixed reference sensitivity and batch invariance |
-| NAV-09 | PENDING | Identical-prefix cache benchmark |
+| NAV-08 | COMPLETE_FIRST_PACKET | 12 fixed reference/12 evaluation authors;144 P/Q units; batch drift0; reference uncertainty and two-view sensitivity reported |
+| NAV-09 | COMPLETE_FIRST_PACKET | Exact-prefix cache passes numerical tolerances; median1.372x speedup; higher RSS, opt-in only |
 | NAV-10 | IN_PROGRESS | Both shallow projection and new generated-state programs connected to277 source authors/46participants; new state program does not replace earlier useful candidates |
-| NAV-11 | PENDING | Actual raw-text dependency closure and export |
+| NAV-11 | COMPLETE_EXPORTED_SCOPE | Four portable raw-text programs,60 replay comparisons, max error2.95e-15; token mode no Torch/Transformers, others exactly4 blocks; broader capability open |
 | NAV-12 | COMPLETE_FIRST_PACKET | Two charts, mean/observable-affinity gates and signed actor/opportunity interactions actually compared; weaker interaction amplitude retained |
 
 No package is marked complete merely because code exists or a prerequisite was
 not met. Report discoveries first; preserve negative effects and blocked scope.
+
+## Latest: fourth-loop delivery
+
+[Round4 report](../reports/grain_vector_mechanisms/NAVIGATION_ROUND4_REPORT.md)
+and [runtime build guide](GRAIN_NAVIGATION_RUNTIME_BUILD_V1.md) close the first
+group/reference/cache/export packets with actual computation. The fixed-author
+reference has no batch drift, but reference sampling and text-view uncertainty
+remain quantified. Existing GRAIN groups do not earn an automatic path-sharing
+multiplier. Compatible context caching improves local latency, not independence.
+
+Four exported candidates take raw excerpts in a separate working directory under
+a source-repository access guard. All60 scores replay; the token program imports
+neither Torch nor Transformers. Four-block programs load no teacher/LM head.
+State1/state2 retain their prior negative natural transfer and are not promoted.
+2759 full-suite tests passed,3 skipped,129 warnings. All collectors have ended.
+
+Goal remains ACTIVE, with no human-label fitting, API upload or push.
+Next is the [bounded source-span expansion](GRAIN_NAVIGATION_SOURCE_SPAN_EXTENSION_PLAN_V1.md):
+one synthetic-plus-unlabelled-source operator, fixed four-block/linear/alpha1,
+separate reference/evaluation authors and no MEPS construction. This directly
+tests the measured natural-space coverage gap. NAV02/03/10 broader useful
+construction is still in progress, not hidden behind completed packaging.
 
 ## First-loop delivery
 
