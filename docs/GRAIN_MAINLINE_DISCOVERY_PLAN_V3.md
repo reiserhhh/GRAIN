@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 current routing: whole-system logic goal ACTIVE.**
+> [Logic atlas](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md),
+> [execution plan](GRAIN_LOGIC_RESEARCH_PLAN_V1.md),
+> [first-round report](../reports/grain_vector_mechanisms/SYSTEM_LOGIC_REVIEW_V1.md).
+> LOG00-05 delivered:31 edges,1,530 level-specific associations,162 chart checks,
+> five finite witnesses and existing12-author endpoint decomposition;0 new neural
+> calls. F02 dispersion/criterion r=.375 is now compared to same-level query r=.073,
+> rather than inferring unread information from a different change statistic.
+> Native effect remains real and94.1% of its log-odds response energy is common
+> shift. This is compatible with a valid common axis, not evidence against it.
+> Next test different author positions/natural changes under the shared operator,
+> retaining query-readable residuals and fixed reference positions.
+> No old collector or parameter queue restarted; release scoring unchanged.
+
 > **2026-09-10 latest: bounded dynamic/channel investigation COMPLETE.**
 > [Plan](GRAIN_DYNAMIC_PATH_CHANNEL_PLAN_V1.md),
 > [aggregate report](../reports/grain_vector_mechanisms/DYNAMIC_PATH_CHANNEL_REPORT.md).

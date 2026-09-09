@@ -2,6 +2,12 @@
 
 Status: **canonical theory integration, 2026-08-01**
 
+2026-09-10 integration note: this is the historical V8 foundation, not a record
+of all later LLM-vector work. The [whole-system logic atlas](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)
+connects it to the current query/function/runtime and external-criterion routes.
+Its [first empirical review](../reports/grain_vector_mechanisms/SYSTEM_LOGIC_REVIEW_V1.md)
+adds matched-level and coordinate-covariant interfaces without replacing V8.
+
 This document is the shortest authoritative path through the current GRAIN
 theory. Detailed protocols and reports remain the evidence record; when an old
 headline conflicts with this document, the claims ledger, or the

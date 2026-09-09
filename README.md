@@ -22,6 +22,20 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
+## Whole-system logic integration (2026-09-10)
+
+The [logic atlas](docs/GRAIN_SYSTEM_LOGIC_ATLAS_V1.md) now connects 31 explicit
+inference edges across the measurement, model-query and interpretation systems.
+The [first empirical review](reports/grain_vector_mechanisms/SYSTEM_LOGIC_REVIEW_V1.md)
+compares 1,530 level-specific associations and 162 coordinate re-expressions,
+without new neural calls. Same-level T/F comparison distinguishes F02 mean
+linkage to the model (r=-.548) from F02 dispersion linkage to self-report
+(exploratory r=.375; model-level r=.073). Existing native intervention mainly
+measures a common unit response. That remains compatible with a useful shared
+axis; author positions and natural changes on it are the next connection.
+The [active research plan](docs/GRAIN_LOGIC_RESEARCH_PLAN_V1.md) develops the
+remaining interfaces; finite algebraic closure is not complete identification.
+
 ## Dynamic factor / query interface (2026-09-10)
 
 The [dynamic-channel report](reports/grain_vector_mechanisms/DYNAMIC_PATH_CHANNEL_REPORT.md)
@@ -31,9 +45,10 @@ separates within-comment flow from comments sampled across years. On the same
 including observed-context adjustment. A source-fitted change direction shifts
 the native T/F output in the same direction for all 12 held authors; its mean
 absolute effect is 4.87 times one norm-matched shuffled direction (60 new calls).
-Within-comment F02 dispersion has an exploratory real-T/F link r=.375, but its
-query co-change is near zero. Model-sensitive and questionnaire-linked aspects
-are therefore not interchangeable. All-nine nested comparisons and predictive
+Within-comment F02 dispersion has an exploratory real-T/F link r=.375. The
+later same-level comparison above, not its near-zero query co-change alone,
+supports separating model-linked and questionnaire-linked statistics.
+All-nine nested comparisons and predictive
 gap accounting are complete; universal dynamic concatenation is not promoted.
 [Plan and mathematical objects](docs/GRAIN_DYNAMIC_PATH_CHANNEL_PLAN_V1.md).
 GRAIN reference norms, release scoring and existing lockboxes remain unchanged.

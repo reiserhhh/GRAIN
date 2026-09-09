@@ -192,6 +192,13 @@ is a natural human personality intervention or a unique attention circuit.
 
 ## 4. Model-readable and real-criterion-linked information partly separate
 
+**Later same-day logic update:** the two correlations below use different
+statistical levels and cannot alone establish separation. The subsequent
+[matched-level review](SYSTEM_LOGIC_REVIEW_V1.md) compares the same author means:
+F02 dispersion/real T-F r=.375 versus dispersion/query-function r=.073.
+That is the appropriate exploratory contrast. Original values and test families
+below are preserved, not retrospectively replaced.
+
 Within-comment whole:F02 dispersion has real T/F r={case["pearson_r"]:.3f},
 95% CI [{case["r_lower"]:.3f}, {case["r_upper"]:.3f}], n=63. Its change-to-query
 co-change is only r={motion["r"]:.3f}. By contrast, the period-level F02 change
