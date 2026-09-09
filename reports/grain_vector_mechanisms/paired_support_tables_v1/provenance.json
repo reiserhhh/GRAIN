@@ -1,0 +1,42 @@
+{
+  "report_script_sha256": "56a6f5c3115a3d971a2c1226e92746d0289c1cd5f431a37343f7f16a2a8279ce",
+  "status": {
+    "status": "COMPLETE",
+    "calls": 180,
+    "seconds": 273.29520329274237,
+    "completed": 88
+  },
+  "fit_freeze": {
+    "plan_sha256": "89bb85ae996b4b490b52296f202c11a44863e549abeda46c9d3ac799bde46899",
+    "predictions_sha256": "a4293db0b9451baff60a32aaac581adc8d6bff724d850f72cb27120c181ac6f5",
+    "script_sha256": "bdd19911f5e8864d0591bb6d3a5c48e00a22e92f451fffe56402715165f7929c",
+    "pq_replay_max_error": 0.0,
+    "human_criteria_read": false,
+    "model_hashes": {
+      "private_TF_cont_ordinal_natural.joblib": "be18a1458c834a26bbe7465329828d74077a8730e1398f49896bc42a41257071",
+      "private_TF_cont_ordinal_paired.joblib": "bf99eb66a0f6f5e5c26d0730e94a4c94eeb66e3a6f1ea4702bf5d794d6d70083",
+      "private_TF_cont_early_pq_natural.joblib": "a85bb1bdd1513b0a799972adb574c94fa137ff55d84271644afbfce9dfa65b20",
+      "private_TF_cont_early_pq_paired.joblib": "dcbef4fb82e437ae04e68fbbfab3d7c6d0ee401faa0d8804ba1be9dd8c2f4c2d",
+      "private_neuroticism_ordinal_natural.joblib": "3f8ff22d0f102fad40930c78565a51d899c129b2e8ac0d8292274630a3236d4d",
+      "private_neuroticism_ordinal_paired.joblib": "925e35385fe0162e979df4850726ea3a62797b9a8f49dd322cbb27d25b84522f",
+      "private_neuroticism_early_pq_natural.joblib": "d04b52c830809027325bcd857d3ebfbb0e5e6def1b06e6f08d5f28b173563f14",
+      "private_neuroticism_early_pq_paired.joblib": "2ad5da7eb113cd4e8686bd70f1a8f097f000c3d70198380e557b84e1302c97fc"
+    }
+  },
+  "max_old_replay_error": 9.71445146547012e-17,
+  "max_repeat_error": 0,
+  "token_bag_l1_max": 6,
+  "length_delta_range": [
+    -1,
+    0
+  ],
+  "table_hashes": {
+    "fidelity": "39646940bfd821b27f9e8b974998f011724f82e2ec85d060cc3215f3554047e7",
+    "support_effects": "78bf4993d79d2353de98874fe16c3a4b4053f1a0edbab9923965424d8730e1fa",
+    "criterion_links": "f28c3c5eaa2234ae46385feb03a505584d3448e529276f8354ae8a23430ec75c",
+    "teacher_criterion_links": "0e63625a540d6aea2197e4b64632507cf3c2e830f144d010f13d757813f04cf0",
+    "criterion_support_effects": "acccbc42539e37599cc7255f997a91a0e2b17822be5726926116bcc85cf3c99d",
+    "teacher_target_contrasts": "3f258940b122d6fde4ea507f458605e5cd892e93bf7a679d48ffbe676e28bca6",
+    "interactions": "54ad9de0f184f3fdfb2c4e908feebf31a9f5613cd644030544585cb0f68839a8"
+  }
+}

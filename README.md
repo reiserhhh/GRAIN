@@ -56,6 +56,12 @@ unextracted criterion contribution. Between-only fitting does not rescue it.
 The same fixed E5 program extends to all nine queries and retains exploratory
 E/A/O residual-criterion r=.189/.148/.206, without label training. Separate
 view-change readers do not automatically improve author-level measurement.
+The [paired-support factorial](reports/grain_vector_mechanisms/PAIRED_SUPPORT_LOGIC_REPORT_V1.md)
+separates ordered input from conditional supervision:180 forwards/273 seconds,
+55 focused tests. T/F obtains a local response gain, not a general early-context
+or author-criterion gain. Original-order and presentation-averaged native scores
+retain different criterion links; averaging is not automatically better.
+
 The [same-comment reversal test](reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 now gives an actual invariant-input mismatch: unchanged E5 bags produce native
 T/F/N changes of RMS .105/.034. A fixed ordinal extension does not recover the

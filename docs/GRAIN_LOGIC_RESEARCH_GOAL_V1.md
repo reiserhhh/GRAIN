@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, six finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, seven finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -188,16 +188,46 @@ The key target decision is now explicit: arbitrary presentation sensitivity
 need not be copied into a stable author score, while real expression order
 remains a legitimate GRAIN path object. Neither is discarded wholesale.
 
+## Seventh pass: conditional support by input factorial
+
+- NEXT08c executed, not just proposed. Plan committed `f99e426` before new source
+  endpoints:32 source authors per query, original/reverse, four-fold author CV;
+  same12 exposed transport authors, two inputs and two supports, two targets.
+ 180 forwards/273.30s, all88 pairs complete, old replay max9.72e-17, repeat/PQ
+  replay0.704 predictions frozen before source self-report lookup.
+- Paired support helps a local T/F early-PQ response: configuration r .047->.349,
+  MSE/zero1.088->.876; full f -.112->.249. Not a universal contextual-input win:
+  N early response stays negative, and source/transport direction can differ.
+  T/F ordinal source-OOF full-f response .384->.520, transport -.323->.121.
+  No candidate replaces the existing author-criterion programs.
+- Exact same32-author criterion comparisons separate imitation from author
+  position: T/F ordinal configuration .184->.047 and full-f .221->.105 under
+  pairing. These differ from earlier63-author/three-view populations. Do not
+  use the small-panel optimum to redefine source selection or flip query signs.
+- NEXT10b now has real source target comparisons: native original/even r with
+  self-report is .341/.312 (T/F), .380/.326 (N); simple C2 averaging does not
+  improve this criterion link. Natural-orientation odd/native-criterion r
+  .191/.188 is compatible with exact zero covariance on the expanded C2 orbit.
+  Symmetric-design orthogonality is not absence of natural-orientation signal.
+-6 new tests including two mathematical witnesses;55 focused tests and Ruff
+  pass. Reporting-only association API errors were corrected after prediction
+  freeze without refitting or more forwards; both script versions have hashes.
+
+Read [four-cell report](../reports/grain_vector_mechanisms/PAIRED_SUPPORT_LOGIC_REPORT_V1.md)
+and [fixed source/input plan](GRAIN_LOGIC_CONDITIONAL_SUPPORT_PLAN_V1.md).
+The source support mechanism has a bounded answer; no larger order/depth/kernel
+search is justified by this packet. Return to which target preserves useful
+author information, rather than optimizing imitation as the only objective.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT08c | Missing conditional training support or missing contextual operation? | A fixed2x2 source experiment: ordinal input versus early P/Q, natural-only versus paired reversal source targets; select disjoint construction authors before endpoints. Reuse old conditional infrastructure, no Y fitting | The ordinal input distinguishes order but failed to transport. Source paired contrasts can distinguish its missing learning support from an inadequate representation without tuning on the12 evaluated authors |
-| NEXT10b | Which target should each measurement use? | Keep original function, C2-even target and C2-odd response as separate objects; connect their signed component effects to GRAIN presentation conditions and real expression order | Do not blindly mimic every LLM presentation response or call an orbit-average a validated personality score. Locate original-source criterion information separately |
+| NEXT11 | Is the missing author information before input extraction or already omitted by the fixed teacher target? | First reuse/reconcile the existing all-nine-query same-author native F, fixed f, c and GRAIN covariance reports. Only add missing signed accounts for F-f and f-c using cached values; no models or new forwards | Specify each query's native-to-fixed-to-lightweight loss of criterion association before choosing a construction target. Do not repeat existing full-f/configuration accounting |
+| NEXT12 | Can presentation-stable position and genuine expression response share a coherent measurement contract? | Integrate the two C2 designs with the historical GRAIN choice/path and reference-position formulas. Find which observation clock and transformation each score uses; use finite counterexamples only for missing implications | Preserve distinct valid targets and shared functions. Do not equate natural time with display order, or allow an outcome-selected invariance to silently discard who/when information |
 
-Both are local computational/mechanism questions and remain actionable. Their
-smallest complete source-pair panel, cost cap and target rules must be fixed
-before new acquisition; no restart of old collection queues.
+Both are local computational/theory questions and remain actionable with the
+existing evidence. Start cache-only; no new source collection queue is planned.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

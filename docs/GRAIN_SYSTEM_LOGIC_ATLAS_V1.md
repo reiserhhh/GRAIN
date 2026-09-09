@@ -85,7 +85,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L12 | 局部机制组合 -> 介观与群体关系 | M/E | 组合可有反馈/抵消/支持集漂移；单边成功不保证复合成功 | M4 / cross-level contract |
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
 | L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 查询槽整合信息，不必是一条关键词到特质词的唯一链 | mainline / reference framework |
-| L15 | 表征含信息 -> 读出可利用信息 | M/E | 同一E5向量多重集反转时原生判断RMS变化.105/.034；不变输入不能区分这些端点，ordinal输入可区分但未正确读取 | reading level / input order reports |
+| L15 | 表征含信息 -> 读出可利用信息 | M/E | 不变E5输入不能跟随原生反转；有序输入还需条件训练覆盖，配对对T/F局部有益但无普遍early-PQ优势 | input order / paired support reports |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M | 恒等式不保证敏感度可识别、可迁移或易从文本计算 | reference framework §§2,7 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | 可能保留偏置/语料先验；另测人类效标而非自称心理真值 | all-factor / NAV reports |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
@@ -100,8 +100,8 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L27 | 稳定 LLM 解释 -> 可重复且有据的叙述 | E | 一致可来自共同偏置；固定分数不被解释层回写 | V8 LLM assessment |
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
-| L30 | 合成导航成功 -> 真人材料路径可计算 | E | 自然条件与源支持不同；用实际同文本端点验证能搬运的部分 | conditional / NAV reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | T/F模型拟合提高而自评关联下降；明确呈现稳定作者目标与顺序响应目标，不盲目复制LLM全部变化 | 全系统目标 / input quotient theory §3 |
+| L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 模仿进步不等于作者关联进步；native两顺序平均也未提高自评关联，下一步追踪固定教师目标本身遗漏的信息 | 全系统目标 / input quotient theory / paired support |
 
 ## 4. 历史成果如何留在新系统中
 

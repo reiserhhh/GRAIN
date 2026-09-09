@@ -27,6 +27,14 @@
 > reading does not rescue T/F; the fixed E5 program has extended to all nine
 > queries, retaining E/A/O criterion r=.189/.148/.206 without Y training.
 > Ten fifth-pass numerical artifacts replay exactly;70 focused tests pass.
+> The [input-by-support factorial](../reports/grain_vector_mechanisms/PAIRED_SUPPORT_LOGIC_REPORT_V1.md)
+> now follows it:32 source authors/query,180 forwards/273.30s,55 scoped tests.
+> Pairing improves local T/F early-PQ response (.047->.349 for configuration),
+> not all N responses or human-criterion links. Native C2 averaging does not
+> improve same32-author self-report r (.341->.312 TF; .380->.326 N).
+> Next inspect what the fixed teacher target loses relative to native judgment,
+> using existing all-nine-query caches, not another order/input hyperparameter grid.
+>
 > The [actual input-order experiment](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 > is now delivered: identical12-comment bags,52 forwards/82.03s, native reversal
 > RMS .105/.034 with zero replay error. Invariant input cannot distinguish those
