@@ -32,16 +32,24 @@
 > Pairing improves local T/F early-PQ response (.047->.349 for configuration),
 > not all N responses or human-criterion links. Native C2 averaging does not
 > improve same32-author self-report r (.341->.312 TF; .380->.326 N).
-> Next inspect what the fixed teacher target loses relative to native judgment,
-> using existing all-nine-query caches, not another order/input hyperparameter grid.
+> [Teacher-target accounting](../reports/grain_vector_mechanisms/TEACHER_TARGET_LOGIC_REPORT_V1.md)
+> now closes that finite question: all nine queries/276 authors, no new fitting
+> or forwards. Same-observer T/F native-to-f criterion r .348->.201, paired
+> delta-.147[-.249,-.049], despite fidelity.911. D1 runtime differences had
+> obscured this loss. Non-affine contribution+.165 cannot be fixed by amplitude
+> alone; N+.093, E extraction+.113 identify different stages of loss.
+>72 scoped tests pass; five numerical files replay exactly. Next distinguish
+> a nonlinear scalar link from missing conditional inputs, using existing
+> M11-M28 knowledge before constructing another model. No order/input grid.
 >
 > The [actual input-order experiment](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 > is now delivered: identical12-comment bags,52 forwards/82.03s, native reversal
 > RMS .105/.034 with zero replay error. Invariant input cannot distinguish those
 > endpoints; a source-only ordinal term distinguishes them but fails to read
 > their effect. T/F teacher fit rises while self-report relation falls.
-> Next separate paired conditional learning support from contextual input,
-> and preserve presentation-stable versus order-response targets explicitly.
+> Its former next step, paired conditional support versus contextual input,
+> is completed above. The [clock/target contract](GRAIN_CLOCK_AND_TARGET_CONTRACT_V1.md)
+> now integrates presentation-stable position with real event-path response.
 > See [input quotient and target theory](GRAIN_INPUT_QUOTIENT_AND_TARGET_THEORY_V1.md).
 > Sixth-pass49 focused tests pass; no new E5 calls or release change.
 > See the [active goal ledger](GRAIN_LOGIC_RESEARCH_GOAL_V1.md).

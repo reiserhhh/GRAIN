@@ -1,0 +1,36 @@
+{
+  "protocol": "NEXT11_cache_only_same_author_teacher_target_accounting",
+  "source_manifest_sha256": "e7f12cba5e276ba257f949c2f520f1cac2b79a6e9c3a2aec6f001884d0f4e824",
+  "summary": {
+    "status": "COMPLETE",
+    "max_identity_error": 1.3877787807814457e-16,
+    "channels": 65,
+    "edges": 40,
+    "chain_rows": 57,
+    "queries": 9
+  },
+  "aggregate_tables": {
+    "channel_links.csv": {
+      "rows": 65,
+      "sha256": "fb5c3aa18dc501996df049c22f8223ffa2603afd863e2674b3a956a087a4a3bb"
+    },
+    "projection_accounts.csv": {
+      "rows": 40,
+      "sha256": "9cfad61a83e7486ddb5c94533f46f1973f91e8dba8112a33e6e6522de62e471a"
+    },
+    "signed_chain_accounts.csv": {
+      "rows": 57,
+      "sha256": "43075ee1b61883dc50e2dcdabe564c3f7a22c6a6211a0f28a731c2567975959e"
+    },
+    "query_summary.csv": {
+      "rows": 9,
+      "sha256": "6ab3eb5e62a2cf6241340b29fa63eca95cac98d61d15f10a6aa6f07935b2d330"
+    }
+  },
+  "private_join_replay_equal": true,
+  "predictor_fits": 0,
+  "neural_calls": 0,
+  "pointwise_bootstrap_draws": 1999,
+  "new_unit_tests": 12,
+  "focused_suite_passed": 72
+}

@@ -74,7 +74,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L01 | 心理过程在机会中产生语言 -> 可观察表达 | H/U | 沉默、选择、引用、AI 代写使记录不等于完整行为 | unified V8 §§2-4 |
 | L02 | where 是可选择的 -> 条件选择也是作者信息 | E | 可用机会不等于选择偏好；先保留二者再比较 | 4W / rind V3 |
 | L03 | 固定条件 -> 减少机会差异后的表达比较 | E | 固定条件也限制 C1；不推成任意总体内都提高信度 | rind / retrospective |
-| L04 | 记录 -> 切片/向量/因子分数 | D/E | 评论均值删除评论间排列但不删除评论内语序；呈现顺序与作者实际时钟分开 | V7 / input quotient theory §§1-3 |
+| L04 | 记录 -> 切片/向量/因子分数 | D/E | 带事件元数据的展示规范化可以保留真实路径；去掉时钟则展示反转与实际次序不可分。评论内序不等于评论间序 | V7 / clock and target contract §§2-3 |
 | L05 | 向量近邻/聚类 -> 局部共同表达结构 | E | 主题、格式、模型几何也能产生簇；簇数不自动等于心理因子数 | V7 / route index |
 | L06 | 多个局部观察 -> 作者分布与参数 | D/E | 采样量、时间窗、条件组成决定汇总对象 | unified §§4-5 |
 | L07 | 群体因子坐标 -> 新作者固定参照分数 | D/E | 批内标准化与固定常模不同；新材料算子需显式版本 | V7 / NAV reference |
@@ -87,12 +87,12 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 查询槽整合信息，不必是一条关键词到特质词的唯一链 | mainline / reference framework |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 不变E5输入不能跟随原生反转；有序输入还需条件训练覆盖，配对对T/F局部有益但无普遍early-PQ优势 | input order / paired support reports |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M | 恒等式不保证敏感度可识别、可迁移或易从文本计算 | reference framework §§2,7 |
-| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | 可能保留偏置/语料先验；另测人类效标而非自称心理真值 | all-factor / NAV reports |
+| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | 同条件TF原生至f的效标r .348->.201，非仿射贡献+.165；运行条件差可抵消公式差。高保真不等于效标保留 | teacher-target report §§1-4 |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
 | L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 直接学习余项与事后减GRAIN不等价；差额是GRAIN跨表示搬运误差，可精确记账 | natural transport / configuration extraction §§4-5 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 人工方向有效不保证解释自然路径；实际E1中f可追踪、GRAIN差分可能反向 | dynamic report §3 / natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
-| L22 | 路径可读性高 -> 人类效标相关高？ | E | N响应提取有效但配置效标r=.055；T/F余项效标r=.305、E5读出.249。两种用途出现可测分离 | configuration criterion report §§1-4 |
+| L22 | 路径可读性高 -> 人类效标相关高？ | E | N主要遗漏还在原生至固定目标；E配置轻量提取另有非仿射贡献+.113。九项不能共享一个损失位置 | teacher-target report §§2-3 / criterion report |
 | L23 | 因子轴旋转 -> 共同对象仍可追踪 | M/H | 比较作用子空间/坐标协变函数，而非重新编号后的单轴 | LOG02 / reference theory |
 | L24 | 共享路径 -> 量表相关？ | H/E | 五Big5/四MBTI组内共32条分层关系；N余项作者水平较特异，其他部分共享。下一步接实际效标 | all-factor atlas / configuration extraction §6 |
 | L25 | 联合 GRAIN+路径 -> 更多人格预测信息 | E | 有局部 E 增益，无普遍拼接提升；不能把指标提升当机制解释 | four routes / dynamic report |
@@ -101,7 +101,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 模仿进步不等于作者关联进步；native两顺序平均也未提高自评关联，下一步追踪固定教师目标本身遗漏的信息 | 全系统目标 / input quotient theory / paired support |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 31边已接出位置/路径/模型读取三对象；非仿射遗漏可能是同标量曲率或额外条件信息，下一轮区分而非统一追求模仿精度 | teacher-target report / clock and target contract |
 
 ## 4. 历史成果如何留在新系统中
 

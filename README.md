@@ -62,6 +62,17 @@ separates ordered input from conditional supervision:180 forwards/273 seconds,
 or author-criterion gain. Original-order and presentation-averaged native scores
 retain different criterion links; averaging is not automatically better.
 
+The [teacher-target account](reports/grain_vector_mechanisms/TEACHER_TARGET_LOGIC_REPORT_V1.md)
+now reconciles all nine queries without new model calls. Same-observer T/F
+native/self-report r=.348 falls to .201 in the fixed formula despite fidelity
+r=.911; a mixed-runtime comparison had hidden that loss. Affine projection
+separates amplitude from retained criterion association. Query-specific losses
+occur at different stages, so better imitation alone is not the next objective.
+The [clock/target contract](docs/GRAIN_CLOCK_AND_TARGET_CONTRACT_V1.md) connects
+stable population position, actual expression dynamics and model presentation
+without collapsing them into one score.72 focused tests and five exact numerical
+replays pass. These remain exposed-source mechanism results, not a new release.
+
 The [same-comment reversal test](reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 now gives an actual invariant-input mismatch: unchanged E5 bags produce native
 T/F/N changes of RMS .105/.034. A fixed ordinal extension does not recover the

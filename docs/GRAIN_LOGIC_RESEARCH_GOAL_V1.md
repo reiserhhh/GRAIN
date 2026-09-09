@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, seven finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, eight finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -219,12 +219,46 @@ The source support mechanism has a bounded answer; no larger order/depth/kernel
 search is justified by this packet. Return to which target preserves useful
 author information, rather than optimizing imitation as the only objective.
 
+## Eighth pass: teacher-target information and a coherent clock contract
+
+- NEXT11 complete on all nine queries,276 authors/1317 author-query means.
+ 65 channel comparisons,40 descriptive projections,57 signed chain rows;
+ no predictor fits or neural calls. The current63-author MBTI membership is
+ retained, with the older single-author/four-query difference explicitly checked.
+- A consequential observer distinction is now in the same-account ledger:
+ D1 uses CUDA/BF16; current functions use FP32. Old D1-to-f T/F criterion
+ .192->.201 conceals the same-observer FP32-to-f .348->.201 difference.
+ Paired delta -.147[-.249,-.049]; high teacher fidelity .911 does not prevent
+ a non-affine criterion contribution+.165[.066,.266]. N has+.093[.012,.167].
+- E configuration-to-extracted has non-affine criterion contribution
+ +.113[.021,.209]; not every query loses its information at the same stage.
+ Under one D1 denominator the T/F observer gap -.175 and formula gap+.204
+ substantially cancel. Full chain closure error1.39e-16; no variance-share claim.
+- NEXT12 integrated: choice, conditional expression, event path, query reading
+ and fixed population references have different objects/clocks. Three finite
+ clock witnesses show that metadata-preserving display invariance can coexist
+ with genuine temporal response. A new nonlinear witness also proves that a
+ non-affine remainder need not require any additional input information.
+- Existing lens-model logic is preserved. Li/Biesanz2026's DML lens model and
+ Menon/Stanton2021 distillation work sharpen the distinction between imitation,
+ cue use and criterion retention. New projection is a descriptive scalar
+ account, not a claimed reproduction of DML or a new causal proof.
+-72 focused tests pass, including12 new tests; Ruff passes. Five numerical
+ files replay byte-for-byte after adding a historical criterion-hash check.
+ Aggregate tables only are published locally; release scoring/lockbox unchanged.
+
+Read [teacher-target report](../reports/grain_vector_mechanisms/TEACHER_TARGET_LOGIC_REPORT_V1.md),
+[clock/target contract](GRAIN_CLOCK_AND_TARGET_CONTRACT_V1.md), and
+[pre-accounting plan](GRAIN_LOGIC_TEACHER_TARGET_PLAN_V1.md), commit `0de8fd0`.
+The plan was fixed before new derived accounts, but after previous exploratory
+results; neither it nor the current intervals is retrospective preregistration.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT11 | Is the missing author information before input extraction or already omitted by the fixed teacher target? | First reuse/reconcile the existing all-nine-query same-author native F, fixed f, c and GRAIN covariance reports. Only add missing signed accounts for F-f and f-c using cached values; no models or new forwards | Specify each query's native-to-fixed-to-lightweight loss of criterion association before choosing a construction target. Do not repeat existing full-f/configuration accounting |
-| NEXT12 | Can presentation-stable position and genuine expression response share a coherent measurement contract? | Integrate the two C2 designs with the historical GRAIN choice/path and reference-position formulas. Find which observation clock and transformation each score uses; use finite counterexamples only for missing implications | Preserve distinct valid targets and shared functions. Do not equate natural time with display order, or allow an outcome-selected invariance to silently discard who/when information |
+| NEXT13 | Is the native-to-fixed non-affine gap a nonlinear scalar link or missing conditional information? | First inventory/reuse M11-M28 construction results. On existing same-observer TF/N caches, freeze a small author-OOF comparison of affine scalar, fixed low-complexity nonlinear scalar, and already available component inputs, all targeting native FP32 without Y fits | Determine whether the same scalar suffices locally before collecting deeper vectors. Do not identify a non-affine statistical remainder with a missing attention pathway by definition |
+| NEXT14 | If scalar re-expression is insufficient, which conditional baseline or transport function should be constructed? | Reconcile M11/M12's existing anchored24-author/query observations with current M28 targets; keep changed reference/author addresses visible. Only then add the smallest missing cache-based contrast | Avoid rediscovering that conditional baseline has signal. Construct the specific remaining term only if NEXT13 and old evidence justify it, not a new accuracy grid |
 
 Both are local computational/theory questions and remain actionable with the
 existing evidence. Start cache-only; no new source collection queue is planned.
