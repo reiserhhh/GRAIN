@@ -22,6 +22,20 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
+## GRAIN factors and query paths (2026-09-10)
+
+The [four-route pilot](reports/grain_vector_mechanisms/FACTOR_PATH_ALL_ROUTES_REPORT.md)
+connects 12 actual frozen GRAIN factors to all nine Big5/MBTI queries, real
+criteria, source-only prediction and native vector interventions. On 276
+reference-disjoint authors, 29/108 factor/function links survive BH correction;
+real questionnaire links are weaker. On 12 separate authors, one of eight
+tested factor/query directions exceeds a norm-matched shuffled-direction
+control. Extraversion joint prediction reaches r=.238 versus path-only .189,
+but there is no all-trait concatenation promotion. The advance is a concrete
+factor-to-model interpretation interface, not automatic construct naming.
+[Plan, equations and identity correction](docs/GRAIN_FACTOR_PATH_ALL_ROUTES_PLAN_V1.md).
+Released GRAIN scoring and reference norms remain unchanged.
+
 ## Conditional functional construction (2026-09-09)
 
 The [five-piece extension](reports/grain_vector_mechanisms/SHARED_AUTHOR_FUNCTIONAL_CONSTRUCTION_REPORT.md)

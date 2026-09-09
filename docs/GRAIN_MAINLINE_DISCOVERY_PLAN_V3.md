@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 latest: four factor/path routes COMPLETE.**
+> [Frozen plan and identity amendment](GRAIN_FACTOR_PATH_ALL_ROUTES_PLAN_V1.md),
+> [full aggregate report](../reports/grain_vector_mechanisms/FACTOR_PATH_ALL_ROUTES_REPORT.md).
+> Actual historical GRAIN factors, not renamed query coordinates: 12 factors x 9
+> queries on 276 reference-disjoint authors (213 Big5-only/63 MBTI-only).
+> 29/108 primary factor/function links survive BH; largest |r|=.548.
+> 408 native calls on 12 disjoint authors complete actual vector interventions:
+> native:F03/T-F exceeds one norm-matched shuffled-direction null, but that
+> factor's real T-F criterion r=.009. External-factor associations are smaller
+> (max |r|=.217; 0/108 BH). Optional E joint prediction r=.238 vs path .189
+> and GRAIN .113; no universal concatenation promotion. Cross-fitted GRAIN
+> reconstruction of T/F function r=.602 accounts for .037 of its .201
+> external covariance correlation; the remaining .164 directs the next
+> mechanism work toward query-relevant structure not captured by these factors.
+> All four finite cards are closed; modern dynamic GRAIN/MEPS links and the
+> remaining INT03-06 work are not silently claimed complete. No new queue.
+
 > **2026-09-09 latest: GRAIN/reference-mechanism integration STARTED.**
 > [Next plan and literature links](GRAIN_REFERENCE_MECHANISM_INTEGRATION_PLAN_V1.md)
 > supersede the earlier next-step routing below. INT01 and INT02's same-material
