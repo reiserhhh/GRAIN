@@ -1,0 +1,18 @@
+{
+  "source_manifest_sha256": "d75dac2aa78046ad5f01f76bc34d0d0067ebce9e7b80ce8e4a96d5c4741ef740",
+  "relation_manifest_sha256": "a4d371ba44eb3d433a4ad7b4fe84df515264bca635870f5c246dc8b2ddeab97f",
+  "private_source": "results/grain_vector_mechanisms/logic_configuration_extraction_v1",
+  "private_relations": "results/grain_vector_mechanisms/logic_configuration_relations_v1/operator_aligned_r3",
+  "replay_rows": 288,
+  "max_replay_error": 9.974659986866641e-17,
+  "runtime_seconds": 17.84057753905654,
+  "new_neural_calls": 0,
+  "files": {
+    "metrics.csv": "0a113e1313e87008d973025445741996ce445d0c528de8626754b860ef39dc71",
+    "source_view0_metrics.csv": "befb90734b9b99e2c863e669ee9a9c1601fd23e42373e71726c12ab533c221d5",
+    "query_relations.csv": "90bb48885aedc9a66a841ce901ab921270d1912715699dc649a447ef70310e28",
+    "functional_semantic_directions.csv": "d8700a5db7dd2f8d516654c79866efae3e8c71d9779fd9dfa3f802e3ffee4b62",
+    "evidence_mixture_metrics.csv": "4a635610efd0c4f7e35e6f5b1fb9ed0a9b6ee4a2eddefc17eb842457ce32d629",
+    "residual_operator_metrics.csv": "d22f9fdfea857130e09ae756c2a09438fd3bc4934cbc5206a4b8d3c3a1e7ec7d"
+  }
+}
