@@ -188,7 +188,12 @@ def collect(out):
             native = anchor_coordinates(
                 h, np.array(v["p_mask"], bool), refs[f"{query}__Z"], refs[f"{query}__h"]
             )
-            base = native + mean_null_direction(native[0], g, list(range(12)))[None]
+            base = (
+                native
+                + mean_null_direction(
+                    native[0], [x.tolist() for x in g], list(range(12))
+                )[None]
+            )
             unaffected = np.ones(native.shape[1], bool)
             unaffected[body] = False
             if not torch.equal(base[:, unaffected], native[:, unaffected]):

@@ -69,3 +69,19 @@ def test_role_interpolation_and_invalid_partitions():
         partition([[2, 3], [3, 4]], [False] * 6 + [True, False])
     with pytest.raises(ValueError):
         partition([[1, 3]], [False] * 6 + [True, False])
+
+
+def test_partition_to_legacy_mean_projection_boundary():
+    """Convert index arrays explicitly for the existing list-based projection API."""
+    import torch
+    from scripts.run_grain_mean_null_path import mean_null_direction
+
+    h = torch.arange(27, dtype=torch.float32).reshape(9, 3)
+    groups, _, body, rest = partition([[1, 2], [4, 5]], [False] * 7 + [True, False])
+    direction = mean_null_direction(h, [x.tolist() for x in groups], [0, 1])
+    for positions in groups:
+        torch.testing.assert_close(
+            (h + direction)[positions].mean(0), h[positions].mean(0)
+        )
+    torch.testing.assert_close(direction[rest], torch.zeros_like(direction[rest]))
+    assert len(body) == 4
