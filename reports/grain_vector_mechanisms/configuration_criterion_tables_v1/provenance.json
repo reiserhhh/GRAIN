@@ -1,0 +1,11 @@
+{
+  "private_source": "results/grain_vector_mechanisms/logic_configuration_criterion_v1/function_account_r3",
+  "analysis_manifest_sha256": "07c273cd6608ff9a0178b75abb3be30f34a67c1d5ec7e9ac82f288bf2a136b0c",
+  "current_analysis_sha256": "8f10405b0faf49d0ddacb21bb6093e1e7a06c936a2901cbe3a7c011e8c6ee679",
+  "tables": {
+    "criterion_links.csv": "93923dd51e580ca9a1db6addd373512d8c9462baec6e05275e0ef3f5bb0fa585",
+    "criterion_covariance_accounting.csv": "838dc232f31cac9466cca4acf1c00eed94457677695090a56128c785298211e3"
+  },
+  "new_model_fits": 0,
+  "new_neural_calls": 0
+}

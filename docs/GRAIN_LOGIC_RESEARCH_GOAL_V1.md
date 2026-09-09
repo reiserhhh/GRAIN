@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, three finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, four finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -90,13 +90,43 @@ per-instance inspection API. The all-nine relation panel uses full-source
 descriptive reference fits; it is not a new blind generalization test.
 Implementation, fixed plan, aggregate report and tables: local commit `a4526f3`.
 
+## Fourth pass: actual author criteria
+
+- NEXT06 completed a finite109-row association/102-row covariance account.
+  Three-view author means, all nine teacher configurations, and both existing
+  four-program source-OOF outputs. No model fit or new neural calls.
+- Configuration remainder/real criterion: T/F r=.305 [.064,.510],AUC=.678;
+  E=.227,A=.186,O=.176 (213Big5/63MBTI authors). E/A/O pass the27-test teacher
+  component BH screen; T/F q=.058 is exploratory. Other queries remain recorded.
+- E5-mean T/F OOF remainder r=.249,AUC=.654, bootstrap[-.007,.475]. The fold
+  target R/criterion r=.304 has +.157 retained and +.147 readout-error covariance
+  contributions, under one common denominator. Not variance/information shares.
+- N's configuration remainder/criterion r=.055 and E5 OOF .061 contrast with
+  its successful native-response extraction; the whole native N criterion
+  relation is.177. Thus useful reading mechanisms and useful criterion channels
+  are not automatically the same object.
+- NEXT07 first criterion allocation complete: GRAIN transport gap/criterion
+  r=-.039 T/F,.026 N. No evidence here to call the subtraction gap psychological
+  purity. Complete fixed-f T/F criterion r=.201 includes +.240 configuration
+  contribution and -.039 from mean/final, documenting real signed cancellation.
+-85 combined focused tests pass, including2 new cancellation tests. Existing
+  SWIG warnings only. All current new scripts pass Ruff. Private joins/values
+  stay under results; only aggregate reports/tables are published locally.
+
+Read [criterion report](../reports/grain_vector_mechanisms/CONFIGURATION_CRITERION_LOGIC_REPORT_V1.md)
+and [staged plan](GRAIN_LOGIC_CRITERION_CONNECTION_PLAN_V1.md).
+Author labels did not train any new program. The labels and source population
+were already used in previous exploratory work; no new blind claim. Bootstrap
+conditions on fitted outputs. r2 removes repeated reference tests from BH;
+r3 adds complete-function covariance accounting, with unchanged models.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT06 | Which frozen component contains actual-criterion information? | Join existing permitted source criteria to author-OOF c/R estimates and frozen teacher/GRAIN scores; compute signed covariance accounting and same-unit associations | Keep full nine-query descriptive relationships separate from the two fitted extraction targets; no training or target selection on criterion labels |
-| NEXT07 | Is the direct-residual advantage a useful common representation or cancellation? | Decompose m_G-S_X(m_G) and residual errors under the same score units; use source-OOF and existing held changes. Study which part supports criterion information | Do not name a technical remainder as purer personality solely from native correlation |
-| NEXT08 | What input/response operation is missing for T/F and low-pole edits? | Inspect exact-matching existing conditional caches before any new forwards; distinguish bag content, order and source support. A bounded contrast is useful only if it changes the next mechanism | Do not fit on the12 held authors or fill another alpha/RFF grid; keep successful N instance function fixed |
+| NEXT08 | What input/response operation leaves T/F criterion-linked information unextracted? | Inspect exact-matching conditional caches before new forwards; relate missing value/response to bag content, order and source support without fitting Y | T/F OOF readout error has+.147 criterion covariance contribution; locate it rather than replace mechanism research with a better supervised score |
+| NEXT09 | Can the fixed configuration interface extend to E/A/O? | Use the same declared input programs and source-author folds, target model components only. Report source criterion links as exploratory because they suggested these queries | Keep the N reading case and T/F criterion case; expansion is not independent confirmation or nine-trait universal success |
+| NEXT10 | How should score-combination preserve useful components? | Use the already decomposed fixed f mean/configuration/final channels and their opposing links to identify a source-only combination mechanism or condition-specific interface | A component with higher criterion r need not replace the whole reader; do not tune combination weights on the same criteria being reported |
 
 All three are local computational/mechanism questions and remain actionable.
 If a card cannot change the next mainline decision, record it and move on; do

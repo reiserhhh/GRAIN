@@ -44,7 +44,12 @@ on the same12 authors, with attenuated amplitude. The token-only control reads
 some level information but not this response. Exact comment-functional and
 residual-transport identities connect the programs; nine-query relations are
 analyzed within their separate5/4-query populations. E5 still requires an
-encoder. Next: connect these frozen observations to actual author criteria.
+encoder. The [criterion connection](reports/grain_vector_mechanisms/CONFIGURATION_CRITERION_LOGIC_REPORT_V1.md)
+now finds T/F residual/self-report r=.305, with E5 author-OOF r=.249; E/A/O
+residual links are .227/.186/.176. N's reading-response success coexists with
+a weak residual/self-report link (.055), motivating distinct mechanism and
+criterion channels. Signed accounting locates T/F criterion association still
+left in readout error. All are source exploratory results, not new blind scores.
 The [active research plan](docs/GRAIN_LOGIC_RESEARCH_PLAN_V1.md) develops the
 remaining interfaces; finite algebraic closure is not complete identification.
 

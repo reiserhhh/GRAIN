@@ -19,8 +19,12 @@
 > now gives E5-mean N residual-change fidelity .841 and native-response .733;
 > T/F remains a conditional-input question. Exact per-comment and residual-map
 > identities connect both routes; all-nine query relations are separated by
-> source population and statistical level. Next: criterion links of frozen
-> observations, not another accuracy grid. See the [active goal ledger](GRAIN_LOGIC_RESEARCH_GOAL_V1.md).
+> source population and statistical level. [Criterion linkage](../reports/grain_vector_mechanisms/CONFIGURATION_CRITERION_LOGIC_REPORT_V1.md)
+> is now complete for the fixed observations: T/F residual/self-report .305,
+> E5 OOF .249; E/A/O .227/.186/.176; N residual .055. T/F readout error retains
+> +.147 criterion covariance contribution. Next locate that information and
+> test the same interface on E/A/O, not another accuracy grid.
+> See the [active goal ledger](GRAIN_LOGIC_RESEARCH_GOAL_V1.md).
 > No old collector or parameter queue restarted; release scoring unchanged.
 
 > **2026-09-10 latest: bounded dynamic/channel investigation COMPLETE.**

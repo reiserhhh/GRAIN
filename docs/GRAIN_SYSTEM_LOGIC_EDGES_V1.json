@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "4172f986045d1f8e1745df0012cd376d5cf4b47f261f3a56b02a10f25e5033ac",
+  "atlas_sha256": "99fd2ac092ce76479bd5c2109baad6ca1297c5768629fb50c0a0c9c9dcf6ca49",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -152,9 +152,9 @@
     {
       "id": "L22",
       "implication": "\u8def\u5f84\u53ef\u8bfb\u6027\u9ad8 -> \u4eba\u7c7b\u6548\u6807\u76f8\u5173\u9ad8\uff1f",
-      "type_and_status": "H/E",
-      "alternative_or_next_link": "\u6a21\u578b\u9009\u62e9\u4fe1\u606f\u3001\u6548\u6807\u901a\u9053\u3001\u6761\u4ef6\u8986\u76d6\u5206\u522b\u53ef\u9650\u5236\u8fde\u63a5",
-      "evidence_entry": "factor/path / dynamic reports"
+      "type_and_status": "E",
+      "alternative_or_next_link": "N\u54cd\u5e94\u63d0\u53d6\u6709\u6548\u4f46\u914d\u7f6e\u6548\u6807r=.055\uff1bT/F\u4f59\u9879\u6548\u6807r=.305\u3001E5\u8bfb\u51fa.249\u3002\u4e24\u79cd\u7528\u9014\u51fa\u73b0\u53ef\u6d4b\u5206\u79bb",
+      "evidence_entry": "configuration criterion report \u00a7\u00a71-4"
     },
     {
       "id": "L23",
@@ -194,9 +194,9 @@
     {
       "id": "L28",
       "implication": "\u67e5\u8be2\u6027\u201c\u4eba\u683c\u610f\u4e49\u201d -> GRAIN \u56e0\u5b50\u6784\u5ff5",
-      "type_and_status": "H",
-      "alternative_or_next_link": "\u5148\u56fa\u5b9a\u5bf9\u8c61/\u6548\u6807\uff0c\u518d\u547d\u540d\uff1b\u5141\u8bb8\u591a\u5bf9\u591a\u548c\u4e0d\u540c\u6761\u4ef6\u4e0b\u4e0d\u540c\u610f\u4e49",
-      "evidence_entry": "4W / all-factor atlas"
+      "type_and_status": "H/E",
+      "alternative_or_next_link": "\u5df2\u627e\u5230T/F\u3001E/A/O\u914d\u7f6e\u4f59\u9879\u7684\u5916\u90e8\u5173\u8054\uff1b\u6280\u672f\u7ec4\u4ef6\u3001\u7279\u5b9a\u6548\u6807\u4e0e\u5b8c\u6574\u5fc3\u7406\u6784\u5ff5\u4ecd\u5206\u5c42\u8fde\u63a5",
+      "evidence_entry": "4W / configuration criterion report"
     },
     {
       "id": "L29",

@@ -1,0 +1,198 @@
+#!/usr/bin/env python3
+"""Publish aggregate criterion connections; private joined authors stay private."""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from grain_research.vector_mechanisms.readout_cache_cpu import BASE, read, sha, write
+
+
+def main():
+    """Render fixed exploratory associations without any model selection."""
+    source = BASE / "logic_configuration_criterion_v1/function_account_r3"
+    if read(source / "status.json")["status"] != "COMPLETE":
+        raise ValueError("Complete criterion analysis required")
+    public = ROOT / "reports/grain_vector_mechanisms/configuration_criterion_tables_v1"
+    public.mkdir(parents=True, exist_ok=True)
+    names = ("criterion_links.csv", "criterion_covariance_accounting.csv")
+    for name in names:
+        data = pd.read_csv(source / name)
+        if {"author_id", "y_true", "body", "text"}.intersection(data.columns):
+            raise ValueError("Private individual data cannot be published")
+        data.to_csv(public / name, index=False)
+    manifest = read(source / "manifest.json")
+    links = pd.read_csv(source / names[0])
+    account = pd.read_csv(source / names[1])
+
+    def table(frame, columns):
+        return frame[columns].to_markdown(index=False, floatfmt=".4f")
+
+    residuals = links.query("scope=='source_teacher' and channel=='residual'")
+    programs = links.query("scope=='source_oof' and channel=='predicted_r'")
+    whole = (
+        account.query("scope=='source_whole_function'")
+        .pivot(index="query", columns="channel", values="r_contribution")
+        .reset_index()
+    )
+    code = ROOT / "scripts/analyze_grain_configuration_criteria.py"
+    write(
+        public / "provenance.json",
+        {
+            "private_source": str(source.relative_to(ROOT)),
+            "analysis_manifest_sha256": sha(source / "manifest.json"),
+            "current_analysis_sha256": sha(code),
+            "tables": {name: sha(public / name) for name in names},
+            "new_model_fits": 0,
+            "new_neural_calls": 0,
+        },
+    )
+    report = f"""# GRAIN逻辑研究：查询可读信息与真实作者效标
+
+2026-09-10。第四次有限研究完成，持续goal ACTIVE。接在
+[轻量配置提取](CONFIGURATION_EXTRACTION_LOGIC_REPORT_V1.md)后，不是另开预测调参赛。
+
+## 1. 真正的新发现
+
+**GRAIN未吸收的查询配置，确实包含一部分真实作者量表关联；但不同查询的
+“模型可读性”与“效标相关性”分布很不同。**
+
+- T/F配置余项与自报标签 **r=.305 [.064,.510]，AUC=.678**（63作者）。
+  不用这些标签训练的E5线性读数，在作者OOF中保留到 **r=.249，AUC=.654**。
+  其bootstrap95%区间[-.007,.475]，这是有方向的探索性保留，不是已确认的提升。
+- 外向性、宜人性、开放性配置余项分别 **r=.227/.186/.176**（213作者），
+  在27项教师组件关联的BH筛查中q<.05。这里没有新拟合这三个轻量头。
+- 神经质余项容易跟随12作者的模型变化，但与213作者的自评只有 **r=.055**；
+  E5提取后为.061。该读数仍是有用的模型读取机制，却不是本次最强的自评连接。
+- T/F完整固定函数的效标r=.201，其配置部分提供+.240的有符号相关贡献，
+  均值与最终读取合计约-.039。**整个模型读数不是每个组件心理信息的最大化。**
+
+四点联合起来，让主线从“模型中发现了什么”向“作者效标关联分布在哪个
+计算环节、哪个环节保留或抵消它”前进了一步。
+
+## 2. 数据和固定方式
+
+沿用已许可、已在前轮分析过的PANDORA源样本：5个Big5查询/213作者，
+4个MBTI查询/63作者。每作者3视图均值；量表值每作者只使用一次。
+不与单视图12作者自然删除的相关作直接性能排名。
+
+所有真实Y均来自已有`all_factor_source_m29_v1/private_external_links.csv`；
+本轮不读取MEPS原文/问卷、不打开lockbox、不产生新神经调用或拟合。
+作者/查询键完整，教师配置在两套缓存中逐数核对；OOF配置与教师均值也一致。
+T/F正端为F，不翻转分数选择高AUC。S/N少数类仅4人，不能用其小样本AUC下强结论。
+
+全源GRAIN参照的R与折内参照的OOF R是两种地址：前者T/F r=.3049，后者
+.3040，接近但未混称同一分数。OOF的每位作者都没有参与该折的读出或GRAIN
+映射拟合。旧函数和神经模型训练来源保持原有边界，不宣称全流程新盲评。
+
+## 3. 全部查询的余项效标关系
+
+{table(residuals, ["query", "n", "pearson_r", "bootstrap_r_lower", "bootstrap_r_upper", "spearman_rho", "auc", "minority_count", "q_bh"])}
+
+T/F的未校正bootstrap区间为正，但27项BH q=.058；保留为值得发展的关联。
+N、C、EI、SN、JP等在这个特定配置余项上的联系较弱，不等于整个文本或
+其他GRAIN对象无效。比如同批N的完整原生读数r=.177，完整固定f为.101，
+配置本身r=.054；目标查询的不同计算组件承担不同信息。
+
+## 4. 轻量程序保留了哪一部分
+
+下表只使用先前已固定的四个程序，没有看到Y后改权重、标签或alpha。
+
+{table(programs, ["query", "arm", "pearson_r", "spearman_rho", "auc", "q_bh"])}
+
+T/F四程序约r=.239-.251，复杂加权/核分布没有清晰优势。因而不是选一个小数
+点略大的赢家，而是先保留简单E5均值程序，研究剩余关联的来源。
+N的token程序.132高于E5 .061，但未通过确认性检验，也没有模型自然响应优势；
+只作为另一个信息取向记录。模型拟合精度不是唯一的机制筛选尺度。
+
+固定分量下的精确关系为：
+
+    c = m_G + R
+    corr(c,Y) = Cov(m_G,Y)/[sd(c)sd(Y)] + Cov(R,Y)/[sd(c)sd(Y)].
+
+T/F配置的效标r=.255，分为GRAIN表示部分+.014和余项+.241；
+外向性配置r=.213，分为+.002和+.211。当前历史12因子到配置的映射只承担
+其中一小部分关联，不能因此把GRAIN的全部测量能力判为失败。
+
+再分开固定OOF预测与未提取部分：
+
+    R = R_hat + (R-R_hat)
+    corr(R,Y) = Cov(R_hat,Y)/[sd(R)sd(Y)]
+              + Cov(R-R_hat,Y)/[sd(R)sd(Y)].
+
+T/F折参照余项r=.304，由+.157的已提取关联贡献和+.147的读出误差贡献组成。
+**误差里仍有可寻找的效标关联**，但这个数不是剩余预测r、互信息、因果比例
+或“还剩49%人格”。两项都按同一个总量标准差归一化；它们可以相消或超过1。
+前轮两种减法之间的GRAIN搬运差额，T/F效标r=-.039、N .026，没有明显效标
+联系，因此不能仅凭减法差额在模型响应上的作用，就将它命名为心理构念。
+
+## 5. 不同组件组合时会保留或抵消关联
+
+下表是完整固定函数f的效标相关之**可加贡献**，不是各部分单独的Pearson r：
+
+{table(whole, ["query", "mean", "configuration", "final", "anchor"])}
+
+锚点为固定常数，仅有浮点误差。T/F与JP的配置贡献会被其他项部分抵消；
+N的mean/configuration/final三项都为正，总计.101。因此，
+“与模型整体一致”与“保留某量表相关信息”是两种不同任务，不应强行统一为
+一个优化目标。精确协方差记账最大误差{manifest["max_covariance_error"]:.3g}。
+相消是计算事实，未断言存在一个真实心理因果抑制过程。
+
+## 6. 文献如何解释这条连接
+
+[Funder的Realistic Accuracy Model(1995)](https://rap.ucr.edu/FunderPR1995.pdf)
+把人格判断联系到行为线索的相关性、可获得性、被检测和被使用等环节。
+这为我们的新分工提供直接理论指导：
+文本中有线索、向量能读出、模型使用它、它与某效标相关，不是同一环节。
+模型内部可用而自评相关小，也可能是查询取用、构念覆盖或效标通道不同，
+并不要求抹掉已经找到的向量机制。
+
+这里将RAM作为测量/判断问题的组织框架，不声称RAM证明了当前LLM的具体
+算法。真实自评不是实际行动的同义词，本轮没有新增独立行为通道。
+
+## 7. 决议和下一步
+
+1. 保留N轻量读数作为模型响应机制实例，不继续单纯追它的拟合小数点。
+2. 把T/F及A/E/O的配置余项登记为有外部关联的候选接口；技术代号保持不变，
+   不直接把它们重命名成人格构念。A/E/O尚未做本轮轻量提取，属于明确下一卡。
+3. 优先解剖T/F读出误差中的+.147关联贡献：先比较同样材料上的条件/顺序
+   支持和已有读取程序，不用已知标签训练一个更高分模型掩盖机制。
+4. 对其他查询沿已有mean/configuration/final分工寻找对应入口；不要求所有
+   量表从同一组件读出，更不要求所有“心理意义”由LLM整体答案决定。
+
+有限结果只有{manifest["association_rows"]}行关联及{manifest["covariance_rows"]}行记账。
+BH家族分别为教师组件27项、OOF程序46个不重复假设、整体读数18项；重复展示
+的相同OOF参考不重复计数。r1原始结果保留，r2校正家族，r3补齐整体函数记账。
+bootstrap按作者、给定冻结预测；不包含重新拟合不确定性。所有结果均为探索性。
+
+## 8. 复现与验证
+
+```bash
+"../project persona/.venv/bin/python" scripts/analyze_grain_configuration_criteria.py \\
+  --output-dir results/grain_vector_mechanisms/logic_configuration_criterion_replay
+"../project persona/.venv/bin/python" scripts/report_grain_configuration_criteria.py
+"../project persona/.venv/bin/python" -m pytest -q tests/test_grain_criterion_accounting.py
+```
+
+第二条渲染当前function_account_r3包，不自动改用replay。方案：
+[NEXT06/07](../../docs/GRAIN_LOGIC_CRITERION_CONNECTION_PLAN_V1.md)。
+[完整汇总](configuration_criterion_tables_v1/)，私人作者联接与分数仍留在gitignored
+results内。新增两个协方差/抵消合成测试通过，合并前轮相关测试共85通过。
+无新模型拟合、API、神经前向或发布评分变化。
+"""
+    path = (
+        ROOT
+        / "reports/grain_vector_mechanisms/CONFIGURATION_CRITERION_LOGIC_REPORT_V1.md"
+    )
+    path.write_text(report, encoding="utf-8")
+    print(path.relative_to(ROOT))
+
+
+if __name__ == "__main__":
+    main()
