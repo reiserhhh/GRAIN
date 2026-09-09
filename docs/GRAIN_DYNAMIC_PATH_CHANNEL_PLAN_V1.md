@@ -56,7 +56,7 @@ They allocate predictive gain, not true psychological variance or causation.
 
 - Same 276 authors: 213 Big5-only, 63 MBTI-only; historical reference exclusion
   uses the verified raw-name-to-pseudonym mapping from the preceding run.
-- No new model training, checkpoint changes, new factor discovery, or paid calls.
+- No new neural model-weight training, checkpoint changes, new factor discovery, or paid calls.
   Cached model states only. The frozen 12 factors are a bounded bridge to GRAIN,
   not every dynamic object ever developed in the repository.
 - Report every criterion, paired author bootstrap, within-fold diagnostics for
