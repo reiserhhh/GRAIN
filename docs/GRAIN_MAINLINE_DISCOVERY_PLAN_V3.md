@@ -1,5 +1,20 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-09 conditional navigation goal V7 ACTIVE.** Two real Claude/Codex
+> read-only seminar rounds complete. New finding: controlled construction did
+> not vary denial/time, while natural evaluation did. Next distinguish conditional
+> support, value-versus-response loss, model family and early-input coverage.
+> [Plan](GRAIN_CONDITIONAL_NAVIGATION_PLAN_V1.md),
+> [live ledger](GRAIN_CONDITIONAL_NAVIGATION_GOAL_V7.md),
+> [seminar](../reports/grain_vector_mechanisms/NAVIGATION_SEMINAR_20260909.md).
+> CON00/01 now COMPLETE:288 source forwards/429.88s, matched four-formula
+> comparison. Linear value->secant restores T/F denial-response r .343->.585,
+> state time-response -.184->.789, with a state level-fidelity tradeoff.
+> [Results](../reports/grain_vector_mechanisms/CONDITIONAL_NAVIGATION_CONSTRUCTION_REPORT.md).
+> Next CON02 E-only input augmentation, then CON03 portable/external link;
+> no neural process remains, no human-label tuning or nine/34-target grid.
+> Previous NAV12 delivery remains valid.
+
 > **2026-09-09 NAV finite goal COMPLETE.** All12 execution cards have evidence,
 > including A/B x real/synthetic-reader controls and source-space extension.
 > Token-only T/F AUC=.666/.705 and4-block free-chat state r=.351/.351 persist
