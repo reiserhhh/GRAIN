@@ -1,0 +1,7 @@
+query,estimand,authors,OOF_r
+TF_cont,between,63,0.5133705244239434
+TF_cont,transition,63,0.27845968378913194
+TF_cont,within,63,0.320886763767557
+neuroticism,between,213,0.47844089291301
+neuroticism,transition,213,0.013003507070521357
+neuroticism,within,213,0.0928491996358966
