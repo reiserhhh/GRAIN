@@ -1,0 +1,206 @@
+{
+  "status": "COMPLETE",
+  "date": "2026-09-10",
+  "replay_files": {
+    "logic_conditional_factorial_v1": {
+      "component_accounts.csv": {
+        "equal": true,
+        "sha256": "25957dedcc1d0735868f6445496235890c5b60bc97851df08fd154626eb65894"
+      },
+      "order_accounts.csv": {
+        "equal": true,
+        "sha256": "ae955647755e65c41f63fd7721ec01403a2974dbd2aef3163b6725d8bceeffc8"
+      },
+      "component_geometry.csv": {
+        "equal": true,
+        "sha256": "31a76cb4635a9e808ded80ec43ac6c417d2141ecb62a188f1f0c8da3c70bcf0c"
+      },
+      "previous_account_bridge.csv": {
+        "equal": true,
+        "sha256": "52f2e80b0e99cdb5e07fe0f22ecd4c1e362fd39b6090f6abb028e58caa5f0505"
+      },
+      "private_model_contrasts.csv": {
+        "equal": true,
+        "sha256": "58ba5466e72b5076e41b2d0d823fa7cb23ed018afc896820043d9ef42d7d62f4"
+      },
+      "private_criterion_crosswalk.csv": {
+        "equal": true,
+        "sha256": "db3ba7bf5ac631b8a30adea66d41fcbcd9f3b1efae4b749cdb83d9aa58460636"
+      }
+    },
+    "logic_kernel_action_v1": {
+      "action_metrics.csv": {
+        "equal": true,
+        "sha256": "04413a2093e37aebd44862c812f77a81bb6e4982ca3f21c38ee31d75413ccee3"
+      },
+      "paired_comparisons.csv": {
+        "equal": true,
+        "sha256": "ded48462443699367f8a7a056d96e6e21b85eb717c22539ce915f6a5c1e7b6d4"
+      },
+      "criterion_links.csv": {
+        "equal": true,
+        "sha256": "0eba77fc623094e6bd4146f9c78e2c615fb5f2846da19575e0063b47349a667c"
+      },
+      "functional_checks.csv": {
+        "equal": true,
+        "sha256": "a1e30314dce27df2036134ac38a784d3bc4626fd5494b6530b2472d3fdef5726"
+      },
+      "private_targets.csv": {
+        "equal": true,
+        "sha256": "90a61c0703092bb86da490d3afebbb8643c80045f7cad7e5af25e55d6bb46f44"
+      },
+      "private_predictions.csv": {
+        "equal": true,
+        "sha256": "14901795023f42d5e627b126c32d6e07d5e409911b6a64790ad6218dc4b5ce0f"
+      },
+      "private_models.json": {
+        "equal": true,
+        "sha256": "631e980f280ef3b4589acbf1d3ea95ca6ff2085d5ef0d360fb8b082bd7728534"
+      },
+      "private_criterion_crosswalk.csv": {
+        "equal": true,
+        "sha256": "59567da15c770af8eeeed2f7033130f532d1ec187b93d09297e97ae8891ec160"
+      }
+    }
+  },
+  "projection_replay": {
+    "arrays": 432,
+    "max_absolute_difference": 0.0
+  },
+  "public_tables": {
+    "component_accounts.csv": {
+      "rows": 70,
+      "sha256": "25957dedcc1d0735868f6445496235890c5b60bc97851df08fd154626eb65894",
+      "columns": [
+        "query",
+        "arm",
+        "n",
+        "native_criterion_r",
+        "component",
+        "r_contribution",
+        "lower",
+        "upper",
+        "valid_draws"
+      ]
+    },
+    "order_accounts.csv": {
+      "rows": 84,
+      "sha256": "ae955647755e65c41f63fd7721ec01403a2974dbd2aef3163b6725d8bceeffc8",
+      "columns": [
+        "query",
+        "arm",
+        "n",
+        "native_criterion_r",
+        "order",
+        "component",
+        "r_contribution",
+        "lower",
+        "upper",
+        "valid_draws"
+      ]
+    },
+    "component_geometry.csv": {
+      "rows": 8,
+      "sha256": "31a76cb4635a9e808ded80ec43ac6c417d2141ecb62a188f1f0c8da3c70bcf0c",
+      "columns": [
+        "query",
+        "component",
+        "n",
+        "rms",
+        "sd",
+        "mean"
+      ]
+    },
+    "previous_account_bridge.csv": {
+      "rows": 42,
+      "sha256": "52f2e80b0e99cdb5e07fe0f22ecd4c1e362fd39b6090f6abb028e58caa5f0505",
+      "columns": [
+        "query",
+        "arm",
+        "n",
+        "native_criterion_r",
+        "identity",
+        "current_value",
+        "previous_value",
+        "error"
+      ]
+    },
+    "action_metrics.csv": {
+      "rows": 48,
+      "sha256": "04413a2093e37aebd44862c812f77a81bb6e4982ca3f21c38ee31d75413ccee3",
+      "columns": [
+        "query",
+        "arm",
+        "unit",
+        "effect",
+        "n",
+        "r",
+        "mse",
+        "mse_over_zero",
+        "prediction_sd",
+        "target_sd"
+      ]
+    },
+    "paired_comparisons.csv": {
+      "rows": 18,
+      "sha256": "ded48462443699367f8a7a056d96e6e21b85eb717c22539ce915f6a5c1e7b6d4",
+      "columns": [
+        "query",
+        "candidate",
+        "reference",
+        "effect",
+        "bootstrap_valid",
+        "delta_r",
+        "delta_r_lower",
+        "delta_r_upper",
+        "mse_gain",
+        "mse_gain_lower",
+        "mse_gain_upper",
+        "mse_gain_valid_draws"
+      ]
+    },
+    "criterion_links.csv": {
+      "rows": 24,
+      "sha256": "0eba77fc623094e6bd4146f9c78e2c615fb5f2846da19575e0063b47349a667c",
+      "columns": [
+        "query",
+        "arm",
+        "effect",
+        "n",
+        "actual_criterion_r",
+        "predicted_criterion_r"
+      ]
+    },
+    "functional_checks.csv": {
+      "rows": 32,
+      "sha256": "a1e30314dce27df2036134ac38a784d3bc4626fd5494b6530b2472d3fdef5726",
+      "columns": [
+        "query",
+        "fold",
+        "arm",
+        "parity_error",
+        "zero_error"
+      ]
+    }
+  },
+  "code_sha256": {
+    "grain_research/vector_mechanisms/conditional_factorial.py": "c99f093afce22ecc695086859bb98998fb8611e582346a7ff3775c643b693737",
+    "scripts/analyze_grain_conditional_factorial.py": "ee8c99b6293a0fbdf6d51df7d6ba719f54b4590bb355bcfbbd42dd1e6ac68ce1",
+    "tests/test_grain_conditional_factorial.py": "e949e24e961fd6095d304b66dbe6c364e7725b1f8d9e8b5c59a53397b5e52577",
+    "grain_research/vector_mechanisms/kernel_action.py": "392a2d3d293bb81a19195423e90bf0b9324ee708cfdd8d9d1fdbb04343a88f45",
+    "scripts/run_grain_kernel_action.py": "cb7d0d65e0fbedadfbc65455575ee1f8cf62f095f93eb2f03559737e185f8496",
+    "tests/test_grain_kernel_action.py": "eac107f55c7ba8709adfdab132426895cc2fd23714f62aab2206378108571458"
+  },
+  "validation": {
+    "focused_passed": 113,
+    "new_passed": 11,
+    "full_suite_run": false,
+    "ruff": "pass",
+    "format": "pass",
+    "new_neural_calls": 0,
+    "small_action_fits": 64,
+    "human_criterion_fits": 0
+  },
+  "scope": "Exposed24-author/query panel; pointwise fixed-output uncertainty; no reader promotion",
+  "projection_note": "First run module gained shebang after projection; identical arrays and all numerical outputs replayed with final code"
+}

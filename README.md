@@ -83,6 +83,14 @@ scalar-only reconstruction on that family. The [conditional function interface](
 develops the missing baseline/response objects without replacing GRAIN's
 population references, real paths or earlier successes with one total score.
 
+The [conditional factorial/kernel experiment](reports/grain_vector_mechanisms/CONDITIONAL_FACTORIAL_KERNEL_LOGIC_REPORT_V1.md)
+now localizes different remaining terms: T/F conditional background and N
+mean-preserving configuration. A new explicit odd/even distribution-contrast
+family is implemented and tested without new neural calls. It has local action
+and criterion links, not a universal improvement over its fixed Taylor control.
+113 scoped tests pass. The next mechanism question is joint comment action and
+retained conditional-state information, rather than another scalar accuracy grid.
+
 The [same-comment reversal test](reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 now gives an actual invariant-input mismatch: unchanged E5 bags produce native
 T/F/N changes of RMS .105/.034. A fixed ordinal extension does not recover the

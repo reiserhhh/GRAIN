@@ -47,9 +47,13 @@
 > Fixed-PQ anchors provide a stronger input-fiber witness: constant function
 > inputs but varying native outputs. Natural-text scope remains separate.
 > [Conditional function logic](GRAIN_CONDITIONAL_FUNCTION_LOGIC_V1.md) specifies
-> b(E), integrated K(E,d), and reference-dependent allocation. NEXT15 reuses
-> M15's measured four-cell interaction to locate the next constructible part;
-> no repeated scalar/order/input grid or newly selected criterion model.
+> b(E), integrated K(E,d), and reference-dependent allocation. The
+> [NEXT15/NEXT16 follow-up](../reports/grain_vector_mechanisms/CONDITIONAL_FACTORIAL_KERNEL_LOGIC_REPORT_V1.md)
+> is complete: TF remaining conditional mean+.0694, N configuration+.1266;
+> four fixed nonlinear-distribution action arms retain exact parity/zero
+> properties but no universal Fourier-over-Taylor gain.113 scoped tests and14
+> exact numerical replays,0 new neural calls. Next inspect actual cross-comment
+> joint-action coverage and TF's retained background carrier, not another grid.
 >
 > The [actual input-order experiment](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 > is now delivered: identical12-comment bags,52 forwards/82.03s, native reversal

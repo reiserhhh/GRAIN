@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, nine finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, ten finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -289,15 +289,49 @@ Read [scalar/conditional report](../reports/grain_vector_mechanisms/SCALAR_CONDI
 Plans committed `2823223`, `b2d24af`, `4b3e7a0`; these are exposed-source ordered
 discovery records, not retrospective preregistration.
 
+## Tenth pass: localized conditional targets and an explicit new action family
+
+- NEXT15 complete from frozen M15 endpoints,48 author-query means and all seven
+  current proxies, no new fit/forward.70 component accounts,84 ordered allocations,
+ 42 previous-account identities. Current-f remainder: TF conditional mean
+ +.0694[.0258,.1179]; N mean-preserving configuration+.1266[.0248,.2133].
+  They reconstruct NEXT14's+.0946/+.2123 conditional contributions exactly.
+- The two operation paths reallocate I without changing F. N's remaining evidence
+  contribution is+.1266 or+.1466, symmetric+.1366; all three pointwise intervals
+  positive on this24-author panel. Not three independent studies or a uniquely
+  causal attribution. T/F's corresponding configuration contribution is smaller.
+- NEXT16 executed after inventorying M12-M24: nonlinear token-distribution
+  contrasts with means retained as phase conditions, odd/even endpoint targets,
+ 32 fixed Gaussian directions; Fourier/Taylor3 by bag/position four-arm design.
+  Four author folds,64 small action fits,576 view predictions, no Y fits.
+  Cached-state projection3.51s, fits1.72s,0 new neural calls.
+- New functions have exact reflection/zero/loss properties and distinguish a
+  synthetic pair with equal first three moments. Actual gains are local: TF
+  Fourier-bag even-action r=.471,MSE/zero=.840; N Fourier-position plus-action
+  r=.368 but MSE/zero2.657. Fourier does not universally beat its matched Taylor
+  control. No frequency/bandwidth/alpha expansion or selected model promotion.
+- Source T/F predicted-configuration/self-report r ranges.256-.521, while actual
+  configuration/self-report is.223; N predicted links.050-.240 versus actual.521.
+  All four arms retained on exposed24-author/query panels. Useful criterion
+  association and actual mechanism reconstruction remain distinct successes.
+-113 scoped tests pass (11 new); Ruff/format pass. Fourteen aggregate/private
+  numerical files replay byte-for-byte; cached projections are separately checked.
+  No release scorer, old lockbox, API, MEPS, raw-text upload or neural queue change.
+
+Read [conditional factorial/kernel report](../reports/grain_vector_mechanisms/CONDITIONAL_FACTORIAL_KERNEL_LOGIC_REPORT_V1.md),
+[conditional function logic](GRAIN_CONDITIONAL_FUNCTION_LOGIC_V1.md), and frozen
+plans `486dee9` (NEXT15) / `89f91a7` (NEXT16). Keep the old gradient/action results;
+this18-train/6-eval OOF protocol is not a matched comparison to four-reference M20.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT15 | Which measured part of b(E) remains outside current proxies, and how does attribution order move it? | Reuse M15's frozen four cells and same24-author/query crosswalk. Apply one current-proxy projector to conditional-mean, mean-preserving configuration, query and interaction terms; compare the two exact change orders | Localize the remaining constructible term without repeating M15's raw correlations. Keep reference-dependent allocation explicit, all components retained, no new Y-selected anchors or forwards |
-| NEXT16 | What is the smallest useful conditional function construction not already tried? | Audit M12-M23/MNAV inputs, target losses and parity/support restrictions against NEXT15; select one missing input/target contrast for b(E) or K(E,d), freeze it before fits | Develop the localized mechanism rather than repeat attention means, quadratic ranks or scalar accuracy grids. If caches lack the needed crossing, specify it before a bounded collection |
+| NEXT17 | Is the fixed-condition distribution action missing a measured cross-comment mechanism? | Inventory existing independent-comment mean-preserving configuration interventions, not query-coordinate cubes. If a same-observer two-comment quartet exists, compute its mixed action at fixed P/Q/layout; otherwise freeze the smallest missing quartet before bounded collection | Test joint action before adding distribution-level nonlinear coupling. Do not infer interactions merely from kernel error, or tune Fourier features until r improves |
+| NEXT18 | Which retained states carry T/F's conditional-mean B contribution? | Map exactly what C(E) leaves unchanged: comment means, non-body contextual states and layout. Reuse M12/M13/M15 evidence to identify one missing conditional comparison | Keep the T/F background target active alongside N configuration. Do not call all non-body states nuisance or equate them with human topic/condition; no Y-selected state choice |
 
-Both are local computational/theory questions and remain actionable with the
-existing evidence. Start cache-only; no new source collection queue is planned.
+Both are local computational/theory questions. Start by checking cached coverage;
+any missing neural contrast needs a new explicit finite design, not an old queue.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 
