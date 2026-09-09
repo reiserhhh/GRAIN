@@ -1,5 +1,20 @@
 # GRAIN mainline discovery V3
 
+> **NAV evidence packets and first route-A constructor DELIVERED; goal ACTIVE.**
+> Synthetic-reference functions follow12-author natural edits at r=.646-.990.
+> Query coding decomposes into a large logit prior plus target-specific evidence
+> responses; current-state time/order effects are separately measured. A genuine
+> four-block P/Q residual constructor now runs: held-world function r=.715-.830,
+> but real transport loses much of the useful action.84%-91% of natural state
+> error lies outside its synthetic residual span; within-span score errors also
+> matter. A-to-B compilation is exact to3.66e-15. No post-hoc T/F sign flip.
+> [Round3](../reports/grain_vector_mechanisms/NAVIGATION_ROUND3_REPORT.md),
+> [state construction](../reports/grain_vector_mechanisms/NAVIGATION_STATE_TRANSPORT_REPORT.md),
+> [live ledger](GRAIN_NAVIGATION_RESEARCH_GOAL_V6.md).2747 full tests pass/3skip;
+> final focused12pass includes4 added geometry/control tests. No collector remains.
+> Continue the remaining NAV reference/group/cache/runtime cards and targeted
+> conditional-state construction; do not restart a human-label accuracy grid.
+
 > **NAV second loop DELIVERED; goal V6 ACTIVE.** Four-block contextual program
 > recovers free-chat state r=.351 [.038,.601] without the full17-layer P/Q prefix;
 > runtime still uses extracted Transformer blocks. Token-only T/F remains a

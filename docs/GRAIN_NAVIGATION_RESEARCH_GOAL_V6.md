@@ -31,15 +31,15 @@ heavier work only after verifying checkpoint/autograd compatibility on the hosts
 | Packet | Status | Evidence / next action |
 |---|---|---|
 | NAV-01 | COMPLETE_FIRST_PACKET | 96 worlds/288 native units/6 synthetic references;342 calls,96seconds |
-| NAV-02 | IN_PROGRESS | 300 actual patches,8 candidate routes/query; independent state constructor remains open |
+| NAV-02 | IN_PROGRESS | Actual4-block residual state constructor completed; held-world function r=.715-.830, natural coverage gap localized; broader useful-state transport open |
 | NAV-03 | IN_PROGRESS | Token-only T/F link retained; extracted 1/4/8-block programs evaluated; 4-block state r=.351 [.038,.601] on46 free chats |
-| NAV-04 | IN_PROGRESS | Synthetic role/opportunity/renderer effects complete; real natural edits remain |
-| NAV-05 | PENDING | Wording/coding factorial |
+| NAV-04 | COMPLETE_FIRST_PACKET | Twelve held PANDORA authors,8conditions,3queries; synthetic-reference natural response r=.646-.990; shallow programs attenuate edits |
+| NAV-05 | COMPLETE_FIRST_PACKET |384 native queries,8 own-coordinate references; coding prior separated from evidence-response differences |
 | NAV-06 | IN_PROGRESS | 162 actual cross-query endpoint interventions complete; node overlap/CKA and functional use differ; real-author GRAIN grouping remains |
-| NAV-07 | IN_PROGRESS | Same-criterion paired material comparison complete: post-state delta r=.310 [.030,.576]; controlled time/order packet remains |
+| NAV-07 | COMPLETE_FIRST_PACKET | Same-criterion material comparison plus66-call controlled time/order packet; present-state time-effect r=.854 |
 | NAV-08 | PENDING | Fixed reference sensitivity and batch invariance |
 | NAV-09 | PENDING | Identical-prefix cache benchmark |
-| NAV-10 | IN_PROGRESS | Third connection completed: contextual programs on277 source authors/46participants,923 shallow calls; future A/B programs use same packet |
+| NAV-10 | IN_PROGRESS | Both shallow projection and new generated-state programs connected to277 source authors/46participants; new state program does not replace earlier useful candidates |
 | NAV-11 | PENDING | Actual raw-text dependency closure and export |
 | NAV-12 | COMPLETE_FIRST_PACKET | Two charts, mean/observable-affinity gates and signed actor/opportunity interactions actually compared; weaker interaction amplitude retained |
 
@@ -82,3 +82,28 @@ construction, natural evidence edits, query factorial, real-author grouping,
 time/order synthetic contrasts, fixed author reference, prefix cache and raw-text
 export still require work. Next: targeted interaction/role operations and natural
 edits, then query identity, not real-label tuning or universal average embeddings.
+
+
+## Third-loop and route-A delivery
+
+[Round3 report](../reports/grain_vector_mechanisms/NAVIGATION_ROUND3_REPORT.md)
+closes the first natural evidence, query-identity and time/order packets.
+Synthetic-reference functions track natural edits on12 held/evaluation authors;
+native binary coding priors and query-specific responses are now separated.
+No parse-based explanation is substituted for the observed candidate-score shift.
+
+[State-transport report](../reports/grain_vector_mechanisms/NAVIGATION_STATE_TRANSPORT_REPORT.md)
+delivers actual P/Q generation from four extracted blocks and fixed synthetic
+state operators. Linear/quadratic candidates were evaluated on worlds, natural
+edits and external human endpoints. Held-world state-function r=.715-.830 does
+not transport as a universal real-author solution; T/F polarity reverses and is
+retained without post-hoc flipping. The coverage diagnostic separates outside-span
+state error (84%-91% on natural edits) from inside-span coefficient error.
+A-to-B projection compilation reproduces the generated-state score to3.66e-15.
+
+Full suite2747passed/3skipped, then final focused12passed including4 newly added
+geometry/constant-control tests. All collectors ended. Local artifacts are frozen,
+not pushed. Goal stays ACTIVE. Next concrete work: real GRAIN grouping/fixed
+reference (06/08), exact prefix-cache packet (09), standalone runtime export (11),
+then the diagnosed conditional-coverage/coefficient construction rather than a
+human-label optimization grid. NAV02/03 status is progress, not universal closure.
