@@ -1,5 +1,9 @@
 # GRAIN portable navigation program: build and scope
 
+Later source-affine selector: [build and scope](GRAIN_SOURCE_AFFINE_BUILD_V1.md).
+It has its own bundle; do not pass source_affine to the older four-program
+runtime_export_r1 bundle. The original four-program export below is unchanged.
+
 2026-09-09. Local NAV11 research export. The bundle reproduces **specified**
 frozen candidate functions from raw author excerpts, not a finished universal
 personality interpreter. Results and limitations are in the

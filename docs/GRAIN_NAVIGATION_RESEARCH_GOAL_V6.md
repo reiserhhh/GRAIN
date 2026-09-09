@@ -1,7 +1,11 @@
 # GRAIN navigation research goal V6
 
-2026-09-09. ACTIVE: the user explicitly resumed execution of NAV-01 through
-NAV-12. This supersedes the earlier planning-only pause, not any data-use limits.
+2026-09-09. COMPLETE at the finite NAV-01 through NAV-12 execution scope.
+All twelve cards now have actual experiments, results and decisions, including
+the previously missing A/B x real/synthetic-reader control. This is not a claim
+that all34 targets or every conditional computation is independently solved.
+See [final theory and delivery](GRAIN_NAVIGATION_THEORY_DELIVERY_V1.md).
+This supersedes the earlier planning-only pause, not any data-use limits.
 The goal is the [twelve-piece plan](GRAIN_PENDING_PUZZLE_EXECUTION_PLAN_V2.md),
 grounded in the [literature synthesis](GRAIN_NAVIGATION_LITERATURE_REVIEW_V1.md).
 
@@ -31,22 +35,45 @@ heavier work only after verifying checkpoint/autograd compatibility on the hosts
 | Packet | Status | Evidence / next action |
 |---|---|---|
 | NAV-01 | COMPLETE_FIRST_PACKET | 96 worlds/288 native units/6 synthetic references;342 calls,96seconds |
-| NAV-02 | IN_PROGRESS | Actual4-block residual state constructor completed; held-world function r=.715-.830, natural coverage gap localized; broader useful-state transport open |
-| NAV-03 | IN_PROGRESS | Token-only T/F link retained; extracted 1/4/8-block programs evaluated; 4-block state r=.351 [.038,.601] on46 free chats |
+| NAV-02 | COMPLETE_SCOPED_EXPERIMENTS | Actual4-block state constructor, source-span extension and affine compilation executed; natural state r=.127 to .415; conditional response failures retained, not universally solved |
+| NAV-03 | COMPLETE_SCOPED_EXPERIMENTS | Token-only T/F AUC=.666/.705 and4-block free-chat state r=.351/.351 under real/synthetic readers; 1/4/8-block programs tested |
 | NAV-04 | COMPLETE_FIRST_PACKET | Twelve held PANDORA authors,8conditions,3queries; synthetic-reference natural response r=.646-.990; shallow programs attenuate edits |
 | NAV-05 | COMPLETE_FIRST_PACKET |384 native queries,8 own-coordinate references; coding prior separated from evidence-response differences |
 | NAV-06 | COMPLETE_FIRST_PACKET | 162 endpoint exchanges plus separate-view GRAIN groups; primary native grouping gain3.4%, author-permutation p=.2784; no automatic group multiplier |
 | NAV-07 | COMPLETE_FIRST_PACKET | Same-criterion material comparison plus66-call controlled time/order packet; present-state time-effect r=.854 |
 | NAV-08 | COMPLETE_FIRST_PACKET | 12 fixed reference/12 evaluation authors;144 P/Q units; batch drift0; reference uncertainty and two-view sensitivity reported |
 | NAV-09 | COMPLETE_FIRST_PACKET | Exact-prefix cache passes numerical tolerances; median1.372x speedup; higher RSS, opt-in only |
-| NAV-10 | IN_PROGRESS | Both shallow projection and new generated-state programs connected to277 source authors/46participants; new state program does not replace earlier useful candidates |
-| NAV-11 | COMPLETE_EXPORTED_SCOPE | Four portable raw-text programs,60 replay comparisons, max error2.95e-15; token mode no Torch/Transformers, others exactly4 blocks; broader capability open |
+| NAV-10 | COMPLETE_COMPARISON | Four A/B candidates x two reader sources x worlds/natural/external complete;277 source authors/46participants, no outcome fit; source origins distinguished from reader provenance |
+| NAV-11 | COMPLETE_EXPORTED_SCOPE | Five portable raw-text selectors,75 replay comparisons, max error6.33e-15; token mode no Torch/Transformers, others exactly4 blocks; broader capability open |
 | NAV-12 | COMPLETE_FIRST_PACKET | Two charts, mean/observable-affinity gates and signed actor/opportunity interactions actually compared; weaker interaction amplitude retained |
 
 No package is marked complete merely because code exists or a prerequisite was
 not met. Report discoveries first; preserve negative effects and blocked scope.
 
-## Latest: fourth-loop delivery
+## Latest: finite goal delivery
+
+[Source-span report](../reports/grain_vector_mechanisms/NAVIGATION_SOURCE_SPAN_REPORT.md)
+closes the source-coverage extension:74%-82% less outside-span state error,
+about34% from recentering and66% from added directions. Full affine compilation
+retains identical scores with7.11MB rather than289.33MB of snapshot parameters.
+Four-block weights are additional, not removed. Natural denial/time failures
+remain visible; better state geometry does not automatically repair responses.
+
+[Reader-source report](../reports/grain_vector_mechanisms/NAVIGATION_REFERENCE_ROUTE_REPORT.md)
+completes both A/B branches under R_real/R_synth. Eighteen construction calls
+and1499 four-block evaluation views supply the comparison; source and MEPS human
+labels are joined only after freezing predictions. Prior synthetic B results
+replay exactly, A_linear within2.11e-15. This is a new comparator, not new people.
+
+The artifact audit passes all12 finite cards,42 evidence files and75 raw-input
+replays. Full tests2766passed/3skipped; scoped lint passes with the documented
+frozen SIM117 style exception. Code checkpoint c1f0787; local-only, no push.
+No collector remains. The goal is complete by executed evidence and decisions,
+not because all methods succeed. Conditional value/response construction,
+all34-target independence and previously deferred branches remain future research;
+see the final delivery document. Do not automatically restart a parameter grid.
+
+## Historical checkpoint: fourth-loop delivery
 
 [Round4 report](../reports/grain_vector_mechanisms/NAVIGATION_ROUND4_REPORT.md)
 and [runtime build guide](GRAIN_NAVIGATION_RUNTIME_BUILD_V1.md) close the first

@@ -1,5 +1,16 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-09 NAV finite goal COMPLETE.** All12 execution cards have evidence,
+> including A/B x real/synthetic-reader controls and source-space extension.
+> Token-only T/F AUC=.666/.705 and4-block free-chat state r=.351/.351 persist
+> across reader sources. Source-span expansion reduces outside-state error74%-82%
+> but does not solve conditional responses. Exact affine compilation reduces
+> operator parameters289.33MB to7.11MB; four-block weights remain.75 raw-text
+> replays pass to6.33e-15;2766tests pass/3skip. No collector or automatic grid.
+> [Final formulas, twelve-card acceptance and remaining mechanism](GRAIN_NAVIGATION_THEORY_DELIVERY_V1.md).
+> Next-stage question is conditional value/response construction, not more
+> human-label tuning. All earlier ACTIVE/next statements below are historical.
+
 > **NAV round4 DELIVERED; goal ACTIVE.** Group/reference/cache/raw-text export
 > packets are now executed. Fixed-author scores have zero batch drift; old
 > GRAIN groups do not justify automatic route-sharing weights. Exact-prefix
