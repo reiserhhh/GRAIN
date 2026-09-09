@@ -1,10 +1,10 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, five finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, six finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
-## Completed this pass
+## First pass: system inventory and inference distinctions
 
 | Card | Question resolved | Evidence | Result/action |
 |---|---|---|---|
@@ -15,7 +15,7 @@ claim is made. Earlier finite goals remain complete within their own scope.
 | LOG04 | Does algebraic closure identify the mechanism? | Five finite witnesses + residual-inclusive path formula | Useful represented and residual channels explicit; a common gradient remains compatible with an effective individual axis |
 | LOG05 | Does 12/12 directional effect explain author differences? | Existing12-author native real/null endpoints in probability and log-odds | Direction acts;94.1% log-odds odd energy is common response, compatible with a shared measurement axis. Test author positions/changes, not mandatory gradient heterogeneity |
 
-No new neural inference, training, APIs, raw MEPS reads or lockbox opening.
+The first pass used no new neural inference, training, APIs, raw MEPS reads or lockbox opening.
 The full numerical panel uses276 previously exposed source authors, not a new
 blind replication. No literal all-author/theory-global exhaustion is claimed.
 
@@ -151,14 +151,53 @@ contrasts use1999 whole-author bootstraps conditional on fitted predictions.
 The existing S6 hidden-state mean-null witness is preserved; its block16
 geometry must not be substituted for the independent E5 input space.
 
+## Sixth pass: actual input invariance and target choice
+
+- NEXT08b complete on the same12 natural-material authors: reverse all12 whole
+  comments, preserving their original text and E5 vector multiset. Native RMS
+  change .1048 T/F/.0341 N;24/24 author/query effects exceed2e-6. Original
+  endpoint replay, four same-run repeats and independent P/Q component replay
+  all have zero error.52 forwards,82.03s; no generation or new E5 calls.
+- Input quotient now has an actual witness: mean/query/distribution bag pooling
+  is invariant, the target is not. For the uniformly weighted two-order orbit,
+  squared odd target is an invariant-reader risk floor; configuration floors
+  are18.7%/10.0% of the current paired MSE. Not original-source error shares or
+  an explanation percentage of the earlier+.141 criterion contribution.
+- A fixed source-only ordinal moment extension was actually tested. It adds
+  an odd component without changing the mean program's reversal-even part.
+  Held configuration change r=-.236/.050, MSE/zero1.222/1.228: no promotion.
+  T/F source residual teacher fit .656->.685 while criterion .249->.203,
+  paired criterion delta-.046[-.087,-.003] (exploratory, fixed-output bootstrap).
+  Distinguish input observability, conditional use and criterion retention.
+- NEXT10 initial same-intervention accounting: N configuration/native delta
+  r=.643 but full fixed-f/native .276; common-denominator contributions
+  mean+.162/configuration+.431/final-.317. These are fixed-approximation
+  channels, not the native model's exhaustive causal components.
+- Preflight stopped before new calls because whole-prompt token multisets
+  changed at rendered boundaries. Tokenizer-only amendment preserves all24
+  units: prompt lengths unchanged, token-count L1 difference0-4. This is
+  full-comment presentation, not pure positional-encoding intervention.
+- Six new tests;49 focused tests pass, Ruff passes. Source828 baseline values
+  replay within1e-16. Published tables have no author IDs/text/Y values;
+  numerical packets/weights remain private. Release/lockbox unchanged.
+
+Read [input-order report](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md),
+[input quotient / target theory](GRAIN_INPUT_QUOTIENT_AND_TARGET_THEORY_V1.md)
+and [frozen plan with preflight amendment](GRAIN_LOGIC_INPUT_ORDER_PLAN_V1.md).
+The key target decision is now explicit: arbitrary presentation sensitivity
+need not be copied into a stable author score, while real expression order
+remains a legitimate GRAIN path object. Neither is discarded wholesale.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT08b | Which conditional input operation accounts for the non-affine remainder? | Inspect content-order/conditional caches for identical author/material/query/function endpoints. Compare an E5-mean invariant edit with an actual changed query target; use a bounded new pair only if no matching cache exists | Scale and between-only alternatives tested. Connect the existing block16 mean-null mechanism to the actual E5 input, not a repeated S6 proof or a Y-trained residual head |
-| NEXT10 | How should score-combination preserve useful components? | Use the already decomposed fixed f mean/configuration/final channels and their opposing links to identify a source-only combination mechanism or condition-specific interface | A component with higher criterion r need not replace the whole reader; do not tune combination weights on the same criteria being reported |
+| NEXT08c | Missing conditional training support or missing contextual operation? | A fixed2x2 source experiment: ordinal input versus early P/Q, natural-only versus paired reversal source targets; select disjoint construction authors before endpoints. Reuse old conditional infrastructure, no Y fitting | The ordinal input distinguishes order but failed to transport. Source paired contrasts can distinguish its missing learning support from an inadequate representation without tuning on the12 evaluated authors |
+| NEXT10b | Which target should each measurement use? | Keep original function, C2-even target and C2-odd response as separate objects; connect their signed component effects to GRAIN presentation conditions and real expression order | Do not blindly mimic every LLM presentation response or call an orbit-average a validated personality score. Locate original-source criterion information separately |
 
-Both are local computational/mechanism questions and remain actionable.
+Both are local computational/mechanism questions and remain actionable. Their
+smallest complete source-pair panel, cost cap and target rules must be fixed
+before new acquisition; no restart of old collection queues.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

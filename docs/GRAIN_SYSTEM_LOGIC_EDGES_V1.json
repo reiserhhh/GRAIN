@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "578f82b69e11a0c28884b3526988c6a976a2306e467758e0d918f7db92c9fe99",
+  "atlas_sha256": "7878ea8a6657b0a31d80c62a71f4db19bbebb32593014a8868bbaa13ac7d0051",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -27,8 +27,8 @@
       "id": "L04",
       "implication": "\u8bb0\u5f55 -> \u5207\u7247/\u5411\u91cf/\u56e0\u5b50\u5206\u6570",
       "type_and_status": "D/E",
-      "alternative_or_next_link": "\u64cd\u4f5c\u7b97\u5b50\u6539\u53d8\u80fd\u770b\u89c1\u7684\u7279\u5f81\uff1b\u4e0d\u8981\u6c42\u4e00\u79cd\u5207\u6cd5\u7edf\u6cbb\u6240\u6709\u5bf9\u8c61",
-      "evidence_entry": "V7 / unified \u00a73"
+      "alternative_or_next_link": "\u8bc4\u8bba\u5747\u503c\u5220\u9664\u8bc4\u8bba\u95f4\u6392\u5217\u4f46\u4e0d\u5220\u9664\u8bc4\u8bba\u5185\u8bed\u5e8f\uff1b\u5448\u73b0\u987a\u5e8f\u4e0e\u4f5c\u8005\u5b9e\u9645\u65f6\u949f\u5206\u5f00",
+      "evidence_entry": "V7 / input quotient theory \u00a7\u00a71-3"
     },
     {
       "id": "L05",
@@ -103,9 +103,9 @@
     {
       "id": "L15",
       "implication": "\u8868\u5f81\u542b\u4fe1\u606f -> \u8bfb\u51fa\u53ef\u5229\u7528\u4fe1\u606f",
-      "type_and_status": "H/E",
-      "alternative_or_next_link": "T/F\u672a\u63d0\u53d6\u6548\u6807\u8d21\u732e+.147\u4e2d\u5e45\u5ea6\u4ec5+.007\uff1b\u6362\u4f5c\u8005\u95f4\u659c\u7387\u672a\u8865\u56de\u3002\u4e0b\u4e00\u6b65\u5b9a\u4f4d\u5b9e\u9645\u8f93\u5165\u4e0e\u6761\u4ef6\u8fd0\u7b97",
-      "evidence_entry": "reference / reading level report \u00a7\u00a72-3"
+      "type_and_status": "M/E",
+      "alternative_or_next_link": "\u540c\u4e00E5\u5411\u91cf\u591a\u91cd\u96c6\u53cd\u8f6c\u65f6\u539f\u751f\u5224\u65adRMS\u53d8\u5316.105/.034\uff1b\u4e0d\u53d8\u8f93\u5165\u4e0d\u80fd\u533a\u5206\u8fd9\u4e9b\u7aef\u70b9\uff0cordinal\u8f93\u5165\u53ef\u533a\u5206\u4f46\u672a\u6b63\u786e\u8bfb\u53d6",
+      "evidence_entry": "reading level / input order reports"
     },
     {
       "id": "L16",
@@ -215,9 +215,9 @@
     {
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
-      "type_and_status": "H",
-      "alternative_or_next_link": "\u7ec4\u88c5\u5df2\u77e5\u6709\u6548\u5bf9\u8c61\uff0c\u4e0d\u4ee5\u6a21\u578b\u81ea\u6d3d\u4ee3\u66ff\u4f5c\u8005\u5916\u90e8\u8fde\u63a5",
-      "evidence_entry": "\u5168\u7cfb\u7edf\u76ee\u6807"
+      "type_and_status": "H/E",
+      "alternative_or_next_link": "T/F\u6a21\u578b\u62df\u5408\u63d0\u9ad8\u800c\u81ea\u8bc4\u5173\u8054\u4e0b\u964d\uff1b\u660e\u786e\u5448\u73b0\u7a33\u5b9a\u4f5c\u8005\u76ee\u6807\u4e0e\u987a\u5e8f\u54cd\u5e94\u76ee\u6807\uff0c\u4e0d\u76f2\u76ee\u590d\u5236LLM\u5168\u90e8\u53d8\u5316",
+      "evidence_entry": "\u5168\u7cfb\u7edf\u76ee\u6807 / input quotient theory \u00a73"
     }
   ]
 }

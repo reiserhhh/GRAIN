@@ -1,0 +1,24 @@
+{
+  "max_pq_component_replay_error": 0.0,
+  "max_original_endpoint_error": 0.0,
+  "repeat_count": 4,
+  "max_repeat_error": 0.0,
+  "units": 24,
+  "neural_calls": 52,
+  "seconds": 82.02810970693827,
+  "all_comment_multisets_preserved": true,
+  "max_prompt_length_delta": 0,
+  "max_token_multiset_l1": 4,
+  "mean_token_multiset_l1": 3.0,
+  "acquisition_sha256": "4df83da2eb7c3e9c8b7c9033b16abd105976b8910abb4abb1b33905b1e18cbe6",
+  "publisher_sha256": "e0ee8c3c53f4d95d3320c1a6599581b83c78ec97500a190fe2d31d2281828a55",
+  "source_prediction_freeze": {
+    "old_rows": 828,
+    "old_max_error": 9.985502008591496e-17,
+    "labels_read": false,
+    "files": {
+      "private_source_oof.csv": "1df22b6251e907b8b18aec290757904aeacde788529bf479c8063a3ccab5d501",
+      "private_held_predictions.csv": "017dda2f1c0ce9aa000981114dacbdd054b5989f5b2e4e86f0d131a3eebbb564"
+    }
+  }
+}

@@ -26,10 +26,16 @@
 > now separates only+.007 amplitude from+.141 non-affine contribution. Between-only
 > reading does not rescue T/F; the fixed E5 program has extended to all nine
 > queries, retaining E/A/O criterion r=.189/.148/.206 without Y training.
-> Next connect existing internal configuration effects to the actual E5 input
-> and conditional operations, rather than repeat a mean-null proof in another
-> space or run another accuracy grid. Ten numerical artifacts replay exactly;
->70 focused tests pass, no new neural calls.
+> Ten fifth-pass numerical artifacts replay exactly;70 focused tests pass.
+> The [actual input-order experiment](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
+> is now delivered: identical12-comment bags,52 forwards/82.03s, native reversal
+> RMS .105/.034 with zero replay error. Invariant input cannot distinguish those
+> endpoints; a source-only ordinal term distinguishes them but fails to read
+> their effect. T/F teacher fit rises while self-report relation falls.
+> Next separate paired conditional learning support from contextual input,
+> and preserve presentation-stable versus order-response targets explicitly.
+> See [input quotient and target theory](GRAIN_INPUT_QUOTIENT_AND_TARGET_THEORY_V1.md).
+> Sixth-pass49 focused tests pass; no new E5 calls or release change.
 > See the [active goal ledger](GRAIN_LOGIC_RESEARCH_GOAL_V1.md).
 > No old collector or parameter queue restarted; release scoring unchanged.
 

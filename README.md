@@ -56,6 +56,13 @@ unextracted criterion contribution. Between-only fitting does not rescue it.
 The same fixed E5 program extends to all nine queries and retains exploratory
 E/A/O residual-criterion r=.189/.148/.206, without label training. Separate
 view-change readers do not automatically improve author-level measurement.
+The [same-comment reversal test](reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
+now gives an actual invariant-input mismatch: unchanged E5 bags produce native
+T/F/N changes of RMS .105/.034. A fixed ordinal extension does not recover the
+response, despite slightly better source teacher fitting. The
+[target distinction](docs/GRAIN_INPUT_QUOTIENT_AND_TARGET_THEORY_V1.md) separates
+presentation-stable author measurement from order-sensitive expression dynamics.
+52 forwards/82 seconds, zero endpoint replay error; no new E5 embeddings.
 The [active research plan](docs/GRAIN_LOGIC_RESEARCH_PLAN_V1.md) develops the
 remaining interfaces; finite algebraic closure is not complete identification.
 
