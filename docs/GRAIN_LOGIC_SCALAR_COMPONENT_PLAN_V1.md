@@ -16,7 +16,7 @@ hidden states. Keep the current release and previously retained readers unchange
 
 | Existing packet | Established result | Different question now |
 |---|---|---|
-| M11 | Same24 authors/query: conditional anchor and function-transport remainder both have source links | Those anchors/reference targets differ from the M28 fixed f. Do not transfer their percentages to the present panel |
+| M11 | Same24 authors/query: conditional anchor and function-transport remainder both have source links | Initially treated as a possible reference change; the cache reconciliation below establishes identical TF/N functions. Cohort-specific percentages still cannot transfer |
 | M12-M13 | Query-attention baseline estimate locally useful for TF; changing aggregation improves N target fit without solving criterion linkage | Here test a scalar function of the current f, not another attention-baseline regressor |
 | M16-M18 | State/position-conditioned action fields can carry different author links; quadratic functions have a parity restriction | Do not label scalar cubic success a new token interaction or a replacement for those fields |
 | M22 | Same-vector trees are not universally better; N contextual prefix + Ridge retains more source association than E5 + Ridge | Here the input is only fixed f or M/C/Q, not a high-dimensional embedding or tree grid |
@@ -98,3 +98,31 @@ Output: `results/grain_vector_mechanisms/logic_scalar_component_v1/` (new run
 directory), explicit prediction freeze, private models/views/author predictions,
 teacher metrics, criterion metrics, paired comparisons, Jensen account, aggregate
 report, tests and local commits. Cache-only CPU, no long compute or new dependencies.
+
+## NEXT14 amendment after NEXT13, before new conditional accounts
+
+The seven-arm packet has now completed without a clear nonlinear/component
+gain over its matched affine teacher control. Reconcile rather than repeat M11.
+A model-only cache check finds all48 old anchored authors in the current panel,
+24/query, with native error5.55e-17, fixed-PQ error1.11e-16 and reference-anchor
+error2.22e-16. **For these two queries M28 reused the old function exactly.**
+The earlier possible-reference-change assumption was incorrect; only the cohort
+and newly fitted approximation differ. No criterion was read for this check.
+
+The next finite account uses those already measured anchors and all seven
+frozen NEXT13 author-OOF predictions, without refitting or neural calls:
+
+`F = b(E) + (f-b_ref) + transport`.
+
+For each frozen proxy p, apply the same affine residual operator Q_p to all
+three terms, and retain their aligned total as a fourth contribution:
+
+`F = P_p F + Q_p b(E) + Q_p(f-b_ref) + Q_p transport`.
+
+All criterion covariances share `sd(F)*sd(Y)` on the same24 authors/query.
+Whole-author1999 bootstrap recomputes the diagnostic projections. This asks
+which **measured** conditional term remains outside each current proxy, not
+which old raw term merely correlates with Y. The projector uses no Y for its
+coefficients and does not yield a deployable recalibration. Public results are
+aggregate; small-subset descriptive uncertainty cannot replace the full-source
+estimates. This amendment changes no completed NEXT13 fit, parameter, or arm.
