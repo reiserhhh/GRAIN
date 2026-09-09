@@ -1,5 +1,15 @@
 # GRAIN mainline discovery V3
 
+> **NAV second loop DELIVERED; goal V6 ACTIVE.** Four-block contextual program
+> recovers free-chat state r=.351 [.038,.601] without the full17-layer P/Q prefix;
+> runtime still uses extracted Transformer blocks. Token-only T/F remains a
+> separate useful route.162 cross-query endpoint exchanges and paired same-state
+> material comparisons are complete; local mean/gated charts and interactions tested.
+> [Round2 report](../reports/grain_vector_mechanisms/NAVIGATION_ROUND2_REPORT.md),
+> [live work ledger](GRAIN_NAVIGATION_RESEARCH_GOAL_V6.md).842 tests pass,3 skipped.
+> No collector remains. Next: targeted contextual interactions/natural edits and
+> query identity; do not select a global winner from human endpoint correlations.
+
 > **NAV first loop DELIVERED; goal V6 stays ACTIVE.** Synthetic references preserve
 > free-chat dejected-state external r=.569 on46 participants. Actual upstream
 > interventions locate query-slot attention/MLP action. A separate token-only,
