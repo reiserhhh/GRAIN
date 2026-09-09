@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, eight finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, nine finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -253,12 +253,48 @@ Read [teacher-target report](../reports/grain_vector_mechanisms/TEACHER_TARGET_L
 The plan was fixed before new derived accounts, but after previous exploratory
 results; neither it nor the current intervals is retrospective preregistration.
 
+## Ninth pass: scalar limitation and a measured conditional function
+
+- NEXT13 complete:63 T/F and213 N authors, three views each, five author folds,
+  seven fixed arms,60 small native-FP32-only fits. Same-scalar cubic, original
+  three components and aggregation-order alternatives do not clearly recover
+  the native criterion gap. All arms retained; no Y model selection or neural calls.
+- T/F cubic-view/affine-view teacher delta r+.00170[-.00515,.00812]. Component
+  view/author criterion delta+.0148[.0040,.0271] is a local fixed-arm comparison,
+  not a new selected predictor. Jensen gaps close within2.39e-16 and are material
+  aggregation effects, not temporal state changes.
+- NEXT14 complete: old/current TF/N functions and five reference arrays match
+  exactly. The possible-reference-change assumption was corrected before new
+  accounts. Same24 authors/query: after common projection on current f, measured
+  conditional anchors retain signed criterion contributions+.0946[.0296,.1625]
+  TF and+.2123[.0459,.3781] N. All seven proxies leave similar conditional terms.
+- Stronger input witness: old actual anchor interventions fix P/Q and therefore
+  all current function components. Native anchors nevertheless vary, giving
+  exact minimum constant-MSE .000637639/.000131248 TF/N. Any scalar-only program
+  fails exact reconstruction on this measured intervention family, not necessarily
+  on every natural-text distribution. FP32 reference casting is explicitly replayed.
+- Conditional formula now distinguishes b_q(E) and an integrated, condition-
+  dependent sensitivity K_q(E,d). Standard path calculus supports the identity;
+  it does not make the estimated functions complete. Reanchoring moves component
+  covariance while preserving the total; two additional algebraic witnesses test it.
+- Ten NEXT13 numerical files replay byte-for-byte; four NEXT14 numerical/link
+  files replay after import formatting. Public whitelist contains aggregates only.
+  No release, lockbox, MEPS, API or neural queue change.102 scoped tests pass
+  (14 new), Ruff/format pass; reproduction.json records the finite checks,
+  not a full-suite run.
+
+Read [scalar/conditional report](../reports/grain_vector_mechanisms/SCALAR_CONDITIONAL_LOGIC_REPORT_V1.md),
+[conditional function logic](GRAIN_CONDITIONAL_FUNCTION_LOGIC_V1.md), and
+[sequentially frozen plan](GRAIN_LOGIC_SCALAR_COMPONENT_PLAN_V1.md).
+Plans committed `2823223`, `b2d24af`, `4b3e7a0`; these are exposed-source ordered
+discovery records, not retrospective preregistration.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT13 | Is the native-to-fixed non-affine gap a nonlinear scalar link or missing conditional information? | First inventory/reuse M11-M28 construction results. On existing same-observer TF/N caches, freeze a small author-OOF comparison of affine scalar, fixed low-complexity nonlinear scalar, and already available component inputs, all targeting native FP32 without Y fits | Determine whether the same scalar suffices locally before collecting deeper vectors. Do not identify a non-affine statistical remainder with a missing attention pathway by definition |
-| NEXT14 | If scalar re-expression is insufficient, which conditional baseline or transport function should be constructed? | Reconcile M11/M12's existing anchored24-author/query observations with current M28 targets; keep changed reference/author addresses visible. Only then add the smallest missing cache-based contrast | Avoid rediscovering that conditional baseline has signal. Construct the specific remaining term only if NEXT13 and old evidence justify it, not a new accuracy grid |
+| NEXT15 | Which measured part of b(E) remains outside current proxies, and how does attribution order move it? | Reuse M15's frozen four cells and same24-author/query crosswalk. Apply one current-proxy projector to conditional-mean, mean-preserving configuration, query and interaction terms; compare the two exact change orders | Localize the remaining constructible term without repeating M15's raw correlations. Keep reference-dependent allocation explicit, all components retained, no new Y-selected anchors or forwards |
+| NEXT16 | What is the smallest useful conditional function construction not already tried? | Audit M12-M23/MNAV inputs, target losses and parity/support restrictions against NEXT15; select one missing input/target contrast for b(E) or K(E,d), freeze it before fits | Develop the localized mechanism rather than repeat attention means, quadratic ranks or scalar accuracy grids. If caches lack the needed crossing, specify it before a bounded collection |
 
 Both are local computational/theory questions and remain actionable with the
 existing evidence. Start cache-only; no new source collection queue is planned.

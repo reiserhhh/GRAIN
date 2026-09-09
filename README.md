@@ -73,6 +73,16 @@ stable population position, actual expression dynamics and model presentation
 without collapsing them into one score.72 focused tests and five exact numerical
 replays pass. These remain exposed-source mechanism results, not a new release.
 
+The [scalar/conditional follow-up](reports/grain_vector_mechanisms/SCALAR_CONDITIONAL_LOGIC_REPORT_V1.md)
+now tests seven fixed maps on276 authors without new neural calls. Scalar
+curvature and the existing three components do not clearly recover the gap.
+An old/current exact-function crosswalk connects measured conditional anchors
+to the remaining criterion association. On the anchored intervention family,
+all current inputs are constant while native outputs vary: a direct limit of
+scalar-only reconstruction on that family. The [conditional function interface](docs/GRAIN_CONDITIONAL_FUNCTION_LOGIC_V1.md)
+develops the missing baseline/response objects without replacing GRAIN's
+population references, real paths or earlier successes with one total score.
+
 The [same-comment reversal test](reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 now gives an actual invariant-input mismatch: unchanged E5 bags produce native
 T/F/N changes of RMS .105/.034. A fixed ordinal extension does not recover the

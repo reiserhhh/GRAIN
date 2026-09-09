@@ -38,9 +38,18 @@
 > delta-.147[-.249,-.049], despite fidelity.911. D1 runtime differences had
 > obscured this loss. Non-affine contribution+.165 cannot be fixed by amplitude
 > alone; N+.093, E extraction+.113 identify different stages of loss.
->72 scoped tests pass; five numerical files replay exactly. Next distinguish
-> a nonlinear scalar link from missing conditional inputs, using existing
-> M11-M28 knowledge before constructing another model. No order/input grid.
+>72 scoped tests pass; five numerical files replay exactly. The next
+> [scalar/conditional experiment](../reports/grain_vector_mechanisms/SCALAR_CONDITIONAL_LOGIC_REPORT_V1.md)
+> is now complete: seven arms/276 authors,60 small fits,0 new neural calls.
+> Scalar curvature and original components do not clearly recover the gap.
+> Current and M11 TF/N functions are identical; measured conditional terms
+> still contribute+.0946/+.2123 outside current f on the old24-author panels.
+> Fixed-PQ anchors provide a stronger input-fiber witness: constant function
+> inputs but varying native outputs. Natural-text scope remains separate.
+> [Conditional function logic](GRAIN_CONDITIONAL_FUNCTION_LOGIC_V1.md) specifies
+> b(E), integrated K(E,d), and reference-dependent allocation. NEXT15 reuses
+> M15's measured four-cell interaction to locate the next constructible part;
+> no repeated scalar/order/input grid or newly selected criterion model.
 >
 > The [actual input-order experiment](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 > is now delivered: identical12-comment bags,52 forwards/82.03s, native reversal
