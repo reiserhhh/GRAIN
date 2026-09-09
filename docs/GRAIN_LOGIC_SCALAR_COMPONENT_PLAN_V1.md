@@ -126,3 +126,19 @@ which old raw term merely correlates with Y. The projector uses no Y for its
 coefficients and does not yield a deployable recalibration. Public results are
 aggregate; small-subset descriptive uncertainty cannot replace the full-source
 estimates. This amendment changes no completed NEXT13 fit, parameter, or arm.
+
+### Cached conditional-input witness
+
+The old collection code fixes P and Q to a common reference while retaining
+each author's other boundary states and layout. Before computing new witness
+statistics, verify those exact reference arrays against M28's reused TF/N
+functions and the old anchor manifest. If they agree, the fixed function and
+all M/C/Q components are constant on this intervention family, while measured
+native anchors may vary. Report the author-mean anchor variance and the exact
+identity `MSE(constant)=Var(anchor)+(mean(anchor)-constant)^2`.
+
+This can reject any scalar-only reconstruction **on the measured anchored
+intervention family**, not only a cubic reader. It does not prove scalar
+insufficiency on every natural-text distribution: the intervention varies E
+with P/Q fixed, whereas natural P/Q are already contextualized by E. Reuse
+cached anchors only; no intervention or teacher collection is repeated.
