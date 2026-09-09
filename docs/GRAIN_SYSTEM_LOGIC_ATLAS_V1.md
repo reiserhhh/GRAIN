@@ -88,13 +88,13 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L15 | 表征含信息 -> 读出可利用信息 | H/E | 可解码与模型实际使用不同；保持 f 与原生 F 两终点 | reference / conditional reports |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M | 恒等式不保证敏感度可识别、可迁移或易从文本计算 | reference framework §§2,7 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | 可能保留偏置/语料先验；另测人类效标而非自称心理真值 | all-factor / NAV reports |
-| L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | B0 无 Transformer、B4 有四层、固定 f 仍需 P/Q；依赖账不同 | NAV build / conditional theory |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E | 源GRAIN映射弱于固定查询函数的真实删减搬运；配置余项补充候选接口 | factor/path / natural transport |
+| L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | 新E5线性余项程序局部追踪N变化；E5仍有编码器，token查表只读词嵌入。B0/B4/f依赖不同 | NAV build / configuration extraction §2 |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 直接学习余项与事后减GRAIN不等价；差额是GRAIN跨表示搬运误差，可精确记账 | natural transport / configuration extraction §§4-5 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 人工方向有效不保证解释自然路径；实际E1中f可追踪、GRAIN差分可能反向 | dynamic report §3 / natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | H | 层级和统计量必须先匹配；本轮 LOG01 拆解 | 本轮实验计划 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | H/E | 模型选择信息、效标通道、条件覆盖分别可限制连接 | factor/path / dynamic reports |
 | L23 | 因子轴旋转 -> 共同对象仍可追踪 | M/H | 比较作用子空间/坐标协变函数，而非重新编号后的单轴 | LOG02 / reference theory |
-| L24 | 共享路径 -> 量表相关？ | H/E | 同材料两查询配置余项出现非对称共享/特异关系；先区分模型响应与量表关系 | all-factor atlas / natural transport §5 |
+| L24 | 共享路径 -> 量表相关？ | H/E | 五Big5/四MBTI组内共32条分层关系；N余项作者水平较特异，其他部分共享。下一步接实际效标 | all-factor atlas / configuration extraction §6 |
 | L25 | 联合 GRAIN+路径 -> 更多人格预测信息 | E | 有局部 E 增益，无普遍拼接提升；不能把指标提升当机制解释 | four routes / dynamic report |
 | L26 | 自评 Big5/MBTI -> 行动倾向/实际行动 | H/U | 自评是独立通道而非实测行动；T,Y 不识别未观测 B | dynamic report §6 / MTMM |
 | L27 | 稳定 LLM 解释 -> 可重复且有据的叙述 | E | 一致可来自共同偏置；固定分数不被解释层回写 | V8 LLM assessment |
@@ -167,6 +167,30 @@ flowchart LR
 但极性相似度不等于模型功能作用。机会、材料可用性、作者选择仍分开处理。
 
 详见[自然变化/查询余项报告](../reports/grain_vector_mechanisms/NATURAL_TRANSPORT_LOGIC_REPORT_V1.md)。
+
+### 5.2 第三轮：共同输入表示与查询功能连接
+
+冻结的E5均值线性程序可以提取N配置余项：E1变化忠实度r=.841，和原生模型
+变化r=.733（12作者）。幅度约真实余项变化的12.9%，但MSE相对零变化减少18.4%。
+T/F未获得同样的自然变化重现。纯token查表的N完整水平相关.744，却未跟随
+实际变化。由此分开**位置函数**、**证据响应函数**与**统计单位/材料支持**。
+
+每评论的已学功能分数psi_q(h)=w_q^T h，使该轻量程序的删除变化精确等于
+(k/n)(mean_kept(psi)-mean_removed(psi))。N权重与人格词极性方向cosine=.083，
+表明它不是直接拿人格词相似度充当功能读数；这不是独立心理维度的证明。
+
+同一固定输入与Ridge算子S_X下有新接口关系：
+
+    R_direct = S_X(c-m_G),   R_derived = S_X(c)-m_G
+    R_direct-R_derived = m_G-S_X(m_G).
+
+因此“直接预测余项”减去的是输入可重现的GRAIN部分，而非完整GRAIN。两种
+加减法不能随意互换或称更纯人格。该关系可检验、可用于设计共同表示接口。
+五个Big5查询在213作者上、四个MBTI查询在63作者上分别分析，N余项在作者
+水平相对特异，A/E等保留共享；未混合人群或将模型组件关系当真实量表关系。
+
+详见[轻量提取/作用算子报告](../reports/grain_vector_mechanisms/CONFIGURATION_EXTRACTION_LOGIC_REPORT_V1.md)。
+下一连接：固定技术读数与已许可外部效标的信息分配，而非继续追求模型自洽。
 
 ## 6. 本轮文献与执行入口
 

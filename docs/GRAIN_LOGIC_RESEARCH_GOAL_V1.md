@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, two finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, three finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -52,16 +52,53 @@ pytest command named obsolete test filenames and collected no tests; corrected
 to the existing paths before the 83-test run. No full-suite claim is made.
 Implementation, both staged plans and aggregate report: local commit `12eb6f4`.
 
+## Third pass: a lightweight configuration function
+
+- NEXT05 fixed four-arm comparison complete, 17.84s, no neural forwards.
+  Source author-OOF plus12-source-disjoint author full/E1/E2 tests. E5-mean
+  direct N residual change fidelity r=.841 [.602,.953], native-change relation
+  .733 [.209,.926]. Prediction amplitude is12.9% of actualR and MSE/zero=.816.
+  New token lookup has N full-configuration r=.744 but does not track changes.
+  T/F does not inherit P/Q's change advantage; no held-data rescue fitting.
+- NEXT04b's first all-nine relation panel complete:32 edges, fiveBig5 queries
+  on213authors and fourMBTI queries on63authors separately. N author-level
+  configuration residual has near-zero relations to the otherBig5 queries,
+  while A/E residual r=.560. Within-author N/C r=.244 differs from its
+  author-level near-zero relation. These are not questionnaire correlations.
+- NEXT03b's first functional explanation complete: fixed learned comment
+  psi_q(h)=w_q^T h gives an exact deletion-mixture rule. N residual weight/
+  semantic-pole cosine=.083. This is the learned program, not native attention.
+- New exact interface: direct residual prediction and subtracting observed
+  GRAIN differ by m_G-S_X(m_G), the GRAIN transport error through the lightweight
+  input. Algebra and an independent Ridge-response-linearity test agree.
+- Statistical-unit correction: source view0 (12comments) compared with held
+  full12comments; source3viewmean remains a separate table. N E5 levels are
+  .511/.495 on this matched unit. Canonical author ordering now makes identical
+  seeded bootstrap inputs agree; early descriptive outputs retained.
+
+Read [the new report](../reports/grain_vector_mechanisms/CONFIGURATION_EXTRACTION_LOGIC_REPORT_V1.md)
+and [fixed four-arm plan](GRAIN_LOGIC_CONFIGURATION_EXTRACTION_PLAN_V1.md).
+Private caches/models are in `logic_configuration_extraction_v1/` and
+`logic_configuration_relations_v1/operator_aligned_r3/`. Frozen288 prediction
+rows replay within1e-16; no labels used in fitting or evaluation this pass.
+The report publishes aggregate CSVs only. E5 remains an encoder dependency.
+
+Focused validation:83 tests pass, including10 new extraction/identity tests;
+Ruff passes. Two pre-existing SWIG deprecation warnings are not test failures.
+No full-suite claim. The source programs are not changed by the later
+per-instance inspection API. The all-nine relation panel uses full-source
+descriptive reference fits; it is not a new blind generalization test.
+Implementation, fixed plan, aggregate report and tables: local commit `a4526f3`.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT05 | Can a lighter vector program obtain the now-defined configuration remainder? | Inventory existing non-LLM/B0/B4/encoder source caches; fix R_configuration as target rather than another vague score or alpha grid. Compare source-author-held level and available natural changes | Find a working local extraction or a concrete missing query interaction; no claim that the current P/Q score is already model-free |
-| NEXT04b | Which residual functions share information across all available queries? | Source five-Big5 and four-MBTI panels have matched materials within each population. Analyze signed components and source-referenced residual relations separately; native held response extension only when matching caches exist | Do not combine disjoint populations into a nine-query same-person covariance. Separate model selectivity from psychological-criterion relations |
-| NEXT03b | Why can low-pole-similarity text still change the reader? | Reuse S1 full/E1/E2 query-conditioned contribution and readout caches; test content-position/configuration vs an unweighted pole mean | Locate a useful context/reading operation, not classify all low-similarity material as noise; this is availability, not author preference |
-| NEXT06 | Which candidate observation supplies criterion-relevant rather than only model-readable information? | After the technical score/reference is frozen, reuse permitted author criteria under the explicit exploratory source protocol; distinguish incremental information, mediation assumptions and actual action channel | Keep discovered components even when a queried scale is weak; no outcome-directed redefinition of the same held score |
+| NEXT06 | Which frozen component contains actual-criterion information? | Join existing permitted source criteria to author-OOF c/R estimates and frozen teacher/GRAIN scores; compute signed covariance accounting and same-unit associations | Keep full nine-query descriptive relationships separate from the two fitted extraction targets; no training or target selection on criterion labels |
+| NEXT07 | Is the direct-residual advantage a useful common representation or cancellation? | Decompose m_G-S_X(m_G) and residual errors under the same score units; use source-OOF and existing held changes. Study which part supports criterion information | Do not name a technical remainder as purer personality solely from native correlation |
+| NEXT08 | What input/response operation is missing for T/F and low-pole edits? | Inspect exact-matching existing conditional caches before any new forwards; distinguish bag content, order and source support. A bounded contrast is useful only if it changes the next mechanism | Do not fit on the12 held authors or fill another alpha/RFF grid; keep successful N instance function fixed |
 
-All four are local computational/mechanism questions and remain actionable.
+All three are local computational/mechanism questions and remain actionable.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

@@ -37,8 +37,14 @@ now finds fixed query-function/native deletion response r=.886 (T/F) and .681
 (neuroticism) on12 source-disjoint authors. Historical GRAIN changes transfer
 less well; query-position configuration residuals retain r=.775/.642 and have
 explicit source-fixed reference scores. These are model-response results, not
-human-trait accuracy. The new observation still requires cached model states;
-lightweight vector extraction is the next mechanism question.
+human-trait accuracy. The [lightweight extraction experiment](reports/grain_vector_mechanisms/CONFIGURATION_EXTRACTION_LOGIC_REPORT_V1.md)
+now obtains part of the neuroticism configuration remainder from a fixed E5
+mean/ridge program: deletion-change fidelity r=.841 and native-response r=.733
+on the same12 authors, with attenuated amplitude. The token-only control reads
+some level information but not this response. Exact comment-functional and
+residual-transport identities connect the programs; nine-query relations are
+analyzed within their separate5/4-query populations. E5 still requires an
+encoder. Next: connect these frozen observations to actual author criteria.
 The [active research plan](docs/GRAIN_LOGIC_RESEARCH_PLAN_V1.md) develops the
 remaining interfaces; finite algebraic closure is not complete identification.
 

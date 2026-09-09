@@ -15,8 +15,12 @@
 > Shared fixed f tracks native deletion responses at r=.886/.681 (T/F/N), while
 > historical GRAIN transition maps give -.412/.294. Query-position configuration
 > residuals give .775/.642 and now have explicit source-fixed scoring references.
-> Next: lightweight extraction of this defined object, not another GRAIN alpha
-> grid. See the [active goal ledger](GRAIN_LOGIC_RESEARCH_GOAL_V1.md).
+> [Lightweight extraction](../reports/grain_vector_mechanisms/CONFIGURATION_EXTRACTION_LOGIC_REPORT_V1.md)
+> now gives E5-mean N residual-change fidelity .841 and native-response .733;
+> T/F remains a conditional-input question. Exact per-comment and residual-map
+> identities connect both routes; all-nine query relations are separated by
+> source population and statistical level. Next: criterion links of frozen
+> observations, not another accuracy grid. See the [active goal ledger](GRAIN_LOGIC_RESEARCH_GOAL_V1.md).
 > No old collector or parameter queue restarted; release scoring unchanged.
 
 > **2026-09-10 latest: bounded dynamic/channel investigation COMPLETE.**
