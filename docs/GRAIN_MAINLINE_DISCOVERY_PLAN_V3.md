@@ -22,8 +22,14 @@
 > source population and statistical level. [Criterion linkage](../reports/grain_vector_mechanisms/CONFIGURATION_CRITERION_LOGIC_REPORT_V1.md)
 > is now complete for the fixed observations: T/F residual/self-report .305,
 > E5 OOF .249; E/A/O .227/.186/.176; N residual .055. T/F readout error retains
-> +.147 criterion covariance contribution. Next locate that information and
-> test the same interface on E/A/O, not another accuracy grid.
+> +.147 criterion covariance contribution. [Reading-level follow-up](../reports/grain_vector_mechanisms/READING_LEVEL_LOGIC_REPORT_V1.md)
+> now separates only+.007 amplitude from+.141 non-affine contribution. Between-only
+> reading does not rescue T/F; the fixed E5 program has extended to all nine
+> queries, retaining E/A/O criterion r=.189/.148/.206 without Y training.
+> Next connect existing internal configuration effects to the actual E5 input
+> and conditional operations, rather than repeat a mean-null proof in another
+> space or run another accuracy grid. Ten numerical artifacts replay exactly;
+>70 focused tests pass, no new neural calls.
 > See the [active goal ledger](GRAIN_LOGIC_RESEARCH_GOAL_V1.md).
 > No old collector or parameter queue restarted; release scoring unchanged.
 

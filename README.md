@@ -50,6 +50,12 @@ residual links are .227/.186/.176. N's reading-response success coexists with
 a weak residual/self-report link (.055), motivating distinct mechanism and
 criterion channels. Signed accounting locates T/F criterion association still
 left in readout error. All are source exploratory results, not new blind scores.
+The [reading-level experiment](reports/grain_vector_mechanisms/READING_LEVEL_LOGIC_REPORT_V1.md)
+now finds that simple amplitude error accounts for only+.007 of T/F's+.147
+unextracted criterion contribution. Between-only fitting does not rescue it.
+The same fixed E5 program extends to all nine queries and retains exploratory
+E/A/O residual-criterion r=.189/.148/.206, without label training. Separate
+view-change readers do not automatically improve author-level measurement.
 The [active research plan](docs/GRAIN_LOGIC_RESEARCH_PLAN_V1.md) develops the
 remaining interfaces; finite algebraic closure is not complete identification.
 

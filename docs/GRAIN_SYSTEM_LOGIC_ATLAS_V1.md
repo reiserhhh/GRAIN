@@ -85,13 +85,13 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L12 | 局部机制组合 -> 介观与群体关系 | M/E | 组合可有反馈/抵消/支持集漂移；单边成功不保证复合成功 | M4 / cross-level contract |
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
 | L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 查询槽整合信息，不必是一条关键词到特质词的唯一链 | mainline / reference framework |
-| L15 | 表征含信息 -> 读出可利用信息 | H/E | 可解码与模型实际使用不同；保持 f 与原生 F 两终点 | reference / conditional reports |
+| L15 | 表征含信息 -> 读出可利用信息 | H/E | T/F未提取效标贡献+.147中幅度仅+.007；换作者间斜率未补回。下一步定位实际输入与条件运算 | reference / reading level report §§2-3 |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M | 恒等式不保证敏感度可识别、可迁移或易从文本计算 | reference framework §§2,7 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | 可能保留偏置/语料先验；另测人类效标而非自称心理真值 | all-factor / NAV reports |
-| L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | 新E5线性余项程序局部追踪N变化；E5仍有编码器，token查表只读词嵌入。B0/B4/f依赖不同 | NAV build / configuration extraction §2 |
+| L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
 | L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 直接学习余项与事后减GRAIN不等价；差额是GRAIN跨表示搬运误差，可精确记账 | natural transport / configuration extraction §§4-5 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 人工方向有效不保证解释自然路径；实际E1中f可追踪、GRAIN差分可能反向 | dynamic report §3 / natural transport §3 |
-| L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | H | 层级和统计量必须先匹配；本轮 LOG01 拆解 | 本轮实验计划 |
+| L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | N响应提取有效但配置效标r=.055；T/F余项效标r=.305、E5读出.249。两种用途出现可测分离 | configuration criterion report §§1-4 |
 | L23 | 因子轴旋转 -> 共同对象仍可追踪 | M/H | 比较作用子空间/坐标协变函数，而非重新编号后的单轴 | LOG02 / reference theory |
 | L24 | 共享路径 -> 量表相关？ | H/E | 五Big5/四MBTI组内共32条分层关系；N余项作者水平较特异，其他部分共享。下一步接实际效标 | all-factor atlas / configuration extraction §6 |
@@ -213,6 +213,26 @@ E5均值OOF读数保留T/F r=.249，但N仅.061。N的局部模型响应成功�
 详见[效标连接与作用记账](../reports/grain_vector_mechanisms/CONFIGURATION_CRITERION_LOGIC_REPORT_V1.md)。
 Funder(1995)的线索相关性/可获得性/检测/使用框架，为这些不同连接提供先例，
 不是当前神经机制已被既有心理学理论证明的意思。
+
+### 5.4 第五轮：从误差存在走到误差属于哪个读取环节
+
+固定目标t与预测p可以描述成t=a+bp+e，因此：
+
+    Cov(t-p,Y)=(b-1)Cov(p,Y)+Cov(e,Y).
+
+T/F余项+.1475的剩余关联贡献中，幅度+.0068、无法用p仿射重标定消去的部分
++.1406。这是新的定位，不是新的分数。它把“只是缩得太小”的解释降级，也不
+把非仿射剩余直接叫作非线性机制。另一方面，pooled平方损失精确拆成作者均值
+和视图内两项；同一输入分别学习的斜率确有差异，但作者间专用训练未提高T/F。
+
+同一固定接口已实际扩展全部九查询：E5余项E/A/O的效标r=.189/.148/.206。
+N视图内读取的自然变化r=.788，但组件忠实度低于原pooled，不做自动升级。
+两种成功分别归档：**保留人际效标信息**与**读取材料变化**。
+
+这把系统的“放大人格信号”主张细化为：先指定目标信息、统计层级与输入
+可用性，再找到相应的计算算子；不是统一删噪、统一放大或统一换一个更高r的头。
+[完整报告](../reports/grain_vector_mechanisms/READING_LEVEL_LOGIC_REPORT_V1.md)保留全臂结果。
+下一边对接历史S6内部配置机制与当前E5输入；不把两个空间中的“均值核”当成同一物。
 
 ## 6. 本轮文献与执行入口
 

@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, four finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, five finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -120,15 +120,45 @@ were already used in previous exploratory work; no new blind claim. Bootstrap
 conditions on fitted outputs. r2 removes repeated reference tests from BH;
 r3 adds complete-function covariance accounting, with unchanged models.
 
+## Fifth pass: reading levels and the remaining criterion component
+
+- NEXT08's scale/level alternatives are now tested, not just listed. Exact
+  balanced-panel pooled loss=between+within loss holds within5.85e-18. Source
+  mean/within slopes differ (T/F residual cosine.178, N.249), but between-only
+  fitting does not rescue T/F criterion linkage: .249->.203, paired delta
+  -.045[-.098,.003]. Same E5 geometry/penalty, source-only targets throughout.
+- T/F residual's+.1475 readout-error criterion contribution separates into
+  amplitude+.0068 and non-affine+.1406. Descriptive alignment slope1.0436;
+  remaining component/criterion r=.186, or.263 after within-CV-fold centering.
+  Not a new calibrated score, an information percentage or proof of nonlinear
+  personality. Simple amplitude adjustment is no longer the main candidate.
+- NEXT09 finite extension complete for all nine queries, not only E/A/O.
+  Pooled E5 residual E/A/O criterion r=.189/.148/.206; only O survives the
+  current36-comparison BH screen. No criterion was used to train coefficients.
+  New extension follows previous exploratory criterion results, not new blind
+  confirmation. Full negative and small-minority MBTI results are retained.
+- N within-readout E1 native r=.788 vs pooled.733, but paired delta CI crosses
+  zero and component fidelity drops .841->.720. No automatic replacement.
+  Within slopes identify material changes, not new author-level intercepts.
+- Source-only nine-query fitting takes4.03s; no new neural calls. Original
+  T/F/N828 rows replay within1e-16, current-code10 numerical files byte-match.
+  70 focused tests pass including5 new; all5 current Python files pass Ruff.
+  Private author data/models remain ignored; public tables are aggregate only.
+
+Read [reading-level report](../reports/grain_vector_mechanisms/READING_LEVEL_LOGIC_REPORT_V1.md)
+and [pre-execution plan](GRAIN_LOGIC_READING_LEVEL_PLAN_V1.md). Primary paired
+contrasts use1999 whole-author bootstraps conditional on fitted predictions.
+The existing S6 hidden-state mean-null witness is preserved; its block16
+geometry must not be substituted for the independent E5 input space.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT08 | What input/response operation leaves T/F criterion-linked information unextracted? | Inspect exact-matching conditional caches before new forwards; relate missing value/response to bag content, order and source support without fitting Y | T/F OOF readout error has+.147 criterion covariance contribution; locate it rather than replace mechanism research with a better supervised score |
-| NEXT09 | Can the fixed configuration interface extend to E/A/O? | Use the same declared input programs and source-author folds, target model components only. Report source criterion links as exploratory because they suggested these queries | Keep the N reading case and T/F criterion case; expansion is not independent confirmation or nine-trait universal success |
+| NEXT08b | Which conditional input operation accounts for the non-affine remainder? | Inspect content-order/conditional caches for identical author/material/query/function endpoints. Compare an E5-mean invariant edit with an actual changed query target; use a bounded new pair only if no matching cache exists | Scale and between-only alternatives tested. Connect the existing block16 mean-null mechanism to the actual E5 input, not a repeated S6 proof or a Y-trained residual head |
 | NEXT10 | How should score-combination preserve useful components? | Use the already decomposed fixed f mean/configuration/final channels and their opposing links to identify a source-only combination mechanism or condition-specific interface | A component with higher criterion r need not replace the whole reader; do not tune combination weights on the same criteria being reported |
 
-All three are local computational/mechanism questions and remain actionable.
+Both are local computational/mechanism questions and remain actionable.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

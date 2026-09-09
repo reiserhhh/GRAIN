@@ -1,0 +1,35 @@
+{
+  "numerical_replay_byte_matches": {
+    "source_fidelity.csv": true,
+    "criterion_links.csv": true,
+    "affine_error_accounting.csv": true,
+    "held_change_metrics.csv": true,
+    "held_level_metrics.csv": true,
+    "reader_geometry.csv": true,
+    "loss_accounts.json": true,
+    "private_source_oof.csv": true,
+    "private_held_changes.csv": true,
+    "private_held_levels.csv": true
+  },
+  "prediction_freeze": {
+    "files": {
+      "private_source_oof.csv": "6dcf6deced648cdb6515b959eb97af34202031de288e3e1df3c01e0b1c5c6f49",
+      "private_held_changes.csv": "ec3d6dbda04bcf7a5aea75e8102aa309834ba8fb98461d90f83fb4490d55b213",
+      "private_held_levels.csv": "f02941fbf41f02c9470383057cf5bb0246390ac2632de75f8b4b764cf2fc4c3e"
+    },
+    "old_pooled_rows": 828,
+    "old_pooled_max_error": 9.985502008591496e-17,
+    "human_labels_read": false,
+    "max_loss_identity_error": 5.854691731421724e-18
+  },
+  "current_run_hashes": {
+    "script_sha256": "0c1d3ceda51dbeed48b2403fa3f99c43edc9bf47c42e184694636f280ba8044a",
+    "core_sha256": "9cf09f3d41c249071ff2b6f51cc8fecc124ba44b22602afa1f4b2c246d7d857e",
+    "plan_sha256": "d6ea3083501ad2358a2580d7ea19f5d633d7809aece00bda68676cc3e7e1e9f5"
+  },
+  "comparison_script_sha256": "99afccca5d0b22b09f722077606de4241c3abe0d22d9ab5ae5176a2897f8a64c",
+  "publisher_sha256": "18851eb815fe059d5bf5c3f07c069faa4e8aa854a249575c191fde379ebf61f0",
+  "paired_comparison_rows": 24,
+  "new_neural_calls": 0,
+  "new_criterion_fits": 0
+}
