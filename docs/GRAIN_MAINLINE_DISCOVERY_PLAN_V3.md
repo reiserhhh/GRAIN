@@ -1,5 +1,16 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-09 latest: GRAIN/reference-mechanism integration STARTED.**
+> [Next plan and literature links](GRAIN_REFERENCE_MECHANISM_INTEGRATION_PLAN_V1.md)
+> supersede the earlier next-step routing below. INT01 and INT02's same-material
+> cache comparison are delivered: source-anchor-null corrections retain T/F
+> denial r=.598 and state-time r=.765, but unseen-author level transport remains
+> open. Fixed f/native original-level r=.844-.952 locates useful downstream
+> computation for the next mediator work. [Report](../reports/grain_vector_mechanisms/REFERENCE_MECHANISM_INTEGRATION_REPORT.md).
+> 33 focused tests pass; no new LLM calls or background queue. Next: INT03's
+> matched multi-text/reference interface and INT04's bounded mediator tracing.
+> MEPS external-only; old B0/B4 and release reference parameters unchanged.
+
 > **2026-09-09 conditional navigation goal V7 COMPLETE.** CON00–04 now delivered.
 > Matched conditional objectives recover T/F denial r .343->.585 and state time
 > response -.184->.789; E's one-summary augmentation stopped with a located
