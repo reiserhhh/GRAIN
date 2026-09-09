@@ -1,0 +1,733 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GRAIN dynamic paths and channels</title><style>
+body{margin:0;background:#f3f1eb;color:#182b2d;font:17px/1.6 Georgia,serif}main{max-width:1120px;margin:auto;padding:44px 30px 90px}h1{font-size:42px;line-height:1.15;max-width:850px}h2{margin-top:56px;padding-top:18px;border-top:2px solid #406766}h3{margin-top:30px}a{color:#075c74}table{border-collapse:collapse;display:block;overflow:auto;width:100%;font:13px/1.45 ui-monospace,monospace;background:white;margin:22px 0}th,td{padding:9px 11px;border:1px solid #d4dcd6;text-align:left;white-space:nowrap}th{background:#dbe6df}pre{background:#e2e7e1;padding:18px;overflow:auto;font-size:13px}code{font-size:.87em}p,li{max-width:1000px}@media(max-width:700px){main{padding:22px 16px}h1{font-size:30px}body{font-size:16px}}@media print{body{background:white}main{padding:0}h2{break-after:avoid}table{font-size:10px}}</style><main><h1>GRAIN dynamics, personality-query paths and measurement channels</h1>
+<p>Date: 2026-09-10. Finite execution complete. Discovery-led mechanism experiment,
+not a new full-PANDORA benchmark, newly validated psychological scale, or release
+scoring change. <strong>The useful new result is an operational dynamic-factor to model
+judgment connection, alongside evidence that model-readable and criterion-linked
+information need not be the same part of a factor.</strong></p>
+<h2>1. Question-by-question decisions</h2>
+<table>
+<thead>
+<tr>
+<th>question</th>
+<th>answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GRAIN changes connect to model queries?</td>
+<td>Yes, selected F02/T-F co-change plus actual held-author intervention</td>
+</tr>
+<tr>
+<td>More model linkage guarantees more real-trait linkage?</td>
+<td>No monotonic pattern across all nine queries; level and dispersion differ</td>
+</tr>
+<tr>
+<td>Within-text dynamics carry candidate real-criterion information?</td>
+<td>Yes, exploratory F02 dispersion/T-F and F04 drift/extraversion links</td>
+</tr>
+<tr>
+<td>Simply add every dynamic feature?</td>
+<td>No universal held-author gain in these fixed feature families</td>
+</tr>
+<tr>
+<td>Can the gap be allocated mathematically?</td>
+<td>Predictive MSE gain: yes; true trait/action/reporting-error separation: not with these channels</td>
+</tr>
+</tbody>
+</table>
+<p>The source has 276 reference-disjoint authors: 213 Big5-only and 63 MBTI-only.
+The same nine recorded criteria are used throughout. Source labels were already
+exposed in earlier work; all current supervised estimates are exploratory nested
+CV. The native follow-up reuses 12 authors disjoint from source and historical
+factor construction. They are not a newly recruited or newly blind cohort.</p>
+<h2>2. Two time scales, not one ambiguous movement axis</h2>
+<p>Restored 9,936 exact masked comments and their original
+timestamps/subreddits. Every author contributes three 12-comment views from
+36 distinct discussions. Median author span is 1068.9
+days; median within-author comment gap is 12.6
+days. These are sampled comments, not adjacent conversational responses.</p>
+<p>The sampled-comment branch scores four three-comment blocks per view with the
+frozen whole/native bundles: 3,312 blocks and eight coordinates. The separate
+within-comment branch retains 9,165 of
+9,936 comments (92.2%),
+four lossless contiguous lexical-token spans each: 36,660 slices.
+All 276 authors remain; at least 7 eligible comments
+per view. These are GRAIN lexical/punctuation tokens, not Transformer tokens.
+No old factor basis or reference norm is refitted.</p>
+<p>Four points support short-path descriptors, not individual AR parameters or a
+complete flow/gust process decomposition. Moving a frozen whole factor to short
+spans is an explicitly new observation use; the within-comment CV baseline
+therefore includes its four new slice means. Neither branch replaces the released
+GRAIN dynamic measurement system. This is a precisely bounded interface test.</p>
+<h2>3. Dynamic GRAIN coordinates can actually affect the model</h2>
+<p>For each author, difference the existing three period-level GRAIN scores and
+the same frozen query function f(P,Q). Resample or permute whole authors, never
+pretend the two transitions are independent participants.</p>
+<table>
+<thead>
+<tr>
+<th>adjustment</th>
+<th>authors</th>
+<th>r</th>
+<th>lower</th>
+<th>upper</th>
+<th>p</th>
+<th>q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raw</td>
+<td>63</td>
+<td>-0.3356</td>
+<td>-0.4838</td>
+<td>-0.1698</td>
+<td>0.0004</td>
+<td>0.0432</td>
+</tr>
+<tr>
+<td>context_adjusted</td>
+<td>63</td>
+<td>-0.3352</td>
+<td>-0.4832</td>
+<td>-0.1659</td>
+<td>0.0004</td>
+<td>0.0432</td>
+</tr>
+</tbody>
+</table>
+<p>The whole:F02/T-F link survives the primary 108-cell BH family at the reported
+Monte Carlo resolution. Context adjustment includes text length/format,
+community dispersion/change, span and median temporal gap. Intermediate
+function-part tests are secondary. Primary permutation count was increased from
+499 to 4,999 for every primary cell because .002 was too coarse a p-value floor;
+authors and tested directions were not changed. This is exploratory localization,
+not a preregistered isolated test.</p>
+<p>Then fit a source-only displacement direction from changes in whole:F02 to
+changes in P/Q, without questionnaire labels. Fix alpha=100 and step=0.25 before
+the new native run. Patch only query-region states and the disjoint final state;
+keep the original text and model weights fixed. Actual native results:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th style="text-align:right">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authors / new calls</td>
+<td style="text-align:right">12 / 60</td>
+</tr>
+<tr>
+<td>Signed half-plus-minus effect on conditional p(F)</td>
+<td style="text-align:right">-0.006419</td>
+</tr>
+<tr>
+<td>Authors moving in the same negative direction</td>
+<td style="text-align:right">12/12</td>
+</tr>
+<tr>
+<td>Mean absolute real-direction effect</td>
+<td style="text-align:right">0.006419</td>
+</tr>
+<tr>
+<td>Mean absolute norm-matched shuffled-direction effect</td>
+<td style="text-align:right">0.001318</td>
+</tr>
+<tr>
+<td>Real/null absolute-effect ratio</td>
+<td style="text-align:right">4.871</td>
+</tr>
+<tr>
+<td>Paired absolute-effect excess</td>
+<td style="text-align:right">0.005101</td>
+</tr>
+<tr>
+<td>95% author-bootstrap interval for excess</td>
+<td style="text-align:right">[0.004467, 0.005867]</td>
+</tr>
+<tr>
+<td>Maximum cached-state replay discrepancy</td>
+<td style="text-align:right">0.0e+00</td>
+</tr>
+</tbody>
+</table>
+<p>The alphabet is T=0, F=1. The negative half-contrast means the full +step versus
+-step contrast is about -1.28 percentage points in conditional p(F), not a
+personality-accuracy improvement. One shuffled direction is a matched negative
+control, not a full random-direction significance distribution. This establishes
+a usable model-sensitive displacement; it does not assert that this vector edit
+is a natural human personality intervention or a unique attention circuit.</p>
+<h2>4. Model-readable and real-criterion-linked information partly separate</h2>
+<p>Within-comment whole:F02 dispersion has real T/F r=0.375,
+95% CI [0.140, 0.570], n=63. Its change-to-query
+co-change is only r=-0.021. By contrast, the period-level F02 change
+has the intervention-backed model relation above. These are two statistics of
+the same coordinate, not interchangeable measures.</p>
+<p>Leading exploratory within-comment criterion links:</p>
+<table>
+<thead>
+<tr>
+<th>query</th>
+<th>feature</th>
+<th>n</th>
+<th>pearson_r</th>
+<th>r_lower</th>
+<th>r_upper</th>
+<th>p</th>
+<th>q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TF_cont</td>
+<td>disp::whole:F02</td>
+<td>63</td>
+<td>0.3751</td>
+<td>0.1404</td>
+<td>0.5699</td>
+<td>0.0025</td>
+<td>0.3969</td>
+</tr>
+<tr>
+<td>extraversion</td>
+<td>drift::whole:F04</td>
+<td>213</td>
+<td>0.1839</td>
+<td>0.0507</td>
+<td>0.3106</td>
+<td>0.0071</td>
+<td>0.5778</td>
+</tr>
+<tr>
+<td>conscientiousness</td>
+<td>disp::whole:F01</td>
+<td>213</td>
+<td>0.1667</td>
+<td>0.0330</td>
+<td>0.2945</td>
+<td>0.0149</td>
+<td>0.7360</td>
+</tr>
+<tr>
+<td>TF_cont</td>
+<td>roughness::whole:F03</td>
+<td>63</td>
+<td>-0.2935</td>
+<td>-0.5046</td>
+<td>-0.0493</td>
+<td>0.0196</td>
+<td>0.7360</td>
+</tr>
+<tr>
+<td>openness</td>
+<td>roughness::whole:F02</td>
+<td>213</td>
+<td>0.1532</td>
+<td>0.0191</td>
+<td>0.2818</td>
+<td>0.0254</td>
+<td>0.7360</td>
+</tr>
+<tr>
+<td>neuroticism</td>
+<td>roughness::whole:F01</td>
+<td>213</td>
+<td>-0.1513</td>
+<td>-0.2800</td>
+<td>-0.0172</td>
+<td>0.0273</td>
+<td>0.7360</td>
+</tr>
+</tbody>
+</table>
+<p>None survives the full 162-cell criterion family, so retain them as localized
+candidates rather than naming factors after them. In particular, the r=.375
+dispersion link is not yet a validated T/F subscale. Across the twelve period
+coordinates, ranks of path-link strength versus real-criterion strength vary by
+query (rho range -0.343 to +0.441). There is no general monotonic relationship.
+The within-comment scan likewise yields no BH-supported all-query motion link.</p>
+<p>The same F04 drift has different meanings at different clocks: sampled-comment
+drift/extraversion r=-.162, within-comment drift/extraversion r=+.184. Their signs
+cannot be pooled as one universal &quot;motion trait&quot;. Most dynamic descriptors have
+low cross-period correlations, with median values near zero; that is a property
+of these sampled long-span materials, not a test of same-session repeatability.</p>
+<h2>5. Prediction comparisons answer the adjustment question, not the mechanism</h2>
+<p>All arms use identical author folds within branch. Ridge alpha is selected by
+three inner folds, with train-only scaling, inside five outer folds. The base
+is GRAIN12 (sampled-comment) or GRAIN12 plus four slice means (within-comment).
+Extra blocks are query contributions, observed context, and dynamic+dispersion.
+The latter is compared with dispersion alone and one fixed point-order shuffle.
+No human criterion is read at inference time.</p>
+<h3>sampled-comment branch: author-held Pearson r</h3>
+<table>
+<thead>
+<tr>
+<th>query</th>
+<th>baseline</th>
+<th>+query</th>
+<th>+dispersion</th>
+<th>+dynamic</th>
+<th>+shuffled</th>
+<th>+all</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EI_cont</td>
+<td>-0.2189</td>
+<td>-0.1940</td>
+<td>-0.2018</td>
+<td>-0.2338</td>
+<td>-0.3527</td>
+<td>-0.2291</td>
+</tr>
+<tr>
+<td>JP_cont</td>
+<td>-0.3248</td>
+<td>-0.4311</td>
+<td>-0.3071</td>
+<td>-0.4523</td>
+<td>0.0847</td>
+<td>-0.4556</td>
+</tr>
+<tr>
+<td>SN_cont</td>
+<td>-0.2339</td>
+<td>-0.1362</td>
+<td>-0.2730</td>
+<td>-0.0454</td>
+<td>0.0559</td>
+<td>-0.0505</td>
+</tr>
+<tr>
+<td>TF_cont</td>
+<td>-0.2178</td>
+<td>-0.0979</td>
+<td>-0.0763</td>
+<td>-0.1178</td>
+<td>-0.0011</td>
+<td>0.0252</td>
+</tr>
+<tr>
+<td>agreeableness</td>
+<td>0.0653</td>
+<td>0.1032</td>
+<td>-0.0554</td>
+<td>0.0833</td>
+<td>0.0342</td>
+<td>0.1685</td>
+</tr>
+<tr>
+<td>conscientiousness</td>
+<td>0.0285</td>
+<td>0.0572</td>
+<td>0.0268</td>
+<td>0.0177</td>
+<td>0.0687</td>
+<td>0.0276</td>
+</tr>
+<tr>
+<td>extraversion</td>
+<td>0.1127</td>
+<td>0.2380</td>
+<td>-0.0513</td>
+<td>-0.0316</td>
+<td>-0.1214</td>
+<td>0.0892</td>
+</tr>
+<tr>
+<td>neuroticism</td>
+<td>-0.1122</td>
+<td>-0.1175</td>
+<td>-0.0871</td>
+<td>-0.0354</td>
+<td>-0.0526</td>
+<td>-0.0129</td>
+</tr>
+<tr>
+<td>openness</td>
+<td>-0.0077</td>
+<td>0.1356</td>
+<td>-0.1065</td>
+<td>-0.0789</td>
+<td>0.0471</td>
+<td>0.0552</td>
+</tr>
+</tbody>
+</table>
+<h3>within-comment branch: author-held Pearson r</h3>
+<table>
+<thead>
+<tr>
+<th>query</th>
+<th>baseline</th>
+<th>+query</th>
+<th>+dispersion</th>
+<th>+dynamic</th>
+<th>+shuffled</th>
+<th>+all</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EI_cont</td>
+<td>-0.1878</td>
+<td>-0.1630</td>
+<td>-0.1461</td>
+<td>-0.1176</td>
+<td>-0.1127</td>
+<td>-0.0719</td>
+</tr>
+<tr>
+<td>JP_cont</td>
+<td>-0.2931</td>
+<td>-0.4141</td>
+<td>-0.1752</td>
+<td>-0.2083</td>
+<td>-0.1074</td>
+<td>-0.2422</td>
+</tr>
+<tr>
+<td>SN_cont</td>
+<td>-0.2300</td>
+<td>-0.1346</td>
+<td>-0.2922</td>
+<td>-0.2886</td>
+<td>-0.2504</td>
+<td>-0.2882</td>
+</tr>
+<tr>
+<td>TF_cont</td>
+<td>-0.1681</td>
+<td>-0.0436</td>
+<td>-0.0251</td>
+<td>-0.2033</td>
+<td>-0.0236</td>
+<td>-0.0947</td>
+</tr>
+<tr>
+<td>agreeableness</td>
+<td>0.0575</td>
+<td>0.1043</td>
+<td>0.0208</td>
+<td>0.0347</td>
+<td>0.0524</td>
+<td>0.1313</td>
+</tr>
+<tr>
+<td>conscientiousness</td>
+<td>0.0661</td>
+<td>0.0652</td>
+<td>0.1006</td>
+<td>0.0427</td>
+<td>0.0263</td>
+<td>0.0656</td>
+</tr>
+<tr>
+<td>extraversion</td>
+<td>0.1138</td>
+<td>0.2022</td>
+<td>0.0227</td>
+<td>-0.0245</td>
+<td>-0.0348</td>
+<td>0.0853</td>
+</tr>
+<tr>
+<td>neuroticism</td>
+<td>-0.1369</td>
+<td>-0.1391</td>
+<td>-0.1539</td>
+<td>-0.1197</td>
+<td>-0.1274</td>
+<td>-0.0828</td>
+</tr>
+<tr>
+<td>openness</td>
+<td>-0.0008</td>
+<td>0.1316</td>
+<td>-0.0382</td>
+<td>-0.0698</td>
+<td>-0.0858</td>
+<td>0.0474</td>
+</tr>
+</tbody>
+</table>
+<p>The pure query addition preserves a useful E route in the sampled-comment
+branch (.113 -&gt; .238) and an O route (-.008 -&gt; .136). Adding all dynamics is not
+a general improvement: E falls to .089 with all additions, versus .238 with
+query alone. Within-comment order additions do not beat the order-shuffled
+comparator with a positive paired-r interval on any of nine outcomes. Small
+per-feature criterion associations do not guarantee multivariate prediction gain.</p>
+<p>These are small mechanism cohorts, not the prior 8,678-user MBTI baseline.
+MBTI minority counts are EI=12, SN=4, TF=26, JP=27. Pooled CV r/AUC can be
+distorted by fold-specific intercepts; the saved metric files include centered
+within-fold r, valid-fold AUC and training-mean MSE. For example, sampled-comment
+SN baseline pooled r=-.234 coexists with within-fold r=-.028 and AUC=.487.
+Do not reinterpret a negative pooled r as a reversed personality mechanism.
+Two fixed label permutations per baseline/full arm are sanity checks, not a
+calibrated significance test. No result is rescued by flipping predicted signs.</p>
+<h2>6. Exact predictive-gap accounting, and the missing behavior channel</h2>
+<p>For feature-block subset S, let M(S) be held-author MSE. Average each block's
+marginal improvement over all six block-addition orders. The resulting three
+Shapley allocations sum to M(empty)-M(all), with maximum accounting discrepancy
+4.34e-19. Negative terms indicate worse prediction; they are not deleted.</p>
+<table>
+<thead>
+<tr>
+<th>query</th>
+<th>context</th>
+<th>dynamic_and_dispersion</th>
+<th>query_path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EI_cont</td>
+<td>0.0021</td>
+<td>-0.0003</td>
+<td>0.0018</td>
+</tr>
+<tr>
+<td>JP_cont</td>
+<td>-0.0060</td>
+<td>-0.0071</td>
+<td>-0.0088</td>
+</tr>
+<tr>
+<td>SN_cont</td>
+<td>-0.0002</td>
+<td>0.0011</td>
+<td>0.0001</td>
+</tr>
+<tr>
+<td>TF_cont</td>
+<td>0.0056</td>
+<td>-0.0088</td>
+<td>-0.0027</td>
+</tr>
+<tr>
+<td>agreeableness</td>
+<td>0.0003</td>
+<td>0.0013</td>
+<td>0.0012</td>
+</tr>
+<tr>
+<td>conscientiousness</td>
+<td>-0.0012</td>
+<td>-0.0003</td>
+<td>0.0003</td>
+</tr>
+<tr>
+<td>extraversion</td>
+<td>-0.0014</td>
+<td>-0.0019</td>
+<td>0.0030</td>
+</tr>
+<tr>
+<td>neuroticism</td>
+<td>0.0004</td>
+<td>0.0004</td>
+<td>-0.0003</td>
+</tr>
+<tr>
+<td>openness</td>
+<td>0.0003</td>
+<td>-0.0011</td>
+<td>0.0010</td>
+</tr>
+</tbody>
+</table>
+<p>Units are squared criterion units; compare within a criterion, not across
+Big5 and binary MBTI. This is allocation of held-out predictive gain, not
+percentages of true personality, causal variance or label noise.</p>
+<p>MEPS numeric channel inventory (no new model fitting or questionnaire tuning):</p>
+<table>
+<thead>
+<tr>
+<th>view_kind</th>
+<th>condition</th>
+<th>participants</th>
+<th>user_turns_total</th>
+<th>assistant_turns_total</th>
+<th>median_user_chars</th>
+<th>role_order_preserved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>direct_answer</td>
+<td>meps_q1</td>
+<td>46</td>
+<td>46</td>
+<td>0</td>
+<td>227.5000</td>
+<td>46</td>
+</tr>
+<tr>
+<td>direct_answer</td>
+<td>meps_q2</td>
+<td>46</td>
+<td>46</td>
+<td>0</td>
+<td>206.5000</td>
+<td>46</td>
+</tr>
+<tr>
+<td>direct_answer</td>
+<td>meps_q3</td>
+<td>46</td>
+<td>46</td>
+<td>0</td>
+<td>204.0000</td>
+<td>46</td>
+</tr>
+<tr>
+<td>free_chat</td>
+<td>free_chat</td>
+<td>46</td>
+<td>419</td>
+<td>457</td>
+<td>469.0000</td>
+<td>46</td>
+</tr>
+<tr>
+<td>split_chat</td>
+<td>meps_q1</td>
+<td>27</td>
+<td>131</td>
+<td>125</td>
+<td>182.0000</td>
+<td>27</td>
+</tr>
+<tr>
+<td>split_chat</td>
+<td>meps_q2</td>
+<td>27</td>
+<td>80</td>
+<td>79</td>
+<td>171.0000</td>
+<td>27</td>
+</tr>
+<tr>
+<td>split_chat</td>
+<td>meps_q3</td>
+<td>26</td>
+<td>86</td>
+<td>85</td>
+<td>156.0000</td>
+<td>26</td>
+</tr>
+</tbody>
+</table>
+<p>There are user/assistant utterances, participation counts, task answers and
+already-authorized pre/post self-reports. Participation is observed conversational
+behavior. It is not an independent everyday-action criterion. For example:</p>
+<table>
+<thead>
+<tr>
+<th>feature</th>
+<th>scale</th>
+<th>n</th>
+<th>pearson_r</th>
+<th>p</th>
+<th>q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user_turns</td>
+<td>post_disclosability_lv1</td>
+<td>46</td>
+<td>0.3092</td>
+<td>0.0365</td>
+<td>0.9990</td>
+</tr>
+<tr>
+<td>assistant_turns</td>
+<td>post_disclosability_lv1</td>
+<td>46</td>
+<td>0.3078</td>
+<td>0.0374</td>
+<td>0.9990</td>
+</tr>
+<tr>
+<td>user_chars</td>
+<td>pre_leak_concern</td>
+<td>46</td>
+<td>-0.3060</td>
+<td>0.0386</td>
+<td>0.9990</td>
+</tr>
+</tbody>
+</table>
+<p>These 46-person correlations are exploratory and none of 418 scanned
+participation/criterion links survives BH. Assistant counts also reflect the AI,
+and missing assistance records are not automatically coded as zero use when
+opportunity has not been established. No raw survey, duplicate coding archive,
+Study 1 join or analysis-master table was opened.</p>
+<p>The reason the broader &quot;saying versus doing&quot; gap cannot be numerically isolated
+is identification, not insufficient model complexity. With only observed text
+T and questionnaire Y, a world with unobserved action B=Y and a world with
+B independent of both produce the same observed (T,Y) distribution. They imply
+different text-action relationships. More elaborate functions of (T,Y) do not
+select between them. Big5/MBTI self-report must not be renamed real action.</p>
+<h2>7. Updated mathematical interface and next useful experiment</h2>
+<p>Keep four distinct objects for each factor: level, dispersion, ordered shape,
+and model sensitivity. Let H denote the concatenated P/Q state and G the frozen
+factor coordinates. Source fitting provides Delta H = D Delta G + R. For a
+frozen affine reader f(H)=b+g^T H, the following identity is exact:</p>
+<pre><code>Delta f = g^T D Delta G + g^T R.
+</code></pre>
+<p>For the actual nonlinear native reader F, the exact differentiable path identity
+is Delta F = integral_0^1 grad F(H+t Delta H)^T Delta H dt. Our finite native
+patch tests a local action along D, not the entire integral or a natural text edit.
+Separately, D_time(G+c_author)=D_time(G), so dynamic matching alone cannot recover
+reference-relative author offsets. Preserve the static anchor.</p>
+<p>This round's decision is <strong>a factor-specific, statistic-specific interface</strong>, not
+universal concatenation. The next sharply defined mechanism question is why F02
+level/change is model-readable while its within-text dispersion is more linked
+to the recorded T/F criterion in this sample. Compare level-aligned and
+dispersion-aligned state directions on the same material, retaining the current
+whole:F02 direction as a positive model control. Do not restart a broad accuracy
+grid or discard GRAIN coordinates simply because a query does not read them.
+An action-gap experiment requires separately declared same-author action outcomes
+and opportunity/timing, possibly from independently coded existing MEPS answers;
+new human recruitment is not automatically required, but outcome definition is.</p>
+<h2>8. Reproduction, literature and scope</h2>
+<p>Run from the independent GRAIN repository with the parent project's environment:</p>
+<pre><code class="language-bash">&quot;../project persona/.venv/bin/python&quot; scripts/run_grain_dynamic_path_channels.py
+&quot;../project persona/.venv/bin/python&quot; scripts/run_grain_within_comment_channels.py
+&quot;../project persona/.venv/bin/python&quot; scripts/run_grain_dynamic_direction_intervention.py
+&quot;../project persona/.venv/bin/python&quot; scripts/report_grain_dynamic_channels.py
+&quot;../project persona/.venv/bin/python&quot; -m pytest tests/test_grain_dynamic_channels.py tests/test_grain_factor_path_routes.py tests/test_grain_functional_profiles.py tests/test_grain_full_state_edit.py -q
+</code></pre>
+<p>Default outputs are immutable on fresh preparation: use new output locations for
+CPU reruns, or the explicit analysis/resume options to recompute analyses of
+existing caches. The one native script intentionally refuses an existing output
+directory; preserve/relocate a prior private packet before an intentional rerun.
+Do not repeat a completed native run merely to generate this report.</p>
+<p>Public aggregate report: this Markdown source and its offline HTML rendering.
+Private numerical artifacts: <code>results/grain_vector_mechanisms/dynamic_path_channels_v1/</code>
+with <code>within_comment/</code> and <code>native_direction/</code> children. Individual predictions,
+raw material references and model arrays remain gitignored. Exact result hashes
+and current code snapshots are in <code>delivery_manifest.json</code> and <code>code_snapshot.zip</code>.
+Tables are used instead of charts because this deliverable primarily requires
+exact nine-outcome lookup and a distinction between incompatible units/clocks.</p>
+<p>The method choices are aligned with, rather than inferred as established by:</p>
+<ul>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/11414368/">Fleeson (2001)</a>: trait-related
+behavior distributions can have distinct location and variability properties.</li>
+<li><a href="https://doi.org/10.1037/h0046016">Campbell and Fiske (1959)</a>: different methods
+and different constructs must be distinguished when interpreting covariance.</li>
+<li><a href="https://aclanthology.org/N19-1357/">Jain and Wallace (2019)</a>: a displayed
+attention pattern is not itself evidence of explanatory importance; here the
+native follow-up tests an actual state intervention instead.</li>
+</ul>
+<p>This completes the five bounded computational questions. It does not assert
+that all latent behavioral mechanisms are identified, or that every historical
+GRAIN dynamic-factor family was tested. Released scoring, B0/B4, existing
+lockboxes and parked long-running queues are unchanged.</p>
+</main></html>

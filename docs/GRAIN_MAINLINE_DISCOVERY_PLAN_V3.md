@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 latest: bounded dynamic/channel investigation COMPLETE.**
+> [Plan](GRAIN_DYNAMIC_PATH_CHANNEL_PLAN_V1.md),
+> [aggregate report](../reports/grain_vector_mechanisms/DYNAMIC_PATH_CHANNEL_REPORT.md).
+> Exact metadata restored for 276 authors/9,936 comments. Sampled-comment
+> whole:F02/T-F co-change r=-.336 survives context adjustment; a source-fitted
+> displacement changes native p(F) in the same direction on all 12 held authors,
+> with real/null absolute-effect ratio 4.87 (60 new calls, one matched null).
+> A separate within-comment branch scores 36,660 lexical slices from 9,165
+> comments. F02 dispersion/real T-F r=.375 is exploratory, while its query
+> co-change is -.021. Keep level, dispersion, ordered shape and model sensitivity
+> separate. All nine source outcomes, eight block combinations, matched shuffle,
+> paired intervals and gain accounting are delivered; no universal concatenation.
+> MEPS contains participation and questionnaire channels, not a currently joined
+> independent everyday-action criterion. Next useful mechanism: compare F02
+> level-aligned and dispersion-aligned state directions on the same material,
+> not another accuracy grid. No process or autonomous queue remains from this run.
+
 > **2026-09-10 latest: four factor/path routes COMPLETE.**
 > [Frozen plan and identity amendment](GRAIN_FACTOR_PATH_ALL_ROUTES_PLAN_V1.md),
 > [full aggregate report](../reports/grain_vector_mechanisms/FACTOR_PATH_ALL_ROUTES_REPORT.md).

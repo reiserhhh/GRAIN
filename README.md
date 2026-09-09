@@ -22,7 +22,23 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
-## GRAIN factors and query paths (2026-09-10)
+## Dynamic factor / query interface (2026-09-10)
+
+The [dynamic-channel report](reports/grain_vector_mechanisms/DYNAMIC_PATH_CHANNEL_REPORT.md)
+([offline reading version](reports/grain_vector_mechanisms/DYNAMIC_PATH_CHANNEL_REPORT.html))
+separates within-comment flow from comments sampled across years. On the same
+276 authors, whole:F02 changes track T/F query-function changes at r=-.336,
+including observed-context adjustment. A source-fitted change direction shifts
+the native T/F output in the same direction for all 12 held authors; its mean
+absolute effect is 4.87 times one norm-matched shuffled direction (60 new calls).
+Within-comment F02 dispersion has an exploratory real-T/F link r=.375, but its
+query co-change is near zero. Model-sensitive and questionnaire-linked aspects
+are therefore not interchangeable. All-nine nested comparisons and predictive
+gap accounting are complete; universal dynamic concatenation is not promoted.
+[Plan and mathematical objects](docs/GRAIN_DYNAMIC_PATH_CHANNEL_PLAN_V1.md).
+GRAIN reference norms, release scoring and existing lockboxes remain unchanged.
+
+## GRAIN factors and query paths (2026-09-10, preceding round)
 
 The [four-route pilot](reports/grain_vector_mechanisms/FACTOR_PATH_ALL_ROUTES_REPORT.md)
 connects 12 actual frozen GRAIN factors to all nine Big5/MBTI queries, real
