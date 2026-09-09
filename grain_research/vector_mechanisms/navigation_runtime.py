@@ -64,10 +64,12 @@ class NavigationRuntime:
         """Load only selected-program weights; never load a teacher or its head."""
         from tokenizers import Tokenizer
 
-        if program not in ("token", "context4", "state1", "state2"):
+        if program not in ("token", "context4", "state1", "state2", "source_affine"):
             raise ValueError("Unknown exported program")
         self.root, self.program = Path(bundle).resolve(), program
         self.manifest = read(self.root / "manifest.json")
+        if program not in self.manifest["program_dependencies"]:
+            raise ValueError("Requested program is not present in this bundle")
         self.accessed = []
         dependencies = self.manifest["program_dependencies"][program]
         for relative in dependencies:
@@ -171,6 +173,10 @@ class NavigationRuntime:
                 values = score_context_charts(self.charts[query], h, mask, anchor)[
                     "mean"
                 ]
+            elif self.program == "source_affine":
+                from .affine_program import score_affine
+
+                values = score_affine(self.charts[query], pack_state(h[mask], h[-1]))
             else:
                 values = score_compiled_projection(
                     self.charts[query],

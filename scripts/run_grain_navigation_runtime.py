@@ -16,7 +16,9 @@ def main():
     p.add_argument("--input", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
     p.add_argument(
-        "--program", choices=("token", "context4", "state1", "state2"), default="token"
+        "--program",
+        choices=("token", "context4", "state1", "state2", "source_affine"),
+        default="token",
     )
     p.add_argument("--device", choices=("cpu", "mps"), default="cpu")
     a = p.parse_args()
