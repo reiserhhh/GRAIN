@@ -66,3 +66,22 @@ record and return to the missing input relation, not a new Gaussian/alpha sweep.
 numeric outputs before comparing cached native targets; public report/theory,
 hashes and dependency map updated. Finish the card without a broader statistics
 search. This develops a reusable local mechanism while the full goal stays ACTIVE.
+
+## Implementation frozen before application
+
+- `grain_research/vector_mechanisms/query_partition_geometry.py`: masked finite
+  partition, common covariance matrix and head-wise joint geometry; constant
+  sufficient statistics get exact zero variance, undefined rho stays missing.
+- `scripts/run_grain_query_partition_geometry.py`: separate prepare/compile/
+  evaluate/audit processes; replay uses `--folder replay`, fresh runs `--output`.
+  Private 12paired packets; public 24query/96factor/12contrast aggregates.
+- `tests/test_grain_query_partition_geometry.py`: five cases including finite
+  first/mixed derivatives, GQA/RoPE, masks, zero variance and identical marginal
+  moments with opposite joint response. Combined related suite33passed before
+  real compilation; inherited SWIG/PyTorch deprecations only.
+
+Geometry summaries preserve heads until summation. Spread-weighted absolute
+alignment is sum(abs(cov))/sum(sd_v*sd_d); head-sign retention is
+sum(abs(sum_heads cov))/sum(abs(cov)). Denominators with zero support stay
+undefined. These deterministic decompositions are not independent factor counts,
+causal attributions or percentages of personality explained.
