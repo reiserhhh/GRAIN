@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirty-three finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirty-four finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1013,19 +1013,51 @@ Read [results](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT
 and [theory](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md). Next trace the already
 saved incoming query difference, not another coefficient/accuracy search.
 
+## Thirty-fourth pass: query contrast is amplified and counteracted
+
+- Prior turn was progress: NEXT44 established a shared local reader and the
+  transported contrast. NEXT45 now explains that contrast from the saved initial
+  and17 pre-MLP25 updates, with1728 signed values and no new model calls or labels.
+  Primary construction/analysis frozen in `11192be` before the current analysis.
+- New8 own cumulative T RMS=.031172 after20,.208040 after23,.162922 beforeMLP25.
+  Projected shares=.125705/1.169512/1.000000. The21-23 group contributes1.043807,
+  the final24..attention25 group-.169512. Pooled mode and source4 also show
+  aggregate overshoot; exact stage balance varies by cohort.
+- New8 MLP22 +.354303, attention22 +.290940, MLP24 -.245628. MLP24 is negative
+  on all4 new8 factors and source4 aggregate-.219469. Source4 attention22 is
+  -.035430, not positive: do not make one cohort's ranking a universal circuit.
+  Large negative increments are part of the measured computation, not noise to delete.
+- Retained full signed moment/covariance matrices; new8 MLP22/MLP24 pair energy
+  -.424472, attention22/MLP24-.330464. Other pairs offset these. Source4 has
+  diagonal energy.018986 and cross-.013913, yielding.005072; no independent
+  information-share or causal deletion interpretation.
+- Exact recurrence developed: delta_d_next=Abar delta_d+delta_A dbar. Ordered
+  repeated substitution separates carried versus operator-contrast injections,
+  without inverse/commutativity. Two synthetic tests verify the identity, not
+  empirical recovery of all full-sequence Jacobians. MLP24 is the next local test.
+- Runtime.244946s, replay.246857s;0 neural/fits/Y/API. Vector parity7.549e-8
+  relative,5.048e-7 absolute; scalar rounding4.735e-8 within its vector bound,
+  NEXT44 T replay9.888e-17.12 CSV replays,93 scoped tests. No live job or changes
+  to release/scorer/lockbox/MEPS boundaries. Result is model-local, not human r.
+
+Read [report](../reports/grain_vector_mechanisms/QUERY_TRANSPORT_FORMATION_REPORT_V1.md),
+[theory](GRAIN_QUERY_TRANSPORT_FORMATION_THEORY_V1.md),
+[NEXT46](GRAIN_QUERY_COUNTERACTION_PLAN_V1.md). Keep the observed negative update;
+next distinguish the response it inherits from the conditional operator it adds.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44 finite candidates are closed,
-retaining useful mechanisms and contrary comparisons. NEXT45 locates formation
-of the query-conditioned incoming direction using already saved signed updates.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45 finite candidates are closed,
+retaining useful mechanisms and contrary comparisons. NEXT46 tests one located
+MLP24 counteraction, not an all-layer coefficient search.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT45 | Where does the common BODY direction acquire query-dependent transport? | Execute GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1; telescope first17 upstream updates under the same shared reader and retain signed stage/window accounting | Cached only,60s,0 neural/fit/Y. Verify pre-MLP25 vector/contrast parity; do not include MLP25/later updates or call incremental shares causal origin |
+| NEXT46 | Does MLP24 carry an existing query difference or introduce an operator contrast? | Execute GRAIN_QUERY_COUNTERACTION_PLAN_V1; exact2x2 current local J/d exchange and symmetric contrast, shared w* unchanged | Max24 primal prefix forwards+4 fixed boundary JVPs,120s native;60s numeric,0 scoring/backward/fit/Y. Verify block24 weights, cached prefix and original increment parity |
 
-These are local computational/theory questions. Reuse compiled source vectors,
-current tangents and saved upstream updates; no model collection, old queue restart, broader factor
-search or clinical naming.
+These are local computational/theory questions. Reuse shared source vectors and
+saved tangents; collect only the needed pre-MLP24 primal states and fixed boundary
+checks. No old queue restart, broader factor search or clinical naming.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

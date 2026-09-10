@@ -1,5 +1,17 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT45 query-contrast formation delivered.**
+> New8 cumulative contrast RMS after20/23/preMLP25=.031172/.208040/.162922.
+> MLP22 contributes+.354303, MLP24-.245628; the latter counteracts on all4 new8
+> factors and source4 aggregate. Attention22 differs by cohort, not a universal rank.
+> Exact recurrence delta_d_next=Abar delta_d+delta_A dbar separates carried and
+> operator-contrast terms; empirical full Jacobians are not all identified.
+>1728 signed values/.245s,0 neural calls/Y/fits,12 CSV replays,93 tests.
+> [Report](../reports/grain_vector_mechanisms/QUERY_TRANSPORT_FORMATION_REPORT_V1.md),
+> [theory](GRAIN_QUERY_TRANSPORT_FORMATION_THEORY_V1.md),
+> [NEXT46 MLP24 counteraction](GRAIN_QUERY_COUNTERACTION_PLAN_V1.md).
+> Whole-system goal ACTIVE; earlier next-step language below is historical.
+
 > **2026-09-10 newest: NEXT44 shared reader/query transport delivered.**
 > Reciprocal local readers retain new8 actionr=.990935/.994290. Own-mode query
 > contrast's signed transport projection=.914272; reader=.085728. Pooled has

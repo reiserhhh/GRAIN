@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "5fc9d30da72ebbb83cc195d7c86577515a4e4106f2a1b6821f22f43e0e998dc1",
+  "atlas_sha256": "2803d8b7b98ca43932de42f252b05df7c9c0cf10ffdea12abb93471c898e6e17",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT44\u540cBODY/GRAIN\u7684\u67e5\u8be2\u8bfb\u5934\u4e92\u6362\u4fdd\u7559\u65b08r=.990935/.994290\uff1b\u7b49\u6743\u5171\u4eabw*\u53ef\u590d\u7528\u3002\u81ea\u8eab\u67e5\u8be2\u5dee\u5f02\u4e3b\u8981\u7ecfd\u8fdb\u5165\uff1a\u5bf9\u79f0\u6295\u5f71T=.914272\u3001R=.085728\uff0c\u975e\u4eba\u683c\u4efd\u989d\uff1b\u5f53\u524dd/H16\u4ecd\u539f\u751f",
-      "evidence_entry": "compiled query transfer theory \u00a7\u00a71-4; gated update theory"
+      "alternative_or_next_link": "NEXT45\u5728\u5171\u4eabw*\u4e0b\u63a5\u901a17\u4e2a\u4e0a\u6e38\u66f4\u65b0\u4e0e\u67e5\u8be2\u5dee\u5f02T\uff1b\u65b08RMS\u5728\u5c4220/23/preMLP25\u4e3a.031/.208/.163\u3002MLP22 +.354\u3001MLP24 -.246\uff0c\u5dee\u5f02\u7ecf\u5b9e\u9645\u6761\u4ef6\u8fd0\u8f93\u5f62\u6210\u4e0e\u4fee\u8ba2\uff1b\u4ecd\u9700\u539f\u751f\u8f93\u5165/\u4f20\u8f93",
+      "evidence_entry": "query transport formation theory \u00a7\u00a71-4; compiled query transfer theory"
     },
     {
       "id": "L20",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "NEXT44\u5171\u4eab\u8bfb\u5934+\u67e5\u8be2\u6761\u4ef6\u5316\u65b9\u5411\u5f62\u6210\u53ef\u7528\u63a5\u53e3\uff1bR/T\u5206\u8d26\u4fdd\u7559\u62b5\u6d88\u3001\u76ee\u6807\u4e0e\u63aa\u8f9e\u5c42\u6b21\u3002NEXT45\u4ee5\u5df2\u5b58\u4e0a\u6e38\u589e\u91cf\u5b9a\u4f4d\u5dee\u5f02\u5f62\u6210\uff1b\u89e3\u91carubric\u4e0e\u5fc3\u7406\u6548\u6807\u7ee7\u7eed\u72ec\u7acb\u8fde\u63a5\uff0c\u4e0d\u968f\u6570\u5b66\u4efd\u989d\u547d\u540d",
-      "evidence_entry": "compiled query transfer theory \u00a7\u00a73-5; query transport formation plan; same-material interpretation theory"
+      "alternative_or_next_link": "NEXT45\u5148\u653e\u5927\u540e\u8c03\u6574\u7684\u8def\u5f84\u63a5\u5408\uff1b\u9012\u63a8\u5c06\u5df2\u6709\u5dee\u5f02\u4e0e\u7b97\u5b50\u5dee\u5f02\u5206\u5f00\uff0cNEXT46\u5b9a\u4f4dMLP24\u53cd\u5411\u4f5c\u7528\u3002\u5b8c\u6574Jacobian/\u8bed\u4e49\u552f\u4e00\u6027/\u5fc3\u7406\u89e3\u91ca\u4ecd\u5206\u5c42\uff0c\u8d1f\u66f4\u65b0\u4e0d\u81ea\u52a8\u53eb\u566a\u58f0\u6216\u4e34\u5e8a\u673a\u5236",
+      "evidence_entry": "query transport formation theory \u00a7\u00a73-5; query counteraction plan; same-material interpretation theory"
     }
   ]
 }
