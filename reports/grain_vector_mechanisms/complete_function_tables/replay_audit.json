@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "errors": {
+    "normal_equation": 4.797620634100497e-13,
+    "source_normalization": 0.0,
+    "derivative_finite_difference": 1.2833567542003266e-10,
+    "metric": 4.440892098500626e-16
+  },
+  "fits": 0,
+  "new_neural_calls": 0,
+  "contexts_replayed": 24,
+  "same_function_checks": 192,
+  "csvs_replayed": 17,
+  "cpu_seconds": 1.7549990000000002,
+  "cumulative_compute_cpu_seconds": 9.651727,
+  "scope": "Native fixed-model outputs, not human questionnaire validity"
+}

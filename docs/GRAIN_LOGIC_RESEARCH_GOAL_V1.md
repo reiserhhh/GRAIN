@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, forty-five finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, forty-six finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1367,23 +1367,56 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_OFFSET_MECHANISM_REPORT_
 [theory](GRAIN_SOURCE_OFFSET_MECHANISM_THEORY_V1.md),
 [NEXT57](GRAIN_COMPLETE_FUNCTION_EXTRACTION_PLAN_V1.md).
 
+## Forty-sixth pass: compatible scalar extraction separates values and responses
+
+- Previous turn classified as progress: NEXT56 identified the actual source
+  intercept, preserved a query-contrast effect and closed state substitution.
+- NEXT57 complete, primary `99eae77`:20 source-only scalar solves, same H16
+  BODY/last PCA32, matched value/joint objectives.48 scores/192 actions; current
+  application runs no suffix, reads no teacher, adds no native remainder. H16
+  remains neural. Human Y absent; source4/new8 roles unchanged.
+- New8 value score r=.300/.336, N SSE/sourceconstant=.942; joint score
+  r=-.782/-.473. Both candidates fail the full two-query utility rules. Joint
+  source derivative fit is close, but score ordering reverses on application.
+- Joint F04 response r=.639/.610 is retained as a descriptive localization;
+  all4 factors remain reported. Response corrections have useful negative
+  error cross terms but excessive energy. Score corrections worsen alignment.
+- Source data rank20 with65 coefficients (LOO15), leaving45/50 unobserved
+  linear degrees of freedom. Ridge uniqueness is not observation uniqueness.
+  BODY-only derivatives do not constrain the final-token view's dynamics.
+- 17 CSVs/24 packets replay exactly;192 derivative checks<=1.284e-10,
+  normal equations<=4.798e-13, independent metrics<=4.441e-16. Measured fit/
+  application/replay/audit CPU9.652s;0 new neural/API/Y.36 focused tests pass.
+- Enumeration-only repair `1dd024a`: macOS `._` files broke initial report
+  loading. Primary manifest/code and partial report retained; fits/predictions
+  untouched. Independent auditor's FP32 reduction corrected to estimator FP64;
+  exact normalization and separate regression test pass. No numerical restart.
+- Pooled affine family CLOSED. NEXT58 is one60s cache/no-fit BODY-query
+  compensation and source-span calculation to decide the next input mechanism,
+  not another alpha/gain/rank sweep. No running native-model job.
+
+Read [report](../reports/grain_vector_mechanisms/COMPLETE_FUNCTION_EXTRACTION_REPORT_V1.md),
+[theory](GRAIN_COMPLETE_FUNCTION_EXTRACTION_THEORY_V1.md),
+[NEXT58](GRAIN_VALUE_TANGENT_COMPENSATION_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT57 | Can one explicit scalar function retain original L and GRAIN responses without the current suffix? | Execute GRAIN_COMPLETE_FUNCTION_EXTRACTION_PLAN_V1; fixed source H16 BODY/last PCA32 features, value-only versus joint original L/tau teaching |20 solves/180s CPU/0 native/Y; one same-function score/derivative, source-only construction, no current endpoint add-back or hidden-state tuning |
+| NEXT58 | Why does source response learning lose between-author score ordering? | Execute GRAIN_VALUE_TANGENT_COMPENSATION_PLAN_V1; exact BODY/query compensation and source data-span coverage on frozen NEXT57 functions |60s CPU/0 fits/neural/Y; separate source fit and held application, choose input-mechanism change/support expansion, no compensation or penalty grid |
 
-These are local computational/theory questions. NEXT56 complete, with actual
-candidate suffix calls counted. No MLP24/attention22/hidden-state refinement,
-old queue restart, broader factor search or clinical naming. NEXT57 planned,
-not executed; it changes the object to direct full-function extraction.
+These are local computational/theory questions. NEXT57 complete, with no new
+candidate suffix calls. No MLP24/attention22/hidden-state refinement,
+old queue restart, broader factor search or clinical naming. NEXT58 planned,
+not executed; it chooses the next input/function mechanism from one cached account.
 Current H16 remains native; removing one intervening segment is not eliminating
-the full encoder. Original cached scores/tau remain evaluation-only, not add-back
-prediction inputs. No running model job is required between finite passes.
+the full encoder. Original source scores/tau teach NEXT57; current scores/tau
+remain evaluation-only, not add-back prediction inputs. No running model job is
+required between finite passes.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

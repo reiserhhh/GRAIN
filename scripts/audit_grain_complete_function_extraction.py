@@ -53,6 +53,8 @@ def audit(out):
         np.testing.assert_array_equal(b["members"], [j["index"] for j in src])
         for qi, q in enumerate(QUERIES):
             x, d, y, t = training_arrays(out, src, b, qi)
+            # Match the estimator's explicit float64 source reduction, not NPZ dtype.
+            y = y.astype(float)
             scale = x.std(axis=0)
             scale[scale < 1e-8] = 1
             expected = {

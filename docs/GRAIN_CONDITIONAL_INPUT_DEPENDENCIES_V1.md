@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第四十五轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第四十六轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -77,6 +77,7 @@ flowchart TD
 | 完整条件N pair | S(z0_hat+di_hat+dj_hat+mixed_hat) | `complete_pair.py`，M/R/layout+固定Fourier输入，4-fold源拟合 | 禁读当前端点可独立复算；pooled r=-.107/.0006，基线/单片段读法未恢复作者差异。不替换原评分器；块16输入和源神经构造资产仍存 |
 | 查询定向N基线 | S(b+Jbar_M:M+Jbar_R:R) | `query_baseline.py`，4旧源Jacobian编译、20作者测试；不借当前端点 | 模型条件评分r=.727，源匹配kernel=-.050；是B而非完整F。块16输入仍存、布局运输为经验近似；已接入下行NEXT33 |
 | 同源定向N pair | S(bhat+di_hat+dj_hat+mixed_hat) | `query_pair.py`，同4源/20作者、5头、0神经调用 | 完整score/logit禁读端点重放；r=.610/.593，但基线-only .602。相邻配置幅度可读，方向未恢复，下一步token位置读取 |
+| 完整标量与同函数响应抽取 | Lhat=ellbar+sL(a+w^T z)，tauhat=sL w^T Dz[D] | `complete_function_extraction.py`；同源PCA32正文均值/末token，源原生L/tau，20源求解；应用无后缀/当前目标 | NEXT57值对照新8分数r=.300/.336，联合-.782/-.473，F04响应保留.639/.610；完整门槛未过，关闭加性池化族。源设计rank20/65；NEXT58分解BODY/查询补偿与支持覆盖。H16仍神经，不把模型拟合当人格效度 |
 | 效标与解释 | Corr/response/criterion | 冻结之后连接原有自评；保持量表、模型、行为通道区分 | 不据最高Y相关选择某个坐标/函数；无新增真人或日常行动效标 |
 
 ## 3. 完整F与条件B的精确关系

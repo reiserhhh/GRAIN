@@ -1,5 +1,20 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT57 explicit scalar/response extraction delivered.**
+>20 source-only solves, no suffix in application. Value-only new8 N/C score
+> r=.300/.336; joint r=-.782/-.473 despite close source derivative fits. Joint
+> F04 responses r=.639/.610 are retained locally, all4 factors published.
+> Both whole-function utility gates fail; pooled affine family CLOSED. Actual
+> source data rank20/65 (LOO15), last-view derivative zero. No penalty/gain search.
+>17 CSV replay,192 derivative checks<=1.284e-10,36 focused tests;0 new neural/Y.
+> Enumeration-only metadata-file repair preserves frozen fits/predictions.
+> [Report](../reports/grain_vector_mechanisms/COMPLETE_FUNCTION_EXTRACTION_REPORT_V1.md),
+> [theory](GRAIN_COMPLETE_FUNCTION_EXTRACTION_THEORY_V1.md).
+> [NEXT58](GRAIN_VALUE_TANGENT_COMPENSATION_PLAN_V1.md) planned: one60s cached
+> BODY/query compensation and span account to choose an input-mechanism change.
+> H16 still neural; no running model, questionnaire accuracy or clinical change.
+
+> **Previous NEXT56; its NEXT57 request is completed above.**
 > **2026-09-10 newest: NEXT56 source offset identified.**
 > Offset-only reproduces joint full gradients (cosine .9998); non-intercept-only
 > retains identity-like gradients (.9993). Actual source intercept contributes

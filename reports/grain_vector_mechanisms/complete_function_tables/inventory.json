@@ -1,0 +1,21 @@
+{
+  "scope": "NEXT57 aggregate-only; 12 reused authors, no human questionnaire targets",
+  "primary_commit": "99eae77",
+  "enumeration_amendment": "1dd024a",
+  "files": {
+    "action_contrasts.csv": "b994fdfba51f1c8d371ce9072b4aec31a8e9f3bdd14c8bd3e49741b0cdc28407",
+    "action_contrasts_joint_effect.csv": "47e5aac7e4f3f5e5be32c33bb6305337649ec607bbaec2a0deedbeb959c5c9d0",
+    "actions.csv": "bf5d26a93b057d11be80d9023aeb33f323b1268b9a922b3099673afb9e010a7b",
+    "actions_joint_effect.csv": "839ef4833312468e26d8378915f3f4eada60dd8201028ea651e8ac8f2d02609c",
+    "factor_actions.csv": "ec28baea1eb880b73ec7db792de5b4980b58d96f7234d1664b0156d596d8aff0",
+    "factor_actions_joint_effect.csv": "2bff4e949e2cdcbba5ef7568a1aee0b843e2bee026056544343dc60fe8d4dec7",
+    "factor_contrasts.csv": "17c17c4c2c7aff5a0a1276f5fab679db2ab33f0696ce3ab4d85c0500d1242132",
+    "factor_contrasts_joint_effect.csv": "e49ac53073a8cccfae43bb524da5b9909c92210c46e17132761c163730213563",
+    "score_contrasts.csv": "16f04ef9c05fbabb5bc998fda70d7bb7a7017cee20113c03fd8628b544d36886",
+    "score_contrasts_joint_effect.csv": "ef3e3332dbd92fde6422fa475a918a3114dbab4c8191fc775bbf69026007b64a",
+    "scores.csv": "080d51dcc9546850a54b050be5c2166430988fc73a20695b5ac86e192a4e48a2",
+    "scores_joint_effect.csv": "8a639d046107826f2828e5e8ab743d23654b560a6c8d6a7b7ea1c2a4ca1a6ce9",
+    "source_diagnostics.csv": "54221334af338eb14310dd68ee32f69825f5ac5249527680e013396b02c2ce5d",
+    "replay_audit.json": "93aff422e16d51aa89b72a93619e6dc4afa92763c753cf0fafa619ff5fa8211b"
+  }
+}
