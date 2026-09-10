@@ -1,5 +1,23 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT72 compiles the signed joint-moment interface.**
+> Same source4/new8/queries/factors;0fits/neural/Y. Covariance of value and GRAIN
+> key-logit direction reconstructs old actions within3.747e-16. New8 query-swap
+> value-SD changes only~2%, yet contrast r is own+.939/other-.890/shared+.477.
+> Own value/direction absolute alignment .088/.070 and head-sign retention
+> .389/.319: marginal activation size does not specify the signed response.
+> Native contrast projection U-B=.205872-(-.068884)=.274756; centering is part
+> of the scalar derivative, not removal of author-choice information.
+>34tests/Ruff;12packets/3CSV exact replay,1.917672sCPU. R2 removes OS sidecars
+> from the artifact inventory; all three numerical tables unchanged from initial.
+> [Report](../reports/grain_vector_mechanisms/QUERY_PARTITION_GEOMETRY_REPORT_V1.md),
+> [theory](GRAIN_QUERY_PARTITION_GEOMETRY_THEORY_V1.md).
+> **NEXT73 planned:** [query selection/orientation](GRAIN_QUERY_SELECTION_ORIENTATION_PLAN_V1.md).
+> One crossed scalar interface separates Q's probability measure from its paired
+> direction;0fits/neural/Y,30CPU seconds. Then build the source operator preserving
+> that relation, not another generic-kernel or attention-accuracy grid. Goal ACTIVE.
+
+> Previous NEXT71 update; its NEXT72 task is completed above.
 > **2026-09-11 newest: NEXT71 identifies joint gains and an integrable interface.**
 > Frozen NEXT70 account,0fits/neural/Y;48packets/6CSV exact replay,12.469320sCPU.
 > Raw source cross-B response comes entirely from logmass; local/content/selection

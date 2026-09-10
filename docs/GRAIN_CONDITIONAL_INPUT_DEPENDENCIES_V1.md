@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第60轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第61轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 查询与GRAIN的联合矩 | Psi=log mean exp(l+s*v+t*d)；R=Psi_st=Cov_a(v,d) | `query_partition_geometry.py`；NEXT72编译既有源Qbar与当前K/V/dK，不读当前Q | 旧作用重建3.747e-16；新8引子交换value SD只变约2%，query对比却+.939到-.890。保留带符号联合矩与head抵消，不能只留边际强度；NEXT73分a(Q)与d(Q)，当前神经证据依赖保留 |
 | 内容/选择/质量共同生成评分 | dF=L+C+S+M；误差交叉项对称分账，C/S旋度共同抵消 | `evidence_components.py`；NEXT71只读四冻结函数、48包；0拟合/神经/Y | raw源跨B变化仅M。新8raw作用改善3.602/5.413个百分点含local重拟合及大幅C/S抵消，非新增选择器独占。M贡献8/8重叠单元正向；不可随意剪导数。NEXT72用既有Qbar/K/V/dK共同配分函数区分均值与协方差，保留神经输入依赖 |
 | 质量保留与相对选择 | F=local+v*m+b*logZ 或 local+v*(m/Z)+b*logZ；均为同scalar导数 | `normalized_evidence.py`；NEXT70同1313系数/四拟合 | 源N相对选择GRAIN B误差.948326优于raw.969572；确认不成立。新8raw作用误差较local低3.60%/5.41%，整分数未晋级。Z仅平均核响应，两坐标可逆但Ridge不等价；NEXT71分清内容/选择/质量作用，不继续搜核 |
 | 内容相关的池化交互 | F=local+.5mean(phi)^T M mean(phi)；phi为16冻结Gaussian | `nonlinear_pooling.py`；NEXT69两求解/同1305参数 | 预测B变化57.81%/53.26%离开位置子空间，但坐标误差 .9934/.9956更差；新8整读数不提升。二次族关闭，NEXT70比较保留logmass的相对选择，不从形式复杂度推定功能收益 |

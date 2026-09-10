@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, sixty finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, sixty-one finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1821,20 +1821,52 @@ Read [report](../reports/grain_vector_mechanisms/EVIDENCE_COMPONENT_REPORT_V1.md
 [theory](GRAIN_EVIDENCE_COMPONENT_THEORY_V1.md),
 [NEXT72](GRAIN_QUERY_PARTITION_GEOMETRY_PLAN_V1.md).
 
+## Sixty-first finite pass delivered: query-directed joint-moment geometry
+
+- Previous turn PROGRESS: NEXT71 completed component accounting, found substantial
+  cancellation and derived the common-scalar interface, freezing NEXT72.
+- NEXT72 primary `79e2a4a`, inventory fix `cfe4d9d`, canonical R2 complete.0fits/
+  neural/API/Y/MEPS. Frozen source4LOO/new8all4; same twoqueries, four GRAIN
+ directions, two readout modes and all12heads. No current Q read.
+- Common masked log-partition first/mixed moments exactly reproduce frozen NEXT50
+  key actions within3.747e-16. The represented action is signed Cov_a(v,d_f),
+ not just mean/variance. New8 anchor-swap value SD changes~2%, while two-query
+ contrast retains old own+.939/other-.890/shared+.477. These are reused local
+ native-action effects, not new human personality results.
+- Own new8 absolute within-head alignment .087826/.070253 and head-sign retention
+ .389114/.319030 separate pairing from aggregation. Raw marginal spreads alone
+ do not determine sign; synthetic identical marginals/opposite covariance witness
+ proves the information requirement. Small response need not mean absent inputs.
+- Own contrast target projectionU=.205872, B=-.068884, R=U-B=.274756. Subtraction
+ here can reinforce signal; it is the derivative of normalized reading, not
+ deleting author context or reversing SUICA's earlier condition-choice findings.
+-12private packets/3public CSV exactly replay;24query/96factor/12contrast rows.
+  R2 inventory excludes AppleDouble sidecars, with regression test; all actual
+ numerical tables byte-match the initial run, which is preserved.34focused tests/
+ Ruff pass;1.917672CPU seconds for canonical account/replay below90.
+- NEXT73 planned: Q changes both a(Q) and d(Q). A two-by-two crossed scalar path
+  separates these contributions and fixes the signed relation a source-trained
+ numeric operator must retain.0fits/neural/Y,30CPU seconds; then return to
+ operator development, not further attention-accuracy or attribution grids.
+
+Read [report](../reports/grain_vector_mechanisms/QUERY_PARTITION_GEOMETRY_REPORT_V1.md),
+[theory](GRAIN_QUERY_PARTITION_GEOMETRY_THEORY_V1.md),
+[NEXT73](GRAIN_QUERY_SELECTION_ORIENTATION_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT72 | What joint moments connect source-query mass sensitivity and relative-value action? | Execute GRAIN_QUERY_PARTITION_GEOMETRY_PLAN_V1 on frozen Qbar/K/V/dK; compile a common potential's first/mixed derivatives and value-spread x directional-spread x alignment |0fits/native/Y;90CPU seconds, reproduce old key actions, retain cancellation; no new anchor/head/accuracy search |
+| NEXT73 | Which query dependency changes the signed relation: selection measure or directional orientation? | Execute GRAIN_QUERY_SELECTION_ORIENTATION_PLAN_V1, four crossed scalar paths using the fixed own/other anchors; symmetric selection/direction/interaction account |0fits/native/Y;30CPU seconds; preserve all signs and diagonals, then build the corresponding source operator, not another accuracy or attribution sweep |
 
-These are local computational/theory questions. NEXT71 complete,0newfits;
+These are local computational/theory questions. NEXT72 complete,0newfits;
 no live native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT72 planned, not executed; return
-to the observed query-directed mechanism through its common scalar geometry.
+broader factor search or clinical naming. NEXT73 planned, not executed; resolve
+which conditional relation the next scalar generator must retain.
 No penalty/donor/dose sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

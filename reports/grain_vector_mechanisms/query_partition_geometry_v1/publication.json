@@ -1,0 +1,22 @@
+{
+  "primary_commit": "cfe4d9d9725e54ba6889a671a5a1a1db95a5a4c6",
+  "audit": {
+    "status": "PASS",
+    "packets": 12,
+    "csv_replay": 3,
+    "old_actions_max_error": 3.7470027081099033e-16,
+    "total_cpu_seconds": 1.9176720000000003,
+    "fits": 0,
+    "new_neural_calls": 0,
+    "human_labels_read": false
+  },
+  "files": {
+    "query_geometry.csv": "370751d388e3ec25007e9d4d21ccd3c92e523a5c4bc67c8daddefec2af645314",
+    "factor_geometry.csv": "dc8f74f1682abdfa61fd66cc1f40fa74294b359b42a017a6dabdfd57c0e2d968",
+    "contrast_geometry.csv": "f3a7e0afa0f7acb3acf6b98aaf1c73c92e578fb133ee66b056303ed0babd828e"
+  },
+  "publisher_sha256": "f7469b81d27614176f9101a00f17d42bcee1cab270b5ae0da7b8b385930b51ee",
+  "initial_numeric_tables_unchanged": true,
+  "inventory_amendment": "R2 excludes AppleDouble sidecars; initial packet retained",
+  "scope": "Source4/new8 frozen native key actions; signed joint geometry, not human personality accuracy"
+}

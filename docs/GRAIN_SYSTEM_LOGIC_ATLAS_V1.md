@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT71在同材料重建L/C/S/M。raw跨B仅logmass；新8作用收益3.602%/5.413%含局部重拟合和内容/选择大幅抵消，非单一选择器收益。共同scalar约束C/S联合设计；NEXT72从源query势函数编译均值/协方差与GRAIN方向接合，非心理构念相加 | evidence component theory §§1-4; EVIDENCE_COMPONENT_REPORT_V1; query partition geometry plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT72共同配分函数的Cov(value,GRAIN方向logit)精确重建旧key作用3.747e-16；新8引子交换value SD约变2%，query对比却+.939到-.890。关键是带符号联合关系，不是边际强度；NEXT73隔离a(Q)与d(Q)，不把局部模型相关写成人格效度 | query partition geometry theory §§1-5; QUERY_PARTITION_GEOMETRY_REPORT_V1; query selection orientation plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT71的正负误差贡献是同函数分账，不是人格份额或独立心理机制；M在8个重叠单元正贡献也不保证M-only有效。C/S单独重加权通常失去可积性。保持分数与作用同源、原文地址和群体参照，心理解释另接量表/行为；H16/KV依赖未消除 | evidence component theory §§2-5; EVIDENCE_COMPONENT_REPORT_V1; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT72在同函数下保留边际与联合矩；导数里的中心化可增强信号，不是删除作者的条件选择。绝对对齐与head抵消是计算量，不是人格比例；有效token数含非BODY。评分/解释仍绑定同原文与群体参照，心理意义另接行为，K/V/dK神经依赖仍存 | query partition geometry theory §§3-5; QUERY_PARTITION_GEOMETRY_REPORT_V1; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,24 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第六十一轮补充：边际相似，联合方向仍可反转
+
+NEXT72以同源查询/K/V/dK缓存编译共同log配分函数的一阶/混合二阶矩，重建
+NEXT50的key作用最大差3.747e-16。新8交换引子value SD只变约2%，而N/确认
+对比相关从+.939到-.890，共享引子.477。旧局部效应被解释为联合几何，不是
+新增问卷预测结果。相同边际分布、相反协方差的synthetic反例给出信息缺口。
+
+自身引子新8绝对对齐.087826/.070253、head符号聚合保留.389114/.319030。
+小总作用可以来自低对齐与抵消，不能把这些计算比分别叫人格信号比例。
+U/B目标投影+.205872/-.068884，R=U-B=.274756，说明这里中心化是评分导数
+中的必要项，不推翻旧SUICA关于保留条件选择信息的结论。
+
+0拟合/神经/Y；R2总CPU1.917672秒，12包/3CSV精确重放，34相关测试通过。
+首轮清单混入OS sidecar后已修正，真实三表数值未变、首轮留存。NEXT73只做
+一次选择测度a(Q)与方向d(Q)的交叉标量接口，指定下一源operator保留的关系。
+见[报告](../reports/grain_vector_mechanisms/QUERY_PARTITION_GEOMETRY_REPORT_V1.md)、
+[理论](GRAIN_QUERY_PARTITION_GEOMETRY_THEORY_V1.md)、[NEXT73](GRAIN_QUERY_SELECTION_ORIENTATION_PLAN_V1.md)。
 
 ### 第六十轮补充：内容与选择共同生成评分，误差可发生抵消
 
