@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "11669e55248003b9381d242707c485e7c01d617cf01d73f8f3f2dae2f0da3c64",
+  "atlas_sha256": "e8a534e55bc5ed463867d392c02ae88e1263a8a9c9652c862ee6e4b4d624d31f",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT74\u6e90\u8bad\u7ec3query logit\u52bf\u51fd\u6570\u53ca\u540c\u51fd\u6570GRAIN\u5bfc\u6570\uff0c\u65b08KL\u6539\u558425.62%/33.56%\uff1b\u4f46\u54cd\u5e94\u5e45\u5ea6\u9ad8\u4f30\uff0c\u6e90joint\u5bfc\u6570loss\u7ea61\u3002\u4e0d\u662f\u4e24\u5fc3\u7406\u6784\u5ff5\u76f8\u52a0\uff1bNEXT75\u6e90\u54cd\u5e94\u5bfc\u5411\u5750\u6807\uff0c\u4fdd\u7559V/H16\u4f9d\u8d56",
-      "evidence_entry": "source selector potential theory \u00a7\u00a71-4; SOURCE_SELECTOR_POTENTIAL_REPORT_V1; source response coordinates plan"
+      "alternative_or_next_link": "NEXT75\u6e90\u54cd\u5e94\u5bfc\u5411\u5750\u6807\u8ba9native-query\u5bf9\u6bd4\u8bef\u5dee1.266->.373\u3001r.945->.881\uff1b\u76f4\u63a5source-Q\u5e45\u5ea6\u4ecd\u8fc7\u5927\u3002\u6e90\u65e7\u5bfc\u6570\u5b57\u5178\u7ea613%\u6b8b\u5dee\u80fd\u91cf\u3002\u5171\u540c\u5bf9\u8c61\u662fquery\u51fd\u6570\u6cbfGRAIN\u65b9\u5411\u7684\u54cd\u5e94\uff1bNEXT76\u6784\u9020\u5185\u5bb9V/dV\uff0c\u4fdd\u7559H16/g",
+      "evidence_entry": "source response coordinates theory \u00a7\u00a71-4; SOURCE_RESPONSE_COORDINATES_REPORT_V1; source value channel plan"
     },
     {
       "id": "L20",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "\u540c\u6750\u6599GRAIN/\u67e5\u8be2selector/\u5173\u7cfb\u4e8b\u4ef6\u72ec\u7acb\u7f16\u7801\u4e09\u5c42\u76f8\u63a5\u3002NEXT74\u662f\u56fa\u5b9a\u6a21\u578b\u5c40\u90e8\u673a\u5236\uff0cr=.948\u975e\u771f\u4eba\u4eba\u683c\u6548\u5ea6\uff1bAutoPsyC\u7b49\u63d0\u4f9b\u8bbf\u8c08\u7f16\u7801\u5148\u4f8b\uff0cTA\u4ee3\u7406\u6a21\u62df\u4e0d\u7b49\u4e8e\u771f\u4eba\u81ea\u6211\u72b6\u6001\u9006\u5411\u6d4b\u91cf\u3002\u672a\u505a\u65b0\u4e34\u5e8a\u6807\u6ce8\u6216\u81ea\u52a8\u8bca\u65ad",
-      "evidence_entry": "source selector potential theory \u00a74; relational interpretation research addendum; same-material interpretation theory"
+      "alternative_or_next_link": "\u540c\u6750\u6599GRAIN\u65b9\u5411/\u67e5\u8be2\u8bfb\u53d6/\u72ec\u7acb\u5173\u7cfb\u4e8b\u4ef6\u7f16\u7801\u76f8\u63a5\u3002NEXT75\u6539\u5584\u5c40\u90e8\u5e45\u5ea6\u4f46\u672a\u63d0\u4f9b\u65b0\u5fc3\u7406\u6807\u7b7e\uff1bAutoPsyC\u8bbf\u8c08\u7f16\u7801\u5148\u4f8b\u4e0eTA\u4ee3\u7406\u6a21\u62df\u5206\u5f00\u3002LLM\u53ef\u6e32\u67d3\u5019\u9009\u89e3\u91ca\uff0c\u4e0d\u5012\u5199\u8ba1\u5206\u6216\u5145\u5f53\u72ec\u7acb\u4e34\u5e8a\u771f\u503c",
+      "evidence_entry": "source response coordinates theory \u00a74; relational interpretation research addendum; same-material interpretation theory"
     }
   ]
 }

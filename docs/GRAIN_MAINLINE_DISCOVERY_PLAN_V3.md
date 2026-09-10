@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT75 improves response amplitude through source coordinates.**
+> Source derivative design represents13.16%/13.27% of residual energy; its minimum
+> derivative fit has enormous scalar cost. One response-informed rank32/67-feature
+> joint map improves source value and derivative losses,10solves/0neural/Y.
+> New8 native-Q contrast SSE/zero1.265729->.373022, RMS.121471->.077174(target.059927),
+> while r.945->.881. Direct source-Q targetRMS.017467 remains overshot; per-query
+> and tangent results mixed. Local mechanism retained, no full reader promotion.
+>24packets/4CSV exact replay,16FD max3.85e-11,36tests/Ruff. Successful numeric
+> stages8.173818sCPU; failed pandas aggregation CPU unknown, runtime-only fix logged.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_RESPONSE_COORDINATES_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_RESPONSE_COORDINATES_THEORY_V1.md).
+> **NEXT76 planned:** [source value channel](GRAIN_SOURCE_VALUE_CHANNEL_PLAN_V1.md).
+> One H16->V/dV compatible function,10fits/180CPU seconds, current native V denied
+> in application. Retain g/H16 explicitly; report selection and content derivative
+> terms, not another selector grid. Overall goal ACTIVE, no live model job.
+
+> Previous NEXT74 update; its NEXT75 task is completed above.
 > **2026-09-11 newest: NEXT74 learns query selection, separates response amplitude.**
 > Source-only scalar logit corrections plus same-function GRAIN derivatives;
 >20solves,0neural/API/Y/MEPS. New8 logit-only attention KL improves25.62%/33.56%,

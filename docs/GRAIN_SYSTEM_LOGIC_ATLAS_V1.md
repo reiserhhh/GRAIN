@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT74源训练query logit势函数及同函数GRAIN导数，新8KL改善25.62%/33.56%；但响应幅度高估，源joint导数loss约1。不是两心理构念相加；NEXT75源响应导向坐标，保留V/H16依赖 | source selector potential theory §§1-4; SOURCE_SELECTOR_POTENTIAL_REPORT_V1; source response coordinates plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT75源响应导向坐标让native-query对比误差1.266->.373、r.945->.881；直接source-Q幅度仍过大。源旧导数字典约13%残差能量。共同对象是query函数沿GRAIN方向的响应；NEXT76构造内容V/dV，保留H16/g | source response coordinates theory §§1-4; SOURCE_RESPONSE_COORDINATES_REPORT_V1; source value channel plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 同材料GRAIN/查询selector/关系事件独立编码三层相接。NEXT74是固定模型局部机制，r=.948非真人人格效度；AutoPsyC等提供访谈编码先例，TA代理模拟不等于真人自我状态逆向测量。未做新临床标注或自动诊断 | source selector potential theory §4; relational interpretation research addendum; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 同材料GRAIN方向/查询读取/独立关系事件编码相接。NEXT75改善局部幅度但未提供新心理标签；AutoPsyC访谈编码先例与TA代理模拟分开。LLM可渲染候选解释，不倒写计分或充当独立临床真值 | source response coordinates theory §4; relational interpretation research addendum; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,28 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第六十四轮补充：源响应坐标改善强度，但不是全部机制替代
+
+NEXT75主实现9defd3d，10源求解/10源可达性分账。旧all4导数字典在声明容差
+下只能表达.1316/.1327残差能量；硬拟合到下界会令值loss达37049/31237。
+坐标与耦合拟合代价均有作用，不是单纯增加数据或loss权重就能解决。
+
+固定源H16标准化+两query响应交叉矩SVD32，维度仍67；新源值/导数loss都低。
+新8native-Q对比误差1.265729->.373022，RMS.121471->.077174，目标.059927；
+r.945037->.881432。source-Q直接教学目标RMS.017467仍严重过冲，确认单query
+仍比identity差。因此保留局部幅度改进，不把相抵误差当中介机制已复原。
+
+36相关测试、16同scalar差分最大3.85e-11，24包4CSV精确重放。成功数值阶段
+8.173818CPU秒；首次pandas汇总失败CPU未计，d7a1136只改字符串兼容运行，
+模型/预测/主代码未变。未用真人Y/新神经/API/MEPS，全部public仅聚合表。
+
+下一NEXT76接内容值V/dV，不再扫selector。若V也由H生成，完整局部导数
+必须是Cov_a(v,dell)+E_a[dv]；前者不能冒充总导数。同材料GRAIN方向与query
+读取方式成为共同函数；心理动力/TA独立观察编码仍是解释层，非自动人格诊断。
+[报告](../reports/grain_vector_mechanisms/SOURCE_RESPONSE_COORDINATES_REPORT_V1.md)、
+[理论](GRAIN_SOURCE_RESPONSE_COORDINATES_THEORY_V1.md)、
+[NEXT76](GRAIN_SOURCE_VALUE_CHANNEL_PLAN_V1.md)。总体goal ACTIVE。
 
 ### 第六十三轮补充：从分解选择到学习选择函数
 

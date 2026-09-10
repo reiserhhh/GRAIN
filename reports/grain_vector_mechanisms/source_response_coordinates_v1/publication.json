@@ -1,0 +1,48 @@
+{
+  "primary_commit": "9defd3d4b80c8b4a8c0b59d02bc91ef59ab3d9b0",
+  "audit": {
+    "status": "PASS",
+    "fits": 10,
+    "source_capacity_accounts": 10,
+    "packets": 24,
+    "csv_replay": 4,
+    "total_cpu_seconds": 8.173817999999999,
+    "fd_count": 16,
+    "fd_max_error": 3.847373114540531e-11,
+    "teacher_replay_max_error": 6.245004513516506e-17,
+    "old_baseline_max_error": 7.105427357601002e-15,
+    "new_neural_calls": 0,
+    "human_labels_read": false,
+    "native_values_retained": true
+  },
+  "runtime_amendment": {
+    "reason": "pandas3 inferred StringDtype was not classified as object by the frozen baseline comparator",
+    "fix": "pd.option_context(future.infer_string=False); numeric code unchanged",
+    "primary_commit": "9defd3d4b80c8b4a8c0b59d02bc91ef59ab3d9b0",
+    "amendment_commit": "d7a11366ec4873c7d034bc3a8b3c41c7ca770777",
+    "wrapper_sha256": "756faa94bd21785ee50dd93d9ed3e4d625cd69fbcd6e7498f3b265b7c8689a1e",
+    "test_sha256": "b6c45a071dabeaecf349d4a9235d53a556c6080f57f08c6bd32c0c06c2e4834c",
+    "frozen_stage_hashes": {
+      "models": "2e032633504bef22f87950679bca047b23b9225d6ca5e67624626582a9164713",
+      "predictions": "c2c66a4c908422545cba5024a64420af2a1db26042069adae79fa88d2a454bd2",
+      "replay": "75150e96d4ab40bfeb223d1ea40fa5701ccf8586bed7842b90f4f8b1066da69c"
+    },
+    "failed_analysis_retained": "analysis_failed_stringdtype_v1",
+    "failed_analysis_cpu_seconds": null,
+    "extra_fits": 0,
+    "extra_predictions": 0
+  },
+  "cpu_scope": "8.173818 successful numeric stage CPU seconds including replay; failed aggregation CPU unrecorded; imports/preflight excluded",
+  "files": {
+    "selector_metrics.csv": "ee344982b43d78eb6b0aa1afef1a3acce0883dd8c2c752463c90f688dbb5dbce",
+    "query_actions.csv": "86893cd29daa6d58e99d74e0e678617ae181eccf212090588e8dcf33cfa8ece9",
+    "factor_actions.csv": "2f5375d0506f2cb79d63442aa6ef3466b3cb066e3976a5b5b0665ef31a840332",
+    "contrast_actions.csv": "4b67b3354d65e0300ec33976f7849fe2a338273d00b5d0a83a5c4e34936948b9",
+    "source_capacity.csv": "6ff0b11f151283fa83a4232ac06f6e3b862729109a6aabf69657ea914446f0d0",
+    "source_training.csv": "b24e2e84ccaa13fae7525c1c453b04bd1d58913ae1dfc8e803870214d2663213",
+    "source_basis.csv": "a60e9ed84abf94ad037af6ca358cae8dcd5fe4a09eed9ca1b4689a3d8c0397ee"
+  },
+  "publisher_sha256": "0f5c00f470f4b15d431fd8cd8012d746277f25d6288452c3ace30043d635529f",
+  "source_summary": "source_authors=3 averages four LOO fits; source_authors=4 is the single all-source reference",
+  "scope": "Same-material scalar selector/key-channel responses, H16 and separate native V/fixed g retained; not human questionnaire accuracy"
+}
