@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第四十六轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第四十七轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -79,6 +79,7 @@ flowchart TD
 | 同源定向N pair | S(bhat+di_hat+dj_hat+mixed_hat) | `query_pair.py`，同4源/20作者、5头、0神经调用 | 完整score/logit禁读端点重放；r=.610/.593，但基线-only .602。相邻配置幅度可读，方向未恢复，下一步token位置读取 |
 | 完整标量与同函数响应抽取 | Lhat=ellbar+sL(a+w^T z)，tauhat=sL w^T Dz[D] | `complete_function_extraction.py`；同源PCA32正文均值/末token，源原生L/tau，20源求解；应用无后缀/当前目标 | NEXT57值对照新8分数r=.300/.336，联合-.782/-.473，F04响应保留.639/.610；完整门槛未过，关闭加性池化族。源设计rank20/65；NEXT58分解BODY/查询补偿与支持覆盖。H16仍神经，不把模型拟合当人格效度 |
 | 效标与解释 | Corr/response/criterion | 冻结之后连接原有自评；保持量表、模型、行为通道区分 | 不据最高Y相关选择某个坐标/函数；无新增真人或日常行动效标 |
+| 源正文/查询补偿与可观察输入 | DeltaL=I+B+Q；数据行空间覆盖与Dphi零空间不同 | `value_tangent_compensation.py`；冻结NEXT57两函数、原始目标只作计算解释 | NEXT58源B/Q近完全抵消，新8仅弱抵消；评分覆盖.346/.521、方向.796–.877。N F04中心化r=.629。NEXT59才检查原生梯度在池化盲区的作用；不能用几何覆盖率当预测率，也不把模型分账当心理机制 |
 
 ## 3. 完整F与条件B的精确关系
 
@@ -111,6 +112,12 @@ suffix22–end。联合图有部分分数排序但明显压缩幅度，整函数
 [NEXT57](GRAIN_COMPLETE_FUNCTION_EXTRACTION_PLAN_V1.md)改为完整L及GRAIN导数的
 源数值函数，不再要求重构每个隐藏坐标，目标是移除当前实际后缀。H16仍原生，
 不把当前目标或其它原生组件加回来冒充独立预测。
+
+[NEXT58](GRAIN_VALUE_TANGENT_COMPENSATION_PLAN_V1.md)已完成：源近完美B/Q
+补偿换人后失效；源数据支持覆盖与完整输入可观察性是两个不同问题。
+见[补偿理论](GRAIN_VALUE_TANGENT_COMPENSATION_THEORY_V1.md)。
+[NEXT59](GRAIN_POOLED_FEATURE_NULL_RESPONSE_PLAN_V1.md)计划仅用旧H16原生梯度，
+分离token内分配与源PCA外均值；直接选择下一输入机制，0新神经/拟合。
 
 同一材料、查询、布局和数值观察器下，旧四格的定义为：
 

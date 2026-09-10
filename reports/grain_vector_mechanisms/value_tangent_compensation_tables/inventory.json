@@ -1,0 +1,18 @@
+{
+  "protocol": "GRAIN_VALUE_TANGENT_COMPENSATION_V1",
+  "primary_commit": "4068e7d65c5291838b4ced2d1b4c8135f5e7dab1",
+  "private_source": "results/grain_vector_mechanisms/logic_value_tangent_compensation_v1",
+  "unique_authors": 12,
+  "material_views": 16,
+  "public_aggregate_only": true,
+  "files": {
+    "source_design.csv": "564b09804b01f28d7b689219205c90be8f090866d1b54140d5dab33f6f174aa3",
+    "compensation.csv": "2c9c111fcf77b1a1c3c233499d9a7b1f78731d0e30b1365cb6799f9a49e9fc3e",
+    "coverage.csv": "514e7dff609a009b24d058971ab5c23e35cf3880ecee7744010f9389664c840b",
+    "scores.csv": "0ab986af482097ab7471109324e7d7c10ba06f864246ba8c75e78ccf297c5430",
+    "error_changes.csv": "f5c8f94f7eb9fedd5b4c8ee4b78419e7d01936ab6c0e6d9e8464373351f3d579",
+    "factor_responses.csv": "4a91dab91a98b512ddc1c3ab58e48ea8de8c9c8dc77b60a448f127631bb2dee6",
+    "pooled_responses.csv": "ea21220d8d52f469668710df0d625db9d655e1e3d48f99646452235e2b400f09",
+    "replay_audit.json": "1e143359ab9dcfc9acd3de49230f71f566e08780e7764c8fe7c8545467e514eb"
+  }
+}

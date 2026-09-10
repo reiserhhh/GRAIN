@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "csvs_replayed": 11,
+  "account_error": 8.881784197001252e-16,
+  "projection_matrix_error": 6.157834658848671e-15,
+  "cpu_seconds": 1.3519729999999999,
+  "total_measured_cpu_seconds": 5.2494130000000006,
+  "fits": 0,
+  "neural_calls": 0,
+  "human_labels_read": false
+}

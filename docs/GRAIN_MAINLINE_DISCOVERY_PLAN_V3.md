@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT58 source compensation identified.**
+> In-fit BODY/query increments nearly cancel (ratios1e-6/4e-7); new8 ratios
+> .849/.866, held-source1.036/1.045. Score-input source coverage.346/.521 versus
+> directions.796–.877. This is frozen-program accounting, not a new Y prediction.
+> N F04 r.639->.629 after removing common author action level; confirmation
+> .610->.220. All4 factors retained; amplitude error remains.0 fits/neural/Y,
+> 5.249s total CPU,11 CSV replay,42 focused tests. [Report](../reports/grain_vector_mechanisms/VALUE_TANGENT_COMPENSATION_REPORT_V1.md),
+> [theory](GRAIN_VALUE_TANGENT_COMPENSATION_THEORY_V1.md).
+> [NEXT59](GRAIN_POOLED_FEATURE_NULL_RESPONSE_PLAN_V1.md) planned, not executed:
+> native cached H16 response in the pooled feature map's null space. Separate
+> token allocation from outside-PCA means before selecting a richer input.
+> One60s cache pass/replay,0 fits/neural/Y; no running model or release changes.
+
+> **Previous NEXT57; its NEXT58 request is completed above.**
 > **2026-09-10 newest: NEXT57 explicit scalar/response extraction delivered.**
 >20 source-only solves, no suffix in application. Value-only new8 N/C score
 > r=.300/.336; joint r=-.782/-.473 despite close source derivative fits. Joint

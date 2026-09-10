@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT57同一标量同时产出Lhat和GRAIN导数，当前无后缀；源导数近拟合，new8 F04响应r=.639/.610但完整评分反向。局部响应与作者评分不是同一学习约束，源设计rank20/65，末token方向为0；保留NEXT56共同偏移作用 | complete function extraction theory §§1-4; source offset mechanism theory |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT58源B/Q增量近完全抵消，新8kappa=.849/.866；评分支持覆盖.346/.521而方向.796–.877。N F04相对配置r=.629保留，确认寻求降至.220；局部响应与作者评分约束不同。冻结程序补偿已识别，保留同材料/token地址接口 | value tangent compensation theory §§1-4; complete function extraction theory |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT57实际移除应用后缀但未保留完整两query评分；value的N关联与joint F04局部响应保留，关闭池化加性族。NEXT58检查源BODY/条件补偿与支持覆盖以选新输入机制，不继续调alpha。H16和原生源教师仍依赖模型，解释层不回写数字 | complete function extraction theory §§2-5; value tangent compensation plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT58源补偿解释完毕；NEXT59区分源支持不足与池化输入盲区，原生H16缓存梯度检验token分配/均值外方向。计划尚未执行，不在同phi继续参数网格。H16和源教师仍神经，心理解释保留数字/文本绑定不回写评分 | value tangent compensation theory §§3-6; pooled feature null response plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,25 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第四十七轮补充：源补偿已定位，下一步检验输入抹去的作用
+
+NEXT58对冻结value/joint的DeltaL=I+B+Q精确计算：源4构造内B/Q相关近-1，
+kappa为1.027e-6/3.660e-7；新8为-.235/-.161、kappa=.849/.866，留一略放大。
+这解释该数值程序为何能维持源值同时学斜率，却换人后失配，不是直接宣布
+原生模型或心理系统采用同样补偿。新8评分行覆盖.346/.521，方向.796–.877，
+源支持对象确实不同；F04覆盖最低但原始相关最高，覆盖不等于品质。
+
+去除作者共同四作用水平后N F04从.639保留.629，确认寻求.610降至.220。
+两者幅度误差仍大；中心化是另一个统计对象，不是删掉人格噪声。
+11CSV精确重放、42测试，5.249秒CPU/0拟合/神经/Y。新增7公开聚合表。
+
+下一步区分数据支持与输入零空间：把D分为源PCA均值、零均值token分配、
+PCA外均值，用已存完整H16梯度量化原生作用。后两项对池化phi导数为0，
+若原生作用非零就应改变输入，而非在相同phi更换非线性头。尚未执行该检验。
+[报告](../reports/grain_vector_mechanisms/VALUE_TANGENT_COMPENSATION_REPORT_V1.md)、
+[理论](GRAIN_VALUE_TANGENT_COMPENSATION_THEORY_V1.md)、
+[NEXT59](GRAIN_POOLED_FEATURE_NULL_RESPONSE_PLAN_V1.md)。整体goal ACTIVE，无模型任务。
 
 ### 第四十六轮补充：同函数响应可学习，作者评分关系需另行保存
 

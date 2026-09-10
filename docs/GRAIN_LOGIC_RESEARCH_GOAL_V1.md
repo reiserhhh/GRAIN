@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, forty-six finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, forty-seven finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1399,20 +1399,52 @@ Read [report](../reports/grain_vector_mechanisms/COMPLETE_FUNCTION_EXTRACTION_RE
 [theory](GRAIN_COMPLETE_FUNCTION_EXTRACTION_THEORY_V1.md),
 [NEXT58](GRAIN_VALUE_TANGENT_COMPENSATION_PLAN_V1.md).
 
+## Forty-seventh pass: source compensation does not preserve application scores
+
+- Previous turn classified as progress: NEXT57 produced a compatible scalar/
+  derivative program, located a value-response split and froze its compensation test.
+- NEXT58 primary `4068e7d` complete. No new fits/neural/API/Y; same12 authors,
+  with4 additional in-fit source views clearly separated from held-source4/new8.
+- In-fit BODY/query increments correlate almost-1, cancellation ratios1.027e-6/
+ 3.660e-7; new8 correlations-.235/-.161, ratios.849/.866. Held-source ratios
+ 1.036/1.045 show slight amplification. This is exact learned-program accounting,
+  not identification of a native or psychological causal compensation mechanism.
+- New8 joint-minus-value score MSE grows4.195/3.305. Signed BODY/query allocations
+ 3.839/.356 forN and1.504/1.801 forconfirmation retain means/covariances, not
+  causal fractions. Source-fit near-zero changes are not predictive evidence.
+- New8 score-row source coverage.346/.521 vs direction coverage.796–.877;
+  all4 rank20/65,LOO15/65. F04 has lowest coverage but strongest raw response r.
+  Removing each author's common four-action level retains N F04 r.639->.629,
+  while confirmation falls.610->.220. Amplitude error remains, all4 factors reported.
+- 11 CSV exact replay; old prediction error0, sum/derivative error8.882e-16,
+  independent projection6.158e-15.5.249413s total measured CPU,42 focused tests,
+ 18 existing warnings, Ruff passes. Interactive column-name typo corrected;
+  primary/replay/audit and frozen functions unchanged.7 public aggregate CSVs.
+- NEXT59 planned: distinguish source-support gaps from pooled-input blindness.
+  Split original GRAIN D into PCA-mean visible, zero-mean token allocation and
+  outside-PCA mean; contract original cached H16 gradient. The latter two have
+  zero feature derivative, so nonzero native action would require richer input,
+  not another nonlinear head on the same means.0 fits/neural/Y,60s,one replay.
+
+Read [report](../reports/grain_vector_mechanisms/VALUE_TANGENT_COMPENSATION_REPORT_V1.md),
+[theory](GRAIN_VALUE_TANGENT_COMPENSATION_THEORY_V1.md),
+[NEXT59](GRAIN_POOLED_FEATURE_NULL_RESPONSE_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT58 | Why does source response learning lose between-author score ordering? | Execute GRAIN_VALUE_TANGENT_COMPENSATION_PLAN_V1; exact BODY/query compensation and source data-span coverage on frozen NEXT57 functions |60s CPU/0 fits/neural/Y; separate source fit and held application, choose input-mechanism change/support expansion, no compensation or penalty grid |
+| NEXT59 | Does pooled input hide native GRAIN response before the reader starts? | Execute GRAIN_POOLED_FEATURE_NULL_RESPONSE_PLAN_V1; native H16 gradient contraction with visible/token-allocation/outside-mean components |60s CPU/0 fits/neural/Y; one replay, choose token-addressed input vs response-informed mean basis vs conditional support, no rank/penalty grid |
 
-These are local computational/theory questions. NEXT57 complete, with no new
+These are local computational/theory questions. NEXT58 complete, with no new
 candidate suffix calls. No MLP24/attention22/hidden-state refinement,
-old queue restart, broader factor search or clinical naming. NEXT58 planned,
-not executed; it chooses the next input/function mechanism from one cached account.
+old queue restart, broader factor search or clinical naming. NEXT59 planned,
+not executed; it chooses the next input representation from a native-response
+null-space account, not a new compensation sweep.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is
