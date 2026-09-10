@@ -55,3 +55,25 @@ This is algebraic allocation with a declared convention, not unique causation.
 This finishes the selection/orientation distinction, not the overall inference
 goal. It must lead back to building the numerical reading function, not to a
 fresh sequence of attention22 fidelity benchmarks.
+
+## Frozen implementation before application
+
+`query_selection_orientation.py` compiles an explicit vector-valued operator
+Cov_a(v,delta K)/sqrt(h), then contracts it with the direction anchor. This
+keeps the selection and direction interfaces separate without dropping either.
+Private packets hold operators, four actions and source-derived rotated anchors.
+
+`scripts/run_grain_query_selection_orientation.py` stages prepare/predict/evaluate/
+audit, with `--folder replay` for independent replay and `--output` for fresh runs.
+Application denies old/native targets. Evaluation checks all diagonal actions;
+the fixed source author0, bothqueries/all4factors/all4paths supplies64 mode-wise
+central differences at1e-5. No head or subject selected by the results.
+
+Five explicitly named aggregate tables contain32query-cell/16contrast-cell/
+8query-account/32factor-account/4contrast-account rows. OS sidecars never enter
+the inventory. The native and swap projections have different denominators;
+the interaction is reported separately, not added again to the symmetric account.
+
+Five new tests (including two parameterized random worlds) plus the existing
+relevant tests give32passed before real application; Ruff passes. Preserve all
+four cells even if off-diagonal fidelity is attractive.
