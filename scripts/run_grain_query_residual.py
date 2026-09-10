@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Score source-referenced query-readable residual parts on twelve held authors."""
+"""NEXT35: matched variance/query residual input comparisons on frozen source roles."""
 
 from __future__ import annotations
 
 import argparse
+import json
+import subprocess
 import sys
+import time
 from pathlib import Path
 
 import numpy as np
@@ -13,262 +16,289 @@ from threadpoolctl import threadpool_limits
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-
-from grain_research.vector_mechanisms.functional_profiles import (
-    FixedAuthorCoordinates,
-    FunctionalQuery,
+from grain_research.vector_mechanisms.query_residual_input import (
+    coordinate_support,
+    fit_extension,
+    predict_extension,
+    variance_basis,
 )
-from grain_research.vector_mechanisms.natural_transport import (
-    fit_operator,
-    paired_summary,
-    signed_energy_allocation,
+from scripts.analyze_grain_content_coefficients import (
+    verify_predictions as prior_verified,
 )
-from grain_research.vector_mechanisms.readout_cache_cpu import BASE, read, sha, write
-from scripts.analyze_grain_conditional_edits import load_panel
-from scripts.run_grain_natural_transport import FACTORS, KINDS, QUERIES, SOURCE
+from scripts.run_grain_content_coefficients import NATIVE
+from scripts.run_grain_real_author_path import BASE, read, sha, write
 
-PARTS = ("mean", "configuration", "final")
-PLAN = ROOT / "docs/GRAIN_LOGIC_QUERY_RESIDUAL_PLAN_V1.md"
+SOURCE = BASE / "logic_content_coefficients_v1"
+PLAN = ROOT / "docs/GRAIN_QUERY_RESIDUAL_INPUT_PLAN_V1.md"
+ARMS = ("residual_variance", "residual_query")
 
 
-def run(source, out):
-    """Derive reference positions and actual changes with no held-author fitting."""
-    if read(source / "status.json")["status"] != "COMPLETE":
-        raise ValueError("Complete fixed transport packet required")
-    prior = read(source / "manifest.json")
-    for rel, expected in prior["hashes"].items():
-        p = ROOT / rel
-        if rel.startswith(("docs/", "scripts/", "grain_research/")):
-            continue
-        if sha(p) != expected:
-            raise ValueError("Transport input data changed")
-    factors = pd.read_csv(
-        BASE / "factor_path_routes_v1/source_r2/private_factor_views.csv"
-    )
-    paths = pd.read_csv(BASE / "dynamic_path_channels_v1/private_path_views.csv")
-    held = pd.read_csv(source / "private_factor_scores.csv").set_index(
-        ["author_id", "edit"]
-    )
-    total_maps = read(source / "source_operators.json")
-    native, states, _, native_hashes = load_panel()
-    sm = read(SOURCE / "manifest.json")
-    functions = Path(sm["functions"]) / "nine_query_functions.npz"
-    with np.load(functions, allow_pickle=False) as z:
-        fun = {
-            q: FunctionalQuery(*(z[f"{q}__{k}"] for k in ("Z", "h", "G", "g", "b")))
-            for q in QUERIES
-        }
-    maps, refs, source_rows = {}, {}, []
-    coef_errors, intercept_errors = [], []
-    for q in QUERIES:
-        joined = factors.merge(
-            paths[paths["query"] == q], on=["author_id", "view"], validate="one_to_one"
-        ).sort_values(["author_id", "view"])
-        x = joined[FACTORS].to_numpy().reshape(-1, 3, len(FACTORS))
-        y = joined[list(PARTS)].to_numpy().reshape(-1, 3, 3)
-        for kind in KINDS:
-            maps[q, kind] = [fit_operator(x, y[:, :, j], kind) for j in range(3)]
-            coefs = np.asarray([m["coef"] for m in maps[q, kind]])
-            intercepts = np.asarray([m["intercept"] for m in maps[q, kind]])
-            total = total_maps[f"{q}::{kind}"]
-            coef_errors.append(float(np.max(np.abs(coefs.sum(0) - total["coef"]))))
-            intercept_errors.append(
-                float(
-                    abs(
-                        intercepts.sum()
-                        + (fun[q].anchor if kind == "between" else 0)
-                        - total["intercept"]
-                    )
-                )
-            )
-            if kind == "between":
-                r = y.mean(1) - (x.mean(1) @ coefs.T + intercepts)
-                refs[q] = FixedAuthorCoordinates().fit(r)
-                for uid, a in zip(joined.author_id.unique(), r, strict=True):
-                    source_rows.append(
-                        dict(author_id=uid, query=q, **dict(zip(PARTS, a, strict=True)))
-                    )
-    if max(coef_errors + intercept_errors) > 1e-10:
-        raise ValueError("Part operators do not sum to frozen total")
-    level_rows, delta_rows = [], []
-    for n, row in native.iterrows():
-        uid, q = row.author_id, row["query"]
-        pfull = fun[q].parts(states[n]["full_P"], states[n]["full_Q"])
-        pedit = fun[q].parts(states[n]["edited_P"], states[n]["edited_Q"])
-        values = np.array([pfull[c] for c in PARTS])
-        delta = np.array([pedit[c] - pfull[c] for c in PARTS])
-        g = held.loc[(uid, "full"), FACTORS].to_numpy(float)
-        dg = held.loc[(uid, "e1"), FACTORS].to_numpy(float) - g
-        for kind in KINDS:
-            coefs = np.asarray([m["coef"] for m in maps[q, kind]])
-            pred = dg @ coefs.T
-            r = delta - pred
-            native_delta = row.teacher_edit - row.teacher_full
-            item = {
-                "author_id": uid,
-                "query": q,
-                "kind": kind,
-                "native_delta": native_delta,
-                "functional_delta": float(delta.sum()),
-                "grain": float(pred.sum()),
-                "query_remainder": float(r.sum()),
-                "reader_gap": float(native_delta - delta.sum()),
-            }
-            item.update(
-                {"residual_" + c: float(v) for c, v in zip(PARTS, r, strict=True)}
-            )
-            item.update(
-                {"functional_" + c: float(v) for c, v in zip(PARTS, delta, strict=True)}
-            )
-            delta_rows.append(item)
-            if kind == "between":
-                residual = values - (
-                    g @ coefs.T + [m["intercept"] for m in maps[q, kind]]
-                )
-                ref = refs[q].transform(residual[None, :])[0]
-                level_rows.append(
-                    dict(
-                        author_id=uid,
-                        query=q,
-                        **{
-                            "residual_" + c: float(v)
-                            for c, v in zip(PARTS, residual, strict=True)
-                        },
-                        **{"z_" + c: float(v) for c, v in zip(PARTS, ref, strict=True)},
-                    )
-                )
-    delta, levels = pd.DataFrame(delta_rows), pd.DataFrame(level_rows)
-    metrics, allocations, cross = [], [], []
-    for (q, kind), frame in delta.groupby(["query", "kind"]):
-        names = ["grain", *["residual_" + c for c in PARTS], "reader_gap"]
-        ch = frame[names].to_numpy()
-        shares = signed_energy_allocation(frame.native_delta, ch)
-        if np.max(np.abs(ch.sum(1) - frame.native_delta)) > 1e-10:
-            raise ValueError("Response parts do not reconstruct native change")
-        for name, value in zip(names, shares, strict=True):
-            allocations.append(
-                {
-                    "query": q,
-                    "kind": kind,
-                    "channel": name,
-                    "signed_energy_allocation": float(value),
-                    "rms": float(np.sqrt(np.mean(frame[name] ** 2))),
-                }
-            )
-        for arm in (
-            "query_remainder",
-            *["residual_" + c for c in PARTS],
-            *["functional_" + c for c in PARTS],
-        ):
-            metrics.append(
-                dict(
-                    query=q,
-                    kind=kind,
-                    arm=arm,
-                    **paired_summary(frame.native_delta, frame[arm]),
-                )
-            )
-        for target_q in QUERIES:
-            other = (
-                delta[(delta["query"] == target_q) & (delta.kind == kind)]
-                .set_index("author_id")
-                .loc[frame.author_id]
-            )
-            for arm in ("query_remainder", *["residual_" + c for c in PARTS]):
-                cross.append(
-                    dict(
-                        source_query=q,
-                        target_query=target_q,
-                        kind=kind,
-                        arm=arm,
-                        **paired_summary(
-                            other.native_delta, frame[arm], calibrated=False
-                        ),
-                    )
-                )
-    delta.to_csv(out / "private_residual_changes.csv", index=False)
-    levels.to_csv(out / "private_residual_positions.csv", index=False)
-    pd.DataFrame(source_rows).to_csv(out / "private_reference_authors.csv", index=False)
-    pd.DataFrame(metrics).to_csv(out / "metrics.csv", index=False)
-    pd.DataFrame(allocations).to_csv(out / "signed_energy_allocation.csv", index=False)
-    pd.DataFrame(cross).to_csv(out / "cross_query.csv", index=False)
-    write(
-        out / "residual_reference.json",
-        {
-            q: {
-                "center": r.center.tolist(),
-                "scale": r.scale.tolist(),
-                "active": r.active.tolist(),
-                "source_authors": 63 if q == "TF_cont" else 213,
-                "parts": list(PARTS),
-            }
-            for q, r in refs.items()
-        },
-    )
-    write(
-        out / "part_operators.json",
-        {f"{q}::{kind}": m for (q, kind), m in maps.items()},
-    )
-    files = [
+def prepare(out):
+    """Bind all numerical source inputs and immutable predecessor assets."""
+    old = prior_verified(SOURCE)
+    assets = dict(old["inputs"])
+    for p, digest in read(SOURCE / "prediction_freeze.json")["files"].items():
+        assets[str((SOURCE / p).relative_to(ROOT))] = digest
+    for p in (SOURCE / "manifest.json", SOURCE / "prediction_freeze.json"):
+        assets[str(p.relative_to(ROOT))] = sha(p)
+    code = [
         PLAN,
         Path(__file__),
-        ROOT / "grain_research/vector_mechanisms/natural_transport.py",
-        source / "manifest.json",
-        source / "source_operators.json",
-        source / "private_factor_scores.csv",
-        functions,
+        ROOT / "scripts/replay_grain_query_residual.py",
+        ROOT / "scripts/replay_grain_content_coefficients.py",
+        ROOT / "grain_research/vector_mechanisms/query_residual_input.py",
+        ROOT / "grain_research/vector_mechanisms/content_coefficients.py",
     ]
+    out.mkdir(exist_ok=False)
     write(
         out / "manifest.json",
         {
-            "protocol": "GRAIN_LOGIC_QUERY_RESIDUAL_V1",
-            "native_hashes": native_hashes,
-            "input_hashes": {str(p.relative_to(ROOT)): sha(p) for p in files},
-            "source": str(source.relative_to(ROOT)),
-            "max_coefficient_sum_error": max(coef_errors),
-            "max_intercept_sum_error": max(intercept_errors),
+            "protocol": "GRAIN_QUERY_RESIDUAL_INPUT_V1",
+            "code_hashes": {str(p.relative_to(ROOT)): sha(p) for p in code},
+            "inputs": assets,
+            "queries": old["queries"],
+            "arms": list(ARMS),
+            "extra_rank": 8,
+            "alpha": 0.01,
+            "seed": 4400,
+            "max_seconds": 240,
+            "threads": 4,
             "new_neural_calls": 0,
             "human_labels_read": False,
-            "reference_authors": 276,
-            "held_authors": 12,
-            "source_type": "frozen query-readable states minus source-fitted GRAIN component",
         },
     )
-    write(out / "status.json", {"status": "COMPLETE"})
-    print(
-        pd.DataFrame(metrics)
-        .query("kind == 'transition'")[
-            ["query", "arm", "r", "r_lower", "r_upper", "mse_over_zero"]
+    write(out / "private_membership.json", read(SOURCE / "private_membership.json"))
+
+
+def verified(out):
+    """Verify frozen numerical dependencies before any reconstruction or analysis."""
+    m = read(out / "manifest.json")
+    for key in ("code_hashes", "inputs"):
+        for p, digest in m[key].items():
+            if sha(ROOT / p) != digest:
+                raise ValueError("Frozen dependency changed: " + Path(p).name)
+    return m
+
+
+def construct(name):
+    """Fit bounded source-only extensions and export gradient-denied predictions."""
+    out = BASE / name
+    if not out.exists():
+        prepare(out)
+    m = verified(out)
+    if (out / "prediction_freeze.json").exists():
+        raise ValueError("Completed packet exists; use an explicit replay name")
+    indices = [r["index"] for r in read(out / "private_membership.json")["authors"]]
+    if len(indices) != 4 or len(set(indices)) != 4:
+        raise ValueError("Four old authors required")
+    packets, bases = {}, {}
+    for i in indices:
+        with np.load(SOURCE / f"private_inputs_{i}.npz") as z:
+            packets[i] = (z["hidden"], z["grain"])
+        for q in m["queries"]:
+            with np.load(SOURCE / q / f"private_model_{i}_content.npz") as z:
+                bases[(q, i)] = dict(z)
+    for i in indices:
+        for q in m["queries"][1:]:
+            for k in ("h_center", "h_basis"):
+                if not np.array_equal(bases[(q, i)][k], bases[(m["queries"][0], i)][k]):
+                    raise ValueError(
+                        "Shared source preprocessing differs across queries"
+                    )
+    start = time.monotonic()
+    variance, jobs, source_records = {}, [], []
+    with threadpool_limits(limits=4):
+        vf = out / "variance_freeze.json"
+        if vf.exists():
+            for p, digest in read(vf)["files"].items():
+                if sha(out / p) != digest:
+                    raise ValueError("Frozen source variance basis changed")
+        elif any((out / f"private_variance_{i}.npz").exists() for i in indices):
+            raise ValueError(
+                "Partial unsealed variance construction; inspect before retry"
+            )
+        for slot, i in enumerate(indices):
+            path = out / f"private_variance_{i}.npz"
+            if path.exists():
+                with np.load(path) as z:
+                    variance[i] = dict(z)
+            else:
+                src = [s for s in indices if s != i]
+                variance[i] = variance_basis(
+                    [packets[s][0] for s in src],
+                    bases[(m["queries"][0], i)],
+                    seed=4400 + slot,
+                )
+                np.savez_compressed(path, **variance[i])
+        if not vf.exists():
+            write(
+                vf,
+                {
+                    "files": {
+                        f"private_variance_{i}.npz": sha(
+                            out / f"private_variance_{i}.npz"
+                        )
+                        for i in indices
+                    }
+                },
+            )
+        for qi, q in enumerate(m["queries"]):
+            folder = out / q
+            if (folder / "freeze.json").exists():
+                for p, digest in read(folder / "freeze.json")["files"].items():
+                    if sha(folder / p) != digest:
+                        raise ValueError("Complete query unit changed")
+            else:
+                if folder.exists():
+                    raise ValueError("Partial unsealed query; inspect before retry")
+                if qi and (time.monotonic() - start) / qi * 3 > m["max_seconds"]:
+                    write(
+                        out / "run_status.json",
+                        {
+                            "status": "PAUSED_RESOURCE_BOUNDARY",
+                            "complete_queries": m["queries"][:qi],
+                        },
+                    )
+                    return
+                folder.mkdir()
+                records = []
+                for i in indices:
+                    src = [s for s in indices if s != i]
+                    js = []
+                    for s in src:
+                        with np.load(
+                            NATIVE / "private_packets" / f"a{s:02d}_{q}.npz"
+                        ) as z:
+                            js.append(z["body_gradient"].astype(float))
+                    for arm in ARMS:
+                        model, record = fit_extension(
+                            [packets[s][0] for s in src],
+                            [packets[s][1] for s in src],
+                            js,
+                            bases[(q, i)],
+                            variance[i] if arm == "residual_variance" else None,
+                        )
+                        np.savez_compressed(
+                            folder / f"private_model_{i}_{arm}.npz", **model
+                        )
+                        records.append(
+                            {
+                                "query": q,
+                                "arm": arm,
+                                "held": i,
+                                **record,
+                                **coordinate_support(packets[i][0], model),
+                            }
+                        )
+                pd.DataFrame(records).to_csv(
+                    folder / "private_source_fit.csv", index=False
+                )
+                names = [
+                    f"private_model_{i}_{a}.npz" for i in indices for a in ARMS
+                ] + ["private_source_fit.csv"]
+                write(
+                    folder / "freeze.json",
+                    {"files": {p: sha(folder / p) for p in names}},
+                )
+            source_records.append(pd.read_csv(folder / "private_source_fit.csv"))
+            for i in indices:
+                for arm in ARMS:
+                    jobs.append(
+                        {
+                            "key": f"{q}__a{i}__{arm}",
+                            "model": str(folder / f"private_model_{i}_{arm}.npz"),
+                            "inputs": str(SOURCE / f"private_inputs_{i}.npz"),
+                        }
+                    )
+            print(
+                {
+                    "query": q,
+                    "status": "SOURCE_FITS_COMPLETE",
+                    "seconds": round(time.monotonic() - start, 3),
+                },
+                flush=True,
+            )
+        write(out / "private_jobs.json", jobs)
+        command = [
+            sys.executable,
+            str(ROOT / "scripts/replay_grain_query_residual.py"),
+            "--jobs",
+            str(out / "private_jobs.json"),
+            "--output",
+            str(out / "private_predictions.npz"),
         ]
-        .to_string(index=False),
-        flush=True,
+        for p in (
+            NATIVE / "private_packets" / f"a{indices[0]:02d}_{m['queries'][0]}.npz",
+            SOURCE / "private_predictions.npz",
+        ):
+            command += ["--forbid", str(p)]
+        run = subprocess.run(
+            command, check=True, capture_output=True, text=True, timeout=120
+        )
+        record = json.loads(run.stdout)
+        error = 0.0
+        with np.load(out / "private_predictions.npz") as yp:
+            for j in jobs:
+                with np.load(j["model"]) as z:
+                    model = dict(z)
+                with np.load(j["inputs"]) as z:
+                    pred = predict_extension(z["hidden"], z["grain"], model)
+                error = max(error, float(np.max(abs(pred - yp[j["key"]]))))
+        if error != 0 or record["extra_denials"] or record["jobs"] != 24:
+            raise ValueError("Independent inference mismatch")
+    pd.concat(source_records, ignore_index=True).to_csv(
+        out / "private_source_fit.csv", index=False
+    )
+    write(
+        out / "construction_summary.json",
+        {
+            "status": "COMPLETE",
+            "authors": 4,
+            "queries": 3,
+            "variance_fits": 4,
+            "query_covariance_fits": 12,
+            "ridge_fits": 24,
+            "runtime_replay_max": error,
+            **record,
+            "new_neural_calls": 0,
+            "human_labels_read": False,
+        },
+    )
+    names = [
+        "private_membership.json",
+        "private_predictions.npz",
+        "private_source_fit.csv",
+        "construction_summary.json",
+    ] + [f"private_variance_{i}.npz" for i in indices]
+    for q in m["queries"]:
+        names += [q + "/" + p for p in read(out / q / "freeze.json")["files"]]
+    write(
+        out / "prediction_freeze.json",
+        {
+            "manifest_sha256": sha(out / "manifest.json"),
+            "runtime_jobs_sha256": sha(out / "private_jobs.json"),
+            "files": {p: sha(out / p) for p in names},
+        },
+    )
+    write(
+        out / "run_status.json",
+        {
+            "status": "COMPLETE",
+            "seconds": time.monotonic() - start,
+            "new_neural_calls": 0,
+        },
     )
     print(
-        pd.DataFrame(allocations).query("kind == 'transition'").to_string(index=False),
+        {
+            "status": "COMPLETE",
+            "seconds": round(time.monotonic() - start, 3),
+            "new_neural_calls": 0,
+        },
         flush=True,
     )
-
-
-def main():
-    """Run a fixed follow-up without changing the original transport experiment."""
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--source", type=Path, default=BASE / "logic_natural_transport_v1")
-    p.add_argument("--output-dir", type=Path, default=BASE / "logic_query_residual_v1")
-    args = p.parse_args()
-    source, out = args.source.resolve(), args.output_dir.resolve()
-    if not source.is_relative_to(BASE) or not out.is_relative_to(BASE):
-        raise ValueError("Private result paths required")
-    out.mkdir(parents=True, exist_ok=False)
-    write(out / "status.json", {"status": "RUNNING"})
-    try:
-        with threadpool_limits(limits=2):
-            run(source, out)
-    except Exception as exc:
-        write(
-            out / "status.json", {"status": "FAILED", "error_type": type(exc).__name__}
-        )
-        raise
 
 
 if __name__ == "__main__":
-    main()
+    p = argparse.ArgumentParser()
+    p.add_argument("--name", default="logic_query_residual_input_v1")
+    construct(p.parse_args().name)
