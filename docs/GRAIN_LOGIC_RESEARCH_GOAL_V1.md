@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirty-nine finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, forty finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1183,22 +1183,51 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_QUERY_SELECTION_REPORT_V
 [theory](GRAIN_SOURCE_QUERY_SELECTION_THEORY_V1.md),
 [NEXT51](GRAIN_SELECTION_ENDPOINT_PLAN_V1.md).
 
+## Fortieth pass: source-selected evidence has an endpoint component
+
+- Previous turn classified as progress: NEXT50 produced frozen source-query
+  intervention results, replayed all outcomes and closed its anchor-only family.
+- NEXT51 complete after `eb7ee35` freeze.24 full candidate vector packets before
+  suffix outcomes;8 source gradients then12 frozen scalar packets, before16
+  new8 gradients. Same sources/queries/factors, no fits/Y/API or prefix rerun.
+- New8 same-query source component r=.972986/.978394, SSE/zero=.156129/.071926
+  for N/confirmation: both gates pass. Contrast r=.963235, SSE/zero=.208588,
+  RMS59.2% of actual, signs28/32. Source4 contrast=.921224; complete factors kept.
+- Exchanged-anchor local contrast -.890 becomes+.868 after actual endpoint
+  transport, +.447 after source transport. Query specificity is compositional,
+  not solely located in Q. NEXT50's shared-local-reader result remains valid.
+- New8 contrast selection/reader/cross MSE=.00772920/.00077699/-.00412020;
+  total=.00438599. Source reader partly compensates selection error. Signed
+  key projection onto full tau contrast=.276996; native-dependent swap r=.995208
+  is not standalone prediction accuracy. This target is one endpoint component.
+-24 reverse pairs+2 JVP+4 FD,20.364872s native,5.254325s loading,21.231172s
+  capture wall. Vector/scalar prediction.747826/.041918s;0 neural in those stages.
+ 24 vector+12 prediction+7 CSV replays. L replay exact;96 full-H16 actions agree
+  within4.777e-6; actual key vectors2.110e-15.67 related tests/18 existing warnings.
+- Audit-only batch-axis assumption corrected for the existing H16[T,H] cache;
+  primary frozen code/data/results unchanged. No live native job. NEXT52 removes
+  current blocks17–21 via a source-only differentiable state map; same function
+  must provide states and tangents. No further local Q/head/reader grid.
+
+Read [report](../reports/grain_vector_mechanisms/SELECTION_ENDPOINT_REPORT_V1.md),
+[theory](GRAIN_SELECTION_ENDPOINT_THEORY_V1.md),
+[NEXT52](GRAIN_SOURCE_STATE_TRANSPORT_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT51 | Does source-fixed selection reach the final readout? | Execute GRAIN_SELECTION_ENDPOINT_PLAN_V1: frozen full key vectors, actual suffix transport and source-only suffix reader |24 suffix forward/reverse pairs plus fixed parity checks within180s native,60s numeric; no fits/Y; separate local component from native-dependent replacement audit |
+| NEXT52 | Can one source-only function supply current evidence states and tangents without blocks17–21? | Execute GRAIN_SOURCE_STATE_TRANSPORT_PLAN_V1; identity/pointwise/causal-context maps, same fixed Qbar/rbar component |0 native/Y;10 source-only small Ridge solves,180s numeric; same function/derivative, no new8 states or targets in prediction; report state versus tangent versus endpoint |
 
-These are local computational/theory questions. Full attention22 boundary states
-and tangents are captured; NEXT51 must not repeat their prefix computation.
-No MLP24/attention22 refinement, old queue restart, broader factor search or
-clinical naming. NEXT51 is planned, not already executed. Source suffix readers
-must be frozen before new8 gradients; source-only components and oracle endpoint
-transport must remain separately labeled. Use corrected NEXT49 r2 identities.
+These are local computational/theory questions. NEXT51 complete; no repeated
+suffix or prefix calls. No MLP24/attention22/readout refinement, old queue restart,
+broader factor search or clinical naming. NEXT52 is planned, not already executed.
+Current H16 remains native; removing one intervening segment is not eliminating
+the full encoder. Source state fitting uses no labels or endpoint targets.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT51 endpoint-selection component delivered.**
+> Source-only Qbar/rbar on native evidence: new8 N/confirmation r=.972986/.978394,
+> SSE/zero=.156129/.071926; contrast r=.963235, amplitude59.2%, both gates pass.
+> Other-anchor local sign reversal does not persist at endpoint; query meaning
+> depends on selector, evidence and readout together. Negative error cross-term
+> partly explains compiled performance, not exact internal recovery.
+>24 reverse+2 JVP+4 FD/20.365s native;67 related tests,24+12 NPZ/7 CSV replays.
+> [Report](../reports/grain_vector_mechanisms/SELECTION_ENDPOINT_REPORT_V1.md),
+> [theory](GRAIN_SELECTION_ENDPOINT_THEORY_V1.md). Current K/V/dK still native.
+> [NEXT52](GRAIN_SOURCE_STATE_TRANSPORT_PLAN_V1.md) planned: one differentiable
+> source state map from H16 supplies both primal and tangent; identity/pointwise/
+> causal-context arms,10 small Ridge solves,180s CPU,0 native/Y. No local tuning.
+
+> **Previous NEXT50; its NEXT51 request is completed above.**
 > **2026-09-10 newest: NEXT50 source-query evidence selection delivered.**
 > New8 own same-query N/confirmation action r=.937931/.903473. Contrast r for
 > own/other/shared anchors=.939345/-.890468/.477162; same-query31/32 signs,
