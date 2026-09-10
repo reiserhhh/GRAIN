@@ -73,7 +73,7 @@ def range_account(model, target, predicted, expanded=False):
         raise ValueError("Candidate outside its declared affine output range")
     return {
         "rank": len(u),
-        "native_norm2": float(target @ target),
+        "native_norm2": float(np.sum(target**2)),
         "vector_error2": error,
         "orthogonal_lower_bound2": lower,
         "in_span_error2": max(0.0, error - lower),
