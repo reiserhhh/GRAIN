@@ -1,0 +1,27 @@
+{
+  "primary_commit": "102da2838255aae899040a990291cabf7df364f3",
+  "audit": {
+    "status": "PASS",
+    "fits": 2,
+    "new_neural_calls": 0,
+    "prediction_packets": 48,
+    "csv_replay": 12,
+    "direction_checks": 192,
+    "max_finite_difference_error": 1.1165066093887788e-10,
+    "objective_reconstruction_error": 0.0,
+    "cpu_seconds": 4.608138,
+    "cumulative_cpu_seconds": 23.445285000000002
+  },
+  "files": {
+    "scores.csv": "c10c1af2dc881b757624761f6229bcfd7d22a094ef23587d5fae1ec80ecce3f1",
+    "actions.csv": "8441592a67bbfedb1ecb8aa72adaf1ab6f95ca46c8e8546b397387c29b21bde2",
+    "factor_actions.csv": "cd94acfe86e6956792eb846c65debc9420b3f5824af5fcf930f35db9cb074e60",
+    "fields.csv": "e4a2d5e4beaeb9cb4890f8cd0a5e06ab98e1592df37489bd4aaacd1b09c363c2",
+    "cross_response.csv": "2175c559265d7b0c85dbe68122d21fe5ad708765b054cf5e1dbdcfbbb5f8c424",
+    "source_diagnostics.csv": "aa993881734150fb7fd1db4a207551ab9004f9b9cb5f4bb4239efe9171df7698",
+    "response_shape.csv": "6b703e5729081765c0291f0c5b655602c71f813fee058a3241159d4e77c53cad"
+  },
+  "scope": "source4 matched views; exposed disjoint new8; native query outputs, not human criteria",
+  "publisher_sha256": "a9b0717926698caa3d416d011d4f6f9740f1ad608c39c0f1f1cce750f5362475",
+  "new_fits_or_neural_calls": 0
+}

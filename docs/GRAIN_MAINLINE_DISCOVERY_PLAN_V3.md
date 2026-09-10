@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT69 content dependence implemented; pooled-quadratic family closed.**
+> Same1305coefficients;16Gaussian features before pooling. Predicted B response
+> off old position-span57.81%/53.26%, but source coordinate SSEzero .993427/.995628
+> is worse than NEXT68. GRAIN B-action SSEzero .962056/1.058208; confirmation wrong
+> direction. New8 wholeL r=.143683/.356251, effectively matchedlocal; no promotion.
+>2fits/23.445285sCPU,0newneural/Y;61tests,48packets/12CSV replay,192FD max1.12e-10.
+> [Report](../reports/grain_vector_mechanisms/NONLINEAR_POOLING_REPORT_V1.md),
+> [theory](GRAIN_NONLINEAR_POOLING_THEORY_V1.md).
+> **NEXT70 planned:** [normalized evidence, mass retained](GRAIN_NORMALIZED_EVIDENCE_READER_PLAN_V1.md),
+> matched kernel-weighted content vs relative selection, BOTH retaining logmass.
+>4fits/180CPU seconds; no newnative/Y/selector search. Reconnect native selection,
+> not another quadratic or greater-capacity rescue.
+
+> Previous NEXT68 update; its NEXT69 task is completed above.
 > **2026-09-11 newest: NEXT68 learns cross-token response; the range is too narrow.**
 > Same-source matched scalar fits; source B coordinate SSEzero .973321/.974318,
 > GRAIN B-action SSEzero .960824/.961599 (N/confirmation). Local comparator0response.

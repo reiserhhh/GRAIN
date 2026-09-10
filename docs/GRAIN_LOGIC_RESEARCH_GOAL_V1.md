@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-seven finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-eight finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1743,20 +1743,44 @@ Read [report](../reports/grain_vector_mechanisms/COUPLED_POOLING_REPORT_V1.md),
 [theory](GRAIN_COUPLED_POOLING_THEORY_V1.md),
 [NEXT69](GRAIN_NONLINEAR_POOLING_PLAN_V1.md).
 
+## Fifty-eighth pass: content-dependent response is not the same as useful selection
+
+- Previous turn classified as progress: NEXT68 learned a small coupled response,
+  proved its positional range ceiling, and chose a same-size functional contrast.
+- NEXT69 primary `102da28`,2numericfits/0newneural/Y, source4/fourviews/twoqueries.
+  Same1305parameters;16frozen Gaussian features replace linear pooled moments.
+- Actual predicted B response has57.81%/53.26% energy outside the old position
+  span. Source coordinate SSEzero .993427/.995628 is nevertheless worse than
+  NEXT68; GRAIN B-action SSEzero .962056/1.058208 retains N but reverses confirmation.
+- New8 wholeL r=.143683/.356251, nearly matchedlocal; tiny direction-error changes,
+  no complete predictor replacement. Stop pooled-quadratic family as planned.
+- 23.445285s stagedCPU,61focusedtests/Ruff,48packets/12CSV exact replay,
+  192FD max1.12e-10, source objective replay0;7public aggregate tables.
+- Exact next interface separates kernel mass Z, content moment m and selected
+  content r=m/Z. Keeping logZ makes (r,logZ) invertible with (m,logZ), so normalization
+  need not delete choice. Standard quotient gradient gives content and relative
+  selection terms; proposed NEXT70 tests the functional readout, not extra information.
+- NEXT70 planned: matched normalized/unnormalized mass-retaining readers, same
+  frozen16kernels and144newcoef each;4fits/180CPU seconds,0newnative/Y/no grid.
+
+Read [report](../reports/grain_vector_mechanisms/NONLINEAR_POOLING_REPORT_V1.md),
+[theory](GRAIN_NONLINEAR_POOLING_THEORY_V1.md),
+[NEXT70](GRAIN_NORMALIZED_EVIDENCE_READER_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT69 | Can nonlinear token pooling learn content-specific cross-region responses? | Execute GRAIN_NONLINEAR_POOLING_PLAN_V1; replace16linear moments by16source-frozen Gaussian token features, keep1305coefficients and same source objectives | Two fits/180CPU seconds,0newnative/Y; source response/new8 wholeL/actions separate; stop pooled-quadratic family after this contrast |
+| NEXT70 | Does relative evidence selection improve functional reading when mass is retained? | Execute GRAIN_NORMALIZED_EVIDENCE_READER_PLAN_V1; compare weighted moments with normalized moments, both retaining logmass; same source kernels and144newcoef | Four fits/180CPU seconds,0newnative/Y; source response and exposed new8 wholeL/actions separate, no selector/penalty sweep |
 
-These are local computational/theory questions. NEXT68 complete,4numericfits;
+These are local computational/theory questions. NEXT69 complete,2numericfits;
 no live native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT69 planned, not executed; develop
-content-dependent token interaction, instead of repeatedly detecting its existence.
+broader factor search or clinical naming. NEXT70 planned, not executed; develop
+mass-retaining relative selection, instead of further pooled quadratic tuning.
 No penalty/donor/dose sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
