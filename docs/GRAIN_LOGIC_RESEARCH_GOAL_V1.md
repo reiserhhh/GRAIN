@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirty-two finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirty-three finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -986,18 +986,45 @@ Read [report](../reports/grain_vector_mechanisms/GATED_UPDATE_REPORT_V1.md),
 Keep the useful simple source reader; next identify the shared/specific parts
 of its pairing with the current direction, not a local coefficient optimizer.
 
+## Thirty-third pass: shared reader, query-conditioned transported direction
+
+- Previous goal turn classified as progress: NEXT43 produced verified source
+  operators and a compiled interface. NEXT44 now executed its planned reciprocal
+  reader test, with12 exactly aligned BODY/GRAIN pairs and384 fixed scalar actions.
+  Pre-outcome code/analysis commit `d4ede47`,0 neural calls/fits/human labels.
+- New8 own-mode reader borrowing retains N/confirmation action r=.990935/.994290,
+  SSE/zero=.016022/.027966 versus own.011988/.002932. All16 aggregate cells and
+ 64 factor cells retained. The fixed recipient native target never changes with
+  the donor. A useful shared reading survives, with some amplitude difference.
+- Exact symmetric query contrast C=R+T has new8 own projected shares.085728/.914272.
+  R/T RMS=.035711/.162922; compiled contrast vs native r=.982463. Pooled shares
+  -.048273/1.048273 show signed cancellation; these are not personality fractions
+  or a unique causal allocation. Source4 own T share=.776078, not the same91.4%.
+- Post-outcome equal shared reader w*=(w_N+w_C)/2 retains new8 own r=.995074/.997422,
+  SSE/zero=.010366/.007822. Exported correction e preserves the original readers
+  as w*+e,w*-e. This is exact algebraic reuse, not selected weights or fresh blind
+  evidence. Current d still requires native upstream contextualization.
+-0.006599s primary numeric runtime;4 target-denial probes,0 extra denials.
+  Own diagonal replay1.111e-15, contrast identity1.444e-15;8 CSV replays,
+ 24 source exclusions, independent metric replay4.441e-16,83 focused tests pass.
+  No live model job, release/scorer/lockbox change, clinical coding or new API use.
+
+Read [results](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)
+and [theory](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md). Next trace the already
+saved incoming query difference, not another coefficient/accuracy search.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43 finite candidates are closed,
-retaining useful mechanisms and contrary comparisons. NEXT44 separates query
-specificity in the compiled reader from the incoming contextual direction.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44 finite candidates are closed,
+retaining useful mechanisms and contrary comparisons. NEXT45 locates formation
+of the query-conditioned incoming direction using already saved signed updates.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT44 | Is query specificity in the shared reader or incoming transport? | Execute GRAIN_COMPILED_QUERY_TRANSFER_PLAN_V1; complete2x2 borrowing and exact symmetric contrast decomposition | Max384 scalar predictions,60s numeric,0 neural/fit/Y. Preserve recipient target, source exclusion, own-diagonal replay and signed terms |
+| NEXT45 | Where does the common BODY direction acquire query-dependent transport? | Execute GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1; telescope first17 upstream updates under the same shared reader and retain signed stage/window accounting | Cached only,60s,0 neural/fit/Y. Verify pre-MLP25 vector/contrast parity; do not include MLP25/later updates or call incremental shares causal origin |
 
-These are local computational/theory questions. Reuse compiled source vectors
-and current tangents; no new model collection, old queue restart, broader factor
+These are local computational/theory questions. Reuse compiled source vectors,
+current tangents and saved upstream updates; no model collection, old queue restart, broader factor
 search or clinical naming.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.

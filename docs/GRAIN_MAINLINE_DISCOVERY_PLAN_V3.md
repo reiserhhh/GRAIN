@@ -1,5 +1,16 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT44 shared reader/query transport delivered.**
+> Reciprocal local readers retain new8 actionr=.990935/.994290. Own-mode query
+> contrast's signed transport projection=.914272; reader=.085728. Pooled has
+> cancellation, transport1.048273. Exact accounting, not personality fractions.
+> Post-outcome equal reader r=.995074/.997422; current upstream d remains native.
+>384 scalar predictions/0.006599s,0 neural calls/fits/Y,8 CSV replays,83 tests.
+> [Report](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md),
+> [theory](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md),
+> [NEXT45 query transport formation](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md).
+> Whole-system goal ACTIVE; prior next-step paragraphs below are historical.
+
 > **2026-09-10 newest: NEXT43 gate/norm mechanism delivered.**
 > New8 paired-source local operator retains actionr=.996936/.998451,
 > SSE/zero=.011988/.002932. Both product-rule terms matter, but fine current
