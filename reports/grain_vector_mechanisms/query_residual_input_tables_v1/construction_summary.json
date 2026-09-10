@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "authors": 4,
+  "queries": 3,
+  "variance_fits": 4,
+  "query_covariance_fits": 12,
+  "ridge_fits": 24,
+  "runtime_replay_max": 0.0,
+  "jobs": 24,
+  "denial_probes": 2,
+  "extra_denials": 0,
+  "new_neural_calls": 0,
+  "human_labels_read": false
+}

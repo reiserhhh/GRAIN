@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-three finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-four finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -697,15 +697,46 @@ Construction3089d8a, primary analyzer072cd63, source-span supplementf2ea641.
 The next action is query-linked residual input, not a Ridge grid or new GRAIN
 factor naming. Full logic goal remains ACTIVE and the release is unchanged.
 
+## Twenty-fourth pass: target-linked residual input beats equal-width variance
+
+- NEXT35 complete. Same4 old authors/3 queries;8 residual query directions versus
+  8 residual PCA directions, exact original36 base columns,44 total, alpha=.01.
+  Four PCA fits/12 cross-covariance SVDs/24 source-only Ridge heads per build.
+- Query8 retains only2.985-3.192% of source residual energy, versus7.071% for
+  variance8. Yet held native GRAIN actionr is.863/.473/.576 (T/F,N,confirmation),
+  versus.684/.114/.149 for variance8 and.638/.134/.141 for old content.
+  SSE/zero falls to.657/.874/.712; factor-centered authorr.844/.539/.596.
+  Source coefficient error also improves to.802/.798/.838. This is useful
+  source-target-linked information omitted by generic input variance compression.
+- Full gradient errors worsen while GRAIN action errors improve: input variance,
+  field fidelity and directional measurement use different geometries. Preserve
+  the signed error account, with action closure discrepancy9.17e-14; do not call
+  unmeasured directions noise. Predicted/native RMS only23.5/18.1/35.8% and the
+  per-factor table retains failures, particularly F03; no held amplitude tuning.
+- Two canonical numerical builds about3.2/3.1s after loading,0 neural calls/Y;
+  43 numerical files reproduce exactly.48 scoped tests pass, old SWIG warnings.
+  Gradient/old-result denial probes2/2;24 independent predictions exact.
+- Initial runner collided with a historical filename. Restored historical code
+  from0c940fd and isolated `run_grain_query_residual_input.py` in c689ca6 before
+  viewing results. Canonical r2 reproduces all35 old unreviewed construction
+  files; old packet preserved, not used as the current provenance entry point.
+  Initial implementation595c4ad, isolated reconstructionc689ca6, analysis89a25a5.
+
+Read [query residual report](../reports/grain_vector_mechanisms/QUERY_RESIDUAL_INPUT_REPORT_V1.md)
+and [input/reader/measurement theory](GRAIN_QUERY_RESIDUAL_INPUT_THEORY_V1.md).
+These are model-local derivatives on a reused4-author panel, not fresh human
+personality accuracy. Current H still needs model encoding; no released scoring,
+interpretation/clinical rubric, or lockbox changes. Overall goal remains ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34 finite candidates are closed, retaining useful mechanisms
-and contrary comparisons. Execute NEXT35: compare8 query-linked residual input
-directions with8 residual-variance directions; no new neural collection.
+NEXT24/25/26/31/32/33/34/35 finite candidates are closed, retaining useful mechanisms
+and contrary comparisons. Execute NEXT36: exchange the three source-derived
+query input subspaces to map shared versus query-specific reading information.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT35 | Is omitted input information linked to query reading rather than generic variance? | Execute GRAIN_QUERY_RESIDUAL_INPUT_PLAN_V1: append8 residual covariance directions vs8 residualPCA directions to old36-column content design; same3-source/1-held roles | At most4 residualPCAs/12 cross-covariance SVDs/24 Ridge heads,0 neural calls,240s resource check. Fixed alpha, target-denied inference, source/held field and action metrics; no automatic personality naming |
+| NEXT36 | Is the newly usable input channel shared or query-specific? | Execute GRAIN_QUERY_DIRECTION_TRANSFER_PLAN_V1: borrow another query's residual8 basis from the same source fold, retain own target/output basis/design and alpha | At most24 new Ridge heads, source principal angles,0 neural calls; matched3x3 transfer report plus variance control, target-denied runtime and one replay. No best-donor predictor or held tuning |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

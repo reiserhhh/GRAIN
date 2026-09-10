@@ -1,5 +1,17 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT35 query-linked residual input delivered.**
+> Same4 old authors/3 queries;8 query directions retain only about3% residual
+> energy but improve native GRAIN actionr to.863/.473/.576 (T/F,N,confirmation).
+> Equal-width residualPCA retains7.1% yet gives.684/.114/.149. Source fit and
+> held action SSE improve; complete gradient errors worsen, showing different
+> field/measurement geometries. Current-gradient-denied numerical readout;
+> not human personality accuracy.48 scoped tests/43 exact files,0 neural calls.
+> [Report](../reports/grain_vector_mechanisms/QUERY_RESIDUAL_INPUT_REPORT_V1.md),
+> [theory](GRAIN_QUERY_RESIDUAL_INPUT_THEORY_V1.md),
+> [NEXT36 shared/specific direction transfer](GRAIN_QUERY_DIRECTION_TRANSFER_PLAN_V1.md).
+> Whole-system goal ACTIVE; previous next steps are historical. No long run.
+
 > **2026-09-10 newest: NEXT34 content coefficients/source-span analysis complete.**
 > Same4 authors/3 queries. Source-only T/F actionr=.638 versus position.498;
 > error/zero .864 versus.922, predicted amplitude12% of native. GRAIN interactions

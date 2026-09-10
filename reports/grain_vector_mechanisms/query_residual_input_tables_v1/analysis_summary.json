@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "authors": 4,
+  "queries": 3,
+  "arms": 2,
+  "new_fits": 0,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "field_split_error_max": 2.509728414657821e-15,
+  "action_split_error_max": 9.170442183403793e-14
+}
