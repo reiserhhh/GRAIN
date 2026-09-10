@@ -3,6 +3,13 @@
 2026-09-10. Planned, not executed. NEXT52 primal-only family complete, no retained
 numeric replacement. This packet tests objective alignment, not a rank/alpha grid.
 
+Pre-execution amendment, before any NEXT53 fitting/evaluation: normalizing the
+value loss while retaining numeric alpha=.01 changes its effective regularization
+relative to NEXT52. Add a normalization-matched value-only control (omit the
+direction loss, everything else identical). Compare joint versus that control
+for the derivative-teaching claim; old NEXT52 remains a historical reference.
+Twenty rather than ten small solves; same180s CPU cap. No additional hyperparameter.
+
 ## Question and immutable inputs
 
 Does adding source-only directional targets preserve useful response while fitting
@@ -10,7 +17,8 @@ the same intermediate states? Keep the two NEXT52 pointwise/causal map families,
 every source fold's U32/mu/feature centering/scales, alpha=.01, both queries, same12
 authors, same four BODY directions and fixed Qbar/rbar/attention22 program.
 Load existing maps for their feature assets; refit only B. No PCA or query selection.
-Compare two new joint maps with cached NEXT52 identity/primal maps/native reference.
+Compare two new joint maps and two matched value-only controls with cached NEXT52
+identity/primal maps/native reference.
 Do not fit a separate incompatible tangent function or new8 endpoint calibration.
 
 ## Source-only objective, fully specified
@@ -42,7 +50,7 @@ exclusion, fixed asset equality, zero nullspace update, finite source normalizer
 ## Execution and decision
 
 1. New `response_aware_state.py`, runner/tests. Freeze code+plan before fitting.
-2. Read only source4 NEXT49 primal/tangent targets. Ten small solves maximum,
+2. Read only source4 NEXT49 primal/tangent targets. Twenty small solves maximum,
    no new native calls. Current new8 prediction still reads only H16/GRAIN/layout
    and fixed assets; deny current pre22 states/tangents/gradients/actions/Y.
 3. Freeze factorized candidate Xhat/dhat/endpoint packets before evaluation.
@@ -51,7 +59,8 @@ exclusion, fixed asset equality, zero nullspace update, finite source normalizer
    Include source training losses to distinguish fitting constraints from transfer.
 5. Component replacement retained only if new8 SSE/zero<1 separately both queries.
    Mechanism development success: a joint map reduces new8 directional error
-   versus its same-family primal map in both queries, with all endpoint costs shown.
+   versus its same-family normalization-matched value-only map in both queries,
+   with old-primal and endpoint costs also shown.
    Report these two decisions separately; a tradeoff is not a replacement pass.
 
 If directional fitting helps, connect the resulting function at its demonstrated
@@ -59,7 +68,7 @@ scope. If it does not, close this fixed-basis family and inspect response-direct
 coverage rather than sweep lambda/rank/alpha on the same new8 outcomes. No automatic
 larger training, extra heads, new query grid or return to old benchmark queues.
 
-Resources: CPU only, ten solves,180s combined preparation/fitting/prediction plus
+Resources: CPU only, twenty solves,180s combined preparation/fitting/prediction plus
 one cached numerical replay,0 neural/backward/API/Y calls. H16 remains an original
 prefix dependency; learning source intermediate targets is not human-label training.
 Private packet `results/grain_vector_mechanisms/logic_response_aware_state_v1/`;
