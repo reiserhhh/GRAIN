@@ -1,5 +1,23 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT78 locates conditional differential reading.**
+> Exact two-query scalar/body decomposition,0fits/neural/Y. Native scalar's
+> author-centered reader projection .550317(source4)/.740698(new8); native new8
+> K+V instead -.128743, opposing evidence change. Constant source reader with
+> native Q/K/V changes that to+.122543; assembled program+.329503. Same-material
+> scalar information and conditional response modulation are different objects.
+> Source readers cosine .955340, yet their differential term matters. No claim
+> that covariance projections are causal shares or universal across panels.
+>12candidate/12target packets,5CSV exact replay;4.273223CPU seconds,42tests/Ruff.
+> [Report](../reports/grain_vector_mechanisms/ENDPOINT_QUERY_CONTRAST_REPORT_V1.md),
+> [theory](GRAIN_ENDPOINT_QUERY_CONTRAST_THEORY_V1.md).
+> **NEXT79 planned:** [context differential reader](GRAIN_CONTEXT_DIFFERENTIAL_READER_PLAN_V1.md).
+> One source-normalized vector kernel smoother on paired H16 last context,
+> shared reader fixed; five source constructions,90CPU seconds,0neural/Y.
+> BODY directions have zero last/context tangent, preserving the local scalar
+> derivative. No value/selector/bandwidth grid. Whole-system goal ACTIVE.
+
+> Previous NEXT77 update; its NEXT78 task is completed above.
 > **2026-09-11 newest: NEXT77 assembles a current-reader-free endpoint component.**
 > Reuses NEXT51 source readers and all four NEXT76 functions;0fits/neural/Y.
 > New8 query-specific scalar contrast r=.545-.690; response/source SSEzero=.193610.

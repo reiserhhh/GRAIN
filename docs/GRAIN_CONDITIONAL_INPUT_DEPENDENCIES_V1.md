@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第66轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第67轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 同材料查询差的两个读法分量 | DeltaF=mean(r)^T Delta p+Delta r^T mean(p)，同式用于K/V方向 | `endpoint_query_contrast.py`；NEXT78只读冻结组件和源读头，当前读头仅事后评估 | 原生scalar作者中心化差异读法投影源4=.550/新8=.741；新8K+V反而-.129，固定源读头改为正。NEXT79开发c=paired last条件差异读头，正文Dc=0保证同scalar导数；非心理因果百分比 |
 | 源端点数值组装 | Fhat=rbar^T O E_a[Vhat]，沿GRAIN方向求同函数K+V导数 | `source_endpoint_assembly.py`；NEXT77复用源reader/selector/value，应用不读当前g/端点梯度/K/V/Q | 新8局部分数对比r=.545-.690；response/source方向r=.678但幅度过大，SSEzero7.288。精确e=运输+读头并保留交叉项；NEXT78区分共同读法的证据变化与差异读法的共同证据，H16仍神经、非完整L |
 | 内容值与完整局部响应 | Vhat=V0+Phi C；dF=Cov_a(v,dell)+E_a[dv]，Q/g固定 | `source_value_channel.py`；NEXT76源V/dV教学，应用仅H16/源图/g-only，不读当前V/K/Q | 新8V/dV误差降约11%/4.5%，但response-selector总作用误差.783->.862；观测误差范数与全向量范数不同。NEXT77重用NEXT51源端点读头移除g，非全L或人格预测 |
 | 源响应导向坐标 | C=[E Z^T Y/s,E DZ^T DY/t]两query拼接，源SVD32；同函数产生值与导数 | `source_response_coordinates.py`；NEXT75 H16/源Q/源K方向教学，当前V/g保留 | 旧源导数字典仅含约13%残差能量；新8native-query对比误差1.266->.373，r.945->.881，直接source-Q仍幅度失配。不是问卷精度；NEXT76替代V已完成，保留两导数项 |

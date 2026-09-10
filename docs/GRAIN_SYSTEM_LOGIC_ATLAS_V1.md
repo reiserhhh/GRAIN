@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT77同H16函数接源端点reader，移除当前g/端点梯度；新8局部分数对比r=.545-.690但作用幅度过大。运输和读头误差各降而正交叉项增，组合仍恶化。NEXT78分共同读法/差异读法，非人格因果份额 | source endpoint assembly theory §§1-4; SOURCE_ENDPOINT_ASSEMBLY_REPORT_V1; endpoint query contrast plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT78同材料query差=共同reader读证据差+差异reader读共同证据。原生scalar作者中心化reader投影.550/.741，新8K+V反向-.129而源固定reader改为正；NEXT79条件化差异读头，正文Dc=0，同scalar沿GRAIN方向导数。非人格因果份额 | endpoint query contrast theory §§1-5; ENDPOINT_QUERY_CONTRAST_REPORT_V1; context differential reader plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,25 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第六十七轮补充：查询差异的读法可以增强分数，也可以抑制响应
+
+NEXT78主实现241fd56，0拟合/神经/Y。双线性对比分解在固定两query和所有
+四函数中精确重建NEXT77。作者中心化后，原生scalar的差异reader有符号投影
+源4=.550317、新8=.740698；新8K+V却为-.128743，反向调制证据作用。固定源
+reader在原生Q/K/V不变时已将其改为+.122543；完整数值候选为+.329503。
+不是所有差异都该正向加权，也不是两个读头cos=.955就能忽略其差异。
+
+原始均值与作者变化分开，按factor列在作者间中心化，不把4方向当4倍样本。
+12候选包/12评估包/5CSV精确重放；288旧指标重现4.69e-14，恒等式8.33e-17，
+4.273223CPU秒。42focused测试/Ruff。源4没有同样的反向调制，完整保留。
+
+下一NEXT79用paired H16 last条件化源reader差异，共同reader固定。现有BODY
+方向last为零，因此Dc[D_BODY]=0，能在跨作者改变读法同时保留同scalar正文
+导数；若动context就必须补Dr项。不是整模型无LLM或人格效度声明。
+见[报告](../reports/grain_vector_mechanisms/ENDPOINT_QUERY_CONTRAST_REPORT_V1.md)、
+[理论](GRAIN_ENDPOINT_QUERY_CONTRAST_THEORY_V1.md)、
+[NEXT79](GRAIN_CONTEXT_DIFFERENTIAL_READER_PLAN_V1.md)。总体goal ACTIVE。
 
 ### 第六十六轮补充：源端点可组装，单项改善不保证组合改善
 

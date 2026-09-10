@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, sixty-six finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, sixty-seven finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2008,22 +2008,54 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_ENDPOINT_ASSEMBLY_REPORT
 [theory](GRAIN_SOURCE_ENDPOINT_ASSEMBLY_THEORY_V1.md),
 [NEXT78](GRAIN_ENDPOINT_QUERY_CONTRAST_PLAN_V1.md).
 
+## Sixty-seventh finite pass delivered: differential reading and author variation
+
+- Previous turn classified as PROGRESS: NEXT77 removed current g and found
+  interacting transport/reader errors. NEXT78 performs its promised bounded
+  decomposition and now chooses conditional-reader development, not more grids.
+- Primary `241fd56`; exact E=mean(r)^T delta_p and R=delta_r^T mean(p), including
+  all four GRAIN directions and key/value/total. Same four functions/two oracle
+  comparators/source4LOO/new8all4.0fits/neural/API/Y/MEPS; target readers only
+  after candidate freeze, no prediction remainder add-back.
+- Native scalar author-centered R projections source4 .550317/new8 .740698.
+  Native new8 K+V R projection -.128743 opposes E; source4 is+.439777 instead.
+  Even native-Q/KV with source-reader substitution changes new8 R to+.122543;
+  numerical response/source function+.329503. This isolates a conditional
+  readout behavior, not a universally opposing psychological factor.
+- Numerical new8 scalar R fidelity r=.458460/SSEzero=.112244, E r=.028134.
+  Directional R instead r=-.344782/SSEzero21.117165, E r=.687120. Raw vs
+  centered errors show differential reading's variation error remains large,
+  not just a common score offset. Source reader cosine .955340 is not redundancy.
+-12candidate/12private-evaluation packets,5CSV exact replay.288 old-mode scalar/
+  action metrics within4.690692e-14, energy identities8.326673e-17, numeric CPU
+ 4.273223including replay.42focused tests/Ruff pass, including two post-account
+  reference/conditional-derivative algebra tests; empirical primary unchanged.
+- NEXT79 develops one normalized source differential-reader field on paired
+  H16 last context. BODY directions have D[last]=0, so conditional readers retain
+  the same scalar's BODY derivative. General context directions require Dr*Dc.
+  Nadaraya's smoother and vector/functional-output learning inform the design;
+  no asymptotic accuracy or new RKHS theorem is claimed for4sources.
+
+Read [report](../reports/grain_vector_mechanisms/ENDPOINT_QUERY_CONTRAST_REPORT_V1.md),
+[theory](GRAIN_ENDPOINT_QUERY_CONTRAST_THEORY_V1.md),
+[NEXT79](GRAIN_CONTEXT_DIFFERENTIAL_READER_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT78 | Which part of endpoint query contrast is evidence change vs differential reading? | Execute GRAIN_ENDPOINT_QUERY_CONTRAST_PLAN_V1; exact symmetric two-query scalar/tangent account, all frozen arms |0fits/neural/Y,30CPU seconds; decide differential-reader vs upstream-evidence development, no attribution grid |
+| NEXT79 | Can current context select the source differential reader and recover opposing modulation? | Execute GRAIN_CONTEXT_DIFFERENTIAL_READER_PLAN_V1; paired-last normalized source smoother, shared reader fixed, all prior functions |Five source constructions,0neural/Y,90CPU seconds; unchanged baseline replay and same-scalar BODY derivative, no kernel grid |
 
-These are local computational/theory questions. NEXT77 complete,0new source solves;
+These are local computational/theory questions. NEXT78 complete,0new source solves;
 no live native job. No MLP24/attention22 neural refinement, old queue restart,
-broader factor search or clinical naming. NEXT78 planned, not executed; decompose
-the newly assembled endpoint contrast while retaining all selector/value outcomes.
-No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting and NEXT77
-source-endpoint assembly are closed. No newly optimized readout on new8.
+broader factor search or clinical naming. NEXT79 planned, not executed; develop
+conditional differential reading while retaining all selector/value outcomes.
+No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
+assembly and NEXT78 contrast accounting are closed. No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

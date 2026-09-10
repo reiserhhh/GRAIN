@@ -1,0 +1,27 @@
+{
+  "primary_commit": "241fd561b15e0d6ae1abd7707ee712837a3affe5",
+  "audit": {
+    "status": "PASS",
+    "fits": 0,
+    "new_neural_calls": 0,
+    "human_labels_read": false,
+    "application_packets": 12,
+    "private_evaluation_packets": 12,
+    "public_tables": 5,
+    "total_cpu_seconds": 4.273223,
+    "mode_identity_max_error": 3.1086244689504383e-15,
+    "old_mode_metric_max_error": 4.6906922790412864e-14,
+    "energy_identity_max_error": 8.326672684688674e-17
+  },
+  "files": {
+    "term_metrics.csv": "761561793018c80da3b73e6f1903df2a7354a2f6bd2f16c57aa48230a0a4cabf",
+    "factor_metrics.csv": "ef6fcac0ec2247a636be04496032bc2bcb96425ab614f63aacd2042cee00a368",
+    "joint_account.csv": "9b11e3310199e7efdc35ac8eac3ed14ac7e58a86acbcaf8b7762c382fa1be696",
+    "error_account.csv": "02d426f325d0fdf01408a255dbc0dfd65a50f7c5efae38c5c76f6250550c460f",
+    "source_reader_geometry.csv": "72aefe7c577adf216b5a4c09723f035b27d0753d31112866d549bc33056dd3d1"
+  },
+  "publisher_sha256": "64498e4a32c172ae71bdafa93485e7ed763b48f2fd20cb53dc204648238c2b14",
+  "scope": "Fixed two-query endpoint component contrast, not full L/personality scores. Author centering is descriptive only; signed covariance projections are not causal percentages.",
+  "cpu_scope": "Successful numeric stages including replay; provenance preflight and imports excluded.",
+  "reference": "source4LOO/new8all4 reused discovery panel; four GRAIN columns are not additional independent authors."
+}
