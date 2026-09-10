@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-seven finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-eight finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -828,18 +828,50 @@ and [output/transport plus attention theory](GRAIN_READER_OUTPUT_SEED_THEORY_V1.
 The same-token GRAIN interface remains the measurement direction for the native
 calculation; interpretation/TA coding remains a separate evidence-linked layer.
 
+## Twenty-eighth pass: identical output seed, actual contextual attention
+
+- NEXT39 complete: old4/new8, two natural queries, common fixed digit-logit
+  contrast. Source/new body-gradient query cosine .728/.657, versus original
+  probability .704/.649. Identical seed still gives different transport;
+  query state and layout remain jointly included, not isolated trait semantics.
+- Exact last-attention value/key pullback incorporates actual12 query heads,
+  2KV groups, rotary positions and captured downstream cotangents.24/24 BODY
+  normalized-input gradients pass fixed parity; maximum relativeL2 2.028e-6,
+  absolute6.603e-9. Includes only declared nonquery positions, not omitted final
+  query/residual routes disguised as a full all-position Jacobian.
+- New8 mean per-author key/value norm ratio N1.826,confirmation1.887. Omitting
+  key leaves mean field relative squared error .731/.743. Whole fields are
+  nearly orthogonal but6/64 new GRAIN projected actions have opposite channel
+  signs. Keep signed action composition, not positive-only importance weights.
+- Thus a concrete local program is J_j=sum_m a_mj[u_m+rho_mj*t_mj], where
+  rho compares a token value to the current whole-context summary. Current
+  q/k/v/g still come from native activations/gradients; this is an identified
+  computational dependency, not yet a full raw-text standalone predictor.
+-28 suffix forwards/24 backwards,44.410s plus3.302s loading; original score
+  replay exact. Fixed H16 F01 finite differences same sign, epsilon-scale error
+  4.98e-6/6.47e-6; do not equate them with last-layer derivative precision.
+- Implementation/main analysis frozen in24162d2 before collection.51 scoped
+  tests and6 byte-identical CSV replays; aggregate channel-effect follow-up is
+  cached only.24 explicit IDs exclude sidecars. No live job, Y, API or fitting.
+
+Read [actual attention report](../reports/grain_vector_mechanisms/FIXED_SEED_ATTENTION_REPORT_V1.md)
+and [conditional token-action theory](GRAIN_FIXED_SEED_ATTENTION_THEORY_V1.md).
+Next replace g with fixed source programs while retaining a/o from current
+forward geometry; no reset to unconstrained factor mining or clinical diagnosis.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38 finite candidates are closed, retaining useful
-mechanisms and contrary comparisons. NEXT39 fixes one output seed and develops
-the actual last-attention value/key mechanism before another empirical reader.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39 finite candidates are closed, retaining useful
+mechanisms and contrary comparisons. NEXT40 develops a source-fixed numerical
+attention reader, replacing the current downstream cotangent rather than fitting
+another unconstrained local-H regression.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT39 | How does identical output direction act through different query contexts? | Execute GRAIN_FIXED_SEED_ATTENTION_PLAN_V1; old4/new8 N/confirmation, common digit-logit contrast, native H16 gradient and analytic last-head value/key paths | At most28 forwards/24 backwards,300s native; same-seed comparison, fixed numerical parity and cache-only replay; no fitting/Y/head grid |
+| NEXT40 | Can source-fixed downstream reading recover the actual contextual action? | Execute GRAIN_SOURCE_COTANGENT_READER_PLAN_V1; same-query/pooled source mean g, current q/k/v/positions, full value+key versus value-only | Zero neural calls/fits/Y,120s numerical; restricted input-only predictions before targets, source4 LOO/new8 fixed, no target tuning |
 
 These are local computational/theory questions. Start by checking cached coverage
-and the actual attention architecture; no prefix rerun or old queue restart.
+and separating source g from current forward-only inputs; no old queue restart.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

@@ -1,5 +1,17 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT39 conditional attention mechanism delivered.**
+> Identical output seed still gives source/new query body cosines .728/.657;
+> original probability .704/.649. Actual last-attention value/key decomposition
+> with12heads/2KV/RoPE passes24/24 gradients, relative error<=2.03e-6.
+> New8 key/value norm ratios N1.826/confirmation1.887; selection is material,
+> not a negligible correction. This is a local mechanism, not human accuracy.
+>28 forwards/24 backwards,44.410s;51 tests/6 exact CSV replays, no live job.
+> [Report](../reports/grain_vector_mechanisms/FIXED_SEED_ATTENTION_REPORT_V1.md),
+> [theory](GRAIN_FIXED_SEED_ATTENTION_THEORY_V1.md),
+> [NEXT40 source-fixed cotangent program](GRAIN_SOURCE_COTANGENT_READER_PLAN_V1.md).
+> Whole-system goal ACTIVE; earlier next-step language below is historical.
+
 > **2026-09-10 newest: NEXT38 output coding/context mechanism delivered.**
 > N/confirmation final-hidden seed cosine .943/.954 on old4/new8, body gradient
 > .704/.649. Shared0-9 coding explains a concrete output-geometry component;

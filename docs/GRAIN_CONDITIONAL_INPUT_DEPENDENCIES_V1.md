@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第二十七轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第二十八轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -46,7 +46,8 @@ flowchart TD
 | 跨查询输入借用 | Phi_(q<-p)=[Phi0_q,standardize(R U_p)] | `query_direction_transfer.py`；donor仅提供同源折输入U，保留recipient目标与V | 旧4人N/确认输入重叠.662、TF约.260。新8人等权应用未保留专用方向优势；保留两批协议，不当量表共享方差 |
 | 新作者固定读法 | Jhat=sum_s Phi_s W_s V_s/(4T) | `reader_ensemble.py`；各源模型独立中心/尺度/基底，96系数堆栈先冻结 | 新8人自身作用r=.001/.121/.314；源联合32方向的真实梯度投影r=.836/.951/.876。方向表示保留，当前系数程序局部失配，oracle不是部署性能；H仍由模型前缀提供 |
 | 输出方向与传输 | b=p*(v-F)，s=W_A^T b，J=K^T s | `output_seed.py`；旧4/新8缓存与12行冻结权重，无新神经调用 | N/确认s余弦.943/.954、J为.704/.649；同一各向异性K也能改角度。T/F去概率尺度未恢复读法；NEXT39固定相同s来检验条件K |
-| 注意力解析作用 | a_j W_V^T g + a_j*((v_j-o)^T g)*W_K^T q/sqrt(d) | `attention_pullback.py`；q/k/v解析反传与有限差分测试 | 已有精确标准单head公式和上下文反号玩具实例；q、g、a依赖整段输入。NEXT39才做实际head/RoPE/GQA数值接合，不宣称已替代整个后缀 |
+| 注意力解析作用 | sum_m a_mj[u_m+rho_mj*t_mj]，包含RoPE/GQA | `fixed_seed_attention.py`；实际最后attention block的归一化BODY输入、q/k/v与下游g | 24/24解析梯度接合，最大相对误差2.03e-6；新作者key/value范数比1.83/1.89。当前g仍取自目标反向，NEXT40替换为源固定均值；不是块16或完整F的替代 |
+| 固定输出方向传输 | J_q=K_q^T W_A^T c，c固定 | `run_grain_fixed_seed_attention.py`；旧4/新8共同正文、N/确认原query状态与布局 | 相同seed下正文余弦.728/.657，直接显示条件传输差异；不是单靠两个不同seed的夹角推断K变化。L是新logit诊断，不是原概率F |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
 | 原生输出 | F_q(E,x) | 冻结后缀、候选logits及固定S映射 | 模型条件评分，不是问卷真值、自由生成解释或注意力的唯一因果路径 |
@@ -124,7 +125,8 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 
 ## 6. 可复算入口与下一步
 
-当前下一步是[NEXT39固定输出方向与实际attention分解](GRAIN_FIXED_SEED_ATTENTION_PLAN_V1.md)。
+当前下一步是[NEXT40源固定下游读法](GRAIN_SOURCE_COTANGENT_READER_PLAN_V1.md)。
+第二十八轮已将真实attention解析接合，见[条件token作用理论](GRAIN_FIXED_SEED_ATTENTION_THEORY_V1.md)。
 [第二十七轮理论](GRAIN_READER_OUTPUT_SEED_THEORY_V1.md)区分候选坐标、最终隐藏
 方向和正文梯度，同时提供值传输/选择变化的可验算公式。下面的历史步骤
 保留来源，不把早期“下一执行”当作当前排程。

@@ -93,7 +93,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L11 | 微观过程 -> 分布/响应/转移/互动/高阶路径 | M/E | 玩具世界证明机制可实现，不证明人类只由这些机制组成 | M3 atlas |
 | L12 | 局部机制组合 -> 介观与群体关系 | M/E | 组合可有反馈/抵消/支持集漂移；单边成功不保证复合成功 | M4 / cross-level contract |
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
-| L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | N/确认输出方向余弦旧4/新8为.943/.954，正文梯度.704/.649；共享回答编码与输入子空间重叠.662是不同几何。同一各向异性传输也能改角度，NEXT39固定相同输出方向 | output seed theory §§1-3; query direction transfer theory §§1-2 |
+| L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | NEXT39固定完全相同输出方向，旧4/新8正文梯度余弦仍.728/.657，显示条件传输差异；query状态与布局共同包含。原概率.704/.649与新logit目标分开，不当量表相关 | fixed seed attention theory §1; output seed theory §§1-3 |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT38排除T/F概率饱和主因；标准attention解析出值传输和依赖全局汇总的key选择变化。NEXT39固定输出方向并接合实际head；模型局部作用与心理解释继续分层 | output seed theory §§3-5; fixed seed attention plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT39真实最后attention的值/选择双作用24/24验算；key项不可忽略。下一步用源固定g替代当前反向目标，保留上下文a/o；解释rubric仍独立，不拿局部模型导数当心理标签 | fixed seed attention theory §§2-5; source cotangent reader plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -500,6 +500,22 @@ key作用+.25变-.50，而目标token/query/注意力权重全不变。这个解
 [理论](GRAIN_READER_OUTPUT_SEED_THEORY_V1.md)、
 [NEXT39](GRAIN_FIXED_SEED_ATTENTION_PLAN_V1.md)。77聚焦测试、9数值文件精确
 重放、0神经调用；两套系统的同token接合与独立辅助解释层均保留。
+
+### 第二十八轮补充：实际attention中可分离的条件读取
+
+同一输出s下正文J仍有query差异（旧4/新8余弦.728/.657），因此条件传输
+确实不同，不再仅是不同输出seed经过共同矩阵的歧义。query布局与状态仍
+共同包含。两层分别定义局部干预，不能用余弦变化计算心理信息损失。
+
+实际最后block12头/2KV/RoPE的值和key作用24/24复算，相对误差2.03e-6。
+新8人key/value逐作者范数比平均1.826/1.887，丢弃key误差.731/.743。
+GRAIN投影中仍有反号相抵，保留有符号加和而非只取正attention权重。
+
+[报告](../reports/grain_vector_mechanisms/FIXED_SEED_ATTENTION_REPORT_V1.md)、
+[理论](GRAIN_FIXED_SEED_ATTENTION_THEORY_V1.md)、
+[NEXT40源固定g程序](GRAIN_SOURCE_COTANGENT_READER_PLAN_V1.md)。28前向/24反向，
+44.410秒，51聚焦测试，6CSV精确重放。当前q/k/v/g仍有原模型依赖；下一步
+替换当前g，不冒称全部LLM推论已独立。整体goal继续ACTIVE。
 
 表内历史证据简称的可定位入口：
 - unified V8：[总体系](SUICA_UNIFIED_THEORY_SYSTEM_V8.md)；4W：[解释链](SUICA_4W_PERSON_INTERPRETER_THEORY.md)。
