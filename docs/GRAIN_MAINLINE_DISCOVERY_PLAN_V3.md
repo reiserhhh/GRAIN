@@ -1,6 +1,17 @@
 # GRAIN mainline discovery V3
 
-> **2026-09-10 newest: NEXT47 source-common MLP24 reader delivered.**
+> **2026-09-10 newest: NEXT48 source-query correction delivered; MLP24 refinement closed.**
+> New8 correction/operator r=.886208/.885192; total local contrast r=.976535/.976360,
+> SSE/zero=.060734/.061466. Source-only vectors, no new8 x or target construction.
+>192 actions/96 contrasts,4.078s plus4.095s replay,0 native/fit/Y/API;105 scoped tests.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_QUERY_CORRECTION_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_QUERY_CORRECTION_THEORY_V1.md),
+> [full-chain integration map](GRAIN_UPSTREAM_MECHANISM_INTEGRATION_V1.md).
+> Current d remains native. [NEXT49](GRAIN_UPSTREAM_ATTENTION_CHANNELS_PLAN_V1.md)
+> is planned: full Q/K/V upstream attention22 channels, not another MLP24 fit.
+>96 prefix JVPs/120s native,60s numeric; fixed location/source/readers/directions.
+
+> **Previous NEXT47; its NEXT48 request is completed above.**
 > Same frozen reader across new8: contrast r=.955274/.954853, SSE/zero=.091333/.092402;
 > negative final-T projection retained. Current x/gate dependence removed locally;
 > native upstream d remains. Source replacement/missing operator RMS=.013454/.024635.

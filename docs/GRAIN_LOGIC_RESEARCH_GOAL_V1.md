@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirty-six finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirty-seven finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1094,19 +1094,49 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_COMMON_COUNTERACTION_REP
 [theory](GRAIN_SOURCE_COMMON_COUNTERACTION_THEORY_V1.md),
 [NEXT48](GRAIN_SOURCE_QUERY_CORRECTION_PLAN_V1.md).
 
+## Thirty-seventh pass: query correction transfers; close MLP24-only refinement
+
+- Previous turn classified as progress: NEXT47 produced fixed source-common
+  local readers and actual source-excluded/new-author evidence, not a plan only.
+- NEXT48 completed after primary freeze `247fe90`: one source-query candidate,
+  unchanged common term, source4 exclusions/new8 all4, no fitted correction.
+  New8 current x/targets blocked; all8 use identical query/mode vectors.
+- Operator-term r=.886208/.885192, SSE/zero=.240669/.241317 on new8 own/pooled.
+  Total contrast r=.976535/.976360 vs common .955274/.954853; SSE/zero drops
+  .091333→.060734 and .092402→.061466. Both declared operator and separately
+  reported total-error conditions pass. This is local model action, not newY r.
+- Exact source/query/parity error and squared-error-change identities retained.
+  New8 own query error RMS=.012086 versus omitted term .024635; source error
+  .013454 unchanged. Source4 F02 operator SSE/zero>1 remains in the full table.
+-192 actions/96 contrasts,4.077576s plus4.094619s replay;0 native/fit/Y/API.
+ 12 exact array/8 CSV replays; independent metric difference1.222e-15.
+ 105 scoped tests pass,20 existing warnings. AppleDouble audit glob corrected
+  to explicit manifest paths without enabling pickle loading; frozen code unchanged.
+- MLP24 refinement family now closed as planned. Current input d still needs
+  native upstream transport. New full-chain map separates local extraction,
+  current text-to-state dependencies and psychological interpretation. NEXT49
+  tests attention22 full Q/K/V channels including a propagated final-query tangent,
+  rather than pursuing another layer24 accuracy decimal.
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_QUERY_CORRECTION_REPORT_V1.md),
+[theory](GRAIN_SOURCE_QUERY_CORRECTION_THEORY_V1.md),
+[integration map](GRAIN_UPSTREAM_MECHANISM_INTEGRATION_V1.md),
+[NEXT49](GRAIN_UPSTREAM_ATTENTION_CHANNELS_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47 finite candidates are closed,
-retaining useful mechanisms and contrary comparisons. NEXT48 tests one source
-query correction, then closes the MLP24-only refinement family.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48 finite candidates
+are closed, retaining useful mechanisms and contrary comparisons. No additional
+MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT48 | Is a component of the missing query-operator contrast source-transferable? | Execute GRAIN_SOURCE_QUERY_CORRECTION_PLAN_V1; source-query difference vector, current d only |60s numeric,0 native/fit/Y; evaluate operator target and total error separately; then return to full upstream dependency |
+| NEXT49 | How does attention22 select and write the transported GRAIN signal? | Execute GRAIN_UPSTREAM_ATTENTION_CHANNELS_PLAN_V1; full-sequence input tangents and exact Q/K/V split under unchanged w* |96 bounded prefix JVPs/120s native,60s numeric; no scores/fit/Y; full-vector parity and signed channels, then choose upstream extraction or full-chain integration |
 
 These are local computational/theory questions. Reuse shared source vectors and
-saved tangents; needed pre-MLP24 primal states are now captured. NEXT48 must not
-repeat that native collection. No old queue restart, broader factor search or clinical naming.
+saved H16 inputs; last-position-only tangents cannot replace a full sequence at
+attention22. Do not repeat MLP24 captures. No old queue restart, broader factor
+search or clinical naming. NEXT49 is planned, not already executed.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 
