@@ -4,7 +4,7 @@
 import numpy as np
 import pytest
 
-from scripts.analyze_grain_query_baseline import corr, field_geometry
+from scripts.analyze_grain_query_baseline import corr, field_geometry, source_covariance
 
 
 def test_raw_constant_is_not_roundoff_correlation():
@@ -26,3 +26,16 @@ def test_cancelling_sources_have_shared_energy_not_mean_field():
     assert g["top1_energy_ratio"] == pytest.approx(1)
     assert g["common_field_energy_ratio"] == pytest.approx(0)
     assert g["cosine_mean"] == pytest.approx(-1)
+
+
+def test_reader_position_covariance_of_quadratic_source_tangents():
+    model = {
+        "source_m": np.array([[[1.0]], [[2.0]]]),
+        "source_r": np.zeros((2, 1, 1)),
+        "source_jm": np.array([[[[2.0]]], [[[4.0]]]]),
+        "source_jr": np.zeros((2, 1, 1, 1)),
+    }
+    means, cov = source_covariance(model)
+    assert means["m"].item() == pytest.approx(1.5)
+    assert cov["m"].item() == pytest.approx(0.5)
+    assert cov["r"].item() == pytest.approx(0)

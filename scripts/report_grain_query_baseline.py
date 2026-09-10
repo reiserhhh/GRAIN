@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+"""Publish aggregate query-directed baseline evidence and numerical reproduction."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import shutil
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from scripts.report_grain_logic_review import edge_inventory
+from scripts.run_grain_query_baseline import verified
+from scripts.run_grain_real_author_path import BASE, read, sha, write
+
+
+def publish(test_count):
+    """Check repeated source-fixed numerical construction, exporting no author rows."""
+    out = BASE / "logic_query_baseline_v1"
+    verified(out)
+    first, second = out / "numerical", out / "numerical_replay"
+    checks = {}
+    for p in (first, second):
+        f = read(p / "prediction_freeze.json")
+        if f["source_freeze_sha256"] != sha(out / "source_freeze.json"):
+            raise ValueError("Source derivatives changed")
+        for name, digest in f["files"].items():
+            if sha(p / name) != digest:
+                raise ValueError("Frozen numerical output changed")
+        m = read(p / "analysis_r3/manifest.json")
+        if m["analyzer_sha256"] != sha(
+            ROOT / "scripts/analyze_grain_query_baseline.py"
+        ) or m["prediction_freeze_sha256"] != sha(p / "prediction_freeze.json"):
+            raise ValueError("Analyzer/construct provenance mismatch")
+    for name, digest in read(first / "prediction_freeze.json")["files"].items():
+        checks["construction/" + name] = digest == sha(second / name)
+    for name, digest in read(first / "analysis_r3/summary.json")["files"].items():
+        checks["analysis/" + name] = (
+            digest
+            == sha(first / "analysis_r3" / name)
+            == sha(second / "analysis_r3" / name)
+        )
+        if (
+            name != "source_origin_covariance.csv"
+            and sha(first / "analysis_r2" / name) != digest
+        ):
+            raise ValueError(
+                "Source-origin identity changed prior numerical conclusions"
+            )
+    if len(checks) != 12 or not all(checks.values()):
+        raise ValueError("Twelve numerical outputs must reproduce exactly")
+    dest = ROOT / "reports/grain_vector_mechanisms/query_baseline_tables_v1"
+    dest.mkdir(exist_ok=True)
+    names = (
+        "baseline_comparison.csv",
+        "paired_score_mse.csv",
+        "directional_error_account.csv",
+        "derivative_checks.csv",
+        "source_gradient_geometry.csv",
+        "source_origin_covariance.csv",
+    )
+    for name in names:
+        shutil.copyfile(first / "analysis_r3" / name, dest / name)
+    write(
+        dest / "summary.json",
+        {
+            k: v
+            for k, v in read(first / "analysis_r3/summary.json").items()
+            if k != "files"
+        },
+    )
+    write(dest / "construction_summary.json", read(first / "construction_summary.json"))
+    write(dest / "native_execution.json", read(out / "run_status.json"))
+    write(
+        dest / "reproduction.json",
+        {
+            "exact_files": checks,
+            "scoped_tests_passed": test_count,
+            "repeated_neural_collection": False,
+        },
+    )
+    d = pd.read_csv(dest / "baseline_comparison.csv")
+    rows = []
+    labels = {
+        "source_affine": "查询定向仿射读法",
+        "source_kernel": "同源相似度核",
+        "source_mean": "同源均值",
+        "mean_action_only": "仅正文均值作用（诊断）",
+        "retained_action_only": "仅保留位置作用（诊断）",
+    }
+    for r in d.itertuples():
+        interval = (
+            "常数"
+            if pd.isna(r.score_r)
+            else f"{r.score_r:.3f} [{r.r_low:.3f}, {r.r_high:.3f}]"
+        )
+        rows.append(
+            f"| {labels[r.arm]} | {interval} | {r.score_rmse:.6f} | {r.author_centered_logit_mse_over_variation:.3f} |"
+        )
+    report = """# 查询定向读法：四个源导数恢复了跨作者的条件评分变化
+
+2026-09-10，第二十轮，NEXT32完成。**与普通向量相似度相比，从原模型中
+提取“指定查询读取哪些方向”，能形成更有效的数学读法。** 在20名旧评估
+作者上，相关r=.727，源匹配相似度核为-.050；评分RMSE降低约25.3%。
+
+## 1. 同一输入，不同读取
+
+四名旧固定N参考作者提供端点及导数，另外20名旧作者负责评估。没有用这
+20人的端点拟合、选权重或校准；没有读取人的量表、MEPS或lockbox。
+这里有梯度访问优势，不是同信息预算的传统监督学习竞赛。
+
+目标是固定P/Q、12评论各自均值化之后的原模型N评分B。不是完整自然文本F，
+也不是与真人神经质量表r=.727。输入仍来自原模型块16编码；新读出阶段为
+固定矩阵收缩和原始候选字母S换算，不执行完整LLM推理。
+
+测量每个源的候选logit导数：评论均值的导数等于该评论所有token导数之和，
+保留位置R则逐位置保留。每个源构造局部仿射函数，再取等权平均：
+
+    zhat(c) = mean_r [z_r + J_Mr:(M-M_r) + J_Rr:(R-R_r)]
+            = b + Jbar_M:M + Jbar_R:R
+    Bhat(c) = S_original(zhat(c))
+
+R可能包含上游正文信息，不能当作纯噪声。源/目标角色网格一致，但布局有
+变化，所以可迁移性由本次数据说明，不将L从整个理论中删除。
+
+## 2. 可用效果与误差账
+
+全部比较为相同4源/20评估协议；不能将上一轮18/6 CV直接当匹配对照。
+CI为固定预测、作者bootstrap2000次的点位区间，旧作者并非新招募独立复现。
+
+| 读法 | 模型条件评分r及95%CI | 评分RMSE | 作者中心化logit误差/原变化 |
+|---|---:|---:|---:|
+__TABLE__
+
+仿射对kernel的配对MSE差约-.000108，95%CI[-.000222,-.000005]；
+对均值约-.000098，CI[-.000209,.000003]。正文与保留位置各有作用，联合
+恢复的变化更多。仅R相关.596，但RMSE较差，不能只凭相关就升级某个单项。
+
+**方向读取更好，绝对向量校准却不是处处更好。** 全logit RMSE仿射.0980、
+kernel.0828；但作者中心化后的误差/原变化为.524与1.061。仿射整体偏移MSE
+.006689、变化MSE.002923；kernel为.000940/.005916。两项精确相加解释
+整体误差。不能把共同候选偏移与作者间差异混成同一个“预测质量”。
+
+## 3. 局部导数是真实作用，不只是相似度
+
+一次有界原模型测量：20前向、40反向目标，载模后38.41秒，0新prefix调用、
+0神经训练。原生中心化logit端点重放误差0。
+
+四个源、每个两种eps，共8个向量差分检查；其中80个候选分量全部同号。
+最大相对向量误差3.50%；eps=.002时最大1.25%。这些是局部数值检查，
+不是80个独立被试或临床干预。
+
+四源共同Jacobian矩阵能量占比约74.7%，R为80.6%，M为46.0%。读法可有
+共同部分，但作者位置不同仍产生不同分数。此比例是固定坐标中的函数参数
+几何，不是人格方差比例；四参考也不足以确定总体有效维数。
+
+## 4. 新的理论接点：读法与位置的配对不能丢
+
+同一个仿射平均还可以精确写成：
+
+    zhat(c) = zbar + Jbar(c-cbar) - C_Jc
+    C_Jc = mean_r [(J_r-Jbar)(c_r-cbar)]
+
+四源中的C_Jc RMS=.052493（M .039713、R .047584），这条公式复算20作者
+的同一预测，最大误差2.45e-15，未拟合新参数。只平均“作者位置”和“读取
+方向”会漏掉它们的配对项。这给GRAIN以往同材料共变逻辑增加了一个明确
+的函数内部接点；它不是新心理因子，也尚未通过删掉该项来校准或改进预测。
+
+进一步的数学接口是Jbar^T W Jbar：可按“对某查询产生多大作用”定义文本
+位置间的距离。它是可能退化的伪度量，不是先验人格空间。理论参照包括
+[主动子空间](https://arxiv.org/abs/1408.0545)、
+[局部梯度解释](https://arxiv.org/abs/1312.6034)与
+[拉回信息几何](https://proceedings.mlr.press/v151/arvanitidis22b.html)。
+本轮只验证了上述读法和局部作用，没有宣称发明这些数学原理。
+
+## 5. 下一步与复现
+
+保留这次可用基线，执行[NEXT33同源完整组装](../../docs/GRAIN_QUERY_DIRECTED_PAIR_ASSEMBLY_PLAN_V1.md)：
+在同4源/20评估协议里重新构造单评论及mixed函数，把基线接回完整条件pair。
+只需旧缓存与最多5个小数值拟合，0新神经调用。不混用旧18源系数，不继续
+调最终评分或删除C_Jc。若完整组装有用，再推进早层输入运输与另行外部连接。
+
+__TESTS__相关测试通过；5构造+7分析文件精确重放，重用同一已冻结原生导数，
+没有重复神经采集。analysis/analysis_r2留存；r3仅加入源位置协方差恒等式，
+前6文件与r2相同。原生测量与数值任务均已结束，本轮无遗留后台任务。
+只公开聚合表，作者、系数、输入状态和逐作者预测在ignored results。
+
+- [完整公式与理论界限](../../docs/GRAIN_QUERY_DIRECTED_BASELINE_THEORY_V1.md)
+- [结果表与复算记录](query_baseline_tables_v1/)
+- 实现：`grain_research/vector_mechanisms/query_baseline.py`
+- 实验：`scripts/run_grain_query_baseline.py`
+- 分析：`scripts/analyze_grain_query_baseline.py`
+
+在独立库使用parent虚拟环境Python。已有冻结源数据只需重放数值阶段，
+以下construction应选尚未存在的新目录，不需要重新采集原生导数：
+
+```bash
+python scripts/run_grain_query_baseline.py construct --name logic_query_baseline_v1 --construction numerical_new
+python scripts/analyze_grain_query_baseline.py --source logic_query_baseline_v1 --construction numerical_new --name analysis_r3
+python -m pytest -q tests/test_grain_query_baseline.py tests/test_grain_query_baseline_analysis.py
+```
+
+首次原生构造另用prepare/collect子命令与新实验目录，依赖本地模型及旧私有
+状态缓存；公开报告不包含这些数据。不要以复现表格为由自动重启原生采集。
+""".replace("__TABLE__", "\n".join(rows)).replace("__TESTS__", str(test_count))
+    (
+        ROOT / "reports/grain_vector_mechanisms/QUERY_DIRECTED_BASELINE_REPORT_V1.md"
+    ).write_text(report)
+    (ROOT / "docs/GRAIN_SYSTEM_LOGIC_EDGES_V1.json").write_text(
+        json.dumps(edge_inventory(), indent=2) + "\n"
+    )
+    print(
+        {
+            "exact_files": len(checks),
+            "public_tables": len(names),
+            "native_collection_repeated": False,
+        }
+    )
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser()
+    p.add_argument("--test-count", type=int, required=True)
+    publish(p.parse_args().test_count)

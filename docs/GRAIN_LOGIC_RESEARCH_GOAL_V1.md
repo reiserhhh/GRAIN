@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, nineteen finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -577,15 +577,48 @@ Read [complete pair report](../reports/grain_vector_mechanisms/COMPLETE_PAIR_INT
 and [interface/reading theory](GRAIN_COMPLETE_PAIR_INTERFACE_THEORY_V1.md).
 Planbf21c94, implementation6f09daf. No release, lockbox, human-label or API change.
 
+## Twentieth pass: query-directed source reading recovers baseline differences
+
+- NEXT32 complete with the inherited4 N references/20 evaluation authors. This
+  is a separate source-matched design, not a comparison to18/6 CV. Source
+  candidate Jacobians measured on fixed-PQ mean-null inputs;20 forwards/40
+  backward targets/38.41 seconds after load. Native logit replay0, no prefix
+  calls, new neural training or human labels.
+- Source-local affine functions averaged without fitted weights yield score
+  r=.7266 [.4429,.8847], RMSE=.011660. Same4-source context kernel r=-.0496,
+  RMSE=.015616; paired MSE difference CI[-.000222,-.000005]. Versus source mean
+  the interval narrowly includes zero. Gradient access is extra information,
+  not an equal-information data-efficiency claim.
+- Repeated-comment means require sums of token derivatives, verified by known
+  linear observer and8 native vector finite differences.80/80 candidate signs
+  agree; maximum relative error3.50%, at eps=.002 at most1.25%.
+- Author-centered logit MSE/variation=.524 (kernel1.061), although whole-logit
+  RMSE is worse because of shared offsets. Offsets and individual variation
+  are separately accounted without evaluation calibration.
+- Shared source Jacobian energy is74.7% in fixed M/R coordinates (R80.6%,M46.0%).
+  This is operator geometry, not personality variance. A query-induced pullback
+  pseudometric connects response directions to GRAIN's group-referenced geometry.
+- Exact source-affine identity: zhat=zbar+Jbar(c-cbar)-C_Jc. Reader-position
+  covariance RMS=.052493; the identity reproduces predictions within2.45e-15.
+  Dropping it would change the estimator; no such alternative was selected.
+- Native source packets frozen once;5 construction+7 analysis files reproduce
+  from those same packets. No repeated native collection. Original analyses
+  retained; source-origin accounting changes no prior evaluated prediction.
+
+Read [query-directed baseline report](../reports/grain_vector_mechanisms/QUERY_DIRECTED_BASELINE_REPORT_V1.md)
+and [query reading/geometry theory](GRAIN_QUERY_DIRECTED_BASELINE_THEORY_V1.md).
+Native implementationc70332e, first analyzer33966d9. Positive baseline retained;
+next compose a complete source-matched conditional function before new tuning.
+
 ## Next loop, in order
 
-NEXT24/25/26 finite candidates are closed with useful mechanisms and negative
-promotion decisions preserved. Execute NEXT32's query-directed baseline plan,
-not another full-score kernel grid. NEXT31 remains secondary.
+NEXT24/25/26/32 finite candidates are closed, retaining both useful mechanisms
+and negative controls. Execute NEXT33's complete source-matched pair assembly.
+NEXT31 remains secondary unless configuration reading becomes the next bottleneck.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT32 | Which context directions does the conditional baseline actually read? | Execute GRAIN_QUERY_DIRECTED_BASELINE_PLAN_V1:4 old source N mean-null Jacobians, equal affine candidate, source-matched context Ridge/mean,20 old evaluation authors | At most40 backward targets/24 forwards/180 seconds after load. Source finite differences, frozen predictions, held baseline and signed contributions. Native layout remains explicit; compare4/20, not old18/6 as matched control |
+| NEXT33 | Does the useful query-directed baseline improve the complete conditional pair function? | Execute GRAIN_QUERY_DIRECTED_PAIR_ASSEMBLY_PLAN_V1:4 old N sources/20 evaluation, source-only geometry/singleton/mixed functions, both inherited Fourier inputs and pairs, fixed affine baseline | Five numerical fits maximum,0 neural calls, source-file-denied full-score replay. Compare same-source kernel baseline and explicit oracle diagnoses; retain local-action/whole-score separation. Do not reuse18-source coefficients |
 | NEXT31 | Can token-specific native reading be represented by a few direction-by-position factors without losing GRAIN-relevant action? | Use the12 saved body-gradient fields; distinguish uniform reader, nonuniform low-rank reading and irreducible direction variation; fixed ranks and actual tangent-action accounting, no labels | Only prioritize if it supplies NEXT26's selected interface. Do not confuse gradient-energy capture with action capture, or self-reconstruction with cross-author extraction |
 
 These are local computational/theory questions. Start by checking cached coverage;

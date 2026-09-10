@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "source_authors": 4,
+  "evaluation_authors": 20,
+  "native_logit_replay_max": 0.0,
+  "error_assembly_max": 1.5612511283791264e-16,
+  "error_identity_max": 6.938893903907228e-18,
+  "source_disagreement": {
+    "per_source_score_sd_mean": 0.009348817458005842,
+    "per_source_score_sd_max": 0.017192574820286178,
+    "aggregate_prediction_score_sd": 0.008615606809476605,
+    "is_calibrated_uncertainty": false
+  },
+  "derivative_relative_error_max": 0.03503734286660465,
+  "derivative_signs": 80,
+  "derivative_candidate_checks": 80,
+  "human_labels_read": false,
+  "new_neural_calls": 0
+}

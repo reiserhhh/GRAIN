@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第十九轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第二十轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -50,6 +50,7 @@ flowchart TD
 | 联合作用 | Δz_ij，沿v的幅度及正交部分 | `joint_readout.py`，固定对称核/四折 | 可读部分混合logits；最终评分组装仍用真实单评论端点z_add |
 | 条件作用矩 | mu、M、V，energy=norm(mu)^2+trace(V) | `conditional_energy.py`，同折外作者的正核混合分布；0模型调用 | 矩恒等式闭合，未优于平均强度基线；保留旧signed读法。分布评分相对均值评分改变很小，且仍需实际z_add，不是新完整推论器 |
 | 完整条件N pair | S(z0_hat+di_hat+dj_hat+mixed_hat) | `complete_pair.py`，M/R/layout+固定Fourier输入，4-fold源拟合 | 禁读当前端点可独立复算；pooled r=-.107/.0006，基线/单片段读法未恢复作者差异。不替换原评分器；块16输入和源神经构造资产仍存 |
+| 查询定向N基线 | S(b+Jbar_M:M+Jbar_R:R) | `query_baseline.py`，4旧源Jacobian编译、20作者测试；不借当前端点 | 模型条件评分r=.727，源匹配kernel=-.050；是B而非完整F。块16输入仍存、布局运输为经验近似；尚未接新完整pair |
 | 效标与解释 | Corr/response/criterion | 冻结之后连接原有自评；保持量表、模型、行为通道区分 | 不据最高Y相关选择某个坐标/函数；无新增真人或日常行动效标 |
 
 ## 3. 完整F与条件B的精确关系
@@ -92,6 +93,7 @@ I是两种操作的非加和。三者不是互不相关的心理变量，操作�
 | b00 + Phi_M + Phi_R_hat | 给定R位移后的Phi_R_hat | 当前作者b00(L)、Phi_M；原模型R输入；源参考矩阵 | 明确构造b00/Phi_M、条件敏感度及轻量R输入，再比较同一个B目标 |
 | S(z_add + mixed_hat)-S(z_add) | 混合logits预测、S数值映射 | z_add=zi+zj-z0，来自当前作者真实单评论端点；原模型评论状态 | 完整logit基线/单评论作用及输入提取，或把目标明确限定为局部修正 |
 | NEXT26完整条件pair候选 | 基线+单片段+混合logits及原S，全部源固定 | 无当前作者端点；仍用块16输入及源固定资产 | 运行依赖已闭合，先修查询定向基线的函数忠实度，再谈早层输入运输 |
+| NEXT32定向基线 | 源仿射平均及S换算，预测阶段纯数值 | 无当前作者端点；源梯度来自原后缀、M/R来自原前缀 | 已有用的B读法，按4源协议重建完整pair的单片段/mixed，不能拼接旧18源参数当匹配检验 |
 | 四层已编译条件程序 | 原文→早层输入→固定多项读出 | 私有源参照与4层权重属于固定构造资产，不读取新作者teacher端点 | 这是已经存在的另一轻量路径；逐项测试新机制能否迁入，而非直接宣布已替代 |
 
 这些依赖不使局部实验无效：它们告诉我们该保留哪个机制、下一步该构造哪个
@@ -133,5 +135,8 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 - 第十九轮[NEXT26报告](../reports/grain_vector_mechanisms/COMPLETE_PAIR_INTERFACE_REPORT_V1.md)：
   已用M/R/layout拟合z_0与单评论增量，禁读端点仍能完整复算；但基线及作者
   差异读法失效，故不升级预测器。输入仍来自块16，不改旧锁箱、评分器或MEPS。
-- 下一执行为[NEXT32查询定向基线](GRAIN_QUERY_DIRECTED_BASELINE_PLAN_V1.md)：
-  用4个旧源的条件Jacobian构造定向读法，而非继续相似度核/交互/能量网格。
+- 第二十轮[NEXT32报告](../reports/grain_vector_mechanisms/QUERY_DIRECTED_BASELINE_REPORT_V1.md)：
+  4源Jacobian在20作者恢复B的差异r=.727，匹配kernel=-.050。80/80候选方向
+  同号，读法与源位置协方差项精确保留。可用的基础读法已出现。
+- 下一执行为[NEXT33同源完整组装](GRAIN_QUERY_DIRECTED_PAIR_ASSEMBLY_PLAN_V1.md)：
+  保持4源/20评估，重建单片段及mixed函数；最多5个小数值拟合、0新神经调用。

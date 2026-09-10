@@ -96,7 +96,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 现有query-last因果布局允许共同正文、不同P/Q；原生梯度场N/寻求确认余弦.704，TF与二者.027/.093。属于模型局部读法及候选字母条件，不是量表相关 | native material reader report §§1,3 |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
-| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | 完整N pair程序禁读端点可重放，但pooled r=-.107/.0006；基线未恢复作者差异。旧相邻强度r=.486/.476及局部mixed保留，下一步查询定向基线而非二阶矩校准 | complete pair report §§2-4; conditional energy report §§2-3 |
+| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | N基线的4源Jacobian读法在20作者上r=.727，匹配核-.050，评分RMSE降25.3%。原pair程序未恢复差异的结果保留；下一步同4源重组完整pair，不混用18源参数 | query-directed baseline report §§1-3; complete pair report §§2-4 |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
 | L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 旧E5的Cw仍精确；原生共同token张量经Jacobian得到T=Cw+localized。仅平均方向读法的相对作用误差.968/.998/1.005，需保留位置特异读取；不推出所有H均查询无关 | native material reader report §2; material geometry report §4 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 完整F=B+A+Q+I等恒等式保留；NEXT26消除条件N pair的当前端点依赖，但完整读法未恢复作者差异，块16编码仍需。执行闭合、信息保留、函数忠实三者分别判断 | complete pair interface theory §§1-4; conditional input dependencies §§1-5 |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT32的条件N基线数值读法恢复模型差异r=.727；仍是B而非完整F或人类效标。源梯度/块16输入依赖明确。下一步先接完整pair，再谈早层输入与人的连接 | query-directed baseline theory §§1-2; conditional input dependencies |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -397,6 +397,23 @@ r=-.164、折内.010，误差大于源均值；给真mixed也无法救回。因�
 [NEXT32查询定向方案](GRAIN_QUERY_DIRECTED_BASELINE_PLAN_V1.md)。
 
 ## 6. 本轮文献与执行入口
+
+### 第二十轮补充：查询定向的基础读法
+
+四个旧N参考作者提供条件候选Jacobian，另外20作者测量数值读法；同源核
+r=-.050，查询仿射r=.727 [.443,.885]，评分RMSE降25.3%。这证明了本地
+“指定查询所读方向”的可用性，不是只增加相似度特征。原测量20前向/
+40反向目标/38.41秒；8个向量差分的80候选分量同号。
+
+作者中心化logit误差/变化=.524 versus kernel1.061，整体向量误差却受共同
+偏移影响。读法平均还有来源明确的配对项：zhat=zbar+Jbar(c-cbar)-C_Jc，
+C_Jc的源RMS=.052493，复算误差2.45e-15。源位置与源读取不能任意拆开平均。
+它把已有同材料共变思想接到了一个可独立算的条件函数。
+
+[报告](../reports/grain_vector_mechanisms/QUERY_DIRECTED_BASELINE_REPORT_V1.md)、
+[作用几何理论](GRAIN_QUERY_DIRECTED_BASELINE_THEORY_V1.md)、
+[NEXT33同源完整组装](GRAIN_QUERY_DIRECTED_PAIR_ASSEMBLY_PLAN_V1.md)。
+本轮用固定块16输入与源导数；临床解释和人的外部效标没有由这次模型r替代。
 
 表内历史证据简称的可定位入口：
 - unified V8：[总体系](SUICA_UNIFIED_THEORY_SYSTEM_V8.md)；4W：[解释链](SUICA_4W_PERSON_INTERPRETER_THEORY.md)。

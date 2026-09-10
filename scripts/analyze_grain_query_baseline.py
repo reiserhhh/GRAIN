@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT))
 from grain_research.vector_mechanisms.comment_carrier import score
 from grain_research.vector_mechanisms.complete_pair import error_account
 from grain_research.vector_mechanisms.joint_readout import centered_logits
+from grain_research.vector_mechanisms.query_baseline import contract
 from scripts.analyze_grain_conditional_energy import author_draws, ci
 from scripts.analyze_grain_conditional_energy import corr as _corr
 from scripts.run_grain_joint_carrier_readout import OLD, check
@@ -62,6 +63,24 @@ def field_geometry(jacobians):
     }
 
 
+def source_covariance(model):
+    """Exact reader-position covariance in the average of source affine functions."""
+    means = {k: np.asarray(model["source_" + k]).mean(0) for k in ("m", "r")}
+    cov = {
+        k: np.mean(
+            [
+                contract(j, x - means[k])
+                for j, x in zip(
+                    model["source_j" + k], model["source_" + k], strict=True
+                )
+            ],
+            axis=0,
+        )
+        for k in ("m", "r")
+    }
+    return means, cov
+
+
 def analyze(out, construction, name):
     """Read cached20 evaluation endpoints only after construction freeze is verified."""
     verified(out)
@@ -87,6 +106,39 @@ def analyze(out, construction, name):
     ]
     with np.load(built / "private_predictions.npz") as z:
         pred = dict(z)
+    with np.load(built / "private_model.npz") as z:
+        model = dict(z)
+    means, cov = source_covariance(model)
+    with np.load(built / "private_inputs.npz") as z:
+        cm = z["M"].reshape(20, 12, 1536)
+        cr = z["R"].reshape(20, 136, 1536)
+    reconstructed = np.array(
+        [
+            centered_logits(
+                model["source_z"].mean(0)
+                + contract(model["jm"], m - means["m"])
+                + contract(model["jr"], r - means["r"])
+                - cov["m"]
+                - cov["r"]
+            )
+            for m, r in zip(cm, cr, strict=True)
+        ]
+    )
+    covariance_identity = float(np.max(abs(reconstructed - pred["logits"])))
+    if covariance_identity > 1e-12:
+        raise ValueError("Source reader-position covariance identity failed")
+    pd.DataFrame(
+        [
+            {
+                "source_authors": 4,
+                "mean_covariance_rms": np.sqrt(np.mean(cov["m"] ** 2)),
+                "retained_covariance_rms": np.sqrt(np.mean(cov["r"] ** 2)),
+                "total_covariance_rms": np.sqrt(np.mean((cov["m"] + cov["r"]) ** 2)),
+                "covariance_identity_max": covariance_identity,
+                "new_fits": 0,
+            }
+        ]
+    ).to_csv(dest / "source_origin_covariance.csv", index=False)
     actual, values = [], None
     for r in authors:
         packet = read(OLD / "private_packets" / f"author_{r['index']:03d}.json")
@@ -115,7 +167,7 @@ def analyze(out, construction, name):
         p = np.array([score(a, values) for a in z])
         score_arrays[arm] = p
         lo, hi, _ = ci([corr(y[ix], p[ix]) for ix in draws])
-        predvar = z - z.mean(0)
+        predvar = np.zeros_like(z) if np.all(np.ptp(z, axis=0) == 0) else z - z.mean(0)
         actvar = actual - actual.mean(0)
         metrics.append(
             {
@@ -127,9 +179,15 @@ def analyze(out, construction, name):
                 "score_rmse": np.sqrt(np.mean((y - p) ** 2)),
                 "score_mae": np.mean(abs(y - p)),
                 "actual_score_sd": y.std(),
-                "predicted_score_sd": p.std(),
+                "predicted_score_sd": 0.0 if np.ptp(p) == 0 else p.std(),
                 "score_mse_over_global_variance": np.mean((y - p) ** 2) / y.var(),
                 "logit_rmse": np.sqrt(np.mean((actual - z) ** 2)),
+                "logit_offset_mse": float(np.mean((actual - z).mean(0) ** 2)),
+                "logit_variation_mse": float(np.mean((actvar - predvar) ** 2)),
+                "score_offset_mse": float(np.mean(y - p) ** 2),
+                "score_variation_mse": float(
+                    np.mean(((y - y.mean()) - (p - p.mean())) ** 2)
+                ),
                 "author_centered_logit_mse_over_variation": np.mean(
                     (actvar - predvar) ** 2
                 )
@@ -234,6 +292,7 @@ def analyze(out, construction, name):
         "private_score_predictions.csv",
         "derivative_checks.csv",
         "source_gradient_geometry.csv",
+        "source_origin_covariance.csv",
     ]
     write(
         dest / "summary.json",

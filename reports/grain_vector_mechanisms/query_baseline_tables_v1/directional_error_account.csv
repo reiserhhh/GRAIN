@@ -1,0 +1,2 @@
+square_constant_error,square_mean_action,square_retained_action,cross_constant_error_mean_action,cross_constant_error_retained_action,cross_mean_action_retained_action,full_mse,identity_error
+0.006425298212116104,0.0034916170891826784,0.005662907008280899,-0.0030357886143367956,-0.0030819840113249205,0.00015037395331417362,0.00961242363723214,-5.421010862427522e-19

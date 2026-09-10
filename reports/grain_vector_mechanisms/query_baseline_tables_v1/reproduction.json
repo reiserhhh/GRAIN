@@ -1,0 +1,18 @@
+{
+  "exact_files": {
+    "construction/construction_summary.json": true,
+    "construction/private_inputs.npz": true,
+    "construction/private_kernel_model.npz": true,
+    "construction/private_model.npz": true,
+    "construction/private_predictions.npz": true,
+    "analysis/baseline_comparison.csv": true,
+    "analysis/paired_score_mse.csv": true,
+    "analysis/directional_error_account.csv": true,
+    "analysis/private_score_predictions.csv": true,
+    "analysis/derivative_checks.csv": true,
+    "analysis/source_gradient_geometry.csv": true,
+    "analysis/source_origin_covariance.csv": true
+  },
+  "scoped_tests_passed": 64,
+  "repeated_neural_collection": false
+}

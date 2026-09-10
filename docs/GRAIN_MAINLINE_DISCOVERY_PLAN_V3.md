@@ -1,5 +1,18 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT32 query-directed baseline delivered; logic goal ACTIVE.**
+> Four old N reference Jacobians, twenty old evaluation authors: source-affine
+> conditional score r=.727 [.443,.885], matched source kernel r=-.050;
+> score RMSE .011660 versus .015616. This is model-response fidelity, not human
+> personality accuracy. Source reader-position covariance is retained exactly.
+>64 scoped tests and12 exact numerical replays;20 native forwards/40 backward
+> targets complete, no remaining process. Block16 input encoding remains.
+> [Report](../reports/grain_vector_mechanisms/QUERY_DIRECTED_BASELINE_REPORT_V1.md),
+> [formulas](GRAIN_QUERY_DIRECTED_BASELINE_THEORY_V1.md),
+> [next NEXT33](GRAIN_QUERY_DIRECTED_PAIR_ASSEMBLY_PLAN_V1.md): same4-source
+> complete conditional pair assembly, five small fits maximum, zero neural calls.
+> Historical next-step statements below are superseded by the active goal ledger.
+
 > **2026-09-10 current routing: whole-system logic goal ACTIVE.**
 > [Logic atlas](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md),
 > [execution plan](GRAIN_LOGIC_RESEARCH_PLAN_V1.md),
