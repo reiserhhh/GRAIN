@@ -101,3 +101,12 @@ def test_undefined_alignment_not_imputed_and_bad_support_rejected():
     ]:
         with pytest.raises(ValueError):
             f.partition(l, x)
+
+
+def test_public_inventory_excludes_filesystem_sidecars(tmp_path):
+    from scripts.run_grain_query_partition_geometry import TABLES, table_hashes
+
+    for name in TABLES:
+        (tmp_path / name).write_text("cohort,value\nsource4,1\n")
+        (tmp_path / ("._" + name)).write_bytes(b"\x00\xb0sidecar")
+    assert set(table_hashes(tmp_path)) == set(TABLES)

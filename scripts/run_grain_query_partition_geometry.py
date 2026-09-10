@@ -22,9 +22,15 @@ from grain_research.vector_mechanisms.stage_file_guard import install
 from scripts import run_grain_source_query_selection as old
 
 SOURCE = old.BASE / "logic_source_query_selection_v1"
-OUT = old.BASE / "logic_query_partition_geometry_v1"
+OUT = old.BASE / "logic_query_partition_geometry_v1/r2"
 PLAN = ROOT / "docs/GRAIN_QUERY_PARTITION_GEOMETRY_PLAN_V1.md"
 CAP = 90
+TABLES = ("query_geometry.csv", "factor_geometry.csv", "contrast_geometry.csv")
+
+
+def table_hashes(folder):
+    """Hash only declared tables, never filesystem-generated dot-file sidecars."""
+    return {name: old.sha(folder / name) for name in TABLES}
 
 
 def prepare(out):
@@ -227,7 +233,7 @@ def evaluate(out, name):
             "cpu_seconds": cpu,
             "old_actions_max_error": maximum,
             "counts": [len(queries), len(factors), len(contrasts)],
-            "files": {p.name: old.sha(p) for p in dst.glob("*.csv")},
+            "files": table_hashes(dst),
         },
     )
     print(
@@ -248,7 +254,11 @@ def audit(out):
     ss = [old.read(out / n / "summary.json") for n in ("analysis", "replay_analysis")]
     for n, s in zip(("analysis", "replay_analysis"), ss, strict=True):
         old.verify_hashes(out / n, s["files"])
-    if ss[0]["files"] != ss[1]["files"] or ss[0]["counts"] != [24, 96, 12]:
+    if (
+        ss[0]["files"] != ss[1]["files"]
+        or set(ss[0]["files"]) != set(TABLES)
+        or ss[0]["counts"] != [24, 96, 12]
+    ):
         raise ValueError("Aggregate replay or cardinality differs")
     cpu = (
         time.process_time()

@@ -85,3 +85,13 @@ alignment is sum(abs(cov))/sum(sd_v*sd_d); head-sign retention is
 sum(abs(sum_heads cov))/sum(abs(cov)). Denominators with zero support stay
 undefined. These deterministic decompositions are not independent factor counts,
 causal attributions or percentages of personality explained.
+
+### R2 inventory amendment
+
+The first numerical run reconstructed the old actions, but its aggregate glob
+also listed filesystem-generated `._*.csv` sidecars. Publishing correctly refused
+to parse one. Preserve that first run; do not call its three-table audit complete.
+R2 enumerates the exact three table names and enforces their set in the audit,
+with a regression test. No moment formula, subject, input, model, target or output
+value changed. Fresh `logic_query_partition_geometry_v1/r2` application/replay
+will be the canonical artifact; record this metadata correction in the report.
