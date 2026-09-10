@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 同token接口已扩至8源外作者；固定自身读法r=.001/.121/.314，源联合32方向的真实梯度投影r=.836/.951/.876。方向可表示与当前输入可读分开；后者oracle不是预测 | new-author transport report §§2-3; query residual input report |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT40同token前向响应lambda=A D配合源固定g，在新8人最后BODY作用r=.809/.955；不同于NEXT37块16读法.001/.121/.314。保留层/目标地址，不能把oracle表示或最后层精度当完整H16预测 | source cotangent theory §§1-3; new-author transport report §§2-3 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT39真实最后attention的值/选择双作用24/24验算；key项不可忽略。下一步用源固定g替代当前反向目标，保留上下文a/o；解释rubric仍独立，不拿局部模型导数当心理标签 | fixed seed attention theory §§2-5; source cotangent reader plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT40已以源固定g替换当前局部反向；误差由Lambda(gbar-g)定量，测量几何不等于场欧氏距离。NEXT41接回完整上游query/残差路径；解释rubric独立，不把模型局部作用当临床标签 | source cotangent theory §§4-5; complete transport JVP plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -516,6 +516,22 @@ GRAIN投影中仍有反号相抵，保留有符号加和而非只取正attention
 [NEXT40源固定g程序](GRAIN_SOURCE_COTANGENT_READER_PLAN_V1.md)。28前向/24反向，
 44.410秒，51聚焦测试，6CSV精确重放。当前q/k/v/g仍有原模型依赖；下一步
 替换当前g，不冒称全部LLM推论已独立。整体goal继续ACTIVE。
+
+### 第二十九轮补充：共同读出与上下文响应可以分开实现
+
+最后层GRAIN局部作用现在可写为tauhat=(A D)^T gbar，A保留当前材料attention，
+gbar仅取旧源。新8人自身查询源r=.809/.955，pool=.919/.869；全式误差明显
+低于value-only，当前g/梯度禁读。此处并非整个人格预测，输入q/k/v仍来自模型。
+
+实际误差恒等式delta_tau=Lambda delta_g闭合至6.11e-16，提示应该在所测
+响应的几何下判断读出误差。N的g欧氏误差增加而GRAIN作用误差减小就是
+一例，不需把整个场拟合到完美才发展可用接口。源pool和自身两法全部保留。
+
+[报告](../reports/grain_vector_mechanisms/SOURCE_COTANGENT_READER_REPORT_V1.md)、
+[理论](GRAIN_SOURCE_COTANGENT_READER_THEORY_V1.md)、
+[NEXT41](GRAIN_COMPLETE_TRANSPORT_JVP_PLAN_V1.md)。24数值包/6CSV精确复算，
+54聚焦测试，0神经调用。下一步将块16方向传至post-attention残差并用源t读，
+保留最终query与直接残差，不把最后BODY公式误当完整上游传输。goal ACTIVE。
 
 表内历史证据简称的可定位入口：
 - unified V8：[总体系](SUICA_UNIFIED_THEORY_SYSTEM_V8.md)；4W：[解释链](SUICA_4W_PERSON_INTERPRETER_THEORY.md)。

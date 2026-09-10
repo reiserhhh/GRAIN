@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-eight finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-nine finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -859,19 +859,48 @@ and [conditional token-action theory](GRAIN_FIXED_SEED_ATTENTION_THEORY_V1.md).
 Next replace g with fixed source programs while retaining a/o from current
 forward geometry; no reset to unconstrained factor mining or clinical diagnosis.
 
+## Twenty-ninth pass: source-fixed local reading and forward response geometry
+
+- NEXT40 complete: same4 source/new8 authors, N/confirmation and four fixed
+  GRAIN directions. Restricted numerical inference uses current q/k/v/positions
+  and source-only g means, never current scores/gradients/g. Same-query source
+  full-action r on new8=.809/.955, pooled source=.919/.869; SSE/zero=.383/.098
+  versus.157/.244. Preserve both programs, not a post-hoc query-wise winner.
+- Full value+key formula restores amplitude and beats value-only error, whose
+  new8 SSE/zero is.765/.750 for own-source g. Factor-centered r=.798/.956;
+  original32 actions per query are8 authors x4 directions, not independent
+  people. Old4 LOO differs from new8 four-source protocol. All conditions retained.
+- The forward dual computes lambda_f=A D_f without g, then tauhat=lambda_f^T
+  source_g. It agrees with full-field contraction. Thus this local current
+  backward dependency can be replaced while current contextual attention stays.
+  Current native q/k/v and original source backwards remain construction/input
+  dependencies; no full raw-text personality-prediction closure is claimed.
+- Exact error=lambda(gbar-g), closing within6.11e-16; native float32 action
+  parity3.35e-7. N pooled-g Euclidean error rises.0198->.0357 while GRAIN action
+  error drops.383->.157: measurement-induced geometry, not just closest field.
+  Do not infer psychological information shares from field energy.
+- Implementation/main analysis frozen in72817e8 before outcomes.24 exact NPZ
+  and6 CSV replays;54 scoped tests pass. Numerical25.566/25.588s,2 target denial
+  probes and0 extra denials per run. Zero new neural calls/fits/Y; no live queue.
+
+Read [source-fixed report](../reports/grain_vector_mechanisms/SOURCE_COTANGENT_READER_REPORT_V1.md)
+and [forward/adjoint theory](GRAIN_SOURCE_COTANGENT_READER_THEORY_V1.md).
+Next carry block16 directions through complete upstream context to the last
+post-attention residual, using source-fixed t there. Do not omit final-query and
+direct residual pathways or compare the current last-BODY r with old H16 targets.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39 finite candidates are closed, retaining useful
-mechanisms and contrary comparisons. NEXT40 develops a source-fixed numerical
-attention reader, replacing the current downstream cotangent rather than fitting
-another unconstrained local-H regression.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40 finite candidates are closed, retaining
+useful mechanisms and contrary comparisons. NEXT41 joins the new source-fixed
+readout to complete upstream GRAIN transport rather than tuning the local g.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT40 | Can source-fixed downstream reading recover the actual contextual action? | Execute GRAIN_SOURCE_COTANGENT_READER_PLAN_V1; same-query/pooled source mean g, current q/k/v/positions, full value+key versus value-only | Zero neural calls/fits/Y,120s numerical; restricted input-only predictions before targets, source4 LOO/new8 fixed, no target tuning |
+| NEXT41 | Does source-fixed reading survive complete H16 context/query/residual transport? | Execute GRAIN_COMPLETE_TRANSPORT_JVP_PLAN_V1; source t at post-attention residual, 4 GRAIN JVPs/unit, own/pooled means | At most8 source forwards/backwards,96 JVPs,4 finite forwards;300s native, target-denied freeze; no new labels/fits or tuning |
 
-These are local computational/theory questions. Start by checking cached coverage
-and separating source g from current forward-only inputs; no old queue restart.
+These are local computational/theory questions. Start with synthetic JVP support
+and source t capture parity; no old queue restart. Preserve local NEXT40 reading.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

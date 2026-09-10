@@ -1,5 +1,17 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT40 source-fixed attention reading delivered.**
+> New8 actionr N=.809,confirmation=.955 using only four-source same-query g;
+> pooled-query source=.919/.869. Full value+key improves amplitude/error over
+> value-only. Forward GRAIN responses and source reading give an exact dual
+> interface; no current gradient in the restricted scoring process.54 tests,
+>24 exact NPZ/6 CSV replays,0 neural calls/fits/Y; no live job. This is local
+> model-action fidelity, not a human correlation or independent raw-text encoder.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_COTANGENT_READER_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_COTANGENT_READER_THEORY_V1.md),
+> [NEXT41 full upstream JVP transport](GRAIN_COMPLETE_TRANSPORT_JVP_PLAN_V1.md).
+> Whole-system goal ACTIVE; earlier next-step language below is historical.
+
 > **2026-09-10 newest: NEXT39 conditional attention mechanism delivered.**
 > Identical output seed still gives source/new query body cosines .728/.657;
 > original probability .704/.649. Actual last-attention value/key decomposition
