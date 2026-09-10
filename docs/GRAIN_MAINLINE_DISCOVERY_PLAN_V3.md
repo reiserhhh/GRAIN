@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT70 separates evidence mass from relative selection.**
+> Same1313coef perarm;4fits/32.817521sCPU,0newneural/Y. Source N normalized
+> coordinate SSEzero .979114 vs raw .995625; GRAIN B-action .948326 vs .969572.
+> Confirmation has no matching gain. New8 raw+logmass GRAIN-action SSEzero
+>1.046627/.996247,3.60%/5.41% lower than matchedlocal. Whole-score r=.151881/.349486;
+> normalized .142292/.356000: no complete replacement of frozenoriginal .503/.538.
+>68tests/Ruff;48packets/11CSV replay,384FD max1.96e-10. Preserve local benefit.
+> [Report](../reports/grain_vector_mechanisms/NORMALIZED_EVIDENCE_REPORT_V1.md),
+> [theory](GRAIN_NORMALIZED_EVIDENCE_THEORY_V1.md).
+> **NEXT71 planned:** [frozen component account](GRAIN_EVIDENCE_COMPONENT_PLAN_V1.md),
+> direct content/selection/logmass/refittedlocal, signed terms and cancellation.
+>0fits/neural/Y,60CPU seconds; identify the useful pathway before another selector.
+
+> Previous NEXT69 update; its NEXT70 task is completed above.
 > **2026-09-11 newest: NEXT69 content dependence implemented; pooled-quadratic family closed.**
 > Same1305coefficients;16Gaussian features before pooling. Predicted B response
 > off old position-span57.81%/53.26%, but source coordinate SSEzero .993427/.995628

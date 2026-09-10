@@ -1,0 +1,26 @@
+{
+  "primary_commit": "125e40ef5150783156f493451aee21c068473920",
+  "audit": {
+    "status": "PASS",
+    "fits": 4,
+    "new_neural_calls": 0,
+    "prediction_packets": 48,
+    "csv_replay": 11,
+    "direction_checks": 384,
+    "max_finite_difference_error": 1.9578072496528875e-10,
+    "objective_reconstruction_error": 0.0,
+    "cpu_seconds": 6.480551,
+    "cumulative_cpu_seconds": 32.817521
+  },
+  "files": {
+    "scores.csv": "3f9f597720f3140e69ce04fe1714de4e3bfcd162dcb34bc7b89c4f4cafb7c04b",
+    "actions.csv": "bf04a1eaf81944f51447269f2532566ede4e937212a7f7b4359b0f28310cc9b8",
+    "factor_actions.csv": "1d05578318d6c5f44e617b515e7c8b0679c529470fecc16eb527fdc1d3957d95",
+    "fields.csv": "eaaf16411550df6f8558aba13ae41dd3333eb5109506ad45eb6ec5d07ee676f7",
+    "cross_response.csv": "b58c17945349316aa2b5623d7c792b906b37e5b5f2f59c5ed43450c43510d6d1",
+    "source_diagnostics.csv": "45f9bfbeeb08233678828952c32b6f3e71493f021b9829ac1828e1e045255262"
+  },
+  "scope": "source4 matched views; exposed disjoint new8; native query outputs, not human criteria",
+  "publisher_sha256": "8cae186d9764f38b6e3c218f31f4e00d2706590eb86e966796c4d9720f9bea46",
+  "new_fits_or_neural_calls": 0
+}

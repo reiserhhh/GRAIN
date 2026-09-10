@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-eight finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-nine finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1767,20 +1767,43 @@ Read [report](../reports/grain_vector_mechanisms/NONLINEAR_POOLING_REPORT_V1.md)
 [theory](GRAIN_NONLINEAR_POOLING_THEORY_V1.md),
 [NEXT70](GRAIN_NORMALIZED_EVIDENCE_READER_PLAN_V1.md).
 
+## Fifty-ninth finite pass delivered: relative evidence with mass retained
+
+- Previous turn PROGRESS: NEXT69 changed the response range, tested it, closed
+  pooled quadratics and froze the distinct NEXT70 mechanism comparison.
+- NEXT70 primary `125e40e`,4numericfits/0neural/API/Y/MEPS; same source4/fourviews,
+  twoqueries and1313coef perarm,16original kernels. Both coordinates retain logZ.
+- Source N normalized coordinate SSEzero .979114 vs raw .995625; GRAIN B-action
+  .948326 vs .969572. Confirmation lacks the same source benefit. Query-specific
+  and projection-specific outcomes retained, no per-query post-hoc winner fitting.
+- New8 raw GRAIN action SSEzero1.046627/.996247,3.60%/5.41% lower than matchedlocal.
+  Raw wholeL r=.151881/.349486, normalized .142292/.356000; no complete replacement.
+- 68tests/Ruff,48twoarm packets/11CSV exact replay,384FD max1.96e-10, objective
+  reconstruction0;32.817521s stagedCPU. Six public aggregates; private targets stay.
+- New equation distinguishes direct content, relative competition and log mass.
+  Raw logmass already couples tokens. Summary invertibility does not make penalized
+  linear fits equivalent, and average kernel mass is not all author-choice information.
+- NEXT71 planned: exact frozen component account, including refitted local change
+  on new8, signed cross-terms and error identities.0fits/neural/Y,60CPU seconds;
+  decide which pathway supplied the existing local improvement, not another grid.
+
+Read [report](../reports/grain_vector_mechanisms/NORMALIZED_EVIDENCE_REPORT_V1.md),
+[theory](GRAIN_NORMALIZED_EVIDENCE_THEORY_V1.md),[NEXT71](GRAIN_EVIDENCE_COMPONENT_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT70 | Does relative evidence selection improve functional reading when mass is retained? | Execute GRAIN_NORMALIZED_EVIDENCE_READER_PLAN_V1; compare weighted moments with normalized moments, both retaining logmass; same source kernels and144newcoef | Four fits/180CPU seconds,0newnative/Y; source response and exposed new8 wholeL/actions separate, no selector/penalty sweep |
+| NEXT71 | Which frozen content/selection/mass term supplies the observed local benefit? | Execute GRAIN_EVIDENCE_COMPONENT_PLAN_V1; reconstruct scalar gradient components, source B changes and new8 action-error terms including changed local prefix |0fits/native/Y;60CPU seconds, signed terms/cancellation, no reweighting or upper-bound detour |
 
-These are local computational/theory questions. NEXT69 complete,2numericfits;
+These are local computational/theory questions. NEXT70 complete,4numericfits;
 no live native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT70 planned, not executed; develop
-mass-retaining relative selection, instead of further pooled quadratic tuning.
+broader factor search or clinical naming. NEXT71 planned, not executed; identify
+the useful component of the mass-retaining readout before another selector.
 No penalty/donor/dose sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
