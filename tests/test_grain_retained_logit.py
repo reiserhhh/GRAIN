@@ -107,3 +107,28 @@ def test_radial_frame_and_fit_fail_explicitly():
 
 def test_stable_sigmoid_extremes():
     np.testing.assert_allclose(sigmoid([-1000, 0, 1000]), [0, 0.5, 1])
+
+
+def test_radial_diagonal_surrogate_can_miss_cross_coordinate_action():
+    """Off-diagonal curvature is invisible to a pooled diagonal fit on this design."""
+    d = np.array([[[1, 1]], [[1, -1]], [[-1, 1]], [[-1, -1]]], float)
+    e = np.broadcast_to(np.array([[1.0, 0.0]]), d.shape)
+    hessian = np.array([[0.0, 1.0], [1.0, 0.0]])
+    t = np.linspace(0, 1, 3)
+    gradients = [t[:, None, None] * (di @ hessian) for di in d]
+    origin, k, _ = fit_curvature(d, e, [t] * 4, gradients, penalty=0)
+    np.testing.assert_allclose(k, 0, atol=1e-15)
+    actual = np.array([0.5 * np.sum((di @ hessian) * di) for di in d])
+    predicted = np.array(
+        [quadratic_delta(di, ei, origin, k)[1] for di, ei in zip(d, e, strict=True)]
+    )
+    np.testing.assert_allclose(actual, [1, -1, -1, 1])
+    np.testing.assert_allclose(predicted, 0)
+
+
+def test_gradient_energy_and_directional_action_are_distinct():
+    """Large field changes orthogonal to a displacement have zero path action."""
+    d = np.array([[1.0, 0.0]])
+    field = np.array([[0.0, 1000.0]])
+    assert np.linalg.norm(field) == 1000
+    assert np.sum(field * d) == 0

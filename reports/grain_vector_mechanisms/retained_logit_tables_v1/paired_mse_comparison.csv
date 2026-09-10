@@ -1,0 +1,7 @@
+arm,baseline,authors,mse_improvement,ci_low,ci_high,bootstrap_repetitions
+radial_quadratic__source_origin,origin_linear__source_origin,20,-7.30491710710851e-05,-0.00016040193001994274,-7.80550318631039e-06,2000
+radial_quadratic__source_origin,frozen_full,20,-9.374939464935082e-05,-0.00021126971785830737,-4.416777822158699e-06,2000
+radial_quadratic__source_origin,support_calibrated,20,-0.00010767151589134637,-0.00023620951649629815,-1.0854814769035575e-05,2000
+radial_quadratic__oracle_origin,origin_linear__oracle_origin,20,-6.924192924996182e-05,-0.0001523242496807228,-5.972836139059524e-06,2000
+radial_quadratic__oracle_origin,frozen_full,20,-8.78835045948003e-05,-0.0001970789446022845,-3.680924749921846e-06,2000
+radial_quadratic__oracle_origin,support_calibrated,20,-0.00010180562583679586,-0.00022140158330539005,-9.906889808879063e-06,2000

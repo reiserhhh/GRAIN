@@ -1,0 +1,18 @@
+{
+  "files": {
+    "diagnostic/private_path_accounts.csv": true,
+    "diagnostic/reference_curvature_summary.csv": true,
+    "prediction_freeze.json/private_models.npz": true,
+    "prediction_freeze.json/private_logit_predictions.csv": true,
+    "prediction_freeze.json/reference_fit_summary.csv": true,
+    "evaluation_summary.json/private_endpoint_scores.csv": true,
+    "evaluation_summary.json/logit_comparison.csv": true,
+    "evaluation_summary.json/private_retained_scores.csv": true,
+    "evaluation_summary.json/retained_comparison.csv": true,
+    "evaluation_summary.json/paired_mse_comparison.csv": true
+  },
+  "prediction_manifest_sha256": "8ea7c3ad6f8121d18f9c00fc816f79b474783dc36f1084b8773f9b1379d09927",
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "new_subjects": 0
+}

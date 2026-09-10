@@ -1,0 +1,3 @@
+body_case,reference_paths,curvature_coefficients,zero_support_components,gradient_increment_error_over_zero,origin_logit_mean
+0,4,272,124,0.9995468577416317,-1.1903696116326192
+1,4,272,124,0.9995253223445492,-1.2904266650464407

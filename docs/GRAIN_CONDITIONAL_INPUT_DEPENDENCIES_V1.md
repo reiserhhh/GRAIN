@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第十六轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第十七轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -46,6 +46,7 @@ flowchart TD
 | 条件起点 | b_q(E)=F_q(E,x0) | 旧锚定P/Q端点 | 当前完整E仍随作者变化；不等于固定截距，也不等于下面的B |
 | 均值化条件分数 | B=F_q(C(E),x0) | NEXT15/18实际四格端点 | 比b(E)再去掉正文配置；只是一部分原生输出 |
 | R轻量作用 | g_ref或g_cal的内积 | `action_geometry.py`，4参照作用校准，136×1536状态差 | 后缀外读法已实现；R输入仍来自原模型前缀，参考矩阵来自原模型梯度 |
+| R非线性候选 | delta_logit=<vbar,d>+sum(d_r K_r d_r)/2 | `retained_logit.py`；4源梯度、逐位置径向/切向系数；无新后缀调用 | 发现内部曲率但该近似作用误差变大，不替换旧法。source_origin用源常数；oracle_origin借用当前b00/b10，二者明确分开 |
 | 联合作用 | Δz_ij，沿v的幅度及正交部分 | `joint_readout.py`，固定对称核/四折 | 可读部分混合logits；最终评分组装仍用真实单评论端点z_add |
 | 效标与解释 | Corr/response/criterion | 冻结之后连接原有自评；保持量表、模型、行为通道区分 | 不据最高Y相关选择某个坐标/函数；无新增真人或日常行动效标 |
 
@@ -110,6 +111,11 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 
 ## 6. 可复算入口与下一步
 
+第十七轮[内部曲率](GRAIN_RETAINED_LOGIT_CURVATURE_THEORY_V1.md)将二值概率
+的最后sigmoid换算与内部logit曲率精确拆开。前者RMS=.000081，后者=.013657。
+新的受限二次候选没有改善Phi_R，不改本文其它项。这里使用参考R位置，
+并非下段的GRAIN正文方向；二者通过完整F的条件输入联系，不能混称同一作用。
+
 第十六轮的同材料[原生读法](GRAIN_NATIVE_MATERIAL_READER_THEORY_V1.md)增加
 一个真实接点：共同GRAIN×token隐藏配置可由不同查询梯度读取，T=Cw+位置
 特异项。此T是本文F在指定正文方向上的导数，不等于F、B、A或上述条件起点，
@@ -119,5 +125,5 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 - 四格来源：`scripts/run_grain_configuration_query_factorial.py`与
   `scripts/run_grain_comment_carrier.py`；保持两个四格的符号区别。
 - 聚合证据：[第十三轮报告](../reports/grain_vector_mechanisms/ACTION_GEOMETRY_LOGIC_REPORT_V1.md)。
-- 下一机制：R的位移相关敏感度、N的方向/幅度/正交能量分工，然后选择一个
+- 下一机制：N的方向/幅度/正交能量分工，然后选择一个
   明确目标的完整条件接口。全系统goal持续，但旧锁箱、发布评分和MEPS不动。

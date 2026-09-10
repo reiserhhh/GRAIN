@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "paths": 8,
+  "reference_authors": 4,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "evaluation_endpoints_read": false,
+  "identity_max": 0.0,
+  "probability_integration_error_max": 0.00013133399531177134,
+  "old_error_replay_max": 2.6465543091248878e-08,
+  "logit_integration_error_max": 0.0007060487764684945,
+  "logit_gradient_relative_change_mean": 0.44270815353030746,
+  "probability_min": 0.20054666697978973,
+  "probability_max": 0.25102895498275757
+}

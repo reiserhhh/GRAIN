@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, sixteen finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, seventeen finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -491,16 +491,42 @@ Read [native reader report](../reports/grain_vector_mechanisms/NATIVE_MATERIAL_R
 and [native interface theory](GRAIN_NATIVE_MATERIAL_READER_THEORY_V1.md).
 Plan a632927, implementation/amendment43b8128, canonicalizatione5bd649.
 
+## Seventeenth pass: internal logit curvature and one finite surrogate
+
+- NEXT24 cache diagnosis: all8 old reference paths,4 authors, no new neural or
+  questionnaire reads. Author-averaged nonlinear probability remainder RMS.013657
+  versus sigmoid-only curvature.000081; internal logit remainder RMS.078179.
+  Mean endpoint logit-gradient relative change.443. The final probability link
+  does not explain the measured retained-state curvature. Exact account error0;
+  old numerical/quadrature errors retained, no extra nodes.
+- One predeclared radial/tangential block potential fitted to reference gradients,
+  two body contexts,272 scalar coefficients each, fixed.01 shrinkage. Predictions
+  frozen before old evaluation endpoints. On20 old non-reference authors its
+  source-origin Phi_R action MSE/zero is1.1217, worse than origin-linear.9128,
+  frozen full.8536 and support.8137. r rises.295->.323 but action fidelity worsens;
+  true-origin diagnostic also worsens. Candidate not promoted, prior readers kept.
+- Two mathematical witnesses distinguish off-diagonal action from diagonal
+  stretching, and gradient-field energy from displacement action. They identify
+  possible missing geometry, not an empirically identified attention circuit.
+  Partial logit functions still require block16 inputs; no full-runtime claim.
+-41 scoped tests,16 new;10 exact diagnostic/model/evaluation file replays.
+  NumPy/cache computation only. Primary Hermite-surrogate and RMSNorm literature
+  informs the finite candidate, not an assertion of originality or RMSNorm cause.
+
+Read [curvature report](../reports/grain_vector_mechanisms/RETAINED_LOGIT_CURVATURE_REPORT_V1.md)
+and [logit/potential theory](GRAIN_RETAINED_LOGIT_CURVATURE_THEORY_V1.md).
+Plan abffe81, diagnostic eed065c, candidate8f057e2. NEXT24's finite comparison is
+closed; any further curvature work must first change NEXT26's selected interface.
+
 ## Next loop, in order
 
-NEXT30 now supplies the native same-material differential interface. Return to
-the previously pending conditional function/input pieces; do not run another
-accuracy or arbitrary factor grid. NEXT31 is a cached-only compression question
-to execute only if it changes the declared interface in NEXT26.
+NEXT30 supplies the native same-material differential interface; NEXT24 locates
+internal curvature without promoting the tested surrogate. Continue NEXT25 then
+NEXT26, not an output calibration or arbitrary curvature grid. NEXT31 is a
+cached-only compression question to execute only if it changes NEXT26.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT24 | Can the measured R-path remainder become a displacement-dependent common function? | Use saved reference gradients/paths to separate radial variation, role structure and body conditioning. Derive one finite curvature-sensitive candidate only after identifying its actual support; numerical action targets, not Y | Compare one source-defined candidate to existing linear/support baselines on unchanged authors. Do not estimate an unrestricted208896-square Hessian or select rank/penalty from exposed criteria. Preserve context and integration errors |
 | NEXT25 | Does conditional energy provide information absent from a vector conditional mean? | Reuse fixed N pair targets and direction accounts. First quantify the norm/energy identity under the declared inputs and existing prediction shrinkage; a direct projected scalar Ridge is algebraically redundant | Freeze at most one distinct energy-sensitive candidate if the numerical evidence supports it; no pair/Y-selected feature search. Keep direction, amplitude and orthogonal magnitude separate |
 | NEXT26 | Which complete conditional interface can close one runtime dependency without changing the target? | Choose one declared block from the full-input contract; identify all its raw/encoded/fixed-reference inputs and currently borrowed endpoints before implementation | Execute one complete same-target comparison with upstream inputs explicit. Do not combine old E5/four-layer metrics with new block16 components as if a single end-to-end system already existed |
 | NEXT31 | Can token-specific native reading be represented by a few direction-by-position factors without losing GRAIN-relevant action? | Use the12 saved body-gradient fields; distinguish uniform reader, nonuniform low-rank reading and irreducible direction variation; fixed ranks and actual tangent-action accounting, no labels | Only prioritize if it supplies NEXT26's selected interface. Do not confuse gradient-energy capture with action capture, or self-reconstruction with cross-author extraction |
