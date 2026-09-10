@@ -1,5 +1,21 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT76 constructs content values and both response channels.**
+> H16->V/dV source function,10solves; application reads no current native V/K/Q.
+> New8 V-MSE improves~11.1%,dV~4.5%, but fixed response-selector K+V contrast
+> SSEzero .783140->.862421. Global vector fit and observable fit differ; preserve
+> the dependency-removal result, not a full reader promotion or a new value grid.
+> Same scalar derivative=selection covariance+selected content derivative.
+>64FD max8.88e-11,24packets/6CSV exact replay,41tests/Ruff,23.629569CPU seconds,
+>0neural/API/Y/MEPS. H16 and current fixed g remain separate dependencies.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_VALUE_CHANNEL_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_VALUE_CHANNEL_THEORY_V1.md).
+> **NEXT77 planned:** [reuse source endpoint readers](GRAIN_SOURCE_ENDPOINT_ASSEMBLY_PLAN_V1.md).
+> Compose existing NEXT51 readers with all four numerical functions,0fits/neural,
+>60CPU seconds. Return to the personality-query endpoint component, remove current
+> g, distinguish reader/transport errors; no native remainder add-back. Goal ACTIVE.
+
+> Previous NEXT75 update; its NEXT76 task is completed above.
 > **2026-09-11 newest: NEXT75 improves response amplitude through source coordinates.**
 > Source derivative design represents13.16%/13.27% of residual energy; its minimum
 > derivative fit has enormous scalar cost. One response-informed rank32/67-feature

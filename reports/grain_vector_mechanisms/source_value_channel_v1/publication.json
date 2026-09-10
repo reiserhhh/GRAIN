@@ -1,0 +1,31 @@
+{
+  "primary_commit": "7b91260aec140c21d43fdbea75669dc88d893459",
+  "audit": {
+    "status": "PASS",
+    "fits": 10,
+    "packets": 24,
+    "csv_replay": 6,
+    "total_cpu_seconds": 23.629569000000004,
+    "fd_count": 64,
+    "fd_max_error": 8.882586333136544e-11,
+    "bias_action_max_error": 4.062604962879619e-17,
+    "native_replay_max_error": 9.992007221626409e-16,
+    "native_values_retained": false,
+    "fixed_native_readout_retained": true,
+    "new_neural_calls": 0,
+    "human_labels_read": false
+  },
+  "files": {
+    "value_metrics.csv": "b160cb462da8e90709eee88da627c1f5a93de9f2ffee15c31ea12800a431dec1",
+    "query_actions.csv": "456515c058a3c18ea065913506e29f4957f12cde6594045407b4d13aeaefed94",
+    "factor_actions.csv": "5c0cb3f7ff77e81c171eea1b716f669400345700b17c93b202a3514ef7f130ed",
+    "contrast_actions.csv": "0c8c3e8af15b2c0a99decc6649ecd35492671d0e3cb34225b1399b1344a42475",
+    "scalar_metrics.csv": "28fc1bd70134bcba0cae5f315f179dd4877fb19bde6a87d250dc875b41820d0d",
+    "component_summary.csv": "58563282409e98ff78fb9f8456c9a3882c52243e68f9012785547ee45b7b741d",
+    "source_training.csv": "9903dca046ddf09ef4cae17606634d9d6a94d9a1e97516fd5f4b5812dfe97c94"
+  },
+  "publisher_sha256": "598b3f0f167f3a1168e43d403cc0083d1d7dc67c6453f8e097087c0d17addd31",
+  "scope": "H16 plus source Q/value maps and retained fixed g. Totals are key+value with Q/g fixed, not full L or human questionnaire scores.",
+  "cpu_scope": "Successful numeric stages including replay; provenance preflight and imports excluded.",
+  "source_summary": "source_authors=3 averages four LOO fits; 4 denotes one all-source reference"
+}

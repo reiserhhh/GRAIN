@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT75源响应导向坐标让native-query对比误差1.266->.373、r.945->.881；直接source-Q幅度仍过大。源旧导数字典约13%残差能量。共同对象是query函数沿GRAIN方向的响应；NEXT76构造内容V/dV，保留H16/g | source response coordinates theory §§1-4; SOURCE_RESPONSE_COORDINATES_REPORT_V1; source value channel plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT76同H16函数计算选择与内容双响应，移除当前V；值误差改善不保证作用误差。接口为query函数沿GRAIN方向的导数，观测范数M^T M保留读法。NEXT77重用源端点reader，不调值精度 | source value channel theory §§1-4; SOURCE_VALUE_CHANNEL_REPORT_V1; source endpoint assembly plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,25 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第六十五轮补充：内容与选择都有响应，误差取决于如何读取
+
+NEXT76主实现7b91260、10源拟合。同H16输入可产生V与dV，候选应用禁读当前
+V/dV/K/Q与目标；g仍单列。新8原始V MSE约降11.1%、dV约降4.5%，源LOO同向。
+但response-selector下native-Q K+V对比误差.783140->.862421，r.864612->.862394。
+更近的值向量不等于更准确的观测：固定选择/方向/读头时，误差度量是M^T M。
+
+同一scalar微分为Cov_a(v,dell)+E_a[dv]。learned通道key/valueRMS.096775/.006665，
+总.103416，正交叉能量超额13.66%；source-Q/nativeKV对照则是抵消。保留符号，
+不将总误差下降或分量范数接近自动解释为人格。常数value可以改变分数而导数
+为零；已测bias列响应仅4.063e-17，说明不能把value常数和logit gauge混同。
+
+64同函数FD误差8.883e-11，旧native K/V逐项重建9.992e-16；41测试，24包6CSV
+精确重放，23.629569成功阶段CPU秒。零新神经/API/Y/MEPS。下一NEXT77重用
+NEXT51源端点reader，组装不含当前g的H16组件函数，返回人格query端点而非
+继续局部V矩阵拟合。[报告](../reports/grain_vector_mechanisms/SOURCE_VALUE_CHANNEL_REPORT_V1.md)、
+[理论](GRAIN_SOURCE_VALUE_CHANNEL_THEORY_V1.md)、
+[NEXT77](GRAIN_SOURCE_ENDPOINT_ASSEMBLY_PLAN_V1.md)。总体goal ACTIVE。
 
 ### 第六十四轮补充：源响应坐标改善强度，但不是全部机制替代
 

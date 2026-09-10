@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, sixty-four finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, sixty-five finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1948,22 +1948,54 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_RESPONSE_COORDINATES_REP
 [theory](GRAIN_SOURCE_RESPONSE_COORDINATES_THEORY_V1.md),
 [NEXT76](GRAIN_SOURCE_VALUE_CHANNEL_PLAN_V1.md).
 
+## Sixty-fifth finite pass delivered: numerical content and complete K/V response
+
+- Previous turn classified as PROGRESS: NEXT75 separated source range/cost and
+  changed response geometry. NEXT76 replaces a distinct input instead of adding
+  another selector/rank/alpha refinement.
+- Primary `7b91260`, ten source V/dV joint solves; same source4LOO/new8all4,
+  queries/factors/readouts. Both existing selectors x identity/learned values;
+  current native V/dV/K/Q/targets denied during application. g-only input retained.
+- New8 raw V MSE .520716->.463122 / .521340->.463561; dV .318528->.304202 /
+  .318586->.304219. Source4LOO agrees. All4 normalized source V losses.875581/
+  .875126 and dV.899480/.899452; useful but limited vector approximation.
+- With response selector, new8 own native-Q K+V contrast error .783140->.862421,
+  r .864612->.862394, versus native-V .403092/.857904. More accurate V globally
+  does not imply more accurate signed projection. Per-query/contrast scalar and
+  action outcomes all retained; no whole reader promotion or human Y claim.
+- Key/content/total derive from one scalar. Learned response-selector contrast
+  key/contentRMS.096775/.006665, total.103416, positive energy cross excess13.66%.
+  Source-Q/nativeKV comparator instead total/sum energy.765203 (cancellation).
+  Fixed-a/dell/g observable error is M E, not Frobenius E; derivation recorded.
+- Actual bias-column scalar effect retained, its response zero within4.063e-17.
+  64central FD max8.883e-11, old native K/V/comparator replay9.992e-16;24packets/
+  6CSV exact replay,41focused tests/Ruff.23.629569successful stageCPU including
+  replay,0neural/API/Y/MEPS. Seven public aggregate tables, no raw exports.
+- NEXT77 reuses already compiled NEXT51 source endpoint readers with these
+  numerical K/V functions. Remove current fixed g and reconnect actual query
+  endpoint components. No new source reader-discovery theorem or V tuning grid;
+  zero fits/neural,60CPU seconds, all four functions retained.
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_VALUE_CHANNEL_REPORT_V1.md),
+[theory](GRAIN_SOURCE_VALUE_CHANNEL_THEORY_V1.md),
+[NEXT77](GRAIN_SOURCE_ENDPOINT_ASSEMBLY_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT76 | Can source H16 also supply content values and their same-function response? | Execute GRAIN_SOURCE_VALUE_CHANNEL_PLAN_V1; one source V/dV function, identity/learned selector comparators, g retained |10fits/180CPU seconds,0native/Y; report key/value/total derivatives and all fixed conditions; no source-Q/native-Q target interchange |
+| NEXT77 | Can existing source endpoint readers assemble a current-g-free numerical component? | Execute GRAIN_SOURCE_ENDPOINT_ASSEMBLY_PLAN_V1; reuse NEXT51 readers and all four NEXT76 functions, preserve key/value/total |0fits/neural/Y,60CPU seconds; exact reader/transport error account, endpoint targets distinct from earlier shared-local readout |
 
-These are local computational/theory questions. NEXT75 complete,10source solves;
+These are local computational/theory questions. NEXT76 complete,10source solves;
 no live native job. No MLP24/attention22 neural refinement, old queue restart,
-broader factor search or clinical naming. NEXT76 planned, not executed; develop
-the content-value function and retain the found selector/response effects.
-No penalty/donor/dose sweep; NEXT75's finite capacity account is closed. Keep
-current fixed g explicit while removing the distinct native V dependency.
+broader factor search or clinical naming. NEXT77 planned, not executed; assemble
+the source-only endpoint component while retaining all selector/value outcomes.
+No penalty/donor/dose sweep; NEXT75 capacity and NEXT76 value fitting are closed.
+Reuse the actual NEXT51 reader lineage, not a newly optimized readout on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is
