@@ -45,3 +45,26 @@ queries no analogous single scalar is presumed.
 Private `logic_reader_output_seed_v1/`; public aggregate report/theory ledger.
 Finish with an actionable context-reader or matched-answer intervention plan.
 The whole-system goal remains ACTIVE; no claim of exhausting all mechanisms.
+
+## Numerical detail fixed before NEXT38 computation
+
+- Seed span is an uncentered SVD span with relative rank tolerance1e-10; this is
+  descriptive source geometry, not another response fit. Publish rank and
+  source-to-new captured energy, with source4 separate from new8.
+- Binary comparison uses own-query models only. For component s, define
+  g_s=mean_{i in its3 construction authors} p_i(1-p_i). A fixed contrast reader
+  is the old component field divided by g_s, with no coefficient refitting.
+  Old4 use their held-out component; new8 average the four converted fields.
+- The native contrast target is current J/[p(1-p)] and is evaluator-only.
+  Also divide both old prediction and target by current gain as a separately
+  labeled error-reweighting diagnostic, never independent prediction.
+  Keep original probability errors. Flag gain<1e-6; do not divide gain<=1e-12,
+  retaining those unsupported rows and explicit counts. No clipping/search.
+- Gradients were taken at the accepted canonicalized prefix. Candidate vectors
+  come from the original prefix-capture logits; report their score discrepancy.
+  Binary target gain uses the saved gradient-pass score. Multivalue candidate
+  seeds therefore inherit the previous <=2e-6 scalar replay approximation; do
+  not claim exact recovery of their full canonicalized probability vectors.
+- Literature rationale: Zhang & Nanda, ICLR2024 / arXiv2309.16042, section4,
+  compares probability versus logit-difference effects. This motivates keeping
+  both objects, not retroactively replacing the frozen NEXT37 target.
