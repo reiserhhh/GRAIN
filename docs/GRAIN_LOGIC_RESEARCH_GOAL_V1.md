@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirty finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirty-one finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -920,18 +920,49 @@ and [conditional path/accumulation theory](GRAIN_COMPLETE_TRANSPORT_THEORY_V1.md
 Native work is terminal. NEXT42 uses source-fixed t and fixed earlier exits;
 the purpose is a usable smaller program, not refining the final decimal place.
 
+## Thirty-first pass: fixed exits and signed response formation
+
+- NEXT42 complete; all24 units, unchanged H16/GRAIN/source t. New8 own reading
+  after20 r=.09190/.34339, after23=.95176/.82290, after26=.99688/.98816,
+  full=.99814/.99610 (N/confirmation). After23 amplitude is about half of native;
+  SSE/zero=.31535/.44106. Factor-centered r=.94912/.81500. Both queries, both
+  source modes and all four directions reported; no questionnaire/depth tuning.
+- Old4 after20 N r=.876 contrasts with new8 .092. This removes the idea that
+  an apparently good source-only early exit alone is enough for the current
+  reader path. After26 remains a useful reduced-suffix candidate, not an
+  independently encoded raw-text predictor. Current H16/upstream blocks remain.
+- Block25 MLP is the largest positive projected update in both new8 queries:
+  shares .37131/.50802. Its signed addition changes cumulative SSE/zero
+  .27462->.02173 and .31440->.02802. This is a located computation, not a causal
+  importance or personality-information fraction. Attention configures its input;
+  the next question is which current-context multiplicative coefficients matter.
+-100 JVPs including4 actually truncated after20 runs,167.352s plus3.209s loading.
+  Zero new source backward/current score/backward/fits/Y/API;4 denial probes,
+  zero extra denials. Full24 responses equal NEXT41 exactly; actual truncated4
+  also exact. Independent update sums differ<=9.168e-7,65 scoped tests pass.
+-5 analysis CSVs byte-replay, independent metric error<=5.274e-16.20 existing
+  PyTorch/SWIG deprecation warnings; no full-suite claim. A display-only RMS
+  column-name typo was corrected, without touching computation or selection.
+
+Pre-outcome implementation `c30f792`; read [report](../reports/grain_vector_mechanisms/LAYER_ACCUMULATION_REPORT_V1.md),
+[signed-update theory](GRAIN_LAYER_ACCUMULATION_THEORY_V1.md) and the next
+[gated transformation plan](GRAIN_GATED_UPDATE_PLAN_V1.md). No live model job.
+Source-only translation/new-material testing remains a later branch, not an
+automatic continuation of near-perfect full-response precision.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41 finite candidates are closed,
-retaining useful mechanisms and contrary comparisons. NEXT42 tests when the
-response becomes readable and which computation can actually be stopped early.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42 finite candidates are closed,
+retaining useful mechanisms and contrary comparisons. NEXT43 targets the located
+block25 gated update, not another exit grid or a final-correlation optimization.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT42 | At which depth does useful GRAIN response accumulate? | Execute GRAIN_LAYER_ACCUMULATION_PLAN_V1; fixed exits20/23/26, signed21 update components, unchanged source t | Max100 JVPs including4 truncated smoke checks,300s; no source backward/Y/fits, full-reference parity and target-denied freeze |
+| NEXT43 | Does the block25 update require current gate/norm coefficients? | Execute GRAIN_GATED_UPDATE_PLAN_V1; exact SwiGLU derivative and four fixed current/source operator combinations | Max96 upstream JVPs/300s; numeric120s, no backwards/scores/Y/fits. Saved layer25 vector parity and target-denied freeze; retain all arms |
 
-These are local computational/theory questions. Start with exact update/JVP
-telescoping, then one shared traversal for all exits; no old queue restart.
+These are local computational/theory questions. Start with the exact product/
+normalization derivatives, then collect only the needed pre-MLP state/tangent;
+no old queue restart, broader factor search or clinical naming.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

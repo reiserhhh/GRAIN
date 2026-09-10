@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT41同token GRAIN方向通过完整H16上下文JVP，以源固定t读取新8作用r=.99814/.99610；没有当前目标反向。原模型输入/上游层仍存，不当问卷预测；NEXT40为不同层的局部对象 | complete transport theory §§1-4; source cotangent theory |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT42同token方向以源t读层20/23/26，新8r=.092/.343、.952/.823、.997/.988；完整参考精确接回NEXT41。层23幅度约半，层25MLP有大增量；H16/上游层仍存，不当问卷预测 | layer accumulation theory §§1-4; complete transport theory |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT41完整query/残差路径已接回，主要作用在最后attention前形成，最后层有有符号调整。NEXT42用层间累积测试较早可运行出口，不只画路径图；解释rubric独立，局部导数不冒充临床标签 | complete transport theory §§3-5; layer accumulation plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT42实际截短和signed更新接合；层25MLP新8正投影份额.371/.508，非心理信息比例。NEXT43拆门控/归一化并用源算子替换，研究所需条件系数；解释rubric保持独立 | layer accumulation theory §§3-5; gated update plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -548,6 +548,22 @@ NEXT40区别，不用同一个r符号抹掉不同实验对象。心理解释另�
 [理论](GRAIN_COMPLETE_TRANSPORT_THEORY_V1.md)、[NEXT42](GRAIN_LAYER_ACCUMULATION_PLAN_V1.md)。
 源捕获浮点试跑已修复且留档，全部源评分重放0；96JVP/4有限前向、总
 10源前向/反向，172.89秒。57测试、3CSV精确复算，无当前目标反向/标签。
+
+### 第三十一轮补充：把条件变换定位到可拆解的门控更新
+
+层20的N作用在旧4人r=.876，新8人只有.092；到层23，新8为.952，确认
+查询为.823但幅度仍约半。层25MLP随后给出两查询最大的正投影更新，
+累计SSE/zero从.275/.314降至.022/.028。这个位置已被实际计算定位，不是
+按最终注意力图猜测。两查询共享有用更新位置，但份额/个体路径不同。
+
+下一步是SwiGLU乘积法则与RMS导数：把输入变化、门控变化显式分开，
+并分别固定源门控/源norm检验所需的条件系数。原样共享矩阵可工作与
+必须读当前系数是两条有用分支。两种结论都发展提取机制，而不是给层起人格名。
+
+[报告](../reports/grain_vector_mechanisms/LAYER_ACCUMULATION_REPORT_V1.md)、
+[公式](GRAIN_LAYER_ACCUMULATION_THEORY_V1.md)、[NEXT43](GRAIN_GATED_UPDATE_PLAN_V1.md)。
+100JVP/167.352秒，4真实截短检查精确；24完整参考精确，5CSV重放，65测试。
+无当前评分/反向/标签，整体goal ACTIVE，未改解释通道/旧锁箱/评分规范。
 
 表内历史证据简称的可定位入口：
 - unified V8：[总体系](SUICA_UNIFIED_THEORY_SYSTEM_V8.md)；4W：[解释链](SUICA_4W_PERSON_INTERPRETER_THEORY.md)。

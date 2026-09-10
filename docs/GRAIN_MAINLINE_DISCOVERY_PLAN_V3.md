@@ -1,5 +1,17 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT42 fixed exits/accumulation delivered.**
+> New8 own-source r after20=.092/.343, after23=.952/.823, after26=.997/.988
+> (N/confirmation); after23 retains only about half the action amplitude.
+> Block25 MLP supplies the largest positive projected increment: .371/.508,
+> not an information fraction. Next test conditional gate/norm coefficients.
+>100 JVPs/167.352s,4 real truncated checks exact,24 full-response parity exact,
+>5 CSV replays,65 scoped tests. No new score/backward/fit/Y; no live model job.
+> [Report](../reports/grain_vector_mechanisms/LAYER_ACCUMULATION_REPORT_V1.md),
+> [theory](GRAIN_LAYER_ACCUMULATION_THEORY_V1.md),
+> [NEXT43 gated update](GRAIN_GATED_UPDATE_PLAN_V1.md).
+> Whole-system goal ACTIVE; previous next-step language below is historical.
+
 > **2026-09-10 newest: NEXT41 complete H16 transport delivered.**
 > New8 own-source actionr N=.99814,confirmation=.99610; SSE/zero=.00389/.00803.
 > Most response is already carried into the last block; last attention is a
