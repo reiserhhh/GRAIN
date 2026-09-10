@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-nine finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, sixty finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1790,20 +1790,51 @@ Read [report](../reports/grain_vector_mechanisms/NONLINEAR_POOLING_REPORT_V1.md)
 Read [report](../reports/grain_vector_mechanisms/NORMALIZED_EVIDENCE_REPORT_V1.md),
 [theory](GRAIN_NORMALIZED_EVIDENCE_THEORY_V1.md),[NEXT71](GRAIN_EVIDENCE_COMPONENT_PLAN_V1.md).
 
+## Sixtieth finite pass delivered: content, selection and mass as joint mechanisms
+
+- Previous turn PROGRESS: NEXT70 separated two evidence coordinates with the
+  same retained logmass, measured their different uses and froze NEXT71.
+- NEXT71 primary `fb97a12`,0fits/neural/API/Y/MEPS. Four frozen functions and
+ 48packets exactly decomposed into local/content/selection/logmass before target
+ joins. Same-material GRAIN actions reconstruct within1.14e-15.
+- Raw source B change is entirely logmass: local/content/selection are exactly0.
+  N normalized C/S/M projections .020849/.004811/.013304 sum .038964; confirmation
+ .023730/-.012795/-.028489 sum -.017554. Keep signed cross-terms, not independent
+ variance shares or correlations.
+- New8 raw full-action gain3.602pp = local8.867-content15.247+selection9.346+mass.637
+  for N; confirmation5.413pp =10.368-11.428+6.175+.299. Credits use the prespecified
+ symmetric error account, not unique causal attribution. Logmass is positive in
+ 8/8 overlapping full/allocation cells, not eight independent replications.
+- Content/selection one-forms need not individually integrate to scalar scores;
+  their curls cancel jointly. Two post-account synthetic tests verify the identity.
+ This suggests common scalar development rather than deleting a harmful-looking
+ derivative piece or running another generic normalized-kernel sweep.
+- Six aggregate CSV replay exactly; maximum density reconstruction1.665e-15,
+  error-credit closure2.55e-16.12.469320CPU seconds below60;73focused primary tests
+ plus2post-account geometry tests passed; final focused rerun70passed including
+ all7new cases. Private author/token packets not published.
+- NEXT72 planned: compile existing source-query key action as a mixed derivative
+  of a log-partition potential. Separate value contrast, directional sensitivity,
+ alignment and cancellation; no new fit/neural/labels,90CPU seconds.
+
+Read [report](../reports/grain_vector_mechanisms/EVIDENCE_COMPONENT_REPORT_V1.md),
+[theory](GRAIN_EVIDENCE_COMPONENT_THEORY_V1.md),
+[NEXT72](GRAIN_QUERY_PARTITION_GEOMETRY_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT71 | Which frozen content/selection/mass term supplies the observed local benefit? | Execute GRAIN_EVIDENCE_COMPONENT_PLAN_V1; reconstruct scalar gradient components, source B changes and new8 action-error terms including changed local prefix |0fits/native/Y;60CPU seconds, signed terms/cancellation, no reweighting or upper-bound detour |
+| NEXT72 | What joint moments connect source-query mass sensitivity and relative-value action? | Execute GRAIN_QUERY_PARTITION_GEOMETRY_PLAN_V1 on frozen Qbar/K/V/dK; compile a common potential's first/mixed derivatives and value-spread x directional-spread x alignment |0fits/native/Y;90CPU seconds, reproduce old key actions, retain cancellation; no new anchor/head/accuracy search |
 
-These are local computational/theory questions. NEXT70 complete,4numericfits;
+These are local computational/theory questions. NEXT71 complete,0newfits;
 no live native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT71 planned, not executed; identify
-the useful component of the mass-retaining readout before another selector.
+broader factor search or clinical naming. NEXT72 planned, not executed; return
+to the observed query-directed mechanism through its common scalar geometry.
 No penalty/donor/dose sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

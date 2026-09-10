@@ -1,0 +1,30 @@
+{
+  "primary_commit": "fb97a1276fd31c2a84c0b7791030695fd7acf442",
+  "audit": {
+    "status": "PASS",
+    "fits": 0,
+    "new_neural_calls": 0,
+    "packets": 48,
+    "csv_replay": 6,
+    "cumulative_cpu_seconds": 12.46932,
+    "max_reconstruction_error": 1.6653345369377348e-15,
+    "checks": {
+      "local_B": 0.0,
+      "raw_content_selection_B": 0.0,
+      "baseline_actions": 1.1379786002407855e-15,
+      "frozen_actions": 1.0824674490095276e-15,
+      "credit_identity": 2.5500435096859064e-16
+    }
+  },
+  "files": {
+    "source_response.csv": "f5790c460455f6bbcd7734516d3e364f365ec49a1bf7c8acc02e44df954de9c2",
+    "source_components.csv": "8f895a8db398e97543852af1ea3d9321474e00645345724aa75a743da235ae2a",
+    "source_cross_terms.csv": "4b3c3137047b1bd2132fcd32a6e74fb7bbb94c7ef973a196c91687270d7eca92",
+    "new8_improvement.csv": "bea9b2a27220d61da75f0debd495844603ac24cf78e5d647afc1db8050b7f689",
+    "new8_components.csv": "a501732e33cb997c7f4fdd3d5a06fce103d5fbf2c8cf2c194789f82a0b402b35",
+    "new8_cross_terms.csv": "7ecf99723272717f0c4e7c88e49ae6b5ff2b1674bfa0dda1ccc67bec15a4ad5a"
+  },
+  "publisher_sha256": "b4c31fda4d76ac8430517a5810d74f8781767aad5e5f016fafb861d386601d16",
+  "post_account_geometry_test_sha256": "1e0d418f27770e2abb336c98ff54ff2d991ada967b2ac613bd36f1e063e1acde",
+  "scope": "Frozen source4/new8 native-query function account; no causal or human validity shares"
+}

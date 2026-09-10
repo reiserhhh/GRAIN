@@ -1,5 +1,21 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT71 identifies joint gains and an integrable interface.**
+> Frozen NEXT70 account,0fits/neural/Y;48packets/6CSV exact replay,12.469320sCPU.
+> Raw source cross-B response comes entirely from logmass; local/content/selection
+> B changes exactly0. New8 raw action gains3.602%/5.413% contain substantial
+> local-refit/content/selection cancellation, not one isolated selector's benefit.
+> Logmass credits positive8/8 overlapping cells(.299–2.809percentage points).
+> Content/selection curls cancel in their sum;2synthetic tests show why arbitrary
+> gradient-term deletion need not define a scalar score. Preserve the joint function.
+> [Report](../reports/grain_vector_mechanisms/EVIDENCE_COMPONENT_REPORT_V1.md),
+> [theory](GRAIN_EVIDENCE_COMPONENT_THEORY_V1.md).
+> **NEXT72 planned:** [source-query partition geometry](GRAIN_QUERY_PARTITION_GEOMETRY_PLAN_V1.md).
+> Compile first/mixed moments from existing Qbar/K/V/dK; distinguish value contrast,
+> directional sensitivity and alignment.0fits/neural/Y,90CPU seconds; no generic
+> normalized-kernel search or new attention accuracy sweep. Overall goal ACTIVE.
+
+> Previous NEXT70 update; its NEXT71 task is completed above.
 > **2026-09-11 newest: NEXT70 separates evidence mass from relative selection.**
 > Same1313coef perarm;4fits/32.817521sCPU,0newneural/Y. Source N normalized
 > coordinate SSEzero .979114 vs raw .995625; GRAIN B-action .948326 vs .969572.

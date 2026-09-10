@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT70源N相对选择GRAIN B响应更好(.948326 vs .969572)，新8raw+logmass作用较local误差低3.60%/5.41%，整分数未同步改善。保留同scalar、同材料方向与原文地址；NEXT71分内容/选择/质量/局部重拟合，避免把作用相加当心理构念相加 | normalized evidence theory §§1-4; NORMALIZED_EVIDENCE_REPORT_V1 |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT71在同材料重建L/C/S/M。raw跨B仅logmass；新8作用收益3.602%/5.413%含局部重拟合和内容/选择大幅抵消，非单一选择器收益。共同scalar约束C/S联合设计；NEXT72从源query势函数编译均值/协方差与GRAIN方向接合，非心理构念相加 | evidence component theory §§1-4; EVIDENCE_COMPONENT_REPORT_V1; query partition geometry plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT70把平均核质量与比例选择都保留，二者同信息不等于同函数/正则。局部GRAIN作用改善不是整评分或实际人格准确率。H16仍神经；解释层绑定同原文与关系事件，不能从高权token自动得到精神分析/TA标签 | normalized evidence theory §§2-4; evidence component plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT71的正负误差贡献是同函数分账，不是人格份额或独立心理机制；M在8个重叠单元正贡献也不保证M-only有效。C/S单独重加权通常失去可积性。保持分数与作用同源、原文地址和群体参照，心理解释另接量表/行为；H16/KV依赖未消除 | evidence component theory §§2-5; EVIDENCE_COMPONENT_REPORT_V1; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,23 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第六十轮补充：内容与选择共同生成评分，误差可发生抵消
+
+NEXT71的四冻结函数、48包重建到1.665e-15，6张表完全重放，0新拟合/神经/Y。
+raw源跨后段作用仅logmass；局部、内容、选择项的B变化严格为0。相对读法则让
+C/S同时跨段变化：源N GRAIN投影C/S/M=.020849/.004811/.013304，确认查询为
+.023730/-.012795/-.028489。带符号投影不是相关或独立信息份额。
+
+新8raw作用改善N3.602个百分点，由local+8.867、C-15.247、S+9.346、M+.637
+共同构成；确认5.413个百分点亦有大幅抵消。M在8个重叠的query/arm/投影单元
+正贡献，不能因此当作8次独立验证或唯一有效成分。两个synthetic测试进一步
+验证C/S分别的旋度会互相抵消，因此下一开发必须保持共同标量生成。
+
+共同log配分函数可把logmass的一阶响应与相对value的混合二阶协方差接起来。
+NEXT72将从冻结source-query缓存编译其几何，区别值对比、方向敏感度与对齐；
+不再新增泛核拟合或attention排名。见[报告](../reports/grain_vector_mechanisms/EVIDENCE_COMPONENT_REPORT_V1.md)、
+[理论](GRAIN_EVIDENCE_COMPONENT_THEORY_V1.md)、[NEXT72](GRAIN_QUERY_PARTITION_GEOMETRY_PLAN_V1.md)。
 
 ### 第五十九轮补充：保留证据质量，但区分选择和读出
 
