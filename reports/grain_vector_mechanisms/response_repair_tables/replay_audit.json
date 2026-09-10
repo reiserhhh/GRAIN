@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "primary_commit": "8540e24761a794c8ec0de15238b6273b132e0a1c",
+  "replayed_prediction_packets": 24,
+  "replayed_tables": 12,
+  "diagonal_max_error": 0.0,
+  "metric_max_error": 1.3766765505351941e-14,
+  "accounting_max_error": 1.38222766565832e-13,
+  "primary_compute_seconds": 12.59510245732963,
+  "cached_replay_seconds": 12.330552127212286,
+  "fits": 0,
+  "native_calls": 0,
+  "human_labels_read": false,
+  "query_families": 2,
+  "audit_code_sha256": "0663fd319b55f8c89af1c2b5a6d61db218d60fdc285b2fd66bbb5807f7470371"
+}

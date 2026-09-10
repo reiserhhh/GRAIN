@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT54 response repair explained.**
+> Frozen2x2 state/tangent crossing:80.4–83.4% of the existing new8 endpoint
+> error gain is assigned to changed state,16.6–19.6% to changed tangent.
+> Interaction RMS~1% of change RMS; both routes help all new8 query/factor cells.
+> Source4 contrast worsens0.90–1.44%; weak cohort retained, not rescued.
+> No new fits/neural/Y;12.595s primary,24 packets/12 CSV replay,34 focused tests.
+> [Report](../reports/grain_vector_mechanisms/RESPONSE_REPAIR_REPORT_V1.md),
+> [theory](GRAIN_RESPONSE_REPAIR_THEORY_V1.md). Fixed-basis family CLOSED.
+> [NEXT55 whole-path assembly](GRAIN_WHOLE_PATH_ASSEMBLY_PLAN_V1.md) planned:
+> frozen pointwise joint/value/identity to actual suffix22–end; complete L and
+> four GRAIN responses,72 candidate reverses/180s, no refits or target-state input.
+> H16 and retained suffix still native; assembled shortcut, not full LLM independence.
+
+> **Previous NEXT53; its NEXT54 request is completed above.**
 > **2026-09-10 newest: NEXT53 source response learning delivered.**
 > Joint pointwise/causal retain new8 N/C components r~.900/.924, both fixed
 > SSE/zero gates pass. Matched normalization controls already pass; teaching

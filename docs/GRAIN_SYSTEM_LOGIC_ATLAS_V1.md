@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT53用Sigma_G方向目标教学同一源函数，在归一化匹配后新8方向误差再降约1.1%、端点15–19%。GRAIN可定义需保留的变化，而非只是另加分数。两个query组件r约.900/.924；源4端点弱，完整保留 | response aware state theory §§1-4; source state transport theory |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT54冻结四格定位NEXT53增益：80.4–83.4%新8误差降低分到状态依赖读法，16.6–19.6%到方向。GRAIN方向教学同时改状态与导数；两系统不是只加分数。源4查询对比变差，所有结果保留 | response repair theory §§1-3; response aware state theory |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT53已保留不需当前blocks17–21的数值K组件；原H16前缀/attention矩阵仍依赖模型。归一化对照本身也过门槛，方向教学有增益但还会改变状态。NEXT54仅拆这次修复后回到整链，不以组件r代替人类效标 | response aware state theory §§3-5; response repair mechanism plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT54已解释响应教学的两条修复路线，局部固定基底家族结束。NEXT55计划将冻结Psi和同函数导数接真实suffix22–end，直接比较整个L/响应；仍依赖原前缀和后缀。组件分账不代替人类效标或精神分析解释 | response repair theory §§4-5; whole path assembly plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,21 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第四十三轮补充：教变化也改变了状态依赖的读法
+
+NEXT54固定VV/VJ/JV/JJ，0拟合/神经/Y，解释而非再次提高NEXT53的结果。
+A(X,d)=ell(X)^T d，差异精确等于delta_ell^T dbar+ellbar^T delta_d。
+既有新8误差改善中80.4–83.4%由状态路线分得、16.6–19.6%由方向分得，交互
+RMS约为总改变量1%。状态平均距离略变差不妨碍功能更准，因为度量不同。
+所有新8单query/contrast因子改善；源4对比却变差0.90–1.44%，完整保留。
+
+这是对称计算记账，不是人格静动份额；交叉组合不是新函数导数。12.595秒
+CPU，24包12CSV精确重放，34测试通过。当前固定基底家族结束。
+[NEXT55](GRAIN_WHOLE_PATH_ASSEMBLY_PLAN_V1.md)计划冻结pointwise联合/值对照/
+identity后接实际后缀22–end，对整个固定L和四方向响应测一次，不调局部参数。
+见[报告](../reports/grain_vector_mechanisms/RESPONSE_REPAIR_REPORT_V1.md)、
+[理论](GRAIN_RESPONSE_REPAIR_THEORY_V1.md)。全系统goal ACTIVE，暂无模型任务。
 
 ### 第四十二轮补充：源响应教学产生可保留的数值组件
 

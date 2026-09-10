@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, forty-two finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, forty-three finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1277,22 +1277,53 @@ Read [report](../reports/grain_vector_mechanisms/RESPONSE_AWARE_STATE_REPORT_V1.
 [theory](GRAIN_RESPONSE_AWARE_STATE_THEORY_V1.md),
 [NEXT54](GRAIN_RESPONSE_REPAIR_MECHANISM_PLAN_V1.md).
 
+## Forty-third pass: response teaching repairs a state-dependent reader
+
+- Previous turn classified as progress: NEXT53 retained source-only numerical
+  components, separated loss normalization from response teaching, and froze
+  one mechanism crossing before whole-path assembly.
+- NEXT54 complete, primary `8540e24`: same12 materials/two queries/four GRAIN
+  directions, frozen VV/VJ/JV/JJ.96 new cross-vector calls plus96 diagonal checks;
+ 768 scalar cells,384 paired query contrasts,192 effects/96 contrast effects.
+  No fits/native/API/Y, current target states or gradients in prediction.
+- Exact state-dependent functional A(X,d)=ell(X)^T d. Symmetric change
+  delta_A=delta_ell^T dbar+ellbar^T delta_d; interaction=delta_ell^T delta_d.
+  Teaching the same function's derivative changes both state and tangent.
+- New8 state route receives80.4–83.4% of the existing14.8–19.1% error gain,
+  tangent16.6–19.6%; interaction RMS~1% of change. Every new8 factor improves
+  in per-query and contrast tables. Allocation is not a causal/personality share.
+  Query contrast gains14.81% pointwise/12.66% causal; source4 contrast instead
+  worsens1.44%/0.90%, with all source contrast factors worse. No cohort rescue.
+-34 focused tests pass/18 existing warnings, Ruff passes;24 packet/12 table
+  replays exact, prior diagonal error0, independent metric/accounting errors
+  <=1.377e-14/1.383e-13. Primary12.595102s, cached replay12.330552s; prediction
+  processes briefly overlapped, so times are wall costs rather than isolated
+  benchmarks. Both within60s, one primary/one replay, no restarts or target fits.
+- Fixed-basis local family closed. NEXT55 uses frozen pointwise joint/value and
+  identity maps inside actual suffix22–end, testing full fixed L and its four
+  GRAIN responses.72 candidate forward/reverse pairs,180s native cap; source
+  parameters unchanged. H16 and retained suffix remain native, explicitly counted.
+
+Read [report](../reports/grain_vector_mechanisms/RESPONSE_REPAIR_REPORT_V1.md),
+[theory](GRAIN_RESPONSE_REPAIR_THEORY_V1.md),
+[NEXT55](GRAIN_WHOLE_PATH_ASSEMBLY_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT54 | Through which state/tangent route does source response teaching improve the endpoint? | Execute GRAIN_RESPONSE_REPAIR_MECHANISM_PLAN_V1; fixed2x2 crossings, symmetric allocation and exact error reduction |0 native/fit/Y;60s CPU; crossed pairs are diagnostic, not eligible derivatives; explain once then leave the fixed-basis family for whole-path assembly |
+| NEXT55 | Does the retained map preserve the complete logit function and its GRAIN responses? | Execute GRAIN_WHOLE_PATH_ASSEMBLY_PLAN_V1; frozen pointwise joint/value/identity maps into actual suffix22–end |72 candidate reverse pairs+2 JVP+4 FD,180s native/60s CPU;0 refits/Y; evaluate whole L and derivative separately, no current target-state input or local grid |
 
-These are local computational/theory questions. NEXT53 complete; no repeated
-suffix or prefix calls. No MLP24/attention22/readout refinement, old queue restart,
-broader factor search or clinical naming. NEXT54 is planned, not already executed.
+These are local computational/theory questions. NEXT54 complete; no new native
+calls in that packet. No MLP24/attention22/readout refinement, old queue restart,
+broader factor search or clinical naming. NEXT55 is planned, not already executed.
 Current H16 remains native; removing one intervening segment is not eliminating
-the full encoder. NEXT53 used cached source tangents but no labels or endpoint
-targets. NEXT54 uses already frozen source maps, with no additional fitting.
+the full encoder. NEXT55 counts its candidate suffix computations explicitly;
+the original cached scores/tau are evaluation-only, not add-back prediction inputs.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

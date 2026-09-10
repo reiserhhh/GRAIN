@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第四十二轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第四十三轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -61,6 +61,7 @@ flowchart TD
 | 选择的端点组件 | kappahat=rbar_q^T uhat_K(Qbar_q;K,V,dK) | `selection_endpoint.py`；先冻结完整增量向量，再从源4编译后续读头；当前梯度只供oracle评估 | 新8组件r=.973/.978，对比=.963、幅度59.2%；K/V/dK仍原生。局部交换引子反号不保留到端点；NEXT52从H16用同一函数生成状态与导数，移除blocks17–21的当前运行依赖 |
 | 源状态与同函数导数 | Xhat=Psi(X16)，dhat=D Psi[D] | `source_state_transport.py`；源4 primal-only Ridge、固定PCA32、点式/因果累计图，同源Qbar/rbar端点 | NEXT52已执行：状态误差降42–47%，方向误差增39–50%；全部未过替代门槛。identity仍有r=.878/.893但幅度约4倍；PCA覆盖方向31.94%。NEXT53改为源值+方向联合目标，不拟合当前结果；H16仍原生 |
 | 源GRAIN响应联合教学 | L=L_value+L_direction+alpha penalty，Xhat/dhat由同B生成 | `response_aware_state.py`；既有源U32/尺度，源值及四方向，归一化匹配对照；当前禁读pre22/梯度/端点 | NEXT53新8组件r~.900/.924，两图过门槛；相对匹配对照端点误差再降15–19%，全方向约1.1%。源4端点仍弱；20solves/0神经。已保留组件无需当前blocks17–21，但H16仍原生；NEXT54拆状态/方向修复途径 |
+| 状态依赖读法与方向修复 | delta_A=delta_ell^T dbar+ellbar^T delta_d | `response_repair.py`；冻结V/J状态和同函数方向，2x2诊断交换，固定引子/读头 | NEXT54新8既有误差降低中80.4–83.4%分给状态路线，16.6–19.6%给方向；交互RMS约1%。源4对比略恶化，保留。0拟合/神经，34测试；NEXT55接完整L及导数，不以局部修复代替整函数成功 |
 | 固定输出方向传输 | J_q=K_q^T W_A^T c，c固定 | `run_grain_fixed_seed_attention.py`；旧4/新8共同正文、N/确认原query状态与布局 | 相同seed下正文余弦.728/.657，直接显示条件传输差异；不是单靠两个不同seed的夹角推断K变化。L是新logit诊断，不是原概率F |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
@@ -93,7 +94,12 @@ GRAIN响应更接近；没有用失败候选替换NEXT51。第四十一轮
 Jacobian误差；[NEXT53](GRAIN_RESPONSE_AWARE_STATE_PLAN_V1.md)已完成源值/方向联合
 匹配及运行前补充的归一化对照。新8组件可用，源4弱端点保留；不是整个F。
 [联合教学理论](GRAIN_RESPONSE_AWARE_STATE_THEORY_V1.md)区分正则化与方向教学，
-[NEXT54](GRAIN_RESPONSE_REPAIR_MECHANISM_PLAN_V1.md)仅用冻结交叉解释两种修复路线。
+[NEXT54](GRAIN_RESPONSE_REPAIR_MECHANISM_PLAN_V1.md)已完成：固定A(X,d)=ell(X)^T d
+四格表明既有新8增益主要经由状态依赖读法，方向路线也有贡献；不是单纯方向修正。
+[修复理论](GRAIN_RESPONSE_REPAIR_THEORY_V1.md)保留源4对比恶化与精确误差项。
+[NEXT55](GRAIN_WHOLE_PATH_ASSEMBLY_PLAN_V1.md)计划把固定Psi及其导数送入真实
+suffix22–end，评估整个固定logit L及响应。此步显式保留并计数后缀神经计算，
+不再继续局部基底/权重细调，也不把原生当前其它组件加回来冒充独立预测。
 
 同一材料、查询、布局和数值观察器下，旧四格的定义为：
 
