@@ -1,6 +1,19 @@
 # GRAIN mainline discovery V3
 
-> **2026-09-10 newest: NEXT49 full upstream attention channels delivered.**
+> **2026-09-10 newest: NEXT50 source-query evidence selection delivered.**
+> New8 own same-query N/confirmation action r=.937931/.903473. Contrast r for
+> own/other/shared anchors=.939345/-.890468/.477162; same-query31/32 signs,
+> but only29.1% native contrast RMS. All3 pass their original per-query gate;
+> that does not imply all3 retain the between-query difference.
+>576 actions/288 contrasts,0 neural/fit/Y; .373s plus.430s replay.12 NPZ/6 CSV
+> replays,62 related tests. [Report](../reports/grain_vector_mechanisms/SOURCE_QUERY_SELECTION_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_QUERY_SELECTION_THEORY_V1.md).
+> Current K/V/dK remain native. Anchor-only refinement CLOSED. [NEXT51](GRAIN_SELECTION_ENDPOINT_PLAN_V1.md)
+> planned: frozen key vectors to final endpoint, plus source-only suffix reader;
+>24 suffix forward/reverse pairs plus fixed checks within180s native/60s numeric.
+> Separate oracle transport and native-dependent assembly from source-only component.
+
+> **Previous NEXT49; its NEXT50 request is completed above.**
 > New8 own query-contrast projections Q/K/V=.083093/.903954/.012952; source4
 > .561950/.271327/.166722. Selection dominates new8 contrast, but Q is not disposable.
 >96 native prefix JVPs/77.972s, all96 full-vector sums match within5.272e-6 relative.

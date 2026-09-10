@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第三十八轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第三十九轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -57,6 +57,7 @@ flowchart TD
 | 源固定共同回调 | v*=mean_s,q J24(x_s,q)^T w*，chat=v*^T delta_d | `source_common_counteraction.py`；构造仅源4 x/权重；当前应用只用两个固定v与d | 新8r=.955274/.954853、SSE/zero=.091333/.092402；8人v完全相同。去掉此处当前x依赖但保留原生上游d；NEXT48只检验一次源查询差异，随后回到完整输入链 |
 | 源固定查询修正 | delta_ahat=v_common^T delta_d+(v_N-v_C)^T dbar | `source_query_correction.py`；构造仅源4分查询J伴随均值；当前应用v,d，公共项不变 | 新8修正/算子项r=.886208/.885192；总对比r=.976535/.976360、SSE/zero=.060734/.061466。105测试/12数组8CSV重放；MLP24-only细调结束，NEXT49补全上游attention22的Q/K/V传输，不把局部高r当问卷预测 |
 | 上游完整注意力三通道 | dot_o=sum a dot_V + sum a(V-o)(dot_Q K+Q dot_K)/sqrt(h) | `upstream_attention_channels.py`；全token preAttention22 x/d、实际norm/QKV/O/RoPE/GQA/mask、固定w*；r2汇总 | 新8Q/K/V局部对比投影=.083/.904/.013，源4=.562/.271/.167；96原生向量相对差≤5.272e-6。Q不应删除；NEXT50用源固定Q检验key选择读法，当前K/V/dK仍原生 |
+| 源查询引子选择 | sum a_Q(V-o_Q)(Qbar dot_K)/sqrt(h)，每引子重算softmax | `source_query_selection.py`；源4 pre-RoPE Q均值、当前K/V/dK、实际位置与固定w*；预测禁读当前Q | 新8同/另/共享引子对比r=.939/-.890/.477；同query幅度29.1%，各query门槛三者均过。当前证据依旧query-conditioned；局部引子家族关闭，NEXT51测后续读出与完整端点中的作用 |
 | 固定输出方向传输 | J_q=K_q^T W_A^T c，c固定 | `run_grain_fixed_seed_attention.py`；旧4/新8共同正文、N/确认原query状态与布局 | 相同seed下正文余弦.728/.657，直接显示条件传输差异；不是单靠两个不同seed的夹角推断K变化。L是新logit诊断，不是原概率F |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
@@ -79,7 +80,9 @@ NEXT48之后的精简[全链依赖与归位图](GRAIN_UPSTREAM_MECHANISM_INTEGRA
 旧末端BODY-only K/V分解不包含被固定的query变化；NEXT49在传播后的
 attention22边界已补齐这一项，旧受限公式本身不因此失效。
 第三十八轮的[三通道机制](GRAIN_UPSTREAM_ATTENTION_CHANNELS_THEORY_V1.md)
-显示选择与写入可同时变化；NEXT50检验局部源query引子，而非直接替代全原文推论。
+显示选择与写入可同时变化。第三十九轮的[源query引子](GRAIN_SOURCE_QUERY_SELECTION_THEORY_V1.md)
+在不读当前Q时保留局部选择，交换引子改变两query对比；当前K/V/dK仍原生。
+NEXT51将冻结的完整增量向量接到最终logit读出，而非把局部w*相关当成全原文推论。
 
 同一材料、查询、布局和数值观察器下，旧四格的定义为：
 
@@ -142,7 +145,11 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 
 ## 6. 可复算入口与下一步
 
-当前下一步是[NEXT46查询反向调整机制](GRAIN_QUERY_COUNTERACTION_PLAN_V1.md)。
+当前下一步是[NEXT51固定选择的端点运输](GRAIN_SELECTION_ENDPOINT_PLAN_V1.md)。
+NEXT50同query源引子读取新8的N/确认K作用r=.938/.903，对比r=.939，
+但幅度未全保留。随后r_u,q^T e与局部w*^T e不同，必须在相同向量上接合。
+只捕获尚未捕获的后续读出；候选先冻结，当前梯度仅用于评估，不冒充源程序。
+以下NEXT46及更早步骤保留历史论证来源，不作为当前排程。
 第三十四轮[差异形成](GRAIN_QUERY_TRANSPORT_FORMATION_THEORY_V1.md)已完成：
 同一共享w*下实际前置增量形成先放大后调整的查询对比，MLP24持续为负。
 下一步只收集MLP24前的局部状态，以精确对称递推拆解已有输入与算子差异。
