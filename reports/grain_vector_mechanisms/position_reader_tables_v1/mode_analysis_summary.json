@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "new_fits": 0,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "identity_error_max": 2.220446049250313e-16,
+  "field_improvement_action_worsening_cases": 4,
+  "comparisons": 18
+}

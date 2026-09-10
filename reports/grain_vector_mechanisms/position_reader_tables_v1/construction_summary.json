@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "queries": 3,
+  "authors": 4,
+  "gradient_fields": 12,
+  "source_basis_fits": 12,
+  "position_fits": 24,
+  "within_field_factorizations": 12,
+  "old_contraction_replay_max": 1.0269562977782698e-14,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "position_input": "length and source coefficients only",
+  "membership": "LOO exploratory on the old4; original2/2 roles archived, not new held population"
+}

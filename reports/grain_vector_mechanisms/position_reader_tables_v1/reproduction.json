@@ -1,0 +1,30 @@
+{
+  "exact_files": {
+    "construction/TF_cont/private_factors.npz": true,
+    "construction/TF_cont/private_fields.csv": true,
+    "construction/TF_cont/private_actions.csv": true,
+    "construction/TF_cont/private_fit_records.json": true,
+    "construction/neuroticism/private_factors.npz": true,
+    "construction/neuroticism/private_fields.csv": true,
+    "construction/neuroticism/private_actions.csv": true,
+    "construction/neuroticism/private_fit_records.json": true,
+    "construction/confirmation_seeking/private_factors.npz": true,
+    "construction/confirmation_seeking/private_fields.csv": true,
+    "construction/confirmation_seeking/private_actions.csv": true,
+    "construction/confirmation_seeking/private_fit_records.json": true,
+    "construction/private_membership.json": true,
+    "construction/construction_summary.json": true,
+    "analysis/reader_comparison.csv": true,
+    "analysis/factor_actions.csv": true,
+    "analysis/coverage.csv": true,
+    "mode_analysis/mode_addition.csv": true
+  },
+  "tests_passed": 23,
+  "constructions": 2,
+  "new_neural_calls": 0,
+  "construction_compute_seconds": [
+    2.1337023768574,
+    2.1672597527503967
+  ],
+  "timing_scope": "Numerical construction after loading; not total preparation and analysis time"
+}

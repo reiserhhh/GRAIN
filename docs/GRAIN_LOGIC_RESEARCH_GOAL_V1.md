@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-one finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-two finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -640,15 +640,42 @@ and [magnitude/direction theory](GRAIN_COMPLETE_RESPONSE_DIRECTION_THEORY_V1.md)
 Implementation95f472b, main analyzerd8bb93f, no-fit supplementd3b0f7b. The native
 token-localization question now changes the next mainline action.
 
+## Twenty-second pass: shared directions and content-dependent coefficients
+
+- NEXT31 complete on12 old scalar body-gradient fields,4 authors/3 queries,
+ 48 unique native GRAIN tangent actions. Current-gradient rank8 compression
+ retains action r=.952/.998/.990 (T/F,N,confirmation). Three-source rank8
+ directions with held-gradient oracle coefficients give .862/.987/.977;
+ relative action squared errors .314/.319/.100 remain despite high correlation.
+- Actual source-only degree3 position gives r=.498/.047/.033 and errors
+ .922/.998/1.001. This separates reusable direction vocabulary from missing
+ token-content coefficient inference, not a proof that all position models fail.
+ Four original2/2 roles are archived; current3/1 LOO is exploratory, not new people.
+-18 nested mode-addition comparisons:4 improve gradient energy but worsen
+ measured action. N shared4->8 error .073->.319 while field error .840->.738.
+ Signed added-energy/cross-error identity reproduces to2.22e-16. Measurement
+ semimetric explains cancellation without calling all omitted modes noise.
+-12 source bases,24 small position fits and12 self decompositions per replay;
+ two numerical constructions ~2.1s each after loading,0 new neural calls/Y.
+18 frozen numerical artifacts replay exactly; old native contractions within
+1.03e-14.23 scoped tests pass. One synthetic assertion needed floating-point
+ zero tolerance; no computation/result was changed for this test correction.
+
+Read [position-reader report](../reports/grain_vector_mechanisms/POSITION_SPECIFIC_READER_REPORT_V1.md)
+and [shared direction/local coefficient theory](GRAIN_POSITION_READER_THEORY_V1.md).
+Implementation541b1ba, main analyzer453e954, mode accountd2824db. No scoring or
+lockbox edits. The current interpreter claim remains a future downstream link;
+the experiment measures a concrete, usable local model-reading mechanism.
+
 ## Next loop, in order
 
-NEXT24/25/26/32/33 finite candidates are closed, retaining useful mechanisms and
-contrary comparisons. Execute NEXT31's position-specific reader decomposition;
-signed configuration reading is now the actionable bottleneck, not score fitting.
+NEXT24/25/26/31/32/33 finite candidates are closed, retaining useful mechanisms
+and contrary comparisons. Execute NEXT34: estimate token coefficients from
+content, then test same-material GRAIN modulation; no new neural collection.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT31 | Is configuration direction represented by shared hidden directions and varying token coefficients? | Execute GRAIN_POSITION_SPECIFIC_READER_PLAN_V1:12 saved fields, fixed ranks1/2/4/8, GRAIN tangent preservation,3-source/1-held bases, uniform versus degree0-3 position reader | Zero neural calls;12 source basis fits/24 small position fits maximum,240s resource check. Keep self-compression, held-gradient oracle and truly source-only prediction separate. Scalar natural-state fields are not conditional mean-null candidate fields |
+| NEXT34 | Can content predict the local coefficients; does GRAIN help? | Execute GRAIN_CONTENT_COEFFICIENT_READER_PLAN_V1: frozen sharedrank8, sourcePCA32 + position, versus addedGRAIN/interactions,3-source/1-held | Zero neural calls;4 input PCAs/24 small Ridge fits;240s resource check. Current-gradient-denied inference, field and action metrics, no rank/hyperparameter grid or human criterion selection |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE",
+  "authors": 4,
+  "queries": 3,
+  "fields": 12,
+  "unique_original_tangents": 48,
+  "reader_comparisons": 33,
+  "factor_comparisons": 132,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "cauchy_violation_max": 0.0
+}

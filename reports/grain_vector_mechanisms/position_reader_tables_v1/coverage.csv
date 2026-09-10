@@ -1,0 +1,4 @@
+query,authors,tokens_min,tokens_max,field_rows
+TF_cont,4,794,1004,44
+confirmation_seeking,4,794,1004,44
+neuroticism,4,794,1004,44

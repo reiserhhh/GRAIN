@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "a88855e88be9c8ca379630692980d2c4a04b857be48cf203d5e9e145658589e8",
+  "atlas_sha256": "9cc48e2ce540eb9fcee4684e0fc7b6ba68eefba00adb2fc350bbe1121f6bd467",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "\u65e7E5\u7684Cw\u4ecd\u7cbe\u786e\uff1b\u539f\u751f\u5171\u540ctoken\u5f20\u91cf\u7ecfJacobian\u5f97\u5230T=Cw+localized\u3002\u4ec5\u5e73\u5747\u65b9\u5411\u8bfb\u6cd5\u7684\u76f8\u5bf9\u4f5c\u7528\u8bef\u5dee.968/.998/1.005\uff0c\u9700\u4fdd\u7559\u4f4d\u7f6e\u7279\u5f02\u8bfb\u53d6\uff1b\u4e0d\u63a8\u51fa\u6240\u6709H\u5747\u67e5\u8be2\u65e0\u5173",
-      "evidence_entry": "native material reader report \u00a72; material geometry report \u00a74"
+      "alternative_or_next_link": "\u540ctoken\u65b9\u5411\u4e0e\u68af\u5ea6\u6536\u7f29\u5df2\u6709\u539f\u751f\u9a8c\u8bc1\uff1b3\u6e90\u5171\u4eab8\u65b9\u5411\u5728oracle\u7cfb\u6570\u4e0b\u4f5c\u7528r=.862/.987/.977\uff0c\u800c\u6e90\u4e09\u6b21\u4f4d\u7f6e\u8bfb\u6cd5.498/.047/.033\u3002\u5171\u540c\u65b9\u5411\u53ef\u7528\uff0c\u5185\u5bb9\u76f8\u5173\u7cfb\u6570\u9700\u6784\u9020\uff1b\u4e0d\u662f\u5df2\u65e0LLM\u4eba\u683c\u9884\u6d4b",
+      "evidence_entry": "position reader report \u00a7\u00a72-4; native material reader report \u00a72"
     },
     {
       "id": "L20",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "\u6761\u4ef6pair\u5df2\u63a5\u901a\uff0c\u7981\u8bfb\u5f53\u524d\u7aef\u70b9\u53ef\u91cd\u653e\u3002\u5927\u5c0f\u4e0e\u67e5\u8be2\u65b9\u5411\u5206\u79bb\uff0cDeltaS=norm(d)norm(vbar)cos(theta)\uff1b\u6700\u7ec8\u94fe\u63a5\u8fd1\u7ebf\u6027\u4e0d\u7b49\u4e8e\u914d\u7f6e\u8bfb\u6cd5\u6b63\u786e\u3002\u4e0b\u4e00\u6b65token\u4f4d\u7f6e\u8bfb\u53d6\uff0c\u575716\u4e0e\u4eba\u7c7b\u6548\u6807\u4ecd\u53e6\u63a5",
-      "evidence_entry": "complete response direction theory \u00a7\u00a71-5; conditional input dependencies"
+      "alternative_or_next_link": "\u6761\u4ef6pair\u5df2\u63a5\u901a\uff1b\u8fdb\u4e00\u6b65\u5206\u51fa\u5171\u540c\u65b9\u5411V\u4e0etoken\u6743\u91cda\u3002\u5168\u5b57\u6bb5\u80fd\u91cf\u4e0eGRAIN\u4f5c\u7528\u91c7\u7528\u4e0d\u540c\u5ea6\u91cf\uff0c\u65b0\u589e\u6a21\u5f0f\u53ef\u6270\u52a8\u62b5\u6d88\u3002\u4e0b\u4e00\u6b65\u6e90\u62df\u5408\u5185\u5bb9/GRAIN\u7cfb\u6570\uff0c\u4fdd\u6301\u89e3\u91ca\u4e0e\u91cf\u8868\u6548\u6807\u53e6\u63a5",
+      "evidence_entry": "position reader theory \u00a7\u00a72-5; conditional input dependencies"
     }
   ]
 }

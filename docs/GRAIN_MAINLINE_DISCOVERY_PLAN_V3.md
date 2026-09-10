@@ -1,5 +1,18 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT31 shared directions/local coefficients delivered.**
+> Four old authors, three scalar queries,48 native GRAIN tangent actions. Shared
+> rank8 directions with held-gradient oracle coefficients retain action
+> r=.862/.987/.977; source-only cubic position gives .498/.047/.033. This locates
+> the next mechanism in content-conditioned coefficients, not position alone.
+> Four of18 nested-rank additions improve field energy but worsen action; exact
+> signed mode-accounting explains why.23 scoped tests,18 exact numerical replays,
+> zero new neural calls. All construction/analysis complete, no long run pending.
+> [Report](../reports/grain_vector_mechanisms/POSITION_SPECIFIC_READER_REPORT_V1.md),
+> [theory](GRAIN_POSITION_READER_THEORY_V1.md),
+> [NEXT34 fixed two-arm plan](GRAIN_CONTENT_COEFFICIENT_READER_PLAN_V1.md).
+> Full goal ACTIVE. Earlier next-step paragraphs remain historical.
+
 > **2026-09-10 newest: NEXT33 complete conditional pair delivered; goal ACTIVE.**
 > Same4 sources/20 evaluation authors, five numerical heads,0 neural calls.
 > Affine complete score r=.610/.593 versus matched kernel-.095/.092;
