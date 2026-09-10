@@ -102,3 +102,23 @@ Zero new labels, APIs, MEPS reads, output generation, lockbox access or scorer
 changes. No new optimizer. Existing GRAIN codes and user/condition/material
 addresses remain intact. This closes one upstream computational link, not all
 human personality inference or the whole-system goal.
+
+## Implementation clarification before native outcomes
+
+The small real-Qwen2 synthetic network passes CPU and MPS forward-AD tests;
+native eager kernels are retained. Source t is differentiated only through the
+last tail from its captured residual state (8 source backwards), not by inverting
+W_O. The last MLP is evaluated at the final position, with source score/g parity
+checked against the original full-sequence implementation before prediction.
+
+The planned smoke replay re-contracts saved JVP vectors with fixed source means;
+it adds no native JVP beyond the96-call cap. All24 saved contractions can be
+replayed numerically at negligible cost. The two prescribed vector finite
+differences test the native JVP itself. No second full native run is planned.
+Prediction is a separate process with undeclared data reads denied after model
+loading; trusted Python/shared-library code may load lazily. Targets are opened
+only by the later evaluator. No outputs have been evaluated when this clarification
+is committed; capture failure requires an explicit correction, not relaxed parity.
+
+Implementation method: [PyTorch forward-mode JVP](https://docs.pytorch.org/docs/2.11/generated/torch.func.jvp.html).
+No new autodiff library or neural training is required.
