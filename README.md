@@ -24,14 +24,18 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Whole-system logic integration (2026-09-10)
 
-Latest: the [twelfth finite pass](reports/grain_vector_mechanisms/JOINT_CARRIER_READOUT_LOGIC_REPORT_V1.md)
-constructs shared comment-interaction and retained-context readouts. N mixed-logit
-error falls23%-26% versus zero interaction, although a pair-type mean explains
-much shared structure. T/F's reference matrix reduces action error14.6% but does
-not preserve all criterion linkage.91.18% shared gradient energy therefore does
-not imply equivalent individual-action recovery: actual displacement geometry
-is the next identified mechanism.32 suffix gradient pairs/37.61s,71 scoped tests,
-six exact numerical replays; no new participants, label training or release changes.
+Latest: the [fourteenth finite pass](reports/grain_vector_mechanisms/SAME_MATERIAL_INTERPRETATION_REPORT_V1.md)
+joins frozen GRAIN slices and query-functional readings on the same9,165 comments
+from276 existing source authors. T/F/F02 within-material correlation is-.297.
+Simple salience weighting shows no general gain, while Openness/F03 signed
+co-variation links to self-report at r=-.264 (BH p=.0175 across180 exploratory
+links), compared with its unweighted mean r=.076. The new object is local joint
+variation, not an automatically improved predictor. A source-backed research
+interpretation schema keeps evidence addresses and fixed scores separate from
+candidate explanations; no clinical/LLM coding run is implied.46 scoped tests and
+seven exact replays pass; no new neural calls, participants or release changes.
+The [thirteenth pass](reports/grain_vector_mechanisms/ACTION_GEOMETRY_LOGIC_REPORT_V1.md)
+and its conditional-action/input-dependency questions remain part of the mainline.
 The [active ledger](docs/GRAIN_LOGIC_RESEARCH_GOAL_V1.md) records the remaining
 construction and input-dependency questions, not an exhausted theory claim.
 

@@ -1,0 +1,29 @@
+{
+  "numerical_byte_replay": {
+    "private_coupling_views.csv": true,
+    "private_oof_replay.csv": true,
+    "private_local_maps.npz": true
+  },
+  "aggregate_byte_replay": {
+    "criterion_links.csv": true,
+    "paired_association_deltas.csv": true,
+    "centered_material_links.csv": true,
+    "coverage.csv": true
+  },
+  "manifest_sha256": "6ddc38e6f5136142a35f5d01f8b016eedfad042694c0889c358e714965469b96",
+  "prediction_freeze_sha256": "6b799cf747a11af570f36195a8bb016253b2623b49cb9f9350985ba97f8ef1d7",
+  "plan_commit": "85010ce",
+  "implementation_commit": "e329bb4",
+  "initial_v1_preserved": true,
+  "revision_reason": "Tiny-signal fallback identity threshold; r2 numerical files identical to v1",
+  "scoped_tests": 46,
+  "full_repository_suite": false,
+  "private_artifacts_published": false,
+  "files": {
+    "criterion_links.csv": "bf0fb2a6cdf4a1b9d640e388f69ef3aecce0ece05555ed2cc61c68e9cae6602b",
+    "paired_association_deltas.csv": "081d54bd5b85a0f7f6a2af592e05dc587d9c3c6672d6b583bce4b720ffa5fd83",
+    "centered_material_links.csv": "574bec2a62b6d25e798f78447c98305d2fca5e6a07c7993290c36949152da00c",
+    "coverage.csv": "ad6eb6a6dd1f7a51c74adcc2e5aa739fad26b5373cde5f0697abdee771a3886b",
+    "summary.json": "d63a30bee8bac3743ae50d434ed13c970e948471583c314074259bc2aa4edc62"
+  }
+}

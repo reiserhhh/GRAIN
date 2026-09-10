@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "bbcd43d91a7153134cfec480e636128f049f61ebdcc65f5a038c2ff4a0e751ac",
+  "atlas_sha256": "8b5a1deeebf874d68d0c65f49121b038965091934901c3d789f12bc617da747f",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "\u76f4\u63a5\u5b66\u4e60\u4f59\u9879\u4e0e\u4e8b\u540e\u51cfGRAIN\u4e0d\u7b49\u4ef7\uff1b\u5dee\u989d\u662fGRAIN\u8de8\u8868\u793a\u642c\u8fd0\u8bef\u5dee\uff0c\u53ef\u7cbe\u786e\u8bb0\u8d26",
-      "evidence_entry": "natural transport / configuration extraction \u00a7\u00a74-5"
+      "alternative_or_next_link": "\u76f8\u540c9165\u8bc4\u8bba\u4e0a\u63a5\u5408\u56db\u5207\u7247\u5747\u503c\u4e0eOOF\u67e5\u8be2\u5c40\u90e8\u51fd\u6570\uff1bTF/F02\u4e2d\u5fc3\u5316r=-.297\u3002\u8054\u5408\u914d\u5bf9\u4fe1\u606f\u4e0d\u7b49\u4e8e\u4e24\u4e2a\u8fb9\u7f18\u603b\u5206\uff1b\u975e\u539f\u751f\u9010token\u5f52\u56e0",
+      "evidence_entry": "same-material report \u00a7\u00a71-2; configuration extraction \u00a7\u00a74-5"
     },
     {
       "id": "L20",
@@ -174,8 +174,8 @@
       "id": "L25",
       "implication": "\u8054\u5408 GRAIN+\u8def\u5f84 -> \u66f4\u591a\u4eba\u683c\u9884\u6d4b\u4fe1\u606f",
       "type_and_status": "E",
-      "alternative_or_next_link": "\u6709\u5c40\u90e8 E \u589e\u76ca\uff0c\u65e0\u666e\u904d\u62fc\u63a5\u63d0\u5347\uff1b\u4e0d\u80fd\u628a\u6307\u6807\u63d0\u5347\u5f53\u673a\u5236\u89e3\u91ca",
-      "evidence_entry": "four routes / dynamic report"
+      "alternative_or_next_link": "\u540c\u6750\u6599\u7edd\u5bf9\u79bb\u5dee\u52a0\u6743\u6ca1\u6709\u666e\u904d\u589e\u5f3a\uff1bO/F03\u6709\u7b26\u53f7\u5171\u540c\u53d8\u5316\u4e0e\u81ea\u8bc4r=-.264\uff0cBH p=.0175\u3002S\u4ecd\u542b\u5e45\u5ea6\u4e0e\u5bf9\u9f50\uff0c\u65b0\u5173\u8054\u4e0d\u7b49\u4e8e\u5df2\u8bad\u7ec3\u7684\u65b0\u9884\u6d4b\u5668",
+      "evidence_entry": "same-material report \u00a73; four routes / dynamic report"
     },
     {
       "id": "L26",
@@ -187,9 +187,9 @@
     {
       "id": "L27",
       "implication": "\u7a33\u5b9a LLM \u89e3\u91ca -> \u53ef\u91cd\u590d\u4e14\u6709\u636e\u7684\u53d9\u8ff0",
-      "type_and_status": "E",
-      "alternative_or_next_link": "\u4e00\u81f4\u53ef\u6765\u81ea\u5171\u540c\u504f\u7f6e\uff1b\u56fa\u5b9a\u5206\u6570\u4e0d\u88ab\u89e3\u91ca\u5c42\u56de\u5199",
-      "evidence_entry": "V8 LLM assessment"
+      "type_and_status": "E/H",
+      "alternative_or_next_link": "\u65b0\u589e\u539f\u6587\u533a\u95f4/\u6570\u5b57\u7ed1\u5b9a\u6821\u9a8c\u3001\u5019\u9009\u4e0e\u66ff\u4ee3\u89e3\u91ca\u534f\u8bae\uff1b\u89e3\u91ca\u4e8b\u4ef6\u4e0d\u7b49\u4e8etoken\u5207\u53e3\u3002\u65b0prompt\u5c1a\u672a\u505aLLM\u8bc4\u4ef7\uff1b\u72ec\u7acb\u76f2\u7f16\u7801\u4e0e\u770b\u6570\u5b57\u540e\u7684\u6e32\u67d3\u5206\u5f00",
+      "evidence_entry": "same-material interpretation theory \u00a7\u00a74-5; V8 LLM assessment"
     },
     {
       "id": "L28",

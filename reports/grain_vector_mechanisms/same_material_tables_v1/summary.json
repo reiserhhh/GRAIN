@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "criterion_fits": 0,
+  "new_neural_calls": 0,
+  "criterion_rows": 180,
+  "local_links": 36,
+  "paired_contrasts": 72,
+  "construction": {
+    "status": "COMPLETE",
+    "fits": 45,
+    "seconds": 1.1027277521789074,
+    "new_neural_calls": 0,
+    "source_authors": 276,
+    "new_participants": 0,
+    "slice_rows": 36660,
+    "eligible_comments": 9165,
+    "input_comments": 9936,
+    "replayed_views": 3951,
+    "OOF_replay_max": 6.106226635438361e-16,
+    "slice_aggregation_replay_max": 3.552713678800501e-15,
+    "coupling_identity_max": 5.2735593669694936e-15
+  },
+  "inference_unit": "whole source author; fixed OOF maps; exploratory reused source labels",
+  "files": {
+    "criterion_links.csv": "bf0fb2a6cdf4a1b9d640e388f69ef3aecce0ece05555ed2cc61c68e9cae6602b",
+    "paired_association_deltas.csv": "081d54bd5b85a0f7f6a2af592e05dc587d9c3c6672d6b583bce4b720ffa5fd83",
+    "centered_material_links.csv": "574bec2a62b6d25e798f78447c98305d2fca5e6a07c7993290c36949152da00c",
+    "coverage.csv": "ad6eb6a6dd1f7a51c74adcc2e5aa739fad26b5373cde5f0697abdee771a3886b"
+  }
+}

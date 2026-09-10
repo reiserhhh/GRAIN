@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirteen finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, fourteen finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -410,6 +410,32 @@ Read [action-geometry report](../reports/grain_vector_mechanisms/ACTION_GEOMETRY
 [conditional curvature](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md#7-已测校准与位移相关的曲率).
 Plan `0fb89ff`, implementation `b30e767`, initial no-fit diagnostic `8a45048`.
 
+## Fourteenth pass: same-material coupling and structured interpretation
+
+- NEXT27 complete:276 old source authors,9165 eligible comments,36660 frozen
+  lexical slices,9 queries and4 coordinates.45 original-fold E5 configuration
+  readouts rebuilt;3951 old OOF views replay within6.11e-16. No new Y fitting,
+  participants, neural calls, clinical data reads or external APIs.
+- Same-comment centered links include TF/F02 -.2974, EI/F01 .2828 and N/F02
+  -.2285. Positive salience weighting does not provide a general improvement.
+  Openness/F03 signed covariance S/self-report r=-.2639,95% CI[-.3954,-.1445],
+  BH p=.01746 across180 declared links; its unweighted mean link is .0756.
+  This is a source-exploratory coupling statistic, not a newly validated head.
+- Exact W-U=Cov(g,abs(centered psi))/mean(abs(centered psi)) connects weighted
+  scores to local co-location. S retains direction but mixes marginal spread
+  and alignment; the next question is their decomposition, not an alpha grid.
+- NEXT28 literature/interface delivered: defense coding, COMPASS, relationship
+  episodes and TA simulation distinguished. Local evidence schema/validator and
+  rendering prompt added; no actual LLM/clinical coding evaluation. Token-offset
+  allocation tests preserve total accounting without pretending to identify
+  within-token causal effects. Old TEG downgrade remains intact.
+-46 scoped tests pass,19 new;3 numerical and4 aggregate files replay byte-for-
+  byte. Tiny-signal threshold fix retained as r2 before Y analysis; original
+  three numerical files unchanged. Plan85010ce, implementatione329bb4.
+
+Read [same-material report](../reports/grain_vector_mechanisms/SAME_MATERIAL_INTERPRETATION_REPORT_V1.md)
+and [interpretation theory](GRAIN_SAME_MATERIAL_INTERPRETATION_THEORY_V1.md).
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
@@ -417,6 +443,7 @@ Plan `0fb89ff`, implementation `b30e767`, initial no-fit diagnostic `8a45048`.
 | NEXT24 | Can the measured R-path remainder become a displacement-dependent common function? | Use saved reference gradients/paths to separate radial variation, role structure and body conditioning. Derive one finite curvature-sensitive candidate only after identifying its actual support; numerical action targets, not Y | Compare one source-defined candidate to existing linear/support baselines on unchanged authors. Do not estimate an unrestricted208896-square Hessian or select rank/penalty from exposed criteria. Preserve context and integration errors |
 | NEXT25 | Does conditional energy provide information absent from a vector conditional mean? | Reuse fixed N pair targets and direction accounts. First quantify the norm/energy identity under the declared inputs and existing prediction shrinkage; a direct projected scalar Ridge is algebraically redundant | Freeze at most one distinct energy-sensitive candidate if the numerical evidence supports it; no pair/Y-selected feature search. Keep direction, amplitude and orthogonal magnitude separate |
 | NEXT26 | Which complete conditional interface can close one runtime dependency without changing the target? | Choose one declared block from the full-input contract; identify all its raw/encoded/fixed-reference inputs and currently borrowed endpoints before implementation | Execute one complete same-target comparison with upstream inputs explicit. Do not combine old E5/four-layer metrics with new block16 components as if a single end-to-end system already existed |
+| NEXT29 | Does same-material signed coupling reflect spread, alignment or both? | Reuse original local maps and slices; account S=sigma_g*sigma_psi*rho per view, then one fixed signed cyclic-pairing control over all36 groups | No Y fit or query selection. Decide which local statistic merits a subsequent native token/fragment path test. W rotation alone is not a test of signed S; do not silently reuse it as one |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

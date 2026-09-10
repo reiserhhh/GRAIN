@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GRAIN research-only interpretation evidence packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "research_only", "mode", "episode_id", "condition", "evidence", "measurements", "candidates"],
+  "properties": {
+    "version": {"const": "1"},
+    "research_only": {"const": true},
+    "mode": {"const": "evidence_rendering"},
+    "episode_id": {"type": "string", "minLength": 1},
+    "condition": {"type": "string", "minLength": 1},
+    "evidence": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "source_id", "source_sha256", "start", "end", "quote", "speaker", "target", "event_kind"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "source_id": {"type": "string", "minLength": 1},
+          "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "start": {"type": "integer", "minimum": 0},
+          "end": {"type": "integer", "minimum": 1},
+          "quote": {"type": "string", "minLength": 1},
+          "speaker": {"type": "string", "minLength": 1},
+          "target": {"type": "string", "minLength": 1},
+          "event_kind": {"enum": ["observed_utterance", "reported_event", "hypothetical_event", "quotation"]}
+        }
+      }
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "value", "operator_sha256", "reference", "query", "unit", "kind", "evidence_ids"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "value": {"type": "number"},
+          "operator_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "reference": {"type": "string", "minLength": 1},
+          "query": {"type": "string", "minLength": 1},
+          "unit": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["grain_score", "compiled_function", "native_intervention", "semantic_similarity", "coupling_statistic"]},
+          "evidence_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}
+        }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "registry_id", "hypothesis", "evidence_ids", "measurement_ids", "alternative", "missing_context", "support", "human_status"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "registry_id": {"type": ["string", "null"]},
+          "hypothesis": {"type": "string", "minLength": 1},
+          "evidence_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+          "measurement_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+          "alternative": {"type": "string", "minLength": 1},
+          "missing_context": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "support": {"enum": ["insufficient", "tentative", "supported_in_this_episode"]},
+          "human_status": {"enum": ["not_reviewed", "accepted_as_candidate", "rejected", "disagreement"]}
+        }
+      }
+    }
+  }
+}
