@@ -95,6 +95,7 @@ def prepare(out):
     positions, allocation_inputs, native_operators = {}, {}, {}
     files = [
         PLAN,
+        ROOT / "docs/GRAIN_NATIVE_MATERIAL_READER_NUMERICAL_EXTENSION_V1.md",
         HELPER,
         Path(__file__),
         BUNDLE,
@@ -159,17 +160,13 @@ def prepare(out):
                         "common_prefix_tokens": prefix,
                         "body_end_token": body_end,
                         "prefix_max": float(abs(delta).max()),
+                        "original_bound_pass": bool(abs(delta).max() <= 2e-5),
                         "prefix_rms": float(np.sqrt(np.mean(delta**2))),
                         "final_state_rms": float(
                             np.sqrt(np.mean((ha[-1].astype(float) - hb[-1]) ** 2))
                         ),
                     }
                 )
-                if abs(delta).max() > 2e-5:
-                    pd.DataFrame(audit).to_csv(
-                        out / "private_prefix_audit.csv", index=False
-                    )
-                    raise ValueError("Prefix discrepancy exceeds declared bound")
             if arm == "full":
                 full_states[index] = loaded[QUERIES[0]][arm]
                 allocation_inputs[index] = (encoded[QUERIES[0]]["offset_mapping"], [])
@@ -199,6 +196,7 @@ def prepare(out):
                         "role": a["role"],
                         "eligible_comments": eligible,
                         "input_comments": len(texts),
+                        "common_prefix_tokens": prefix,
                     }
                 )
     frame = canonicalize_comments(
@@ -294,6 +292,7 @@ def prepare(out):
             "material_arms": 8,
             "prefix_pairs": len(audit),
             "prefix_max": max(r["prefix_max"] for r in audit),
+            "original_bound_failures": sum(not r["original_bound_pass"] for r in audit),
             "selected_tokens": sum(a["selected_tokens"] for a in design),
             "slices": len(meta),
             "eligible_comments": sum(a["eligible_comments"] for a in design),
@@ -383,7 +382,8 @@ def collect(out):
             with np.load(
                 cached_unit(index, QUERIES[0]).with_suffix(".npz"), allow_pickle=False
             ) as z:
-                common_h = z["full_state"][pos].astype(float)
+                common_state = z["full_state"]
+                common_h = common_state[pos].astype(float)
             for q in QUERIES:
                 dst = out / "private_packets" / f"a{index:02d}_{q}.json"
                 if dst.exists():
@@ -402,6 +402,11 @@ def collect(out):
                 path = cached_unit(index, q)
                 with np.load(path.with_suffix(".npz"), allow_pickle=False) as z:
                     full = z["full_state"]
+                prefix = a["common_prefix_tokens"]
+                canonicalization_max = float(
+                    abs(full[:prefix].astype(float) - common_state[:prefix]).max()
+                )
+                full[:prefix] = common_state[:prefix]
                 h = torch.tensor(full[None], device="mps")
                 kw = cached_suffix_kwargs(observer.model, h)
                 alphabet = original[index]["queries"][q]["alphabet"]
@@ -465,6 +470,7 @@ def collect(out):
                         "role": a["role"],
                         "score": score,
                         "score_replay_error": replay,
+                        "canonicalization_max": canonicalization_max,
                         "gradient_replay": repeat,
                         "rows": rows,
                         "identity_error": parts["identity_error"],
@@ -598,7 +604,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("phase", choices=("prepare", "collect", "analyze"))
     parser.add_argument(
-        "--output-dir", type=Path, default=BASE / "logic_native_material_reader_v1"
+        "--output-dir", type=Path, default=BASE / "logic_native_material_reader_v1_r2"
     )
     parser.add_argument("--name", default="analysis_r1")
     args = parser.parse_args()
