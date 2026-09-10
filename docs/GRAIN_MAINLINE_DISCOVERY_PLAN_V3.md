@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT56 source offset identified.**
+> Offset-only reproduces joint full gradients (cosine .9998); non-intercept-only
+> retains identity-like gradients (.9993). Actual source intercept contributes
+> ~99.91% correction energy. Non-intercept query-contrast r=.811/SSE .351 vs
+> identity .774/.404; all4 new8 contrast factors improve, signs unchanged.
+> Source4 contrast stays negative; all whole-score/per-query-response gates fail.
+>48 reverses+2 JVP+4 FD/39.669s native,0 fits/Y;26 CSV replay,41 focused tests.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_OFFSET_MECHANISM_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_OFFSET_MECHANISM_THEORY_V1.md). State-substitution family CLOSED.
+> [NEXT57](GRAIN_COMPLETE_FUNCTION_EXTRACTION_PLAN_V1.md) planned: source-only
+> scalar whole L and GRAIN derivative fitting,20 solves/180s CPU/0 new neural;
+> no suffix in application, H16 still native. No running model or clinical changes.
+
+> **Previous NEXT55; its NEXT56 request is completed above.**
 > **2026-09-10 newest: NEXT55 whole-function assembly delivered.**
 > Joint map retains new8 model-score ordering r=.548/.420 but compresses author
 > SD to .056/.057 and loses full GRAIN responses; all3 full utility gates fail.

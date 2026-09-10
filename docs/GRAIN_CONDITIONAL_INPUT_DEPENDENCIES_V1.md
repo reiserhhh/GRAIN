@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第四十四轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第四十五轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -63,6 +63,7 @@ flowchart TD
 | 源GRAIN响应联合教学 | L=L_value+L_direction+alpha penalty，Xhat/dhat由同B生成 | `response_aware_state.py`；既有源U32/尺度，源值及四方向，归一化匹配对照；当前禁读pre22/梯度/端点 | NEXT53新8组件r~.900/.924，两图过门槛；相对匹配对照端点误差再降15–19%，全方向约1.1%。源4端点仍弱；20solves/0神经。已保留组件无需当前blocks17–21，但H16仍原生；NEXT54拆状态/方向修复途径 |
 | 状态依赖读法与方向修复 | delta_A=delta_ell^T dbar+ellbar^T delta_d | `response_repair.py`；冻结V/J状态和同函数方向，2x2诊断交换，固定引子/读头 | NEXT54新8既有误差降低中80.4–83.4%分给状态路线，16.6–19.6%给方向；交互RMS约1%。源4对比略恶化，保留。0拟合/神经，34测试；NEXT55接完整L及导数，不以局部修复代替整函数成功 |
 | 完整函数的状态/方向接合 | Lhat=S(Psi(X16))，tauhat=grad S(Psi(X16)):D Psi[D] | `whole_path_assembly.py`；冻结三图、实际suffix22–end、同地址D，无当前目标回填 | NEXT55联合分数排序r=.548/.420但幅度压缩、完整响应丢失，三门槛均失败。缓存交叉定位为状态移动后的读法变化，方向仅变1.82%；72反传/54.34秒。NEXT56只拆源截距/非截距，不调局部参数；H16与后缀仍原生 |
+| 源共同偏移与完整读取 | Psi=X+b+V；四兼容函数I/O/V/F | `source_offset.py`；实际源截距系数，O/V新后缀，I/F重用；预测禁读目标 | NEXT56偏移-only梯度与联合图余弦.9998，其余校正与identity为.9993；新8查询对比r=.811，源4仍负，整分数门槛失败。48反传/39.67秒，41测试。隐藏状态替代家族关闭，NEXT57直接数值拟合原生完整L和同函数导数，尝试移除后缀 |
 | 固定输出方向传输 | J_q=K_q^T W_A^T c，c固定 | `run_grain_fixed_seed_attention.py`；旧4/新8共同正文、N/确认原query状态与布局 | 相同seed下正文余弦.728/.657，直接显示条件传输差异；不是单靠两个不同seed的夹角推断K变化。L是新logit诊断，不是原概率F |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
@@ -102,9 +103,13 @@ Jacobian误差；[NEXT53](GRAIN_RESPONSE_AWARE_STATE_PLAN_V1.md)已完成源值/
 suffix22–end。联合图有部分分数排序但明显压缩幅度，整函数响应不再匹配；
 三候选均未过完整门槛，原有局部机制仍保留。后验缓存交叉显示主要区别在
 映射后状态的后缀梯度，而非只变化1.82%的方向。见
-[整链理论](GRAIN_WHOLE_PATH_ASSEMBLY_THEORY_V1.md)与
-[NEXT56源偏移计划](GRAIN_SOURCE_OFFSET_MECHANISM_PLAN_V1.md)。此步显式计数
-实际后缀计算，不把当前原生其它组件加回去冒充独立预测。
+[整链理论](GRAIN_WHOLE_PATH_ASSEMBLY_THEORY_V1.md)。
+[NEXT56](GRAIN_SOURCE_OFFSET_MECHANISM_PLAN_V1.md)已执行：实际源截距重现该读法
+移动，其余校正保持identity样式、查询对比r=.811，但不恢复完整分数。见
+[源偏移理论](GRAIN_SOURCE_OFFSET_MECHANISM_THEORY_V1.md)。隐藏状态替代家族关闭；
+[NEXT57](GRAIN_COMPLETE_FUNCTION_EXTRACTION_PLAN_V1.md)改为完整L及GRAIN导数的
+源数值函数，不再要求重构每个隐藏坐标，目标是移除当前实际后缀。H16仍原生，
+不把当前目标或其它原生组件加回来冒充独立预测。
 
 同一材料、查询、布局和数值观察器下，旧四格的定义为：
 

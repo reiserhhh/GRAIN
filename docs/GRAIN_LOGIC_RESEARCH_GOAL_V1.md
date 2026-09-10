@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, forty-four finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, forty-five finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1339,19 +1339,48 @@ Read [report](../reports/grain_vector_mechanisms/WHOLE_PATH_ASSEMBLY_REPORT_V1.m
 [theory](GRAIN_WHOLE_PATH_ASSEMBLY_THEORY_V1.md),
 [NEXT56](GRAIN_SOURCE_OFFSET_MECHANISM_PLAN_V1.md).
 
+## Forty-fifth pass: the actual source intercept changes the complete reader
+
+- Previous turn classified as progress: NEXT55 completed full-function assembly,
+  located reader relocation with cached crossing and froze source ingredient tests.
+- NEXT56 primary `54892cc` complete. I=X/O=X+b/V=X+V/F=X+b+V are compatible
+  functions; I/F reused, O/V new. Actual source intercept, not a current mean.
+  Same12 materials/two queries/four directions, no fits/Y/API or target add-back.
+- O gradients nearly reproduce F (new8 cosine .9998); V nearly retains I (.9993).
+  Source intercept/total correction energy~99.91%; signed cross term retained.
+  This turns NEXT55's reader-crossing diagnosis into a source-ingredient mechanism.
+- V query-contrast r=.810727,SSE/zero=.350690 vs I .774237/.403938,13.18% error
+  improvement; O=.050688/.995830. All4 new8 contrast factors improve, signs17/32
+  unchanged; source4 V contrast remains -.088634. Per-query whole-score/response
+  gates all fail. Local/contrast effects retained, not a new questionnaire result.
+- 48 new reverses+2 JVP+4 FD,39.669475s native/5.735351s numeric/3.440526s loading.
+ 24 new gradient packets,26 CSV exact cache replay; independent contraction/
+  state/metric/energy errors<=2.9843e-13.4 target-denial probes,0 extras.41 focused
+  tests/18 existing warnings; Ruff passes. No native rerun or execution failure.
+- Hidden-state substitution family CLOSED. NEXT57 changes the approximation
+  target to complete scalar L plus its GRAIN derivatives: source-only affine
+  function on fixed H16 BODY/last-token PCA32 features, matched value/joint losses,
+ 20 small solves/180s CPU/0 neural. Current application must not run the suffix.
+  H16 remains native; no same-panel bias/alpha/rank or hidden-state rescue grid.
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_OFFSET_MECHANISM_REPORT_V1.md),
+[theory](GRAIN_SOURCE_OFFSET_MECHANISM_THEORY_V1.md),
+[NEXT57](GRAIN_COMPLETE_FUNCTION_EXTRACTION_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT56 | Does the exact source intercept relocate the full suffix reader? | Execute GRAIN_SOURCE_OFFSET_MECHANISM_PLAN_V1; source-offset-only and non-intercept-only functions, reuse identity/joint caches |48 reverse pairs+2 JVP+4 FD,120s native/60s CPU,0 fits/Y; report full L/tau and signed ingredient interaction, then return to dependency reduction rather than local grids |
+| NEXT57 | Can one explicit scalar function retain original L and GRAIN responses without the current suffix? | Execute GRAIN_COMPLETE_FUNCTION_EXTRACTION_PLAN_V1; fixed source H16 BODY/last PCA32 features, value-only versus joint original L/tau teaching |20 solves/180s CPU/0 native/Y; one same-function score/derivative, source-only construction, no current endpoint add-back or hidden-state tuning |
 
-These are local computational/theory questions. NEXT55 complete, with actual
-candidate suffix calls counted. No MLP24/attention22/readout refinement, old queue
-restart, broader factor search or clinical naming. NEXT56 planned, not executed.
+These are local computational/theory questions. NEXT56 complete, with actual
+candidate suffix calls counted. No MLP24/attention22/hidden-state refinement,
+old queue restart, broader factor search or clinical naming. NEXT57 planned,
+not executed; it changes the object to direct full-function extraction.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original cached scores/tau remain evaluation-only, not add-back
 prediction inputs. No running model job is required between finite passes.

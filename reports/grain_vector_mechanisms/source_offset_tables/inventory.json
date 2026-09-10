@@ -1,0 +1,17 @@
+{
+  "offset_geometry.csv": "380e7ba3593d1a486683735dff2a91a1b02b6bda154993b31fa5049dbef0e513",
+  "gradient_geometry.csv": "421028788ef2f3711b274c8d8a5abd0a14119e52ce5730486b5818552c7e9d38",
+  "scores.csv": "616ec9d27fd057dc3befab76fab3d60e1cb23620b2851a82324e896d7b0dd209",
+  "scores_effects.csv": "f723ab4db338a4286a87189676b11dfafa96a9adaf474a4910d9d996abb70ac9",
+  "score_contrasts.csv": "03c7f363de77db488db74000dcc453dafd27192e0376ea9386d86fbe4defa288",
+  "score_contrasts_effects.csv": "07ab90d0d4f92d195e0901def90b7eca595cdeb88eed6491cf96cf52e47fbd57",
+  "actions.csv": "cc12b06b983051ab9e452fb1c67ffa8b64be94d975f4d80d3032be0bdc29b8d6",
+  "actions_effects.csv": "38b397a65e67aff6e3e517a793b1e868693980bad2a82e5f4a9428dc8acef094",
+  "factor_actions.csv": "ec97da8df48ba4050e2301dfac0ec1e69b96ace86e1491d8dc42ae0809a6767b",
+  "factor_actions_effects.csv": "4e9494b527c9b3a152d0332120870ba5e0ec8a95f7fb24dcad41fcbabc6a5c8c",
+  "action_contrasts.csv": "587ddb1101ab64d86585392a662af6c9b4b5600d95c746b27e649b04af11a26b",
+  "action_contrasts_effects.csv": "9f3ce10b06a6bd5480c80180d2699669b70124c8c5d6ab9c130c68de2babc954",
+  "factor_contrasts.csv": "e30773a8067ce4ee7087e689b2ab55676ada9345775d55c88f63b8e7594f5c10",
+  "factor_contrasts_effects.csv": "88212fc8201dc92875da147448b20506ff05f19a8d53e261ea811b29852fcd5c",
+  "audit.json": "105efdade81d3471d3dd335e52645415ae7b02a0323537f655a7d3bca32b04b7"
+}
