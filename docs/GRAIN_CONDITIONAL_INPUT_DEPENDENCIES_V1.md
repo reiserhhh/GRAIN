@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第十八轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第十九轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -18,7 +18,7 @@ flowchart TD
   P --> K[新条件作用读法: 局部/联合/R路径]
   F --> V[端点/路径积分: 构造目标与机制证据]
   V --> K
-  K --> B[条件分数B或局部作用; 尚有部分精确端点输入]
+  K --> B[条件分数或局部作用: N pair端点已独立; 其它接口仍有依赖]
   G --> J[同作者/同材料/同层次联系]
   C --> J
   B --> J
@@ -49,6 +49,7 @@ flowchart TD
 | R非线性候选 | delta_logit=<vbar,d>+sum(d_r K_r d_r)/2 | `retained_logit.py`；4源梯度、逐位置径向/切向系数；无新后缀调用 | 发现内部曲率但该近似作用误差变大，不替换旧法。source_origin用源常数；oracle_origin借用当前b00/b10，二者明确分开 |
 | 联合作用 | Δz_ij，沿v的幅度及正交部分 | `joint_readout.py`，固定对称核/四折 | 可读部分混合logits；最终评分组装仍用真实单评论端点z_add |
 | 条件作用矩 | mu、M、V，energy=norm(mu)^2+trace(V) | `conditional_energy.py`，同折外作者的正核混合分布；0模型调用 | 矩恒等式闭合，未优于平均强度基线；保留旧signed读法。分布评分相对均值评分改变很小，且仍需实际z_add，不是新完整推论器 |
+| 完整条件N pair | S(z0_hat+di_hat+dj_hat+mixed_hat) | `complete_pair.py`，M/R/layout+固定Fourier输入，4-fold源拟合 | 禁读当前端点可独立复算；pooled r=-.107/.0006，基线/单片段读法未恢复作者差异。不替换原评分器；块16输入和源神经构造资产仍存 |
 | 效标与解释 | Corr/response/criterion | 冻结之后连接原有自评；保持量表、模型、行为通道区分 | 不据最高Y相关选择某个坐标/函数；无新增真人或日常行动效标 |
 
 ## 3. 完整F与条件B的精确关系
@@ -90,6 +91,7 @@ I是两种操作的非加和。三者不是互不相关的心理变量，操作�
 |---|---|---|---|
 | b00 + Phi_M + Phi_R_hat | 给定R位移后的Phi_R_hat | 当前作者b00(L)、Phi_M；原模型R输入；源参考矩阵 | 明确构造b00/Phi_M、条件敏感度及轻量R输入，再比较同一个B目标 |
 | S(z_add + mixed_hat)-S(z_add) | 混合logits预测、S数值映射 | z_add=zi+zj-z0，来自当前作者真实单评论端点；原模型评论状态 | 完整logit基线/单评论作用及输入提取，或把目标明确限定为局部修正 |
+| NEXT26完整条件pair候选 | 基线+单片段+混合logits及原S，全部源固定 | 无当前作者端点；仍用块16输入及源固定资产 | 运行依赖已闭合，先修查询定向基线的函数忠实度，再谈早层输入运输 |
 | 四层已编译条件程序 | 原文→早层输入→固定多项读出 | 私有源参照与4层权重属于固定构造资产，不读取新作者teacher端点 | 这是已经存在的另一轻量路径；逐项测试新机制能否迁入，而非直接宣布已替代 |
 
 这些依赖不使局部实验无效：它们告诉我们该保留哪个机制、下一步该构造哪个
@@ -128,6 +130,8 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 - 聚合证据：[第十三轮报告](../reports/grain_vector_mechanisms/ACTION_GEOMETRY_LOGIC_REPORT_V1.md)。
 - 第十八轮条件矩比较已完成：新增强度未优于源平均强度，最后评分的矩修正
   很小；不继续能量网格。见[条件矩理论](GRAIN_CONDITIONAL_MOMENT_THEORY_V1.md)。
-- 下一执行已选定：用完整M/R/layout条件拟合z_0和单评论增量，接原mixed
-  读法，替换当前z_add的实测依赖。[NEXT26计划](GRAIN_COMPLETE_PAIR_INTERFACE_PLAN_V1.md)
-  已冻结但尚未执行；此接口仍接受原块16编码，不改旧锁箱、评分器或MEPS。
+- 第十九轮[NEXT26报告](../reports/grain_vector_mechanisms/COMPLETE_PAIR_INTERFACE_REPORT_V1.md)：
+  已用M/R/layout拟合z_0与单评论增量，禁读端点仍能完整复算；但基线及作者
+  差异读法失效，故不升级预测器。输入仍来自块16，不改旧锁箱、评分器或MEPS。
+- 下一执行为[NEXT32查询定向基线](GRAIN_QUERY_DIRECTED_BASELINE_PLAN_V1.md)：
+  用4个旧源的条件Jacobian构造定向读法，而非继续相似度核/交互/能量网格。

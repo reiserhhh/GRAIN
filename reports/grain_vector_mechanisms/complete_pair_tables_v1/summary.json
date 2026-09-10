@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "native_endpoint_replay_max": 4.9738858864945e-15,
+  "error_identity_max": 6.938893903907228e-18,
+  "human_labels_read": false,
+  "new_neural_calls": 0,
+  "assembly_rows": 480,
+  "metric_rows": 30,
+  "paired_comparisons": 24
+}

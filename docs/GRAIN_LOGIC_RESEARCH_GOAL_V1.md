@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, eighteen finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, nineteen finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -547,17 +547,45 @@ and [moment/condition theory](GRAIN_CONDITIONAL_MOMENT_THEORY_V1.md).
 Plan11e9062, implementationd1a69e3. NEXT26 now has an explicit
 [complete conditional pair interface](GRAIN_COMPLETE_PAIR_INTERFACE_PLAN_V1.md),
 frozen asbf21c94: learn base/singletons from M/R/layout and keep old mixed readout.
-This is the next execution, not a claimed completed runtime.
+This was the next execution; the nineteenth pass below records its completion.
+
+## Nineteenth pass: endpoint-independent execution and the missing baseline reading
+
+- NEXT26 complete on the frozen24 N authors/4 folds/48 pairs/two input families.
+  All12 mean slots,136 retained roles and62 query positions align. M/R/layout
+  dimensions18432/208896/163. Four base plus eight singleton heads use18 source
+  authors per fold. Old mixed heads unchanged;0 neural calls or questionnaire reads.
+- Four serialized numerical predictors return full conditional logits and scores
+  with every undeclared file read denied.12 source-file denial probes; exact
+  numerical replay, old feature replay0, native target replay<5e-15. This closes
+  current-endpoint dependence, not the quality/early-encoder dependencies.
+- Full pooled score r=-.107/.0006 (bag/position), RMSE=.01613/.01581. With true
+  additive endpoints the old mixed assembly gives r~.9997, so that borrowed
+  input previously carried most whole-score variation. Local mixed results stay.
+- Baseline r=-.164, within-fold.010, RMSE.01480 versus source mean.01420. True
+  mixed supplied to predicted additive barely changes the whole score. Stop
+  interaction/energy grids; query-directed context reading is the next mechanism.
+- Exact signed error terms explain why removing one local error can marginally
+  worsen the whole. Total logit energy and author-difference energy are different
+  denominators. Runtime completion and information sufficiency are also distinct:
+  mean-null M/R/layout is retained but Fourier contrasts are still reductions.
+-18 construction and6 analysis files exactly reproduced. Source-denied inference
+  includes fixed-alphabet scores, not just an endpoint-free manifest. New base
+  diagnostic in analysis_r2 leaves the original five analysis files unchanged.
+
+Read [complete pair report](../reports/grain_vector_mechanisms/COMPLETE_PAIR_INTERFACE_REPORT_V1.md)
+and [interface/reading theory](GRAIN_COMPLETE_PAIR_INTERFACE_THEORY_V1.md).
+Planbf21c94, implementation6f09daf. No release, lockbox, human-label or API change.
 
 ## Next loop, in order
 
-NEXT24/25 finite candidates are closed with useful mechanism distinctions and
-negative promotion decisions preserved. Execute NEXT26's frozen complete pair
-interface now. NEXT31 remains secondary unless it changes that input contract.
+NEXT24/25/26 finite candidates are closed with useful mechanisms and negative
+promotion decisions preserved. Execute NEXT32's query-directed baseline plan,
+not another full-score kernel grid. NEXT31 remains secondary.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT26 | Can complete conditional N pair scoring avoid current-author teacher endpoints? | Execute frozen bf21c94: M/R/layout base head + context-conditioned singleton head + unchanged old mixed head. Original24-author folds, both pairs/input families,12 small numerical fits maximum | Freeze and run endpoint-file-denied numerical inference; compare four declared full-score assemblies. Report base/singleton/mixed/error cross terms. Upstream block16 remains explicit; no raw-text LLM-free claim |
+| NEXT32 | Which context directions does the conditional baseline actually read? | Execute GRAIN_QUERY_DIRECTED_BASELINE_PLAN_V1:4 old source N mean-null Jacobians, equal affine candidate, source-matched context Ridge/mean,20 old evaluation authors | At most40 backward targets/24 forwards/180 seconds after load. Source finite differences, frozen predictions, held baseline and signed contributions. Native layout remains explicit; compare4/20, not old18/6 as matched control |
 | NEXT31 | Can token-specific native reading be represented by a few direction-by-position factors without losing GRAIN-relevant action? | Use the12 saved body-gradient fields; distinguish uniform reader, nonuniform low-rank reading and irreducible direction variation; fixed ranks and actual tangent-action accounting, no labels | Only prioritize if it supplies NEXT26's selected interface. Do not confuse gradient-energy capture with action capture, or self-reconstruction with cross-author extraction |
 
 These are local computational/theory questions. Start by checking cached coverage;

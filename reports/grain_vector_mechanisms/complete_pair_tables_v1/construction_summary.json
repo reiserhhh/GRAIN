@@ -1,0 +1,42 @@
+{
+  "authors": 24,
+  "pairs": 48,
+  "arms": 2,
+  "fits": 12,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "context_signature": [
+    12,
+    [
+      62,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      5
+    ],
+    62,
+    1536
+  ],
+  "block_dimensions": {
+    "M": 18432,
+    "R": 208896,
+    "L": 163
+  },
+  "old_feature_replay_max": 0.0,
+  "source_denied_replay_max": 0.0,
+  "denial_probes": 12,
+  "constant_blocks_by_fold": [
+    [],
+    [],
+    [],
+    []
+  ]
+}

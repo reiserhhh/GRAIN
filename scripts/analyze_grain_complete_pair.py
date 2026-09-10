@@ -41,7 +41,7 @@ def analyze(out, name="analysis"):
         (r["author_id"], r["pair"], r["arm"]): r
         for r in read(PARENT / "private_joint_predictions.json")
     }
-    scores, components, terms = [], [], []
+    scores, components, terms, base_rows = [], [], [], []
     replay, algebra = 0.0, 0.0
     for fold in membership["folds"]:
         number = fold["fold"]
@@ -59,6 +59,18 @@ def analyze(out, name="analysis"):
             endpoints = packet["scores"]
             values = packet["alphabet"]["values"]
             z0 = centered_logits(endpoints["zero"]["candidate_logits"])
+            pbase = prediction["base"][j]
+            base_rows.append(
+                {
+                    "author_id": author,
+                    "fold": number,
+                    "actual": score(z0, values),
+                    "predicted": score(pbase, values),
+                    "source_mean": score(base_mean, values),
+                    "logit_mse": float(np.mean((pbase - z0) ** 2)),
+                    "source_mean_logit_mse": float(np.mean((base_mean - z0) ** 2)),
+                }
+            )
             inc = np.array(
                 [
                     centered_logits(endpoints[f"s{i}"]["candidate_logits"]) - z0
@@ -205,6 +217,27 @@ def analyze(out, name="analysis"):
                 )
     pd.DataFrame(metrics).to_csv(dest / "score_comparison.csv", index=False)
     pd.DataFrame(paired).to_csv(dest / "paired_score_mse.csv", index=False)
+    base = pd.DataFrame(base_rows).sort_values("author_id").reset_index(drop=True)
+    y, p, mean = (base[k].to_numpy() for k in ("actual", "predicted", "source_mean"))
+    delta = (y - p) ** 2 - (y - mean) ** 2
+    blo, bhi, _ = ci([delta[ix].mean() for ix in author_draws(base.author_id)])
+    pd.DataFrame(
+        [
+            {
+                "authors": len(base),
+                "score_r": corr(y, p),
+                "within_fold_r": corr(within(y, base.fold), within(p, base.fold)),
+                "actual_score_sd": y.std(),
+                "score_rmse": np.sqrt(np.mean((y - p) ** 2)),
+                "source_mean_score_rmse": np.sqrt(np.mean((y - mean) ** 2)),
+                "score_mse_delta_vs_source_mean": delta.mean(),
+                "delta_low": blo,
+                "delta_high": bhi,
+                "logit_mse_over_source_mean": base.logit_mse.mean()
+                / base.source_mean_logit_mse.mean(),
+            }
+        ]
+    ).to_csv(dest / "base_fidelity.csv", index=False)
     summary_c = (
         c.groupby(["arm", "pair", "component"])[
             ["mse", "target_energy", "predicted_energy"]
@@ -223,6 +256,7 @@ def analyze(out, name="analysis"):
         "paired_score_mse.csv",
         "component_errors.csv",
         "error_cross_terms.csv",
+        "base_fidelity.csv",
     ]
     write(
         dest / "summary.json",

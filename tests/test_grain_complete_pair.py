@@ -30,7 +30,11 @@ def fixture():
         a: fit_joint(p[:, 0], p[:, 1], centered_logits(r.normal(size=(8, 5))))
         for a, p in phi.items()
     }
-    return blocks, phi, fit_complete(blocks, phi, z0, inc, mixed)
+    return (
+        blocks,
+        phi,
+        fit_complete(blocks, phi, z0, inc, mixed, values=np.linspace(0, 1, 5)),
+    )
 
 
 def test_context_source_center_and_scale():
@@ -75,6 +79,10 @@ def test_swap_and_target_algebra():
         np.testing.assert_allclose(
             one[f"{a}_full"], one[f"{a}_additive"] + one[f"{a}_mixed"]
         )
+        z = one[f"{a}_full"]
+        probabilities = np.exp(z - z.max(-1, keepdims=True))
+        expected = (probabilities @ np.linspace(0, 1, 5)) / probabilities.sum(-1)
+        np.testing.assert_allclose(one[f"{a}_score"], expected)
 
 
 def test_signed_error_account():

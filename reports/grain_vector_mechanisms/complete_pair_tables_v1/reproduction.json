@@ -1,0 +1,31 @@
+{
+  "exact_files": {
+    "construction/private_fold0_model.npz": true,
+    "construction/private_fold0_inputs.npz": true,
+    "construction/private_fold0_predictions.npz": true,
+    "construction/private_fold0_replay.npz": true,
+    "construction/private_fold1_model.npz": true,
+    "construction/private_fold1_inputs.npz": true,
+    "construction/private_fold1_predictions.npz": true,
+    "construction/private_fold1_replay.npz": true,
+    "construction/private_fold2_model.npz": true,
+    "construction/private_fold2_inputs.npz": true,
+    "construction/private_fold2_predictions.npz": true,
+    "construction/private_fold2_replay.npz": true,
+    "construction/private_fold3_model.npz": true,
+    "construction/private_fold3_inputs.npz": true,
+    "construction/private_fold3_predictions.npz": true,
+    "construction/private_fold3_replay.npz": true,
+    "construction/private_membership.json": true,
+    "construction/construction_summary.json": true,
+    "analysis/private_score_predictions.csv": true,
+    "analysis/score_comparison.csv": true,
+    "analysis/paired_score_mse.csv": true,
+    "analysis/component_errors.csv": true,
+    "analysis/error_cross_terms.csv": true,
+    "analysis/base_fidelity.csv": true
+  },
+  "scoped_tests_passed": 54,
+  "new_neural_calls": 0,
+  "human_labels_read": false
+}
