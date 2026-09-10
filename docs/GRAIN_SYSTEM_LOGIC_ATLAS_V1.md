@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT79条件差异reader让新8scalar r .577->.596但未恢复反向作用；78.60%向量误差在rank3源仿射空间外，不靠重调归一化权重可消。NEXT80源语境方向教学生成新reader方向；same-material GRAIN仍为scalar正文导数，非人格因果比例 | context differential reader theory §§1-4; CONTEXT_DIFFERENTIAL_READER_REPORT_V1; source reader motion plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT80源reader运动68.88%在旧空间外，rank3->7；新8原生证据差异K+V误差较条件核低5.30%，常数仍略优，反向作用未恢复。NEXT81固定完整last测试正文/GRAIN对reader的影响；same-material方向与读取变化不等于人格因果比例 | source reader motion theory §§1-4; SOURCE_READER_MOTION_REPORT_V1; reader material dependence plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,24 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第六十九轮补充：读取方向可以随条件移动，接下来检查正文的作用
+
+NEXT80主实现2514a40，运行记账修正41e4d96。源all4方向变化68.88%的能量
+不在旧源空间内，输出rank3扩到7；新8向量误差下界低15.51%，实际误差只低
+1.42%。原生证据的差异K+V读法误差较条件核低5.30%，仍略差于常数读头。
+response/source标量对比r .596->.600；反向作用未恢复、源4分数排序仍负。
+因此保留方向运动机制，而不是把表示空间变大直接说成整个人格预测更准。
+
+应用位移约59教学步，下一NEXT81将每query完整last固定后，比较剩余非末位
+材料带来的reader差异，并沿四个GRAIN正文方向测reader变化。它直接回答同一
+材料既提供证据、又可能改变读法的问题；不做更多带宽调参或临床构念命名。
+
+76原生调用66.235962秒，5源包0求解，11.172378成功CPU秒含重放。
+38测试、9CSV精确重放；浮点归约兼容性修正未改预测，失败CPU未知且保留原产物。
+见[报告](../reports/grain_vector_mechanisms/SOURCE_READER_MOTION_REPORT_V1.md)、
+[理论](GRAIN_SOURCE_READER_MOTION_THEORY_V1.md)、
+[NEXT81](GRAIN_READER_MATERIAL_DEPENDENCE_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第六十八轮补充：选择已有读法和生成新的读法方向是两回事
 

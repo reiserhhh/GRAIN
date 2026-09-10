@@ -1,5 +1,25 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT80 teaches source-reader motion.**
+> Source all4 slopes have68.88% energy outside the old differential range;
+> rank3->7, new8 vector lower bound .396060->.334639. Actual vector SSE improves
+>1.42%, native-evidence differential K+V error5.30% versus the NEXT79 kernel,
+> but the earlier constant reader remains slightly better on that projected error.
+> Assembled response/source contrast r .596467->.600150; opposing modulation
+> remains unrecovered and source4 scalar ordering negative. Retain the mechanism
+> and small gain, not a full-scorer promotion.76native calls/66.235962seconds,
+>11.172378successful numericCPU seconds including replay;38tests,9CSV exact replay.
+> Runtime accounting correction41e4d96 preserved first failed evaluation; no
+> predictions/capture changed, failedCPUunknown. Primary2514a40.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_READER_MOTION_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_READER_MOTION_THEORY_V1.md).
+> **NEXT81 planned:** [fixed-last material dependence](GRAIN_READER_MATERIAL_DEPENDENCE_PLAN_V1.md).
+> Fix each query's whole last vector across source4, then test all four GRAIN
+> BODY directions for reader changes. At most78source reverse calls/120native
+> seconds plus90CPU, no new8 targets or predictor fitting. Distinguish omitted
+> material input from context extrapolation; H16/full-L remain separate. Goal ACTIVE.
+
+> Previous NEXT79 update; its NEXT80 task is completed above.
 > **2026-09-11 newest: NEXT79 identifies finite source-reader range.**
 > One source-normalized context reader completed,5packages/0solves/neural/Y.
 > New8 response/source scalar contrast r .577035->.596467, centered MSE improves,

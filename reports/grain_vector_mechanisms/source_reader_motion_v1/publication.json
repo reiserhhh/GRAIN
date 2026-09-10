@@ -1,0 +1,48 @@
+{
+  "primary_commit": "2514a40a8e7fc9da7ce2b0b46e73d8978940af28",
+  "runtime_amendments": [
+    {
+      "commit": "41e4d96",
+      "file": "grain_research/vector_mechanisms/source_reader_motion.py",
+      "original_sha256": "5d79ec9ee0aa88264721007bfd85a4e5f65adf39eecaf6ab400d2babe2b7e742",
+      "amended_sha256": "03d217e16e342733c2b38f9a7e34328a705b9212458c8d3e86d3b3e4ae2b3b7b",
+      "reason": "Restore frozen float32 denominator summation; no prediction/source changes",
+      "failed_evaluation_cpu_seconds": null,
+      "preserved_first_evaluation": "analysis_initial_runtime"
+    }
+  ],
+  "audit": {
+    "status": "PASS",
+    "source_constructions": 5,
+    "coefficient_solves": 0,
+    "human_labels_read": false,
+    "native_calls": 76,
+    "native_seconds": 66.23596243560314,
+    "loading_seconds": 3.9320082496851683,
+    "parity_relative_max": 0.0,
+    "halfstep_relative": 0.015054476464382594,
+    "public_tables": 9,
+    "application_packets": 12,
+    "body_context_checks": 24,
+    "fd_count": 64,
+    "fd_max_error": 4.734421743535222e-10,
+    "baseline_max_error": 0.0,
+    "baseline_metric_max_error": 1.4210854715202004e-14,
+    "numeric_cpu_seconds": 11.172377999999998
+  },
+  "files": {
+    "score_metrics.csv": "df3fc5fbe342de780b9a3f40900d3ecd6de21f7cb4d65fe29c4ebe12c37a504e",
+    "factor_metrics.csv": "98746d1ab4f22d7063277a4032e8fac834137c2e39473c375a52ee53f4ac01cf",
+    "term_metrics.csv": "343f4f19da5a445f91442e43784efdcc615eeee02cad4d9c5f151afa87d69cc0",
+    "joint_account.csv": "ae4e6ea77433a5f0718795a1b9a954f831bea5cb417185d7e5cac433445ed76e",
+    "error_account.csv": "eeb2aa4e339f36a0f191c17eba8de03ab62f3755db201c69ba852720369566ee",
+    "reader_metrics.csv": "fcd6e0f7c4cfcdea178fb5bdbaec292a3de5f57b6e9835c7118791d9ecef9bc6",
+    "weight_diagnostics.csv": "d9b5b8b24c671130c8b215f0e4a01341384c930de0e7755baaec7b8bf7b418f8",
+    "range_account.csv": "d0187d68ba040e438f012ff91dc14303d9d459ae63fe2a1160f3eb913680f8d8",
+    "source_motion_summary.csv": "05a04daef6f9957bd27bf139d00f296999fb004f00f143ba163ab351249167e0"
+  },
+  "publisher_sha256": "608c063da52a5b1f4dacb306e837717c5d7c02a719d19b0117c27aa762da2fe6",
+  "scope": "Source H16-last interventions, post-attention22 reader motion and fixed endpoint components. Not natural text edits, full L replacement or human personality scores.",
+  "reference": "source4LOO/new8all4 reused discovery panels; source/reference pairs and GRAIN factors are not additional authors.",
+  "cpu_scope": "Successful canonical numeric stages including cached replay; native time and loading separate. First failed evaluation CPU was not captured and is excluded, not zero; its artifacts are preserved. Hashing preflight, tests and publication excluded."
+}

@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "d214fefe2920388d2fd661269165cd67553d11636304f7c2159ae6eda78db9d6",
+  "atlas_sha256": "651ae27f2e4d52d9830fe3cd0e1b119da6b5975bd9757e8c506e1696824d6605",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT79\u6761\u4ef6\u5dee\u5f02reader\u8ba9\u65b08scalar r .577->.596\u4f46\u672a\u6062\u590d\u53cd\u5411\u4f5c\u7528\uff1b78.60%\u5411\u91cf\u8bef\u5dee\u5728rank3\u6e90\u4eff\u5c04\u7a7a\u95f4\u5916\uff0c\u4e0d\u9760\u91cd\u8c03\u5f52\u4e00\u5316\u6743\u91cd\u53ef\u6d88\u3002NEXT80\u6e90\u8bed\u5883\u65b9\u5411\u6559\u5b66\u751f\u6210\u65b0reader\u65b9\u5411\uff1bsame-material GRAIN\u4ecd\u4e3ascalar\u6b63\u6587\u5bfc\u6570\uff0c\u975e\u4eba\u683c\u56e0\u679c\u6bd4\u4f8b",
-      "evidence_entry": "context differential reader theory \u00a7\u00a71-4; CONTEXT_DIFFERENTIAL_READER_REPORT_V1; source reader motion plan"
+      "alternative_or_next_link": "NEXT80\u6e90reader\u8fd0\u52a868.88%\u5728\u65e7\u7a7a\u95f4\u5916\uff0crank3->7\uff1b\u65b08\u539f\u751f\u8bc1\u636e\u5dee\u5f02K+V\u8bef\u5dee\u8f83\u6761\u4ef6\u6838\u4f4e5.30%\uff0c\u5e38\u6570\u4ecd\u7565\u4f18\uff0c\u53cd\u5411\u4f5c\u7528\u672a\u6062\u590d\u3002NEXT81\u56fa\u5b9a\u5b8c\u6574last\u6d4b\u8bd5\u6b63\u6587/GRAIN\u5bf9reader\u7684\u5f71\u54cd\uff1bsame-material\u65b9\u5411\u4e0e\u8bfb\u53d6\u53d8\u5316\u4e0d\u7b49\u4e8e\u4eba\u683c\u56e0\u679c\u6bd4\u4f8b",
+      "evidence_entry": "source reader motion theory \u00a7\u00a71-4; SOURCE_READER_MOTION_REPORT_V1; reader material dependence plan"
     },
     {
       "id": "L20",
