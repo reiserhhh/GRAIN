@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第三十一轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第三十二轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -50,6 +50,7 @@ flowchart TD
 | 源固定局部读法 | lambda_f=A D_f，tauhat=lambda_f^T gbar | `source_cotangent.py`；当前forward-only q/k/v/位置/GRAIN，旧4源g均值，独立禁读目标进程 | 新8自身源作用r=.809/.955，pool=.919/.869，完整式优于value-only误差。零新神经调用不消除当前原生编码依赖；NEXT41接完整H16路径 |
 | 完整H16作用传输 | tauhat=tbar^T E(I+DA27)P26...P17 D | `complete_transport.py`；原H16、固定源t、实际上游层JVP，不读当前评分/梯度 | 新8作用r=.99814/.99610；最后attention前已.99688/.98816，保留上游query/残差。仍有原模型后缀；NEXT42现已分层核验，不是独立编码器 |
 | 固定深度与有符号累积 | v_k=sum_(j<=k)(a_j+m_j)，tauhat_k=tbar^T v_k | `layer_accumulation.py`；同H16与D，实际停止17..20、完整遍历同时捕获出口20/23/26 | 新8层20 r=.092/.343，层23=.952/.823但幅度约半；层25MLP最大正投影增量.371/.508。截短4方向精确，仍需原0..16输入与所保留层；NEXT43研究门控而非继续磨r |
+| 源固定门控局部算子 | tauhat=tbar^T mean_s(B_s N_s)d=wbar^T d | `gated_update.py`、`compiled_gated_readout.py`；源4的门控/RMS与t编译，当前只读门控前d | 新8r=.996936/.998451，SSE/zero=.011988/.002932；完整向量误差.213/.194。单向量编译差<7.772e-16；局部读法不再要当前x/MLP矩阵，但d仍需原上游与GRAIN方向；不是全F或问卷分数 |
 | 固定输出方向传输 | J_q=K_q^T W_A^T c，c固定 | `run_grain_fixed_seed_attention.py`；旧4/新8共同正文、N/确认原query状态与布局 | 相同seed下正文余弦.728/.657，直接显示条件传输差异；不是单靠两个不同seed的夹角推断K变化。L是新logit诊断，不是原概率F |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
@@ -128,7 +129,11 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 
 ## 6. 可复算入口与下一步
 
-当前下一步是[NEXT43门控变换](GRAIN_GATED_UPDATE_PLAN_V1.md)。第三十一轮
+当前下一步是[NEXT44编译读头与条件方向](GRAIN_COMPILED_QUERY_TRANSFER_PLAN_V1.md)。
+第三十二轮[门控算子](GRAIN_GATED_UPDATE_THEORY_V1.md)已接合：保留两个
+乘积导数项，但用源作者固定系数即可保留有用的局部作用；已编译为wbar^T d。
+下一步交换两个query的完整wbar，分解读头差异与输入方向差异，0新模型调用。
+第三十一轮
 [层间累积](GRAIN_LAYER_ACCUMULATION_THEORY_V1.md)已完成：同一源读出下，
 新8人的有用响应在层23明显形成，层25MLP又显著增加有符号作用。下面将
 门控、输入变化与归一化导数分开，比较当前/源固定算子，定位实际条件依赖。

@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT42同token方向以源t读层20/23/26，新8r=.092/.343、.952/.823、.997/.988；完整参考精确接回NEXT41。层23幅度约半，层25MLP有大增量；H16/上游层仍存，不当问卷预测 | layer accumulation theory §§1-4; complete transport theory |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT43层25的源固定门控/RMS算子保留新8作用r=.996936/.998451，SSE/zero=.011988/.002932；编译为wbar^T d精确复算，保留两个乘积导数项。当前d/H16仍有原生依赖；不是人的问卷相关 | gated update theory §§1-4,6; layer accumulation theory |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT42实际截短和signed更新接合；层25MLP新8正投影份额.371/.508，非心理信息比例。NEXT43拆门控/归一化并用源算子替换，研究所需条件系数；解释rubric保持独立 | layer accumulation theory §§3-5; gated update plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT43局部读头可源固定而上游方向仍条件化；全向量.213/.194相对误差与小作用误差共存。NEXT44交换query读头并分解读头/运输差异，定位共享与特异接口；解释rubric不随导数命名 | gated update theory §§3-6; compiled query transfer plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -564,6 +564,22 @@ NEXT40区别，不用同一个r符号抹掉不同实验对象。心理解释另�
 [公式](GRAIN_LAYER_ACCUMULATION_THEORY_V1.md)、[NEXT43](GRAIN_GATED_UPDATE_PLAN_V1.md)。
 100JVP/167.352秒，4真实截短检查精确；24完整参考精确，5CSV重放，65测试。
 无当前评分/反向/标签，整体goal ACTIVE，未改解释通道/旧锁箱/评分规范。
+
+### 第三十二轮补充：机制有用不等于每个局部参数都要因人调整
+
+源固定层25完整门控/RMS算子在新8人保留r=.996936/.998451。与此同时，
+单独丢掉输入或门控变化项会使SSE/zero升至.201-.385。因此应保留乘法
+机制，而不必在这个已测试位置为每个作者重新拟合细小系数。源程序可精确
+编译为单个wbar，作用=wbar^T d；当前d仍承载上游的实际条件化过程。
+
+这不是“模型本来就是线性的”，也不是“0.997人格准确率”。它给出一个
+局部可替换的计算对象：读数几何允许完整向量有.213/.194相对误差，但
+有用的查询方向作用仍被保留。下一步借用query读头，区分差异来自w还是d。
+
+[报告](../reports/grain_vector_mechanisms/GATED_UPDATE_REPORT_V1.md)、
+[理论](GRAIN_GATED_UPDATE_THEORY_V1.md)、[NEXT44](GRAIN_COMPILED_QUERY_TRANSFER_PLAN_V1.md)。
+96JVP/149.086秒、数值3.059秒，源排除/6CSV复算、75测试；单向量编译差
+7.772e-16。预算暂停后原包续跑，未增加额度或重复采样。整体goal ACTIVE。
 
 表内历史证据简称的可定位入口：
 - unified V8：[总体系](SUICA_UNIFIED_THEORY_SYSTEM_V8.md)；4W：[解释链](SUICA_4W_PERSON_INTERPRETER_THEORY.md)。

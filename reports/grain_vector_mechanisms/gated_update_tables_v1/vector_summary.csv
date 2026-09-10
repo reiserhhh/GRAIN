@@ -1,0 +1,17 @@
+cohort,query,arm,relative_l2,directions
+new8,confirmation_seeking,current,1.951780534385674e-06,32
+new8,confirmation_seeking,source_B,0.19198024637163805,32
+new8,confirmation_seeking,source_BN,0.1937362185766391,32
+new8,confirmation_seeking,source_N,0.030486925104556386,32
+new8,neuroticism,current,1.9291060555305212e-06,32
+new8,neuroticism,source_B,0.21886602464567304,32
+new8,neuroticism,source_BN,0.2128764055600567,32
+new8,neuroticism,source_N,0.03605647039630585,32
+source4,confirmation_seeking,current,2.0096696816146957e-06,16
+source4,confirmation_seeking,source_B,0.17109119375200824,16
+source4,confirmation_seeking,source_BN,0.17238581386768642,16
+source4,confirmation_seeking,source_N,0.033021075674139755,16
+source4,neuroticism,current,2.004522736266467e-06,16
+source4,neuroticism,source_B,0.20335167531053325,16
+source4,neuroticism,source_BN,0.2189714458682949,16
+source4,neuroticism,source_N,0.07833825846624655,16

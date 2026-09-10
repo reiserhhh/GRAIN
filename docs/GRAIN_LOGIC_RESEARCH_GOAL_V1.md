@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirty-one finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirty-two finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -950,19 +950,55 @@ Pre-outcome implementation `c30f792`; read [report](../reports/grain_vector_mech
 Source-only translation/new-material testing remains a later branch, not an
 automatic continuation of near-perfect full-response precision.
 
+## Thirty-second pass: gated transformation versus varying gate coefficients
+
+- NEXT43 complete: exact SwiGLU input/gate derivative plus full RMS radial term,
+  four fixed current/source B/N alternatives on the same24 units. Paired-source
+  B_s N_s retains new8 own action r=.996936/.998451, SSE/zero=.011988/.002932;
+  factor-centered r=.996645/.998563. Pooled r=.996846/.998302, all rows kept.
+  Targets are the block25 increment under the same fixed t, not full H16 action
+  or human questionnaire scores. Old4 source compilation remains leave-one-out.
+- Input/gate terms both matter: current new8 signed shares .555/.445 N and
+  .592/.408 confirmation. Dropping either gives error/zero .201-.385, while
+  keeping both with fixed coefficients gives .012/.003. Thus a useful nonlinear
+  architecture need not require fine per-author local coefficient adaptation.
+- Whole-vector source errors .213/.194 coexist with useful scalar reading.
+  The measured geometry is query/action-specific; do not demand whole-field
+  equality or treat field differences as personality-information percentages.
+- Post-outcome algebraic conversion produces wbar=mean N_s^T B_s^T tbar and
+  score=wbar^T d.48 addressed readout slots reproduce frozen source_BN outputs
+  within7.772e-16. This is an exact implementation conversion, not new held-out
+  evidence. Current upstream d/H16 encoding remains native; the local read
+  no longer needs current x or MLP matrices once wbar is compiled.
+-96 upstream JVPs,149.086s capture plus3.059s numeric prediction,0 new scores/
+  backwards/fits/Y/API. A setup-inflated forecast paused after8 calls; measured
+  marginal cost justified resuming the same packet under unchanged96/300s caps.
+  No duplicate units;2 model loads total6.573s, resume decision retained.
+-24 analytic/native vectors match maxrelative2.055e-6,maxabsolute5.017e-6;
+ 24 source exclusions and48 capture/prediction packets verified,6 CSV replays,
+ 75 scoped tests pass.20 existing deprecation warnings; no full-suite claim.
+  Pre-outcome implementation/analysis `010c1d3`; initial lint-only preparation
+  retained separately with0 native calls. No live model task remains.
+
+Read [report](../reports/grain_vector_mechanisms/GATED_UPDATE_REPORT_V1.md),
+[operator theory](GRAIN_GATED_UPDATE_THEORY_V1.md) and
+[NEXT44 compiled query transfer](GRAIN_COMPILED_QUERY_TRANSFER_PLAN_V1.md).
+Keep the useful simple source reader; next identify the shared/specific parts
+of its pairing with the current direction, not a local coefficient optimizer.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42 finite candidates are closed,
-retaining useful mechanisms and contrary comparisons. NEXT43 targets the located
-block25 gated update, not another exit grid or a final-correlation optimization.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43 finite candidates are closed,
+retaining useful mechanisms and contrary comparisons. NEXT44 separates query
+specificity in the compiled reader from the incoming contextual direction.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT43 | Does the block25 update require current gate/norm coefficients? | Execute GRAIN_GATED_UPDATE_PLAN_V1; exact SwiGLU derivative and four fixed current/source operator combinations | Max96 upstream JVPs/300s; numeric120s, no backwards/scores/Y/fits. Saved layer25 vector parity and target-denied freeze; retain all arms |
+| NEXT44 | Is query specificity in the shared reader or incoming transport? | Execute GRAIN_COMPILED_QUERY_TRANSFER_PLAN_V1; complete2x2 borrowing and exact symmetric contrast decomposition | Max384 scalar predictions,60s numeric,0 neural/fit/Y. Preserve recipient target, source exclusion, own-diagonal replay and signed terms |
 
-These are local computational/theory questions. Start with the exact product/
-normalization derivatives, then collect only the needed pre-MLP state/tangent;
-no old queue restart, broader factor search or clinical naming.
+These are local computational/theory questions. Reuse compiled source vectors
+and current tangents; no new model collection, old queue restart, broader factor
+search or clinical naming.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

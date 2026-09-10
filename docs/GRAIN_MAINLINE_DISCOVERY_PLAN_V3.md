@@ -1,5 +1,17 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT43 gate/norm mechanism delivered.**
+> New8 paired-source local operator retains actionr=.996936/.998451,
+> SSE/zero=.011988/.002932. Both product-rule terms matter, but fine current
+> coefficient variation is not needed here. Full-vector relative errors.213/.194.
+> Compiled wbar^T d reproduces the fixed operator within7.772e-16; upstream d
+> remains native.96 JVPs/149.086s, numeric3.059s;6 CSV replays,75 scoped tests.
+> Forecast pause resumed without duplicate calls or cap changes; no live job/Y/fits.
+> [Report](../reports/grain_vector_mechanisms/GATED_UPDATE_REPORT_V1.md),
+> [theory](GRAIN_GATED_UPDATE_THEORY_V1.md),
+> [NEXT44 shared/specific compiled query reading](GRAIN_COMPILED_QUERY_TRANSFER_PLAN_V1.md).
+> Whole-system goal ACTIVE; earlier next-step language below is historical.
+
 > **2026-09-10 newest: NEXT42 fixed exits/accumulation delivered.**
 > New8 own-source r after20=.092/.343, after23=.952/.823, after26=.997/.988
 > (N/confirmation); after23 retains only about half the action amplitude.
