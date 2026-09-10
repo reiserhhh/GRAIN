@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Native differential parity, source exclusion and paired-operator algebra."""
 
-import numpy as np
-import pytest
-import torch
 import subprocess
 import sys
 from pathlib import Path
+
+import numpy as np
+import pytest
+import torch
 
 from grain_research.vector_mechanisms.context_carrier import cached_suffix_kwargs
 from grain_research.vector_mechanisms.gated_update import (
@@ -138,6 +139,7 @@ assert len(log)==2
         cwd=Path(__file__).resolve().parents[1],
         capture_output=True,
         text=True,
+        check=False,
     )
     assert completed.returncode == 0, completed.stderr
     assert output.read_text() == "valid"
