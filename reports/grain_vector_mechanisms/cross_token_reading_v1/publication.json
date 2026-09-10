@@ -1,0 +1,35 @@
+{
+  "primary_commit": "9869e835ead008038f7b0a1f81956c565b249090",
+  "audit": {
+    "status": "PASS",
+    "native_calls": 17,
+    "native_seconds": 20.025807429105043,
+    "loading_seconds": 3.7095896247774363,
+    "logical_csv_replay": 5,
+    "source_contexts": 8,
+    "actions": 64,
+    "new_fits": 0,
+    "local_B_gradient_change_max": 0.0,
+    "finite_action_identity_error": 1.8468299806118083e-15,
+    "replay_checks": {
+      "score_abs_error": 0.0,
+      "gradient_relative_error": 0.0,
+      "B_relative_error": 0.0,
+      "B_action_abs_error": 0.0
+    },
+    "cpu_seconds": 0.14963399999999982,
+    "human_labels_read": false
+  },
+  "files": {
+    "region_summary.csv": "77a5b65836a3507af5fe577b0cf2976ce91d07efe7954c0bef73d3a25c20a681",
+    "action_summary.csv": "ffdf846c9550644ce37908b41b5496e0ccfd77a4597428a4191d06e31dbe2f18",
+    "factor_summary.csv": "89b82b3b974018b23443b6aeec22ef1c56ada366aed888ab3a4374503769746f",
+    "paired_query_account.csv": "acb5adec6164413476c09746a4de8a3c15f73e8c6996d0ae72e9edac6ff4f45d"
+  },
+  "scope": "source4, two fixed model queries, no human labels or new8 use",
+  "post_outcome_scope": "paired-query source account only; byte-identical BODY and GRAIN directions, equal-author energy",
+  "post_outcome_code_sha256": "89de86cccf4521fc0941bf64e0adeb3391f5d0f898ac007e783b2c53e4ed0553",
+  "post_outcome_test_sha256": "2d7ee32758024b3b5fa1c0bde6214c0b436526d177a2359ea139ab3ff1d18adb",
+  "post_outcome_cpu_seconds": 0.5251830000000002,
+  "new_neural_calls_or_fits": 0
+}

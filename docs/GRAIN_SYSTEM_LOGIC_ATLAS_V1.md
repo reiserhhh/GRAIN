@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 同材料D与grad L接口保留；NEXT66配对教学源N变化r=.257，但完整新8未提升，配置query差r=.490；源条件字典只覆盖变化能量11.34%/8.66%。下一关注其它材料如何改变同片段的读法，不只两个末端分数相加 | paired response objective theory §§1-3,5; context reading interaction theory |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT67同BODY两查询，前段固定GRAIN组合移动1%后，不动后段梯度变化.261%/.314%，32后段方向作用均改变；旧局部求和恒0。同材料接口扩展为D_B乘路径平均混合Hessian乘D_A；两查询响应余弦.708，非量表相关 | cross token reading theory §§1-3,6; CROSS_TOKEN_READING_REPORT_V1 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT66变化教学未完整晋级，局部加和函数在固定last下跨token混合导数严格0。NEXT67测原生跨材料作用，再考虑非线性汇总/归一化选择；不从核函数或模型响应直接命名临床构念。H16仍神经，实际人格解释保留独立证据链 | paired response objective theory §§3-5; cross token reading plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT67检出小而非零的跨材料读取依赖，非完整误差的主要原因已证。NEXT68开发同标量二次池化以表达交互，保持整体评分与导数兼容；不从函数耦合直接命名临床构念。H16仍神经，实际人格解释保留独立证据链 | cross token reading theory §§4-6; coupled pooling plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,31 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第五十六轮补充：同一表达的作用会随其它材料变化
+
+NEXT67在源4作者/两查询中，仅将前半BODY沿冻结GRAIN等权组合方向移动1%，
+后半、last、非BODY行逐位相同。原生后半梯度半差/原梯度均值.261%/.314%，
+8/8条件非零；32个后半固定方向作用全部改变。相同输入下NEXT66给精确0。
+未改原生重放误差0，17调用20.025807秒，无新作者/问卷/模型拟合。
+
+函数关系升级为delta_tau_B=epsilon D_B^T averaged_Hessian_BA D_A。
+这连接表达方向、条件、另一表达的读取方式；不是两个最终分数的加权相关。
+实际float32端点与有限路径均保存，未把有限差分称为精确点Hessian。
+
+运行后源缓存证实同BODY两查询的B响应余弦均值.708，半差能量15.99%；
+在GRAIN四方向上半差占20.65%，余弦范围-.734至.939。提示共享与查询特异
+读法在不同投影下会不同，不把这些算术比例当成人格因子的共有方差。
+作用小，不能替代完整评分恢复，也没有解释先前全部拟合误差。
+
+51相关测试、5CSV精确重放、收缩恒等式误差1.85e-15。原始论文衔接包括
+Integrated Hessians的交互对象、Deep Sets的非线性汇总和Set Transformer的
+元素交互。下一NEXT68用对称二次池化项补入跨token混合导数，四数值求解、
+180秒CPU、零新增原生调用，不再追加存在性剂量/区域搜索。
+
+见[理论](GRAIN_CROSS_TOKEN_READING_THEORY_V1.md)、
+[报告](../reports/grain_vector_mechanisms/CROSS_TOKEN_READING_REPORT_V1.md)、
+[NEXT68](GRAIN_COUPLED_POOLING_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第五十五轮补充：低能量不是全部原因，还缺跨材料联合读法
 

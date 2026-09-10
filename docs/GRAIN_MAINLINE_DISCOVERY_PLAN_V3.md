@@ -1,5 +1,21 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT67 native cross-token reading exists.**
+> Change only early BODY by a fixed1% GRAIN combination; late BODY/last unchanged.
+> Late gradient finite change .261%/.314% of original (N/confirmation),8/8 cells;
+> all32 late GRAIN effects change, RMS/original .0701%/.1747%. Local-sum exactzero.
+> Same BODY across queries: late response cosine mean.708; paired-query half-
+> difference energy15.99% in full field,20.65% in GRAIN projections. Arithmetic
+> source account, not personality variance; native effect small but resolved.
+>17calls/20.025807scompute+3.709590sload,0fits/new8/Y;51tests,5CSV exact replay.
+> [Report](../reports/grain_vector_mechanisms/CROSS_TOKEN_READING_REPORT_V1.md),
+> [theory](GRAIN_CROSS_TOKEN_READING_THEORY_V1.md).
+> **NEXT68 planned:** [coupled pooling](GRAIN_COUPLED_POOLING_PLAN_V1.md),
+> same local prefix plus a symmetric16-dimensional pooled quadratic. Score and
+> gradients remain one scalar; matched control/source views,4fits/180CPU seconds,
+>0newneural/Y. Develop the missing dependency, not another native detection grid.
+
+> Previous NEXT66 update; its NEXT67 task is completed above.
 > **2026-09-11 newest: NEXT66 paired-response teaching executed; local-sum family closed.**
 > Same scalar/inputs, source-normalized delta term only; 2fits/0neural/Y.
 > Source delta SSEzero 1.0203->1.0031 / 1.0226->1.0101; whole new8 L r=.046/.296,

@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-five finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-six finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1688,21 +1688,51 @@ Read [report](../reports/grain_vector_mechanisms/PAIRED_RESPONSE_OBJECTIVE_REPOR
 [theory](GRAIN_PAIRED_RESPONSE_OBJECTIVE_THEORY_V1.md),
 [NEXT67](GRAIN_CROSS_TOKEN_READING_PLAN_V1.md).
 
+## Fifty-sixth pass: fixed evidence is read differently after another region changes
+
+- Previous turn classified as progress: NEXT66 executed paired teaching, separated
+  source capacity/priority/cost, and identified an exact local-sum cross-token zero.
+- NEXT67 primary `9869e83` frozen before17native calls. Same source4/two queries;
+  first BODY half moves1% along the fixed equal-factor GRAIN combination. Second
+  half, last and non-BODY states byte-identical. No fits/new8/API/humanY/MEPS.
+- Native late-gradient half-change/original is .2607%/.3142%, positive in8/8
+  cells. All32late-direction contractions change, RMS/original .0701%/.1747%.
+  NEXT66 local comparator gives exactly0; unchanged native replay error0.
+  This establishes a small cross-region function dependency, not the dominant
+  cause of prior model failure or questionnaire accuracy.
+- Post-outcome cached paired-query account confirms byte-identical BODY/GRAIN
+  acrossqueries. Late full-field cosine mean.7080; mean/difference energy identity
+  gives15.99% query half-difference. GRAIN projections give20.65% and cosine range
+  -.7336.. .9393. These are coordinate-specific arithmetic, not latent trait shares.
+- Path-integral mixed-Hessian derivation connects finite response and same-material
+  GRAIN directions. Point Hessian symmetry does not imply equality of different
+  finite intervention paths. Integrated Hessians/Deep Sets/Set Transformer provide
+  methodological anchors; no claim to have implemented their full algorithms.
+- 20.025807s native computation,3.709590s load;25private design/capture packets,
+ 5CSV exact replay,51focused tests/Ruff,finite action identity<=1.85e-15.
+- NEXT68 develops a symmetric pooled quadratic on the inherited local prefix,
+  with same-scalar gradients and matched source objectives. Four numeric fits,
+ 180CPU seconds,0newneural; no further native dose/region/ridge search.
+
+Read [report](../reports/grain_vector_mechanisms/CROSS_TOKEN_READING_REPORT_V1.md),
+[theory](GRAIN_CROSS_TOKEN_READING_THEORY_V1.md),
+[NEXT68](GRAIN_COUPLED_POOLING_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT67 | Does changing one BODY region change how an untouched region is read? | Execute GRAIN_CROSS_TOKEN_READING_PLAN_V1; fixed last/layout, early GRAIN perturbation, late native gradient and local-sum zero witness | Source4/2queries,17nativecalls/120s maximum,0fits/new8/Y; quantify nonlocal response before coupled scalar development |
+| NEXT68 | Can a compatible pooled interaction read the measured cross-region dependence? | Execute GRAIN_COUPLED_POOLING_PLAN_V1; nested local/joint scalars, same four source views and query-specific quadratic, explicit late-response teaching | Four numeric fits/180CPU seconds,0newnative/Y; source cross-response and exposed new8 wholeL/actions reported separately, no parameter sweep |
 
-These are local computational/theory questions. NEXT66 complete,2numericfits;
-no native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT67 planned, not executed; move
-from token-local functions to an explicit cross-region reading question. No
-penalty/donor/dose sweep or automatic source-only capacity detour.
+These are local computational/theory questions. NEXT67 complete,17nativecalls;
+no live native job. No MLP24/attention22/hidden-state refinement, old queue restart,
+broader factor search or clinical naming. NEXT68 planned, not executed; develop
+a compatible pooled interaction, instead of repeatedly detecting its existence.
+No penalty/donor/dose sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is
