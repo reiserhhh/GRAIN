@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "primary_commit": "7462cb56099766989dca368ae748f27d9c7d04b0",
+  "candidate_packets": 24,
+  "gradient_contraction_max_error": 2.984279490192421e-13,
+  "independent_metric_max_error": 4.9960036108132044e-15,
+  "cached_replayed_tables": 16,
+  "reverse_pairs": 72,
+  "jvps": 2,
+  "fd_forwards": 4,
+  "primary_native_seconds": 54.339959904551506,
+  "numeric_seconds": 8.177673138678074,
+  "loading_seconds": 4.966905333101749,
+  "audit_native_calls": 0,
+  "fits": 0,
+  "human_labels_read": false,
+  "decisions": {
+    "identity": {
+      "score_usable": false,
+      "response_usable": false
+    },
+    "normalized_value": {
+      "score_usable": false,
+      "response_usable": false
+    },
+    "joint": {
+      "score_usable": false,
+      "response_usable": false
+    }
+  },
+  "audit_code_sha256": "66f05b9b664558baa01ccd135f7a14afdf5f28b2fc8e6230c37f8064eddd38df"
+}

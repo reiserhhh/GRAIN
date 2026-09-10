@@ -1,5 +1,20 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT55 whole-function assembly delivered.**
+> Joint map retains new8 model-score ordering r=.548/.420 but compresses author
+> SD to .056/.057 and loses full GRAIN responses; all3 full utility gates fail.
+> Identity query-contrast action r=.774 remains useful at its limited scope.
+> Cached crossing locates loss in changed suffix reading at the mapped state:
+> I-state/J-direction contrast r=.775, J-state/I-direction=.057; tangent change
+> only1.82%, gradient norm~20%.99.95% token-constant shift energy motivates NEXT56.
+>72 reverse+2 JVP+4 FD/54.340s native;37 tests,16+14 CSV replay,0 fits/Y.
+> [Report](../reports/grain_vector_mechanisms/WHOLE_PATH_ASSEMBLY_REPORT_V1.md),
+> [theory](GRAIN_WHOLE_PATH_ASSEMBLY_THEORY_V1.md). NEXT53 component retained.
+> [NEXT56 source-offset test](GRAIN_SOURCE_OFFSET_MECHANISM_PLAN_V1.md) planned:
+> two compatible ingredient functions,48 reverses/120s native, no refits or grid.
+> H16/suffix still neural; no new questionnaire accuracy claim or running model job.
+
+> **Previous NEXT54; its NEXT55 request is completed above.**
 > **2026-09-10 newest: NEXT54 response repair explained.**
 > Frozen2x2 state/tangent crossing:80.4–83.4% of the existing new8 endpoint
 > error gain is assigned to changed state,16.6–19.6% to changed tangent.

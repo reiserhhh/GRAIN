@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "post_result_crossing_commit": "0eefd04fffbd3dcb49b3b13aa3f992d01ec8527b",
+  "cached_replayed_packets": 24,
+  "cached_replayed_tables": 14,
+  "scalar_cells": 384,
+  "paired_contrasts": 192,
+  "primary_seconds": 1.5345777086913586,
+  "replay_seconds": 1.3628186229616404,
+  "diagonal_max_error": 0.0,
+  "independent_metric_max_error": 3.9968028886505635e-15,
+  "independent_accounting_max_error": 2.6645352591003757e-15,
+  "audit_code_sha256": "de9af336059c6775c9773924ead269c84aa0ec47e6abae931d0e9dff8cc42b38",
+  "native_calls": 0,
+  "fits": 0,
+  "human_labels_read": false
+}

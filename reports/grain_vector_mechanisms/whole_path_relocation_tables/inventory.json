@@ -1,0 +1,12 @@
+{
+  "geometry.csv": "61b68a9b663ed6882f46027bf1aed548fb0890026ec95ed7a0ae96cb23abe12b",
+  "query_cells.csv": "fed72dfa317aceb8cff18344e8acc070cd6d44f325f024b216415d6d43209f47",
+  "query_effects.csv": "1c01c3396da7025aa252380462fa0ee1edaed8342858a8a6b6e5e7dcd4bbf6f2",
+  "query_factor_cells.csv": "c9d2aa98ad9eb4c405b9d386e6415518772dcd235877b520f041f11b6e21a296",
+  "query_factor_effects.csv": "8e0f230e2db921669b111aec0841bc76d6a00f4216253386a359f9fcac5cce0e",
+  "contrast_cells.csv": "5a288c522d0bd0e35057197a966d1d8d34888848019bce1e05e2898c59050cd3",
+  "contrast_effects.csv": "210488188067799ebad52bf2c2495998f4111b8677fb603556068b769c908797",
+  "contrast_factor_cells.csv": "00199f23fa9d519f0c37ed681d26072e274e8710234695979c8015579dd3e635",
+  "contrast_factor_effects.csv": "a31cc38e8816f554d8eb2bb07fdabab0e708f30db741947981aab6ed279b6110",
+  "audit.json": "951fd17a9d0b41d8606626b0f02b8b4edce4cbae88d5c5575a0f9ed95728c012"
+}

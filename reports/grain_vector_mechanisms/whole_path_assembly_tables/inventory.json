@@ -1,0 +1,15 @@
+{
+  "scores.csv": "4efdd481cb74ccc3fb2e7064488ea9a86ae7e022e273470103fd807a59f4ac54",
+  "score_contrasts.csv": "af5f9312373e6e0be4e1dc00f6e96dbf60db9fa773b445c60c999b20974cd104",
+  "actions.csv": "9973a04785a36b15bc44354782a59bcb965ace050759b6059f7b5c41e098db6d",
+  "factor_actions.csv": "c434fe7fa441c12593d1bddd975ba9fa12d59939869061bc0291394d4b28ecd9",
+  "action_contrasts.csv": "7b0b5b1b1b20d7ee130ac17c5ed3c690ce9ed24909279e04f3c1de0431c9fae4",
+  "factor_contrasts.csv": "62bf81f01249e9d2bd6fc5f36ec0e354889a73a2e44b340acab0d18d5c8c62e3",
+  "score_error_changes.csv": "61d60a638bbf76ec292ffaa6353ff9da9b4187aec26b810c54c1d33c654bed78",
+  "score_contrast_error_changes.csv": "6be7bd977b789d58cb0b0fabbcd37eb75a2f22431c0d019499c0b402e4620102",
+  "action_error_changes.csv": "53cab552ae2a52227af0862c164a702ad5a1610b895b0d94e65cd78c1bc470ee",
+  "factor_error_changes.csv": "0f2663b0afd5ce1d1133011e25338849db86c40f6bdcf76ee0bd2ed2e73955f9",
+  "action_contrast_error_changes.csv": "4e7e4280f443e4fb6e74b0a919d4cba61fd7a74d81bd34f93ee615619a4e9050",
+  "factor_contrast_error_changes.csv": "f7cbae45d4b7395b6a2416e616e819b07172701d5972f97f19895a06a596cc91",
+  "audit.json": "afa5017556c5c60289e9a4e8381753a6da0c0b231515e221419eb01ded4f9fb7"
+}

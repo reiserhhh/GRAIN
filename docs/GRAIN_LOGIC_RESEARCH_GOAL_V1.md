@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, forty-three finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, forty-four finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1308,22 +1308,53 @@ Read [report](../reports/grain_vector_mechanisms/RESPONSE_REPAIR_REPORT_V1.md),
 [theory](GRAIN_RESPONSE_REPAIR_THEORY_V1.md),
 [NEXT55](GRAIN_WHOLE_PATH_ASSEMBLY_PLAN_V1.md).
 
+## Forty-fourth pass: complete-function assembly locates a displaced reader
+
+- Previous turn classified as progress: NEXT54 explained the local source-map
+  repair and froze a complete-function test, ending the fixed-basis refinement loop.
+- NEXT55 primary `7462cb5` complete: frozen identity/matched-value/joint maps from
+  H16 directly into actual suffix22–end.72 reverse pairs+2 JVP+4 FD,54.339960s
+  native/8.177673s numeric/4.966905s loading;0 source fits/Y/API. No current target
+  states/gradients/score/tau in prediction. Original endpoints open after freeze.
+- Joint new8 whole-score order r=.548/.420, but SD .056/.057 vs .904/1.039,
+  mean bias -3.72/-2.71. Whole actions r=.049/.022; all3 score/response gates fail.
+  Identity instead retains query-contrast action r=.774, SSE/zero=.404, with
+  excessive per-query amplitude. Source4 contrast remains negative. These are
+  model L/tau fidelity, not human questionnaire prediction; local NEXT53 retained.
+- Post-result crossing frozen `0eefd04`: new8 I-state/J-tangent retains contrast
+  r=.775, J-state/I-tangent falls to .057. Tangents change1.82%, while gradient
+  norm ratios~.20 and cosines~.20–.25. Thus state-conditioned suffix reading is
+  the chief difference.99.95% token-constant correction energy is not yet the
+  actual source-intercept contribution. Exact Hessian/chain-rule account documented.
+- Primary24 gradient packets/16 CSV replay; independent errors<=2.9843e-13.
+  Crossing24 arrays/14 CSV exact replay;1.534578s primary/1.362819s replay,0 native,
+  accounting error<=2.665e-15.37 focused tests,18 existing warnings, Ruff passes.
+  Crossing-auditor first entry point omitted the experiment subfolder, corrected;
+  no scientific output or model run repeated. Only aggregate tables published.
+- NEXT56: one whole-function source-intercept/non-intercept ingredient test,
+ 2 compatible new functions,48 reverse+2 JVP+4 FD,120s native/60s CPU,0 fits/Y.
+  Reuse identity/joint caches; no held-author rescaling or local rank/alpha grid.
+
+Read [report](../reports/grain_vector_mechanisms/WHOLE_PATH_ASSEMBLY_REPORT_V1.md),
+[theory](GRAIN_WHOLE_PATH_ASSEMBLY_THEORY_V1.md),
+[NEXT56](GRAIN_SOURCE_OFFSET_MECHANISM_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT55 | Does the retained map preserve the complete logit function and its GRAIN responses? | Execute GRAIN_WHOLE_PATH_ASSEMBLY_PLAN_V1; frozen pointwise joint/value/identity maps into actual suffix22–end |72 candidate reverse pairs+2 JVP+4 FD,180s native/60s CPU;0 refits/Y; evaluate whole L and derivative separately, no current target-state input or local grid |
+| NEXT56 | Does the exact source intercept relocate the full suffix reader? | Execute GRAIN_SOURCE_OFFSET_MECHANISM_PLAN_V1; source-offset-only and non-intercept-only functions, reuse identity/joint caches |48 reverse pairs+2 JVP+4 FD,120s native/60s CPU,0 fits/Y; report full L/tau and signed ingredient interaction, then return to dependency reduction rather than local grids |
 
-These are local computational/theory questions. NEXT54 complete; no new native
-calls in that packet. No MLP24/attention22/readout refinement, old queue restart,
-broader factor search or clinical naming. NEXT55 is planned, not already executed.
+These are local computational/theory questions. NEXT55 complete, with actual
+candidate suffix calls counted. No MLP24/attention22/readout refinement, old queue
+restart, broader factor search or clinical naming. NEXT56 planned, not executed.
 Current H16 remains native; removing one intervening segment is not eliminating
-the full encoder. NEXT55 counts its candidate suffix computations explicitly;
-the original cached scores/tau are evaluation-only, not add-back prediction inputs.
+the full encoder. Original cached scores/tau remain evaluation-only, not add-back
+prediction inputs. No running model job is required between finite passes.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 
