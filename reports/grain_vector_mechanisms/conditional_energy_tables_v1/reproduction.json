@@ -1,0 +1,16 @@
+{
+  "exact_files": {
+    "construction/private_moment_predictions.csv": true,
+    "construction/private_moments.npz": true,
+    "construction/private_distribution_models.json": true,
+    "construction/construction_summary.json": true,
+    "analysis/private_energy_accounts.csv": true,
+    "analysis/energy_comparison.csv": true,
+    "analysis/energy_paired_mse.csv": true,
+    "analysis/moment_geometry.csv": true,
+    "analysis/score_link_comparison.csv": true
+  },
+  "constant_fold_correction_only": true,
+  "new_neural_calls": 0,
+  "human_labels_read": false
+}

@@ -106,3 +106,19 @@ def test_first_moment_does_not_identify_second_moment():
     b = mixture_moments([[0, 0.5, 0.5]], [[3], [-3]])
     np.testing.assert_allclose(a["mean"], b["mean"])
     assert b["energy"][0] == 9 * a["energy"][0]
+
+
+def test_condition_refinement_separates_mean_shift_from_remaining_variance():
+    coarse = mixture_moments([[0, 0.5, 0.5]], [[2], [-2]])
+    fine_means = np.array([2.0, -2.0])
+    fine_variances = np.zeros(2)
+    between = np.mean((fine_means - coarse["mean"][0, 0]) ** 2)
+    assert coarse["variance_trace"][0] == fine_variances.mean() + between
+
+
+def test_more_conditioning_reduces_average_not_every_pointwise_variance():
+    # Ninety percent is a fixed zero; a rare stratum has two opposing values.
+    coarse = mixture_moments([[0.9, 0.05, 0.05]], [[10], [-10]])
+    rare = mixture_moments([[0, 0.5, 0.5]], [[10], [-10]])
+    assert rare["variance_trace"][0] > coarse["variance_trace"][0]
+    assert coarse["variance_trace"][0] == 0.1 * rare["variance_trace"][0]

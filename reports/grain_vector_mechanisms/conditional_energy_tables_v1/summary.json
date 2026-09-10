@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "authors": 24,
+  "pairs": 48,
+  "input_families": 2,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "energy_gap_identity_max": 1.0842021724855044e-19,
+  "moment_identity_max": 9.882502802205373e-17,
+  "axis_identity_max": 9.104587743447023e-17,
+  "minimum_covariance_eigenvalue": -1.0948041797203141e-20,
+  "all_scoring_origins_oracle_conditioned": true
+}

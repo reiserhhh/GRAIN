@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "25e7d9f16ba84e714340ee649bdf9cc4ec0920fbedc3809b16cd86053d1cbe35",
+  "atlas_sha256": "0f823172e7f5ad4a6d4f980bbfb1d3947fba66862f15d52b48d0ff3bada2ddca",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -118,8 +118,8 @@
       "id": "L17",
       "implication": "\u6e90\u62df\u5408\u56fa\u5b9a\u8bfb\u51fa -> \u91cd\u73b0\u5b8c\u6574\u6a21\u578b\u90e8\u5206\u5224\u65ad",
       "type_and_status": "E",
-      "alternative_or_next_link": "TF\u4f5c\u7528\u6821\u51c6\u8bef\u5dee/\u96f6=.814\uff0c\u539f\u77e9\u9635=.854\uff1b\u53d7\u9650\u5f84\u5411\u4e8c\u6b21\u5019\u90091.122\uff0cr\u867d\u5347\u4f46\u4e0d\u66ff\u6362\u65e7\u6cd5\u3002\u56db\u53c2\u7167\u7684\u65b9\u5411\u652f\u6301\u6709\u9650\uff1b\u80fd\u91cf\u3001\u4f5c\u7528\u4e0e\u504f\u7f6e\u5206\u522b\u8bb0\u8d26",
-      "evidence_entry": "retained logit report \u00a7\u00a72-3; action geometry \u00a7\u00a72-4"
+      "alternative_or_next_link": "TF\u4e8c\u6b21\u5019\u9009\u4e0d\u66ff\u6362\u65e7\u6cd5\uff1bN\u76f8\u90bb\u539f\u8bfb\u6cd5\u5f3a\u5ea6r=.486/.476\uff0c\u65b0\u589e\u4e8c\u9636\u77e9\u4e0d\u4f18\u4e8e\u5e73\u5747\u5f3a\u5ea6\u3002\u8f93\u51fa\u5747\u503c\u4e0e\u6761\u4ef6\u77e9\u5206\u5f00\uff0c\u7ee7\u7eed\u5b8c\u6574\u6761\u4ef6\u8f93\u5165\u800c\u975e\u672b\u7aef\u6821\u51c6",
+      "evidence_entry": "conditional energy report \u00a7\u00a72-3; retained logit report \u00a7\u00a72-3"
     },
     {
       "id": "L18",

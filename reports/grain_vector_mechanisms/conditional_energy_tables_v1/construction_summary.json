@@ -1,0 +1,14 @@
+{
+  "status": "PREDICTIONS_FROZEN",
+  "authors": 24,
+  "pairs": 48,
+  "input_families": 2,
+  "rows": 96,
+  "smoother_constructions": 16,
+  "optimizations": 0,
+  "human_labels_read": false,
+  "new_neural_calls": 0,
+  "feature_replay_max": 0.0,
+  "old_prediction_replay_max": 0.0,
+  "pair_mean_replay_max": 0.0
+}

@@ -41,7 +41,10 @@ def within(x, groups):
     out = x.copy()
     for group in np.unique(groups):
         ix = groups == group
-        out[ix] -= x[ix].mean()
+        if np.ptp(x[ix]) == 0:
+            out[ix] = 0
+        else:
+            out[ix] -= x[ix].mean()
     return out
 
 

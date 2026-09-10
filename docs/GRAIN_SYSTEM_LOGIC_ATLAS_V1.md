@@ -96,7 +96,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 现有query-last因果布局允许共同正文、不同P/Q；原生梯度场N/寻求确认余弦.704，TF与二者.027/.093。属于模型局部读法及候选字母条件，不是量表相关 | native material reader report §§1,3 |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
-| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | TF作用校准误差/零=.814，原矩阵=.854；受限径向二次候选1.122，r虽升但不替换旧法。四参照的方向支持有限；能量、作用与偏置分别记账 | retained logit report §§2-3; action geometry §§2-4 |
+| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | TF二次候选不替换旧法；N相邻原读法强度r=.486/.476，新增二阶矩不优于平均强度。输出均值与条件矩分开，继续完整条件输入而非末端校准 | conditional energy report §§2-3; retained logit report §§2-3 |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
 | L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 旧E5的Cw仍精确；原生共同token张量经Jacobian得到T=Cw+localized。仅平均方向读法的相对作用误差.968/.998/1.005，需保留位置特异读取；不推出所有H均查询无关 | native material reader report §2; material geometry report §4 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
@@ -362,6 +362,22 @@ NEXT24–26条件作用/能量/完整输入，不以一个局部导数代替完�
 见[曲率报告](../reports/grain_vector_mechanisms/RETAINED_LOGIT_CURVATURE_REPORT_V1.md)
 和[内部函数理论](GRAIN_RETAINED_LOGIT_CURVATURE_THEORY_V1.md)。NEXT24有界
 比较结束，继续条件能量和完整输入接口，不把逐次失败变成无边界调参。
+
+### 5.13 第十八轮：均值之外的强度，以及条件方差的来源
+
+同24作者/48文本对，正核混合分布可统一算均值、二阶强度与协方差，矩恒等式
+误差9.89e-17。原预测强度的缺口含正负交叉项，不可全部命名为残差方差。
+现有相邻读法强度r=.486/.476，折内仍.448/.438；新增第二矩主要恢复群体
+量级，未优于源平均强度。分布评分相对均值评分只改变原生作用RMS的约
+.165%/.034%，不是当前丢失主作用的解释。
+
+更关键的理论接点：完整固定输入使模型输出确定，聚合输入可产生条件方差。
+额外条件降低理想平均风险，但不保证每个群或每次拟合都改善。它把GRAIN的
+条件化思路接到具体函数输入，见[条件矩理论](GRAIN_CONDITIONAL_MOMENT_THEORY_V1.md)。
+
+[实证报告](../reports/grain_vector_mechanisms/CONDITIONAL_ENERGY_REPORT_V1.md)：
+46相关测试、9文件重放、0神经调用；NEXT25结束。下一[完整条件文本对接口](GRAIN_COMPLETE_PAIR_INTERFACE_PLAN_V1.md)
+拟合当前借用的z_0/单评论端点，再接既有mixed读法；计划已冻结，未执行。
 
 ## 6. 本轮文献与执行入口
 

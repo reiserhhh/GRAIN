@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, seventeen finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, eighteen finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -518,17 +518,46 @@ and [logit/potential theory](GRAIN_RETAINED_LOGIT_CURVATURE_THEORY_V1.md).
 Plan abffe81, diagnostic eed065c, candidate8f057e2. NEXT24's finite comparison is
 closed; any further curvature work must first change NEXT26's selected interface.
 
+## Eighteenth pass: conditional mean, energy and the useful next dependency
+
+- NEXT25 complete:24 old N authors,4 author-disjoint folds,48 adjacent/distant
+  pairs,2 original Fourier inputs. Old features, vector predictions and source
+  means replay exactly.16 positive kernel-smoother constructions,0 optimizations,
+  neural calls or human questionnaire reads. All means/moments use18 training
+  authors of the declared pair type, with explicit zero-action reference mass.
+- Finite energy gap includes a nonzero signed cross term, not just residual
+  variance. Positive mixture energy=mean-energy+trace(covariance) closes within
+ 9.89e-17. Distribution strength and signed mean are different objects, but the
+  new second moment does not outperform the pair training energy mean.
+  Old adjacent energy r=.486/.476, within-fold.448/.438; retain that useful
+  strength information rather than promote the smoothing candidate.
+- Mixture-versus-mean score differences are only1.1e-6/5.7e-8 RMS for adjacent/
+  distant pairs (about.165%/.034% of native interaction RMS). Their second-order
+  covariance correction is accurate but not a main response-recovery mechanism.
+  Scoring still borrows current z_add. No energy or last-link calibration grid.
+- Conditional-variance theory now distinguishes deterministic complete model
+  input from uncertain reduced input. More conditioning reduces optimal risk
+  on average, not every subgroup variance or every finite fitted model.
+-46 scoped tests,17 new;9 exact construction/analysis file replays. Constant-fold
+  baseline correlations corrected from floating~1e-17 to NaN; all other output
+  quantities unchanged. Private source models/IDs/vectors remain ignored.
+
+Read [conditional energy report](../reports/grain_vector_mechanisms/CONDITIONAL_ENERGY_REPORT_V1.md)
+and [moment/condition theory](GRAIN_CONDITIONAL_MOMENT_THEORY_V1.md).
+Plan11e9062, implementationd1a69e3. NEXT26 now has an explicit
+[complete conditional pair interface](GRAIN_COMPLETE_PAIR_INTERFACE_PLAN_V1.md),
+frozen asbf21c94: learn base/singletons from M/R/layout and keep old mixed readout.
+This is the next execution, not a claimed completed runtime.
+
 ## Next loop, in order
 
-NEXT30 supplies the native same-material differential interface; NEXT24 locates
-internal curvature without promoting the tested surrogate. Continue NEXT25 then
-NEXT26, not an output calibration or arbitrary curvature grid. NEXT31 is a
-cached-only compression question to execute only if it changes NEXT26.
+NEXT24/25 finite candidates are closed with useful mechanism distinctions and
+negative promotion decisions preserved. Execute NEXT26's frozen complete pair
+interface now. NEXT31 remains secondary unless it changes that input contract.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT25 | Does conditional energy provide information absent from a vector conditional mean? | Reuse fixed N pair targets and direction accounts. First quantify the norm/energy identity under the declared inputs and existing prediction shrinkage; a direct projected scalar Ridge is algebraically redundant | Freeze at most one distinct energy-sensitive candidate if the numerical evidence supports it; no pair/Y-selected feature search. Keep direction, amplitude and orthogonal magnitude separate |
-| NEXT26 | Which complete conditional interface can close one runtime dependency without changing the target? | Choose one declared block from the full-input contract; identify all its raw/encoded/fixed-reference inputs and currently borrowed endpoints before implementation | Execute one complete same-target comparison with upstream inputs explicit. Do not combine old E5/four-layer metrics with new block16 components as if a single end-to-end system already existed |
+| NEXT26 | Can complete conditional N pair scoring avoid current-author teacher endpoints? | Execute frozen bf21c94: M/R/layout base head + context-conditioned singleton head + unchanged old mixed head. Original24-author folds, both pairs/input families,12 small numerical fits maximum | Freeze and run endpoint-file-denied numerical inference; compare four declared full-score assemblies. Report base/singleton/mixed/error cross terms. Upstream block16 remains explicit; no raw-text LLM-free claim |
 | NEXT31 | Can token-specific native reading be represented by a few direction-by-position factors without losing GRAIN-relevant action? | Use the12 saved body-gradient fields; distinguish uniform reader, nonuniform low-rank reading and irreducible direction variation; fixed ranks and actual tangent-action accounting, no labels | Only prioritize if it supplies NEXT26's selected interface. Do not confuse gradient-energy capture with action capture, or self-reconstruction with cross-author extraction |
 
 These are local computational/theory questions. Start by checking cached coverage;
