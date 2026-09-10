@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第62轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第63轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 源训练查询选择势函数 | ellhat=identity norm/K/RoPE+Phi B；dellhat由同函数微分，R=Cov_a(v,dell) | `source_selector_potential.py`；NEXT74 H16/源Q/源rank32，V/g单列保留，应用禁读当前K/dK/Q | 新8KL降25.62%/33.56%，但响应幅度偏大；20拟合/48FD精确检查，非完整无LLM预测器。NEXT75源响应导向坐标，不任意缩导数 |
 | 查询选择与定向的条件operator | C_f(Q_a)=Cov_a(v,deltaK_f)/sqrt(h)，R_ab=Q_b^T C_f(Q_a) | `query_selection_orientation.py`；NEXT73源引子2x2、当前K/V/dK，交叉scalar路径 | 新8只换方向query对比+.905、只换选择-.780；对称交换投影选择86.32%/方向13.68%，源4为61.68%/38.32%。NEXT74直接学H16到logit势函数及同函数导数，保留当前V；不将交叉格子晋级整体模型 |
 | 查询与GRAIN的联合矩 | Psi=log mean exp(l+s*v+t*d)；R=Psi_st=Cov_a(v,d) | `query_partition_geometry.py`；NEXT72编译既有源Qbar与当前K/V/dK，不读当前Q | 旧作用重建3.747e-16；新8引子交换value SD只变约2%，query对比却+.939到-.890。保留带符号联合矩与head抵消，不能只留边际强度；NEXT73分a(Q)与d(Q)，当前神经证据依赖保留 |
 | 内容/选择/质量共同生成评分 | dF=L+C+S+M；误差交叉项对称分账，C/S旋度共同抵消 | `evidence_components.py`；NEXT71只读四冻结函数、48包；0拟合/神经/Y | raw源跨B变化仅M。新8raw作用改善3.602/5.413个百分点含local重拟合及大幅C/S抵消，非新增选择器独占。M贡献8/8重叠单元正向；不可随意剪导数。NEXT72用既有Qbar/K/V/dK共同配分函数区分均值与协方差，保留神经输入依赖 |

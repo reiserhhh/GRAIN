@@ -1,0 +1,27 @@
+{
+  "primary_commit": "201a0376ccdb19b21d1644d91bd7f50d229d6b3c",
+  "audit": {
+    "status": "PASS",
+    "fits": 20,
+    "packets": 24,
+    "csv_replay": 4,
+    "total_cpu_seconds": 11.527251000000001,
+    "fd_count": 48,
+    "fd_max_error": 4.781534890252459e-11,
+    "teacher_replay_max_error": 6.245004513516506e-17,
+    "current_native_keys_in_prediction": false,
+    "current_Q_read": false,
+    "new_neural_calls": 0,
+    "human_labels_read": false,
+    "native_values_retained": true
+  },
+  "files": {
+    "selector_metrics.csv": "1c2521cba778b90e76496e8b7315f33fd1b475a308bd739820827d4045c69853",
+    "query_actions.csv": "6e512d55e5d14c5f28a262744cb6a8e59babdb34a0b011cc9e73a918d92ea264",
+    "factor_actions.csv": "1fee1033de7137c763c06ed09e98b15ed9ac3d631724685938b5741475b76310",
+    "contrast_actions.csv": "2d371777e550c91f4c3bc88e8ebbc2c4f01e4120e2b6d42f4de58228b3b6ea2a",
+    "source_training.csv": "13036faae7247db2be2fc146971182e6ffd621b7ea9b345d97609494d9ec0a3b"
+  },
+  "publisher_sha256": "cc9af8ceb78fe558aff43bdd6a236946ad617da51855e679a1402952b4a17918",
+  "scope": "Scalar selector from H16; native V/g retained; not questionnaire prediction"
+}

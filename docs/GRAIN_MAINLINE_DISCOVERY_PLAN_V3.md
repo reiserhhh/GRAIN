@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT74 learns query selection, separates response amplitude.**
+> Source-only scalar logit corrections plus same-function GRAIN derivatives;
+>20solves,0neural/API/Y/MEPS. New8 logit-only attention KL improves25.62%/33.56%,
+> centered-logit MSE40.60%/41.19%; source4LOO agrees. Native-Q contrast r=.948,
+> but RMS=.112333 vs target .059927; direct source-Q target is only .017467.
+> The selector is useful progress; do not replace the calibrated key action with
+> the oversized response. Joint source derivative loss remains~1 in this basis.
+>24packets/4CSV exact replay,48FD max4.78e-11,11.527251sCPU,31tests/Ruff.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_SELECTOR_POTENTIAL_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_SELECTOR_POTENTIAL_THEORY_V1.md).
+> **NEXT75 planned:** [source response-informed coordinates](GRAIN_SOURCE_RESPONSE_COORDINATES_PLAN_V1.md).
+> One source diagnostic and one fixed-rank supervised projection,10fits/180CPU
+> seconds; no new8 tuning or new neural runs. Native V/H16 remain explicit.
+> [Relational interpretation addendum](GRAIN_RELATIONAL_INTERPRETATION_RESEARCH_ADDENDUM_V1.md)
+> adds AutoPsyC to the existing same-material/TA interface; no clinical data use.
+
+> Previous NEXT73 update; its NEXT74 task is completed above.
 > **2026-09-11 newest: NEXT73 identifies selection as the larger swap channel.**
 > New8 query contrast: own/own r+.939, direction-only swap+.905, selection-only
 > swap-.780, both-.890. Symmetric swap projections selection/direction86.32%/13.68%,

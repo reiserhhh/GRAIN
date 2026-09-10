@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, sixty-two finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, sixty-three finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1883,21 +1883,55 @@ Read [report](../reports/grain_vector_mechanisms/QUERY_SELECTION_ORIENTATION_REP
 [theory](GRAIN_QUERY_SELECTION_ORIENTATION_THEORY_V1.md),
 [NEXT74](GRAIN_SOURCE_SELECTOR_POTENTIAL_PLAN_V1.md).
 
+## Sixty-third finite pass delivered: source-conditioned scalar selector
+
+- Previous turn classified as PROGRESS: NEXT73 located the selection dependency
+  and specified a differentiable function to replace it. NEXT74 is development,
+  not another crossed-attention attribution grid.
+- NEXT74 primary `201a037`,20source-only solves; source4LOO/new8all4, both queries,
+  all4GRAIN directions/two readouts. H16 identity norm/K/RoPE plus source rank32
+  causal feature correction; its exact derivative supplies GRAIN dlogits.
+  Same split-specific Qbar for every training material; constant gauge pinned0.
+- New8 logit-only KL .290431->.216025 and .292344->.194220, improvements25.62%/
+  33.56%; logit MSE improves40.60%/41.19%. Source4LOO agrees. The selection
+  function can be approximated from earlier states with these source references.
+- Primal and derivative fidelity separate: joint all4 source derivative residual
+  loss1.000642/1.000577. New8 N-confirmation action r to nativeQ .947977 versus
+  identity .893283, but RMS .112333 versus target .059927; direct sourceQ target
+  .017467. Retain the local selector, do not promote the oversized full response.
+- Current V/g are a separate retained input; application denies native K/dK,
+  currentQ and actions. No new neural/API/Y/MEPS.24packets/4CSV exact replay,
+  48FD max4.7815e-11, original teacher replay6.2450e-17,11.527251sCPU.
+  31focused tests and Ruff pass. No background run or old scorer/lockbox changes.
+- Rechecked the user's same-material and relational interpretation ideas against
+  existing NEXT27-28 work; added AutoPsyC as a distinct transcript-coding precedent.
+  Query selection, GRAIN direction and independent relation coding remain distinct
+  links. No automatic psychoanalysis or new clinical labels were generated.
+- NEXT75: source derivative-span/coupled-fit account, then one source-response-
+  informed rank32 projection,10fits/180CPU seconds,0neural/Y. This distinguishes
+  basis geometry from fit geometry before any new8 tuning (which remains disallowed).
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_SELECTOR_POTENTIAL_REPORT_V1.md),
+[theory](GRAIN_SOURCE_SELECTOR_POTENTIAL_THEORY_V1.md),
+[interpretation addendum](GRAIN_RELATIONAL_INTERPRETATION_RESEARCH_ADDENDUM_V1.md),
+[NEXT75](GRAIN_SOURCE_RESPONSE_COORDINATES_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT74 | Can a source-trained scalar selector preserve the used query relation from H16? | Execute GRAIN_SOURCE_SELECTOR_POTENTIAL_PLAN_V1, same-function logits/dlogits from source-only primal or joint teaching; retain native V explicitly |20fits/120CPU seconds,0native/Y; frozen source exclusions and all query/factor outputs; no new8 tuning, attribution grid or full-predictor overclaim |
+| NEXT75 | Can response-informed source coordinates preserve the selector and its GRAIN tangent? | Execute GRAIN_SOURCE_RESPONSE_COORDINATES_PLAN_V1, finite source range/cost account then one same-width supervised projection; retain native V |10fits/180CPU seconds,0native/Y; complete source-disjoint query/factor outputs, no new8 tuning or arbitrary derivative shrinkage |
 
-These are local computational/theory questions. NEXT73 complete,0newfits;
-no live native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT74 planned, not executed; build
-the source-conditioned selector with its compatible direction derivative.
-No penalty/donor/dose sweep or automatic source-only capacity detour.
+These are local computational/theory questions. NEXT74 complete,20source solves;
+no live native job. No MLP24/attention22 neural refinement, old queue restart,
+broader factor search or clinical naming. NEXT75 planned, not executed; develop
+source response geometry without sacrificing the found selector relation.
+No penalty/donor/dose sweep; the NEXT75 source account is bounded and linked to
+the one new coordinate construction, not an indefinite capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is
