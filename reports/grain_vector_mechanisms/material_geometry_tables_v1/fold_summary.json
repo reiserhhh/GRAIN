@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "rows": 288,
+  "fits": 0,
+  "new_neural_calls": 0,
+  "code_sha256": "98b0ecf687fe63da018d40d9ac9028a2e206a0b6d98710f6d270d90aaaec463f",
+  "helper_sha256": "5bf0ef3abfdaf586268b4cb0b883715e3ee116413f3aab8412279e8133a73529",
+  "plan_sha256": "73896171b8f6bb06311f9deafcf396ae1a26bd3bf2487ad3cfb405a7741251e6",
+  "closure_max": 2.4069288229178198e-17,
+  "file_sha256": "6c38b85debe58f60e6ee9f886a7c357c6d3b3b9e7bb5bffb4e3534f46b80358f",
+  "post_result_accounting": true,
+  "p_values_added": false
+}

@@ -1,0 +1,41 @@
+{
+  "numeric_byte_replay": {
+    "private_geometry_views.csv": true,
+    "source_references.csv": true
+  },
+  "aggregate_byte_replay": {
+    "criterion_links.csv": true,
+    "paired_contrasts.csv": true,
+    "criterion_components.csv": true,
+    "geometry_summary.csv": true,
+    "fold_covariance.csv": true
+  },
+  "operator_byte_replay": {
+    "private_operators.npz": true,
+    "private_operator_rows.csv": true
+  },
+  "manifest_sha256": "1bc39d484a485d0f40203095e1fd05209e3d4cdcaa9fd1ebbb10e34c582edb58",
+  "prediction_freeze_sha256": "a74b180cd327bd7ad3bf1d9ea58edbd1e583780db8a61c00d61f6282dc35a8e1",
+  "plan_commit": "34a269b",
+  "implementation_commit": "513cc56",
+  "source_binding_fix_commit": "08703db",
+  "operator_extension_commit": "0a56f36",
+  "operator_commit": "f09fd2b",
+  "fold_account_commit": "647fb5a",
+  "initial_v1_preserved": "Stopped at mixed-cache duplicate check, before statistics or labels",
+  "scoped_tests": 64,
+  "new_tests": 14,
+  "full_repository_suite": false,
+  "private_rows_published": 0,
+  "files": {
+    "criterion_links.csv": "d4f33746f4f8738a05a61e9266a53e249f6bd8a0936fb18526248790b16a9b07",
+    "paired_contrasts.csv": "6b6925aafb41db3292f6d60487554f446b4efa45da7c1d825b1c10b3d4710895",
+    "criterion_components.csv": "9900df050bb66bf9db860a67813a85444b186b460846782e165581c59d7eea98",
+    "geometry_summary.csv": "25fa46db3419a3afa839f15f657ed08c972f5d862febb079ddd5fd7fd97b6b85",
+    "source_references.csv": "4d321d36d930ca474e961d1149baac389fe260d2934290d30ceaf9cdf69f44e7",
+    "fold_covariance.csv": "6c38b85debe58f60e6ee9f886a7c357c6d3b3b9e7bb5bffb4e3534f46b80358f",
+    "summary.json": "ae08905f47fdcf230486491e76c4116b1a109ef06730c1cea4d6e1c54323e7fd",
+    "operator_summary.json": "71a2bf848375ee32bdfb2dffd264e44bf82b50e013e21312c204e033a5608a06",
+    "fold_summary.json": "c3fc1eed5a57eaed997d151d89876afc6a77bc1a22e289e2413a159dd1a1cd8e"
+  }
+}

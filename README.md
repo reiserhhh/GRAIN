@@ -24,7 +24,16 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Whole-system logic integration (2026-09-10)
 
-Latest: the [fourteenth finite pass](reports/grain_vector_mechanisms/SAME_MATERIAL_INTERPRETATION_REPORT_V1.md)
+Latest: the [fifteenth finite pass](reports/grain_vector_mechanisms/MATERIAL_GEOMETRY_LOGIC_REPORT_V1.md)
+separates same-material spread from alignment. Openness/F03 alignment links to
+self-report at r=-.272, compared with .044 after a fixed pairing shift and .009
+for the spread product. Agreeableness query spread has a separate r=.224 link.
+A reusable author/view cross-covariance operator C now gives all local compiled
+query values through Cw:828 matrices,15,804 values, replay error1.11e-16.
+These are exploratory fixed-E5 interface results, not a full native-model closure.
+64 scoped tests and9 exact replays pass, with no new fits or neural calls.
+
+The [fourteenth finite pass](reports/grain_vector_mechanisms/SAME_MATERIAL_INTERPRETATION_REPORT_V1.md)
 joins frozen GRAIN slices and query-functional readings on the same9,165 comments
 from276 existing source authors. T/F/F02 within-material correlation is-.297.
 Simple salience weighting shows no general gain, while Openness/F03 signed

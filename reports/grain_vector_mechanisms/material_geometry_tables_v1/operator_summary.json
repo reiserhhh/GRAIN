@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "operators": 828,
+  "operator_shape": [
+    4,
+    1024
+  ],
+  "query_views": 3951,
+  "factor_values_replayed": 15804,
+  "replay_max": 1.1102230246251565e-16,
+  "query_independent_construction": true,
+  "fits": 0,
+  "label_reads": 0,
+  "new_neural_calls": 0,
+  "seconds": 2.2556157521903515,
+  "files": {
+    "private_operators.npz": "b9201063fcfcc013b5b4f72344bf505bc8399f88190b1f5e08e2677843b6a9b1",
+    "private_operator_rows.csv": "99356656dac0f8c29ce6df594457783470eaa79c9a23c12bb89e52cfb1f6ab42"
+  }
+}

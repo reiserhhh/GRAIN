@@ -32,6 +32,10 @@ flowchart TD
   H --> F[固定功能读出 f]
   H --> M[完整模型原生判断 F]
   G -. 同材料关联/源拟合/干预 .-> H
+  G --> J[同材料交叉协方差 C_GH]
+  O --> J
+  J --> W[固定查询方向读取 Cw: 幅度/配对/效标联系]
+  W --> I
   H --> R[直接投影/早层/无 Transformer 运行程序]
   R --> F
   N --> I[人格/状态解释候选]
@@ -89,13 +93,13 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 两类四格与最后输出曲率分别记账；参考R的路径变化偏差作用RMS=.014656，高于布局起点.002606。沿位移曲率成为具体待开发对象，不是未分账噪声 | action geometry report §3; interaction operator §7 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | TF作用加权校准误差/零=.814，原矩阵=.854；软参照支持均值仅.009129。N相邻幅度折内r=.501/.363；远隔pooled负相关多由折间均值造成 | action geometry report §§2-4; interaction operator §§7-8 |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 相同9165评论上接合四切片均值与OOF查询局部函数；TF/F02中心化r=-.297。联合配对信息不等于两个边缘总分；非原生逐token归因 | same-material report §§1-2; configuration extraction §§4-5 |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 同材料C=G^T JH/n、S_q=Cw_q；828作者/视图矩阵重放15804坐标误差1.11e-16。固定E5的共享C不自动适用于查询改变原生H(q)的路线 | material geometry report §4; operator theory §§3-4 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 人工方向有效不保证解释自然路径；实际E1中f可追踪、GRAIN差分可能反向 | dynamic report §3 / natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
-| L23 | 因子轴旋转 -> 共同对象仍可追踪 | M/H | 比较作用子空间/坐标协变函数，而非重新编号后的单轴 | LOG02 / reference theory |
+| L23 | 因子轴旋转 -> 共同对象仍可追踪 | M/E | C'=CT与w'=T^-1w保持Cw；多查询作用距离可连接旧作用加权几何。任意G坐标重表达还须传递输出度量 | material operator theory §4; LOG02 |
 | L24 | 共享路径 -> 量表相关？ | H/E | 五Big5/四MBTI组内共32条分层关系；N余项作者水平较特异，其他部分共享。下一步接实际效标 | all-factor atlas / configuration extraction §6 |
-| L25 | 联合 GRAIN+路径 -> 更多人格预测信息 | E | 同材料绝对离差加权没有普遍增强；O/F03有符号共同变化与自评r=-.264，BH p=.0175。S仍含幅度与对齐，新关联不等于已训练的新预测器 | same-material report §3; four routes / dynamic report |
+| L25 | 联合 GRAIN+路径 -> 更多人格预测信息 | E | O/F03配对方向/自评r=-.272，错位.044，幅度乘积.009；A查询波动另有.224。S/Y贡献主要为对齐项-.249。源探索和无拟合折内账，不发布新预测器 | material geometry report §§2-4; same-material report §3 |
 | L26 | 自评 Big5/MBTI -> 行动倾向/实际行动 | H/U | 自评是独立通道而非实测行动；T,Y 不识别未观测 B | dynamic report §6 / MTMM |
 | L27 | 稳定 LLM 解释 -> 可重复且有据的叙述 | E/H | 新增原文区间/数字绑定校验、候选与替代解释协议；解释事件不等于token切口。新prompt尚未做LLM评价；独立盲编码与看数字后的渲染分开 | same-material interpretation theory §§4-5; V8 LLM assessment |
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |

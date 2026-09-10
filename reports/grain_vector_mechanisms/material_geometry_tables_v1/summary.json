@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "fits": 0,
+  "new_neural_calls": 0,
+  "criterion_account_max": 3.9968028886505635e-15,
+  "construction": {
+    "status": "COMPLETE",
+    "source_authors": 276,
+    "rows": 15804,
+    "combinations": 36,
+    "degenerate_rows": 0,
+    "fits": 0,
+    "new_neural_calls": 0,
+    "replay_max": 8.881784197001252e-16,
+    "identity_max": 1.3877787807814457e-17,
+    "seconds": 2.2946649584919214
+  },
+  "inference_unit": "whole old source author; fixed maps and descriptive references",
+  "files": {
+    "criterion_links.csv": "d4f33746f4f8738a05a61e9266a53e249f6bd8a0936fb18526248790b16a9b07",
+    "paired_contrasts.csv": "6b6925aafb41db3292f6d60487554f446b4efa45da7c1d825b1c10b3d4710895",
+    "criterion_components.csv": "9900df050bb66bf9db860a67813a85444b186b460846782e165581c59d7eea98",
+    "geometry_summary.csv": "25fa46db3419a3afa839f15f657ed08c972f5d862febb079ddd5fd7fd97b6b85"
+  }
+}

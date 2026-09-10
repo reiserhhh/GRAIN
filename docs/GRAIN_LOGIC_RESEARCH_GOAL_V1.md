@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, fourteen finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, fifteen finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -436,14 +436,45 @@ Plan `0fb89ff`, implementation `b30e767`, initial no-fit diagnostic `8a45048`.
 Read [same-material report](../reports/grain_vector_mechanisms/SAME_MATERIAL_INTERPRETATION_REPORT_V1.md)
 and [interpretation theory](GRAIN_SAME_MATERIAL_INTERPRETATION_THEORY_V1.md).
 
+## Fifteenth pass: material spread/alignment and a reusable author operator
+
+- NEXT29 complete on all36 combinations: O/F03 alignment rho/self-report
+  r=-.2720[-.3942,-.1585], shifted rho .0444, spread product .0094. Exact
+  signed covariance contributions spread/alignment/interaction are
+  -.00023/-.24880/-.01486, summing to S/Y=-.26389. No new criterion fitting.
+- A query spread/self-report r=.2244 is a different useful object. Its four
+  repeated table rows are one statistic. SN/F01 shifted covariance .4627 is
+  retained, not suppressed;63 authors have4/59 labels. One fixed cyclic shift
+  is not a universal no-person-information null. A mathematical witness proves
+  averaging every nonzero cyclic shift yields -S/(n-1), not an independent null.
+- Shared operator C=G^T JH/n built once per828 author/views. Cw reproduces all
+  15804 frozen coordinate values within1.11e-16, with0 new fits/neural calls/Y
+  reads. Covariant coordinate changes preserve functional scores. Raw E5
+  inputs remain required; this is not the block16 conditional runtime closure.
+- Post-result all288 fold accounts: O/F03 rho within-fold r=-.2726 and A-query
+  spread .2352; the principal links are not between-fold mean artifacts. No
+  new p-values or centered predictor. Kernel cross-covariance and multilevel
+  literature now ground the operator and distinguish strength from direction.
+-64 scoped tests (14 new),9 exact file replays. Initial mixed-cache address
+  check failed before statistics/Y; explicit source/edit binding fixed it in
+  r2 with tests. No private exports, APIs, new participants or release changes.
+
+Read [geometry report](../reports/grain_vector_mechanisms/MATERIAL_GEOMETRY_LOGIC_REPORT_V1.md)
+and [joint operator theory](GRAIN_MATERIAL_GEOMETRY_THEORY_V1.md).
+Plans34a269b/0a56f36; implementations513cc56/08703db/f09fd2b; fold account647fb5a.
+
 ## Next loop, in order
+
+The new same-material result supplies a concrete native-interface question.
+Prioritize NEXT30's cache/target inventory before any further conditional-readout
+fit; NEXT24-26 remain explicit required research pieces, not silently closed.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
+| NEXT30 | Does the shared same-material operator need query-conditioned representations in the native route? | Inventory identical-material/context caches, declare local target and reference; compare fixed-H/different-w with H(q)-dependent geometry before any finite native intervention | Preserve all old amplitude/alignment results. Do not assume E5's query independence for native hidden states, or call cached compiled Cw a new native causal effect. No accuracy/bandwidth search |
 | NEXT24 | Can the measured R-path remainder become a displacement-dependent common function? | Use saved reference gradients/paths to separate radial variation, role structure and body conditioning. Derive one finite curvature-sensitive candidate only after identifying its actual support; numerical action targets, not Y | Compare one source-defined candidate to existing linear/support baselines on unchanged authors. Do not estimate an unrestricted208896-square Hessian or select rank/penalty from exposed criteria. Preserve context and integration errors |
 | NEXT25 | Does conditional energy provide information absent from a vector conditional mean? | Reuse fixed N pair targets and direction accounts. First quantify the norm/energy identity under the declared inputs and existing prediction shrinkage; a direct projected scalar Ridge is algebraically redundant | Freeze at most one distinct energy-sensitive candidate if the numerical evidence supports it; no pair/Y-selected feature search. Keep direction, amplitude and orthogonal magnitude separate |
 | NEXT26 | Which complete conditional interface can close one runtime dependency without changing the target? | Choose one declared block from the full-input contract; identify all its raw/encoded/fixed-reference inputs and currently borrowed endpoints before implementation | Execute one complete same-target comparison with upstream inputs explicit. Do not combine old E5/four-layer metrics with new block16 components as if a single end-to-end system already existed |
-| NEXT29 | Does same-material signed coupling reflect spread, alignment or both? | Reuse original local maps and slices; account S=sigma_g*sigma_psi*rho per view, then one fixed signed cyclic-pairing control over all36 groups | No Y fit or query selection. Decide which local statistic merits a subsequent native token/fragment path test. W rotation alone is not a test of signed S; do not silently reuse it as one |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.
