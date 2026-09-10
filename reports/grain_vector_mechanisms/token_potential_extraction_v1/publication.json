@@ -13,7 +13,8 @@
     "cpu_seconds": 1.3500230000000002,
     "cumulative_compute_cpu_seconds": 7.782211,
     "prediction_replay": "bitwise exact",
-    "csvs_replayed": 26
+    "csvs_replayed": 13,
+    "raw_glob_count_including_metadata_sidecars": 26
   },
   "promotion": false,
   "criteria": {

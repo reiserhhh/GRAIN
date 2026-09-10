@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT61 locates the finite derivative dictionary gap.**
+> Sourceall4 candidate field target represented energy .039838/.028048, versus
+> .005668/.003973 for mean-first:7.03/7.06x more, but still mostly dictionary-external.
+> Best field losses .960162/.971952 versus realized1.073506/1.086909.
+> Preserving original source scores reaches those SAME limits; anchor rank4/3,
+> score change<=1.37e-13. This is not an intrinsic scalar/gradient contradiction.
+> Reaching the limit costs +590/+438 in the original ridge term, for ~.11 field
+> improvement. No optimizer failure; lowering alpha cannot enlarge col(D).
+>80primary+80replay diagnostic LS solves,0predictive fits/neural/Y/new8 scoring,
+>6.367727s measured CPU,49 focused tests,2CSV/20arrays exact replay.
+> [Report](../reports/grain_vector_mechanisms/TOKEN_OBJECTIVE_COMPATIBILITY_REPORT_V1.md),
+> [theory](GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_THEORY_V1.md).
+> **NEXT62 planned:** [Hermite-type scalar token dictionary](GRAIN_HERMITE_TOKEN_POTENTIAL_PLAN_V1.md),
+> one candidate with center-derivative features and compatible full scoring/actions;
+> same source descriptors, no alpha/rank/bandwidth grid. Goal ACTIVE.
+
+> Previous NEXT60 update; its NEXT61 task is completed above.
 > **2026-09-11 newest: NEXT60 compatible token potential executed.**
 > Same source/query descriptor and targets, two nonlinear pooling orders.
 > New8 candidate wholeL r=.533976/.546934, SSE/sourceconstant=.782701/.744320;

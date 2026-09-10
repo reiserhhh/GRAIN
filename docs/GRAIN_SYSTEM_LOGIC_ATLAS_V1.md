@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT60新8完整L r=.534/.547，匹配对照相近；整体tau仍不如zero。源密度loss>1，NEXT61将区分固定字典表达容量与评分/正则牵制，不调参补新8成绩。局部配置函数保留，H16仍神经；辅助解释仍同材料证据绑定，不当临床诊断 | token potential extraction report §§2-4; token objective compatibility plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT60保留完整L关系及弱配置作用；NEXT61确定固定字典外源密度目标96.0%/97.2%，保持源评分可达同样极限，不是必然标量/梯度冲突。NEXT62开发center导数局部方向基，0新临床/Y推论；H16仍神经，辅助解释按同材料证据绑定 | token objective compatibility theory §§2-5; Hermite token potential plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,23 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第五十轮补充：梯度字典表达缺口，不是标量兼容性失败
+
+NEXT61固定20源系统，独立重建加权值/密度设计，col(D)投影与ker(V)约束
+分解完成。全源核前置可表达密度能量.039838/.028048，对照.005668/.003973，
+约7倍改善保留；但96.0%/97.2%仍在当前有限字典外，占实际字段误差89.4%。
+同源评分保持可达同样极限，最大变化1.37e-13；截距/末token锚定rank4/3。
+源点可解不等于新作者泛化，字典外目标也不是可删除的人格噪声。
+
+达到极限需要候选系数增量62.64/19.77倍、增加ridge成本590/438，只换来
+字段误差改善.113/.115。一阶最优条件误差1.75e-13，优化器已正确求解。
+80主诊断+80重放最小二乘，0预测拟合/神经/Y/新8打分；2CSV/20数组精确
+重放、49测试、6.367727秒CPU。下一NEXT62新增可积的局部方向核字典，
+不再调同一alpha或反复分析旧系数。H16依赖仍在，整体goal ACTIVE。
+[报告](../reports/grain_vector_mechanisms/TOKEN_OBJECTIVE_COMPATIBILITY_REPORT_V1.md)、
+[理论](GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_THEORY_V1.md)、
+[NEXT62](GRAIN_HERMITE_TOKEN_POTENTIAL_PLAN_V1.md)。
 
 ### 第四十九轮补充：token非线性兼容评分，配置作用小幅接回
 

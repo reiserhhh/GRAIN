@@ -1,0 +1,31 @@
+{
+  "primary_commit": "a410ffa48f1da59c768c0901efc087150a8b5f20",
+  "audit": {
+    "status": "PASS",
+    "source_systems": 20,
+    "logical_csvs_replayed": 2,
+    "private_arrays_replayed": 20,
+    "primary_diagnostic_ls_solves": 80,
+    "replay_diagnostic_ls_solves": 80,
+    "new_predictive_fits": 0,
+    "neural_calls": 0,
+    "human_labels_read": false,
+    "application_targets_read": 0,
+    "cpu_seconds": 0.01870200000000022,
+    "cumulative_compute_cpu_seconds": 6.367727,
+    "errors": {
+      "orthogonal_energy": 1.6653345369377348e-15,
+      "stationarity": 1.7482859433854556e-13,
+      "preserved_values": 1.3704451988861812e-13,
+      "quadratic_identity_relative": 5.923692142888398e-14,
+      "projection_relative": 1.584209330263153e-12,
+      "source_gram_rebuild": 5.684341886080803e-14
+    }
+  },
+  "files": {
+    "source_objective_account.csv": "c3a686c65b20782bfe1e81e31d4538729f8c2717af289ded07a5016a7645dd1a",
+    "group_summary.csv": "a79abcb3c1ab2a9833d2f8e7c700080d00407dbeaa1b184058cc488990bf6b48"
+  },
+  "unit": "Twenty source/query/reference function systems, not twenty independent author populations",
+  "application_predictions": "Not computed for diagnostic coefficients"
+}

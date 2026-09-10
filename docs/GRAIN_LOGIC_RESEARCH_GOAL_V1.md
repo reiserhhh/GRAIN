@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, forty-nine finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1501,21 +1501,56 @@ Read [report](../reports/grain_vector_mechanisms/TOKEN_POTENTIAL_EXTRACTION_REPO
 [theory](GRAIN_TOKEN_POTENTIAL_EXTRACTION_THEORY_V1.md),
 [NEXT61](GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_PLAN_V1.md).
 
+## Fiftieth pass: source dictionary capacity, not unavoidable score/field conflict
+
+- Previous turn classified as progress: NEXT60 developed a compatible token
+  scalar, retained some configuration response and located source density loss>1.
+- NEXT61 primary `a410ffa`, all20 frozen source/query/reference systems analyzed.
+  Source only, no new8 target reads or diagnostic application scoring.80primary
+  plus80replay LS solves explicitly counted; zero new predictive fits/neural/Y.
+- Independent V/D/ell/k reconstruction agrees with old Gram/rhs (max5.68e-14).
+  All4 candidate represented normalized density energy .039838/.028048 vs
+  control .005668/.003973, about7.03/7.06x more. Old local progress is preserved.
+  Nonetheless irreducible-in-this-dictionary losses .960162/.971952 account for
+  89.44%/89.42% of realized source density loss. Not personality-information rates.
+- Keeping original source scores fixed attains identical field projection limits
+  across20 systems; max score change1.37e-13. Intercept/last-only design has full
+  rowrank4/3; exact source anchoring is possible, not a new-author generalization
+  guarantee. Score/field tension exists in the objective, not as an unavoidable
+  finite-source integrability obstruction.
+- Candidate source-preserving coefficient changes require62.64/19.77x original
+  norm, increase ridge cost590.022/438.011 for .113/.115 density benefit.
+  Three objective force vectors balance to1.75e-13; quadratic excess identity
+  relative error5.92e-14. Do not rescue this dictionary by an alpha sweep.
+- 2CSV/20private arrays exactly replay, orthogonal energy error1.67e-15,
+  projection relative1.58e-12;6.367727s measured CPU.49 focused tests,18 existing
+  warnings,Ruff passes. NEXT60 public manifest logicalCSV count corrected13 vs
+  raw26 including macOS sidecars; original predictions/private audit untouched.
+- NEXT62 planned: one derivative-enhanced/Hermite-type scalar token candidate,
+  same source basis/centers/bandwidth, local direction freedom from center kernel
+  derivatives.10fits/120sCPU/0neural/Y, original candidate reused as baseline;
+  test source capacity and actual complete score/GRAIN actions, not another
+  source-only parameter analysis. Input H16 remains native.
+
+Read [report](../reports/grain_vector_mechanisms/TOKEN_OBJECTIVE_COMPATIBILITY_REPORT_V1.md),
+[theory](GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_THEORY_V1.md),
+[NEXT62](GRAIN_HERMITE_TOKEN_POTENTIAL_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT61 | Is source density failure dictionary-external or caused by scalar/ridge competition? | Execute GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_PLAN_V1; source derivative column-space projection and value-preserving nullspace improvement |60sCPU/0neural/Y; count diagnostic solves, no application scoring or new parameter sweep |
+| NEXT62 | Can derivative-enhanced local scalar features capture the missing field and improve complete inference? | Execute GRAIN_HERMITE_TOKEN_POTENTIAL_PLAN_V1; one Hermite-type token dictionary, same source descriptors and old frozen baseline |10fits/120sCPU/0neural/Y; full score/actions and source span, no alpha/rank/bandwidth grid |
 
-These are local computational/theory questions. NEXT60 complete, with no new
+These are local computational/theory questions. NEXT61 complete, with no new
 candidate suffix calls. No MLP24/attention22/hidden-state refinement,
-old queue restart, broader factor search or clinical naming. NEXT61 planned,
-not executed; it explains source field capacity and scalar compatibility before
-another extractor, rather than sweeping penalties to rescue an outcome.
+old queue restart, broader factor search or clinical naming. NEXT62 planned,
+not executed; it develops local directional expressivity in one compatible
+extractor, rather than sweeping penalties or repeatedly diagnosing old coefficients.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

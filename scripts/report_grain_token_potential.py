@@ -18,6 +18,14 @@ def publish():
     summary = read(OUT / "analysis/summary.json")
     if audit["status"] != "PASS":
         raise ValueError("Audited frozen prediction/replay required")
+    audit = dict(audit)
+    logical_csvs = [
+        name
+        for name in summary["files"]
+        if name.endswith(".csv") and not name.startswith(".")
+    ]
+    audit["raw_glob_count_including_metadata_sidecars"] = audit["csvs_replayed"]
+    audit["csvs_replayed"] = len(logical_csvs)
     dst = ROOT / "reports/grain_vector_mechanisms/token_potential_extraction_v1"
     dst.mkdir(exist_ok=True)
     names = (

@@ -82,6 +82,7 @@ flowchart TD
 | 源正文/查询补偿与可观察输入 | DeltaL=I+B+Q；数据行空间覆盖与Dphi零空间不同 | `value_tangent_compensation.py`；冻结NEXT57两函数、原始目标只作计算解释 | NEXT58源B/Q近完全抵消，新8仅弱抵消；评分覆盖.346/.521、方向.796–.877。N F04中心化r=.629。NEXT59才检查原生梯度在池化盲区的作用；不能用几何覆盖率当预测率，也不把模型分账当心理机制 |
 | 均值/PCA不可见的GRAIN配置 | D=visible+allocation+outside；tau_j=gradL:D_j | `pooled_feature_null_response.py`；NEXT57源基底与NEXT39完整H16 BODY梯度逐地址绑定 | NEXT59新8allocation投影.946/.943；96方向在Dphi核内仍有原生作用。输入盲区已检出，非线性头在相同phi不能修复；NEXT60才开发聚合前token标量函数，保持同函数导数，当前仍非新独立人格评分 |
 | 聚合前token可微标量 | Lhat=b+a·mean(z)+beta·z_last+mean(phi(z,p))；tauhat=dLhat[D] | `token_potential.py`；仅源rank8/核/系数，当前H16/GRAIN，无当前梯度或后缀 | NEXT60完整L r=.534/.547，匹配对照相近；配置作用新8r=.486/.087但幅度小，完整tau SSEzero1.153/1.181。源密度loss全>1；NEXT61区分固定字典容量与评分/惩罚牵制，不启动参数网格。H16仍神经 |
+| 固定字典的源目标分解 | 字段误差=col(D)外目标+字典内未用部分；delta属于ker(V)保持源分数 | `token_objective_compatibility.py`；只读既有源目标与冻结函数，诊断系数不作新作者预测 | NEXT61候选源目标96.0%/97.2%在字典外，源评分不增加该极限；正则牵制存在但不是主表达缺口。NEXT62新增可积的center导数基，不用残差去宣称人格噪声或直接部署源拟合 |
 
 ## 3. 完整F与条件B的精确关系
 
@@ -132,6 +133,11 @@ NEXT60已经完成，[新报告](../reports/grain_vector_mechanisms/TOKEN_POTENT
 评分、配置与全响应分层结果。20拟合/7.782秒CPU、0神经/Y，目标禁入预测。
 NEXT61计划只分解源目标的可表示部分与保持评分的参数自由度，暂不计算
 诊断系数的新8成绩；参考[NEXT61计划](GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_PLAN_V1.md)。
+
+NEXT61已完成，[源分解报告](../reports/grain_vector_mechanisms/TOKEN_OBJECTIVE_COMPATIBILITY_REPORT_V1.md)
+表明有限字典表达力是主缺口，评分锚定可在源内保持但不足以保证新作者。
+NEXT62将同一token标量扩展为导数增强核，见[计划](GRAIN_HERMITE_TOKEN_POTENTIAL_PLAN_V1.md)。
+既有H16、源教师依赖没有因代数分解自动消失；当前没有新运行中模型。
 
 同一材料、查询、布局和数值观察器下，旧四格的定义为：
 
