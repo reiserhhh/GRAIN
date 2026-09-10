@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Synthetic witnesses for binary-link and derivative-surrogate algebra."""
 
 import numpy as np

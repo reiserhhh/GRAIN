@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Exact binary-link accounts and constrained derivative-enhanced response maps."""
 
 from __future__ import annotations
@@ -59,9 +60,7 @@ def quadrature(fractions, values):
 
 def path_account(fractions, probabilities, gradients, displacement):
     """Transform cached probability gradients and keep both quadrature errors."""
-    p, g, d = map(
-        lambda x: np.asarray(x, float), (probabilities, gradients, displacement)
-    )
+    p, g, d = (np.asarray(x, float) for x in (probabilities, gradients, displacement))
     if (
         p.ndim != 1
         or d.ndim != 2
@@ -142,8 +141,8 @@ def fit_curvature(displacements, frames, path_fractions, logit_gradients, penalt
 
 def quadratic_delta(displacement, frame, origin_gradient, coefficients):
     """Return the frozen origin-linear and radial/tangential potential increments."""
-    d, v, k = map(
-        lambda x: np.asarray(x, float), (displacement, origin_gradient, coefficients)
+    d, v, k = (
+        np.asarray(x, float) for x in (displacement, origin_gradient, coefficients)
     )
     if (
         d.shape != v.shape
