@@ -1,5 +1,21 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT73 identifies selection as the larger swap channel.**
+> New8 query contrast: own/own r+.939, direction-only swap+.905, selection-only
+> swap-.780, both-.890. Symmetric swap projections selection/direction86.32%/13.68%,
+> source4 61.68%/38.32%; not universal causal or personality proportions.
+> Conditional operator Cov_a(value,deltaK)/sqrt(h) now exported; direction anchor
+> enters linearly after selection is fixed. Both dependencies remain in the model.
+>0fits/neural/Y;12packets/5CSV exact replay,64FD max2.20e-11,5.503218sCPU.
+>33focused tests/Ruff; one post-account test verifies selection's third-cumulant
+> derivative. [Report](../reports/grain_vector_mechanisms/QUERY_SELECTION_ORIENTATION_REPORT_V1.md),
+> [theory](GRAIN_QUERY_SELECTION_ORIENTATION_THEORY_V1.md).
+> **NEXT74 planned:** [source selector potential](GRAIN_SOURCE_SELECTOR_POTENTIAL_PLAN_V1.md).
+> Learn actual query-conditioned logits and same-function GRAIN derivatives from
+> H16, instead of generic state reconstruction.20source-only solves/120CPU seconds,
+>0native/Y; V remains an explicit native dependency. No more attribution grids.
+
+> Previous NEXT72 update; its NEXT73 task is completed above.
 > **2026-09-11 newest: NEXT72 compiles the signed joint-moment interface.**
 > Same source4/new8/queries/factors;0fits/neural/Y. Covariance of value and GRAIN
 > key-logit direction reconstructs old actions within3.747e-16. New8 query-swap

@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, sixty-one finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, sixty-two finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1853,20 +1853,50 @@ Read [report](../reports/grain_vector_mechanisms/QUERY_PARTITION_GEOMETRY_REPORT
 [theory](GRAIN_QUERY_PARTITION_GEOMETRY_THEORY_V1.md),
 [NEXT73](GRAIN_QUERY_SELECTION_ORIENTATION_PLAN_V1.md).
 
+## Sixty-second finite pass delivered: query selection versus paired direction
+
+- Previous turn PROGRESS: NEXT72 compiled joint moments, reproduced the prior
+  query effects, corrected the artifact inventory and froze NEXT73.
+- NEXT73 primary `e68d862`,0fits/neural/API/Y/MEPS, source4LOO/new8all4. Four
+  crossed scalar paths per query, both fixed readouts and all GRAIN directions.
+ Pure application is denied current Q and old/native action targets.
+- New8 query-contrast r: original+.939345, direction swap only+.904835,
+ selection swap only-.780340, both-.890468. No mixed cell promoted as predictor.
+ Symmetric selection/direction swap projections .863238/.136762, source4
+ .616750/.383250; native projections -.407491/-.066737 sum -.474229. Denominators
+ differ; neither is a human personality proportion or unique causal allocation.
+- Conditional operator Cov_a(value,deltaK)/sqrt(h) exported. It is linear in
+  direction Q after selection is fixed, nonlinear through the selection measure.
+ This is a usable numerical interface, not removal of current K/V/dK dependencies.
+- Interaction RMS/swap RMS in new8 contrast~1.02%, but query interactions are
+ larger; do not delete nonlinear selection. One post-account synthetic test
+ verifies the infinitesimal direction plus third-cumulant selection identity.
+-12paired packets/5aggregate CSV exact replay; rows32/16/8/32/4. Diagonal match
+ 3.053e-16,64predeclared source finite differences max2.199e-11.5.503218CPU seconds
+ below30;33final focused tests/Ruff pass, private operators remain ignored.
+- NEXT74 planned: source-trained differentiable query-logit potential plus its
+  own GRAIN derivative. Primal-only/matched response-aware source objectives,
+ 20solves/120CPU seconds, no new neural/Y. This directly develops selection;
+ current V explicitly retained, not a new complete questionnaire predictor.
+
+Read [report](../reports/grain_vector_mechanisms/QUERY_SELECTION_ORIENTATION_REPORT_V1.md),
+[theory](GRAIN_QUERY_SELECTION_ORIENTATION_THEORY_V1.md),
+[NEXT74](GRAIN_SOURCE_SELECTOR_POTENTIAL_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT73 | Which query dependency changes the signed relation: selection measure or directional orientation? | Execute GRAIN_QUERY_SELECTION_ORIENTATION_PLAN_V1, four crossed scalar paths using the fixed own/other anchors; symmetric selection/direction/interaction account |0fits/native/Y;30CPU seconds; preserve all signs and diagonals, then build the corresponding source operator, not another accuracy or attribution sweep |
+| NEXT74 | Can a source-trained scalar selector preserve the used query relation from H16? | Execute GRAIN_SOURCE_SELECTOR_POTENTIAL_PLAN_V1, same-function logits/dlogits from source-only primal or joint teaching; retain native V explicitly |20fits/120CPU seconds,0native/Y; frozen source exclusions and all query/factor outputs; no new8 tuning, attribution grid or full-predictor overclaim |
 
-These are local computational/theory questions. NEXT72 complete,0newfits;
+These are local computational/theory questions. NEXT73 complete,0newfits;
 no live native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT73 planned, not executed; resolve
-which conditional relation the next scalar generator must retain.
+broader factor search or clinical naming. NEXT74 planned, not executed; build
+the source-conditioned selector with its compatible direction derivative.
 No penalty/donor/dose sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

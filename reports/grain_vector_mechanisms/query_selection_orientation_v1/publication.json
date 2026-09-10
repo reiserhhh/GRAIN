@@ -1,0 +1,25 @@
+{
+  "primary_commit": "e68d862f83741b3f0e7506410f9ab9781c06fcc3",
+  "audit": {
+    "status": "PASS",
+    "packets": 12,
+    "csv_replay": 5,
+    "total_cpu_seconds": 5.503218,
+    "diagonal_max_error": 3.0531133177191805e-16,
+    "fd_count": 64,
+    "fd_max_error": 2.1994047208484524e-11,
+    "fits": 0,
+    "new_neural_calls": 0,
+    "human_labels_read": false
+  },
+  "files": {
+    "crossed_query_actions.csv": "ec3a69221cf4e1ee137bf6773a529a1655d548571289d099ff83f8048c9b2a0e",
+    "crossed_contrast_actions.csv": "382240357a243175e33a6dbac100a21ee7d58f31085da77101979d5fc7525bae",
+    "query_account.csv": "69ca72cb6b44e24fad312345a5482170ef821d15dcea8ab9bfa3cda1ad13afe4",
+    "factor_account.csv": "339b5a71db1018adc83969128217fd9dc5c34e110b58ec8e9b93d0aa9292f110",
+    "contrast_account.csv": "c9691b31676cde0b284b608409fca7383c55842b6f4cb1e903c9f692b59dae2e"
+  },
+  "publisher_sha256": "7070b41b4afff7808e14839f5d50226dbfa51df0eaa5f97df6b7b5d96061e7ea",
+  "post_account_theory_test_sha256": "226a59da419d4cebd04e13e5bf1c586797c41d0e813ad0b2f1575b8df00becc4",
+  "scope": "Frozen source-query crossed scalar paths, symmetric swap attribution, not human personality shares"
+}
