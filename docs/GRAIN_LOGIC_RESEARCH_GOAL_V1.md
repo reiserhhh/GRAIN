@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirty-five finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirty-six finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1069,18 +1069,43 @@ Read [report](../reports/grain_vector_mechanisms/QUERY_COUNTERACTION_REPORT_V1.m
 [theory](GRAIN_QUERY_COUNTERACTION_THEORY_V1.md),
 [NEXT47](GRAIN_SOURCE_COMMON_COUNTERACTION_PLAN_V1.md).
 
+## Thirty-sixth pass: source-fixed common counteraction survives on new authors
+
+- Previous turn classified as progress: NEXT46 produced verified full-vector
+  decomposition and removed the ambiguity between carried/operator difference.
+- NEXT47 completed after `d9b9081` primary freeze. Source-only local adjoint
+  compilation; exact12-author inventory, source4 leave-one-out/new8 all4.
+  New8 x and all current target increments blocked in construction.
+- New8 own/pooled contrast r=.955274/.954853, SSE/zero=.091333/.092402,
+  final-T projection=-.304183/-.303845. Both preset local-retention conditions
+  pass. Source4 r=.980468/.980548 with overshoot; not exact amplitude recovery.
+  F03 new8 r=.615/.610 is lower than the aggregate; all factor results retained.
+- New8 source-replacement error RMS=.013454 vs missing operator=.024635;
+  numerical parity1.84e-7 is separately kept. Signed covariance explains the
+  total error; no independence, human personality fraction or new clinical label.
+-192 actions/96 contrasts,4.069140s,replay4.065182s,0 native/fits/Y/API calls.
+  Compilation scalar difference1.222e-15;12 exact array/6 CSV replays; new8
+  readers identical across8 authors.101 scoped tests,20 existing warnings.
+- Local prediction needs only v,d, but d still comes from native upstream
+  transport. NEXT48 is one source-query correction; then stop MLP24 expansion
+  and return to the full input/transport dependency, not another precision grid.
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_COMMON_COUNTERACTION_REPORT_V1.md),
+[theory](GRAIN_SOURCE_COMMON_COUNTERACTION_THEORY_V1.md),
+[NEXT48](GRAIN_SOURCE_QUERY_CORRECTION_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46 finite candidates are closed,
-retaining useful mechanisms and contrary comparisons. NEXT47 tests whether the
-located MLP24 response can use a source-fixed common reader.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47 finite candidates are closed,
+retaining useful mechanisms and contrary comparisons. NEXT48 tests one source
+query correction, then closes the MLP24-only refinement family.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT47 | Can a source-fixed common reader preserve MLP24 counteraction? | Execute GRAIN_SOURCE_COMMON_COUNTERACTION_PLAN_V1; source-only J24 adjoint average, current d only, same w* | Max60s numeric,0 native/fit/Y; held-source exclusion, exact compilation, both cohorts/modes, signed contribution and two-part error |
+| NEXT48 | Is a component of the missing query-operator contrast source-transferable? | Execute GRAIN_SOURCE_QUERY_CORRECTION_PLAN_V1; source-query difference vector, current d only |60s numeric,0 native/fit/Y; evaluate operator target and total error separately; then return to full upstream dependency |
 
 These are local computational/theory questions. Reuse shared source vectors and
-saved tangents; needed pre-MLP24 primal states are now captured. NEXT47 must not
+saved tangents; needed pre-MLP24 primal states are now captured. NEXT48 must not
 repeat that native collection. No old queue restart, broader factor search or clinical naming.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.

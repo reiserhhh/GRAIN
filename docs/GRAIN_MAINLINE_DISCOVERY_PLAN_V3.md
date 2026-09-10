@@ -1,5 +1,16 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT47 source-common MLP24 reader delivered.**
+> Same frozen reader across new8: contrast r=.955274/.954853, SSE/zero=.091333/.092402;
+> negative final-T projection retained. Current x/gate dependence removed locally;
+> native upstream d remains. Source replacement/missing operator RMS=.013454/.024635.
+>192 actions/96 contrasts,4.069s;0 native/fits/Y,12 array+6 CSV replays,101 tests.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_COMMON_COUNTERACTION_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_COMMON_COUNTERACTION_THEORY_V1.md),
+> [NEXT48](GRAIN_SOURCE_QUERY_CORRECTION_PLAN_V1.md): one source query correction,
+> then end MLP24-only expansion and return to upstream/mainline integration.
+> Whole-system goal ACTIVE; earlier next-step language below is historical.
+
 > **2026-09-10 newest: NEXT46 MLP24 counteraction delivered.**
 > New8 own carried/operator RMS=.090579/.024635; local carried share=.918570.
 > Their signed final-T projections=-.313540/+.067912, total-.245629: mostly
