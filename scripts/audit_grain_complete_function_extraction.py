@@ -96,7 +96,12 @@ def audit(out):
                         errors["derivative_finite_difference"],
                         abs(float((a - c) / 2e-5 - tp[f])),
                     )
-    for p in sorted((out / "analysis").glob("*.csv")):
+    csvs = [
+        p
+        for p in sorted((out / "analysis").glob("*.csv"))
+        if not p.name.startswith(".")
+    ]
+    for p in csvs:
         if sha(p) != sha(out / "replay_analysis" / p.name):
             raise ValueError("Analysis replay differs: " + p.name)
     # Reconstruct core metrics without using the report's fidelity helper.
@@ -126,7 +131,10 @@ def audit(out):
                 errors["metric"],
                 *[abs(float(v - row[f])) for f, v in zip(fields, vals, strict=True)],
             )
-    statuses = [read(p) for p in (out / "models").glob("*_status.json")]
+    statuses = [
+        read(out / "models" / (r + "_status.json"))
+        for r in sorted({ref(j) for j in jobs})
+    ]
     assert len(statuses) == 5 and sum(s["fits"] for s in statuses) == 20
     assert all(s["extra_denials"] == s["current_target_reads"] == 0 for s in statuses)
     assert fp["extra_denials"] == fr["extra_denials"] == 0
@@ -141,7 +149,7 @@ def audit(out):
         "new_neural_calls": 0,
         "contexts_replayed": 24,
         "same_function_checks": 192,
-        "csvs_replayed": len(list((out / "analysis").glob("*.csv"))),
+        "csvs_replayed": len(csvs),
         "cpu_seconds": cpu,
         "cumulative_compute_cpu_seconds": fm["cpu_seconds"]
         + fp["cpu_seconds"]

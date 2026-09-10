@@ -260,7 +260,11 @@ def fit(out):
         or any(s["extra_denials"] for s in statuses)
     ):
         raise RuntimeError("Fit budget or membership boundary differs")
-    files = {p.name: sha(p) for p in dst.iterdir() if p.suffix in (".npz", ".json")}
+    files = {
+        p.name: sha(p)
+        for p in dst.iterdir()
+        if not p.name.startswith(".") and p.suffix in (".npz", ".json")
+    }
     write(
         dst / "freeze.json",
         {
@@ -419,8 +423,8 @@ def evaluate(out, folder):
         )
     diagnostics = [
         row
-        for p in sorted((out / "models").glob("*_status.json"))
-        for row in read(p)["diagnostics"]
+        for reference in sorted({ref(j) for j in jobs})
+        for row in read(out / "models" / (reference + "_status.json"))["diagnostics"]
     ]
     tables["source_diagnostics"] = pd.DataFrame(diagnostics)
     for n, table in tables.items():
@@ -445,7 +449,11 @@ def evaluate(out, folder):
             "fits": 0,
             "new_neural_calls": 0,
             "human_labels_read": False,
-            "files": {p.name: sha(p) for p in sorted(dst.glob("*.csv"))},
+            "files": {
+                p.name: sha(p)
+                for p in sorted(dst.glob("*.csv"))
+                if not p.name.startswith(".")
+            },
         },
     )
     print({"status": "EVALUATED", "decisions": decisions}, flush=True)
