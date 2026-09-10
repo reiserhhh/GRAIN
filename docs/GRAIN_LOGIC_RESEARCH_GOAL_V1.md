@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, forty-seven finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, forty-eight finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1430,21 +1430,57 @@ Read [report](../reports/grain_vector_mechanisms/VALUE_TANGENT_COMPENSATION_REPO
 [theory](GRAIN_VALUE_TANGENT_COMPENSATION_THEORY_V1.md),
 [NEXT59](GRAIN_POOLED_FEATURE_NULL_RESPONSE_PLAN_V1.md).
 
+## Forty-eighth pass: the pooled input erases native GRAIN allocation response
+
+- Previous turn classified as progress: NEXT58 directly found source compensation,
+  distinguished score/direction support and froze a different input-mechanism test.
+- NEXT59 primary `e9d21c7` complete, no fits/neural/API/Y. Same12 authors/24query
+  contexts/96actions; source4 leave-one-out bases, new8all4. All24 originalH16
+  gradient packets bound to exact old BODY/prefix/model/contrast; complete tau
+  reconstruction max4.7763e-6 within the preset precision tolerance.
+- NativeGRAIN D split into PCA-mean visible, zero-mean token allocation and
+  outside-PCA mean. New8 allocation/native signed projections.945894/.943346;
+  visible.058362/.029880, outside-.004256/.026774. Not psychological percentages.
+  Source4 allocation1.007119/.996401, with signed cancellation retained.
+- Kernel-of-phi combined action nonzero in96/96 directions,minabs.005527;
+  new8 null action squared ratio.893104/.949316. No differentiable function of
+  this same mean/last phi can recover those local responses. New8 query-contrast
+  null squared ratio.900511. This is a concrete input-contract witness, not
+  evidence every native sensitivity is a personality signal.
+- Large allocation vector energy98.91–99.43% partly follows direction design;
+  native gradient contraction, not norm alone, establishes actual response.
+  All4 factors retained; F03/N mean contribution remains material. Configuration
+  is not automatically pure token order. Old S6/NEXT31 are corroborated and
+  linked to the current failed input, not relabeled a first-ever discovery.
+- FiveCSV exact replay,3 public aggregateCSV; independent projection/contraction
+ 7.772e-16 and groupmetric3.331e-16.49 focused tests/18 existing warnings, Ruff
+  passes. Total prepare/analysis/replay/audit10.699698s CPU,0 new neural/fit/Y.
+  Pre-freeze shebang lint issue fixed; no numerical restart or live model job.
+- NEXT60 planned: nonlinear source token potential BEFORE aggregation, compared
+  with matched kernel-after-mean control; source values and native token-gradient
+  field teach one compatible scalar. Source response-informed rank8 descriptor,
+  fixed source landmarks,20small solves/180sCPU/0neural/Y. No current targets in
+  application; H16 remains native. Not another pooled-input head or alpha sweep.
+
+Read [report](../reports/grain_vector_mechanisms/POOLED_FEATURE_NULL_RESPONSE_REPORT_V1.md),
+[theory](GRAIN_POOLED_FEATURE_NULL_RESPONSE_THEORY_V1.md),
+[NEXT60](GRAIN_TOKEN_POTENTIAL_EXTRACTION_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT59 | Does pooled input hide native GRAIN response before the reader starts? | Execute GRAIN_POOLED_FEATURE_NULL_RESPONSE_PLAN_V1; native H16 gradient contraction with visible/token-allocation/outside-mean components |60s CPU/0 fits/neural/Y; one replay, choose token-addressed input vs response-informed mean basis vs conditional support, no rank/penalty grid |
+| NEXT60 | Can a compatible nonlinear token function retain allocation responses and complete scores? | Execute GRAIN_TOKEN_POTENTIAL_EXTRACTION_PLAN_V1; source response basis and matched before/after-pooling scalar kernels with value/gradient teaching |20small solves/180sCPU/0neural/Y; score and exact derivatives on pure application inputs, no rank/bandwidth/penalty grid |
 
-These are local computational/theory questions. NEXT58 complete, with no new
+These are local computational/theory questions. NEXT59 complete, with no new
 candidate suffix calls. No MLP24/attention22/hidden-state refinement,
-old queue restart, broader factor search or clinical naming. NEXT59 planned,
-not executed; it chooses the next input representation from a native-response
-null-space account, not a new compensation sweep.
+old queue restart, broader factor search or clinical naming. NEXT60 planned,
+not executed; it develops the identified token-configuration mechanism in one
+source scalar/gradient program, not a new compensation or pooled-head sweep.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

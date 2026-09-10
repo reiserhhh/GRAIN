@@ -1,5 +1,20 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT59 pooled-input blindness directly measured.**
+> New8 allocation/native action signed projections.946/.943, visible means
+> .058/.030.96/96 native actions persist in the old feature map's nullspace;
+> minabs.005527 versus1.33e-15 sum error. This is not a personality-information
+> percentage. OldS6/configuration and NEXT31 local-reader results are retained.
+> Three-component orthogonal vector/signed-response account, same12 authors,
+> fullH16 gradient binding to old endpoints.10.700sCPU/0fits/neural/Y,49tests,
+> fiveCSV exact replay. [Report](../reports/grain_vector_mechanisms/POOLED_FEATURE_NULL_RESPONSE_REPORT_V1.md),
+> [theory](GRAIN_POOLED_FEATURE_NULL_RESPONSE_THEORY_V1.md).
+> [NEXT60](GRAIN_TOKEN_POTENTIAL_EXTRACTION_PLAN_V1.md) planned: source-trained
+> nonlinear token scalar before pooling, matched after-mean control, compatible
+> value/gradient teaching.20smallsolves/180sCPU, no current native targets.
+> H16 remains neural; no live model job, release/lockbox/MEPS or clinical change.
+
+> **Previous NEXT58; its NEXT59 request is completed above.**
 > **2026-09-11 newest: NEXT58 source compensation identified.**
 > In-fit BODY/query increments nearly cancel (ratios1e-6/4e-7); new8 ratios
 > .849/.866, held-source1.036/1.045. Score-input source coverage.346/.521 versus

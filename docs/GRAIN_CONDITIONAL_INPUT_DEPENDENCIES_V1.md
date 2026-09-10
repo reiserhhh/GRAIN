@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第四十七轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第四十八轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -80,6 +80,7 @@ flowchart TD
 | 完整标量与同函数响应抽取 | Lhat=ellbar+sL(a+w^T z)，tauhat=sL w^T Dz[D] | `complete_function_extraction.py`；同源PCA32正文均值/末token，源原生L/tau，20源求解；应用无后缀/当前目标 | NEXT57值对照新8分数r=.300/.336，联合-.782/-.473，F04响应保留.639/.610；完整门槛未过，关闭加性池化族。源设计rank20/65；NEXT58分解BODY/查询补偿与支持覆盖。H16仍神经，不把模型拟合当人格效度 |
 | 效标与解释 | Corr/response/criterion | 冻结之后连接原有自评；保持量表、模型、行为通道区分 | 不据最高Y相关选择某个坐标/函数；无新增真人或日常行动效标 |
 | 源正文/查询补偿与可观察输入 | DeltaL=I+B+Q；数据行空间覆盖与Dphi零空间不同 | `value_tangent_compensation.py`；冻结NEXT57两函数、原始目标只作计算解释 | NEXT58源B/Q近完全抵消，新8仅弱抵消；评分覆盖.346/.521、方向.796–.877。N F04中心化r=.629。NEXT59才检查原生梯度在池化盲区的作用；不能用几何覆盖率当预测率，也不把模型分账当心理机制 |
+| 均值/PCA不可见的GRAIN配置 | D=visible+allocation+outside；tau_j=gradL:D_j | `pooled_feature_null_response.py`；NEXT57源基底与NEXT39完整H16 BODY梯度逐地址绑定 | NEXT59新8allocation投影.946/.943；96方向在Dphi核内仍有原生作用。输入盲区已检出，非线性头在相同phi不能修复；NEXT60才开发聚合前token标量函数，保持同函数导数，当前仍非新独立人格评分 |
 
 ## 3. 完整F与条件B的精确关系
 
@@ -118,6 +119,12 @@ suffix22–end。联合图有部分分数排序但明显压缩幅度，整函数
 见[补偿理论](GRAIN_VALUE_TANGENT_COMPENSATION_THEORY_V1.md)。
 [NEXT59](GRAIN_POOLED_FEATURE_NULL_RESPONSE_PLAN_V1.md)计划仅用旧H16原生梯度，
 分离token内分配与源PCA外均值；直接选择下一输入机制，0新神经/拟合。
+
+NEXT59现已完成，见[报告](../reports/grain_vector_mechanisms/POOLED_FEATURE_NULL_RESPONSE_REPORT_V1.md)
+与[理论](GRAIN_POOLED_FEATURE_NULL_RESPONSE_THEORY_V1.md)。大部分当前GRAIN
+作用来自零均值token分配，源PCA外均值作用较小但不删。下一步
+[NEXT60](GRAIN_TOKEN_POTENTIAL_EXTRACTION_PLAN_V1.md)以同一标量核函数在
+聚合前读取token，并从源梯度教学；相同源参照控制聚合先后，不继续磨旧phi。
 
 同一材料、查询、布局和数值观察器下，旧四格的定义为：
 

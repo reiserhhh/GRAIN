@@ -1,0 +1,15 @@
+{
+  "protocol": "GRAIN_POOLED_FEATURE_NULL_RESPONSE_V1",
+  "primary_commit": "e9d21c762aee45dfad5afef30021eb01ed96a54e",
+  "private_source": "results/grain_vector_mechanisms/logic_pooled_feature_null_response_v1",
+  "unique_authors": 12,
+  "contexts": 24,
+  "actions": 96,
+  "public_aggregate_only": true,
+  "files": {
+    "responses.csv": "2588020c055337c76f3020bc6ad97478b3575a36895015d4da35ec54f8149acf",
+    "geometry.csv": "010d28e9e5f31e2c35a665e793423a3893c9c1c4fc481c7d2b0616c310906908",
+    "query_contrasts.csv": "8dc8128a590a204d082fd74a30b73d45b28e67dabf24680dcb477d09039c9d3d",
+    "replay_audit.json": "96b16566c594ed5d500e08a1f8d53f1d39f36e62f3fa9ec583055cdbe6f3be28"
+  }
+}

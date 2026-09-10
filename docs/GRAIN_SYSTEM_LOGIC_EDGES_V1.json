@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "d60cf75f0858acf018a4d478861e3a681cc53a9b52156b1838dae7cdae699249",
+  "atlas_sha256": "7ac568f702f02e23b9975d0023e83361b3d4ebb8d0e9b06a14fefb58adef42a3",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT58\u6e90B/Q\u589e\u91cf\u8fd1\u5b8c\u5168\u62b5\u6d88\uff0c\u65b08kappa=.849/.866\uff1b\u8bc4\u5206\u652f\u6301\u8986\u76d6.346/.521\u800c\u65b9\u5411.796\u2013.877\u3002N F04\u76f8\u5bf9\u914d\u7f6er=.629\u4fdd\u7559\uff0c\u786e\u8ba4\u5bfb\u6c42\u964d\u81f3.220\uff1b\u5c40\u90e8\u54cd\u5e94\u4e0e\u4f5c\u8005\u8bc4\u5206\u7ea6\u675f\u4e0d\u540c\u3002\u51bb\u7ed3\u7a0b\u5e8f\u8865\u507f\u5df2\u8bc6\u522b\uff0c\u4fdd\u7559\u540c\u6750\u6599/token\u5730\u5740\u63a5\u53e3",
-      "evidence_entry": "value tangent compensation theory \u00a7\u00a71-4; complete function extraction theory"
+      "alternative_or_next_link": "NEXT59\u540c\u5730\u5740GRAIN\u65b9\u5411\u5728\u6c60\u5316phi\u6838\u5185\u4ecd\u670996/96\u539f\u751f\u4f5c\u7528\uff1b\u65b08\u96f6\u5747\u503ctoken\u5206\u914d\u6295\u5f71.946/.943\uff0c\u53ef\u89c1\u5747\u503c.058/.030\u3002\u8be5\u63a5\u53e3\u662f\u68af\u5ea6\u573a\u4e0eGRAIN\u914d\u7f6e\u7684\u4ea4\u53c9\u534f\u65b9\u5dee\uff0c\u975e\u5fc3\u7406\u4fe1\u606f\u4efd\u989d\uff1b\u4fdd\u7559NEXT58\u6e90\u8865\u507f\u4e0e\u65e7S6\u914d\u7f6e\u673a\u5236",
+      "evidence_entry": "pooled feature null response theory \u00a7\u00a71-2,5; value tangent compensation theory"
     },
     {
       "id": "L20",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "NEXT58\u6e90\u8865\u507f\u89e3\u91ca\u5b8c\u6bd5\uff1bNEXT59\u533a\u5206\u6e90\u652f\u6301\u4e0d\u8db3\u4e0e\u6c60\u5316\u8f93\u5165\u76f2\u533a\uff0c\u539f\u751fH16\u7f13\u5b58\u68af\u5ea6\u68c0\u9a8ctoken\u5206\u914d/\u5747\u503c\u5916\u65b9\u5411\u3002\u8ba1\u5212\u5c1a\u672a\u6267\u884c\uff0c\u4e0d\u5728\u540cphi\u7ee7\u7eed\u53c2\u6570\u7f51\u683c\u3002H16\u548c\u6e90\u6559\u5e08\u4ecd\u795e\u7ecf\uff0c\u5fc3\u7406\u89e3\u91ca\u4fdd\u7559\u6570\u5b57/\u6587\u672c\u7ed1\u5b9a\u4e0d\u56de\u5199\u8bc4\u5206",
-      "evidence_entry": "value tangent compensation theory \u00a7\u00a73-6; pooled feature null response plan; same-material interpretation theory"
+      "alternative_or_next_link": "NEXT59\u5df2\u8bc6\u522b\u65e7phi\u8f93\u5165\u76f2\u533a\uff1bNEXT60\u6539\u805a\u5408\u524dtoken\u975e\u7ebf\u6027\u6807\u91cf\uff0c\u7528\u6e90\u503c/\u5b8c\u6574token\u68af\u5ea6\u6559\u5b66\uff0c\u5339\u914d\u805a\u5408\u540e\u5bf9\u7167\u3002\u8ba1\u5212\u5c1a\u672a\u6267\u884c\uff1b\u540c\u4e00\u51fd\u6570\u4ea7\u51faL\u548c\u5bfc\u6570\uff0c\u907f\u514d\u65e0\u7ea6\u675f\u5411\u91cf\u573a/\u65e7\u5747\u503c\u8f93\u5165\u4e24\u7c7b\u7f3a\u53e3\u3002H16\u4ecd\u795e\u7ecf\uff0c\u89e3\u91ca\u5c42\u4ecd\u6309\u8bc1\u636e\u7ed1\u5b9a",
+      "evidence_entry": "pooled feature null response theory \u00a7\u00a73-5; token potential extraction plan; same-material interpretation theory"
     }
   ]
 }

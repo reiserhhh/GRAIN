@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "csvs_replayed": 5,
+  "independent_response_error": 7.771561172376096e-16,
+  "cpu_seconds": 1.06567,
+  "total_measured_cpu_seconds": 10.699698000000001,
+  "fits": 0,
+  "neural_calls": 0,
+  "human_labels_read": false
+}
