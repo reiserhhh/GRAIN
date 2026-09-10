@@ -1,0 +1,34 @@
+{
+  "primary_commit": "0fc049d77516ca0f55a3f86a6db336818b69000b",
+  "audit": {
+    "status": "PASS",
+    "fits": 0,
+    "packets": 24,
+    "csv_replay": 7,
+    "total_cpu_seconds": 18.784439,
+    "fd_count": 64,
+    "fd_max_error": 2.7208238440046273e-10,
+    "old_key_replay_max_error": 4.884981308350689e-15,
+    "reader_identity_max_error": 3.552713678800501e-15,
+    "squared_error_identity_max_error": 1.1102230246251565e-16,
+    "source_reader_checks": 24,
+    "H16_retained": true,
+    "current_readout_retained": false,
+    "current_native_values_retained": false,
+    "new_neural_calls": 0,
+    "human_labels_read": false
+  },
+  "files": {
+    "query_actions.csv": "f59f05d754d575467c33b1488a86830f7ecf421d704752d380c4e8690d41fdfb",
+    "factor_actions.csv": "2ddd5cf6e8b12ffa984dbd1726856d4043fad71d957137beea2f60d1b47b8b7b",
+    "contrast_actions.csv": "d79747faffb19d19b1ac82ed7c3a83f543a696e1cb42bc58db3f0765a808d01b",
+    "scalar_metrics.csv": "27a6835c83c9b8f71ac9da7cb1e7988498cad52eb3e07a61e577ddf263e6dab2",
+    "component_summary.csv": "600ed112743227f7bc73748a6d42529bbf1425335733529c777d2fe82f247ff1",
+    "reader_error_account.csv": "50e2c56b969945c031d84c665d40346e6affe334caf728f2f1b270c558d73683",
+    "vector_metrics.csv": "ce31a1d74c831190d680d1eb051c2401bcb49800b85cafd4b9d60de5714021bd"
+  },
+  "publisher_sha256": "4f565d2cefd1096bf12bc0294074c2eb2e0bed6c2c723a0034cd498c48143a07",
+  "scope": "H16 plus source-only selector, value and endpoint maps. K+V fixed-Q component only; no current gradients/native values, no full L or questionnaire prediction.",
+  "cpu_scope": "Successful numeric stages including replay; provenance preflight and imports excluded.",
+  "reference": "source4 leave-one-author-out; new8 all4 source reference. Reused discovery materials, not a fresh blind sample."
+}

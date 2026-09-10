@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, sixty-five finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, sixty-six finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1980,22 +1980,50 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_VALUE_CHANNEL_REPORT_V1.
 [theory](GRAIN_SOURCE_VALUE_CHANNEL_THEORY_V1.md),
 [NEXT77](GRAIN_SOURCE_ENDPOINT_ASSEMBLY_PLAN_V1.md).
 
+## Sixty-sixth finite pass delivered: source-only endpoint component assembly
+
+- Previous turn classified as PROGRESS: NEXT76 removed native V and separated
+  global vector error from observable error. NEXT77 now removes current g and
+  rejoins the actual personality-query endpoint instead of retuning V.
+- Primary `0fc049d`;0fits/neural/API/Y/MEPS. Existing NEXT51 source readers
+  exactly reconstructed in24checks and composed with all four NEXT76 functions.
+  H16/layout/source maps only during application; no current endpoint gradient,
+  native K/V/Q, prediction target or native remainder add-back.
+- New8 query-specific scalar contrast r=.545-.690; response/source scalar
+  SSEzero=.193610, r=.577035. Its K+V r=.677814 but SSEzero7.288066 and
+  RMS.402900 vs target.122288. Source4LOO scalar r=-.778636 remains recorded.
+  This is a useful independent local component, not a promoted full predictor.
+- Learned value changes response-selector transport/reader MSE .028774->.028029
+  and .046370->.046264; cross .030924->.034696 makes total .106069->.108989.
+  Exact interaction explains how separately improved pieces worsen composition.
+  Source-Q/native-KV comparator instead has negative cross -.006994; retain it.
+-64FD max2.720824e-10; old key replay4.884981e-15; exact reader/squared-error
+  identities;24packets/7CSV replay.18.784439successful numeric-stageCPU seconds
+  including replay.34focused tests pass; Ruff/format/whitespace checks pass.
+- NEXT78 decomposes query contrast into r_mean^T delta_p + delta_r^T p_mean,
+  including compatible GRAIN tangents. It discriminates shared-evidence vs
+  differential-readout development, not another V/reader-alpha search.
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_ENDPOINT_ASSEMBLY_REPORT_V1.md),
+[theory](GRAIN_SOURCE_ENDPOINT_ASSEMBLY_THEORY_V1.md),
+[NEXT78](GRAIN_ENDPOINT_QUERY_CONTRAST_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT77 | Can existing source endpoint readers assemble a current-g-free numerical component? | Execute GRAIN_SOURCE_ENDPOINT_ASSEMBLY_PLAN_V1; reuse NEXT51 readers and all four NEXT76 functions, preserve key/value/total |0fits/neural/Y,60CPU seconds; exact reader/transport error account, endpoint targets distinct from earlier shared-local readout |
+| NEXT78 | Which part of endpoint query contrast is evidence change vs differential reading? | Execute GRAIN_ENDPOINT_QUERY_CONTRAST_PLAN_V1; exact symmetric two-query scalar/tangent account, all frozen arms |0fits/neural/Y,30CPU seconds; decide differential-reader vs upstream-evidence development, no attribution grid |
 
-These are local computational/theory questions. NEXT76 complete,10source solves;
+These are local computational/theory questions. NEXT77 complete,0new source solves;
 no live native job. No MLP24/attention22 neural refinement, old queue restart,
-broader factor search or clinical naming. NEXT77 planned, not executed; assemble
-the source-only endpoint component while retaining all selector/value outcomes.
-No penalty/donor/dose sweep; NEXT75 capacity and NEXT76 value fitting are closed.
-Reuse the actual NEXT51 reader lineage, not a newly optimized readout on new8.
+broader factor search or clinical naming. NEXT78 planned, not executed; decompose
+the newly assembled endpoint contrast while retaining all selector/value outcomes.
+No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting and NEXT77
+source-endpoint assembly are closed. No newly optimized readout on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

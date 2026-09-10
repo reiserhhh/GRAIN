@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT77 assembles a current-reader-free endpoint component.**
+> Reuses NEXT51 source readers and all four NEXT76 functions;0fits/neural/Y.
+> New8 query-specific scalar contrast r=.545-.690; response/source SSEzero=.193610.
+> Same function K+V contrast r=.677814 but SSEzero7.288066, RMS.402900 vs .122288.
+> Source4LOO scalar ordering remains negative. Reader/transport squared errors
+> both decrease under learned values, but cross error grows and total worsens.
+> Preserve this exact composite-error mechanism and removed g dependency, not
+> a whole-scorer promotion.24packets/7CSV exact replay;64FD max2.72e-10,
+>18.784439CPU seconds,34focused tests/Ruff. H16 remains neural-derived; all four candidates retained.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_ENDPOINT_ASSEMBLY_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_ENDPOINT_ASSEMBLY_THEORY_V1.md).
+> **NEXT78 planned:** [endpoint query contrast](GRAIN_ENDPOINT_QUERY_CONTRAST_PLAN_V1.md).
+> Distinguish common-reader evidence change from differential-reader/common
+> evidence using the frozen bilinear identity;0fits/neural/Y,30CPU seconds.
+> Decide which functional link to develop, not another readout/value grid.
+
+> Previous NEXT76 update; its NEXT77 task is completed above.
 > **2026-09-11 newest: NEXT76 constructs content values and both response channels.**
 > H16->V/dV source function,10solves; application reads no current native V/K/Q.
 > New8 V-MSE improves~11.1%,dV~4.5%, but fixed response-selector K+V contrast
