@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-two finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-three finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1603,21 +1603,50 @@ Read [report](../reports/grain_vector_mechanisms/CONTEXT_READING_INTERACTION_REP
 [theory](GRAIN_CONTEXT_READING_INTERACTION_THEORY_V1.md),
 [NEXT64](GRAIN_CONTEXT_MODULATED_POTENTIAL_PLAN_V1.md).
 
+## Fifty-third pass: matched conditional scalar and the source-context simplex
+
+- Previous turn classified as progress: NEXT63 experimentally established a
+  finite BODY-by-last interaction while preserving BODY/GRAIN directions.
+- NEXT64 primary `be55c8f` frozen before4fits. Identical original/shifted source4
+  views teach593-coef additive/1169-coef conditional scalar; oldNEXT62 retained.
+  Same original scales/alpha/BODY reference. No fake augmented-source LOO.
+- Same-scalar BODY/last/mixed derivatives implemented and verified. Source
+  native-change RMS reproduced7.54%/8.20%, r=.143/-.371; this first conditional
+  extraction does not learn both finite actions well, even before new8 use.
+- New8 fullactionRMSE improves .757%/1.092% vs matched additive, but is worse
+  than old original-source program. WholeL r=.108/.250 vs control.228/.381 and
+  old.503/.538. ActionSSEzero1.119/1.106; scoreSSEconstant1.107/.945. No promotion.
+  Preserve allocation querycontrast r=.499/SSEzero.789 and all factor negatives.
+- Post-outcome algebra: full rank n-1 PCA whitening of n centered samples gives
+  CC'=nI-11'. Four source contexts become equidistant(sqrt8); observed raw-distance
+  CV .0774/.0478 disappears. Source context span covers9.40%/11.03% new8 energy.
+  This is a mathematically identified input loss, not the proven sole loss cause.
+- 4fits/0neural/API/Y/MEPS,13.888663s measuredCPU.44focused tests/Ruff,32prediction
+  packets/17CSV exact replay,384finite directions max6.74e-10. No post-result
+  primary change or hidden retry. Geometry account separately marked exploratory.
+- NEXT65: retain full hidden last distances in one isotropic source-centered
+  context kernel; same1169coeffs/BODY/objective/sourceviews, two newfits, old
+  controls reused. Input geometry change only, no alpha/dose/donor/grid search.
+
+Read [report](../reports/grain_vector_mechanisms/CONTEXT_MODULATED_POTENTIAL_REPORT_V1.md),
+[theory](GRAIN_CONTEXT_MODULATED_POTENTIAL_THEORY_V1.md),
+[NEXT65](GRAIN_FULL_CONTEXT_GEOMETRY_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT64 | Can a conditional scalar learn the discovered interaction and retain complete new-author inference? | Execute GRAIN_CONTEXT_MODULATED_POTENTIAL_PLAN_V1; matched augmented-source additive/context-product readers plus oldfrozen reference |4fits/120sCPU/0newneural; all4train/new8apply, no false sourceLOO or tuning grid; retain all score/action/factor outcomes |
+| NEXT65 | Does preserving full context distances recover useful source interaction and new-author inference? | Execute GRAIN_FULL_CONTEXT_GEOMETRY_PLAN_V1; full-last Gaussian modulation, same BODY/objective/parameter count, old controls frozen |2newfits/120sCPU/0neural/Y; complete source/new8 score/action tables, no whitening or tuning grid; keep local effects without wholepromotion |
 
-These are local computational/theory questions. NEXT63 complete,9source suffix
-forward/backwards; the native process is terminal. No MLP24/attention22/hidden-state
-refinement, old queue restart, broader factor search or clinical naming. NEXT64
-planned, not executed; develop conditional scalar reading on identical source
-information and return to complete new8 inference. No penalty/donor/dose sweep.
+These are local computational/theory questions. NEXT64 complete,4numericfits;
+no native job. No MLP24/attention22/hidden-state refinement, old queue restart,
+broader factor search or clinical naming. NEXT65 planned, not executed; retain
+full context geometry and return to complete new8 inference. No penalty/donor/dose
+sweep or source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

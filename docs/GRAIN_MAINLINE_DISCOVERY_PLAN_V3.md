@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT64 conditional scalar executed; no full promotion.**
+> Same source4 original+shifted views;593-coef augmented additive vs1169 conditional,
+> old original-source model retained. Source finite-change RMS captured7.54%/8.20%,
+> change r=.143/-.371. New8 actionRMSE improves .757%/1.092% vs matched control,
+> yet wholeL r=.108/.250 vs control.228/.381 and old.503/.538. Keep local allocation
+> querycontrast r=.499/SSEzero.789; no new questionnaire accuracy claim.
+> Post-outcome algebra: full sample-rank PCA whitening makes source4 exactly
+> equidistant(sqrt8); source3 span covers9.40%/11.03% new8 context energy.
+> This identifies input distortion, not a proven cause of all loss.4fits/0neural/Y,
+>13.888663sCPU,44tests,32prediction/17CSV exact replay; primary `be55c8f` unchanged.
+> [Report](../reports/grain_vector_mechanisms/CONTEXT_MODULATED_POTENTIAL_REPORT_V1.md),
+> [theory](GRAIN_CONTEXT_MODULATED_POTENTIAL_THEORY_V1.md).
+> **NEXT65 planned:** [full context geometry](GRAIN_FULL_CONTEXT_GEOMETRY_PLAN_V1.md),
+> one full-last distance kernel, same BODY/source/objective/parameter count;
+>2newfits/120sCPU/0neural/Y, frozen controls, no whitening or grid. Goal ACTIVE.
+
+> Previous NEXT63 update; its NEXT64 task is completed above.
 > **2026-09-11 newest: NEXT63 native context-reading interaction measured.**
 > Fixed BODY/GRAIN/layout; source4 samequery other-source mean last replacement.
 > Mean last displacement5.35%/5.74% causes BODYgradient changes10.45%/16.08%.

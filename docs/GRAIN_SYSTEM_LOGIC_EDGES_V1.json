@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "3ae6940afa03ab9aed4e28b013a990f0dec002be1c91c9406df2514ef033c919",
+  "atlas_sha256": "5d6e6361918faa95e841b2483e05bfd4c4ef0545c4223c2b80da7dac0b330c19",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT62\u4fdd\u7559\u65b9\u5411\u8bef\u5dee\u6539\u8fdb\u548c\u786e\u8ba4F03\u5c40\u90e8\u4f5c\u7528\uff1bNEXT63\u540cBODY/\u540cGRAIN\u53ea\u6362last\uff0c32\u65b9\u5411\u54cd\u5e94\u5168\u53d8\uff0c\u65e7\u52a0\u6027\u51fd\u6570\u6052\u96f6\u3002\u540c\u5730\u5740\u63a5\u53e3\u542bcontext\u8c03\u5236\uff0c\u800c\u975e\u4e24\u7ec4\u603b\u5206\u76f8\u52a0\uff1b\u65e7rank8/\u8865\u7a7a\u95f4\u5728\u52a8\u4f5c\u5c42\u53ef\u62b5\u6d88\uff0c\u4e0d\u5f53\u5fc3\u7406\u4fe1\u606f\u6bd4\u4f8b",
-      "evidence_entry": "context reading interaction theory \u00a7\u00a71-4; Hermite token potential theory"
+      "alternative_or_next_link": "NEXT63\u539f\u751f\u540cBODY/context\u4ea4\u4e92\u4fdd\u7559\uff1bNEXT64\u517c\u5bb9\u6761\u4ef6scalar\u5df2\u5b9e\u73b0\uff0c\u6e90\u53d8\u5316\u5f31\u6062\u590d\uff0c\u65b08\u65b9\u5411\u8bef\u5dee\u8f83\u5339\u914d\u52a0\u6027\u4f4e.757%/1.092%\uff0c\u914d\u7f6equery\u5deer=.499\uff1b\u6574\u5206\u6570\u4e0b\u964d\uff0c\u4e0d\u4ee5\u5c40\u90e8\u8fdb\u5c55\u66ff\u4ee3\u5b8c\u6574\u63a5\u53e3",
+      "evidence_entry": "context modulated potential theory \u00a7\u00a71-2; context reading interaction theory"
     },
     {
       "id": "L20",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "NEXT63\u5df2\u8bc1\u5b9eBODY\u00d7last\u6709\u9650\u4ea4\u4e92\uff1a\u6e90\u68af\u5ea6\u53d8\u531610%/16%\uff0c\u539f\u52a0\u6027\u51fd\u65700\uff1b\u4ec5\u5c40\u90e8H16\u673a\u5236\u800c\u975e\u4eba\u7c7b\u4eba\u683c\u6539\u53d8\u3002NEXT64\u8ba9context\u8fdb\u5165\u6807\u91cf\u6838\u51fd\u6570\uff0c\u5bf9\u7167\u53cc\u65b9\u83b7\u5f97\u540c\u6837\u539f\u59cb/\u5e72\u9884\u6e90\u76ee\u6807\uff0c\u518d\u56de\u65b08\u5b8c\u6574\u5e94\u7528\u3002H16\u4ecd\u795e\u7ecf\uff0c\u4e34\u5e8a/Y\u7528\u9014\u4e0d\u53d8",
-      "evidence_entry": "context reading interaction theory \u00a7\u00a72-5; context modulated potential plan; same-material interpretation theory"
+      "alternative_or_next_link": "NEXT64\u6761\u4ef6\u62bd\u53d6\u672a\u4fdd\u7559\u5b8c\u6574\u63a8\u8bba\uff1b\u6e904context\u5168\u79e9\u767d\u5316\u4f7f\u6e90\u4e24\u4e24\u7b49\u8ddd\uff0c\u65b08\u4f4d\u79fb\u80fd\u91cf\u53ea9%/11%\u8fdb\u5165\u8be5\u6e90\u7a7a\u95f4\u3002NEXT65\u4fdd\u7559\u5b8c\u6574last\u51e0\u4f55\uff0c\u5728\u76f8\u540c\u6750\u6599/\u76ee\u6807/\u53c2\u6570\u6570\u91cf\u4e0b\u6d4b\u8bd5\u3002\u5c1a\u4e3aH16\u6a21\u578b\u51fd\u6570\uff0c\u5fc3\u7406\u89e3\u91ca\u4ecd\u63a5\u540c\u6750\u6599\u8bc1\u636e\u7f16\u7801\u800c\u975e\u7cfb\u6570\u81ea\u52a8\u547d\u540d",
+      "evidence_entry": "context modulated potential theory \u00a7\u00a73-5; full context geometry plan; same-material interpretation theory"
     }
   ]
 }

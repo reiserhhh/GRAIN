@@ -1,0 +1,7 @@
+cohort,view,query_name,inside_energy_fraction,outside_norm,authors
+new8,original,confirmation_seeking,0.11026619784720904,2.9108566783839267,8
+new8,original,neuroticism,0.093964877084854,3.0889894746425712,8
+source4_infit,original,confirmation_seeking,1.0000000000000004,5.118182201341858e-15,4
+source4_infit,original,neuroticism,1.0000000000000018,4.525799535763779e-15,4
+source4_infit,shifted,confirmation_seeking,0.9999999999967529,1.3753073433820147e-06,4
+source4_infit,shifted,neuroticism,0.9999999999967719,1.28903920662985e-06,4

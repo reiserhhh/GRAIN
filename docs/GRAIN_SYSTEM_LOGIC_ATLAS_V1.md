@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT62保留方向误差改进和确认F03局部作用；NEXT63同BODY/同GRAIN只换last，32方向响应全变，旧加性函数恒零。同地址接口含context调制，而非两组总分相加；旧rank8/补空间在动作层可抵消，不当心理信息比例 | context reading interaction theory §§1-4; Hermite token potential theory |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT63原生同BODY/context交互保留；NEXT64兼容条件scalar已实现，源变化弱恢复，新8方向误差较匹配加性低.757%/1.092%，配置query差r=.499；整分数下降，不以局部进展替代完整接口 | context modulated potential theory §§1-2; context reading interaction theory |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT63已证实BODY×last有限交互：源梯度变化10%/16%，原加性函数0；仅局部H16机制而非人类人格改变。NEXT64让context进入标量核函数，对照双方获得同样原始/干预源目标，再回新8完整应用。H16仍神经，临床/Y用途不变 | context reading interaction theory §§2-5; context modulated potential plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT64条件抽取未保留完整推论；源4context全秩白化使源两两等距，新8位移能量只9%/11%进入该源空间。NEXT65保留完整last几何，在相同材料/目标/参数数量下测试。尚为H16模型函数，心理解释仍接同材料证据编码而非系数自动命名 | context modulated potential theory §§3-5; full context geometry plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,25 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第五十三轮补充：条件函数已实现，源上下文几何需要保留
+
+NEXT64同source4原始/干预教加性与条件scalar，4求解，既有new8应用。
+源交互预测RMS只达原生7.54%/8.20%，相关.143/-.371；新8完整GRAIN方向
+RMSE比匹配加性低.757%/1.092%，但整评分r=.108/.250不如对照.228/.381，
+也不如旧.503/.538。配置query差r=.499/SSEzero.789保留，未全门槛晋级。
+
+结果后代数检查表明：n个源样本满秩中心化PCA白化满足CC'=nI-11'。
+n=4时全部源间距离sqrt8，原CV.0774/.0478被消掉；不是新数学定理，
+是本次输入处理的具体后果。源3维context只覆盖新8约9.40%/11.03%位移
+能量，不能把补空间自动当噪声，也不能把这点归为所有评分退步的已证原因。
+
+13.888663秒CPU、0神经/Y；44测试，32预测与17CSV精确重放，384方向差
+<=6.74e-10。下一NEXT65仅改context为完整last距离核，保持源目标、BODY
+与系数数量，2新求解，原对照冻结，不做alpha/带宽网格。
+[报告](../reports/grain_vector_mechanisms/CONTEXT_MODULATED_POTENTIAL_REPORT_V1.md)、
+[理论](GRAIN_CONTEXT_MODULATED_POTENTIAL_THEORY_V1.md)、
+[NEXT65](GRAIN_FULL_CONTEXT_GEOMETRY_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第五十二轮补充：原生同正文改读法，混合导数的有限效应
 

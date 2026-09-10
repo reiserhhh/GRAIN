@@ -1,0 +1,48 @@
+{
+  "primary_commit": "be55c8f9710391a0733bb80b2e5135e5ebc7c29d",
+  "audit": {
+    "status": "PASS",
+    "direction_finite_difference_error": 6.737508884135934e-10,
+    "direction_checks": 384,
+    "csvs_replayed": 17,
+    "prediction_packets": 32,
+    "fits": 4,
+    "new_neural_calls": 0,
+    "cpu_seconds": 3.052379,
+    "cumulative_compute_cpu_seconds": 13.888663000000001,
+    "prediction_replay": "bitwise exact"
+  },
+  "promotion": false,
+  "criteria": {
+    "neuroticism": {
+      "better_action_than_matched_control": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": false
+    },
+    "confirmation_seeking": {
+      "better_action_than_matched_control": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": true
+    }
+  },
+  "files": {
+    "scores.csv": "ecff5ac5706978b59cfb91b790dcf7328ff3b66f29945cce41afea9b44e8d6a4",
+    "actions.csv": "0666d39d4fd0afb91f490ce43a32b359e56ddbe0e0413aff24629b8f22705dee",
+    "factor_actions.csv": "cb703d3ffa819f38bf436d0806ab7130c6817d3f75a78dadddcd9a464cc8c45b",
+    "score_contrasts.csv": "c8e7b0946498294d6f4191ef9b4de66960fef8a277f51a165c3f2b728799e05a",
+    "action_contrasts.csv": "d5627c0994bd8d35aa15ed0d1ef8bc360f3250e7a26287d1e60dceef96784c39",
+    "factor_contrasts.csv": "af86b3f39de483f31ffcb4a4b49c737e8c580b9ca39cac81cb2b7e8da3ed1ba4",
+    "source_interaction.csv": "9a08b609de9da036bc8b1cdbc56c496b7c623147794031982d5227116a53418c",
+    "fields.csv": "4cb1eede9bee73c16dd4e3f65898e5acd565945f7c3d12b7c3830216c4dbba2f",
+    "context_coverage.csv": "1cb30606ce1ef94192a2fd0fab4da9f019d5bc236c00bbc858674125f3b6a704",
+    "source_diagnostics.csv": "f0ab423dfb06231e51391aa97acff2116bd5d3a174a121dbcf196149aebbc9fc",
+    "context_geometry.csv": "8d03fc1c03a21503c867894b1546927b3ba3ed44a614f71482cc74fc84ab5861"
+  },
+  "post_outcome_analysis": "context_geometry only; no fit or changed predictions",
+  "post_outcome_code": {
+    "scripts/report_grain_context_modulated_potential.py": "9a591cd1b5123b0aa3d0a465009137767450ddb8c54f59774bc49d6d953082fa",
+    "tests/test_grain_context_geometry_account.py": "2785d39542d2f55c82dcf2329754f366012410c382edd91a78470f3d3a7a20a7"
+  },
+  "publication_cpu_seconds": 0.0682879999999999,
+  "scope": "Model logit contrast and GRAIN directional responses; source4 in-fit, exposed new8 source-disjoint application; no human-Y results"
+}
