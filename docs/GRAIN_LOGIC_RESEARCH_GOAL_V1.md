@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, ten finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, eleven finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -323,12 +323,39 @@ Read [conditional factorial/kernel report](../reports/grain_vector_mechanisms/CO
 plans `486dee9` (NEXT15) / `89f91a7` (NEXT16). Keep the old gradient/action results;
 this18-train/6-eval OOF protocol is not a matched comparison to four-reference M20.
 
+## Eleventh pass: actual comment interactions and a retained conditional carrier
+
+- NEXT17 complete:48 exposed authors,view0,two predetermined comment pairs.
+  Mean-preserving independent restoration at fixed P/Q/layout has mixed action
+  RMS4%-10% of pair action. Centered-logit interactions are nonzero; exact
+  score accounting separates internal departure from additive logits and the
+  output link. This is a fixed-background local correction, not all higher orders.
+- N adjacent interaction magnitude/source criterion r=.523[.001,.761], distant
+  -.004; signed adjacent score interaction r=-.503[-.772,.056]. Keep all fixed
+  comparisons and magnitude/direction distinct. No Y fit or result-selected pair.
+- NEXT18 complete: four old reference authors define ordinal body means and
+  role-aligned retained-state references; all template gaps match,0 interpolation.
+  On20 other TF source authors, body/retained action RMS=.0168/.0187. Relative
+  state edits40.36%/.91% on all24 do not imply a universal sensitivity ratio.
+  b00 still varies with target layout; it is not a constant intercept.
+-119 scoped tests pass (6 new), Ruff/format pass;5 numerical/link files replay
+  byte-for-byte.410 suffix calls/231.17s;0 prefix/gradient/training/API. All48
+  old endpoint replays and two duplicate-logit checks have error0. Failed first
+  preflight used0 calls; index-list interface fixed and retained separately.
+- Theory now separates local Phi, joint rho, and output S, and links conditional
+  M/R/layout carriers to GRAIN's condition/reference principles. This is a
+  mechanism development interface, not promotion of every state to personality.
+
+Read [comment/carrier report](../reports/grain_vector_mechanisms/COMMENT_CARRIER_LOGIC_REPORT_V1.md)
+and [interaction operator](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md).
+Plan `90724af`, implementation `504fd85`, preflight fix `4861095`; no push.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT17 | Is the fixed-condition distribution action missing a measured cross-comment mechanism? | Inventory existing independent-comment mean-preserving configuration interventions, not query-coordinate cubes. If a same-observer two-comment quartet exists, compute its mixed action at fixed P/Q/layout; otherwise freeze the smallest missing quartet before bounded collection | Test joint action before adding distribution-level nonlinear coupling. Do not infer interactions merely from kernel error, or tune Fourier features until r improves |
-| NEXT18 | Which retained states carry T/F's conditional-mean B contribution? | Map exactly what C(E) leaves unchanged: comment means, non-body contextual states and layout. Reuse M12/M13/M15 evidence to identify one missing conditional comparison | Keep the T/F background target active alongside N configuration. Do not call all non-body states nuisance or equate them with human topic/condition; no Y-selected state choice |
+| NEXT19 | Can the measured N comment joint action be read by a shared numerical function? | Reuse NEXT16 projections and NEXT17 logits; freeze one bounded author-OOF comparison of additive logits/output link versus a condition-aware joint feature function. Specify zero-displacement constraints and the actual supervised output; positive-only pair endpoints do not independently identify odd/even parts | Develop the measured joint effect, not more single-token harmonics. Retain all fixed arms, compare against zero interaction, and link source Y only after freezing predictions; no new neural collection or full4096 subset grid |
+| NEXT20 | Can T/F retained-state action become a transferable reference functional? | Reuse role-aligned136-position R, four old references and20 other source authors; adapt the established P-region path-matrix construction to R under both M conditions, with exact endpoints. Freeze finite gradient cost before collection | Read actual retained-state allocation with reference-only parameters; preserve layout/body components and compare complete B separately. Do not call reference-external source authors a new external cohort or select ranks from Y |
 
 Both are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

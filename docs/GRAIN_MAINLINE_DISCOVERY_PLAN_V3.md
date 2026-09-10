@@ -52,8 +52,15 @@
 > is complete: TF remaining conditional mean+.0694, N configuration+.1266;
 > four fixed nonlinear-distribution action arms retain exact parity/zero
 > properties but no universal Fourier-over-Taylor gain.113 scoped tests and14
-> exact numerical replays,0 new neural calls. Next inspect actual cross-comment
-> joint-action coverage and TF's retained background carrier, not another grid.
+> exact numerical replays,0 new neural calls. The
+> [comment/carrier follow-up](../reports/grain_vector_mechanisms/COMMENT_CARRIER_LOGIC_REPORT_V1.md)
+> now completes that inspection and missing measurement:410 suffix calls/231s,
+> zero old-endpoint/repeat error. Comment mixed action is4%-10% of pair action
+> RMS and not just output-link curvature. N adjacent logit-interaction strength
+> has source r=.523 (24 exposed authors, pointwise interval). TF retained-state
+> action RMS=.0187 versus body-mean .0168 on20 non-reference source authors.
+>119 scoped tests pass;5 numerical files replay byte-for-byte. Next construct
+> joint reading and a retained-state reference matrix; no larger accuracy grid.
 >
 > The [actual input-order experiment](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 > is now delivered: identical12-comment bags,52 forwards/82.03s, native reversal

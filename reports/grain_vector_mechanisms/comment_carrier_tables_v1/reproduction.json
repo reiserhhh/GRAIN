@@ -1,0 +1,60 @@
+{
+  "status": "COMPLETE",
+  "scope": "48 exposed source authors, one view, no Y fitting",
+  "protocol_commit": "90724af",
+  "collector_commit": "4861095",
+  "failed_preflight_calls": 0,
+  "cost": {
+    "status": "COMPLETE",
+    "authors": 48,
+    "calls": 410,
+    "seconds": 231.17431637458503,
+    "prefix_calls": 0,
+    "gradient_calls": 0,
+    "training": false
+  },
+  "old_endpoint_replay_max": 0.0,
+  "repeat_logit_error_max": 0.0,
+  "mean_error_max": 3.814697265625e-06,
+  "carrier_closure_error": 1.3877787807814457e-16,
+  "interpolated_roles": 0,
+  "focused_tests": 119,
+  "full_suite_run": false,
+  "replayed_files": {
+    "carrier_metrics.csv": {
+      "sha256": "244ba73f89ca115ec6e6d6261c7fb18ecaee1d9e09aed9f6cea4e59a89ee5cad",
+      "byte_identical": true
+    },
+    "joint_metrics.csv": {
+      "sha256": "14c5e5b4fc067bc7cfe204acd9cad3cf9e3991204ec3881104b0ce0bd6ff9762",
+      "byte_identical": true
+    },
+    "private_carriers_criterion.csv": {
+      "sha256": "488604949a495d6542b4dea8b6fa40296138189714073c62aec654d7b5c74355",
+      "byte_identical": true
+    },
+    "private_joint_criterion.csv": {
+      "sha256": "69d6ebff06666e1ab9f8b6bf73b30abb583927d9a058b647911b9d6e8319b53f",
+      "byte_identical": true
+    },
+    "quality.csv": {
+      "sha256": "ea34fe6f7db2adb4808eba7675ead5690f25926fcb59af80ed1c565a7d2623e4",
+      "byte_identical": true
+    }
+  },
+  "public_tables": {
+    "joint_metrics.csv": {
+      "rows": 32,
+      "sha256": "14c5e5b4fc067bc7cfe204acd9cad3cf9e3991204ec3881104b0ce0bd6ff9762"
+    },
+    "carrier_metrics.csv": {
+      "rows": 14,
+      "sha256": "244ba73f89ca115ec6e6d6261c7fb18ecaee1d9e09aed9f6cea4e59a89ee5cad"
+    },
+    "quality.csv": {
+      "rows": 17,
+      "sha256": "ea34fe6f7db2adb4808eba7675ead5690f25926fcb59af80ed1c565a7d2623e4"
+    }
+  },
+  "no_neural_replay_for_analysis": true
+}

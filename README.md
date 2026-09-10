@@ -88,8 +88,15 @@ now localizes different remaining terms: T/F conditional background and N
 mean-preserving configuration. A new explicit odd/even distribution-contrast
 family is implemented and tested without new neural calls. It has local action
 and criterion links, not a universal improvement over its fixed Taylor control.
-113 scoped tests pass. The next mechanism question is joint comment action and
-retained conditional-state information, rather than another scalar accuracy grid.
+113 scoped tests pass. The
+[comment/carrier follow-up](reports/grain_vector_mechanisms/COMMENT_CARRIER_LOGIC_REPORT_V1.md)
+now measures the missing quartets: local joint-action RMS is4%-10% of pair
+action, with internal logit interaction distinct from output-link curvature.
+T/F retained non-body states have action RMS .0187 versus body-mean .0168 on20
+non-reference source authors. The [new interface](docs/GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md)
+separates local features, joint reading and output mapping.119 scoped tests,
+5 exact numerical replays;410 suffix calls/231 seconds, no prefix or training.
+Next develop shared functions for these measured actions, not another accuracy grid.
 
 The [same-comment reversal test](reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 now gives an actual invariant-input mismatch: unchanged E5 bags produce native

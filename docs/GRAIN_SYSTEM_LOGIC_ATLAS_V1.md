@@ -86,13 +86,13 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
 | L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 查询槽整合信息，不必是一条关键词到特质词的唯一链 | mainline / reference framework |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
-| L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 已测四格的两操作顺序搬移I，总和不变；N配置剩余+.1266或+.1466。条件归因取决于参考与操作定义 | conditional factorial/kernel report §§1-2 |
-| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | 新条件分布差有精确奇偶/零作用结构，局部读取TF偶作用与N总配置；傅里叶未普遍胜过同输入三阶控制 | conditional factorial/kernel report §§3-4 |
+| L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 独立评论四格实测内部logit非加和与输出曲率；交互RMS占局部作用4%-10%。归因参考/操作顺序和输出尺度均显式 | comment/carrier report §§1-2; interaction operator §§2-3 |
+| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | 局部非线性Phi+线性聚合仍无法表示实测混合差。TF的正文/非正文条件作用RMS=.0168/.0187，下一步构造rho及R功能矩阵 | comment/carrier report §§3-4; interaction operator §§1-4 |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
 | L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 直接学习余项与事后减GRAIN不等价；差额是GRAIN跨表示搬运误差，可精确记账 | natural transport / configuration extraction §§4-5 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 人工方向有效不保证解释自然路径；实际E1中f可追踪、GRAIN差分可能反向 | dynamic report §3 / natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
-| L22 | 路径可读性高 -> 人类效标相关高？ | E | 同24人剩余TF背景+.0694、N配置+.1266；新函数有TF效标联系却未同样重现配置作用。效标保留与机制重建不互相替代 | conditional factorial/kernel report §§1,4 |
+| L22 | 路径可读性高 -> 人类效标相关高？ | E | N相邻交互强度/自评r=.523，远隔-.004；点位探索，不按Y选作用。TF条件关联分散在布局、R及M，作用存在与效标关联分层记录 | comment/carrier report §§2-3 |
 | L23 | 因子轴旋转 -> 共同对象仍可追踪 | M/H | 比较作用子空间/坐标协变函数，而非重新编号后的单轴 | LOG02 / reference theory |
 | L24 | 共享路径 -> 量表相关？ | H/E | 五Big5/四MBTI组内共32条分层关系；N余项作者水平较特异，其他部分共享。下一步接实际效标 | all-factor atlas / configuration extraction §6 |
 | L25 | 联合 GRAIN+路径 -> 更多人格预测信息 | E | 有局部 E 增益，无普遍拼接提升；不能把指标提升当机制解释 | four routes / dynamic report |
@@ -101,7 +101,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | TF与N已导出不同条件构造目标；新分布差函数保留均值条件。下一步实测共同作用/条件载体，不以扩维或更高阶自动替代理论闭环 | conditional function logic §§6-7 / clock and target contract |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 机制拆成Phi局部表示、rho联合读取、S输出映射；条件基线拆成布局/M/R/交互。新目标有实测端点，输入轻量化与心理解释仍有独立接口 | interaction operator §§1-5; conditional function logic §8 |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -281,6 +281,19 @@ N视图内读取的自然变化r=.788，但组件忠实度低于原pooled，不�
 四臂实测表明新增表示能力没有普遍改善原生作用重建；一些自评联系仍可保留。
 下一步不是调频数，而是检验跨评论共同作用，并继续追踪TF均值化后保留的
 条件载体。[完整结果](../reports/grain_vector_mechanisms/CONDITIONAL_FACTORIAL_KERNEL_LOGIC_REPORT_V1.md)。
+
+### 5.8 第十一轮：误差分层成为可定位作用
+
+410次后缀调用补上独立评论四格与TF条件载体四格。内部混合差与softmax
+曲率明确分账，前者确实存在；当前按token相加的核读出因此需要局部联合
+函数，而不是仅增加单token非线性。N相邻交互强度的源关联是一个可发展线索。
+
+TF均值化后保留的136位置非正文状态有明确作用。正文改成均值不等于清除
+上游已经送入模板位置的信息；固定字面不能替代固定状态。固定M0/R0时
+布局仍造成读数差异，这又与GRAIN前置条件/参照设计相接。
+[实测报告](../reports/grain_vector_mechanisms/COMMENT_CARRIER_LOGIC_REPORT_V1.md)
+及[交互函数理论](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md)给出全部接口。
+没有把24人点位关联升级成新量表，也没有因关联区间宽而删除实际计算作用。
 
 ## 6. 本轮文献与执行入口
 

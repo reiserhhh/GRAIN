@@ -74,6 +74,7 @@ def test_role_interpolation_and_invalid_partitions():
 def test_partition_to_legacy_mean_projection_boundary():
     """Convert index arrays explicitly for the existing list-based projection API."""
     import torch
+
     from scripts.run_grain_mean_null_path import mean_null_direction
 
     h = torch.arange(27, dtype=torch.float32).reshape(9, 3)
