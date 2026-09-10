@@ -112,7 +112,7 @@ def load_assets():
     ids = sorted({i for a in alphabets.values() for i in a["token_ids"]})
     with safe_open(str(checkpoint), framework="pt", device="cpu") as f:
         key = "lm_head.weight"
-        if key not in f.keys():
+        if key not in set(f.keys()):
             if not read(MODEL / "config.json").get("tie_word_embeddings"):
                 raise ValueError("Absent untied LM head")
             key = "model.embed_tokens.weight"

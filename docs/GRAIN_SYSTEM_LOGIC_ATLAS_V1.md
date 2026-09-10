@@ -93,7 +93,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L11 | 微观过程 -> 分布/响应/转移/互动/高阶路径 | M/E | 玩具世界证明机制可实现，不证明人类只由这些机制组成 | M3 atlas |
 | L12 | 局部机制组合 -> 介观与群体关系 | M/E | 组合可有反馈/抵消/支持集漂移；单边成功不保证复合成功 | M4 / cross-level contract |
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
-| L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | query-last共同正文/不同P/Q；N/确认原生梯度余弦.704。源查询输入子空间另有重叠.662，TF与二者约.260，输入几何与梯度几何是不同对象，不当量表相关 | query direction transfer theory §§1-2; native material reader report §§1,3 |
+| L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | N/确认输出方向余弦旧4/新8为.943/.954，正文梯度.704/.649；共享回答编码与输入子空间重叠.662是不同几何。同一各向异性传输也能改角度，NEXT39固定相同输出方向 | output seed theory §§1-3; query direction transfer theory §§1-2 |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT37源外应用定位到条件系数读取缺口，确认通道仍有.31-.42关联。下一步区分输出种子与后缀传输，不调8人面板；心理解释继续用独立证据/盲编码接口 | new-author transport theory §§3-5; output seed plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT38排除T/F概率饱和主因；标准attention解析出值传输和依赖全局汇总的key选择变化。NEXT39固定输出方向并接合实际head；模型局部作用与心理解释继续分层 | output seed theory §§3-5; fixed seed attention plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -483,6 +483,23 @@ C_Jc的源RMS=.052493，复算误差2.45e-15。源位置与源读取不能任意
 [作用几何理论](GRAIN_QUERY_DIRECTED_BASELINE_THEORY_V1.md)、
 [NEXT33同源完整组装](GRAIN_QUERY_DIRECTED_PAIR_ASSEMBLY_PLAN_V1.md)。
 本轮用固定块16输入与源导数；临床解释和人的外部效标没有由这次模型r替代。
+
+### 第二十七轮补充：回答编码、传输与上下文相对作用
+
+新8人N/确认的输出方向余弦.954，而正文梯度.649；源输出方向空间仍覆盖
+99%以上能量。有限候选字母本身约束秩，不把它命名成共通人格空间。T/F
+没有概率饱和，按源gain换算后新作者作用r仍.011，故继续开发条件读法。
+
+标准注意力反传提供值项a_j W_V^T g与选择项
+a_j*((v_j-o)^T g)*W_K^T q/sqrt(d)。玩具例子中其它token改变o，使目标
+key作用+.25变-.50，而目标token/query/注意力权重全不变。这个解析机制
+具体说明缺失的全局上下文变量；真实模型head的量级将在NEXT39验证。
+同一各向异性传输改变夹角的反例已测试，因此下一步固定相同seed而非仅比角度。
+
+[报告](../reports/grain_vector_mechanisms/READER_OUTPUT_SEED_REPORT_V1.md)、
+[理论](GRAIN_READER_OUTPUT_SEED_THEORY_V1.md)、
+[NEXT39](GRAIN_FIXED_SEED_ATTENTION_PLAN_V1.md)。77聚焦测试、9数值文件精确
+重放、0神经调用；两套系统的同token接合与独立辅助解释层均保留。
 
 表内历史证据简称的可定位入口：
 - unified V8：[总体系](SUICA_UNIFIED_THEORY_SYSTEM_V8.md)；4W：[解释链](SUICA_4W_PERSON_INTERPRETER_THEORY.md)。

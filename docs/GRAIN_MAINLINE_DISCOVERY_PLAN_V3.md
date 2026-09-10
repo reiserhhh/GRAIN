@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT38 output coding/context mechanism delivered.**
+> N/confirmation final-hidden seed cosine .943/.954 on old4/new8, body gradient
+> .704/.649. Shared0-9 coding explains a concrete output-geometry component;
+> different angles alone do not identify different transport operators.
+> TF source-gain conversion leaves new-author actionr near.01; no saturation.
+> Exact attention derivative separates value transport from key selection using
+> the token's value relative to the whole-context output. Toy context changes
+> flip one channel with local token/query/attention held fixed.77 tests,9 exact
+> numeric replays,0 neural calls. No new human-trait accuracy claim or long run.
+> [Report](../reports/grain_vector_mechanisms/READER_OUTPUT_SEED_REPORT_V1.md),
+> [theory](GRAIN_READER_OUTPUT_SEED_THEORY_V1.md),
+> [NEXT39 fixed seed and actual attention](GRAIN_FIXED_SEED_ATTENTION_PLAN_V1.md).
+> Whole-system goal ACTIVE; earlier next-step language below is historical.
+
 > **2026-09-10 newest: NEXT37 new-author transport complete.**
 >8 source-disjoint reader authors,96 comments,348 slices,7156 bodytokens.
 > Own-query actionr TF=.001,N=.121,confirmation=.314; variance controls

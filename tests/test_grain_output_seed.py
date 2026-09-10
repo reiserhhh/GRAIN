@@ -90,3 +90,12 @@ def test_source_span_does_not_expand_with_test_vector():
     assert projection_fraction([0, 0, 0], basis) is None
     with pytest.raises(ValueError):
         score_seed([0, 1], [1], np.ones((2, 3)))
+
+
+def test_common_anisotropic_transport_can_change_angles_without_query_switch():
+    a, b = np.array([1.0, 0.1]), np.array([1.0, -0.1])
+    transform = np.diag([1.0, 10.0])
+    seed_cosine = (a @ b) / (np.linalg.norm(a) * np.linalg.norm(b))
+    transported = (transform @ a, transform @ b)
+    assert seed_cosine > 0.98
+    assert transported[0] @ transported[1] == 0

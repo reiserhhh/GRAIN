@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-six finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-seven finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -798,18 +798,48 @@ User's same-text/token interface is now tested beyond its construction authors;
 the interpretation/rubric track stays separate and its earlier research is kept.
 No extra alpha/rank tuning on these8. All native work is complete, no live queue.
 
+## Twenty-seventh pass: output coding and contextual attention are separable
+
+- NEXT38 complete with old4/new8 cached units and12 frozen output-weight rows;
+  zero new neural calls/fits/Y. N/confirmation final-hidden seed cosine .943/.954,
+  versus body gradient .704/.649. Shared answer coding is an explicit contributor
+  to output geometry, not an estimate of shared personality information.
+- Source seed spans cover new-author energy TF100%,N99.769%,confirmation99.493%.
+  Finite answer alphabets bound this rank. An anisotropic-map counterexample
+  shows that changing angles alone does not identify query-specific transport;
+  the next test holds the output seed exactly identical.
+- Binary TF gain is .226-.250 on new8, without saturation. Original actionr .001,
+  source-only gain conversion .011, current-gain error reweighting .007. Thus
+  this fixed-reader gap is not rescued by removing probability scaling. Preserve
+  evaluation-only current gain versus source-fixed construction dependencies.
+- Standard attention pullback now provides exact value and key-selection terms:
+  a_j W_V^T g + a_j*((v_j-o)^T g)*W_K^T q/sqrt(d). Fixed local token/query/
+  attention mass can retain value contribution yet flip key contribution as
+  other values change. This is an analytic existence witness, not new native
+  evidence; next compare the formula with an actual frozen model head.
+- Score/seed derivative checks and9 byte-identical numeric replays pass;77
+  scoped tests including attention q/k/v finite differences and anisotropic
+  angle counterexample. Numerical execution .487/.491s after loading. Code
+  and analysis prefreeze ac053c1; only a nonnumeric safetensors key lint fix
+  distinguishes replay runner. No live long run, lockbox or scoring change.
+
+Read [output-seed report](../reports/grain_vector_mechanisms/READER_OUTPUT_SEED_REPORT_V1.md)
+and [output/transport plus attention theory](GRAIN_READER_OUTPUT_SEED_THEORY_V1.md).
+The same-token GRAIN interface remains the measurement direction for the native
+calculation; interpretation/TA coding remains a separate evidence-linked layer.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37 finite candidates are closed, retaining useful
-mechanisms and contrary comparisons. Execute cached-only NEXT38 to separate
-answer seed and suffix transport before designing a context-aware reader.
+NEXT24/25/26/31/32/33/34/35/36/37/38 finite candidates are closed, retaining useful
+mechanisms and contrary comparisons. NEXT39 fixes one output seed and develops
+the actual last-attention value/key mechanism before another empirical reader.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT38 | Is sharing/reading loss attributable to answer seed or suffix transport? | Execute GRAIN_READER_OUTPUT_SEED_PLAN_V1;cached old4/new8 packets, frozen LM-head rows, b=p*(v-F), shared-alphabet and binary-scale diagnostics | Zero new neural calls/fits/Y,120s numeric bound; report seed geometry separately from gradients and define the next minimal semantic/format contrast |
+| NEXT39 | How does identical output direction act through different query contexts? | Execute GRAIN_FIXED_SEED_ATTENTION_PLAN_V1; old4/new8 N/confirmation, common digit-logit contrast, native H16 gradient and analytic last-head value/key paths | At most28 forwards/24 backwards,300s native; same-seed comparison, fixed numerical parity and cache-only replay; no fitting/Y/head grid |
 
-These are local computational/theory questions. Start by checking cached coverage;
-any missing neural contrast needs a new explicit finite design, not an old queue.
+These are local computational/theory questions. Start by checking cached coverage
+and the actual attention architecture; no prefix rerun or old queue restart.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

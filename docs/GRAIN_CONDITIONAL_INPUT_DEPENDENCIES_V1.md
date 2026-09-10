@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第二十六轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第二十七轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -45,6 +45,8 @@ flowchart TD
 | 查询残差输入 | Phi=[Phi0,standardize(R U_q)]，ahat=Phi W | `query_residual_input.py`；源系数残差与H补空间的交叉协方差，44列固定Ridge | 源查询8方向GRAIN作用r=.863/.473/.576，普通残差PCA为.684/.114/.149。当前目标禁读，但源Jacobian及块16H仍为依赖 |
 | 跨查询输入借用 | Phi_(q<-p)=[Phi0_q,standardize(R U_p)] | `query_direction_transfer.py`；donor仅提供同源折输入U，保留recipient目标与V | 旧4人N/确认输入重叠.662、TF约.260。新8人等权应用未保留专用方向优势；保留两批协议，不当量表共享方差 |
 | 新作者固定读法 | Jhat=sum_s Phi_s W_s V_s/(4T) | `reader_ensemble.py`；各源模型独立中心/尺度/基底，96系数堆栈先冻结 | 新8人自身作用r=.001/.121/.314；源联合32方向的真实梯度投影r=.836/.951/.876。方向表示保留，当前系数程序局部失配，oracle不是部署性能；H仍由模型前缀提供 |
+| 输出方向与传输 | b=p*(v-F)，s=W_A^T b，J=K^T s | `output_seed.py`；旧4/新8缓存与12行冻结权重，无新神经调用 | N/确认s余弦.943/.954、J为.704/.649；同一各向异性K也能改角度。T/F去概率尺度未恢复读法；NEXT39固定相同s来检验条件K |
+| 注意力解析作用 | a_j W_V^T g + a_j*((v_j-o)^T g)*W_K^T q/sqrt(d) | `attention_pullback.py`；q/k/v解析反传与有限差分测试 | 已有精确标准单head公式和上下文反号玩具实例；q、g、a依赖整段输入。NEXT39才做实际head/RoPE/GQA数值接合，不宣称已替代整个后缀 |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
 | 原生输出 | F_q(E,x) | 冻结后缀、候选logits及固定S映射 | 模型条件评分，不是问卷真值、自由生成解释或注意力的唯一因果路径 |
@@ -121,6 +123,11 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 残差命名为人格或噪声。
 
 ## 6. 可复算入口与下一步
+
+当前下一步是[NEXT39固定输出方向与实际attention分解](GRAIN_FIXED_SEED_ATTENTION_PLAN_V1.md)。
+[第二十七轮理论](GRAIN_READER_OUTPUT_SEED_THEORY_V1.md)区分候选坐标、最终隐藏
+方向和正文梯度，同时提供值传输/选择变化的可验算公式。下面的历史步骤
+保留来源，不把早期“下一执行”当作当前排程。
 
 第十七轮[内部曲率](GRAIN_RETAINED_LOGIT_CURVATURE_THEORY_V1.md)将二值概率
 的最后sigmoid换算与内部logit曲率精确拆开。前者RMS=.000081，后者=.013657。
