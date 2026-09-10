@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-four finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-five finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -728,15 +728,52 @@ These are model-local derivatives on a reused4-author panel, not fresh human
 personality accuracy. Current H still needs model encoding; no released scoring,
 interpretation/clinical rubric, or lockbox changes. Overall goal remains ACTIVE.
 
+## Twenty-fifth pass: shared/specific input reading and source-disjoint next panel
+
+- NEXT36 complete:24 source-matched off-diagonal Ridge heads,0 new basis fits
+  or neural calls. Recipient target/output V and old36 columns stay fixed; donor
+  supplies only its residual8 input span from the same3-source/1-held fold.
+- N/confirmation source input projector overlap=.662 (fold range.633-.713),
+  versus TF/N=.260 and TF/confirmation=.261. These are subspace geometries,
+  not questionnaire correlations or a declared count of common personality axes.
+- T/F own actionr=.863, borrowing N=.623 and confirmation=.575. N borrowing
+  confirmation=.508 versus own.473, but SSE/zero .873737/.873939 is effectively
+  unchanged. Confirmation borrowing N=.551 versus own.576. Retain the full3x3
+  matrix, factor-centered author values, signs/amplitudes and variance controls.
+  Useful reading is partly shared and partly target-sensitive in this old panel.
+- Preserve the answer-channel alternative: N/confirmation share a0-9 alphabet,
+  TF uses2 letters. J_H=(D_H logits)^T[p*(v-F)] separates output seed and suffix
+  transport; old12 full packets retain logits/probabilities for a later no-call
+  output-seed comparison. Do not silently attribute all input sharing to trait
+  semantics or replace NEXT37's declared natural query targets.
+- Source-span geometry is rotation invariant; per-coordinate-scaled Ridge need
+  not be. A synthetic transformed-penalty test isolates this distinction; do
+  not call equal columns equal effective degrees of freedom. No rotation search.
+- Two numerical constructions2.91/2.94s after loading,40 exact replayed files,
+  55 scoped tests pass (old SWIG warnings),2 denied target probes and24 exact
+  independent predictions. Source/models/author fields stay private. Construction
+  28c8226, analysis prefreezeb0dbbf1, next membership protocol669b8e2.
+- NEXT37 inventory PREPARED_NOT_COLLECTED:20 eligible old-material authors remain
+  outside these4 sources,10 per MBTI-only/Big5-only group. Hash-fixed4/group,
+  8 selected, each12 comments. Verified S1 selected caches are1536-vectors,
+  not full-token states. Need24 new prefixes/24 scalar backward evaluations
+  plus6 fixed finite-difference forwards; new outcomes not yet collected.
+
+Read [cross-query report](../reports/grain_vector_mechanisms/QUERY_DIRECTION_TRANSFER_REPORT_V1.md)
+and [shared/specific reading theory](GRAIN_QUERY_DIRECTION_TRANSFER_THEORY_V1.md).
+NEXT37 freezes equal averaging of the old four source-fold readers; no new
+fitting, selection or calibration on the8 target authors. More small-panel
+rank/alpha tuning is parked. Whole-system goal remains ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35 finite candidates are closed, retaining useful mechanisms
-and contrary comparisons. Execute NEXT36: exchange the three source-derived
-query input subspaces to map shared versus query-specific reading information.
+NEXT24/25/26/31/32/33/34/35/36 finite candidates are closed, retaining useful mechanisms
+and contrary comparisons. Execute NEXT37: fixed programs on8 source-disjoint
+author materials; input inventory and membership are already frozen.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT36 | Is the newly usable input channel shared or query-specific? | Execute GRAIN_QUERY_DIRECTION_TRANSFER_PLAN_V1: borrow another query's residual8 basis from the same source fold, retain own target/output basis/design and alpha | At most24 new Ridge heads, source principal angles,0 neural calls; matched3x3 transfer report plus variance control, target-denied runtime and one replay. No best-donor predictor or held tuning |
+| NEXT37 | Does shared/specific local reading survive different authors? | Execute GRAIN_READER_NEW_AUTHOR_TRANSPORT_PLAN_V1;8 hash-selected old-material authors, old4-fold equal numerical ensemble, own/borrowed/variance arms, no fitting | Inventory is PREPARED_NOT_COLLECTED.24 prefixes/24 scalar backwards/6 finite forwards,600s native cap; freeze predictions before targets, no mean-null or single-position cache substitution. Report all arms and stop tuning on this panel |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

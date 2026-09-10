@@ -93,7 +93,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L11 | 微观过程 -> 分布/响应/转移/互动/高阶路径 | M/E | 玩具世界证明机制可实现，不证明人类只由这些机制组成 | M3 atlas |
 | L12 | 局部机制组合 -> 介观与群体关系 | M/E | 组合可有反馈/抵消/支持集漂移；单边成功不保证复合成功 | M4 / cross-level contract |
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
-| L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 现有query-last因果布局允许共同正文、不同P/Q；原生梯度场N/寻求确认余弦.704，TF与二者.027/.093。属于模型局部读法及候选字母条件，不是量表相关 | native material reader report §§1,3 |
+| L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | query-last共同正文/不同P/Q；N/确认原生梯度余弦.704。源查询输入子空间另有重叠.662，TF与二者约.260，输入几何与梯度几何是不同对象，不当量表相关 | query direction transfer theory §§1-2; native material reader report §§1,3 |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 通用PCA遗漏的输入中有可用查询读取联系。下一步互换三查询输入子空间，区分共享/专用，而非继续扫alpha。完整场与GRAIN测量半范数分开；局部导数到完整评分及心理解释仍是另外接口 | query residual input theory §§1-5; conditional input dependencies |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | N/确认方向可互借，TF自身方向更有效；共享/专用结构有局部实例。NEXT37已固定8名源外作者和旧读法等权集成，不再在4人调参。局部导数到完整评分/心理解释仍另接 | query direction transfer theory §§1-4; conditional input dependencies |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -397,6 +397,21 @@ r=-.164、折内.010，误差大于源均值；给真mixed也无法救回。因�
 [NEXT32查询定向方案](GRAIN_QUERY_DIRECTED_BASELINE_PLAN_V1.md)。
 
 ## 6. 本轮文献与执行入口
+
+### 第二十五轮补充：共享与专用输入，离开四人面板
+
+只换输入方向，不换接收查询的目标、输出基底或拟合规则。N/确认子空间
+重叠.662，TF与二者约.260。N借确认作用r=.508、自身.473，但误差近乎
+相同；确认借N=.551、自身.576。TF自身.863明显高于借N的.623与借确认.575。
+这支持部分共享/部分专用的局部读法，不把子空间重叠解释成量表相关。
+
+几何旋转不变不等于标准化Ridge程序不变；新测试验证惩罚必须一起变换。
+同8列也不等于严格同有效自由度。全矩阵与例外保留，不选择新最佳donor。
+24新头、0神经调用、40数值文件重放、55测试。NEXT37已固定8名旧许可源外
+作者（两来源各4），没有采集新目标；用旧读法等权集成，native上限600秒。
+[报告](../reports/grain_vector_mechanisms/QUERY_DIRECTION_TRANSFER_REPORT_V1.md)、
+[理论](GRAIN_QUERY_DIRECTION_TRANSFER_THEORY_V1.md)、
+[源外作者实验](GRAIN_READER_NEW_AUTHOR_TRANSPORT_PLAN_V1.md)。
 
 ### 第二十四轮补充：低能量输入与查询读取相接
 

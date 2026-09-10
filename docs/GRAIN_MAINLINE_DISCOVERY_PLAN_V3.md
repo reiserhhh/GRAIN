@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT36 shared/specific query input delivered.**
+> N/confirmation input projector overlap.662; TF with either about.260.
+> N borrows confirmation at actionr.508 versus own.473 (squared error virtually
+> equal); confirmation borrows N at.551 versus own.576. TF own.863 versus
+> borrowed.623/.575.24 fixed off-diagonal heads,0 neural calls,55 tests/40 exact
+> numerical files. Same4 old authors; full borrowing matrix retained, no tuning.
+> [Report](../reports/grain_vector_mechanisms/QUERY_DIRECTION_TRANSFER_REPORT_V1.md),
+> [theory](GRAIN_QUERY_DIRECTION_TRANSFER_THEORY_V1.md),
+> [NEXT37 fixed new-author transport](GRAIN_READER_NEW_AUTHOR_TRANSPORT_PLAN_V1.md).
+> Inventory frozen:8 selected from20 remaining old-material authors; no new
+> targets collected. Need24 native prefix captures/24 scalar backwards/6 finite
+> forwards,600s cap. Reuse old numerical programs without fitting. Goal ACTIVE.
+> Previous next-step paragraphs are historical; no live long run.
+
 > **2026-09-10 newest: NEXT35 query-linked residual input delivered.**
 > Same4 old authors/3 queries;8 query directions retain only about3% residual
 > energy but improve native GRAIN actionr to.863/.473/.576 (T/F,N,confirmation).

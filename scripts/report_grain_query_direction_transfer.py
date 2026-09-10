@@ -1,0 +1,209 @@
+#!/usr/bin/env python3
+"""Publish frozen query borrowing geometry and all paired action outcomes."""
+
+from __future__ import annotations
+
+import argparse
+import shutil
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from scripts.analyze_grain_query_direction_transfer import verify_predictions
+from scripts.run_grain_real_author_path import BASE, read, sha, write
+
+
+def publish(tests):
+    """Verify two constructions and analysis; export no per-author token assets."""
+    runs = [BASE / ("logic_query_direction_transfer_v1" + s) for s in ("", "_replay")]
+    for out in runs:
+        verify_predictions(out)
+        if read(out / "run_status.json")["status"] != "COMPLETE":
+            raise ValueError("Incomplete construction")
+        m = read(out / "analysis/manifest.json")
+        if m["script_sha256"] != sha(
+            ROOT / "scripts/analyze_grain_query_direction_transfer.py"
+        ):
+            raise ValueError("Analysis code changed")
+        if m["prediction_freeze_sha256"] != sha(out / "prediction_freeze.json"):
+            raise ValueError("Analysis prediction binding changed")
+    a, b = runs
+    checks = {
+        "construction/" + p: d == sha(a / p) == sha(b / p)
+        for p, d in read(a / "prediction_freeze.json")["files"].items()
+    }
+    checks.update(
+        {
+            "analysis/" + p: d == sha(a / "analysis" / p) == sha(b / "analysis" / p)
+            for p, d in read(a / "analysis/summary.json")["files"].items()
+        }
+    )
+    if len(checks) != 40 or not all(checks.values()):
+        raise ValueError("Forty complete numerical assets must replay exactly")
+    dest = ROOT / "reports/grain_vector_mechanisms/query_direction_transfer_tables_v1"
+    dest.mkdir(exist_ok=True)
+    allowed = {
+        "reader_comparison.csv",
+        "factor_actions.csv",
+        "error_account.csv",
+        "source_fits.csv",
+        "source_geometry.csv",
+        "prior_comparators.csv",
+    }
+    for file in allowed:
+        shutil.copyfile(a / "analysis" / file, dest / file)
+    summary = read(a / "analysis/summary.json")
+    write(
+        dest / "analysis_summary.json",
+        {k: v for k, v in summary.items() if k != "files"},
+    )
+    write(dest / "construction_summary.json", read(a / "construction_summary.json"))
+    times = [read(out / "run_status.json")["seconds"] for out in runs]
+    write(
+        dest / "reproduction.json",
+        {
+            "numerical_files": checks,
+            "tests_passed": tests,
+            "construction_seconds_after_loading": times,
+            "new_neural_calls": 0,
+        },
+    )
+    inventory = BASE / "logic_reader_transport_inventory_v1"
+    manifest = read(inventory / "manifest.json")
+    for p, d in manifest["inputs"].items():
+        if sha(ROOT / p) != d:
+            raise ValueError("Next membership dependency changed")
+    for p, d in manifest["files"].items():
+        if sha(inventory / p) != d:
+            raise ValueError("Next membership changed")
+    write(dest / "next_input_coverage.json", read(inventory / "summary.json"))
+    frame = pd.read_csv(dest / "reader_comparison.csv")
+    queries = ("TF_cont", "neuroticism", "confirmation_seeking")
+    matrix = []
+    for q in queries:
+        row = frame[frame["query"] == q].set_index("arm")
+        matrix.append(
+            "| "
+            + q
+            + " | "
+            + " | ".join(
+                f"{row.loc[p, 'action_r']:.3f} / {row.loc[p, 'action_mse_over_zero']:.3f}"
+                for p in queries
+            )
+            + " |"
+        )
+    rows = []
+    for r in pd.read_csv(dest / "source_geometry.csv").itertuples():
+        if r.query < r.donor:
+            rows.append(
+                f"| {r.query} / {r.donor} | {r.projector_overlap_mean:.3f} | "
+                f"{r.projector_overlap_min:.3f}–{r.projector_overlap_max:.3f} | "
+                f"{r.angle_min_degrees_mean:.2f} | {r.angle_max_degrees_mean:.2f} |"
+            )
+    report = """# 路径不是完全独立：查询输入存在部分共享与专用结构
+
+2026-09-10，第二十五轮 NEXT36 完成。整个逻辑研究 goal 继续 ACTIVE。
+
+**神经质与寻求确认可借用相近的输入方向，T/F更依赖自己的方向。**
+这把“部分路径共享、部分独特”从猜想推进到一个可计算的局部模型实例。
+不是把三个问题的总分混合，而是只交换输入子空间，分别读取自己的目标。
+
+## 1. 做了什么
+
+同4名旧作者、3个查询、每人4个GRAIN方向；每次3源/1留出。沿用NEXT35的
+源输入PCA、原36列、输出rank8与alpha=.01；仅把自身8维查询残差输入基底
+替换为另一个查询在同一源折的基底。接收查询的目标与输出方向不变。
+
+共24个新Ridge头，未重新找方向。自身方向的对角线与普通PCA对照均复用
+已冻结结果。所有留出预测冻结后才读取当前原生梯度；独立进程禁读梯度
+和旧结果。三种查询全部保留，未按结果挑选donor或做幅度校准。
+
+## 2. 完整借用矩阵
+
+每格是 **作用相关r / 作用平方误差相对零预测**。行是要读取的查询，列是
+输入方向来自哪个查询；对角线是自身方向。
+
+| 接收查询 | T/F方向 | 神经质方向 | 寻求确认方向 |
+|---|---:|---:|---:|
+__MATRIX__
+
+- T/F：自身r=.863，借N=.623、借寻求确认=.575，自身的作用误差也更低。
+- N：借寻求确认r=.508，自身.473，但SSE/零.873737与.873939几乎相同。
+  这是可借用，不应把.000202的差距包装成新最佳模型。
+- 寻求确认：借N=.551，自身.576；借T/F也能达到.538，但幅度与误差不同。
+
+因子中心化后的作者r和完整梯度误差见汇总CSV；局部方向差异不是只由
+四个因子的均值排序制造。对照残差PCA的r为.684/.114/.149（T/F/N/确认），
+故T/F并非随便借一个查询方向就优于PCA，而另两者更具有跨查询可用性。
+
+以上是4名旧作者上的模型局部作用读取，不是真人的人格预测相关，不把
+16个作用当16名参与者。当前面板负责发现关系，下一步换作者而非继续调参。
+
+## 3. 几何证据：共享不是“完全相同”
+
+| 输入子空间对 | 平均投影重叠 | 四源折范围 | 最小主角度均值° | 最大主角度均值° |
+|---|---:|---:|---:|---:|
+__GEOMETRY__
+
+N/确认平均重叠.662，T/F与它们约.260。这里重叠是投影矩阵的标准几何，
+不是量表相关，也不是“共享66.2%人格”。同一对子空间仍有接近方向和不同
+方向，因此采用共享＋专用结构，而不是硬分几个新的命名因子。
+几何对称，借用不必对称：同一输入对不同目标的价值可以不同。
+源码还显示N/确认共用0–9输出，而T/F是二字母；共享结构可能部分来自回答
+通道。它不抹掉输入可借用的结果，但不能直接归因于心理特质相似。理论页
+补充了softmax导数链式分解，以及使用已存logits追踪输出种子的后续问题。
+
+数学依据与细节见[跨查询读取理论](../../docs/GRAIN_QUERY_DIRECTION_TRANSFER_THEORY_V1.md)。
+[主角度方法](https://doi.org/10.1090/S0025-5718-1973-0348991-3)提供几何比较；
+目标相关降维已有[SIMPLS](https://doi.org/10.1016/0169-7439(93)85002-X)先例，
+不把这里的交叉协方差加Ridge称为首创定理或完整SIMPLS。
+
+## 4. 方法上新增的明确区分
+
+同子空间的基底旋转不改变主角度，但逐维标准化后的Ridge不自动旋转不变。
+测试验证：惩罚一起按坐标变换才精确重放；只保留单位惩罚会改变结果。
+本轮沿用固定基底，不利用旋转搜索结果。另据
+[PLS自由度研究](https://arxiv.org/abs/1002.4112)，目标参与构造后，“同8列”
+不等于严格相同有效复杂度。当前比较说明固定程序的可用性，而非全空间最优。
+
+## 5. 下一步已固定，不继续在四人面板调精度
+
+许可旧材料另有20名作者：mbti_only、big5_only各10名。已按预定哈希顺序
+固定每组4名，总8名，排除旧4名源作者；不读取问卷或按结果选人。
+旧S1缓存只有单个1536维读出，缺这些作者的完整token状态，因此不假装可以
+完全零神经调用。[NEXT37](../../docs/GRAIN_READER_NEW_AUTHOR_TRANSPORT_PLAN_V1.md)
+限定24前缀捕获、24标量反向和6个有限差分前向，总native预算600秒。
+
+新作者只使用旧四源折读法的等权集成，不拟合、调参或选donor；保留全部
+共享/专用/方差对照。验证数据仍是研究里用过的旧许可材料，只是未参与
+这轮读取器构造。新目标尚未采集，状态是PREPARED_NOT_COLLECTED。
+
+## 6. 交付与复现
+
+本轮两次数值构造__TIMES__秒（不含加载/后续分析），0新神经调用。
+32构造+8分析=40文件逐字节重放；__TESTS__项聚焦测试通过，旧SWIG警告。
+24独立预测逐值一致，两处目标禁读探针生效。全矩阵、逐因子结果、源拟合、
+源几何与有符号误差账都保存；作者、token场、模型和下一轮名单保持私有。
+构造28c8226，分析预冻结b0dbbf1，下一轮计划/名单规则669b8e2；均本地提交。
+
+入口：`run_grain_query_direction_transfer.py --name <new_private_name>`，
+`analyze_grain_query_direction_transfer.py --source <new_private_name>`。
+未改旧评分器、lockbox、GRAIN理论测量层或辅助解释协议；无后台长跑待续。
+"""
+    report = report.replace("__MATRIX__", "\n".join(matrix)).replace(
+        "__GEOMETRY__", "\n".join(rows)
+    )
+    report = report.replace("__TIMES__", "/".join(f"{s:.2f}" for s in times)).replace(
+        "__TESTS__", str(tests)
+    )
+    (dest.parent / "QUERY_DIRECTION_TRANSFER_REPORT_V1.md").write_text(report)
+    print({"status": "PUBLISHED", "exact_files": len(checks), "tests": tests})
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--tests", type=int, required=True)
+    publish(parser.parse_args().tests)

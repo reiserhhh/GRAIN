@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE",
+  "authors": 4,
+  "queries": 3,
+  "off_diagonal_arms_per_query": 2,
+  "recipient_donor_cells": 9,
+  "new_fits": 0,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "field_split_error_max": 1.2548642073289105e-15,
+  "action_split_error_max": 5.262457136723242e-14
+}

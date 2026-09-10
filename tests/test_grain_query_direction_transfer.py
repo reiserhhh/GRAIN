@@ -13,8 +13,8 @@ from grain_research.vector_mechanisms.query_residual_input import (
     fit_extension,
     predict_extension,
 )
-from tests.test_grain_query_residual_input import world
 from scripts.audit_grain_reader_transport_inputs import select_members
+from tests.test_grain_query_residual_input import world
 
 
 def test_identical_donor_reproduces_diagonal_and_keeps_recipient_output():

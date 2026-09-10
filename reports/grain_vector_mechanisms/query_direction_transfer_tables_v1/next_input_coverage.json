@@ -1,0 +1,22 @@
+{
+  "status": "PREPARED_NOT_COLLECTED",
+  "remaining_authors": 20,
+  "remaining_by_source_group": {
+    "mbti_only": 10,
+    "big5_only": 10
+  },
+  "selected_authors": 8,
+  "selected_per_group": 4,
+  "queries": 3,
+  "old_native_author_overlap": 0,
+  "selected_s1_packets": 8,
+  "s1_full_state_shape": [
+    1536
+  ],
+  "selected_usable_full_token_state_packets": 0,
+  "needed_prefix_captures": 24,
+  "needed_scalar_backwards": 24,
+  "fixed_finite_difference_suffix_forwards": 6,
+  "new_neural_calls": 0,
+  "human_labels_read": false
+}
