@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "5389b6445bfad00c97b968c11cb363f7455752d946a9c1a72eb9e3c0c4b0a3ee",
+  "atlas_sha256": "50007dfbbd5a2c7db2c453df2b253c6ca9e63f9a0052ba9106bc85e01a34bd12",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -118,8 +118,8 @@
       "id": "L17",
       "implication": "\u6e90\u62df\u5408\u56fa\u5b9a\u8bfb\u51fa -> \u91cd\u73b0\u5b8c\u6574\u6a21\u578b\u90e8\u5206\u5224\u65ad",
       "type_and_status": "E",
-      "alternative_or_next_link": "\u5c40\u90e8\u975e\u7ebf\u6027Phi+\u7ebf\u6027\u805a\u5408\u4ecd\u65e0\u6cd5\u8868\u793a\u5b9e\u6d4b\u6df7\u5408\u5dee\u3002TF\u7684\u6b63\u6587/\u975e\u6b63\u6587\u6761\u4ef6\u4f5c\u7528RMS=.0168/.0187\uff0c\u4e0b\u4e00\u6b65\u6784\u9020rho\u53caR\u529f\u80fd\u77e9\u9635",
-      "evidence_entry": "comment/carrier report \u00a7\u00a73-4; interaction operator \u00a7\u00a71-4"
+      "alternative_or_next_link": "N\u5bf9\u79f0\u6838\u6df7\u5408logit\u8bef\u5dee/\u96f6=.772/.744\uff0c\u4f46\u5bf9\u7c7b\u578b\u5747\u503c=.726\uff1bTF\u53c2\u7167R\u77e9\u9635=.854\u3002\u5171\u4eab\u4f5c\u7528\u5df2\u6709\u8bfb\u6cd5\uff0c\u4e2a\u4f53\u8c03\u5236\u4e0e\u5b8c\u6574\u8f93\u5165\u4f9d\u8d56\u4ecd\u5206\u522b\u8bb0\u5f55",
+      "evidence_entry": "joint/carrier readout report \u00a7\u00a71-2; interaction operator \u00a76"
     },
     {
       "id": "L18",
@@ -153,8 +153,8 @@
       "id": "L22",
       "implication": "\u8def\u5f84\u53ef\u8bfb\u6027\u9ad8 -> \u4eba\u7c7b\u6548\u6807\u76f8\u5173\u9ad8\uff1f",
       "type_and_status": "E",
-      "alternative_or_next_link": "N\u76f8\u90bb\u4ea4\u4e92\u5f3a\u5ea6/\u81ea\u8bc4r=.523\uff0c\u8fdc\u9694-.004\uff1b\u70b9\u4f4d\u63a2\u7d22\uff0c\u4e0d\u6309Y\u9009\u4f5c\u7528\u3002TF\u6761\u4ef6\u5173\u8054\u5206\u6563\u5728\u5e03\u5c40\u3001R\u53caM\uff0c\u4f5c\u7528\u5b58\u5728\u4e0e\u6548\u6807\u5173\u8054\u5206\u5c42\u8bb0\u5f55",
-      "evidence_entry": "comment/carrier report \u00a7\u00a72-3"
+      "alternative_or_next_link": "N\u76f8\u90bb\u4ea4\u4e92\u8303\u6570\u5b9e\u9645/\u4f4d\u7f6e\u6838\u4f30\u8ba1\u7684\u81ea\u8bc4r=.523/.376\uff1bTF\u5b9e\u9645R/\u5171\u4eabR\u4e3a.199/-.086\u3002\u5171\u540c\u4f5c\u7528\u8bef\u5dee\u6539\u5584\u5e76\u4e0d\u81ea\u52a8\u4fdd\u7559\u4e2a\u4f53\u6548\u6807\u65b9\u5411",
+      "evidence_entry": "joint/carrier readout report \u00a7\u00a71-3"
     },
     {
       "id": "L23",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "\u673a\u5236\u62c6\u6210Phi\u5c40\u90e8\u8868\u793a\u3001rho\u8054\u5408\u8bfb\u53d6\u3001S\u8f93\u51fa\u6620\u5c04\uff1b\u6761\u4ef6\u57fa\u7ebf\u62c6\u6210\u5e03\u5c40/M/R/\u4ea4\u4e92\u3002\u65b0\u76ee\u6807\u6709\u5b9e\u6d4b\u7aef\u70b9\uff0c\u8f93\u5165\u8f7b\u91cf\u5316\u4e0e\u5fc3\u7406\u89e3\u91ca\u4ecd\u6709\u72ec\u7acb\u63a5\u53e3",
-      "evidence_entry": "interaction operator \u00a7\u00a71-5; conditional function logic \u00a78"
+      "alternative_or_next_link": "Phi/rho/S\u5df2\u6709\u5c40\u90e8\u5b9e\u73b0\u300291.18%\u5171\u540c\u68af\u5ea6\u80fd\u91cf\u4e0d\u7b49\u4e8e\u4f5c\u7528\u4fdd\u7559\uff1b\u9700\u6309\u771f\u5b9e\u4f4d\u79fb\u5ea6\u91cf\u5dee\u5f02\u3002\u7ec4\u88c5\u4ecd\u6709\u771f\u5b9e\u7aef\u70b9\u8f93\u5165\uff0c\u4e0d\u80fd\u5192\u5145\u5b8c\u6574\u72ec\u7acb\u9884\u6d4b",
+      "evidence_entry": "interaction operator \u00a76; conditional function logic \u00a79"
     }
   ]
 }

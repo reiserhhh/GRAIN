@@ -1,0 +1,14 @@
+{
+  "reference_matrices": 8,
+  "reference_authors": 4,
+  "common_energy_fraction": 0.9117536640502678,
+  "between_reference_energy_fraction": 0.08640418173011943,
+  "within_body_condition_energy_fraction": 0.0018421542196129838,
+  "energy_closure_error": 8.012931681025681e-19,
+  "interpretation": "Frobenius matrix energy under this reference design; not human variance or an independent layout intervention",
+  "human_labels_read": false,
+  "new_neural_calls": 0,
+  "fits": 0,
+  "code_sha256": "a52e2971a1bad382b98a4b9d23d8b6a58e429e08dcd0d76a740e8d556f078def",
+  "control_account_sha256": "c05334a64475e44c87bfa4cd3cb61aeafc203422ecb69f398f54de792443e2ce"
+}

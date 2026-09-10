@@ -59,8 +59,15 @@
 > RMS and not just output-link curvature. N adjacent logit-interaction strength
 > has source r=.523 (24 exposed authors, pointwise interval). TF retained-state
 > action RMS=.0187 versus body-mean .0168 on20 non-reference source authors.
->119 scoped tests pass;5 numerical files replay byte-for-byte. Next construct
-> joint reading and a retained-state reference matrix; no larger accuracy grid.
+>119 scoped tests pass;5 numerical files replay byte-for-byte. Their
+> [joint/carrier readouts](../reports/grain_vector_mechanisms/JOINT_CARRIER_READOUT_LOGIC_REPORT_V1.md)
+> are now delivered: N mixed-logit error/zero=.772/.744, pair-mean control=.726;
+> adjacent norm fidelity .476/.455, distant not recovered. TF reference R matrix
+> error/zero=.854 but criterion association not retained.32 suffix gradient
+> pairs/37.61s;71 scoped tests,6 exact numerical replays. Common gradient energy
+>91.18% is not common action fidelity: next use actual displacement geometry,
+> separate common shape/individual modulation, and close the oracle-input contract.
+> No larger accuracy or parameter grid; partial integration errors are reported.
 >
 > The [actual input-order experiment](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 > is now delivered: identical12-comment bags,52 forwards/82.03s, native reversal

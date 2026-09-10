@@ -24,6 +24,17 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Whole-system logic integration (2026-09-10)
 
+Latest: the [twelfth finite pass](reports/grain_vector_mechanisms/JOINT_CARRIER_READOUT_LOGIC_REPORT_V1.md)
+constructs shared comment-interaction and retained-context readouts. N mixed-logit
+error falls23%-26% versus zero interaction, although a pair-type mean explains
+much shared structure. T/F's reference matrix reduces action error14.6% but does
+not preserve all criterion linkage.91.18% shared gradient energy therefore does
+not imply equivalent individual-action recovery: actual displacement geometry
+is the next identified mechanism.32 suffix gradient pairs/37.61s,71 scoped tests,
+six exact numerical replays; no new participants, label training or release changes.
+The [active ledger](docs/GRAIN_LOGIC_RESEARCH_GOAL_V1.md) records the remaining
+construction and input-dependency questions, not an exhausted theory claim.
+
 The [logic atlas](docs/GRAIN_SYSTEM_LOGIC_ATLAS_V1.md) now connects 31 explicit
 inference edges across the measurement, model-query and interpretation systems.
 The [first empirical review](reports/grain_vector_mechanisms/SYSTEM_LOGIC_REVIEW_V1.md)

@@ -1,0 +1,26 @@
+{
+  "prediction_replay": {
+    "private_joint_predictions.json": true,
+    "private_joint_models.json": true,
+    "private_carrier_predictions.csv": true
+  },
+  "aggregate_replay": {
+    "joint_metrics.csv": true,
+    "carrier_metrics.csv": true,
+    "source_criterion_links.csv": true
+  },
+  "manifest_sha256": "73d0c2db39e0fef79b0cb707c5a929f020e9b5f9e966d774c69bf4d8ef2f8148",
+  "plan_commit": "85f397f",
+  "implementation_commit": "5b598bf",
+  "post_result_diagnostic_commit": "8c511ed",
+  "scoped_tests": 71,
+  "new_tests": 5,
+  "full_repository_suite": false,
+  "files": {
+    "joint_metrics.csv": "bb1d9cd755789fd648ed3f07daea3c8edf3ed4e5a241dc3825d57d5684e685c4",
+    "carrier_metrics.csv": "c5a8b889d54db0a12467d9f664a79420f156c2105ac44b6767ec92073a6408d0",
+    "source_criterion_links.csv": "b5a1b7b891527dd6b05f64387d34637d8ddea40d4cc82a361b7d6f6044074144",
+    "control_relative_accounts.csv": "c05334a64475e44c87bfa4cd3cb61aeafc203422ecb69f398f54de792443e2ce"
+  },
+  "private_artifacts": "remain in ignored results, never copied by this whitelist"
+}

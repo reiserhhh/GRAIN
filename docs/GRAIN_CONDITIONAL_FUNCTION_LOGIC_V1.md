@@ -160,3 +160,19 @@ NEXT18实际分离B的正文均值、非正文状态与布局参照。T/F未参�
 [条件交互函数](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md)；
 [第十一轮实测](../reports/grain_vector_mechanisms/COMMENT_CARRIER_LOGIC_REPORT_V1.md)
 保留全部查询、数值尺度与源关联。它们均不改变发布计分或旧锁箱。
+
+## 9. 从存在到共享读法：新增的最优性问题
+
+NEXT19/20已完成两个具体构造。N对称张量核在作者分离的四折上重现部分
+混合logit作用；相邻强度r约.46，远隔不跟随。训练对类型均值解释了很多
+共同形状，因此不把所有误差改善称为个体机制恢复。
+
+T/F四参照作者积分矩阵用于20位其余源作者，完整矩阵作用误差/零=.854，
+但其余自评联系未被保留。八参照矩阵91.18%欧氏能量共有这一事实，促使下一
+连接从欧氏矩阵平均转向实际位移上的作用度量。数学可积分、矩阵平均、
+共享作用最优和作者效标保留，是四件分别要做的事。
+
+精确损失几何、有限参照的正规方程与支持受限校准候选见
+[交互函数§6](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md#6-共享函数的几何不能只按矩阵范数定义)。
+数值/源联系、近似误差及仍有原模型输入的组装程序见
+[第十二轮报告](../reports/grain_vector_mechanisms/JOINT_CARRIER_READOUT_LOGIC_REPORT_V1.md)。

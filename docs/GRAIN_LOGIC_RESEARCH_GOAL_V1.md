@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, eleven finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twelve finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -350,14 +350,41 @@ Read [comment/carrier report](../reports/grain_vector_mechanisms/COMMENT_CARRIER
 and [interaction operator](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md).
 Plan `90724af`, implementation `504fd85`, preflight fix `4861095`; no push.
 
+## Twelfth pass: shared action readouts and the missing functional metric
+
+- NEXT19 complete:24 N authors,old four folds,48 pairs,eight fixed tensor fits;
+  predictions frozen before source Y,0 new neural calls. Mixed-logit MSE/zero
+  bag/position=.772/.744, versus pair-type training mean=.726. Adjacent norm
+  fidelity=.476/.455; distant-.095/-.233. Keep common pattern and author
+  modulation distinct; relative-to-mean gains adjacent3.8%/.9%, distant negative.
+- NEXT20 complete:four TF references,20 other source authors,32 suffix
+  forward/backward pairs/37.61s. Complete R matrix error/zero=.854 versus
+  reference target mean=.939; fidelity.269, original/estimated R criterion
+  r=.199/-.086. Full-matrix criterion linkage is not promoted. Rank/mean
+  controls retained; oracle baseline/body assembly is explicitly not standalone.
+- Eight reference matrices: common91.18%,between-reference8.64%,within-body
+  condition.18% Frobenius energy. This is parameter energy, not personality
+  variance or action fidelity. New exact formula measures errors through
+  actual displacement second moments, not unweighted matrix SVD energy.
+- Six of eight integration paths pass tolerance; two retained approximations
+  miss slightly, max absolute error.0001313. Endpoint replay<=3.32e-8;
+  4 paths refined, no spending beyond finite rule.71 scoped tests (5 new),
+  Ruff/format pass;3 numerical predictions/models and3 aggregate tables
+  replay byte-for-byte. No new participants,MEPS,API,prefix,release change.
+
+Read [joint/carrier report](../reports/grain_vector_mechanisms/JOINT_CARRIER_READOUT_LOGIC_REPORT_V1.md)
+and [action-weighted geometry](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md#6-共享函数的几何不能只按矩阵范数定义).
+Plan `85f397f`, implementation `5b598bf`, post-result no-fit diagnostics `8c511ed`.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT19 | Can the measured N comment joint action be read by a shared numerical function? | Reuse NEXT16 projections and NEXT17 logits; freeze one bounded author-OOF comparison of additive logits/output link versus a condition-aware joint feature function. Specify zero-displacement constraints and the actual supervised output; positive-only pair endpoints do not independently identify odd/even parts | Develop the measured joint effect, not more single-token harmonics. Retain all fixed arms, compare against zero interaction, and link source Y only after freezing predictions; no new neural collection or full4096 subset grid |
-| NEXT20 | Can T/F retained-state action become a transferable reference functional? | Reuse role-aligned136-position R, four old references and20 other source authors; adapt the established P-region path-matrix construction to R under both M conditions, with exact endpoints. Freeze finite gradient cost before collection | Read actual retained-state allocation with reference-only parameters; preserve layout/body components and compare complete B separately. Do not call reference-external source authors a new external cohort or select ranks from Y |
+| NEXT21 | Does actual displacement geometry explain why a91%-common gradient field reads individuals weakly? | First contract each saved reference matrix and its deviation with real R displacements; state zero/interpolation numerical error separately. Freeze one reference-only support-restricted action calibration around G_ref, not a rank/alpha grid | Predict the same20 source authors using reference model effects only; compare zero/mean/original G_ref and preserve all source-Y links after freezing. No new neural calls. Do not treat Euclidean energy as action variance |
+| NEXT22 | Is N pair error missing shared direction, amplitude, or context-dependent orientation? | Reuse centered logits and old fixed pairs; inspect train/evaluation direction and magnitude separately within each pair type. Account for S's local output weighting, rather than pooling the two pair types into one correlation | Choose the next function only after locating the missing action property; no new pair search, Fourier grid, or Y-selected direction |
+| NEXT23 | Which conditional-B inputs are still oracle components? | Inventory b00(layout),body allocation,R action,and interactions with exact cached input/output contracts; separate encoded-state input from suffix-free readout and raw-text runtime | Publish one complete dependency diagram before claiming a standalone compressed predictor; reuse old source packets and avoid fresh personality-accuracy optimization |
 
-Both are local computational/theory questions. Start by checking cached coverage;
+These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.

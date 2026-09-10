@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "human_outcomes_used_for_fitting": false,
+  "old_N_authors": 24,
+  "TF_reference_authors": 4,
+  "TF_evaluation_authors": 20,
+  "cost": {
+    "status": "COMPLETE",
+    "calls": 32,
+    "seconds": 37.609592543914914,
+    "prefix_calls": 0,
+    "model_training": false,
+    "reference_paths": 8
+  },
+  "integration_paths": 8,
+  "paths_refined": 4,
+  "path_tolerance_passes": 6,
+  "endpoint_replay_max": 3.3194486437349013e-08,
+  "integration_error_max": 0.00013132191870065917,
+  "matrix": {
+    "rank1_energy": 0.23622531584726486,
+    "rank4_energy": 0.6136782466782195,
+    "rank95": 21
+  },
+  "question": "Reference/author-disjoint transfer of conditional model actions, not a new personality benchmark",
+  "files": {
+    "joint_metrics.csv": "bb1d9cd755789fd648ed3f07daea3c8edf3ed4e5a241dc3825d57d5684e685c4",
+    "carrier_metrics.csv": "c5a8b889d54db0a12467d9f664a79420f156c2105ac44b6767ec92073a6408d0",
+    "source_criterion_links.csv": "b5a1b7b891527dd6b05f64387d34637d8ddea40d4cc82a361b7d6f6044074144"
+  }
+}
