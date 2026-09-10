@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-five finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-six finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -765,15 +765,48 @@ NEXT37 freezes equal averaging of the old four source-fold readers; no new
 fitting, selection or calibration on the8 target authors. More small-panel
 rank/alpha tuning is parked. Whole-system goal remains ACTIVE.
 
+## Twenty-sixth pass: source-disjoint application locates a coefficient gap
+
+- NEXT37 complete on8 preselected source-disjoint reader authors:96 old comments,
+  348 frozen GRAIN slices,7,156 selectedtokens. All96 numerical coefficient
+  stacks frozen before current-gradient reading. Equal four-source-fold field
+  ensemble, no new fitting, questionnaire reads or member replacement.
+- Own-query actionr TF=.001,N=.121,confirmation=.314; variance control
+  -.002/.101/.423. OwnSSE/zero1.061/1.387/1.004. Confirmation reading retains a
+  candidate signal; old query-input superiority does not transport generally.
+  Keep author-cluster intervals and different oldLOO/newensemble protocols.
+- Source-output union32 projection with held-gradient oracle coefficients still
+  carries actionr .836/.951/.876. Thus a usable direction library survives
+  locally while fixed coefficient reading does not. This evaluator oracle is
+  not independent prediction, not an8-dimensional single-reader result.
+- Joint field error identity and signed action account close numerically.
+  Confirmation missing/reading/cross contributions .656+2.372-2.024=1.004;
+  do not equate one positive term with a percentage of psychological information.
+  Univariate source-range violations average<.026%, not proof of joint support.
+- Exactly54 native forwards/24 backwards,73.904s plus6.232s model loading.
+  Score replay max9.259e-7 within2e-6; fixed3 finite differences same sign,
+  maximum epsilon-scale error7.912e-7. No budget/precision/epsilon changes.
+- Implementation/analysis frozen before outcomes in dbca1ae.43 numeric and22
+  logic/interpretation scoped tests pass,96 exact prediction-array replays and9
+  byte-identical analysisCSVs. No full-suite claim.
+  Frozen logger counts include AppleDouble sidecars; audit explicitly verifies
+  24prefix/24gradient packets, not the displayed48/48. Actual call counts intact.
+
+Read [new-author report](../reports/grain_vector_mechanisms/READER_NEW_AUTHOR_TRANSPORT_REPORT_V1.md)
+and [direction/reading distinction](GRAIN_READER_NEW_AUTHOR_TRANSPORT_THEORY_V1.md).
+User's same-text/token interface is now tested beyond its construction authors;
+the interpretation/rubric track stays separate and its earlier research is kept.
+No extra alpha/rank tuning on these8. All native work is complete, no live queue.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36 finite candidates are closed, retaining useful mechanisms
-and contrary comparisons. Execute NEXT37: fixed programs on8 source-disjoint
-author materials; input inventory and membership are already frozen.
+NEXT24/25/26/31/32/33/34/35/36/37 finite candidates are closed, retaining useful
+mechanisms and contrary comparisons. Execute cached-only NEXT38 to separate
+answer seed and suffix transport before designing a context-aware reader.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT37 | Does shared/specific local reading survive different authors? | Execute GRAIN_READER_NEW_AUTHOR_TRANSPORT_PLAN_V1;8 hash-selected old-material authors, old4-fold equal numerical ensemble, own/borrowed/variance arms, no fitting | Inventory is PREPARED_NOT_COLLECTED.24 prefixes/24 scalar backwards/6 finite forwards,600s native cap; freeze predictions before targets, no mean-null or single-position cache substitution. Report all arms and stop tuning on this panel |
+| NEXT38 | Is sharing/reading loss attributable to answer seed or suffix transport? | Execute GRAIN_READER_OUTPUT_SEED_PLAN_V1;cached old4/new8 packets, frozen LM-head rows, b=p*(v-F), shared-alphabet and binary-scale diagnostics | Zero new neural calls/fits/Y,120s numeric bound; report seed geometry separately from gradients and define the next minimal semantic/format contrast |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

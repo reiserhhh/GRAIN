@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "e34566960b7a8744f10c823e9d18a7a28fa41e9bd6df010427e98c797e9440b8",
+  "atlas_sha256": "6e8e1980abc6d7f6f3b132c534d5d37307caa7871b35c657d7264c00b26de4ae",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "\u6e90\u67e5\u8be2\u6b8b\u5dee8\u65b9\u5411\u53ea\u542b\u7ea63%\u6b8b\u5dee\u80fd\u91cf\uff0c\u5374\u4f7f\u540c\u6750\u6599GRAIN\u4f5c\u7528r\u8fbe.863/.473/.576\uff1b\u7b49\u5bbd\u65b9\u5dee\u7ec4.684/.114/.149\u3002\u514d\u5f53\u524d\u68af\u5ea6\uff0c\u5e45\u5ea6\u4ecd\u4f4e\uff1b\u8fd9\u662f\u5c40\u90e8\u6a21\u578b\u8bfb\u6cd5\uff0c\u4e0d\u662f\u4eba\u683c\u51c6\u786e\u7387",
-      "evidence_entry": "query residual input report \u00a7\u00a71-3; position reader report \u00a72"
+      "alternative_or_next_link": "\u540ctoken\u63a5\u53e3\u5df2\u6269\u81f38\u6e90\u5916\u4f5c\u8005\uff1b\u56fa\u5b9a\u81ea\u8eab\u8bfb\u6cd5r=.001/.121/.314\uff0c\u6e90\u8054\u540832\u65b9\u5411\u7684\u771f\u5b9e\u68af\u5ea6\u6295\u5f71r=.836/.951/.876\u3002\u65b9\u5411\u53ef\u8868\u793a\u4e0e\u5f53\u524d\u8f93\u5165\u53ef\u8bfb\u5206\u5f00\uff1b\u540e\u8005oracle\u4e0d\u662f\u9884\u6d4b",
+      "evidence_entry": "new-author transport report \u00a7\u00a72-3; query residual input report"
     },
     {
       "id": "L20",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "N/\u786e\u8ba4\u65b9\u5411\u53ef\u4e92\u501f\uff0cTF\u81ea\u8eab\u65b9\u5411\u66f4\u6709\u6548\uff1b\u5171\u4eab/\u4e13\u7528\u7ed3\u6784\u6709\u5c40\u90e8\u5b9e\u4f8b\u3002NEXT37\u5df2\u56fa\u5b9a8\u540d\u6e90\u5916\u4f5c\u8005\u548c\u65e7\u8bfb\u6cd5\u7b49\u6743\u96c6\u6210\uff0c\u4e0d\u518d\u57284\u4eba\u8c03\u53c2\u3002\u5c40\u90e8\u5bfc\u6570\u5230\u5b8c\u6574\u8bc4\u5206/\u5fc3\u7406\u89e3\u91ca\u4ecd\u53e6\u63a5",
-      "evidence_entry": "query direction transfer theory \u00a7\u00a71-4; conditional input dependencies"
+      "alternative_or_next_link": "NEXT37\u6e90\u5916\u5e94\u7528\u5b9a\u4f4d\u5230\u6761\u4ef6\u7cfb\u6570\u8bfb\u53d6\u7f3a\u53e3\uff0c\u786e\u8ba4\u901a\u9053\u4ecd\u6709.31-.42\u5173\u8054\u3002\u4e0b\u4e00\u6b65\u533a\u5206\u8f93\u51fa\u79cd\u5b50\u4e0e\u540e\u7f00\u4f20\u8f93\uff0c\u4e0d\u8c038\u4eba\u9762\u677f\uff1b\u5fc3\u7406\u89e3\u91ca\u7ee7\u7eed\u7528\u72ec\u7acb\u8bc1\u636e/\u76f2\u7f16\u7801\u63a5\u53e3",
+      "evidence_entry": "new-author transport theory \u00a7\u00a73-5; output seed plan; same-material interpretation theory"
     }
   ]
 }

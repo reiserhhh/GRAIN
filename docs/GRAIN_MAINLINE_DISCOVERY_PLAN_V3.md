@@ -1,5 +1,18 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT37 new-author transport complete.**
+>8 source-disjoint reader authors,96 comments,348 slices,7156 bodytokens.
+> Own-query actionr TF=.001,N=.121,confirmation=.314; variance controls
+> -.002/.101/.423. Old query-input advantage does not generally transfer.
+> Source-output union32 with evaluator-oracle coefficients still retains
+> actionr.836/.951/.876: next develop conditional coefficient reading, not
+> discard the shared direction library or retune these8.54 forwards/24 backwards,
+>73.904s;43 tests,96 exact prediction-array/9 CSV replays. No live native queue.
+> [Report](../reports/grain_vector_mechanisms/READER_NEW_AUTHOR_TRANSPORT_REPORT_V1.md),
+> [theory](GRAIN_READER_NEW_AUTHOR_TRANSPORT_THEORY_V1.md),
+> [NEXT38 cached output-seed mechanism](GRAIN_READER_OUTPUT_SEED_PLAN_V1.md).
+> Whole-system goal ACTIVE. Older next-step language below is historical.
+
 > **2026-09-10 newest: NEXT36 shared/specific query input delivered.**
 > N/confirmation input projector overlap.662; TF with either about.260.
 > N borrows confirmation at actionr.508 versus own.473 (squared error virtually
