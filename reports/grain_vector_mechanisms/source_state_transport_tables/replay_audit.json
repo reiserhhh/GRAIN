@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "exact_prediction_packets": 24,
+  "exact_primary_tables": 9,
+  "fixed_anchor_reader_max_error": 0.0,
+  "original_BODY_units_max_error": 0.0,
+  "independent_metric_max_error": 6.217248937900877e-15,
+  "primary_compute_seconds": 7.1846329141408205,
+  "cached_replay_seconds": 5.635678164660931,
+  "native_calls": 0,
+  "human_labels_read": false,
+  "fit_denial_probes": 4,
+  "prediction_denial_probes": 4,
+  "extra_denials": 0,
+  "primary_commit": "f326e399a25ce5b8a346a241605c335c27a06d54",
+  "audit_code_sha256": "d39aec406faf627a8e87cea2b036fa2e9d883cc26814b04c560eea2a421e04a4",
+  "post_outcome_diagnostic": "No tuning: derivative norm, angle and source PCA coverage",
+  "diagnostic_files": {
+    "private_gain_geometry.csv": "572e165acec3c6492d77065dc25204b40e2fb7655b22958d409b13d70709ee67",
+    "gain_geometry_summary.csv": "b05787da685cbf1edded583ff0ae9e9999e6387fd47b00655d5d227b9bae9b16"
+  }
+}

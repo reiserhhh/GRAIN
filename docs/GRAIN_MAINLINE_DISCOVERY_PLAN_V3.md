@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT52 value/response separation delivered.**
+> Source-only pointwise/causal maps lower new8 state error42–47%, but increase
+> directional error39–50%. Identity component still associates with native N/C
+> r=.878/.893, with about4x amplitude. None passes the frozen replacement gate.
+> The input PCA covers31.94% of GRAIN direction energy; basis-null directions
+> must pass unchanged. GRAIN can define a directional matching metric, not just
+> provide extra scalar features.7.185s CPU/ten solves,0 neural/Y;24 packets/9 CSV
+> exact replay,44 tests. [Report](../reports/grain_vector_mechanisms/SOURCE_STATE_TRANSPORT_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_STATE_TRANSPORT_THEORY_V1.md).
+> [NEXT53](GRAIN_RESPONSE_AWARE_STATE_PLAN_V1.md) planned: same basis/maps, source
+> values plus their four GRAIN responses in one loss.10 solves/180s CPU, no new
+> neural capture or new8 target fitting. H16 remains native; primal-only family closed.
+
+> **Previous NEXT51; its NEXT52 request is completed above.**
 > **2026-09-10 newest: NEXT51 endpoint-selection component delivered.**
 > Source-only Qbar/rbar on native evidence: new8 N/confirmation r=.972986/.978394,
 > SSE/zero=.156129/.071926; contrast r=.963235, amplitude59.2%, both gates pass.

@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, forty finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, forty-one finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1213,21 +1213,53 @@ Read [report](../reports/grain_vector_mechanisms/SELECTION_ENDPOINT_REPORT_V1.md
 [theory](GRAIN_SELECTION_ENDPOINT_THEORY_V1.md),
 [NEXT52](GRAIN_SOURCE_STATE_TRANSPORT_PLAN_V1.md).
 
+## Forty-first pass: value matching and GRAIN response matching separate
+
+- Previous turn classified as progress: NEXT51 connected frozen selection to
+  the actual endpoint and source suffix reader, audited and locally committed.
+- NEXT52 complete after primary freeze `f326e39`. Source4-only rank32 maps,
+  ten small Ridge solves; same function supplies both primal and derivative.
+  No current pre22/gradient/endpoint data access during candidate prediction.
+- New8 pointwise/causal state error relative to identity=.530–.531/.577–.578;
+  tangent error grows to1.389/1.499. Identity itself retains N/C actionr=.878/.893
+  but endpoint amplitudes around4x. All three fail the original per-query
+  SSE/zero<1 replacement gate; reference from NEXT51 unchanged and ineligible.
+- Post-result geometry: PCA32 covers31.94% of new8 direction energy; any
+  tokenwise basis-null direction is exactly identity through both map families.
+  Native full tangent norm/input~1.117, candidate/native~1.095/1.129; the large
+  scalar mismatch also involves orientation and attention/readout, not only gain.
+- Source4 held-out coefficients do not reproduce new8 correlations; complete
+  source/query/factor tables retained. No outcome-fitted amplitude rescue.
+  New mechanism objective: sum_f ||(Jhat-J)D_f||^2/4=tr(E Sigma_G E^T), so GRAIN
+  can specify which response directions a source-only function should preserve.
+- Preparation.920284s, fits.588025s, prediction5.676324s, total7.184633s;
+  one cached replay5.635678s.0 neural/API/Y.24 packets and9 CSVs exact;
+  fixed Qbar/rbar and original BODY units exact; metric error6.218e-15.
+ 44 related tests/18 existing warnings; primary freeze unchanged, no live job.
+- Close primal-only state fitting. NEXT53 is one fixed-basis value+direction
+  objective comparison, motivated by Sobolev/Jacobian matching;10 solves/180s,
+  no new neural capture or rank/alpha/query grid. H16 remains native prefix.
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_STATE_TRANSPORT_REPORT_V1.md),
+[theory](GRAIN_SOURCE_STATE_TRANSPORT_THEORY_V1.md),
+[NEXT53](GRAIN_RESPONSE_AWARE_STATE_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT52 | Can one source-only function supply current evidence states and tangents without blocks17–21? | Execute GRAIN_SOURCE_STATE_TRANSPORT_PLAN_V1; identity/pointwise/causal-context maps, same fixed Qbar/rbar component |0 native/Y;10 source-only small Ridge solves,180s numeric; same function/derivative, no new8 states or targets in prediction; report state versus tangent versus endpoint |
+| NEXT53 | Does explicitly teaching source GRAIN responses repair the same state map? | Execute GRAIN_RESPONSE_AWARE_STATE_PLAN_V1; same fixed basis/features, one source-normalized value+direction loss |0 native/Y;10 source-only solves,180s; directional improvement and endpoint replacement are separate decisions; no new8 targets in prediction or rank/alpha sweep |
 
-These are local computational/theory questions. NEXT51 complete; no repeated
+These are local computational/theory questions. NEXT52 complete; no repeated
 suffix or prefix calls. No MLP24/attention22/readout refinement, old queue restart,
-broader factor search or clinical naming. NEXT52 is planned, not already executed.
+broader factor search or clinical naming. NEXT53 is planned, not already executed.
 Current H16 remains native; removing one intervening segment is not eliminating
-the full encoder. Source state fitting uses no labels or endpoint targets.
+the full encoder. NEXT53 source fitting uses cached source tangents but no labels
+or endpoint targets. NEXT52 primal-only fitting did not use source tangents.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

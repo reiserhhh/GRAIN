@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第四十轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第四十一轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -59,6 +59,7 @@ flowchart TD
 | 上游完整注意力三通道 | dot_o=sum a dot_V + sum a(V-o)(dot_Q K+Q dot_K)/sqrt(h) | `upstream_attention_channels.py`；全token preAttention22 x/d、实际norm/QKV/O/RoPE/GQA/mask、固定w*；r2汇总 | 新8Q/K/V局部对比投影=.083/.904/.013，源4=.562/.271/.167；96原生向量相对差≤5.272e-6。Q不应删除；NEXT50用源固定Q检验key选择读法，当前K/V/dK仍原生 |
 | 源查询引子选择 | sum a_Q(V-o_Q)(Qbar dot_K)/sqrt(h)，每引子重算softmax | `source_query_selection.py`；源4 pre-RoPE Q均值、当前K/V/dK、实际位置与固定w*；预测禁读当前Q | 新8同/另/共享引子对比r=.939/-.890/.477；同query幅度29.1%，各query门槛三者均过。当前证据依旧query-conditioned；局部引子家族关闭，NEXT51测后续读出与完整端点中的作用 |
 | 选择的端点组件 | kappahat=rbar_q^T uhat_K(Qbar_q;K,V,dK) | `selection_endpoint.py`；先冻结完整增量向量，再从源4编译后续读头；当前梯度只供oracle评估 | 新8组件r=.973/.978，对比=.963、幅度59.2%；K/V/dK仍原生。局部交换引子反号不保留到端点；NEXT52从H16用同一函数生成状态与导数，移除blocks17–21的当前运行依赖 |
+| 源状态与同函数导数 | Xhat=Psi(X16)，dhat=D Psi[D] | `source_state_transport.py`；源4 primal-only Ridge、固定PCA32、点式/因果累计图，同源Qbar/rbar端点 | NEXT52已执行：状态误差降42–47%，方向误差增39–50%；全部未过替代门槛。identity仍有r=.878/.893但幅度约4倍；PCA覆盖方向31.94%。NEXT53改为源值+方向联合目标，不拟合当前结果；H16仍原生 |
 | 固定输出方向传输 | J_q=K_q^T W_A^T c，c固定 | `run_grain_fixed_seed_attention.py`；旧4/新8共同正文、N/确认原query状态与布局 | 相同seed下正文余弦.728/.657，直接显示条件传输差异；不是单靠两个不同seed的夹角推断K变化。L是新logit诊断，不是原概率F |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
@@ -85,7 +86,11 @@ attention22边界已补齐这一项，旧受限公式本身不因此失效。
 在不读当前Q时保留局部选择，交换引子改变两query对比；当前K/V/dK仍原生。
 第四十轮[NEXT51端点接合](GRAIN_SELECTION_ENDPOINT_THEORY_V1.md)已完成：固定源引子与
 后续读头保留一项实际logit导数贡献，对比r=.963；不是完整原文分数。
-选择误差与读头误差有负交叉项。NEXT52转向当前证据状态/导数的同函数近似。
+选择误差与读头误差有负交叉项。NEXT52同函数近似已经完成：位置更接近不等于
+GRAIN响应更接近；没有用失败候选替换NEXT51。第四十一轮
+[理论](GRAIN_SOURCE_STATE_TRANSPORT_THEORY_V1.md)给出基底盲区与GRAIN方向加权
+Jacobian误差；[NEXT53](GRAIN_RESPONSE_AWARE_STATE_PLAN_V1.md)在相同固定家族上
+只改变源学习目标，联合匹配值与方向。后者计划中，尚未运行。
 
 同一材料、查询、布局和数值观察器下，旧四格的定义为：
 
