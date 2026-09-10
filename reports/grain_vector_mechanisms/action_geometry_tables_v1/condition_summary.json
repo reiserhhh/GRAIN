@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "new_fits": 0,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "reference_action_closure_max": 5.204170427930421e-18,
+  "code_sha256": "5bf0ef3abfdaf586268b4cb0b883715e3ee116413f3aab8412279e8133a73529",
+  "interpretation": "Origin gradient uses fixed M0/R0/PQ; only target layout varies. R-path and body-condition terms follow a declared ordered definition."
+}

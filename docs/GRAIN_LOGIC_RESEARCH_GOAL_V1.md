@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twelve finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirteen finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -376,13 +376,47 @@ Read [joint/carrier report](../reports/grain_vector_mechanisms/JOINT_CARRIER_REA
 and [action-weighted geometry](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md#6-共享函数的几何不能只按矩阵范数定义).
 Plan `85f397f`, implementation `5b598bf`, post-result no-fit diagnostics `8c511ed`.
 
+## Thirteenth pass: action geometry, conditional curvature and complete inputs
+
+- NEXT21 complete: one prior-centered correction using four references only;
+  same20 evaluation authors' action error/zero .853553->.813729, relative
+  gain4.67%, paired CI[-.053%,7.534%]. Effective reference df2.912; evaluation
+  soft support mean.009129. The calibration is useful but narrow, not a new
+  significant personality-accuracy gain. Actual/calibrated R criterion r=.199/-.047.
+- No-fit follow-up separates reference origin/layout, R-path adaptation and
+  body conditioning. Their deviation-action RMS .002606/.014656/.000223
+  locates the main omitted action in path adaptation, not parameter-level layout
+  variation. The latter two are ordered conditional contrasts, not independent
+  psychological variance. Smoothness gives an integrated R-curvature formula;
+  a synthetic centered-input quadratic witness supports its mathematical role.
+- NEXT22 complete: N adjacent/distant training direction agreement .982/.953,
+  held energy along those directions62.93%/44.24%. Adjacent bag/position
+  amplitude within-fold r=.501/.363. Strong negative distant pooled r is
+  mostly between-fold covariance. Final-output Taylor remainders only .36%/.09%
+  of actual local internal RMS; do not make softmax the next rescue target.
+  Fixed-Ridge target projection commutes; norm/energy statistics do not.
+- NEXT23 complete:48 old authors' F=B+A+Q+I closes within8.33e-17, TF nested
+  B=b00+Phi_M+Phi_R within1.39e-17, old endpoint replay0. B/native F RMS
+  difference .31799TF/.04033N. Publish full input contract distinguishing
+  existing E5/four-layer raw runtimes from newer block16 conditional readers;
+  their exact baseline/body/singleton dependencies remain explicit.
+- One new fit/2.22s,0 neural calls/APIs/new participants.83 scoped tests (12
+  new), Ruff/format checks;10 construction and5 aggregate files byte-replay.
+  Diagnostic output-name shadowing was corrected before publishing the r2
+  extension, with a regression test. Private vectors/IDs/Y stay ignored.
+
+Read [action-geometry report](../reports/grain_vector_mechanisms/ACTION_GEOMETRY_LOGIC_REPORT_V1.md),
+[input dependency contract](GRAIN_CONDITIONAL_INPUT_DEPENDENCIES_V1.md), and
+[conditional curvature](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md#7-已测校准与位移相关的曲率).
+Plan `0fb89ff`, implementation `b30e767`, initial no-fit diagnostic `8a45048`.
+
 ## Next loop, in order
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT21 | Does actual displacement geometry explain why a91%-common gradient field reads individuals weakly? | First contract each saved reference matrix and its deviation with real R displacements; state zero/interpolation numerical error separately. Freeze one reference-only support-restricted action calibration around G_ref, not a rank/alpha grid | Predict the same20 source authors using reference model effects only; compare zero/mean/original G_ref and preserve all source-Y links after freezing. No new neural calls. Do not treat Euclidean energy as action variance |
-| NEXT22 | Is N pair error missing shared direction, amplitude, or context-dependent orientation? | Reuse centered logits and old fixed pairs; inspect train/evaluation direction and magnitude separately within each pair type. Account for S's local output weighting, rather than pooling the two pair types into one correlation | Choose the next function only after locating the missing action property; no new pair search, Fourier grid, or Y-selected direction |
-| NEXT23 | Which conditional-B inputs are still oracle components? | Inventory b00(layout),body allocation,R action,and interactions with exact cached input/output contracts; separate encoded-state input from suffix-free readout and raw-text runtime | Publish one complete dependency diagram before claiming a standalone compressed predictor; reuse old source packets and avoid fresh personality-accuracy optimization |
+| NEXT24 | Can the measured R-path remainder become a displacement-dependent common function? | Use saved reference gradients/paths to separate radial variation, role structure and body conditioning. Derive one finite curvature-sensitive candidate only after identifying its actual support; numerical action targets, not Y | Compare one source-defined candidate to existing linear/support baselines on unchanged authors. Do not estimate an unrestricted208896-square Hessian or select rank/penalty from exposed criteria. Preserve context and integration errors |
+| NEXT25 | Does conditional energy provide information absent from a vector conditional mean? | Reuse fixed N pair targets and direction accounts. First quantify the norm/energy identity under the declared inputs and existing prediction shrinkage; a direct projected scalar Ridge is algebraically redundant | Freeze at most one distinct energy-sensitive candidate if the numerical evidence supports it; no pair/Y-selected feature search. Keep direction, amplitude and orthogonal magnitude separate |
+| NEXT26 | Which complete conditional interface can close one runtime dependency without changing the target? | Choose one declared block from the full-input contract; identify all its raw/encoded/fixed-reference inputs and currently borrowed endpoints before implementation | Execute one complete same-target comparison with upstream inputs explicit. Do not combine old E5/four-layer metrics with new block16 components as if a single end-to-end system already existed |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

@@ -107,7 +107,17 @@ T/F retained non-body states have action RMS .0187 versus body-mean .0168 on20
 non-reference source authors. The [new interface](docs/GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md)
 separates local features, joint reading and output mapping.119 scoped tests,
 5 exact numerical replays;410 suffix calls/231 seconds, no prefix or training.
-Next develop shared functions for these measured actions, not another accuracy grid.
+Those shared functions and their follow-up are now available in the
+[action-geometry report](reports/grain_vector_mechanisms/ACTION_GEOMETRY_LOGIC_REPORT_V1.md).
+One reference-only correction lowers T/F action error/zero .854->.814;
+calibration support averages only .009129. Saved gradients locate most missing
+reference action in displacement-dependent R-path adaptation, rather than layout
+slopes. N adjacent amplitude has within-fold fidelity .501/.363. The
+[complete input contract](docs/GRAIN_CONDITIONAL_INPUT_DEPENDENCIES_V1.md) distinguishes
+conditional B from full F, and separates existing raw-text runtimes from newer
+readers still using model states/exact endpoints.83 scoped tests and15 exact
+file replays pass;0 new neural calls. Next develop those specific interfaces,
+not another personality-accuracy grid. See the [active ledger](docs/GRAIN_LOGIC_RESEARCH_GOAL_V1.md).
 
 The [same-comment reversal test](reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 now gives an actual invariant-input mismatch: unchanged E5 bags produce native

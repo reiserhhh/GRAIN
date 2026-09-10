@@ -1,0 +1,44 @@
+{
+  "numerical_byte_replay": {
+    "private_support_model.npz": true,
+    "private_displacements.npz": true,
+    "private_carrier_predictions.csv": true,
+    "private_reference_actions.csv": true,
+    "private_reference_contractions.npz": true,
+    "support_summary.json": true,
+    "private_joint_geometry.csv": true,
+    "private_joint_directions.json": true,
+    "private_dependency_accounts.csv": true,
+    "dependency_summary.json": true
+  },
+  "aggregate_byte_replay": {
+    "carrier_metrics.csv": true,
+    "joint_geometry_metrics.csv": true,
+    "calibration_comparisons.csv": true,
+    "direction_agreement.csv": true,
+    "source_criterion_links.csv": true
+  },
+  "manifest_sha256": "c168f93e6d90c7b66edbc205f1dcd7978a448465ff5625728e54ba70d333b24e",
+  "prediction_freeze_sha256": "707e31050b9cdea62cda908bc65e16a438c52e5be610a0909be35fda26fb36f5",
+  "plan_commit": "0fb89ff",
+  "implementation_commit": "b30e767",
+  "condition_diagnostic_commit": "8a45048",
+  "condition_diagnostic_extension_sha256": "5bf0ef3abfdaf586268b4cb0b883715e3ee116413f3aab8412279e8133a73529",
+  "scoped_tests": 83,
+  "new_tests": 12,
+  "full_repository_suite": false,
+  "human_labels_for_fitting": false,
+  "authors_published": 0,
+  "files": {
+    "carrier_metrics.csv": "45fcd939217a9d4dfd4782103ef1a192aa1b68e0f5b4ce6e4d7aa30dad442ab0",
+    "joint_geometry_metrics.csv": "5db6ea3bfcb0ee9adc7a1cd4e36d5caa2c5fb54d2764102a00fef5763e30962a",
+    "calibration_comparisons.csv": "bd08ed38d9f54225fb1b2b1f5cba5a81626b9f1138cc7073957e964535e8812f",
+    "direction_agreement.csv": "5bcb8481b6d1df6279360d9f41a1c7852aab89007236690f2e02e6270c51cf98",
+    "source_criterion_links.csv": "e4eed54d7bf1ee62ff088dc2eef4edf3a983b9936adf42bf0a34cc338a217a1b",
+    "retained_condition_components.csv": "fbd287227b63dd945967aec06ca28f819ebb658a7bcaea3d59842201d4cf4b8f",
+    "joint_fold_covariance.csv": "1fb70c1f4f473e5ef029ef3713e247d5531ebd0034343c07fe6d007f327f9459",
+    "summary.json": "dfc62ba2546ff572d59f2bff1c08b061aca836129ae9baf1ec1fc5712093a9dd",
+    "condition_summary.json": "3222a601878f5e1e9152b6638c0eb97c6cd309dc9fb343a3cc39cb6de2e91fee"
+  },
+  "private_artifacts": "Remain in ignored results; no raw text, IDs or vectors copied"
+}

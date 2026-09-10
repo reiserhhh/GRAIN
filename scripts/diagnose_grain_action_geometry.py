@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -59,13 +60,13 @@ def grouped_covariance(x, y, groups):
     }
 
 
-def run():
+def run(output_name):
     """Read only frozen nodes and numeric actions, never source questionnaires."""
     out = BASE / "logic_action_geometry_v1"
     verify(out)
     for name, digest in read(out / "prediction_freeze.json")["files"].items():
         check(out / name, digest)
-    dest = out / "condition_diagnostics"
+    dest = out / output_name
     dest.mkdir(exist_ok=False)
     _, design = donors_and_design()
     ref_rows = [i for i, r in enumerate(design) if r["role"] == "reference"]
@@ -108,6 +109,10 @@ def run():
                 "own_action_deviation_rms": float(np.sqrt(np.mean(effect**2))),
                 "action_deviation_signed_share": float(
                     np.mean(effect * total_action_deviation) / action_energy
+                ),
+                "own_component_action_mean": float(np.sum(part * d, axis=1).mean()),
+                "own_component_action_rms": float(
+                    np.sqrt(np.mean(np.sum(part * d, axis=1) ** 2))
                 ),
             }
         )
@@ -157,4 +162,9 @@ def run():
 
 
 if __name__ == "__main__":
-    run()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--name", default="condition_diagnostics")
+    args = parser.parse_args()
+    if not args.name.replace("_", "").isalnum():
+        raise ValueError("Use a simple output name")
+    run(args.name)

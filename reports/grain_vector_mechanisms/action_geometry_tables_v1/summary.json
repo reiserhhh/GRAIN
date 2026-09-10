@@ -1,0 +1,66 @@
+{
+  "status": "COMPLETE",
+  "cost": {
+    "status": "COMPLETE",
+    "seconds": 2.2206433322280645,
+    "fits": 1,
+    "new_neural_calls": 0,
+    "new_participants": 0
+  },
+  "support": {
+    "n_reference": 4,
+    "n_evaluation": 20,
+    "dimensions": 208896,
+    "singular_values": [
+      104.10464202982476,
+      96.66284129727082,
+      92.92656671637857,
+      2.2898953149353806e-05
+    ],
+    "effective_df": 2.9118880998582024,
+    "evaluation_soft_support_mean": 0.00912926948419807,
+    "evaluation_soft_support_min": 0.00014076066759149484,
+    "evaluation_soft_support_max": 0.031249191770064633,
+    "reference_mean_displacement_norm": 1.1449664683001476e-05,
+    "reference_rms_displacement_norm": 84.87760037476501,
+    "reference_actual_mean_action": 0.0009314322157807,
+    "reference_prior_mean_action": -4.450727725821904e-10,
+    "reference_calibrated_mean_action": -4.538053904011574e-10,
+    "reference_integration_max_error": 0.00011230103941831972,
+    "reference_common_rms": 0.00651049539642594,
+    "reference_deviation_rms": 0.013297386845505495,
+    "reference_own_rms": 0.00991264510325466,
+    "reference_action_common_energy": 4.238655030688335e-05,
+    "reference_action_deviation_energy": 0.00017682049691902256,
+    "reference_action_cross_term": -0.00012094651428282733,
+    "reference_action_own_energy": 9.82605329430786e-05,
+    "prior_replay_max": 5.984795992119984e-17,
+    "stationarity_norm": 7.753812176889468e-15
+  },
+  "dependency_accounts": [
+    {
+      "query": "TF_cont",
+      "n": 24,
+      "native_closure_max": 8.326672684688674e-17,
+      "old_endpoint_replay_max": 0.0,
+      "B_native_difference_rms": 0.31798565881104196,
+      "B_closure_max": 1.3877787807814457e-17
+    },
+    {
+      "query": "neuroticism",
+      "n": 24,
+      "native_closure_max": 0.0,
+      "old_endpoint_replay_max": 0.0,
+      "B_native_difference_rms": 0.04033454638465579,
+      "B_closure_max": null
+    }
+  ],
+  "source_labels_for_fitting": false,
+  "numerical_hashes": {
+    "calibration_comparisons.csv": "bd08ed38d9f54225fb1b2b1f5cba5a81626b9f1138cc7073957e964535e8812f",
+    "carrier_metrics.csv": "45fcd939217a9d4dfd4782103ef1a192aa1b68e0f5b4ce6e4d7aa30dad442ab0",
+    "direction_agreement.csv": "5bcb8481b6d1df6279360d9f41a1c7852aab89007236690f2e02e6270c51cf98",
+    "joint_geometry_metrics.csv": "5db6ea3bfcb0ee9adc7a1cd4e36d5caa2c5fb54d2764102a00fef5763e30962a",
+    "source_criterion_links.csv": "e4eed54d7bf1ee62ff088dc2eef4edf3a983b9936adf42bf0a34cc338a217a1b"
+  }
+}

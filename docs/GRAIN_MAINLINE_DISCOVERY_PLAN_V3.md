@@ -65,9 +65,18 @@
 > adjacent norm fidelity .476/.455, distant not recovered. TF reference R matrix
 > error/zero=.854 but criterion association not retained.32 suffix gradient
 > pairs/37.61s;71 scoped tests,6 exact numerical replays. Common gradient energy
->91.18% is not common action fidelity: next use actual displacement geometry,
-> separate common shape/individual modulation, and close the oracle-input contract.
-> No larger accuracy or parameter grid; partial integration errors are reported.
+>91.18% is not common action fidelity. The subsequent
+> [action geometry/input audit](../reports/grain_vector_mechanisms/ACTION_GEOMETRY_LOGIC_REPORT_V1.md)
+> completes that step: one correction reduces TF action error .854->.814,
+> but soft reference support is only.009129. Saved-gradient decomposition
+> locates the omitted action mainly in R-path adaptation, not layout slopes.
+> N adjacent amplitude within-fold r=.501/.363; distant pooled negatives are
+> mostly fold-mean effects. A new [complete input contract](GRAIN_CONDITIONAL_INPUT_DEPENDENCIES_V1.md)
+> distinguishes F from conditional B and documents oracle dependencies instead
+> of treating partial assembly as a standalone predictor.83 scoped tests,15
+> exact file replays,0 new neural calls. Next develop displacement-dependent
+> curvature and conditionally different vector/energy statistics, then close
+> one explicitly selected input interface. No rank/accuracy grid or Y selection.
 >
 > The [actual input-order experiment](../reports/grain_vector_mechanisms/INPUT_ORDER_LOGIC_REPORT_V1.md)
 > is now delivered: identical12-comment bags,52 forwards/82.03s, native reversal

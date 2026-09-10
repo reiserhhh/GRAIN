@@ -86,13 +86,13 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
 | L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 查询槽整合信息，不必是一条关键词到特质词的唯一链 | mainline / reference framework |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
-| L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 独立评论四格实测内部logit非加和与输出曲率；交互RMS占局部作用4%-10%。归因参考/操作顺序和输出尺度均显式 | comment/carrier report §§1-2; interaction operator §§2-3 |
-| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | N对称核混合logit误差/零=.772/.744，但对类型均值=.726；TF参照R矩阵=.854。共享作用已有读法，个体调制与完整输入依赖仍分别记录 | joint/carrier readout report §§1-2; interaction operator §6 |
+| L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 两类四格与最后输出曲率分别记账；参考R的路径变化偏差作用RMS=.014656，高于布局起点.002606。沿位移曲率成为具体待开发对象，不是未分账噪声 | action geometry report §3; interaction operator §7 |
+| L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | TF作用加权校准误差/零=.814，原矩阵=.854；软参照支持均值仅.009129。N相邻幅度折内r=.501/.363；远隔pooled负相关多由折间均值造成 | action geometry report §§2-4; interaction operator §§7-8 |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
 | L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 直接学习余项与事后减GRAIN不等价；差额是GRAIN跨表示搬运误差，可精确记账 | natural transport / configuration extraction §§4-5 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 人工方向有效不保证解释自然路径；实际E1中f可追踪、GRAIN差分可能反向 | dynamic report §3 / natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
-| L22 | 路径可读性高 -> 人类效标相关高？ | E | N相邻交互范数实际/位置核估计的自评r=.523/.376；TF实际R/共享R为.199/-.086。共同作用误差改善并不自动保留个体效标方向 | joint/carrier readout report §§1-3 |
+| L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
 | L23 | 因子轴旋转 -> 共同对象仍可追踪 | M/H | 比较作用子空间/坐标协变函数，而非重新编号后的单轴 | LOG02 / reference theory |
 | L24 | 共享路径 -> 量表相关？ | H/E | 五Big5/四MBTI组内共32条分层关系；N余项作者水平较特异，其他部分共享。下一步接实际效标 | all-factor atlas / configuration extraction §6 |
 | L25 | 联合 GRAIN+路径 -> 更多人格预测信息 | E | 有局部 E 增益，无普遍拼接提升；不能把指标提升当机制解释 | four routes / dynamic report |
@@ -101,7 +101,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | Phi/rho/S已有局部实现。91.18%共同梯度能量不等于作用保留；需按真实位移度量差异。组装仍有真实端点输入，不能冒充完整独立预测 | interaction operator §6; conditional function logic §9 |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 完整F=B+A+Q+I与TF的B=b00+Phi_M+Phi_R逐人重放；B不等于F。原文轻量路线与新块16作用路线分开，明确原前缀状态/精确端点仍存的依赖 | conditional input dependencies §§1-5; conditional function logic §10 |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -309,6 +309,22 @@ TF矩阵有91.18%共同欧氏能量，平均矩阵却只读出部分实际个体
 见[本轮报告](../reports/grain_vector_mechanisms/JOINT_CARRIER_READOUT_LOGIC_REPORT_V1.md)
 和[作用度量推导](GRAIN_CONDITIONAL_INTERACTION_OPERATOR_V1.md#6-共享函数的几何不能只按矩阵范数定义)。
 
+### 5.10 第十三轮：找到条件位移曲率，补齐完整输入账本
+
+一次四参照内校准使其余20人T/F作用误差相对下降4.67%，但区间跨零。
+更有决策价值的是：软参照支持仅约0.9%；矩阵参数中的布局差异很大，却不
+主导被遗漏的实际作用，R位移路径变化才是最大的分项。这让下一对象从
+固定平均矩阵变成明确的条件响应函数，而非重复精度/维度搜索。
+
+N相邻共同方向有折内幅度信息可读；远隔pooled负相关不能直接解释成人格
+方向反转。最后softmax的局部余项很小，下一步应看方向与正交能量的分工。
+固定Ridge再训投影目标与投影原输出相同，但条件能量不等于条件均值的能量。
+
+[第十三轮报告](../reports/grain_vector_mechanisms/ACTION_GEOMETRY_LOGIC_REPORT_V1.md)
+保留全部作用/效标/负条件；[输入依赖图](GRAIN_CONDITIONAL_INPUT_DEPENDENCIES_V1.md)
+精确区分F、b(E)、B，避免把部分公式的闭合扩大为完整系统独立可运行。
+83项相关测试通过、15份数值/聚合产物字节重放；0新神经调用或参与者。
+
 ## 6. 本轮文献与执行入口
 
 表内历史证据简称的可定位入口：
@@ -325,6 +341,7 @@ TF矩阵有91.18%共同欧氏能量，平均矩阵却只读出部分实际个体
 - [逻辑研究计划与活跃问题](GRAIN_LOGIC_RESEARCH_PLAN_V1.md)
 - [参考理论](GRAIN_REFERENCE_FUNCTION_FRAMEWORK_V1.md)
 - [条件计算及实际依赖](GRAIN_CONDITIONAL_NAVIGATION_THEORY_V1.md)
+- [全系统输入依赖与嵌套端点](GRAIN_CONDITIONAL_INPUT_DEPENDENCIES_V1.md)
 - [V8 类型体系](SUICA_UNIFIED_THEORY_SYSTEM_V8.md)
 - [4W](SUICA_4W_PERSON_INTERPRETER_THEORY.md)
 - [动态与效标通道](../reports/grain_vector_mechanisms/DYNAMIC_PATH_CHANNEL_REPORT.md)
