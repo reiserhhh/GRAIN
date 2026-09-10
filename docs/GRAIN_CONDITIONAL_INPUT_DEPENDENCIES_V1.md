@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第二十九轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第三十轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -48,6 +48,7 @@ flowchart TD
 | 输出方向与传输 | b=p*(v-F)，s=W_A^T b，J=K^T s | `output_seed.py`；旧4/新8缓存与12行冻结权重，无新神经调用 | N/确认s余弦.943/.954、J为.704/.649；同一各向异性K也能改角度。T/F去概率尺度未恢复读法；NEXT39固定相同s来检验条件K |
 | 注意力解析作用 | sum_m a_mj[u_m+rho_mj*t_mj]，包含RoPE/GQA | `fixed_seed_attention.py`；实际最后attention block的归一化BODY输入、q/k/v与下游g | 24/24解析梯度接合，最大相对误差2.03e-6；新作者key/value范数比1.83/1.89。原分解用当前g；NEXT40另行完成源固定替代，不混成块16或完整F |
 | 源固定局部读法 | lambda_f=A D_f，tauhat=lambda_f^T gbar | `source_cotangent.py`；当前forward-only q/k/v/位置/GRAIN，旧4源g均值，独立禁读目标进程 | 新8自身源作用r=.809/.955，pool=.919/.869，完整式优于value-only误差。零新神经调用不消除当前原生编码依赖；NEXT41接完整H16路径 |
+| 完整H16作用传输 | tauhat=tbar^T E(I+DA27)P26...P17 D | `complete_transport.py`；原H16、固定源t、实际上游层JVP，不读当前评分/梯度 | 新8作用r=.99814/.99610；最后attention前已.99688/.98816，保留上游query/残差。当前仍运行原模型后缀，不是已替代编码器；NEXT42测试实际较早停止 |
 | 固定输出方向传输 | J_q=K_q^T W_A^T c，c固定 | `run_grain_fixed_seed_attention.py`；旧4/新8共同正文、N/确认原query状态与布局 | 相同seed下正文余弦.728/.657，直接显示条件传输差异；不是单靠两个不同seed的夹角推断K变化。L是新logit诊断，不是原概率F |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
@@ -126,7 +127,10 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 
 ## 6. 可复算入口与下一步
 
-当前下一步是[NEXT41完整上游传输](GRAIN_COMPLETE_TRANSPORT_JVP_PLAN_V1.md)。
+当前下一步是[NEXT42层间累积与较早读取](GRAIN_LAYER_ACCUMULATION_PLAN_V1.md)。
+第三十轮[完整H16上下文作用](GRAIN_COMPLETE_TRANSPORT_THEORY_V1.md)已接合：
+固定源t配合真正的前向JVP保留query和残差作用。最后attention前已可读取
+主要响应；下一步测试层20/23/26的固定出口，不继续磨最后读出的精度。
 第二十九轮[前向GRAIN响应与源固定读出](GRAIN_SOURCE_COTANGENT_READER_THEORY_V1.md)
 已替换最后BODY局部作用的当前g；需把块16方向经过query/残差的所有路径
 接到最后post-attention状态，不能只保留局部BODY项就声称全部串联。

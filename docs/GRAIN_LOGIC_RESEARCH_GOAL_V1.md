@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-nine finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirty finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -889,18 +889,49 @@ Next carry block16 directions through complete upstream context to the last
 post-attention residual, using source-fixed t there. Do not omit final-query and
 direct residual pathways or compare the current last-BODY r with old H16 targets.
 
+## Thirtieth pass: complete H16 transport with source-fixed final reading
+
+- NEXT41 complete on same4 source/new8 units, two queries, four fixed BODY
+  GRAIN directions. Actual forward JVP transports all positions through
+  blocks17..26 and attention27; no current model score or backward target.
+  New8 own-source full-action r N=.99814,confirmation=.99610; SSE/zero
+  .00389/.00803. Pooled source=.99848/.99672,.00803/.01136. No query-wise tuning.
+- Entering-last-block response alone gives new8 own r=.99688/.98816, while
+  last-attention-only is-.191/-.497 with small amplitude. The carried response
+  already contains earlier attention/MLP/query changes, not an attention-free
+  path. New8 signed cross-energy is-.0249/-.1405 of full predicted energy;
+  preserve cancellation. Old4 N own full error worsens versus direct, also kept.
+- Thus source-fixed local reading now connects to full H16 differential action.
+  The current forward transport is still native, not an independent early encoder
+  or a human questionnaire correlation. Do not compare its r as a precision gain
+  over NEXT40's different last-BODY target. Next remove some actual late computation.
+- Source-only r1 pilot stopped after2 units: single-token MLP changed rounding,
+  L error4.77e-6>2e-6. Unchanged full-sequence hook in24aaaee before prediction
+  fixes source parity to0, W_O^Tt maxrelative7.45e-7. No threshold/member change;
+  failed pilot retained.2 pilot+8 corrected source forwards/backwards,96 JVPs,
+  4 finite forwards;172.890s total, within300s. New-author backwards=0.
+-24 prediction packets verified; contractions replay exactly,3 analysis CSVs
+  byte-match; scalar branch sum error1.77e-8. Fixed vector finite differences
+  1.32%/1.64%,57 tests pass (18 PyTorch/Python3.14 deprecations); no full-suite
+  claim. Two target-file denial probes, no extra denial; no new Y/API/fitting.
+
+Read [complete transport report](../reports/grain_vector_mechanisms/COMPLETE_TRANSPORT_JVP_REPORT_V1.md)
+and [conditional path/accumulation theory](GRAIN_COMPLETE_TRANSPORT_THEORY_V1.md).
+Native work is terminal. NEXT42 uses source-fixed t and fixed earlier exits;
+the purpose is a usable smaller program, not refining the final decimal place.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40 finite candidates are closed, retaining
-useful mechanisms and contrary comparisons. NEXT41 joins the new source-fixed
-readout to complete upstream GRAIN transport rather than tuning the local g.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41 finite candidates are closed,
+retaining useful mechanisms and contrary comparisons. NEXT42 tests when the
+response becomes readable and which computation can actually be stopped early.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT41 | Does source-fixed reading survive complete H16 context/query/residual transport? | Execute GRAIN_COMPLETE_TRANSPORT_JVP_PLAN_V1; source t at post-attention residual, 4 GRAIN JVPs/unit, own/pooled means | At most8 source forwards/backwards,96 JVPs,4 finite forwards;300s native, target-denied freeze; no new labels/fits or tuning |
+| NEXT42 | At which depth does useful GRAIN response accumulate? | Execute GRAIN_LAYER_ACCUMULATION_PLAN_V1; fixed exits20/23/26, signed21 update components, unchanged source t | Max100 JVPs including4 truncated smoke checks,300s; no source backward/Y/fits, full-reference parity and target-denied freeze |
 
-These are local computational/theory questions. Start with synthetic JVP support
-and source t capture parity; no old queue restart. Preserve local NEXT40 reading.
+These are local computational/theory questions. Start with exact update/JVP
+telescoping, then one shared traversal for all exits; no old queue restart.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

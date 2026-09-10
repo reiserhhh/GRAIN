@@ -1,5 +1,18 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT41 complete H16 transport delivered.**
+> New8 own-source actionr N=.99814,confirmation=.99610; SSE/zero=.00389/.00803.
+> Most response is already carried into the last block; last attention is a
+> smaller signed adjustment, not the whole mechanism. Native upstream JVPs
+> remain; these are model-action correlations, not human prediction accuracy.
+> Source capture rounding pilot corrected without widening tolerances; source L
+> replay error0;96 JVPs/4 finite forwards,10 total source forwards/backwards including
+> pilot,172.890s.57 tests/3 exact CSV replays; no live run or new Y/fitting.
+> [Report](../reports/grain_vector_mechanisms/COMPLETE_TRANSPORT_JVP_REPORT_V1.md),
+> [theory](GRAIN_COMPLETE_TRANSPORT_THEORY_V1.md),
+> [NEXT42 accumulation/early exits](GRAIN_LAYER_ACCUMULATION_PLAN_V1.md).
+> Whole-system goal ACTIVE; earlier next-step language below is historical.
+
 > **2026-09-10 newest: NEXT40 source-fixed attention reading delivered.**
 > New8 actionr N=.809,confirmation=.955 using only four-source same-query g;
 > pooled-query source=.919/.869. Full value+key improves amplitude/error over
