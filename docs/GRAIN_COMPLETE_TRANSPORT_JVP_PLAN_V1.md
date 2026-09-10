@@ -122,3 +122,21 @@ is committed; capture failure requires an explicit correction, not relaxed parit
 
 Implementation method: [PyTorch forward-mode JVP](https://docs.pytorch.org/docs/2.11/generated/torch.func.jvp.html).
 No new autodiff library or neural training is required.
+
+## Source-only pilot correction before prediction outcomes
+
+The first implementation `1ac8b8d` captured two source units. Its final-token
+MLP evaluation gave score differences9.54e-7 and4.77e-6; the latter exceeded the
+fixed2e-6 cap although projected g relative errors were1.48e-6/1.72e-6.
+No new-author prediction or target evaluation occurred. Preserve this pilot at
+`logic_complete_transport_jvp_v1/`; do not reuse its failed capture as accepted.
+
+Corrected collection uses a hook in the original full-sequence forward to capture
+the post-attention residual and differentiate L there, with original norm/head
+shapes. This preserves the original program rather than relaxing tolerances.
+Use fresh `logic_complete_transport_jvp_v1_r2/`, same membership, source rules,
+directions, comparison and96-JVP/4-FD caps. Charge the two pilot forward/backwards
+and elapsed native time in the total report, in addition to8 corrected source
+captures. The original300s overall native limit includes both pilot and r2 work.
+Failure of full-sequence capture is an implementation issue to inspect, not a
+reason to select different authors or alter target metrics.

@@ -20,10 +20,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from grain_research.vector_mechanisms.complete_transport import (
     body_direction,
+    capture_source_cotangent,
     fixed_means,
     forward_response,
     post_attention,
-    tail_contrast,
 )
 from grain_research.vector_mechanisms.context_carrier import cached_suffix_kwargs
 from grain_research.vector_mechanisms.trace import DecoderObserver
@@ -79,6 +79,10 @@ def prepare(out):
             p = ROOT / job[name]
             files.extend([p, p.with_suffix(".npz")])
         files.append(ROOT / job["input"])
+    pilot = BASE / "logic_complete_transport_jvp_v1/source_status.json"
+    prior_cost = read(pilot) if out.name.endswith("_r2") and pilot.exists() else {}
+    if prior_cost:
+        files.append(pilot)
     if len(jobs) != 24:
         raise ValueError("Fixed24 units required")
     write(out / "private_jobs.json", jobs)
@@ -100,6 +104,9 @@ def prepare(out):
             "max_source_calls": 8,
             "max_jvps": 96,
             "max_fd_calls": 4,
+            "prior_pilot_seconds": prior_cost.get("seconds", 0),
+            "prior_pilot_forwards": prior_cost.get("source_forwards", 0),
+            "prior_pilot_backwards": prior_cost.get("source_backwards", 0),
             "inputs": {str(p.relative_to(ROOT)): sha(p) for p in sorted(set(files))},
             "prepared": {str(p.relative_to(out)): sha(p) for p in prepared},
         },
@@ -163,18 +170,16 @@ def sources(out):
     for job in [j for j in jobs if j["cohort"] == "source4"]:
         dst = out / "private_sources" / (job["key"] + ".json")
         if job["key"] not in done:
-            if prior["seconds"] + time.monotonic() - started >= m["max_seconds"]:
+            if (
+                m["prior_pilot_seconds"] + prior["seconds"] + time.monotonic() - started
+                >= m["max_seconds"]
+            ):
                 raise TimeoutError(
                     "Source resource cap reached; completed units preserved"
                 )
             state, _, _ = inputs(out, job)
             kw = cached_suffix_kwargs(ob.model, state)
-            with torch.no_grad():
-                r = post_attention(ob.model, state, kw)[0]
-            leaf = r.detach().requires_grad_(True)
-            with torch.enable_grad():
-                score = tail_contrast(ob.model, leaf, ids, contrast)
-                t = torch.autograd.grad(score, leaf)[0]
+            score, t = capture_source_cotangent(ob.model, state, kw, ids, contrast)
             g = t @ ob.model.model.layers[-1].self_attn.o_proj.weight
             ref, arr = packet_arrays(
                 NATIVE / "private_packets" / (job["key"] + ".json")
@@ -362,7 +367,8 @@ def predict(out):
             if job["key"] in done:
                 continue
             spent = (
-                source["status"]["seconds"]
+                m["prior_pilot_seconds"]
+                + source["status"]["seconds"]
                 + prior["seconds"]
                 + time.monotonic()
                 - start
@@ -445,9 +451,11 @@ def predict(out):
                     "Fixed finite-difference check failed; packet retained"
                 )
             if len(done) == 2 and not prior["completed"]:
-                forecast = (time.monotonic() - start) * len(jobs) / 2 + source[
-                    "status"
-                ]["seconds"]
+                forecast = (
+                    (time.monotonic() - start) * len(jobs) / 2
+                    + source["status"]["seconds"]
+                    + m["prior_pilot_seconds"]
+                )
                 write(
                     out / "resource_forecast.json",
                     {"forecast_seconds": forecast, "native_cap": m["max_seconds"]},
@@ -460,7 +468,8 @@ def predict(out):
             final["extra_denials"]
             or fds != 4
             or jvps != 96
-            or final["seconds"] + source["status"]["seconds"] > m["max_seconds"]
+            or final["seconds"] + source["status"]["seconds"] + m["prior_pilot_seconds"]
+            > m["max_seconds"]
         ):
             raise ValueError("Runtime boundary differs from frozen plan")
         files = [
@@ -485,7 +494,7 @@ def predict(out):
 
 def evaluate(out, name):
     """Open existing H16 target gradients only after forward predictions freeze."""
-    verify(out)
+    m = verify(out)
     frozen = read(out / "prediction_freeze.json")
     if not frozen["before_evaluation"] or frozen["manifest_sha256"] != sha(
         out / "manifest.json"
@@ -589,6 +598,11 @@ def evaluate(out, name):
         ],
         "source_forwards": 8,
         "source_backwards": 8,
+        "prior_pilot_forwards": m["prior_pilot_forwards"],
+        "prior_pilot_backwards": m["prior_pilot_backwards"],
+        "total_native_seconds": frozen["runtime"]["seconds"]
+        + frozen["runtime"]["source_seconds"]
+        + m["prior_pilot_seconds"],
         "runtime": frozen["runtime"],
         "fits": 0,
         "human_labels_read": False,

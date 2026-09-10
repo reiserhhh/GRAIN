@@ -8,6 +8,7 @@ from transformers import Qwen2Config, Qwen2ForCausalLM
 
 from grain_research.vector_mechanisms.complete_transport import (
     body_direction,
+    capture_source_cotangent,
     fixed_means,
     forward_response,
     post_attention,
@@ -51,6 +52,11 @@ def test_native_jvp_and_complete_residual_path(device):
     torch.testing.assert_close(r, direct + attention)
     score = tail_contrast(model, r, ids, c)
     gradient, t = torch.autograd.grad(score, (x, r))
+    captured_score, captured_t = capture_source_cotangent(
+        model, x.detach(), kw, ids, c, start=0
+    )
+    torch.testing.assert_close(captured_score, score, rtol=1e-5, atol=1e-7)
+    torch.testing.assert_close(captured_t, t, rtol=1e-5, atol=1e-7)
     with torch.no_grad():
         native = x.detach()
         for block in model.model.layers:

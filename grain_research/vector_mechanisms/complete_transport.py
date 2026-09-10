@@ -36,6 +36,34 @@ def tail_contrast(model, residual, token_ids, contrast):
     return (logits[:, token_ids] * contrast).sum()
 
 
+def capture_source_cotangent(model, state, kwargs, token_ids, contrast, start=17):
+    """Capture t in the unchanged full-sequence source forward computation.
+
+    Full-sequence MLP and the original final-token norm/head tensor shapes are
+    retained to avoid a last-token GEMM rounding change in the pinned observer.
+    """
+    captured = {}
+
+    def save_residual(_module, args):
+        captured["residual"] = args[0]
+
+    hook = model.model.layers[-1].post_attention_layernorm.register_forward_pre_hook(
+        save_residual
+    )
+    try:
+        with torch.enable_grad():
+            h = state.detach().requires_grad_(True)
+            for layer in model.model.layers[start:]:
+                h = layer(h, **kwargs)
+                h = h[0] if isinstance(h, tuple) else h
+            logits = model.lm_head(model.model.norm(h[:, -1:]))[0, -1]
+            score = (logits[token_ids] * contrast).sum()
+            t = torch.autograd.grad(score, captured["residual"])[0][:, -1]
+        return score.detach(), t.detach()
+    finally:
+        hook.remove()
+
+
 def body_direction(state, grain, positions, factor):
     """Construct and freeze a GRAIN direction at the initial BODY positions only."""
     pos = np.asarray(positions)
