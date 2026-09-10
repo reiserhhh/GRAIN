@@ -94,6 +94,13 @@ scorer, lockbox, MEPS use or clinical rubric is changed.
 
 ## Deliverables / primary methodological connection
 
+Pre-collection implementation detail: capture/weights keep the pinned float32
+values; the independent NumPy analytic program promotes them to float64 for
+the explicit formulas. Compare to the unchanged native float32 target using
+the tolerance above, not bit equality or a new kernel. Source-B coefficients
+are same-query means, also when the final readout t is pooled-query. The two
+source choices are different interfaces and are not silently coupled.
+
 Proposed `gated_update.py`, `run_grain_gated_update.py`, synthetic tests; private
 `logic_gated_update_v1/`; aggregate `GATED_UPDATE_REPORT_V1.md`; update theory,
 input dependency inventory and whole-system ledger with whichever result occurs.
