@@ -88,3 +88,40 @@ def test_bad_alignment_rejected():
         local_geometry(np.zeros((3, 2)), [1, 2])
     with pytest.raises(ValueError):
         cross_covariance(np.zeros((3, 2)), np.full((3, 1), np.nan))
+
+
+def test_source_index_does_not_confuse_held_edits_with_original_views():
+    """A mixed source/edited cache keeps its original physical feature rows."""
+    import pandas as pd
+
+    from scripts.run_grain_material_geometry import source_feature_index
+
+    table = pd.DataFrame(
+        {
+            "author_id": ["held", "source", "held"],
+            "view": [0, 0, 0],
+            "group": ["held", "big5_only", "held"],
+            "edit": ["e1", "source", "e2"],
+        }
+    )
+    result = source_feature_index(table, [("source", 0)])
+    assert result.loc[("source", 0), "feature_index"] == 1
+    assert len(result) == 1
+
+
+def test_source_index_rejects_silent_cohort_drop():
+    """Missing required source views cannot be repaired by silently filtering."""
+    import pandas as pd
+
+    from scripts.run_grain_material_geometry import source_feature_index
+
+    table = pd.DataFrame(
+        {
+            "author_id": ["source"],
+            "view": [0],
+            "group": ["big5_only"],
+            "edit": ["source"],
+        }
+    )
+    with pytest.raises(ValueError):
+        source_feature_index(table, [("source", 0), ("missing", 0)])

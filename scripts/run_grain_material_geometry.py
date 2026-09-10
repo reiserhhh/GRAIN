@@ -41,6 +41,18 @@ ARMS = ("sg", "sp", "A", "rho", "S", "shifted_S", "shifted_rho", "matched_excess
 COMPONENTS = ("spread_component", "alignment_component", "interaction_component")
 
 
+def source_feature_index(meta, addresses):
+    """Bind only original source views, preserving physical NPZ row positions."""
+    frame = meta.copy()
+    frame["feature_index"] = np.arange(len(frame))
+    frame = frame[
+        frame.group.isin(["big5_only", "mbti_only"]) & frame.edit.eq("source")
+    ].set_index(["author_id", "view"])
+    if frame.index.duplicated().any() or set(frame.index) != set(addresses):
+        raise ValueError("Source embedding addresses do not match frozen cohort")
+    return frame
+
+
 def verify(out):
     """Check both frozen source linkage and this numerical implementation."""
     verify_previous(PREVIOUS)
@@ -96,10 +108,9 @@ def construct(out):
     if old.duplicated([*keys, "factor"]).any():
         raise ValueError("Duplicate prior address")
     meta = pd.read_csv(SOURCE / "private_feature_rows.csv", dtype={"author_id": str})
-    meta["feature_index"] = meta.index
-    meta = meta.set_index(["author_id", "view"])
-    if meta.index.duplicated().any():
-        raise ValueError("Ambiguous embedding address")
+    meta = source_feature_index(
+        meta, old[["author_id", "view"]].itertuples(index=False, name=None)
+    )
     slices = pd.read_csv(SLICES / "private_factor_slices.csv", dtype={"author_id": str})
     means = slices.groupby(["author_id", "view", "comment"], sort=True)[FC].mean()
     lookup = {key: group.sort_index() for key, group in means.groupby(level=[0, 1])}
@@ -345,7 +356,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("phase", choices=("prepare", "construct", "analyze"))
     parser.add_argument(
-        "--output-dir", type=Path, default=BASE / "logic_material_geometry_v1"
+        "--output-dir", type=Path, default=BASE / "logic_material_geometry_v1_r2"
     )
     parser.add_argument("--name", default="analysis_r1")
     args = parser.parse_args()
