@@ -59,3 +59,31 @@ usefulness local and report magnitude rather than inventing a personality gate.
 Outputs: private `logic_source_cotangent_reader_v1/`, aggregate public report,
 restricted-runtime test and dependency update. No release/lockbox/clinical
 interpretation changes. This closes one computational dependency, not the goal.
+
+## Implementation extension before outcomes: a compact forward response
+
+For each of the four fixed BODY-only GRAIN directions D_f, calculate the
+attention-output JVP without any g. For every actual query head m:
+
+    dv_j = W_V,b D_f(j)
+    dk_j = R_j W_K,b D_f(j)
+    ds_j = (R_last q_m)^T dk_j / sqrt(d)
+    lambda_value[f,m] = sum_j a_mj dv_j
+    lambda_key[f,m] = sum_j a_mj (v_bj-o_m) ds_j
+    tau_f = sum_m (lambda_value+lambda_key)[f,m]^T g_m.
+
+All sums over perturbed body positions retain the full-context softmax/output.
+Directions exclude the final query position, hence dq=0 in this local JVP.
+This is the adjoint identity <D,A^T g>=<A D,g>, not a new scoring target or
+a newly fitted model. Numerical tests compare it to the full field contraction.
+The inference process retains both routes for verification; no speedup claim
+from a field-free runtime is made until such a runtime is separately benchmarked.
+
+Source g is aggregated per the two original programs. Current mixed native
+packets are disallowed in the scoring subprocess; preparation extracts explicit
+forward fields only and does not export new-author g/gradient/score. Both
+native-packet and native-job-file denial probes must pass.
+
+Method entry: [JAX forward/reverse derivatives](https://docs.jax.dev/en/latest/jacobian-vector-products.html)
+defines JVPs and their adjoints. This implementation is hand-written NumPy for
+the pinned attention map, not a JAX dependency or a claim to have invented AD.
