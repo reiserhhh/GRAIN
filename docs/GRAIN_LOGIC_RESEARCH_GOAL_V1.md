@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, thirty-four finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, thirty-five finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1045,19 +1045,43 @@ Read [report](../reports/grain_vector_mechanisms/QUERY_TRANSPORT_FORMATION_REPOR
 [NEXT46](GRAIN_QUERY_COUNTERACTION_PLAN_V1.md). Keep the observed negative update;
 next distinguish the response it inherits from the conditional operator it adds.
 
+## Thirty-fifth pass: located counteraction is mainly carried difference
+
+- Prior NEXT45 is accepted within its finite observed-response scope: negative
+  MLP24 contribution is reproducible and remains part of the mechanism.
+- NEXT46 completed after pre-outcome implementation freeze `4db9699`. Same12
+  authors/two queries/four GRAIN directions; block24 actual weights, not block25.
+  Full2x2 J_N/J_C times d_N/d_C exchange, retaining both product-rule terms.
+- New8 own carried/operator RMS=.090579/.024635, local contrast=.095267;
+  carried local share=.918570. Final-T projections=-.313540/+.067912, total
+  -.245629. Pooled=-.313741/+.066621; source4 aggregate=-.387425/+.167956.
+  Source4 factor F03 and new8 F01 operator signs differ; full tables retained.
+-24 primal prefixes+4 fixed boundary JVPs,14.102889s and3.492165s load; all
+  calls stop before MLP24. Numeric.955888s/replay.952978s, no scoring/backwards,
+  fits/API/Y. Four target-denial probes pass without extra denied access.
+-96 diagonal vectors pass, relative2.210e-6/absolute6.656e-6.12 exact array,
+  3 CSV and1 JSON replays. Independent split3.331e-16, accounting4.441e-16.
+  96 scoped tests,20 existing warnings; no full-suite claim or live native job.
+- The average operator here remains current-author-conditioned. NEXT47 tests
+  source-fixed common compilation, not a premature all-author constant claim.
+
+Read [report](../reports/grain_vector_mechanisms/QUERY_COUNTERACTION_REPORT_V1.md),
+[theory](GRAIN_QUERY_COUNTERACTION_THEORY_V1.md),
+[NEXT47](GRAIN_SOURCE_COMMON_COUNTERACTION_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45 finite candidates are closed,
-retaining useful mechanisms and contrary comparisons. NEXT46 tests one located
-MLP24 counteraction, not an all-layer coefficient search.
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46 finite candidates are closed,
+retaining useful mechanisms and contrary comparisons. NEXT47 tests whether the
+located MLP24 response can use a source-fixed common reader.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT46 | Does MLP24 carry an existing query difference or introduce an operator contrast? | Execute GRAIN_QUERY_COUNTERACTION_PLAN_V1; exact2x2 current local J/d exchange and symmetric contrast, shared w* unchanged | Max24 primal prefix forwards+4 fixed boundary JVPs,120s native;60s numeric,0 scoring/backward/fit/Y. Verify block24 weights, cached prefix and original increment parity |
+| NEXT47 | Can a source-fixed common reader preserve MLP24 counteraction? | Execute GRAIN_SOURCE_COMMON_COUNTERACTION_PLAN_V1; source-only J24 adjoint average, current d only, same w* | Max60s numeric,0 native/fit/Y; held-source exclusion, exact compilation, both cohorts/modes, signed contribution and two-part error |
 
 These are local computational/theory questions. Reuse shared source vectors and
-saved tangents; collect only the needed pre-MLP24 primal states and fixed boundary
-checks. No old queue restart, broader factor search or clinical naming.
+saved tangents; needed pre-MLP24 primal states are now captured. NEXT47 must not
+repeat that native collection. No old queue restart, broader factor search or clinical naming.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

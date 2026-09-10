@@ -1,5 +1,16 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT46 MLP24 counteraction delivered.**
+> New8 own carried/operator RMS=.090579/.024635; local carried share=.918570.
+> Their signed final-T projections=-.313540/+.067912, total-.245629: mostly
+> inherited difference, with current operator contrast partly offsetting it.
+>28 prefixes/14.103s plus3.492s load,0 scoring/backward/Y/fits; numeric.956s.
+>96 full-vector diagonal checks pass;12 array and3 CSV replays;96 scoped tests.
+> [Report](../reports/grain_vector_mechanisms/QUERY_COUNTERACTION_REPORT_V1.md),
+> [theory](GRAIN_QUERY_COUNTERACTION_THEORY_V1.md),
+> [NEXT47 source-common reader](GRAIN_SOURCE_COMMON_COUNTERACTION_PLAN_V1.md).
+> Whole-system goal ACTIVE; prior next-step language below is historical.
+
 > **2026-09-10 newest: NEXT45 query-contrast formation delivered.**
 > New8 cumulative contrast RMS after20/23/preMLP25=.031172/.208040/.162922.
 > MLP22 contributes+.354303, MLP24-.245628; the latter counteracts on all4 new8
