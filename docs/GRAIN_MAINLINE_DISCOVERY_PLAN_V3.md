@@ -1,5 +1,17 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT34 content coefficients/source-span analysis complete.**
+> Same4 authors/3 queries. Source-only T/F actionr=.638 versus position.498;
+> error/zero .864 versus.922, predicted amplitude12% of native. GRAIN interactions
+> do not improve held reading. Source PCA32 captures39.8% of input variation;
+> best in-span source error remains.866-.959, Ridge shrinkage only.000012-.000069.
+> Therefore develop input directions, not an alpha grid.34 scoped tests,48 exact
+> files, zero new neural calls, two completed ~5s constructions after loading.
+> [Report](../reports/grain_vector_mechanisms/CONTENT_COEFFICIENT_READER_REPORT_V1.md),
+> [theory](GRAIN_CONTENT_COEFFICIENT_THEORY_V1.md),
+> [NEXT35 query-linked residual input](GRAIN_QUERY_RESIDUAL_INPUT_PLAN_V1.md).
+> Full goal ACTIVE; earlier next-step paragraphs are historical. No current long run.
+
 > **2026-09-10 newest: NEXT31 shared directions/local coefficients delivered.**
 > Four old authors, three scalar queries,48 native GRAIN tangent actions. Shared
 > rank8 directions with held-gradient oracle coefficients retain action

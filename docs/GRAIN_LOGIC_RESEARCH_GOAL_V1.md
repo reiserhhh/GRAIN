@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty-two finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-three finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -667,15 +667,45 @@ Implementation541b1ba, main analyzer453e954, mode accountd2824db. No scoring or
 lockbox edits. The current interpreter claim remains a future downstream link;
 the experiment measures a concrete, usable local model-reading mechanism.
 
+## Twenty-third pass: target-free content coefficients and the source-span limit
+
+- NEXT34 complete:4 source-only weighted inputPCAs,24 small Ridge heads,
+  same4-author/3-query/48-native-action panel. Each held context/GRAIN packet is
+  scored in an independent process allowed to read only models and inputs;
+  two explicit gradient/old-result denials and24 exact replayed predictions.
+- T/F content action r=.638 versus position.498; SSE/zero .864 versus.922.
+  Factor-centered author r=.614, but predicted/native RMS only12.0%. N and
+  confirmation content r=.134/.141, errors.983/.974. Current GRAIN-interaction
+  extension worsens held errors to1.022/1.437/1.264 (T/F,N,confirmation), so it
+  is not promoted. Preserve earlier same-material coupling evidence.
+- The representation bottleneck now has a source-level test: inputPCA32
+  retains39.8115% of source H variance. Fixed-design OLS projection leaves
+  .944-.959 relative coefficient error for content and.866-.898 with GRAIN;
+  Ridge adds just.000012-.000069.24 source-span projections diagnose the fixed
+  space, do not create new held predictions or select a penalty.
+- Field error separates exactly into missing shared basis and coefficient
+  error (relative discrepancy1.26e-15); measured action still has signed cross
+  terms (4.78e-14). N content .319+2.319-1.655=.983 exposes useful cancellation
+  rather than independent noise components. No psychological naming by query.
+- Two constructions5.07/5.20s after input loading,0 new neural calls/Y.48
+  numerical files replay exactly;34 scoped tests pass, old SWIG warnings only.
+  Source models, fields and identities stay private; aggregates are published.
+
+Read [content coefficient report](../reports/grain_vector_mechanisms/CONTENT_COEFFICIENT_READER_REPORT_V1.md)
+and [source-span/measurement theory](GRAIN_CONTENT_COEFFICIENT_THEORY_V1.md).
+Construction3089d8a, primary analyzer072cd63, source-span supplementf2ea641.
+The next action is query-linked residual input, not a Ridge grid or new GRAIN
+factor naming. Full logic goal remains ACTIVE and the release is unchanged.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33 finite candidates are closed, retaining useful mechanisms
-and contrary comparisons. Execute NEXT34: estimate token coefficients from
-content, then test same-material GRAIN modulation; no new neural collection.
+NEXT24/25/26/31/32/33/34 finite candidates are closed, retaining useful mechanisms
+and contrary comparisons. Execute NEXT35: compare8 query-linked residual input
+directions with8 residual-variance directions; no new neural collection.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT34 | Can content predict the local coefficients; does GRAIN help? | Execute GRAIN_CONTENT_COEFFICIENT_READER_PLAN_V1: frozen sharedrank8, sourcePCA32 + position, versus addedGRAIN/interactions,3-source/1-held | Zero neural calls;4 input PCAs/24 small Ridge fits;240s resource check. Current-gradient-denied inference, field and action metrics, no rank/hyperparameter grid or human criterion selection |
+| NEXT35 | Is omitted input information linked to query reading rather than generic variance? | Execute GRAIN_QUERY_RESIDUAL_INPUT_PLAN_V1: append8 residual covariance directions vs8 residualPCA directions to old36-column content design; same3-source/1-held roles | At most4 residualPCAs/12 cross-covariance SVDs/24 Ridge heads,0 neural calls,240s resource check. Fixed alpha, target-denied inference, source/held field and action metrics; no automatic personality naming |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

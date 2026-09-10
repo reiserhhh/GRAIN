@@ -1,0 +1,192 @@
+#!/usr/bin/env python3
+"""Publish bounded content-coefficient results and source-span mechanism evidence."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import shutil
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from scripts.analyze_grain_content_coefficients import verify_predictions
+from scripts.report_grain_logic_review import edge_inventory
+from scripts.run_grain_real_author_path import BASE, read, sha, write
+
+
+def publish(tests):
+    """Check two complete constructions; keep identities and token fields private."""
+    runs = [
+        BASE / n
+        for n in (
+            "logic_content_coefficients_v1",
+            "logic_content_coefficients_v1_replay",
+        )
+    ]
+    for out in runs:
+        verify_predictions(out)
+        if read(out / "run_status.json")["status"] != "COMPLETE":
+            raise ValueError("Incomplete construction")
+        for sub, script in (
+            ("analysis", "analyze_grain_content_coefficients.py"),
+            ("span_analysis", "analyze_grain_coefficient_span.py"),
+        ):
+            m = read(out / sub / "manifest.json")
+            if m["script_sha256"] != sha(ROOT / "scripts" / script) or m[
+                "prediction_freeze_sha256"
+            ] != sha(out / "prediction_freeze.json"):
+                raise ValueError("Analysis provenance changed")
+            if read(out / sub / "summary.json")["status"] != "COMPLETE":
+                raise ValueError("Incomplete analysis")
+    a, b = runs
+    checks = {
+        "construction/" + p: digest == sha(b / p)
+        for p, digest in read(a / "prediction_freeze.json")["files"].items()
+    }
+    for sub in ("analysis", "span_analysis"):
+        for p, digest in read(a / sub / "summary.json")["files"].items():
+            checks[sub + "/" + p] = digest == sha(a / sub / p) == sha(b / sub / p)
+    if len(checks) != 48 or not all(checks.values()):
+        raise ValueError("Forty-eight numerical artifacts must reproduce")
+    dest = ROOT / "reports/grain_vector_mechanisms/content_coefficient_tables_v1"
+    dest.mkdir(exist_ok=True)
+    allowed = {
+        "reader_comparison.csv",
+        "factor_actions.csv",
+        "error_account.csv",
+        "source_fits.csv",
+        "prior_comparators.csv",
+        "source_span.csv",
+    }
+    for sub in ("analysis", "span_analysis"):
+        s = read(a / sub / "summary.json")
+        for p in s["files"]:
+            if p in allowed:
+                shutil.copyfile(a / sub / p, dest / p)
+        write(
+            dest / (sub + "_summary.json"), {k: v for k, v in s.items() if k != "files"}
+        )
+    write(dest / "construction_summary.json", read(a / "construction_summary.json"))
+    write(
+        dest / "reproduction.json",
+        {
+            "numerical_files": checks,
+            "tests_passed": tests,
+            "constructions": 2,
+            "construction_seconds_after_input_loading": [
+                read(p / "run_status.json")["seconds"] for p in runs
+            ],
+            "new_neural_calls": 0,
+        },
+    )
+    d = pd.read_csv(dest / "reader_comparison.csv")
+    rows = [
+        f"| {r.query} | {r.arm} | {r.action_r:.3f} | {r.action_mse_over_zero:.3f} | {r.field_error_mean:.3f} | {r.same_sign}/{r.actions} |"
+        for r in d.itertuples()
+    ]
+    s = pd.read_csv(dest / "source_span.csv")
+    spanrows = [
+        f"| {r.query} | {r.arm} | {r.best_span_error:.6f} | {r.ridge_penalty_error:.6f} |"
+        for r in s.itertuples()
+    ]
+    report = (
+        """# 内容读取找到T/F局部作用；下一步寻找查询相关的压缩残余
+
+2026-09-10。第二十三轮，NEXT34及源特征空间分析完成，整体goal继续ACTIVE。
+
+**当前上下文向量中存在可用于T/F局部读取的联系，但通用PCA空间不是完整
+权重函数。** 不读取当前作者梯度的内容读法，作用r=.638，纯位置为.498；
+相对作用平方误差从.922降至.864。GRAIN交互的这个固定候选没有增益。
+更有决策价值的结果是：源空间的最优线性拟合也很弱，调正则参数不能解决。
+
+## 1. 已完成的比较
+
+同4名旧作者/3查询、48个旧原生GRAIN作用，3源/1留出。输入为块16正文
+隐藏状态与同token的4个GRAIN值。源加权PCA32、源标准化、冻结rank8梯度
+方向；所有文本长度按每作者总质量相等处理。每次4PCA和24Ridge头，alpha=.01。
+
+content含截距+位置3项+内容32项，共36列；content_grain另加GRAIN4项和
+32×4交互，共168列。训练目标a=T J V^T只来自3源；留出J只在预测冻结后
+评价。独立进程只允许打开模型及H/G/位置输入包，两个梯度/旧结果禁读探针
+均生效；24个预测与本进程精确一致。无新神经调用、Y读取或评分器改动。
+
+| 查询 | 方法 | 作用r | 作用SSE/零 | 梯度误差比 | 同号 |
+|---|---|---:|---:|---:|---:|
+__ROWS__
+
+这是模型原生局部导数的读取，不是人的人格准确率。4人×4方向的pooled r
+附有逐因子表；去掉各因子的均值后，T/F content的作者差异相关仍.614。
+但预测作用RMS仅真实的12.0%，因此发现了部分方向，而非恢复完整幅度。
+其它两查询仅有微弱作用读取。GRAIN扩展的留出误差全部变大，故不替换旧
+GRAIN评分或宣称两系统不能结合；失败的是这一个局部交互参数化。
+
+## 2. 最值得保留的诊断：不是调alpha的问题
+
+32个源PCA方向保留的正文隐藏方差平均仅39.8115%。对已经固定的源设计X，
+计算加权正交投影P_X，分解原Ridge误差为：
+
+    ||A-X W_ridge||_w²
+      = ||(I-P_X)A||_w² + ||P_X A-X W_ridge||_w².
+
+第一项是当前线性特征空间表达不了的部分，第二项才是相对此源OLS解的
+正则化代价。24次源投影仅作分析，没有把OLS参数用于留出预测或重新挑参。
+
+| 查询 | 特征空间 | 最低源误差/系数能量 | Ridge增加误差 |
+|---|---|---:|---:|
+__SPAN__
+
+新增正则化误差只有约.000012–.000069，而最低源误差.866–.959。
+因此当前空间缺乏所需的线性解释力是直接事实；原因可能在被压掉的方向，
+也可能在局部向量以外的上下文依赖/非线性，尚不能只由这个表二选一。
+下一步优先测残余向量中的查询相关方向，避免继续相同特征内的参数扫表。
+
+## 3. 两层误差为何必须分开
+
+Jhat=a_hat V/T。正交共享基底下，完整梯度平方误差精确分成“基底未覆盖”
+和“系数预测”两项，最大相对闭合误差1.26e-15。将它们投到GRAIN方向后，
+却还需保留交叉项。例如N content：.319+2.319-1.655=.983；完整闭合误差
+4.78e-14。不能把方向与系数误差简单视为独立噪声，也不能根据抵消后的
+小总误差给各项贴心理意义。源投影和测量投影是不同空间的两个精确分解。
+
+## 4. 下一机制，不是新精度网格
+
+[NEXT35](../../docs/GRAIN_QUERY_RESIDUAL_INPUT_PLAN_V1.md)对当前内容残余做
+目标定向压缩：取源残余H与源系数误差的交叉协方差，提取最多8个相关方向。
+与同样增加8个残余PCA方向比较，两组都接原36列输入，重新源拟合一个固定
+Ridge。它回答“通用方差方向之外是否存在查询需要的读法”，不强行添加GRAIN。
+
+这一设计借鉴[多输出降秩/岭回归](https://pmc.ncbi.nlm.nih.gov/articles/PMC3444519/)
+区分预测变量压缩与响应相关结构的思路；本次先做交叉协方差子空间，不冒充
+已经完整复现该论文的降秩岭算法。新的数学位置见
+[系数与源空间理论](../../docs/GRAIN_CONTENT_COEFFICIENT_THEORY_V1.md)。
+
+## 5. 可重放交付
+
+构造两次约5.07/5.20秒（不含输入加载/后续分析）；无后台长跑。39个构造
+数值产物+7个主分析+2个源空间分析，48文件精确重放。__TESTS__项聚焦测试
+通过，两个旧SWIG警告。Ruff通过；私有逐token字段、作者ID、系数和模型
+留在ignored results。本目录只发布6个汇总CSV与数值说明。
+
+脚本：`run_grain_content_coefficients.py`、`replay_grain_content_coefficients.py`、
+`analyze_grain_content_coefficients.py`、`analyze_grain_coefficient_span.py`、
+`report_grain_content_coefficients.py`。旧版本贡献、量表联系及解释协议仍保留；
+本轮完成一个具体机制比较，没有把全系统goal缩成这张表。
+""".replace("__ROWS__", "\n".join(rows))
+        .replace("__SPAN__", "\n".join(spanrows))
+        .replace("__TESTS__", str(tests))
+    )
+    (dest.parent / "CONTENT_COEFFICIENT_READER_REPORT_V1.md").write_text(report)
+    (ROOT / "docs/GRAIN_SYSTEM_LOGIC_EDGES_V1.json").write_text(
+        json.dumps(edge_inventory(), indent=2) + "\n"
+    )
+    print({"status": "PUBLISHED", "exact_files": len(checks), "tests": tests})
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser()
+    p.add_argument("--tests", type=int, required=True)
+    publish(p.parse_args().tests)

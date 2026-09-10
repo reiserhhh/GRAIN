@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 同token方向与梯度收缩已有原生验证；3源共享8方向在oracle系数下作用r=.862/.987/.977，而源三次位置读法.498/.047/.033。共同方向可用，内容相关系数需构造；不是已无LLM人格预测 | position reader report §§2-4; native material reader report §2 |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 共同方向+局部权重已可独立数值预测；T/F content作用r=.638，位置.498；该GRAIN交互参数化不增益。原生作用/源oracle/实际读法分开，保留旧同材料共变证据 | content coefficient report §§1-3; position reader report §2 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | 条件pair已接通；进一步分出共同方向V与token权重a。全字段能量与GRAIN作用采用不同度量，新增模式可扰动抵消。下一步源拟合内容/GRAIN系数，保持解释与量表效标另接 | position reader theory §§2-5; conditional input dependencies |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | token权重的源特征空间上界已分析：PCA32保留39.8%输入变异，调alpha不能解决多数源误差。下一步查询相关残余方向；局部向量场到完整评分仍需路径/参照或可积势函数，解释/人类效标另接 | content coefficient theory §§2-5; conditional input dependencies |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -397,6 +397,18 @@ r=-.164、折内.010，误差大于源均值；给真mixed也无法救回。因�
 [NEXT32查询定向方案](GRAIN_QUERY_DIRECTED_BASELINE_PLAN_V1.md)。
 
 ## 6. 本轮文献与执行入口
+
+### 第二十三轮补充：内容权重与源特征空间的明确边界
+
+同4作者，内容向量预测T/F局部作用r=.638（纯位置.498），去因子均值后
+作者r=.614，幅度仅12%。当前GRAIN交互源拟合改善但留出更差，不替换GRAIN。
+源空间投影证明最低误差仍.866-.959，正则化增加仅.000012-.000069；PCA32
+保留39.8%输入方差。下一步应找查询相关的压缩残余，而非继续调整同一读法。
+
+基底/系数在梯度空间正交，在测量作用空间有交叉项；两层恒等式均复算。
+34测试、48数值文件精确重放、0神经调用。[报告](../reports/grain_vector_mechanisms/CONTENT_COEFFICIENT_READER_REPORT_V1.md)、
+[理论](GRAIN_CONTENT_COEFFICIENT_THEORY_V1.md)、
+[NEXT35残余输入计划](GRAIN_QUERY_RESIDUAL_INPUT_PLAN_V1.md)。
 
 ### 第二十二轮补充：方向词汇可共享，token权重需要内容条件
 

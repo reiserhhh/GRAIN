@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第二十二轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第二十三轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -41,6 +41,7 @@ flowchart TD
 | 原模型研究观察器 | H_16(T,q) | `run_grain_source_anchor.py`保存完整前缀状态 | 本轮从缓存读取；“零新神经调用”不等于状态最初没有经过LLM |
 | 同材料原生接合 | D_k=Gc_k*Hc，T_qk=Jacobian_q:D_k | `native_material_reader.py`；固定同作者共同前缀，P/Q保留原query状态 | 当前query-last正文共享；位置特异读法保留。111后缀调用测到直接局部作用，Jacobian和输入仍依赖原模型；不是独立部署程序 |
 | 共享方向与局部系数 | Jhat=a(t)V/T，tauhat=Jhat:D | `position_reader.py`；3源基底、留出梯度系数oracle，另有纯位置源拟合 | oracle作用r=.862/.987/.977；位置本身不足。两者明确分开，下一步由当前H/G预测a；不把SVD方向命名为人格 |
+| 内容系数读取 | ahat=Phi(H,G)W，Jhat=ahat V/T | `content_coefficients.py`；源PCA32与36/168列设计，独立进程禁读梯度 | T/F内容作用r=.638，幅度12%；GRAIN交互无留出增益。源空间上界表明需增加查询相关输入，不调alpha；当前H仍需原模型前缀 |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
 | 原生输出 | F_q(E,x) | 冻结后缀、候选logits及固定S映射 | 模型条件评分，不是问卷真值、自由生成解释或注意力的唯一因果路径 |

@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "authors": 4,
+  "queries": 3,
+  "pca_fits": 4,
+  "ridge_fits": 24,
+  "predictions": 24,
+  "source_only_predictors": true,
+  "runtime_replay_max": 0.0,
+  "jobs": 24,
+  "denial_probes": 2,
+  "extra_denials": 0,
+  "new_neural_calls": 0,
+  "human_labels_read": false
+}
