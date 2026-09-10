@@ -1,0 +1,49 @@
+{
+  "primary_commit": "df4877c40ec6f0737a1782cb5062010ddbb5af1a",
+  "audit": {
+    "status": "PASS",
+    "new_fits": 2,
+    "new_neural_calls": 0,
+    "prediction_packets": 32,
+    "csvs_replayed": 17,
+    "direction_checks": 128,
+    "finite_difference_error": 1.7884371761311968e-10,
+    "kernel_factorization_error": 9.992007221626409e-16,
+    "additive_normal_block_error": 0.0,
+    "cpu_seconds": 1.437223,
+    "cumulative_compute_cpu_seconds": 7.403596
+  },
+  "files": {
+    "scores.csv": "a36ed088b298a3fff4e7f8a6bf86c971411df8c7137045cced36e0437b1edee7",
+    "actions.csv": "275414a8b8d6f083ac95345c3bf422dbfaaa61a3ae00bef78b222fc305421601",
+    "factor_actions.csv": "ef9fc219f190c1b1346dc34d1f646dae27f3122e18f0ea89dd93d16a0295b9c2",
+    "score_contrasts.csv": "cd16d623b4702e48376dd8e5dc057d763d35673d8bdf71fb54f3c489fc46f6ff",
+    "action_contrasts.csv": "9cdfdef605a404fd598a0895138c400517c0eefc89570113f31b382bd81d3e0d",
+    "factor_contrasts.csv": "9b774e19e25965f7b9018fc3757216a74d0f48d13d8ab128881a2bdef100f89b",
+    "source_interaction.csv": "fa1304e7085ad43c85256aa83dca4096f1f7c7c6e2fa18b7034ef16b369fcb73",
+    "fields.csv": "00927ef6f0bd74b190cd8276ae04a88933475ecd8b9bd85f700896aef9ff1068",
+    "geometry.csv": "3eda459c1e7076f6df9bbdde3c95ae70e54429d5ea4c7981dc4ce200d17e900c",
+    "source_diagnostics.csv": "350e9639c9c730161094d218a8ae7e5f2d5871729f4ddccd564486134cb0053f",
+    "paired_objective_account.csv": "1a682b994dd34ca8b47f562fa4e82084bff226d7f2dea5c0f42e34cc5b9c4370"
+  },
+  "promotion": false,
+  "criteria": {
+    "neuroticism": {
+      "better_action_than_augmented_additive": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": false
+    },
+    "confirmation_seeking": {
+      "better_action_than_augmented_additive": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": true
+    }
+  },
+  "post_outcome_analysis": "Source paired-objective arithmetic only; zero fits, no new8 diagnostic selection",
+  "post_outcome_cpu_seconds": 0.31636,
+  "post_outcome_code": {
+    "scripts/report_grain_full_context_geometry.py": "bf0f8c9c87f5f3a18571c859c14f9896bb19ecace217c0e3e8346bfcc1a8d8af",
+    "tests/test_grain_paired_objective_account.py": "0d9dbd0ba3c6084b62934019ac1e580f12ff2d4b015a07edc34ad7cb28cd2391"
+  },
+  "scope": "source4 in-fit/exposed new8 source-disjoint; model L and GRAIN actions, no humanY"
+}

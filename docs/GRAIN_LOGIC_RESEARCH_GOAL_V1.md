@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-three finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-four finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1632,21 +1632,49 @@ Read [report](../reports/grain_vector_mechanisms/CONTEXT_MODULATED_POTENTIAL_REP
 [theory](GRAIN_CONTEXT_MODULATED_POTENTIAL_THEORY_V1.md),
 [NEXT65](GRAIN_FULL_CONTEXT_GEOMETRY_PLAN_V1.md).
 
+## Fifty-fourth pass: full context distances and a small paired response channel
+
+- Previous turn classified as progress: NEXT64 fitted compatible conditional
+  scalars and found source4 whitening erases raw source distance differences.
+- NEXT65 primary `df4877c`,2newfits/0neural/Y. Replace only the context distance
+  metric; same1169-coef dictionary/source views/scales/alpha,3controls reused.
+- N source allocation-change r=.378->.530/SSEzero .944->.906. Both queries'
+  new8 action errors slightly improve matched augmented additive, but old model
+  remains better and actionSSEzero>1. WholeL r=-.009/.285; no whole promotion.
+- Full kernel factorization verified <1e-15; new8 off-span radial factors
+  .6755/.7393. Full raw distance adds a radial channel, not all off-span directions.
+- Post-outcome no-fit pair account: endpoint field error exactly splits into
+  average and half-difference error. Change energy is .1905%/.4836% of projected
+  source targets; current relative change SSE is1.0203/1.0226. This makes a
+  response-normalized objective worth testing. Average field error is also poor;
+  do not declare weighting the sole cause from this identity alone.
+- 7.403596s primary computeCPU + 0.316360s post-account; 37 focused tests/Ruff,
+  32 prediction packets/17 CSV exact replay, 128 FD checks max1.79e-10, additive
+  normal-equation prefix error=0. Eleven aggregate public tables, no private identity/text.
+- NEXT66 adds one source-normalized paired density-change term to the same
+  scalar/objective.2newfits/120sCPU, no feature/alpha/donor/label search.
+  Same-material GRAIN direction/response interface and evidence-bound auxiliary
+  interpretation remain the user's two connections; no clinical naming shortcut.
+
+Read [report](../reports/grain_vector_mechanisms/FULL_CONTEXT_GEOMETRY_REPORT_V1.md),
+[theory](GRAIN_FULL_CONTEXT_GEOMETRY_THEORY_V1.md),
+[NEXT66](GRAIN_PAIRED_RESPONSE_OBJECTIVE_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT65 | Does preserving full context distances recover useful source interaction and new-author inference? | Execute GRAIN_FULL_CONTEXT_GEOMETRY_PLAN_V1; full-last Gaussian modulation, same BODY/objective/parameter count, old controls frozen |2newfits/120sCPU/0neural/Y; complete source/new8 score/action tables, no whitening or tuning grid; keep local effects without wholepromotion |
+| NEXT66 | Does explicit paired-response teaching preserve the small conditional change in the same scalar? | Execute GRAIN_PAIRED_RESPONSE_OBJECTIVE_PLAN_V1; same NEXT65 inputs/dictionary plus source-unit-normalized half-difference loss |2newfits/120sCPU/0neural/Y; source change and complete new8 results, no weight/grid search; preserve score and action comparisons |
 
-These are local computational/theory questions. NEXT64 complete,4numericfits;
+These are local computational/theory questions. NEXT65 complete,2numericfits;
 no native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT65 planned, not executed; retain
-full context geometry and return to complete new8 inference. No penalty/donor/dose
-sweep or source-only capacity detour.
+broader factor search or clinical naming. NEXT66 planned, not executed; teach
+source paired response and return to complete new8 inference. No penalty/donor/dose
+sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

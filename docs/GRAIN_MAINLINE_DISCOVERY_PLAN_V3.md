@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT65 full-context geometry executed.**
+> Same source4/augmented views and1169-coef scalar,2newfits/0neural/Y.
+> N source allocation-change r=.378->.530, SSEzero=.944->.906: retain local gain.
+> New8 wholeL r=-.009/.285, actionSSEzero1.115/1.099; no full promotion.
+> Raw context geometry was a real lost input, not the whole explanation.
+> Post-outcome paired arithmetic: mean/difference losses separate exactly;
+> half-difference carries only .1905%/.4836% of projected source target energy.
+> Mean-field fit is also poor, so weighting is a testable next mechanism, not
+> a proven sole cause.7.403596sCPU+0.316360s account,37focused tests/Ruff,
+>32prediction/17CSV exact replay; primary `df4877c` unchanged.
+> [Report](../reports/grain_vector_mechanisms/FULL_CONTEXT_GEOMETRY_REPORT_V1.md),
+> [theory](GRAIN_FULL_CONTEXT_GEOMETRY_THEORY_V1.md).
+> **NEXT66 planned:** [paired response objective](GRAIN_PAIRED_RESPONSE_OBJECTIVE_PLAN_V1.md),
+> same compatible scalar, append one source-unit-normalized field-change term;
+>2fits/120sCPU/0neural/Y, no input/alpha/grid change. Goal ACTIVE.
+
+> Previous NEXT64 update; its NEXT65 task is completed above.
 > **2026-09-11 newest: NEXT64 conditional scalar executed; no full promotion.**
 > Same source4 original+shifted views;593-coef augmented additive vs1169 conditional,
 > old original-source model retained. Source finite-change RMS captured7.54%/8.20%,
