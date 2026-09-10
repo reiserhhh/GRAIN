@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "d62151f65746108a397e8d2d1f6db7cdf7c7c2119e43ed73bc12a6c05e12e4f5",
+  "atlas_sha256": "8f86db4e94271330b605d638f1584abf24dd8a8d79a85c9ae585664b241555aa",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT51\u6e90Qbar/rbar\u5df2\u63a5\u540c\u6750\u6599\u65b9\u5411\u5230\u7aef\u70b9\uff1bNEXT52\u4f4d\u7f6e\u62df\u5408\u66f4\u597d\u800c\u54cd\u5e94\u66f4\u5dee\uff0cGRAIN\u53ef\u5b9a\u4e49\u9700\u4fdd\u7559\u7684\u6270\u52a8\u5206\u5e03Sigma_G\uff0c\u65b9\u5411\u635f\u5931\u7b49\u4e8etr(E Sigma_G E^T)\u3002\u4e0d\u662f\u4e24\u4e2a\u603b\u5206\u76f8\u52a0\uff1bNEXT53\u6e90\u8054\u5408\u5b66\u4e60\u8ba1\u5212\u4e2d",
-      "evidence_entry": "source state transport theory \u00a7\u00a71-4; selection endpoint theory"
+      "alternative_or_next_link": "NEXT53\u7528Sigma_G\u65b9\u5411\u76ee\u6807\u6559\u5b66\u540c\u4e00\u6e90\u51fd\u6570\uff0c\u5728\u5f52\u4e00\u5316\u5339\u914d\u540e\u65b08\u65b9\u5411\u8bef\u5dee\u518d\u964d\u7ea61.1%\u3001\u7aef\u70b915\u201319%\u3002GRAIN\u53ef\u5b9a\u4e49\u9700\u4fdd\u7559\u7684\u53d8\u5316\uff0c\u800c\u975e\u53ea\u662f\u53e6\u52a0\u5206\u6570\u3002\u4e24\u4e2aquery\u7ec4\u4ef6r\u7ea6.900/.924\uff1b\u6e904\u7aef\u70b9\u5f31\uff0c\u5b8c\u6574\u4fdd\u7559",
+      "evidence_entry": "response aware state theory \u00a7\u00a71-4; source state transport theory"
     },
     {
       "id": "L20",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "NEXT52\u4e09\u79cd\u6e90\u72b6\u6001\u66ff\u4ee3\u5747\u672a\u8fc7\u7aef\u70b9\u95e8\u69db\uff1bidentity\u4ecd\u6709r=.878/.893\u4f46\u5e45\u5ea6\u7ea64\u500d\u3002\u4f4d\u7f6e\u4e0e\u54cd\u5e94\u76ee\u6807\u5206\u79bb\uff0cPCA\u76f2\u533a\u65b9\u5411\u4e0d\u53ef\u8c03\uff1b\u4fdd\u7559NEXT51\uff0cNEXT53\u6d4b\u8bd5\u540c\u51fd\u6570\u6e90\u503c/\u65b9\u5411\u8054\u5408\u62df\u5408\u3002\u6548\u6807\u548c\u8f85\u52a9\u89e3\u91ca\u53e6\u63a5\uff0c\u4e0d\u4ee5\u7ec4\u4ef6r\u5145\u5f53\u4eba\u683cr",
-      "evidence_entry": "source state transport theory \u00a7\u00a72-5; response aware state plan; same-material interpretation theory"
+      "alternative_or_next_link": "NEXT53\u5df2\u4fdd\u7559\u4e0d\u9700\u5f53\u524dblocks17\u201321\u7684\u6570\u503cK\u7ec4\u4ef6\uff1b\u539fH16\u524d\u7f00/attention\u77e9\u9635\u4ecd\u4f9d\u8d56\u6a21\u578b\u3002\u5f52\u4e00\u5316\u5bf9\u7167\u672c\u8eab\u4e5f\u8fc7\u95e8\u69db\uff0c\u65b9\u5411\u6559\u5b66\u6709\u589e\u76ca\u4f46\u8fd8\u4f1a\u6539\u53d8\u72b6\u6001\u3002NEXT54\u4ec5\u62c6\u8fd9\u6b21\u4fee\u590d\u540e\u56de\u5230\u6574\u94fe\uff0c\u4e0d\u4ee5\u7ec4\u4ef6r\u4ee3\u66ff\u4eba\u7c7b\u6548\u6807",
+      "evidence_entry": "response aware state theory \u00a7\u00a73-5; response repair mechanism plan; same-material interpretation theory"
     }
   ]
 }

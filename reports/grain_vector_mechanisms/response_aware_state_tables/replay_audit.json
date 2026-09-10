@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "primary_commit": "4dd244b4428b4c36f4124ad48d5d017073707105",
+  "fits": 20,
+  "unchanged_asset_arrays": 180,
+  "unchanged_identity_design_packets": 48,
+  "replayed_prediction_packets": 48,
+  "replayed_primary_tables": 18,
+  "replayed_comparison_tables": 7,
+  "primary_compute_seconds": 13.149572337046266,
+  "cached_replay_seconds": 11.312481375411153,
+  "native_calls": 0,
+  "human_labels_read": false,
+  "audit_code_sha256": "5db080c89ebb685d021efc2c530abcdac5250201589e7e4648879719124185b7",
+  "matched_decisions": {
+    "pointwise": {
+      "directional_improvement": true,
+      "component_replacement": true
+    },
+    "causal_context": {
+      "directional_improvement": true,
+      "component_replacement": true
+    }
+  },
+  "fit_guard_denials": 4,
+  "extra_fit_denials": 0
+}

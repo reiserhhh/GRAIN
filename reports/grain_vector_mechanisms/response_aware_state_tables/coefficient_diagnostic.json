@@ -1,0 +1,109 @@
+{
+  "status": "COMPLETE",
+  "post_outcome": true,
+  "refits": 0,
+  "inventory": "Exact NEXT52 models/freeze.json entries; filesystem metadata excluded",
+  "intercept_max_difference": 2.8101965199311962e-12,
+  "ratios": [
+    {
+      "model": "all4_causal_context",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.016696154186571863
+    },
+    {
+      "model": "all4_causal_context",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.024418473256708716
+    },
+    {
+      "model": "all4_pointwise",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.017759542173293598
+    },
+    {
+      "model": "all4_pointwise",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.02883871521119321
+    },
+    {
+      "model": "exclude0_causal_context",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.01612861844189163
+    },
+    {
+      "model": "exclude0_causal_context",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.024014795488044072
+    },
+    {
+      "model": "exclude0_pointwise",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.017604610191207338
+    },
+    {
+      "model": "exclude0_pointwise",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.029106303840614873
+    },
+    {
+      "model": "exclude1_causal_context",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.016334778792809552
+    },
+    {
+      "model": "exclude1_causal_context",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.024167756057170704
+    },
+    {
+      "model": "exclude1_pointwise",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.017623097654238952
+    },
+    {
+      "model": "exclude1_pointwise",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.029059241722867946
+    },
+    {
+      "model": "exclude2_causal_context",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.01617330085098042
+    },
+    {
+      "model": "exclude2_causal_context",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.024154759929104725
+    },
+    {
+      "model": "exclude2_pointwise",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.017898360192296448
+    },
+    {
+      "model": "exclude2_pointwise",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.029670072568737375
+    },
+    {
+      "model": "exclude3_causal_context",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.01622853431362747
+    },
+    {
+      "model": "exclude3_causal_context",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.02376008398340696
+    },
+    {
+      "model": "exclude3_pointwise",
+      "objective": "normalized_value",
+      "nonconstant_norm_over_historical": 0.017685152332627997
+    },
+    {
+      "model": "exclude3_pointwise",
+      "objective": "joint",
+      "nonconstant_norm_over_historical": 0.029291518888692972
+    }
+  ]
+}

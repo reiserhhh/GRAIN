@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, forty-one finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, forty-two finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1244,22 +1244,55 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_STATE_TRANSPORT_REPORT_V
 [theory](GRAIN_SOURCE_STATE_TRANSPORT_THEORY_V1.md),
 [NEXT53](GRAIN_RESPONSE_AWARE_STATE_PLAN_V1.md).
 
+## Forty-second pass: source response teaching retains a numerical component
+
+- Previous turn classified as progress: NEXT52 produced actual source-map results,
+  value/response separation, fixed-basis nullspace reasoning and a tested next plan.
+- NEXT53 complete, primary freeze `4dd244b`. Before outcomes, amended plan with
+  normalization-matched value-only controls: otherwise effective regularization
+  would be confounded with derivative teaching.20 solves, unchanged180s CPU cap.
+- Source4 values/tangents only; every U32/mean/scale/query anchor/reader unchanged.
+  Joint pointwise new8 N/C r=.899755/.923676, SSE/zero=.386722/.626874; causal
+  .899276/.923339, .382068/.618137. Both original component gates pass; source4
+  endpoints remain weak (r~.03–.17,SSE/zero>2), complete cohort/factor tables kept.
+- Matched value-only controls already pass. Joint direction teaching adds
+ 14.8–19.1% new8 endpoint SSE reduction, with1.09–1.12% lower full-tangent error
+  and0.26–0.27% more state error. Query contrast r~.821/.820,RMS~105% of native,
+ 25/32 signs. This is one model derivative component, not whole-score or human r.
+- Shared source intercept unchanged<=2.811e-12; normalized/joint nonconstant
+  coefficients shrink sharply versus old primal fit. Do not credit normalization
+  gains to derivatives. Same-function response teaching changes both X and d;
+  their separate endpoint roles are NEXT54, not an assumed tangent-only cause.
+-20 source solves1.549487s; preparation.300335s; predictions5.650774/5.648977s,
+  total13.149572s. One cached two-objective replay11.312481s;0 neural/Y/API.
+ 48 packets/18 primary CSVs/7 comparison CSVs exact;180 assets and48 identity/
+  design packets unchanged.49 tests/18 existing warnings; Ruff passes.
+- Post-result coefficient inspection initially matched an AppleDouble sidecar;
+  corrected to exact frozen model inventory, no unsafe pickle/refits or primary
+  result changes. No live model job; private caches and unrelated edits preserved.
+- NEXT54: one cached2x2 state/tangent crossing,60s CPU,0 fits/neural/Y. Explain
+  the repair then leave this fixed-basis family for a whole-path assembly test.
+
+Read [report](../reports/grain_vector_mechanisms/RESPONSE_AWARE_STATE_REPORT_V1.md),
+[theory](GRAIN_RESPONSE_AWARE_STATE_THEORY_V1.md),
+[NEXT54](GRAIN_RESPONSE_REPAIR_MECHANISM_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT53 | Does explicitly teaching source GRAIN responses repair the same state map? | Execute GRAIN_RESPONSE_AWARE_STATE_PLAN_V1; same fixed basis/features, one source-normalized value+direction loss |0 native/Y;10 source-only solves,180s; directional improvement and endpoint replacement are separate decisions; no new8 targets in prediction or rank/alpha sweep |
+| NEXT54 | Through which state/tangent route does source response teaching improve the endpoint? | Execute GRAIN_RESPONSE_REPAIR_MECHANISM_PLAN_V1; fixed2x2 crossings, symmetric allocation and exact error reduction |0 native/fit/Y;60s CPU; crossed pairs are diagnostic, not eligible derivatives; explain once then leave the fixed-basis family for whole-path assembly |
 
-These are local computational/theory questions. NEXT52 complete; no repeated
+These are local computational/theory questions. NEXT53 complete; no repeated
 suffix or prefix calls. No MLP24/attention22/readout refinement, old queue restart,
-broader factor search or clinical naming. NEXT53 is planned, not already executed.
+broader factor search or clinical naming. NEXT54 is planned, not already executed.
 Current H16 remains native; removing one intervening segment is not eliminating
-the full encoder. NEXT53 source fitting uses cached source tangents but no labels
-or endpoint targets. NEXT52 primal-only fitting did not use source tangents.
+the full encoder. NEXT53 used cached source tangents but no labels or endpoint
+targets. NEXT54 uses already frozen source maps, with no additional fitting.
 If a card cannot change the next mainline decision, record it and move on; do
 not fill a larger table just to make the ledger look complete.
 

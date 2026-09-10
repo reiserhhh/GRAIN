@@ -1,5 +1,19 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT53 source response learning delivered.**
+> Joint pointwise/causal retain new8 N/C components r~.900/.924, both fixed
+> SSE/zero gates pass. Matched normalization controls already pass; teaching
+> GRAIN responses adds14.8–19.1% endpoint error reduction,1.09–1.12% tangent
+> improvement with0.26–0.27% state cost. Source4 endpoints remain weak, retained.
+> Pre-outcome control amendment separated normalization from response teaching.
+>20 solves/13.150s CPU,0 neural/Y;48 packets/25 CSVs replay,49 focused tests.
+> [Report](../reports/grain_vector_mechanisms/RESPONSE_AWARE_STATE_REPORT_V1.md),
+> [theory](GRAIN_RESPONSE_AWARE_STATE_THEORY_V1.md).
+> [NEXT54](GRAIN_RESPONSE_REPAIR_MECHANISM_PLAN_V1.md) planned: one frozen2x2
+> state/tangent crossing to explain the repair,60s CPU,0 fits. Then leave this
+> fixed-basis family for whole-path assembly. H16 still native; component, not full L/Y.
+
+> **Previous NEXT52; its NEXT53 request is completed above.**
 > **2026-09-10 newest: NEXT52 value/response separation delivered.**
 > Source-only pointwise/causal maps lower new8 state error42–47%, but increase
 > directional error39–50%. Identity component still associates with native N/C
