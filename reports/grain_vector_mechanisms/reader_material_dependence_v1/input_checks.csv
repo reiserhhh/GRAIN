@@ -1,0 +1,3 @@
+query,authors,last_max_difference,clamp_displacement_over_last_l2,body_count_mean
+neuroticism,4,0.0,0.04029672866054099,879.25
+confirmation_seeking,4,0.0,0.04310997794749049,879.25

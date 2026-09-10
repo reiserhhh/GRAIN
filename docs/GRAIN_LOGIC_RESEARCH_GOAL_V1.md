@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, sixty-nine finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2097,23 +2097,52 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_READER_MOTION_REPORT_V1.
 [theory](GRAIN_SOURCE_READER_MOTION_THEORY_V1.md),
 [NEXT81](GRAIN_READER_MATERIAL_DEPENDENCE_PLAN_V1.md).
 
+## Seventieth finite pass delivered: material changes the reader, not only evidence
+
+- Previous turn classified as PROGRESS: NEXT80 measured source-reader motion.
+  NEXT81 executes the prescribed complete-last clamp and four BODY directions,
+  primary4ac4c36. No predictor fit or current new8 intervention.
+- Fixed query-last inputs retain67.73% of original source differential-reader
+  dispersion. Best-constant floor .093430764, independently reproduced by least
+  squares;10.64% of fixed reader total energy. This locates an input gap, not
+  a pure personality/BODY causal fraction because layout/non-last query remains.
+- Each GRAIN BODY direction changes the reader at fixed last; differential
+  step/reader ratios .261%-.621%,54.11%-63.73% energy outside prior context
+  extended range. F03 original-evidence scalar sign4/4 positive, other factors
+  mixed; all5rulers and all4factors retained. Source4 is the statistical unit.
+-78source native calls/71.722002seconds, loading4.138431seconds. Parity exact;
+  prescribed half-step discrepancy .016276,8clamp/68perturbation-last checks,
+  4paired BODY checks. Six CSVs/private account exact replay,44focused tests.
+  Preparation/analysis/replay1.850374CPU seconds, no failed stages or new Y/API/MEPS.
+- The theoretical connection now includes D_BODY r, not only r^T Dp. An anchored
+  local functional F(H;A) and its diagonal F(H;H) have different derivatives;
+  do not add reader curvature to original native first-order K/V by fiat.
+- NEXT82 develops a joint-input field from source values and directional
+  derivatives. Three nested kernels, no tuning/new neural calls. SourceALL to
+  new8 only: the all4-clamped teaching panel cannot support pseudo sourceLOO.
+
+Read [report](../reports/grain_vector_mechanisms/READER_MATERIAL_DEPENDENCE_REPORT_V1.md),
+[theory](GRAIN_READER_MATERIAL_DEPENDENCE_THEORY_V1.md),
+[NEXT82](GRAIN_MATERIAL_READER_FIELD_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT81 | Does the reader depend on non-last material and same-material GRAIN changes when last context is fixed? | Execute GRAIN_READER_MATERIAL_DEPENDENCE_PLAN_V1; source4 query-specific full-last clamp, then four BODY directions |At most78source reverse calls/120native seconds plus90CPU; no predictor fit/new8 targets, distinguish material input from context-only extrapolation |
+| NEXT82 | Can source value/derivative teaching produce a usable joint-material reader? | Execute GRAIN_MATERIAL_READER_FIELD_PLAN_V1; context, context+mean and context+GRAIN moments, one derivative-kernel solve each |At most3solves/90CPU/0neural; sourceALL/new8 only; anchored component partial and diagonal derivative reported separately |
 
-These are local computational/theory questions. NEXT80 complete,0new source solves;
-no live native job. NEXT81 permits only the specified bounded source-reader
-intervention, not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT81 planned, not executed;
-locate omitted material dependence while retaining all selector/value outcomes.
+These are local computational/theory questions. NEXT81 complete,0new source solves;
+no live native job. NEXT82 permits only the specified bounded source-reader
+field development, not general MLP24/attention22 refinement or an old queue restart.
+No broader factor search or clinical naming. NEXT82 planned, not executed;
+develop the measured material dependence while retaining all selector/value outcomes.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
-assembly, NEXT78 contrast accounting, NEXT79 kernel and NEXT80 motion field are closed.
+assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
+NEXT81 fixed-last intervention are closed.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

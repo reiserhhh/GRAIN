@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第69轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第70轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 正文条件读头与锚定函数 | d(B,C,R)，D_BODY d非零；F(H;A)的H偏导与F(H;H)全导数分开 | `reader_material_dependence.py`；NEXT81源4完整last固定，四GRAIN正文方向 | 保留67.73%源差异reader离差；54%-64%BODY读法变化在旧context扩展空间外。NEXT82用源值/导数构造联合field，不能把reader曲率直接加成native一阶K/V；H16与layout依赖保留 |
 | 源读头的条件运动 | dhat=sum pi_i[d_i+j_i v_i^T(c-c_i)]；Fhat及其完整乘积导数 | `source_reader_motion.py`；NEXT80仅源H16末位干预教学，应用无当前reader/target | 源运动68.88%在旧范围外，rank3->7；新8差异reader原生证据K+V误差比条件核低5.30%，仍略差于常数，反向作用未恢复。NEXT81固定完整末位检验正文/GRAIN对读法的影响，H16仍保留 |
 | 条件差异读头与源输出范围 | dhat(c)=sum pi_i(c)d_i；平方误差分为源仿射空间内外 | `context_differential_reader.py`；NEXT79源last距离核，应用不读当前native reader/targets | 新8scalar r .577->.596，但作用反向调制未恢复；78.60%差异向量误差在rank3源范围外，不能靠归一化权重消除。非作用误差下界。NEXT80仅源端教reader随context的方向变化，H16保留 |
 | 同材料查询差的两个读法分量 | DeltaF=mean(r)^T Delta p+Delta r^T mean(p)，同式用于K/V方向 | `endpoint_query_contrast.py`；NEXT78只读冻结组件和源读头，当前读头仅事后评估 | 原生scalar作者中心化差异读法投影源4=.550/新8=.741；新8K+V反而-.129，固定源读头改为正。NEXT79开发c=paired last条件差异读头，正文Dc=0保证同scalar导数；非心理因果百分比 |

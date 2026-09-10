@@ -1,0 +1,31 @@
+{
+  "primary_commit": "4ac4c36ece88853a3b744d4ad95a70c2749456e5",
+  "publisher_sha256": "8eb25a6b4040603050b5a0159f0273b8f5b0eabb52f40e2377c205b07ab4d7ca",
+  "audit": {
+    "status": "PASS",
+    "authors": 4,
+    "native_calls": 78,
+    "native_seconds": 71.72200179100037,
+    "loading_seconds": 4.138430666178465,
+    "numeric_cpu_seconds": 1.8503739999999995,
+    "fit_count": 0,
+    "public_tables": 6,
+    "parity_relative_max": 0.0,
+    "halfstep_relative": 0.016275759943838956,
+    "body_pair_checks": 4,
+    "human_labels_read": false,
+    "clamp_last_checks": 8,
+    "perturbation_last_checks": 68
+  },
+  "files": {
+    "reader_dispersion.csv": "a4c7dc4cd049fa0caf86a301daecf685fde5f3e35c59fabbe426e856f416df9d",
+    "clamp_change.csv": "7757de6af8d6043be65766acea1dcc882ba3565fea1599e6ad5a9db7760568a3",
+    "body_reader_slopes.csv": "39366b189ad16a99b0cb6099e5e275d585ed92a78e0292aae08f3eb5abd938ff",
+    "body_reader_projections.csv": "3b49677be74b0de4e3caddd34399190522031edb6f6f401fc7cc9793a6331ffa",
+    "clamp_reader_projections.csv": "43e09b8c4bc9a2170692458a985a470d69283a03c4d4e4dc8a85bc50fef1236b",
+    "input_checks.csv": "053e4e94f52c4b833f5d1c0552683538a57552ff76f00146102bb13c5148d0dd"
+  },
+  "scope": "Four reused source authors, two fixed queries and four existing GRAIN directions; no current recipient experiment, human labels or clinical interpretation.",
+  "projections": "Original native or frozen author-LOO numerical evidence vectors are fixed rulers, not clamped-state native target reconstructions.",
+  "cpu_scope": "Successful canonical preparation/analysis/replay. Preparation includes its preflight. Native and loading separate; analysis preflight hashing, tests, publication and audits excluded."
+}

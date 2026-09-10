@@ -1,5 +1,24 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT81 locates material-conditioned reading.**
+> Fixing both complete query-last vectors retains67.73% of source differential
+> reader dispersion, constant floor .093431. Four GRAIN BODY directions alter
+> the reader;54.11%-63.73% of their differential slope energy is outside NEXT80's
+> context-extended space. Retained layout is not pure personality variance.
+> Develop d(B,C), not another last-context-only kernel sweep. F03's projection
+> onto original common evidence is positive for4/4 sources across five rulers;
+> all mixed-sign factors retained, no factor selection or new human-label claim.
+>78native calls/71.722002seconds,1.850374numericCPU seconds,44tests/6CSV replay.
+> Primary4ac4c36; no failed stages. [Report](../reports/grain_vector_mechanisms/READER_MATERIAL_DEPENDENCE_REPORT_V1.md),
+> [theory](GRAIN_READER_MATERIAL_DEPENDENCE_THEORY_V1.md).
+> **NEXT82 planned:** [joint-input derivative reader](GRAIN_MATERIAL_READER_FIELD_PLAN_V1.md).
+> Source values+BODY/context derivatives, three nested input contracts and three
+> fixed Gaussian derivative-kernel solves;0neural,90CPU. Source4ALL/new8 only,
+> no false sourceLOO using an all4 clamp. Keep anchored local partials separate
+> from diagonal scalar derivatives; no double-counting native reader curvature.
+> H16/full-L remain separate. Overall logic goal ACTIVE.
+
+> Previous NEXT80 update; its NEXT81 task is completed above.
 > **2026-09-11 newest: NEXT80 teaches source-reader motion.**
 > Source all4 slopes have68.88% energy outside the old differential range;
 > rank3->7, new8 vector lower bound .396060->.334639. Actual vector SSE improves

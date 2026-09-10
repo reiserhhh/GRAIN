@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT80源reader运动68.88%在旧空间外，rank3->7；新8原生证据差异K+V误差较条件核低5.30%，常数仍略优，反向作用未恢复。NEXT81固定完整last测试正文/GRAIN对reader的影响；same-material方向与读取变化不等于人格因果比例 | source reader motion theory §§1-4; SOURCE_READER_MOTION_REPORT_V1; reader material dependence plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT81固定完整last后保留67.73%源reader离差；四GRAIN BODY方向改变reader，54%-64%在旧context扩展空间外。NEXT82源值/导数学习d(B,C)；锚定偏导与对角全导数分开，非人类因果比例 | reader material dependence theory §§1-4; READER_MATERIAL_DEPENDENCE_REPORT_V1; material reader field plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,23 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十轮补充：正文改变读头，局部场与全局标量必须分开定义
+
+NEXT81主实现4ac4c36。固定两查询完整末位后，差异reader源间离差仍为原来的
+67.73%，常数误差下界.093431。四GRAIN BODY方向均有读头变化，约54%-64%
+在上轮context扩展空间外。输入摘要缺口与直接正文链接都被定位；保留layout
+意味着不能把离差比例当作人格或纯BODY因果份额。
+
+原生reader本来是端点梯度，因此学习Dr后不能机械再加到L的一阶K/V作用。
+新的理论接口为F(H;A)：锚定A时H偏导，和对角F(H;H)全导数是不同对象。
+NEXT82将源值、BODY/context导数共同学习为d(B,C)，分别报告两个导数，不再
+仅做存在性检测，也不扫带宽。源4ALL/new8，禁止全4clamp伪造源LOO。
+
+78源神经调用71.722002秒，1.850374数值CPU秒，44测试/6CSV精确重放。
+见[报告](../reports/grain_vector_mechanisms/READER_MATERIAL_DEPENDENCE_REPORT_V1.md)、
+[理论](GRAIN_READER_MATERIAL_DEPENDENCE_THEORY_V1.md)、
+[NEXT82](GRAIN_MATERIAL_READER_FIELD_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第六十九轮补充：读取方向可以随条件移动，接下来检查正文的作用
 
