@@ -34,6 +34,9 @@ through all downstream nonlinear blocks; report its actual scalar/action effects
    normalization, alpha=.01; one joint solve per reference/query, ten total.
    No new8 tuning or rescaling. Preserve the source intercept contribution in
    reporting; do not subtract it after observing an undesirable effect.
+   Implementation pin: the explicit constant feature is unpenalized; all other
+   coefficients have alpha=.01. Report its bias-column contribution, not a claim
+   that it equals every constant induced by the source input/feature centers.
 4. Two value candidates: identity V0 and learned Vhat. Cross with the two fixed
    selectors. Prior native-V selector outputs are immutable comparators. Main
    application reads H16/layout/fixed weights/source models/g-only, no current
@@ -49,6 +52,9 @@ Export scalar, key-selection partial, content-value partial and total for every
 condition. Native/source-Q key-only actions are not interchangeable with the
 new total target. Evaluation reconstructs matching native V/dV totals from old
 captures; it also retains both query choices and each component separately.
+Both query targets hold Q fixed when differentiating K and V; the native DQ
+channel remains outside these totals. Native-Q K/V partials must reproduce the
+already frozen NEXT49 channel outputs before comparisons are published.
 The retained fixed g is constant for this derivative, not a full model suffix.
 
 Metrics: source V/dV residual losses; equal-author value/dvalue errors; all-query,
