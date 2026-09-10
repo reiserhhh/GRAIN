@@ -14,6 +14,7 @@ from grain_research.vector_mechanisms.query_functional import (
     integrated_matrix,
     matrix_response,
 )
+from scripts.diagnose_grain_joint_carrier_readout import improvement_account
 
 
 def test_pair_kernel_is_explicit_psd_tensor():
@@ -68,3 +69,19 @@ def test_reference_matrix_and_two_body_conditions():
     entries = np.array([matrix, matrix + 2, matrix + 999])
     got = frozen_reference_matrix(entries, ["reference", "reference", "evaluation"])
     np.testing.assert_allclose(got, matrix + 1)
+
+
+def test_control_relative_error_account():
+    """Shared-control improvement cannot be confused with total effect energy."""
+    rng = np.random.default_rng(10)
+    y, p, m = rng.normal(size=(3, 12, 5))
+    result = improvement_account(y, p, m)
+    assert abs(result["gain_over_control"] - 1 + result["error_over_control"]) < 1e-12
+    assert (
+        abs(
+            result["gain_over_control"]
+            - result["alignment_benefit_over_control"]
+            + result["added_energy_over_control"]
+        )
+        < 1e-12
+    )
