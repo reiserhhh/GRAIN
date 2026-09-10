@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-one finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-two finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1570,21 +1570,54 @@ Read [report](../reports/grain_vector_mechanisms/HERMITE_TOKEN_POTENTIAL_REPORT_
 [theory](GRAIN_HERMITE_TOKEN_POTENTIAL_THEORY_V1.md),
 [NEXT63](GRAIN_CONTEXT_READING_INTERACTION_PLAN_V1.md).
 
+## Fifty-second pass: context changes how the same BODY is read
+
+- Previous turn classified as progress: NEXT62 implemented a richer compatible
+  token function, increased source capacity and improved some GRAIN actions;
+  identified the additive reader's zero BODY-by-last mixed derivative.
+- NEXT63 primary `da154ce` frozen before9native forward/backwards. Source4,
+  2queries; replace onlylast H16 with samequery mean of the OTHER3sources.
+  BODY/otherstates/layout/GRAIN D remain unchanged; no new8 target read or fit.
+- Last changes average5.35%/5.74% of original norm; native BODYgradient changes
+ 10.45%/16.08%. All32GRAINactions change, RMS .068273/.069860 or7.23%/11.13%
+  of originalactionRMS. OldHermite BODY/actions are exactly invariant. Native
+  unchanged replay score/gradient/actions also match the original cache exactly.
+- The identified object is a finite path-integrated BODY-by-last mixed Hessian
+  action, not every Hessian entry or a human semantic/personality intervention.
+  It supplies a specific conditional input missing from all current additive
+  token families, which more centers alone cannot represent.
+- Leave-self-out source U8 retains21.20%/25.20% of gradient-change energy but
+ 1.386524/.898114 signed projection onto GRAIN action changes; complement
+ -.386524/.101886. Orthogonal field pieces can cancel after contraction. Keep
+  the complement, do not equate energy fractions with psychological content.
+- Native11.338838s, load3.681338s,0fits/Y/MEPS;37focused tests/Ruff.5CSV byteexact
+  replay, actionidentity2.58e-15, energyrelative4.41e-16,52denialprobes passed.
+  No technical retry or post-outcome primary change, model terminal COMPLETE.
+- NEXT64 planned: one context-product scalar and matched additive model both
+  trained on original+intervened source views; oldfrozen reference also retained.
+  Independent source-last PCA<=3, fixed context bandwidth; same old BODY basis.
+ 4fits/120sCPU/0newneural, all4train/new8apply only. The shifted targets use all4
+  source materials and must not be reused in a purported source leave-one-out.
+
+Read [report](../reports/grain_vector_mechanisms/CONTEXT_READING_INTERACTION_REPORT_V1.md),
+[theory](GRAIN_CONTEXT_READING_INTERACTION_THEORY_V1.md),
+[NEXT64](GRAIN_CONTEXT_MODULATED_POTENTIAL_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT63 | Does query-last context change the reading of the same BODY? | Execute GRAIN_CONTEXT_READING_INTERACTION_PLAN_V1; source4 same-query other-source last mean, BODY/other states fixed; native full BODY gradient change vs additive zero |9planned suffix/backwards,10max/120scompute; no new8/Y/fits or dose/donor search; decide conditional reader input |
+| NEXT64 | Can a conditional scalar learn the discovered interaction and retain complete new-author inference? | Execute GRAIN_CONTEXT_MODULATED_POTENTIAL_PLAN_V1; matched augmented-source additive/context-product readers plus oldfrozen reference |4fits/120sCPU/0newneural; all4train/new8apply, no false sourceLOO or tuning grid; retain all score/action/factor outcomes |
 
-These are local computational/theory questions. NEXT62 complete, with no new
-candidate suffix calls. No MLP24/attention22/hidden-state refinement,
-old queue restart, broader factor search or clinical naming. NEXT63 planned,
-not executed; one source-only native context intervention identifies whether the
-next complete scalar requires token-by-context interaction. No penalty sweep.
+These are local computational/theory questions. NEXT63 complete,9source suffix
+forward/backwards; the native process is terminal. No MLP24/attention22/hidden-state
+refinement, old queue restart, broader factor search or clinical naming. NEXT64
+planned, not executed; develop conditional scalar reading on identical source
+information and return to complete new8 inference. No penalty/donor/dose sweep.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

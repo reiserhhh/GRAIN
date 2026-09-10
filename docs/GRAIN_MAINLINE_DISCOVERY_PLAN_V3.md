@@ -1,5 +1,23 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT63 native context-reading interaction measured.**
+> Fixed BODY/GRAIN/layout; source4 samequery other-source mean last replacement.
+> Mean last displacement5.35%/5.74% causes BODYgradient changes10.45%/16.08%.
+> All32direction actions change; additive NEXT62 changes exactlyzero. Original
+> native replay matches score/gradient/actions exactly. This identifies a missing
+> mixed BODY-by-last dependency, not a new questionnaire accuracy result.
+> Oldrank8 retains21.2%/25.2% gradient-change energy, but signed action projections
+>1.387/.898 (complements-.387/.102): keep cancellation, not noise deletion.
+>9native forward/backwards,11.338838scompute,3.681338sload;37focused tests,
+>5CSV exact replay,52target-denial probes. No new8 targets/fits/Y/MEPS.
+> [Report](../reports/grain_vector_mechanisms/CONTEXT_READING_INTERACTION_REPORT_V1.md),
+> [theory](GRAIN_CONTEXT_READING_INTERACTION_THEORY_V1.md).
+> **NEXT64 planned:** [context-modulated scalar](GRAIN_CONTEXT_MODULATED_POTENTIAL_PLAN_V1.md),
+> matched additive/conditional readers using identical augmented source targets,
+> all4train/new8apply,4fits/120sCPU/0newneural. No fakeLOO of source-mean targets,
+> parameter grid or further donor/dose study. Goal ACTIVE.
+
+> Previous NEXT62 update; its NEXT63 task is completed above.
 > **2026-09-11 newest: NEXT62 local direction expansion executed.**
 > All4 represented source density energy rises .039838->.260542 (N),
 > .028048->.217058 (confirmation). New8 full-action error falls6.29%/7.53%;

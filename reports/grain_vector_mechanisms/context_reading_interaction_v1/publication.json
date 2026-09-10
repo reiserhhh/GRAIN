@@ -1,0 +1,31 @@
+{
+  "primary_commit": "da154ce97534b7422333a8547f79d02715c1c67c",
+  "audit": {
+    "status": "PASS",
+    "native_calls": 9,
+    "native_seconds": 11.338838210329413,
+    "source_contexts": 8,
+    "actions": 32,
+    "logical_csv_replay": 5,
+    "new_fits": 0,
+    "action_identity_error": 2.581268532253489e-15,
+    "additive_zero_exact": true,
+    "cpu_seconds": 0.10270599999999996,
+    "application_target_reads": 0,
+    "human_labels_read": false
+  },
+  "files": {
+    "context_summary.csv": "2008e751b937823f7e5880953b82a72fb379f15c70e15b1d365e44d67fb8f5d3",
+    "action_summary.csv": "4097b42f399c8ab9bf752fc321db30289d7ef8a600086de96e063e16a8771e16",
+    "factor_summary.csv": "afa061f9a860fc98973951f12b68869ac569d472b854946a661f05624999971c"
+  },
+  "native_replay_checks": {
+    "score_abs_error": 0.0,
+    "gradient_relative_error": 0.0,
+    "gradient_delta_rms": 0.0,
+    "action_abs_error": 0.0
+  },
+  "unit": "Four source authors, two queries, four fixed GRAIN directions; not 32 independent people",
+  "new_author_evaluation": false,
+  "claim": "Finite H16 BODY-by-last reading dependence; not human psychological causality"
+}
