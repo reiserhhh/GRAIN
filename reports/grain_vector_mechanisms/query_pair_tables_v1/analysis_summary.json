@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "evaluation_authors": 20,
+  "source_authors": 4,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "endpoint_accounting_max": 2.7755575615628914e-17,
+  "error_identity_max": 1.3877787807814457e-17,
+  "source_denied_score_replay_max": 0.0
+}

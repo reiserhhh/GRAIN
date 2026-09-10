@@ -1,0 +1,40 @@
+{
+  "source_authors": 4,
+  "evaluation_authors": 20,
+  "pairs_per_author": 2,
+  "source_geometry_views": 12,
+  "fits": 5,
+  "new_neural_calls": 0,
+  "human_labels_read": false,
+  "source_denied_replay_max": 0.0,
+  "baseline_replay_max": 1.5987211554602254e-14,
+  "kernel_replay_max": 4.440892098500626e-16,
+  "denial_probes": 3,
+  "context_signature": [
+    12,
+    [
+      62,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      5
+    ],
+    62,
+    1536
+  ],
+  "input_dimensions": {
+    "M": 18432,
+    "R": 208896,
+    "L": 163,
+    "fourier_bag": 128,
+    "fourier_position": 128
+  }
+}

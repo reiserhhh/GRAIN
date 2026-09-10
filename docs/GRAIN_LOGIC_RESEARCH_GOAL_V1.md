@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, twenty finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, twenty-one finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -610,16 +610,45 @@ and [query reading/geometry theory](GRAIN_QUERY_DIRECTED_BASELINE_THEORY_V1.md).
 Native implementationc70332e, first analyzer33966d9. Positive baseline retained;
 next compose a complete source-matched conditional function before new tuning.
 
+## Twenty-first pass: complete source-matched assembly and signed direction
+
+- NEXT33 complete: same4 fixed sources/20 evaluation authors, two pairs and two
+  Fourier inputs, five numerical heads per construction, zero neural calls/Y.
+  Random projection and prior baseline reproduce; geometry uses only12 source
+  views. Two complete constructions, each with three forbidden-file probes,
+  independently reproduce logits/scores exactly. No18-source parameters reused.
+- Complete affine score r=.610/.593 (bag/position), matched kernel-.095/.092;
+  RMSE=.014470/.014322 versus.017535/.017101. Pooled paired MSE intervals cross0.
+  Baseline-only on the SAME pair target r=.602; native B-to-pair r=.860/.944.
+  Thus useful full-score composition does not establish correct configuration.
+- Adjacent configuration norm r=.637/.721, but author-centered vector r=-.009/
+  -.065 and score-increment r=-.214/-.321. Adjacent mixed still has MSE/zero=.783/
+  .709, norm r=.338/.364; distant mixed remains weak. Keep useful local findings.
+- An output-link integral makes the missing distinction explicit:
+  DeltaS=norm(d)*norm(vbar)*cos(theta). At the common native baseline, adjacent
+  alignment r=-.315/-.312; native final-link tangent r=.9981/.9998 for the two
+  pairs. Output-link numerical curvature is not the main configuration failure.
+- Fixed-order magnitude/orientation/link error decomposition is exact to3.35e-16.
+  Adjacent orientation RMS.005255/.005763 exceeds magnitude.004086/.003954;
+  link RMS only.000048/.000159. Native-base diagnostic, not a new predictor;
+  allocation depends on order and signed cross terms remain in the error account.
+-81 scoped tests pass;16 numerical files (7 construct,7 main,2 direction) replay
+  exactly. No release/lockbox changes, native collection or remaining process.
+
+Read [source-matched pair report](../reports/grain_vector_mechanisms/QUERY_DIRECTED_PAIR_REPORT_V1.md)
+and [magnitude/direction theory](GRAIN_COMPLETE_RESPONSE_DIRECTION_THEORY_V1.md).
+Implementation95f472b, main analyzerd8bb93f, no-fit supplementd3b0f7b. The native
+token-localization question now changes the next mainline action.
+
 ## Next loop, in order
 
-NEXT24/25/26/32 finite candidates are closed, retaining both useful mechanisms
-and negative controls. Execute NEXT33's complete source-matched pair assembly.
-NEXT31 remains secondary unless configuration reading becomes the next bottleneck.
+NEXT24/25/26/32/33 finite candidates are closed, retaining useful mechanisms and
+contrary comparisons. Execute NEXT31's position-specific reader decomposition;
+signed configuration reading is now the actionable bottleneck, not score fitting.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT33 | Does the useful query-directed baseline improve the complete conditional pair function? | Execute GRAIN_QUERY_DIRECTED_PAIR_ASSEMBLY_PLAN_V1:4 old N sources/20 evaluation, source-only geometry/singleton/mixed functions, both inherited Fourier inputs and pairs, fixed affine baseline | Five numerical fits maximum,0 neural calls, source-file-denied full-score replay. Compare same-source kernel baseline and explicit oracle diagnoses; retain local-action/whole-score separation. Do not reuse18-source coefficients |
-| NEXT31 | Can token-specific native reading be represented by a few direction-by-position factors without losing GRAIN-relevant action? | Use the12 saved body-gradient fields; distinguish uniform reader, nonuniform low-rank reading and irreducible direction variation; fixed ranks and actual tangent-action accounting, no labels | Only prioritize if it supplies NEXT26's selected interface. Do not confuse gradient-energy capture with action capture, or self-reconstruction with cross-author extraction |
+| NEXT31 | Is configuration direction represented by shared hidden directions and varying token coefficients? | Execute GRAIN_POSITION_SPECIFIC_READER_PLAN_V1:12 saved fields, fixed ranks1/2/4/8, GRAIN tangent preservation,3-source/1-held bases, uniform versus degree0-3 position reader | Zero neural calls;12 source basis fits/24 small position fits maximum,240s resource check. Keep self-compression, held-gradient oracle and truly source-only prediction separate. Scalar natural-state fields are not conditional mean-null candidate fields |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

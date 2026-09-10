@@ -1,5 +1,17 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-10 newest: NEXT33 complete conditional pair delivered; goal ACTIVE.**
+> Same4 sources/20 evaluation authors, five numerical heads,0 neural calls.
+> Affine complete score r=.610/.593 versus matched kernel-.095/.092;
+> baseline-only=.602. Adjacent configuration norm r=.637/.721 but signed
+> alignment r=-.315/-.312. The final score link is locally accurate (.998/.9998),
+> so next develop position-specific direction reading, not final-score tuning.
+>81 scoped tests;16 exact numerical replays, target-denied independent scoring.
+> [Report](../reports/grain_vector_mechanisms/QUERY_DIRECTED_PAIR_REPORT_V1.md),
+> [theory](GRAIN_COMPLETE_RESPONSE_DIRECTION_THEORY_V1.md),
+> [NEXT31 plan](GRAIN_POSITION_SPECIFIC_READER_PLAN_V1.md).
+> No process remains; all earlier next-step paragraphs are historical.
+
 > **2026-09-10 newest: NEXT32 query-directed baseline delivered; logic goal ACTIVE.**
 > Four old N reference Jacobians, twenty old evaluation authors: source-affine
 > conditional score r=.727 [.443,.885], matched source kernel r=-.050;

@@ -1,0 +1,24 @@
+{
+  "exact_files": {
+    "construction/private_model.npz": true,
+    "construction/private_inputs.npz": true,
+    "construction/private_predictions.npz": true,
+    "construction/private_replay.npz": true,
+    "construction/private_geometry.npz": true,
+    "construction/private_membership.json": true,
+    "construction/construction_summary.json": true,
+    "analysis/score_comparison.csv": true,
+    "analysis/paired_score_mse.csv": true,
+    "analysis/local_components.csv": true,
+    "analysis/configuration_scores.csv": true,
+    "analysis/error_account.csv": true,
+    "analysis/target_geometry.csv": true,
+    "analysis/private_score_predictions.csv": true,
+    "direction_analysis/direction_account.csv": true,
+    "direction_analysis/signed_error_terms.csv": true
+  },
+  "tests_passed": 81,
+  "numerical_constructions": 2,
+  "new_neural_calls": 0,
+  "denial_probes_per_construction": 3
+}
