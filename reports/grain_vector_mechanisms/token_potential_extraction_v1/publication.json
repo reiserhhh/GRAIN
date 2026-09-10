@@ -1,0 +1,42 @@
+{
+  "source_primary_commit": "be38774116b40131f4dc80925a07d767984a8e43",
+  "audit": {
+    "status": "PASS",
+    "errors": {
+      "normal_equation": 6.394884621840902e-14,
+      "direction_finite_difference": 3.066271681007038e-10,
+      "metric": 3.3306690738754696e-16
+    },
+    "contexts": 24,
+    "fits": 0,
+    "new_neural_calls": 0,
+    "cpu_seconds": 1.3500230000000002,
+    "cumulative_compute_cpu_seconds": 7.782211,
+    "prediction_replay": "bitwise exact",
+    "csvs_replayed": 26
+  },
+  "promotion": false,
+  "criteria": {
+    "neuroticism": {
+      "better_action_than_control": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": true
+    },
+    "confirmation_seeking": {
+      "better_action_than_control": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": true
+    }
+  },
+  "transformation": "Mean-first zero-allocation r/sign undefined, blank in public tables; raw audited tables retained unchanged.",
+  "files": {
+    "scores.csv": "9d7d86ea0026afe0dae67b2ea4eadc76e6de26698b792621b2db3058cae2ce57",
+    "score_contrasts.csv": "97c520011271183435a3ff657f3a9e725620b362e724a8860d2967dbfc85cc3f",
+    "actions.csv": "41a84785e9907084f57f137f7a2c571864e60b30540718e4fa431161204efd3e",
+    "factor_actions.csv": "dc2ea328dc4c35b0f5fe5f3477c0a2cfe381a55544951bf050822023fd4fb8d0",
+    "action_contrasts.csv": "a27b6bc7cbf2b71422ede80e04680284d07e77089bd2785d1cbde2b76419e568",
+    "factor_contrasts.csv": "eba1b4d12309d76aa8bd5337ee2cd992d5f386c68d4d54944580663f2c850ea4",
+    "fields.csv": "30ad9fb2c4ff2bda2470f21812a87a106dfb73dfaa11d620d61c0930dec1f247",
+    "source_diagnostics.csv": "baee8ec5306f3a9064ae3540014757813d17c5a420db6c120a78c68e2454a56f"
+  }
+}

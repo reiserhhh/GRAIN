@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, forty-eight finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, forty-nine finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1466,21 +1466,56 @@ Read [report](../reports/grain_vector_mechanisms/POOLED_FEATURE_NULL_RESPONSE_RE
 [theory](GRAIN_POOLED_FEATURE_NULL_RESPONSE_THEORY_V1.md),
 [NEXT60](GRAIN_TOKEN_POTENTIAL_EXTRACTION_PLAN_V1.md).
 
+## Forty-ninth pass: compatible token nonlinearity reads part of the allocation
+
+- Previous turn classified as progress: NEXT59 found native action in the old
+  pooled input's nullspace and froze a matched before/after-pooling development.
+- NEXT60 primary `be38774` frozen before outcomes.20fits,source4 exclusion/new8all4,
+  source-only response rank8/landmarks/normalization. Same scalar gives Lhat,
+  exact BODY density and GRAIN directions; current teacher files denied in use.
+- New8 candidate wholeL r=.533976/.546934, SSE/sourceconstant=.782701/.744320;
+  control .540951/.543761 and .777089/.747373. Useful fixed-model scoring is
+  retained but not uniquely a pre-pooling effect; no new questionnaire result.
+  Source4 held-out ranks remain negative; both cohorts/all factors retained.
+- New8 candidate allocation r=.486409/.086785, SSEzero=.952090/.992433,
+  contrast r=.571306/SSEzero=.924365. The control is algebraically zero there;
+  its ~1e-16 floating correlations/sign counts are undefined and blanked only
+  in public exports. Original audited numerical artifacts remain unchanged.
+- Fulltau error falls6.66%/2.13% against control, but SSEzero1.152543/1.181391;
+  full two-query promotion fails. Local effect retained. Whole query-contrast
+  score SSE/sourceconstant1.233841 and action SSEzero1.568400 are not hidden.
+- Evaluator-only source-U projected current field has action r=.851014/.808190;
+  not a deployable predictor or a directional-error optimality guarantee.
+  All20 source density losses exceed1, pointing to a source fit/dictionary
+  question before collecting more application authors or tuning parameters.
+- 13CSV exact replay,24 original/replay prediction packets,20frozen models;
+ 42 focused tests/18 existing torch warnings, Ruff passed. Total measured
+  computeCPU7.782211s,0new neural/API/Y.192 true direction differences max
+ 3.066e-10; independent SSE ratio error3.331e-16. Eight public aggregateCSV.
+- NEXT61 planned: hold dictionary fixed; source field colspace capacity,
+  score-preserving parameter nullspace and value/field/ridge force accounting.
+  One60sCPU diagnostic/replay, no held-target performance for diagnostic fits,
+  no rank/bandwidth/alpha grid. H16/release/lockbox/MEPS boundaries unchanged.
+
+Read [report](../reports/grain_vector_mechanisms/TOKEN_POTENTIAL_EXTRACTION_REPORT_V1.md),
+[theory](GRAIN_TOKEN_POTENTIAL_EXTRACTION_THEORY_V1.md),
+[NEXT61](GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT60 | Can a compatible nonlinear token function retain allocation responses and complete scores? | Execute GRAIN_TOKEN_POTENTIAL_EXTRACTION_PLAN_V1; source response basis and matched before/after-pooling scalar kernels with value/gradient teaching |20small solves/180sCPU/0neural/Y; score and exact derivatives on pure application inputs, no rank/bandwidth/penalty grid |
+| NEXT61 | Is source density failure dictionary-external or caused by scalar/ridge competition? | Execute GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_PLAN_V1; source derivative column-space projection and value-preserving nullspace improvement |60sCPU/0neural/Y; count diagnostic solves, no application scoring or new parameter sweep |
 
-These are local computational/theory questions. NEXT59 complete, with no new
+These are local computational/theory questions. NEXT60 complete, with no new
 candidate suffix calls. No MLP24/attention22/hidden-state refinement,
-old queue restart, broader factor search or clinical naming. NEXT60 planned,
-not executed; it develops the identified token-configuration mechanism in one
-source scalar/gradient program, not a new compensation or pooled-head sweep.
+old queue restart, broader factor search or clinical naming. NEXT61 planned,
+not executed; it explains source field capacity and scalar compatibility before
+another extractor, rather than sweeping penalties to rescue an outcome.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

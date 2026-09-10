@@ -1,5 +1,21 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT60 compatible token potential executed.**
+> Same source/query descriptor and targets, two nonlinear pooling orders.
+> New8 candidate wholeL r=.533976/.546934, SSE/sourceconstant=.782701/.744320;
+> control score relations are similar, so do not attribute all score utility to
+> pre-pooling nonlinearity. Allocation responses become nonzero: r=.486/.087,
+> query-contrast .571. Fulltau error is6.66%/2.13% lower than control, but
+> SSE/zero1.153/1.181; full promotion not passed. Source density losses already
+> >1; oracle source-U local response r=.851/.808 is evaluator-only.
+>20solves,7.782211s measured CPU,0 neural/Y,13CSV exact replay,42 focused tests.
+> [Report](../reports/grain_vector_mechanisms/TOKEN_POTENTIAL_EXTRACTION_REPORT_V1.md),
+> [theory](GRAIN_TOKEN_POTENTIAL_EXTRACTION_THEORY_V1.md).
+> **NEXT61 planned, not executed:** [source value/field compatibility](GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_PLAN_V1.md).
+> Fixed dictionary projection and value-nullspace analysis, no hyperparameter
+> grid or new8 diagnostic fitting. Whole goal ACTIVE; H16 still neural.
+
+> Previous NEXT59 update; its NEXT60 task is completed above.
 > **2026-09-11 newest: NEXT59 pooled-input blindness directly measured.**
 > New8 allocation/native action signed projections.946/.943, visible means
 > .058/.030.96/96 native actions persist in the old feature map's nullspace;

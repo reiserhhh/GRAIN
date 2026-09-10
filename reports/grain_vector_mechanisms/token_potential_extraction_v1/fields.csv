@@ -1,0 +1,13 @@
+cohort,query_name,candidate,field_error_ratio,authors
+new8,confirmation_seeking,kernel_then_mean,1.280997952885918,8
+new8,confirmation_seeking,mean_then_kernel,1.2820648036400732,8
+new8,confirmation_seeking,oracle_source_U_evaluation_only,0.6406367583883013,8
+new8,neuroticism,kernel_then_mean,1.2577694706568727,8
+new8,neuroticism,mean_then_kernel,1.2638857645605364,8
+new8,neuroticism,oracle_source_U_evaluation_only,0.7108545232745449,8
+source4,confirmation_seeking,kernel_then_mean,1.2012961129752808,4
+source4,confirmation_seeking,mean_then_kernel,1.20307618011181,4
+source4,confirmation_seeking,oracle_source_U_evaluation_only,0.6934027634559716,4
+source4,neuroticism,kernel_then_mean,1.1696629006644068,4
+source4,neuroticism,mean_then_kernel,1.1772780461945334,4
+source4,neuroticism,oracle_source_U_evaluation_only,0.6883001378274922,4
