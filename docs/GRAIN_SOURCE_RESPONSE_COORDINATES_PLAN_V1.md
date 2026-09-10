@@ -20,6 +20,8 @@ design, numerical rank and the residual of the fixed joint solution. Also report
 the value cost at the minimum-norm derivative projection, as a diagnostic only.
 Never apply this unconstrained projection to new8 or select an alpha with it.
 These are10 sufficient-statistic accounts, not additional predictive candidates.
+Implementation pin: Gram eigenvalues below1e-10 times the largest are excluded.
+Report this numerical range explicitly; zero design columns remain zero.
 
 ## Part B: one derivative-informed source projection
 
@@ -37,6 +39,11 @@ then the same causal-context/position design and one joint alpha=.01 objective.
 Fit new source-only feature centers/scales and retain zero-pinned constant gauge.
 If rank32 is unsupported, report the deficiency and stop rather than silently
 filling arbitrary directions or searching ranks. Preserve source4LOO/new8all4.
+Source input mean/SD use equal-author/query weights on allowed tokens; source
+target normalizers s/t are scalar RMS across allowed tokens/heads (and all4
+directions for t). Rank uses max(matrix.shape)*machine_epsilon*sigma_max.
+Backscale the left singular vectors by the source input SD, so the existing
+H16 feature function differentiates the exact same standardized projection.
 
 This is supervised cross-moment dimension reduction, **not** recovery of a complete
 neural Jacobian from four directional observations or proof of a true active
