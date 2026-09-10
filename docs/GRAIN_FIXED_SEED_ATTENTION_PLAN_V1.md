@@ -73,3 +73,30 @@ mechanistic reader. Use those terms to define a next bounded source-fixed progra
 do not infer personality meaning from a head name or high field cosine.
 
 This is a finite local packet in an ACTIVE whole-system goal, not its completion.
+
+## Implementation fixed before collection
+
+Pinned local Qwen2 uses12 query heads,2 key/value heads,head dimension128,
+28 decoder blocks; analyze block27 normalized input, separate from block16
+output. No sliding attention/QK normalization; the final query admits every
+position. Native code uses biases in Q/K/V, captured before rotary application.
+The numerical reconstruction includes those biases through captured activations.
+
+For each head h in key/value group b(h), with rotary map R_j, aggregate:
+
+    J_value(j) = sum_h a_hj W_V,b(h)^T g_h
+    J_key(j) = sum_h a_hj ((v_b(h),j-o_h)^T g_h)
+               * W_K,b(h)^T R_j^T R_last q_h / sqrt(d).
+
+The transpose is implemented as diag(cos) - half_turn @ diag(sin), not an
+assumed unrotated key gradient. Same-group contributions SUM; they are not
+averaged. g comes from native output-projection input cotangents, so includes
+downstream effects. This is a decomposed local derivative, not an independently
+estimated g or a complete replacement for the model suffix.
+
+Standard sources: [attention](https://arxiv.org/html/1706.03762v7),
+[GQA §2.2](https://arxiv.org/html/2305.13245v3),
+[RoPE §3](https://arxiv.org/html/2104.09864v5). The local installed Qwen2 source
+and its hash, rather than a generic implementation assumption, define execution.
+Use separate prepare/collect/analyze stages; replay analysis from cached arrays
+without another neural pass. Public outputs contain cohort aggregates only.
