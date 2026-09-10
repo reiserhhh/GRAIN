@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT79 identifies finite source-reader range.**
+> One source-normalized context reader completed,5packages/0solves/neural/Y.
+> New8 response/source scalar contrast r .577035->.596467, centered MSE improves,
+> but raw error and K+V error worsen slightly; opposing modulation not recovered.
+>78.60% of conditional differential vector error lies outside source affine rank3
+> (source4LOO58.83%,rank2). A normalized weight grid cannot create those directions;
+> this is a vector bound, not a projected-action bound. Do not promote the smoother.
+>12candidate/12evaluation packets,8CSV exact replay,128FD max4.20e-10,
+>10.238926CPU seconds,29tests/Ruff. [Report](../reports/grain_vector_mechanisms/CONTEXT_DIFFERENTIAL_READER_REPORT_V1.md),
+> [theory](GRAIN_CONTEXT_DIFFERENTIAL_READER_THEORY_V1.md).
+> **NEXT80 planned:** [source reader motion](GRAIN_SOURCE_READER_MOTION_PLAN_V1.md).
+> Source-only paired context perturbations teach directional reader motion;
+> one local-linear field expands output range while preserving scalar derivatives.
+> At most76reverse calls/120native seconds plus90CPU; no recipient targets in
+> application, no bandwidth/alpha grid. H16 retained, full goal ACTIVE.
+
+> Previous NEXT78 update; its NEXT79 task is completed above.
 > **2026-09-11 newest: NEXT78 locates conditional differential reading.**
 > Exact two-query scalar/body decomposition,0fits/neural/Y. Native scalar's
 > author-centered reader projection .550317(source4)/.740698(new8); native new8

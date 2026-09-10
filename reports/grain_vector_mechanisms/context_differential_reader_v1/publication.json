@@ -1,0 +1,32 @@
+{
+  "primary_commit": "627decc612e84e5ce58b2ae7c2049b9800c42e19",
+  "audit": {
+    "status": "PASS",
+    "source_constructions": 5,
+    "coefficient_solves": 0,
+    "new_neural_calls": 0,
+    "human_labels_read": false,
+    "public_tables": 8,
+    "application_packets": 12,
+    "body_context_checks": 24,
+    "baseline_max_error": 4.218847493575595e-15,
+    "baseline_metric_max_error": 4.440892098500626e-15,
+    "fd_count": 128,
+    "fd_max_error": 4.201541614623494e-10,
+    "total_cpu_seconds": 10.238926000000001
+  },
+  "files": {
+    "score_metrics.csv": "d83a243168c1d11e7201be4f1c5b096279137a3fc410a9a39a32b183a05bdb00",
+    "factor_metrics.csv": "775aeeee9090f7c0ed143d7d729b42bc34e917cee5eba69090e664f89e94c06f",
+    "term_metrics.csv": "bfa7022b82202d4ed5cc0b888bbac1f22559bdab173f9f6d7fff286b18ff9c94",
+    "joint_account.csv": "0774b0e0c1bd912a41401cc0395275237f41096646fa76dec9544b8769394250",
+    "error_account.csv": "655ea3d9a1ae9d6e8e43cf6dc7e317df283f87766402bf6962aebf8a38f1673b",
+    "reader_metrics.csv": "aede6a946ffb14e777f811f0104e636ad0169c15c76df864d7c1ad0477e9e9e9",
+    "weight_diagnostics.csv": "074cd4ae3235474583c4ceef4327ad383a17eb5a8b3e9e817ee5d0d108fba3d1",
+    "range_account.csv": "8a18830aaf10fbc2fb509d38065352763885107118b2fab9c4371ed24e3dc8e7"
+  },
+  "publisher_sha256": "8a2db820b32e4d7aac9b46ce9faf6d85103915e7b7ae40cb5249a967b188f425",
+  "scope": "Fixed local endpoint scalars and GRAIN BODY directions, not full L or personality scores. Source affine bound is a vector-error bound, not an action-error bound.",
+  "reference": "source4LOO/new8all4 reused discovery materials; factor columns are not independent authors.",
+  "cpu_scope": "Successful numeric stages including replay; provenance preflight and imports excluded."
+}

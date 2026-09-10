@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, sixty-seven finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, sixty-eight finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2040,22 +2040,52 @@ Read [report](../reports/grain_vector_mechanisms/ENDPOINT_QUERY_CONTRAST_REPORT_
 [theory](GRAIN_ENDPOINT_QUERY_CONTRAST_THEORY_V1.md),
 [NEXT79](GRAIN_CONTEXT_DIFFERENTIAL_READER_PLAN_V1.md).
 
+## Sixty-eighth finite pass delivered: conditional reader and source-range limit
+
+- Previous turn classified as PROGRESS: NEXT78 located differential-reading
+  modulation. NEXT79 implements the frozen conditional field rather than adding
+  another attribution table. Primary `627decc`; five source packages,0solves.
+- Conditional new8 response/source scalar contrast r .577035->.596467, centered
+  MSE .030494->.029350, but raw SSEzero .193610->.196983. K+V error7.288066->7.311582;
+  reader projection+.329503->+.330431 versus native-.128743. No promotion.
+  Source4 scalar r remains negative; identity-selector scalar rankings worsen.
+- Source differential affine rank3(new8)/2(source4LOO). Orthogonal lower bound
+  accounts for78.60%/58.83% of conditional vector SSE. Sharper normalized weights
+  cannot remove it; vector-space error does not bound projected action error.
+  Effective source counts3.955/4 and2.993/3 describe near-uniform weights.
+- With native evidence, new8 differential scalar error improves but K+V error
+  worsens2.161903->2.299762. Move beyond static source-output mixtures to source
+  reader motion, not another kernel sweep or full-vector accuracy claim.
+-12application/12private-evaluation packets,8CSV exact replay,128scalar FD max
+  4.201542e-10,24BODY/context checks,baseline arrays4.218847e-15 and288old metrics
+  4.440892e-15.29focused tests/Ruff pass,10.238926CPU seconds including replay.
+ 0newneural/API/Y/MEPS. No runtime failure or old scorer/lockbox/push change.
+- NEXT80 freezes a source-only context secant field with one directional column
+  per source/reference. Local reader motion can add new output directions;
+  whether they improve projected response remains the development question.
+
+Read [report](../reports/grain_vector_mechanisms/CONTEXT_DIFFERENTIAL_READER_REPORT_V1.md),
+[theory](GRAIN_CONTEXT_DIFFERENTIAL_READER_THEORY_V1.md),
+[NEXT80](GRAIN_SOURCE_READER_MOTION_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT79 | Can current context select the source differential reader and recover opposing modulation? | Execute GRAIN_CONTEXT_DIFFERENTIAL_READER_PLAN_V1; paired-last normalized source smoother, shared reader fixed, all prior functions |Five source constructions,0neural/Y,90CPU seconds; unchanged baseline replay and same-scalar BODY derivative, no kernel grid |
+| NEXT80 | Can source reader motion supply missing output directions and useful modulation? | Execute GRAIN_SOURCE_READER_MOTION_PLAN_V1; source-only paired-context secants plus one fixed numerical field, all prior functions |At most76reverse calls/120native seconds plus90CPU; correct block22 endpoint hook, source-disjoint directions, no grid/current target access |
 
-These are local computational/theory questions. NEXT78 complete,0new source solves;
-no live native job. No MLP24/attention22 neural refinement, old queue restart,
-broader factor search or clinical naming. NEXT79 planned, not executed; develop
-conditional differential reading while retaining all selector/value outcomes.
+These are local computational/theory questions. NEXT79 complete,0new source solves;
+no live native job. NEXT80 permits only the specified bounded source-reader
+intervention, not general MLP24/attention22 refinement or an old queue restart.
+No broader factor search or clinical naming. NEXT80 planned, not executed;
+develop source reader motion while retaining all selector/value outcomes.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
-assembly and NEXT78 contrast accounting are closed. No readout fitted on new8.
+assembly, NEXT78 contrast accounting and NEXT79 kernel family are closed.
+No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

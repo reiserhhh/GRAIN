@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT78同材料query差=共同reader读证据差+差异reader读共同证据。原生scalar作者中心化reader投影.550/.741，新8K+V反向-.129而源固定reader改为正；NEXT79条件化差异读头，正文Dc=0，同scalar沿GRAIN方向导数。非人格因果份额 | endpoint query contrast theory §§1-5; ENDPOINT_QUERY_CONTRAST_REPORT_V1; context differential reader plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT79条件差异reader让新8scalar r .577->.596但未恢复反向作用；78.60%向量误差在rank3源仿射空间外，不靠重调归一化权重可消。NEXT80源语境方向教学生成新reader方向；same-material GRAIN仍为scalar正文导数，非人格因果比例 | context differential reader theory §§1-4; CONTEXT_DIFFERENTIAL_READER_REPORT_V1; source reader motion plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,23 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第六十八轮补充：选择已有读法和生成新的读法方向是两回事
+
+NEXT79主实现627decc，5源包/0求解/神经/Y。新8response/source scalar对比
+r .577035->.596467，作者中心化MSE下降但原始MSE略增；K+V误差7.288->7.312，
+差异reader投影仍+.330而原生-.129。此单核方案不晋级，不开带宽网格。
+
+源reader差异仿射rank3/2，对新8/源4条件向量误差下界比例78.60%/58.83%。
+这是正交分解的向量下界，不是投影作用或人格信息比例。权重的有效源数
+3.955/4，虽然几乎平均，但锐化权重也无法生成空间外方向。下一NEXT80源端
+控制H16 last后捕捉post-attention22 reader变化，用方向secant生成局部读法场。
+同时保留数值scalar与完整product-rule导数，不任意拼接响应。
+
+12包/12评估包/8CSV精确重放；128FD max4.20e-10、29测试/Ruff、10.238926CPU秒。
+见[报告](../reports/grain_vector_mechanisms/CONTEXT_DIFFERENTIAL_READER_REPORT_V1.md)、
+[理论](GRAIN_CONTEXT_DIFFERENTIAL_READER_THEORY_V1.md)、
+[NEXT80](GRAIN_SOURCE_READER_MOTION_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第六十七轮补充：查询差异的读法可以增强分数，也可以抑制响应
 
