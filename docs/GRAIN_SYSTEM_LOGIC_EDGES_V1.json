@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "88ca635563da6745209092403aa494a4bc575be38d69e9efb0ec95f355b66869",
+  "atlas_sha256": "d052fba410ec54f630e78dcb7fb3391fc733917800db7243126cb70732fdaf82",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT48\u4ec5\u6e904\u7f16\u8bd1\u5171\u540c/\u67e5\u8be2\u5dee\u5f02\u5411\u91cf\uff1b\u65b08\u4fee\u6b63\u9879r=.886208/.885192\uff0c\u603b\u5bf9\u6bd4r=.976535/.976360\u3002\u5f53\u524d\u53ea\u7528v,d\uff1b\u6b64\u5904x\u4f9d\u8d56\u79fb\u9664\uff0c\u4e0a\u6e38\u5168token\u8fd0\u8f93\u4ecd\u539f\u751f\uff0c\u5c40\u90e8\u6a21\u578b\u4f5c\u7528\u4e0d\u662f\u95ee\u5377\u76f8\u5173",
-      "evidence_entry": "source query correction theory \u00a7\u00a71-3; upstream mechanism integration"
+      "alternative_or_next_link": "NEXT49\u5b9e\u9645GRAIN\u65b9\u5411\u6539\u53d8attention22\u7684Q/K/V\uff1b\u65b08\u5bf9\u6bd4\u6295\u5f71=.083/.904/.013\uff0c96\u539f\u751f\u5411\u91cf\u6838\u9a8c\u3002\u5171\u540c\u5c40\u90e8\u8bfb\u5411\u91cf\u4ecd\u4fdd\u7559\uff0c\u5f53\u524d\u9009\u62e9/\u8fd0\u8f93\u4ecd\u6761\u4ef6\u5316\uff0c\u975e\u95ee\u5377\u76f8\u5173",
+      "evidence_entry": "upstream attention channels theory \u00a7\u00a71-3; source query correction theory"
     },
     {
       "id": "L20",
@@ -216,8 +216,8 @@
       "id": "L31",
       "implication": "\u5f53\u524d\u5c40\u90e8\u63a5\u53e3 -> \u4eba\u683c/\u72b6\u6001\u89e3\u91ca\u5668",
       "type_and_status": "H/E",
-      "alternative_or_next_link": "NEXT48\u8865\u4e0a\u53ef\u7528\u6e90\u67e5\u8be2\u9879\uff0c\u65b08\u8bef\u5dee\u6e90\u66ff\u6362RMS=.013454\u3001\u67e5\u8be2\u8fd1\u4f3c=.012086\u3002\u5173\u95edMLP24\u7ec6\u8c03\uff0cNEXT49\u67e5attention22\u4f20\u5165query/key/value\uff1b\u4fdd\u7559\u6a21\u578b\u8ba1\u7b97\u4e0e\u4eba\u683c/\u4e34\u5e8a\u89e3\u91ca\u5c42\u6b21",
-      "evidence_entry": "source query correction theory \u00a7\u00a73-4; upstream attention channels plan; same-material interpretation theory"
+      "alternative_or_next_link": "NEXT49\u628a\u8bc1\u636e\u9009\u62e9\u548c\u5185\u5bb9\u5199\u5165\u5206\u5f00\uff1bquery\u53ef\u8c03\u8282key\uff0c\u4e0d\u80fd\u628a\u8d1f\u4f5c\u7528\u5220\u6210\u566a\u58f0\u3002NEXT50\u95ee\u6e90query\u5f15\u5b50\u53ef\u5426\u590d\u7528\uff1b\u4e0a\u6e38x/d\u4ecd\u539f\u751f\uff0c\u6a21\u578b\u5fae\u5206\u4e0d\u76f4\u63a5\u7b49\u540c\u4eba\u7c7b\u63a8\u7406\u6216\u4e34\u5e8a\u6784\u5ff5",
+      "evidence_entry": "upstream attention channels theory \u00a7\u00a72-4; source query selection plan; same-material interpretation theory"
     }
   ]
 }

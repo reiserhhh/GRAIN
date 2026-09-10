@@ -205,7 +205,9 @@ def capture(out):
                     torch.mps.synchronize()
                     t = time.monotonic()
                     x, d = torch.func.jvp(
-                        lambda h, kw=kw: pre_attention(ob.model, h, kw), (state,), (delta,)
+                        lambda h, kw=kw: pre_attention(ob.model, h, kw),
+                        (state,),
+                        (delta,),
                     )
                     torch.mps.synchronize()
                     native_seconds += time.monotonic() - t
@@ -324,9 +326,42 @@ def predict(out, name):
     print({k: v for k, v in freeze.items() if k != "files"}, flush=True)
 
 
+def verify_evaluation(out):
+    """Permit an explicit reporting-only revision while preserving the primary freeze."""
+    m = read(out / "manifest.json")
+    code = str(Path(__file__).relative_to(ROOT))
+    digest = sha(Path(__file__))
+    expected = m["inputs"][code]
+    if digest == expected:
+        return verify(out)
+    amendment = read(out / "analysis_code_amendment.json")
+    if amendment != {
+        "original_code_sha256": expected,
+        "revised_code_sha256": digest,
+        "scope": "report identity columns only; no capture or prediction rerun",
+    }:
+        raise ValueError("Reporting amendment does not match original/current code")
+    verify_hashes(ROOT, {k: v for k, v in m["inputs"].items() if k != code})
+    verify_hashes(out, m["prepared"])
+    return m
+
+
+def identity_fields(job, mode, factor, query=None):
+    """Keep author/query identifiers distinct from numeric key/query channel names."""
+    r = {
+        "author_key": job["key"],
+        "cohort": job["cohort"],
+        "mode": mode,
+        "factor": f"whole:F{factor + 1:02d}",
+    }
+    if query is not None:
+        r["query_name"] = query
+    return r
+
+
 def evaluate(out, name, predictions):
     """Check full vectors, then summarize signed channels and their cancellation."""
-    verify(out)
+    verify_evaluation(out)
     jobs = completed_pairs(out)
     freeze = read(out / predictions / "prediction_freeze.json")
     if freeze["status"] != "COMPLETE" or freeze["pairs"] != len(jobs):
@@ -356,11 +391,7 @@ def evaluate(out, name, predictions):
                 for f in range(4):
                     action_rows.append(
                         {
-                            "key": j["key"],
-                            "cohort": j["cohort"],
-                            "mode": mode,
-                            "query": QUERIES[q],
-                            "factor": f"whole:F{f + 1:02d}",
+                            **identity_fields(j, mode, f, QUERIES[q]),
                             "native": float(native[f] @ reader[m]),
                             **{
                                 ch: float(p["actions"][q, m, c, f])
@@ -372,10 +403,7 @@ def evaluate(out, name, predictions):
             for f in range(4):
                 rows.append(
                     {
-                        "key": j["key"],
-                        "cohort": j["cohort"],
-                        "mode": mode,
-                        "factor": f"whole:F{f + 1:02d}",
+                        **identity_fields(j, mode, f),
                         "native": float((targets[0][f] - targets[1][f]) @ reader[m]),
                         "final_T": float(link["transport"][m, f]),
                         **{
@@ -388,13 +416,21 @@ def evaluate(out, name, predictions):
     df["sum"] = df[list(CHANNELS)].sum(axis=1)
     adf = pd.DataFrame(action_rows)
     adf["sum"] = adf[list(CHANNELS)].sum(axis=1)
+    if (
+        df.author_key.nunique() != len(jobs)
+        or adf.author_key.nunique() != len(jobs)
+        or set(adf.query_name) != set(QUERIES)
+        or df.duplicated(["author_key", "mode", "factor"]).any()
+        or adf.duplicated(["author_key", "mode", "factor", "query_name"]).any()
+    ):
+        raise ValueError("Author/query identity collision or duplicate output")
     df.to_csv(dst / "private_contrasts.csv", index=False)
     adf.to_csv(dst / "private_actions.csv", index=False)
     files = ["private_contrasts.csv", "private_actions.csv"]
     for frame, group, name_ in (
         (df, ["cohort", "mode"], "channel_summary.csv"),
         (df, ["cohort", "mode", "factor"], "factor_channels.csv"),
-        (adf, ["cohort", "mode", "query"], "query_actions.csv"),
+        (adf, ["cohort", "mode", "query_name"], "query_actions.csv"),
     ):
         result = []
         for key, g in frame.groupby(group, sort=True):
@@ -403,7 +439,7 @@ def evaluate(out, name, predictions):
                 x = g[channel].to_numpy()
                 row = dict(zip(group, key, strict=True)) | {
                     "channel": channel,
-                    "authors": g.key.nunique(),
+                    "authors": g.author_key.nunique(),
                     "actions": len(g),
                     "rms": float(np.sqrt(np.mean(x * x))),
                     "native_rms": float(np.sqrt(np.mean(native * native))),

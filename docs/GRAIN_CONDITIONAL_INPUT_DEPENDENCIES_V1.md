@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮建立、第三十七轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第三十八轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -56,6 +56,7 @@ flowchart TD
 | 查询差异回调 | delta_u=Jbar delta_d+delta_J dbar | `query_counteraction.py`；实际preMLP24 x、缓存d、block24矩阵、同源w*，完整2x2交换 | 新8传入/算子项对最终T=-.313540/+.067912；完整96向量核验。Jbar仍随当前作者变化；NEXT47才测试源固定共享，当前步骤没有去掉上游神经依赖 |
 | 源固定共同回调 | v*=mean_s,q J24(x_s,q)^T w*，chat=v*^T delta_d | `source_common_counteraction.py`；构造仅源4 x/权重；当前应用只用两个固定v与d | 新8r=.955274/.954853、SSE/zero=.091333/.092402；8人v完全相同。去掉此处当前x依赖但保留原生上游d；NEXT48只检验一次源查询差异，随后回到完整输入链 |
 | 源固定查询修正 | delta_ahat=v_common^T delta_d+(v_N-v_C)^T dbar | `source_query_correction.py`；构造仅源4分查询J伴随均值；当前应用v,d，公共项不变 | 新8修正/算子项r=.886208/.885192；总对比r=.976535/.976360、SSE/zero=.060734/.061466。105测试/12数组8CSV重放；MLP24-only细调结束，NEXT49补全上游attention22的Q/K/V传输，不把局部高r当问卷预测 |
+| 上游完整注意力三通道 | dot_o=sum a dot_V + sum a(V-o)(dot_Q K+Q dot_K)/sqrt(h) | `upstream_attention_channels.py`；全token preAttention22 x/d、实际norm/QKV/O/RoPE/GQA/mask、固定w*；r2汇总 | 新8Q/K/V局部对比投影=.083/.904/.013，源4=.562/.271/.167；96原生向量相对差≤5.272e-6。Q不应删除；NEXT50用源固定Q检验key选择读法，当前K/V/dK仍原生 |
 | 固定输出方向传输 | J_q=K_q^T W_A^T c，c固定 | `run_grain_fixed_seed_attention.py`；旧4/新8共同正文、N/确认原query状态与布局 | 相同seed下正文余弦.728/.657，直接显示条件传输差异；不是单靠两个不同seed的夹角推断K变化。L是新logit诊断，不是原概率F |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
@@ -76,7 +77,9 @@ flowchart TD
 NEXT48之后的精简[全链依赖与归位图](GRAIN_UPSTREAM_MECHANISM_INTEGRATION_V1.md)
 将已经提取的局部读法、当前仍需原模型的全token传输和效标解释分开。
 旧末端BODY-only K/V分解不包含被固定的query变化；NEXT49在传播后的
-attention22边界补齐这一项，旧受限公式本身不因此失效。
+attention22边界已补齐这一项，旧受限公式本身不因此失效。
+第三十八轮的[三通道机制](GRAIN_UPSTREAM_ATTENTION_CHANNELS_THEORY_V1.md)
+显示选择与写入可同时变化；NEXT50检验局部源query引子，而非直接替代全原文推论。
 
 同一材料、查询、布局和数值观察器下，旧四格的定义为：
 

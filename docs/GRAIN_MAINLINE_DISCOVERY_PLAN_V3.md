@@ -1,6 +1,17 @@
 # GRAIN mainline discovery V3
 
-> **2026-09-10 newest: NEXT48 source-query correction delivered; MLP24 refinement closed.**
+> **2026-09-10 newest: NEXT49 full upstream attention channels delivered.**
+> New8 own query-contrast projections Q/K/V=.083093/.903954/.012952; source4
+> .561950/.271327/.166722. Selection dominates new8 contrast, but Q is not disposable.
+>96 native prefix JVPs/77.972s, all96 full-vector sums match within5.272e-6 relative.
+>192 actions/96 contrasts,116 scoped tests; explicit report-only r2 identity fix.
+> [Report](../reports/grain_vector_mechanisms/UPSTREAM_ATTENTION_CHANNELS_REPORT_V1.md),
+> [theory](GRAIN_UPSTREAM_ATTENTION_CHANNELS_THEORY_V1.md).
+> [NEXT50](GRAIN_SOURCE_QUERY_SELECTION_PLAN_V1.md) planned: source own/other/shared
+> query anchors for key selection,0 native/fit/Y,60s numeric. No attention-layer
+> grid; one family before returning to the assembled mainline input/readout.
+
+> **Previous NEXT48; its NEXT49 request is completed above.**
 > New8 correction/operator r=.886208/.885192; total local contrast r=.976535/.976360,
 > SSE/zero=.060734/.061466. Source-only vectors, no new8 x or target construction.
 >192 actions/96 contrasts,4.078s plus4.095s replay,0 native/fit/Y/API;105 scoped tests.
