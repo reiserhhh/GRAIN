@@ -1,0 +1,30 @@
+{
+  "primary_commit": "4df8e008a9c68a3f095cccbfe23ee2174a6b2380",
+  "audit": {
+    "status": "PASS",
+    "fits": 4,
+    "new_neural_calls": 0,
+    "prediction_packets": 48,
+    "csv_replay": 11,
+    "direction_checks": 384,
+    "max_finite_difference_error": 1.3657476538586621e-10,
+    "objective_reconstruction_error": 0.0,
+    "cpu_seconds": 5.7495330000000004,
+    "cumulative_cpu_seconds": 29.464103
+  },
+  "files": {
+    "scores.csv": "3f20b02f5c4471ffd6c148eca2f5c5eef1a2a7e2945605344f68f8a3b75b9e74",
+    "actions.csv": "d4ae42fc9cd97f38a313b7b229a04228dfd7fea54799ad31ab24876498dbbd93",
+    "factor_actions.csv": "3a32ecea66ef812bbee296442e56aa2487ad6ef12f3f18bee6448fc9f6f3f6eb",
+    "fields.csv": "78e423beb395101c4951d5aff55993e5e5bf24ca42b1ff0ddd122ee5f3ada948",
+    "cross_response.csv": "89ff26bb4a88688bb7a87365b480adde8e234b36ae054070b0fb45ed96d3bd9b",
+    "source_diagnostics.csv": "eb5c1b936141ba0205c395692d872c4d08ef59fd10b785cc06571d2bdd6b698b",
+    "post_outcome_positional_range.csv": "af811b437f7131e7555ab30aed1cf0fd1c9ee43b30ef65d098fd5f502c8fde51"
+  },
+  "scope": "source4 fitting, previously exposed disjoint new8 application, two native model queries; no human criterion",
+  "post_outcome_scope": "source-only per-author positional subspace bound; no predictive coefficients retained or applied",
+  "post_outcome_code_sha256": "4b79c120af3424630ada3aac1c34762e0a60ae1df56b69773ca7ad573510f66c",
+  "post_outcome_test_sha256": "b21b567cb413ed4bd7fbecf1ed899fad2fe6a7bdba168fe56aab0b60632d4bab",
+  "post_outcome_cpu_seconds": 0.2729330000000001,
+  "additional_predictive_fits_or_neural_calls": 0
+}

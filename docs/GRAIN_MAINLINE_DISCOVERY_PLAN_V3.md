@@ -1,5 +1,20 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT68 learns cross-token response; the range is too narrow.**
+> Same-source matched scalar fits; source B coordinate SSEzero .973321/.974318,
+> GRAIN B-action SSEzero .960824/.961599 (N/confirmation). Local comparator0response.
+> New8 wholeL r=.137/.387; no predictive replacement. Actual response is exactly
+> constant+position: source target representable energy2.939%/3.034%, and fitting
+> obtains90.78%/84.64% of this optimistic possible SSE reduction. Change the
+> local-content dependence, not alpha.4fits/29.464103s stagedCPU,0newneural/Y,
+>55focused tests,48packets/11CSV replay,384FD max1.37e-10.
+> [Report](../reports/grain_vector_mechanisms/COUPLED_POOLING_REPORT_V1.md),
+> [theory](GRAIN_COUPLED_POOLING_THEORY_V1.md).
+> **NEXT69 planned:** [nonlinear token pooling](GRAIN_NONLINEAR_POOLING_PLAN_V1.md),
+> same16-dimensional summary/136quadratic coefficients, source-frozen Gaussian
+> token features before pooling.2fits/180CPU seconds, no native calls or grids.
+
+> Previous NEXT67 update; its NEXT68 task is completed above.
 > **2026-09-11 newest: NEXT67 native cross-token reading exists.**
 > Change only early BODY by a fixed1% GRAIN combination; late BODY/last unchanged.
 > Late gradient finite change .261%/.314% of original (N/confirmation),8/8 cells;

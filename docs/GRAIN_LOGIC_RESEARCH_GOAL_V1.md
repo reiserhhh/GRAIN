@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-six finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-seven finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1718,20 +1718,45 @@ Read [report](../reports/grain_vector_mechanisms/CROSS_TOKEN_READING_REPORT_V1.m
 [theory](GRAIN_CROSS_TOKEN_READING_THEORY_V1.md),
 [NEXT68](GRAIN_COUPLED_POOLING_PLAN_V1.md).
 
+## Fifty-seventh pass: a learned interaction with a quantified local-content restriction
+
+- Previous turn classified as progress: NEXT67 detected nonlocal reading, paired
+  the two queries on identical BODY, and froze a compatible quadratic development.
+- NEXT68 primary `4df8e00`;4matched fits, same source4/four views/two queries,
+  0newneural/Y. Source B coordinate SSEzero .973321/.974318; four-direction
+  actionSSEzero .960824/.961599. Local counterpart remains exactzero response.
+- New8 wholeL r=.137133/.386932, actionSSEzero1.092754/1.086398. Confirmation
+  score modestly improves over matchedlocal, but action error increases;
+  original-material wholeL remains stronger. No complete predictive replacement.
+- Exact formula identifies B response delta_k=a+p*b. Post-outcome source-only
+  relaxed projection retains2.939%/3.034% target energy; actual fitting obtains
+  90.78%/84.64% of that generous SSE reduction bound. This is coordinate-specific
+  function capacity, not personality information. Stop linear-pooled tuning.
+- 29.464103s stagedCPU;55focused tests/Ruff,48packets/11CSV exact replay,
+  384FD max1.37e-10, objective replay0. Public7aggregate tables include one
+  separately labeled source positional-range account; no diagnostic deployment.
+- NEXT69 changes only the16 pooled features to frozen nonlinear token Gaussians,
+  keeping1305coefficients/targets/alpha.2fits/180CPU seconds; after one contrast
+  stop the pooled-quadratic family, not another source-capacity rescue ladder.
+
+Read [report](../reports/grain_vector_mechanisms/COUPLED_POOLING_REPORT_V1.md),
+[theory](GRAIN_COUPLED_POOLING_THEORY_V1.md),
+[NEXT69](GRAIN_NONLINEAR_POOLING_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT68 | Can a compatible pooled interaction read the measured cross-region dependence? | Execute GRAIN_COUPLED_POOLING_PLAN_V1; nested local/joint scalars, same four source views and query-specific quadratic, explicit late-response teaching | Four numeric fits/180CPU seconds,0newnative/Y; source cross-response and exposed new8 wholeL/actions reported separately, no parameter sweep |
+| NEXT69 | Can nonlinear token pooling learn content-specific cross-region responses? | Execute GRAIN_NONLINEAR_POOLING_PLAN_V1; replace16linear moments by16source-frozen Gaussian token features, keep1305coefficients and same source objectives | Two fits/180CPU seconds,0newnative/Y; source response/new8 wholeL/actions separate; stop pooled-quadratic family after this contrast |
 
-These are local computational/theory questions. NEXT67 complete,17nativecalls;
+These are local computational/theory questions. NEXT68 complete,4numericfits;
 no live native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT68 planned, not executed; develop
-a compatible pooled interaction, instead of repeatedly detecting its existence.
+broader factor search or clinical naming. NEXT69 planned, not executed; develop
+content-dependent token interaction, instead of repeatedly detecting its existence.
 No penalty/donor/dose sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

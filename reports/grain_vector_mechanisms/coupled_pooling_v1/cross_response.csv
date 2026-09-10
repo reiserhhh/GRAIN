@@ -1,0 +1,5 @@
+query_name,candidate,authors,coordinate_sse_over_zero,full_field_relative_sse_mean,action_sse_over_zero,action_r,actual_action_rms,predicted_action_rms
+confirmation_seeking,coupled_quadratic,4,0.9743176472130524,0.9951024161785483,0.9615985627066065,0.19556705335387656,0.0004330160905879724,5.638925271300234e-05
+confirmation_seeking,matched_local,4,1.0,1.0,1.0,,0.0004330160905879724,0.0
+neuroticism,coupled_quadratic,4,0.9733209072753907,0.995398858436577,0.9608244802506692,0.2267887120143661,0.0002563179396393787,3.8420146751283944e-05
+neuroticism,matched_local,4,1.0,1.0,1.0,,0.0002563179396393787,0.0

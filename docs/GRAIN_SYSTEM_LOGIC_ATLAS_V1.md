@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT67同BODY两查询，前段固定GRAIN组合移动1%后，不动后段梯度变化.261%/.314%，32后段方向作用均改变；旧局部求和恒0。同材料接口扩展为D_B乘路径平均混合Hessian乘D_A；两查询响应余弦.708，非量表相关 | cross token reading theory §§1-3,6; CROSS_TOKEN_READING_REPORT_V1 |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT67非局部依赖保留；NEXT68同scalar二次项学到源B作用，方向SSEzero .9608/.9616。变化严格是a+p*b，可表达源目标仅约3%；应让未改token的局部内容进入Jacobian，NEXT69同大小非线性汇总，不是增加总分权重 | coupled pooling theory §§1-4; COUPLED_POOLING_REPORT_V1 |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT67检出小而非零的跨材料读取依赖，非完整误差的主要原因已证。NEXT68开发同标量二次池化以表达交互，保持整体评分与导数兼容；不从函数耦合直接命名临床构念。H16仍神经，实际人格解释保留独立证据链 | cross token reading theory §§4-6; coupled pooling plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT68完成可学习的小跨材料作用，新8完整模型不替换。源空间上限为局部表达范围而非人格信息份额；NEXT69改内容条件化交互。数值作用、原文地址与心理辅助编码分层，H16仍依赖编码器，人格含义保留独立经验连接 | coupled pooling theory §§3-5; nonlinear pooling plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,25 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第五十七轮补充：已有交互，尚缺局部内容条件化
+
+NEXT68已把源跨材料效应学进同一个评分/导数标量；B坐标响应SSEzero为
+.973321/.974318，GRAIN投影作用为.960824/.961599。旧局部对照严格为零。
+新8确认总分r=.356->.387但方向误差变大，神经质无提升，不替换完整模型。
+
+从实际公式推出delta_k_B=a+p_B*b；在每个作者独立放松系数的源投影中，
+该族也只能表达2.939%/3.034%目标能量。当前已经取得宽松误差减少上限的
+90.78%/84.64%，所以继续优化求解或alpha不能补齐范围以外的响应。
+这不是人格信息少，而是**未改区域的不同内容必须有不同的响应模板**。
+
+一般式Dphi_B^T Hessian(rho) Dphi_A给出下一机制：把非线性放在逐token
+汇总前，使Jacobian依赖局部向量。NEXT69同样16维/136交互系数，只用冻结
+源Gaussian特征替换线性矩；两求解，不启动神经训练或新8标签搜索。
+
+55相关测试，48预测包/11CSV精确重放，384方向差分误差1.37e-10；29.464秒CPU。
+见[报告](../reports/grain_vector_mechanisms/COUPLED_POOLING_REPORT_V1.md)、
+[理论](GRAIN_COUPLED_POOLING_THEORY_V1.md)、[下一计划](GRAIN_NONLINEAR_POOLING_PLAN_V1.md)。
 
 ### 第五十六轮补充：同一表达的作用会随其它材料变化
 
