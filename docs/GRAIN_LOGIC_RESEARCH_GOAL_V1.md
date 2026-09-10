@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty-four finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-five finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1660,21 +1660,49 @@ Read [report](../reports/grain_vector_mechanisms/FULL_CONTEXT_GEOMETRY_REPORT_V1
 [theory](GRAIN_FULL_CONTEXT_GEOMETRY_THEORY_V1.md),
 [NEXT66](GRAIN_PAIRED_RESPONSE_OBJECTIVE_PLAN_V1.md).
 
+## Fifty-fifth pass: response teaching separates priority, capacity and token coupling
+
+- Previous turn classified as progress: NEXT65 completed the raw-context kernel,
+  found a retained source allocation effect and isolated small paired-change energy.
+- NEXT66 primary `3114dca`, same1169-coef scalar/inputs/oldscales,2fits/0neural/Y.
+  Added one source-normalized paired-density term, no weight/hyperparameter search.
+- Source delta SSEzero 1.0203->1.0031 / 1.0226->1.0101; source N finite-action r
+  .096->.257 while allocation r .530->.425. Different local outputs retained.
+  New8 wholeL r=.046/.296, actionSSEzero1.123/1.107: no full replacement.
+- Post-outcome source Gram account:576/576 eigenmodes retained at relative1e-10,
+  represented target energy .11344/.08664. Projection coefficient norms1010/861,
+  ridge cost10209/7419; even delta-only same-ridge diagnostic SSE .99494/.99756.
+  No diagnostic coefficients applied to new8. No more local-dictionary weight rescue.
+- Exact new structural observation: conditional local scalar sums have zero
+  mixed derivatives between disjoint BODY tokens with last fixed. Nonlinear
+  post-pooling or normalized evidence selection need not. Synthetic witness
+  verified; native size and source of that coupling remain NEXT67, not assumed.
+- 11.059116s primaryCPU,44focused tests/Ruff,32prediction/16CSV exact replay,
+  128actualFD max1.62e-10; objective reconstruction <=1.77e-15. Source spectral
+  analysis plus replay ~.12s per publication,2queries,0predictive refits.
+- NEXT67: one bounded source4 native cross-region response experiment,17calls
+  maximum/120s native,0fits/new8/Y. Opens a coupled-readout development question,
+  not another parameter or source-fidelity diagnostic series.
+
+Read [report](../reports/grain_vector_mechanisms/PAIRED_RESPONSE_OBJECTIVE_REPORT_V1.md),
+[theory](GRAIN_PAIRED_RESPONSE_OBJECTIVE_THEORY_V1.md),
+[NEXT67](GRAIN_CROSS_TOKEN_READING_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT66 | Does explicit paired-response teaching preserve the small conditional change in the same scalar? | Execute GRAIN_PAIRED_RESPONSE_OBJECTIVE_PLAN_V1; same NEXT65 inputs/dictionary plus source-unit-normalized half-difference loss |2newfits/120sCPU/0neural/Y; source change and complete new8 results, no weight/grid search; preserve score and action comparisons |
+| NEXT67 | Does changing one BODY region change how an untouched region is read? | Execute GRAIN_CROSS_TOKEN_READING_PLAN_V1; fixed last/layout, early GRAIN perturbation, late native gradient and local-sum zero witness | Source4/2queries,17nativecalls/120s maximum,0fits/new8/Y; quantify nonlocal response before coupled scalar development |
 
-These are local computational/theory questions. NEXT65 complete,2numericfits;
+These are local computational/theory questions. NEXT66 complete,2numericfits;
 no native job. No MLP24/attention22/hidden-state refinement, old queue restart,
-broader factor search or clinical naming. NEXT66 planned, not executed; teach
-source paired response and return to complete new8 inference. No penalty/donor/dose
-sweep or automatic source-only capacity detour.
+broader factor search or clinical naming. NEXT67 planned, not executed; move
+from token-local functions to an explicit cross-region reading question. No
+penalty/donor/dose sweep or automatic source-only capacity detour.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT66 paired-response teaching executed; local-sum family closed.**
+> Same scalar/inputs, source-normalized delta term only; 2fits/0neural/Y.
+> Source delta SSEzero 1.0203->1.0031 / 1.0226->1.0101; whole new8 L r=.046/.296,
+> actionSSEzero1.123/1.107. Small source gains, no complete promotion.
+> Source spectral account:576/576 modes retained, target capacity11.34%/8.66%;
+> reaching it costs10209/7419 ridge units. More response weight cannot add missing
+> dictionary directions. Separately, fixed-last local token sums force all
+> cross-token mixed derivatives tozero, even with nonlinear token features.
+> 11.059116s primary CPU;44tests/Ruff,32prediction/16CSV exact replay.
+> [Report](../reports/grain_vector_mechanisms/PAIRED_RESPONSE_OBJECTIVE_REPORT_V1.md),
+> [theory](GRAIN_PAIRED_RESPONSE_OBJECTIVE_THEORY_V1.md).
+> **NEXT67 planned:** [cross-token reading](GRAIN_CROSS_TOKEN_READING_PLAN_V1.md),
+> change early BODY only, read native gradient on untouched late BODY; source4,
+>2queries,17calls/120s native maximum, no fits/new8/Y. Test a new functional
+> dependence before building normalized joint reading, not another alpha grid.
+
+> Previous NEXT65 update; its NEXT66 task is completed above.
 > **2026-09-11 newest: NEXT65 full-context geometry executed.**
 > Same source4/augmented views and1169-coef scalar,2newfits/0neural/Y.
 > N source allocation-change r=.378->.530, SSEzero=.944->.906: retain local gain.

@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第五十四轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第五十五轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 配对变化教学与token联合读法 | J66=J65+源单位能量配对密度差监督；当前函数仍局部求和 | `paired_response_objective.py`；NEXT66两源求解，已有源外8应用 | 变化SSEzero降至1.003/1.010；源字典仅覆盖11.34%/8.66%，整体未提升。固定last时跨token混合导数严格0；NEXT67检验原生跨区域读法，再开发联合汇总，不继续调权 |
 | 完整context距离与配对响应 | 原始last距离核；源同BODY两条件密度分为mean/half-difference | `full_context_geometry.py`；NEXT65两求解；运行后精确账本不改拟合 | N源配置变化r=.378->.530，整新8评分未提升；半差只占目标能量.1905%/.4836%，相对变化SSE仍1.02。NEXT66在同scalar增加源归一化变化监督，输入/字典不改；小能量不等于噪声 |
 | 条件token标量与参照几何 | Lhat=加性项+mean gamma(c)*局部Hermite项；评分/梯度同源 | `context_modulated_potential.py`；NEXT64同源原始/干预材料，4求解，源外8应用 | 原生变化幅度只恢复7.54%/8.20%，变化r=.143/-.371；新8作用微增但整分数下降，不晋级。源4全秩白化造出等距单纯形，新8context能量覆盖9%/11%；NEXT65保留完整last距离，非继续调参 |
 | 读取上下文与BODY的有限交互 | delta_g=积分 H_(BODY,last) delta_last；delta_tau=delta_g:D | `context_reading_interaction.py`；NEXT63源4同query其它3源last均值，只替换最后H16行；9原生后缀反传 | last相对变化5.35%/5.74%，BODY梯度变化10.45%/16.08%，32方向作用全变；原加性模型精确0。旧U8能量21%/25%仍有作用抵消，不能删除补空间；NEXT64全源构造条件scalar，新8才做应用；非人类人格因果 |

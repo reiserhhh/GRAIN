@@ -1,0 +1,48 @@
+{
+  "primary_commit": "3114dca99013fefe855fa9207c2a17184494d7ba",
+  "audit": {
+    "status": "PASS",
+    "new_fits": 2,
+    "new_neural_calls": 0,
+    "prediction_packets": 32,
+    "csvs_replayed": 16,
+    "direction_checks": 128,
+    "finite_difference_error": 1.6211336439919677e-10,
+    "objective_reconstruction_error": 1.2212453270876722e-15,
+    "cpu_seconds": 3.913636,
+    "cumulative_compute_cpu_seconds": 11.059116000000001
+  },
+  "files": {
+    "scores.csv": "e27d6cfd8b277f615df523e83ad7e2d0fc05b146df5baa5d388c815de232f87b",
+    "actions.csv": "a3d032ef9358be0686b114b3a9e76804739a2cf1e5fda0f49f4ccc8e9d7ff89f",
+    "factor_actions.csv": "802323809085c89e55ff4a19398b85ac6a7a35f7a2c3fc4848bfba49c240cf91",
+    "score_contrasts.csv": "f4f5732a2ca2acc3643e79adad3b462b06dd1cc2fab88efed99755cd983b5451",
+    "action_contrasts.csv": "e7685127c3daec57b9274d536d26698e6ab3cb1a35c6ce966763bfb2bb6b2cba",
+    "factor_contrasts.csv": "a350f25f6d4179aa844eca3882428f48cd4f5d464587ab6df1e5ff65e01e08a4",
+    "source_interaction.csv": "72e9e1bac34c4e7e67830f3133d20ec121819bc6a2fae3ae398500e3d3c311aa",
+    "fields.csv": "c487a906cf136e14d874788663c4c26c3718a969cfc0442592c6e9b89720c7e1",
+    "paired_objective_account.csv": "542f1d558cf20273b9961f8d30c977dd07cbc7b0dbed88e98f6929090a4cd647",
+    "source_diagnostics.csv": "963722a3d2132b2ce2fec3919e0be23cb435ed0bd100ac08b011e32ec2d5e3ad",
+    "source_spectral_account.csv": "8ebcc1450c59225e3e18b7f1e817cbeea64e434b9c7c46635246f06c656345b5"
+  },
+  "promotion": false,
+  "criteria": {
+    "neuroticism": {
+      "better_action_than_augmented_additive": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": false
+    },
+    "confirmation_seeking": {
+      "better_action_than_augmented_additive": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": true
+    }
+  },
+  "post_outcome_scope": "Source contrast Gram only; two eigendecompositions plus replay, no new8 diagnostic application or predictive refits",
+  "post_outcome_cpu_seconds": 0.11263999999999985,
+  "post_outcome_code": {
+    "scripts/report_grain_paired_response_objective.py": "49177746773a100c7493dafce84fb65cf194b57b5bacc09b57010aeb8df3b8b4",
+    "tests/test_grain_paired_response_spectrum.py": "da3e6de8f1dda539b679ac4d1bd51c1e8a26166cc45ca43aede7662f31175541"
+  },
+  "scope": "source4 in-fit, exposed new8 development; fixed model L and GRAIN actions, no humanY"
+}
