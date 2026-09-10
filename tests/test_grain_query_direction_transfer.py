@@ -14,6 +14,7 @@ from grain_research.vector_mechanisms.query_residual_input import (
     predict_extension,
 )
 from tests.test_grain_query_residual_input import world
+from scripts.audit_grain_reader_transport_inputs import select_members
 
 
 def test_identical_donor_reproduces_diagonal_and_keeps_recipient_output():
@@ -86,3 +87,37 @@ def test_rotation_requires_transforming_the_standardized_ridge_penalty():
     naive = np.linalg.solve(zr.T @ zr + 10 * np.eye(2), zr.T @ y)
     np.testing.assert_allclose(z @ w, zr @ wr, atol=1e-12)
     assert np.max(abs(z @ w - zr @ naive)) > 0.01
+
+
+def test_next_membership_is_outcome_free_order_independent_and_source_disjoint():
+    rows = [
+        {
+            "author_id": str(i),
+            "source_group": "mbti_only" if i < 12 else "big5_only",
+            "view": 0,
+            "outcome": i,
+        }
+        for i in range(24)
+    ]
+    excluded = {"0", "1", "12", "13"}
+    a, counts = select_members(rows, excluded)
+    changed = [r | {"outcome": -r["outcome"]} for r in reversed(rows)]
+    b, _ = select_members(changed, excluded)
+    assert [r["author_id"] for r in a] == [r["author_id"] for r in b]
+    assert not {r["author_id"] for r in a} & excluded
+    assert len(a) == 8 and counts == {"mbti_only": 10, "big5_only": 10}
+
+
+def test_next_membership_rejects_duplicate_view_or_unknown_sources():
+    rows = [
+        {
+            "author_id": str(i),
+            "source_group": "mbti_only" if i < 12 else "big5_only",
+            "view": 0,
+        }
+        for i in range(24)
+    ]
+    with pytest.raises(ValueError):
+        select_members(rows + [rows[0]], set())
+    with pytest.raises(ValueError):
+        select_members(rows, {"missing"})
