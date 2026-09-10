@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "0f7699b7e977be84a20cc28ab808c8042487f93ddcbfa2781a285e5b46c3bc8a",
+  "atlas_sha256": "35eafa2cc62efec7a8c5f68d73f267e5b7726baa0f80d9f7cd36776685adff25",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -97,8 +97,8 @@
       "id": "L14",
       "implication": "\u6587\u672c + \u67e5\u8be2 -> P/Q \u6761\u4ef6\u5316\u8868\u5f81",
       "type_and_status": "E/I",
-      "alternative_or_next_link": "\u67e5\u8be2\u69fd\u6574\u5408\u4fe1\u606f\uff0c\u4e0d\u5fc5\u662f\u4e00\u6761\u5173\u952e\u8bcd\u5230\u7279\u8d28\u8bcd\u7684\u552f\u4e00\u94fe",
-      "evidence_entry": "mainline / reference framework"
+      "alternative_or_next_link": "\u73b0\u6709query-last\u56e0\u679c\u5e03\u5c40\u5141\u8bb8\u5171\u540c\u6b63\u6587\u3001\u4e0d\u540cP/Q\uff1b\u539f\u751f\u68af\u5ea6\u573aN/\u5bfb\u6c42\u786e\u8ba4\u4f59\u5f26.704\uff0cTF\u4e0e\u4e8c\u8005.027/.093\u3002\u5c5e\u4e8e\u6a21\u578b\u5c40\u90e8\u8bfb\u6cd5\u53ca\u5019\u9009\u5b57\u6bcd\u6761\u4ef6\uff0c\u4e0d\u662f\u91cf\u8868\u76f8\u5173",
+      "evidence_entry": "native material reader report \u00a7\u00a71,3"
     },
     {
       "id": "L15",
@@ -132,15 +132,15 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "\u540c\u6750\u6599C=G^T JH/n\u3001S_q=Cw_q\uff1b828\u4f5c\u8005/\u89c6\u56fe\u77e9\u9635\u91cd\u653e15804\u5750\u6807\u8bef\u5dee1.11e-16\u3002\u56fa\u5b9aE5\u7684\u5171\u4eabC\u4e0d\u81ea\u52a8\u9002\u7528\u4e8e\u67e5\u8be2\u6539\u53d8\u539f\u751fH(q)\u7684\u8def\u7ebf",
-      "evidence_entry": "material geometry report \u00a74; operator theory \u00a7\u00a73-4"
+      "alternative_or_next_link": "\u65e7E5\u7684Cw\u4ecd\u7cbe\u786e\uff1b\u539f\u751f\u5171\u540ctoken\u5f20\u91cf\u7ecfJacobian\u5f97\u5230T=Cw+localized\u3002\u4ec5\u5e73\u5747\u65b9\u5411\u8bfb\u6cd5\u7684\u76f8\u5bf9\u4f5c\u7528\u8bef\u5dee.968/.998/1.005\uff0c\u9700\u4fdd\u7559\u4f4d\u7f6e\u7279\u5f02\u8bfb\u53d6\uff1b\u4e0d\u63a8\u51fa\u6240\u6709H\u5747\u67e5\u8be2\u65e0\u5173",
+      "evidence_entry": "native material reader report \u00a72; material geometry report \u00a74"
     },
     {
       "id": "L20",
       "implication": "GRAIN \u5dee\u5206 -> P/Q \u65b9\u5411 -> \u539f\u751f\u8f93\u51fa\u6539\u53d8",
       "type_and_status": "I/E",
-      "alternative_or_next_link": "\u4eba\u5de5\u65b9\u5411\u6709\u6548\u4e0d\u4fdd\u8bc1\u89e3\u91ca\u81ea\u7136\u8def\u5f84\uff1b\u5b9e\u9645E1\u4e2df\u53ef\u8ffd\u8e2a\u3001GRAIN\u5dee\u5206\u53ef\u80fd\u53cd\u5411",
-      "evidence_entry": "dynamic report \u00a73 / natural transport \u00a73"
+      "alternative_or_next_link": "\u65b04\u4f5c\u80053\u67e5\u8be248\u4e2a\u6b63\u6587\u65b9\u5411\uff0c\u6709\u9650\u5dee\u5206\u4e0e\u68af\u5ea647/48\u540c\u53f7\u3001\u76f8\u5bf9L2\u8bef\u5dee.49%-1.67%\uff1b\u4e3a\u56fa\u5b9aP/Q\u7684\u575716\u76f4\u63a5\u4f5c\u7528\uff0c\u4e0d\u662f\u81ea\u7136\u6587\u672c\u603b\u8def\u5f84\u3002\u5b9e\u9645E1\u65e7\u7ed3\u679c\u4fdd\u7559",
+      "evidence_entry": "native material reader report \u00a74; natural transport \u00a73"
     },
     {
       "id": "L21",

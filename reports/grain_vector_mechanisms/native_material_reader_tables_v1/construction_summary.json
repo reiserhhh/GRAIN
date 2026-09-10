@@ -1,0 +1,16 @@
+{
+  "authors": 4,
+  "queries": 3,
+  "material_arms": 8,
+  "prefix_pairs": 24,
+  "prefix_max": 4.57763671875e-05,
+  "original_bound_failures": 4,
+  "selected_tokens": 3517,
+  "slices": 176,
+  "eligible_comments": 44,
+  "input_comments": 48,
+  "seconds": 0.867937084287405,
+  "new_neural_calls": 0,
+  "fits": 0,
+  "labels_read": false
+}

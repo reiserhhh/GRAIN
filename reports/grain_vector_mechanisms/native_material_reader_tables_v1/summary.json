@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE",
+  "units": 12,
+  "directions": 48,
+  "contraction_replay_max": 7.771561172376096e-16,
+  "score_replay_max": 5.456327419883777e-07,
+  "canonicalization_max": 4.00543212890625e-05,
+  "identity_error_max": 1.5543122344752192e-15,
+  "gradient_replay_max": 0.0,
+  "finite_delta_error_max": 2.345666129088403e-06,
+  "sign_matches": 47,
+  "fits": 0,
+  "labels_read": false,
+  "calls": 111,
+  "seconds": 72.58592695742846,
+  "files": {
+    "private_tangents.csv": "3115831d579c3b390ec258bb8774793abb215e70d6b65bfff7d0a53f5d758a31",
+    "private_query_pairs.csv": "9bec83872e1cbc5367ed385d0b677ce4f289f42d5b72df538b59f33b750721d9",
+    "reader_summary.csv": "ff604a6f89de62c137d16cca59766ebfa01e7871c2d80a1ab7e01857b957ca38",
+    "query_pair_summary.csv": "b6ad9817921a4e94b9e94ec581d9c2222ceb353d7e747141dca53879fe9921e4",
+    "factor_summary.csv": "09f04572e10ea2a1f4ad431a9382e1af9d6115f2c1d1aa46fafdb79cdd06d502"
+  }
+}

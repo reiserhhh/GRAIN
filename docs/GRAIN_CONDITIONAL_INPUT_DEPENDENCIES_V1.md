@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-10，第十三轮。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-10，第十三轮建立、第十六轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -39,6 +39,7 @@ flowchart TD
 | E5输入路线 | h_E5(T)，固定函数读出 | `run_grain_configuration_extraction.py`及旧固定程序 | 已有原文提取路线；E5编码器仍存在，bag均值不能区分被其压成同一点的顺序 |
 | 四层context路线 | x_early(T,q) | `conditional_runtime.ConditionalRuntime`，4个Qwen2 block、冻结参数/参照 | 不运行完整decoder/LM head，但仍是神经编码；没有自动实现本轮块16的所有新项 |
 | 原模型研究观察器 | H_16(T,q) | `run_grain_source_anchor.py`保存完整前缀状态 | 本轮从缓存读取；“零新神经调用”不等于状态最初没有经过LLM |
+| 同材料原生接合 | D_k=Gc_k*Hc，T_qk=Jacobian_q:D_k | `native_material_reader.py`；固定同作者共同前缀，P/Q保留原query状态 | 当前query-last正文共享；位置特异读法保留。111后缀调用测到直接局部作用，Jacobian和输入仍依赖原模型；不是独立部署程序 |
 | 状态分区 | x=(P,Q), E=(正文,R,L) | `comment_carrier.partition`与冻结查询mask | P是查询位置集合，Q是最终读取位置；R是非正文非P/Q位置，不是自然语言噪声类别 |
 | 正文分区 | H_body=M+D | 各评论均值M与均值内配置D | C(E)令D=0，保留M、R、布局；没有删除上游已流入R/PQ的信息 |
 | 原生输出 | F_q(E,x) | 冻结后缀、候选logits及固定S映射 | 模型条件评分，不是问卷真值、自由生成解释或注意力的唯一因果路径 |
@@ -108,6 +109,11 @@ Corr(F_hat,Y)也受幅度、相互抵消和Y所关联方向影响。因此某项
 残差命名为人格或噪声。
 
 ## 6. 可复算入口与下一步
+
+第十六轮的同材料[原生读法](GRAIN_NATIVE_MATERIAL_READER_THEORY_V1.md)增加
+一个真实接点：共同GRAIN×token隐藏配置可由不同查询梯度读取，T=Cw+位置
+特异项。此T是本文F在指定正文方向上的导数，不等于F、B、A或上述条件起点，
+也没有替换P/Q/R的原生提取依赖。旧六项接口照常保留。
 
 - 数值审计：`scripts/run_grain_action_geometry.py`的`dependency_accounts`。
 - 四格来源：`scripts/run_grain_configuration_query_factorial.py`与

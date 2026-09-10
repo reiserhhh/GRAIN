@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-10. **ACTIVE**, fifteen finite passes delivered. The user requests
+Updated 2026-09-10. **ACTIVE**, sixteen finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -463,18 +463,47 @@ Read [geometry report](../reports/grain_vector_mechanisms/MATERIAL_GEOMETRY_LOGI
 and [joint operator theory](GRAIN_MATERIAL_GEOMETRY_THEORY_V1.md).
 Plans34a269b/0a56f36; implementations513cc56/08703db/f09fd2b; fold account647fb5a.
 
+## Sixteenth pass: shared native material, token-specific query reader
+
+- NEXT30 complete in the old four-author/three-query pilot. Query-last causal
+  layout has a common mathematical prefix; finite float caches exceed the first
+ 2e-5 max threshold in4/24 pairs (max4.58e-5). Failed preparation is retained;
+  explicit same-author TF prefix canonicalization changes scores by at most
+ 5.46e-7, not a newly chosen semantic condition.
+-44/48 eligible full comments,176 lexical slices,3517 complete native tokens.
+  Shared GRAIN-modulated directions and actual query Jacobians give the exact
+  local identity T=Cw+localized (error1.55e-15). Uniform-reader action error/total
+  is .968 TF/.998 confirmation/1.005 N: token-specific reading cannot be erased
+  by material averaging. The prior E5 Cw identity remains intact.
+- N/confirmation body-gradient cosine mean.704 versus TF/N .093 and
+  TF/confirmation .027. Shared/specific native reading exists; same numerical
+  alphabet/prompt family also contributes, so this is not scale correlation.
+-48 directions,47 finite-difference sign matches, relative L2 errors.49%-1.67%.
+ 111 suffix calls/72.59s,0 fits/Y/API/new participants. Original fixed question
+  states stay fixed, so these are direct block16 effects, not full natural-text
+  mediated effects. Three planned gradient repeats are exact.
+-58 scoped tests,12 new;5 construction+5 analysis files byte-replay. Initial
+  summary glob encountered an AppleDouble sidecar; a separate explicit-design
+  analyzer repairs it, preserves all5 initial numeric tables and requires no
+  repeated neural collection.
+
+Read [native reader report](../reports/grain_vector_mechanisms/NATIVE_MATERIAL_READER_LOGIC_REPORT_V1.md)
+and [native interface theory](GRAIN_NATIVE_MATERIAL_READER_THEORY_V1.md).
+Plan a632927, implementation/amendment43b8128, canonicalizatione5bd649.
+
 ## Next loop, in order
 
-The new same-material result supplies a concrete native-interface question.
-Prioritize NEXT30's cache/target inventory before any further conditional-readout
-fit; NEXT24-26 remain explicit required research pieces, not silently closed.
+NEXT30 now supplies the native same-material differential interface. Return to
+the previously pending conditional function/input pieces; do not run another
+accuracy or arbitrary factor grid. NEXT31 is a cached-only compression question
+to execute only if it changes the declared interface in NEXT26.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT30 | Does the shared same-material operator need query-conditioned representations in the native route? | Inventory identical-material/context caches, declare local target and reference; compare fixed-H/different-w with H(q)-dependent geometry before any finite native intervention | Preserve all old amplitude/alignment results. Do not assume E5's query independence for native hidden states, or call cached compiled Cw a new native causal effect. No accuracy/bandwidth search |
 | NEXT24 | Can the measured R-path remainder become a displacement-dependent common function? | Use saved reference gradients/paths to separate radial variation, role structure and body conditioning. Derive one finite curvature-sensitive candidate only after identifying its actual support; numerical action targets, not Y | Compare one source-defined candidate to existing linear/support baselines on unchanged authors. Do not estimate an unrestricted208896-square Hessian or select rank/penalty from exposed criteria. Preserve context and integration errors |
 | NEXT25 | Does conditional energy provide information absent from a vector conditional mean? | Reuse fixed N pair targets and direction accounts. First quantify the norm/energy identity under the declared inputs and existing prediction shrinkage; a direct projected scalar Ridge is algebraically redundant | Freeze at most one distinct energy-sensitive candidate if the numerical evidence supports it; no pair/Y-selected feature search. Keep direction, amplitude and orthogonal magnitude separate |
 | NEXT26 | Which complete conditional interface can close one runtime dependency without changing the target? | Choose one declared block from the full-input contract; identify all its raw/encoded/fixed-reference inputs and currently borrowed endpoints before implementation | Execute one complete same-target comparison with upstream inputs explicit. Do not combine old E5/four-layer metrics with new block16 components as if a single end-to-end system already existed |
+| NEXT31 | Can token-specific native reading be represented by a few direction-by-position factors without losing GRAIN-relevant action? | Use the12 saved body-gradient fields; distinguish uniform reader, nonuniform low-rank reading and irreducible direction variation; fixed ranks and actual tangent-action accounting, no labels | Only prioritize if it supplies NEXT26's selected interface. Do not confuse gradient-energy capture with action capture, or self-reconstruction with cross-author extraction |
 
 These are local computational/theory questions. Start by checking cached coverage;
 any missing neural contrast needs a new explicit finite design, not an old queue.

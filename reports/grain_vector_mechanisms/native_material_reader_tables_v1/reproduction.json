@@ -1,0 +1,19 @@
+{
+  "files": {
+    "construction/private_coordinates.npz": true,
+    "construction/private_native_operators.npz": true,
+    "construction/private_prefix_audit.csv": true,
+    "construction/private_slice_scores.csv": true,
+    "construction/private_design.json": true,
+    "analysis/private_tangents.csv": true,
+    "analysis/private_query_pairs.csv": true,
+    "analysis/reader_summary.csv": true,
+    "analysis/query_pair_summary.csv": true,
+    "analysis/factor_summary.csv": true
+  },
+  "initial_analysis_tables_unchanged": true,
+  "summary_only_sidecar_repair": true,
+  "construction_manifest_sha256": "f255420670c94440795261d6dec73e0316ae583a6a188af0aaa0f6315d88947c",
+  "source_summary_sha256": "02328b83788281bec7cc2b88b3f2aa2db640ffb063e181a1e974e0be6bc84565",
+  "new_neural_calls_for_replay": 0
+}

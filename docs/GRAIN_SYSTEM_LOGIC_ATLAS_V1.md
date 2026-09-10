@@ -36,6 +36,11 @@ flowchart TD
   O --> J
   J --> W[固定查询方向读取 Cw: 幅度/配对/效标联系]
   W --> I
+  G --> D[共同token方向张量: GRAIN x 隐藏配置]
+  O --> D
+  D --> S[查询梯度读取: Cw + 位置特异作用]
+  H --> S
+  S --> I
   H --> R[直接投影/早层/无 Transformer 运行程序]
   R --> F
   N --> I[人格/状态解释候选]
@@ -88,13 +93,13 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L11 | 微观过程 -> 分布/响应/转移/互动/高阶路径 | M/E | 玩具世界证明机制可实现，不证明人类只由这些机制组成 | M3 atlas |
 | L12 | 局部机制组合 -> 介观与群体关系 | M/E | 组合可有反馈/抵消/支持集漂移；单边成功不保证复合成功 | M4 / cross-level contract |
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
-| L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 查询槽整合信息，不必是一条关键词到特质词的唯一链 | mainline / reference framework |
+| L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | 现有query-last因果布局允许共同正文、不同P/Q；原生梯度场N/寻求确认余弦.704，TF与二者.027/.093。属于模型局部读法及候选字母条件，不是量表相关 | native material reader report §§1,3 |
 | L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 两类四格与最后输出曲率分别记账；参考R的路径变化偏差作用RMS=.014656，高于布局起点.002606。沿位移曲率成为具体待开发对象，不是未分账噪声 | action geometry report §3; interaction operator §7 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E | TF作用加权校准误差/零=.814，原矩阵=.854；软参照支持均值仅.009129。N相邻幅度折内r=.501/.363；远隔pooled负相关多由折间均值造成 | action geometry report §§2-4; interaction operator §§7-8 |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 同材料C=G^T JH/n、S_q=Cw_q；828作者/视图矩阵重放15804坐标误差1.11e-16。固定E5的共享C不自动适用于查询改变原生H(q)的路线 | material geometry report §4; operator theory §§3-4 |
-| L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 人工方向有效不保证解释自然路径；实际E1中f可追踪、GRAIN差分可能反向 | dynamic report §3 / natural transport §3 |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | 旧E5的Cw仍精确；原生共同token张量经Jacobian得到T=Cw+localized。仅平均方向读法的相对作用误差.968/.998/1.005，需保留位置特异读取；不推出所有H均查询无关 | native material reader report §2; material geometry report §4 |
+| L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
 | L23 | 因子轴旋转 -> 共同对象仍可追踪 | M/E | C'=CT与w'=T^-1w保持Cw；多查询作用距离可连接旧作用加权几何。任意G坐标重表达还须传递输出度量 | material operator theory §4; LOG02 |
@@ -328,6 +333,20 @@ N相邻共同方向有折内幅度信息可读；远隔pooled负相关不能直�
 保留全部作用/效标/负条件；[输入依赖图](GRAIN_CONDITIONAL_INPUT_DEPENDENCIES_V1.md)
 精确区分F、b(E)、B，避免把部分公式的闭合扩大为完整系统独立可运行。
 83项相关测试通过、15份数值/聚合产物字节重放；0新神经调用或参与者。
+
+### 5.11 第十四至十六轮：同材料接口进入原生读法
+
+同评论GRAIN/编译查询的共同变化，已分解为边缘波动和配对方向，并归纳成
+可复用作者C矩阵；O/F03的配对方向与自评r=-.272，宜人性查询波动r=.224。
+第十六轮进一步发现：当前query-last原生布局可固定同一正文，但不同query
+在不同token位置的读取不可简单平均。带token位置的GRAIN×隐藏配置张量，
+与原生分数梯度相乘，可重放实测局部作用；旧Cw是其均匀读者特例。
+
+原生4作者、3查询、48方向，111后缀调用/72.59秒，58项相关测试、10文件
+精确重放。共同前缀数值差异与旁文件读取问题均保留并明确修复；未重跑神经
+收集，未新增问卷读取。见[原生报告](../reports/grain_vector_mechanisms/NATIVE_MATERIAL_READER_LOGIC_REPORT_V1.md)
+和[原生接口理论](GRAIN_NATIVE_MATERIAL_READER_THEORY_V1.md)。接下来回到
+NEXT24–26条件作用/能量/完整输入，不以一个局部导数代替完整人格推论。
 
 ## 6. 本轮文献与执行入口
 
