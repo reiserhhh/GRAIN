@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, fifty finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, fifty-one finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -1536,21 +1536,55 @@ Read [report](../reports/grain_vector_mechanisms/TOKEN_OBJECTIVE_COMPATIBILITY_R
 [theory](GRAIN_TOKEN_OBJECTIVE_COMPATIBILITY_THEORY_V1.md),
 [NEXT62](GRAIN_HERMITE_TOKEN_POTENTIAL_PLAN_V1.md).
 
+## Fifty-first pass: directional dictionary development and the next context link
+
+- Previous turn classified as progress: NEXT61 separated dictionary capacity,
+  source scoring compatibility and the cost of reaching the source field limit.
+- NEXT62 primary `149f48e`,10source-only fits. Same rank8/centers/scales/bandwidth,
+  score+density objective andalpha=.01; frozen NEXT60 kernel_then_mean reused
+  without refit. Added local kernel-center derivatives;593vs81parameters(all4),
+  449vs65(LOO). Exact scalar/gradient compatibility and nested old coefficients.
+- All4 source represented density energy .260542/.217058 vs .039838/.028048;
+  sourcefieldrank584(LOO440), inverse coefficients norm~31876/35509. All10joint
+  objectives decrease, but actual source field losses slightly increase. More
+  span capacity is not the same as well-estimated or transferable information.
+- New8 fullaction error lower6.29%/7.53%, SSE/zero1.080006/1.092412; scores
+  r=.503312/.538314, slightly below old.534/.547. No fullpromotion. Allocation
+  querycontrastSSE .924365->.823856; amplitude increases, r .571->.463.
+  ConfirmationF03 allocation r=.881/SSE .628 is a local discovery, all4factor
+  tables/negative cells retained. FullBODYgradient error grows, so useful GRAIN
+  projection improvement is not reported as wholefield recovery.
+- Source4held score r=-.315/-.793 retained separately. No new independent author
+  cohort, humancriterion or clinical result. H16 remains a neural input dependency.
+- 24predictions numericalexact/13logicalCSV byteexact replay,96native directional
+  checks<=7.97e-10, normal eq<=1.05e-13, metric<=3.33e-16;11.033820s measuredCPU.
+  38focused tests/Ruff pass. No outcome-selected refit or primary code repair;
+  a bracket error in first draft fixed before freezing. No new neural/API/Y.
+- New theoretical decision: all additive token readers force dK_body/dH_last=0,
+  and cross-token derivatives zero after the fixed H16 coordinates. More local
+  centers cannot remove this restriction. NEXT63 tests one source-only native
+  last-state replacement with BODY fixed, then develops a conditional input if
+  that interaction exists. This is not a claim that raw token context is absent.
+
+Read [report](../reports/grain_vector_mechanisms/HERMITE_TOKEN_POTENTIAL_REPORT_V1.md),
+[theory](GRAIN_HERMITE_TOKEN_POTENTIAL_THEORY_V1.md),
+[NEXT63](GRAIN_CONTEXT_READING_INTERACTION_PLAN_V1.md).
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT62 | Can derivative-enhanced local scalar features capture the missing field and improve complete inference? | Execute GRAIN_HERMITE_TOKEN_POTENTIAL_PLAN_V1; one Hermite-type token dictionary, same source descriptors and old frozen baseline |10fits/120sCPU/0neural/Y; full score/actions and source span, no alpha/rank/bandwidth grid |
+| NEXT63 | Does query-last context change the reading of the same BODY? | Execute GRAIN_CONTEXT_READING_INTERACTION_PLAN_V1; source4 same-query other-source last mean, BODY/other states fixed; native full BODY gradient change vs additive zero |9planned suffix/backwards,10max/120scompute; no new8/Y/fits or dose/donor search; decide conditional reader input |
 
-These are local computational/theory questions. NEXT61 complete, with no new
+These are local computational/theory questions. NEXT62 complete, with no new
 candidate suffix calls. No MLP24/attention22/hidden-state refinement,
-old queue restart, broader factor search or clinical naming. NEXT62 planned,
-not executed; it develops local directional expressivity in one compatible
-extractor, rather than sweeping penalties or repeatedly diagnosing old coefficients.
+old queue restart, broader factor search or clinical naming. NEXT63 planned,
+not executed; one source-only native context intervention identifies whether the
+next complete scalar requires token-by-context interaction. No penalty sweep.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
 remain evaluation-only, not add-back prediction inputs. No running model job is

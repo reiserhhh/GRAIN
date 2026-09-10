@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第四十八轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第五十一轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 局部方向增强标量 | Lhat=b+a mean(z)+beta last+mean(k,center导数)；tau=grad Lhat:D | `hermite_token_potential.py`；NEXT62源4/留一3，原rank8描述不变，10求解，源+当前输入白名单隔离 | 源字段容量26.05%/21.71%，新8方向误差比旧低6.29%/7.53%；分数r=.503/.538略降，完整门槛未过。BODY-by-last混合导数仍严格零，NEXT63源干预检验这一缺项；当前H16仍神经、真人Y未用 |
 | 作者材料 | T_u，记录、时间与条件 | 原文、作者ID、评论边界；所有当前新表来自旧许可缓存 | ID负责分组和连接，不是预测特征；抽样评论顺序不自动等于真实情绪时序 |
 | 群体表达测量 | G(T_u; population,condition,clock) | 历史GRAIN固定坐标、参照与分布/路径统计 | 固定参照下可比较的位置，不等于特定人格词的得分；没有改发布评分器 |
 | 查询渲染 | tokens(T,q), masks, L | `conditional_runtime.encode_with_evidence`；研究路线各自的冻结renderer | 内容、tokenizer、查询token、正文边界、布局必须对应；两路线不能悄悄交换坐标 |

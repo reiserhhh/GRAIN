@@ -1,0 +1,47 @@
+{
+  "primary_commit": "149f48e5b30f672e7daf4b8b8ee98f82f5a05266",
+  "audit": {
+    "status": "PASS",
+    "errors": {
+      "normal_equation": 1.0524914273446484e-13,
+      "direction_finite_difference": 7.974372273622521e-10,
+      "metric": 3.3306690738754696e-16
+    },
+    "contexts": 24,
+    "direction_checks": 96,
+    "new_fits": 10,
+    "audit_fits": 0,
+    "new_neural_calls": 0,
+    "cpu_seconds": 2.915363,
+    "cumulative_compute_cpu_seconds": 11.03382,
+    "prediction_replay": "bitwise exact",
+    "csvs_replayed": 13
+  },
+  "criteria": {
+    "neuroticism": {
+      "better_action_than_control": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": true
+    },
+    "confirmation_seeking": {
+      "better_action_than_control": true,
+      "action_sse_below_zero": false,
+      "score_sse_below_source_constant": true
+    }
+  },
+  "promotion": false,
+  "files": {
+    "scores.csv": "9d2aa8298713a3f028c7e0d42405033a72730f07d4b5eb5e5b80681720774045",
+    "score_contrasts.csv": "25a199c6dff8d732319f5f5d32fd255c58cec3ce64c349bce31130241dc06735",
+    "actions.csv": "f5c0ae733834af6094e3f2cefc5d32a8fc4b58797e55ff9e7b9af82b2d1bf5ab",
+    "factor_actions.csv": "f3c74c0e42aa945a3b40b899b57837cdc5b192b82652f0accd7a498d003eafc2",
+    "action_contrasts.csv": "80a7d714b772f0111dd8daf30b22141003e92d28fa64bd62b4131b6d8b2159e7",
+    "factor_contrasts.csv": "bb5c846085617885b04481736b42839849cd77ff8e2af2e702df1f73729f7475",
+    "fields.csv": "10e1920c05dbb4b8de5248f4f38287eaa1673da59d7484f4fe7760d6ccb42020",
+    "source_diagnostics.csv": "eb1640062a5f2153f7b7554a9aaf7080d801ce5d755014c48ba69c7c090a5740"
+  },
+  "baseline": "Frozen NEXT60 kernel_then_mean; not refitted",
+  "unit": "Source4 leave-one-out and exposed source-disjoint new8, reported separately",
+  "targets": "Native model logit contrast and BODY actions, not human questionnaire scores",
+  "encoder": "Cached original H16 remains a neural-encoder dependency"
+}

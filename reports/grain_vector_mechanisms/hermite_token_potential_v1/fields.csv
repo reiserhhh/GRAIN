@@ -1,0 +1,9 @@
+cohort,query_name,candidate,field_error_ratio,authors
+new8,confirmation_seeking,hermite_kernel_then_mean,1.3047877691755514,8
+new8,confirmation_seeking,kernel_then_mean,1.2809979528859181,8
+new8,neuroticism,hermite_kernel_then_mean,1.2945287797690543,8
+new8,neuroticism,kernel_then_mean,1.2577694706568727,8
+source4,confirmation_seeking,hermite_kernel_then_mean,1.2211169709180723,4
+source4,confirmation_seeking,kernel_then_mean,1.2012961129752808,4
+source4,neuroticism,hermite_kernel_then_mean,1.1870757427927838,4
+source4,neuroticism,kernel_then_mean,1.1696629006644068,4

@@ -1,5 +1,21 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT62 local direction expansion executed.**
+> All4 represented source density energy rises .039838->.260542 (N),
+> .028048->.217058 (confirmation). New8 full-action error falls6.29%/7.53%;
+> allocation query-contrast SSE/zero .924365->.823856. Confirmation/F03 local
+> allocation r=.881/SSE .628 is retained alongside all contrary factor cells.
+> WholeL r=.503/.538 vs old.534/.547; fullactionSSE/zero1.080/1.092, so no full
+> predictor replacement. Parameters593vs81, high inverse norm; capacity != utility.
+>10sourcefits/0neural/Y;11.033820sCPU,38focused tests,13CSV/24prediction exact replay.
+> [Report](../reports/grain_vector_mechanisms/HERMITE_TOKEN_POTENTIAL_REPORT_V1.md),
+> [theory](GRAIN_HERMITE_TOKEN_POTENTIAL_THEORY_V1.md).
+> **NEXT63 planned:** [same-BODY/query-last dependency](GRAIN_CONTEXT_READING_INTERACTION_PLAN_V1.md),
+> one source-only paired native intervention. Both existing readers force
+> BODY-by-last mixed derivatives to zero. Measure that missing dependency before
+> building a context-conditional reader; no further center/alpha search. Goal ACTIVE.
+
+> Previous NEXT61 update; its NEXT62 task is completed above.
 > **2026-09-11 newest: NEXT61 locates the finite derivative dictionary gap.**
 > Sourceall4 candidate field target represented energy .039838/.028048, versus
 > .005668/.003973 for mean-first:7.03/7.06x more, but still mostly dictionary-external.

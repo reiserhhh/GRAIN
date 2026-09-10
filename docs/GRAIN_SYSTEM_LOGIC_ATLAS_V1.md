@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT59定位池化核内原生作用；NEXT60已用同一可微token函数接回配置响应，新8r=.486/.087，query差值.571。幅度小、非心理效度；对照该作用严格零。梯度场与GRAIN配置在同token地址交叉，不用心理命名替代数值机制 | token potential extraction theory §§1-3; pooled feature null response theory |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT59/60接回同token配置作用；NEXT62局部方向扩展令新8完整作用误差再降6.29%/7.53%，配置query差SSE .924->.824；确认F03局部r=.881但其它格可负。梯度与GRAIN方向同地址交叉，字段整体误差增、非心理效度；保留全部因子 | Hermite token potential theory §§1-4; token potential extraction theory |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -110,7 +110,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L28 | 查询性“人格意义” -> GRAIN 因子构念 | H/E | 已找到T/F、E/A/O配置余项的外部关联；技术组件、特定效标与完整心理构念仍分层连接 | 4W / configuration criterion report |
 | L29 | 多语/跨域可运行 -> 可比较心理量 | H/E | 运行兼容、几何稳定、测量等价是三条边；无需为探索先完成全部 | retrospective / unified §12 |
 | L30 | 合成导航成功 -> 真人材料路径可计算 | E | 原顺序/成对源训练已分开；源OOF与旧12人运输响应仍可分歧，支持覆盖不是自动运输保证 | conditional / paired support reports |
-| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT60保留完整L关系及弱配置作用；NEXT61确定固定字典外源密度目标96.0%/97.2%，保持源评分可达同样极限，不是必然标量/梯度冲突。NEXT62开发center导数局部方向基，0新临床/Y推论；H16仍神经，辅助解释按同材料证据绑定 | token objective compatibility theory §§2-5; Hermite token potential plan; same-material interpretation theory |
+| L31 | 当前局部接口 -> 人格/状态解释器 | H/E | NEXT62源字段容量26.05%/21.71%，但新8完整分数r=.503/.538略降，全门槛未过。additive token函数的BODY×last混合导数严格零；NEXT63源干预检验上下文改读法，不继续磨局部维数。H16仍神经，0新临床/Y；解释需同材料证据绑定 | Hermite token potential theory §§2-5; context reading interaction plan; same-material interpretation theory |
 
 ## 4. 历史成果如何留在新系统中
 
@@ -594,6 +594,27 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第五十一轮补充：局部方向容量兑现一部分，下一缺项是上下文改读法
+
+NEXT62固定原source4/new8、两query与4个GRAIN方向，新增center导数核项。
+源字段可表达能量由.039838/.028048增到.260542/.217058，参数593vs81。
+新8完整方向误差减少6.29%/7.53%；配置query差SSE/zero .924365->.823856。
+确认F03配置作用r=.881370保留，同时F01为负；完整BODY梯度误差也增加，
+不能把特定GRAIN投影改进说成整个向量场恢复。
+
+整体L新8r=.503312/.538314略低于旧.533976/.546934，完整作用SSE/zero
+1.080006/1.092412，全升级未过。10系统总目标都降低、源字段损失略增；
+SVD逆解范数3万量级，容量与稳定可估计性不同。没有alpha或中心搜索。
+10拟合/0新神经/Y，11.033820秒CPU、38测试、13CSV/24预测包精确重放。
+
+新旧加性模型都使dK_body/dH_last恒零；H16已有上下文，但其后的读法
+无法让末位状态再改变BODY敏感度。NEXT63只在源4用同query其它源last
+均值替换当前last，BODY/其它状态固定，实测这个交互后开发条件读取器。
+这为用户“同句话的两个侧面”提供同地址、同函数作用接口，不另造临床命名。
+[报告](../reports/grain_vector_mechanisms/HERMITE_TOKEN_POTENTIAL_REPORT_V1.md)、
+[理论](GRAIN_HERMITE_TOKEN_POTENTIAL_THEORY_V1.md)、
+[NEXT63](GRAIN_CONTEXT_READING_INTERACTION_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第五十轮补充：梯度字典表达缺口，不是标量兼容性失败
 
