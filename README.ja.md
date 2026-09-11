@@ -22,18 +22,21 @@ GRAIN はテキストに基づく測定研究のための基盤分析法であ�
 
 ## 現在の計画確認点（2026-09-12）
 
-[文脈に応じたテキスト心理測定の構成計画V3](docs/GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md)
+[共同検討を終えた研究計画V4](docs/GRAIN_FOUNDATIONAL_MASTER_PLAN_V4.md)
+と[Codex/Claudeの4回の討議記録](docs/GRAIN_FOUNDATION_SEMINAR_SYNTHESIS_20260912.md)
 を最初に読む。論文の目標は、パーソナリティ・行動傾向・心理状態の測定法を
 開発するための再利用可能な方法論であり、単一尺度やLLM読出し器の完成ではない。
 共通の構成手順から、異なる観測条件で解釈可能かつ妥当な測定例を作れるかを検証する。
-V2は理論的背景、V1は実装資料として保存する。実験は審査と承認まで停止する。
+目標に応じた観測設計、二つの文脈での構成例、状態・解釈・独立再構成を主研究とする。
+共通の手順、構成概念の比較可能性、得点の等化は区別する。V3/V2は背景、
+V1は実装資料として保存する。計画の共同検討は完了し、実行はユーザーの承認を待つ。
 
 第79回/NEXT90の完了後、実行は停止中であり、NEXT91は未実施である。
 今回は実験を追加せず、ユーザーの依頼に基づき全体像と完了条件を整理した。
 [開発史と構成](docs/GRAIN_SYSTEM_RETROSPECTIVE_AND_ARCHITECTURE_20260911.md)、
 [完了計画](docs/GRAIN_COMPLETION_PLAN_V1.md)、[文献比較](docs/GRAIN_COMPLETION_LITERATURE_MAP_V1.md)、
 [Claude向け閲覧専用レビュー資料](docs/GRAIN_COMPLETION_REVIEW_PACKET_V1.md)
-を参照。計画本文は中国語で、審査とユーザーの承認を待っている。
+を参照。計画本文は中国語で、ユーザーの実行承認を待っている。
 以下の過去の結果は保存しており、旧タスクの自動再開を意味しない。
 
 ## 過去の機能的経路の研究（2026-09-08）

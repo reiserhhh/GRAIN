@@ -24,13 +24,17 @@ The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
 ## Current planning checkpoint (2026-09-12)
 
-Start with the [context-specific measurement construction plan V3](docs/GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md).
+Start with the [joint foundational master plan V4](docs/GRAIN_FOUNDATIONAL_MASTER_PLAN_V4.md)
+and [four-round Codex/Claude seminar record](docs/GRAIN_FOUNDATION_SEMINAR_SYNTHESIS_20260912.md).
 The single publication objective is a reusable methodology for constructing
 text-based personality, behavioral-tendency and state measures. Its test is
 whether common construction rules yield interpretable, psychologically valid
 local measurement demonstrations across different observation settings, not
-whether one predictor or LLM reader works. V2 supplies theoretical background;
-V1 remains an implementation reference. Execution is paused pending review.
+whether one predictor or LLM reader works. The program now centers on target-aware
+design rules, two local construction demonstrations, and state/interpretation/
+independent reconstruction. Shared procedure, comparable constructs and a common
+numeric scale are separate claims. V3/V2 supply background; V1 is an implementation
+reference. The plan is jointly reviewed; experiments await user authorization.
 
 Research execution is paused at completed pass79/NEXT90; NEXT91 has not run.
 The user requested a whole-project retrospective and a finite completion plan,
@@ -39,7 +43,7 @@ not another experimental iteration. Start with the
 [completion plan](docs/GRAIN_COMPLETION_PLAN_V1.md),
 [literature map](docs/GRAIN_COMPLETION_LITERATURE_MAP_V1.md), and
 [read-only Claude review packet](docs/GRAIN_COMPLETION_REVIEW_PACKET_V1.md).
-The plan awaits review and user authorization. It separates GRAIN measurement,
+The plan awaits user execution authorization. It separates GRAIN measurement,
 native-model mechanism, and independent text-to-score computation; none substitutes
 for the others. Historical results below remain unchanged.
 

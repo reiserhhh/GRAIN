@@ -1,5 +1,17 @@
 # GRAIN logic goal: execution ledger
 
+## 2026-09-12 four-round foundation seminar, V4
+
+The [joint V4 master plan](GRAIN_FOUNDATIONAL_MASTER_PLAN_V4.md) is now the planning
+authority. [Four read-only Claude rounds](GRAIN_FOUNDATION_SEMINAR_SYNTHESIS_20260912.md)
+are complete, with source checking and mathematical revisions by Codex. The
+program concerns target-aware measurement construction, comparable local targets,
+real psychological links, interpretation and independent reconstruction.
+No new experiment, fitting, private-row access, goal, or lockbox opening occurred.
+Plan agreement is not empirical confirmation. NEXT91 remains paused; F0/A1 is
+the first proposed task after user execution approval. Earlier notices below are
+historical snapshots, including statements that Claude had not yet been called.
+
 ## 2026-09-12 measurement-construction target, V3
 
 The [V3 construction plan](GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md)
