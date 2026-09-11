@@ -101,4 +101,3 @@ The distinction between an intermediate prediction loss and its downstream use
 has a precedent in [Donti, Amos & Kolter,2017](https://papers.neurips.cc/paper_files/paper/2017/file/3fc2c60b5782f641f76bcefc39fb2392-Paper.pdf).
 Their task is stochastic optimization, not personality inference; our five-row
 compatible target is a local linear construction, not their end-to-end optimizer.
-

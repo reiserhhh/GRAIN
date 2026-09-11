@@ -98,4 +98,3 @@ semantics. Inspect availability before launching; do not restart old queues.
 Method basis: [NEXT87 theory](GRAIN_COMPILED_COMPATIBLE_READER_THEORY_V1.md),
 [report](../reports/grain_vector_mechanisms/COMPILED_COMPATIBLE_READER_REPORT_V1.md),
 [task-based learning](https://papers.neurips.cc/paper_files/paper/2017/file/3fc2c60b5782f641f76bcefc39fb2392-Paper.pdf).
-

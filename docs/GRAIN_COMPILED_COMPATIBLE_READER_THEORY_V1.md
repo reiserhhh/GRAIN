@@ -95,4 +95,3 @@ soft-label分类蒸馏，更不是用LLM标签替代真人效标。
 分析/TA的患者编码、临床诊断或新的MEPS访问。
 
 完整结果与执行记录见[报告](../reports/grain_vector_mechanisms/COMPILED_COMPATIBLE_READER_REPORT_V1.md)。
-
