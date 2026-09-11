@@ -1,0 +1,5 @@
+variant,authors,cohort,coordinate_residual_max,derivative_residual_max,null_change_max
+fixed_evidence_coordinates,4,source,5.204170427930421e-18,1.0408340855860843e-17,4.929731753020028e-18
+fixed_evidence_coordinates,8,new8,1.734723475976807e-18,5.095750210681871e-18,4.2063656160648555e-18
+moving_evidence_coordinates,4,source,7.15573433840433e-18,1.1449174941446927e-16,3.4275188210645263e-18
+moving_evidence_coordinates,8,new8,4.2500725161431774e-17,2.435118079402443e-15,1.5178830414797062e-17

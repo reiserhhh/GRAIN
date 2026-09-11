@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT84充分源空间27->47、源限制解除，新8scalar仅再低.20%；可用方向与功能使用不同。范围外scalar项低95.62%而同控制总误差不变。NEXT85材料相对证据坐标与向量lift，非完整L或心理效度 | source observable span theory §§1-5; SOURCE_OBSERVABLE_SPAN_REPORT_V1; evidence coordinate reader plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT85五证据坐标和lift完成，scalar坐标r=.700/.676但幅度5.6%/6.5%，组装未改善。值/BODY/context贡献抵消，非消失核；NEXT86条件教学函数分离真实增量，不将坐标命名为人格 | evidence coordinate reader theory §§1-4; EVIDENCE_COORDINATE_READER_REPORT_V1; conditional teaching innovation plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,21 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十四轮补充：证据坐标可运行，教学贡献存在抵消
+
+NEXT85主537687d，后账户58156e3。两次140系数求解，5行frame/lift及其导数
+精确闭合，未观测补空间保留。scalar坐标r=.700/.676但幅度仅5.6%/6.5%；
+组装scalar误差.178310->.179102/.181425，无全面替代。移动作用目标16-24x
+源RMS，value/BODY/context大项相互抵消（F03 .04357/.00535/.03985->.00213）。
+最近源核.522-.732不是趋零，不将收缩简单归因于远离源。后账户0拟合，非因果
+分配；下一NEXT86用Schur条件创新与一致的嵌套函数辨别教学更新的真实作用。
+
+58主测试+1后账户测试；18+3CSV精确重放，256FD<=5.62e-10，70.258062+
+.336470CPU，0神经/API/Y/MEPS；所有旧比较保留。新8仍是复用探索样本。
+[报告](../reports/grain_vector_mechanisms/EVIDENCE_COORDINATE_READER_REPORT_V1.md)、
+[理论](GRAIN_EVIDENCE_COORDINATE_READER_THEORY_V1.md)、
+[NEXT86](GRAIN_CONDITIONAL_TEACHING_INNOVATION_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第七十三轮补充：几何覆盖与实际读取规则分开
 

@@ -1,5 +1,23 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT85 makes evidence-relative reading executable and locates amplitude cancellation.**
+> Fixed/moving five-coordinate fits and coherent lifts complete; scalar coordinate
+> ordering r=.700/.676 but RMS only5.6%/6.5% of actual. Assembled scalar error
+> .178310->.179102/.181425; no promotion. The five rows are local observables,
+> not new personality factors. Moving action targets are16-24x source RMS.
+> Post-outcome zero-fit account: source kernel similarity .522-.732, yet large
+> value/BODY/context contributions cancel (movingF03 RMS .04357/.00535/.03985
+> ->.00213). Not simply a vanished kernel; signed coefficients are not causal effects.
+>58primary+1post-account tests,18+3CSV exact replay,256FD<=5.62e-10;
+>70.258062+.336470CPU seconds,0neural/API/Y. Primary537687d, account58156e3.
+> [Report](../reports/grain_vector_mechanisms/EVIDENCE_COORDINATE_READER_REPORT_V1.md),
+> [theory](GRAIN_EVIDENCE_COORDINATE_READER_THEORY_V1.md).
+> **NEXT86 planned:** [conditional teaching innovations](GRAIN_CONDITIONAL_TEACHING_INNOVATION_PLAN_V1.md).
+> Develop value -> BODY -> context nested functions with fixed hyperparameters;
+> determine which teaching update changes transfer before new source captures.
+> No rank/kernel/alpha grid or deletion of a negative coefficient term. Goal ACTIVE.
+
+> Previous NEXT84 update; its NEXT85 task is completed above.
 > **2026-09-11 newest: NEXT84 completes the output span, then changes the next question.**
 > Rank27->47, two1316-coordinate solves; original-space constraint was active:
 > missing gradient .028226, J1 .00834323->.00827633. Expanded J0 is unchanged.

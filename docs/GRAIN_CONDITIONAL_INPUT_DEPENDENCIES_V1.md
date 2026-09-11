@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第73轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第74轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 材料相对证据坐标与教学创新 | c=R(d-d0)，dtilde=db+Rplus[c-R(db-d0)]；全导数包含DR | `evidence_coordinate_reader.py`；NEXT85两140系数源拟合，源编译frame、固定H16/GRAIN同地址 | scalar坐标r=.700/.676而幅度5.6%/6.5%，组装未改善；组贡献强烈抵消，最近源核非零。NEXT86嵌套值/BODY/context函数与Schur创新，不把核支持余量当心理CI；五行不是五种人格 |
 | 可用源方向与当前证据坐标 | U1=span(Y,R)，后续候选c(x)=Rhat(x)(d-d0) | `source_observable_span.py`，NEXT84两次1316坐标求解，rank27->47 | 源限制真实且已修正；新8scalar误差仅再低.20%，实际新增场能量3.32e-7。几何覆盖不等于有效读取。NEXT85固定/移动证据frame，乘积导数与最小修正lift，不改旧权重/核或读取当前答案；H16保留 |
 | 源功能教学与输出方向 | J1=J0+源证据/方向投影loss；充分输出空间span(Y,R) | `observable_reader_teaching.py`；NEXT83只在row(Y)比较两固定目标 | 新8scalar误差仅低.58%，K+V未改善；42.8%向量误差在27维目标范围外。投影交叉项可抵消/放大，非效应份额。NEXT84纳入源读尺方向，不调权重；H16/完整L单列 |
 | 同材料可微读头与功能度量 | dhat(x)由源值/导数核教学；误差作用e^T p，不等于向量误差范数 | `material_reader_field.py`；源4ALL/新8，context/mean/GRAIN三固定输入 | GRAIN局部组装scalar误差低7.18%，context排序更好但raw误差更大；源BODY导数可拟合。NEXT83以源observable教学，锚定/对角导数各自验证；H16与完整L仍单列 |

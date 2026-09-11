@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy-three finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy-four finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2201,25 +2201,53 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_OBSERVABLE_SPAN_REPORT_V
 [theory](GRAIN_SOURCE_OBSERVABLE_SPAN_THEORY_V1.md),
 [NEXT85](GRAIN_EVIDENCE_COORDINATE_READER_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-fourth finite pass delivered: evidence coordinates and teaching cancellation
+
+- Previous turn PROGRESS: NEXT84 separated available directions from their use.
+  NEXT85 primary537687d completed two140-coefficient fixed/moving coordinate fits,
+  full-rank minimal-change lifts and same-function derivatives. Source BODY
+  observation states corrected to clamped in the pre-fit plan; no runtime repair.
+- Scalar coordinate ordering r=.700/.676 transfers, but RMS is5.6%/6.5% of target.
+  Assembled scalar SSE/zero .178310->.179102/.181425; K+V7.191486->7.188113/7.340969.
+  No whole-reader promotion. Moving-frame targets on new8 are16-24x source action
+  RMS; existing source4/reusednew8 scope and old successes retained.
+- Post-outcome account58156e3: nearest-source kernel .522-.732 is not zero;
+  large signed value/BODY/context terms cancel. Moving F03 group RMS
+  .04357/.00535/.03985 sums to .00213. Kernel coverage, target scale shift and
+  representation cancellation coexist; none alone establishes the unique cause.
+-58primary focused tests plus1post-account test,18+3CSV exact replay,256FD<=5.62e-10.
+  Primary70.258062CPU plus post-account .336470CPU;0new neural/API/Y/MEPS.
+  All ten previous application comparators exact; source/app/replay compiled
+  matrix calls176/128/128. No target-based rescale or post-outcome refit.
+- NEXT86 develops coherent value-only -> BODY -> context conditional functions,
+  holding all kernel/group settings fixed. Schur innovations distinguish actual
+  added teaching from raw coefficient-basis cancellation, deciding whether to
+  retain an intermediate reader or expand the disjoint source teaching pool.
+
+Read [report](../reports/grain_vector_mechanisms/EVIDENCE_COORDINATE_READER_REPORT_V1.md),
+[theory](GRAIN_EVIDENCE_COORDINATE_READER_THEORY_V1.md),
+[NEXT86](GRAIN_CONDITIONAL_TEACHING_INNOVATION_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT85 | Can material-relative action coordinates transfer a useful reader? | Execute GRAIN_EVIDENCE_COORDINATE_READER_PLAN_V1; fixed/moving evidence frames, five-coordinate teaching and coherent vector lift |At most2fits/180CPU/0neural; sourceALL/new8 only; product-rule teaching, no tuning grid |
+| NEXT86 | Which conditional teaching update changes transferable reading? | Execute GRAIN_CONDITIONAL_TEACHING_INNOVATION_PLAN_V1; fixed/moving V, VB, VBC functions and Schur innovations |At most6 small solves/120CPU/0neural; frozen weights/kernel; no amplitude tuning or deletion of raw terms |
 
-These are local computational/theory questions. NEXT84 complete,2source solves;
-no live native job. NEXT85 permits only the specified evidence-coordinate
-development, not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT85 planned, not executed;
-develop the material-relative interface while retaining all selector/value outcomes.
+These are local computational/theory questions. NEXT85 complete,2source solves;
+no live native job. NEXT86 permits the specified nested teaching functions,
+not general MLP24/attention22 refinement or an old queue restart.
+No broader factor search or clinical naming. NEXT86 planned, not executed;
+develop conditional teaching while retaining all selector/value outcomes.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
 NEXT81 fixed-last intervention, NEXT82 joint-material field, NEXT83 restricted
-functional teaching and NEXT84 sufficient output-span expansion are closed.
+functional teaching, NEXT84 sufficient output-span expansion and NEXT85 evidence
+coordinates are closed. Do not reopen a coordinate/frame/alpha grid.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

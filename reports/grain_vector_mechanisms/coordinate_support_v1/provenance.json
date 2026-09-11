@@ -1,0 +1,25 @@
+{
+  "commit": "58156e3457b9fd3dff94ffb169f5f771463e3487",
+  "script_sha256": "52ac4a4a1fe3f5801ea78ec4b6a4d28daeed629b8d3a3a8e4385d490d7080607",
+  "module_sha256": "36ba28e4f16af7ff4c9b2474d3b844a3555087ffdc902b205409af352457de9e",
+  "primary_manifest_sha256": "d6f399f6abcec509097643166cc3fed60ab0133b41a89fda0d7e140c9cfb3584",
+  "primary_audit_sha256": "058ba67aa83a1089d1f11231a15068f5fcfa024d0bb97197d1261fd66de699e3",
+  "primary_stage_freezes": {
+    "teachers": "9f8ee596a362d51604c65eef4fa00e59b411f62c23afc0b37db8248c306e7435",
+    "models": "9d9a4cfc836de9345c39558574e3fdf3a126b100efddfaf7951d108ed00bf6f0",
+    "predictions": "b38558d712de9eda5e3f20b4373650e8d4ee3a082650632ebb115e88628d7b1d",
+    "analysis": "d71ab09a06a3d3f9eaff8ef2cd8cf45fc00502b0afd1c2804aaf306d96d13f81"
+  },
+  "files": {
+    "support.csv": "b4b0a592ce87acfc0be56d69b4b4a5ebf23b6fe00e4ec0aab534f008784c6006",
+    "coordinate_scale.csv": "2f80e4ff754cacaa2173b515e0d6421ec608be0d932050ea4a9f3d739b79ebbc",
+    "coordinate_components.csv": "f3cdc59bf3a4ef1c921f2ac0e98b4e178e9ce81bf9855b698746992318cc70c0"
+  },
+  "account_cpu_seconds_including_replay": 0.3364699999999998,
+  "post_outcome": true,
+  "fits": 0,
+  "neural_calls": 0,
+  "human_labels_read": false,
+  "replay": "exact",
+  "scope": "Existing source4/new8 coordinate mechanism account. Kernel coverage is not calibrated uncertainty. No model/threshold change or recipient-selected fit."
+}
