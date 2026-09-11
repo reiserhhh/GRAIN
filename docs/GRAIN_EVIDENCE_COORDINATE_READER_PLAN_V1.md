@@ -31,7 +31,8 @@ rank selection. Preserve raw-unit scalar/action reports after back conversion.
 2. Moving frame: c1(x)=Rhat(x)(d_native(x)-d0).
 
 Both use five outputs and exactly the existing28 observation rows: eight
-original/clamped values,16 original BODY derivatives, four context derivatives.
+original/clamped values,16 clamped-state BODY derivatives, four original-state
+context derivatives.
 Use the unchanged kernel and old numeric lambda. Normalize target-group energy
 with the same source-only rule as the base vector fit; no objective-weight grid.
 Source target dimensions/units change because the object changes, not to win new8.
@@ -113,3 +114,18 @@ Mathematical background: [Alvarez et al. (2012)](https://arxiv.org/html/1106.625
 vector-valued kernels and output transformations. The specific local-frame
 construction and source/recipient test are our proposed design, not a cited
 paper's personality result. See [NEXT84 theory](GRAIN_SOURCE_OBSERVABLE_SPAN_THEORY_V1.md).
+
+## Pre-fit implementation clarification
+
+Code inspection of NEXT82, before NEXT85 source fitting/application, corrects
+the earlier phrase 'original BODY derivatives': all16 BODY targets were taken
+at the all4-last-clamped state. Their Rhat and DRhat must be computed there;
+context derivatives are at original states. Reconstruct and assert all28 old
+input positions and tangents before using these targets. No old target changes.
+
+The192 source-call cap includes both derivative step sizes and original/clamped
+frames (176 two-query compiled calls). Application Rhat derivatives require128
+compiled calls for eight authors/four directions. The first author's16 calls
+are reused for whole-field FD, within the separately stated64FD-call cap; no
+additional model calls are hidden in this count. Cumulative180CPU includes
+source teacher preparation and exact application/analysis replay.
