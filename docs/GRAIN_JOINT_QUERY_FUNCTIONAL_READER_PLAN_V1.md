@@ -110,3 +110,17 @@ Basis: [NEXT88 theory](GRAIN_SOURCE_DIVERSITY_TEACHING_THEORY_V1.md),
 [NEXT88 report](../reports/grain_vector_mechanisms/SOURCE_DIVERSITY_TEACHING_REPORT_V1.md),
 [conditional vector regression](https://arxiv.org/abs/1205.4656),
 [task-based learning](https://arxiv.org/abs/1703.04529).
+
+## Implementation clarification before fitting
+
+The old NEXT82 projection helper sets the shared-reader derivative to zero.
+That was valid for its constant common reader, not for this joint function.
+The new projection includes `mean(D r_N, D r_C)` in the shared mode; synthetic
+whole-function checks cover both modes.64anchored and64diagonal FD cells are
+expected for the one new reader, using existing128compiled application calls.
+
+Add a three-row `reader_pair.csv`: native12/compatible12/joint12 whole paired
+reader error split into `2*mean_error2 + difference_error2/2`. This is a numeric
+account of the new common channel, not a new fitting objective. The13public table
+counts are552/1656/6624/299/23/2208/10/20/4/96/48/1/3. Old common-mode comparator
+rows remain unchanged; new common-mode rows include their actual derivative.
