@@ -1,7 +1,8 @@
 # Project Persona / GRAIN：全系统终局研究计划 V1
 
 > 2026-09-12目标修订：本文件降为实施工作包参考，不再定义基础研究的全部终点。
-> 首先阅读[基础理论研究纲领V2](GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md)。
+> 首先阅读[情境化测量构造计划V3](GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md)；
+> [V2纲领](GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md)保留理论问题推导背景。
 > 用户要求的是未来文本心理测量的建设性理论，而非仅接完已有计算链。
 > 以下历史完成规则和工期保留供比较，不构成自动执行授权。
 

@@ -6,10 +6,13 @@ Usable associations and local mechanisms count as progress at their observed lev
 Do not let exhaustive defensive controls replace the real-author personality-inference mainline.
 
 Current planning authority (2026-09-12):
-`docs/GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md`. Execution is paused after
+`docs/GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md`. Execution is paused after
 pass79/NEXT90; do not resume NEXT91 or older plans automatically. The objective
-is a constructive foundation for future text-based psychological measurement,
-not only a completed LLM-reader pipeline or a finished scale. The V1 completion
-plan is an implementation reference, not the whole theoretical endpoint.
+is a publishable construction methodology for context-specific text-based
+personality, behavioral-tendency and state measures, not a finished scale or
+only an LLM-reader pipeline. Validate the common construction rules through
+locally calibrated measurement demonstrations and independent psychological/
+behavioral evidence. V2 supplies theoretical questions; V1 is an implementation
+reference. Respect MEPS validation-only permissions; do not fit on its participants.
 Preserve existing release results and unrelated worktree changes. Keep private
 texts, identities, labels, credentials, and generated caches out of public outputs.

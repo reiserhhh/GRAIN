@@ -22,13 +22,15 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
-## Current planning checkpoint (2026-09-11)
+## Current planning checkpoint (2026-09-12)
 
-2026-09-12 correction: start with the
-[foundational theory program V2](docs/GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md).
-The target is constructive principles for future text-based psychological
-measurement, not only a finished inference pipeline. The V1 plan below is now
-an implementation reference; execution remains paused pending conceptual review.
+Start with the [context-specific measurement construction plan V3](docs/GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md).
+The single publication objective is a reusable methodology for constructing
+text-based personality, behavioral-tendency and state measures. Its test is
+whether common construction rules yield interpretable, psychologically valid
+local measurement demonstrations across different observation settings, not
+whether one predictor or LLM reader works. V2 supplies theoretical background;
+V1 remains an implementation reference. Execution is paused pending review.
 
 Research execution is paused at completed pass79/NEXT90; NEXT91 has not run.
 The user requested a whole-project retrospective and a finite completion plan,

@@ -1,5 +1,15 @@
 # GRAIN logic goal: execution ledger
 
+## 2026-09-12 measurement-construction target, V3
+
+The [V3 construction plan](GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md)
+is the current planning authority. The single endpoint is a publishable
+methodology that supports constructing interpretable, psychologically grounded
+measures in different text settings. Common construction rules, local calibration
+and independent validation are distinct. Existing MEPS state associations are
+usable developmental evidence, not a newly run scale-validation study.
+No new goal, model run, private-row access or Claude call. NEXT91 remains paused.
+
 ## 2026-09-12 foundational target correction
 
 The [foundational program V2](GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md) supersedes

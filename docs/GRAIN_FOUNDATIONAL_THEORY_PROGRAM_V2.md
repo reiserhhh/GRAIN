@@ -1,5 +1,9 @@
 # GRAIN：文本心理测量基础理论研究纲领 V2
 
+> 当前规划以[情境化测量构造计划V3](GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md)为准。
+> V3把本纲领落实为唯一论文目标、可复用制作流程、具体材料分工及制作示范验收。
+> 本文保留基础问题与数学起点，不授权实验自动恢复。
+
 2026-09-12。**PLANNING_ONLY / CONCEPTUAL_REVISION / AWAITING_REVIEW**。
 本稿修正研究目标和计划层级，不代表新理论已经成立，不授权实验、模型调用、
 Claude会话、私有数据读取或lockbox开启。执行仍暂停于第79轮/NEXT90。
