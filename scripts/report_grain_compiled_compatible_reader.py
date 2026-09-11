@@ -31,6 +31,7 @@ def publish():
         dst / "publication.json",
         {
             "primary_commit": m["commit"],
+            "prior_attempt": m["prior_attempt"],
             "publisher_sha256": old.sha(Path(__file__)),
             "files": {n: old.sha(dst / n) for n in TABLES},
             "audit": audit,

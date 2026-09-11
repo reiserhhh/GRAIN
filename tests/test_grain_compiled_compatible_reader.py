@@ -190,3 +190,16 @@ assert len(denied) == 2
         check=True,
         cwd=Path(__file__).resolve().parents[1],
     )
+
+
+def test_float32_capture_is_promoted_before_reader_subtraction():
+    _, _, _, args = toy()
+    cur, native, readers, common, origin, units = args
+    rr = readers.astype(np.float32)
+    t = f.teaching(cur, native, rr, common, origin, units)
+    expected = np.einsum(
+        "nkh,nh->nk",
+        t["frame"],
+        rr.astype(float)[:, 0] - rr.astype(float)[:, 1] - origin,
+    )
+    np.testing.assert_array_equal(t["native_coordinates"], expected)

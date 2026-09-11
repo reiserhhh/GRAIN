@@ -87,6 +87,11 @@ def prepare(out):
         ROOT / "scripts/report_grain_compiled_compatible_reader.py",
     ):
         inputs[str(p.relative_to(ROOT))] = old.sha(p)
+    failure = OUT.with_name(OUT.name + "_aborted_precision") / "failure.json"
+    prior_attempt = None
+    if failure.exists():
+        inputs[str(failure.relative_to(ROOT))] = old.sha(failure)
+        prior_attempt = old.read(failure)
     start = time.process_time()
     out.mkdir(exist_ok=False)
     old.write(out / "private_jobs.json", old.read(previous.OUT / "private_jobs.json"))
@@ -108,6 +113,7 @@ def prepare(out):
             "application_fd_query_calls_each": 16,
             "native_calls": 0,
             "human_labels_read": False,
+            "prior_attempt": prior_attempt,
             "teaching": "matched original4 values; exact old weights/lambda/units; all4 compiled source evidence",
         },
     )
@@ -188,7 +194,9 @@ def teachers(out):
             fn.base.flatten(fn.base.features(data), baseline["scale"], "grain_field")
         )
         limit(start, used)
-    current, native, readers = map(np.stack, (current, native, readers))
+    current, native, readers = [
+        np.stack(a).astype(float) for a in (current, native, readers)
+    ]
     t = fn.teaching(
         current, native, readers, baseline["m"], baseline["d0"], source["units"]
     )
