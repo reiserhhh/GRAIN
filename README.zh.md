@@ -17,7 +17,15 @@ GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然�
 公开迁移范围记录于 [v1.1.0 发布说明](docs/RELEASE_NOTES_V110.md)。
 标签门禁修正记录于 [v1.1.1](docs/RELEASE_NOTES_V111.md)。
 
-## 功能路径研究（2026-09-08）
+## 当前规划检查点（2026-09-11）
+
+执行暂停于第79轮/NEXT90完成后，NEXT91尚未运行。本轮按用户要求进行全项目
+回顾和终局规划，没有新实验。请先读[系统全貌与开发史](docs/GRAIN_SYSTEM_RETROSPECTIVE_AND_ARCHITECTURE_20260911.md)、
+[终局计划](docs/GRAIN_COMPLETION_PLAN_V1.md)、[文献比较](docs/GRAIN_COMPLETION_LITERATURE_MAP_V1.md)
+及[Claude只读审查包](docs/GRAIN_COMPLETION_REVIEW_PACKET_V1.md)。
+新计划待审查和用户批准；以下保留历史结果，不代表旧任务自动恢复。
+
+## 历史功能路径研究（2026-09-08）
 
 [S5学生扩展](reports/grain_vector_mechanisms/S5_STUDENT_REMAINDER_REPORT.md)与
 [S6/S7构型实验](reports/grain_vector_mechanisms/S7_ORBIT_RESPONSE_REPORT.md)已完成。

@@ -22,9 +22,22 @@ slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_N
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
 
-## Whole-system logic integration (2026-09-10)
+## Current planning checkpoint (2026-09-11)
 
-Latest: the [fifteenth finite pass](reports/grain_vector_mechanisms/MATERIAL_GEOMETRY_LOGIC_REPORT_V1.md)
+Research execution is paused at completed pass79/NEXT90; NEXT91 has not run.
+The user requested a whole-project retrospective and a finite completion plan,
+not another experimental iteration. Start with the
+[system history and architecture](docs/GRAIN_SYSTEM_RETROSPECTIVE_AND_ARCHITECTURE_20260911.md),
+[completion plan](docs/GRAIN_COMPLETION_PLAN_V1.md),
+[literature map](docs/GRAIN_COMPLETION_LITERATURE_MAP_V1.md), and
+[read-only Claude review packet](docs/GRAIN_COMPLETION_REVIEW_PACKET_V1.md).
+The plan awaits review and user authorization. It separates GRAIN measurement,
+native-model mechanism, and independent text-to-score computation; none substitutes
+for the others. Historical results below remain unchanged.
+
+## Historical whole-system logic integration (2026-09-10)
+
+Earlier milestone: the [fifteenth finite pass](reports/grain_vector_mechanisms/MATERIAL_GEOMETRY_LOGIC_REPORT_V1.md)
 separates same-material spread from alignment. Openness/F03 alignment links to
 self-report at r=-.272, compared with .044 after a fixed pairing shift and .009
 for the spread product. Agreeableness query spread has a separate r=.224 link.

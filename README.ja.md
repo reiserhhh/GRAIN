@@ -20,7 +20,17 @@ GRAIN はテキストに基づく測定研究のための基盤分析法であ�
 公開移行の範囲は [v1.1.0 リリースノート](docs/RELEASE_NOTES_V110.md)に記録する。
 タグゲートの修正は [v1.1.1](docs/RELEASE_NOTES_V111.md)に記録する。
 
-## 機能的経路の研究（2026-09-08）
+## 現在の計画確認点（2026-09-11）
+
+第79回/NEXT90の完了後、実行は停止中であり、NEXT91は未実施である。
+今回は実験を追加せず、ユーザーの依頼に基づき全体像と完了条件を整理した。
+[開発史と構成](docs/GRAIN_SYSTEM_RETROSPECTIVE_AND_ARCHITECTURE_20260911.md)、
+[完了計画](docs/GRAIN_COMPLETION_PLAN_V1.md)、[文献比較](docs/GRAIN_COMPLETION_LITERATURE_MAP_V1.md)、
+[Claude向け閲覧専用レビュー資料](docs/GRAIN_COMPLETION_REVIEW_PACKET_V1.md)
+を参照。計画本文は中国語で、審査とユーザーの承認を待っている。
+以下の過去の結果は保存しており、旧タスクの自動再開を意味しない。
+
+## 過去の機能的経路の研究（2026-09-08）
 
 [S5の学習器比較](reports/grain_vector_mechanisms/S5_STUDENT_REMAINDER_REPORT.md)と
 [S6/S7の配置実験](reports/grain_vector_mechanisms/S7_ORBIT_RESPONSE_REPORT.md)が完了した。
