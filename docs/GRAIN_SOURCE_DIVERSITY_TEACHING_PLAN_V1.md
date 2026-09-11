@@ -98,3 +98,18 @@ semantics. Inspect availability before launching; do not restart old queues.
 Method basis: [NEXT87 theory](GRAIN_COMPILED_COMPATIBLE_READER_THEORY_V1.md),
 [report](../reports/grain_vector_mechanisms/COMPILED_COMPATIBLE_READER_REPORT_V1.md),
 [task-based learning](https://papers.neurips.cc/paper_files/paper/2017/file/3fc2c60b5782f641f76bcefc39fb2392-Paper.pdf).
+
+## Implementation clarification before new capture
+
+The inherited `capture_boundary` uses a full forward with an H16 hook, not a
+truncated prefix-only forward. Its16 calls count in the same native budget.
+Paired common-prefix H16 states use NEXT37's canonicalization: retain the first
+query's common prefix for the second query after checking rounding discrepancy
+at most1e-4. Record the actual discrepancy; GRAIN values and BODY directions are
+unchanged. Source capture is private and excluded from recipient application.
+
+The NEXT87 summary equations are reused without mutation. A formatting adapter
+renames only the newly appended rows and sets source counts to12; all20 historical
+readers, including original4 names, remain untouched. Numerical compiled calls
+are16 in teaching plus16 each in application/replay. Native and numeric accounting
+are separate. Preparation cost is recorded separately, not hidden in fit cost.
