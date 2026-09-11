@@ -101,3 +101,16 @@ Basis: [NEXT59 quotient argument](GRAIN_POOLED_FEATURE_NULL_RESPONSE_THEORY_V1.m
 [Deep Sets](https://papers.nips.cc/paper/6931-deep-sets.pdf) for mapping before
 pooling. The finite five-moment map does not inherit a universal representation
 guarantee from general set-function results. Overall goal ACTIVE.
+
+## Implementation freeze, before new outcome analysis
+
+Six public tables have counts2/24/120/18/32/8. They retain source4/new8 separately,
+all two-query/mean/difference views, three nested maps (old mean-PCA32, full mean,
+current five moments), all four directions and all4 summaries. No author-level
+columns are published;12complete private author units permit honest cost stops.
+Old PCA references remain original source-only/LOO references as originally bound.
+Native field energy and direction contraction are separate outputs. Aggregate
+ratios use sums; author medians are labeled separately. No token-level p-values.
+The existing current feature implementation must reproduce a zero feature tangent
+on the new projected gradient-null witness, rather than relying only on A algebra.
+Rank-deficient/zero fields are retained and undefined ratios/cosines remain missing.
