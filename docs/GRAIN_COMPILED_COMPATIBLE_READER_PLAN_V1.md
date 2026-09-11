@@ -60,7 +60,9 @@ is assumed in advance; positive and contrary factor/query outcomes both remain.
 ## Budget, tests and outputs
 
 At most2 source solves/60 numerical CPU seconds;0neural/API/Y. Original source
-program compilation needs8 two-query calls total; reuse cached recipient frames,
+program compilation needs8 individual-query calls (four paired materials) total;
+this pre-fit clarification corrects the earlier ambiguous call-count wording.
+Reuse cached recipient frames,
 with at most16 local calls per application/replay for whole-field finite differences.
 Source native packets are local cached matrix reconstructions, counted separately
 from compiled-program and neural calls. Pin all exact input hashes and data roles.
