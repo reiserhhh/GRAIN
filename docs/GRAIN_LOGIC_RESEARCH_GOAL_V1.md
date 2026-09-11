@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy-one finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2125,24 +2125,50 @@ Read [report](../reports/grain_vector_mechanisms/READER_MATERIAL_DEPENDENCE_REPO
 [theory](GRAIN_READER_MATERIAL_DEPENDENCE_THEORY_V1.md),
 [NEXT82](GRAIN_MATERIAL_READER_FIELD_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-first finite pass delivered: same-material reader field and functional loss
+
+- Previous turn PROGRESS: NEXT81 located BODY-conditioned reading. NEXT82 now
+  implements that dependence, source4ALL teaching28 values/derivatives, new8
+  application. Canonical f0a0494, implementation7fdf436; no sourceLOO/all4-clamp leak.
+- Three fixed nested inputs: context, plus BODY mean, plus four GRAIN moments.
+  Source BODY derivative loss1 -> .0019963/.000038664; three vector solves only.
+- GRAIN field's fixed response/source scalar contrast error .179712 vs constant
+  .193610 (7.18% lower), r=.618477. Context field r=.683999 but error .222332.
+  BODY mean has lowest full-vector error but native-evidence scalar r=.181225.
+  Observable and vector losses disagree; this is the next development target.
+- Anchored K+V errors stay high (GRAIN7.188125 vs constant7.288066). Reader motion
+  corrections are separately computed derivatives of F(H;H), not retroactively
+  assigned to the original native first-order K/V target. H16/full-L stay separate.
+-52focused tests/Ruff;192anchored+192diagonal finite differences, max5.39e-10;
+ 9CSV and all arrays exact replay.9.652626canonical CPU seconds,0neural/Y/API/MEPS.
+ First test run had test-only DataFrame.query collision; prepare-only archive
+ retained, no fit before fix. No empirical outcome revision or native rerun.
+- NEXT83 is a fixed functional-teaching experiment within the same GRAIN input
+ and kernel. Two coefficient fits, source-only observable rulers and explicit
+ output-range account; no recipient labels/fitting or loss-weight grid.
+
+Read [report](../reports/grain_vector_mechanisms/MATERIAL_READER_FIELD_REPORT_V1.md),
+[theory](GRAIN_MATERIAL_READER_FIELD_THEORY_V1.md),
+[NEXT83](GRAIN_OBSERVABLE_READER_TEACHING_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT82 | Can source value/derivative teaching produce a usable joint-material reader? | Execute GRAIN_MATERIAL_READER_FIELD_PLAN_V1; context, context+mean and context+GRAIN moments, one derivative-kernel solve each |At most3solves/90CPU/0neural; sourceALL/new8 only; anchored component partial and diagonal derivative reported separately |
+| NEXT83 | Does teaching observable effects help beyond all-coordinate vector fitting? | Execute GRAIN_OBSERVABLE_READER_TEACHING_PLAN_V1; same GRAIN kernel, matched vector/control and functional loss |At most2fits/90CPU/0neural; sourceALL/new8 only; preserve one field/derivatives, no loss grid |
 
-These are local computational/theory questions. NEXT81 complete,0new source solves;
-no live native job. NEXT82 permits only the specified bounded source-reader
-field development, not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT82 planned, not executed;
-develop the measured material dependence while retaining all selector/value outcomes.
+These are local computational/theory questions. NEXT82 complete,3source solves;
+no live native job. NEXT83 permits only the specified source-observable reader
+development, not general MLP24/attention22 refinement or an old queue restart.
+No broader factor search or clinical naming. NEXT83 planned, not executed;
+develop functional teaching while retaining all selector/value outcomes.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
-NEXT81 fixed-last intervention are closed.
+NEXT81 fixed-last intervention and NEXT82 joint-material field are closed.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

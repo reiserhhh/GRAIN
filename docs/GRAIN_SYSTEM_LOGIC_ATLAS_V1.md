@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT81固定完整last后保留67.73%源reader离差；四GRAIN BODY方向改变reader，54%-64%在旧context扩展空间外。NEXT82源值/导数学习d(B,C)；锚定偏导与对角全导数分开，非人类因果比例 | reader material dependence theory §§1-4; READER_MATERIAL_DEPENDENCE_REPORT_V1; material reader field plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT82以源值/导数学习同材料读头，GRAIN局部scalar误差低7.18%，context排序更好；向量/功能损失不等价。384FD验证锚定/对角两个对象；NEXT83源功能教学，非完整L或心理效度 | material reader field theory §§1-5; MATERIAL_READER_FIELD_REPORT_V1; observable reader teaching plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,26 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十一轮补充：同材料读头已可运行，下一步按功能教学
+
+NEXT82源4ALL的28值/导数观测，三固定Gaussian输入契约，应用于复用新8。
+GRAIN局部组装scalar误差.193610->.179712（低7.18%），r .577->.618；
+context field排序更高r=.684，但raw误差.222332更大。BODY mean向量误差最小，
+原生证据投影排序却弱。e^T p与||e||不是同一目标，需按功能度量发展reader。
+
+源BODY导数loss由context精确1降至mean .001996、GRAIN .000038664；这证明
+该输入/函数能表达源运动，并非99.996%人格预测。NEXT83保持同GRAIN核，做
+源observable教学与匹配向量对照，0新神经，不扫alpha或凭新8结果选rank。
+
+F(H;A)锚定H偏导与F(H;H)全导数分别通过192FD，最大误差5.39e-10；新增
+reader运动不能冒充旧native一阶K/V。52focused tests，9CSV与数组精确重放，
+9.652626CPU秒。主实现7fdf436、canonical f0a0494；早期test列访问修正前仅
+有prepare，已单独保留，无拟合或结果修订。H16与完整L依赖保留。
+
+见[报告](../reports/grain_vector_mechanisms/MATERIAL_READER_FIELD_REPORT_V1.md)、
+[理论](GRAIN_MATERIAL_READER_FIELD_THEORY_V1.md)、
+[NEXT83](GRAIN_OBSERVABLE_READER_TEACHING_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第七十轮补充：正文改变读头，局部场与全局标量必须分开定义
 

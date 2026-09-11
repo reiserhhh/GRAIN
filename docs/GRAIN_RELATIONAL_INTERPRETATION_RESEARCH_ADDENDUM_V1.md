@@ -84,3 +84,11 @@ NEXT81进一步把同材料接口落到干预：完整末位固定后，四个GR
 确定的心理动力含义。下一NEXT82把这条链接开发为联合材料读头，并区分
 锚定局部响应和对角标量导数。解释层继续围绕证据地址和独立行为编码，不
 逆向污染计分。见[正文读法理论](GRAIN_READER_MATERIAL_DEPENDENCE_THEORY_V1.md)。
+
+NEXT82已把正文均值/GRAIN交叉矩接入源学习reader，固定局部组装scalar误差
+较常数reader低7.18%。这推进的是用户第一点的可运行同材料接口，并且发现
+“向量坐标更像”与“对同一证据作出的读取更像”不同。NEXT83保持输入与核，
+用源功能投影教学，不依解释者的命名来改分。心理动力/交流分析仍接在证据
+地址、独立观察编码和可复核候选解释上；本轮没有新增临床效标或关系编码。
+见[联合field理论](GRAIN_MATERIAL_READER_FIELD_THEORY_V1.md)及
+[源功能教学计划](GRAIN_OBSERVABLE_READER_TEACHING_PLAN_V1.md)。

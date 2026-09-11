@@ -1,5 +1,24 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT82 turns material dependence into a reader function.**
+> Three source value/derivative fits, source4ALL to reused new8; no neural calls.
+> GRAIN cross-moments lower the fixed response/source local scalar contrast
+> error .193610->.179712 (7.18% versus constant), r .577035->.618477.
+> Context field has stronger ordering r=.683999 but worse raw error .222332.
+> BODY mean has smallest reader-vector error yet weak native-evidence scalar
+> ordering. Vector loss and functional loss are distinct; keep all six readers.
+> Source BODY derivative residual energy falls1->.001996/.000038664 with material
+> inputs. New8 action amplitudes still require development; not a whole-L or
+> questionnaire-prediction promotion. H16 remains neural-derived.
+>52focused tests,9CSV exact replay,384matched finite differences,9.652626CPU seconds.
+> Canonical f0a0494 follows test-only column repair; earlier prepare-only folder
+> preserved, no fit before correction. [Report](../reports/grain_vector_mechanisms/MATERIAL_READER_FIELD_REPORT_V1.md),
+> [theory](GRAIN_MATERIAL_READER_FIELD_THEORY_V1.md).
+> **NEXT83 planned:** [source-observable reader teaching](GRAIN_OBSERVABLE_READER_TEACHING_PLAN_V1.md).
+> Same GRAIN input/kernel; matched vector versus vector+functional objective,
+>2fixed solves/90CPU/0neural, no alpha/rank grid or new8 fit. Goal ACTIVE.
+
+> Previous NEXT81 update; its NEXT82 task is completed above.
 > **2026-09-11 newest: NEXT81 locates material-conditioned reading.**
 > Fixing both complete query-last vectors retains67.73% of source differential
 > reader dispersion, constant floor .093431. Four GRAIN BODY directions alter
