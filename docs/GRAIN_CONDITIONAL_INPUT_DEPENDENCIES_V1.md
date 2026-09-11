@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第78轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第79轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,7 +33,8 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
-| 成对绝对观测与共同作用 | S(YT)=S(Y)T；成对误差=2平均误差平方+差误差平方/2 | `joint_query_reader.py`；source12、一120参数、同核/单位；共同reader导数非零 | NEXT89 N/确认scalar误差低32.19%/52.58%，差值恒等保留；F02/F03成对作用低20.42%/14.05%，F01/F04不改善。不是学会跨task协方差；NEXT90检查当前moment-map盲区，H16保留 |
+| 当前GRAIN矩与完整L的配置余项 | A=[1,centered G]，J=P_A J+(I-P_A)J；signed作用相加但能量有交叉项 | `joint_moment_nullspace.py`；旧4+复用8、缓存full-L H16梯度、固定G/地址/非BODY | NEXT90新8可见作用投影N/C=.451/.327，源4=.008/.051；余项query余弦.656。不是人格方差，也不证明包含额外token证据的整个程序失效。NEXT91区分非线性G组合和同G cell内配置 |
+| 成对绝对观测与共同作用 | S(YT)=S(Y)T；成对误差=2平均误差平方+差误差平方/2 | `joint_query_reader.py`；source12、一120参数、同核/单位；共同reader导数非零 | NEXT89 N/确认scalar误差低32.19%/52.58%，差值恒等保留；F02/F03成对作用低20.42%/14.05%，F01/F04不改善。不是学会跨task协方差；NEXT90已检查当前moment-map盲区，H16保留 |
 | 多源功能覆盖与成对查询观测 | D=Delta(p)^Tm+bar(p)^Td；A=bar(p)^Tm+Delta(p)^Td/4，D不确定A | `source_diversity_teaching.py`；source12、同单位/核、两60参数，新增8源与评价8不重合 | NEXT88 F02/F03作用坐标r转正至.685/.554，K+V误差低5.26%；N改善而确认变差。NEXT89已补双query绝对观测，不宣称固定m必然失败；H16保留 |
 | 编译证据的有效读法 | c_star=(t-b)/u；lift后逐作用误差=u乘坐标误差 | `compiled_compatible_reader.py`；同original4、两20参数、原权重与all4程序 | NEXT87 scalar误差.165529->.088286降46.66%，中心化仅低2.39%；K+V未恢复，confirmation变差。有效读法不等于原生d；NEXT88扩不重合源，H16与完整L单列 |
 | 条件教学与组装目标一致性 | Schur增量改变旧/新系数；总误差=证据+共同读法+差异读法及全部交叉项 | `conditional_teaching.py`、`teaching_composition.py`；六固定函数、0神经，原生仅评估 | V局部scalar误差低7.35%/6.63%；更精确原生d削弱证据误差补偿，oracle-d组装误差.399920。NEXT87用同源compiled-compatible坐标教学；非问卷/整模型，H16保留 |

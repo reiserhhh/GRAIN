@@ -1,6 +1,9 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy-eight finite passes delivered. The user requests
+Updated 2026-09-11. **Research objective open; runtime goal PAUSED** at closeout.
+Seventy-nine finite passes delivered. NEXT91 is planned, not running; historical
+ACTIVE entries below describe their recorded stages, not the current scheduler.
+The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2336,27 +2339,60 @@ Read [report](../reports/grain_vector_mechanisms/JOINT_QUERY_FUNCTIONAL_READER_R
 [theory](GRAIN_JOINT_QUERY_FUNCTIONAL_READER_THEORY_V1.md),
 [NEXT90](GRAIN_JOINT_MOMENT_NULLSPACE_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-ninth finite pass delivered: current moment coverage and token remainder
+
+- NEXT90 primaryd537b2d uses already bound original4/reused8 native full-L H16
+  gradients, not a new predictor or source12 capture. The current BODY mean/four
+  GRAIN moment map is explicitly compared with old mean-PCA32 and full mean.
+- New8 visible signed action projection rises .054106->.450520 for N and
+  .056654->.327163 for confirmation. Source4 current projections .008442/.050829
+  are much smaller; ranks/lengths/condition overlap. Retain conditional alignment,
+  not uniform accuracy or psychological variance percentages.
+- Current residual gradient energy96.58%/97.77%, residual action projections
+  .549480/.672837. Query residual cosine.655815, shared/difference pair energy
+  .776751/.223249. Old shared-query relation survives outside the new moment map;
+  not a first discovery of shared paths. F03 shows opposite query-specific roles.
+- Exact null map/chain rule and actual feature tangent2.73e-18 locate missing
+  full-L sensitivity for f(phi) alone. The complete compiled program also reads
+  token-dependent evidence and is not declared blind by this separate result.
+  Simple residual-power vs GRAIN scores is weak (absolute mean r<=.034575).
+- Six aggregate tables,24logical stage files exact replay; independent projection
+  error2.02e-17, all aggregates recomputed, old96rows reproduced within5.11e-15.
+  27focused tests/Ruff;7.502983numericCPU,0fits/native/API/Y/MEPS/lockbox.
+- Original audit counted50macOS AppleDouble sidecars and failed; publisher refused
+  missing approval. Additive auditor4017f95 validates metadata headers and paired
+  data files. Primary code/data unchanged, no numerical rerun; failures recorded.
+- NEXT91 compares degree2 moments and a saturated equal-GRAIN-cell upper bound;
+  distinguish missing interactions from within-cell vector alignment, not another
+  loss/accuracy grid. It remains PLANNED, with0fits/0neural/60CPU.
+
+Read [report](../reports/grain_vector_mechanisms/JOINT_MOMENT_NULLSPACE_REPORT_V1.md),
+[theory](GRAIN_JOINT_MOMENT_NULLSPACE_THEORY_V1.md),
+[NEXT91](GRAIN_GRAIN_CELL_RESIDUAL_PLAN_V1.md). Research objective remains open;
+runtime goal is PAUSED at closeout. No automatic next pass was started.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86/87/88/89 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86/87/88/89/90 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT90 | Which query-sensitive token configurations remain outside current GRAIN moments? | Execute GRAIN_JOINT_MOMENT_NULLSPACE_PLAN_V1; cached full-L gradients, exact moment projector, paired shared/specific account |0fits/0neural/60CPU including replay; no Y, scalar-target conflation or grid |
+| NEXT91 | Is the residual nonlinear GRAIN weighting or within-GRAIN vector configuration? | Execute GRAIN_GRAIN_CELL_RESIDUAL_PLAN_V1; current/degree2/saturated-cell projectors, conditional covariance action identity |0fits/0neural/60CPU including replay; no grouping threshold/degree search, Y or naming |
 
-These are local computational/theory questions. NEXT89 complete,one source solve;
-no live native job. NEXT90 permits cached full-L/moment-map analysis,
+These are local computational/theory questions. NEXT90 complete,zero source solves;
+no live native job. NEXT91 permits cached full-L/nonlinear-pattern/cell analysis,
 not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT90 planned, not executed;
-retain paired mean and GRAIN action gains while locating omitted token geometry.
+No broader factor search or clinical naming. NEXT91 planned, not executed;
+retain paired mean and GRAIN action gains while separating nonlinear patterns
+from within-pattern token geometry.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
 NEXT81 fixed-last intervention, NEXT82 joint-material field, NEXT83 restricted
 functional teaching, NEXT84 sufficient output-span expansion and NEXT85 evidence
 coordinates, NEXT86 nested teaching, NEXT87 matched targets, NEXT88 source
-diversity and NEXT89 joint observations are closed.
+diversity, NEXT89 joint observations and NEXT90 current-moment geometry are closed.
 Do not reopen a coordinate/frame/alpha grid.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating

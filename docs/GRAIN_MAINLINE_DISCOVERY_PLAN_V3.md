@@ -1,5 +1,27 @@
 # GRAIN mainline discovery V3
 
+> Operational closeout: runtime goal **PAUSED**; research remains open. NEXT90
+> is complete and NEXT91 is planned, not running. Older ACTIVE banners are historical.
+
+> **2026-09-11 newest: NEXT90 locates useful GRAIN coverage and an active configuration remainder.**
+> Primaryd537b2d, portable audit4017f95; cached full-L H16 gradients,0fits/0neural.
+> New8 visible signed action projection mean->GRAIN moments: N .054106->.450520,
+> confirmation .056654->.327163. Source4 only.008442/.050829 under current map;
+> retain material-dependent alignment, not a universal percentage or prediction gain.
+> Current residual gradients still carry96.58%/97.77% Frobenius energy; energy
+> is not action or personality information. Residual query cosine mean.655815,
+> paired common/difference energies.776751/.223249. F03 has query-dependent cancellation.
+>27focused tests/Ruff,6public tables/all24logical data files exact replay;
+>7.502983numeric CPU, no model job. Primary audit mistook50AppleDouble sidecars
+> for outputs; added verified-header auditor, unchanged primary/numeric results.
+> [Report](../reports/grain_vector_mechanisms/JOINT_MOMENT_NULLSPACE_REPORT_V1.md),
+> [theory](GRAIN_JOINT_MOMENT_NULLSPACE_THEORY_V1.md).
+> **NEXT91 planned:** [nonlinear patterns vs within-cell configuration](GRAIN_GRAIN_CELL_RESIDUAL_PLAN_V1.md),
+> current/degree2/saturated equal-GRAIN maps,0fits/0neural/60CPU. Identify which
+> residual can be read by factor interactions and which needs token-vector alignment.
+> Full-L input-map result does not invalidate the token-dependent compiled assembly.
+
+> Previous NEXT89 update; its NEXT90 task is completed above.
 > **2026-09-11 newest: NEXT89 recovers the missing paired mean.**
 > Primary44a9b4a; source12, one120-coefficient solve, no new neural capture.
 > N/confirmation local scalar errors .027679/.241725 -> .018768/.114631,

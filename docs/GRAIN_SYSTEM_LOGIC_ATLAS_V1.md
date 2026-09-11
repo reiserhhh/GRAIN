@@ -94,11 +94,11 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L12 | 局部机制组合 -> 介观与群体关系 | M/E | 组合可有反馈/抵消/支持集漂移；单边成功不保证复合成功 | M4 / cross-level contract |
 | L13 | 样本趋大 -> 估计误差减少 | M | 个体事件随机性、遗漏结构与估计方差不是同一误差 | unified §8 / cross-level §8 |
 | L14 | 文本 + 查询 -> P/Q 条件化表征 | E/I | NEXT39固定完全相同输出方向，旧4/新8正文梯度余弦仍.728/.657，显示条件传输差异；query状态与布局共同包含。原概率.704/.649与新logit目标分开，不当量表相关 | fixed seed attention theory §1; output seed theory §§1-3 |
-| L15 | 表征含信息 -> 读出可利用信息 | M/E | 固定P/Q的已测输入族中，f及三分量不变而原生锚定值变化；任何只读这些量的函数不能精确重建该干预族。自然分布另论 | scalar/conditional report §4 / input quotient |
+| L15 | 表征含信息 -> 读出可利用信息 | M/E | NEXT90当前矩核内仍有full-L局部作用，任何仅f(phi)都看不见；完整编译程序有额外token证据，不由此判盲。旧固定P/Q反例保留；自然分布预测另论 | joint moment nullspace theory §§1,4; scalar/conditional report §4 / input quotient |
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT89双query读数误差低32.19%/52.58%，F02/F03成对作用低20.42%/14.05%；差值恒等保留，新增共同水平而非跨task协方差。NEXT90定位当前moment-map遗漏的token配置，非人格命名 | joint query functional reader theory §§1-5; JOINT_QUERY_FUNCTIONAL_READER_REPORT_V1; joint moment nullspace plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT89共同读数收益保留；NEXT90当前矩可见作用N/C=.451/.327而源4=.008/.051，余项query余弦.656，F03反向抵消。NEXT91区分非线性G组合与同G内token配置，非人格命名 | joint moment nullspace theory §§1-5; JOINT_MOMENT_NULLSPACE_REPORT_V1; GRAIN cell residual plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,27 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十九轮补充：当前GRAIN矩更有用，余项的作用仍分查询
+
+NEXT90使用已有full-L H16梯度而非新拟合：新8中当前矩可见作用投影N/C为
+.451/.327，正文均值仅.054/.057。梯度总能量只保留3.42%/2.23%，不能
+拿范数覆盖率代替沿GRAIN方向的作用。源4可见作用只有.008/.051，保留异质性。
+
+余项query余弦.656，共同/差异能量.777/.223；不是首次发现query共享，
+而是定位它仍在当前矩之外。F03/N余项抵消-.159、确认余项贡献1.009，
+所以不能统一加正权重或删残差。实际强度与G得分的相关均值绝对值<=.035。
+
+固定G/地址后链式法则给出f(phi)的局部盲区，实际feature切向量2.73e-18。
+但整个NEXT89程序有额外token证据，不能被等同于f(phi)。下一NEXT91用
+二次G模式与同G cell饱和上限，找余项来自更复杂组合还是cell内向量配置。
+
+27tests/Ruff、六聚合表和24逻辑数据文件精确重放，7.502983数值CPU，0神经/Y。
+首审因50AppleDouble元数据误报，新增校验header的审计入口，未改冻结主代码
+或数值结果。[报告](../reports/grain_vector_mechanisms/JOINT_MOMENT_NULLSPACE_REPORT_V1.md)、
+[理论](GRAIN_JOINT_MOMENT_NULLSPACE_THEORY_V1.md)、
+[NEXT91](GRAIN_GRAIN_CELL_RESIDUAL_PLAN_V1.md)。研究目标未结束；当前运行goal
+PAUSED，NEXT91尚未启动。
 
 ### 第七十八轮补充：共同水平是独立观测，不是旧差值的新发现
 

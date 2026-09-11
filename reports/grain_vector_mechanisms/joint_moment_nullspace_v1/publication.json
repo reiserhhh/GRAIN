@@ -1,0 +1,56 @@
+{
+  "primary_commit": "d537b2d2548a27ab0f098e01fb9077c6acb8476f",
+  "audit": {
+    "status": "PASS",
+    "primary_commit": "d537b2d2548a27ab0f098e01fb9077c6acb8476f",
+    "corrected_auditor_sha256": "158bcd446030c530327b86055b1cb8c25bb3006eae650dffdd561c2f22021a3f",
+    "primary_audit_failure": "Exact directory comparison counted macOS AppleDouble sidecars; numeric analysis and replay were already complete.",
+    "verified_appledouble_sidecars_ignored": 50,
+    "numeric_outputs_changed": false,
+    "contexts": 24,
+    "authors": 12,
+    "source_authors": 4,
+    "evaluation_authors": 8,
+    "numeric_cpu_seconds": 7.502982999999999,
+    "independent_projector_relative_error": 2.0104592011944014e-17,
+    "public_tables": 6,
+    "public_counts": [
+      2,
+      24,
+      120,
+      18,
+      32,
+      8
+    ],
+    "private_units": 12,
+    "fits": 0,
+    "native_calls": 0,
+    "human_labels_read": false,
+    "aggregate_recalculation": "PASS",
+    "literal_null_category_preserved": true,
+    "checks": {
+      "orthogonal_basis": 2.886579864025407e-15,
+      "direction_feature_null": 5.353190106126172e-16,
+      "gradient_energy": 1.3877787807814457e-17,
+      "gradient_orthogonality": 1.5178830414797062e-18,
+      "optimal_null_witness": 1.1102230246251565e-16,
+      "signed_action_sum": 4.6983134673329005e-15,
+      "direction_energy": 1.8364952399105134e-16,
+      "current_feature_null": 1.743133711742533e-16,
+      "nested_retention": 0.0,
+      "paired_energy": 5.551115123125783e-17,
+      "actual_feature_tangent": 2.7296410789092245e-18
+    }
+  },
+  "files": {
+    "input_geometry.csv": "4b94627d28765ba656074c5eaf51d171895d45e628b76398ac2ca10036ee8541",
+    "gradient_geometry.csv": "2e5c3017ba6c9435f86eee11167c2fbce8a1cc8aa8b5ad611090269a60d5e35a",
+    "responses.csv": "a0578531161613e152783bae186d2b1187c72794e1eb4e3cd0c7a4e6b04c7315",
+    "query_geometry.csv": "54d6151eba4bee67357b2a39fa51c75921bd55d1925feb4f1b0d9501514b48b2",
+    "magnitude_links.csv": "35ac2e9c0cc434c96ae766c0e03b06d2a6b12309d30626fbd6bc4e68fde9f875",
+    "comparisons.csv": "24f6659023504e82bb98dcabbca99eb7fc6ebcb994c66312e5fb41d601e624ab"
+  },
+  "publisher_sha256": "a0b9b8caf3649b800acbd7fad0c159f66d1136625ad267d97865bf949fb9a6ff",
+  "scope": "Fixed original4 and reused8; cached native full-L H16 gradients. Not questionnaire validity, finite text edits, local reader c or proof that the entire compiled assembly is blind.",
+  "metric": "Declared Frobenius coordinate metric and frozen GRAIN/address values; ratio-of-sums and per-author fractions reported separately."
+}
