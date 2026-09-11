@@ -1,0 +1,36 @@
+{
+  "primary_commit": "6451b8e3f66538514728ba020e9a87c01473b450",
+  "publisher_sha256": "14b567416c5d7fa03b674e5fd344094235734ca92c01e332b02744d1cdc4b448",
+  "files": {
+    "source_fit.csv": "c7dfbe7728257101790d6d84181d5e718666b63a5c4f9ff3056f3194755e690c",
+    "source_geometry.csv": "ebb76b6d684a578f5f7c39c0041e8a2e1260cd8e950a2175c852deb719bf571d",
+    "component_scores.csv": "c7a225b86ded7d43ddcfa940aea612eab1e71e3f2c24b1171b13097e0b971ee7",
+    "component_actions.csv": "14f5b9727b0ea62a840f89954e256775c85da982fef8e84ae1b2700f4c047560",
+    "factor_actions.csv": "a638641d50f8856d48e196b61a17f7aaf6972c837f92799d25b5e7e04c40b2ed",
+    "reader_projection.csv": "3cd8012e99d5d6f4daedb1a0124cc5b8dcb3438dc568e0939be49c6c2df3ec27",
+    "reader_vector.csv": "2a9e951075eaebc8bbc92e66094ccb9f184edd8fa59183245787eb4b372f691e",
+    "diagonal_actions.csv": "b6db5d4244130b05f6fe9376385437258fd01522837e74efdfcfc90a63c0c470",
+    "range_vector.csv": "0bddfb5fec65c931e8c52140c4e96617773526ecfde15bf3208155a3ea84d5b9",
+    "range_projection.csv": "dae82d6d141de4244b501a5da3a2b1678294d386f0cf0bb4ad3394a9612718b0"
+  },
+  "audit": {
+    "status": "PASS",
+    "source_authors": 4,
+    "recipient_authors": 8,
+    "coefficient_solves": 2,
+    "observations": 28,
+    "native_calls": 0,
+    "human_labels_read": false,
+    "numeric_cpu_seconds": 7.820267,
+    "public_tables": 10,
+    "anchored_fd_count": 128,
+    "diagonal_fd_count": 128,
+    "anchored_fd_max": 4.690487998004755e-10,
+    "diagonal_fd_max": 4.787752416746116e-10,
+    "control_max": 7.993605777301127e-15,
+    "comparator_max": 0.0
+  },
+  "scope": "Source4ALL teaches two fixed readers; new8 is reused discovery material. H16 remains native. No new human labels, clinical criteria, neural calls or current target reads in application.",
+  "range_account": "Post-freeze native-reader output-range explanation only; not an oracle predictor. Scalar projection cross-terms retained.",
+  "cpu_scope": "Canonical preparation, source fits, application/evaluation and cached replay; excludes later preflight hashing, tests, publisher, audit and terminal exploratory summaries."
+}
