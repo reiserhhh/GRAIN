@@ -1,5 +1,12 @@
 # GRAIN logic goal: execution ledger
 
+## 2026-09-12 foundational target correction
+
+The [foundational program V2](GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md) supersedes
+V1 as the planning entry point. Pipeline completion and registered refusal rules
+do not constitute constructive measurement theory. No new experiment or goal was
+started; pass79/NEXT90 remains the last completed packet and NEXT91 remains paused.
+
 ## 2026-09-11 planning hold
 
 The user's latest instruction pauses advancement for a whole-system retrospective,

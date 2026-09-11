@@ -3,6 +3,14 @@
 Date: 2026-07-30  
 Status: binding V8 pre-experiment methodology constitution
 
+2026-09-12 scope clarification: this document supplies inference and use rules,
+not proof that a constructive measurement theory is complete. The
+[foundational program V2](GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md) now sets the
+research target: explanatory mechanisms, discriminating predictions and derived
+measurement-design rules. A typed opening or refusal does not solve its mechanism.
+Historical statuses below remain unchanged; discovery follows the current
+discovery-first policy and execution is currently paused for conceptual review.
+
 ## 1. Identity and purpose
 
 GRAIN is **not a scale** and is not a pipeline whose purpose is to produce one

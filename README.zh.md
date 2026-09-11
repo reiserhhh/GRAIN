@@ -19,6 +19,10 @@ GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然�
 
 ## 当前规划检查点（2026-09-11）
 
+2026-09-12目标修订：先读[基础理论研究纲领V2](docs/GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md)。
+重点从“接完已有推论管线”改为“推导可指导未来文本心理测量开发的原理”。
+V1计划降为实施参考；实验继续暂停，等待理论审查和用户批准。
+
 执行暂停于第79轮/NEXT90完成后，NEXT91尚未运行。本轮按用户要求进行全项目
 回顾和终局规划，没有新实验。请先读[系统全貌与开发史](docs/GRAIN_SYSTEM_RETROSPECTIVE_AND_ARCHITECTURE_20260911.md)、
 [终局计划](docs/GRAIN_COMPLETION_PLAN_V1.md)、[文献比较](docs/GRAIN_COMPLETION_LITERATURE_MAP_V1.md)
