@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "9edebcfe01e3b367027c06e76af292fd52c3f4c8de18bb7c0a661612f2672ff4",
+  "atlas_sha256": "46df183a45e58480a9f4f98dad150740ccb5e0c67562cb8ada5aa9ddd6b4bdc6",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT82\u4ee5\u6e90\u503c/\u5bfc\u6570\u5b66\u4e60\u540c\u6750\u6599\u8bfb\u5934\uff0cGRAIN\u5c40\u90e8scalar\u8bef\u5dee\u4f4e7.18%\uff0ccontext\u6392\u5e8f\u66f4\u597d\uff1b\u5411\u91cf/\u529f\u80fd\u635f\u5931\u4e0d\u7b49\u4ef7\u3002384FD\u9a8c\u8bc1\u951a\u5b9a/\u5bf9\u89d2\u4e24\u4e2a\u5bf9\u8c61\uff1bNEXT83\u6e90\u529f\u80fd\u6559\u5b66\uff0c\u975e\u5b8c\u6574L\u6216\u5fc3\u7406\u6548\u5ea6",
-      "evidence_entry": "material reader field theory \u00a7\u00a71-5; MATERIAL_READER_FIELD_REPORT_V1; observable reader teaching plan"
+      "alternative_or_next_link": "NEXT83\u6e90\u529f\u80fd\u6559\u5b66\u5c40\u90e8scalar\u8bef\u5dee\u518d\u4f4e.58%\u3001K+V\u672a\u6539\u5584\uff1b42.8%\u5411\u91cf\u8bef\u5dee\u5728\u65e727\u7ef4\u76ee\u6807\u8303\u56f4\u5916\u3002\u6295\u5f71\u540e\u53ef\u62b5\u6d88\u6216\u653e\u5927\uff1bNEXT84\u5145\u5206\u6e90\u8f93\u51fa\u7a7a\u95f4span(Y,R)\uff0c\u975e\u5b8c\u6574L\u6216\u5fc3\u7406\u6548\u5ea6",
+      "evidence_entry": "observable reader teaching theory \u00a7\u00a71-4; OBSERVABLE_READER_TEACHING_REPORT_V1; source observable span plan"
     },
     {
       "id": "L20",

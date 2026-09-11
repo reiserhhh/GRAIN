@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy-one finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy-two finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2151,24 +2151,49 @@ Read [report](../reports/grain_vector_mechanisms/MATERIAL_READER_FIELD_REPORT_V1
 [theory](GRAIN_MATERIAL_READER_FIELD_THEORY_V1.md),
 [NEXT83](GRAIN_OBSERVABLE_READER_TEACHING_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-second finite pass delivered: functional teaching and its sufficient output space
+
+- Previous turn PROGRESS: NEXT82 implemented a joint-material field. NEXT83
+  primary6451b8e keeps its input/kernel and compares J0 with J0+source functional
+  projection losses. Source4ALL, reused new8; two756-coordinate coefficient solves.
+- Source functional errors fall sharply; scalar application error .179712->.178670
+  (0.58% lower), ordering .618477->.612673, K+V error7.188125->7.202385. No overall
+  reader promotion, no further loss-weight tuning. Earlier local gain retained.
+- The27-dimensional source target span leaves a fixed .215128 vector-error floor,
+  42.78%-42.83% of current error. Scalar inside/outside effects cancel; K+V effects
+  reinforce. These are post-freeze accounts, not oracle prediction or human variance.
+- Derived sufficient source output space for the fixed functional objective:
+  span(Y,source rulers), not merely row(Y). A2D mathematical witness shows the
+  constrained optimum(2/3,0) differs from full(5/8,1/8). Actual expansion is NEXT84.
+-58primary focused tests plus1post-account witness;10CSV/all arrays exact replay,
+ 128anchored+128diagonal FD<=4.79e-10, control parity7.99e-15.7.820267stageCPU,
+ 0neural/Y/API/MEPS, no empirical runtime failure or outcome-driven code correction.
+- NEXT84: include source evidence/action output directions, same input/objective,
+  two fixed expanded solves and a matched control; no sourceLOO/new8 fit/rank sweep.
+
+Read [report](../reports/grain_vector_mechanisms/OBSERVABLE_READER_TEACHING_REPORT_V1.md),
+[theory](GRAIN_OBSERVABLE_READER_TEACHING_THEORY_V1.md),
+[NEXT84](GRAIN_SOURCE_OBSERVABLE_SPAN_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT83 | Does teaching observable effects help beyond all-coordinate vector fitting? | Execute GRAIN_OBSERVABLE_READER_TEACHING_PLAN_V1; same GRAIN kernel, matched vector/control and functional loss |At most2fits/90CPU/0neural; sourceALL/new8 only; preserve one field/derivatives, no loss grid |
+| NEXT84 | Do source observable directions enlarge a useful reader output space? | Execute GRAIN_SOURCE_OBSERVABLE_SPAN_PLAN_V1; same input/objective, expand row(Y) to span(Y,R) |At most2fits/120CPU/0neural; sourceALL/new8 only; matched control, no rank grid |
 
-These are local computational/theory questions. NEXT82 complete,3source solves;
-no live native job. NEXT83 permits only the specified source-observable reader
+These are local computational/theory questions. NEXT83 complete,2source solves;
+no live native job. NEXT84 permits only the specified source-observable span
 development, not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT83 planned, not executed;
-develop functional teaching while retaining all selector/value outcomes.
+No broader factor search or clinical naming. NEXT84 planned, not executed;
+develop the sufficient output space while retaining all selector/value outcomes.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
-NEXT81 fixed-last intervention and NEXT82 joint-material field are closed.
+NEXT81 fixed-last intervention, NEXT82 joint-material field and NEXT83 restricted
+functional teaching are closed.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

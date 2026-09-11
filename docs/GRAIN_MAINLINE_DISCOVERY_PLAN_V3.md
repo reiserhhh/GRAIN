@@ -1,5 +1,23 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT83 tests functional teaching and locates an output restriction.**
+> Same GRAIN input/kernel, two756-coordinate solves, source4ALL/new8. Scalar
+> contrast error .179712->.178670 (0.58% lower), r .618477->.612673; K+V error
+>7.188125->7.202385. Keep bounded benefit, no loss-weight grid or universal promotion.
+> Source functional fits improve sharply, but42.78%-42.83% of new8 reader-vector
+> error lies outside the27-dimensional target output range. Scalar projection
+> cross-term is negative, K+V cross-terms positive: norm shares are not effect shares.
+> A post-account2D witness proves functional losses can require source ruler
+> directions outside row(Y). NEXT84 expands to span(Y,R), not arbitrary extra rank.
+>58primary tests plus1math witness;10CSV exact replay,256FD<=4.79e-10,
+>7.820267CPU seconds,0neural/API/Y/MEPS. Control reproduces within7.99e-15.
+> Primary6451b8e. [Report](../reports/grain_vector_mechanisms/OBSERVABLE_READER_TEACHING_REPORT_V1.md),
+> [theory](GRAIN_OBSERVABLE_READER_TEACHING_THEORY_V1.md).
+> **NEXT84 planned:** [complete source-observable span](GRAIN_SOURCE_OBSERVABLE_SPAN_PLAN_V1.md),
+>2fixed fits/120CPU/0neural, same objective and input; no new8 fit or rank grid.
+> H16/local-component scope retained. Overall goal ACTIVE.
+
+> Previous NEXT82 update; its NEXT83 task is completed above.
 > **2026-09-11 newest: NEXT82 turns material dependence into a reader function.**
 > Three source value/derivative fits, source4ALL to reused new8; no neural calls.
 > GRAIN cross-moments lower the fixed response/source local scalar contrast

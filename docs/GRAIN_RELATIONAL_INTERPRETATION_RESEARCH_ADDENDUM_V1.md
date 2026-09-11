@@ -92,3 +92,9 @@ NEXT82已把正文均值/GRAIN交叉矩接入源学习reader，固定局部组�
 地址、独立观察编码和可复核候选解释上；本轮没有新增临床效标或关系编码。
 见[联合field理论](GRAIN_MATERIAL_READER_FIELD_THEORY_V1.md)及
 [源功能教学计划](GRAIN_OBSERVABLE_READER_TEACHING_PLAN_V1.md)。
+
+NEXT83已执行功能教学，局部scalar误差仅再低.58%，方向响应没有改善。新发现
+在于“用于教学的向量”与“定义其作用的证据方向”并非同一个空间；NEXT84
+会把两者合并为充分源输出空间span(Y,R)。这使同材料查询接口继续数学化，
+并不授权把内部缺失方向命名为某种关系冲突。独立观察编码仍是解释层的入口。
+见[功能教学理论](GRAIN_OBSERVABLE_READER_TEACHING_THEORY_V1.md)。

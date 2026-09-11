@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第71轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第72轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 源功能教学与输出方向 | J1=J0+源证据/方向投影loss；充分输出空间span(Y,R) | `observable_reader_teaching.py`；NEXT83只在row(Y)比较两固定目标 | 新8scalar误差仅低.58%，K+V未改善；42.8%向量误差在27维目标范围外。投影交叉项可抵消/放大，非效应份额。NEXT84纳入源读尺方向，不调权重；H16/完整L单列 |
 | 同材料可微读头与功能度量 | dhat(x)由源值/导数核教学；误差作用e^T p，不等于向量误差范数 | `material_reader_field.py`；源4ALL/新8，context/mean/GRAIN三固定输入 | GRAIN局部组装scalar误差低7.18%，context排序更好但raw误差更大；源BODY导数可拟合。NEXT83以源observable教学，锚定/对角导数各自验证；H16与完整L仍单列 |
 | 正文条件读头与锚定函数 | d(B,C,R)，D_BODY d非零；F(H;A)的H偏导与F(H;H)全导数分开 | `reader_material_dependence.py`；NEXT81源4完整last固定，四GRAIN正文方向 | 保留67.73%源差异reader离差；54%-64%BODY读法变化在旧context扩展空间外。NEXT82用源值/导数构造联合field，不能把reader曲率直接加成native一阶K/V；H16与layout依赖保留 |
 | 源读头的条件运动 | dhat=sum pi_i[d_i+j_i v_i^T(c-c_i)]；Fhat及其完整乘积导数 | `source_reader_motion.py`；NEXT80仅源H16末位干预教学，应用无当前reader/target | 源运动68.88%在旧范围外，rank3->7；新8差异reader原生证据K+V误差比条件核低5.30%，仍略差于常数，反向作用未恢复。NEXT81固定完整末位检验正文/GRAIN对读法的影响，H16仍保留 |
