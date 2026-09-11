@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy-seven finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy-eight finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2309,27 +2309,54 @@ Read [report](../reports/grain_vector_mechanisms/SOURCE_DIVERSITY_TEACHING_REPOR
 [theory](GRAIN_SOURCE_DIVERSITY_TEACHING_THEORY_V1.md),
 [NEXT89](GRAIN_JOINT_QUERY_FUNCTIONAL_READER_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-eighth finite pass delivered: the missing mean observation
+
+- NEXT89 primary44a9b4a: fixed source12, one120-coefficient/ten-output solve,
+  independent per-query five-row lifts. New common reader has its own derivative;
+  both specific and shared numerical modes include the complete product rule.
+- Against compatible12, N/confirmation local scalar errors fall32.19%/52.58%;
+  paired mean55.18%, raw paired scalar45.23%. F02/F03 paired action errors fall
+  20.42%/14.05%; F01/F04 do not improve. Absolute ranking is not uniformly better,
+  and whole reader-vector error rises. Retain effective functional observation.
+- A post-result zero-fit account explains the result: common scalar kernel means
+  source target mixing commutes with fitting. New target difference equals old
+  contrast target; five constrained primary observations agree within6.89e-15,
+  whole derivative5.40e-11. Paired improvement comes entirely from the mean, not
+  newly learned cross-query covariance or an independently rediscovered contrast.
+- Primary128FD<=3.92e-9,13CSV/all arrays exact replay,40focused tests/Ruff.
+  Canonical42.715075CPU + .012065post-account;256compiled calls/0neural/API/Y.
+  All22older readers retained; no empirical stage failure or live model job.
+  Pre-fit fixture/import errors and post-test shebang lint repair documented.
+- NEXT90 returns to query-sensitive token configuration beyond the CURRENT
+  BODY mean/four GRAIN cross-moments, using cached full-L gradients. Old NEXT59
+  PCA-mean blindness is not reused as proof about the stronger current map.
+  No new fit or native call, and no conflation of full L with a local c/score.
+
+Read [report](../reports/grain_vector_mechanisms/JOINT_QUERY_FUNCTIONAL_READER_REPORT_V1.md),
+[theory](GRAIN_JOINT_QUERY_FUNCTIONAL_READER_THEORY_V1.md),
+[NEXT90](GRAIN_JOINT_MOMENT_NULLSPACE_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86/87/88 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86/87/88/89 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT89 | Does paired absolute teaching improve the same-material functional reader? | Execute GRAIN_JOINT_QUERY_FUNCTIONAL_READER_PLAN_V1; source12 fixed, ten coordinates and coherent per-query lifts |1solve/120coefficients/256compiled calls/120CPU/0neural; no new8 fit, Y or grid |
+| NEXT90 | Which query-sensitive token configurations remain outside current GRAIN moments? | Execute GRAIN_JOINT_MOMENT_NULLSPACE_PLAN_V1; cached full-L gradients, exact moment projector, paired shared/specific account |0fits/0neural/60CPU including replay; no Y, scalar-target conflation or grid |
 
-These are local computational/theory questions. NEXT88 complete,two source solves;
-no live native job. NEXT89 permits source12 joint-query coordinate teaching,
+These are local computational/theory questions. NEXT89 complete,one source solve;
+no live native job. NEXT90 permits cached full-L/moment-map analysis,
 not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT89 planned, not executed;
-develop the missing pair-mean observation while retaining useful GRAIN actions.
+No broader factor search or clinical naming. NEXT90 planned, not executed;
+retain paired mean and GRAIN action gains while locating omitted token geometry.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
 NEXT81 fixed-last intervention, NEXT82 joint-material field, NEXT83 restricted
 functional teaching, NEXT84 sufficient output-span expansion and NEXT85 evidence
-coordinates, NEXT86 nested teaching, NEXT87 matched targets and NEXT88 source
-diversity are closed.
+coordinates, NEXT86 nested teaching, NEXT87 matched targets, NEXT88 source
+diversity and NEXT89 joint observations are closed.
 Do not reopen a coordinate/frame/alpha grid.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating

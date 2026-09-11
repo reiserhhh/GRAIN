@@ -1,5 +1,24 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT89 recovers the missing paired mean.**
+> Primary44a9b4a; source12, one120-coefficient solve, no new neural capture.
+> N/confirmation local scalar errors .027679/.241725 -> .018768/.114631,
+>32.19%/52.58% lower; paired mean55.18% lower, raw paired scalar45.23% lower.
+> F02/F03 paired action errors20.42%/14.05% lower; F01/F04 not improved.
+> Primary contrast unchanged exactly: same identity-output kernel and source
+> target difference imply same prediction. Zero-fit account locates ALL paired
+> improvement in the newly observed mean, not new cross-task learning.
+> Absolute ranking not uniformly better; effective reading, not questionnaire gain.
+>40focused tests/Ruff,13CSV/all arrays exact replay;128FD<=3.92e-9,
+>42.715075+.012065numeric CPU,256compiled calls,0neural/API/Y/MEPS/lockbox.
+> All22previous readers retained. H16 remains neural-derived; no live model job.
+> [Report](../reports/grain_vector_mechanisms/JOINT_QUERY_FUNCTIONAL_READER_REPORT_V1.md),
+> [theory](GRAIN_JOINT_QUERY_FUNCTIONAL_READER_THEORY_V1.md).
+> **NEXT90 planned:** [current moment-map nullspace](GRAIN_JOINT_MOMENT_NULLSPACE_PLAN_V1.md),
+> cached full-L gradients,0fits/0neural/60CPU. Locate remaining shared/specific
+> token configuration beyond current GRAIN moments; not a reader accuracy grid.
+
+> Previous NEXT88 update; its NEXT89 task is completed above.
 > **2026-09-11 newest: NEXT88 source diversity improves functional GRAIN reading.**
 > Primary0c82ba3, source4->12; two60-coordinate teachers, same input/kernel/units.
 > Compatible F02/F03 coordinate r -.303/-.755 -> +.685/+.554; respective errors

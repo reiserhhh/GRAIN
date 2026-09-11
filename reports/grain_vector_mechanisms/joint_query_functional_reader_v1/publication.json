@@ -1,0 +1,40 @@
+{
+  "primary_commit": "44a9b4a5358672462f396e6e85f82c713bc4f76f",
+  "publisher_sha256": "804dbb3d2f9e250d71457199a2183e002a5b23ab37c82861bd9a5e67a26e5ad9",
+  "files": {
+    "component_scores.csv": "7585adbd97e440e29dc23ff363d835e9b738c6dbc50c91acec65ce6ccfed4b10",
+    "component_actions.csv": "11426f359278d266a492ab1cf1d4ac40222f37a85755a809324be617c6fc756b",
+    "factor_actions.csv": "7341f03acc23e6f62390622199b14b226be6155af684271695528b8b926847ed",
+    "reader_projection.csv": "8cf99629ba34cb1453db3ce7e61627421f4066cc71cd212116bc839d0f7e5680",
+    "reader_vector.csv": "a5d3c99873cb4c23972b26c75acf92ad60618a61fb3c7d6e1caa4a6424f87cdb",
+    "diagonal_actions.csv": "0468b1b1efbae2246f97ca7d4fee4161b485d150ead8c577e8127ca55da1eded",
+    "source_fit.csv": "dfb2367e54e0f25528be53819bc4bdb67cb4d112d3781d6464c7c8d0f2c2f3e3",
+    "coordinate_prediction.csv": "e7bcec292ce0d701c3e236ed509b3a0a8885acba14a1f235ca7226f0ba2ab9ba",
+    "frame_geometry.csv": "4100c70f4a2c73c5dca4ed64702ad5db6a10e4d986aa5c7630fecbbeb14a7174",
+    "pair_mean.csv": "829756818b56161049fbee40357e8f6963a291f9e19bf3300a0d4f78e9561bc7",
+    "signed_errors.csv": "5b25b7e691b6475ca5717d46bca9cac9297fbbee6537f5834b10b339e6d7e25c",
+    "conditioning.csv": "b661f240b1a22d30a2f1246f3ea9f541feb3ba33782cc755a9610eba5dcc7d43",
+    "reader_pair.csv": "31da5b1c2bd888478efa0b1cc5971cbc7282e597c6a1e435ef724241429339a9"
+  },
+  "audit": {
+    "status": "PASS",
+    "source_authors": 12,
+    "recipient_authors": 8,
+    "source_solves": 1,
+    "coefficients": 120,
+    "compiled_calls_including_replay": 256,
+    "numeric_cpu_seconds": 42.71507499999999,
+    "native_calls": 0,
+    "human_labels_read": false,
+    "prior_readers_retained": 22,
+    "public_tables": 13,
+    "anchored_fd_count": 64,
+    "diagonal_fd_count": 64,
+    "anchored_fd_max": 5.591531682114237e-10,
+    "diagonal_fd_max": 3.914487400891176e-09
+  },
+  "scope": "Source12, reused new8 evaluation-only. Local model components, not questionnaire or final LLM accuracy. H16 remains neural-derived.",
+  "method": "One ten-coordinate source solve, fixed old input/row units/weight/lambda; per-query minimal lift and nonzero shared-reader derivative.",
+  "comparators": "All22 old rows retained; paired mean and vector decomposition compare native12/compatible12/joint12.",
+  "cpu_scope": "Canonical numeric construction/application/evaluation and exact replay; hashes/tests/publication excluded."
+}

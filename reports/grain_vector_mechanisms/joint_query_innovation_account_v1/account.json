@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "timing": "post-primary zero-fit mathematical account",
+  "primary_commit": "44a9b4a5358672462f396e6e85f82c713bc4f76f",
+  "account_code_sha256": "ca8b0ba5759c61aaba15441bd2dcc26dc1991aa4d5beab2366f2b1f1d9b8c9c3",
+  "source_solves": 0,
+  "native_calls": 0,
+  "compiled_calls": 0,
+  "human_labels_read": false,
+  "checks": {
+    "source_target_contrast_max": 4.440892098500626e-16,
+    "source_fitted_contrast_max": 6.661338147750939e-16,
+    "source_beta_contrast_max": 8.604228440844963e-16,
+    "coordinate_contrast_max": 1.457167719820518e-16,
+    "coordinate_derivative_contrast_max": 4.85722573273506e-17,
+    "primary_five_observation_contrast_max": 6.8833827526759706e-15,
+    "equal_shift_both_queries_max": 6.8833827526759706e-15,
+    "primary_diagonal_contrast_max": 5.393560598143665e-11,
+    "primary_correction_contrast_max": 5.393574475931473e-11,
+    "paired_error_gain_is_mean_gain_max": 4.468647674116255e-15
+  },
+  "observations": [
+    {
+      "observable": "scalar",
+      "authors": 8,
+      "pair_error2_before": 0.8015629973485405,
+      "pair_error2_after": 0.43901030582694395,
+      "pair_error_reduction_fraction": 0.4523071707662039,
+      "mean_channel_error_reduction2": 0.3625526915215966,
+      "shared_observation_shift_rms": 0.1656216102944612
+    },
+    {
+      "observable": "total_F01",
+      "authors": 8,
+      "pair_error2_before": 1.4548022440276904,
+      "pair_error2_after": 1.4582482193474955,
+      "pair_error_reduction_fraction": -0.002368689857299582,
+      "mean_channel_error_reduction2": -0.0034459753198057136,
+      "shared_observation_shift_rms": 0.03531258214140932
+    },
+    {
+      "observable": "total_F02",
+      "authors": 8,
+      "pair_error2_before": 2.3578766569608987,
+      "pair_error2_after": 1.876418764639305,
+      "pair_error_reduction_fraction": 0.2041912968179395,
+      "mean_channel_error_reduction2": 0.48145789232159075,
+      "shared_observation_shift_rms": 0.06386895505103626
+    },
+    {
+      "observable": "total_F03",
+      "authors": 8,
+      "pair_error2_before": 1.2254244928198024,
+      "pair_error2_after": 1.0532093351287426,
+      "pair_error_reduction_fraction": 0.14053510330512373,
+      "mean_channel_error_reduction2": 0.17221515769105977,
+      "shared_observation_shift_rms": 0.05979496242736772
+    },
+    {
+      "observable": "total_F04",
+      "authors": 8,
+      "pair_error2_before": 4.2903600400299196,
+      "pair_error2_after": 4.4418865524564355,
+      "pair_error_reduction_fraction": -0.035317901297966414,
+      "mean_channel_error_reduction2": -0.1515265124265204,
+      "shared_observation_shift_rms": 0.056825176268386186
+    }
+  ],
+  "new_common_reader_derivative_rms": 0.008881277711883063,
+  "numeric_cpu_seconds": 0.012065000000000214,
+  "interpretation": "The identity-output kernel preserves the old contrast; paired error gains come from newly observed common levels, not learned output coupling."
+}

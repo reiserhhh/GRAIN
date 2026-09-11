@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT88 source12使F02/F03作用坐标r转+.685/.554，K+V误差7.2865->6.9033；两绝对query不共同获益，contrast缺少mean观测。NEXT89教成对绝对值，非新人格因子或唯一原生读法 | source diversity teaching theory §§1-5; SOURCE_DIVERSITY_TEACHING_REPORT_V1; joint query functional reader plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT89双query读数误差低32.19%/52.58%，F02/F03成对作用低20.42%/14.05%；差值恒等保留，新增共同水平而非跨task协方差。NEXT90定位当前moment-map遗漏的token配置，非人格命名 | joint query functional reader theory §§1-5; JOINT_QUERY_FUNCTIONAL_READER_REPORT_V1; joint moment nullspace plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,25 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十八轮补充：共同水平是独立观测，不是旧差值的新发现
+
+NEXT89在固定source12/核/单位下教十个绝对query功能坐标；N/确认局部scalar
+误差分别下降32.19%/52.58%，成对scalar低45.23%。F02/F03成对作用误差低
+20.42%/14.05%，F01/F04不改善。差值只约束一个方向，补平均观测确有价值。
+
+新发现同时受到精确恒等式约束：同核线性算子与输出变换可交换，新目标之差
+正好是旧contrast目标。因此主五观测差不变(6.89e-15)，新收益全部来自共同
+水平。不是自动学得跨query关系；reader向量更像也不是本轮改善的原因。
+共同reader现在随输入变动，shared导数必须包含其变化；128FD<=3.92e-9。
+
+40tests/Ruff、13CSV/数组精确重放，42.715075+.012065数值CPU，0新神经/Y。
+保留22旧方法、两query及四因子负结果。NEXT90检验当前BODY均值+四GRAIN
+交叉矩之外的查询敏感token配置，复用旧full-L梯度，避免回到精度/核网格。
+该检查的对象是full L的输入表示，不假称它证明局部c或整个组合程序失效。
+[报告](../reports/grain_vector_mechanisms/JOINT_QUERY_FUNCTIONAL_READER_REPORT_V1.md)、
+[理论](GRAIN_JOINT_QUERY_FUNCTIONAL_READER_THEORY_V1.md)、
+[NEXT90](GRAIN_JOINT_MOMENT_NULLSPACE_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第七十七轮补充：多源教学改善作用，差异观测留下共同读数
 

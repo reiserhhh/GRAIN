@@ -1,0 +1,2 @@
+variant,authors,observations,source_weight,coefficients,regularizer,regularized_condition,normal_residual_relative
+original12_joint_absolute_coordinates,12,12,45.417633115097296,120.0,0.00320106554436688,31.765863600728643,4.680141596919829e-16
