@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT83源功能教学局部scalar误差再低.58%、K+V未改善；42.8%向量误差在旧27维目标范围外。投影后可抵消或放大；NEXT84充分源输出空间span(Y,R)，非完整L或心理效度 | observable reader teaching theory §§1-4; OBSERVABLE_READER_TEACHING_REPORT_V1; source observable span plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT84充分源空间27->47、源限制解除，新8scalar仅再低.20%；可用方向与功能使用不同。范围外scalar项低95.62%而同控制总误差不变。NEXT85材料相对证据坐标与向量lift，非完整L或心理效度 | source observable span theory §§1-5; SOURCE_OBSERVABLE_SPAN_REPORT_V1; evidence coordinate reader plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,23 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十三轮补充：几何覆盖与实际读取规则分开
+
+NEXT84主c7bd368，两次1316坐标求解，源范围27->47。旧功能解缺失方向梯度
+.028226，源目标.008343->.008276，说明修正了真实限制。但新8scalar误差
+.178670->.178310仅再低.20%，r .613->.612；K+V仍未优于旧GRAIN。
+
+范围外scalar投影项减少95.62%却不改变同控制总误差，交叉项必须保留。实际
+新增场能量3.32e-7，远小于原缺失向量能量.215128；可用不等于能有效读取。
+下一NEXT85用固定/移动证据frame学习五个局部作用坐标，并lift回同一可微
+读头。保留未观测补空间，不把其删掉或称为噪声；新坐标尚未执行，不预报收益。
+
+52focused tests、12CSV/数组精确重放，256FD<=5.76e-10，控制差3.33e-15；
+7.450455CPU秒，0新神经/API/Y/MEPS。见
+[报告](../reports/grain_vector_mechanisms/SOURCE_OBSERVABLE_SPAN_REPORT_V1.md)、
+[理论](GRAIN_SOURCE_OBSERVABLE_SPAN_THEORY_V1.md)、
+[NEXT85](GRAIN_EVIDENCE_COORDINATE_READER_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第七十二轮补充：功能目标还需要相应的输出方向
 

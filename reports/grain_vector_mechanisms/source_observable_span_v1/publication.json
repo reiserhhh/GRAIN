@@ -1,0 +1,39 @@
+{
+  "primary_commit": "c7bd3689db851ce86e39a09836f6075b153fd638",
+  "publisher_sha256": "79ad375410f1dc3b4a7562cfb21316de9096c6e9d0ef5d762544fe4ac5156ef8",
+  "files": {
+    "source_fit.csv": "509839595a1811eb25755293760b3240314b7a2bf79e9c7b9c24e928953dce1f",
+    "source_geometry.csv": "57cb42e7cc1270e0dc1f5b7223d9ce39a5483ea4ac2b0b867db83c56830510f4",
+    "component_scores.csv": "69f4b52d96b180ee2e0a614d606c05ac0b2333c5d5a66b15c49b169aa20fbd09",
+    "component_actions.csv": "2d87d722afa06bdc5986d55a4b8cb35868be5ccc94eba9fe69475211aca9cc6d",
+    "factor_actions.csv": "f9ceb11561e312954433930cfa5f479ee1b5a20b7dcf2cf4910a94603950bd64",
+    "reader_projection.csv": "cf1aaecdcd44e5ef792bee4538b9e311ef113883153425e764a6190fca49bd98",
+    "reader_vector.csv": "ce7541153393be96ffdfc6d3e421b4ab35865806f8060c6fc107e32e44b88796",
+    "diagonal_actions.csv": "292113adbfa3c99fbfbd19fb7bf4a043861572dfb2b9cea6ccf2cb60f829e978",
+    "range_vector.csv": "59d2a96e2d3bad30d517acc4a78eb39a7f4c1834ce796a3ec91efe03ffe7f3c4",
+    "range_projection.csv": "9cafa68a4cc15e20470f05722ce1b039a6743bad528f07c689c64d5ed1e1e49e",
+    "source_extension.csv": "0377192050ff2333da84b26701060cfcc03c3bdd0eb6bf5eab2eff504fc24cc7",
+    "new_direction_usage.csv": "d889b83ba6f0ef8082b499b68e55a30abc06c4e62fec60910bc24f0e06928337"
+  },
+  "audit": {
+    "status": "PASS",
+    "source_authors": 4,
+    "recipient_authors": 8,
+    "coefficient_solves": 2,
+    "observations": 28,
+    "native_calls": 0,
+    "human_labels_read": false,
+    "numeric_cpu_seconds": 7.450455,
+    "public_tables": 12,
+    "anchored_fd_count": 128,
+    "diagonal_fd_count": 128,
+    "anchored_fd_max": 5.482059250994098e-10,
+    "diagonal_fd_max": 5.756179977112197e-10,
+    "control_max": 3.3306690738754696e-15,
+    "comparator_max": 0.0
+  },
+  "scope": "Source4ALL, same28 observations and20 unique source rulers; new8 reused discovery panel. H16 remains native. Zero new human labels, neural calls or API calls.",
+  "range_account": "Post-freeze signed native-error explanation, never an oracle predictor. Old eight comparator statistics retained.",
+  "prior_beta_relative": "For new fields, versus frozen U0 same-objective fit; historical rows retain their original comparison.",
+  "cpu_scope": "Canonical preparation, models, application, evaluation and cached replay; excludes preflight hashing, tests, audit, publisher and later exploratory summaries."
+}

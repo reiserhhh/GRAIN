@@ -1,5 +1,23 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT84 completes the output span, then changes the next question.**
+> Rank27->47, two1316-coordinate solves; original-space constraint was active:
+> missing gradient .028226, J1 .00834323->.00827633. Expanded J0 is unchanged.
+> New8 local scalar error .178670->.178310 (another .20%), r .612673->.612157;
+> K+V error7.202385->7.191486, still worse than old GRAIN7.188125. No broad promotion.
+> Available space is not recovery: outside scalar projected energy falls95.62%
+> under the new accounting basis, but actual extra reader energy is3.32e-7.
+> Same-control total error is unchanged. Close fixed output-span/rank/weight tuning.
+>52focused tests,12CSV exact replay,256FD<=5.76e-10,7.450455CPU,0neural/API/Y.
+> Primary `c7bd368`. [Report](../reports/grain_vector_mechanisms/SOURCE_OBSERVABLE_SPAN_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_OBSERVABLE_SPAN_THEORY_V1.md).
+> **NEXT85 planned:** [evidence-coordinate reader](GRAIN_EVIDENCE_COORDINATE_READER_PLAN_V1.md).
+> Teach five actions in a fixed versus current-evidence frame; retain the old
+> reader in the unobserved complement. Two fixed fits/180CPU/0neural, product-rule
+> teaching and coherent vector lift. No current native target/ruler in application.
+> H16 and common-reader/full-L interfaces remain separate. Overall goal ACTIVE.
+
+> Previous NEXT83 update; its NEXT84 task is completed above.
 > **2026-09-11 newest: NEXT83 tests functional teaching and locates an output restriction.**
 > Same GRAIN input/kernel, two756-coordinate solves, source4ALL/new8. Scalar
 > contrast error .179712->.178670 (0.58% lower), r .618477->.612673; K+V error

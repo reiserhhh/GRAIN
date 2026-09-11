@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy-two finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy-three finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2175,25 +2175,51 @@ Read [report](../reports/grain_vector_mechanisms/OBSERVABLE_READER_TEACHING_REPO
 [theory](GRAIN_OBSERVABLE_READER_TEACHING_THEORY_V1.md),
 [NEXT84](GRAIN_SOURCE_OBSERVABLE_SPAN_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-third finite pass delivered: available directions versus functional use
+
+- Previous turn PROGRESS: NEXT83 located an active output restriction. NEXT84
+  completes span(Y,R), rank27->47, two1316-coordinate direct solves. OldJ0 is
+  unchanged; J1 missing-coordinate gradient .028226 and objective reduction
+  .008343228442->.008276328342 confirm the source restriction was real.
+- Actual reused-new8 local scalar error .178670->.178310, another .20%; r
+  .612673->.612157. K+V error7.202385->7.191486, still worse than GRAIN7.188125.
+  Source losses improve strongly but actual new-direction energy is3.32e-7;
+  no general reader promotion or further output-rank/loss-weight tuning.
+- Expanded accounting reduces the outside scalar projected energy95.62%, yet
+  the unchanged vector control has identical total error. Signed cross-terms
+  explain this. Available output geometry is distinct from learning how to
+  use it on the current material; missing-direction signed recovery is -.000065.
+-52focused tests,12CSV/all arrays exact replay,256FD<=5.76e-10, control3.33e-15,
+  all eight previous application comparators exact.7.450455canonical stageCPU,
+  zero new neural/API/Y/MEPS. Primaryc7bd368, no runtime repair or target-driven refit.
+- NEXT85 develops source-taught evidence coordinates in fixed versus moving
+  frames, with the product rule and a minimum-adjustment coherent reader lift.
+  The existing field is preserved in the unobserved complement. Two fixed
+  fits/180CPU/0neural, not a kernel grid; current native targets stay evaluation-only.
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_OBSERVABLE_SPAN_REPORT_V1.md),
+[theory](GRAIN_SOURCE_OBSERVABLE_SPAN_THEORY_V1.md),
+[NEXT85](GRAIN_EVIDENCE_COORDINATE_READER_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT84 | Do source observable directions enlarge a useful reader output space? | Execute GRAIN_SOURCE_OBSERVABLE_SPAN_PLAN_V1; same input/objective, expand row(Y) to span(Y,R) |At most2fits/120CPU/0neural; sourceALL/new8 only; matched control, no rank grid |
+| NEXT85 | Can material-relative action coordinates transfer a useful reader? | Execute GRAIN_EVIDENCE_COORDINATE_READER_PLAN_V1; fixed/moving evidence frames, five-coordinate teaching and coherent vector lift |At most2fits/180CPU/0neural; sourceALL/new8 only; product-rule teaching, no tuning grid |
 
-These are local computational/theory questions. NEXT83 complete,2source solves;
-no live native job. NEXT84 permits only the specified source-observable span
+These are local computational/theory questions. NEXT84 complete,2source solves;
+no live native job. NEXT85 permits only the specified evidence-coordinate
 development, not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT84 planned, not executed;
-develop the sufficient output space while retaining all selector/value outcomes.
+No broader factor search or clinical naming. NEXT85 planned, not executed;
+develop the material-relative interface while retaining all selector/value outcomes.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
-NEXT81 fixed-last intervention, NEXT82 joint-material field and NEXT83 restricted
-functional teaching are closed.
+NEXT81 fixed-last intervention, NEXT82 joint-material field, NEXT83 restricted
+functional teaching and NEXT84 sufficient output-span expansion are closed.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "46df183a45e58480a9f4f98dad150740ccb5e0c67562cb8ada5aa9ddd6b4bdc6",
+  "atlas_sha256": "bebd708194a38e4b62b55c2723b032a188ec43784ea70b0e7c8b3a85dfd385ea",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT83\u6e90\u529f\u80fd\u6559\u5b66\u5c40\u90e8scalar\u8bef\u5dee\u518d\u4f4e.58%\u3001K+V\u672a\u6539\u5584\uff1b42.8%\u5411\u91cf\u8bef\u5dee\u5728\u65e727\u7ef4\u76ee\u6807\u8303\u56f4\u5916\u3002\u6295\u5f71\u540e\u53ef\u62b5\u6d88\u6216\u653e\u5927\uff1bNEXT84\u5145\u5206\u6e90\u8f93\u51fa\u7a7a\u95f4span(Y,R)\uff0c\u975e\u5b8c\u6574L\u6216\u5fc3\u7406\u6548\u5ea6",
-      "evidence_entry": "observable reader teaching theory \u00a7\u00a71-4; OBSERVABLE_READER_TEACHING_REPORT_V1; source observable span plan"
+      "alternative_or_next_link": "NEXT84\u5145\u5206\u6e90\u7a7a\u95f427->47\u3001\u6e90\u9650\u5236\u89e3\u9664\uff0c\u65b08scalar\u4ec5\u518d\u4f4e.20%\uff1b\u53ef\u7528\u65b9\u5411\u4e0e\u529f\u80fd\u4f7f\u7528\u4e0d\u540c\u3002\u8303\u56f4\u5916scalar\u9879\u4f4e95.62%\u800c\u540c\u63a7\u5236\u603b\u8bef\u5dee\u4e0d\u53d8\u3002NEXT85\u6750\u6599\u76f8\u5bf9\u8bc1\u636e\u5750\u6807\u4e0e\u5411\u91cflift\uff0c\u975e\u5b8c\u6574L\u6216\u5fc3\u7406\u6548\u5ea6",
+      "evidence_entry": "source observable span theory \u00a7\u00a71-5; SOURCE_OBSERVABLE_SPAN_REPORT_V1; evidence coordinate reader plan"
     },
     {
       "id": "L20",
