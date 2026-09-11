@@ -112,3 +112,14 @@ goal stays ACTIVE; this is a finite mechanism-development card.
 Our source-functional loss and matched finite design are experimental choices,
 not claims that these papers establish GRAIN personality validity. The point
 is to change what is taught within a consistent vector-function family.
+
+### Pre-run implementation clarification
+
+Use a direct dense normal-equation solve in at most784 coordinates. Require
+relative residual <=1e-9; J0's beta relative difference from NEXT82 <=1e-7 and
+recipient scalar/action reproduction <=1e-8. Kernel/output SVD tolerances use
+matrix size times machine epsilon times leading spectral size (kernel scale
+at least1), with no outcome-dependent cutoff. Row-author binding is original/
+clamp pairs0..7, four BODY directions per author8..23, context authors24..27.
+All seven observations retain that author's original five rulers. Test this
+binding and the normal equations against independent augmented least squares.
