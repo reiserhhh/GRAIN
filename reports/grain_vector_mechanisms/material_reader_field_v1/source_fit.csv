@@ -1,0 +1,10 @@
+contract,role,authors,group,observations,residual_sse_over_target,zero_target_group
+context_field,source_training,4,value,8,0.4033136574540071,False
+context_field,source_training,4,body,16,1.0,False
+context_field,source_training,4,context,4,3.828686075562929e-06,False
+body_mean_field,source_training,4,value,8,6.364028909971711e-05,False
+body_mean_field,source_training,4,body,16,0.001996307384823042,False
+body_mean_field,source_training,4,context,4,4.63911533235487e-07,False
+grain_field,source_training,4,value,8,0.00019891892086628668,False
+grain_field,source_training,4,body,16,3.8664174604614656e-05,False
+grain_field,source_training,4,context,4,2.456757309868646e-06,False

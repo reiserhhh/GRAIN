@@ -1,0 +1,36 @@
+{
+  "primary_commit": "f0a0494aab4ea0c9366e7ab44025cbafa2fed96b",
+  "implementation_commit": "7fdf436",
+  "pre_fit_test_fix": "f0a0494",
+  "publisher_sha256": "26ddf51d588ac631e63a22a4e011ae1502f532bfa608e10575964731fbc5ee9f",
+  "audit": {
+    "status": "PASS",
+    "source_authors": 4,
+    "recipient_authors": 8,
+    "coefficient_solves": 3,
+    "observations": 28,
+    "native_calls": 0,
+    "human_labels_read": false,
+    "numeric_cpu_seconds": 9.652626000000001,
+    "public_tables": 9,
+    "anchored_fd_count": 192,
+    "diagonal_fd_count": 192,
+    "anchored_fd_max": 5.389422241819375e-10,
+    "diagonal_fd_max": 4.728126778985597e-10,
+    "baseline_max": 0.0
+  },
+  "files": {
+    "source_fit.csv": "cebe636657959aaed1328212941abbf40434f429c2ec5165d5a6ebf20495a260",
+    "source_geometry.csv": "61ca501f850fa6679f5e49b806a810495a16cc9030ce7e6f6eed17a90f8036a8",
+    "component_scores.csv": "ef0fe20d9ed6bd9bd311f0807301a4b517a102e25010640b5c0d0a8355d61015",
+    "component_actions.csv": "3fe52eba9303ec7d071f02ec203462568874ad4a4b9006f2ec609edaff452c07",
+    "factor_actions.csv": "77f724a81f81314d0ec31bef9c74163b807dce9f49984c133d96bd3226736d1e",
+    "reader_projection.csv": "a45ddb0609b0c2be978acf42d66df84eefbf0cf97edc63601be8b070cc60ef75",
+    "reader_vector.csv": "88437051f8322b25eb06ebabef453e3d1f9ccbacb4b29d8b42033b4ebd146ac9",
+    "diagonal_actions.csv": "e05a95d343d875d575bab9424f4082246662385acb9940db82a34d3ca919cbd8",
+    "input_support.csv": "15680e68745ab72ff92bcd3ace3503732e30f3bfc52e1bcc2efa8f65585edac5"
+  },
+  "scope": "Source4ALL teaches 28 value/directional observations; new8 is a reused discovery panel. Native H16 remains. No current native targets in application, no human labels or clinical claims.",
+  "derivatives": "Anchored H partials have the prior local-component target; diagonal derivatives include reader motion and are not scored against that mismatched target.",
+  "cpu_scope": "Canonical preparation (including its preflight), source solves, application/evaluation and cached replay. Later preflight hashing, tests, publication and audit excluded. An earlier preparation before the test-only column-access fix is preserved separately, outside canonical timing; no model was fitted there."
+}
