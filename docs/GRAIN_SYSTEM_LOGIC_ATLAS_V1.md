@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT86条件V使scalar误差.1652/.1665、r约.652；原生教学更准却削弱组装误差抵消，native-d oracle误差.3999。NEXT87匹配compiled证据的有效读法，不将局部补偿等同人类人格恢复 | conditional teaching theory §§1-4; CONDITIONAL_TEACHING_REPORT_V1; compiled compatible reader plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT87有效读法使局部contrast误差.165529->.088286，中心化仅低2.39%；原生d更不像但补偿更有效。作用未恢复，NEXT88扩不重合源；不将局部补偿等同人格恢复 | compiled compatible reader theory §§1-5; COMPILED_COMPATIBLE_READER_REPORT_V1; source diversity teaching plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,22 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十六轮补充：适配证据的有效读法有可用收益
+
+NEXT87同original4、同kernel/lambda/单位/20参数，兼容教师把局部contrast
+误差.165529降到.088286，低46.66%。但中心化仅低2.39%、r .650->.640，
+主要是幅度/偏移改善。差异reader投影更不像原生而负向补偿更强；这推进
+可用组装程序，不把它偷换成原生机制唯一识别或真人量表准确率。
+
+K+V误差7.3093->7.2865没有实质恢复，F01/F04变差；N改善、confirmation
+自身变差。F03/F04新8兼容目标幅度约15x源。下一NEXT88扩大不重合源教学，
+固定上游all4程序/权重/单位，旧new8仍只评价，结束四源目标/核微调。
+
+34聚焦测试，10CSV和全部数组精确重放，256FD<=7.29e-10；8.172084CPU、
+0神经/API/Y/MEPS。源float32减法检查先失败，389b24b将其提升后和旧目标
+完全一致；拟合前修复、失败记录保留、门槛不变。见[报告](../reports/grain_vector_mechanisms/COMPILED_COMPATIBLE_READER_REPORT_V1.md)、
+[理论](GRAIN_COMPILED_COMPATIBLE_READER_THEORY_V1.md)、[NEXT88](GRAIN_SOURCE_DIVERSITY_TEACHING_PLAN_V1.md)。
 
 ### 第七十五轮补充：更准确的原生组件与更正确的组装目标不同
 

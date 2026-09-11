@@ -1,5 +1,21 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT87 develops a compiled-compatible reader.**
+> Matched original4 teachers, identical kernel/weights/lambda/20coefficients.
+> Local contrast SSE/zero .165529->.088286,46.66% lower; centered error only2.39%
+> lower and r .650->.640. This is mainly magnitude/offset compatibility.
+> Native-differential error worsens .187260->.271761, compensated by stronger
+> negative cross -.421651->-.583395. Effective reading need not copy native d.
+> K+V error7.309327->7.286511 is not an action recovery; confirmation alone worsens.
+>34focused tests,10CSV/all arrays exact replay,256FD<=7.29e-10,8.172084CPU;
+>0neural/API/Y. Source float32 parity abort retained; fixed before fits in389b24b.
+> [Report](../reports/grain_vector_mechanisms/COMPILED_COMPATIBLE_READER_REPORT_V1.md),
+> [theory](GRAIN_COMPILED_COMPATIBLE_READER_THEORY_V1.md).
+> **NEXT88 planned:** [disjoint source diversity](GRAIN_SOURCE_DIVERSITY_TEACHING_PLAN_V1.md).
+> Keep compiled upstream and units fixed; add8 disjoint sources, compare matched
+> original12 native/compatible teaching. No new8 training or four-source grid.
+
+> Previous NEXT86 update; its NEXT87 task is completed above.
 > **2026-09-11 newest: NEXT86 gains useful scalar reading and identifies a composition-target mismatch.**
 > Six fixed-weight V/VB/VBC functions complete. Value-only fixed/moving scalar
 > error .165198/.166481 versus NEXT84 .178310 (7.35%/6.63% lower), r about.652.

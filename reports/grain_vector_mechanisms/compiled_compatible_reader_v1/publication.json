@@ -1,0 +1,53 @@
+{
+  "primary_commit": "389b24bb6a4c8a4d07a8795a41ac93b1e51c3cf9",
+  "prior_attempt": {
+    "stage": "teachers",
+    "commit": "b50eef1",
+    "reason": "Float32 subtraction in source reader parity assertion before promotion; double precision reproduces the original target exactly.",
+    "max_absolute_discrepancy": 3.725290298461914e-09,
+    "double_precision_discrepancy": 0.0,
+    "completed_fits": 0,
+    "recipient_predictions": 0,
+    "recipient_target_reads": 0,
+    "compiled_source_query_calls": 8,
+    "native_cached_query_reconstructions": 8,
+    "neural_calls": 0,
+    "stage_cpu_seconds": null,
+    "action": "Preserve aborted preparation; promote cache to float64 before subtraction, add regression test, commit, rerun same design without tolerance or target changes."
+  },
+  "publisher_sha256": "6a7b6459b426e4376489930a7442e113e2915ed2c7b7373eb33ad9a46088048c",
+  "files": {
+    "component_scores.csv": "55bd3d5e5a053c189426ea69b61fbbadcc25c9b093943145add09447b018e4f5",
+    "component_actions.csv": "610398754a0f11b2895724722ffcfe8f22c034fe34850697aa5b5088f06f6b24",
+    "factor_actions.csv": "4a10359236a41de7b5915c59da5205477ac4efb1e6cb6a7ccacec9231c7cbcf8",
+    "reader_projection.csv": "8783a1208271b0a11471da02af7a496b3166bbc8d301c2fe6641b62a265c0529",
+    "reader_vector.csv": "2ec9ac37ebf3b329ded16df8b9aa11cb04ce1208f64859bc0573c4841b80d63b",
+    "diagonal_actions.csv": "af567033f7037acbaa26e1d284e9229cddad7c0739fba3460f93b2a567ef4fd7",
+    "source_fit.csv": "e1dcc91018d4dd5a8659723057b2a8a3b4dd63242ffe2c856c9284f28e02270b",
+    "conditioning.csv": "3ba117e3939ecf3fb5247858e36e398e52fa3f09f9590174f6dab1e8ddfdebc8",
+    "coordinate_prediction.csv": "6133a238b408964125b539e7cc49652f1de0d365e7f1d40ac7d68791eb6d2d78",
+    "signed_errors.csv": "6b69782d6d3ef3b68ca0825c62eecabf004414fe5f7f7974f722d0699574762e"
+  },
+  "audit": {
+    "status": "PASS",
+    "source_authors": 4,
+    "recipient_authors": 8,
+    "source_solves": 2,
+    "coefficients_each": 20,
+    "native_calls": 0,
+    "source_compiled_query_calls": 8,
+    "native_cached_query_reconstructions": 8,
+    "local_compiled_calls_each_application": 16,
+    "human_labels_read": false,
+    "numeric_cpu_seconds": 8.172084000000002,
+    "public_tables": 10,
+    "anchored_fd_count": 128,
+    "diagonal_fd_count": 128,
+    "anchored_fd_max": 4.922897645087687e-10,
+    "diagonal_fd_max": 7.281726333019378e-10
+  },
+  "scope": "Source4ALL, reused new8 discovery material; two matched original4 targets, fixed Gaussian kernel/lambda/weights/row units. H16 remains neural-derived. Local component, not final LLM score or questionnaire accuracy.",
+  "comparators": "All eighteen prior readers retained. Old8-value V is not the matched4-value control.",
+  "cpu_scope": "Canonical numerical stages including exact replay, excluding tests/preflight hashes/publication.",
+  "source_native": "Eight cached local-query reconstructions, not new neural calls. Recipient native evaluation targets opened only after prediction freeze."
+}

@@ -1,5 +1,5 @@
 {
-  "atlas_sha256": "66096cb4125eb4d325df90f94656ccb5b62c02c5168ca95d7796bb29c8977aad",
+  "atlas_sha256": "b546769521357afa6edf079dbaa6fb80e28fd75919f58150355be46b81db4638",
   "finite_inventory_not_exhaustiveness_proof": true,
   "edges": [
     {
@@ -132,8 +132,8 @@
       "id": "L19",
       "implication": "GRAIN \u4e0e\u67e5\u8be2\u5173\u8054 -> \u53ef\u5efa\u7acb\u5171\u540c\u63a5\u53e3",
       "type_and_status": "E/M",
-      "alternative_or_next_link": "NEXT86\u6761\u4ef6V\u4f7fscalar\u8bef\u5dee.1652/.1665\u3001r\u7ea6.652\uff1b\u539f\u751f\u6559\u5b66\u66f4\u51c6\u5374\u524a\u5f31\u7ec4\u88c5\u8bef\u5dee\u62b5\u6d88\uff0cnative-d oracle\u8bef\u5dee.3999\u3002NEXT87\u5339\u914dcompiled\u8bc1\u636e\u7684\u6709\u6548\u8bfb\u6cd5\uff0c\u4e0d\u5c06\u5c40\u90e8\u8865\u507f\u7b49\u540c\u4eba\u7c7b\u4eba\u683c\u6062\u590d",
-      "evidence_entry": "conditional teaching theory \u00a7\u00a71-4; CONDITIONAL_TEACHING_REPORT_V1; compiled compatible reader plan"
+      "alternative_or_next_link": "NEXT87\u6709\u6548\u8bfb\u6cd5\u4f7f\u5c40\u90e8contrast\u8bef\u5dee.165529->.088286\uff0c\u4e2d\u5fc3\u5316\u4ec5\u4f4e2.39%\uff1b\u539f\u751fd\u66f4\u4e0d\u50cf\u4f46\u8865\u507f\u66f4\u6709\u6548\u3002\u4f5c\u7528\u672a\u6062\u590d\uff0cNEXT88\u6269\u4e0d\u91cd\u5408\u6e90\uff1b\u4e0d\u5c06\u5c40\u90e8\u8865\u507f\u7b49\u540c\u4eba\u683c\u6062\u590d",
+      "evidence_entry": "compiled compatible reader theory \u00a7\u00a71-5; COMPILED_COMPATIBLE_READER_REPORT_V1; source diversity teaching plan"
     },
     {
       "id": "L20",

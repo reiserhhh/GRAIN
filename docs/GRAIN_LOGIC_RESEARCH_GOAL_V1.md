@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy-five finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy-six finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2257,26 +2257,52 @@ Read [report](../reports/grain_vector_mechanisms/CONDITIONAL_TEACHING_REPORT_V1.
 [theory](GRAIN_CONDITIONAL_TEACHING_THEORY_V1.md),
 [NEXT87](GRAIN_COMPILED_COMPATIBLE_READER_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-sixth finite pass delivered: compiled-compatible functional reading
+
+- NEXT87 primaryb50eef1, precision repair389b24b: two matched original4 source
+  targets, identical kernel/weights/lambda/units,20coefficients each. Scalar
+  contrast error .165529->.088286,46.66% lower; centered error only2.39% lower,
+  ranking .649764->.640219. Retain calibration-compatible use, not ranking gain.
+- Differential fidelity worsens .187260->.271761, but signed compensating cross
+  strengthens -.421651->-.583395; fixed other error .399920. This develops the
+  composition-target mechanism. Native-vector similarity is not effective reading.
+- K+V 7.309327->7.286511 remains weak; F01/F04 worse, F02/F03 better. N improves,
+  confirmation worsens. Source compatible F03/F04 target RMS is about15x smaller
+  than new8; source fits themselves interpolate. No target scaling or alpha grid.
+-34focused tests/Ruff,10CSV and arrays exact replay,256FD<=7.29e-10;
+ 8.172084canonical CPU,0neural/API/Y/MEPS. All18 prior comparisons retained.
+  Source parity failed pre-fit due float32 subtraction3.725e-9; promoting before
+  subtraction matches old targets exactly. Failure retained, no target/tolerance
+  changes; aborted8compiled source calls accounted separately, CPU unknown.
+- NEXT88 freezes8additional disjoint sources, retains old new8 evaluation-only,
+  then compares original12 native/compatible target teaching with fixed upstream
+  programs/units. Finite capture and2fits, no additional four-source tuning.
+
+Read [report](../reports/grain_vector_mechanisms/COMPILED_COMPATIBLE_READER_REPORT_V1.md),
+[theory](GRAIN_COMPILED_COMPATIBLE_READER_THEORY_V1.md),
+[NEXT88](GRAIN_SOURCE_DIVERSITY_TEACHING_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86/87 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT87 | Does a reader taught for compiled evidence improve functional composition? | Execute GRAIN_COMPILED_COMPATIBLE_READER_PLAN_V1; native vs compatible five-coordinate teachers on matched original sources |At most2 small solves/60CPU/0neural; same weights/kernel; no clamped-target substitution or new8 fitting |
+| NEXT88 | Does disjoint source diversity teach transferable effective GRAIN actions? | Execute GRAIN_SOURCE_DIVERSITY_TEACHING_PLAN_V1; freeze8more sources, retain all4 upstream, compare native12/compatible12 |Bounded900native/120numeric seconds,2fits; no new8 training, new labels or hyperparameter grid |
 
-These are local computational/theory questions. NEXT86 complete,six source solves;
-no live native job. NEXT87 permits the specified matched coordinate teachers,
-not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT87 planned, not executed;
-develop compiled evidence/readout compatibility while retaining all outcomes.
+These are local computational/theory questions. NEXT87 complete,two source solves;
+no live native job. NEXT88 permits bounded disjoint source capture and matched
+coordinate teaching, not general MLP24/attention22 refinement or an old queue restart.
+No broader factor search or clinical naming. NEXT88 planned, not executed;
+develop source diversity while retaining the useful scalar-compatible interface.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
 NEXT81 fixed-last intervention, NEXT82 joint-material field, NEXT83 restricted
 functional teaching, NEXT84 sufficient output-span expansion and NEXT85 evidence
-coordinates and NEXT86 nested teaching are closed. Do not reopen a coordinate/frame/alpha grid.
+coordinates, NEXT86 nested teaching and NEXT87 matched targets are closed.
+Do not reopen a coordinate/frame/alpha grid.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau
