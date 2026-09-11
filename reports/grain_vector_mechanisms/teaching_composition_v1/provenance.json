@@ -1,0 +1,22 @@
+{
+  "commit": "d7d493d3184d648655feed1d24824028f8048059",
+  "script_sha256": "93e7cd7dfff9be8ee7f2c7d97148cf71718462a3baebbb6dae2e2a8f9925b25c",
+  "module_sha256": "e2000b74e8cf8ffa6c6727a27c6072714e35ec5b0385bf34be2c65cdea2be9d0",
+  "primary_manifest_sha256": "dae8978f738a423452797fb18e8f66e4c26eb1c2213d38c2e185c4e0ece48181",
+  "primary_audit_sha256": "31a9e1337788899e6580f9f919a641212b885d2f97be6b40764bbfcf7e78c436",
+  "stage_freezes": {
+    "models": "922441e0de6c8817dca8f02deaf6ea1960d6ff92017c0b8c7c5c6145a2aac3b0",
+    "predictions": "220eb558629395b3f7ff3bbfe538d549d48864030885cafc080f762b9b281218",
+    "analysis": "57a82101fb3c6d8d1f601dd1f6f261757c1fc1208e378c1fefd45fe654a378d3"
+  },
+  "files": {
+    "signed_errors.csv": "24f79683ad00af21d1f45686521dfc067f070448d99249169580ec511a9bbd32"
+  },
+  "post_outcome": true,
+  "fits": 0,
+  "neural_calls": 0,
+  "human_labels_read": false,
+  "cpu_seconds_including_replay": 0.11416599999999999,
+  "replay": "exact",
+  "scope": "Existing eight discovery authors. Native arrays are evaluation-only. Three signed algebraic errors and oracle account, not a deployable oracle or causal variance shares."
+}

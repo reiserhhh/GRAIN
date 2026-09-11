@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT85五证据坐标和lift完成，scalar坐标r=.700/.676但幅度5.6%/6.5%，组装未改善。值/BODY/context贡献抵消，非消失核；NEXT86条件教学函数分离真实增量，不将坐标命名为人格 | evidence coordinate reader theory §§1-4; EVIDENCE_COORDINATE_READER_REPORT_V1; conditional teaching innovation plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT86条件V使scalar误差.1652/.1665、r约.652；原生教学更准却削弱组装误差抵消，native-d oracle误差.3999。NEXT87匹配compiled证据的有效读法，不将局部补偿等同人类人格恢复 | conditional teaching theory §§1-4; CONDITIONAL_TEACHING_REPORT_V1; compiled compatible reader plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,22 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十五轮补充：更准确的原生组件与更正确的组装目标不同
+
+NEXT86主938339e，后账户d7d493d。六固定V/VB/VBC函数，V局部scalar误差
+.165198/.166481、r约.652，保留较NEXT84的7.35%/6.63%收益；方向响应仍弱。
+实际条件context增量可比原始系数项小90倍，不能靠删原始负项解释教学。
+更关键的是证据与差异reader误差的补偿：后者误差.184407->.176292更好，
+负交叉项却-.417847->-.394788，实际误差.166481->.181425变差。native-d
+oracle只留下其它误差.399920。下一NEXT87匹配同一编译程序的源功能坐标，
+不是继续提高原生向量精度；保留H16、局部组件与心理效度的层级差别。
+
+29主测试+1后账户测试；11+1CSV精确重放，768FD<=6.38e-10，7.277580+
+.114166CPU，0神经/API/Y/MEPS；完整VBC复现旧函数1.15e-14。
+[报告](../reports/grain_vector_mechanisms/CONDITIONAL_TEACHING_REPORT_V1.md)、
+[理论](GRAIN_CONDITIONAL_TEACHING_THEORY_V1.md)、
+[NEXT87](GRAIN_COMPILED_COMPATIBLE_READER_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第七十四轮补充：证据坐标可运行，教学贡献存在抵消
 

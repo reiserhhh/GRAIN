@@ -1,0 +1,39 @@
+{
+  "primary_commit": "938339ede7bad7ef1910eadaece59f4562a39b9c",
+  "publisher_sha256": "0bc91e4f1df73eec8be2f7674990f097c22c557bbc0a06286baba6cfd9d8f5c0",
+  "files": {
+    "component_scores.csv": "396ce7d0913d5e576d7260d97853b1f3f5892c129625247615b775ed0a6ddbf2",
+    "component_actions.csv": "2c17b13ff21e5781dddce21ebf6ca266198c01cbf446ef7d9f19a97830c5c4f2",
+    "factor_actions.csv": "f61da71472549ee1ffe0e698780540eb12fa30e50dc76e4cdee83ac662216b78",
+    "reader_projection.csv": "3aa857cd5029902c30068d6dc361b420ca4fdc60c9abae4852fe56104796f5f2",
+    "reader_vector.csv": "e70c117793e5277ae1be4a67fa07d74eff95662919711b1e499e06399531f8f9",
+    "diagonal_actions.csv": "9ae4e2b33ea83dbd6db59064919bc2f7c41548ce411d84b483871b372f4ef49d",
+    "source_loss.csv": "63c74f99d62b08f2180b4786ea978aaabbc7eae4bf94de7ca8681c605aac9fe0",
+    "conditioning.csv": "36751b89d4d0fb2e72cb245c9ac8d5f99a45aab50491f59694d9f0c345132472",
+    "coordinate_prediction.csv": "7277f3afc5a0b6814b5989a81be4cdd5252a14ec00675de7b540dc6657439b22",
+    "coordinate_innovations.csv": "1d86db6de4fe7b212fc23273520df3e843af2802f8caa618c6f6147831ee0f62",
+    "function_innovations.csv": "3fb510c0f8107bda8ff7bf281cf531a1a250d902a47d1dec884cb668e205fead"
+  },
+  "audit": {
+    "status": "PASS",
+    "source_authors": 4,
+    "recipient_authors": 8,
+    "nested_functions": 6,
+    "direct_source_solves": 6,
+    "native_calls": 0,
+    "human_labels_read": false,
+    "numeric_cpu_seconds": 7.27758,
+    "public_tables": 11,
+    "local_compiled_calls_each": 16,
+    "anchored_fd_count": 384,
+    "diagonal_fd_count": 384,
+    "anchored_fd_max": 6.375346917053548e-10,
+    "diagonal_fd_max": 6.004849950613789e-10,
+    "full_function_parity_max": 1.1463052729254741e-14,
+    "coordinate_parity_max": 2.3245294578089215e-16
+  },
+  "scope": "Source4ALL, reused new8 discovery material; six nested functions, fixed kernel/lambda/group weights. Native H16 and compiled frames retained. No new neural/API/human-label/MEPS use.",
+  "conditioning": "V -> VB -> VBC; intermediate functions are conditional solves, not raw coefficient-group deletion. Full VBC matches NEXT85.",
+  "cpu_scope": "Canonical preparation/models/application/evaluation/exact replay, excluding preflight hashes/tests/audit/publication.",
+  "comparators": "All twelve NEXT85 readers remain in the six core tables; six new nested functions appended."
+}

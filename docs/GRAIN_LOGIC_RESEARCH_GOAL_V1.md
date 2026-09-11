@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy-four finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy-five finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2228,26 +2228,55 @@ Read [report](../reports/grain_vector_mechanisms/EVIDENCE_COORDINATE_READER_REPO
 [theory](GRAIN_EVIDENCE_COORDINATE_READER_THEORY_V1.md),
 [NEXT86](GRAIN_CONDITIONAL_TEACHING_INNOVATION_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-fifth finite pass delivered: conditional teaching and compatible composition
+
+- Previous turn PROGRESS: NEXT85 produced executable evidence-coordinate readers
+  and a signed coefficient account. NEXT86 primary938339e constructed six coherent
+  V/VB/VBC functions with exactly frozen weights/kernel. Six small direct checks;
+  block conditioning matches full NEXT85 coefficients3.16e-14/application1.15e-14.
+- Value-only fixed/moving scalar errors .165198/.166481 versus NEXT84 .178310,
+  about7.35%/6.63% lower; r .651589/.651727. Native derivative teaching reduces
+  this gain. Anchored action recovery remains weak; all18 readers retained.
+- Conditional innovations differ sharply from raw coefficient contributions:
+  movingF03 context addition RMS .000441 versus raw term .039853. Value-only
+  coordinates already have weak amplitude, so raw cancellation was not sufficient
+  explanation. No coefficient deletion, group reweighting or outcome-based fit.
+- Post-accountd7d493d identifies composed-target mismatch: normalized scalar
+  differential error improves .184407->.176292, while negative cross weakens
+  -.417847->-.394788, making total error .166481->.181425. Native-d oracle .399920;
+  evidence error dominates common-reader error. Anchored K+V cross has opposite sign.
+-29primary tests plus1post-account test,11+1CSV exact replay,768FD<=6.38e-10;
+  7.277580+.114166CPU,0new neural/API/Y/MEPS. Initial nonexistent-test-path command
+  collected0; corrected suite passed pre-freeze. No empirical stage failed/repaired.
+- NEXT87 learns an effective reader for compiled evidence: two matched four-
+  original-source teachers, native versus compiled-compatible coordinates. Scalar
+  and anchored action targets stay distinct from full diagonal derivatives.
+  Two20-coefficient fits/60CPU/0neural; no lambda/rank/kernel search.
+
+Read [report](../reports/grain_vector_mechanisms/CONDITIONAL_TEACHING_REPORT_V1.md),
+[theory](GRAIN_CONDITIONAL_TEACHING_THEORY_V1.md),
+[NEXT87](GRAIN_COMPILED_COMPATIBLE_READER_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT86 | Which conditional teaching update changes transferable reading? | Execute GRAIN_CONDITIONAL_TEACHING_INNOVATION_PLAN_V1; fixed/moving V, VB, VBC functions and Schur innovations |At most6 small solves/120CPU/0neural; frozen weights/kernel; no amplitude tuning or deletion of raw terms |
+| NEXT87 | Does a reader taught for compiled evidence improve functional composition? | Execute GRAIN_COMPILED_COMPATIBLE_READER_PLAN_V1; native vs compatible five-coordinate teachers on matched original sources |At most2 small solves/60CPU/0neural; same weights/kernel; no clamped-target substitution or new8 fitting |
 
-These are local computational/theory questions. NEXT85 complete,2source solves;
-no live native job. NEXT86 permits the specified nested teaching functions,
+These are local computational/theory questions. NEXT86 complete,six source solves;
+no live native job. NEXT87 permits the specified matched coordinate teachers,
 not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT86 planned, not executed;
-develop conditional teaching while retaining all selector/value outcomes.
+No broader factor search or clinical naming. NEXT87 planned, not executed;
+develop compiled evidence/readout compatibility while retaining all outcomes.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
 NEXT81 fixed-last intervention, NEXT82 joint-material field, NEXT83 restricted
 functional teaching, NEXT84 sufficient output-span expansion and NEXT85 evidence
-coordinates are closed. Do not reopen a coordinate/frame/alpha grid.
+coordinates and NEXT86 nested teaching are closed. Do not reopen a coordinate/frame/alpha grid.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating
 the full encoder. Original source scores/tau teach NEXT57; current scores/tau

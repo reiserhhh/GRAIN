@@ -1,5 +1,24 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT86 gains useful scalar reading and identifies a composition-target mismatch.**
+> Six fixed-weight V/VB/VBC functions complete. Value-only fixed/moving scalar
+> error .165198/.166481 versus NEXT84 .178310 (7.35%/6.63% lower), r about.652.
+> Adding native-reader derivative teaching reduces this gain; actions remain weak.
+> Conditional context innovation is about90x smaller than its raw coefficient
+> term for movingF03. Raw cancellation is not the causal effect of adding teaching.
+> Zero-fit composition account: better differential fidelity .184407->.176292
+> weakens compensating cross -.417847->-.394788; total .166481->.181425. A native-d
+> oracle leaves .399920 error on compiled evidence. Teach compatibility, not only d.
+>29primary+1post-account tests,11+1CSV exact replay,768FD<=6.38e-10;
+>7.277580+.114166CPU seconds,0neural/API/Y. Primary938339e, post-accountd7d493d.
+> [Report](../reports/grain_vector_mechanisms/CONDITIONAL_TEACHING_REPORT_V1.md),
+> [theory](GRAIN_CONDITIONAL_TEACHING_THEORY_V1.md).
+> **NEXT87 planned:** [compiled-compatible reader](GRAIN_COMPILED_COMPATIBLE_READER_PLAN_V1.md).
+> Two matched original-source teachers: native coordinates versus coordinates
+> that read the actual compiled evidence correctly;2fits/60CPU/0neural, no tuning grid.
+> Preserve V's operational gain without calling it native-path or human recovery.
+
+> Previous NEXT85 update; its NEXT86 task is completed above.
 > **2026-09-11 newest: NEXT85 makes evidence-relative reading executable and locates amplitude cancellation.**
 > Fixed/moving five-coordinate fits and coherent lifts complete; scalar coordinate
 > ordering r=.700/.676 but RMS only5.6%/6.5% of actual. Assembled scalar error
