@@ -112,7 +112,9 @@ def test_full_comparison_inventory_and_diagonal_identity():
         readers = rng.normal(size=(6, 2, 7))
         dr = rng.normal(size=(6, 2, 4, 7))
         dr[:3] = 0
-        ps = [projections(primal, vectors, r, d) for r, d in zip(readers, dr, strict=True)]
+        ps = [
+            projections(primal, vectors, r, d) for r, d in zip(readers, dr, strict=True)
+        ]
         p = {k: np.stack([v[k] for v in ps]) for k in ps[0]}
         p.update(
             readers=readers,
@@ -130,4 +132,4 @@ def test_full_comparison_inventory_and_diagonal_identity():
     tables = summarize(rows, [m] * 3)
     assert [len(t) for t in tables] == COUNTS
     assert (tables[0].role == "source_training").all()
-    assert (tables[7].query == "N_minus_confirmation").any()
+    assert (tables[7]["query"] == "N_minus_confirmation").any()
