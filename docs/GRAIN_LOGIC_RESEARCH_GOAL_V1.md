@@ -1,6 +1,6 @@
 # GRAIN logic goal: execution ledger
 
-Updated 2026-09-11. **ACTIVE**, seventy-six finite passes delivered. The user requests
+Updated 2026-09-11. **ACTIVE**, seventy-seven finite passes delivered. The user requests
 continued question generation and mechanism development; no universal-completion
 claim is made. Earlier finite goals remain complete within their own scope.
 
@@ -2282,26 +2282,54 @@ Read [report](../reports/grain_vector_mechanisms/COMPILED_COMPATIBLE_READER_REPO
 [theory](GRAIN_COMPILED_COMPATIBLE_READER_THEORY_V1.md),
 [NEXT88](GRAIN_SOURCE_DIVERSITY_TEACHING_PLAN_V1.md). Overall goal ACTIVE.
 
+## Seventy-seventh finite pass delivered: source diversity and joint observations
+
+- NEXT88 primary0c82ba3 complete: eight disjoint hash-selected source authors,
+  original4->12, same units/kernel/weight/lambda/upstream programs. Two60-
+  coefficient value teachers. Current8 remains reused evaluation-only material.
+- Compatible F02/F03 coordinate r -.303/-.755 -> +.685/+.554, with reduced error;
+  total anchored K+V7.286511->6.903260 (5.26% lower). Scalar .088286->.084376,
+  but r .640->.493 and centered error worsen. Source support expanded while
+  F04 amplitude remains weak. Keep useful effect-specific development.
+- Absolute N error .050143->.027679 improves, confirmation .129525->.241725
+  worsens. Contrast constraints do not determine the pair mean. Four post-result
+  algebra witnesses separate this missing observation from a false claim that
+  fixed common m makes both absolute readings impossible.
+- Source capture16H16 forwards/64pre22JVP/16reverse/1endpointJVP/4FD complete
+  in89.223013native seconds; recorded wall96.041834s, loading separate.
+  Common-prefix/repeated-primal discrepancy0; native endpoint checks passed.
+  Numeric9.009376CPU,48compiledcalls including replay;31focused tests/Ruff,
+ 10CSV/all arrays exact replay,256FD<=1.50e-9. All20prior readers retained.
+  No failed stage, humanY/API/MEPS/lockbox access or live model job.
+- NEXT89 uses the source12 caches to teach both absolute queries: ten effective
+  coordinates, one120-coefficient solve. Per-query frame derivatives must be
+  recomputed numerically (old cache is query-averaged). No new neural captures.
+
+Read [report](../reports/grain_vector_mechanisms/SOURCE_DIVERSITY_TEACHING_REPORT_V1.md),
+[theory](GRAIN_SOURCE_DIVERSITY_TEACHING_THEORY_V1.md),
+[NEXT89](GRAIN_JOINT_QUERY_FUNCTIONAL_READER_PLAN_V1.md). Overall goal ACTIVE.
+
 ## Next loop, in order
 
-NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86/87 finite candidates
+NEXT24/25/26/31/32/33/34/35/36/37/38/39/40/41/42/43/44/45/46/47/48/49/50/51/52/53/54/55/56/57/58/59/60/61/62/63/64/65/66/67/68/69/70/71/72/73/74/75/76/77/78/79/80/81/82/83/84/85/86/87/88 finite candidates
 are closed, retaining useful mechanisms and contrary comparisons. No additional
 MLP24-only correction candidate; return to upstream evidence transport.
 
 | ID | Working question | Smallest discriminating action | Finish/branch rule |
 |---|---|---|---|
-| NEXT88 | Does disjoint source diversity teach transferable effective GRAIN actions? | Execute GRAIN_SOURCE_DIVERSITY_TEACHING_PLAN_V1; freeze8more sources, retain all4 upstream, compare native12/compatible12 |Bounded900native/120numeric seconds,2fits; no new8 training, new labels or hyperparameter grid |
+| NEXT89 | Does paired absolute teaching improve the same-material functional reader? | Execute GRAIN_JOINT_QUERY_FUNCTIONAL_READER_PLAN_V1; source12 fixed, ten coordinates and coherent per-query lifts |1solve/120coefficients/256compiled calls/120CPU/0neural; no new8 fit, Y or grid |
 
-These are local computational/theory questions. NEXT87 complete,two source solves;
-no live native job. NEXT88 permits bounded disjoint source capture and matched
-coordinate teaching, not general MLP24/attention22 refinement or an old queue restart.
-No broader factor search or clinical naming. NEXT88 planned, not executed;
-develop source diversity while retaining the useful scalar-compatible interface.
+These are local computational/theory questions. NEXT88 complete,two source solves;
+no live native job. NEXT89 permits source12 joint-query coordinate teaching,
+not general MLP24/attention22 refinement or an old queue restart.
+No broader factor search or clinical naming. NEXT89 planned, not executed;
+develop the missing pair-mean observation while retaining useful GRAIN actions.
 No penalty/donor/dose sweep; NEXT75 capacity, NEXT76 value fitting, NEXT77
 assembly, NEXT78 contrast accounting, NEXT79 kernel, NEXT80 motion field and
 NEXT81 fixed-last intervention, NEXT82 joint-material field, NEXT83 restricted
 functional teaching, NEXT84 sufficient output-span expansion and NEXT85 evidence
-coordinates, NEXT86 nested teaching and NEXT87 matched targets are closed.
+coordinates, NEXT86 nested teaching, NEXT87 matched targets and NEXT88 source
+diversity are closed.
 Do not reopen a coordinate/frame/alpha grid.
 No readout fitted on new8.
 Current H16 remains native; removing one intervening segment is not eliminating

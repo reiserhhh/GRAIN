@@ -98,7 +98,7 @@ H=仍待选择的机制假说；U=需要额外观测才能识别。状态不是�
 | L16 | 精确锚定/路径积分 -> 分数变化分解 | M/E | 参考R的概率余项RMS=.013657，sigmoid曲率仅.000081；内部logit梯度也变化。不是单纯输出映射或未分账噪声，Hessian公式不等于已测完整Hessian | retained logit report §1; action geometry §3 |
 | L17 | 源拟合固定读出 -> 重现完整模型部分判断 | E/I | 同4源完整N pair定向读法r=.610/.593，对照-.095/.092；但基线-only已有.602。相邻配置幅度r=.637/.721，有符号方向未恢复；不以完整分数替代局部机制 | query-directed pair report §§1-3; query-directed baseline report |
 | L18 | 无完整 LLM 生成 -> 可数学单独运行 | E | E5均值接口扩展九查询；E/A/O保留效标r=.189/.148/.206。E5仍有编码器，token查表依赖不同 | NAV build / reading level report §4 |
-| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT87有效读法使局部contrast误差.165529->.088286，中心化仅低2.39%；原生d更不像但补偿更有效。作用未恢复，NEXT88扩不重合源；不将局部补偿等同人格恢复 | compiled compatible reader theory §§1-5; COMPILED_COMPATIBLE_READER_REPORT_V1; source diversity teaching plan |
+| L19 | GRAIN 与查询关联 -> 可建立共同接口 | E/M | NEXT88 source12使F02/F03作用坐标r转+.685/.554，K+V误差7.2865->6.9033；两绝对query不共同获益，contrast缺少mean观测。NEXT89教成对绝对值，非新人格因子或唯一原生读法 | source diversity teaching theory §§1-5; SOURCE_DIVERSITY_TEACHING_REPORT_V1; joint query functional reader plan |
 | L20 | GRAIN 差分 -> P/Q 方向 -> 原生输出改变 | I/E | 新4作者3查询48个正文方向，有限差分与梯度47/48同号、相对L2误差.49%-1.67%；为固定P/Q的块16直接作用，不是自然文本总路径。实际E1旧结果保留 | native material reader report §4; natural transport §3 |
 | L21 | 同一因子的离散度/变化/均值 -> 同一机制？ | M/E | pooled损失精确分为作者间/视图内；两种读取斜率确实不同但不自动改善。within不识别作者截距 | LOG01 / reading level report §§2,5 |
 | L22 | 路径可读性高 -> 人类效标相关高？ | E | TF实际R/校准R自评r=.199/-.047，作用改善尚未恢复关联。N相邻实际幅度/正交范数自评r=.427/.469；保留不同几何统计，不据Y挑方向 | action geometry report §5 |
@@ -594,6 +594,24 @@ R为负、T超过1，说明必须保留抵消。它定位的是计算差异的�
 [报告](../reports/grain_vector_mechanisms/COMPILED_QUERY_TRANSFER_REPORT_V1.md)、
 [理论](GRAIN_COMPILED_QUERY_TRANSFER_THEORY_V1.md)、[NEXT45](GRAIN_QUERY_TRANSPORT_FORMATION_PLAN_V1.md)。
 384数值动作、0神经调用、8CSV重放、83测试；全系统goal继续ACTIVE。
+
+### 第七十七轮补充：多源教学改善作用，差异观测留下共同读数
+
+NEXT88同核/单位/权重/上游程序，source4->12后compatible F02/F03坐标
+相关-.303/-.755转+.685/+.554，坐标误差下降；组装K+V7.2865->6.9033低
+5.26%。这是源覆盖带来的具体功能发展，不是重命名因子或增加评价集训练。
+
+scalar .088286->.084376但排序和中心化误差变差；N绝对误差.050143->.027679
+改善而confirmation .129525->.241725恶化。恒等式D=Delta(p)^Tm+bar(p)^Td
+只观测对比；A=bar(p)^Tm+Delta(p)^Td/4仍可改变。固定m不必然导致联合
+失败，四个合成见证验证其区别。NEXT89直接教双query的十个功能观察值。
+
+31聚焦测试，10CSV/全部数组精确重放，256FD<=1.50e-9；89.223013native
+秒、9.009376CPU。source8全部完成，共同prefix和重复primal误差0，无失败
+阶段或新Y/API/MEPS。当前8只评价、所有22读法保留。H16仍依赖编码器。
+见[报告](../reports/grain_vector_mechanisms/SOURCE_DIVERSITY_TEACHING_REPORT_V1.md)、
+[理论](GRAIN_SOURCE_DIVERSITY_TEACHING_THEORY_V1.md)、
+[NEXT89](GRAIN_JOINT_QUERY_FUNCTIONAL_READER_PLAN_V1.md)。整体goal ACTIVE。
 
 ### 第七十六轮补充：适配证据的有效读法有可用收益
 

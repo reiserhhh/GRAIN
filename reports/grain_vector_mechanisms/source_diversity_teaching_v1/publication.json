@@ -1,0 +1,47 @@
+{
+  "primary_commit": "0c82ba305cf502dbeab74211ed105fe2e90b16a8",
+  "publisher_sha256": "2d71baeb7096123eabdd0e0ac743df46360a1d77b1172f411d261ef72906590d",
+  "files": {
+    "component_scores.csv": "86810271b25a05197e64a4a33d5a7227d5b72b9db40e97ec6d15d056fa69ca48",
+    "component_actions.csv": "789248f46d4033a4f0d94cd3da9e5a35a00035f491ac7f631f795e51bb9c8c85",
+    "factor_actions.csv": "1756a94a6c3736ae966c60c2454365ee8669d996dcca3dbea7c72ad5934aae7d",
+    "reader_projection.csv": "2a76b78393da9c8ade8abd72ea6b60ead65615a86ab743362ecaf0c9733f9f02",
+    "reader_vector.csv": "57359d4bf6b46e7c6f5b75e1beda496b16e6c384c4bd1c2fd41073fa6f3b58c0",
+    "diagonal_actions.csv": "f002bb52cc2b25e63cfbcaa666e895d9146bc8e93cc1a7234812f32dfca3bf26",
+    "source_fit.csv": "2f2eaa7f3f70f99489583e9feba1ab4784afe0c43ee3556a9e0d0123693bc94a",
+    "conditioning.csv": "3405b9b417b85935126b6fc57581f6425448921a1349a66746aeebc2c0a37aab",
+    "coordinate_prediction.csv": "7fb2d46c31d251fb867db551b32834cf04364d0ff65231d73c7cf1f53397f304",
+    "signed_errors.csv": "798cacf2069028abb594ace2e929d7bbcedecb0056d1335bf264ba1192e0b4b2"
+  },
+  "audit": {
+    "status": "PASS",
+    "source_authors": 12,
+    "additional_sources": 8,
+    "recipient_authors": 8,
+    "source_solves": 2,
+    "coefficients_each": 60,
+    "human_labels_read": false,
+    "numeric_cpu_seconds": 9.009376,
+    "native_seconds": 89.2230131495744,
+    "native_calls": {
+      "prefix_forwards": 16,
+      "pre22_jvps": 64,
+      "reverse_pairs": 16,
+      "endpoint_jvps": 1,
+      "fd_forwards": 4
+    },
+    "source_compiled_query_calls": 16,
+    "compiled_calls_including_replay": 48,
+    "public_tables": 10,
+    "prior_readers_retained": 20,
+    "anchored_fd_count": 128,
+    "diagonal_fd_count": 128,
+    "anchored_fd_max": 5.876232833657014e-10,
+    "diagonal_fd_max": 1.4946328619203086e-09
+  },
+  "scope": "Original4+disjoint8 sources; reused new8 evaluation-only. Local native component, not human trait labels or final LLM score. H16 remains neural-derived.",
+  "comparators": "All20 prior readers preserved; matched12 native/compatible value teachers. Source units, row weight, lambda, upstream all4 programs fixed.",
+  "native_scope": "16 full forward H16 hook captures,64 pre22 JVP,16 reverse pairs,1 independent endpoint JVP,4 suffix FD. Preparation and model loading separate.",
+  "cpu_scope": "Canonical numeric stages including replay, excluding preparation/tests/publication; native wall separately capped.",
+  "common_prefix": "Paired H16 common-prefix canonicalization follows NEXT37, with observed rounding difference retained privately."
+}

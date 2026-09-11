@@ -1,6 +1,6 @@
 # GRAIN 全系统逻辑：完整输入依赖与条件作用接口
 
-2026-09-11，第十三轮建立、第76轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
+2026-09-11，第十三轮建立、第77轮补充。接续[31条逻辑总图](GRAIN_SYSTEM_LOGIC_ATLAS_V1.md)。
 本页解决的是“哪个公式实际在计算哪个对象、还需要哪些输入”，不替代历史
 GRAIN 测量理论，也不把模型判断与人的人格真值合并。
 
@@ -33,6 +33,7 @@ flowchart TD
 
 | 节点 | 数学/计算对象 | 当前输入与实现 | 已闭合与保留接口 |
 |---|---|---|---|
+| 多源功能覆盖与成对查询观测 | D=Delta(p)^Tm+bar(p)^Td；A=bar(p)^Tm+Delta(p)^Td/4，D不确定A | `source_diversity_teaching.py`；source12、同单位/核、两60参数，新增8源与评价8不重合 | NEXT88 F02/F03作用坐标r转正至.685/.554，K+V误差低5.26%；N改善而确认变差。NEXT89补双query绝对观测，不宣称固定m必然失败；H16保留 |
 | 编译证据的有效读法 | c_star=(t-b)/u；lift后逐作用误差=u乘坐标误差 | `compiled_compatible_reader.py`；同original4、两20参数、原权重与all4程序 | NEXT87 scalar误差.165529->.088286降46.66%，中心化仅低2.39%；K+V未恢复，confirmation变差。有效读法不等于原生d；NEXT88扩不重合源，H16与完整L单列 |
 | 条件教学与组装目标一致性 | Schur增量改变旧/新系数；总误差=证据+共同读法+差异读法及全部交叉项 | `conditional_teaching.py`、`teaching_composition.py`；六固定函数、0神经，原生仅评估 | V局部scalar误差低7.35%/6.63%；更精确原生d削弱证据误差补偿，oracle-d组装误差.399920。NEXT87用同源compiled-compatible坐标教学；非问卷/整模型，H16保留 |
 | 材料相对证据坐标与教学创新 | c=R(d-d0)，dtilde=db+Rplus[c-R(db-d0)]；全导数包含DR | `evidence_coordinate_reader.py`；NEXT85两140系数源拟合，源编译frame、固定H16/GRAIN同地址 | scalar坐标r=.700/.676而幅度5.6%/6.5%，组装未改善；组贡献强烈抵消，最近源核非零。NEXT86嵌套值/BODY/context函数与Schur创新，不把核支持余量当心理CI；五行不是五种人格 |

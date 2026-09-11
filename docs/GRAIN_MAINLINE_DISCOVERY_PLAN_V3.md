@@ -1,5 +1,22 @@
 # GRAIN mainline discovery V3
 
+> **2026-09-11 newest: NEXT88 source diversity improves functional GRAIN reading.**
+> Primary0c82ba3, source4->12; two60-coordinate teachers, same input/kernel/units.
+> Compatible F02/F03 coordinate r -.303/-.755 -> +.685/+.554; respective errors
+> fall. Assembled K+V7.286511->6.903260,5.26% lower; scalar .088286->.084376,
+> but scalar ranking/centered error worsen. Retain action development, not a
+> uniform author-prediction gain. N error .050143->.027679; confirmation
+> .129525->.241725. Contrast teaching misses the paired mean observation.
+>31focused tests,10CSV/all arrays exact replay,256FD<=1.50e-9;89.223013native
+> seconds and9.009376numeric CPU. Eight source captures complete, no live job.
+> No human Y/MEPS/lockbox/API. All22readers retained; current8 evaluation-only.
+> [Report](../reports/grain_vector_mechanisms/SOURCE_DIVERSITY_TEACHING_REPORT_V1.md),
+> [theory](GRAIN_SOURCE_DIVERSITY_TEACHING_THEORY_V1.md).
+> **NEXT89 planned:** [paired functional reading](GRAIN_JOINT_QUERY_FUNCTIONAL_READER_PLAN_V1.md),
+> one120-coefficient source12 solve,256compiled calls/120CPU/0neural; teach both
+> absolute queries, not another source-count grid. H16 remains neural-derived.
+
+> Previous NEXT87 update; its NEXT88 task is completed above.
 > **2026-09-11 newest: NEXT87 develops a compiled-compatible reader.**
 > Matched original4 teachers, identical kernel/weights/lambda/20coefficients.
 > Local contrast SSE/zero .165529->.088286,46.66% lower; centered error only2.39%
