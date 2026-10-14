@@ -1,9 +1,12 @@
 # GRAIN：交给 Claude 的基础理论规划只读审查包
 
-2026-09-12更新：用户发起的四轮只读研讨已完成，Claude使用Fable5.1/max。
-当前入口为[终极研究计划V4](GRAIN_FOUNDATIONAL_MASTER_PLAN_V4.md)，
-过程见[共同审订记录](GRAIN_FOUNDATION_SEMINAR_SYNTHESIS_20260912.md)。
-计划获得共同同意，实验仍暂停，待用户批准；以下审查问题保留为历史过程，
+2026-09-12更新：第二组四轮只读研讨已完成，Claude使用Fable5.1/max。
+当前入口为[V5科学目标与研究纲领](GRAIN_SCIENTIFIC_TARGET_AND_RESEARCH_PROGRAM_V5.md)，
+过程见[本轮记录](GRAIN_BREAKTHROUGH_SEMINAR_SYNTHESIS_20260912.md)，
+来源见[文献与工具档案](GRAIN_BREAKTHROUGH_SOURCE_DOSSIER_20260912.md)。
+已重新讨论GRAIN尚处早期、允许重构的用户校正；以新增测量能力和目标相关
+响应结构为先，不仅整合现版，也不把可识别性检查变成终点。
+方向获得共同同意，不等于新颖性或实证已成立。实验待批准；以下保留历史过程，
 不是再次自动调用Claude或恢复旧队列的指令。
 
 ## 1. 请先理解用户，而不是先审代码
@@ -20,7 +23,7 @@
 
 ## 2. 阅读顺序
 
-先读V4及共同审订记录；下列V3/V2/V1提供不同层次的背景，不再并列作为执行入口。
+先读V5、本轮来源档案及研讨记录；V4及下列V3/V2/V1为背景，不并列作为执行入口。
 
 1. [测量构造计划V3](GRAIN_CONTEXTUAL_MEASUREMENT_FOUNDATION_PLAN_V3.md)：优先审查唯一目标、构造流程、Study A–D和方法论文验收；[V2](GRAIN_FOUNDATIONAL_THEORY_PROGRAM_V2.md)保留推导背景。
 2. [全貌与开发回顾](GRAIN_SYSTEM_RETROSPECTIVE_AND_ARCHITECTURE_20260911.md)及[历史统一理论](SUICA_UNIFIED_THEORY_SYSTEM_V8.md)：确认继承了什么，避免把旧定义重新包装为发现。

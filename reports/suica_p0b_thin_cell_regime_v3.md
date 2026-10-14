@@ -1,4 +1,4 @@
-# SUICA P0-B Thin-Cell Estimator Regime (OP-10b)
+# GRAIN P0-B Thin-Cell Estimator Regime (OP-10b)
 
 |   planted_state |   rep |   mom_state |   mixedlm_state |   split_half_r |   split_half_ci_lo |   split_half_ci_hi |
 |----------------:|------:|------------:|----------------:|---------------:|-------------------:|-------------------:|
