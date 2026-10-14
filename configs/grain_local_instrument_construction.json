@@ -1,0 +1,37 @@
+{
+  "protocol": "M14_LOCAL_INSTRUMENT_CONSTRUCTION_V1",
+  "seeds": [91401, 91402, 91403],
+  "pilot_authors": 64,
+  "evaluation_authors": 64,
+  "bootstrap_constructions": 12,
+  "profile_pilot_events_per_cell": 24,
+  "profile_application_events_per_cell": 6,
+  "process_occasions": 12,
+  "process_replicates": 2,
+  "process_events_per_replicate": 8,
+  "max_numerical_cpu_seconds": 240,
+  "max_cold_nli_pairs": 160,
+  "max_cold_wall_seconds": 180,
+  "instruments": [
+    {
+      "id": "social_condition_profile_v1",
+      "kind": "conditional_profile",
+      "query": "social_enjoyment_event",
+      "clock_unit": "unordered_independent_events",
+      "target_names": ["level", "condition", "low_condition", "high_condition"],
+      "target_description": "Text-coded self-reported enjoyment at quiet/noisy gatherings, not a Big Five trait",
+      "conditions": {"-1": "quiet gathering", "1": "noisy gathering"},
+      "allowed_scope": "self_event_report"
+    },
+    {
+      "id": "task_occasion_process_v1",
+      "kind": "occasion_process",
+      "query": "task_completion_event",
+      "clock_unit": "observation_round",
+      "target_names": ["level", "condition", "partner", "current_state", "current_response", "window_state"],
+      "target_description": "Text-coded completion reports and current occasion deviation, not inferred emotion or real-world task success",
+      "conditions": {"-1": "short boring task", "1": "long boring task"},
+      "allowed_scope": "self_event_report"
+    }
+  ]
+}

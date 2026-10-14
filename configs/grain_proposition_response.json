@@ -1,0 +1,16 @@
+{
+  "version": "r1",
+  "public_main": 32,
+  "public_challenges": 8,
+  "natural_records": 12,
+  "seed": 91382,
+  "simulated_people": 192,
+  "events_per_cell": 24,
+  "max_seconds": 300,
+  "max_parse_texts": 104,
+  "max_nli_pairs": 96,
+  "new_neural_training": false,
+  "condition_reader": "source condition span TF-IDF nearest centroid; source wording only",
+  "channels": ["past_action_report", "intention"],
+  "unknown_is_zero": false
+}

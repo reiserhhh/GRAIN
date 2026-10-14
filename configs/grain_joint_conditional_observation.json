@@ -1,0 +1,53 @@
+{
+  "packet": "M04-M05-joint-conditional-observation-r1",
+  "seeds": [1931, 1949, 1973],
+  "conditions": [-1, 0.5, 1],
+  "source_conditions": [-1, 1],
+  "source_variants": [0, 1, 2, 3],
+  "held_variants": [4, 5],
+  "authors": 256,
+  "events_per_condition": 32,
+  "level_halfwidths": [0.22, 0.18, 0.08],
+  "slope_halfwidths": [0.12, 0.15, 0.07],
+  "covariance_shrinkage": 0.1,
+  "svd_tolerance": 1e-8,
+  "prefix_budget": 72,
+  "nli_pair_budget": 288,
+  "max_cold_seconds": 300,
+  "channels": ["grain_1", "grain_2", "grain_3", "grain_4", "quadratic_neuroticism", "quadratic_confirmation", "within_neuroticism", "within_confirmation", "nli_worry", "nli_reassurance"],
+  "arms": {"nli": [8, 9], "grain": [0, 1, 2, 3], "grain_quadratic": [0, 1, 2, 3, 4, 5], "grain_quadratic_within": [0, 1, 2, 3, 4, 5, 6, 7], "joint_all": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]},
+  "targets": ["worry_event", "reassurance_event", "joint_polarity"],
+  "hypotheses": [["The speaker felt worried.", "The speaker felt calm."], ["The speaker asked another person for reassurance.", "The speaker acted without seeking reassurance."]],
+  "worry_high": [
+    "I felt worried while I considered what might go wrong. My attention kept returning to possible mistakes, and I found it difficult to settle down before making the next decision.",
+    "I was uneasy about the work in front of me. I kept imagining an error that I might have missed, and the possibility of getting something wrong stayed on my mind.",
+    "I experienced a sense of concern as I went through the details. Thoughts about an unwanted outcome repeatedly interrupted my concentration, and I felt tense throughout that part of the work.",
+    "I felt anxious about the result while I checked the instructions. I could not put the possible problems out of my mind, and I spent several moments anticipating a mistake.",
+    "Worry accompanied me through the assignment. Even after reading the instructions again, I continued to dwell on the possibility that my decision would lead to an unwanted result.",
+    "As I worked on the request, I felt unsettled. The thought of making a mistake occupied my attention for much of the time, rather than passing after a brief moment."
+  ],
+  "worry_low": [
+    "I felt calm while I considered the work in front of me. My attention stayed on the practical details, and I found it easy to settle down before making the next decision.",
+    "I was at ease about the work in front of me. I considered the available information without dwelling on possible mistakes, and a sense of calm stayed with me throughout the task.",
+    "I experienced a sense of calm as I went through the details. Thoughts about an unwanted outcome did not interrupt my concentration, and I felt relaxed throughout that part of the work.",
+    "I felt relaxed about the result while I checked the instructions. I could put the possible problems aside, and I spent the remaining moments attending to the practical steps of the work.",
+    "Calm accompanied me through the assignment. After reading the instructions again, I continued with an easy mind, rather than dwelling on the possibility that the result might be unwanted.",
+    "As I worked on the request, I felt settled. The possibility of making a mistake did not occupy my attention for long, and I approached the remaining details with a calm mind."
+  ],
+  "confirm_high": [
+    "Before I went ahead, I asked a colleague to reassure me that my decision was acceptable. I waited for that person's confirmation, read it carefully, and then carried out the next step.",
+    "I sent another person a message asking whether my choice was all right. I wanted that person's reassurance before proceeding, so I waited for a reply before putting my decision into practice.",
+    "I asked someone else to confirm that I was making an acceptable choice. Once I received the reassurance I had requested, I continued with the task and recorded what I had decided.",
+    "I sought reassurance from a colleague about the decision I was about to make. I explicitly asked for confirmation, received an answer, and only then took the next step in the work.",
+    "I turned to another person for reassurance about my choice. I asked that person to tell me that the decision was acceptable, and I used the reply before continuing with the assignment.",
+    "I requested confirmation from someone else before acting on my decision. After that person reassured me about the choice, I put it into practice and moved on to the remaining work."
+  ],
+  "confirm_low": [
+    "Before I went ahead, I reviewed my decision on my own without asking a colleague for reassurance. I used the available instructions, made the choice myself, and then carried out the next step.",
+    "I did not send another person a message asking whether my choice was all right. I proceeded using my own judgment, without waiting for someone else to reassure me about the decision.",
+    "I made the choice without asking someone else to confirm that it was acceptable. Using the information already available to me, I continued with the task and recorded what I had decided.",
+    "I did not seek reassurance from a colleague about the decision I was about to make. I reviewed the instructions myself, settled on a choice, and took the next step in the work.",
+    "I relied on the instructions and my own judgment rather than turning to another person for reassurance. Without requesting approval from anyone else, I made the choice and continued with the assignment.",
+    "I acted on my decision without requesting confirmation from someone else. I had reviewed the available details myself, so I put the choice into practice and moved on to the remaining work."
+  ]
+}

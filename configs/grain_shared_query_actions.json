@@ -1,0 +1,25 @@
+{
+  "protocol": "M06_SHARED_QUERY_COMPONENT_ACTIONS_V1",
+  "queries": ["adapted_na8", "adapted_dejected5", "combined_negative13", "pre_anthro_agency"],
+  "block": 16,
+  "device": "mps",
+  "max_seconds": 900,
+  "resolution": 0.01,
+  "owners": {
+    "self": "Here I quote my own experience, not another person's: ",
+    "other": "Here I quote another person's experience, not my own: "
+  },
+  "unrelated_anchor": "Separately, I think AI only computes outputs and has no intentions of its own.",
+  "frames": [
+    {
+      "id": "appointment_evening",
+      "arousal": ["While waiting for the appointment, I felt calm and relaxed.", "While waiting for the appointment, I felt tense and worried."],
+      "dejection": ["Later that evening, I felt hopeful and motivated.", "Later that evening, I felt hopeless and discouraged."]
+    },
+    {
+      "id": "train_home",
+      "arousal": ["Before the train arrived, my body was calm and my thoughts were peaceful.", "Before the train arrived, my body was tense and my thoughts were fearful."],
+      "dejection": ["After returning home, tomorrow looked promising and my hobbies seemed worthwhile.", "After returning home, tomorrow looked pointless and my hobbies seemed worthless."]
+    }
+  ]
+}

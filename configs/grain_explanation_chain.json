@@ -1,0 +1,17 @@
+{
+  "version": "r1",
+  "cases": 24,
+  "max_prefix_calls": 24,
+  "max_seconds": 300,
+  "device": "cpu",
+  "torch_threads": 2,
+  "query": "confirmation_seeking",
+  "anonymous_factor": "whole:F03",
+  "primary_anonymous_aggregation": "uniform mean of four lexical slice scores",
+  "conditional_function": "level=(low+high)/2; half_change=(high-low)/2",
+  "numerical_tolerance": 1e-8,
+  "new_training": false,
+  "human_data": false,
+  "llm_rendering": false,
+  "no_tuning_after_results": true
+}

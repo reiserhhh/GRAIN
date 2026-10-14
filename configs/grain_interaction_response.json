@@ -1,0 +1,29 @@
+{
+  "version": "interaction-response-1",
+  "seeds": [91401, 91402, 91403],
+  "authors": 128,
+  "fit_opportunities": 64,
+  "held_opportunities": 64,
+  "worlds": ["exogenous", "shared_cause", "feedback", "weak_assignment", "direct_assignment", "no_assignment", "constant_partner"],
+  "hac_lags": 4,
+  "state_ar": 0.6,
+  "state_sd": 0.4,
+  "measurement_sd": 0.15,
+  "math_cpu_budget": 120,
+  "topics": ["preparing a presentation", "planning a trip", "choosing a course", "finishing a report", "organizing a meeting", "repairing a bicycle"],
+  "nli_queries": {
+    "accept": "The respondent is accepting the partner's current suggestion.",
+    "reject": "The respondent is rejecting the partner's current suggestion.",
+    "help": "The respondent is asking the partner for help now.",
+    "repair": "The respondent is correcting a misunderstanding in this conversation.",
+    "past": "The respondent reports having asked someone for help in the past.",
+    "future": "The respondent plans to ask someone for help in the future.",
+    "habit": "The respondent habitually relies on other people for help."
+  },
+  "model_scope": "Zero-shot fixed readers, no training or prompt search",
+  "natural_limit": 24,
+  "natural_max_chars": 500,
+  "natural_max_tokens": 768,
+  "natural_wall_budget": 240,
+  "natural_scope": "One free-chat reply per fixed participant subset, no psychological labels or fitting"
+}

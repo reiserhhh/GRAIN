@@ -1,0 +1,60 @@
+{
+  "source_audit_sha256": "b67c2fb95b1062186aa00450dbb8244c8f8865ade6c63397bf3e89d7fdbb8ef4",
+  "source_manifest_sha256": "01b68d5103ca97388faf8718c40ba46c7c169e8dcb09421ed7d369e1aadf3c33",
+  "publisher_sha256": "ed8c548e5865f25f7e4143befb4d1af610143d568d552f35e76e5e0dabbec28b",
+  "scope": "Cohort-level cached native local-sensitivity decomposition, not prediction accuracy",
+  "audit": {
+    "status": "PASS",
+    "authors": 12,
+    "native_contexts": 24,
+    "fits": 0,
+    "native_calls": 0,
+    "human_labels_read": false,
+    "counts": [
+      2,
+      32,
+      160,
+      240,
+      8
+    ],
+    "numeric_cpu_seconds": 8.441116,
+    "independent_quadratic_error": 7.908214258727559e-17,
+    "independent_cell_error": 0.0,
+    "exact_replay": true,
+    "all_aggregates_rebuilt": true,
+    "checks": {
+      "linear_quadratic_nesting": 1.3562982383803421e-14,
+      "quadratic_cell_nesting": 9.099727538377714e-15,
+      "q1_orthogonality": 5.295960012018938e-15,
+      "q2_orthogonality": 2.374518643046471e-14,
+      "field_sum": 6.0884820847889455e-18,
+      "orthogonal_components": 1.3805778154081924e-16,
+      "energy_sum": 5.258018528934911e-16,
+      "action_sum": 4.472805887301674e-15,
+      "conditional_covariance_identity": 1.4432899320127035e-15,
+      "old_map_action_parity": 4.440892098500626e-15
+    }
+  },
+  "files": {
+    "cell_geometry.csv": {
+      "sha256": "504734e96471531eefa8f50adefdcf07500ca82766176c7593634df36150e494",
+      "rows": 2
+    },
+    "gradient_energy.csv": {
+      "sha256": "a95fe5ef3f1ab46be7ea72121efe56ed8e3fdd5c050a95b5271480ddf7c352c9",
+      "rows": 32
+    },
+    "responses.csv": {
+      "sha256": "e698af831d4031ff87d93e6be4cdaea33fe15346502c93edcd6d8c3c946965ef",
+      "rows": 160
+    },
+    "cross_terms.csv": {
+      "sha256": "9b0b7d7e199bc4405f9bd10b920c14cc14e589075051b4fa1d987a891f94cc4e",
+      "rows": 240
+    },
+    "query_geometry.csv": {
+      "sha256": "f266402de7f0c5947b87a8195e81987b6c88937130dd8a202d46a508793f3d8d",
+      "rows": 8
+    }
+  }
+}

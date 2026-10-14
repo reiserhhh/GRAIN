@@ -1,0 +1,13 @@
+{
+  "version": "r1",
+  "main_dialogues": 8,
+  "challenge_dialogues": 6,
+  "max_unique_parse_texts": 100,
+  "max_parse_seconds": 300,
+  "neural_training": false,
+  "nli_calls": 0,
+  "fitting": false,
+  "natural_text_use": "none; prior natural scope findings retained",
+  "current_request_target": "speech source, not proposed helping actor",
+  "score_unit": "finite active claim mean per declared mode/condition; no new population norm"
+}

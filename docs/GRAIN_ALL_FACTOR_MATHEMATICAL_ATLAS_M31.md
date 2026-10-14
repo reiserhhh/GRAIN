@@ -199,3 +199,31 @@ The table below records the M31 evidence, not additional executed experiments.
 Do not replace these questions with another Ridge/LightGBM accuracy grid. The
 mainline is an observable mathematical path from author evidence to a specified
 trait judgment, with its common and target-specific parts made computable.
+
+## 9. Reference anchoring clarification (2026-09-13)
+
+The all-plan replay verified the25 narrower functions from50 saved construction
+units and2300 actual P/Q packets. Fourteen historical tables are byte-identical;
+the34-card ledger is rebuilt. See
+[narrow-target reconciliation](../reports/grain_measurement_foundation/NARROW_TARGET_RECONCILIATION_REPORT.md).
+The historical pause and proposed NAV entries above describe the M31 checkpoint;
+later finite NAV execution is recorded in`GRAIN_NAVIGATION_RESEARCH_GOAL_V6.md`.
+It did not establish full34-target prefix independence or all25 natural edits.
+
+The implementation's average of b,Z,h,G,g is **mean anchoring**, not the mean
+of whole local affine functions. In combined coordinates w=(vec(G),g), z=(vec(Z),h):
+
+```
+f_A(x)=E[b]+E[w]'(x-E[z])
+f_B(x)=E[b-w'z]+E[w]'x
+f_A-f_B=E[w'z]-E[w]'E[z]=kappa.
+```
+
+Both use the same linear operator. f_A satisfies E_r[f_A(z_r)]=E_r[b_r], the
+chosen reference-mean property. f_B averages complete affine charts instead.
+Neither is automatically the nonlinear observer evaluated at E[z]. Preserve
+f_A as the historical specification; the offset is not an omitted causal path.
+Its median absolute magnitude across25 queries is .005136 (max .025255).
+Constant changes preserve endpoint differences and within-query external r;
+50 observed correlations agree to4.44e-16. Absolute score thresholds or norms
+require an explicit anchor convention. No human-score recalibration was done.

@@ -1,0 +1,18 @@
+{
+  "protocol": "M05_QUERY_MOMENT_FINITE_ACTION_V1",
+  "cohort": "new8",
+  "cohort_status": "historically_exposed_application_authors_not_new_lockbox",
+  "epsilons": [0.02, 0.1],
+  "queries": ["neuroticism", "confirmation_seeking"],
+  "suffix_block": 17,
+  "max_calls": 496,
+  "max_native_seconds": 480,
+  "max_loading_seconds": 300,
+  "max_application_cpu_seconds": 120,
+  "replay_score_atol": 0.0001,
+  "bootstrap_seed": 91361,
+  "bootstrap_samples": 2000,
+  "fits": 0,
+  "new_backward_calls": 0,
+  "labels_for_selection": false
+}

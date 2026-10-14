@@ -1,0 +1,19 @@
+{
+  "version": "local-natural-anchors-1",
+  "provenance": "Codex-authored development anchors following SIMPA design principles; not original expert eTRS",
+  "expert_validated": false,
+  "source": "https://arxiv.org/html/2510.02811v1#S9.SS2.SSS2",
+  "scopes": ["habitual_plain", "habitual_colloquial", "episode"],
+  "facets": [
+    {"facet":"E1", "positive":["I usually find it easy to make friends.","I tend to hit it off with people I have just met.","I made a new friend at a gathering."], "negative":["I usually find it difficult to become close to new people.","I tend to keep people at arm's length.","I kept my distance from someone I met."]},
+    {"facet":"E2", "positive":["I usually enjoy being around a lot of people.","I like having company rather than spending my free time alone.","I enjoyed spending the evening with a group."], "negative":["I usually prefer being alone to being in a crowd.","I would rather have a quiet evening on my own than join a busy party.","I chose to spend an evening alone instead of joining a party."]},
+    {"facet":"N1", "positive":["I often worry that something will go wrong.","I tend to get nervous even when things seem fine.","I worried about what might go wrong before an event."], "negative":["I rarely worry about what might go wrong.","I usually take uncertainty in my stride.","I felt calm while waiting for an uncertain outcome."]},
+    {"facet":"N2", "positive":["I often become angry when things do not go my way.","Small annoyances tend to set me off.","I became angry when something went wrong."], "negative":["I rarely become angry over small problems.","It usually takes a lot to make me lose my temper.","I stayed calm when something annoyed me."]},
+    {"facet":"A3", "positive":["I often go out of my way to help other people.","I tend to lend a hand when someone is struggling.","I helped someone who was having a difficult time."], "negative":["I rarely make an effort to help other people.","I tend to leave other people to sort out their own problems.","I chose not to help someone with a problem."]},
+    {"facet":"A4", "positive":["I usually try to settle disagreements without a fight.","I tend to look for a compromise instead of getting into an argument.","I compromised to settle a disagreement."], "negative":["I often argue rather than compromise during disagreements.","I tend to push back instead of giving ground in a dispute.","I argued with someone instead of accepting a compromise."]},
+    {"facet":"C2", "positive":["I usually keep my belongings tidy and organized.","I like to put things back where they belong.","I organized my belongings and put them away."], "negative":["I usually leave my belongings scattered around.","My things tend to end up in a mess.","I left my belongings lying around after using them."]},
+    {"facet":"C5", "positive":["I usually finish tasks even when I do not feel like doing them.","I tend to stick with a boring job until it is done.","I finished a task even though I wanted to stop."], "negative":["I often put off tasks that I should finish.","I tend to leave boring jobs for another day.","I postponed a task because I did not feel like doing it."]},
+    {"facet":"O1", "positive":["I often imagine detailed scenes and possibilities.","I tend to get lost in my imagination.","I imagined a detailed scene while thinking about a story."], "negative":["I rarely spend time imagining things that are not real.","I tend to stick to what is in front of me rather than daydream.","I focused on concrete details instead of imagining a scene."]},
+    {"facet":"O5", "positive":["I usually enjoy thinking about abstract ideas.","I like getting into questions that do not have a simple answer.","I enjoyed discussing an abstract idea."], "negative":["I usually have little interest in abstract ideas.","I tend to tune out when a conversation gets too theoretical.","I lost interest during a discussion of an abstract idea."]}
+  ]
+}

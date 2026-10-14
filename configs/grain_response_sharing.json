@@ -1,0 +1,23 @@
+{
+  "packet": "M04-response-sharing-r1",
+  "seeds": [3301, 3313, 3343],
+  "conditions": [-1, -0.5, 0, 0.5, 1],
+  "source_authors": 384,
+  "application_authors": 256,
+  "events_per_half": 32,
+  "source_variants": [0, 1, 2, 3],
+  "held_variants": [4, 5],
+  "worlds": ["smooth_shared", "crossed_shared", "independent_response"],
+  "arms": ["source_mean", "level_only", "condition_geometry", "response_covariance", "unpaired_source"],
+  "stages": {"center": [2], "response": [0, 2, 4], "added": [0, 1, 2, 4]},
+  "level_halfwidth": 0.10,
+  "response_halfwidth": 0.45,
+  "local_halfwidth": 0.06,
+  "independent_halfwidth": 0.35,
+  "smooth_pattern": [-1, -0.5, 0, 0.5, 1],
+  "crossed_pattern": [-1, 1, 0, -0.5, 0.5],
+  "noise_floor": 1e-8,
+  "nli_pair_budget": 120,
+  "max_neural_seconds": 180,
+  "hypotheses": ["The speaker felt worried.", "The speaker felt calm."]
+}

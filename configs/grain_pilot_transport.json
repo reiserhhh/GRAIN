@@ -1,0 +1,20 @@
+{
+  "version": "pilot-transport-1",
+  "seeds": [91381, 91382, 91383],
+  "source_authors": 64,
+  "pilot_authors": 48,
+  "evaluation_authors": 64,
+  "occasions": 24,
+  "replicates": 8,
+  "bootstrap_constructions": 24,
+  "paired_anchors": 128,
+  "worlds": ["unchanged", "population_shift", "dynamics_shift", "affine_meter", "conditional_meter"],
+  "text_worlds": ["same_wording", "new_wording", "response_shift"],
+  "text_events_per_cell": 48,
+  "queries": ["social_enjoyment_event", "task_completion_event"],
+  "targets": ["level", "condition", "partner", "current_state", "current_response", "window_state", "conditional_profile"],
+  "max_cpu_seconds": 300,
+  "max_optimizer_iterations": 160,
+  "natural_source_rule": "sha256(pilot-reference-v1:author_id) first byte < 128",
+  "natural_scope": "Author-balanced short-comment observation reference only, not psychological norms or fitted dynamics"
+}

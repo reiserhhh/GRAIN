@@ -1,0 +1,17 @@
+{
+  "packet": "M02-evidence-history-r1",
+  "seeds": [2903, 2917, 2939],
+  "source_authors": 192,
+  "application_authors": 256,
+  "blocks": 8,
+  "events_per_block": 3,
+  "reports_per_event": 2,
+  "source_variants": [0, 1, 2, 3],
+  "held_variants": [4, 5],
+  "shared_block_probability": 0.6,
+  "level_range": [-0.25, 0.35],
+  "response_range": [-0.18, 0.18],
+  "covariance_floor": 1e-9,
+  "source_targets": ["level", "finite_change", "new_condition"],
+  "extra_neural_calls": 0
+}

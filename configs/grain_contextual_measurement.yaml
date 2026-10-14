@@ -1,0 +1,22 @@
+# Known-model mechanism world, not synthetic personality labels for LLM training.
+version: 1
+seeds: [731, 732, 733, 734, 735, 736, 737, 738, 739, 740]
+train_authors: 384
+held_authors: 256
+observations: 48
+worlds:
+  - level
+  - interaction
+  - opportunity_shift
+  - choice_only
+  - state_selection
+  - nonlinear
+  - reader_loss
+  - "null"
+ridge_alpha: 1.0
+response_penalty: 0.1
+design_authors: 2000
+design_budget: 24
+design_candidates: [-1.0, -0.5, 0.0, 0.5, 1.0]
+design_prior_variance: 1.0
+data_scope: synthetic_numeric_only_no_human_fit

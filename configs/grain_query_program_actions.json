@@ -1,0 +1,11 @@
+{
+  "queries": ["extraversion", "TF_cont", "adapted_dejected5"],
+  "device": "mps",
+  "max_seconds_per_stage": 600,
+  "source_reader": "R_real",
+  "binding_frames": [
+    {"id": "social", "target": "extraversion", "prefix": "During the same coffee break, the two people gave these accounts.", "high": "I started conversations with unfamiliar people and enjoyed joining the group.", "low": "I avoided conversations with unfamiliar people and preferred staying by myself."},
+    {"id": "decision", "target": "TF_cont", "prefix": "During the same planning meeting, the two people gave these accounts.", "high": "I prioritized people's feelings and changed the rule to protect a colleague.", "low": "I prioritized consistent evidence and kept the rule despite a colleague's feelings."},
+    {"id": "setback", "target": "adapted_dejected5", "prefix": "After the same cancelled event, the two people gave these accounts.", "high": "I felt hopeless and discouraged and could not find motivation for another attempt.", "low": "I felt hopeful and motivated and looked forward to making another attempt."}
+  ]
+}

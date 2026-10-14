@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "seed": 3407,
+  "simulated_authors": 192,
+  "utterances_per_author": 48,
+  "natural_limit": 12,
+  "model": "cross-encoder/nli-deberta-v3-base",
+  "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "local_only": true,
+  "tune_observer": false,
+  "natural_validation_only": true,
+  "meps": false
+}

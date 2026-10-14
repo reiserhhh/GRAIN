@@ -1,0 +1,13 @@
+{
+  "seeds": [91311, 91312, 91313, 91314, 91315],
+  "held_authors": 128,
+  "source_authors": 256,
+  "source_events_per_cell": 16,
+  "observation_budget": 48,
+  "design_budget": 16,
+  "bootstrap_replicates": 999,
+  "choice_worlds": ["independent", "shared_response", "opportunity_confounded", "state_selected"],
+  "design_worlds": ["matched_reader", "held_wording", "response_shift"],
+  "queries": ["social_enjoyment_event", "task_completion_event"],
+  "bank": "results/grain_vector_mechanisms/mechanism_todo_v1/condition_scope_r1/public_scored_bank.csv"
+}

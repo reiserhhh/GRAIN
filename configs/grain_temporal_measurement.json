@@ -1,0 +1,17 @@
+{
+  "version": "temporal-measurement-1",
+  "seeds": [91371, 91372, 91373],
+  "authors_per_seed": 32,
+  "occasions": 32,
+  "prefixes": [8, 16, 32],
+  "events_per_occasion": 8,
+  "drift": [[-0.18, 0.12], [-0.04, -0.28]],
+  "stationary": [[0.0196, 0.0], [0.0, 0.0196]],
+  "profile_mean": [0.0, 0.0, 0.22, 0.0, 0.0, 0.22],
+  "profile_sd": [0.14, 0.12, 0.1, 0.14, 0.12, 0.1],
+  "worlds": ["regular", "irregular", "clustered", "constant_partner", "feedback_partner", "shared_shock"],
+  "arms": ["joint", "order_clock", "no_partner", "independent_state"],
+  "max_cpu_seconds": 240,
+  "natural_working_state_half_life_days": 30,
+  "natural_scope": "Fixed hypothetical observation-kernel demonstration; no fitted psychological state dynamics"
+}

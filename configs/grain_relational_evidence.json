@@ -1,0 +1,17 @@
+{
+  "version": "relational-evidence-1",
+  "seeds": [91501, 91502, 91503],
+  "authors_per_seed": 128,
+  "blocks_per_condition": 4,
+  "events_per_actor_channel_block": 8,
+  "conditions": [-1.0, 1.0],
+  "new_condition": 0.5,
+  "worlds": ["complete_relation", "missing_antecedent", "unbound_relations"],
+  "readers": ["known_relation_upper", "literal_reference", "fixed_nli_candidates", "reply_only"],
+  "nli_pair_budget": 256,
+  "math_cpu_budget": 120,
+  "bootstrap_draws": 999,
+  "scale_fit": false,
+  "meps_access": false,
+  "scope": "One finite relation representation experiment, no observer fitting or prompt search"
+}

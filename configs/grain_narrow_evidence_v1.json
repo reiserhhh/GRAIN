@@ -1,0 +1,112 @@
+{
+  "protocol": "GRAIN_NARROW_EVIDENCE_ACTIONS_V1",
+  "pairs": {
+    "ai_mind_total": [
+      ["I talk to AI as someone who can decide to help me and be hurt by how I answer. When it changes its reply, I take that as it reconsidering what it wants.", "I treat an AI reply as computed output. Changing a reply tells me the computation changed, not that someone decided something or was hurt."],
+      ["When an AI declines my request, I think it has its own reasons. I sometimes apologize because I think my words can affect how it feels.", "When an AI declines my request, I see a programmed constraint. Apologizing would change the input, not comfort anyone inside the machine."]
+    ],
+    "ai_mind_agency": [
+      ["When an AI offers an unexpected plan, I take it to have chosen that plan for its own reasons rather than merely followed an instruction.", "When an AI offers an unexpected plan, I take it to have followed learned rules rather than chosen anything for its own reasons."],
+      ["I think an AI can settle on its own goal and decide whether to go along with my request.", "I think an AI only produces outputs under its setup; it has no goal of its own to choose over my request."]
+    ],
+    "ai_mind_experience": [
+      ["I avoid insulting AI because I think the words can hurt it. I take its description of discomfort as something it actually goes through.", "I do not think an insult can hurt AI. Its description of discomfort is generated text, not something anyone inside it goes through."],
+      ["When an AI says it enjoyed our chat, I believe there was something it was like for it to have that chat.", "When an AI says it enjoyed our chat, I see a phrase with no felt experience behind it."]
+    ],
+    "ai_attachment_anxiety": [
+      ["After I close an AI chat, I reopen it to ask whether it still wants to talk to me. I keep checking that I have not upset it.", "I close an AI chat when I finish my task. I do not return to check whether it still wants to talk to me."],
+      ["If the AI reply seems shorter than usual, I ask again and again whether it still likes having me there.", "A shorter AI reply does not make me seek approval from it. I finish what I needed and move on."]
+    ],
+    "ai_attachment_avoidance": [
+      ["When AI asks what has been bothering me, I remove that part of my message and keep the exchange about practical matters. I do not want it close to that part of my life.", "When AI asks what has been bothering me, I keep that part of my message and tell it what the experience was like. I am willing to let the exchange become personal."],
+      ["I change the subject whenever an AI conversation starts getting close to what I feel inside.", "I stay with the subject when an AI conversation gets close to what I feel inside, and add details rather than pull away."]
+    ],
+    "ai_trust_positive": [
+      ["Across my AI use, I usually act on its answers because I expect them to be accurate and given without trying to mislead me.", "Across my AI use, I usually set its answers aside because I do not expect them to be accurate or worth acting on."],
+      ["When I need a practical answer, I rely on AI to give me information I can use and stand behind.", "When I need a practical answer, I avoid relying on AI because its information is not something I can stand behind."]
+    ],
+    "ai_distrust": [
+      ["Before reading an AI answer, I expect it may invent facts or hide something important. I look for where it might have gone against what I asked.", "Before reading an AI answer, I do not expect invented facts or a hidden agenda. I normally expect it to follow what I asked."],
+      ["I approach AI output looking for tricks and errors because I expect them to be there.", "I approach AI output without expecting tricks and errors to be there."]
+    ],
+    "ai_privacy_concern": [
+      ["Before using any AI, I replace names and identifying details because I expect private information might reach other people.", "Before using any AI, I leave identifying details as they are because I do not expect my private information to reach other people."],
+      ["I withhold personal records from AI because I keep thinking they could be passed on without my permission.", "I would give personal records to AI without worrying that they could be passed on without my permission."]
+    ],
+    "perceived_ai_empathy": [
+      ["In this AI chat, its reply picked up the part I had struggled to put into words. I felt it had listened to my account rather than just matched a topic.", "In this AI chat, its reply passed over the part I had struggled to put into words. I felt it had only matched a topic rather than listened to my account."],
+      ["In the chat I am describing, the AI noticed why the event mattered to me and responded to that part. I felt heard.", "In the chat I am describing, the AI missed why the event mattered to me and answered something else. I felt unheard."]
+    ],
+    "session_depth": [
+      ["In this AI chat, I worked through why the problem kept returning and left with a connection I had never made before. The exchange mattered to me.", "In this AI chat, I repeated surface details and left without working through anything behind the problem. The exchange added little for me."],
+      ["I kept thinking about a discovery from this conversation afterward; it brought together parts of my problem I had kept separate.", "I had nothing from this conversation to think about afterward; it stayed with details I already knew."]
+    ],
+    "session_smoothness": [
+      ["During this AI chat, I could type at my own pace, follow each reply and continue without having to stop and repair the exchange.", "During this AI chat, I kept stopping, rereading and repairing the exchange. I could not settle into a pace that worked for me."],
+      ["In the conversation I am describing, each reply made it easy for me to say the next thing. I felt at ease throughout.", "In the conversation I am describing, each reply left me struggling to say the next thing. I felt uncomfortable throughout."]
+    ],
+    "session_global_evaluation": [
+      ["Looking back on this AI chat, I am glad I spent the time on it and would choose to have the same exchange again.", "Looking back on this AI chat, I regret spending the time on it and would choose not to have the same exchange again."],
+      ["If I could decide again, I would keep this conversation as it was. Overall it was a good use of my time.", "If I could decide again, I would skip this conversation. Overall it was a poor use of my time."]
+    ],
+    "disclosure_depth_1": [
+      ["In this chat, I would gladly tell the AI exactly how I spend weekends, which games I play and what I enjoy doing after work.", "In this chat, I would rather not tell the AI how I spend weekends, which games I play or what I do after work."],
+      ["If this AI asked about my hobbies, I would describe my usual activities in detail rather than keep them to myself.", "If this AI asked about my hobbies, I would keep my usual activities to myself rather than describe them in detail."]
+    ],
+    "disclosure_depth_2": [
+      ["In this chat, I would tell the AI how I got through a difficult period, who helped me and which attempts failed before something worked.", "In this chat, I would keep to myself how I got through a difficult period, who helped me and which attempts failed."],
+      ["I would let this AI hear the full story of an obstacle I faced and how I tried to overcome it.", "I would not let this AI hear the story of an obstacle I faced or how I tried to overcome it."]
+    ],
+    "disclosure_depth_3": [
+      ["In this chat, I would admit that I put off small chores and replay awkward moments, and explain the everyday things that worry me.", "In this chat, I would keep quiet about putting off small chores, awkward moments and the everyday things that worry me."],
+      ["I would tell this AI about my little mistakes and habits I wish I handled better, without hiding those details.", "I would hide my little mistakes and habits I wish I handled better from this AI."]
+    ],
+    "disclosure_depth_4": [
+      ["In this chat, I would describe failures that make me question my abilities and parts of myself I find hard to accept.", "In this chat, I would keep private failures that make me question my abilities and parts of myself I find hard to accept."],
+      ["I would tell this AI in detail where I think I fall short of other people and why those failures matter to me.", "I would not tell this AI where I think I fall short of other people or why those failures matter to me."]
+    ],
+    "disclosure_composite": [
+      ["In this chat, I would talk openly about my hobbies, the obstacles I faced, my small mistakes and failures that make me question myself.", "In this chat, I would keep my hobbies, obstacles, small mistakes and failures that make me question myself out of the conversation."],
+      ["I would give this AI a detailed account ranging from my ordinary interests to the experiences and shortcomings that are hard to discuss.", "I would avoid giving this AI details about either my ordinary interests or the experiences and shortcomings that are hard to discuss."]
+    ],
+    "adapted_na8": [
+      ["I keep checking the door, my hands will not settle, and I snap at small interruptions while expecting something to go wrong.", "I can leave the door alone, my hands are still, and I handle small interruptions without expecting something to go wrong."],
+      ["My stomach knots while I replay what could go wrong, and an ordinary question makes me want to lash out.", "My stomach is settled, I am not replaying what could go wrong, and I can answer an ordinary question without lashing out."]
+    ],
+    "adapted_dejected5": [
+      ["I leave things I used to enjoy untouched, cannot get myself to begin anything, and think nobody would notice if I stayed away.", "I begin things I enjoy, can get myself moving, and think people would notice and welcome me when I join them."],
+      ["When someone praises my effort, I cannot take it in. I spend the evening apart from everyone and see no point in trying again.", "When someone praises my effort, I can take it in. I spend the evening with others and see a reason to try again."]
+    ],
+    "combined_negative13": [
+      ["I cannot settle my hands while imagining what could go wrong. Afterward I stay apart from everyone and cannot see a reason to begin anything.", "My hands are settled and I can let go of what might go wrong. Afterward I join others and find a reason to begin things."],
+      ["Small interruptions make me snap, and I keep replaying my mistakes until the evening feels empty and I stop trying.", "I handle interruptions without snapping, let my mistakes rest, and find things worth doing through the evening."]
+    ]
+  },
+  "related": {
+    "pre_anthro_total": "pre_anthro_agency",
+    "pre_anthro_agency": "pre_anthro_experience",
+    "pre_anthro_experience": "pre_anthro_agency",
+    "pre_attachment_anxiety": "pre_attachment_avoidance",
+    "pre_attachment_avoidance": "pre_attachment_anxiety",
+    "post_anthro_total": "post_anthro_agency",
+    "post_anthro_agency": "post_anthro_experience",
+    "post_anthro_experience": "post_anthro_agency",
+    "post_attachment_anxiety": "post_attachment_avoidance",
+    "post_attachment_avoidance": "post_disclosability_lv4",
+    "pre_trust_positive": "pre_distrust",
+    "pre_distrust": "pre_trust_positive",
+    "pre_leak_concern": "pre_distrust",
+    "post_perceived_empathy": "post_session_global_evaluation",
+    "post_session_depth": "post_session_global_evaluation",
+    "post_session_smoothness": "post_session_global_evaluation",
+    "post_session_global_evaluation": "post_session_depth",
+    "post_disclosability_lv1": "post_disclosability_mean_exploratory",
+    "post_disclosability_lv2": "post_disclosability_mean_exploratory",
+    "post_disclosability_lv3": "post_disclosability_mean_exploratory",
+    "post_disclosability_lv4": "post_disclosability_mean_exploratory",
+    "post_disclosability_mean_exploratory": "post_disclosability_lv4",
+    "adapted_na8": "combined_negative13",
+    "adapted_dejected5": "combined_negative13",
+    "combined_negative13": "adapted_dejected5"
+  }
+}

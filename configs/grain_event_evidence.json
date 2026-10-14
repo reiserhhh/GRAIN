@@ -1,0 +1,36 @@
+{
+  "version": "event-evidence-1",
+  "authors": 256,
+  "source_authors": 128,
+  "events_per_author": 48,
+  "seeds": [731, 732, 733, 734, 735],
+  "nli_threshold": 0.5,
+  "nli_margin": 0.25,
+  "ridge_alpha": 1.0,
+  "worlds": ["level", "response"],
+  "roles": ["self", "other", "contrast"],
+  "role_probabilities": [0.6, 0.2, 0.2],
+  "scope": "Designed two-condition event language, not synthetic human personality labels. Source authors use wording 0/1; held authors wording 2/3. Conditions are observed by design, not extracted from text.",
+  "queries": [
+    {
+      "id": "E2_event",
+      "episode_positive": "I enjoyed being with other people.",
+      "episode_negative": "I did not enjoy being with other people.",
+      "habitual_positive": "I usually enjoy being with other people.",
+      "habitual_negative": "I usually do not enjoy being with other people.",
+      "conditions": {"-1": "At a quiet gathering", "1": "At a noisy gathering"},
+      "positive": ["I enjoyed being with other people.", "I had a pleasant time in everyone's company.", "I found spending time with the group enjoyable.", "I did not dislike spending time with everyone; it was a pleasure."],
+      "negative": ["I did not enjoy being with other people.", "I had an unpleasant time in everyone's company.", "I found spending time with the group unenjoyable.", "I did not like spending time with everyone; it was unpleasant."]
+    },
+    {
+      "id": "C5_event",
+      "episode_positive": "I finished the boring task.",
+      "episode_negative": "I did not finish the boring task.",
+      "habitual_positive": "I usually finish boring tasks.",
+      "habitual_negative": "I usually do not finish boring tasks.",
+      "conditions": {"-1": "With a short boring task to do", "1": "With a long boring task to do"},
+      "positive": ["I finished the boring task.", "I kept working until the dull job was complete.", "I completed every part of the tedious assignment.", "I did not leave the tedious job unfinished; I completed it."],
+      "negative": ["I did not finish the boring task.", "I stopped working before the dull job was complete.", "I left parts of the tedious assignment incomplete.", "I did not complete the tedious job; I left it unfinished."]
+    }
+  ]
+}

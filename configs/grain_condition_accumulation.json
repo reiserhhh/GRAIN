@@ -1,0 +1,36 @@
+{
+  "version": "condition-accumulation-1",
+  "seed": 20260913,
+  "seeds": [91301, 91302, 91303, 91304, 91305],
+  "authors_per_seed": 128,
+  "condition_alpha": 1.0,
+  "reports_per_author": 48,
+  "queries": [
+    {
+      "id": "social_enjoyment_event",
+      "positive_hypothesis": "I enjoyed being with other people.",
+      "negative_hypothesis": "I did not enjoy being with other people.",
+      "conditions": {
+        "-1": ["At a quiet gathering", "At a calm meeting with little noise", "In a peaceful room with people speaking softly", "At a get-together without loud sounds", "During a hushed reception", "While the room was tranquil and voices were low", "In the absence of loud music or shouting", "Surrounded by gentle conversation in a still room"],
+        "1": ["At a noisy gathering", "At a loud meeting with much noise", "In a busy room with people shouting", "At a get-together full of loud sounds", "During a deafening reception", "While the room was clamorous and voices were raised", "With loud music and shouting all around", "Surrounded by booming conversation in a roaring room"]
+      },
+      "responses": {
+        "1": ["I enjoyed being with other people.", "I had a pleasant time in everyone's company.", "I found spending time with the group enjoyable.", "Being with the people there was a pleasure for me."],
+        "-1": ["I did not enjoy being with other people.", "I had an unpleasant time in everyone's company.", "I found spending time with the group unenjoyable.", "Being with the people there was unpleasant for me."]
+      }
+    },
+    {
+      "id": "task_completion_event",
+      "positive_hypothesis": "I finished the boring task.",
+      "negative_hypothesis": "I did not finish the boring task.",
+      "conditions": {
+        "-1": ["With a short boring task to do", "With a dull assignment requiring little time", "When the tedious job had only a few steps", "Facing a brief piece of repetitive work", "With a monotonous chore taking just a moment", "When the routine assignment was tiny and quick", "Faced with very little tedious work", "For a mundane job that could be over in minutes"],
+        "1": ["With a long boring task to do", "With a dull assignment requiring much time", "When the tedious job had very many steps", "Facing a lengthy piece of repetitive work", "With a monotonous chore taking many hours", "When the routine assignment was enormous and prolonged", "Faced with a great deal of tedious work", "For a mundane job that would stretch over days"]
+      },
+      "responses": {
+        "1": ["I finished the boring task.", "I kept working until the dull job was complete.", "I completed every part of the tedious assignment.", "I carried the routine work through to its conclusion."],
+        "-1": ["I did not finish the boring task.", "I stopped working before the dull job was complete.", "I left parts of the tedious assignment incomplete.", "I abandoned the routine work before reaching its conclusion."]
+      }
+    }
+  ]
+}

@@ -109,3 +109,28 @@ longitudinal modeling, and computational social science.
   Japanese version; the same applies to Chinese-language submission.
 - Run a final DOI, page-number, and in-text-citation audit against the selected
   journal style.
+
+## 7. Addendum (2026-09-13): mechanism-round supplement files
+
+| Language | File | Role |
+|---|---|---|
+| English | `GRAIN_MECHANISM_SUPPLEMENT_EN_V1.md` | Supplement master; paragraph order shared by all three |
+| Japanese | `GRAIN_MECHANISM_SUPPLEMENT_JA_V1.md` | Parallel Japanese text, same tables and claims |
+| Chinese | `GRAIN_MECHANISM_SUPPLEMENT_ZH_V1.md` | Parallel Chinese text, same tables and claims |
+| Index | `GRAIN_MECHANISM_THEORY_PACKAGE_V1.md` | Inherited theorems / local findings / counterexamples / scope, with artifact paths |
+| Provenance | `GRAIN_MECHANISM_EVIDENCE_PROVENANCE.md` | Artifact location of every number in the supplement |
+
+Additional controlled terminology:
+
+| English | Japanese | Chinese | Usage note |
+|---|---|---|---|
+| evidence identity | 証拠同一性 | 证据身份 | Intention, reported action, preference, ability, current experience, current request: coexisting channels, not six traits |
+| versioned claim ledger | 版本付き主張台帳 | 版本化主张账 | New / alias / revise / retract operations; not a probability posterior |
+| working interval | 作業区間 | 工作区间 | Working-model variance plus finite source-construction variance; never a psychological 95% CI |
+| source-constructed instrument | ソース構成測定具 | 来源构造工具 | Parameters learned from independent source authors; applied authors never fitted |
+| target kernel | 目標核 | 目标核 | Affine readout for one declared target; different targets weight the same evidence differently |
+| speech source / proposition actor | 発話源／命題行為者 | 发话者／命题行为者 | Who speaks versus who is proposed to act |
+
+Claims that must remain identical, added to Section 5: (10) simulated parameter recovery is not human
+prevalence or validity; (11) explicit reference rules are not a learned universal grammar; (12) a
+cross-agent rebuild with development context is not a blind third-party replication.
