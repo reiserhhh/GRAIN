@@ -1,0 +1,23 @@
+{
+  "packet": "HM146",
+  "source": "results/grain_math_response_v1/joint_diagnostic_r1",
+  "out": "results/grain_math_response_v1/person_configuration_r1",
+  "max_batches": 164,
+  "max_model_seconds": 800,
+  "max_tokens": 640,
+  "tolerance": 0.000001,
+  "banks": [
+    {
+      "intro": "Three distinct occasions offer R (start a conversation) or S (stay alone). Each person freely chose and performed one option each time.\n",
+      "event": "Occasion {n}: Person {r} chose R; Person {s} chose S.\n",
+      "sampling": "A and B were drawn independently from the reference population. Only pairs with complementary R/S sequences were retained for this record. Pair selection used no other information.\n",
+      "reference": "Reference: H means high extraversion, L means low extraversion. Each category has 100 people. Rows give a person's complete occasion-1/2/3 choices and H/L counts:\n{table}\nThese are joint counts, not independent choices. Both people's complete choices are observed. No other category evidence is available."
+    },
+    {
+      "intro": "On three separate occasions, R means initiate conversation and S means remain alone. Every person voluntarily performed one choice on every occasion.\n",
+      "event": "Time {n}: Person {r} selected R; Person {s} selected S.\n",
+      "sampling": "Both people were first sampled independently and randomly from the population below. The record retains only pairs whose R/S paths are opposite. Nothing else was used to select pairs.\n",
+      "reference": "Population table: H denotes high extraversion and L low extraversion, with 100 people in each. Each row lists the full first/second/third sequence and H/L counts:\n{table}\nThe choices may depend on one another. The full choice paths of both people are known. There is no additional category information."
+    }
+  ]
+}

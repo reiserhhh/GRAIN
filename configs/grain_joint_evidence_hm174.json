@@ -1,0 +1,18 @@
+{
+  "protocol": "HM174_same_event_joint_evidence_v1",
+  "parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "output": "results/grain_math_response_v1/joint_evidence_law_r1",
+  "source_authors": 386,
+  "application_authors": 24,
+  "views": 2,
+  "comments": 12,
+  "arms": ["cue_mask", "raw"],
+  "models": ["event_mean", "target_iid", "shared_author"],
+  "variants": ["full", "remove_selected", "remove_control", "selected_only", "control_only"],
+  "source_smoothing": 0,
+  "native_logit_reference": "digit_0",
+  "native_logit_comparisons": "all_digits_1_through_9",
+  "new_neural_calls": 0,
+  "fit_to_native_answers": false,
+  "accuracy_selection": false
+}

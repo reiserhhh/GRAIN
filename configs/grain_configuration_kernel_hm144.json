@@ -1,0 +1,19 @@
+{
+  "packet": "HM-144",
+  "source": "source_train",
+  "recipients": ["source_validation", "held"],
+  "spaces": ["grain15", "e5_1024"],
+  "partitions": ["chronological", "venue_balanced"],
+  "comments_per_author": 36,
+  "views": 3,
+  "permutations": 499,
+  "bootstrap_draws": 1000,
+  "seed": 144,
+  "metadata_preview_only": true,
+  "private_raw_text_labels_questionnaires": false,
+  "new_model_calls": 0,
+  "source_kernel_scale": "median positive squared pair distance per view",
+  "coarse_matching": "source medians of TOP20 venue share and mean log1p cached span length",
+  "inferential_scope": "finite cohort relinking sensitivity; conditional exchangeability not guaranteed",
+  "forbidden_claim": "Lancaster interaction proves extra information beyond all pair distributions or personality validity"
+}

@@ -1,0 +1,17 @@
+{
+  "packet": "HM161",
+  "parent": "results/grain_math_response_v1/carrier_edit_transport_r1",
+  "source_operation": "source0 mixed relation, joint K/V, unchanged other clause",
+  "source_answer_fitting": false,
+  "records": 16,
+  "families": ["diagnostic", "prospective", "forced_yes", "forced_no"],
+  "targets": ["extraversion", "neuroticism"],
+  "persons": [-1, 1],
+  "self_rows": [0, 15],
+  "collection_seconds_cap": 420,
+  "analysis_seconds_cap": 120,
+  "verification_seconds_cap": 120,
+  "original_scope_complete": false,
+  "forbidden": ["output fitting", "layer/head/dose grid", "API", "private data", "new neural training", "automatic replay"],
+  "observation_law": "fixed model first-token distribution under diagnostic or role-play choice instructions; not human action"
+}

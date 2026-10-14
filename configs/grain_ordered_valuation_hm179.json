@@ -1,0 +1,15 @@
+{
+  "packet": "HM179",
+  "relation_parent": "results/grain_math_response_v1/context_relation_action_r1",
+  "native_parent": "results/grain_math_response_v1/joint_evidence_law_r1",
+  "targets": ["E", "N", "A", "C", "O"],
+  "components": ["independent", "common", "full", "shared_change", "specific_change"],
+  "arms": ["cue_mask", "raw"],
+  "scopes": ["author_mean", "view_0", "view_1"],
+  "ordinal_alphabet": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "resolution": 2e-12,
+  "classification": "POST_HM178_FINITE_ORDER_MECHANISM_EXPLORATION",
+  "native_query": "neuroticism",
+  "new_neural_calls": 0,
+  "original_scope_complete": false
+}

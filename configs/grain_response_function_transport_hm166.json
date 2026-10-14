@@ -1,0 +1,17 @@
+{
+  "packet": "HM166",
+  "predecessor": "results/grain_math_response_v1/writer_history_bridge_r1",
+  "source_selection": "all discovery pairs with all 16 neutral-policy nonempty-history observations at the frozen HM165 cutoff",
+  "application_selection": "all development and evaluation articles, both axes and all styles/seeds",
+  "opportunities": ["social_free", "social_required", "planning_known", "planning_unknown"],
+  "source_complete_pairs": 21,
+  "source_articles": 42,
+  "application_pairs": 54,
+  "application_articles": 108,
+  "application_requests": 864,
+  "batch_size": 32,
+  "model_seconds_cap": 480,
+  "draw_seed": 166,
+  "source_relink_shifts": [1, 2, 3, 4, 5],
+  "scope": "new finite neutral-history response transport; not recovery of HM165 nine-corner collection; not human personality accuracy"
+}

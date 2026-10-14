@@ -1,0 +1,14 @@
+{
+  "packet": "HM172",
+  "parent": "results/grain_math_response_v1/trait_observation_anchor_r1",
+  "output": "results/grain_math_response_v1/trait_path_observation_r1",
+  "windows": [[0, 18], [18, 36]],
+  "states": 8,
+  "traits": ["Extraversion", "Neuroticism", "Agreeableness", "Conscientiousness", "Openness"],
+  "readers": ["ordered_source", "bag_endpoint_source", "permuted_source"],
+  "permutations": 199,
+  "seed": 17220261011,
+  "max_seconds": 120,
+  "new_neural_forwards": 0,
+  "original_scope_complete": false
+}

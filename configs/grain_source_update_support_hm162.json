@@ -1,0 +1,17 @@
+{
+  "packet": "HM162",
+  "parent": "results/grain_math_response_v1/endpoint_actions_r1",
+  "operations": ["relation_other", "full_other", "relation_closure", "full_closure"],
+  "new_operations": ["full_other", "relation_closure", "full_closure"],
+  "self_rows": [0, 15],
+  "replay_controls": [[0, "e"], [15, "n"]],
+  "collection_seconds_cap": 600,
+  "analysis_seconds_cap": 120,
+  "verification_seconds_cap": 180,
+  "batches": 100,
+  "inquiry_sequences": 1600,
+  "source_answer_fitting": false,
+  "original_scope_complete": false,
+  "scope": "Historical public fictional evidence and frozen HM161 suffixes; source-complete is not assumed application-natural or psychologically valid",
+  "forbidden": ["target answer fitting", "head/layer/rank/dose grid", "API", "private data", "new neural training", "automatic scientific replay"]
+}

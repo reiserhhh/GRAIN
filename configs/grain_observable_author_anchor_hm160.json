@@ -1,0 +1,13 @@
+{
+  "packet": "HM160",
+  "seeds": [160, 161, 162],
+  "source_authors": 12000,
+  "application_authors": 4000,
+  "target_ids": ["future_expression_q0", "future_expression_q1"],
+  "alphabet": "results/grain_math_response_v1/relative_choice_r1/dictionary.npz",
+  "output": "results/grain_math_response_v1/observable_author_anchor_r1",
+  "regime": "randomized_condition",
+  "neural_calls": 0,
+  "private_data": false,
+  "model_selection": false
+}

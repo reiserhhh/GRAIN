@@ -1,0 +1,14 @@
+{
+  "packet": "HM159",
+  "out": "results/grain_math_response_v1/history_resolution_r1",
+  "source_dictionary": "results/grain_math_response_v1/relative_choice_r1/dictionary.npz",
+  "source_manifest": "results/grain_math_response_v1/relative_choice_r1/manifest.json",
+  "history_trials": 4,
+  "joint_events": 3,
+  "source_author_counts": [2000, 20000],
+  "seeds": [159, 160, 161],
+  "worlds": ["even", "odd", "beta_2_3"],
+  "max_CPU_wall_seconds": 120,
+  "new_neural_calls": 0,
+  "parameter_search": false
+}

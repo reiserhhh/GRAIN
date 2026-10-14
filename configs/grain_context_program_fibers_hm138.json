@@ -1,0 +1,11 @@
+{
+  "parent": "results/grain_math_response_v1/same_evidence_geometry_r1",
+  "out": "results/grain_math_response_v1/context_program_fibers_r1",
+  "events": 96,
+  "strata": 24,
+  "rtol": 1e-10,
+  "tolerance": 1e-10,
+  "max_seconds": 60,
+  "summary_views": ["global_mean", "corpus_joint_mean", "wording_joint_mean", "corpus_wording_joint_mean", "global_mean_second_moments"],
+  "observer_contracts": ["A_traits_score", "A_traits_score_fact_score", "A_traits_both_units", "A_traits_both_units_fact_both_units", "AB_all_both_units"]
+}

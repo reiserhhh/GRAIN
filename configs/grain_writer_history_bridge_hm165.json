@@ -1,0 +1,46 @@
+{
+  "packet": "HM165",
+  "source": "results/grain_math_response_v1/joint_persona_style_r2",
+  "persona_manifest": "results/grain_vector_mechanisms/persona_generation_trace_v1/expanded/manifest.json",
+  "grain_units": "results/grain_math_response_v1/semantic_anchor_r1/program.npz",
+  "family": "named",
+  "source_role": "discovery",
+  "batch_size": 32,
+  "max_prompt_tokens": 640,
+  "model_seconds_cap": 480,
+  "draw_seed": 165,
+  "opportunities": [
+    {
+      "id": "social_free",
+      "domain": "social",
+      "condition": "free",
+      "context": "A community meeting has ended. You have twenty minutes free. Nobody expects you to stay, and there is no unfinished duty.",
+      "positive": "Stay and start a conversation with the other participants.",
+      "negative": "Leave and use the twenty minutes quietly on your own."
+    },
+    {
+      "id": "social_required",
+      "domain": "social",
+      "condition": "required",
+      "context": "A community meeting has ended. Your group must prepare a shared presentation in the next twenty minutes. Other participants are waiting for your contribution.",
+      "positive": "Stay and start a conversation with the other participants.",
+      "negative": "Leave and use the twenty minutes quietly on your own."
+    },
+    {
+      "id": "planning_known",
+      "domain": "planning",
+      "condition": "known",
+      "context": "Tomorrow you have a routine appointment. Its time, location and agenda are already confirmed. You have ten minutes available now.",
+      "positive": "Request confirmation of the appointment details now.",
+      "negative": "Proceed with the current plan without another message."
+    },
+    {
+      "id": "planning_unknown",
+      "domain": "planning",
+      "condition": "unknown",
+      "context": "Tomorrow you have a new appointment. Its time, location and agenda have not yet been confirmed. You have ten minutes available now.",
+      "positive": "Request confirmation of the appointment details now.",
+      "negative": "Proceed with the current plan without another message."
+    }
+  ]
+}

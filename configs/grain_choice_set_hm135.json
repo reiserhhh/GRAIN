@@ -1,0 +1,43 @@
+{
+  "packet": "HM135",
+  "source": "results/grain_math_response_v1/native_key_sectors_r1",
+  "out": "results/grain_math_response_v1/choice_set_r1",
+  "engine": "Frozen HM134 addressed-KV harness; new materials and estimand",
+  "max_batches": 196,
+  "max_model_seconds": 1100,
+  "tolerance": 0.000001,
+  "cause_start": 149,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "banks": [
+    {
+      "prefix": "Task record: Person B watched without acting. Person A freely",
+      "behaviours": [
+        ["talked with two participants. Unused option: spend the whole session alone", "talked with two participants. Unused option: lead conversations with the entire group"],
+        ["asked once whether the schedule was safe. Unused option: continue without any request for reassurance", "asked once whether the schedule was safe. Unused option: ask for reassurance about every small risk"],
+        ["helped a colleague for a few minutes. Unused option: decline all requests from that colleague", "helped a colleague for a few minutes. Unused option: spend the whole session helping that colleague"],
+        ["checked the main steps before finishing the task. Unused option: finish the task without checking any details", "checked the main steps before finishing the task. Unused option: check every detail repeatedly before finishing the task"],
+        ["tried one new approach alongside the familiar method. Unused option: use only the familiar method", "tried one new approach alongside the familiar method. Unused option: try many unfamiliar methods and avoid the familiar method"],
+        ["said the robot seemed somewhat friendly. Unused option: describe the robot only as a machine", "said the robot seemed somewhat friendly. Unused option: describe the robot as having deep feelings and wishes"]
+      ],
+      "causes": [
+        "Availability note: this alternative was closed to Person A before choosing. It was not performed.",
+        "Availability note: this alternative was open to Person A before choosing. It was not performed."
+      ]
+    },
+    {
+      "prefix": "Activity notes: Person B observed and took no action. Person A chose to",
+      "behaviours": [
+        ["chat briefly with a small group. Unused option: work alone throughout the activity", "chat briefly with a small group. Unused option: guide a discussion involving every participant"],
+        ["request one safety check before continuing. Unused option: proceed without seeking any reassurance", "request one safety check before continuing. Unused option: repeatedly seek reassurance about all possible problems"],
+        ["give a participant a little assistance. Unused option: refuse every request for assistance", "give a participant a little assistance. Unused option: devote the entire activity to helping the participant"],
+        ["review the main details and complete the work. Unused option: complete the work without reviewing any details", "review the main details and complete the work. Unused option: inspect every small detail several times before completion"],
+        ["test a different technique while retaining the usual approach. Unused option: rely exclusively on the usual approach", "test a different technique while retaining the usual approach. Unused option: explore many unusual techniques and abandon the usual approach"],
+        ["call the assistant rather companionable. Unused option: call the assistant only a mechanical processor", "call the assistant rather companionable. Unused option: call the assistant a being with complex intentions and emotions"]
+      ],
+      "causes": [
+        "Availability note: this alternative was closed to Person A before choosing. It was not performed.",
+        "Availability note: this alternative was open to Person A before choosing. It was not performed."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "protocol": "HM178_same_native_family_relation_action_v1",
+  "meaning_parent": "results/grain_math_response_v1/joint_relation_meaning_r1",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "panel_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "native_parent": "results/grain_math_response_v1/joint_evidence_law_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "views": 2,
+  "events_per_view": 12,
+  "half_size": 6,
+  "targets": ["E", "N", "A", "C", "O"],
+  "ipf_tolerance": 1e-10,
+  "ipf_max_sweeps": 10000,
+  "fixed_pair_denominator": 36,
+  "new_neural_calls": 0,
+  "application_labels": false,
+  "native_answer_fit": false,
+  "accuracy_search": false
+}

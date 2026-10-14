@@ -1,0 +1,19 @@
+{
+  "packet": "HM170",
+  "output": "results/grain_math_response_v1/observed_author_family_r1",
+  "authors": 624,
+  "comments_per_author": 36,
+  "roles": {"source_train": 403, "source_validation": 101, "held": 120},
+  "coordinate_indices": [0, 5],
+  "coordinate_names": ["author_stability_0", "response_stability_0"],
+  "windows": [[0, 18], [18, 36]],
+  "endpoint_names": ["next_record_same_venue", "next_author_coordinate_high", "next_response_coordinate_high"],
+  "partition": "source-current medians, two binary coordinates, four states",
+  "source_weights": "one equal total weight per source author",
+  "regime": "self-selected sampled publications; not randomized opportunities",
+  "permutations": 199,
+  "permutation_seed": 17020261011,
+  "analysis_seconds_cap": 120,
+  "new_model_forwards": 0,
+  "original_scope_complete": false
+}

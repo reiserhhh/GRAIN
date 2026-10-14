@@ -1,0 +1,16 @@
+{
+  "packet": "HM168",
+  "predecessor": "results/grain_math_response_v1/response_function_transport_r1",
+  "context_predecessor": "results/grain_math_response_v1/context_response_functions_r1",
+  "history_source": "results/grain_math_response_v1/writer_history_bridge_r1",
+  "start_task": "email",
+  "start_task_style_for_address": "neutral",
+  "destination_task": "diary",
+  "batch_size": 32,
+  "max_prompt_tokens": 640,
+  "model_seconds_cap_total": 600,
+  "max_new_source_inputs": 192,
+  "application_inputs": 864,
+  "draw_seed": 168,
+  "scope": "same declared history transition on existing fixed bodies;not human trait accuracy or an untouched two-endpoint test"
+}

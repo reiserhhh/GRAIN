@@ -1,0 +1,17 @@
+{
+  "packet": "HM132",
+  "source": "results/grain_math_response_v1/native_access_r2",
+  "out": "results/grain_math_response_v1/native_kv_identity_r1",
+  "max_batches": 100,
+  "max_model_seconds": 600,
+  "tolerance": 0.000001,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "new_behaviours": {
+    "extraversion": ["kept apart while others socialized", "answered a question from another member", "greeted strangers and sustained conversations"],
+    "neuroticism": ["stayed composed after a surprise", "paused briefly and resumed working", "kept worrying after trouble ended"],
+    "agreeableness": ["declined to help a neighbour", "considered a neighbour's request", "helped a neighbour with chores"],
+    "conscientiousness": ["missed a deadline without checking", "noted the deadline before proceeding", "checked tasks and met deadlines"],
+    "openness": ["avoided trying an unfamiliar method", "compared familiar and unfamiliar methods", "explored unfamiliar methods with curiosity"],
+    "anthropomorphism": ["called the chatbot automated software", "commented on the chatbot's replies", "said the chatbot cared about people"]
+  }
+}

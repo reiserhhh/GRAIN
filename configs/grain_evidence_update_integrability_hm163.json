@@ -1,0 +1,13 @@
+{
+  "packet": "HM163",
+  "parent": "results/grain_math_response_v1/source_update_support_r1",
+  "policies": ["relation_other", "full_other", "relation_closure", "full_closure", "shared_other", "shared_closure"],
+  "words": ["", "ee", "nn", "en", "ne", "enen", "nene", "eenn"],
+  "channels": ["history_key", "history_value"],
+  "rows": 16,
+  "seconds_cap": 120,
+  "algebra_tolerance": 1e-10,
+  "new_decoder_forwards": 0,
+  "new_training": 0,
+  "goal_scope_complete": false
+}

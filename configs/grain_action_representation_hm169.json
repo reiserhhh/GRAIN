@@ -1,0 +1,23 @@
+{
+  "packet": "HM169",
+  "predecessor": "results/grain_math_response_v1/matched_context_transition_r1",
+  "vector_source": "results/grain_math_response_v1/joint_persona_style_r2",
+  "views": ["grain_tensor625", "qwen_input_mean", "qwen_block16_mean"],
+  "arms": ["full", "within", "between"],
+  "roles": ["discovery", "development", "evaluation"],
+  "source_rows": 42,
+  "application_rows": 108,
+  "source_pairs": 21,
+  "application_pairs": 54,
+  "permutations": 199,
+  "seed": 169,
+  "cpu_seconds_cap": 120,
+  "qwen_units": "one source-only centered Euclidean RMS scalar; no whitening",
+  "grain_units": "exact inherited625 vectors; no rescaling",
+  "ledger_response_origin": "global42 source action mean",
+  "dependence_block": ["situation", "style"],
+  "analysis_registration": "POST_OUTCOME: predecessor application actions already observed",
+  "new_neural_forwards": 0,
+  "fit_application_answers": false,
+  "original_scope_complete": false
+}

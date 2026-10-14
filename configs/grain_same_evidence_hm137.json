@@ -1,0 +1,21 @@
+{
+  "packet": "HM137",
+  "out": "results/grain_math_response_v1/same_evidence_geometry_r1",
+  "previous": "results/grain_math_response_v1/observation_program_r1",
+  "grain_bundle": "results/grain_construction_v1/C4/transport_r1/anonymous_bundle.json",
+  "grain_bundle_sha256": "466ecd1747376cd4757150f45eb163c35286508555214cb7cfa93527d6813c53",
+  "encoder_snapshot": "/Users/huokean/.cache/huggingface/hub/models--intfloat--e5-large-v2/snapshots/f169b11e22de13617baa190a028a32f3493550b6",
+  "encoder_prefix": "query: ",
+  "batch_size": 8,
+  "maximum_length": 512,
+  "maximum_model_seconds": 450,
+  "expected_records": 96,
+  "sectors": ["b", "c", "bc"],
+  "units": ["score", "logodds"],
+  "views": ["E5_full", "GRAIN_all15", "author_stability", "response_stability", "principal_components"],
+  "account_interaction_strength": 0.4,
+  "numerical_tolerance": 1e-10,
+  "new_fits": 0,
+  "new_Qwen_forwards": 0,
+  "new_materials": 0
+}

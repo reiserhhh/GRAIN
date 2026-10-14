@@ -1,0 +1,13 @@
+{
+  "parent": "results/grain_math_response_v1/actual_vector_target_action_r1",
+  "native_parent": "results/grain_math_response_v1/context_relation_action_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "views": 2,
+  "cold_records": 240,
+  "targets": ["E", "N", "A", "C", "O"],
+  "components": ["marginal", "matched", "reference_shift", "profile_composition"],
+  "weight_rule": "observed_overlap_n0_n1_over_n0_plus_n1",
+  "comparison_tolerance": 2e-12,
+  "original_scope_complete": false
+}

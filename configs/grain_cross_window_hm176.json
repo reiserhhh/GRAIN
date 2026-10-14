@@ -1,0 +1,19 @@
+{
+  "packet": "HM176",
+  "parent": "results/grain_math_response_v1/target_profile_composition_r1",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "mass_parent": "results/grain_math_response_v1/trait_observation_anchor_r1",
+  "index_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "source_authors": 386,
+  "application_authors": 120,
+  "windows": 2,
+  "events_per_window": 17,
+  "traits": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness"],
+  "couplings": ["profile_product", "other_author_same_profile", "same_author"],
+  "permutations": 199,
+  "permutation_seed": 17620261011,
+  "smoothing": 0,
+  "new_neural_calls": 0,
+  "application_labels": false,
+  "precision_selection": false
+}

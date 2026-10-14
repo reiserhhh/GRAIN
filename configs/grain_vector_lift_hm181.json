@@ -1,0 +1,17 @@
+{
+  "packet": "HM181",
+  "parent": "results/grain_math_response_v1/ternary_target_trade_r1",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "views": 2,
+  "roles": [4, 4, 4],
+  "targets": ["E", "N", "A", "C", "O"],
+  "features": "all augmented GRAIN15 tensor sectors;all1024 E5 first moments",
+  "lift": "preserve empirical vector conditional distribution given profile and coarse triple",
+  "cold_records": 240,
+  "cold_source_views": [0, 1],
+  "comparison_tolerance": 1e-12,
+  "optimization_or_new_model_calls": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,20 @@
+{
+  "packet": "HM171",
+  "output": "results/grain_math_response_v1/trait_observation_anchor_r1",
+  "parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "labels": "results/grain_vector_mechanisms/predecessor_integration_v1/comparison_r1/private_oof.npz",
+  "material": "results/grain_vector_mechanisms/predecessor_integration_v1/material/private_arrays.npz",
+  "traits": ["Extraversion", "Neuroticism", "Agreeableness", "Conscientiousness", "Openness"],
+  "targets": "above source-author median of existing official Big5 score",
+  "source_authors": 403,
+  "validation_authors": 101,
+  "held_authors": 120,
+  "partition": "exact unchanged HM170 condition x two coordinate source bits;8 cells",
+  "source_half_diagnostic": "alternating existing source role order;fixed full-source label cutoffs",
+  "permutations": 199,
+  "seed": 17120261011,
+  "source_calibration": "one equal mass per author distribution;not repeated independent trait observations",
+  "original_scope_complete": false,
+  "max_seconds": 120,
+  "new_model_forwards": 0
+}

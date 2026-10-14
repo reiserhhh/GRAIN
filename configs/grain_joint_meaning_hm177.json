@@ -1,0 +1,15 @@
+{
+  "parent": "results/grain_math_response_v1/cross_window_profile_law_r1",
+  "source_authors": 386,
+  "application_authors": 120,
+  "profiles": 32,
+  "events_per_window": 17,
+  "targets": ["E", "N", "A", "C", "O"],
+  "ipf_tolerance": 1e-10,
+  "ipf_max_sweeps": 10000,
+  "permutations": 199,
+  "permutation_seed": 17620261011,
+  "new_neural_calls": 0,
+  "application_labels": false,
+  "accuracy_optimization": false
+}

@@ -1,0 +1,25 @@
+{
+  "protocol": "HM180B_source_supported_finite_ternary_trade_v1",
+  "parent": "results/grain_math_response_v1/context_relation_action_r1",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "failed_parent": "results/grain_math_response_v1/ternary_target_meaning_r1",
+  "failed_artifact_hashes": {
+    "manifest.json": "5cf5c553dd0ce0eaf1c3469446f57fb7fa5941fc35dd0cf52c9014d3b721ef65",
+    "prepared_seal.json": "edc1139236fb2a099e98f53e96d317e3efe815119dde0e34a3b063b27d7cd1d8",
+    "compile_failure.json": "8e2e0f8f902ada7dd8454a0fe4fb39625f341f8147ac67b60e35bc558d022961"
+  },
+  "targets": ["E", "N", "A", "C", "O"],
+  "roles": [[0, 4], [4, 8], [8, 12]],
+  "fixed_denominator": 64,
+  "constraints": ["GAB", "GAC", "GBC", "ABC"],
+  "reference": "one_support_preserving_entropy_safe_simultaneous_cube_step",
+  "cube_overlap_bound": 135,
+  "ipf_tolerance": 1e-10,
+  "ipf_max_sweeps": 10000,
+  "ipf_parameters_used": false,
+  "crossfit": "two_folds;sorted_source_ids_alternating_within_full_profile",
+  "new_neural_calls": 0,
+  "application_labels": false,
+  "native_answer_fit": false,
+  "accuracy_search": false
+}

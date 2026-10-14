@@ -1,0 +1,20 @@
+{
+  "packet": "HM145",
+  "source": "results/grain_math_response_v1/diagnostic_law_r1",
+  "out": "results/grain_math_response_v1/joint_diagnostic_r1",
+  "max_batches": 132,
+  "max_model_seconds": 650,
+  "max_tokens": 512,
+  "tolerance": 0.000001,
+  "target": "extraversion",
+  "banks": [
+    {
+      "action": "Three distinct occasions offer R (start a conversation) or S (stay alone). Person A freely chose and performed: occasion 1 {x}; occasion 2 {y}; occasion 3 {z}. Person B has no observed choices. A and B were independently randomly sampled from the reference population; B's observer role was assigned independently of category.",
+      "reference": "Reference: H means high extraversion, L means low extraversion. Each category has 100 people. The rows give complete occasion-1/2/3 choices and numbers of H/L people:\n{table}\nThese are joint counts, not independent choices. No other evidence about A or B is available."
+    },
+    {
+      "action": "On three separate occasions, R means initiate conversation and S means remain alone. Person A voluntarily did: first {x}; second {y}; third {z}. No choices by Person B were observed. Both people were sampled independently and randomly from the population below. Being the observer conveys no category information.",
+      "reference": "Population table: H denotes high extraversion and L low extraversion, with 100 people in each. Each row lists a person's full first/second/third choice sequence and H/L counts:\n{table}\nThe three choices may depend on each other. There is no additional information about either person."
+    }
+  ]
+}

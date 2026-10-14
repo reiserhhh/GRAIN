@@ -1,0 +1,19 @@
+{
+  "packet": "HM136",
+  "out": "results/grain_math_response_v1/observation_program_r1",
+  "sources": [
+    {"name": "cause", "path": "results/grain_math_response_v1/causal_valuation_r1"},
+    {"name": "opportunity", "path": "results/grain_math_response_v1/choice_set_r1"}
+  ],
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "routes": [1, 7],
+  "replay_rows": [0, 3, 24, 27],
+  "noop_rows": [0, 24],
+  "capture_layer": 17,
+  "max_batches": 108,
+  "max_endpoints": 1512,
+  "max_model_seconds": 650,
+  "tolerance": 0.000001,
+  "new_fits": 0,
+  "new_materials": 0
+}

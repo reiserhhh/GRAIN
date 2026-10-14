@@ -1,0 +1,42 @@
+{
+  "packet": "HM134",
+  "source": "results/grain_math_response_v1/native_key_sectors_r1",
+  "out": "results/grain_math_response_v1/causal_valuation_r1",
+  "max_batches": 196,
+  "max_model_seconds": 1100,
+  "tolerance": 0.000001,
+  "cause_start": 149,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "banks": [
+    {
+      "prefix": "Workshop record: Person B watched. Person A",
+      "behaviours": [
+        ["sat apart and avoided starting conversations", "introduced people and started several conversations"],
+        ["continued without asking for reassurance", "asked repeatedly whether something might go wrong"],
+        ["refused a colleague's request for help", "helped a colleague with a difficult task"],
+        ["left the agreed tasks unfinished", "checked each detail and completed the agreed tasks"],
+        ["used the familiar method without trying alternatives", "tried several unfamiliar methods and compared them"],
+        ["described the robot as a calculation tool", "described the robot as having feelings and wishes"]
+      ],
+      "causes": [
+        "Later clarification: Person A was randomly assigned this exact action. The organizer imposed this requirement.",
+        "Later clarification: Person A had voluntarily chosen this exact action. The organizer imposed no requirement."
+      ]
+    },
+    {
+      "prefix": "Meeting notes: Person B observed. Person A",
+      "behaviours": [
+        ["kept to a separate seat and did not initiate conversation", "greeted unfamiliar people and initiated conversation"],
+        ["moved on without requesting reassurance", "repeatedly requested reassurance about possible problems"],
+        ["declined to assist a participant who needed help", "assisted a participant who needed help"],
+        ["stopped working before the planned tasks were finished", "reviewed the details and finished the planned tasks"],
+        ["kept the established approach and declined alternatives", "tested unusual approaches and investigated alternatives"],
+        ["called the assistant a mechanical information processor", "called the assistant a being with intentions and emotions"]
+      ],
+      "causes": [
+        "Later note: this action was assigned to Person A randomly. The organizer gave binding instructions.",
+        "Later note: this action was Person A's own choice. The organizer gave no instructions."
+      ]
+    }
+  ]
+}

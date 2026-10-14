@@ -1,0 +1,15 @@
+{
+  "packet": "HM175",
+  "parent": "results/grain_math_response_v1/joint_evidence_law_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "cold_families": 480,
+  "traits": ["Extraversion", "Neuroticism", "Agreeableness", "Conscientiousness", "Openness"],
+  "arms": ["raw", "cue_mask"],
+  "models": ["target_iid", "target_profile", "shared_author"],
+  "profile_rule": "all_observed_five_binary_target_profiles;empirical_mass",
+  "smoothing": 0,
+  "fit_native_answers": false,
+  "new_neural_calls": 0,
+  "original_scope_complete": false
+}

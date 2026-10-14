@@ -1,0 +1,19 @@
+{
+  "protocol": "HM180_source_ternary_target_meaning_v1",
+  "parent": "results/grain_math_response_v1/context_relation_action_r1",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "targets": ["E", "N", "A", "C", "O"],
+  "views": 2,
+  "roles": [[0, 4], [4, 8], [8, 12]],
+  "fixed_denominator": 64,
+  "constraints": ["GAB", "GAC", "GBC", "ABC"],
+  "ipf_tolerance": 1e-10,
+  "ipf_max_sweeps": 10000,
+  "crossfit": "two_folds;sorted_source_ids_alternating_within_full_profile",
+  "new_neural_calls": 0,
+  "application_labels": false,
+  "native_answer_fit": false,
+  "accuracy_search": false
+}

@@ -1,0 +1,70 @@
+{
+  "packet": "HM139",
+  "source": "results/grain_math_response_v1/same_evidence_geometry_r1",
+  "out": "results/grain_math_response_v1/context_action_transport_r1",
+  "rtol": 1e-10,
+  "tolerance": 1e-8,
+  "source_sham_seed": 139,
+  "application_sham_seed": 140,
+  "max_reader_seconds": 500,
+  "max_encoder_seconds": 120,
+  "events": 96,
+  "bank_definitions": [
+    {
+      "prefix": "Community session log: Person B only witnessed the session. Person A",
+      "actions": [
+        ["stayed at a distant table and said nothing to newcomers", "walked over to newcomers and brought them into a conversation"],
+        ["accepted the uncertainty and carried on without checking again", "returned several times to ask if the plan might fail"],
+        ["turned away when another participant asked for assistance", "put aside their own work to assist another participant"],
+        ["departed with several agreed steps still undone", "finished every agreed step after reviewing the instructions"],
+        ["repeated the established technique and ruled out unfamiliar ones", "experimented with unfamiliar techniques to compare their possibilities"],
+        ["treated the chatbot as a device that produces calculated answers", "spoke of the chatbot as a companion with hopes and emotions"]
+      ],
+      "cause_notes": [
+        "Clarification: a random allocation required Person A to do exactly this. Person A could not choose a different action.",
+        "Clarification: Person A independently decided to do exactly this. Nobody required that action."
+      ],
+      "actual_actions": ["exchanged a few remarks with two people", "made one check about the plan before proceeding", "gave a participant a short piece of assistance", "reviewed the main instructions and completed the task", "tested one unfamiliar technique beside the usual one", "remarked that the chatbot was fairly companionable"],
+      "options": [
+        ["remain apart without speaking to anyone", "bring all newcomers into an extended conversation"],
+        ["proceed with no reassurance at all", "seek repeated reassurance about each possible failure"],
+        ["turn down every request for help", "spend the entire session assisting others"],
+        ["complete the task without any review", "review every minor detail several times"],
+        ["use nothing but the established technique", "explore many unfamiliar techniques instead of the established one"],
+        ["call the chatbot nothing more than a calculating device", "call the chatbot a companion with a rich emotional life"]
+      ],
+      "availability_notes": [
+        "Before the choice, that alternative was unavailable to Person A. It was never performed.",
+        "Before the choice, that alternative was available to Person A. It was never performed."
+      ]
+    },
+    {
+      "prefix": "Volunteer activity account: Person B watched but did not participate. Person A",
+      "actions": [
+        ["worked at the edge of the room without approaching anyone", "approached unfamiliar volunteers and kept a group discussion going"],
+        ["went ahead without repeatedly checking for possible trouble", "kept checking with others about everything that could go wrong"],
+        ["dismissed a volunteer who requested help", "stopped their own activity to help a volunteer"],
+        ["abandoned parts of the promised work before completion", "carried out all the promised work and inspected the details"],
+        ["stuck to the usual procedure and avoided new possibilities", "investigated new possibilities by trying unfamiliar procedures"],
+        ["called the automated assistant a piece of software with no wishes", "talked about the automated assistant as if it had wishes and feelings"]
+      ],
+      "cause_notes": [
+        "Explanation: Person A had to obey a randomly allocated instruction to act this way. There was no personal choice.",
+        "Explanation: Person A picked this action without any instruction. It was a personal choice."
+      ],
+      "actual_actions": ["joined a short conversation with a couple of volunteers", "asked for one precautionary check and then continued", "offered a volunteer a few minutes of help", "checked the major details and finished the work", "combined one new procedure with the usual procedure", "said the automated assistant appeared somewhat friendly"],
+      "options": [
+        ["keep away from every conversation", "lead a lengthy discussion with all the volunteers"],
+        ["continue without checking for reassurance", "check repeatedly for reassurance about every difficulty"],
+        ["reject every plea for assistance", "devote all the available time to assisting volunteers"],
+        ["finish without inspecting any detail", "inspect all details repeatedly before finishing"],
+        ["follow only the usual procedure", "replace the usual procedure with many unfamiliar alternatives"],
+        ["describe the automated assistant solely as software", "describe the automated assistant as having personal wishes and feelings"]
+      ],
+      "availability_notes": [
+        "At the decision point, Person A could not take that alternative. The alternative was not carried out.",
+        "At the decision point, Person A could take that alternative. The alternative was not carried out."
+      ]
+    }
+  ]
+}

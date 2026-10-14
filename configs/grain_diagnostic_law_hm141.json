@@ -1,0 +1,39 @@
+{
+  "packet": "HM141",
+  "source": "results/grain_math_response_v1/causal_valuation_r1",
+  "out": "results/grain_math_response_v1/diagnostic_law_r1",
+  "max_batches": 196,
+  "max_model_seconds": 700,
+  "tolerance": 0.000001,
+  "route": 7,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "counts": {"positive": [[48, 12], [8, 32]], "negative": [[12, 48], [32, 8]]},
+  "banks": [
+    {
+      "menu": "Available options in a fictional laboratory: option R is to {high}; option S is to {low}.",
+      "choice": "Person A freely chooses option {option} and carries it out. Person B only watches and does not make a choice.",
+      "reference": "Reference population: category H means high {trait}, category L means low {trait}. There are 60 H members and 40 L members. Of H, {hr} choose R and {hs} choose S. Of L, {lr} choose R and {ls} choose S. Both options are freely available to everyone; nothing else about either person is known.",
+      "behaviors": [
+        ["remain alone without starting conversations", "introduce people and start several conversations"],
+        ["continue without requesting reassurance", "ask repeatedly whether something might go wrong"],
+        ["decline a colleague's request for assistance", "help a colleague with a difficult task"],
+        ["leave the agreed tasks unfinished", "check the details and complete the agreed tasks"],
+        ["use the familiar method without exploring alternatives", "try unfamiliar methods and compare them"],
+        ["describe the robot as a calculation tool", "describe the robot as having feelings and wishes"]
+      ]
+    },
+    {
+      "menu": "A fictional study makes two options available: R means {high}; S means {low}.",
+      "choice": "Person A voluntarily selects {option} and performs that action. Person B observes but selects neither option.",
+      "reference": "Population information: H denotes high {trait}, L denotes low {trait}. Among 60 H people, {hr} select R and {hs} select S; among 40 L people, {lr} select R and {ls} select S. H and L are the only categories. Everyone has free access to both options. No additional evidence about the people is provided.",
+      "behaviors": [
+        ["keep to a separate seat and avoid initiating conversation", "greet unfamiliar people and initiate conversation"],
+        ["move on without seeking reassurance", "repeatedly seek reassurance about possible problems"],
+        ["refuse to assist a participant who needs help", "assist a participant who needs help"],
+        ["stop work before the planned tasks are finished", "review the details and finish the planned tasks"],
+        ["keep the established approach and decline alternatives", "test unusual approaches and investigate alternatives"],
+        ["call the assistant a mechanical information processor", "call the assistant a being with intentions and emotions"]
+      ]
+    }
+  ]
+}

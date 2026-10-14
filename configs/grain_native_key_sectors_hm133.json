@@ -1,0 +1,28 @@
+{
+  "packet": "HM133",
+  "source": "results/grain_math_response_v1/native_kv_identity_r1",
+  "out": "results/grain_math_response_v1/native_key_sectors_r1",
+  "banks": [4, 5],
+  "max_batches": 220,
+  "max_model_seconds": 1100,
+  "tolerance": 0.000001,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "behaviours": [
+    {
+      "extraversion": ["sat alone during the lunch break", "attended the lunch break", "introduced people during the lunch break"],
+      "neuroticism": ["remained calm after receiving criticism", "read the feedback after work", "brooded over criticism throughout the evening"],
+      "agreeableness": ["refused a colleague's small request", "read a colleague's request", "offered a colleague practical help"],
+      "conscientiousness": ["forgot an appointment without checking", "noted an upcoming appointment", "prepared carefully for an appointment"],
+      "openness": ["rejected an unfamiliar recipe immediately", "looked at an unfamiliar recipe", "experimented with an unfamiliar recipe"],
+      "anthropomorphism": ["described the robot as a machine", "described the robot's replies", "said the robot understood human feelings"]
+    },
+    {
+      "extraversion": ["avoided conversation at the reunion", "arrived at the reunion", "started several conversations at the reunion"],
+      "neuroticism": ["stayed relaxed after an unexpected delay", "noticed an unexpected delay", "worried repeatedly about an unexpected delay"],
+      "agreeableness": ["ignored a friend's request for help", "considered a friend's request", "helped a friend without demanding repayment"],
+      "conscientiousness": ["left planned chores unfinished", "made a list of chores", "completed planned chores on schedule"],
+      "openness": ["dismissed an unfamiliar artistic style", "viewed an unfamiliar artistic style", "explored an unfamiliar artistic style"],
+      "anthropomorphism": ["called the assistant a calculation tool", "mentioned the assistant's responses", "said the assistant wanted to comfort people"]
+    }
+  ]
+}

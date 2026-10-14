@@ -1,0 +1,16 @@
+{
+  "packet": "HM131",
+  "material": "results/grain_math_response_v1/qualified_transport_r1",
+  "queries": "results/grain_math_response_v1/actor_action_r1",
+  "banks": [0, 2],
+  "bridge": 0,
+  "carrier": 0,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "route_order": [7, 0, 1, 2, 4, 3, 5, 6],
+  "max_batches": 388,
+  "max_model_seconds": 1500,
+  "capture_layer": 17,
+  "isolation_tolerance": 0.000001,
+  "author_amplitude": 0.4,
+  "out": "results/grain_math_response_v1/native_access_r1"
+}
