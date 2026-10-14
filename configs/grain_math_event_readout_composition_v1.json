@@ -1,0 +1,11 @@
+{
+  "packet": "HM56",
+  "parent": "results/grain_math_response_v1/passive_event_composition_r1",
+  "regimes": ["balanced", "alias_focus", "distinct_focus", "other_focus"],
+  "expected_documents": 216,
+  "expected_readouts": 1296,
+  "expected_reused": 216,
+  "max_forwards": 1080,
+  "max_model_seconds": 900,
+  "arithmetic_tolerance": 1e-10
+}

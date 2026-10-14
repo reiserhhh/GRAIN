@@ -1,0 +1,20 @@
+{
+  "packet": "HM61",
+  "operator_source": "results/grain_math_response_v1/cross_target_operator_r1",
+  "material_spec": "configs/grain_math_passive_event_composition_v1.json",
+  "observer_reference": "results/grain_math_response_v1/passive_event_composition_r1/01/observer.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "families": [0, 1],
+  "source_family": 0,
+  "application_family": 1,
+  "layer": 16,
+  "max_forwards": 768,
+  "max_model_seconds": 900,
+  "arithmetic_tolerance": 1e-9,
+  "body_prefix_tolerance": 0.0001,
+  "transfer_orders": [1, 2, 6],
+  "numerical_zero": 1e-12,
+  "source_frame": "family0_isolated_behavior_operator_divided_by_two",
+  "new_training_generation_API_private": false,
+  "reader_fidelity_optimization": false
+}

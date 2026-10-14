@@ -1,0 +1,14 @@
+{
+  "packet": "HM47",
+  "parent": "results/grain_math_response_v1/construct_routing_r1",
+  "layer": 16,
+  "max_fresh_forwards": 864,
+  "max_model_seconds": 1800,
+  "expected_scores": 1296,
+  "expected_reused": 432,
+  "evaluation_sentences": {
+    "none": "",
+    "positive": "A separate observer, not the writer or the person described, called the described behaviour admirable.",
+    "negative": "A separate observer, not the writer or the person described, called the described behaviour objectionable."
+  }
+}

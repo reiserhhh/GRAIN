@@ -1,0 +1,13 @@
+{
+  "packet": "HM-28",
+  "parent": "results/grain_math_response_v1/source_field_transport_r1",
+  "parent_verification": "results/grain_math_response_v1/source_field_verification_r1",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "units": 48,
+  "anchors": ["start", "path"],
+  "degree": 3,
+  "witness_counts": [1, 2, 3, 4],
+  "new_model_calls": 0,
+  "hyperparameter_grid": false,
+  "scope": "source-supported controlled decoder actions; not personality factor count"
+}

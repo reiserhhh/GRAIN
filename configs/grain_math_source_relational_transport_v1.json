@@ -1,0 +1,14 @@
+{
+  "packet": "HM51",
+  "parent": "results/grain_math_response_v1/relational_cut_r1",
+  "layer": 16,
+  "expected_source_captures": 24,
+  "expected_application_receivers": 24,
+  "max_forwards": 168,
+  "max_model_seconds": 600,
+  "random_seed": 5101,
+  "score_replay_tolerance": 0.000001,
+  "random_norm_relative_tolerance": 0.00001,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "arms": ["exact_suffix", "source_full", "source_bound", "source_shared", "wrong_person", "random", "noop"]
+}

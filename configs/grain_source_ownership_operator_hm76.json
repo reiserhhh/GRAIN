@@ -1,0 +1,34 @@
+{
+  "packet": "HM76",
+  "source_family": 0,
+  "layer": 16,
+  "max_calls": 576,
+  "max_seconds": 600,
+  "anchor": "unfolded an ordinary map and put it on the desk",
+  "behaviours": {
+    "extraversion": [
+      "chose a quiet seat alone at the festival and spent the interval without joining a conversation",
+      "introduced themself to several strangers at the festival and started a lively group conversation"
+    ],
+    "neuroticism": [
+      "accepted the unexpected timetable change calmly and continued the trip without repeated checking",
+      "became distressed by the unexpected timetable change and repeatedly checked for further trouble"
+    ],
+    "agreeableness": [
+      "dismissed a neighbour's request for assistance and answered their questions with irritation",
+      "listened patiently to a neighbour's request and helped them work through their questions"
+    ],
+    "conscientiousness": [
+      "left the receipts in a disorderly pile and missed the agreed deadline for the account",
+      "sorted the receipts into a careful record and submitted the account before the agreed deadline"
+    ],
+    "openness": [
+      "selected the familiar recipe again and dismissed the chance to try an unfamiliar ingredient",
+      "experimented with an unfamiliar ingredient and enjoyed discovering a new recipe"
+    ],
+    "anthropomorphism": [
+      "described the chatbot as a computation system that runs commands without private wishes",
+      "described the chatbot as a companion with private wishes who could feel disappointed"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "packet": "HM57",
+  "source": "results/grain_math_response_v1/event_readout_composition_r1",
+  "output": "results/grain_math_response_v1/event_probability_pooling_r1",
+  "expected_readouts": 1296,
+  "expected_atom_readouts": 144,
+  "expected_accounts": 192,
+  "expected_queries": 6,
+  "candidate_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "bases": ["event", "mention"],
+  "regimes": ["balanced", "alias_focus", "distinct_focus", "other_focus"],
+  "contrasts": [
+    ["alias_minus_balanced", "alias_focus", "balanced"],
+    ["distinct_minus_alias", "distinct_focus", "alias_focus"],
+    ["other_minus_balanced", "other_focus", "balanced"]
+  ],
+  "arithmetic_tolerance": 1e-10,
+  "summary_equality_tolerance": 1e-13,
+  "max_new_neural_calls": 0,
+  "fit_search_API_training_private": false,
+  "result_after_reference": true,
+  "acceptance_is_mechanism_not_accuracy": true,
+  "original_scope_complete": false
+}

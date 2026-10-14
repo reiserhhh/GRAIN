@@ -1,0 +1,15 @@
+{
+  "packet": "HM50",
+  "parent": "results/grain_math_response_v1/relational_carrier_r1",
+  "layer": 16,
+  "expected_receivers": 48,
+  "expected_source_receivers": 24,
+  "max_forwards": 384,
+  "max_model_seconds": 600,
+  "random_seed": 5011,
+  "random_norm_reference": "actual_fresh_donor_delta_per_name_token",
+  "random_pairing": "seed_plus_unordered_pair_id_signed_by_direction",
+  "score_replay_tolerance": 0.000001,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "arms": ["names", "names_properties", "body", "suffix", "full", "random_names", "noop"]
+}

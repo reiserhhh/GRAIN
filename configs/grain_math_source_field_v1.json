@@ -1,0 +1,21 @@
+{
+  "packet": "HM-27",
+  "parent": "results/grain_math_response_v1/decoder_paths_r1",
+  "parent_verification": "results/grain_math_response_v1/decoder_paths_verification_r1",
+  "compiled_parent": "results/grain_math_response_v1/hermite_field_r2",
+  "compiled_verification": "results/grain_math_response_v1/hermite_field_verification_r2",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "units": 48,
+  "nodes": 9,
+  "moment_degree": 3,
+  "machine_rank_multiplier": 100,
+  "frame_diagonal": [1.0, 2.0, 3.0, 4.0],
+  "shared_constraint_weights": "equal family mass, token mean error",
+  "methods": ["start_mean", "path_mean", "start_joint", "path_joint", "constant_action", "zero", "compiled_values", "compiled_hermite"],
+  "new_neural_training": false,
+  "model_calls": 0,
+  "api_calls": 0,
+  "private_text_reads": 0,
+  "hyperparameter_grid": false,
+  "scope": "controlled decoder action, not psychological traits"
+}

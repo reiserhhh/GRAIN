@@ -1,0 +1,22 @@
+{
+  "packet": "HM-40",
+  "parent": "results/grain_math_response_v1/readout_curvature_r1",
+  "verification": "results/grain_math_response_v1/readout_curvature_verification_r2/summary.json",
+  "companion_manifest": "results/grain_math_response_v1/readout_curvature_verification_r2/companion_manifest.json",
+  "basis_parent": "results/grain_math_response_v1/target_active_support_r2",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "arms": ["unseen_source", "known_mean"],
+  "wordings": [0, 2],
+  "node": 1,
+  "paths": 96,
+  "source_paths": 48,
+  "rank_multiplier": 100.0,
+  "random_seed": 4007,
+  "maximum_learned_bases": 3,
+  "maximum_random_bases": 3,
+  "maximum_analysis_seconds": 300,
+  "maximum_model_calls": 0,
+  "absolute_tolerance": 1e-8,
+  "new_neural_training": false,
+  "scope": "source compensation family and cold total action coverage, midpoint diagnostic not cold predictor or human validity"
+}

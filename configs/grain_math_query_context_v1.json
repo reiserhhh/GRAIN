@@ -1,0 +1,19 @@
+{
+  "packet": "HM-33",
+  "parent": "results/grain_math_response_v1/query_context_cube_r1",
+  "parent_verification": "results/grain_math_response_v1/query_context_cube_verification_r2",
+  "parent_alias": "results/grain_math_response_v1/query_context_alias_account_r1",
+  "natural_parent": "results/grain_math_response_v1/crossed_wording_context_r1",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "layer": 16,
+  "arms": ["unseen_source", "known_mean"],
+  "radius_relative_span_norm": 0.01,
+  "maximum_forwards": 2016,
+  "maximum_backwards": 384,
+  "maximum_model_seconds": 1800,
+  "new_fits": 0,
+  "api_calls": 0,
+  "private_text_reads": 0,
+  "new_neural_training": false,
+  "scope": "48 finite H/B/P/Q decoder designs with exact early-query state donors; B retains text/system/layout, not a pure topic or human trait"
+}

@@ -1,0 +1,18 @@
+{
+  "packet": "HM53",
+  "parent": "results/grain_math_response_v1/relational_operation_specificity_r1",
+  "layer": 16,
+  "expected_source_rows": 48,
+  "expected_application_rows": 96,
+  "new_source_calls": 24,
+  "new_application_calls": 48,
+  "max_forwards": 648,
+  "max_model_seconds": 600,
+  "random_seed": 5301,
+  "score_replay_tolerance": 0.000001,
+  "random_norm_relative_tolerance": 0.00001,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "classes": ["own", "roster"],
+  "codecs": [1, -1],
+  "arms": ["exact_suffix", "source_forward", "source_reverse", "wrong_person", "random", "noop"]
+}

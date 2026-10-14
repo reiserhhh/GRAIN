@@ -1,0 +1,17 @@
+{
+  "packet": "HM-44",
+  "parent": "results/grain_math_response_v1/readout_curvature_r1",
+  "previous_packet": "results/grain_math_response_v1/dual_route_action_r1",
+  "previous_verification": "results/grain_math_response_v1/dual_route_action_verification_r1/summary.json",
+  "mixed_parent": "results/grain_math_response_v1/mixed_query_path_r2",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "arms": ["unseen_source", "known_mean"],
+  "groups": ["body", "early_query", "remainder"], "wordings": [0,2], "corners": [0,7],
+  "path_ids": [0,7,8,15,16,23,24,31,32,39,40,47,48,55,56,63,64,71,72,79,80,87,88,95],
+  "layer": 16, "cut_layer": 17, "paths": 24, "source_paths": 12,
+  "maximum_forward_calls": 24, "maximum_first_calls": 960, "maximum_second_calls": 0,
+  "maximum_model_seconds": 600, "maximum_analysis_seconds": 180,
+  "absolute_tolerance": 1e-8, "device": "mps", "attention_backend": "eager",
+  "new_neural_training": false,
+  "scope": "24 predeclared two-corner local H/P bilinear actions; inherited application factors diagnostic, not cold prediction, all8cell transport or HM42 coordinate acceptance"
+}

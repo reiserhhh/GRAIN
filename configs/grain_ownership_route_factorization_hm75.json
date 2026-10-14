@@ -1,0 +1,14 @@
+{
+  "packet": "HM75",
+  "parent": "results/grain_math_response_v1/causal_ownership_sectors_r1",
+  "layer": 16,
+  "random_seed": 750103,
+  "max_forwards": 3234,
+  "max_model_seconds": 1800,
+  "arms": ["body_even", "suffix_even", "both_even", "body_even_suffix_remove_both", "random_body", "random_body_suffix_remove_both"],
+  "reuse_native_and_suffix_remove_both": true,
+  "noop_per_cube": 1,
+  "new_public_material": false,
+  "human_truth": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,17 @@
+{
+  "packet": "HM60",
+  "source": "results/grain_math_response_v1/event_readout_composition_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "regimes": ["balanced", "alias_focus", "distinct_focus", "other_focus"],
+  "units": ["score", "log_odds"],
+  "expected_readouts": 1296,
+  "expected_matrices_per_unit": 50,
+  "expected_entries": 3600,
+  "expected_rectangles": 22500,
+  "expected_permutations": 72000,
+  "new_forwards": 0,
+  "fit_or_select_predictor": false,
+  "arithmetic_tolerance": 1e-10,
+  "assignment_tie_tolerance": 1e-12,
+  "numerical_zero_norm": 1e-12
+}

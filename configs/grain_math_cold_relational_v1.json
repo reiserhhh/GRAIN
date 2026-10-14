@@ -1,0 +1,32 @@
+{
+  "packet": "HM71",
+  "source_family": 0,
+  "forms": ["paraphrase", "reordered"],
+  "anchor": "opened an ordinary notebook that was lying on a table",
+  "behaviours": {
+    "extraversion": [
+      "kept away from the other volunteers at the break and refrained from conversation",
+      "went over to the other volunteers at the break and enthusiastically talked with them"
+    ],
+    "neuroticism": [
+      "remained at ease while awaiting an ordinary message and did not keep imagining problems",
+      "grew worried while awaiting an ordinary message and kept imagining problems"
+    ],
+    "agreeableness": [
+      "treated a new arrival discourteously and would not give them helpful directions",
+      "greeted a new arrival warmly and willingly gave them helpful directions"
+    ],
+    "conscientiousness": [
+      "neglected to get the materials ready and gave up the promised work before it was complete",
+      "got the materials ready with care and finished the promised work as promised"
+    ],
+    "openness": [
+      "dismissed a new style of music before hearing it and wanted only well-known sounds",
+      "heard a new style of music with interest and took pleasure in unfamiliar sounds"
+    ],
+    "anthropomorphism": [
+      "spoke of the voice assistant as executing instructions with no emotions or purposes of its own",
+      "spoke of the voice assistant as experiencing loneliness and desiring friendly companionship"
+    ]
+  }
+}

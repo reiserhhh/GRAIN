@@ -1,0 +1,19 @@
+{
+  "packet": "HM-31",
+  "parent": "results/grain_math_response_v1/crossed_wording_context_r1",
+  "parent_verification": "results/grain_math_response_v1/crossed_wording_context_verification_r1",
+  "context_pairs": [[0, 1], [2, 3], [4, 5], [6, 7]],
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "wordings": 4,
+  "layer": 16,
+  "arms": ["unseen_source", "known_mean"],
+  "radius_relative_span_norm": 0.01,
+  "maximum_forwards": 480,
+  "maximum_backwards": 96,
+  "maximum_model_seconds": 1800,
+  "new_fits": 0,
+  "api_calls": 0,
+  "private_text_reads": 0,
+  "new_neural_training": false,
+  "scope": "48 finite decoder recombinations; identical H and delta across receivers, not natural authors or psychological validity"
+}

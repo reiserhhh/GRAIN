@@ -1,0 +1,21 @@
+{
+  "packet": "HM59",
+  "source": "results/grain_math_response_v1/event_relation_renaming_r1",
+  "behaviour_reference": "results/grain_math_response_v1/passive_event_composition_r1/00/manifest.json",
+  "layer": 16,
+  "expected_readouts": 384,
+  "expected_pairs": 192,
+  "expected_actor_interactions": 96,
+  "expected_atom_readouts": 96,
+  "max_forwards": 384,
+  "max_model_seconds": 900,
+  "arithmetic_tolerance": 1e-10,
+  "declaration_actors": ["A", "B"],
+  "syntaxes": [0, 1],
+  "orders": [0, 1],
+  "schemes": ["focus_alias", "companion_alias"],
+  "action_orders": [["K1", "K2", "K3", "K4"], ["K4", "K3", "K2", "K1"]],
+  "capture": ["declaration", "suffix", "endpoint"],
+  "fit_patch_generation_API_private_training": false,
+  "original_scope_complete": false
+}

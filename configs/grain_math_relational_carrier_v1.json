@@ -1,0 +1,13 @@
+{
+  "packet": "HM49",
+  "parent": "results/grain_math_response_v1/relational_appraisal_r1",
+  "layer": 16,
+  "expected_receivers": 48,
+  "expected_source_receivers": 24,
+  "max_forwards": 384,
+  "max_model_seconds": 600,
+  "random_seed": 4901,
+  "random_norm_reference": "source_mean_per_property_vector",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "arms": ["high", "low", "both", "body_endpoint", "query_end", "source_mean", "random", "noop"]
+}

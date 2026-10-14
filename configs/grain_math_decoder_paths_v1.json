@@ -1,0 +1,19 @@
+{
+  "packet": "HM-25",
+  "parent_packet": "results/grain_math_response_v1/decoder_fibers_r2",
+  "parent_verification": "results/grain_math_response_v1/decoder_fibers_verification_r2",
+  "units": 48,
+  "layer": 16,
+  "path_nodes": [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1.0],
+  "maximum_calls": 432,
+  "maximum_backward_calls": 864,
+  "maximum_stage_seconds": 1800,
+  "selection": "all48 HM24 references; no selection by response",
+  "path": "linear A_property hidden-state donor interpolation; receiver context fixed",
+  "quadrature": "Simpson8 primary; Simpson4 and trapezoid8 diagnostics on same fixed nodes",
+  "gradient_channels": ["native", "frozen_reference_readout"],
+  "new_neural_training": false,
+  "api_calls": 0,
+  "private_text_reads": 0,
+  "accuracy_grid": false
+}

@@ -1,0 +1,16 @@
+{
+  "packet": "HM62",
+  "source": "results/grain_math_response_v1/heterogeneous_evidence_cube_r1",
+  "families": [0, 1],
+  "units": ["score", "log_odds"],
+  "orders": [1, 2, 3, 6],
+  "parity_strength": 0.5,
+  "reference": "uniform probability on all 64 observed behavior configurations",
+  "source_witness_family": 0,
+  "max_linear_programs": 192,
+  "max_seconds": 120,
+  "tolerance": 1e-8,
+  "new_model_calls": 0,
+  "new_human_personality_accuracy": false,
+  "scope": "exact finite distribution-to-query contraction and moment identification sets; simulated text-distribution profiles, not real authors or LLM whole-history judgments"
+}

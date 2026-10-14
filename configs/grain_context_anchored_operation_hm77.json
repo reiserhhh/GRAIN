@@ -1,0 +1,34 @@
+{
+  "packet": "HM77",
+  "source_family": 0,
+  "layer": 16,
+  "max_calls": 576,
+  "max_seconds": 600,
+  "anchor": "moved a sealed envelope from the chair to the shelf",
+  "behaviours": {
+    "extraversion": [
+      "stayed on the edge of the club meeting and avoided introducing themself to the other attendees",
+      "greeted the other attendees at the club meeting and eagerly brought them into a group discussion"
+    ],
+    "neuroticism": [
+      "remained composed after receiving an unexpected message and went on with the afternoon activity",
+      "felt unsettled after receiving an unexpected message and kept imagining that something bad would happen"
+    ],
+    "agreeableness": [
+      "refused a teammate's small request and mocked the difficulty that the teammate had described",
+      "considered a teammate's small request kindly and offered patient help with the described difficulty"
+    ],
+    "conscientiousness": [
+      "forgot several steps of the promised preparation and arrived without the required materials",
+      "checked every step of the promised preparation and arrived with all the required materials"
+    ],
+    "openness": [
+      "insisted on the usual exhibition route and rejected a chance to explore an unfamiliar display",
+      "explored an unfamiliar exhibition display and welcomed the chance to consider a new perspective"
+    ],
+    "anthropomorphism": [
+      "regarded the digital assistant as a set of programmed operations without feelings or intentions",
+      "regarded the digital assistant as a social partner with feelings and personal intentions"
+    ]
+  }
+}

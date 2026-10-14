@@ -1,0 +1,20 @@
+{
+  "packet": "HM-38",
+  "parent": "results/grain_math_response_v1/conditional_active_reading_r1",
+  "verification": "results/grain_math_response_v1/conditional_active_reading_verification_r1/summary.json",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "arms": ["unseen_source", "known_mean"],
+  "wordings": [0, 2],
+  "nodes": [0.0, 0.5, 1.0],
+  "rules": ["simpson", "trapezoid"],
+  "source_law": "full",
+  "node_pair_rows": 288,
+  "integral_pair_rows": 192,
+  "wording_node_rows": 576,
+  "wording_integral_rows": 384,
+  "maximum_analysis_seconds": 120,
+  "absolute_tolerance": 1e-8,
+  "new_fits": 0,
+  "new_model_calls": 0,
+  "scope": "result-after decomposition of actual reader coefficients and paired inputs, not fresh text or an independently predictive personality score"
+}
