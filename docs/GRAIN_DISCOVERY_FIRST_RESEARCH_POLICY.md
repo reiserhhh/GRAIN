@@ -27,6 +27,17 @@ continuation. Do not automatically continue P1U or expand the synthetic P1 serie
 
 ## Reporting and minimum correctness
 
+2026-10-10 operational clarification: observer precision is an instrument
+property, not a theory milestone. Before an optimization packet, state the
+competing mechanisms, the observation that currently cannot distinguish them,
+the smallest instrument change needed, and the scientific decision that each
+outcome changes. Stop when that distinction is available or when the result
+exposes an identification/representation gap. Do not continue rank, prompt,
+layer or teacher-fidelity grids to make an established control look better.
+Use established tools directly; identify empirical GRAIN findings separately
+from borrowed mathematics and from a new mathematical theorem. Source-exact
+fits, more tests and smaller residuals do not by themselves satisfy this rule.
+
 Lead with the finding, effect size, and what it enables. Describe the observed
 population and method directly. Avoid repetitive deficit-first wording such as
 "cannot show", "not yet proven", or "not stable enough" as the main conclusion.

@@ -17,15 +17,28 @@ GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然�
 公开迁移范围记录于 [v1.1.0 发布说明](docs/RELEASE_NOTES_V110.md)。
 标签门禁修正记录于 [v1.1.1](docs/RELEASE_NOTES_V111.md)。
 
-## 当前规划检查点（2026-09-12）
+## 当前执行检查点（2026-09-12）
 
-先读[共同审订的终极研究计划V4](docs/GRAIN_FOUNDATIONAL_MASTER_PLAN_V4.md)及
-[Codex/Claude四轮研讨记录](docs/GRAIN_FOUNDATION_SEMINAR_SYNTHESIS_20260912.md)。
+用户已批准[先行研究统合I0-I4](docs/GRAIN_PREDECESSOR_INTEGRATION_STAGE_V1.md)。
+[第一批执行报告](reports/grain_vector_mechanisms/PREDECESSOR_INTEGRATION_REPORT_V1.md)
+记录624位来源作者、8种局部参照、标签盲结构测试及标准过程/共享模型。
+[方法卡](docs/GRAIN_PREDECESSOR_METHOD_CARDS_V1.md)逐项区分继承、适配与开放缺口。
+E5适配器的0.6条目阈值没有筛选作用，校准先于融合；不据此否定原生SIMPA。
+本阶段继续执行，但不恢复旧队列、不打开锁箱、不用MEPS训练。
+
+## 授权前的规划记录（2026-09-12）
+
+先读[科学目标与研究纲领V5](docs/GRAIN_SCIENTIFIC_TARGET_AND_RESEARCH_PROGRAM_V5.md)及
+[新增四轮Codex/Claude研讨](docs/GRAIN_BREAKTHROUGH_SEMINAR_SYNTHESIS_20260912.md)。
 唯一论文目标是可复用的测量制作方法，而不是完成一份量表或一个LLM读取器。
 验收重点是同一构造规则能否在不同观察情境中产生可解释、有心理/行为效度的
-局部测量示范。主线为目标相关设计规则、两情境制作、状态/解释与独立复建；
-明确区分相同制作法、构念可比与数字等值。V3/V2保留背景，V1为实施参考。
-计划已共同审订，实验继续暂停，等待用户批准执行。
+局部测量示范。候选突破是有心理关联的个人×情境响应结构，以及它对证据和
+观察设计改变的事前预测；保留有意义的交互，不为了不变性抹去差异。
+[来源档案](docs/GRAIN_BREAKTHROUGH_SOURCE_DOSSIER_20260912.md)比较了选择/交互IRT、
+语义测量与数学工具。GRAIN本身仍处早期，完善或重构它也是主线，不把现版与
+手头数据当作边界。先做G0/G1贡献规格和机制世界，再决定架构与局部制作；
+明确区分相同制作法、构念可比与数字等值。V4及更早计划保留背景。
+本轮已复审用户校正，但目标共识不是新颖性或突破已获证明，实验继续暂停。
 
 执行暂停于第79轮/NEXT90完成后，NEXT91尚未运行。本轮按用户要求进行全项目
 回顾和终局规划，没有新实验。请先读[系统全貌与开发史](docs/GRAIN_SYSTEM_RETROSPECTIVE_AND_ARCHITECTURE_20260911.md)、
