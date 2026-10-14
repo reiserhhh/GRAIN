@@ -1,0 +1,19 @@
+{
+  "packet": "HM270",
+  "source_parent": "results/grain_math_response_v1/event_anchor_field_r1",
+  "joint_parent": "results/grain_math_response_v1/author_join_r1",
+  "vector_parent": "results/grain_math_response_v1/companion_observation_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "corners": [[0, 0], [0, 1], [1, 0], [1, 1]],
+  "spaces": ["GRAIN15", "E5"],
+  "source_views": ["pooled_comments", "registered_windows"],
+  "assignments": ["actual", "fixed_null"],
+  "prior": "empirical full-profile prevalence, authors uniform within profile",
+  "primary": "signed same-event mixed SOURCE actions versus both orders of the frozen balanced behavioral interaction; all 25 cross-target contacts",
+  "competitors": ["normalization of profile-independent evidence", "extra shared-author evidence relation", "reader order/coherence structure absent from the source contract"],
+  "new_capability": "cold dyadic edit separates profile-normalization interaction from shared-source-author linkage on identical registered events and singleton marginals",
+  "compute_seconds_cap": 180,
+  "fit_parameter_search_or_new_model": false,
+  "original_scope_complete": false
+}

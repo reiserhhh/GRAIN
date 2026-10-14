@@ -1,0 +1,17 @@
+{
+  "packet": "HM271",
+  "parent": "results/grain_math_response_v1/author_join_r1",
+  "source_parent": "results/grain_math_response_v1/linked_join_r1",
+  "basis_parent": "results/grain_math_response_v1/behavior_predictive_r1",
+  "units": 24,
+  "orders": 2,
+  "corners": 4,
+  "items": 50,
+  "batch_size": 8,
+  "max_model_seconds": 1200,
+  "native_tolerance": 0.001,
+  "operation": "all-layer first-evidence to later-prefix encoding cut; both evidence banks remain visible to every native suffix/candidate read",
+  "primary": "all signed source linkage-correction contacts with isolated behavior interaction and native-minus-isolated increment, both native orders",
+  "no_fit_new_generation_API_training_private_or_accuracy_search": true,
+  "original_scope_complete": false
+}

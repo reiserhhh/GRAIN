@@ -1,0 +1,21 @@
+{
+  "packet": "HM273",
+  "source_parent": "results/grain_math_response_v1/event_anchor_field_r1",
+  "chronology_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "identity_parent": "results/grain_math_response_v1/author_diagonal_r1",
+  "panel_parent": "results/grain_math_response_v1/companion_observation_r1",
+  "join_parent": "results/grain_math_response_v1/linked_join_r1",
+  "reader_parent": "results/grain_math_response_v1/evidence_allocation_logits_r1",
+  "source_authors": 386,
+  "source_windows": [[0, 12], [12, 24]],
+  "panel_authors": 24,
+  "spaces": ["E5", "GRAIN15"],
+  "assignments": ["actual", "fixed_within_bank_profile_relink"],
+  "laws": ["observed_pair", "within_author_product", "within_profile_product", "condition_matched_pair_relink"],
+  "primary": "cross-source-bank signed recurrence of observed-pair minus within-author-product target fields on every qualified panel adjacent pair; all five targets and fixed profile relink retained",
+  "secondary": "all same-HM263-event cross-target contacts with HM271/HM272 readers; source adjacency and nonadjacent reader-dyad regimes explicitly differ",
+  "variance": 0.05525111588037168,
+  "compute_seconds_cap": 180,
+  "no_fit_grid_new_model_API_private_training_or_held_label_access": true,
+  "original_scope_complete": false
+}

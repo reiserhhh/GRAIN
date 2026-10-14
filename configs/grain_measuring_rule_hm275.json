@@ -1,0 +1,12 @@
+{
+  "packet": "HM275",
+  "source_parent": "results/grain_math_response_v1/source_event_coupling_r1",
+  "source_authors": 386,
+  "panel_pairs": 528,
+  "world_accuracy": 0.7,
+  "world_prior": 0.5,
+  "world_rhos": [0.0, 0.5, -0.25],
+  "max_compute_seconds": 120,
+  "no_new_neural_API_private_training_labels_or_fit": true,
+  "original_scope_complete": false
+}

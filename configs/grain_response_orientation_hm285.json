@@ -1,0 +1,18 @@
+{
+  "version": "HM285-v1",
+  "parent": "results/grain_math_response_v1/output_observability_r1",
+  "output": "results/grain_math_response_v1/response_orientation_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "pairs": 48,
+  "targets": ["E", "N", "A", "C", "O"],
+  "source_spaces": ["E5", "GRAIN15"],
+  "references": ["bank0", "bank1", "pooled"],
+  "operations": ["usual_author", "sample_expression"],
+  "channels": ["full", "binary_answer", "alphabet_routing", "other_vocabulary"],
+  "primary": "GRAIN15/pooled/usual_author/within_configuration/full/same-target",
+  "old_assignments_per_target": 199,
+  "seconds_cap": 60,
+  "no_new_neural_API_private_training": true,
+  "original_scope_complete": false
+}

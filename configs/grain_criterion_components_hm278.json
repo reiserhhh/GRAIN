@@ -1,0 +1,15 @@
+{
+  "packet": "HM278",
+  "parent": "results/grain_math_response_v1/author_pair_criterion_r1",
+  "source_parent": "results/grain_math_response_v1/source_event_coupling_r1",
+  "output": "results/grain_math_response_v1/criterion_components_r1",
+  "spaces": ["E5", "GRAIN15"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "permutations_per_target": 199,
+  "seed": 278,
+  "max_seconds": 120,
+  "variance": 0.05525111588037168,
+  "primary": "all22 within-configuration SOURCE criterion score times held criterion departure",
+  "multiplicity": "Holm over two spaces times five conditional target assignments",
+  "original_scope_complete": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "HM-283",
+  "parent": "results/grain_math_response_v1/conditional_memory_r1",
+  "references": ["bank0", "bank1", "pooled"],
+  "models": ["fresh", "full", "shared_actual_profile", "shared_permuted_profile"],
+  "primary_reference": "pooled",
+  "primary_contrast": "actual_profile_minus_permuted_profile",
+  "source_prior": "unchanged_uniform_source_addresses",
+  "episode_operation": "resample_source_address_within_fixed_shared_profile_at_boundary",
+  "compute_seconds_cap": 120,
+  "seed": 283,
+  "bootstrap_authors": 999,
+  "parameter_search": false,
+  "new_neural_API_private_training": 0,
+  "original_scope_complete": false
+}

@@ -1,0 +1,17 @@
+{
+  "id": "HM-282",
+  "parent": "results/grain_math_response_v1/author_belief_r1/runtime_io_recovery_r1",
+  "references": ["bank0", "bank1", "pooled"],
+  "contracts": ["none", "full", "condition", "expression", "expression_given_condition", "condition_given_expression"],
+  "states": 8,
+  "source_authors": 386,
+  "held_authors": 120,
+  "windows": [18, 18],
+  "compute_seconds_cap": 180,
+  "seed": 282,
+  "bootstrap_authors": 999,
+  "kernel_learning": false,
+  "model_selection": false,
+  "new_neural_API_private_training": 0,
+  "original_scope_complete": false
+}

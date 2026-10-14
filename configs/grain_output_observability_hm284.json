@@ -1,0 +1,21 @@
+{
+  "id": "HM-284",
+  "reader_parent": "results/grain_math_response_v1/observer_operation_r1/mps_cpu64_recovery_r1",
+  "criterion_parent": "results/grain_math_response_v1/criterion_reader_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "pairs": 48,
+  "operations": ["usual_author", "sample_expression"],
+  "contexts": 4,
+  "items": 50,
+  "hidden_dimension": 1536,
+  "vocabulary": 151936,
+  "vocabulary_block": 4096,
+  "reference": "uniform mixture of all100 observed empty-evidence item/operation vocabulary laws",
+  "compute_seconds_cap": 300,
+  "primary": "GRAIN15/pooled/usual_author/within_configuration/full_Fisher/distinct_author/same_target,all5",
+  "conditional_assignments": 199,
+  "parameter_search": false,
+  "new_transformer_API_private_training": 0,
+  "original_scope_complete": false
+}

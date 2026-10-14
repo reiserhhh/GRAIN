@@ -1,0 +1,16 @@
+{
+  "packet": "HM272-r2-implementation-recovery",
+  "parent": "results/grain_math_response_v1/join_encoding_r1",
+  "source_parent": "results/grain_math_response_v1/linked_join_r1",
+  "basis_parent": "results/grain_math_response_v1/behavior_predictive_r1",
+  "batch_size": 8,
+  "max_model_seconds": 1100,
+  "native_tolerance": 0.001,
+  "event_share": 0.5,
+  "operation": "identical equal-bank reading contract, conditional bank laws computed from finite raw logits; native current-query combined mass and outside weights retained",
+  "primary": "same HM272 source-linked mechanism decision, no new winner criterion",
+  "failed_primary": "results/grain_math_response_v1/evidence_allocation_r1",
+  "failure_recovery": "normalized mass inversion undefined at 8 valid native row/head positions in first batch; raw finite logits specify the conditional law without epsilon/dtype tuning/imputation; primary immutable",
+  "no_fit_new_generation_API_training_private_or_accuracy_search": true,
+  "original_scope_complete": false
+}

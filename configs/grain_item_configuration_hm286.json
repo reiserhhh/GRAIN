@@ -1,0 +1,21 @@
+{
+  "id": "HM286",
+  "parent": "results/grain_math_response_v1/output_observability_r1",
+  "reader": "results/grain_math_response_v1/observer_operation_r1/mps_cpu64_recovery_r1",
+  "output": "results/grain_math_response_v1/item_configuration_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "pairs": 48,
+  "items": 50,
+  "targets": ["E", "N", "A", "C", "O"],
+  "spaces": ["E5", "GRAIN15"],
+  "references": ["bank0", "bank1", "pooled"],
+  "operations": ["usual_author", "sample_expression"],
+  "response_parts": ["full_item", "keyed_line", "item_shape"],
+  "source_components": ["total", "composition", "within_configuration"],
+  "primary": "GRAIN15/pooled/usual_author/within_configuration/item_shape/distinct_author/same_target",
+  "old_assignments_per_target": 199,
+  "seconds_cap": 60,
+  "new_neural_API_private_training": 0,
+  "original_scope_complete": false
+}

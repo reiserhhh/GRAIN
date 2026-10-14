@@ -1,0 +1,20 @@
+{
+  "packet": "HM277",
+  "source_parent": "results/grain_math_response_v1/source_event_coupling_r1",
+  "source_authors": 386,
+  "pairs_per_author": 22,
+  "variance": 0.05525111588037168,
+  "spaces": ["E5", "GRAIN15"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "aggregation": "arithmetic_mean_of_pair_readings_not_independent_likelihood_product",
+  "primary": "within_bank_centered_author_correlation_of_F_minus_J_all22_pairs",
+  "primary_family_size": 10,
+  "permutations": 199,
+  "bootstrap": 999,
+  "seed": 27720261014,
+  "author_block": 4,
+  "max_seconds": 240,
+  "allowed": "existing_public_numeric_source_cache_only",
+  "no_model_selection": true,
+  "original_scope_complete": false
+}

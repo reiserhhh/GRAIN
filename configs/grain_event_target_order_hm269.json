@@ -1,0 +1,21 @@
+{
+  "packet": "HM269",
+  "parent": "results/grain_math_response_v1/event_anchor_field_r1",
+  "cut_parent": "results/grain_math_response_v1/event_trait_action_r1/source_law.json",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "uses": 48,
+  "targets": ["E", "N", "A", "C", "O"],
+  "spaces": ["GRAIN15", "E5"],
+  "families": ["window_mean", "comment_mixture"],
+  "assignments": ["actual", "fixed_null"],
+  "groups": ["pooled", "window0", "window1"],
+  "observation": "same own-minus-foreign evidence and frozen balanced neutral model behavior",
+  "support": "all distinct SOURCE anchor values, ties merged exactly; no cut selection",
+  "primary": "whole-support ordered contact for all five matched targets and both uses; retain all 25 cross contacts",
+  "competitors": ["one common target direction under every increasing valuation", "redistribution with sign depending on target valuation"],
+  "new_capability": "cold vector edit returns whole SOURCE-target action and exact increasing-valuation interval instead of selecting a scalar reader",
+  "compute_seconds_cap": 180,
+  "fit_parameter_search_or_new_model": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,20 @@
+{
+  "packet": "HM276",
+  "output": "results/grain_math_response_v1/behavior_coupling_r1",
+  "alphabet": "results/grain_math_response_v1/relative_choice_r1/dictionary.npz",
+  "frame": ["fixed_opportunity_A", "fixed_opportunity_B"],
+  "z_accuracy": 0.75,
+  "w_accuracy": 0.8,
+  "behavior_low": 0.3,
+  "behavior_slope": 0.4,
+  "source_priors": [[0.4, 0.1, 0.2, 0.3], [0.1, 0.4, 0.3, 0.2]],
+  "criterion_laws": [
+    {"id": "paired_action_protocol_A", "conditional_joint_adjustment": 0.04},
+    {"id": "paired_action_protocol_B", "conditional_joint_adjustment": -0.08}
+  ],
+  "author_joint_parameters": [-0.6, 0.0, 0.6],
+  "cpu_seconds_cap": 60,
+  "new_neural_API_private_training": 0,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,21 @@
+{
+  "packet": "HM280",
+  "reader_parent": "results/grain_math_response_v1/same_regime_reader_r1/cache_export_recovery_r1",
+  "criterion_parent": "results/grain_math_response_v1/criterion_reader_r1",
+  "operations": ["usual_author", "sample_expression"],
+  "authors": 24,
+  "pairs": 48,
+  "contexts": 4,
+  "items": 50,
+  "families": 386,
+  "inquiries": 19300,
+  "device": "mps",
+  "dtype": "float32",
+  "batch_size": 8,
+  "max_input_tokens": 768,
+  "max_model_seconds": 1500,
+  "native_tolerance": 0.001,
+  "primary": "same-evidence operation difference in joint binary-item response and all SOURCE target contacts; retain all signs without maximizing agreement",
+  "no_new_model_API_private_training_application_labels_fit_or_grid": true,
+  "original_scope_complete": false
+}

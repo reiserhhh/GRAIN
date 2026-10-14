@@ -1,0 +1,13 @@
+{
+  "packet": "HM279",
+  "source_parent": "results/grain_math_response_v1/source_event_coupling_r1",
+  "criterion_parent": "results/grain_math_response_v1/criterion_components_r1",
+  "reader_parent": "results/grain_math_response_v1/same_regime_reader_r1/cache_export_recovery_r1",
+  "output": "results/grain_math_response_v1/criterion_reader_r1",
+  "max_seconds": 120,
+  "assignments": 199,
+  "primary": "pooled48, balanced complete-sentence joint reader, within-configuration source F-J, all2spaces x5matching targets",
+  "all_components_targets_banks_windows_scales_retained": true,
+  "no_new_neural_API_private_training_or_parameter_search": true,
+  "original_scope_complete": false
+}
