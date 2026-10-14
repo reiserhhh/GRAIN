@@ -1,0 +1,23 @@
+{
+  "id": "F16-R01-explicit-target-clock-v1",
+  "world": "core",
+  "seeds": [20260915, 20260916, 20260917],
+  "targets": ["T2", "T3"],
+  "author_indices": [0, 199],
+  "target_time": 47,
+  "cases": ["full", "internal_missing", "trailing_missing", "combined_missing", "all_missing", "only_first"],
+  "internal_excluded_times": [12, 13, 14, 15, 16, 17, 18, 19],
+  "trailing_excluded_times": [44, 45, 46, 47],
+  "source_bootstraps": 200,
+  "personal_draws": 200,
+  "dense_audit_source_indices": [0, 100, 199],
+  "atol": 1e-10,
+  "rtol": 1e-8,
+  "design": "Interface and mathematical target-clock audit, not a new coverage or personality accuracy study. Six fixed authors, repeated across two targets and six observation masks.",
+  "qualification_scope": "Masks test the scoring consequence of absent or previously disqualified numeric records, not a natural-language eligibility classifier.",
+  "source_refits": false,
+  "truth_access": false,
+  "failure_rule": "Retain unsupported personal/source results and do not renormalize the mixture; no post-result repair of mask, threshold or model.",
+  "full_prefix_rule": "Compare against archived complete-prefix score, variance and source normalization under original tolerance.",
+  "cold_rule": "Each of the 72 complete result objects must match a separate-process replay exactly."
+}

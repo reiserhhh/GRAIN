@@ -1,0 +1,16 @@
+{
+  "target": "T3",
+  "seeds": [20260915, 20260916, 20260917],
+  "world": "core",
+  "prefix": 48,
+  "application_authors_per_seed": 200,
+  "future_conditions": [1, -1, 1, -1],
+  "source_bootstraps": 200,
+  "personal_draws": 200,
+  "scoring": "Frozen independent-agent source bundles only; full warm and isolated-process cold scoring; never provide future observations or latent truth to scorer.",
+  "evaluation": "After all scores freeze, reconstruct planned future y_k as archived y_k + true_b*(planned_z_k-archived_z_k), retaining archived state and observation noise. This is an exact structural intervention only in the specified additive F05 core simulator, whose state transition and noise are unaffected by z. It is not a natural-text causal adjustment.",
+  "comparison": "Report correct planned-outcome metrics, and separately show the mismatched historical-future metric as a diagnostic. Do not select or refit a scorer from either outcome.",
+  "numeric_audit": "Every saved mixture and source normalization; first and last application author and source indices 0,100,199: all 200 parameter draws checked by dense joint past/future Gaussian conditioning. No claim of independent MAP optimization.",
+  "acceptance": "Exact warm/cold objects and <=1e-10 numerical discrepancy. Per-seed nominal95 interval coverage and Wilson95 interval containing .95 reported without threshold or width changes. Unsupported cases retained and block full acceptance.",
+  "scope": "Historical synthetic core source/application; new target-specific scoring integration, not human validity or prospective preregistration. Leave original independent build artifacts untouched."
+}

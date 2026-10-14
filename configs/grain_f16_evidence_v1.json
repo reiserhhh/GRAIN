@@ -1,0 +1,32 @@
+{
+  "id": "F16-R02-numeric-evidence-v1",
+  "scope": "SIM_ONLY; explicit qualification metadata, not language inference",
+  "seed": 20260915,
+  "targets": ["T1", "T2", "T3"],
+  "source_bootstraps": 200,
+  "personal_draws": 200,
+  "prefix_by_target": {"T1": 32, "T2": 48, "T3": 48},
+  "cases": [
+    {"name": "full_plain", "category": "full", "author_index": 0},
+    {"name": "full_history", "category": "full", "author_index": 199},
+    {"name": "missing_plus", "category": "missing", "author_index": 0},
+    {"name": "missing_minus", "category": "missing", "author_index": 199},
+    {"name": "selection_high", "category": "state_selection", "author_index": 0},
+    {"name": "late_offset", "category": "state_selection", "author_index": 199},
+    {"name": "quoted_tail", "category": "ineligible", "author_index": 0},
+    {"name": "hypothetical_all", "category": "ineligible", "author_index": 199}
+  ],
+  "tail_count": 4,
+  "correction_delta": 0.25,
+  "late_offset_delta": 1.0,
+  "selection_threshold": 0.0,
+  "dense_audit_source_indices": [0, 100, 199],
+  "atol": 1e-10,
+  "rtol": 1e-8,
+  "workers": 3,
+  "expected_cards": 24,
+  "selection_law": "Discard y<0 as declared outcome-dependent availability; retain full opportunity addresses. No ignorability or MNAR repair claim.",
+  "offset_law": "Add1 to the last4 reports as a controlled observation-channel edit, not proof of a true state change.",
+  "qualification_law": "Actual and explicitly corrected actual(negated) are eligible;quoted/hypothetical are absent observations,not0. Unknown remains unresolved.",
+  "success": "24actual cards with frozen target-matched scores,full source/personal integration,cold replay,history and observation-space checks. No accuracy or new calibration gate."
+}

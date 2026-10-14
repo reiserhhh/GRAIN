@@ -1,0 +1,31 @@
+{
+  "status": "frozen_before_new_construction_not_historical_preregistration",
+  "world": "core",
+  "seeds": [20260915, 20260916, 20260917],
+  "source_authors": 300,
+  "application_authors": 200,
+  "reference_prefix": 48,
+  "application_prefix": 48,
+  "source_bootstraps": 200,
+  "personal_draws": 200,
+  "normal_rule": "common frozen standard-normal array for all authors within target/source replicate; SeedSequence([seed,16,target_number,bootstrap]); numerical integration randomness is not author information",
+  "T2": {
+    "target_id": "T2",
+    "object_class": "dynamic_state",
+    "target": "E[s_T | observed prefix, frozen source model ensemble]",
+    "unit": "latent response units",
+    "approximation": "MAP plus central-Hessian Gaussian Laplace personal parameters; Gaussian moment interval; empirical source bootstrap mixture",
+    "reference": "mean and ddof=1 standard deviation of the same scoring function on 300 source prefixes",
+    "unsupported": "retain MAP or curvature failures; never drop and renormalize source weights"
+  },
+  "T3": {
+    "target_id": "T3",
+    "object_class": "predictive_state",
+    "target": "E[mean(y_T+1:T+4) | observed prefix, z_plan]",
+    "future_conditions": [1,-1,1,-1],
+    "unit": "future observation units",
+    "independent_builder": "separate agent receives only brief, mathematical handbook, source data and bundle schema; no T1/T2 implementation",
+    "reference": "same target scorer on source prefixes; no application normalization"
+  },
+  "limits": ["SIM only", "no external API or neural training", "no private text or questionnaire access", "no lockbox or publishing", "do not inherit earlier F13 interval calibration automatically"]
+}
