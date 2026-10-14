@@ -1,0 +1,18 @@
+{
+  "packet": "HM-04",
+  "families_per_target": 8,
+  "styles": ["sentences", "conjoined"],
+  "all_pair_role_cells": true,
+  "source_packet": "results/grain_math_response_v1/binding_r1",
+  "frozen_source_models": true,
+  "new_fitting": false,
+  "qualification_midpoint": 0,
+  "alias_policy": "supplied event identity, retain first observation; do not infer same event from equal words",
+  "inherited_cases": ["shared_positive", "local_negative", "shared_modality", "ambiguous_negation"],
+  "bootstrap_draws": 1000,
+  "bootstrap_seed": 4108,
+  "test_selection": false,
+  "api_calls": 0,
+  "private_reads": 0,
+  "new_neural_training": 0
+}

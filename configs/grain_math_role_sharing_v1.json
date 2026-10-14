@@ -1,0 +1,15 @@
+{
+  "packet": "HM-05",
+  "source_packet": "results/grain_math_response_v1/binding_r1",
+  "application_packet": "results/grain_math_response_v1/local_roles_r1",
+  "question": "Do polarity, ownership and actuality observations transport between two independently source-fitted action targets?",
+  "arms": ["native_roles", "cross_target_roles", "equal_shared_roles"],
+  "shared_weight": 0.5,
+  "target_relevance": "retain each target's own frozen automatic action-object tensor",
+  "fixed_midpoint": 0,
+  "new_encodings": 0,
+  "new_fits": 0,
+  "validation_or_test_selection": false,
+  "private_reads": 0,
+  "api_calls": 0
+}

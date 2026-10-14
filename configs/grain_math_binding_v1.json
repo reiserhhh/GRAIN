@@ -1,0 +1,38 @@
+{
+  "coordination_action": {
+    "positive_actions": ["organize", "coordinate", "assemble", "brief"],
+    "negative_actions": ["photograph", "sketch", "describe", "observe"],
+    "objects": [
+      ["the volunteers preparing the food delivery", 1],
+      ["the workers preparing the library event", 1],
+      ["the participants planning the school exhibition", 1],
+      ["the assistants preparing the community workshop", 1],
+      ["the photographs of the food delivery volunteers", -1],
+      ["the badges of the library event workers", -1],
+      ["the portraits of the school exhibition participants", -1],
+      ["the name cards of the community workshop assistants", -1],
+      ["the organizers preparing the neighborhood concert", 1],
+      ["the visitors planning the museum demonstration", 1],
+      ["the sketches of the neighborhood concert organizers", -1],
+      ["the figurines of the museum demonstration visitors", -1]
+    ]
+  },
+  "verification_action": {
+    "positive_actions": ["check", "verify", "validate", "audit"],
+    "negative_actions": ["decorate", "illustrate", "archive", "display"],
+    "objects": [
+      ["the reported shipment counts in the original dispatch register", 1],
+      ["the claimed visitor totals in the original ticket records", 1],
+      ["the stated expenses in the original supplier invoices", 1],
+      ["the reported attendance totals in the original signed register", 1],
+      ["the decorative cover of the dispatch register", -1],
+      ["the colored border of the ticket record folder", -1],
+      ["the decorative lettering of the supplier invoice folder", -1],
+      ["the ornamental cover of the attendance register", -1],
+      ["the claimed equipment totals in the original inventory sheets", 1],
+      ["the stated membership fees in the original payment records", 1],
+      ["the artistic layout of the inventory sheet cover", -1],
+      ["the ornamental lettering of the payment record folder", -1]
+    ]
+  }
+}

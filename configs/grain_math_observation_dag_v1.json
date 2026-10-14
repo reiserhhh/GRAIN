@@ -1,0 +1,12 @@
+{
+  "packet": "HM-07",
+  "source_packet": "results/grain_math_response_v1/binding_r1",
+  "out": "results/grain_math_response_v1/observation_dag_r1",
+  "family_bootstrap_seed": 7108,
+  "family_bootstrap_replicates": 1000,
+  "natural_inventory": "existing public licensed cache only; absent cache is reported, private corpus is not substituted",
+  "arms": ["flat", "dag_vector", "dag_typed", "declared_typed"],
+  "new_fits": 0,
+  "old_ten_cases": "diagnostic only, never independent replication",
+  "scope": "reported expressions and typed observation algebra, not verified acts or human personality accuracy"
+}

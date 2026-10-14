@@ -1,0 +1,19 @@
+{
+  "packet": "HM-06",
+  "source_packet": "results/grain_math_response_v1/binding_r1",
+  "accounts": ["actual", "hypothetical", "desire", "plan", "state"],
+  "families_per_target": 8,
+  "styles": 2,
+  "frozen_source_models": true,
+  "new_fits": 0,
+  "qualification_midpoint": 0,
+  "mode_interface": "scoped UD governor inventory; no truth roles at observation",
+  "state_unit": "target-related state-expression presence, NOT emotion polarity/intensity",
+  "identity": "supplied record/event/version relations; never inferred by similar words",
+  "reference_mass_positive": 0.5,
+  "bootstrap_draws": 1000,
+  "bootstrap_seed": 6108,
+  "api_calls": 0,
+  "private_reads": 0,
+  "new_neural_training": 0
+}

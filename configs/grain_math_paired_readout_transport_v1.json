@@ -1,0 +1,23 @@
+{
+  "packet": "HM-21",
+  "exchange_packet": "results/grain_math_response_v1/endpoint_exchange_orbit_r1",
+  "exchange_verification": "results/grain_math_response_v1/endpoint_exchange_orbit_verification_r1",
+  "span_packet": "results/grain_math_response_v1/span_binding_r1",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "models": ["receiver_tensor", "endpoint_potential", "shuffled_context"],
+  "roles": ["source", "validation", "application"],
+  "paired_query_rows": 2172,
+  "unique_state_pairs": 724,
+  "role_rows": {"source": 1080, "validation": 528, "application": 564},
+  "quadrature_order": 32,
+  "alternate_quadrature_order": 64,
+  "arithmetic_absolute_tolerance": 1e-10,
+  "aggregate_relative_tolerance": 1e-7,
+  "new_source_fits": 0,
+  "new_model_calls": 0,
+  "api_calls": 0,
+  "private_text_reads": 0,
+  "application_selection": false,
+  "local_tangent_is_not_endpoint_odd": true,
+  "candidate_mass_is_separate_from_conditional_score": true
+}

@@ -1,0 +1,17 @@
+{
+  "packet": "HM-09B",
+  "source_packet": "results/grain_math_response_v1/binding_r1",
+  "new_materials": 832,
+  "targets": ["coordination_action", "verification_action"],
+  "unit": "one addressed state-expression report; all trigger nodes retained",
+  "coverage_query": "at least one trigger qualifies for the target; not emotional intensity",
+  "coverage": "max clip((fixed k + 1)/2,0,1), hard max(k>0)",
+  "coexposure": "min of two report-level target coverages",
+  "denominator": "all eligible self reports, not trigger predicates",
+  "controls": ["flat trigger sum", "trigger mean", "self-trigger-only deletion", "independent noisy-OR", "whole sentence relevance", "declared addresses"],
+  "source_fits": 0,
+  "application_tuning": false,
+  "raw_report_identity": "parser root span; supplied report-version identity is separate from physical event identity",
+  "joint_intensity": "not identified from singleton source; retain source-equivalent joint-law witness",
+  "permissions": {"api": false, "private": false, "neural_training": false, "commit": false}
+}

@@ -1,0 +1,20 @@
+{
+  "packet": "HM-10A",
+  "source_packet": "results/grain_math_response_v1/binding_r1",
+  "family_design": "four coordination by four verification lexical pairs; (c+v)%4 <2 source, =2 validation, =3 application",
+  "frames": [["uneasy", "relieved"], ["restless", "settled"], ["tense", "calm"], ["uncertain", "confident"]],
+  "trigger_actors": ["self", "other"],
+  "factors": ["coordination condition", "verification condition", "same versus separate report incidence"],
+  "factor_probabilities": [0.5, 0.5, 0.5],
+  "alternate_reference_only": [0.2, 0.7, 0.35],
+  "new_materials": 1024,
+  "target_functions": "frozen HM03 whole_factors relevance and condition auto_tensor; no refit",
+  "joint_completion": "predict application 11 from application 00/10/01 plus source-only interaction mean",
+  "completion_arms": ["additive", "source_global", "source_conditional", "source_shifted_key_control"],
+  "conditional_key": ["frame", "trigger actor", "incidence"],
+  "bootstrap": {"unit": "lexical pair family", "draws": 2000, "seed": 1010},
+  "selection": "all declared arms reported; validation is not merged into source",
+  "scope": "identifies a finite observer joint law, not emotional intensity or psychological author response",
+  "author_response_parameters": "separate pending HM10B; no simulated coefficient recovery presented as measured response",
+  "permissions": {"api": false, "private": false, "neural_training": false, "commit": false}
+}

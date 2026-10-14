@@ -1,0 +1,27 @@
+{
+  "packet": "HM-09A",
+  "source_packet": "results/grain_math_response_v1/binding_r1",
+  "cached_packet": "results/grain_math_response_v1/joint_context_r1",
+  "targets": ["coordination_action", "verification_action"],
+  "source_reference": "uniform distinct actions and objects appearing in source-role records only; centered object support; all unordered source-object displacements",
+  "unit_transport": "one source-only zero-intercept least-squares beta each direction; no refitted target function",
+  "rank": "eps * max(matrix shape) * largest singular value, not tuned",
+  "random_control": {"seed": 9109, "draws": 16, "law": "norm-matched isotropic Gaussian direction; not a natural-language null"},
+  "modes": ["actual", "desire"],
+  "new_materials": 768,
+  "cold_objects": {
+    "coordination_action": [
+      {"bare": "the emergency teams", "joined": "the emergency teams rehearsing the neighborhood evacuation", "decoy": "the souvenir drawings showing the emergency teams"},
+      {"bare": "the student groups", "joined": "the student groups planning the intercampus debate", "decoy": "the decorative stickers depicting the student groups"}
+    ],
+    "verification_action": [
+      {"bare": "the expense figures", "joined": "the expense figures transcribed from the original bank statements", "decoy": "the ornamental cover displaying the expense figures"},
+      {"bare": "the laboratory results", "joined": "the laboratory results matched against the signed instrument log", "decoy": "the colored illustrations showing the laboratory results"}
+    ]
+  },
+  "source_fits": 0,
+  "application_labels_used_for_geometry": false,
+  "decision": "shared geometry alone cannot merge target functions; retain source units, evaluate actual cold displacements and opposite-target/other-author controls",
+  "pending": "multi-trigger state exposure is a separate dependency; do not silently close HM-09B",
+  "permissions": {"api": false, "private": false, "neural_training": false, "commit": false}
+}

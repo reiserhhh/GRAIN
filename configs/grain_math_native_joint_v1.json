@@ -1,0 +1,18 @@
+{
+  "packet": "HM-10B1",
+  "source_packet": "results/grain_math_response_v1/joint_law_r1",
+  "reference": "results/grain_vector_mechanisms/narrow_functions_m30b_v1",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "selection_reason": "anxiety-relevant state content, adjacent dejection query, absent AI-trust evidence control; selected before new reader calls",
+  "query_count_reconciled": 25,
+  "document_records": 1024,
+  "unique_texts": 768,
+  "forward_calls": 2304,
+  "max_seconds": 1800,
+  "bootstrap_draws": 2000,
+  "seed": 1011,
+  "arms": ["scalar_additive", "link_only", "source_global_logit", "source_conditional_logit", "wrong_key_logit", "source_conditional_scalar"],
+  "new_text_replication": false,
+  "new_native_observer_experiment": true,
+  "individual_response_fit": false
+}

@@ -1,0 +1,23 @@
+{
+  "packet": "HM-17",
+  "context_packet": "results/grain_math_response_v1/context_covector_kernel_r1",
+  "context_verification": "results/grain_math_response_v1/context_covector_verification_r1",
+  "queries": ["adapted_na8", "adapted_dejected5", "pre_trust_positive"],
+  "models": ["full_linear", "receiver_tensor", "receiver_without_skew", "receiver_potential", "endpoint_potential", "shuffled_context", "shuffled_without_skew", "shuffled_potential"],
+  "paired_query_rows": 2172,
+  "unique_state_pairs": 724,
+  "rows_by_role": {"source": 1080, "validation": 528, "application": 564},
+  "families_by_role": {"source": 8, "validation": 4, "application": 4},
+  "machine_tolerance_multiplier": 100.0,
+  "bootstrap_seed": 1617,
+  "bootstrap_replicates": 10000,
+  "new_source_fits": 0,
+  "new_model_calls": 0,
+  "api_calls": 0,
+  "new_neural_training": false,
+  "private_text_reads": 0,
+  "result_after_mechanism_diagnostic": true,
+  "no_held_reweighting_or_selection": true,
+  "shuffle_potential": "virtual_start_is_shuffled_context_not_actual_receiver",
+  "native_cycles_observed": false
+}

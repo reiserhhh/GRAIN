@@ -1,0 +1,17 @@
+{
+  "packet": "HM-08",
+  "source_packet": "results/grain_math_response_v1/binding_r1",
+  "modes": ["actual", "hypothetical", "desire", "plan", "state"],
+  "arms": ["strict", "legal_joint", "naive_joint", "conservative", "whole", "declared"],
+  "gate": "k > 0 unchanged from HM-03",
+  "source_fits": 0,
+  "new_materials": 2656,
+  "gold_role_or_object_used_to_observe": false,
+  "candidate_order": "raw span addresses, not relevance scores",
+  "naive_joint": "negative control; explicit other context may not become an author event",
+  "conservative": "only qualify if every legal candidate qualifies; range is not a confidence interval",
+  "bootstrap": {"seed": 8108, "iterations": 2000, "unit": "fixed action/object construction family"},
+  "author_profiles": "designed four-record programs; match scored endpoints separately from parser coverage",
+  "decision": "context success must survive other-actor negative controls; all-arm failure triggers new independent source joint-function construction, not threshold rescue",
+  "permissions": {"api": false, "private": false, "neural_training": false, "commit": false}
+}
