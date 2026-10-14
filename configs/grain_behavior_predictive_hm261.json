@@ -1,0 +1,18 @@
+{
+  "packet": "HM261",
+  "parent": "results/grain_math_response_v1/late_condition_observer_r1",
+  "items_config": "configs/grain_behavior_anchor_hm251.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness"],
+  "authors": 24,
+  "directional_uses": 48,
+  "items": 50,
+  "batch_size": 8,
+  "max_input_tokens": 768,
+  "max_model_seconds": 1200,
+  "native_tolerance": 0.001,
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 26120261013,
+  "primary": "balanced_key/full/sum/pooled_all_five",
+  "no_persona_instruction_answer_fit_generation_or_application_labels": true,
+  "original_scope_complete": false
+}

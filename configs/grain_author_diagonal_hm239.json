@@ -1,0 +1,18 @@
+{
+  "packet": "HM239",
+  "parent": "results/grain_math_response_v1/joint_target_atlas_r1",
+  "output": "results/grain_math_response_v1/author_diagonal_r1",
+  "source_authors": 386,
+  "views": 2,
+  "dimensions": 1024,
+  "profiles": 32,
+  "spaces": ["full", "retained", "complement"],
+  "origins": ["inherited", "source_author_mean"],
+  "null_seed": 108185,
+  "null_replicates": 199,
+  "primary": "pooled_distinct_author_joint_modes_full_sum",
+  "max_cpu_seconds": 180,
+  "comparison_tolerance": 2e-12,
+  "new_neural_API_private_application_labels_training": 0,
+  "original_scope_complete": false
+}

@@ -1,0 +1,20 @@
+{
+  "packet": "HM232",
+  "parent": "results/grain_math_response_v1/comparison_observable_contract_r1",
+  "authors": 24,
+  "events": 288,
+  "edges": 32,
+  "orders": 2,
+  "targets": ["E", "N", "A", "C", "O"],
+  "source_capture_batches": 128,
+  "cold_batches": 386,
+  "dose": 1.0,
+  "max_model_seconds": 3200,
+  "max_tokens": 6144,
+  "device": "mps",
+  "dtype": "float32",
+  "native_output_replay_tolerance": 0.0001,
+  "primary": "source-criterion dependence of pair-odd action at fixed recipient criterion,relative to transported criterion-common evidence",
+  "no_fit_grid_training_API_or_application_labels": true,
+  "original_scope_complete": false
+}

@@ -1,0 +1,23 @@
+{
+  "packet": "HM235",
+  "paths_parent": "results/grain_math_response_v1/trait_path_observation_r1",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "source_parent": "results/grain_math_response_v1/author_observation_channel_r1",
+  "source_authors": 386,
+  "source_bank_sizes": [203, 183],
+  "application_authors": 120,
+  "windows": 2,
+  "events_per_window": 18,
+  "states": 8,
+  "targets": ["E", "N", "A", "C", "O"],
+  "laws": ["actual", "old_permutation"],
+  "models": ["profile_markov", "author_markov_mixture", "common_path_association", "observed_path"],
+  "primary": "Cross-author-bank/cross-window signed target-assignment field after preserving both adjacent target meanings and pooled three-event law",
+  "secondary": "Profile-Markov versus empirical author-Markov mixture separates heterogeneity from additional path structure; neither is a fitted natural author kernel",
+  "ipf_tolerance": 1e-10,
+  "ipf_max_sweeps": 10000,
+  "compute_seconds_cap": 120,
+  "new_neural_API_private_training_application_label_calls": 0,
+  "accuracy_grid_or_state_partition_search": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,16 @@
+{
+  "packet": "HM254",
+  "parent": "results/grain_math_response_v1/natural_proxy_r1",
+  "authors": 386,
+  "events_per_author": 36,
+  "block_width": 3,
+  "partitions": 16,
+  "partition_seed": 254,
+  "relative_rank_tolerance": 1e-12,
+  "targets": ["E", "N", "A", "C", "O"],
+  "methods": ["orbit_proxy", "finite_bank", "single_view"],
+  "CPU_seconds_cap": 120,
+  "selection": "none; no best partition/target/rank/sign/regularization",
+  "estimands": ["fixed collected comment bank", "stipulated generating propensity"],
+  "original_scope_complete": false
+}

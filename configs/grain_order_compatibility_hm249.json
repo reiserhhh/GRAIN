@@ -1,0 +1,12 @@
+{
+  "packet": "HM249",
+  "selector_parent": "results/grain_math_response_v1/selector_matrix_r1",
+  "source_parent": "results/grain_math_response_v1/prospective_evidence_r1",
+  "authors": 24,
+  "targets": ["E", "N", "A", "C", "O"],
+  "source_accounts": ["F", "B", "D"],
+  "source_error": 1e-11,
+  "evaluation_direction": [1, -1, 1, 1, 1],
+  "post_outcome_diagnostic": true,
+  "fit_or_model_calls": 0
+}

@@ -1,0 +1,19 @@
+{
+  "packet": "HM231",
+  "parent": "results/grain_math_response_v1/source_target_law_r1",
+  "comparison_parent": "results/grain_math_response_v1/comparison_observable_contract_r1",
+  "targets": ["E", "N", "A", "C", "O"],
+  "arms": ["full", "remove_support", "remove_counter"],
+  "source_authors": 386,
+  "application_authors": 24,
+  "events": 288,
+  "edges": 32,
+  "mechanisms": ["independent_SOURCE_draws", "shared_Gumbel_SOURCE_race"],
+  "primary": "all_target_comparison_changes_with_identical_author_joint_marginals",
+  "secondary": "native_A_cycle_and_all_five_native_edge_contacts_without_fitting",
+  "max_cpu_seconds": 180,
+  "new_model_calls": 0,
+  "fit_or_parameter_search": false,
+  "same_evidence_historical_panel": true,
+  "original_scope_complete": false
+}

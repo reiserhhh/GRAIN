@@ -1,0 +1,15 @@
+{
+  "packet": "HM258",
+  "parent": "results/grain_math_response_v1/author_predictive_link_r1",
+  "authors": 24,
+  "directional_units": 48,
+  "contexts": ["own", "foreign"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "hypotheses": 11,
+  "batch_size": 4,
+  "max_model_seconds": 1200,
+  "max_input_tokens": 768,
+  "native_tolerance": 0.001,
+  "no_accuracy_search_answer_fit_or_new_labels": true,
+  "original_scope_complete": false
+}

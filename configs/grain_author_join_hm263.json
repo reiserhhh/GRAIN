@@ -1,0 +1,19 @@
+{
+  "packet": "HM263",
+  "parent": "results/grain_math_response_v1/behavior_predictive_r1/analysis_recovery_r1",
+  "address_parent": "results/grain_math_response_v1/author_predictive_link_r1",
+  "authors": 24,
+  "windows": 2,
+  "orders": 2,
+  "corners": [[0, 0], [0, 1], [1, 0], [1, 1]],
+  "items": 50,
+  "batch_size": 8,
+  "max_input_tokens": 1024,
+  "max_model_seconds": 900,
+  "native_tolerance": 0.001,
+  "matching_absolute_tokens": 8,
+  "matching_relative_tokens": 0.1,
+  "primary": "all_five_balanced_behavior_mixed_differences_both_orders",
+  "no_answer_fit_application_labels_or_parameter_search": true,
+  "original_scope_complete": false
+}

@@ -1,0 +1,17 @@
+{
+  "packet": "HM240",
+  "parent": "results/grain_math_response_v1/relational_diagnostic_update_r1",
+  "output": "results/grain_math_response_v1/likelihood_transport_r1",
+  "targets": ["E", "N", "A", "C", "O"],
+  "profile_count": 32,
+  "source_banks": 2,
+  "application_authors": 24,
+  "frames_per_author": 9,
+  "quadrature_nodes": 16,
+  "max_seconds": 120,
+  "arithmetic_tolerance": 1e-10,
+  "new_neural_API_training_application_labels": 0,
+  "selection_rule": "all inherited relation updates and all eight evidence edits under both laws;no winner selection",
+  "primary": "full relation-law updates;within-author edited frames are secondary,not independent people",
+  "original_scope_complete": false
+}

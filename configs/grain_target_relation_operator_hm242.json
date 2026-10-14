@@ -1,0 +1,21 @@
+{
+  "packet": "HM242",
+  "source_parent": "results/grain_math_response_v1/author_diagonal_r1",
+  "panel_parent": "results/grain_math_response_v1/relational_diagnostic_update_r1",
+  "output": "results/grain_math_response_v1/target_relation_operator_r1",
+  "source_authors": 386,
+  "source_folds": [203, 183],
+  "dimensions": 1024,
+  "targets": ["common", "E", "N", "A", "C", "O"],
+  "components": ["total", "within_profile", "between_profile"],
+  "application_authors": 24,
+  "frames": 9,
+  "primary": "signed_opposite_source_within_profile_target_operator_gram",
+  "reference": "author_balanced_binary_group_covariances_NOT_uniform32profile_prior",
+  "audit": "one_cyclic_B_relink_within_complete_profile",
+  "max_cpu_seconds": 180,
+  "comparison_tolerance": 2e-10,
+  "parameter_search": false,
+  "new_neural_API_private_training_application_labels": 0,
+  "original_scope_complete": false
+}

@@ -1,0 +1,16 @@
+{
+  "packet": "HM256",
+  "parent": "results/grain_math_response_v1/conditional_likelihood_paths_r1",
+  "writer_parent": "results/grain_math_response_v1/joint_persona_style_r2",
+  "contracts": ["instruction", "disposition"],
+  "orders": ["high_first", "low_first"],
+  "cases": 972,
+  "conditions": 108,
+  "prefix_tokens": 32,
+  "max_tokens": 768,
+  "max_model_seconds": 1200,
+  "batch_size": 4,
+  "instrument_tolerance": 0.001,
+  "law": "historical frozen raw-softmax, not the top-p/temperature article sampler",
+  "no_accuracy_selection": true
+}

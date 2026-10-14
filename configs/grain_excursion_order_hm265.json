@@ -1,0 +1,18 @@
+{
+  "packet": "HM265",
+  "parent": "results/grain_math_response_v1/path_completion_r1",
+  "compute_seconds_cap": 180,
+  "source_authors": 386,
+  "held_authors": 120,
+  "windows": 2,
+  "events": 18,
+  "states": 8,
+  "references": ["pooled", "source_bank_0", "source_bank_1"],
+  "assignments": ["actual", "old_permutation"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "anchor_selection": "highest state occurrence count; lowest state breaks ties",
+  "null": "uniform distinct permutations of interior return excursions; first/last excursion and prefix/suffix fixed",
+  "missing": "null if any positive orbit triple mass is unsupported; no smoothing",
+  "source_association": "each source author is scored using the other bank only",
+  "original_scope_complete": false
+}

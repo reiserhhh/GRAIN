@@ -1,0 +1,18 @@
+{
+  "packet": "HM250",
+  "parent": "results/grain_math_response_v1/prospective_evidence_r1",
+  "selector_parent": "results/grain_math_response_v1/selector_matrix_r1",
+  "panel": [0, 1, 2, 3, 4, 5, 12, 13, 14, 15, 16, 17],
+  "source_target": 3,
+  "reader_targets": ["agreeableness", "conscientiousness"],
+  "max_new_batches": 720,
+  "max_support_per_author": 60,
+  "max_model_seconds": 2400,
+  "max_tokens": 3072,
+  "device": "mps",
+  "dtype": "float32",
+  "head_tolerance": 0.0003,
+  "balance_tolerance": 1e-8,
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 25020261013
+}

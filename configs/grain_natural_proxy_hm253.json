@@ -1,0 +1,18 @@
+{
+  "packet": "HM253",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "source_parent": "results/grain_math_response_v1/condition_pairing_response_r1",
+  "authors": 386,
+  "events_per_author": 36,
+  "dimensions": 15,
+  "targets": ["E", "N", "A", "C", "O"],
+  "view_rule": "chronological_position_modulo_3",
+  "bridges": [[0, 1, 2], [1, 2, 0], [2, 0, 1]],
+  "source_folds": [0, 1],
+  "relative_rank_tolerance": 1e-12,
+  "profile_null_seed": 25320261013,
+  "null_replicates": 199,
+  "CPU_seconds_cap": 120,
+  "new_neural_API_private_training": 0,
+  "original_scope_complete": false
+}

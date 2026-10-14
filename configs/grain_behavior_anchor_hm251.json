@@ -1,0 +1,40 @@
+{
+  "parent": "results/grain_math_response_v1/prospective_evidence_r1",
+  "panel": [6,7,8,9,10,11,18,19,20,21,22,23],
+  "targets": ["extraversion","neuroticism","agreeableness","conscientiousness","openness"],
+  "reader_targets": ["agreeableness","conscientiousness"],
+  "source_target": 3,
+  "device": "mps",
+  "dtype": "float32",
+  "max_tokens": 3072,
+  "max_source_rows": 242,
+  "max_native_batches": 192,
+  "max_model_seconds": 2000,
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 25120261013,
+  "items_url": "https://ipip.ori.org/newBigFive5broadKey.htm",
+  "permission_url": "https://ipip.ori.org/newPermission.htm",
+  "permission": "IPIP items/scales/inventories are public domain; official permission page checked 2026-10-13",
+  "items": {
+    "extraversion": {
+      "high": ["Am the life of the party.","Feel comfortable around people.","Start conversations.","Talk to a lot of different people at parties.","Don't mind being the center of attention."],
+      "low": ["Don't talk a lot.","Keep in the background.","Have little to say.","Don't like to draw attention to myself.","Am quiet around strangers."]
+    },
+    "neuroticism": {
+      "high": ["Get stressed out easily.","Worry about things.","Am easily disturbed.","Get upset easily.","Change my mood a lot.","Have frequent mood swings.","Get irritated easily.","Often feel blue."],
+      "low": ["Am relaxed most of the time.","Seldom feel blue."]
+    },
+    "agreeableness": {
+      "high": ["Am interested in people.","Sympathize with others' feelings.","Have a soft heart.","Take time out for others.","Feel others' emotions.","Make people feel at ease."],
+      "low": ["Am not really interested in others.","Insult people.","Am not interested in other people's problems.","Feel little concern for others."]
+    },
+    "conscientiousness": {
+      "high": ["Am always prepared.","Pay attention to details.","Get chores done right away.","Like order.","Follow a schedule.","Am exacting in my work."],
+      "low": ["Leave my belongings around.","Make a mess of things.","Often forget to put things back in their proper place.","Shirk my duties."]
+    },
+    "openness": {
+      "high": ["Have a rich vocabulary.","Have a vivid imagination.","Have excellent ideas.","Am quick to understand things.","Use difficult words.","Spend time reflecting on things.","Am full of ideas."],
+      "low": ["Have difficulty understanding abstract ideas.","Am not interested in abstract ideas.","Do not have a good imagination."]
+    }
+  }
+}

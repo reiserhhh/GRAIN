@@ -1,0 +1,21 @@
+{
+  "packet": "HM257",
+  "material": "results/grain_vector_mechanisms/predecessor_integration_v1/material",
+  "address_parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "meaning_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "anonymous_bundle": "results/grain_construction_v1/C4/transport_r1/anonymous_bundle.json",
+  "authors": 24,
+  "windows": 2,
+  "comments_per_window": 12,
+  "maximum_comment_tokens": 256,
+  "foreign_length_absolute_tolerance": 8,
+  "foreign_length_relative_tolerance": 0.1,
+  "hypotheses": 11,
+  "modes": ["reset", "own", "foreign", "reverse"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "max_model_seconds": 1600,
+  "batch_size": 4,
+  "max_input_tokens": 768,
+  "no_parameter_search_answer_fit_or_application_labels": true,
+  "original_scope_complete": false
+}

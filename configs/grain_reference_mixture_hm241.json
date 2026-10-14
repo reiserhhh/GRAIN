@@ -1,0 +1,20 @@
+{
+  "packet": "HM241",
+  "parent": "results/grain_math_response_v1/relational_diagnostic_update_r1",
+  "output": "results/grain_math_response_v1/reference_mixture_r1",
+  "targets": ["E", "N", "A", "C", "O"],
+  "authors": 24,
+  "frames": 9,
+  "sources": 2,
+  "laws": 2,
+  "profile_prior": "uniform32, unchanged from HM209",
+  "primary": "all276 unordered full-history pairs, both inherited laws, all5 targets",
+  "secondary": "all8 inherited edited frames, same authors and laws",
+  "mixture_family": "(1-lambda)*source0 + lambda*source1 in common likelihood units, lambda in [0,1]",
+  "sign_tolerance": 1e-12,
+  "arithmetic_tolerance": 1e-10,
+  "max_seconds": 300,
+  "new_neural_API_private_training_application_labels": 0,
+  "selection": "analytic endpoints/stationary points/roots only; no weight grid, score fit or winner selection",
+  "original_scope_complete": false
+}

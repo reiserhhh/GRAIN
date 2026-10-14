@@ -1,0 +1,21 @@
+{
+  "packet": "HM266",
+  "parent": "results/grain_math_response_v1/excursion_order_r1",
+  "compute_seconds_cap": 180,
+  "source_authors": 386,
+  "held_authors": 120,
+  "windows": 2,
+  "events": 18,
+  "states": 8,
+  "references": ["pooled", "source_bank_0", "source_bank_1"],
+  "assignments": ["actual", "old_permutation"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "readings": ["raw", "excursion_reference", "count_reference", "configuration_contrast", "order_contrast"],
+  "coarse_reference": "uniform distinct full words with own complete directed transition counts and first/last edge fixed",
+  "fine_reference": "unchanged HM265 interior-return permutation orbit",
+  "missing": "retain old S/A/D on old support; C/Q null on any unsupported full-family triple",
+  "comparison": "all five readings on one joint complete author/window set per assignment; opposite-source-bank only",
+  "source_fields": "reuse frozen HM265 complete32-profile fields without fitting",
+  "verification_enumeration_bound": 120,
+  "original_scope_complete": false
+}

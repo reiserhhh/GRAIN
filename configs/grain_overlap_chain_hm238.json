@@ -1,0 +1,15 @@
+{
+  "packet": "HM238",
+  "parent": "results/grain_math_response_v1/path_edit_r1",
+  "laws": ["actual", "old_permutation"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "source_authors": 386,
+  "histories": 264,
+  "cold_cases": 793,
+  "states": 8,
+  "window_size": 18,
+  "max_cpu_seconds": 120,
+  "audit_tolerance": 1e-10,
+  "smoothing": 0,
+  "optimization": false
+}

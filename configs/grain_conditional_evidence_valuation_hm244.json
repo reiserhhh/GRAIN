@@ -1,0 +1,16 @@
+{
+  "source_parent": "results/grain_math_response_v1/relational_diagnostic_update_r1",
+  "points_parent": "results/grain_math_response_v1/companion_observation_r1",
+  "partial_parent": "results/grain_math_response_v1/companion_partial_audit_r1",
+  "targets": ["E", "N", "A", "C", "O"],
+  "banks": 2,
+  "authors": 24,
+  "views": 2,
+  "dimensions": 1024,
+  "source_variance": 0.05525111588037168,
+  "arithmetic_tolerance": 1e-10,
+  "new_model_calls": 0,
+  "native_outcomes_previously_known": true,
+  "no_native_fitting_or_method_selection": true,
+  "original_scope_complete": false
+}

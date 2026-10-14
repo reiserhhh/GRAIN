@@ -1,0 +1,19 @@
+{
+  "packet": "HM233",
+  "evidence_parent": "results/grain_math_response_v1/prospective_evidence_r1",
+  "action_parent": "results/grain_math_response_v1/target_crossed_evidence_r1",
+  "meaning_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "anonymous_bundle": "results/grain_construction_v1/C4/transport_r1/anonymous_bundle.json",
+  "authors": 24,
+  "events_per_author": 12,
+  "source_authors": 386,
+  "edges": 32,
+  "targets": ["E", "N", "A", "C", "O"],
+  "laws": ["source_law.json", "permuted_law.json"],
+  "primary": "complete source-meaning x reader x encoding-criterion signed contact tensors on SAME events",
+  "secondary": "source field and application score geometry;all choice/within/shared/unique accounts retained",
+  "max_compute_seconds": 120,
+  "new_model_API_training_private_label_reads": false,
+  "answer_fit_parameter_grid_or_target_relabel": false,
+  "original_scope_complete": false
+}

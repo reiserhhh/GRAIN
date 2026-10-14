@@ -1,0 +1,16 @@
+{
+  "packet": "HM259",
+  "parent": "results/grain_math_response_v1/late_condition_observer_r1",
+  "authors": 24,
+  "directional_units": 48,
+  "hypotheses": 11,
+  "batch_size": 4,
+  "new_routes": ["closed", "direct", "relay"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "max_model_seconds": 1800,
+  "native_tolerance": 0.001,
+  "bootstrap_seed": 25920261013,
+  "bootstrap_draws": 999,
+  "no_prompt_layer_head_accuracy_search": true,
+  "original_scope_complete": false
+}

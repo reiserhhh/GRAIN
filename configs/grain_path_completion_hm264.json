@@ -1,0 +1,20 @@
+{
+  "packet": "HM264",
+  "parent": "results/grain_math_response_v1/observed_path_memory_r1",
+  "source_authors": 386,
+  "source_bank_sizes": [203, 183],
+  "application_authors": 120,
+  "windows": 2,
+  "events_per_window": 18,
+  "states": 8,
+  "targets": ["E", "N", "A", "C", "O"],
+  "assignments": ["actual", "old_permutation"],
+  "laws": ["local_depletion", "per_catalog_completion", "global_completion"],
+  "references": ["pooled", "source_bank_0", "source_bank_1"],
+  "compute_seconds_cap": 180,
+  "primary": "Whole-path SOURCE inventory likelihood, completion conditioning and all prefix target departures; not predictive accuracy",
+  "competitor": "Local outgoing-edge depletion versus per-catalog completion versus global completion selection",
+  "new_neural_API_private_training_application_label_calls": 0,
+  "smoothing_or_length_state_parameter_search": false,
+  "original_scope_complete": false
+}

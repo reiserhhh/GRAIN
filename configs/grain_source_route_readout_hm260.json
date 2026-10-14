@@ -1,0 +1,16 @@
+{
+  "packet": "HM260",
+  "base": "results/grain_math_response_v1/continuation_routes_r1",
+  "analysis": "results/grain_math_response_v1/continuation_routes_r1/analysis_recovery_r1",
+  "authors": 24,
+  "directional_uses": 48,
+  "targets": ["E", "N", "A", "C", "O"],
+  "references": ["occurrence", "unique"],
+  "primary_term": "interaction",
+  "max_cpu_seconds": 240,
+  "bootstrap_seed": 26020261013,
+  "bootstrap_draws": 999,
+  "new_neural_model_API_private_training": 0,
+  "no_reference_target_selection_or_precision_search": true,
+  "original_scope_complete": false
+}
