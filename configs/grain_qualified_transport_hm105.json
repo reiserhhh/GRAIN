@@ -1,0 +1,27 @@
+{
+  "packet": "HM105",
+  "output": "results/grain_math_response_v1/qualified_transport_r1",
+  "source": "results/grain_math_response_v1/history_routing_r1",
+  "source_material": "configs/grain_author_current_hm93.json",
+  "known_application_material": "configs/grain_current_transport_hm98.json",
+  "system_material": "configs/grain_math_passive_event_composition_v1.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "bridges": ["The record continues.", "A second observation follows."],
+  "currents": [" documented a routine event without adding further detail.", " paused before recording the next observation."],
+  "owners": ["The acting person in all six earlier entries was Person B, not Person A.", "The identity of the acting person in the earlier entries was not specified.", "The acting person in all six earlier entries was Person A, not Person B."],
+  "new_behaviours": {
+    "extraversion": ["avoided speaking to the other volunteers during the event", "replied after another volunteer asked a question", "introduced unfamiliar volunteers to each other and began a group conversation"],
+    "neuroticism": ["remained composed when a payment failed unexpectedly", "felt concerned and then returned to the next errand", "kept imagining further problems after the payment issue was resolved"],
+    "agreeableness": ["turned away when another passenger asked for assistance", "heard the passenger's request and considered whether to respond", "helped the passenger carry a heavy bag through the station"],
+    "conscientiousness": ["forgot the promised library return and ignored the due date", "remembered the library return but postponed the trip", "checked the due dates and returned every borrowed book as planned"],
+    "openness": ["chose a familiar exhibit and avoided the unusual displays", "compared a familiar exhibit with an unfamiliar display", "explored the unfamiliar displays to discover ideas not encountered before"],
+    "anthropomorphism": ["described the navigation device as software calculating routes", "discussed the device's suggestions without attributing feelings to it", "said the navigation device understood the traveller and wanted to help"]
+  },
+  "max_forwards": 468,
+  "max_model_seconds": 300,
+  "span_rtol": 1e-10,
+  "arithmetic_atol": 1e-9,
+  "new_predictor_fits": 0,
+  "new_generation": 0,
+  "original_scope_complete": false
+}

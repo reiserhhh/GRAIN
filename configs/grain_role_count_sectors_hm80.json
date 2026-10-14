@@ -1,0 +1,19 @@
+{
+  "packet": "HM80",
+  "parent": "results/grain_math_response_v1/role_assignment_dealiasing_r1",
+  "material": "configs/grain_math_passive_event_composition_v1.json",
+  "output": "results/grain_math_response_v1/role_count_sectors_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "variables": ["x", "y", "g", "h", "i"],
+  "layer": 16,
+  "query_roles": ["focal", "companion", "off_target"],
+  "expected_contexts": 60,
+  "expected_bodies": 1920,
+  "expected_readings": 5760,
+  "expected_count_bag_classes": 2880,
+  "max_forwards": 5760,
+  "max_model_seconds": 2400,
+  "profile_epsilon": 0.5,
+  "arithmetic_tolerance": 1e-10,
+  "no_fitting_search_API_private_training": true
+}

@@ -1,0 +1,21 @@
+{
+  "packet": "HM107_R2",
+  "source": "results/grain_math_response_v1/qualified_transport_r1",
+  "account": "results/grain_math_response_v1/joint_reading_law_r1",
+  "prior": "results/grain_math_response_v1/native_joint_value_r1",
+  "output": "results/grain_math_response_v1/native_joint_value_r2",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "layer": 17,
+  "arms": ["baseline", "joint_removed", "random"],
+  "max_forwards": 5208,
+  "max_batch_calls": 868,
+  "max_model_seconds": 1200,
+  "prefix_tolerance": 0.00001,
+  "edit_tolerance": 0.00001,
+  "noop_tolerance": 0.000001,
+  "arithmetic_tolerance": 0.000000001,
+  "classification": "EXPLORATORY_SAME_EXECUTION_NATIVE_CALIBRATION_AFTER_HM107_R1_FAILURE",
+  "predictor_fits": 0,
+  "private_reads": 0,
+  "api_calls": 0
+}

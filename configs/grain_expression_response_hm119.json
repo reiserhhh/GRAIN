@@ -1,0 +1,17 @@
+{
+  "packet": "HM119",
+  "previous": "results/grain_math_response_v1/action_expression_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "focus_texts": ["The record describes Person A on this occasion.", "The record describes Person B on this occasion."],
+  "source_variant_wording": [0, 0],
+  "blocks": 17,
+  "device": "mps",
+  "batch_size": 8,
+  "max_context_forwards": 288,
+  "max_context_model_seconds": 120,
+  "max_context_bytes": 1800000000,
+  "max_cold_seconds": 600,
+  "compatibility_kv_atol": 0.0005,
+  "compatibility_reading_atol": 0.00005,
+  "permissions": "Public authored HM115 controls and local frozen weights only; no native answers, application outcome fitting, API, private text, training, Claude, Git, automation, lockbox, old queue or renewed stopped budget"
+}

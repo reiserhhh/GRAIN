@@ -1,0 +1,12 @@
+{
+  "source": "results/grain_math_response_v1/supported_measure_r1/safe_attention_r1",
+  "marks_source": "results/grain_math_response_v1/marked_response_r1",
+  "units": 288,
+  "unit_batch": 4,
+  "device": "mps",
+  "epsilon": 0.5,
+  "score_clip": 3.0,
+  "max_numeric_seconds": 600,
+  "baseline_tolerance": 0.0005,
+  "scope": "Source-only GRAIN-guided supported-mass interventions; finite instrument response, not natural text or human personality validity"
+}

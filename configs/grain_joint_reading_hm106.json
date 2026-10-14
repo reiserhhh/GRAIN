@@ -1,0 +1,14 @@
+{
+  "packet": "HM106",
+  "source": "results/grain_math_response_v1/qualified_transport_r1",
+  "classification": "EXPLORATORY_AFTER_HM105_NOT_BLIND_REPLICATION",
+  "banks": [0, 1, 2],
+  "bridges": [0, 1],
+  "carriers": [0, 1],
+  "actions": [0, 1, 2, 3, 4, 5],
+  "weight_modes": ["native", "target_shared", "uniform"],
+  "tolerance": 1e-10,
+  "new_neural_calls": 0,
+  "predictor_fits": 0,
+  "original_scope_complete": false
+}

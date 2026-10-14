@@ -1,0 +1,12 @@
+{
+  "source": "results/grain_math_response_v1/author_current_r1",
+  "output": "results/grain_math_response_v1/observer_parity_r1",
+  "bundle": "results/v7_operator_boundary_audit/e0_full_20260714/operator_bundles/whole_factor_bundle.json",
+  "runtime": "results/v7_operator_boundary_audit/e0_full_20260714/artifacts/common_source_comment_representation.joblib",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "frames": ["direct", "recorded"],
+  "fields": ["uniform_value", "local_query", "local_bound_query"],
+  "tolerance": 1e-10,
+  "new_neural_calls": 0,
+  "new_predictor_fits": 0
+}

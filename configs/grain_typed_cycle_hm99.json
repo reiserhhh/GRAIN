@@ -1,0 +1,13 @@
+{
+  "packet": "HM99",
+  "source": "results/grain_math_response_v1/current_transport_r1",
+  "output": "results/grain_math_response_v1/typed_cycle_transport_r1",
+  "categories": 6,
+  "levels": 3,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "fields": ["uniform_value", "local_query", "local_bound_query"],
+  "contexts": ["direct", "recorded"],
+  "arithmetic_atol": 1e-10,
+  "interpretation": "Complete designed product support;all sectors/targets/frames retained;no fitted scale or sector selection",
+  "registration": "Exploratory follow-up after HM98 aggregate readback;not an unopened psychological test"
+}

@@ -1,0 +1,28 @@
+{
+  "packet": "HM-128",
+  "layer": 16,
+  "sketch_width": 12,
+  "rank": 4,
+  "seed": 12817,
+  "source_batch_worlds": 4,
+  "max_seconds": 1200,
+  "max_forwards": 130,
+  "device": "mps",
+  "dtype": "float32",
+  "arms": ["baseline", "binding", "random_matched", "full_swap"],
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "source_pairs": [["John", "Mary", "Italy", "Japan"], ["Alex", "Beth", "Canada", "France"]],
+  "application_names": ["David", "Emma", "Ryan"],
+  "application_countries": [["Egypt", "Brazil", "China"], ["Turkey", "Mexico", "Spain"]],
+  "behaviours": [
+    ["chose a quiet seat and avoided meeting anyone", "invited unfamiliar visitors to talk and introduced them to one another"],
+    ["stayed calm after an unexpected mistake and carried on", "kept worrying that a small mistake would ruin the whole afternoon"],
+    ["dismissed a visitor's request and refused to consider their concerns", "listened patiently to a visitor's request and offered practical help"],
+    ["left several unfinished tasks and ignored the agreed schedule", "checked the schedule carefully and completed every assigned task"],
+    ["kept the familiar design and declined to explore alternatives", "tried an unfamiliar design and explored several unusual alternatives"],
+    ["described the chatbot as software without feelings or wishes", "said the chatbot had wishes and felt lonely when nobody spoke to it"]
+  ],
+  "psychological_truth": false,
+  "source_uses_personality_questions": false,
+  "new_neural_training": false
+}

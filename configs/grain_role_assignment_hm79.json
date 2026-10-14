@@ -1,0 +1,21 @@
+{
+  "packet": "HM79",
+  "parent": "results/grain_math_response_v1/ownership_composition_r1",
+  "output": "results/grain_math_response_v1/role_assignment_dealiasing_r1",
+  "material": "configs/grain_math_passive_event_composition_v1.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "variables": ["focal_content_x", "companion_content_y", "companion_owner_g", "anchor_owner_h"],
+  "families": [0, 1],
+  "layer": 16,
+  "old_fraction": "h=-g",
+  "new_fraction": "h=g",
+  "expected_contexts": 60,
+  "expected_readings": 5760,
+  "expected_reused_readings": 2880,
+  "expected_new_bodies": 480,
+  "max_forwards": 2880,
+  "max_model_seconds": 1500,
+  "profile_epsilon": 0.5,
+  "arithmetic_tolerance": 1e-10,
+  "no_fitting_search_generation_API_private_training": true
+}

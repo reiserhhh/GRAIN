@@ -1,0 +1,21 @@
+{
+  "packet": "HM91",
+  "output": "results/grain_math_response_v1/relation_scope_r1",
+  "source": "results/grain_math_response_v1/channel_boundary_transport_r1",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "frames": ["present_report", "past_claim"],
+  "modes": ["asserted_event", "negated_event", "negated_report", "intention", "preference", "imagined"],
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "max_forwards": 1152,
+  "max_model_seconds": 600,
+  "epsilon": 0.5,
+  "relation_weights": [0, 1, -1, 0, 0, 0],
+  "behaviours": {
+    "extraversion": ["keep a conversation to brief replies", "start small talk with someone new"],
+    "neuroticism": ["return calmly to the task after an uncertain outcome", "revisit an uncertain outcome throughout the evening"],
+    "agreeableness": ["reject a teammate's suggestion before hearing the details", "hear a teammate's suggestion before deciding together"],
+    "conscientiousness": ["leave the week's tasks unplanned until the last moment", "schedule the week's tasks and check their completion"],
+    "openness": ["reuse a familiar solution without exploring alternatives", "try an unfamiliar solution and explore alternatives"],
+    "anthropomorphism": ["treat the chatbot's reply as an automated result", "address the chatbot as if it had feelings of its own"]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "packet": "HM98",
+  "output": "results/grain_math_response_v1/current_transport_r1",
+  "source": "results/grain_math_response_v1/multi_cycle_capacity_r1",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "bundle": "results/v7_operator_boundary_audit/e0_full_20260714/operator_bundles/whole_factor_bundle.json",
+  "runtime": "results/v7_operator_boundary_audit/e0_full_20260714/artifacts/common_source_comment_representation.joblib",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "fields": ["uniform_value", "local_query", "local_bound_query"],
+  "frames": ["direct", "recorded"],
+  "banks": ["factor4", "svd24"],
+  "states": 18,
+  "max_forwards": 648,
+  "max_model_seconds": 250,
+  "arithmetic_atol": 1e-10,
+  "node_match_atol": 1e-12,
+  "rank_rtol": 1e-10,
+  "rank_atol": 1e-12,
+  "extension": "fixed inverse squared distance;positive partition;exact source matches;no target outcome tuning",
+  "behaviours": {
+    "extraversion": ["sat apart without joining the club's conversation", "replied to one club member who initiated contact", "invited unfamiliar club members into a lively conversation"],
+    "neuroticism": ["kept an even mood after the travel booking was disrupted", "became uneasy for a short while and then resumed packing", "continued worrying about the disruption long after the trip was settled"],
+    "agreeableness": ["dismissed a friend's plea for help with moving boxes", "heard the plea and postponed making a decision", "gave the friend an afternoon of help carrying the boxes"],
+    "conscientiousness": ["neglected a promised garden chore until the plants dried out", "noted the garden chore but put it off until another day", "carried out every planned garden chore before the agreed date"],
+    "openness": ["repeated the usual recipe and ignored unfamiliar ingredients", "weighed the usual recipe against a different possibility", "experimented with unfamiliar ingredients to discover a different flavour"],
+    "anthropomorphism": ["referred to the digital tutor as software selecting word sequences", "talked about the tutor's replies without saying it felt anything", "spoke of the digital tutor as someone who understood and genuinely cared"]
+  }
+}

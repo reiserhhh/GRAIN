@@ -1,0 +1,18 @@
+{
+  "packet": "HM78",
+  "sources": {
+    "HM68": "results/grain_math_response_v1/ownership_composition_r1",
+    "HM69": "results/grain_math_response_v1/author_observation_accounts_r1",
+    "HM71": "results/grain_math_response_v1/cold_relational_measurement_r1"
+  },
+  "output": "results/grain_math_response_v1/score_fiber_relational_completion_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "cases": ["choice_f0", "choice_f1", "expression_f0", "expression_f1", "law_only", "mixed", "same_scores_f0", "same_scores_f1"],
+  "schemes": ["scores_only", "owner_count", "owner_response", "score_squares", "score_cross_products", "score_all_products"],
+  "application_banks": ["other_source_family", "paraphrase", "reordered"],
+  "max_linear_programs": 2160,
+  "max_seconds": 180,
+  "tolerance": 1e-8,
+  "scope": "Result-after finite construction analysis of hypothetical evidence distributions on previously measured public synthetic texts; not new humans, new blind validation, new personality accuracy, or an LLM-free encoder",
+  "new_calls_fits_training_API_private": [0, 0, 0, 0, 0]
+}

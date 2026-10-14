@@ -1,0 +1,22 @@
+{
+  "packet": "HM93",
+  "output": "results/grain_math_response_v1/author_current_r1",
+  "source": "results/grain_math_response_v1/event_history_observation_r1",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "frames": ["direct", "recorded"],
+  "lexicons": ["workshop", "everyday"],
+  "max_forwards": 288,
+  "max_model_seconds": 300,
+  "seeds": [19, 43, 71],
+  "profiles_per_direction_seed": 4,
+  "arithmetic_atol": 1e-10,
+  "behaviours": {
+    "extraversion": [["listened silently while the workshop group talked", "answered a question when the workshop group asked", "started a discussion with several new workshop members"], ["spent the gathering quietly watching other guests", "spoke with a guest who approached the table", "walked around the gathering introducing guests to each other"]],
+    "neuroticism": [["stayed calm when a workshop plan became uncertain", "noticed concern before returning to the workshop task", "kept anticipating trouble after the workshop task ended"], ["remained relaxed after an unexpected change of plans", "felt briefly worried before continuing the afternoon", "revisited possible bad outcomes throughout the afternoon"]],
+    "agreeableness": [["refused to hear a colleague's request for assistance", "heard the request but left the decision for later", "helped the colleague finish the task after hearing the request"], ["brushed aside a neighbour's difficulty without discussion", "listened to the difficulty without offering a response", "offered the neighbour time and practical assistance"]],
+    "conscientiousness": [["forgot the workshop assignment and missed its deadline", "wrote down the assignment but changed the working schedule", "checked the assignment schedule and completed each step on time"], ["left an agreed household task unfinished without a reminder", "remembered the household task but delayed its completion", "followed a written plan and completed the household task early"]],
+    "openness": [["used the familiar workshop technique without considering alternatives", "compared the familiar technique with another available method", "tried an unfamiliar workshop technique to explore a new result"], ["chose the usual weekend activity without considering alternatives", "compared the usual activity with another nearby option", "explored an unfamiliar weekend activity to learn something new"]],
+    "anthropomorphism": [["called the workshop assistant a program calculating output", "described the assistant's helpful responses without discussing feelings", "said the workshop assistant understood people and cared about them"], ["described the home chatbot as an automated reply service", "discussed the chatbot's conversational responses without attributing feelings", "described the home chatbot as a companion with its own feelings"]]
+  }
+}

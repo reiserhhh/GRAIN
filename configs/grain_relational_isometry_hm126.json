@@ -1,0 +1,14 @@
+{
+  "packet": "HM126",
+  "input": "results/grain_math_response_v1/relational_dual_frame_r1",
+  "max_cpu_seconds": 600,
+  "numeric_atol": 1e-9,
+  "arms": ["no_rotation", "matched_anchors", "wrong_anchors"],
+  "calibration_wording": 0,
+  "heldout_wording": 1,
+  "wrong_family_shift": 1,
+  "strata": {"all_conditions": [0,1], "common_condition_minus": [0]},
+  "new_model_calls": 0,
+  "known_material_result_after_construction": true,
+  "permissions": "NoAPI/private/MEPS/train/Claude/Git/automation/lockbox/oldqueue"
+}

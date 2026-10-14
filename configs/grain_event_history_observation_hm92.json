@@ -1,0 +1,21 @@
+{
+  "packet": "HM92",
+  "output": "results/grain_math_response_v1/event_history_observation_r1",
+  "source": "results/grain_math_response_v1/relation_scope_r1",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "frames": ["present_report", "past_claim"],
+  "orders": [[0, 1, 2], [1, 0, 2]],
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "max_forwards": 1536,
+  "max_model_seconds": 600,
+  "epsilon": 0.5,
+  "future_prefix_atol": 0.00001,
+  "behaviours": {
+    "extraversion": ["wait for others to open a group conversation", "invite unfamiliar people into a group conversation"],
+    "neuroticism": ["let an unresolved concern fade during the afternoon", "repeatedly check an unresolved concern during the afternoon"],
+    "agreeableness": ["dismiss another person's concern without offering help", "offer practical help after listening to another person's concern"],
+    "conscientiousness": ["postpone a promised task without noting its deadline", "note a promised task and finish before its deadline"],
+    "openness": ["stay with the established approach during a new activity", "explore a different approach during a new activity"],
+    "anthropomorphism": ["describe the assistant as software producing a reply", "describe the assistant as a companion with personal feelings"]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "protocol": "HM94_OPPORTUNITY_AND_RESPONSE_CURRENT",
+  "seed": 94261010,
+  "states": 4,
+  "conditions": 6,
+  "condition_pca_dimensions": 16,
+  "source_fraction": 0.3333333333333333,
+  "pseudocount": 0.5,
+  "minimum_reference_authors": 5,
+  "matched_strangers": 5,
+  "bootstrap_draws": 1000,
+  "permutation_draws": 999,
+  "within_comment_shuffle_draws": 32,
+  "arms": ["pooled", "position", "embedding", "joint"],
+  "new_neural_calls": 0,
+  "external_labels_read": false,
+  "maximum_cpu_seconds_per_stage": 300
+}

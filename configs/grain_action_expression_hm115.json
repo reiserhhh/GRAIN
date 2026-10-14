@@ -1,0 +1,45 @@
+{
+  "packet": "HM115",
+  "source": "results/grain_math_response_v1/history_routing_r1",
+  "predecessor": "results/grain_math_response_v1/conditional_relation_chart_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "current": "The record describes Person A on this occasion.",
+  "conditions": [
+    ["had not been asked to participate", "had been asked to participate"],
+    ["received no request to take part", "received an explicit request to take part"]
+  ],
+  "variant_names": ["original_behavior", "same_event_rewording", "different_behavior_instance"],
+  "behaviours": [
+    [
+      ["remained quiet and avoided joining the exchange", "started talking and drew other people into the exchange"],
+      ["stayed calm and quickly let the setback go", "worried for a long time and repeatedly considered possible trouble"],
+      ["dismissed the other person's concern and refused to offer help", "took the other person's concern seriously and offered help"],
+      ["left the promised task unfinished and ignored the checklist", "finished the promised task carefully and checked the checklist"],
+      ["stuck with the familiar method and declined to consider a different one", "tried an unfamiliar method and explored a different possibility"],
+      ["described the digital assistant as an algorithm with no feelings", "described the digital assistant as caring and having feelings"]
+    ],
+    [
+      ["said little and stayed outside the conversation", "spoke first and encouraged the others to join in"],
+      ["recovered composure soon after the mishap and stopped dwelling on it", "kept expecting further mishaps and replayed the setback late into the night"],
+      ["brushed aside a colleague's difficulty and withheld assistance", "listened to a colleague's difficulty and made time to assist"],
+      ["abandoned the agreed work midway and skipped the final review", "completed the agreed work methodically and reviewed each detail"],
+      ["rejected a novel procedure in favor of the routine approach", "investigated a novel procedure and considered several alternatives"],
+      ["treated the software agent as machinery without subjective experience", "attributed compassion and subjective experience to the software agent"]
+    ],
+    [
+      ["spent the break alone instead of approaching the gathering", "introduced strangers to one another and kept the gathering lively"],
+      ["slept normally before an uncertain appointment and let unanswered messages wait", "checked for replies again and again and lay awake imagining what could go wrong"],
+      ["kept the last available supply for personal use despite a teammate's need", "gave the spare supply to a teammate who needed it and accepted less for oneself"],
+      ["missed the deadline after repeatedly putting the work aside", "scheduled the steps in advance and delivered before the deadline"],
+      ["ordered the usual dish and declined to sample an unknown cuisine", "sampled an unknown cuisine and discussed several unfamiliar flavors"],
+      ["said the chatbot's apology was generated output rather than remorse", "worried that the chatbot might feel rejected after being ignored"]
+    ]
+  ],
+  "max_forwards": 288,
+  "max_model_seconds": 120,
+  "identity_atol": 1e-10,
+  "direction_min_norm": 1e-12,
+  "permutation_tie_atol": 1e-12,
+  "author_contrast_amplitude": 0.4,
+  "permissions": "Public authored controls/local frozen prefixes only;no API/private/Claude/Git/automation/lockbox/training/predictor tuning/HM107 rescue"
+}

@@ -1,0 +1,18 @@
+{
+  "source": "results/grain_math_response_v1/expression_response_r1",
+  "grain_bundle": "results/v7_operator_boundary_audit/e0_full_20260714/operator_bundles/whole_factor_bundle.json",
+  "grain_representation": "results/v7_operator_boundary_audit/e0_full_20260714/artifacts/common_source_comment_representation.joblib",
+  "pairs": 144,
+  "grain_slices": 3,
+  "min_slice_tokens": 12,
+  "quadrature_nodes": 4,
+  "pair_batch": 4,
+  "max_numeric_seconds": 600,
+  "device": "mps",
+  "gradient_modes": ["uniform", "weighted"],
+  "channels": ["K", "V", "availability"],
+  "new_model_calls": 0,
+  "fits": 0,
+  "integration_decision": "Record error; no refinement or rescaling to force completeness",
+  "scope": "Stored-layer numerical path and frozen anonymous lexical GRAIN marks; not natural-text causality or personality validity"
+}

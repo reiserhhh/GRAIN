@@ -1,0 +1,22 @@
+{
+  "packet": "HM116",
+  "source": "results/grain_math_response_v1/action_expression_r1",
+  "output": "results/grain_math_response_v1/actor_action_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "source_variant_wording": [0, 0],
+  "application_variant": 2,
+  "application_wordings": [0, 1],
+  "layer": 17,
+  "arms": ["baseline", "source_odd", "source_even", "cyclic_family", "random"],
+  "noop_group": [0, 0, -1],
+  "max_batches": 484,
+  "max_endpoints": 5808,
+  "max_model_seconds": 1200,
+  "edit_tolerance": 0.00001,
+  "same_shape_tolerance": 0.000001,
+  "arithmetic_tolerance": 0.000000001,
+  "random_seed": 116,
+  "author_amplitude": 0.4,
+  "classification": "SOURCE_ONLY_ACTION_NEW_INSTANCE_EXPLORATORY_NOT_PERSONALITY_ACCURACY",
+  "permissions": "Local public controls only;no fits/API/private/training/Claude/Git/automation/lockbox/oldqueue/HM107rescue"
+}

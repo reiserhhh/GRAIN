@@ -1,0 +1,17 @@
+{
+  "packet": "HM103",
+  "source": "results/grain_math_response_v1/author_evidence_merge_r1",
+  "output": "results/grain_math_response_v1/response_connection_r1",
+  "metric": "fixed Euclidean original rotated K/V coordinates, no whitening",
+  "gram_rcond": 1e-12,
+  "loop_doses": [0.002, 0.001, -0.002],
+  "rk4_steps_per_leg": 1,
+  "finite_support": "all banks/bridges/families; previous=current=1; arms 0 and 3",
+  "bracket_support": "all 864 captures, all 15 target pairs",
+  "probe": "one query and value covector formed by equal source-target means",
+  "numeric_atol": 1e-8,
+  "cpu_deadline_seconds": 900,
+  "new_neural_calls": 0,
+  "new_fits": 0,
+  "original_scope_complete": false
+}

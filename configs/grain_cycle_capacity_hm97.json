@@ -1,0 +1,22 @@
+{
+  "packet": "HM97",
+  "output": "results/grain_math_response_v1/multi_cycle_capacity_r1",
+  "source": "results/grain_math_response_v1/author_current_r1",
+  "material": "configs/grain_author_current_hm93.json",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "bundle": "results/v7_operator_boundary_audit/e0_full_20260714/operator_bundles/whole_factor_bundle.json",
+  "runtime": "results/v7_operator_boundary_audit/e0_full_20260714/artifacts/common_source_comment_representation.joblib",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "frames": ["direct", "recorded"],
+  "fields": ["uniform_value", "local_query", "local_bound_query"],
+  "banks": ["grain_factor4", "grain_svd24", "generic4"],
+  "states": 18,
+  "max_forwards": 1296,
+  "max_model_seconds": 600,
+  "generic_seed": 971,
+  "rank_rtol": 1e-10,
+  "rank_atol": 1e-12,
+  "arithmetic_atol": 1e-10,
+  "new_predictor_fits": 0,
+  "max_trials": 1
+}

@@ -1,0 +1,24 @@
+{
+  "packet": "HM108",
+  "capture": "results/grain_math_response_v1/native_joint_value_r2",
+  "terminal_audit": "results/grain_math_response_v1/native_joint_terminal_audit_r1",
+  "output": "results/grain_math_response_v1/native_readout_location_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "arms": ["baseline", "joint_removed", "random"],
+  "units": ["score", "log_odds"],
+  "quadrature_order": 32,
+  "arithmetic_tolerance": 1e-9,
+  "quadrature_tolerance": 1e-8,
+  "author_laws": {
+    "uniform": [0.25, 0.25, 0.25, 0.25],
+    "unequal": [0.4, 0.1, 0.2, 0.3],
+    "joint_plus": [0.375, 0.125, 0.125, 0.375],
+    "joint_minus": [0.125, 0.375, 0.375, 0.125]
+  },
+  "classification": "EXPLORATORY_AFTER_HM107_TERMINAL_NOT_BLIND_REPLICATION",
+  "new_forwards": 0,
+  "predictor_fits": 0,
+  "api_calls": 0,
+  "private_reads": 0,
+  "original_scope_complete": false
+}

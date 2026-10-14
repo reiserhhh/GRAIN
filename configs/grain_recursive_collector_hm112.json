@@ -1,0 +1,20 @@
+{
+  "packet": "HM112",
+  "previous": "results/grain_math_response_v1/event_context_routes_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "triples": [[0, 1, 2], [0, 3, 4], [1, 4, 5], [2, 3, 5]],
+  "blocks": 17,
+  "batch_size": 16,
+  "device": "mps",
+  "max_library_forwards": 28,
+  "max_reference_forwards": 128,
+  "max_library_seconds": 240,
+  "max_reference_seconds": 240,
+  "max_compiler_seconds_per_bank": 600,
+  "variants": ["layered", "broadcast_last_history"],
+  "state_atol": 0.0005,
+  "score_atol": 0.00005,
+  "law_counts": [3, 7],
+  "fits": 0,
+  "permissions": "No API, private raw, training, Claude, Git, automation, lockbox or old queue"
+}

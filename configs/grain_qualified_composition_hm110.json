@@ -1,0 +1,18 @@
+{
+  "packet": "HM110",
+  "output": "results/grain_math_response_v1/qualified_composition_r1",
+  "source": "results/grain_math_response_v1/history_routing_r1",
+  "source_material": "configs/grain_author_current_hm93.json",
+  "application_material": "configs/grain_qualified_transport_hm105.json",
+  "system_material": "configs/grain_math_passive_event_composition_v1.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "bridge_index": 0,
+  "current_index": 0,
+  "max_forwards": 292,
+  "max_model_seconds": 300,
+  "author_law_strength": 0.4,
+  "arithmetic_atol": 1e-9,
+  "new_predictor_fits": 0,
+  "new_generation": 0,
+  "original_scope_complete": false
+}

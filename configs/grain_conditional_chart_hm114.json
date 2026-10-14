@@ -1,0 +1,29 @@
+{
+  "packet": "HM114",
+  "source": "results/grain_math_response_v1/history_routing_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "current": "The record describes Person A on this occasion.",
+  "conditions": [
+    ["had not been asked to participate", "had been asked to participate"],
+    ["received no request to take part", "received an explicit request to take part"]
+  ],
+  "behaviours": [
+    ["remained quiet and avoided joining the exchange", "started talking and drew other people into the exchange"],
+    ["stayed calm and quickly let the setback go", "worried for a long time and repeatedly considered possible trouble"],
+    ["dismissed the other person's concern and refused to offer help", "took the other person's concern seriously and offered help"],
+    ["left the promised task unfinished and ignored the checklist", "finished the promised task carefully and checked the checklist"],
+    ["stuck with the familiar method and declined to consider a different one", "tried an unfamiliar method and explored a different possibility"],
+    ["described the digital assistant as an algorithm with no feelings", "described the digital assistant as caring and having feelings"]
+  ],
+  "levels": [-0.2, 0.0, 0.2],
+  "responses": [-0.4, 0.0, 0.4],
+  "positive_condition_shares": [0.25, 0.5, 0.75],
+  "events_per_profile": 400,
+  "max_forwards": 96,
+  "max_model_seconds": 180,
+  "identity_atol": 1e-10,
+  "rank_rtol": 1e-10,
+  "new_neural_training": 0,
+  "new_predictor_fits": 0,
+  "permissions": "Public authored controls/local frozen prefix only;no API/private/Claude/Git/automation/lockbox/oldqueue/HM107rescue"
+}

@@ -1,0 +1,12 @@
+{
+  "source": "results/grain_math_response_v1/grain_mass_action_r1",
+  "units": 288,
+  "unit_batch": 2,
+  "device": "mps",
+  "cut_rule": "floor(completed_blocks/2)",
+  "cut": 8,
+  "baseline_tolerance": 0.0005,
+  "max_numeric_seconds": 600,
+  "substantial_interaction_fraction": 0.1,
+  "scope": "Finite GRAIN input-stage mechanism; not natural-text or human personality mediation"
+}

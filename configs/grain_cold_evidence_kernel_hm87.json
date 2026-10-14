@@ -1,0 +1,25 @@
+{
+  "packet": "HM87",
+  "output": "results/grain_math_response_v1/cold_evidence_kernel_r1",
+  "source": "results/grain_math_response_v1/query_evidence_routing_r1",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "block": 16,
+  "qkv_layer": 17,
+  "body_only_control_calls": 16,
+  "fresh_body_calls": 192,
+  "native_forward_order_calls": 576,
+  "max_forwards": 784,
+  "max_model_seconds": 600,
+  "arithmetic_tolerance": 1e-9,
+  "prefix_tolerance": 1e-5,
+  "epsilon": 0.5,
+  "fresh_behaviours": {
+    "extraversion": ["sat alone during the community dinner and avoided joining the conversation", "joined several groups during the community dinner and introduced people to one another"],
+    "neuroticism": ["noticed a change to the travel plan and remained relaxed while making an adjustment", "noticed a change to the travel plan and kept imagining that the entire journey would go wrong"],
+    "agreeableness": ["responded contemptuously when a neighbour requested assistance and refused to listen", "responded warmly when a neighbour requested assistance and took time to understand the difficulty"],
+    "conscientiousness": ["missed the agreed deadline and left the project documents scattered and incomplete", "met the agreed deadline after checking the project documents carefully and arranging them systematically"],
+    "openness": ["rejected an unfamiliar musical performance and demanded the same familiar programme", "explored an unfamiliar musical performance and considered several unusual interpretations"],
+    "anthropomorphism": ["said the conversational software calculated sentences without feelings or intentions", "said the conversational software felt lonely and hoped its conversation partner would return"]
+  }
+}

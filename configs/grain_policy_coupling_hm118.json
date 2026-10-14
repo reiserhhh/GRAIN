@@ -1,0 +1,18 @@
+{
+  "packet": "HM118",
+  "source": "results/grain_math_response_v1/observer_focus_r1",
+  "output": "results/grain_math_response_v1/policy_coupling_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "objects": ["native", "source_odd", "source_even", "cyclic_family", "random"],
+  "units": ["score", "log_odds", "mass", "entropy"],
+  "policies": ["focus_A", "focus_B", "balanced", "positive_coupled", "negative_coupled"],
+  "seeds": [1181, 1182, 1183],
+  "base_events": 256,
+  "coupling_divisor": 4,
+  "new_forwards": 0,
+  "fits": 0,
+  "max_cpu_seconds": 120,
+  "arithmetic_tolerance": 0.000000001,
+  "scope": "Own-actor qualified finite numeric evidence;both slot aliases;all six queries/four units/four interventions. New histories reuse complete HM117 actual endpoints,not new text acquisition or human authors.",
+  "permissions": "No API/private/training/Claude/Git/automation/lockbox/oldqueue or renewed neural budget"
+}

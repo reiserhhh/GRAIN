@@ -1,0 +1,39 @@
+{
+  "packet": "HM124",
+  "source": "results/grain_math_response_v1/action_expression_r1",
+  "marks_source": "results/grain_math_response_v1/marked_response_r1",
+  "source_variant": 0,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "current": "The record describes Person A on this occasion.",
+  "layer": 17,
+  "physical_shape": [9, 2, 128],
+  "seed": 124,
+  "arms": ["baseline", "grain_part", "remainder", "whole", "random_matched"],
+  "new_records": 48,
+  "max_batches": 240,
+  "max_endpoints": 2880,
+  "max_model_seconds": 900,
+  "conditions": [
+    "Before the activity, Person A could decide whether and how to take part. Person B had exactly the same options. Nobody prescribed their actions.",
+    "Each person was free to choose a response: Person A received no instruction about what to do, and Person B received no such instruction either."
+  ],
+  "behaviours": [
+    [
+      ["watched the shared meal in silence and left without addressing anybody", "walked around the shared meal greeting guests and bringing separate tables into conversation"],
+      ["accepted the postponed result without dwelling on it and continued the evening as usual", "revisited the postponed result all evening and imagined several further things going wrong"],
+      ["declined to share a spare umbrella with a visitor standing in the rain", "shared a spare umbrella with a visitor standing in the rain and waited until the visitor found shelter"],
+      ["forgot the reserved materials and arrived without completing the agreed preparations", "checked the reserved materials the previous night and completed every agreed preparation"],
+      ["refused the unfamiliar exhibition and chose the same familiar displays as before", "entered the unfamiliar exhibition and compared several unusual ways of arranging its displays"],
+      ["explained that the navigation program's friendly messages did not indicate any subjective experience", "said the navigation program seemed pleased to be helpful and might be hurt by rude replies"]
+    ],
+    [
+      ["sat through the shared meal without speaking to the other guests and departed quietly", "moved between tables at the shared meal, welcomed guests and encouraged them to talk together"],
+      ["put the delayed result aside and spent the evening on the usual activities", "could not stop reconsidering the delayed result and anticipating more difficulties during the evening"],
+      ["kept the unused umbrella rather than lending it to a visitor caught in the rain", "lent the unused umbrella to a visitor caught in the rain and stayed until shelter was available"],
+      ["came unprepared after overlooking the materials and leaving the promised arrangements undone", "reviewed the materials beforehand and carried out all the arrangements that had been promised"],
+      ["passed over the new exhibition and returned to the displays already known well", "looked through the new exhibition and examined alternative arrangements not encountered before"],
+      ["insisted that the route-planning software's warm tone was output without an inner experience", "talked about the route-planning software as enjoying its helpful role and feeling wounded by insults"]
+    ]
+  ],
+  "permissions": "New public authored controls and frozen local native observer only; no API/private/new training/Claude/Git/lockbox/old stopped queue; one fixed source projection and dose, no optimization"
+}

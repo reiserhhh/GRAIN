@@ -1,0 +1,18 @@
+{
+  "protocol": "HM95_CONDITIONAL_CURRENT_LIFT",
+  "output": "results/grain_math_response_v1/conditional_current_lift_r1",
+  "natural_source": "results/grain_math_response_v1/opportunity_current_r1",
+  "vector_source": "results/grain_math_response_v1/author_current_r1",
+  "seed": 95261010,
+  "source_markov_pseudocount": 0.5,
+  "ghost_draws": 499,
+  "bootstrap_draws": 1000,
+  "primary_account": ["joint", "response", "hidden"],
+  "arms": ["pooled", "position", "embedding", "joint"],
+  "seeds": [19, 43, 71],
+  "profiles_per_sign_seed": 4,
+  "max_cpu_seconds": 300,
+  "new_neural_calls": 0,
+  "personality_scores_input": false,
+  "external_labels_read": false
+}

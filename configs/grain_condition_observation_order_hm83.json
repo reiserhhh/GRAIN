@@ -1,0 +1,13 @@
+{
+  "packet": "HM83",
+  "max_forwards": 720,
+  "max_model_seconds": 480,
+  "behaviours": {
+    "extraversion": ["spent the reception away from the guests and chose not to start a conversation", "introduced themselves to several guests at the reception and kept the conversation going"],
+    "neuroticism": ["waited for the delayed appointment without worrying and remained at ease", "worried repeatedly about the delayed appointment and found it difficult to feel at ease"],
+    "agreeableness": ["ignored a colleague's request for help and answered with an unkind remark", "listened patiently to a colleague's request for help and offered friendly assistance"],
+    "conscientiousness": ["left a promised assignment unfinished and did not check the due date", "checked the due date for a promised assignment and finished it with careful attention"],
+    "openness": ["chose the familiar route for a creative exercise and dismissed alternative approaches", "tried unfamiliar approaches to a creative exercise and explored several possibilities"],
+    "anthropomorphism": ["regarded a digital helper as a device that computes responses without experiencing anything", "imagined that a digital helper could feel disappointed and enjoy being thanked"]
+  }
+}

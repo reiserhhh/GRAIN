@@ -1,0 +1,18 @@
+{
+  "packet": "HM127",
+  "source": "results/grain_math_response_v1/expression_response_r1",
+  "fresh": "results/grain_math_response_v1/grain_native_remainder_r1",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "max_new_history_calls": 48,
+  "max_history_model_seconds": 90,
+  "max_fresh_current_seconds": 120,
+  "max_cpu_seconds": 600,
+  "blocks": 17,
+  "batch_size": 8,
+  "device": "mps",
+  "source_variant_wording": [0,0],
+  "profile_amplitude": 0.4,
+  "numeric_atol": 1e-8,
+  "result_after_known_materials": true,
+  "permissions": "Local frozen public controls only;no API/private/MEPS/train/Claude/Git/automation/lockbox/oldqueue/predictor or fidelity search"
+}

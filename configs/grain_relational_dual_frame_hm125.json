@@ -1,0 +1,20 @@
+{
+  "packet": "HM125",
+  "source": "results/grain_math_response_v1/action_expression_r1",
+  "marks": "results/grain_math_response_v1/marked_response_r1/00/marks.npz",
+  "fresh": "results/grain_math_response_v1/grain_native_remainder_r1",
+  "max_cpu_seconds": 600,
+  "native_causal_cut_atol": 0.00005,
+  "numeric_atol": 0.000000001,
+  "lexical_law_atol": 0.000000000001,
+  "profile_seed": 125,
+  "profile_amplitude": 0.6,
+  "dense_profile_pairs": 20,
+  "physical_shape": [9, 2, 128],
+  "source_records": 96,
+  "source_columns": 12,
+  "coordinates": ["RD01", "RD02", "RD03", "RD04", "RD05", "RD06", "RD07", "RD08", "RD09", "RD10", "RD11", "RD12"],
+  "known_control_result_after_construction": true,
+  "new_model_calls": 0,
+  "permissions": "NoAPI/private/MEPS/neuraltraining/Claude/Git/automation/lockbox/oldqueue/teacher_fidelity_grid"
+}

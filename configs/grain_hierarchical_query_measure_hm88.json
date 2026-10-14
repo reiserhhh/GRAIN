@@ -1,0 +1,14 @@
+{
+  "packet": "HM88",
+  "source": "results/grain_math_response_v1/cold_evidence_kernel_r1",
+  "output": "results/grain_math_response_v1/hierarchical_query_measure_r1",
+  "arms": ["cold", "shared_only", "specific_only", "native", "event_only", "within_only"],
+  "expected_bodies": 96,
+  "expected_queries": 6,
+  "expected_heads": 12,
+  "tolerance": 1e-9,
+  "epsilon": 0.5,
+  "new_neural_calls": 0,
+  "retrospective_cached_interventions": true,
+  "original_scope_complete": false
+}

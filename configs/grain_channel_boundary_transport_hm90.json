@@ -1,0 +1,19 @@
+{
+  "packet": "HM90",
+  "output": "results/grain_math_response_v1/channel_boundary_transport_r1",
+  "source": "results/grain_math_response_v1/body_relation_graph_r1",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "frames": ["reporter_first", "actor_first", "embedded_report"],
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "max_forwards": 576,
+  "max_model_seconds": 600,
+  "epsilon": 0.5,
+  "behaviours": {
+    "extraversion": ["stayed silent during the neighborhood gathering and chose a secluded seat", "introduced several neighbors to one another and animated the gathering"],
+    "neuroticism": ["remained composed after receiving an uncertain message and slept without concern", "repeatedly revisited an uncertain message and lost sleep imagining trouble"],
+    "agreeableness": ["rebuffed a visitor asking for directions and responded with contempt", "guided a visitor asking for directions and responded with warmth"],
+    "conscientiousness": ["misplaced the travel documents and neglected the arrangements until departure", "organized the travel documents and checked the arrangements well before departure"],
+    "openness": ["declined an unfamiliar performance and demanded the customary repertoire", "welcomed an unfamiliar performance and compared several unusual interpretations"],
+    "anthropomorphism": ["described the automated guide as a mechanism with no wishes or emotions", "described the automated guide as a companion with wishes and emotions"]
+  }
+}

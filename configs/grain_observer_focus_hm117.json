@@ -1,0 +1,21 @@
+{
+  "packet": "HM117",
+  "source": "results/grain_math_response_v1/actor_action_r1",
+  "output": "results/grain_math_response_v1/observer_focus_r1",
+  "source_wording": 0,
+  "source_variant": 2,
+  "current_B": "The record describes Person B on this occasion.",
+  "arms": ["baseline", "source_odd", "source_even", "cyclic_family", "random"],
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "layer": 17,
+  "max_batches": 244,
+  "max_endpoints": 2928,
+  "max_model_seconds": 900,
+  "noop_group": [0, -1],
+  "author_amplitude": 0.4,
+  "edit_tolerance": 0.00001,
+  "isolation_tolerance": 0.000001,
+  "arithmetic_tolerance": 0.000000001,
+  "source_rule": "Reuse all five complete first-wording HM116 A-focus arms;apply identical precommitted source actions on B-focus. No B or application-derived direction.",
+  "permissions": "Local public authored controls only;no fits/API/private/training/Claude/Git/automation/lockbox/oldqueue/caprenewal"
+}

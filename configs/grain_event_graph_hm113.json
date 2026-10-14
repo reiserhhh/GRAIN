@@ -1,0 +1,13 @@
+{
+  "packet": "HM113",
+  "previous": "results/grain_math_response_v1/recursive_collector_r1",
+  "triples": [[0, 1, 2], [0, 3, 4], [1, 4, 5], [2, 3, 5]],
+  "packages": ["episode_order", "reverse", "slot_shuffle", "packet_13", "duplicates"],
+  "seed": 113,
+  "reference_atol": 0.00005,
+  "identity_atol": 1e-10,
+  "max_seconds": 180,
+  "new_neural_calls": 0,
+  "fits": 0,
+  "permissions": "No API/private/training/Claude/Git/automation/lockbox/oldqueue; no HM107 rescue"
+}

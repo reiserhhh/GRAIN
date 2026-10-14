@@ -1,0 +1,23 @@
+{
+  "packet": "HM100",
+  "output": "results/grain_math_response_v1/history_bridge_r2",
+  "source": "results/grain_math_response_v1/multi_cycle_capacity_r1",
+  "application": "results/grain_math_response_v1/current_transport_r1",
+  "typed": "results/grain_math_response_v1/typed_cycle_transport_r1",
+  "source_contexts": [0, 1],
+  "categories": 6,
+  "levels": 3,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "fields": ["uniform_value", "local_query", "local_bound_query"],
+  "factors": ["value", "registered_key", "subject_gate"],
+  "baseline": "For current state j use the observed j->j record in the same corpus/frame;not neutral text or absence",
+  "quadrature_nodes": 32,
+  "alternate_quadrature_nodes": 64,
+  "arithmetic_atol": 1e-10,
+  "max_analysis_seconds": 120,
+  "registration": "Numerical recovery after r1 integral16 closure error2.4813706644977174e-10;no tolerance relaxation or changed scientific conditions;exploratory aggregate-known follow-up",
+  "interpretation": "Finite observable interventions/path accounts,not unique neural causal mediation or psychological effect fractions",
+  "new_neural_calls": 0,
+  "predictor_fit": false,
+  "failed_predecessor": "results/grain_math_response_v1/history_bridge_r1"
+}

@@ -1,0 +1,24 @@
+{
+  "packet": "HM86",
+  "output": "results/grain_math_response_v1/query_evidence_routing_r1",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "block": 16,
+  "qkv_layer": 17,
+  "source_bodies": 24,
+  "reference_queries": 6,
+  "application_bodies": 96,
+  "max_forwards": 606,
+  "max_model_seconds": 600,
+  "epsilon": 0.5,
+  "arithmetic_tolerance": 1e-10,
+  "body_causal_tolerance": 1e-5,
+  "fresh_behaviours": {
+    "extraversion": ["kept to a quiet corner at the workshop and let the conversations pass", "moved between tables at the workshop and started conversations with strangers"],
+    "neuroticism": ["heard that a delivery was late and calmly carried on with the afternoon", "heard that a delivery was late and repeatedly worried that something had gone wrong"],
+    "agreeableness": ["interrupted a colleague asking for help and dismissed the request harshly", "listened patiently to a colleague asking for help and offered considerate assistance"],
+    "conscientiousness": ["left the shared task unfinished and forgot the materials needed for the next step", "checked each step of the shared task and put the required materials in order"],
+    "openness": ["turned away from an unfamiliar exhibition and insisted on the usual approach", "examined an unfamiliar exhibition and experimented with a different approach"],
+    "anthropomorphism": ["explained that the digital helper merely computed responses and had no wishes", "imagined that the digital helper wanted companionship and could feel disappointed"]
+  }
+}

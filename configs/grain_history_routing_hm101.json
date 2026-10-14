@@ -1,0 +1,20 @@
+{
+  "packet": "HM101",
+  "output": "results/grain_math_response_v1/history_routing_r1",
+  "source": "results/grain_math_response_v1/multi_cycle_capacity_r1",
+  "source_material": "configs/grain_author_current_hm93.json",
+  "application_material": "configs/grain_current_transport_hm98.json",
+  "system_material": "configs/grain_math_passive_event_composition_v1.json",
+  "source_lexicon": 0,
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "bridges": ["The record continues.", "A second observation follows."],
+  "arms": [[0, 0], [1, 0], [0, 1], [1, 1]],
+  "prefix_block": 16,
+  "capture_layer": 17,
+  "max_forwards": 866,
+  "max_model_seconds": 300,
+  "carrier_atol": 0.0001,
+  "arithmetic_atol": 0.0000000001,
+  "new_fits": 0,
+  "new_generation": 0
+}

@@ -1,0 +1,22 @@
+{
+  "packet": "HM89",
+  "output": "results/grain_math_response_v1/body_relation_graph_r1",
+  "source": "results/grain_math_response_v1/cold_evidence_kernel_r1",
+  "source_material": "configs/grain_math_passive_event_composition_v1.json",
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness", "anthropomorphism"],
+  "frames": ["reporter_first", "actor_first"],
+  "max_forwards": 384,
+  "max_model_seconds": 600,
+  "block": 16,
+  "layer": 17,
+  "epsilon": 0.5,
+  "tolerance": 1e-9,
+  "behaviours": {
+    "extraversion": ["spent the reception quietly apart from the guests and avoided conversation", "moved between guests at the reception and eagerly began conversations"],
+    "neuroticism": ["handled an unexpected delay calmly and stopped worrying after making a new plan", "handled an unexpected delay with persistent worry and imagined further disasters"],
+    "agreeableness": ["answered a colleague harshly and dismissed the request for assistance", "answered a colleague kindly and offered patient assistance"],
+    "conscientiousness": ["forgot the scheduled inspection and left essential paperwork unfinished", "prepared for the scheduled inspection and completed every required document"],
+    "openness": ["refused to examine an unconventional painting and insisted on familiar designs", "examined an unconventional painting with curiosity and explored new interpretations"],
+    "anthropomorphism": ["explained that the digital assistant executes computations without desires or affection", "explained that the digital assistant desires companionship and feels affection"]
+  }
+}
