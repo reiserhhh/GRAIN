@@ -1,0 +1,22 @@
+{
+  "packet": "HM209",
+  "parent": "results/grain_math_response_v1/condition_relational_operator_r1",
+  "variance_parent": "results/grain_math_response_v1/vector_likelihood_compiler_r1",
+  "source_authors": 386,
+  "source_folds": [203, 183],
+  "application_authors": 24,
+  "events_per_window": 12,
+  "dimensions": 1024,
+  "prior": "HM207_uniform_32_profiles_uniform_authors_within_profile",
+  "channel": "declared_HM204_Gaussian_scale_not_identified_natural_text_error",
+  "variance": "reuse_sealed_HM204_0.05525111588037168_no_search",
+  "laws": ["same_author_pair", "profile_marginal_product"],
+  "primary": "all_five_signed_held_source_log_score_changes_and_joint_profile_change",
+  "evaluation_references": ["observed_opposite_authors", "uniform32profiles"],
+  "cold_frames_per_author": 9,
+  "native_answers_or_application_labels": false,
+  "max_stage_seconds": 120,
+  "comparison_tolerance": 2e-12,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,15 @@
+{
+  "packet": "HM210",
+  "parent": "results/grain_math_response_v1/relational_diagnostic_update_r1",
+  "observations": "same_HM209_386_source_24_application_1024D_two12event_windows",
+  "targets": ["E", "N", "A", "C", "O"],
+  "profile_reference": "unchanged_uniform32profiles",
+  "evaluation_references": ["observed_opposite_authors", "uniform32profiles"],
+  "accounts": ["conditional_change", "profile_rerouting", "interaction"],
+  "conditioning": "all_four_other_target_bits_all16profiles_not_assumed_current_labels",
+  "primary": "all5_signed_three_account_held_log_score_changes_reconstruct_HM209",
+  "max_stage_seconds": 120,
+  "comparison_tolerance": 2e-12,
+  "new_model_calls_or_parameter_search": false,
+  "original_scope_complete": false
+}

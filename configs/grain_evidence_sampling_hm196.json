@@ -1,0 +1,16 @@
+{
+  "packet": "HM196",
+  "parent": "results/grain_math_response_v1/joint_evidence_law_r1",
+  "source_authors": 386,
+  "source_events_per_author": 34,
+  "cold_families": 480,
+  "targets": ["E", "N", "A", "C", "O"],
+  "regimes": ["propensity_replacement", "finite_inventory"],
+  "integer_reconstruction_tolerance": 1e-10,
+  "audit_tolerance": 1e-10,
+  "smoothing": 0,
+  "new_neural_calls": 0,
+  "fit_native_answers": false,
+  "accuracy_selection": false,
+  "original_scope_complete": false
+}

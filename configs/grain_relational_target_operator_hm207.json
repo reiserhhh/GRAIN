@@ -1,0 +1,15 @@
+{
+  "packet": "HM207",
+  "vector_parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "split_parent": "results/grain_math_response_v1/transferable_pair_update_r1",
+  "native_parent": "results/grain_math_response_v1/same_event_multitarget_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "events_per_view": 12,
+  "dimensions": 1024,
+  "pairing_references": 199,
+  "reference_seed": 20720261012,
+  "native_fit": false,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,19 @@
+{
+  "packet": "HM188",
+  "parent": "results/grain_math_response_v1/condition_shape_response_r1",
+  "source_authors": 386,
+  "views": 2,
+  "events": 12,
+  "space": "unchanged_orthonormal_15D_GRAIN_span",
+  "components": ["coverage", "choice", "geometry", "coupling"],
+  "primary": "signed_all5_crossauthor_J_full_minus_J_product_conditional_marginals",
+  "null_replicates": 199,
+  "coupling_seed": 108191,
+  "coupling_strata": "fixed_author_fold_full5bit_profile_two_view_support_signature",
+  "inherited_references": "all199_parent_profile_and_condition_relinks_unchanged",
+  "max_compile_seconds": 120,
+  "cold_frames": 480,
+  "comparison_tolerance": 2e-12,
+  "original_scope_complete": false,
+  "new_neural_API_private_training_application_labels": 0
+}

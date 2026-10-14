@@ -1,0 +1,21 @@
+{
+  "packet": "HM184",
+  "vector_parent": "results/grain_math_response_v1/actual_vector_target_action_r1",
+  "event_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "joint_parent": "results/grain_math_response_v1/joint_evidence_law_r1",
+  "directions": "results/grain_construction_v1/C3/anonymous_evidence_r1/private_learned_directions.npz",
+  "material": "results/grain_vector_mechanisms/predecessor_integration_v1/material/private_arrays.npz",
+  "spaces": ["full", "retained", "complement"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "components": ["marginal", "matched", "reference_shift", "profile_composition"],
+  "representations": ["cue_mask", "raw"],
+  "source_authors": 386,
+  "application_authors": 24,
+  "source_views": 2,
+  "cold_frames": 480,
+  "comparison_tolerance": 2e-12,
+  "native_query": "N_only_conditional_digit_distribution",
+  "new_neural_calls": 0,
+  "native_fit": false,
+  "original_scope_complete": false
+}

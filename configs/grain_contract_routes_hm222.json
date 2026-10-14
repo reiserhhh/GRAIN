@@ -1,0 +1,15 @@
+{
+  "parent": "results/grain_math_response_v1/target_contract_r1",
+  "authors": 24,
+  "batch_size": 6,
+  "science_batches": 144,
+  "audit_batches": 4,
+  "new_batches": 148,
+  "new_endpoints": 888,
+  "max_tokens": 3072,
+  "max_model_seconds": 900,
+  "device": "mps",
+  "dtype": "float32",
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 22220261012
+}

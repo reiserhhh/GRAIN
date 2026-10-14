@@ -1,0 +1,22 @@
+{
+  "packet": "HM187",
+  "parent": "results/grain_math_response_v1/condition_pairing_response_r1",
+  "source_authors": 386,
+  "views": 2,
+  "events": 12,
+  "space": "fixed_orthonormal_15D_span_of_existing_GRAIN_map_NOTfull_E5",
+  "condition": "inherited_TOP20_venue_bit_NOTcausal_situation",
+  "kinds": ["pooled", "raw_pairing", "drift", "shape"],
+  "primary_author": "self_shape_product_minus_exact_count_matched_stranger_average",
+  "primary_target": "all_five_cross_author_shape_field_signed_product",
+  "null_replicates": 199,
+  "author_null_seed": 108188,
+  "profile_null_seed": 108189,
+  "pairing_null_seed": 108190,
+  "target_rule": "positive_primary_and_profile_and_pairing_upper_tails_at_most_0.05",
+  "max_compile_seconds": 120,
+  "cold_frames": 480,
+  "comparison_tolerance": 2e-12,
+  "original_scope_complete": false,
+  "new_neural_API_private_training_application_labels": 0
+}

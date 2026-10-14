@@ -1,0 +1,23 @@
+{
+  "packet": "HM208",
+  "relation_parent": "results/grain_math_response_v1/relational_target_operator_r1",
+  "condition_parent": "results/grain_math_response_v1/condition_pairing_response_r1",
+  "application_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "native_parent": "results/grain_math_response_v1/same_event_multitarget_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "events_per_view": 12,
+  "dimensions": 1024,
+  "condition": "inherited_TOP20_venue_bit_not_complete_topic_or_situation",
+  "template_references": ["own_source_fold", "opposite_source_fold"],
+  "template_fit": "label_free_event_weighted_condition_mean_per_window",
+  "operator_reference": "HM207_uniform_32_profiles_uniform_authors_within_profile",
+  "primary": "all_five_full_pair_operator_four_by_four_signed_accounts",
+  "pairing_references": 199,
+  "reference_reuse": "exact_HM207_permutations_no_new_seed_or_selection",
+  "max_analyze_seconds": 120,
+  "comparison_tolerance": 2e-12,
+  "parameter_search": false,
+  "native_fit": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,15 @@
+{
+  "packet": "HM213",
+  "anchor_parent": "results/grain_math_response_v1/source_anchor_exchange_r1",
+  "whole_parent": "results/grain_math_response_v1/relay_value_summary_r1",
+  "increment_parent": "results/grain_math_response_v1/body_summary_innovation_mps_recovery_r1",
+  "targets": ["E", "N", "A", "C", "O"],
+  "primary_contrasts": ["recipient_baseline", "own_increment"],
+  "primary": "SOURCE-view mean; deletion; query-specific geometric-head action; panel-view mean; all5 targets x2 contrasts, Holm family10",
+  "reference": "Reuse SAME HM212995 assignments and199 references per target; no new draws",
+  "max_compute_seconds": 120,
+  "max_verify_seconds": 180,
+  "new_neural_calls": 0,
+  "parameter_search": false,
+  "historical_exploratory_not_confirmatory": true
+}

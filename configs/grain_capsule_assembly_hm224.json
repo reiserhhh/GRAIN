@@ -1,0 +1,16 @@
+{
+  "parent": "results/grain_math_response_v1/criterion_capsule_r1",
+  "device": "mps",
+  "dtype": "float32",
+  "max_tokens": 1200,
+  "max_model_seconds": 900,
+  "authors": 24,
+  "source_capture_batches": 192,
+  "cold_batches": 146,
+  "dose": 0.5,
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 22420261012,
+  "partition": [[0, 1], [2, 3]],
+  "primary": "anonymous joint-compiled action minus separately compiled vector-sum action",
+  "no_fit_or_partition_search": true
+}

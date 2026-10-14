@@ -1,0 +1,15 @@
+{
+  "parent": "results/grain_math_response_v1/contract_routes_r1",
+  "device": "mps",
+  "dtype": "float32",
+  "max_tokens": 1200,
+  "max_model_seconds": 900,
+  "authors": 24,
+  "source_capture_batches": 96,
+  "cold_batches": 146,
+  "dose": 0.5,
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 22320261012,
+  "primary": "anonymous aligned criterion contrast minus swapped criterion contrast",
+  "no_fit_or_dose_search": true
+}

@@ -1,0 +1,19 @@
+{
+  "packet": "HM219",
+  "parent": "results/grain_math_response_v1/prospective_evidence_r1",
+  "authors": 24,
+  "targets": ["E", "N", "A", "C", "O"],
+  "new_arms": ["support_alone", "counter_alone"],
+  "batches": 48,
+  "enquiries": 240,
+  "max_tokens": 3072,
+  "max_model_seconds": 400,
+  "device": "mps",
+  "dtype": "float32",
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 21920261012,
+  "evaluation_direction": [1, -1, 1, 1, 1],
+  "primary": "mean_A_specific_context_interaction",
+  "parameter_search": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,21 @@
+{
+  "packet": "HM216",
+  "parent": "results/grain_math_response_v1/source_reference_action_r1",
+  "source_parent": "results/grain_math_response_v1/relational_diagnostic_update_r1",
+  "references": 199,
+  "seeds": [21620261012, 21620261013],
+  "families": ["profile_only", "profile_exact_condition_counts"],
+  "laws": ["single_window", "paired_author", "paired_profile_product"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "primary": "single_window_all5_conditional_cross_ratio_RMS",
+  "secondary": "all_laws_all_targets_actions_and_signed_accounts_no_selection",
+  "source_count": 386,
+  "panel_count": 24,
+  "events_per_view": 12,
+  "variance": 0.05525111588037168,
+  "comparison_tolerance": 2e-11,
+  "max_compute_seconds": 120,
+  "new_model_fit_API_private_train": false,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

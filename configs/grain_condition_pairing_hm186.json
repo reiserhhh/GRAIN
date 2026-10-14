@@ -1,0 +1,22 @@
+{
+  "packet": "HM186",
+  "source_parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "fold_parent": "results/grain_math_response_v1/joint_target_atlas_r1",
+  "condition_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "application_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "source_authors": 386,
+  "source_views": 2,
+  "events_per_view": 12,
+  "targets": ["E", "N", "A", "C", "O"],
+  "condition": "inherited_source_TOP20_venue_bit_not_full_topic_or_situation",
+  "reference": "author_balanced_natural_marginal_label_groups_not_uniform_32_profiles",
+  "primary": "cross_author_condition_pairing_all_five_full_signed_inner_product",
+  "profile_null_seed": 108186,
+  "pairing_null_seed": 108187,
+  "null_replicates": 199,
+  "promotion_rule": "primary_positive_and_both_registered_upper_tails_at_most_0.05",
+  "cold_frames": 480,
+  "comparison_tolerance": 2e-12,
+  "new_neural_API_private_raw_application_labels": 0,
+  "original_scope_complete": false
+}

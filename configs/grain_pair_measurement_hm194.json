@@ -1,0 +1,12 @@
+{
+  "packet": "HM194",
+  "law_parent": "results/grain_math_response_v1/route_preserving_relation_r1",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "held_authors": 120,
+  "event_indices": [[0, 17], [18, 35]],
+  "targets": ["E", "N", "A", "C", "O"],
+  "audit_tolerance": 2e-10,
+  "primary": "positive_frozen_author_measurement_and_addressed_evidence_actions_NOT_accuracy",
+  "new_fit_or_neural_private_API_application_labels": 0,
+  "original_scope_complete": false
+}

@@ -1,0 +1,20 @@
+{
+  "packet": "HM185",
+  "parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "poles": "results/grain_vector_mechanisms/d2_real_author_path_r1/private_profiles.npz",
+  "targets": ["E", "N", "A", "C", "O"],
+  "source_authors": 386,
+  "source_views": 2,
+  "profiles": 32,
+  "author_folds": 2,
+  "fold_salt": "HM185_source_profile_split_v1",
+  "null_seed": 108185,
+  "null_replicates": 199,
+  "reference": "equal_weight_over_32_observed_label_profiles",
+  "primary": "between_author_joint_order_2_to_5_full_signed_inner_product",
+  "cold_frames": 480,
+  "comparison_tolerance": 2e-12,
+  "new_neural_calls": 0,
+  "native_answers_read": false,
+  "original_scope_complete": false
+}

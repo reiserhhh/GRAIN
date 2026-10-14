@@ -1,0 +1,18 @@
+{
+  "packet": "HM217",
+  "catalogue_parent": "results/grain_math_response_v1/source_catalogue_response_r1",
+  "anchor_parent": "results/grain_math_response_v1/source_anchor_exchange_r1",
+  "native_parent": "results/grain_math_response_v1/anchor_carrier_contrasts_r1",
+  "targets": ["E", "N", "A", "C", "O"],
+  "references": ["uniform_profile", "source_frequency"],
+  "laws": ["single_window", "paired_author", "paired_profile_product"],
+  "parts": ["full", "assignment_orbit_density", "anchor_departure"],
+  "reader_modes": [0, 6],
+  "reader_names": ["native", "recipient_framework"],
+  "reference_draws_reused": 199,
+  "primary": "uniform_profile/single_window/anchor_departure/recipient_framework/specific_geometric_head/author_view_mean/matched_target;five_targets",
+  "max_compute_seconds": 120,
+  "comparison_tolerance": 2e-11,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,14 @@
+{
+  "packet": "HM205",
+  "parent": "results/grain_math_response_v1/vector_likelihood_compiler_r1",
+  "event_parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "output": "results/grain_math_response_v1/observation_partition_r1",
+  "programs": ["atomic", "pooled", "balanced", "unequal", "overlap", "aliases", "lossy_prefix"],
+  "laws": ["independent", "shared_occasion"],
+  "reference_event_count": 12,
+  "variance_rule": "reuse_HM204_s2;independent_sigma2=12s2;shared_sigma2=6s2_tau2=s2/2",
+  "new_model_calls": 0,
+  "application_labels_read": 0,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

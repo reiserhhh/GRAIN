@@ -1,0 +1,12 @@
+{
+  "packet": "HM215",
+  "parent": "results/grain_math_response_v1/diagnostic_action_bridge_r1",
+  "banks": "results/grain_math_response_v1/relational_diagnostic_update_r1/source_banks.npz",
+  "laws": ["single_window", "paired_author", "paired_profile_product"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "directions": [[0, 1], [1, 0]],
+  "comparison_tolerance": 2e-11,
+  "max_stage_seconds": 30,
+  "new_native_fit_or_search": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,14 @@
+{
+  "packet": "HM228",
+  "parent": "results/grain_math_response_v1/author_comparison_geometry_r1",
+  "failed_compatibility_parent": "results/grain_math_response_v1/author_comparison_recovery_r1",
+  "query_rows": 256,
+  "output_tolerance": 0.0001,
+  "model_seconds_total_recovery_cap": 1200,
+  "new_batches": 40,
+  "new_endpoints": 200,
+  "scope_endpoints": 335,
+  "ordinal_robust_margin": 0.0001,
+  "note": "Post-instrument-outcome contract revision;HM227 state gate remains failed;no state-precision rescue",
+  "original_scope_complete": false
+}

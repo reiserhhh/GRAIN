@@ -1,0 +1,17 @@
+{
+  "packet": "HM191",
+  "parent": "results/grain_math_response_v1/joint_evidence_law_r1",
+  "source_authors": 386,
+  "source_events_per_author": 34,
+  "targets": ["Extraversion", "Neuroticism", "Agreeableness", "Conscientiousness", "Openness"],
+  "event_cells": 8,
+  "cold_families": 480,
+  "constraint_orders": [0, 1],
+  "witness_mass_fraction": 0.5,
+  "projection_relative_tolerance": 1e-10,
+  "certificate_tolerance": 1e-10,
+  "smoothing": 0,
+  "fit_native_answers": false,
+  "new_neural_calls": 0,
+  "original_scope_complete": false
+}

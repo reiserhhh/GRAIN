@@ -1,0 +1,23 @@
+{
+  "packet": "HM190",
+  "source_parent": "results/grain_math_response_v1/distinct_event_geometry_r1",
+  "vector_parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "event_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "native_parent": "results/grain_math_response_v1/joint_evidence_law_r1",
+  "source_reader": "mean_fold_view_of_HM189_distinct_event_joint_minus_product_field",
+  "primary": "cue_mask_N_distinct_event_S_minus_C_vs_natural_ordinal_author_mean",
+  "targets": ["E", "N", "A", "C", "O"],
+  "representations": ["cue_mask", "raw"],
+  "sets": ["full12", "without_selected4", "without_control4"],
+  "readings": ["level", "squared", "distinct_event", "within_condition_term", "choice_change", "survivor_normalization", "removed_pairs"],
+  "expected_complete_views": 14,
+  "expected_authors_any": 11,
+  "expected_authors_both": 3,
+  "minimum_condition_events": 2,
+  "permutation_replicates": 199,
+  "permutation_seed": 108193,
+  "comparison_tolerance": 2e-12,
+  "new_neural_API_training_private_application_labels": 0,
+  "native_fit": false,
+  "original_scope_complete": false
+}

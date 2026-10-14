@@ -1,0 +1,18 @@
+{
+  "packet": "HM214",
+  "source_parent": "results/grain_math_response_v1/relational_diagnostic_update_r1",
+  "mechanism_parent": "results/grain_math_response_v1/anchor_carrier_contrasts_r1",
+  "source_authors": 386,
+  "application_authors": 24,
+  "dimensions": 1024,
+  "source_laws": ["single_window", "paired_author", "paired_profile_product"],
+  "reference": "reuse_HM209_uniform32_profiles_and_frozen_variance",
+  "primary": "all5_single_window_source_actions_x_recipient_framework_contrast_in_both_fixed_banks",
+  "secondary": "all_laws_modes_cross_targets_units_and_midpoint_remainders",
+  "units": ["score", "log_odds", "geometric_head", "candidate_mass"],
+  "max_stage_seconds": 120,
+  "comparison_tolerance": 2e-12,
+  "new_neural_API_private_training": false,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

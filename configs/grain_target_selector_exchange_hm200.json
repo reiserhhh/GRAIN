@@ -1,0 +1,22 @@
+{
+  "packet": "HM200",
+  "parent": "results/grain_math_response_v1/same_event_multitarget_r1",
+  "native_parent": "results/grain_vector_mechanisms/d2_real_author_path_r1",
+  "authors": 24,
+  "views": 2,
+  "arms": ["remove_selected", "remove_control"],
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness"],
+  "donor_permutation": [4, 2, 1, 3, 0],
+  "layers": 28,
+  "query_heads": 12,
+  "new_batches": 194,
+  "new_enquiries": 970,
+  "max_model_seconds": 1500,
+  "max_tokens": 3072,
+  "device": "mps",
+  "dtype": "float32",
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 20020261012,
+  "native_fit": false,
+  "original_scope_complete": false
+}

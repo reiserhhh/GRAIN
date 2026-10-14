@@ -1,0 +1,22 @@
+{
+  "packet": "HM199",
+  "parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "event_parent": "results/grain_math_response_v1/event_trait_action_r1",
+  "native_parent": "results/grain_vector_mechanisms/d2_real_author_path_r1",
+  "authors": 24,
+  "views": 2,
+  "arms": ["full", "remove_selected", "remove_control", "selected_only", "control_only"],
+  "targets": ["extraversion", "neuroticism", "agreeableness", "conscientiousness", "openness"],
+  "new_target_indices": [0, 2, 3, 4],
+  "new_batches": 240,
+  "new_enquiries": 960,
+  "max_model_seconds": 1200,
+  "max_tokens": 3072,
+  "capture_layer": 16,
+  "device": "mps",
+  "dtype": "float32",
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 19920261012,
+  "native_fit": false,
+  "original_scope_complete": false
+}

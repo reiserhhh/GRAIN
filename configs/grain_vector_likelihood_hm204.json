@@ -1,0 +1,22 @@
+{
+  "packet": "HM204",
+  "parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "native_parent": "results/grain_math_response_v1/same_event_multitarget_r1",
+  "output": "results/grain_math_response_v1/vector_likelihood_compiler_r1",
+  "source_authors": 386,
+  "application_authors": 24,
+  "source_views": 2,
+  "representation_names": ["cue_mask", "raw"],
+  "arms": ["full", "remove_selected", "remove_control", "selected_only", "control_only"],
+  "targets": ["E", "N", "A", "C", "O"],
+  "feature": "mean_of_existing_normalized_comment_vectors_no_new_normalization",
+  "observation_law": "declared_isotropic_Gaussian_channel_around_source_author_mean",
+  "variance_rule": "median_positive_pair_squared_distance_of_pooled_source_view_means",
+  "source_prior": "uniform_author",
+  "null_permutation_seed": 20420261012,
+  "numeric_only": true,
+  "new_model_calls": 0,
+  "answer_fit": false,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

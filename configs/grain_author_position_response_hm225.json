@@ -1,0 +1,23 @@
+{
+  "packet": "HM225",
+  "parent": "results/grain_math_response_v1/prospective_evidence_r1",
+  "labels": "results/grain_vector_mechanisms/predecessor_integration_v1/comparison_r1/private_oof.npz",
+  "identity_material": "results/grain_vector_mechanisms/predecessor_integration_v1/material/private_arrays.npz",
+  "targets": ["E", "N", "A", "C", "O"],
+  "authors": 24,
+  "source_authors": 386,
+  "events_per_author": 12,
+  "remove": 4,
+  "reference": "equal SOURCE author and window mass;frozen in-bank score origin,not a population norm",
+  "primary_target": "A",
+  "primary_question": "Do frozen author levels and evidence responses contact the same existing human anchor?",
+  "bootstrap_draws": 1999,
+  "permutations": 999,
+  "seed": 22520261012,
+  "max_cpu_seconds": 120,
+  "label_permission": "existing PUBLIC PANDORA Big5-only numeric author_ids/y,already authorized in HM171;no raw questionnaires or MEPS",
+  "new_model_calls": 0,
+  "fit_or_parameter_search": false,
+  "cohort_status": "historical exploratory panel,not a new lockbox or confirmatory CV",
+  "original_scope_complete": false
+}

@@ -1,0 +1,18 @@
+{
+  "packet": "HM195",
+  "source_parent": "results/grain_math_response_v1/route_preserving_relation_r1",
+  "event_parent": "results/grain_math_response_v1/observed_author_family_r1",
+  "source_authors": 386,
+  "banks": [203, 183],
+  "windows": [[0, 18], [18, 36]],
+  "targets": ["E", "N", "A", "C", "O"],
+  "outcome": "4*same_exact_venue+next_frozen_state",
+  "primary": "signed_cross_author_cross_window_agreement_of_observed_transition_target_update",
+  "null": "199_whole_profile_exchanges_within_inherited_author_bank",
+  "null_seed": 195904,
+  "null_count": 199,
+  "audit_tolerance": 2e-10,
+  "smoothing": 0,
+  "new_neural_API_private_raw_application_labels_training": 0,
+  "original_scope_complete": false
+}

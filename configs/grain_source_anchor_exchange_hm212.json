@@ -1,0 +1,21 @@
+{
+  "packet": "HM212",
+  "vector_parent": "results/grain_math_response_v1/target_observation_complement_r1",
+  "native_parent": "results/grain_math_response_v1/same_event_multitarget_r1",
+  "source_authors": 386,
+  "panel_authors": 24,
+  "source_views": 2,
+  "events_per_view": 12,
+  "dimension": 1024,
+  "targets": ["E", "N", "A", "C", "O"],
+  "reference_draws": 199,
+  "reference_seed": 21220261012,
+  "primary": "matched_full_source_view_mean_deletion_specific_geometric_head_panel_view_mean",
+  "primary_tail": "two_sided",
+  "primary_family": 5,
+  "max_compute_seconds": 120,
+  "historical_exploratory_not_confirmatory": true,
+  "answer_fit": false,
+  "parameter_search": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,22 @@
+{
+  "packet": "HM206_entropy_roundoff_compatibility",
+  "parent": "results/grain_math_response_v1/transferable_pair_update_r1",
+  "output": "results/grain_math_response_v1/target_observation_design_entropy_recovery_r1",
+  "failed_primary": "results/grain_math_response_v1/target_observation_design_r1",
+  "source_authors": 386,
+  "source_fold_counts": [203, 183],
+  "source_events_per_window": 17,
+  "targets": ["E", "N", "A", "C", "O"],
+  "conditions": "inherited_TOP20_venue_bit_not_human_randomized_situation",
+  "experiment": "inspect_late_archive_condition_availability_then_reveal_one_uniform_early_event_then_choose_one_condition_and_read_one_uniform_late_event_from_it",
+  "policies": ["target_risk", "target_information", "identity_information", "condition0", "condition1", "uniform"],
+  "label_control": "one_whole_profile_permutation_within_each_inherited_author_fold",
+  "label_control_seed": 20620261012,
+  "numeric_tolerance": 2e-10,
+  "entropy_negative_roundoff_tolerance": "8_times_float64_epsilon_only",
+  "original_scores_values_and_negative_gains_not_clipped": true,
+  "application_labels_read": 0,
+  "parameter_search": false,
+  "new_neural_calls": 0,
+  "original_scope_complete": false
+}

@@ -1,0 +1,17 @@
+{
+  "packet": "HM198",
+  "output": "results/grain_math_response_v1/joint_target_binding_r1",
+  "banks": 2,
+  "orders": 2,
+  "documents": 16,
+  "queries": 14,
+  "capture_layer": 16,
+  "max_model_seconds": 240,
+  "max_tokens": 512,
+  "author_law_rho": 0.4,
+  "model_device": "mps",
+  "model_dtype": "float32",
+  "prior_result_fit": false,
+  "human_personality_truth": false,
+  "original_scope_complete": false
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "results/grain_math_response_v1/evidence_background_r1",
+  "authors": 24,
+  "names": ["Agreeableness", "Openness", "Scale K"],
+  "definitions": ["cooperation", "exploration"],
+  "enquiries": 294,
+  "batches": 49,
+  "batch_size": 6,
+  "max_tokens": 3072,
+  "max_model_seconds": 400,
+  "device": "mps",
+  "dtype": "float32",
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 22120261012
+}

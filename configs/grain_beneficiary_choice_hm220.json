@@ -1,0 +1,16 @@
+{
+  "parent": "results/grain_math_response_v1/evidence_background_r1",
+  "authors": 24,
+  "beneficiaries": ["other", "self"],
+  "costs": [3, 7],
+  "orders": [0, 1],
+  "enquiries": 384,
+  "batches": 48,
+  "batch_size": 8,
+  "max_tokens": 3072,
+  "max_model_seconds": 500,
+  "device": "mps",
+  "dtype": "float32",
+  "bootstrap_draws": 999,
+  "bootstrap_seed": 22020261012
+}

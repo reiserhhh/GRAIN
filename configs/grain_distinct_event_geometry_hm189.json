@@ -1,0 +1,21 @@
+{
+  "packet": "HM189",
+  "parent": "results/grain_math_response_v1/choice_geometry_response_r1",
+  "source_authors": 386,
+  "views": 2,
+  "events": 12,
+  "dimension": 15,
+  "geometries": [
+    "squared",
+    "distinct_event",
+    "within_condition_term"
+  ],
+  "eligibility": "both_condition_counts_ge2_identical_for_all_geometries",
+  "primary": "all5_crossauthor_joint_minus_product_of_distinct_event_geometry",
+  "null_replicates": 199,
+  "pairing_seed": 108192,
+  "max_compute_seconds": 120,
+  "comparison_tolerance": 2e-12,
+  "new_neural_API_private_training": 0,
+  "original_scope_complete": false
+}
