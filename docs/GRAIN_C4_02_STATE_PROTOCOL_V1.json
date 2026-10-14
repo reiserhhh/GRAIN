@@ -1,0 +1,26 @@
+{
+ "task": "GRAIN-C4-02",
+ "frozen": "2026-10-03 ~01:27 JST before any state model was fitted",
+ "authority": "SEMINAR_C4_DECISION_20261003 item 3; Claude-led finite continuation",
+ "brief": {
+  "target": "occasion expression state s_{u,t}: deviation of an event's evidence from the author's history-window conditional mean m_u(c_t); continuous-time OU process with source-fitted decay; NOT an emotion or named state",
+  "coordinates": {"primary": "15 anonymous within_venue coordinates from the C4-01 anonymous bundle", "secondary": "30 keyed facets (composition_inclusive)"},
+  "level_part": "frozen history-window BLUP (units 0-24) of m_u(c) from the bundle / C3-01 keyed fits; never updated with future events",
+  "state_model": "per coordinate, scalar Kalman filter on residuals r_t = y_t - m_u(c_t): s_{t+1} = rho s_t + w, rho = exp(-lambda * gap_days), Var(w) = q (1 - rho^2); r_t = s_t + e, Var(e) = sigma2; parameters (lambda, q, sigma2) by maximum likelihood on source_train history residual sequences (L-BFGS-B on log scale; start q = .3 var, sigma2 = .7 var, lambda = 1/30)",
+  "horizon": "gaps > 365 days flagged unsupported_horizon (state predictive mean ~ level); counted, never dropped",
+  "time": "timestamp_unix_seconds, gaps in days"
+ },
+ "evaluation_held": {
+  "prequential": "for each held author, filter over history residuals, then predict each future event (units 25-35) before observing it and update after; level-only baseline predicts residual 0",
+  "metrics": "relative MSE improvement of state vs level-only over all 1320 held future events; author bootstrap 2000 (seed 20261032); predictive coverage with variance = level posterior var + state predictive var + sigma2",
+  "order_permutation_control": "per author, permute event order across all 36 positions (values and venues move together; timestamps stay in place; seed 20261033), recompute history level and prequential predictions with the same frozen parameters; report original minus permuted improvement with paired bootstrap",
+  "eligible_events": "all future events; report unsupported_horizon counts"
+ },
+ "acceptance_frozen": {
+  "state_supported_coordinate": "relative improvement family-wise lower bound > 0 (z 2.94 anonymous 15; 3.14 keyed 30) AND original-minus-permuted improvement lower95 > 0 AND coverage >= binomial lower 95% bound around .95 for 1320 events",
+  "positive_state_construction": "at least one coordinate supported",
+  "null_reading": "no supported coordinate answers the scientific question (no detectable comment-scale state at this design) but does not demonstrate state measurement"
+ },
+ "privacy": "per-author outputs private_; no text; no labels",
+ "bounds": "CPU only, one BLAS thread; no neural call"
+}

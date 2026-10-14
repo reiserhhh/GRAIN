@@ -1,0 +1,9 @@
+{
+ "task": "GRAIN-C4-01 supplement V1.1 (uncertainty-layer diagnosis)",
+ "frozen": "2026-10-03 ~01:24 JST after transport_r1, before this supplement ran; POST HOC, disclosed; transport_r1 verdict unchanged",
+ "why": "lex_refit restored within-venue point agreement (.81) and forecasts but predictive coverage collapsed (.71-.86): mapped evidence has smaller event noise than the e5 readings it forecasts",
+ "arm": "lex_refit_readerdiff: point = lex_refit prediction; predictive variance = lexical posterior variance + e5 event noise sigma2_e5 / n_future + tau2, where tau2 (per coordinate, pooled over classes) = max(0, mean over source_validation (author,class) cells of residual^2 - post var - sigma2_e5/n), residual = future e5 class mean - lex_refit predicted class mean; source-only",
+ "also": "same construction for lex_frozen (point) to separate point and uncertainty layers",
+ "decision": "same useful_transported_scoring rule (family-wise improvement and coverage bound); diagnosis 'uncertainty layer recalibrated from source restores transport' if lex_refit fails and lex_refit_readerdiff passes",
+ "output": "results/grain_construction_v1/C4/transport_r1_uncertainty_layer/"
+}

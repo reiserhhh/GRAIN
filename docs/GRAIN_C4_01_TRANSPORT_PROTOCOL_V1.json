@@ -1,0 +1,34 @@
+{
+ "task": "GRAIN-C4-01",
+ "frozen": "2026-10-03 ~01:22 JST, before any lexical feature, map or held transport statistic was computed",
+ "authority": ["reports/claude_research_loop_20261002/SEMINAR_C4_DECISION_20261003.md", "C4_CONTINUATION_REVIEW_20261003.md", "handoff C4 scope clarification"],
+ "provenance_gate": {"result": "PASS before freezing: 22464/22464 sha256(document[a][start:end]) == event body_sha256; offsets identical across caches",
+                     "text_handling": "bodies read locally in memory only; never printed or exported; vocabulary not exported"},
+ "part_A_anonymous_cold_bundle": {
+  "content": "encoder spec (e5-large-v2 rev f169b11e, 'query: ' prefix, mean pooling; L2-normalized by bundle), 15 raw-space C3-02 directions (3 families x 5), two coordinate modes (composition_inclusive; within_venue with source_train history venue offsets for venues >=5 events, pooled offset otherwise), TOP20 context rule, per-mode per-direction moments and source reference, unseen-venue rule (pooled offset + flag + share), no-event prior-only rule, hashes",
+  "replay": "in-process cold scores for all 120 held authors equal direct recomputation; CLI replay on 20 held authors equals in-process (<=1e-12); bundle reproduces the C3-02 held E3 level split-half for all 15 directions in both modes (<=1e-12); tamper tests",
+  "boundary": "input is a cached encoder vector; a new author needs an encoder forward pass, not authorized in this loop"
+ },
+ "part_B_lexical_transport": {
+  "reader": "TF-IDF word 1-2 grams, lowercase, min_df 5, max_features 20000, sublinear tf, L2; vocabulary fitted on source_train history events only",
+  "map": "Ridge(alpha=1.0, fixed, no grid) from TF-IDF to each e5 evidence coordinate, fitted on source_train history events; one map per coordinate",
+  "coordinates": "anonymous 15 directions x {composition_inclusive, within_venue}; keyed 30 facets composition_inclusive",
+  "status_rule_source_validation": "on source_validation history events regress e5 coordinate on mapped value (y = a + b yhat), author-cluster bootstrap 1000: DIRECT if b 95% CI within [0.8, 1.25] and a 95% CI within +-0.1 SD(y); CALIBRATED if b CI excludes 0 (apply source_validation affine a + b yhat); REFUSE otherwise",
+  "arms": {"e5_native": "frozen C3-02 bundle (reference)", "lex_frozen": "mapped evidence through all frozen e5 downstream layers", "lex_affine": "source_validation affine recalibration, frozen downstream", "lex_refit": "offsets and moments refit on source_train mapped evidence (source-only downstream recalibration)"},
+  "held_evaluation": {
+   "agreement": "corr of held level and contrast scores, lexical arm vs e5_native (history window)",
+   "own_reliability": "split-half level correlation for each reader; disattenuated agreement with bootstrap interval, labeled as an estimate under classical assumptions",
+   "forecast_directions": "(a) lexical-arm history scores -> future e5 class means; (b) e5 history scores -> future mapped class means; (c) lexical -> future lexical; relative MSE improvement vs global",
+   "coverage": "predictive coverage for direction (a)",
+   "bootstrap": "2000 author draws, seed 20261031"
+  },
+  "decision": {
+   "useful_transported_scoring": "status-designated arm (DIRECT->lex_frozen, CALIBRATED->lex_affine) has direction (a) relative improvement family-wise lower bound > 0 (z 2.94 anonymous per mode; 3.14 keyed) and coverage >= binomial lower 95% bound around .95",
+   "layer_diagnosis": "if the designated arm fails coverage or improvement while lex_refit passes, report 'downstream moments/offsets need source recalibration'; if all lexical arms fail while map validation R2 is low, report 'reader map layer fails'",
+   "positive_construction": "Part A replay exact AND at least one anonymous coordinate with useful transported scoring",
+   "not_claimed": "agreement between readers is method convergence and unit emulation, not psychological validity"
+  }
+ },
+ "part_C_additive_notes": "C2 P4 legacy lower-bound screen relabeled, zero-margin upper-bound reading from saved intervals, cut-posterior wording; C3-01 E1 joint class-mean check wording; new files only, old roots untouched",
+ "bounds": "CPU only, one BLAS thread; no neural call, API, download, labels, MEPS, commit or worktree"
+}

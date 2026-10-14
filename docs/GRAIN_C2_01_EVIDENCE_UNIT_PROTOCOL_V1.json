@@ -1,0 +1,58 @@
+{
+ "task": "GRAIN-C2-01",
+ "frozen": "2026-10-02 ~22:00 JST, before any new scoring",
+ "authority": ["project persona/reports/claude_research_loop_20261002/NEXT_PACKET_C2_01.md", "SEMINAR_C2_01_DECISION.md"],
+ "materials": {
+  "bank": "results/grain_gptpro_foundation_v3/F08/reader_recovery_r1/reader_scores.csv (lexical cache) + F08/nli_reader_r1/reader_scores.csv (NLI cache)",
+  "count": 96, "roles": {"source": "plain", "validation": "contextual", "application": "retrospective"},
+  "writer_ids": "NONE; material_id and variant are wrapper identifiers, not writers",
+  "reuse": "cached readings reused; no new neural read; not a new replication"
+ },
+ "evidence_unit": {
+  "content": "polarity of the plan (designed label pole b in {0,1})",
+  "status_channels": ["actual", "quoted", "hypothetical", "negated (explicit correction, qualified)"],
+  "qualified_statuses": ["actual", "negated"],
+  "observation": "reader category c = 2*1[pole_score>=.5] + 1[qualification_score>=.5]; thresholds fixed",
+  "observation_law": "E[b, status, c] per reader version and family; source family only for the frozen law"
+ },
+ "downstream_link_check": "F16 text-T1 route links the binary channel to a continuous F04 contrast via a numeric-source sigma and calibrates on the validation family; not used as primary (borrowed continuous unit; split conflict). Primary = finite evidence-mixture world below.",
+ "world": {
+  "target": "pi_u = P(pole = 1 | qualified own report, author u); secondary kappa = qualified share",
+  "author_law": "pi_u ~ Beta(2,2) (design SD .224)",
+  "selection_law": "status actual/negated each kappa/2; quoted/hypothetical each (1-kappa)/2; pole|qualified ~ Bern(pi_u); pole|unqualified ~ Bern(.5) independent of author",
+  "kappa_contrasts": [1.0, 0.5, 0.25],
+  "events_per_author": 24, "authors_per_seed": 200, "seeds": [20261021, 20261022, 20261023],
+  "material_draw": "uniform over the 4 wrapper variants of the event's (pole,status) class in the scored family",
+  "families_scored": ["validation (contextual)", "application (retrospective)"],
+  "simulated_authors_total": 600, "note": "simulated authors/histories are not people; material count stays 96"
+ },
+ "estimators": {
+  "grid": {"pi": "81 midpoints", "kappa": "41 midpoints"}, "priors": "uniform pi, uniform kappa",
+  "arms": {
+   "naive_uncalibrated": "reader categories taken as truth; Beta(1+pos,1+neg) over reader-qualified events",
+   "calibrated_point": "source channel (counts+.5)/(4+2)",
+   "calibrated_dirichlet": "PRIMARY; 200 Dirichlet(counts+.5) channel draws (row-independent working law), mixture posterior",
+   "calibrated_variant_bootstrap": "200 paired wrapper-variant resamples (+.5 smoothing), cluster sensitivity",
+   "wrong_reader_law": "this reader's categories scored with the other reader's source Dirichlet law (counterexample)",
+   "matched_observation": "PRIVILEGED reference: true (pole,status) per event, Beta posterior",
+   "calibrated_dirichlet_insample (lexical only)": "ablation using in-sample source readings"
+  },
+  "lexical_source_readings": "leave-one-variant-out refit with f08.fit_reader constants (word1-2/char2-4 TFIDF max5000, Ridge 1, logistic C1); in-sample cache kept as ablation",
+  "dirichlet_seed": 20261020, "bootstrap_seed": 20261019, "draws": 200,
+  "interval": "equal-tailed 95% from the mixture marginal posterior on the pi grid",
+  "null_evidence": "author with no events -> status no_events, prior only, never an observed neutral trait"
+ },
+ "acceptance_frozen": {
+  "positive_construction_per_reader (primary arm, pooled seeds, every kappa, application family)": {
+   "P1_nonconstant": "SD of posterior means >= .056 (one quarter of design SD .224)",
+   "P2_held_contrasts": "application-family materials: qualified pole-score contrast b1-b0 > 0 and qualification-score direction (qualified - unqualified) > 0, both with material-bootstrap 95% CI lower bound > 0",
+   "P3_calibration_propagated": "mean interval width primary > calibrated_point",
+   "P4_downstream_noninferior": "paired author-bootstrap 95% CI lower bound of MSE(primary) - MSE(naive) <= 0",
+   "P5_cold_replay": "bundle CLI reproduces primary scores, max abs diff <= 1e-12"
+  },
+  "positive_overall": "at least one reader passes P1-P5",
+  "transport_claim_separate": "primary coverage >= .932 (lower binomial 95% bound around .95 at n=600) and bias CI covering 0 at every kappa; failure = wrapper-family transport boundary, not renamed",
+  "not_adopted": ["1.25 x noiseless-oracle MSE", "universal .80 correlation gate"]
+ },
+ "bounds": "one BLAS thread; no neural call, API, generation, download, private data, commit or worktree"
+}

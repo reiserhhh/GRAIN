@@ -1,0 +1,46 @@
+{
+ "task": "GRAIN-C3-01",
+ "frozen": "2026-10-02 ~22:13 JST before any C3 scoring (alignment identity was checked once before freezing: max abs diff 0.0)",
+ "authority": "user 2026-10-02 21:56 Claude-led update; handoff C3; plan reports/claude_research_loop_20261002/CLAUDE_PLAN_C3_01.md",
+ "data": {
+  "evidence": "results/grain_vector_mechanisms/all_plan_closure_v1/conditional_reference_r2/pandora/private_units.npz scores (22464 x 30): normalized e5-large-v2 comment vector . 30 IPIP-keyed directions (private_directions.npz)",
+  "addresses": "results/grain_gptpro_foundation_v3/F16/event_addresses_r1/private_pandora_event_addresses.csv (author_index, unit, condition=venue, timestamp); rows == units order (verified)",
+  "roles": "results/grain_gptpro_foundation_v3/F14/pandora_venue_oom_r1/author_roles.json: source_train 403, source_validation 101, held 120",
+  "not_read": ["text bodies", "personality labels", "questionnaires", "MEPS", "usernames"],
+  "reuse": "same cached cohort as packets 15/16/22; held authors were used before (exploratory, not a lockbox)"
+ },
+ "alignment_gate": "normalize(e5 comments[a,u]) . directions == units.scores[row(a,u)]; pass if max abs diff <= 1e-6; decides C3-02 executability",
+ "brief": {
+  "evidence_unit": "keyed semantic projection of one published comment, per facet k (30), projection units; NOT a facet/personality score",
+  "context": "c = +1 if venue in TOP20 else -1; TOP20 = 20 most frequent venues in source_train history events (count desc, name asc); author-chosen, descriptive not causal",
+  "windows": {"history": "units 0-24", "future": "units 25-35"},
+  "targets": {
+   "choice_composition": "pi_u = P(TOP20 venue | author) from history, Beta(1,1)",
+   "level": "beta0 of m_u(c) = beta0 + beta1 c (average of the two class means)",
+   "contrast": "Delta_u = m_u(+1) - m_u(-1) = 2 beta1 (primary conditional response)"
+  },
+  "kernel": "per facet: source_train history OLS on [1,c] for authors with >=2 events per class; pooled sigma2; Sigma = cov(beta) - mean sampling cov, eigenvalue floor 1e-6 x mean diag cov(beta); Gaussian BLUP with each author's own design",
+  "support": "contrast 'observed' if >=1 history event in each class, else 'model_borrowed'",
+  "reference": "source_train BLUP score mean/SD per facet and target"
+ },
+ "empirical_checks_held": {
+  "E1": "future class means vs predicted m_u(c), cells with >=1 future event; MSE vs global (source_train history class mean) and raw author history class mean (global fallback)",
+  "E2": "corr(predicted Delta, observed future Delta) over authors with >=1 future event per class",
+  "E3": "split-half (even/odd history units) BLUP correlation for level and Delta; model-implied reliability 1 - mean post var / prior var",
+  "E4": "95% predictive interval for future class means (post var + sigma2/n_future) coverage",
+  "E5": "corr(history pi, future pi)",
+  "bootstrap": "2000 whole-author draws, seed 20261025; family-wise z = 3.14 (Bonferroni .05 two-sided over 30 facets) on bootstrap SE",
+  "source_validation": "same checks on source_validation as diagnostics only; not used for tuning"
+ },
+ "acceptance_frozen": {
+  "level_supported_facet": "E1 improvement over global (MSE_global - MSE_bundle) and E3 level half-correlation both have family-wise lower bound > 0",
+  "contrast_supported_facet": "E2 correlation and E3 contrast half-correlation both have family-wise lower bound > 0",
+  "nonconstant": "supported facet requires SD of held scores >= .1 x prior SD",
+  "cold_replay": "bundle CLI reproduces warm held scores, max abs diff <= 1e-12",
+  "positive_construction": "cold replay AND at least one facet supported (level or contrast) and nonconstant; report which target types pass",
+  "calibration_claim_separate": "E4 coverage >= lower binomial 95% bound around .95 for that facet's cell count",
+  "not_adopted": ["universal .80 gate", "oracle-ratio MSE rules", "selecting facets after seeing held results"]
+ },
+ "privacy": "per-author/per-event outputs carry private_ prefix; public tables aggregate only; no text, usernames or labels",
+ "bounds": "one BLAS thread; CPU only; no neural call, API, generation, download, commit or worktree"
+}

@@ -1,0 +1,9 @@
+{
+ "task": "GRAIN-C3-02 supplement V1.1 (within-venue coordinate)",
+ "frozen": "2026-10-02 ~22:16 JST after r1 results, before this supplement ran; POST HOC, disclosed",
+ "why": "r1 learned directions had venue fixed-effect R^2 .25-.60 (keyed .06-.17); level/contrast support may reflect habitual venue/topic composition rather than within-context expression",
+ "change": "same directions, data, roles, checks, z values and acceptance rules; event evidence replaced by its within-venue coordinate: evidence minus the source_train history venue mean for that direction (venues with >=5 source_train history events; all other venues use the pooled source_train mean). Venue table estimated on source_train only.",
+ "status_of_r1": "r1 composition-inclusive results stand; this is a declared alternative coordinate (ablation), not a replacement; choice composition remains a separate output",
+ "reading": "support that survives = within-venue anonymous response structure; support that vanishes = venue/topic composition",
+ "output": "results/grain_construction_v1/C3/anonymous_evidence_r1_within_venue/"
+}

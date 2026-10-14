@@ -1,0 +1,27 @@
+{
+ "task": "GRAIN-C3-02",
+ "frozen": "2026-10-02 ~22:14 JST before any learned direction was computed",
+ "authority": "user 21:56 Claude-led update; C3-01 alignment gate PASS; plan CLAUDE_PLAN_C3_02.md",
+ "data": "e5-large-v2 comment vectors (624 x 36 x 1024, private_arrays.npz, row-aligned), L2-normalized per comment; same venues, roles and windows as C3-01; no text, labels, questionnaires, MEPS or neural calls",
+ "learning": {
+  "fit_rows": "source_train authors (403), history units 0-24 only",
+  "subspace": "center at source_train history event mean; PCA to 64 components (fixed)",
+  "families": {
+   "author_stability": "top 5 generalized eigenvectors of between-author covariance of author means (minus within/n) vs within-author covariance, ridge 1e-3 x mean eigenvalue",
+   "response_stability": "top 5 generalized eigenvectors of between-author covariance of venue-class slopes (authors with >=2 events per class) minus sampling vs sampling covariance, same ridge",
+   "principal_components": "first 5 PCs"
+  },
+  "evidence": "event evidence = normalized vector . unit raw-space direction; sign arbitrary (anonymous); checks are sign-invariant"
+ },
+ "targets_and_checks": "identical to C3-01 (declared_target module; E1-E5 on held, source_validation diagnostic)",
+ "family_wise": "Bonferroni over 15 learned directions: z = 2.94 on bootstrap SE (2000 author draws, seed 20261026)",
+ "acceptance_frozen": {
+  "direction_supported": "C3-01 rules (level: E1 vs global and E3 level fw lower > 0; contrast: E2 and E3 contrast fw lower > 0; nonconstant)",
+  "anonymous_route_positive": "at least one learned direction has a supported target",
+  "contrast_discovery": "at least one learned direction has the contrast supported (keyed facets had none)",
+  "naming": "none; supported directions are anonymous response structure only"
+ },
+ "diagnostics": "per direction: venue fixed-effect R^2 of source_train event projections (venues with >=5 events; rest pooled) and author ICC; same for keyed facets; descriptive, not a pass criterion",
+ "privacy": "private_ prefix for per-author/per-event outputs; directions saved as private arrays",
+ "bounds": "one BLAS thread, CPU only"
+}

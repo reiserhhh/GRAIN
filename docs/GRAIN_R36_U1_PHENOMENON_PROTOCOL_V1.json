@@ -1,0 +1,20 @@
+{
+ "task": "GRAIN-ORIG-R36-U1-01 (original-scope R36.u1a-c; u1d identified, not run)",
+ "frozen": "2026-10-03 ~01:31 JST before selection, rival features or reliability splits were computed",
+ "selection_rule_source_only": "among the 15 C3-02 learned directions, the one with the largest source_validation within-venue E1_relative_improvement_vs_global (results/grain_construction_v1/C3/anonymous_evidence_r1_within_venue/empirical_checks.csv, role=source_validation); held statistics are not consulted for selection",
+ "u1b_structural_reliability": "10 random author-disjoint halvings of source_train (seed 20261034); relearn the selected direction's family (C3-02 procedure: PCA-64 fitted on the half, top-5 generalized eigen) on each half; matched direction = max |cos| with the selected full-data direction; report |cos| half-vs-half and half-vs-full, and held within-venue level score correlation between half-learned directions (history window, bundle-style scoring with source_train within-venue moments refit per direction)",
+ "u1a_rivals": {
+  "venue_composition": "C3-02 within-venue ablation (already frozen) and choice composition pi correlation with held level score",
+  "length_format": "event features from local text, never exported: log(1+characters), URL presence, question-mark presence, first-person-singular token share; event evidence regressed on these 4 features on source_train history events (OLS), residual = rival-adjusted coordinate; refit moments on source_train adjusted evidence; held E1 relative improvement vs global and level split-half recomputed",
+  "author_level": "held correlation of the phenomenon's level score with author means of the 4 features (descriptive)"
+ },
+ "u1c_gauge": "report C4-01 lexical reader transport status, agreement and useful flags (frozen and uncertainty-layer) for the selected direction in within_venue mode",
+ "u1d_positive_control": "not run: an established-construct positive control needs distinct material with a construct anchor; recorded as a missing input",
+ "acceptance_frozen": {
+  "survives_length_format_rival": "adjusted held E1 relative improvement lower95 > 0 AND adjusted level split-half lower95 > 0",
+  "structurally_reliable": "descriptive (median half-vs-half |cos| and score correlation reported); no universal threshold",
+  "phenomenon_carried": "survives venue ablation (C3-02 within-venue level supported) AND survives length/format rival; gauge status reported; naming none"
+ },
+ "privacy": "text read locally in memory; only aggregate statistics written",
+ "bounds": "CPU only, one BLAS thread; no neural call, labels or MEPS"
+}
