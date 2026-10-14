@@ -1,0 +1,14 @@
+{
+  "version": "f12-signature-operationalization-r1",
+  "provenance": "Execution elaboration: original F12 requests four interventions without specifying values. Not retrospectively preregistered.",
+  "input": "results/grain_gptpro_foundation_v3/F12/transport_full_r1",
+  "seeds": [20260915, 20260916, 20260917],
+  "conditions": [-1.0, -0.3333333333333333, 0.3333333333333333, 1.0],
+  "edits": [[0.1, 0.0], [-0.1, 0.0], [0.0, 0.1], [0.0, -0.1]],
+  "edit_names": ["increase_intercept", "decrease_intercept", "increase_slope", "decrease_slope"],
+  "rotation_radians": 0.6283185307179586,
+  "coordinate_scales": [2.0, 0.5],
+  "scope": "Known synthetic parameter interventions, not semantic edits or human causal effects",
+  "counterexample": "Add .2*a*product(z-condition_grid) to mean function: grid values and four intervention signatures equal, but z=0 differs.",
+  "selection": "No fit, rank selection, amplitude sweep or application-driven choice"
+}
