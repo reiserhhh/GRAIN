@@ -3,10 +3,16 @@
 2026-09-12。用户授权的四轮英文短答研讨；中文整理由Codex完成。
 主文：[终极研究计划V4](GRAIN_FOUNDATIONAL_MASTER_PLAN_V4.md)。
 
+**研讨后用户校正（2026-09-12）：** GRAIN与向量路径本身仍需开发，不能把
+现版架构与手头数据当作理论规划的边界。主计划已加入F-1目标要求/机制缺口/
+架构重构阶段，替代下面历史记录中的“直接进入F0/A1”；原11-19天不再表示
+全理论开发工期。这是Codex落实的用户新指示，尚无新的Claude审订。下列四轮
+共识及原始答复保留原貌，不将新指示追记为已经讨论过。
+
 ## 1. 实际协作与边界
 
 Claude Code使用`claude-fable-5-1`、`max`；四轮返回元数据均记录该模型。
-从原“SUICA system review and analysis”会话分叉，原会话不改动。
+从原“GRAIN system review and analysis”会话分叉，原会话不改动。
 Claude仅有Read/Glob/Grep；禁用写入、命令执行、MCP、hooks及数据目录访问。
 Codex负责读取项目文档、核查原始论文、提出数学反例、撰写与验证计划。
 

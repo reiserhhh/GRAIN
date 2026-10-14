@@ -1,5 +1,26 @@
 # GRAIN logic goal: execution ledger
 
+## 2026-09-12 scientific target revision, V5
+
+Four additional read-only Claude rounds are complete, with primary-source and
+GitHub comparison by Codex. Current planning authority:
+[V5 scientific target](GRAIN_SCIENTIFIC_TARGET_AND_RESEARCH_PROGRAM_V5.md).
+Seek target-linked response structure and a prospective evidence/design rule;
+GRAIN itself remains revisable. Preserve meaningful interactions. Linking/mask
+certification is a supporting tool, not the scientific endpoint. Start G0/G1
+after execution approval. See the [seminar record](GRAIN_BREAKTHROUGH_SEMINAR_SYNTHESIS_20260912.md).
+No new experiment, goal, data fit, private-row read or lockbox opening. Earlier
+statements below about the user correction not being reviewed are historical.
+
+## 2026-09-12 post-seminar user correction
+
+V4 now includes F-1: requirements, mechanism gaps and architecture development.
+GRAIN itself and the vector-path system are early prototypes, not fixed premises.
+Improving or rebuilding their mechanisms is part of the mainline; existing data
+and code must not define the theoretical endpoint. This supersedes the immediate
+F0/A1 start below and has not been re-reviewed by Claude. Documentation only:
+no new goal or experiment; NEXT91 and old queues remain paused.
+
 ## 2026-09-12 four-round foundation seminar, V4
 
 The [joint V4 master plan](GRAIN_FOUNDATIONAL_MASTER_PLAN_V4.md) is now the planning
@@ -1881,7 +1902,7 @@ Read [report](../reports/grain_vector_mechanisms/EVIDENCE_COMPONENT_REPORT_V1.md
  proves the information requirement. Small response need not mean absent inputs.
 - Own contrast target projectionU=.205872, B=-.068884, R=U-B=.274756. Subtraction
  here can reinforce signal; it is the derivative of normalized reading, not
- deleting author context or reversing SUICA's earlier condition-choice findings.
+ deleting author context or reversing GRAIN's earlier condition-choice findings.
 -12private packets/3public CSV exactly replay;24query/96factor/12contrast rows.
   R2 inventory excludes AppleDouble sidecars, with regression test; all actual
  numerical tables byte-match the initial run, which is preserved.34focused tests/
