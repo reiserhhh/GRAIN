@@ -1,0 +1,644 @@
+{
+ "schema_version": "F16_public_calibrated_bundle_v1",
+ "top_level_required": [
+  "bundle_id",
+  "calibration",
+  "code_manifest",
+  "engine",
+  "estimator",
+  "integration",
+  "known_validation",
+  "legacy_reconciliation",
+  "observation",
+  "reference_policy",
+  "route",
+  "schema_version",
+  "seed",
+  "source",
+  "target"
+ ],
+ "routes": {
+  "numeric_dynamic": {
+   "bundles": 96,
+   "blocks": {
+    "bundle_id": {
+     "type": [
+      "str"
+     ]
+    },
+    "calibration": {
+     "required": [
+      "bootstrap_indices",
+      "data_provenance",
+      "draw_count",
+      "draws",
+      "kind",
+      "mode",
+      "pilot_fit_pairs",
+      "plugin",
+      "rejected_draws",
+      "status"
+     ],
+     "optional": []
+    },
+    "code_manifest": {
+     "required": [
+      "f12_transport.py",
+      "f16_dynamic_text.py",
+      "f16_dynamic_transport.py",
+      "f16_serialize.py",
+      "f16_t1_source.py",
+      "f16_t1_text.py",
+      "f16_t1_transport.py"
+     ],
+     "optional": []
+    },
+    "engine": {
+     "required": [
+      "eta_nodes",
+      "formula",
+      "source_components",
+      "source_models"
+     ],
+     "optional": []
+    },
+    "estimator": {
+     "type": [
+      "str"
+     ]
+    },
+    "integration": {
+     "required": [
+      "archived_quadrature_diagnostic",
+      "calibration_draws",
+      "components",
+      "estimator",
+      "eta_quadrature",
+      "rule",
+      "source_components"
+     ],
+     "optional": []
+    },
+    "known_validation": {
+     "required": [
+      "failed_gates",
+      "pooled_three_seed_means",
+      "retained_route_failures",
+      "same_world_information_references",
+      "scope",
+      "this_bundle"
+     ],
+     "optional": []
+    },
+    "legacy_reconciliation": {
+     "type": [
+      "NoneType"
+     ]
+    },
+    "observation": {
+     "required": [
+      "cache_sha256",
+      "definition",
+      "reader_id",
+      "route"
+     ],
+     "optional": []
+    },
+    "reference_policy": {
+     "required": [
+      "application_derived",
+      "authors",
+      "historical_positions",
+      "kind",
+      "mu",
+      "provenance",
+      "scope",
+      "sigma"
+     ],
+     "optional": []
+    },
+    "route": {
+     "type": [
+      "str"
+     ]
+    },
+    "schema_version": {
+     "type": [
+      "str"
+     ]
+    },
+    "seed": {
+     "type": [
+      "int"
+     ]
+    },
+    "source": {
+     "required": [
+      "components",
+      "formula_version",
+      "refit_in_this_packet",
+      "source_bundle",
+      "source_bundle_sha256",
+      "source_observations_sha256"
+     ],
+     "optional": []
+    },
+    "target": {
+     "required": [
+      "condition_plan",
+      "estimand",
+      "object_class",
+      "target_id",
+      "time_contract",
+      "unit"
+     ],
+     "optional": []
+    }
+   }
+  },
+  "numeric_t1": {
+   "bundles": 48,
+   "blocks": {
+    "bundle_id": {
+     "type": [
+      "str"
+     ]
+    },
+    "calibration": {
+     "required": [
+      "bootstrap_indices",
+      "data_provenance",
+      "draw_count",
+      "draws",
+      "kind",
+      "mode",
+      "pilot_fit_pairs",
+      "plugin",
+      "rejected_draws",
+      "status"
+     ],
+     "optional": []
+    },
+    "code_manifest": {
+     "required": [
+      "f12_transport.py",
+      "f16_dynamic_text.py",
+      "f16_dynamic_transport.py",
+      "f16_serialize.py",
+      "f16_t1_source.py",
+      "f16_t1_text.py",
+      "f16_t1_transport.py"
+     ],
+     "optional": []
+    },
+    "engine": {
+     "required": [
+      "calibration",
+      "error_model",
+      "explanation_rule",
+      "formula_version",
+      "invalidating_result",
+      "object_class",
+      "observed_role",
+      "personal_draws",
+      "reader_hash",
+      "reference_mu",
+      "reference_sigma",
+      "scorer_code_hash",
+      "seed",
+      "source_bootstraps",
+      "source_fits_hash",
+      "source_hash",
+      "source_ids",
+      "source_models",
+      "source_reference_authors",
+      "support_rule",
+      "target_id",
+      "unit",
+      "world_contract"
+     ],
+     "optional": []
+    },
+    "estimator": {
+     "type": [
+      "str"
+     ]
+    },
+    "integration": {
+     "required": [
+      "calibration_draws",
+      "components",
+      "estimator",
+      "formula",
+      "numerical_error",
+      "rule",
+      "source_components"
+     ],
+     "optional": []
+    },
+    "known_validation": {
+     "required": [
+      "failed_gates",
+      "pooled_three_seed_means",
+      "retained_route_failures",
+      "same_world_information_references",
+      "scope",
+      "this_bundle"
+     ],
+     "optional": []
+    },
+    "legacy_reconciliation": {
+     "type": [
+      "NoneType"
+     ]
+    },
+    "observation": {
+     "required": [
+      "cache_sha256",
+      "definition",
+      "reader_id",
+      "route"
+     ],
+     "optional": []
+    },
+    "reference_policy": {
+     "required": [
+      "application_derived",
+      "authors",
+      "historical_positions",
+      "kind",
+      "mu",
+      "provenance",
+      "scope",
+      "sigma"
+     ],
+     "optional": []
+    },
+    "route": {
+     "type": [
+      "str"
+     ]
+    },
+    "schema_version": {
+     "type": [
+      "str"
+     ]
+    },
+    "seed": {
+     "type": [
+      "int"
+     ]
+    },
+    "source": {
+     "required": [
+      "components",
+      "formula_version",
+      "refit_in_this_packet",
+      "source_bundle",
+      "source_bundle_sha256",
+      "source_fits_sha256",
+      "source_observations_sha256"
+     ],
+     "optional": []
+    },
+    "target": {
+     "required": [
+      "condition_plan",
+      "estimand",
+      "object_class",
+      "target_id",
+      "time_contract",
+      "unit"
+     ],
+     "optional": []
+    }
+   }
+  },
+  "text_dynamic": {
+   "bundles": 12,
+   "blocks": {
+    "bundle_id": {
+     "type": [
+      "str"
+     ]
+    },
+    "calibration": {
+     "required": [
+      "counts",
+      "data_provenance",
+      "estimator",
+      "generator",
+      "kind",
+      "prior",
+      "status"
+     ],
+     "optional": []
+    },
+    "code_manifest": {
+     "required": [
+      "f12_transport.py",
+      "f16_dynamic_text.py",
+      "f16_dynamic_transport.py",
+      "f16_serialize.py",
+      "f16_t1_source.py",
+      "f16_t1_text.py",
+      "f16_t1_transport.py"
+     ],
+     "optional": []
+    },
+    "engine": {
+     "required": [
+      "channel_draws",
+      "error_model",
+      "explanation_rule",
+      "future_conditions",
+      "invalidating_result",
+      "materials",
+      "object_classes",
+      "observed_role",
+      "qmc_power",
+      "qualification_rate",
+      "reference",
+      "scorer_code_hash",
+      "seed",
+      "source_bundle_sha256",
+      "source_components",
+      "source_hash",
+      "source_models",
+      "source_reference_authors",
+      "support_rule",
+      "target_ids",
+      "unit",
+      "version",
+      "world_contract"
+     ],
+     "optional": []
+    },
+    "estimator": {
+     "type": [
+      "str"
+     ]
+    },
+    "integration": {
+     "required": [
+      "archived_numerical_diagnostics_first_last_author",
+      "channel_draws",
+      "components",
+      "estimator",
+      "pairing",
+      "qmc",
+      "rule",
+      "source_components"
+     ],
+     "optional": []
+    },
+    "known_validation": {
+     "required": [
+      "comparators_same_seed",
+      "failed_gates",
+      "paired_contrasts",
+      "pooled_three_seed_means",
+      "retained_route_failures",
+      "scope",
+      "this_bundle"
+     ],
+     "optional": []
+    },
+    "legacy_reconciliation": {
+     "required": [
+      "authentication",
+      "channel_draws",
+      "frozen_primary_payload",
+      "inherited_inner_reader_hash_check",
+      "moved_out",
+      "outer_packet",
+      "score_determining_fields",
+      "score_determining_fields_identical"
+     ],
+     "optional": []
+    },
+    "observation": {
+     "required": [
+      "cache_provenance",
+      "cache_sha256",
+      "definition",
+      "reader_id",
+      "route"
+     ],
+     "optional": []
+    },
+    "reference_policy": {
+     "required": [
+      "application_derived",
+      "authors",
+      "companion",
+      "historical_positions",
+      "kind",
+      "mu",
+      "provenance",
+      "scope",
+      "sigma"
+     ],
+     "optional": []
+    },
+    "route": {
+     "type": [
+      "str"
+     ]
+    },
+    "schema_version": {
+     "type": [
+      "str"
+     ]
+    },
+    "seed": {
+     "type": [
+      "int"
+     ]
+    },
+    "source": {
+     "required": [
+      "components",
+      "formula_version",
+      "refit_in_this_packet",
+      "source_bundle_sha256"
+     ],
+     "optional": []
+    },
+    "target": {
+     "required": [
+      "condition_plan",
+      "estimand",
+      "object_class",
+      "target_id",
+      "time_contract",
+      "unit"
+     ],
+     "optional": []
+    }
+   }
+  },
+  "text_t1": {
+   "bundles": 6,
+   "blocks": {
+    "bundle_id": {
+     "type": [
+      "str"
+     ]
+    },
+    "calibration": {
+     "required": [
+      "counts",
+      "data_provenance",
+      "estimator",
+      "generator",
+      "kind",
+      "prior",
+      "status"
+     ],
+     "optional": []
+    },
+    "code_manifest": {
+     "required": [
+      "f12_transport.py",
+      "f16_dynamic_text.py",
+      "f16_dynamic_transport.py",
+      "f16_serialize.py",
+      "f16_t1_source.py",
+      "f16_t1_text.py",
+      "f16_t1_transport.py"
+     ],
+     "optional": []
+    },
+    "engine": {
+     "required": [
+      "channel_draws",
+      "error_model",
+      "explanation_rule",
+      "invalidating_result",
+      "materials",
+      "object_class",
+      "qmc_power",
+      "qualification_rate",
+      "reference_authors",
+      "reference_mu",
+      "reference_sigma",
+      "scorer_code_hash",
+      "seed",
+      "source_bundle_hash",
+      "source_components",
+      "source_models",
+      "support_rule",
+      "target_id",
+      "unit",
+      "version",
+      "world_contract"
+     ],
+     "optional": []
+    },
+    "estimator": {
+     "type": [
+      "str"
+     ]
+    },
+    "integration": {
+     "required": [
+      "archived_numerical_diagnostics_first_last_author",
+      "channel_draws",
+      "components",
+      "estimator",
+      "pairing",
+      "qmc",
+      "rule",
+      "source_components"
+     ],
+     "optional": []
+    },
+    "known_validation": {
+     "required": [
+      "comparators_same_seed",
+      "failed_gates",
+      "paired_contrasts",
+      "pooled_three_seed_means",
+      "retained_route_failures",
+      "scope",
+      "this_bundle"
+     ],
+     "optional": []
+    },
+    "legacy_reconciliation": {
+     "required": [
+      "authentication",
+      "channel_draws",
+      "frozen_primary_payload",
+      "inherited_inner_reader_hash_check",
+      "moved_out",
+      "outer_packet",
+      "score_determining_fields",
+      "score_determining_fields_identical"
+     ],
+     "optional": []
+    },
+    "observation": {
+     "required": [
+      "cache_provenance",
+      "cache_sha256",
+      "definition",
+      "reader_id",
+      "route"
+     ],
+     "optional": []
+    },
+    "reference_policy": {
+     "required": [
+      "application_derived",
+      "authors",
+      "historical_positions",
+      "kind",
+      "mu",
+      "provenance",
+      "scope",
+      "sigma"
+     ],
+     "optional": []
+    },
+    "route": {
+     "type": [
+      "str"
+     ]
+    },
+    "schema_version": {
+     "type": [
+      "str"
+     ]
+    },
+    "seed": {
+     "type": [
+      "int"
+     ]
+    },
+    "source": {
+     "required": [
+      "components",
+      "formula_version",
+      "refit_in_this_packet",
+      "source_bundle_sha256"
+     ],
+     "optional": []
+    },
+    "target": {
+     "required": [
+      "condition_plan",
+      "estimand",
+      "object_class",
+      "target_id",
+      "time_contract",
+      "unit"
+     ],
+     "optional": []
+    }
+   }
+  }
+ },
+ "notes": "Derived from serializer TOP_LEVEL and all serialized bundles; each route lists the required keys of every dict block (intersection) and keys allowed in some bundles (union minus intersection, e.g. estimator-specific draws)."
+}

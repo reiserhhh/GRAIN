@@ -1,0 +1,1933 @@
+{
+ "schema": "grain_v3_card_registry_v1",
+ "cards": {
+  "F00-01": {
+   "package": "F00",
+   "kind": "AUDIT",
+   "requirements": [
+    "R35",
+    "R36"
+   ],
+   "depends_on": [],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F00/r1/F00-01"
+   ],
+   "declared_artifacts": [
+    "baseline_inventory.json",
+    "audit_corrections.md"
+   ]
+  },
+  "F00-02": {
+   "package": "F00",
+   "kind": "BUILD",
+   "requirements": [
+    "R14",
+    "R29",
+    "R35"
+   ],
+   "depends_on": [
+    "F00-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F00/r1/F00-02"
+   ],
+   "declared_artifacts": [
+    "contract_schema.json",
+    "cli_contract.md"
+   ]
+  },
+  "F00-03": {
+   "package": "F00",
+   "kind": "TEST",
+   "requirements": [
+    "R29",
+    "R35"
+   ],
+   "depends_on": [
+    "F00-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F00/r1/F00-03"
+   ],
+   "declared_artifacts": [
+    "contract_test_cases.csv"
+   ]
+  },
+  "F00-04": {
+   "package": "F00",
+   "kind": "BUILD",
+   "requirements": [
+    "R35",
+    "R36"
+   ],
+   "depends_on": [
+    "F00-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F00/r1/F00-04"
+   ],
+   "declared_artifacts": [
+    "execution_contract.json",
+    "task_state_schema.json"
+   ]
+  },
+  "F00-05": {
+   "package": "F00",
+   "kind": "REVIEW",
+   "requirements": [
+    "R35",
+    "R36"
+   ],
+   "depends_on": [
+    "F00-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F00/r1/F00-05"
+   ],
+   "declared_artifacts": [
+    "repair_routing.csv",
+    "acceptance.json"
+   ]
+  },
+  "F01-01": {
+   "package": "F01",
+   "kind": "AUDIT",
+   "requirements": [
+    "R01",
+    "R02",
+    "R04"
+   ],
+   "depends_on": [
+    "F00-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F01/mechanism_graph_r1",
+    "results/grain_gptpro_foundation_v3/F01/object_counterexamples_r1"
+   ],
+   "declared_artifacts": [
+    "mechanism_graph.json",
+    "object_dictionary.csv"
+   ]
+  },
+  "F01-02": {
+   "package": "F01",
+   "kind": "AUDIT",
+   "requirements": [
+    "R03",
+    "A01",
+    "A02",
+    "A03",
+    "A04"
+   ],
+   "depends_on": [
+    "F01-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F01/recovery_r1/F01-02"
+   ],
+   "declared_artifacts": [
+    "bibliography.csv",
+    "primary_equation_cards.md"
+   ]
+  },
+  "F01-03": {
+   "package": "F01",
+   "kind": "AUDIT",
+   "requirements": [
+    "R03",
+    "A06",
+    "A07",
+    "A08"
+   ],
+   "depends_on": [
+    "F01-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F01/recovery_r1/F01-03"
+   ],
+   "declared_artifacts": [
+    "predecessor_adoption.csv"
+   ]
+  },
+  "F01-04": {
+   "package": "F01",
+   "kind": "MATH",
+   "requirements": [
+    "R07",
+    "R21",
+    "R32"
+   ],
+   "depends_on": [
+    "F01-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F01/recovery_r1/F01-04"
+   ],
+   "declared_artifacts": [
+    "identification_contract.md",
+    "counterexample_registry.json"
+   ]
+  },
+  "F01-05": {
+   "package": "F01",
+   "kind": "REVIEW",
+   "requirements": [
+    "R01",
+    "R02",
+    "R03",
+    "R33"
+   ],
+   "depends_on": [
+    "F01-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F01/theory_map_r1"
+   ],
+   "declared_artifacts": [
+    "theory_to_experiment_map.csv",
+    "acceptance.json"
+   ]
+  },
+  "F02-01": {
+   "package": "F02",
+   "kind": "MATH",
+   "requirements": [
+    "R07",
+    "R08",
+    "A01"
+   ],
+   "depends_on": [
+    "F01-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F02/recovery_full_r2"
+   ],
+   "declared_artifacts": [
+    "exact_world_certificates.json"
+   ]
+  },
+  "F02-02": {
+   "package": "F02",
+   "kind": "BUILD",
+   "requirements": [
+    "R08",
+    "R14",
+    "R35"
+   ],
+   "depends_on": [
+    "F02-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F02/recovery_full_r2"
+   ],
+   "declared_artifacts": [
+    "generator_contract.json",
+    "world_manifests.json"
+   ]
+  },
+  "F02-03": {
+   "package": "F02",
+   "kind": "BUILD",
+   "requirements": [
+    "R08",
+    "R30"
+   ],
+   "depends_on": [
+    "F02-02"
+   ],
+   "artifacts": [
+    "grain_research/gptpro_foundation_v3/f02_recovery.py",
+    "grain_research/measurement_discovery/estimators.py"
+   ],
+   "declared_artifacts": [
+    "estimator_contracts.json"
+   ]
+  },
+  "F02-04": {
+   "package": "F02",
+   "kind": "TEST",
+   "requirements": [
+    "R08",
+    "R35"
+   ],
+   "depends_on": [
+    "F02-03"
+   ],
+   "artifacts": [
+    "tests/test_grain_gptpro_f02.py",
+    "tests/test_grain_gptpro_f02_recovery.py",
+    "tests/test_grain_gptpro_f02_adverse.py"
+   ],
+   "declared_artifacts": [
+    "replay_checks.json"
+   ]
+  },
+  "F02-05": {
+   "package": "F02",
+   "kind": "RUN",
+   "requirements": [
+    "R07",
+    "R08",
+    "R30"
+   ],
+   "depends_on": [
+    "F02-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F02/recovery_full_r2"
+   ],
+   "declared_artifacts": [
+    "prediction_metrics.csv",
+    "future_equivalence.csv"
+   ]
+  },
+  "F02-06": {
+   "package": "F02",
+   "kind": "REVIEW",
+   "requirements": [
+    "R08",
+    "R30",
+    "A01"
+   ],
+   "depends_on": [
+    "F02-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F02/review_r1/F02-06"
+   ],
+   "declared_artifacts": [
+    "construction_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F03-01": {
+   "package": "F03",
+   "kind": "MATH",
+   "requirements": [
+    "R05",
+    "R06",
+    "R07"
+   ],
+   "depends_on": [
+    "F01-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F03/audit_full_r1",
+    "results/grain_gptpro_foundation_v3/F03/recovery_full_r1"
+   ],
+   "declared_artifacts": [
+    "exact_selection_cells.csv",
+    "identified_sets.json"
+   ]
+  },
+  "F03-02": {
+   "package": "F03",
+   "kind": "BUILD",
+   "requirements": [
+    "R04",
+    "R05",
+    "R06"
+   ],
+   "depends_on": [
+    "F03-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F03/recovery_full_r1"
+   ],
+   "declared_artifacts": [
+    "opportunity_manifest.json",
+    "view_contracts.json"
+   ]
+  },
+  "F03-03": {
+   "package": "F03",
+   "kind": "BUILD",
+   "requirements": [
+    "R05",
+    "R06",
+    "R09"
+   ],
+   "depends_on": [
+    "F03-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F03/recovery_full_r1",
+    "results/grain_gptpro_foundation_v3/F03/audit_full_r1"
+   ],
+   "declared_artifacts": [
+    "estimator_formulas.md"
+   ]
+  },
+  "F03-04": {
+   "package": "F03",
+   "kind": "TEST",
+   "requirements": [
+    "R05",
+    "R06",
+    "R35"
+   ],
+   "depends_on": [
+    "F03-03"
+   ],
+   "artifacts": [
+    "tests/test_grain_gptpro_f03_recovery.py",
+    "tests/test_grain_gptpro_f03_identification.py"
+   ],
+   "declared_artifacts": [
+    "selection_tests.json"
+   ]
+  },
+  "F03-05": {
+   "package": "F03",
+   "kind": "RUN",
+   "requirements": [
+    "R05",
+    "R06",
+    "R09"
+   ],
+   "depends_on": [
+    "F03-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F03/recovery_full_r1",
+    "results/grain_gptpro_foundation_v3/F03/audit_full_r1"
+   ],
+   "declared_artifacts": [
+    "design_identification.csv",
+    "response_recovery.csv"
+   ]
+  },
+  "F03-06": {
+   "package": "F03",
+   "kind": "REVIEW",
+   "requirements": [
+    "R04",
+    "R05",
+    "R06"
+   ],
+   "depends_on": [
+    "F03-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F03/review_r1/F03-06"
+   ],
+   "declared_artifacts": [
+    "opportunity_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F04-01": {
+   "package": "F04",
+   "kind": "MATH",
+   "requirements": [
+    "R09",
+    "R12",
+    "A02"
+   ],
+   "depends_on": [
+    "F02-06",
+    "F03-06"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F04/information_full_r1",
+    "results/grain_gptpro_foundation_v3/F04/tail_full_r1"
+   ],
+   "declared_artifacts": [
+    "information_certificates.json"
+   ]
+  },
+  "F04-02": {
+   "package": "F04",
+   "kind": "BUILD",
+   "requirements": [
+    "R09",
+    "R12"
+   ],
+   "depends_on": [
+    "F04-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F04/source_full_r1"
+   ],
+   "declared_artifacts": [
+    "response_worlds.json",
+    "fitted_source_schema.json"
+   ]
+  },
+  "F04-03": {
+   "package": "F04",
+   "kind": "TEST",
+   "requirements": [
+    "R09",
+    "R12",
+    "R35"
+   ],
+   "depends_on": [
+    "F04-02"
+   ],
+   "artifacts": [
+    "tests/test_grain_gptpro_f04_recovery.py"
+   ],
+   "declared_artifacts": [
+    "response_checks.json"
+   ]
+  },
+  "F04-04": {
+   "package": "F04",
+   "kind": "RUN",
+   "requirements": [
+    "R09",
+    "R12"
+   ],
+   "depends_on": [
+    "F04-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F04/application_full_r1"
+   ],
+   "declared_artifacts": [
+    "response_metrics.csv",
+    "diversity_information.csv"
+   ]
+  },
+  "F04-05": {
+   "package": "F04",
+   "kind": "RUN",
+   "requirements": [
+    "R09",
+    "R24"
+   ],
+   "depends_on": [
+    "F04-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F04/tail_full_r1"
+   ],
+   "declared_artifacts": [
+    "variance_tail_metrics.csv"
+   ]
+  },
+  "F04-06": {
+   "package": "F04",
+   "kind": "REVIEW",
+   "requirements": [
+    "R09",
+    "R12",
+    "A02"
+   ],
+   "depends_on": [
+    "F04-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F04/review_r1/F04-06"
+   ],
+   "declared_artifacts": [
+    "response_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F05-01": {
+   "package": "F05",
+   "kind": "MATH",
+   "requirements": [
+    "R10",
+    "R11",
+    "A02"
+   ],
+   "depends_on": [
+    "F04-06"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F05/invariants_r1"
+   ],
+   "declared_artifacts": [
+    "state_equations.md",
+    "gauge_certificates.json"
+   ]
+  },
+  "F05-02": {
+   "package": "F05",
+   "kind": "BUILD",
+   "requirements": [
+    "R10",
+    "R25"
+   ],
+   "depends_on": [
+    "F05-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F05/source_full_r2"
+   ],
+   "declared_artifacts": [
+    "state_fit_contract.json"
+   ]
+  },
+  "F05-03": {
+   "package": "F05",
+   "kind": "TEST",
+   "requirements": [
+    "R10",
+    "R29",
+    "R35"
+   ],
+   "depends_on": [
+    "F05-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F05/invariants_r1"
+   ],
+   "declared_artifacts": [
+    "filter_verification.json"
+   ]
+  },
+  "F05-04": {
+   "package": "F05",
+   "kind": "RUN",
+   "requirements": [
+    "R10",
+    "R24"
+   ],
+   "depends_on": [
+    "F05-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F05/application_full_r1",
+    "results/grain_gptpro_foundation_v3/F05/profiles_full_r1"
+   ],
+   "declared_artifacts": [
+    "learned_dynamics.csv",
+    "likelihood_profiles.csv"
+   ]
+  },
+  "F05-05": {
+   "package": "F05",
+   "kind": "RUN",
+   "requirements": [
+    "R10",
+    "R11",
+    "R29"
+   ],
+   "depends_on": [
+    "F05-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F05/joint_full_r1",
+    "results/grain_gptpro_foundation_v3/F05/missing_time_full_r1"
+   ],
+   "declared_artifacts": [
+    "shared_shock_memory.csv"
+   ]
+  },
+  "F05-06": {
+   "package": "F05",
+   "kind": "MATH",
+   "requirements": [
+    "R07",
+    "R10",
+    "R21"
+   ],
+   "depends_on": [
+    "F05-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F05/invariants_r1"
+   ],
+   "declared_artifacts": [
+    "similarity_invariants.json"
+   ]
+  },
+  "F05-07": {
+   "package": "F05",
+   "kind": "REVIEW",
+   "requirements": [
+    "R10",
+    "R24",
+    "A02"
+   ],
+   "depends_on": [
+    "F05-06"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F05/review_r1/F05-07"
+   ],
+   "declared_artifacts": [
+    "state_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F06-01": {
+   "package": "F06",
+   "kind": "TEST",
+   "requirements": [
+    "R26",
+    "A07"
+   ],
+   "depends_on": [
+    "F03-06",
+    "F05-07",
+    "F09-06"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F06/family_audit_r2"
+   ],
+   "declared_artifacts": [
+    "adaptive_tests.json"
+   ]
+  },
+  "F06-02": {
+   "package": "F06",
+   "kind": "BUILD",
+   "requirements": [
+    "R26",
+    "A07"
+   ],
+   "depends_on": [
+    "F06-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F06/family_full_r2",
+    "results/grain_gptpro_foundation_v3/F06/irt_full_r1"
+   ],
+   "declared_artifacts": [
+    "policy_contract.json"
+   ]
+  },
+  "F06-03": {
+   "package": "F06",
+   "kind": "BUILD",
+   "requirements": [
+    "R10",
+    "R11",
+    "R26"
+   ],
+   "depends_on": [
+    "F06-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F06/gaussian_full_r1"
+   ],
+   "declared_artifacts": [
+    "reactivity_contract.json"
+   ]
+  },
+  "F06-04": {
+   "package": "F06",
+   "kind": "RUN",
+   "requirements": [
+    "R11",
+    "R26"
+   ],
+   "depends_on": [
+    "F06-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F06/gaussian_full_summary_audit_r1"
+   ],
+   "declared_artifacts": [
+    "policy_comparison.csv",
+    "reactivity_frontier.csv"
+   ]
+  },
+  "F06-05": {
+   "package": "F06",
+   "kind": "RUN",
+   "requirements": [
+    "R11",
+    "R19"
+   ],
+   "depends_on": [
+    "F06-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F06/policy_sensitivity_r1"
+   ],
+   "declared_artifacts": [
+    "endogenous_policy_sensitivity.csv"
+   ]
+  },
+  "F06-06": {
+   "package": "F06",
+   "kind": "REVIEW",
+   "requirements": [
+    "R11",
+    "R26",
+    "A07",
+    "H04"
+   ],
+   "depends_on": [
+    "F06-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F06/review_r2/F06-06"
+   ],
+   "declared_artifacts": [
+    "policy_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F07-01": {
+   "package": "F07",
+   "kind": "MATH",
+   "requirements": [
+    "R13"
+   ],
+   "depends_on": [
+    "F03-06",
+    "F04-06"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F07/information_audit_r1",
+    "results/grain_gptpro_foundation_v3/F07/information_r1"
+   ],
+   "declared_artifacts": [
+    "openness_exact_curves.csv"
+   ]
+  },
+  "F07-02": {
+   "package": "F07",
+   "kind": "BUILD",
+   "requirements": [
+    "R13",
+    "R06"
+   ],
+   "depends_on": [
+    "F07-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F07/estimation_smoke_r1"
+   ],
+   "declared_artifacts": [
+    "openness_generator_contract.json"
+   ]
+  },
+  "F07-03": {
+   "package": "F07",
+   "kind": "TEST",
+   "requirements": [
+    "R13",
+    "R35"
+   ],
+   "depends_on": [
+    "F07-02"
+   ],
+   "artifacts": [
+    "tests/test_grain_gptpro_f07_estimation.py"
+   ],
+   "declared_artifacts": [
+    "openness_checks.json"
+   ]
+  },
+  "F07-04": {
+   "package": "F07",
+   "kind": "RUN",
+   "requirements": [
+    "R13",
+    "R26"
+   ],
+   "depends_on": [
+    "F07-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F07/estimation_full_r1",
+    "results/grain_gptpro_foundation_v3/F07/estimation_summary_r1"
+   ],
+   "declared_artifacts": [
+    "openness_simulation.csv",
+    "openness_conditions.md"
+   ]
+  },
+  "F07-05": {
+   "package": "F07",
+   "kind": "RUN",
+   "requirements": [
+    "R13",
+    "R14",
+    "H04"
+   ],
+   "depends_on": [
+    "F07-04",
+    "F08-07"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F07/nli_reader_link_r1",
+    "results/grain_gptpro_foundation_v3/F07/reader_link_r1"
+   ],
+   "declared_artifacts": [
+    "openness_text_channel.csv",
+    "acceptance.json"
+   ]
+  },
+  "F08-01": {
+   "package": "F08",
+   "kind": "AUDIT",
+   "requirements": [
+    "R14",
+    "R15"
+   ],
+   "depends_on": [
+    "F02-06",
+    "F01-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F08/downstream_full_r2"
+   ],
+   "declared_artifacts": [
+    "text_bridge_audit.json"
+   ]
+  },
+  "F08-02": {
+   "package": "F08",
+   "kind": "BUILD",
+   "requirements": [
+    "R14",
+    "R15",
+    "R33"
+   ],
+   "depends_on": [
+    "F08-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F08/reader_recovery_r1"
+   ],
+   "declared_artifacts": [
+    "grammar_bank.csv",
+    "evidence_addresses.csv"
+   ]
+  },
+  "F08-03": {
+   "package": "F08",
+   "kind": "BUILD",
+   "requirements": [
+    "R14",
+    "R16"
+   ],
+   "depends_on": [
+    "F08-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F08/nli_reader_r1",
+    "results/grain_gptpro_foundation_v3/F08/reader_recovery_r1",
+    "results/grain_gptpro_foundation_v3/F11/grain_comment_reader_r1"
+   ],
+   "declared_artifacts": [
+    "text_reader_manifest.json",
+    "estimator_bridge.json"
+   ]
+  },
+  "F08-04": {
+   "package": "F08",
+   "kind": "TEST",
+   "requirements": [
+    "R14",
+    "R15",
+    "R35"
+   ],
+   "depends_on": [
+    "F08-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F08/state_full_audit_r2"
+   ],
+   "declared_artifacts": [
+    "text_bridge_tests.json"
+   ]
+  },
+  "F08-05": {
+   "package": "F08",
+   "kind": "RUN",
+   "requirements": [
+    "R14",
+    "R16",
+    "R20"
+   ],
+   "depends_on": [
+    "F08-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F08/downstream_full_r2",
+    "results/grain_gptpro_foundation_v3/F08/nli_downstream_full_r1"
+   ],
+   "declared_artifacts": [
+    "channel_metrics.csv",
+    "reader_calibration.csv"
+   ]
+  },
+  "F08-06": {
+   "package": "F08",
+   "kind": "RUN",
+   "requirements": [
+    "R15",
+    "R17",
+    "R33"
+   ],
+   "depends_on": [
+    "F08-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F08/downstream_full_r2",
+    "results/grain_gptpro_foundation_v3/F16/serialize_full_r1"
+   ],
+   "declared_artifacts": [
+    "evidence_cards.json",
+    "ownership_contrasts.csv"
+   ]
+  },
+  "F08-07": {
+   "package": "F08",
+   "kind": "REVIEW",
+   "requirements": [
+    "R14",
+    "R15",
+    "R16"
+   ],
+   "depends_on": [
+    "F08-06"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F08/factorial_audit_r1",
+    "results/grain_gptpro_foundation_v3/F08/factorial_full_r1",
+    "results/grain_gptpro_foundation_v3/F08/review_r2/F08-07"
+   ],
+   "declared_artifacts": [
+    "text_bridge_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F09-01": {
+   "package": "F09",
+   "kind": "MATH",
+   "requirements": [
+    "R18",
+    "R19",
+    "R07"
+   ],
+   "depends_on": [
+    "F01-05",
+    "F08-07"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F09/panels_audit_r1"
+   ],
+   "declared_artifacts": [
+    "rival_signatures.csv",
+    "equivalence_certificates.json"
+   ]
+  },
+  "F09-02": {
+   "package": "F09",
+   "kind": "BUILD",
+   "requirements": [
+    "R18",
+    "R19"
+   ],
+   "depends_on": [
+    "F09-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F09/panels_full_r1"
+   ],
+   "declared_artifacts": [
+    "rival_design_manifest.json"
+   ]
+  },
+  "F09-03": {
+   "package": "F09",
+   "kind": "BUILD",
+   "requirements": [
+    "R19",
+    "R26"
+   ],
+   "depends_on": [
+    "F09-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F09/calibration_r1"
+   ],
+   "declared_artifacts": [
+    "oof_calibration.json"
+   ]
+  },
+  "F09-04": {
+   "package": "F09",
+   "kind": "TEST",
+   "requirements": [
+    "R18",
+    "R19",
+    "R35"
+   ],
+   "depends_on": [
+    "F09-03"
+   ],
+   "artifacts": [
+    "tests/test_grain_gptpro_f09_rivals.py",
+    "tests/test_grain_gptpro_f09_detection.py"
+   ],
+   "declared_artifacts": [
+    "rival_tests.json"
+   ]
+  },
+  "F09-05": {
+   "package": "F09",
+   "kind": "RUN",
+   "requirements": [
+    "R18",
+    "R19"
+   ],
+   "depends_on": [
+    "F09-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F09/calibration_r1",
+    "results/grain_gptpro_foundation_v3/F09/panels_full_r1"
+   ],
+   "declared_artifacts": [
+    "rival_metrics.csv",
+    "oof_confusion.csv"
+   ]
+  },
+  "F09-06": {
+   "package": "F09",
+   "kind": "REVIEW",
+   "requirements": [
+    "R18",
+    "R19",
+    "A08"
+   ],
+   "depends_on": [
+    "F09-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F09/review_r2/F09-06"
+   ],
+   "declared_artifacts": [
+    "rival_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F10-01": {
+   "package": "F10",
+   "kind": "AUDIT",
+   "requirements": [
+    "R31",
+    "A05"
+   ],
+   "depends_on": [
+    "F01-05",
+    "F08-07"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F10/cache_recovery_r1",
+    "results/grain_gptpro_foundation_v3/F10/uncertainty_r1"
+   ],
+   "declared_artifacts": [
+    "zero_shrinkage_reference.csv"
+   ]
+  },
+  "F10-02": {
+   "package": "F10",
+   "kind": "MATH",
+   "requirements": [
+    "R17",
+    "R21",
+    "R31"
+   ],
+   "depends_on": [
+    "F10-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F10/geometry_audit_r1",
+    "results/grain_gptpro_foundation_v3/F10/geometry_r1"
+   ],
+   "declared_artifacts": [
+    "common_edit_metric.md",
+    "quadratic_certificates.json"
+   ]
+  },
+  "F10-03": {
+   "package": "F10",
+   "kind": "BUILD",
+   "requirements": [
+    "R17",
+    "R31",
+    "A05",
+    "A08"
+   ],
+   "depends_on": [
+    "F10-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F11/reader_interface_r1"
+   ],
+   "declared_artifacts": [
+    "edit_metric_manifest.json"
+   ]
+  },
+  "F10-04": {
+   "package": "F10",
+   "kind": "TEST",
+   "requirements": [
+    "R31",
+    "R35"
+   ],
+   "depends_on": [
+    "F10-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F10/pv01_audit_r1",
+    "results/grain_gptpro_foundation_v3/F10/derivative_triage_r1",
+    "results/grain_gptpro_foundation_v3/F10/derivative_triage_r2"
+   ],
+   "declared_artifacts": [
+    "derivative_verification.json"
+   ]
+  },
+  "F10-05": {
+   "package": "F10",
+   "kind": "REVIEW",
+   "requirements": [
+    "R17",
+    "R21",
+    "R31",
+    "A05"
+   ],
+   "depends_on": [
+    "F10-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F10/pv01_audit_r1",
+    "results/grain_gptpro_foundation_v3/F10/uncertainty_r1",
+    "results/grain_gptpro_foundation_v3/F10/decision_r1",
+    "results/grain_gptpro_foundation_v3/F10/review_r1/F10-05"
+   ],
+   "declared_artifacts": [
+    "action_metric_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F11-01": {
+   "package": "F11",
+   "kind": "MATH",
+   "requirements": [
+    "R16",
+    "R20",
+    "R29",
+    "A06"
+   ],
+   "depends_on": [
+    "F08-07",
+    "F10-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F11/anchor_full_r2"
+   ],
+   "declared_artifacts": [
+    "mtmm_identification.json"
+   ]
+  },
+  "F11-02": {
+   "package": "F11",
+   "kind": "BUILD",
+   "requirements": [
+    "R16",
+    "R20"
+   ],
+   "depends_on": [
+    "F11-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F11/mtmm_full_r1",
+    "results/grain_gptpro_foundation_v3/F11/source_audit_r1"
+   ],
+   "declared_artifacts": [
+    "mtmm_fit_manifest.json"
+   ]
+  },
+  "F11-03": {
+   "package": "F11",
+   "kind": "TEST",
+   "requirements": [
+    "R20",
+    "R29"
+   ],
+   "depends_on": [
+    "F11-02"
+   ],
+   "artifacts": [
+    "tests/test_grain_gptpro_f11_mtmm.py",
+    "tests/test_grain_gptpro_f11_boundary.py"
+   ],
+   "declared_artifacts": [
+    "mtmm_checks.json"
+   ]
+  },
+  "F11-04": {
+   "package": "F11",
+   "kind": "RUN",
+   "requirements": [
+    "R16",
+    "R20",
+    "R29"
+   ],
+   "depends_on": [
+    "F11-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F11/mtmm_full_r1",
+    "results/grain_gptpro_foundation_v3/F11/reader_interface_r1",
+    "results/grain_gptpro_foundation_v3/F11/source_uncertainty_r1"
+   ],
+   "declared_artifacts": [
+    "mtmm_metrics.csv",
+    "reader_method_table.csv"
+   ]
+  },
+  "F11-05": {
+   "package": "F11",
+   "kind": "REVIEW",
+   "requirements": [
+    "R16",
+    "R20",
+    "R29",
+    "A06"
+   ],
+   "depends_on": [
+    "F11-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F11/review_r1/F11-05"
+   ],
+   "declared_artifacts": [
+    "reader_error_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F12-01": {
+   "package": "F12",
+   "kind": "MATH",
+   "requirements": [
+    "R21",
+    "R22",
+    "R23"
+   ],
+   "depends_on": [
+    "F04-06",
+    "F11-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F12/signatures_r1"
+   ],
+   "declared_artifacts": [
+    "transport_equations.json"
+   ]
+  },
+  "F12-02": {
+   "package": "F12",
+   "kind": "BUILD",
+   "requirements": [
+    "R22",
+    "R23",
+    "R25",
+    "R28"
+   ],
+   "depends_on": [
+    "F12-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F12/transport_full_r1"
+   ],
+   "declared_artifacts": [
+    "transport_design.json"
+   ]
+  },
+  "F12-03": {
+   "package": "F12",
+   "kind": "TEST",
+   "requirements": [
+    "R21",
+    "R23",
+    "R28"
+   ],
+   "depends_on": [
+    "F12-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F12/table_audit_r1",
+    "tests/test_grain_gptpro_f12_batch.py",
+    "tests/test_grain_gptpro_f12_dif.py"
+   ],
+   "declared_artifacts": [
+    "transport_checks.json"
+   ]
+  },
+  "F12-04": {
+   "package": "F12",
+   "kind": "RUN",
+   "requirements": [
+    "R23",
+    "R25",
+    "R28"
+   ],
+   "depends_on": [
+    "F12-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F12/transport_full_r1",
+    "results/grain_gptpro_foundation_v3/F16/t1_transport_full_r1",
+    "results/grain_gptpro_foundation_v3/F12/dif_table_r1"
+   ],
+   "declared_artifacts": [
+    "transport_metrics.csv",
+    "dif_table.csv"
+   ]
+  },
+  "F12-05": {
+   "package": "F12",
+   "kind": "REVIEW",
+   "requirements": [
+    "R21",
+    "R22",
+    "R23",
+    "R28",
+    "H03",
+    "H05"
+   ],
+   "depends_on": [
+    "F12-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F12/review_r1/F12-05"
+   ],
+   "declared_artifacts": [
+    "transport_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F13-01": {
+   "package": "F13",
+   "kind": "MATH",
+   "requirements": [
+    "R24",
+    "R25",
+    "R29"
+   ],
+   "depends_on": [
+    "F04-06",
+    "F05-07",
+    "F08-07",
+    "F11-05"
+   ],
+   "artifacts": [
+    "reports/grain_measurement_foundation/GPTPRO_V3_F13_UNCERTAINTY_BUILD_20260916.md"
+   ],
+   "declared_artifacts": [
+    "uncertainty_equations.md"
+   ]
+  },
+  "F13-02": {
+   "package": "F13",
+   "kind": "BUILD",
+   "requirements": [
+    "R24",
+    "R25"
+   ],
+   "depends_on": [
+    "F13-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F13/binary_mixture_full_r1",
+    "results/grain_gptpro_foundation_v3/F13/binary_source_full_r2",
+    "results/grain_gptpro_foundation_v3/F13/delta_full_r1",
+    "results/grain_gptpro_foundation_v3/F13/dynamic_personal_grid_r1",
+    "results/grain_gptpro_foundation_v3/F13/dynamic_source_full_r1",
+    "results/grain_gptpro_foundation_v3/F13/reml_full_r1"
+   ],
+   "declared_artifacts": [
+    "interval_contract.json"
+   ]
+  },
+  "F13-03": {
+   "package": "F13",
+   "kind": "TEST",
+   "requirements": [
+    "R24",
+    "R29"
+   ],
+   "depends_on": [
+    "F13-02"
+   ],
+   "artifacts": [
+    "tests/test_grain_gptpro_f13_contract.py",
+    "tests/test_grain_gptpro_f13_history_contract.py",
+    "tests/test_grain_gptpro_f13_uncertainty.py"
+   ],
+   "declared_artifacts": [
+    "uncertainty_checks.json"
+   ]
+  },
+  "F13-04": {
+   "package": "F13",
+   "kind": "RUN",
+   "requirements": [
+    "R24",
+    "R25",
+    "R29"
+   ],
+   "depends_on": [
+    "F13-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F13/dynamic_aggregate_r2",
+    "results/grain_gptpro_foundation_v3/F13/missing_nested_full_r1",
+    "results/grain_gptpro_foundation_v3/F13/missing_reference_full_r1",
+    "results/grain_gptpro_foundation_v3/F13/missing_source_full_r1",
+    "results/grain_gptpro_foundation_v3/F13/recovery2_r1",
+    "results/grain_gptpro_foundation_v3/F13/recovery3_r1",
+    "results/grain_gptpro_foundation_v3/F13/material_facet_r1"
+   ],
+   "declared_artifacts": [
+    "coverage_components.csv",
+    "minimum_change.csv"
+   ]
+  },
+  "F13-05": {
+   "package": "F13",
+   "kind": "REVIEW",
+   "requirements": [
+    "R12",
+    "R24",
+    "R25",
+    "R29"
+   ],
+   "depends_on": [
+    "F13-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F13/cold_contract_full_r1",
+    "results/grain_gptpro_foundation_v3/F13/review_r1/F13-05"
+   ],
+   "declared_artifacts": [
+    "uncertainty_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F14-01": {
+   "package": "F14",
+   "kind": "AUDIT",
+   "requirements": [
+    "R27",
+    "H01",
+    "H02",
+    "H03"
+   ],
+   "depends_on": [
+    "F01-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F14/metadata_full_r2"
+   ],
+   "declared_artifacts": [
+    "data_source_inventory.csv"
+   ]
+  },
+  "F14-02": {
+   "package": "F14",
+   "kind": "BUILD",
+   "requirements": [
+    "R27",
+    "R06"
+   ],
+   "depends_on": [
+    "F14-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F14/metadata_full_r2"
+   ],
+   "declared_artifacts": [
+    "metadata_adapter_schema.json"
+   ]
+  },
+  "F14-03": {
+   "package": "F14",
+   "kind": "TEST",
+   "requirements": [
+    "R27",
+    "R35"
+   ],
+   "depends_on": [
+    "F14-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F14/metadata_full_r2",
+    "tests/test_grain_gptpro_f14_role.py"
+   ],
+   "declared_artifacts": [
+    "adapter_checks.json"
+   ]
+  },
+  "F14-04": {
+   "package": "F14",
+   "kind": "REVIEW",
+   "requirements": [
+    "R27",
+    "H01",
+    "H02",
+    "H03"
+   ],
+   "depends_on": [
+    "F14-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F14/cache_interface_audit_r1",
+    "results/grain_gptpro_foundation_v3/F14/reference_replay_r1",
+    "results/grain_gptpro_foundation_v3/F16/event_addresses_r1",
+    "results/grain_gptpro_foundation_v3/F14/review_r1/F14-04"
+   ],
+   "declared_artifacts": [
+    "natural_support_matrix.csv",
+    "acceptance.json"
+   ]
+  },
+  "F15-01": {
+   "package": "F15",
+   "kind": "MATH",
+   "requirements": [
+    "R08",
+    "R30",
+    "A01",
+    "A04"
+   ],
+   "depends_on": [
+    "F02-06",
+    "F05-07",
+    "F10-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F15/recovery_r2/F15-01"
+   ],
+   "declared_artifacts": [
+    "predictive_state_certificates.json"
+   ]
+  },
+  "F15-02": {
+   "package": "F15",
+   "kind": "BUILD",
+   "requirements": [
+    "R30",
+    "A04"
+   ],
+   "depends_on": [
+    "F15-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F15/recovery_r2/F15-02"
+   ],
+   "declared_artifacts": [
+    "compression_order.json"
+   ]
+  },
+  "F15-03": {
+   "package": "F15",
+   "kind": "MATH",
+   "requirements": [
+    "R07",
+    "A03"
+   ],
+   "depends_on": [
+    "F15-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F15/recovery_r2/F15-03"
+   ],
+   "declared_artifacts": [
+    "auxiliary_identification.json"
+   ]
+  },
+  "F15-04": {
+   "package": "F15",
+   "kind": "RUN",
+   "requirements": [
+    "A03",
+    "A05"
+   ],
+   "depends_on": [
+    "F15-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F15/recovery_r2/F15-04"
+   ],
+   "declared_artifacts": [
+    "auxiliary_action_metrics.csv"
+   ]
+  },
+  "F15-05": {
+   "package": "F15",
+   "kind": "REVIEW",
+   "requirements": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08"
+   ],
+   "depends_on": [
+    "F15-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F15/recovery_r2/F15-05"
+   ],
+   "declared_artifacts": [
+    "method_adoption_final.csv"
+   ]
+  },
+  "F15-06": {
+   "package": "F15",
+   "kind": "REVIEW",
+   "requirements": [
+    "R03",
+    "R30",
+    "R31"
+   ],
+   "depends_on": [
+    "F15-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F15/recovery_r2/F15-06"
+   ],
+   "declared_artifacts": [
+    "representation_rules.json",
+    "acceptance.json"
+   ]
+  },
+  "F16-01": {
+   "package": "F16",
+   "kind": "AUDIT",
+   "requirements": [
+    "R01",
+    "R02",
+    "R34"
+   ],
+   "depends_on": [
+    "F07-05",
+    "F09-06",
+    "F12-05",
+    "F13-05",
+    "F14-04",
+    "F15-06"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F16/t1_cold_full_r1",
+    "results/grain_gptpro_foundation_v3/F16/construction_briefs_r2"
+   ],
+   "declared_artifacts": [
+    "construction_briefs.json"
+   ]
+  },
+  "F16-02": {
+   "package": "F16",
+   "kind": "BUILD",
+   "requirements": [
+    "R22",
+    "R24",
+    "R33",
+    "R34"
+   ],
+   "depends_on": [
+    "F16-01"
+   ],
+   "artifacts": [
+    "grain_research/gptpro_foundation_v3/f16_serialize.py",
+    "docs/GRAIN_F16_PUBLIC_CALIBRATED_BUNDLE_HANDBOOK_V1.md",
+    "docs/GRAIN_F16_BUNDLE_SCHEMA_V1.json",
+    "results/grain_gptpro_foundation_v3/F16/bundle_schema_r1"
+   ],
+   "declared_artifacts": [
+    "construction_handbook.md",
+    "bundle_schema.json"
+   ]
+  },
+  "F16-03": {
+   "package": "F16",
+   "kind": "TEST",
+   "requirements": [
+    "R22",
+    "R34",
+    "R35"
+   ],
+   "depends_on": [
+    "F16-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F16/public_contract_full_r1",
+    "results/grain_gptpro_foundation_v3/F16/t1_cold_full_r1",
+    "results/grain_gptpro_foundation_v3/F16/t2_cold_full_r1",
+    "results/grain_gptpro_foundation_v3/F16/serialize_audit_r4",
+    "tests/test_grain_gptpro_f16_c2_rejection.py"
+   ],
+   "declared_artifacts": [
+    "cold_replay_checks.json"
+   ]
+  },
+  "F16-04": {
+   "package": "F16",
+   "kind": "RUN",
+   "requirements": [
+    "R24",
+    "R33",
+    "R34"
+   ],
+   "depends_on": [
+    "F16-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F16/evidence_full_r1",
+    "results/grain_gptpro_foundation_v3/F16/t1_source_full_r1",
+    "results/grain_gptpro_foundation_v3/F16/t2_cold_full_r1"
+   ],
+   "declared_artifacts": [
+    "construction_metrics.csv",
+    "instrument_evidence_cards.json"
+   ]
+  },
+  "F16-05": {
+   "package": "F16",
+   "kind": "RUN",
+   "requirements": [
+    "R34",
+    "H06"
+   ],
+   "depends_on": [
+    "F16-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F16/independent_t3_v1",
+    "results/grain_gptpro_foundation_v3/F16/t3_application_full_r1"
+   ],
+   "declared_artifacts": [
+    "independent_build_log.md",
+    "t3_replay.json"
+   ]
+  },
+  "F16-06": {
+   "package": "F16",
+   "kind": "REVIEW",
+   "requirements": [
+    "R01",
+    "R32",
+    "R33",
+    "R34"
+   ],
+   "depends_on": [
+    "F16-05"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F16/review_r1/F16-06"
+   ],
+   "declared_artifacts": [
+    "construction_acceptance.json",
+    "production_rules.md"
+   ]
+  },
+  "F17-01": {
+   "package": "F17",
+   "kind": "AUDIT",
+   "requirements": [
+    "R35",
+    "R36"
+   ],
+   "depends_on": [
+    "F06-06",
+    "F16-06"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F17/source_audit_r1"
+   ],
+   "declared_artifacts": [
+    "final_source_crosswalk.csv"
+   ]
+  },
+  "F17-02": {
+   "package": "F17",
+   "kind": "REVIEW",
+   "requirements": [
+    "R01",
+    "R02",
+    "R03",
+    "R32"
+   ],
+   "depends_on": [
+    "F17-01"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F17/integrated_theory_r2"
+   ],
+   "declared_artifacts": [
+    "integrated_theory.md",
+    "contribution_ledger.csv"
+   ]
+  },
+  "F17-03": {
+   "package": "F17",
+   "kind": "REVIEW",
+   "requirements": [
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "H05",
+    "H06"
+   ],
+   "depends_on": [
+    "F17-02"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F17/human_contracts_r2"
+   ],
+   "declared_artifacts": [
+    "human_stage_contracts.md"
+   ]
+  },
+  "F17-04": {
+   "package": "F17",
+   "kind": "TEST",
+   "requirements": [
+    "R35",
+    "R36"
+   ],
+   "depends_on": [
+    "F17-03"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F17/numeric_audit_r1"
+   ],
+   "declared_artifacts": [
+    "final_numeric_audit.json"
+   ]
+  },
+  "F17-05": {
+   "package": "F17",
+   "kind": "REVIEW",
+   "requirements": [
+    "R01",
+    "R03",
+    "R34",
+    "R35",
+    "R36"
+   ],
+   "depends_on": [
+    "F17-04"
+   ],
+   "artifacts": [
+    "results/grain_gptpro_foundation_v3/F17/final_acceptance_r2"
+   ],
+   "declared_artifacts": [
+    "final_acceptance.json",
+    "final_report.md"
+   ]
+  }
+ },
+ "dropped_nonexistent": [],
+ "note": "artifacts are canonical recovery/review locations; COMMON r1 roots hold rejected legacy outputs"
+}

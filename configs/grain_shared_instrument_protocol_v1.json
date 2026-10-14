@@ -1,0 +1,95 @@
+{
+ "protocol": "docs/GRAIN_SHARED_INSTRUMENT_PROTOCOL_V1.md",
+ "components": [
+  "S1_nuisance",
+  "S2_construct",
+  "S3_edit_battery",
+  "R1_mtmm",
+  "R2_reader_variance",
+  "R3_out_of_reader_transfer",
+  "M1_single_law",
+  "M2_internal_path",
+  "M3_shortcut"
+ ],
+ "readers": {
+  "NLI_deberta_v3_base": {
+   "S1_nuisance": "NOT_RUN",
+   "S2_construct": "NOT_RUN",
+   "S3_edit_battery": "PARTIAL",
+   "R1_mtmm": "PASS_SIM",
+   "R2_reader_variance": "REPORTED",
+   "R3_out_of_reader_transfer": "FAIL",
+   "M1_single_law": "FAIL",
+   "M2_internal_path": "BLOCKED",
+   "M3_shortcut": "NOT_RUN"
+  },
+  "GRAIN_lexical": {
+   "S1_nuisance": "FAIL",
+   "S2_construct": "NOT_RUN",
+   "S3_edit_battery": "PARTIAL",
+   "R1_mtmm": "PASS_SIM",
+   "R2_reader_variance": "REPORTED",
+   "R3_out_of_reader_transfer": "FAIL",
+   "M1_single_law": "FAIL",
+   "M2_internal_path": "NOT_APPLICABLE",
+   "M3_shortcut": "PARTIAL"
+  },
+  "E5_large_v2": {
+   "S1_nuisance": "PARTIAL",
+   "S2_construct": "NOT_RUN",
+   "S3_edit_battery": "PARTIAL",
+   "R1_mtmm": "NOT_RUN",
+   "R2_reader_variance": "NOT_RUN",
+   "R3_out_of_reader_transfer": "FAIL",
+   "M1_single_law": "NOT_RUN",
+   "M2_internal_path": "BLOCKED",
+   "M3_shortcut": "PARTIAL"
+  },
+  "BGE_large_en_v1_5": {
+   "S1_nuisance": "PARTIAL",
+   "S2_construct": "NOT_RUN",
+   "S3_edit_battery": "PARTIAL",
+   "R1_mtmm": "NOT_RUN",
+   "R2_reader_variance": "NOT_RUN",
+   "R3_out_of_reader_transfer": "FAIL",
+   "M1_single_law": "NOT_RUN",
+   "M2_internal_path": "BLOCKED",
+   "M3_shortcut": "NOT_RUN"
+  }
+ },
+ "evidence": {
+  "S1_nuisance": [
+   "results/grain_gptpro_foundation_v3/R17/natural_sensitivity_r1",
+   "results/grain_gptpro_foundation_v3/R17/construct_edit_grain_r1"
+  ],
+  "S3_edit_battery": [
+   "results/grain_gptpro_foundation_v3/F14/content_coverage_r1"
+  ],
+  "R1_mtmm": [
+   "results/grain_gptpro_foundation_v3/F11/source_uncertainty_r1",
+   "results/grain_gptpro_foundation_v3/F11/protocol_form_loading_r1"
+  ],
+  "R2_reader_variance": [
+   "results/grain_gptpro_foundation_v3/F17/reaudit_r2_followup1"
+  ],
+  "R3_out_of_reader_transfer": [
+   "results/grain_gptpro_foundation_v3/F17/reaudit_r2_followup3"
+  ],
+  "M1_single_law": [
+   "results/grain_gptpro_foundation_v3/F11/reader_concordance_r1"
+  ],
+  "M3_shortcut": [
+   "results/grain_gptpro_foundation_v3/F10/shortcut_r1",
+   "results/grain_gptpro_foundation_v3/F17/reaudit_r2_followup1"
+  ]
+ },
+ "status_notes": {
+  "GRAIN_lexical.S1_nuisance": "FAIL at chunk level for one historical supervised head: readout -.34 SD per Essays chunk under the source-listed first/third-person edit; the edit also changes ownership evidence, so this shows lexical sensitivity and an unmet source-prescribed invariance, not psychological invalidity [seminar-05 reconciliation]",
+  "E5/BGE.S1_nuisance": "PARTIAL: mechanical edits small per unit (upper bounds < .5) but readout systematic shift up to .58 prediction-SD if all units edited; paraphrase/politeness/language edits blocked",
+  "R3": "FAIL: pole signature not preserved GRAIN->NLI; edit signatures not preserved E5->BGE",
+  "M1": "FAIL: single-law test rejects for qualification (NLI pole cross-talk); pole degenerate (GRAIN absent channel)",
+  "E5.M3_shortcut": "PARTIAL: topic share detected (.20 E) and residualized (FU1-c); occupation/stereotype untested [r3 correction]",
+  "GRAIN_lexical.M3_shortcut": "PARTIAL: no topic share detected; occupation/stereotype shortcuts untested (metadata blocked) [r3 correction]",
+  "provenance": "protocol and thresholds written at 05:12 after the evidence existed; thresholds not pre-frozen [r3 correction]"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "schema_version": "grain_construct_passport_v1",
+ "sources": {
+  "passport_modules": "P04 pp.17-18 (16 modules plus Drift/provenance = 17)",
+  "claim_ladder": "P04 p.18 L0-L6",
+  "construct_contract": "P03 p.29 (12 fields)",
+  "measurement_compiler": "P03 p.29 input/output",
+  "measurement_tuple": "P01 pp.27-28 M = (A, nu, mu, phi, Psi, V)",
+  "evidence_matrix_P02": "P02 p.29 (11 layers)",
+  "validation_matrix_P03": "P03 pp.30-31 (18 layers)"
+ },
+ "passport_modules": ["measurement_object", "context_of_use", "reference_population", "elicitation_model", "selection_model", "representation", "competing_explanations", "discriminating_intervention", "convergent_evidence", "discriminant_evidence", "criterion_evidence", "response_process", "cross_context_invariance", "cross_language_invariance", "model_invariance", "uncertainty", "drift_provenance"],
+ "construct_contract_fields": ["phenomenon", "construct_ontology", "reference_universe", "opportunity", "selection_mechanism", "response_mechanism", "rival_explanations", "discriminating_interventions", "reader_class", "transport_domain", "external_consequences", "invalidating_result"],
+ "measurement_tuple": ["A_admissible_context_space", "nu_target_situation_universe", "mu_observation_policy", "phi_evidence_extraction", "Psi_scoring_functional", "V_validity_contract"],
+ "compiler_input": ["target_phenomenon", "environment", "population", "language", "intended_interpretation_use"],
+ "compiler_output": ["probe_universe", "response_model", "score_operator", "uncertainty", "validity_envelope", "failure_conditions"],
+ "evidence_matrix_P02": ["behavior_repeatability", "representation_sufficiency", "mechanism_identification", "nuisance_discriminance", "construct_sensitivity", "external_grounding", "individual_reliability", "state_sensitivity", "transport", "observer_independence", "falsifiability"],
+ "validation_matrix_P03": ["structural_reliability", "person_reliability", "dynamic_reliability", "reader_reliability", "context_generalization", "semantic_identifiability", "convergent_validity", "discriminant_validity", "criterion_validity", "incremental_validity", "intervention_validity", "selection_validity", "trait_state_separation", "cross_language_identity", "model_version_transport", "fairness", "calibration", "falsifiability"],
+ "statuses": {
+  "EVIDENCED_REAL": "supported by analysis of real human data under this target",
+  "EVIDENCED_COMPUTATIONAL": "exact or replayed computational property of the instrument (not a psychological claim)",
+  "EVIDENCED_SIM": "supported in declared simulation only",
+  "PARTIAL_SIM": "partly addressed in simulation; named gaps remain",
+  "NEGATIVE_EVIDENCE": "tested and the required property failed",
+  "DECLARED": "declared by design; no evidence required beyond the declaration",
+  "ABSENT_HUMAN_STAGE": "requires human-stage data (H01-H06)",
+  "ABSENT_EXECUTABLE": "computationally executable but not yet done"
+ },
+ "claim_ladder": {
+  "rule": "a level is earned only if every required module and layer for it and all lower levels has status EVIDENCED_REAL; simulation or computational evidence never earns a psychological claim level",
+  "levels": {
+   "L0": {"name": "Description", "requires": ["representation", "structural_reliability"]},
+   "L1": {"name": "Reliability", "requires": ["uncertainty", "person_reliability"]},
+   "L2": {"name": "External Association", "requires": ["criterion_evidence"]},
+   "L3": {"name": "Discriminant Construct", "requires": ["discriminant_evidence", "competing_explanations"]},
+   "L4": {"name": "Intervention-Calibrated Construct", "requires": ["discriminating_intervention"]},
+   "L5": {"name": "Transportable Measurement", "requires": ["cross_context_invariance", "cross_language_invariance", "model_invariance"]},
+   "L6": {"name": "Decision-valid Instrument", "requires": ["context_of_use", "fairness", "calibration"]}
+  }
+ }
+}
