@@ -1,0 +1,21 @@
+{
+  "id": "HM292",
+  "parent": "results/grain_math_response_v1/behavior_pushforward_r1",
+  "paths": "results/grain_math_response_v1/partial_kernel_r1/observations.npz",
+  "metadata": "results/grain_math_response_v1/observed_author_family_r1/observations.npz",
+  "output": "results/grain_math_response_v1/conditional_publication_r1",
+  "source_authors": 386,
+  "held_authors": 120,
+  "windows": [[0, 18], [18, 36]],
+  "behavior_channels": ["next_log_span", "log_cached_gap", "same_exact_venue"],
+  "states": 8,
+  "parts": ["joint", "opportunity", "response"],
+  "criterion_calibration_window": 0,
+  "criterion_evaluation": "opposite_SOURCE_bank_all5_actual_binary_labels",
+  "source_assignments": ["actual", "old_whole_profile_permuted"],
+  "bootstrap": 999,
+  "seed": 29220261014,
+  "compute_seconds_cap": 180,
+  "no_held_questionnaires_raw_neural_API_private_train_grid": true,
+  "original_scope_complete": false
+}

@@ -1,0 +1,17 @@
+{
+  "id": "HM291",
+  "parent": "results/grain_math_response_v1/partial_kernel_r1",
+  "metadata": "results/grain_math_response_v1/observed_author_family_r1/observations.npz",
+  "output": "results/grain_math_response_v1/behavior_pushforward_r1",
+  "references": ["bank0", "bank1", "pooled"],
+  "source_authors": 386,
+  "held_authors": 120,
+  "early_events": 18,
+  "later_events": 18,
+  "features": ["mean_log_length", "sd_log_length", "mean_log_cached_gap", "sd_log_cached_gap", "venue_entropy", "venue_switch_fraction", "distinct_venue_fraction"],
+  "bootstrap": 999,
+  "seed": 29120261014,
+  "compute_seconds_cap": 180,
+  "no_held_labels_API_private_neural_train_answer_fit_grid": true,
+  "original_scope_complete": false
+}

@@ -1,5 +1,123 @@
 # GRAIN agent instructions
 
+2026-10-14 HM292 conditional publication COMPLETE:GoalACTIVE/nojob.
+NEWobservedwindow jointfield,NOTsource-author forecast/template/currentLLMjudgment.
+386SOURCE/120held/2x18/13124+4080pairs/old8addresses/3recordedoutputs/2oldassignments.
+b=nextlogspan/logcachedgap/sameexactvenue;NOTofflineaction/emotion/immediatereaction.
+P,J,O=Ppsi,D=J-O allretained;fixedSOURCE tensorunits/24coordinates,NOT24factors.
+SOURCEonly reference/earlyjoint criterioncovectors;2oppositeauthorbank evaluations,
+all5labels/bothviews/parts/nulls;0heldquestionnaires/raw/neural/API/private/train.
+Heldjoint/opp/D matched squared-distance advantage2.283/.186/1.564 withdescriptive
+CIs[1.372,3.322]/[.114,.274]/[.887,2.280],NOT r/AUC/psychfractions/independentreplicas.
+Joint externalraw E/N/O positiveall4bank/views:rE .033-.086,N .016-.131,O .059-.154;
+A/Cmixed,oldnullNstrongNEG(-.272..-.048) retained;no target-specificmagnitudeclaim.
+POSTOUTCOME SAMErule D=Pdelta+shape:level1.251[.791,1.789]+shape.077[-.156,.294]
++cross.236[-.035,.505]=1.564. StrongD chieflyglobalproductionlevel,NOTfullpersonalB_u.
+ShapeNscorecontinuity.308 butexternalN -.004..+.054;NOTnamedNfactor/state/emotion.
+Only3/240heldwindows coverall8addresses;missingpersonalconditionmeanUNKNOWN,
+zeroobservedmomentNOTneutralbehavior. Span411/494days,NOTclinicalsingle-session.
+Separatecriterionaccount source-cal other4 means keepsY=m+e/no scorechanges.
+JointSource-relativeE/N/Oallpositive ranges .029-.114/.032-.142/.048-.170;
+A/Cnegative/mixed,allSourceevalsupported;controlscoarseother4 NOTallconfounds.
+One.011412sCPU/secondary.009001s;18tests10new/7PythonlintformatPASS;
+primary1.33e-15/shape4.44e-15/criterion1.39e-17/standalonecoldverify/sealsPASS,
+sameagentNOTblind. AllcommandsEXIT0/noqueue/no sciencefail/retry/postsealedit.
+ReadCONDITIONAL_PUBLICATION_THEORY_V1/parentRESULT20261014_ZH.
+NEXTpendingHM293 distribution-valuedconditional field:matched-first-moment
+counterworld+FIXED informativeoutputkernel withLINEARpartretained. NOTbandwidth/
+metric/label/bin/accuracy/precisionrescue;inventoryoldHM142/175 beforefiniteplan.
+ParkMuandet2020conditionalmath/OpenAIconditionaldesigninspirationONLY,no newtheorem.
+18/100/44OPEN/noGit/Claude/automation/lockbox/API/private/neuraltrain/oldqueue.
+
+2026-10-14 HM291 behavior pushforward COMPLETE:GoalACTIVE/nojob.
+386SOURCE/120historicalheld/two18episodes/3refs/all32profiles/old2assignments.
+NEW endpoint channel:actual later span/gap/venue metadata,NOTnext encodedstate
+orLLMjudgment/offlinebehavior/newpersonalityfactors. Noheldlabels/raw/API/neural/train.
+Pooled full/prior gain-.092677[-.199007,.013028];own-stranger+.304956[.135106,.480717],
+84/120positive,banks+.270461/+.308177. Standardizedsquaredrisk,NOTr/AUC/psychfraction.
+Actualprofile prior+.000301/ownstranger+.018261;oldpermuted+.007890/+.052691;
+actual-minus-old-.007589CIcross0,NOspecificBig5promotion. Fullmap labelBLIND.
+POSTOUTCOME risk account:+.259917alignment+.005339shift-.353712spread-.004222mean
+=-.092677;donorbijection cancelsamplitude,ownadvantageispairedalignment.
+SeparatePOSTOUTCOME all6cachedcontracts/2realizations:pooledC/S ownstranger
+.180801/.108210 and+.178806/.112615;SgivenC+.196276/.201816,CgivenS+.155931/.146190.
+All4positivebothbanks/bothrealizations,NOTreplicas/purecausalconditions/alltopics.
+Cvsprior+.102196/.100772 secondaryNOTnewbestprimary;old64particleflagsretained.
+ONE.206982sCPU;accounts.002100+.023610s;19tests10new/7PythonlintformatPASS.
+Primaryliteral7.11e-15/cold0/account3.33e-16/channel2.37e-13/sealsPASS,sameagentNOTblind.
+Prefreezehelperprepareerror beforedirectory/manifest fixed;no sciencefail/retry/edit.
+AllcommandsEXIT0/noqueue. ReadBEHAVIOR_PUSHFORWARD_THEORY_V1/parentRESULT20261014_ZH.
+NEXTnewSOURCEconditionalresponse/criterion-bearingbehavior construction;no more
+template/profile/endpoint/width/particle/shrinkage/rank/accuracy/precision rescue.
+Keepconditionselection/expression/withinprofile/oldE-Aleads;notnoise deletion.
+MatureBayes/pushforward/riskmath;OpenAIsufficiencyinspirationONLY,no newtheorem.
+18/100/44OPEN/noGit/Claude/automation/lockbox/API/private/train/oldqueue.
+
+2026-10-14 HM290 partial shared-kernel COMPLETE:GoalACTIVE/nojob.
+HM281FULLintegrationalreadyknown;NEWpartialunknownsharedkernel adapter ONLY.
+386SOURCE/120held/2x18/3refs/64particles/2fixedrealizations/all6contracts.
+Pooledfull own-fresh-.080175/ownstranger+.138442;C-.001559/+.043187,
+S-.009334/+.080392. NEWforecastlevels belowoldfixed;noaccuracygain.
+Keepchoice/state/countdistribution/all32profiles;SOURCEweights epistemicNOTtraitchange.
+Coarseapprox flagsrep0banks550/627/980,rep1567/491/933 prefixSOURCEcells,notpeople.
+Exactlongmasked integrationOPEN;noK/seed/prior/decay/gridrescue. ONE112.4306sCPU.
+37tests15new/4PythonPASS/literalold3.16e-13/normalized8.09e-14/cold0/sealsPASS;
+sameagentNOTblind,71818exit0/PID14210absent,no sciencefail/retry/noqueue.
+ReadPARTIAL_KERNEL_THEORY_V1/parentRESULT20261014_ZH. Particlelearning2010priorart,
+OpenAI08streaming inspirationONLY,noGaussiantheorem/personalityguarantee.
+18/100/44OPEN/noGit/Claude/automation/lockbox/API/private/train/oldqueue.
+
+2026-10-14 HM289 matched claim involution COMPLETE:GoalACTIVE/nojob.
+SAME24authors/96comments/48relateddyads/50items/768families/38400inquiries;
+bothNEWwholetrue/falsefitclaims/allprefixesUNCHANGED;highlowNOTcomplements.
+ONE4369.007518modelsec<4800cap,float32MPS/batch8/old.001;0newAPI/private/train/fit.
+Allfourfields/F/J/D/3parts/8characters/2spaces/3refs/allcrossqueries retained.
+Codd+.000589513/rank.045/Holm10.450;Aeven+.000276928/rank.080/Holm.720.
+Bothcandidate4bank-windowcellspositive/all5querycommonpositivebothbanks;
+NOT4or10replications/target-specificfactor. Aoddmixed/Cevenmixed;all10Holm>=.45.
+Personboundodd/evenRMS.106973/.145918,displaycoupled.261850/.235665.
+NEWpositiveframealreadyshiftRMS.252669;Aold/new+/new- .001057533/.000500144/
++.000053713;Cold/new+/new- .000240423/.000714593/-.000464433. NOTaccuracygain.
+POSTOUTCOMEno-contenttheta+-world givesoddSOURCEcontact1whileignoringitems:
+standardidentificationcounterexample,NOTactualQwencause/newtheorem.
+Descriptor1.326CPU/allsourcecrosseskept/noextrafit/rank/draws/forwards.
+2000literal/cold/sealsPASS;head3.914e-6/guard.000206<old.001;34tests11new/
+5PythonlintformatPASS,sameagentNOTblind. No sciencefailure/retry/postsealedit.
+99699/23167/70068/73775/20592terminal,PID9704gone,pgrepempty,noqueue.
+ReadCLAIM_MEANING_THEORY_V1/parentCLAIM_MEANING_RESULT20261014_ZH.
+Thisisvector-pathobservercorrection,NOTreplacementforGRAINnumericalspine.
+STOPclaim/prompt/polarity/yes/abstention/head/metric/rank/precision branch.
+NEXTinventorySAME-event independentSOURCE/actioncriteria/coldnumericoperators;
+requireNEWusablemeasurementconstruction/competingprediction,notknownbias/identity.
+Humanreportedcriterion/observedtextbehavior/LLMreaderaction different;nostitched
+panels/C-onlywinner/newhumanstudy. Preserveoldleads/choice/state/allfields.
+StandardZ2/conditionalmath/OpenAIinspirationONLY,notnewtree/personalitytheorem.
+Original18/100/44OPEN;noGit/Claude/automation/lockbox/API/private/train/oldqueue.
+
+2026-10-14 HM288 observation tree COMPLETE:GoalACTIVE/nojob.
+SAME24authors/96comments/384fullcube/50items/19200questions;ONE1876.023s<2400cap.
+New0contradict/1support/2insufficient law;d=z1-z0,a=LSE(z0,z1)-z2;keepallfields.
+SOURCEA direction+.001057533/rank.010/Holm10.100 exploratory;assessability
+-.000010960/rank.985/Holm1. Rankdifference NOTformalchannel-difference test.
+DirectionA bothSOURCEbanks/all5querycommonpositive,NOT15replications/humantrait.
+Person-bound direction/a RMS.380287/.159749;displaycoupled.546718/.722908.
+Contractdirectionchange RMS.200646,newlaw NOTprovenoldrefinement/denoising.
+Categorymeans.402491/.246748/.350761;greedy8425/4439/6336,NOTaccuracygain.
+Primaryanalysis biasNoneexport(2,)vs3classesFAILED;verifymissingsealFAILED,
+alloriginalcode/data/seals retained. READONLYcompanion certifiesQwen2biasFalse/
+checkpointabsence,representsSAMEabsentbias3zeros;0newmodel/forward/fit.
+Canonicalperson_bound_observation_tree_r1/bias_export_recovery_r1,11.956sCPU.
+2000literal/cold/treereconstruction/sealsPASS/head3.88e-6/guard.000290<old.001.
+30tests11new/4formatPASS;primarytestI001retained/recoverylintformatPASS.
+SameagentNOTblind;32139/88984failed/69857failed/6914/35805 terminal,PID7842gone.
+NEXTinventorySAMEevent claimpolarity/negationscope/source/formats:conditional
+behavioralmeaning vsgeneralaffirmation/halo. High/lowkeys NOTlogicalcomplements;
+oppositeusualbehavior NOTlogicaldenial. STOPternary/prompt/head/rank/precision.
+ReadPERSON_BOUND_OBSERVATION_TREE_THEORY_V1/parentRESULT20261014_ZH.
+IRTree/Braun/Madhusudhan priorart/OpenAIconditionalJensen inspirationONLY,
+nonewprobability/tree/personalitytheorem. Original18/100/44OPEN/noqueue.
+NoGit/Claude/automation/API/private/train/lockbox/oldqueue.
+
 2026-10-14 HM287 person-bound shared response COMPLETE:GoalACTIVE/nojob.
 24actualauthors/48cyclicdyads/96comments/50IPIP/384fullcube/19200inquiries.
 One1392.087s localcapture/2400cap;0API/private/train/answerfit/retry.
