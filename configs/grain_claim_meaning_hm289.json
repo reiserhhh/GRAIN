@@ -1,0 +1,20 @@
+{
+  "id": "HM289",
+  "material_parent": "results/grain_math_response_v1/person_bound_shared_response_r1",
+  "tree_parent": "results/grain_math_response_v1/person_bound_observation_tree_r1/bias_export_recovery_r1",
+  "output": "results/grain_math_response_v1/claim_meaning_r1",
+  "families": 768,
+  "inquiries": 38400,
+  "authors": 24,
+  "cases": 48,
+  "items": 50,
+  "device": "mps",
+  "dtype": "float32",
+  "batch_size": 8,
+  "max_input_tokens": 1536,
+  "max_model_seconds": 4800,
+  "native_tolerance": 0.001,
+  "primary": "GRAIN15/pooled/F/within/global_common/ownership-query/display-even; semantic-direction and affirmation-direction x all5 SOURCE targets; old199 assignments; Holm10",
+  "new_API_private_training_answer_fit_grid": false,
+  "original_scope_complete": false
+}

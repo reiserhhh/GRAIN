@@ -1,0 +1,20 @@
+{
+  "id": "HM288",
+  "parent": "results/grain_math_response_v1/person_bound_shared_response_r1",
+  "output": "results/grain_math_response_v1/person_bound_observation_tree_r1",
+  "authors": 24,
+  "cases": 48,
+  "items": 50,
+  "families": 384,
+  "inquiries": 19200,
+  "device": "mps",
+  "dtype": "float32",
+  "batch_size": 8,
+  "max_input_tokens": 1536,
+  "max_model_seconds": 2400,
+  "native_tolerance": 0.001,
+  "primary_channels": ["direction", "assessability"],
+  "primary": "GRAIN15/pooled/F/within/global-common/owner-query/display-even;all5 targets x2channels;old199assignments;Holm10",
+  "new_API_private_training_labels_fit_grid": false,
+  "original_scope_complete": false
+}

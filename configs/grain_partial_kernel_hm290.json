@@ -1,0 +1,19 @@
+{
+  "id": "HM290",
+  "parent": "results/grain_math_response_v1/conditional_memory_r1",
+  "integrated_parent": "results/grain_math_response_v1/author_belief_r1/runtime_io_recovery_r1",
+  "output": "results/grain_math_response_v1/partial_kernel_r1",
+  "references": ["bank0", "bank1", "pooled"],
+  "contracts": ["none", "full", "condition", "expression", "expression_given_condition", "condition_given_expression"],
+  "source_authors": 386,
+  "held_authors": 120,
+  "states": 8,
+  "particles": 64,
+  "seeds": [29020261014, 29020261015],
+  "primary_realization": 0,
+  "compute_seconds_cap": 360,
+  "bootstrap_authors": 999,
+  "bootstrap_seed": 282,
+  "held_labels_neural_API_private_training_fit_grid": false,
+  "original_scope_complete": false
+}
