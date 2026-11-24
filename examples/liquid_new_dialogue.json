@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "clock": "opportunity",
+  "dialogues": [{
+    "id": "example-dialogue", "condition": "unseen-vignette", "carrier": "conversation", "view": "A",
+    "turns": [
+      {"speaker":"first","text":"I want to know why they changed the plan."},
+      {"speaker":"second","text":"I wonder whether they heard something new."},
+      {"speaker":"first","text":"The change makes more sense in that case."},
+      {"speaker":"second","text":"Should we ask what information they received?"}
+    ]
+  }]
+}

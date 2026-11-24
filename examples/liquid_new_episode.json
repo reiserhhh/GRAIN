@@ -1,0 +1,19 @@
+{
+  "language": "en",
+  "clock": "opportunity",
+  "episodes": [
+    {
+      "id": "example-reconsideration",
+      "author": "example-speaker",
+      "condition": "unseen-vignette",
+      "carrier": "open",
+      "view": "A",
+      "events": [
+        "I would like to know how the team made that decision.",
+        "That explanation made me reconsider the evidence.",
+        "I still have a question about the original comparison.",
+        "Now I see why the first explanation was incomplete."
+      ]
+    }
+  ]
+}

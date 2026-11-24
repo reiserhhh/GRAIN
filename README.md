@@ -4,6 +4,8 @@
 
 **English** | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
+Optional instrument: [frozen liquid trajectories on the native GRAIN node map](docs/GRAIN_LIQUID_TOOL.md).
+
 GRAIN is a foundational analysis method for text-based measurement research.
 It treats a person's natural-language events as local grains observed at
 multiple resolutions, then studies their reproducible distribution,
