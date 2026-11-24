@@ -5,7 +5,7 @@
 
 [English](README.md) | **日本語** | [简体中文](README.zh.md)
 
-オプションツール：[元の GRAIN ノード地図で液態経路を追跡する（利用マニュアル）](docs/GRAIN_LIQUID_TOOL.md)。
+オプションツール：[元の GRAIN ノード地図で液態経路を追跡する（利用マニュアル）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精密流と動的軌跡境界](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md)。
 
 GRAIN はテキストに基づく測定研究のための基盤分析法である。個人の自然言語
 イベントを複数の粒度で観測される局所的な「粒」とみなし、明示した参照集団に

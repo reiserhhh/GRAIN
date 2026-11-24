@@ -5,7 +5,7 @@
 
 [English](README.md) | [日本語](README.ja.md) | **简体中文**
 
-可选工具：[在原生 GRAIN 节点上追踪液态路径（使用手册）](docs/GRAIN_LIQUID_TOOL.md)。
+可选工具：[在原生 GRAIN 节点上追踪液态路径（使用手册）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精确流与动态轨迹边界](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md)。
 
 GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然语言事件看成在
 多种粒度上被观察的局部“颗粒”，并在明确参照群体下分析这些颗粒可复现的
