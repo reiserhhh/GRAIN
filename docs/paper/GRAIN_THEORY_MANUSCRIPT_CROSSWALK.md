@@ -134,3 +134,31 @@ Additional controlled terminology:
 Claims that must remain identical, added to Section 5: (10) simulated parameter recovery is not human
 prevalence or validity; (11) explicit reference rules are not a learned universal grammar; (12) a
 cross-agent rebuild with development context is not a blind third-party replication.
+
+## 8. Addendum (2026-11): liquid-trajectory, Riccati-Möbius, and interpersonal-dynamic supplement files
+
+| Language | File | Role |
+|---|---|---|
+| English | `GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md` | Version 2 supplement master; heading structure shared by all three |
+| Chinese | `GRAIN_LIQUID_RICCATI_SUPPLEMENT_ZH_V2.md` | Parallel Chinese academic text, same sections, metrics, and boundaries |
+| Japanese | `GRAIN_LIQUID_RICCATI_SUPPLEMENT_JA_V2.md` | Parallel Japanese academic text, same sections, metrics, and boundaries |
+| Provenance | `GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md` | Source map linking standalone modules/tests and companion `project-persona` formal/empirical outputs |
+
+Additional controlled terminology for Version 2:
+
+| English | Japanese | Chinese | Usage note |
+|---|---|---|---|
+| constrained Riccati-Möbius flow | 制約付き Riccati-Möbius 流 | 受约束 Riccati-Möbius 精确流 | Exact bounded $2\times 2$ ZOH matrix exponential integrating the continuous scalar Riccati ODE; preserves `dt = 0` and subdivision semigroup consistency |
+| dual-pathway episodic observer | 二重経路エピソード観測器 | 双通路情景观测器 | Couples fast continuous decay across idle delays with content-addressable cosine retrieval; retrieval weights are not causal token interventions |
+| dynamic set inversion | 多時点動的集合反転 | 动态多时点集合反演 | Cross-view lag-1 rate separation + HiGHS trajectory polytope bounds; degenerates when shared and private rates coincide |
+| interpersonal evocation and plasticity | 対人喚起と対人可塑性 | 人际唤起与人际可塑性 | Partner-elicited behavioral shifts and contingent slope adaptation measured across strictly disjoint partner panels |
+| machine-checked formal verification | 機械検証済み形式証明 | 机器核验形式化证明 | Lean 4 theorem verification under declared axioms (`propext`, `Classical.choice`, `Quot.sound`); never replaces empirical human validation |
+
+Claims that must remain identical across EN/JA/ZH, added to Section 5: (13) machine-checked Lean 4
+theorems certify deductive soundness under stated premises, not psychological construct validity;
+(14) discrete liquid ODE approximations must be verified against time-subdivision invariance and
+dual-pathway retrieval cannot be misread as causal token intervention; (15) disjoint public human
+cohorts (RealPersonaChat, ESConv, PSE-Database, Bar-Anan) cannot be merged into one latent person
+or used for clinical diagnosis; (16) pooled cross-validated `R²`, within-panel `ΔR²`, strict
+cross-panel generalization `r`, and `Self - Peer` discrepancy variance must be reported separately
+alongside null findings.

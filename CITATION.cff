@@ -7,10 +7,18 @@ authors:
     given-names: "Kean"
 version: 1.1.1
 date-released: 2026-09-03
+repository-code: "https://github.com/reiserhhh/GRAIN"
+keywords:
+  - natural-language-assessment
+  - computational-psychometrics
+  - multilevel-modeling
+  - riccati-mobius-flow
+  - partial-identification
 abstract: >
   A group-referenced analysis method for constructing multiscale individual
   language-texture objects from natural-language behavior. GRAIN integrates
-  condition selection, conditional expression, temporal paths, interaction,
-  reference-relative geometry, uncertainty, and inference-level safeguards
-  without claiming a finished scale, diagnosis, or validated personality
-  taxonomy.
+  condition selection, conditional expression, exact Riccati-Mobius continuous-time
+  paths, frozen liquid trajectory readers, dynamic multi-time set inversion,
+  interaction, reference-relative geometry, uncertainty, and inference-level
+  safeguards without claiming a finished scale, clinical diagnosis, or validated
+  personality taxonomy.

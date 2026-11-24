@@ -4,7 +4,7 @@
 
 **English** | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
-Optional instrument: [frozen liquid trajectories on the native GRAIN node map](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius flows & dynamic trajectory bounds](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md).
+Optional instrument: [frozen liquid trajectories on the native GRAIN node map](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius flows & dynamic trajectory bounds](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 notes](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [Supplement V2](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md).
 
 GRAIN is a foundational analysis method for text-based measurement research.
 It treats a person's natural-language events as local grains observed at
@@ -23,6 +23,36 @@ information. The current GRAIN name generalizes that insight beyond one
 slicing metaphor. See the [binding naming and compatibility policy](docs/GRAIN_NAMING_MIGRATION.md).
 The public migration is recorded in the [v1.1.0 release notes](docs/RELEASE_NOTES_V110.md).
 The tag-gate correction is recorded in [v1.1.1](docs/RELEASE_NOTES_V111.md).
+
+## 2026-11 Update: Liquid Trajectories, Riccati-Möbius Flows & Supplement V2
+
+Recent additive updates promote frozen continuous-time trajectory tools (`grain_core.liquid_*`),
+exact Riccati-Möbius flows & dynamic trajectory bounds (`grain_core.riccati_mobius`), runnable
+practitioner manuals, machine-checked Lean 4 correspondence, and trilingual Supplement V2:
+
+- **Exact ZOH Möbius flow & episodic duality** ([manual](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md)):
+  `ConstrainedRiccatiCell` enforces strict `[-B, B]` confinement, `dt = 0` identity preservation,
+  time-subdivision semigroup consistency (`1.73e-18`–`2.52e-18` 2x subdivision error vs. `30.68%`
+  in `ncps LTCCell` on 108 real trajectories), and $O(\log T)$ parallel prefix scan agreement
+  (`1.388e-17`). `DualPathwayRiccatiObserver` restores opening-event sensitivity over idle gaps
+  (`wall_first_at_end_median = 2.710e-4` vs. `0.0`).
+- **Dynamic set inversion & contrast stacking**: `estimate_cross_view_lag1_rates`,
+  `solve_axis_trajectory_lp`, and `stack_transition_contrasts` shrink shared-trajectory polytopes
+  when common/private rates separate (`4.949 -> 0.1070`, `0.0216x`) while honoring the equal-rate
+  non-identifiability counterexample (`3.8343`) and returning `None` on conformal infeasibility.
+- **Trilingual Supplement V2, formal verification & cohort boundaries**:
+  [`Supplement V2 (EN)`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md)
+  ([`中文`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_ZH_V2.md) ·
+  [`日本語`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_JA_V2.md) ·
+  [Provenance](docs/paper/GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md) ·
+  [Release notes](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) ·
+  [Guardrails G13–G16](docs/AI_ANALYST_GUIDE.md)) indexes `58` Lean 4 theorems (`0` `sorryAx` in
+  companion `project-persona`) and bounded evaluations across four disjoint public cohorts
+  (`RealPersonaChat` cross-panel `B_full22` pooled `R²=+0.3388` / `ΔR²=+0.1306` / cross-panel
+  `r=0.4031` vs. self-report `S_self28 R²=-0.0719` & `0/252` questionnaire FDR; `ESConv` outcome
+  null `p>=0.309`; `PSE-Database v1.0` holdout `r=+0.2831`; `Bar-Anan` 0-DoF consensus
+  `ΔR²=+0.0442/+0.0266`). None of these additions alters V1 manuscripts or makes GRAIN a clinical
+  scale.
 
 ## Whole-Path Author Belief (HM281, 2026-10-14)
 
@@ -2227,6 +2257,7 @@ is unchanged and remains the verification anchor):
 
 ```bash
 pip install -r requirements.txt
+pytest -q tests/test_liquid_*.py tests/test_riccati_mobius.py tests/test_trilingual_theory_manuscript.py tests/test_trilingual_liquid_riccati_supplement.py
 python -m pytest -q tests/test_suica.py          # 39 passed
 python -m pytest -q -p no:cacheprovider          # release audit: 970 passed (2026-08-03; 318 at the v0.2.1 tag)
 python scripts/verify_grain_v021_lockbox.py       # portable v0.2.1 seal

@@ -5,7 +5,7 @@
 
 [English](README.md) | [日本語](README.ja.md) | **简体中文**
 
-可选工具：[在原生 GRAIN 节点上追踪液态路径（使用手册）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精确流与动态轨迹边界](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md)。
+可选工具：[在原生 GRAIN 节点上追踪液态路径（使用手册）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精确流与动态轨迹边界（运行手册）](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 更新说明](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [理论补编 V2（中文）](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_ZH_V2.md)。
 
 GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然语言事件看成在
 多种粒度上被观察的局部“颗粒”，并在明确参照群体下分析这些颗粒可复现的
@@ -18,6 +18,14 @@ GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然�
 为不依赖单一切片隐喻的通用分析法。参见[名称迁移与兼容规则](docs/GRAIN_NAMING_MIGRATION.md)。
 公开迁移范围记录于 [v1.1.0 发布说明](docs/RELEASE_NOTES_V110.md)。
 标签门禁修正记录于 [v1.1.1](docs/RELEASE_NOTES_V111.md)。
+
+## 2026-11 更新：液态轨迹、Riccati-Möbius 精确流与理论补编 V2
+
+在不改动 V1 理论稿正文与历史冻结记录的前提下，本仓库新增冻结液态轨迹工具集（`grain_core.liquid_*`，详见[液态工具手册](docs/GRAIN_LIQUID_TOOL.md)）与精确连续时间/动态反演模块 `grain_core.riccati_mobius`（详见[可运行实操手册](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) 与 [2026-11 更新说明](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md)）：
+
+- **受约束 Riccati-Möbius 精确流与双通路情景记忆**：`ConstrainedRiccatiCell` 在连续不规则时间间隔下保证 `[-B, B]` 不变性、`dt = 0` 恒等性、时间二分半群一致性（在 108 条真实轨迹上二倍细分误差仅 `1.73e-18`–`2.52e-18`，对比传统 `ncps LTCCell` 的 `30.68%`）以及 $O(\log T)$ 并行扫描一致（最大偏差 `1.388e-17`）；`DualPathwayRiccatiObserver` 在保持因果间隔遮蔽的同时将长间隔末的首帧灵敏度恢复至 `wall_first_at_end_median = 2.710e-4`（单通道为 `0.0`）。
+- **动态多时点集合反演与转移对比堆叠**：`estimate_cross_view_lag1_rates` 与 `solve_axis_trajectory_lp` 在共有/私有衰减率可分时将轨域多面体宽度收缩为 `0.0216x`（`4.949 -> 0.1070`），并在等衰减率退化情形（`3.8343`）与共形失配（`None`）上诚实拒斥。
+- **三语理论补编 V2、Lean 4 形式化与多语料隔离检验**：[`理论补编 V2（中文）`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_ZH_V2.md)（[`English`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md) · [`日本語`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_JA_V2.md) · [证据溯源表](docs/paper/GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md) · [分析护栏 G13–G16](docs/AI_ANALYST_GUIDE.md)）对应配套 `project-persona` 中 `58` 条经 Lean 4 核验的定理（零 `sorryAx`），并汇总四个互不合并的公开人类队列结果（RealPersonaChat 跨不交伴侣评价 `B_full22` 池化 `R²=+0.3388` / 面板内 `ΔR²=+0.1306` / 严格跨面板 `r=0.4031`，对比自陈 `S_self28 R²=-0.0719` 及问卷 `0/252` FDR；ESConv 过程分离但情绪缓解为零结果 `p>=0.309`；PSE-Database 留出故事弧 `r=+0.2831`；Bar-Anan 零自由度内隐共识 `ΔR²=+0.0442/+0.0266` 且显隐背离具有域特异性）。上述成果不构成临床诊断工具或通用人格量表。
 
 ## 当前执行检查点（2026-09-12）
 
@@ -148,6 +156,7 @@ main 在三个层面向前推进:
 
 ```bash
 pip install -r requirements.txt
+pytest -q tests/test_liquid_*.py tests/test_riccati_mobius.py tests/test_trilingual_theory_manuscript.py tests/test_trilingual_liquid_riccati_supplement.py
 python -m pytest -q tests/test_suica.py          # 39 个通过
 python -m pytest -q -p no:cacheprovider          # 970 个通过 (2026-08-03; v0.2.1 标签树为 318)
 python scripts/verify_grain_v021_lockbox.py       # 便携式 v0.2.1 封存校验

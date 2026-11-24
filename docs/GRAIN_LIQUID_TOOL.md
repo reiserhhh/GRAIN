@@ -6,6 +6,20 @@ same words: "which earlier expressions are still changing the reader now?"
 Existing GRAIN scoring entry points are unchanged. A node is an address for
 expression, not the name of a psychological construct.
 
+## Module Quick Reference
+
+| Module (`grain_core.*`) | Mode | Input Schema / Coordinates | Primary Role |
+|---|---|---|---|
+| `grain_core.liquid_instrument` | CLI (`fit` / `score`) | Text episodes JSON (`examples/liquid_new_episode.json`) | Fits frozen native node atlas + LTC transition reader on source data and scores new episodes without re-fitting |
+| `grain_core.liquid_dialogue` | CLI | Dyadic turn JSON (`examples/liquid_new_dialogue.json`) | Separates joint vs. own-only trajectories at matched slice fingerprints (`speaker_paths`) |
+| `grain_core.liquid_common_range` | CLI / Python API | Two whitened numeric views + optional budget | Partial identification balls (`all-private` vs `minimum-private`) and pairwise `motion(left, right)` extremizers |
+| `grain_core.liquid_event_time` | Python API | Numerical coordinate episodes + timestamps in seconds | Compares event-only, equal, measured, reversed, rescaled, and subdivided inter-event delays |
+| `grain_core.liquid_task_paths` | Python API | Contiguous observed trial/story value matrices | Compares fixed-half, liquid, and endpoint-retention-matched readouts; conditional `pull_axis` and `crossing` |
+| `grain_core.liquid_reference_error` | CLI (`fit` / `locate`) | Independent source/new numeric unit tables | Computes per-axis midrank percentile in `[0, 1]` and joint whitened distance |
+| `grain_core.liquid_opportunity` | CLI (`fit` / `score`) | Condition-stratified node scores (V6 compat) | Estimates static, dynamic, and episode-reset opportunity slopes under `>=5` supported conditions |
+| `grain_core.liquid_axis_series`, `liquid_frozen_bank`, `liquid_inverse`, `liquid_v6_author` | CLI / Python API | Signed numerical series / V7 frozen bundles | Reads pre-scored series, verified frozen banks (SHA-256 checked), and source-weight inverse intervals |
+| `grain_core.riccati_mobius` | Python API | Irregular `dt`, multi-view series, affine maps | Exact constrained ZOH Riccati-Möbius flow, $O(\log T)$ parallel scan, dual-pathway episodic retrieval, dynamic LP bounds ([detailed manual](GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md)) |
+
 ## Use it
 
 **Unknown common and view-specific contributions.** Use
@@ -165,3 +179,24 @@ digests are checked. Missing design support returns its counts, not a fitted
 slope. Each channel exports the historical static, dynamic and hybrid estimates
 plus an episode-reset dynamic variant for independent episodes in the same
 condition. The historical output keeps the release's condition-pooled clock.
+
+## Exact Riccati-Möbius Flows & Dynamic Set Inversion
+
+When continuous-time inter-event delays, long idle gaps, or cross-view
+exponential rate separation matter beyond fixed discrete LTC steps, pair these
+liquid trajectory readers with `grain_core.riccati_mobius`:
+
+- **`ConstrainedRiccatiCell`**: Exact normalized $2\times 2$ ZOH Möbius flow
+  preserving `[-B, B]` bounds, `dt = 0` identity, time-subdivision semigroup
+  consistency, and exact $O(\log T)$ Kogge-Stone parallel prefix scans.
+- **`DualPathwayRiccatiObserver`**: Pairs fast contractive decay over idle gaps
+  with content-addressable cosine retrieval so early high-signal events remain
+  addressable without violating `mask_first` causality.
+- **`estimate_cross_view_lag1_rates`, `solve_axis_trajectory_lp`,
+  `stack_transition_contrasts`**: Unbiased cross-view rate separation, HiGHS
+  dynamic trajectory polytope bounds, and multi-window contrast stacking.
+
+See the runnable practitioner guide in
+[`GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md`](GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md)
+and the formal/empirical synthesis in
+[`paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md`](paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md).

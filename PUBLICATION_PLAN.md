@@ -152,3 +152,12 @@ next study.
 - **投稿ポータル**: ScholarOne。**投稿料・掲載料・ページ課金なし**(非OAなら無料; OA は Open Select、早稲田 T&F 協定の対象)。
 - **論文種別**: Research Article / Book Review / Comment。Registered Reports も受付(次研究の選択肢)。
 - 不服申立手続きあり(action editor → JPA Editor → SPA Publications Oversight Committee)。英語のみ受付。
+
+## 2026-11 Addendum: Expanded Manuscript & Supplement Portfolio
+
+Without modifying the Version 1 submission master or the historical lockbox rules above, the companion documentation portfolio in `docs/paper/` now comprises four coordinated layers:
+
+1. **Theory & Method Core (Version 1, trilingual)**: `docs/paper/GRAIN_THEORY_MANUSCRIPT_EN_V1.md` (with `JA` and `ZH` counterparts, `GRAIN_THEORY_EVIDENCE_PROVENANCE.md`, and `GRAIN_THEORY_MANUSCRIPT_CROSSWALK.md`).
+2. **APA Empirical Manuscript Draft (`JPA_MANUSCRIPT_V5.md`)**: Journal of Personality Assessment submission target (`JA`/`ZH` translations aligned; locked empirical numbers unchanged).
+3. **Mechanism Supplement (Version 1, 2026-09, trilingual)**: `docs/paper/GRAIN_MECHANISM_SUPPLEMENT_{EN,JA,ZH}_V1.md` + `GRAIN_MECHANISM_EVIDENCE_PROVENANCE.md` extending sections on proposition binding, versioned dialogue ledgers, and source-constructed local instruments.
+4. **Liquid Trajectory, Riccati-Möbius & Interpersonal Supplement (Version 2, 2026-11, trilingual)**: `docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_{EN,JA,ZH}_V2.md` + `GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md`, indexing `grain_core.liquid_*` / `grain_core.riccati_mobius`, the `58` Lean 4 formal theorems in companion `project-persona`, and disjoint multi-cohort public human benchmarks (including explicit nulls and non-clinical scope limits).

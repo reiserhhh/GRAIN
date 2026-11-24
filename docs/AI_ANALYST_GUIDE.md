@@ -193,3 +193,31 @@ ledger statuses, or substitute for the human coding subsample.
    TOP-1.
 Treat this list as a pre-flight checklist: each item is one grep/one control
 run away from being caught early.
+
+## 7. Addendum (2026-11): Continuous-Time, Dynamic-Bound, and Formal-Proof Guardrails (G13–G16)
+
+When operating `grain_core.liquid_*` or `grain_core.riccati_mobius` in continuous
+or dyadic workflows, enforce four additional machine-checkable rules:
+
+- G13 **Time-subdivision and `dt = 0` semigroup invariance.** Before adopting any
+  continuous-time reader, verify that inserting `dt = 0` steps acts as the
+  identity (`<= 1e-12`) and subdividing an empty delay reproduces the unsplit
+  transition. Prefer `ConstrainedRiccatiCell` over unverified discrete ODE steps
+  when irregular wall-clock intervals matter, and label `DualPathwayRiccatiObserver`
+  episodic weights as retrieval weights rather than causal token interventions.
+- G14 **Rate separation and explicit infeasibility (`None`) preservation.** In
+  `solve_axis_trajectory_lp` and `stack_transition_contrasts`, always verify
+  that shared and view-specific retention rates `(r_c, r_p1, r_p2)` separate
+  above measurement error on independent calibration data. Never mask `None`
+  infeasibility returns or wide equal-rate polytope intervals by clipping or
+  forcing point projections.
+- G15 **Disjoint-cohort, cross-panel, and difference-score discipline.** Never
+  pool distinct cohorts (such as RealPersonaChat, ESConv, PSE-Database, and
+  Bar-Anan) into one latent individual model. Always report pooled `R^2`,
+  within-panel incremental `Delta R^2`, and strict disjoint cross-panel `r`
+  separately; whenever reporting discrepancy scores (`Self - Peer`), explicitly
+  note the algebraic contribution of right-hand-side `-Peer` variance.
+- G16 **Deductive formal proofs vs. empirical human validity.** Machine-checked
+  Lean 4 theorems prove mathematical consequences of declared assumptions and
+  counterexample barriers; they never promote an evidence row from exploratory
+  or synthetic status to construct validity or clinical utility.
