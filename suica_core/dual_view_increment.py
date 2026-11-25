@@ -111,7 +111,7 @@ def compare(
         if sl > sh + 1e-9:
             return dict(out, status="incompatible_private")
     out["simple_lag"] = [float(sl), float(sh)]
-    full = solve_axis_trajectory_lp(y, z, *r, *e, w, c_bound=c_bound)
+    full = solve_axis_trajectory_lp(y, z, *r, *e, w, c_bound=c_bound, endpoint_only=True)
     if full is None:
         return dict(out, status="incompatible_private")
     left, right = (float(v[-1]) for v in full)

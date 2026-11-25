@@ -17,6 +17,8 @@ A writer proposes alternatives frequently. Does that mean they revise a plan whe
 
 The four questions *where, what, who, when* refer to opportunity and selection, observed expression, position relative to a named population, and time or event order. A chosen topic can itself distinguish authors. Keep it alongside behavior within that topic rather than automatically removing its mean.
 
+For repeated frozen scoring, see the [pipeline benchmarks and batch interface](GRAIN_PIPELINE_PERFORMANCE.md), including CPU/GPU transfer costs and numerical parity.
+
 ## 2. Run an entire small study offline
 
 From the repository root, with Python 3.12:

@@ -10,6 +10,7 @@ import os
 import shlex
 import subprocess
 import sys
+from itertools import islice
 from pathlib import Path
 
 import numpy as np
@@ -174,32 +175,70 @@ def fit_atlas(texts, k, method):
     return atlas
 
 
+class _AtlasLocator:
+    """Compile a frozen reference once per call, never cache across reference changes."""
+
+    def __init__(self, atlas):
+        self.tf = vectorizer(atlas["vocab"])
+        self.tf.idf_ = np.asarray(atlas["idf"])
+        self.svd = np.asarray(atlas["svd"]).T
+        self.center = np.asarray(atlas["mean"])
+        self.scale = np.asarray(atlas["sd"])
+        self.soft = atlas["method"] == "gmm_soft"
+        if self.soft:
+            self.var = np.asarray(atlas["variances"])
+            self.logdet = np.log(self.var).sum(-1)
+            self.logweights = np.log(atlas["weights"])
+            self.means = np.asarray(atlas["means"])
+        else:
+            self.tree = {
+                k: (np.asarray(v["centers"]), v["children"])
+                for k, v in atlas["tree"].items()
+            }
+            self.index = {name: i for i, name in enumerate(atlas["labels"][:-1])}
+
+    def locate(self, texts):
+        mat = self.tf.transform(texts)
+        x = (mat @ self.svd - self.center) / self.scale
+        if self.soft:
+            logp = self.logweights - 0.5 * (
+                self.logdet + ((x[:, None] - self.means) ** 2 / self.var).sum(-1)
+            )
+            probs = softmax(logp, axis=1)
+        else:
+            leaves = np.empty(len(x), dtype=int)
+            todo = [("", np.arange(len(x)))]
+            while todo:
+                name, rows = todo.pop()
+                if name not in self.tree:
+                    leaves[rows] = self.index.get(name, len(self.index) - 1)
+                    continue
+                centers, children = self.tree[name]
+                chosen = np.argmin(((centers - x[rows, None]) ** 2).sum(-1), axis=1)
+                for j, child in enumerate(children):
+                    subset = rows[chosen == j]
+                    if len(subset):
+                        todo.append((child, subset))
+            probs = np.zeros((len(x), len(self.index)))
+            probs[np.arange(len(x)), leaves] = 1
+        covered = np.asarray(mat.getnnz(axis=1) > 0)
+        return np.column_stack([probs * covered[:, None], ~covered]), covered
+
+
 def locate(atlas, texts):
-    tf = vectorizer(atlas["vocab"])
-    tf.idf_ = np.asarray(atlas["idf"])
-    mat = tf.transform(texts)
-    x = (mat @ np.asarray(atlas["svd"]).T - atlas["mean"]) / atlas["sd"]
-    if atlas["method"] == "gmm_soft":
-        var = np.array(atlas["variances"])
-        logp = np.log(atlas["weights"]) - 0.5 * (
-            np.log(var).sum(-1) + ((x[:, None] - atlas["means"]) ** 2 / var).sum(-1)
-        )
-        probs = softmax(logp, axis=1)
-    else:
-        p = []
-        labels = atlas["labels"][:-1]
-        for v in x:
-            name = ""
-            while name in atlas["tree"]:
-                node = atlas["tree"][name]
-                name = node["children"][
-                    np.argmin(((np.array(node["centers"]) - v) ** 2).sum(1))
-                ]
-            p.append(labels.index(name) if name in labels else len(labels) - 1)
-        probs = np.eye(len(labels))[p]
-    covered = np.asarray(mat.getnnz(axis=1) > 0)
-    # Coverage is itself observed; never route a zero TF-IDF vector to a semantic leaf.
-    return np.column_stack([probs * covered[:, None], ~covered]), covered
+    locator = _AtlasLocator(atlas)
+    # Do not allocate a corpus x nodes x SVD-dim distance array.
+    stream = iter(texts)
+    chunks = []
+    while batch := list(islice(stream, 512)):
+        chunks.append(locator.locate(batch))
+    if not chunks:
+        raise ValueError("empty text batch")
+    if len(chunks) == 1:
+        return chunks[0]
+    return np.concatenate([p for p, _ in chunks]), np.concatenate(
+        [ok for _, ok in chunks]
+    )
 
 
 def call(req, transport, *, worker_code=None):
@@ -238,10 +277,26 @@ def call(req, transport, *, worker_code=None):
 
 
 def native_paths(atlas, items):
+    locator = _AtlasLocator(atlas)
     paths = []
-    for meta, rows in items:
-        p, _ = locate(atlas, [r[2] for r in rows])
-        paths.append(p.tolist())
+    pending, owners = [], []
+
+    def flush():
+        probabilities, _ = locator.locate(pending)
+        for owner, row in zip(owners, probabilities.tolist(), strict=True):
+            paths[owner].append(row)
+        pending.clear()
+        owners.clear()
+
+    for i, (_, rows) in enumerate(items):
+        paths.append([])
+        for _, _, text in rows:
+            pending.append(text)
+            owners.append(i)
+            if len(pending) == 512:
+                flush()
+    if pending:
+        flush()
     return paths
 
 
@@ -260,7 +315,11 @@ def trajectory(p, obs):
         raise ValueError("future source changed prefix")
     strength = np.linalg.norm(effect, axis=-1)
     # Input-origin nodes and readout-destination nodes use the SAME frozen dictionary.
-    signed = np.einsum("ka,ktb->tab", p, effect)
+    signed = (
+        (p.T @ effect.reshape(len(p), -1))
+        .reshape(p.shape[1], *p.shape)
+        .transpose(1, 0, 2)
+    )
     origin = strength.T @ p
     joint = y - obs["all_missing"]
 
@@ -384,6 +443,57 @@ def scores(groups, model):
     return rows
 
 
+def _score_reset_paths(paths, weights, transport):
+    """The frozen score worker resets per episode; fit must retain every replicate."""
+    seen, unique, order = {}, [], []
+    for path in paths:
+        a = np.asarray(path, dtype=np.float64)
+        key = (a.shape, a.tobytes())
+        if key not in seen:
+            seen[key] = len(unique)
+            unique.append(path)
+        order.append(seen[key])
+    answers = call({"mode": "score", "weights": weights, "paths": unique}, transport)[
+        "paths"
+    ]
+    if len(answers) != len(unique):
+        raise ValueError("frozen worker omitted an episode")
+    return [answers[i] for i in order]
+
+
+def _check_ref(ref):
+    if ref["version"] != VERSION or ref["worker"] != digest(WORKER.read_text()):
+        raise ValueError("incompatible reference or worker")
+
+
+def score_batch(docs, ref, transport="local"):
+    """Share a worker call, not a statistical population, across documents."""
+    _check_ref(ref)
+    if not isinstance(docs, list) or not 1 <= len(docs) <= 16:
+        raise ValueError("score-batch accepts 1 to 16 independent documents")
+    groups, all_items = [], []
+    cells, d = 0, len(ref["atlas"]["labels"])
+    for doc in docs:
+        items = episodes(doc, ref["width"], ref.get("cut_policy", {}))
+        cells += sum(len(rows) * d * (len(rows) + d) for _, rows in items)
+        if cells > 2_000_000:
+            raise ValueError(
+                "score-batch trace budget exceeded; use smaller batches or single score"
+            )
+        groups.append(items)
+        all_items.extend(items)
+    paths = native_paths(ref["atlas"], all_items)
+    observed = _score_reset_paths(paths, ref["weights"], transport)
+    results, start = [], 0
+    for doc, items in zip(docs, groups, strict=True):
+        end = start + len(items)
+        results.append(
+            _finish(doc, ref, items, paths[start:end], observed[start:end], False)
+        )
+        start = end
+    return results
+
+
 def run(
     mode,
     doc,
@@ -396,10 +506,8 @@ def run(
     rind_dir=None,
 ):
     fitting = mode == "fit"
-    if not fitting and (
-        ref["version"] != VERSION or ref["worker"] != digest(WORKER.read_text())
-    ):
-        raise ValueError("incompatible reference or worker")
+    if not fitting:
+        _check_ref(ref)
     policy = (
         fit_policy(episodes(doc, 0), cut_kind, rind_dir)
         if fitting
@@ -420,9 +528,11 @@ def run(
     paths = native_paths(ref["atlas"], items)
     if fitting:
         ref.update(call({"mode": "fit", "paths": paths}, transport))
-    observed = call(
-        {"mode": "score", "weights": ref["weights"], "paths": paths}, transport
-    )["paths"]
+    observed = _score_reset_paths(paths, ref["weights"], transport)
+    return _finish(doc, ref, items, paths, observed, fitting)
+
+
+def _finish(doc, ref, items, paths, observed, fitting):
     tracks = [trajectory(p, o) for p, o in zip(paths, observed, strict=True)]
     families = {}
     for channel in ("native", "fixed_half", "liquid", "anchored_signed"):
@@ -548,7 +658,7 @@ def run(
 
 def main():
     pa = argparse.ArgumentParser(description=__doc__)
-    pa.add_argument("mode", choices=["fit", "score"])
+    pa.add_argument("mode", choices=["fit", "score", "score-batch"])
     pa.add_argument("--input", required=True)
     pa.add_argument("--reference")
     pa.add_argument("--out", required=True)
@@ -563,11 +673,17 @@ def main():
     )
     pa.add_argument("--rind-dir", type=Path)
     args = pa.parse_args()
-    if args.mode == "score" and not args.reference:
-        pa.error("score requires a frozen --reference")
+    if args.mode != "fit" and not args.reference:
+        pa.error("scoring requires a frozen --reference")
     if Path(args.out).exists():
         pa.error("--out must be new")
     with threadpool_limits(limits=1):
+        if args.mode == "score-batch":
+            results = score_batch(
+                load(args.input)["documents"], load(args.reference), args.transport
+            )
+            save(args.out, {"results": results})
+            return
         save(
             args.out,
             run(

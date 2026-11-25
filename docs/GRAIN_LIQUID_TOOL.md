@@ -35,6 +35,8 @@ expression, not the name of a psychological construct.
 
 [Event and two-view recipes](GRAIN_EVENT_AND_VIEW_INCREMENT.md) include synthetic input files and expected outputs.
 
+For several independent inputs sharing a frozen reference, use `grain_core.liquid_instrument score-batch` to amortize worker startup. It returns independent per-document results. See the [benchmark, batch schema and GPU comparison](GRAIN_PIPELINE_PERFORMANCE.md).
+
 ## Use it
 
 **Unknown common and view-specific contributions.** Use

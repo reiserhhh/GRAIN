@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Opportunity-conditioned factor discovery utilities for SUICA V6.
 
 The module keeps three empirical objects separate:
@@ -18,8 +19,8 @@ anchors.
 from __future__ import annotations
 
 import hashlib
+from collections.abc import Iterable
 from dataclasses import dataclass
-from typing import Iterable
 
 import numpy as np
 import pandas as pd
@@ -190,7 +191,6 @@ def build_family_features(
     min_conditions_hybrid: int = 5,
 ) -> dict[str, pd.DataFrame]:
     """Build user-half Static, Dynamic and Hybrid candidate matrices."""
-    p = len(model.feature_cols)
     q = model.axis_loadings.shape[1]
     rows: dict[str, list[dict[str, float | str]]] = {
         "static": [], "dynamic": [], "hybrid": []
@@ -353,10 +353,12 @@ def fit_stable_crossview(
     noise = np.cov((e - l).T, ddof=1) / 2.0
     whitener = _inverse_sqrt(noise, ridge=noise_ridge)
 
-    def spectrum(late_view: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    def operator_for(late_view: np.ndarray) -> np.ndarray:
         cross = (e.T @ late_view + late_view.T @ e) / (2.0 * max(n - 1, 1))
-        operator = (whitener @ cross @ whitener + whitener @ cross.T @ whitener) / 2.0
-        vals, vecs = np.linalg.eigh(operator)
+        return (whitener @ cross @ whitener + whitener @ cross.T @ whitener) / 2.0
+
+    def spectrum(late_view: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+        vals, vecs = np.linalg.eigh(operator_for(late_view))
         order = np.argsort(vals)[::-1]
         return vals[order], whitener @ vecs[:, order]
 
@@ -369,8 +371,28 @@ def fit_stable_crossview(
         null = np.empty((n_permutations, len(observed)))
         for b in range(n_permutations):
             perm = _permute_within_strata(rng, strata)
-            null[b] = spectrum(l[perm])[0]
+            null[b] = np.linalg.eigvalsh(operator_for(l[perm]))[::-1]
         threshold = np.quantile(null, 0.95, axis=0)
+        # The strict legacy ">" gate must not be decided by last-bit
+        # differences between eigensolvers (e.g. a stratum of one person).
+        eps = (
+            np.finfo(float).eps
+            * 128
+            * len(observed)
+            * max(1.0, np.abs(null).max(), np.abs(observed).max())
+        )
+        share_check = np.maximum(observed, 0) / max(
+            np.maximum(observed, 0).sum(), 1e-12
+        )
+        if np.any(
+            (observed > 0)
+            & (share_check >= min_stable_share)
+            & (abs(observed - threshold) <= eps)
+        ):
+            rng = np.random.default_rng(seed)
+            for b in range(n_permutations):
+                null[b] = spectrum(l[_permute_within_strata(rng, strata)])[0]
+            threshold = np.quantile(null, 0.95, axis=0)
     else:
         threshold = np.full_like(observed, np.nan)
     positive_total = np.maximum(observed, 0).sum()
@@ -381,7 +403,7 @@ def fit_stable_crossview(
     raw = directions[:, :k]
     if k:
         raw = raw / np.maximum(np.linalg.norm(raw, axis=0, keepdims=True), 1e-12)
-        rotated, rotation = varimax(raw)
+        rotated, _ = varimax(raw)
         rotated = rotated / np.maximum(np.linalg.norm(rotated, axis=0, keepdims=True), 1e-12)
     else:
         rotated = raw

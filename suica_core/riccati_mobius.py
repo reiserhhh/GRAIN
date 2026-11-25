@@ -10,6 +10,7 @@ from dataclasses import dataclass
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
 from scipy.optimize import linprog
+from scipy.sparse import csr_matrix
 
 
 def _sigmoid(x: np.ndarray) -> np.ndarray:
@@ -315,65 +316,71 @@ def solve_axis_trajectory_lp(
     E2: float,
     static_half_widths: np.ndarray | None,
     c_bound: float = 20.0,
+    *,
+    endpoint_only: bool = False,
 ) -> tuple[np.ndarray, np.ndarray] | None:
-    """Solve exact HiGHS min/max trajectory polytope bounds on c_0..c_{T-1}."""
-    T = len(y1_t)
-    A_ub: list[np.ndarray] = []
-    b_ub: list[float] = []
-
-    def add_abs_bound(row: np.ndarray, target: float, tol: float) -> None:
-        A_ub.append(row)
-        b_ub.append(target + tol)
-        A_ub.append(-row)
-        b_ub.append(-target + tol)
-
-    for t in range(T - 1):
-        row_c = np.zeros(T, dtype=np.float64)
-        row_c[t + 1] = 1.0
-        row_c[t] = -r_c
-        add_abs_bound(row_c, 0.0, D)
-
-        row_p1 = np.zeros(T, dtype=np.float64)
-        row_p1[t + 1] = 1.0
-        row_p1[t] = -r_p1
-        add_abs_bound(row_p1, float(y1_t[t + 1] - r_p1 * y1_t[t]), E1)
-
-        row_p2 = np.zeros(T, dtype=np.float64)
-        row_p2[t + 1] = 1.0
-        row_p2[t] = -r_p2
-        add_abs_bound(row_p2, float(y2_t[t + 1] - r_p2 * y2_t[t]), E2)
-
+    """Bound every coordinate, or return length-one endpoint bounds on the same polytope."""
+    y1_t, y2_t = np.asarray(y1_t, dtype=float), np.asarray(y2_t, dtype=float)
+    if y1_t.ndim != 1 or y2_t.shape != y1_t.shape:
+        raise ValueError("expected two aligned trajectory vectors")
     if static_half_widths is not None:
+        static_half_widths = np.asarray(static_half_widths, dtype=float)
+        if static_half_widths.shape != y1_t.shape:
+            raise ValueError("one static half width per time step is required")
+    T = len(y1_t)
+    if not T:
+        if endpoint_only:
+            raise ValueError("empty trajectory has no endpoint")
+        return np.empty(0), np.empty(0)
+    n = T - 1
+    # Each transition row touches just c[t] and c[t+1]. Preserve the old
+    # +/- row order, including static constraints, without a dense O(T^2) matrix.
+    rates = np.repeat([r_c, r_p1, r_p2], 2)
+    signs = np.tile([1.0, -1.0], 3)
+    data = np.tile(np.column_stack((-rates * signs, signs)).ravel(), n)
+    left = np.repeat(np.arange(n), 6)
+    cols = np.column_stack((left, left + 1)).ravel()
+    indptr = np.arange(6 * n + 1) * 2
+    targets = np.column_stack(
+        (np.zeros(n), y1_t[1:] - r_p1 * y1_t[:-1], y2_t[1:] - r_p2 * y2_t[:-1])
+    )
+    b_arr = (np.repeat(targets, 2, axis=1) * signs + np.repeat([D, E1, E2], 2)).ravel()
+    if static_half_widths is not None:
+        if np.any(static_half_widths < 0):
+            return None
         c_mid = 0.5 * (y1_t + y2_t)
-        for t in range(T):
-            hw = float(static_half_widths[t])
-            if hw < 0.0:
-                return None
-            row_s = np.zeros(T, dtype=np.float64)
-            row_s[t] = 1.0
-            add_abs_bound(row_s, float(c_mid[t]), hw)
-
-    A_arr = np.asarray(A_ub, dtype=np.float64) if A_ub else None
-    b_arr = np.asarray(b_ub, dtype=np.float64) if b_ub else None
+        data = np.r_[data, np.tile([1.0, -1.0], T)]
+        cols = np.r_[cols, np.repeat(np.arange(T), 2)]
+        indptr = np.r_[indptr, indptr[-1] + np.arange(1, 2 * T + 1)]
+        b_arr = np.r_[
+            b_arr,
+            np.column_stack(
+                (c_mid + static_half_widths, -c_mid + static_half_widths)
+            ).ravel(),
+        ]
+    A_arr = (
+        csr_matrix((data, cols, indptr), shape=(len(b_arr), T)) if len(b_arr) else None
+    )
+    rhs = b_arr if A_arr is not None else None
     bounds = [(-c_bound, c_bound)] * T
 
-    lo = np.empty(T, dtype=np.float64)
-    hi = np.empty(T, dtype=np.float64)
-    for t in range(T):
+    positions = range(T - 1, T) if endpoint_only else range(T)
+    lo, hi = np.empty(len(positions)), np.empty(len(positions))
+    for i, t in enumerate(positions):
         obj = np.zeros(T, dtype=np.float64)
         obj[t] = 1.0
-        r_min = linprog(obj, A_ub=A_arr, b_ub=b_arr, bounds=bounds, method="highs")
+        r_min = linprog(obj, A_ub=A_arr, b_ub=rhs, bounds=bounds, method="highs")
         if r_min.status == 2:
             return None
         if not r_min.success:
             raise ArithmeticError(r_min.message)
-        r_max = linprog(-obj, A_ub=A_arr, b_ub=b_arr, bounds=bounds, method="highs")
+        r_max = linprog(-obj, A_ub=A_arr, b_ub=rhs, bounds=bounds, method="highs")
         if r_max.status == 2:
             return None
         if not r_max.success:
             raise ArithmeticError(r_max.message)
-        lo[t] = float(r_min.x[t])
-        hi[t] = float(r_max.x[t])
+        lo[i] = float(r_min.x[t])
+        hi[i] = float(r_max.x[t])
     return lo, hi
 
 
