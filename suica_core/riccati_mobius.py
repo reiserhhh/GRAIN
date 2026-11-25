@@ -122,6 +122,61 @@ class ConstrainedRiccatiCell:
         den = M[..., 1, 0] * x + M[..., 1, 1]
         return num / den
 
+    def event_path(self, events, times, *, start, cutoff, pulse=1.0, x0=None,
+                   clock="jump", parallel=True):
+        """State after each retained arrival and at cutoff. Equal times follow supplied order.
+
+        jump: instantaneous readout update of strength pulse, all wall time is idle.
+        ending_pulse: the pulse occupies up to pulse of the preceding gap; short
+        gaps still give one full update in operational (not wall-clock) time.
+        """
+        u,t = np.asarray(events,float),np.asarray(times,float)
+        x = np.zeros(self.hidden_dim) if x0 is None else np.asarray(x0,float)
+        if (u.shape!=(len(t),self.input_dim) or t.ndim!=1 or not np.isfinite(t).all()
+                or not np.isfinite([start,cutoff,pulse]).all() or start>cutoff
+                or pulse<=0 or np.any(np.diff(t)<0) or np.any(t<start)
+                or x.shape!=(self.hidden_dim,) or not np.isfinite(x).all()
+                or np.any(np.abs(x)>self.bound_B) or clock not in ("jump","ending_pulse")):
+            raise ValueError("invalid event path, clock or initial state")
+        k = np.searchsorted(t,cutoff,side="right")
+        t,u = t[:k],u[:k]
+        if not np.isfinite(u).all():
+            raise ValueError("nonfinite arrival")
+        gap=np.diff(t,prepend=start)
+        idle=gap if clock=="jump" else np.maximum(0,gap-pulse)
+        zero=np.zeros(self.input_dim)
+        if k:
+            matrices=self.step_matrices(u,pulse) @ self.step_matrices(np.zeros_like(u),idle)
+            if parallel:
+                stride=1
+                while stride<k:
+                    prod=matrices[stride:] @ matrices[:-stride]
+                    matrices[stride:]=prod/np.max(np.abs(prod),axis=(-2,-1),keepdims=True)
+                    stride*=2
+                states=self.apply_mobius(matrices,x)
+            else:
+                states=np.empty((k,self.hidden_dim))
+                for i,M in enumerate(matrices):
+                    x=self.apply_mobius(M,x)
+                    states[i]=x
+            x=states[-1]
+        else:
+            states=np.empty((0,self.hidden_dim))
+        end=self.apply_mobius(self.step_matrices(zero,cutoff-(t[-1] if k else start)),x)
+        return states,end
+
+    def counterfactual_window_delta(self,events,times,*,window,cutoff,**kwargs):
+        """Remove arrivals in the closed recent window, holding cutoff and start fixed."""
+        if not np.isfinite(window) or window<0:
+            raise ValueError("invalid window")
+        _,end=self.event_path(events,times,cutoff=cutoff,**kwargs)
+        t=np.asarray(times)
+        keep=t<cutoff-window
+        if not np.any((~keep)&(t<=cutoff)):
+            return np.zeros_like(end)
+        _,base=self.event_path(np.asarray(events)[keep],t[keep],cutoff=cutoff,**kwargs)
+        return end-base
+
     def rollout_sequential(
         self, u_seq: np.ndarray, dt_seq: np.ndarray | float, x0: np.ndarray | None = None
     ) -> np.ndarray:
@@ -278,13 +333,18 @@ class DualPathwayRiccatiObserver:
 
 
 def estimate_cross_view_lag1_rates(
-    y1: np.ndarray, y2: np.ndarray, rank: int
+    y1: np.ndarray, y2: np.ndarray, rank: int, *, se1=None, se2=None,cross_error_cov=None
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Legacy clipped lag-1 moment ratios (small/negative denominators fall back to zero).
 
     Use dual_view_increment.moment_screen before interpreting unit-loading
     common/private rates. A fallback zero is not evidence of zero persistence.
     """
+    if se1 is not None or se2 is not None or cross_error_cov is not None:
+        from .stream_precision import lag_rates
+        if se1 is None or se2 is None or not 0 < rank <= np.shape(y1)[-1]:
+            raise ValueError("paired standard errors and valid rank required")
+        return tuple(lag_rates(y1,y2,se1,se2,cross_error_cov=cross_error_cov)[:,:rank])
     rc = np.zeros(rank, dtype=np.float64)
     rp1 = np.zeros(rank, dtype=np.float64)
     rp2 = np.zeros(rank, dtype=np.float64)
@@ -344,7 +404,11 @@ def solve_axis_trajectory_lp(
     targets = np.column_stack(
         (np.zeros(n), y1_t[1:] - r_p1 * y1_t[:-1], y2_t[1:] - r_p2 * y2_t[:-1])
     )
-    b_arr = (np.repeat(targets, 2, axis=1) * signs + np.repeat([D, E1, E2], 2)).ravel()
+    widths = np.column_stack([np.broadcast_to(v,(n,)) for v in (D,E1,E2)])
+    if not np.isfinite(widths).all() or (widths < 0).any():
+        raise ValueError("nonnegative finite transition budgets required")
+    b_arr = np.repeat(widths, 2, axis=1) + np.repeat(targets, 2, axis=1) * signs
+    b_arr = b_arr.ravel()
     if static_half_widths is not None:
         if np.any(static_half_widths < 0):
             return None
@@ -391,6 +455,7 @@ def stack_transition_contrasts(
     *,
     common_drive: ArrayLike | None = None,
     private_drive: ArrayLike | None = None,
+    contrast_error: ArrayLike | None = None,
 ) -> tuple[NDArray[np.float64], NDArray[np.float64]]:
     """Return (A, b) with b = A @ common_initial in the exact multi-window affine case."""
     y = np.asarray(observations, dtype=np.float64)
@@ -420,7 +485,11 @@ def stack_transition_contrasts(
         residuals.append(b.ravel())
         phi = a[t] @ phi
         offset = a[t] @ offset + g[t]
-    return np.vstack(blocks), np.concatenate(residuals)
+    A, b = np.vstack(blocks), np.concatenate(residuals)
+    if contrast_error is not None:
+        from .stream_precision import whiten_system
+        return whiten_system(A,b,contrast_error)
+    return A,b
 
 
 __all__ = [

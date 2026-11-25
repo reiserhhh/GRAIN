@@ -43,21 +43,32 @@ def inputs(doc):
     return paths
 
 
+def encode_bipolar_origin(z):
+    z=np.asarray(z,float)
+    if z.ndim!=2 or not z.shape[1] or not np.isfinite(z).all():
+        raise ValueError("finite (events, axes) required")
+    return softmax(np.column_stack((z,-z,np.zeros(len(z)))),axis=1)
+
+
 def encode(x, ref):
     z = (x - ref["mean"]) / np.array(ref["scale"])
     # The fixed zero logit preserves the original signed origin (unlike ordinary softmax).
-    p = softmax(np.column_stack([z, np.zeros(len(z))]), axis=1)
+    p = (encode_bipolar_origin(z) if ref.get("encoding")=="bipolar_origin"
+         else softmax(np.column_stack([z, np.zeros(len(z))]), axis=1))
     if p.min() < np.finfo(np.float32).tiny:
         raise ValueError("outside float32 clock-input support; no silent clipping")
     return p
 
 
-def fit(doc, transport):
+def fit(doc, transport, *, encoding="signed_origin"):
+    if encoding not in ("signed_origin","bipolar_origin"):
+        raise ValueError("unknown encoding")
     paths = inputs(doc)
     all_x = np.concatenate([x for _, x in paths.values()])
     scale = all_x.std(0)
     ref = {
         "version": VERSION,
+        **({"encoding":encoding} if encoding!="signed_origin" else {}),
         "axes": doc["axes"],
         "coordinate_system": doc["coordinate_system"],
         "worker_digest": li.digest(li.WORKER.read_text()),

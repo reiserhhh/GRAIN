@@ -1,0 +1,74 @@
+{
+  "esconv": {
+    "additive_mse": [
+      0.12846856219073832,
+      0.07397172893736509,
+      0.12291339290490838
+    ],
+    "annotated_turns": 18376,
+    "axes": [
+      "Question",
+      "Self-disclosure",
+      "Providing Suggestions"
+    ],
+    "dialogues": 1300,
+    "group": "dialogue, not author",
+    "interaction_mse": [
+      0.1228677434836867,
+      0.07357674878588168,
+      0.12389731770640927
+    ]
+  },
+  "pandora_source": {
+    "adding_signed_flux_mse": 0.016792299057117835,
+    "bins": 53,
+    "closure": 1.0408340855860843e-16,
+    "eligible_pairs": 66,
+    "events": 13896,
+    "fit_rows": 51,
+    "held_active_elsewhere": 0.287455842762956,
+    "held_not_observed": 0.46255262038258826,
+    "held_rows": 33,
+    "next_log_length_change_mse": 0.015248388343508838,
+    "no_stayer_pairs": 23,
+    "ranked_venues": 5,
+    "sign_reversals": 14,
+    "source_authors": 386,
+    "stayer_reweight_abs_mean": 0.014762361703322319
+  },
+  "real_persona_chat": {
+    "gate_cal": {
+      "carry": false,
+      "gain": 0.002960838871996731,
+      "lower": -0.01060968663825767,
+      "units": 227
+    },
+    "held_carry_mse": 0.2156863036436745,
+    "held_cold_mse": 0.23246994534178905,
+    "held_readings": 6547,
+    "max_scan_error": 3.3306690738754696e-16,
+    "median_abs_endpoint_difference": 0.13626786366628466,
+    "median_gap_seconds": 21.268999934196472,
+    "missing_clock": 11,
+    "ordered_dialogues": 460,
+    "sample_dialogues": 512
+  },
+  "synthetic": {
+    "calibration_paths": 600,
+    "corrected_rates": [
+      0.7749878916206441,
+      0.6623759360089837,
+      0.7744675465569717
+    ],
+    "held_path_coverage": 0.9033333333333333,
+    "held_paths": 1200,
+    "nested_diagonal_common": 0.3848434221659061,
+    "nested_overlap_common": 0.7644153128219124,
+    "raw_rates": [
+      0.7749878916206441,
+      0.16666250040899544,
+      0.19759114930038948
+    ],
+    "true_rate": 0.72
+  }
+}

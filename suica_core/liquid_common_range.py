@@ -34,8 +34,16 @@ def whiten(x):
     return d @ w, mean, w
 
 
-def fit(x, axes, split, basis, quantity, *, permutations=99):
+def fit(x, axes, split, basis, quantity, *, permutations=99, counts=None, event_var=None):
     """Independent units in axis 0. Null shuffles whole persons in one view at matched slots."""
+    noise = None
+    if counts is not None or event_var is not None:
+        from .stream_precision import eb_apply, eb_fit
+        if quantity != "event" or counts is None or event_var is None or len(counts)!=2 or len(event_var)!=2:
+            raise ValueError("precision chart requires event means, two count arrays and two variance vectors")
+        blocks = np.split(np.asarray(x,float),[split],axis=-1)
+        noise = [eb_fit(a,n,v) for a,n,v in zip(blocks,counts,event_var,strict=True)]
+        x = np.concatenate([eb_apply(a,n,r) for a,n,r in zip(blocks,counts,noise,strict=True)],axis=-1)
     x = transform(x, quantity)
     if (
         not basis
@@ -71,6 +79,7 @@ def fit(x, axes, split, basis, quantity, *, permutations=99):
         vt[j] *= sign
     ref = {
         "version": "grain-common-range-1",
+        **({"precision_chart":noise} if noise is not None else {}),
         "quantity": quantity,
         "axes": list(axes),
         "split": split,
@@ -88,17 +97,22 @@ def fit(x, axes, split, basis, quantity, *, permutations=99):
     return ref
 
 
-def coords(ref, views):
+def coords(ref, views, counts=None):
     if len(views) != 2:
         raise ValueError("provide two blocks; null denotes a whole unobserved block")
     out = []
-    for x, mu, w in zip(views, ref["means"], ref["loadings"], strict=True):
+    if ("precision_chart" in ref) != (counts is not None) or (counts is not None and len(counts)!=2):
+        raise ValueError("counts must match frozen chart contract")
+    for j,(x, mu, w) in enumerate(zip(views, ref["means"], ref["loadings"], strict=True)):
         if x is None:
             out.append(None)
             continue
         x = np.asarray(x, float)
         if x.shape != (len(mu),) or not np.isfinite(x).all():
             raise ValueError("incomplete or wrong field block")
+        if counts is not None:
+            from .stream_precision import eb_apply
+            x = eb_apply(x,counts[j],ref["precision_chart"][j])
         out.append((x - mu) @ np.array(w))
     if all(a is None for a in out):
         raise ValueError("no observed field")
@@ -117,12 +131,12 @@ def witness(v, k, s):
     return [None if a is None else (a - np.pad(s, (0, len(a) - k))).tolist() for a in v]
 
 
-def estimate(ref, views, budget):
+def estimate(ref, views, budget, *, counts=None):
     """Exact Euclidean ball of shared coordinates; private effects need not be independent."""
     if budget is not None and (not np.isfinite(budget) or budget < 0):
         raise ValueError("invalid private norm allowance")
     k = ref["rank"]
-    v = coords(ref, views)
+    v = coords(ref, views, counts)
     c, _, e, n = geometry(v, k)
     zero = np.zeros(k)
     out = {
@@ -184,12 +198,15 @@ def motion(a, b):
     }
 
 
-def calibrate(ref, paths, *, quantile=0.90):
+def calibrate(ref, paths, *, quantile=0.90, counts=None):
     x = transform(paths, ref["quantity"])
     cut = ref["split"]
+    if counts is not None:
+        from .stream_precision import counts as validate
+        counts = [validate(n,x.shape[:2]).ravel() for n in counts]
     vals = [
-        geometry(coords(ref, [v[:cut], v[cut:]]), ref["rank"])[2]
-        for v in x.reshape(-1, x.shape[-1])
+        geometry(coords(ref, [v[:cut], v[cut:]],None if counts is None else [n[i] for n in counts]), ref["rank"])[2]
+        for i,v in enumerate(x.reshape(-1, x.shape[-1]))
     ]
     return float(np.quantile(np.sqrt(vals), quantile, method="higher"))
 
@@ -208,12 +225,13 @@ def score(ref, doc):
         raise ValueError("different clock")
     out = []
     previous = None
-    for record in doc["observations"]:
+    ns = doc.get("counts", [None]*len(doc["observations"]))
+    for record,n in zip(doc["observations"],ns,strict=True):
         if record is None or all(v is None for v in record):
             out.append({"state": {"status": "no_observation"}, "from_previous": None})
             previous = None
             continue
-        est = estimate(ref, record, doc["budget"])
+        est = estimate(ref, record, doc["budget"], counts=n)
         out.append(
             {
                 "state": est,

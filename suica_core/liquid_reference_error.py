@@ -16,7 +16,7 @@ def calibration_member(person, namespace):
     return int.from_bytes(digest[:8], "big") % 2 == 0
 
 
-def fit_chart(x, axes, *, population, basis, ridge=1e-4):
+def fit_chart(x, axes, *, population, basis, ridge=1e-4, counts=None, event_var=None):
     """One vector per independent reference unit, not one vote per text."""
     x = np.asarray(x, float)
     axes = list(axes)
@@ -34,6 +34,11 @@ def fit_chart(x, axes, *, population, basis, ridge=1e-4):
     ):
         raise ValueError("invalid reference units, coordinate names, or provenance")
     n = len(x)
+    noise = None
+    if counts is not None or event_var is not None:
+        from .stream_precision import eb_fit, eb_apply
+        noise = eb_fit(x,counts,event_var)
+        x = eb_apply(x,counts,noise)
     ref = fit_reference_frame(
         {
             "means": x[:, None, None, :],
@@ -47,6 +52,7 @@ def fit_chart(x, axes, *, population, basis, ridge=1e-4):
     )
     return {
         "schema": "liquid-population-1",
+        **({"precision_chart": noise} if noise is not None else {}),
         "axes": axes,
         "n": n,
         "population": population,
@@ -58,7 +64,7 @@ def fit_chart(x, axes, *, population, basis, ridge=1e-4):
     }
 
 
-def locate(chart, x, *, axes, basis):
+def locate(chart, x, *, axes, basis, counts=None):
     """Return per-axis midrank percentiles and joint whitened distance."""
     x = np.asarray(x, float)
     if (
@@ -70,6 +76,11 @@ def locate(chart, x, *, axes, basis):
         or not np.isfinite(x).all()
     ):
         raise ValueError("incompatible chart or observations")
+    if "precision_chart" in chart:
+        from .stream_precision import eb_apply
+        x = eb_apply(x,counts,chart["precision_chart"])
+    elif counts is not None:
+        raise ValueError("counts supplied for a chart without calibrated event variance")
     pct = np.stack(
         [
             (np.searchsorted(a, x[:, j], "left") + np.searchsorted(a, x[:, j], "right"))
@@ -153,8 +164,10 @@ def population_io(mode, document, *, chart=None):
     ]
     values = [r["values"] for r in rows]
     args = {"axes": document["axes"], "basis": document["basis"]}
+    if any("count" in row for row in rows):
+        args["counts"] = [row.get("count") for row in rows]
     if mode == "fit":
-        c = fit_chart(values, population=document["population"], **args)
+        c = fit_chart(values, population=document["population"], event_var=document.get("event_variance"), **args)
         return {**c, "namespace": namespace, "reference_units": sorted(tokens)}
     if mode != "locate" or chart is None or chart.get("namespace") != namespace:
         raise ValueError("wrong operation or undeclared identity namespace")
