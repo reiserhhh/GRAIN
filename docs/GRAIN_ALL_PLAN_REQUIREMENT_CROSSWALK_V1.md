@@ -13,7 +13,7 @@
 | 计划 | 日期 | 地位 | 被谁取代/承接 |
 |---|---|---|---|
 | Persona历版（H2/Big5/MBTI/MCD、denoising v4–v111、VHMCD） | 2026-04–08 | 历史；条件/选择思想被继承 | GRAIN回顾与C23/C20 |
-| SUICA M4线（D–X）、防御相、4W、跨水准契约、验证计划V2、v1.0.0宣言 | 2026-07–08 | 已闭幕；契约永久拘束 | 完成宣言残渣8行→本表R29–R31 |
+| GRAIN 前身的 M4 线（D–X）、防御相、4W、跨水准契约、验证计划V2、v1.0.0宣言 | 2026-07–08 | 已闭幕；契约永久拘束 | 完成宣言残渣8行→本表R29–R31 |
 | V1 终局计划（WP00–11/C01–06/P01–10/L01–31） | 09-11 | 降为实施参考 | V2→V3→V4→V5 |
 | V2 纲领（F01–F08、旗舰A–C） | 09-12 | 基础问题背景 | V3 |
 | V3 构造计划（Study A–D、B1–B7、§8完成规格） | 09-12 | 制作流程与完成规格来源 | V4 |
@@ -107,7 +107,7 @@
 | ID | 需求 | 来源 | 证据 | 状态 |
 |---|---|---|---|---|
 | R31 | Big5 acceptance closure（base-control全5折） | Persona CLAUDE.md, C23 | historical_acceptance_r2：clean .100541成立、base仅fold0 | 未执行（需Windows Ollama；本任务不连主机；低决策价值） |
-| R32 | SUICA验证计划V2 P1–P7封印检验 | Persona/GRAIN VALIDATION_PLAN | 锁箱开封#1：2/7失败；剩1次 | 部分（明确失败反例）；第二次开封=所有者决定 |
+| R32 | 早期验证计划 V2 P1–P7封印检验 | Persona/GRAIN VALIDATION_PLAN | 锁箱开封#1：2/7失败；剩1次 | 部分（明确失败反例）；第二次开封=所有者决定 |
 | R33 | Denoising/ANC路线（v4–v111） | Persona docs | GRAIN回顾 | 明确被取代 |
 | R34 | VHMCD市场/X文本 | Persona/C20 | 应用验证 | 明确非主线（应用效度另立） |
 | R35 | persona写入/读取互逆、P1U | M06注、向量机制计划 | — | 明确暂缓（不假设互逆） |

@@ -6,7 +6,7 @@
 
 ## 目标和协作
 
-从现有Project Persona的SUICA上下文派生Claude后台任务，Fable 5.1 / max。
+从现有Project Persona 的 GRAIN 前身研究上下文派生Claude后台任务，Fable 5.1 / max。
 Codex让出本轮修改权。先独立检查，再实际补齐，不只提出另一份计划或重述Codex结论。
 目标是用于制作情境化文本心理测量的基础理论与制作过程，不是仓促做临床成品量表，
 也不是单纯提高PANDORA预测精度。继承适用的成熟方法；不强求精确复现每篇前身论文。

@@ -105,7 +105,7 @@ https://www.gatsby.ucl.ac.uk/~gretton/papers/GreBouSmoSch05.pdf . We use linear
 kernels, so zero covariance does NOT establish independence; no HSIC universal
 kernel theorem is imported. The finite within/between decomposition is standard.
 OpenAI/math pinned adc7f124 signed-tensor03b-isotypic1-120 reread: its separation
-of retained components inspires keeping signed contractions, but SUICA vectors
+of retained components inspires keeping signed contractions, but GRAIN vectors
 do not meet its symmetric-group/Specht-module hypotheses. No theorem transfer.
 
 New contribution sought: a complete-vector, source-target relation observation
