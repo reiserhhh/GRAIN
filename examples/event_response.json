@@ -1,0 +1,5 @@
+{
+  "doc":{"language":"en","clock":"opportunity","dialogues":[{"id":"example","carrier":"chat","view":"native","condition":"revision","turns":[{"speaker":"partner","text":"It's blue, not red."},{"speaker":"focal","text":"I'll use blue."}]}]},
+  "probes":[{"dialogue":"example","focal":"focal","old":"red","new":"blue","trigger":0,"cutoff":1}],
+  "weights":{"revision":0.75,"other":0.25}
+}

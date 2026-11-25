@@ -1,0 +1,5 @@
+{
+  "view1":[0,1], "view2":[0,1], "dates1":["t0","t1"], "dates2":["t0","t1"],
+  "half_widths":[2,3], "rates":[0,0.8,-0.8], "budgets":[2,0.2,0.2],
+  "c_bound":10, "threshold":0, "calibration_id":"constructed-known-law-not-market"
+}

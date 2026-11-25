@@ -279,7 +279,11 @@ class DualPathwayRiccatiObserver:
 def estimate_cross_view_lag1_rates(
     y1: np.ndarray, y2: np.ndarray, rank: int
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    """Unbiased cross-view Method-of-Moments lag-1 rate estimator separating common & private slopes."""
+    """Legacy clipped lag-1 moment ratios (small/negative denominators fall back to zero).
+
+    Use dual_view_increment.moment_screen before interpreting unit-loading
+    common/private rates. A fallback zero is not evidence of zero persistence.
+    """
     rc = np.zeros(rank, dtype=np.float64)
     rp1 = np.zeros(rank, dtype=np.float64)
     rp2 = np.zeros(rank, dtype=np.float64)
