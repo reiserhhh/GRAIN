@@ -1,5 +1,7 @@
 # GRAIN V8 Manual — Working With the System
 
+For the current, end-to-end tool rather than this version-specific operations record, start with the [GRAIN user manual](GRAIN_USER_MANUAL.md).
+
 Status: living practitioner manual (2026-08-03). The sealed v0.2.1 worked
 example (`docs/WORKED_EXAMPLE_MANUAL.md`) remains the frozen construction
 record for the V7-era battery; this manual covers the V8-era repository as it

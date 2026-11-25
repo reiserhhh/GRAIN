@@ -4,6 +4,8 @@
 
 **English** | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
+**Start here: [GRAIN user manual](docs/GRAIN_USER_MANUAL.md).** Build an instrument from text, score new authors against an independent reference, follow an interaction, and interpret the result. Includes an offline worked study and instructions for your own corpus.
+
 Optional instrument: [frozen liquid trajectories on the native GRAIN node map](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius flows & dynamic trajectory bounds](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 notes](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [Supplement V2](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md).
 
 Optional analysis tools: [addressed correction uptake and the two-view incremental-information audit](docs/GRAIN_EVENT_AND_VIEW_INCREMENT.md). Neither changes the frozen factor scores.

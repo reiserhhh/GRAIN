@@ -5,6 +5,8 @@
 
 [English](README.md) | [日本語](README.ja.md) | **简体中文**
 
+**初次使用请读：[GRAIN 综合使用手册](docs/GRAIN_USER_MANUAL_ZH.md)。** 从准备自己的文本、制作量具和参照，到估计新作者、分析互动及撰写报告。本书配有无需模型的完整示例；下方的更新说明是专题附录。
+
 [新增工具：对话纠正证据与双视角增量判定（中文手册）](docs/GRAIN_EVENT_AND_VIEW_INCREMENT_ZH.md)。两个示例可离线运行，原生因子计分和参考库不变。
 
 可选工具：[在原生 GRAIN 节点上追踪液态路径（使用手册）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精确流与动态轨迹边界（运行手册）](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 更新说明](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [理论补编 V2（中文）](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_ZH_V2.md)。

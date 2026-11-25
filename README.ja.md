@@ -5,6 +5,8 @@
 
 [English](README.md) | **日本語** | [简体中文](README.zh.md)
 
+**初めての方へ：[GRAIN 総合利用手引き](docs/GRAIN_USER_MANUAL_JA.md)。** 自分のコーパスの準備、参照集団の構築、新しい書き手の位置づけ、対話の解釈までを一つの実行例でたどれます。
+
 [新しいツール：訂正後の応答と二視点分解の比較（日本語手引き）](docs/GRAIN_EVENT_AND_VIEW_INCREMENT_JA.md)。付属の二例はオフラインで実行できます。従来の因子得点と参照集団は変更していません。
 
 オプションツール：[元の GRAIN ノード地図で液態経路を追跡する（利用マニュアル）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精密流と動的軌跡境界（実務マニュアル）](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 更新ノート](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [理論補遺 V2（日本語）](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_JA_V2.md)。
