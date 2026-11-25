@@ -6,6 +6,8 @@ record for the V7-era battery; this manual covers the V8-era repository as it
 is actually operated. Wherever this manual and `docs/CLAIMS_LEDGER.md`
 disagree, the ledger controls.
 
+**Current optional tools (main, November 2026).** For native and liquid estimates see the [module inventory](GRAIN_LIQUID_TOOL.md); for a supplied proposition or an aligned pair of views see the [off-line examples](GRAIN_EVENT_AND_VIEW_INCREMENT.md). Use the dated paper supplement for these additions, not the sealed worked example.
+
 Audience: a researcher or engineer who wants to (a) verify the repository,
 (b) run and reproduce protocols, (c) register a new experiment without
 breaking governance, or (d) understand what a number in a report is allowed

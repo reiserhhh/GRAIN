@@ -7,6 +7,8 @@ agent (or team of agents) can run a GRAIN analysis that inherits the
 project's audited discipline. Six adversarial audit rounds produced this
 design; every rule below traces to a caught failure.
 
+For a supplied behavioral proposition, use the [event and opportunity protocol](GRAIN_EVENT_AND_VIEW_INCREMENT.md). Reader suggestions and liquid trajectories are not adjudications. Give every judgment a speaker, evidence turn and cutoff; retain later verification separately. Never publish verbatim event JSON from confidential conversations.
+
 ## 1. Role architecture — no role may verify its own output
 
 | Role | What it does | What it must NEVER do | Implementation |
@@ -205,12 +207,7 @@ or dyadic workflows, enforce four additional machine-checkable rules:
   transition. Prefer `ConstrainedRiccatiCell` over unverified discrete ODE steps
   when irregular wall-clock intervals matter, and label `DualPathwayRiccatiObserver`
   episodic weights as retrieval weights rather than causal token interventions.
-- G14 **Rate separation and explicit infeasibility (`None`) preservation.** In
-  `solve_axis_trajectory_lp` and `stack_transition_contrasts`, always verify
-  that shared and view-specific retention rates `(r_c, r_p1, r_p2)` separate
-  above measurement error on independent calibration data. Never mask `None`
-  infeasibility returns or wide equal-rate polytope intervals by clipping or
-  forcing point projections.
+- G14 **Compare like with like.** Calibrate on independent data and compare direct levels, common-only dynamics, both simple lagged views, and joint constraints on an identical prefix. Report `vs_simple_lag` and the predeclared threshold separately from absolute width. Keep an inadmissible calibration and an infeasible trajectory distinct; never replace either with a zero estimate.
 - G15 **Disjoint-cohort, cross-panel, and difference-score discipline.** Never
   pool distinct cohorts (such as RealPersonaChat, ESConv, PSE-Database, and
   Bar-Anan) into one latent individual model. Always report pooled `R^2`,

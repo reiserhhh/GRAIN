@@ -6,6 +6,16 @@ same words: "which earlier expressions are still changing the reader now?"
 Existing GRAIN scoring entry points are unchanged. A node is an address for
 expression, not the name of a psychological construct.
 
+## Which tool answers my question?
+
+| Question | Start here | Output to interpret |
+|---|---|---|
+| Where does this text sit relative to the frozen group? | [Original construction and scoring](WORKED_EXAMPLE_MANUAL.md) | A reference-relative position under the original score definition. |
+| Which earlier slice still moves the reader? | Liquid instrument or speaker-attributed dialogue (below) | Readout at each slice; keep the event clock distinct from elapsed seconds. |
+| Did the focal person use a corrected premise? | [Addressed event reader](GRAIN_EVENT_AND_VIEW_INCREMENT.md) | Evidence at a cutoff, then bounds across comparable response opportunities. |
+| Do two views identify a shared state more tightly than simple changes do? | [Two-view comparison](GRAIN_EVENT_AND_VIEW_INCREMENT.md) | A range and a threshold decision under explicit calibration, not a new factor score. |
+| Which claims can be reported? | [Evidence map](paper/GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md) and [analyst guide](AI_ANALYST_GUIDE.md) | Distinguish running code, constructed cases, reused annotations and independently evaluated observations. |
+
 ## Module Quick Reference
 
 | Module (`grain_core.*`) | Mode | Input Schema / Coordinates | Primary Role |
@@ -19,6 +29,11 @@ expression, not the name of a psychological construct.
 | `grain_core.liquid_opportunity` | CLI (`fit` / `score`) | Condition-stratified node scores (V6 compat) | Estimates static, dynamic, and episode-reset opportunity slopes under `>=5` supported conditions |
 | `grain_core.liquid_axis_series`, `liquid_frozen_bank`, `liquid_inverse`, `liquid_v6_author` | CLI / Python API | Signed numerical series / V7 frozen bundles | Reads pre-scored series, verified frozen banks (SHA-256 checked), and source-weight inverse intervals |
 | `grain_core.riccati_mobius` | Python API | Irregular `dt`, multi-view series, affine maps | Exact constrained ZOH Riccati-Möbius flow, $O(\log T)$ parallel scan, dual-pathway episodic retrieval, dynamic LP bounds ([detailed manual](GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md)) |
+
+| `grain_core.event_response` | CLI / Python API | Addressed dialogue, focal speaker, competing premises, cutoff | Tracks support, counterevidence and missing opportunities; optional liquid readouts do not vote. |
+| `grain_core.dual_view_increment` | CLI / Python API | Aligned numeric prefixes and independent calibration | Separates what both views' simple lags already resolve from a joint-constraint increment. |
+
+[Event and two-view recipes](GRAIN_EVENT_AND_VIEW_INCREMENT.md) include synthetic input files and expected outputs.
 
 ## Use it
 
@@ -193,7 +208,7 @@ liquid trajectory readers with `grain_core.riccati_mobius`:
   with content-addressable cosine retrieval so early high-signal events remain
   addressable without violating `mask_first` causality.
 - **`estimate_cross_view_lag1_rates`, `solve_axis_trajectory_lp`,
-  `stack_transition_contrasts`**: Unbiased cross-view rate separation, HiGHS
+  `stack_transition_contrasts`**: Clipped cross-view moment estimates, HiGHS
   dynamic trajectory polytope bounds, and multi-window contrast stacking.
 
 See the runnable practitioner guide in

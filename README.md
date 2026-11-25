@@ -6,6 +6,8 @@
 
 Optional instrument: [frozen liquid trajectories on the native GRAIN node map](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius flows & dynamic trajectory bounds](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 notes](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [Supplement V2](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md).
 
+Optional analysis tools: [addressed correction uptake and the two-view incremental-information audit](docs/GRAIN_EVENT_AND_VIEW_INCREMENT.md). Neither changes the frozen factor scores.
+
 GRAIN is a foundational analysis method for text-based measurement research.
 It treats a person's natural-language events as local grains observed at
 multiple resolutions, then studies their reproducible distribution,
@@ -48,7 +50,7 @@ practitioner manuals, machine-checked Lean 4 correspondence, and trilingual Supp
   [Release notes](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) ·
   [Guardrails G13–G16](docs/AI_ANALYST_GUIDE.md)) indexes `58` Lean 4 theorems (`0` `sorryAx` in
   companion `project-persona`) and bounded evaluations across four disjoint public cohorts
-  (`RealPersonaChat` cross-panel `B_full22` pooled `R²=+0.3388` / `ΔR²=+0.1306` / cross-panel
+  (`RealPersonaChat` mixed post-dialogue ratings, cross-panel `B_full22` pooled `R²=+0.3388` / `ΔR²=+0.1306` / cross-panel
   `r=0.4031` vs. self-report `S_self28 R²=-0.0719` & `0/252` questionnaire FDR; `ESConv` outcome
   null `p>=0.309`; `PSE-Database v1.0` holdout `r=+0.2831`; `Bar-Anan` 0-DoF consensus
   `ΔR²=+0.0442/+0.0266`). None of these additions alters V1 manuscripts or makes GRAIN a clinical
@@ -2257,7 +2259,9 @@ is unchanged and remains the verification anchor):
 
 ```bash
 pip install -r requirements.txt
-pytest -q tests/test_liquid_*.py tests/test_riccati_mobius.py tests/test_trilingual_theory_manuscript.py tests/test_trilingual_liquid_riccati_supplement.py
+python -m grain_core.event_response examples/event_response.json
+python -m grain_core.dual_view_increment examples/dual_view_increment.json
+python -m pytest -q tests/test_event_and_view_increment.py tests/test_event_view_documentation.py tests/test_liquid_*.py tests/test_riccati_mobius.py tests/test_trilingual_theory_manuscript.py tests/test_trilingual_liquid_riccati_supplement.py
 python -m pytest -q tests/test_suica.py          # 39 passed
 python -m pytest -q -p no:cacheprovider          # release audit: 970 passed (2026-08-03; 318 at the v0.2.1 tag)
 python scripts/verify_grain_v021_lockbox.py       # portable v0.2.1 seal

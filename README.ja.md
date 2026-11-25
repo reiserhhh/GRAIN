@@ -5,6 +5,8 @@
 
 [English](README.md) | **日本語** | [简体中文](README.zh.md)
 
+[新しいツール：訂正後の応答と二視点分解の比較（日本語手引き）](docs/GRAIN_EVENT_AND_VIEW_INCREMENT_JA.md)。付属の二例はオフラインで実行できます。従来の因子得点と参照集団は変更していません。
+
 オプションツール：[元の GRAIN ノード地図で液態経路を追跡する（利用マニュアル）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精密流と動的軌跡境界（実務マニュアル）](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 更新ノート](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [理論補遺 V2（日本語）](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_JA_V2.md)。
 
 GRAIN はテキストに基づく測定研究のための基盤分析法である。個人の自然言語
@@ -28,7 +30,7 @@ V1 理論稿および歴史的凍結記録を改変せずに、凍結液態軌�
 
 - **制約付き Riccati-Möbius 流と二重経路エピソード保持**：`ConstrainedRiccatiCell` は不規則間隔下で `[-B, B]` 不変性、`dt = 0` 恒等性、時間分割半群整合性（実軌跡 108 本での 2 倍細分化誤差 `1.73e-18`〜`2.52e-18`、対 `ncps LTCCell` `30.68%`）および $O(\log T)$ 並列走査一致（`1.388e-17`）を保証し、`DualPathwayRiccatiObserver` は空白末の初期発話感度 `wall_first_at_end_median = 2.710e-4`（高速単一経路は `0.0`）を回復する。
 - **多時点動的集合反転と遷移対比積層**：`estimate_cross_view_lag1_rates` と `solve_axis_trajectory_lp` は速度分離条件下で軌跡幅を `4.949 -> 0.1070`（`0.0216x`）へ縮小する一方、等減衰率反例（`3.8343`）および不適合入力の `None` 棄却を厳格に保持する。
-- **三言語補遺 V2・Lean 4 形式検証・分離コホート検証**：[`理論補遺 V2（日本語）`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_JA_V2.md)（[`English`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md) · [`中文`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_ZH_V2.md) · [証拠出典表](docs/paper/GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md) · [ガードレール G13–G16](docs/AI_ANALYST_GUIDE.md)）は同伴 `project-persona` の Lean 4 検証済み `58` 定理（`sorryAx` ゼロ）と 4 つの独立公開コーパス検証（RealPersonaChat 他者評価 `B_full22` プール `R²=+0.3388`／パネル内 `ΔR²=+0.1306`／横断 `r=0.4031` 対 自己報告 `S_self28 R²=-0.0719`・質問紙 `0/252` FDR；ESConv 感情緩和ヌル `p>=0.309`；PSE-Database 保留 `r=+0.2831`；Bar-Anan `ΔR²=+0.0442/+0.0266`）を索引化する。いずれも臨床診断や完成尺度ではない。
+- **三言語補遺 V2・Lean 4 形式検証・分離コホート検証**：[`理論補遺 V2（日本語）`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_JA_V2.md)（[`English`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_EN_V2.md) · [`中文`](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_ZH_V2.md) · [証拠出典表](docs/paper/GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md) · [ガードレール G13–G16](docs/AI_ANALYST_GUIDE.md)）は同伴 `project-persona` の Lean 4 検証済み `58` 定理（`sorryAx` ゼロ）と 4 つの独立公開コーパス検証（RealPersonaChat 対話後の複合評定 `B_full22` プール `R²=+0.3388`／パネル内 `ΔR²=+0.1306`／横断 `r=0.4031` 対 自己報告 `S_self28 R²=-0.0719`・質問紙 `0/252` FDR；ESConv 感情緩和ヌル `p>=0.309`；PSE-Database 保留 `r=+0.2831`；Bar-Anan `ΔR²=+0.0442/+0.0266`）を索引化する。いずれも臨床診断や完成尺度ではない。
 
 ## 現在の実行状況（2026-09-12）
 
@@ -172,7 +174,9 @@ v0.2.1 とその識別子は旧名称のもとで封印された歴史的証拠�
 
 ```bash
 pip install -r requirements.txt
-pytest -q tests/test_liquid_*.py tests/test_riccati_mobius.py tests/test_trilingual_theory_manuscript.py tests/test_trilingual_liquid_riccati_supplement.py
+python -m grain_core.event_response examples/event_response.json
+python -m grain_core.dual_view_increment examples/dual_view_increment.json
+python -m pytest -q tests/test_event_and_view_increment.py tests/test_event_view_documentation.py tests/test_liquid_*.py tests/test_riccati_mobius.py tests/test_trilingual_theory_manuscript.py tests/test_trilingual_liquid_riccati_supplement.py
 python -m pytest -q tests/test_suica.py          # 39件合格
 python -m pytest -q -p no:cacheprovider          # 970件合格 (2026-08-03; v0.2.1 タグ時点 318)
 python scripts/verify_grain_v021_lockbox.py       # 可搬 v0.2.1 封印検証

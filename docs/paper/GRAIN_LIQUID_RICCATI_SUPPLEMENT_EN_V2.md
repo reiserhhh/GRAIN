@@ -61,7 +61,7 @@ replace out-of-sample human empirical testing.
 |---|---|---|---|
 | `ConstrainedRiccatiCell` (`RiccatiMobiusFlow.lean`) | Scalar contractive Riccati ODE $\frac{dx}{dt}=\epsilon(u)(\alpha(u)+\beta(u)x+\gamma(u)x^2)$ integrated via normalized $2\times 2$ Möbius matrix exponential | Exact $[-B, B]$ domain invariance, `dt = 0` identity preservation, time-subdivision semigroup composition (`M(dt1+dt2) ~ M(dt2)M(dt1)`), associative Kogge-Stone $O(\log T)$ parallel prefix scan (`<= 1e-12`) | Input-frozen piecewise ZOH semantics; captures fast continuous decay only unless paired with episodic retrieval |
 | `DualPathwayRiccatiObserver` | Fast contractive Riccati state over inter-event gaps paired with content-addressable cosine retrieval over history | Prevents empty-gap erasure of early salient utterances while respecting causal idle masking (`mask_first`) | Episodic weights reflect historical retrieval weighting, not causal counterfactual token edits |
-| `estimate_cross_view_lag1_rates` & `solve_axis_trajectory_lp` (`DynamicSetInversion.lean`) | Unbiased cross-view Method-of-Moments separating common vs. private AR(1) retention rates $(r_c, r_{p,1}, r_{p,2})$ feeding HiGHS linear constraints | Eliminates arbitrary private initial offsets across steps whenever $r_c \ne r_{p,i}$; reports exact infeasibility (`None`) on model mismatch | Degenerates toward wide static widths when $r_c = r_{p,1} = r_{p,2}$ (formalized as the equal-rate counterexample) |
+| `estimate_cross_view_lag1_rates` & `solve_axis_trajectory_lp` (`DynamicSetInversion.lean`) | Clipped cross-view lag-one moment ratios and a HiGHS trajectory solver | Returns compatible ranges conditional on supplied rates, static bands and innovation budgets; an empty set gives `None` | Nonpositive implied variances do not identify rates. Compare with both views' lagged observations before attributing a narrower range to joint dynamics. |
 | `stack_transition_contrasts` | Multi-window affine contrast stacking of calibrated $A_t - P_{j,t}$ operators across steps and readers | Recovers full-rank initial shared state $c_0$ (`< 1e-12` exactness in well-conditioned systems) even when single transitions are rank-deficient | Assumes calibrated regime transitions and finite observation error bounds |
 | Five-Operator Interpersonal Synthesis (`PersonalityDynamics.lean`, `LiquidResearchLoop.lean`) | Decomposes situated behavior into Evocation, Response/Conditioning, Plasticity, Trajectory Viscosity, and Cross-Task Consensus | Formalizes dynamic disattenuation identities, variance-decomposition bounds, and non-equivalence of self-report vs. observer criteria | Behavioral and peer-rated criteria remain conceptually distinct from questionnaire self-reports and clinical diagnosis |
 
@@ -103,20 +103,20 @@ static summaries fail, while clarifying scope boundaries:
    balanced speakers with disjoint `117` vs. `116` partner panels; `332,677`
    real timestamps with `dt <= 300s`):
    - **Disjoint-partner conditional validation.** Conditional self-response
-     (`v_given_v`) predicts unseen partner peer ratings, surviving 200-draw
+     (`v_given_v`) is associated with ratings completed by new partners, surviving 200-draw
      permutation FWER across four dimensions: `informativeness r_cross = 0.3545`
      (`p_FWER = 0.00498`), `familiarity = 0.3338` (`p_FWER = 0.00498`),
      `comprehension = 0.2921` (`p_FWER = 0.0149`), and `interest = 0.2874`
      (`p_FWER = 0.0249`). Simultaneously, `0/252` questionnaire correlations
      pass BH-FDR (`q_BH >= 0.1245`).
    - **Self-report vs. static vs. interpersonal-dynamic head-to-head.** For
-     composite peer adjustment (`PeerAdj_Composite`), 28 self-report scales
+     the mixed post-dialogue composite (`PeerAdj_Composite`), 28 self-report scales
      (`S_self28`) yield out-of-fold `r_OOF = -0.0216, R² = -0.0719`; static
      behavioral rates (`B_static5`) reach `R² = +0.2082`; the full 22-feature
      interpersonal-dynamic set (`B_full22`) reaches pooled `r_OOF = +0.5869,
      R² = +0.3388` (within-panel dynamic increment `ΔR²(B_full|B_static) = +0.1306`;
      `proactiveness ΔR² = +0.1933`; strict cross-panel generalization
-     `r = 0.4031`), beating self-report on `7/7` peer targets (bootstrap 95% CI).
+     `r = 0.4031`), beating self-report on `7/7` rating targets (bootstrap 95% CI). As defined in [the corpus protocol, §3.5](https://aclanthology.org/2023.paclic-1.85/), proactiveness concerns the respondent's own behavior, comprehension their understanding of the partner, interest the topic, and satisfaction the dialogue.
    - **Evocation, plasticity, and cross-script invariance.** Dyadic evocation
      and plasticity exhibit strong split-partner reproducibility (`evoke_p_log_chars
      r_AB = 0.7399`, `evoke_p_q_rate = 0.5643`, `evoke_p_v_rate = 0.2781`;
@@ -178,9 +178,12 @@ static summaries fail, while clarifying scope boundaries:
   floating-point tolerance under gap subdivision and `dt = 0` concatenation.
   Falsified if subdivided runs diverge by more than numerical precision.
 - **Proposition 13 (Rate-separation condition for dynamic set inversion).**
-  Multi-time linear programming shrinks latent common-state intervals across
-  views if and only if common and private transition operators differ on
-  observed steps; equal decay rates fail identifiability.
+  In the exact undriven scalar
+  contrast, equal rates remove the coefficient on the unknown initial level.
+  This is not an iff criterion for narrowing a bounded interval. Static bands,
+  common dynamics and innovation budgets can themselves narrow it. Compare
+  the full prefix against a same-history simple lag baseline; see the
+  [increment audit](../GRAIN_EVENT_AND_VIEW_INCREMENT.md).
 - **Proposition 14 (Interpersonal evocation vs. intrapsychic self-report).**
   In dyadic conversation, evoked partner behavior and contingent dialogue slopes
   explain variance in disjoint-partner peer impressions that self-report scales
@@ -190,6 +193,8 @@ static summaries fail, while clarifying scope boundaries:
   sub-domain timing).** Explicit–implicit divergence and implicit consensus
   correlate only weakly across unrelated attitude domains, while episodic
   narrative arc requires ordered sequence rather than unordered sentence bags.
+
+**Worked test of P13.** In a constructed two-step example the independent lag bounds are [−0.4, 2.0]; requiring both views to share the *same* previous state gives [0.8, 1.2]. This resolves a threshold at zero but not an additional decision at four. The [runnable audit](../GRAIN_EVENT_AND_VIEW_INCREMENT.md) also separates direct comparison, incompatible calibration and no incremental information. For observed dialogue it records the correction, the focal speaker's reply and any later action separately. Four supports and three unresolved readings in seven previously coded examples are a replay of annotations, not seven independently predicted outcomes.
 
 ## S6. Relationship to Manuscript V1 and Mechanism Supplement V1
 

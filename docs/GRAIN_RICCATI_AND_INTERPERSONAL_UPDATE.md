@@ -13,13 +13,15 @@ public multi-corpus benchmarks, see
 > streams. It is **not a personality scale** or clinical diagnostic classifier,
 > and formal soundness does not substitute for construct validation.
 
+For a downstream decision, start with the [same-history comparison](GRAIN_EVENT_AND_VIEW_INCREMENT.md). A narrower interval than today's static band alone does not establish that a joint fit outperforms simple lagged contrasts.
+
 ## 1. API Inventory (`grain_core.riccati_mobius`)
 
 | Exported Symbol | Purpose | Key Guarantee / Output | Boundary / Abstention Rule |
 |---|---|---|---|
 | `ConstrainedRiccatiCell` | Exact normalized $2\times 2$ ZOH Möbius matrix exponential integrating $\frac{dx}{dt}=\epsilon(u)(\alpha(u)+\beta(u)x+\gamma(u)x^2)$ | Strict $[-B, B]$ invariance, `dt = 0` identity preservation, subdivision consistency, and $O(\log T)$ Kogge-Stone parallel scan (`<= 1e-12`) | Piecewise ZOH input assumption; captures fast contractive relaxation unless paired with episodic memory |
 | `DualPathwayRiccatiObserver` | Combines fast continuous Riccati decay across irregular idle delays with content-addressable cosine retrieval | Retains opening-event sensitivity across long empty gaps while supporting `mask_first` causal idle ablation | Episodic mixture weights reflect history similarity, not causal counterfactual token rewrites |
-| `estimate_cross_view_lag1_rates` | Unbiased cross-view Method-of-Moments estimator for $(r_c, r_{p,1}, r_{p,2})$ | Separates shared common rate $r_c$ from view-specific private rates without midpoint shrinkage bias | Requires aligned multi-view trajectories (`y1`, `y2`) with nonzero shared variance (`> 1e-4`) |
+| `estimate_cross_view_lag1_rates` | Legacy clipped lag-one cross-view moment ratios | Returns three rates; the implementation falls back to zero on small denominators | Use independent source trajectories; nonpositive common/private variance estimates do not identify rates. Zero fallback does not establish zero persistence. |
 | `solve_axis_trajectory_lp` | Exact HiGHS linear program over shared state trajectory $c_0, \dots, c_{T-1}$ | Collapses private initial offsets whenever $r_c \ne r_{p,i}$; preserves exact interval feasibility | Returns `None` on infeasible noise tolerances (never forces projection); widens under $r_c = r_{p,1} = r_{p,2}$ |
 | `stack_transition_contrasts` | Builds calibrated $(A, b)$ linear system by stacking $A_t - P_{j,t}$ across steps and readers | Recovers full-rank $c_0$ from multiple window transitions even if individual steps are rank-deficient | Assumes calibrated regime maps `common_maps` and `private_maps` fitted on disjoint source data |
 

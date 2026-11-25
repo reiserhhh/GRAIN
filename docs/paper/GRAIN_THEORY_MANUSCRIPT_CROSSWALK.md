@@ -3,6 +3,8 @@
 Status: internal review companion for the English, Japanese, and Chinese
 version 1 manuscripts. This file is not part of the submitted article.
 
+**Current supplement, 2026-11-25:** In all three V2 versions, S3 distinguishes who filled out a rating from whom or what they rated; S5 revises P13 and supplies the same-history threshold example and the D05 annotation replay. [Evidence and runnable references](GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md). The V1 paper and its evidence locks are unchanged.
+
 ## 1. Canonical files
 
 | Language | File | Editorial role |

@@ -14,11 +14,13 @@ keywords:
   - multilevel-modeling
   - riccati-mobius-flow
   - partial-identification
+  - dialogue-analysis
 abstract: >
   A group-referenced analysis method for constructing multiscale individual
   language-texture objects from natural-language behavior. GRAIN integrates
   condition selection, conditional expression, exact Riccati-Mobius continuous-time
-  paths, frozen liquid trajectory readers, dynamic multi-time set inversion,
+  paths, frozen liquid trajectory readers, addressed dialogue evidence,
+  same-history comparisons of dynamic bounds, multi-time set inversion,
   interaction, reference-relative geometry, uncertainty, and inference-level
   safeguards without claiming a finished scale, clinical diagnosis, or validated
   personality taxonomy.

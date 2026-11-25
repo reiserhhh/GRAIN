@@ -1,5 +1,7 @@
 # GRAIN Publication Plan v1 (REVISED 2026-07-07: JPA primary)
 
+**Manuscript update, 2026-11-25:** [Trilingual editorial crosswalk](docs/paper/GRAIN_THEORY_MANUSCRIPT_CROSSWALK.md) and [evidence provenance](docs/paper/GRAIN_LIQUID_RICCATI_EVIDENCE_PROVENANCE.md) now index the event and two-view tools. Cite the worked example as a conditional mathematical result, and separately label the previously annotated dialogue replay. Neither updates the frozen V1 data or establishes clinical validity.
+
 Created: 2026-07-07. Decision basis: the 2026 SJR top-3% list (user-provided)
 x Waseda read-and-publish agreements x topical fit. REVISION: the user
 correctly noted that Behavior Research Methods' home community is cognitive/
