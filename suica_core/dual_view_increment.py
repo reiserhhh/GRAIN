@@ -46,15 +46,15 @@ def compare(
         or y.shape != z.shape
         or w.shape != y.shape
         or r.shape != (3,)
-        or e.shape not in ((3,), (3,len(y)-1))
+        or e.shape not in ((3,), (3, len(y) - 1))
         or not all(np.isfinite(v).all() for v in (y, z, w, r, e, c_bound, threshold))
         or np.any(w < 0)
         or np.any(e < 0)
         or c_bound <= 0
     ):
         raise ValueError("invalid calibration or unaligned/nonfinite prefix")
-    if e.ndim==1:
-        e = np.broadcast_to(e[:,None],(3,len(y)-1))
+    if e.ndim == 1:
+        e = np.broadcast_to(e[:, None], (3, len(y) - 1))
     mid = (y + z) / 2
     lower, upper = np.maximum(-c_bound, mid - w), np.minimum(c_bound, mid + w)
     out = {
@@ -79,9 +79,9 @@ def compare(
     if np.any(lower > upper):
         return out
     lo, hi = lower[0], upper[0]
-    for t,(left, right) in enumerate(zip(lower[1:], upper[1:])):
+    for t, (left, right) in enumerate(zip(lower[1:], upper[1:])):
         a, b = sorted((r[0] * lo, r[0] * hi))
-        lo, hi = max(left, a - e[0,t]), min(right, b + e[0,t])
+        lo, hi = max(left, a - e[0, t]), min(right, b + e[0, t])
         if lo > hi + 1e-9:
             return dict(out, status="incompatible_common")
         if lo > hi:
@@ -91,10 +91,10 @@ def compare(
     # for c[t]. It discards the dependence of that contrast on the common shock.
     sl, sh = lower[0], upper[0]
     for t in range(len(y) - 1):
-        for series, rate, err in zip((y, z), r[1:], e[1:,t]):
+        for series, rate, err in zip((y, z), r[1:], e[1:, t]):
             g = r[0] - rate
             s = series[t + 1] - rate * series[t]
-            noise = e[0,t] + err
+            noise = e[0, t] + err
             if g == 0:
                 if abs(s) > noise + 1e-9:
                     return dict(out, status="incompatible_private")
@@ -104,8 +104,11 @@ def compare(
         if sl > sh + 1e-9:
             return dict(out, status="incompatible_private")
         a, b = sorted((r[0] * sl, r[0] * sh))
-        next_lo, next_hi = max(lower[t + 1], a - e[0,t]), min(upper[t + 1], b + e[0,t])
-        for series, rate, err in zip((y, z), r[1:], e[1:,t]):
+        next_lo, next_hi = (
+            max(lower[t + 1], a - e[0, t]),
+            min(upper[t + 1], b + e[0, t]),
+        )
+        for series, rate, err in zip((y, z), r[1:], e[1:, t]):
             a, b = sorted((rate * sl, rate * sh))
             s = series[t + 1] - rate * series[t]
             next_lo, next_hi = max(next_lo, a + s - err), min(next_hi, b + s + err)
@@ -113,7 +116,9 @@ def compare(
         if sl > sh + 1e-9:
             return dict(out, status="incompatible_private")
     out["simple_lag"] = [float(sl), float(sh)]
-    full = solve_axis_trajectory_lp(y, z, *r, *e, w, c_bound=c_bound, endpoint_only=True)
+    full = solve_axis_trajectory_lp(
+        y, z, *r, *e, w, c_bound=c_bound, endpoint_only=True
+    )
     if full is None:
         return dict(out, status="incompatible_private")
     left, right = (float(v[-1]) for v in full)
@@ -198,26 +203,46 @@ def assess(
     return direct | compare(a, b, **calibration)
 
 
-def assess_precision(view1, view2, *, se1, se2, rates, structural_budgets, multiplier, **kwargs):
+def assess_precision(
+    view1, view2, *, se1, se2, rates, structural_budgets, multiplier, **kwargs
+):
     """Rerun the SAME nested comparisons with propagated measurement error on both lag endpoints.
 
     Structural budgets are hard assumed bounds. multiplier applies to the combined
     observation-error SD; calibrate on separate paths, not the tested trajectory.
     """
     from .stream_precision import transition_scale
-    n=len(view1)
-    if (len(rates)!=3 or len(structural_budgets)!=3 or np.shape(se1)!=(n,) or np.shape(se2)!=(n,)
-            or not np.isfinite(multiplier) or multiplier<0 or n<2):
+
+    n = len(view1)
+    if (
+        len(rates) != 3
+        or len(structural_budgets) != 3
+        or np.shape(se1) != (n,)
+        or np.shape(se2) != (n,)
+        or not np.isfinite(multiplier)
+        or multiplier < 0
+        or n < 2
+    ):
         raise ValueError("invalid error calibration")
-    widths=np.array([np.full(n-1,structural_budgets[0]),
-                     structural_budgets[1]+multiplier*transition_scale(se1,rates[1],0.),
-                     structural_budgets[2]+multiplier*transition_scale(se2,rates[2],0.)])
-    base=assess(view1,view2,rates=rates,budgets=structural_budgets,**kwargs)
-    wide=assess(view1,view2,rates=rates,budgets=widths,**kwargs)
-    status=("unsupported_calibration" if wide["status"]=="unsupported_calibration"
-            else "infeasible_under_declared_bounds" if wide["full"] is None
-            else "sampling_underpowered" if base["full"] is None else "compatible")
-    return dict(status=status,structural_only=base,with_sampling=wide)
+    widths = np.array(
+        [
+            np.full(n - 1, structural_budgets[0]),
+            structural_budgets[1] + multiplier * transition_scale(se1, rates[1], 0.0),
+            structural_budgets[2] + multiplier * transition_scale(se2, rates[2], 0.0),
+        ]
+    )
+    base = assess(view1, view2, rates=rates, budgets=structural_budgets, **kwargs)
+    wide = assess(view1, view2, rates=rates, budgets=widths, **kwargs)
+    status = (
+        "unsupported_calibration"
+        if wide["status"] == "unsupported_calibration"
+        else "infeasible_under_declared_bounds"
+        if wide["full"] is None
+        else "sampling_underpowered"
+        if base["full"] is None
+        else "compatible"
+    )
+    return {"status": status, "structural_only": base, "with_sampling": wide}
 
 
 def main():

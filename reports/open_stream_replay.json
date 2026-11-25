@@ -36,6 +36,17 @@
     "source_authors": 386,
     "stayer_reweight_abs_mean": 0.014762361703322319
   },
+  "r23_retention": {
+    "baseline": "current retention + log incumbent count; not total posts",
+    "corr_elsewhere_vs_drop": -0.41092388727968227,
+    "corr_elsewhere_vs_future_level": -0.6828589633426183,
+    "first_held_window": 9,
+    "fit_pairs": 129,
+    "held_base": 0.006896898209996162,
+    "held_pairs": 80,
+    "held_plus_elsewhere": 0.006678338501381964,
+    "held_plus_elsewhere_bridge": 0.006480558611144854
+  },
   "real_persona_chat": {
     "gate_cal": {
       "carry": false,
@@ -47,7 +58,7 @@
     "held_cold_mse": 0.23246994534178905,
     "held_readings": 6547,
     "max_scan_error": 3.3306690738754696e-16,
-    "median_abs_endpoint_difference": 0.13626786366628466,
+    "median_abs_endpoint_difference": 0.13583016960606337,
     "median_gap_seconds": 21.268999934196472,
     "missing_clock": 11,
     "ordered_dialogues": 460,

@@ -43,32 +43,60 @@ def inputs(doc):
     return paths
 
 
-def encode_bipolar_origin(z):
-    z=np.asarray(z,float)
-    if z.ndim!=2 or not z.shape[1] or not np.isfinite(z).all():
+def encode_bipolar_origin(z, ref=None):
+    if ref is not None:
+        z = (np.asarray(z, float) - ref["mean"]) / np.asarray(ref["scale"])
+    z = np.asarray(z, float)
+    if z.ndim != 2 or not z.shape[1] or not np.isfinite(z).all():
         raise ValueError("finite (events, axes) required")
-    return softmax(np.column_stack((z,-z,np.zeros(len(z)))),axis=1)
+    return softmax(np.column_stack((z, -z, np.zeros(len(z)))), axis=1)
 
 
 def encode(x, ref):
     z = (x - ref["mean"]) / np.array(ref["scale"])
     # The fixed zero logit preserves the original signed origin (unlike ordinary softmax).
-    p = (encode_bipolar_origin(z) if ref.get("encoding")=="bipolar_origin"
-         else softmax(np.column_stack([z, np.zeros(len(z))]), axis=1))
+    p = (
+        encode_bipolar_origin(z)
+        if ref.get("encoding") == "bipolar_origin"
+        else softmax(np.column_stack([z, np.zeros(len(z))]), axis=1)
+    )
     if p.min() < np.finfo(np.float32).tiny:
         raise ValueError("outside float32 clock-input support; no silent clipping")
     return p
 
 
+def decode_bipolar_origin(p, ref):
+    """Invert symmetric (2K+1)-simplex probabilities back to original signed scale."""
+    p_arr = np.asarray(p, dtype=float)
+    k = (p_arr.shape[1] - 1) // 2
+    if p_arr.ndim != 2 or 2 * k + 1 != p_arr.shape[1]:
+        raise ValueError("expected (N, 2K+1) bipolar simplex probabilities")
+    z = 0.5 * np.log(
+        np.maximum(p_arr[:, :k], 1e-300) / np.maximum(p_arr[:, k : 2 * k], 1e-300)
+    )
+    return z * np.asarray(ref["scale"], dtype=float) + np.asarray(
+        ref["mean"], dtype=float
+    )
+
+
+def bipolar_polarization(p):
+    """Signed opposite-channel difference p_+ - p_- (strictly odd under z -> -z)."""
+    p_arr = np.asarray(p, dtype=float)
+    k = (p_arr.shape[1] - 1) // 2
+    if p_arr.ndim != 2 or 2 * k + 1 != p_arr.shape[1]:
+        raise ValueError("expected (N, 2K+1) bipolar simplex probabilities")
+    return p_arr[:, :k] - p_arr[:, k : 2 * k]
+
+
 def fit(doc, transport, *, encoding="signed_origin"):
-    if encoding not in ("signed_origin","bipolar_origin"):
+    if encoding not in ("signed_origin", "bipolar_origin"):
         raise ValueError("unknown encoding")
     paths = inputs(doc)
     all_x = np.concatenate([x for _, x in paths.values()])
     scale = all_x.std(0)
     ref = {
         "version": VERSION,
-        **({"encoding":encoding} if encoding!="signed_origin" else {}),
+        **({"encoding": encoding} if encoding != "signed_origin" else {}),
         "axes": doc["axes"],
         "coordinate_system": doc["coordinate_system"],
         "worker_digest": li.digest(li.WORKER.read_text()),
