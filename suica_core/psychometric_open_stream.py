@@ -216,6 +216,12 @@ def calibrate_reader_misclassification(
             status = "reader_unidentified"
             b_point_unclipped = None
             b_point = None
+        elif p_hi < f_lo or p_lo > s_hi:
+            # A clipped inverse at 0 or 1 is not a feasible solution to this box.
+            status = "reader_incompatible"
+            bounds = [0.0, 1.0]
+            b_point_unclipped = None
+            b_point = None
         else:
             status = "identified"
             b_point_unclipped = (p_mid - f_pt) / j_pt
@@ -318,7 +324,9 @@ def calibrate_reader_misclassification(
         else:
             dif_decomp = {
                 "observed_contrast": float(r1["observed_mid"] - r0["observed_mid"]),
-                "status": "reader_unidentified",
+                "status": "reader_unidentified"
+                if "reader_unidentified" in (r1["status"], r0["status"])
+                else "reader_incompatible",
             }
         contrast_out = {
             "pair": [c1, c0],

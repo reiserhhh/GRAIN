@@ -65,6 +65,23 @@ def test_p1_reader_misclassification_dif_and_unidentified_refusal() -> None:
     assert unid["contrast_calibration"]["dif_decomposition"]["status"] == "reader_unidentified"
 
 
+def test_reader_rejects_rates_outside_the_calibration_envelope():
+    params = {"sensitivity": [0.6, 0.8], "fpr": [0.2, 0.3]}
+    result = pos.calibrate_reader_misclassification(
+        {"high": 0.9, "low": 0.1, "edge": [0.7, 0.9]},
+        {k: params for k in ("high", "low", "edge")},
+        contrast=["high", "edge"],
+        weights={"high": 1.0},
+    )
+    for key in ("high", "low"):
+        row = result["conditions"][key]
+        assert row["status"] == "reader_incompatible"
+        assert row["corrected_bounds"] == [0.0, 1.0]
+        assert row["corrected_point_clipped"] is None
+    assert result["conditions"]["edge"]["status"] == "identified"
+    assert result["contrast_calibration"]["dif_decomposition"]["status"] == "reader_incompatible"
+
+
 def test_p2_bivariate_caps_kelley_eb_and_rouder_deattenuation() -> None:
     rng = np.random.default_rng(7)
     n_u = 80
