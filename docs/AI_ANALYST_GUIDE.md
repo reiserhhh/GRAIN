@@ -9,6 +9,13 @@ design; every rule below traces to a caught failure.
 
 For a supplied behavioral proposition, use the [event and opportunity protocol](GRAIN_EVENT_AND_VIEW_INCREMENT.md). Reader suggestions and liquid trajectories are not adjudications. Give every judgment a speaker, evidence turn and cutoff; retain later verification separately. Never publish verbatim event JSON from confidential conversations.
 
+For independent feeds or mixed text/action material, use the [current toolchain](GRAIN_CURRENT_TOOLCHAIN.md)
+and run the [evidence panel](GRAIN_EVIDENCE_PANEL.md) before interpreting the result.
+Keep explicit scope, actor linkage, usable coordinates, and logged behavioral
+opportunities apart. An incompatible, unsupported or withheld estimate does not
+authorize the interpreter to supply a point. Preserve the uncalibrated
+[response profile](GRAIN_RESPONSE_PROFILE.md) beside any independently calibrated correction.
+
 ## 1. Role architecture — no role may verify its own output
 
 | Role | What it does | What it must NEVER do | Implementation |

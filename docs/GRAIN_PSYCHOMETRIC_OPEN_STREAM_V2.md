@@ -8,7 +8,15 @@ per-opportunity bounds are [p*l, p*h + unknown_reply_fraction]. Confirmed silenc
 unconfirmed exposure have different meanings. Three-way reader DIF on reply contrasts
 is not silently reused for contrasts that include differential participation.
 
-This module operationalizes the formal psychometric bridge between **open-stream computational operators (`G-1`–`G-6`)** and **conversational conditional response profiles (`D88`/`D89`)** inside a single deterministic, zero-LLM scoring layer ($Z \to A \to M$, `R-SCORE`).
+The reply-level inverse requires compatibility between the observed positive-rate
+interval and the reader calibration envelope. When they are disjoint, the tool
+returns `reader_incompatible`, an uninformative bound, and no corrected point or
+point-contrast decomposition. This is different from `reader_unidentified`, in
+which the reader's sensitivity and false-positive intervals do not establish
+positive discrimination. In neither case does clipping a point to zero or one
+make it an observation.
+
+This module links [open-stream operators](GRAIN_OPEN_STREAM_OPERATORS_G1_G6.md) and **conditional response profiles (`D88`/`D89`)** in a deterministic scoring layer. Use the [evidence panel](GRAIN_EVIDENCE_PANEL.md) first when the work is joining logs or checking collection coverage; this module assumes that the relevant units and denominators are already defined.
 
 ---
 
@@ -53,5 +61,5 @@ python -m grain_core.psychometric_open_stream examples/psychometric_open_stream_
 ## 3. Interpretive Guardrails (`G9` / `G12` / `G14` / `G16`)
 
 1. All outputs belong to **Layer $M$** (calibrated behavioral/psychometric quantities relative to declared reference populations and frozen readers), **never** automatic personality traits or clinical diagnoses ($\Theta$).
-2. Do not suppress `underpowered_for_individual_reporting`, `no_latent_contrast_variance`, or `reader_unidentified` flags; withholding point scores under low reliability (`< min_reliability`) follows V1 Proposition 8.
+2. Do not suppress `underpowered_for_individual_reporting`, `no_latent_contrast_variance`, `reader_unidentified`, or `reader_incompatible`. A wide bound or withheld point is a result, not a missing value to fill.
 3. Only compare levels across registers when `earned_comparison_license == "L3_scalar_level_comparable"` (`G12`).

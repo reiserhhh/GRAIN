@@ -5,6 +5,12 @@ The original scoring path remains available; do not switch all six options on
 by default. Each option answers a different question. All imports below use
 `grain_core`. Lower losses are better.
 
+For a new corpus start by declaring event IDs, source scope and coverage in the
+[evidence panel](GRAIN_EVIDENCE_PANEL.md). In particular, three G-3 states only
+partition an eligible, observed feed. The panel leaves absence unresolved when
+the target was not fully recorded. For calibrated named behavior use the
+[response profile and psychometric layer](GRAIN_PSYCHOMETRIC_OPEN_STREAM_V2.md).
+
 | Question | Operator | What to supply and what to read |
 | --- | --- | --- |
 | G-1: Is apparent disagreement just sampling variation? | `stream_precision`, `liquid_reference_error`, `liquid_common_range`, `dual_view_increment.assess_precision` | Supply positive counts and **calibrated** event variances. For nested pools supply error cross-covariance as well. Precision-weighting the source population and shrinking each unit are different estimands. In a common-range chart `center` is the Euclidean feasible-ball center; `precision_weighted_point` is a separate summary. `event_sigma` is an isotropic event SD in each canonical block, not raw-text SD. A fixed multiplier is a sensitivity check; use `path_quantile` on exchangeable disjoint calibration paths for a pathwise coverage claim. |

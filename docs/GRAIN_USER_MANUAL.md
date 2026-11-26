@@ -2,6 +2,8 @@
 
 English · [简体中文](GRAIN_USER_MANUAL_ZH.md) · [日本語](GRAIN_USER_MANUAL_JA.md)
 
+[Current toolchain, input contracts and offline checks](GRAIN_CURRENT_TOOLCHAIN.md)
+
 To distinguish habitual behavior from response under the same opportunities, see the [behavior-profile CLI, worked example and dialogue replay](GRAIN_RESPONSE_PROFILE.md).
 
 For changing membership, irregular arrivals or overlapping readers, see [Open-stream operators: comparison and worked example](GRAIN_OPEN_STREAM_OPERATORS_G1_G6.md).
@@ -14,6 +16,8 @@ A writer proposes alternatives frequently. Does that mean they revise a plan whe
 |---|---|---|
 | Place one new writer among peers | One compatible vector per independent author | Marginal percentiles and joint distance |
 | Study preference versus response | Self-selected venue and expression under each available condition | Choice composition alongside conditional expression |
+| Join independent sources or follow an open feed | Source-scoped event and actor IDs, coverage and event records | Participation flow, destination support and observed cohort changes |
+| Compare what people actually chose | Logged eligibility and outcomes for the same people in matched conditions | Paired changes with outcome and coordinate coverage shown separately |
 | Describe movement in an episode | Ordered events with intact episode boundaries | Node path, changes, order control |
 | Check a proposition about an interaction | Addressed event and focal person's response by a cutoff | Source address, support, counterevidence or incomplete evidence |
 | Combine two measurements | Two aligned views and independent calibration | A set of compatible common states and an incremental comparison |
@@ -114,6 +118,19 @@ python -m grain_core.event_response examples/event_response.json
 The partner corrects red to blue; the focal person's next turn uses blue. The address of the reply supports uptake at that cutoff. Future action is a different record. Separate support, refutation, inconclusive reply and no observed reply. An observed stratum with weight 0.75 and all support leaves the target rate in [0.75,1] if the rest was unobserved. This is an identification range, not a sampling interval. Explicit English patterns or independently precoded evidence are required for this reader; lexical similarity alone does not cast a vote.
 
 For dyadic trajectories, align speaker and joint paths by the same slice fingerprints. Joint minus own-only removes both partner words and opportunities; to isolate sensitivity to prior inputs compare own and partner omissions **on the joint clock**. Keep the direction of a rating (who understood whom), not just the participants' names.
+
+### Use an open feed, independent writing or a logged task
+
+With the same repository root and environment, compare the three channels in one run:
+
+```sh
+python -m examples.evidence_panel examples/evidence_stream_demo.jsonl /tmp/grain-observed.json \
+  --queries examples/evidence_stream_queries.json
+```
+
+Read `diagnostics` first, then `forum_flow`, `writing_shift` and `paired_choice`. A missing record is not an observed refusal. A text outside a frozen vocabulary still establishes participation but yields no coordinate. The matched-choice example has one unknown outcome and returns a change in `[0.5, 1.0]` rather than forcing a single result. For independent corpora, verify identities explicitly and avoid joining identical local IDs. [Evidence input and extension interface](GRAIN_EVIDENCE_PANEL.md).
+
+For a named behavioral item, use `response_profile`. Apply `measure_calibrated` only with independently measured reader properties. It keeps the uncorrected card and adds the correction. Among-reply precision does not turn a verified nonreply into a reader false negative. See the [psychometric calibration and diagnostics](GRAIN_PSYCHOMETRIC_OPEN_STREAM_V2.md).
 
 ## 9. Separate common structure from convenient agreement
 

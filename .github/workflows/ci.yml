@@ -35,6 +35,17 @@ jobs:
       - run: python -m pip install -r requirements-lock-main.txt
       - run: python -m compileall -q grain_core grain_sim suica_core suica_sim scripts tests
       - run: python scripts/audit_grain_naming.py --strict
+      - name: Check the integrated GRAIN toolchain
+        run: >-
+          python -m pytest -q -p no:cacheprovider
+          tests/test_evidence_panel.py tests/test_evidence_stream.py
+          tests/test_open_stream_contracts.py tests/test_open_stream_upgrades_g1_g6.py
+          tests/test_response_profile.py tests/test_reader_denominator.py
+          tests/test_psychometric_open_stream.py tests/test_pipeline_performance_contracts.py
+          tests/test_liquid_instrument.py tests/test_handbook_study.py
+          tests/test_riccati_mobius.py tests/test_liquid_common_range.py
+          tests/test_liquid_reference_error.py tests/test_liquid_axis_series.py
+          tests/test_event_and_view_increment.py tests/test_trilingual_liquid_riccati_supplement.py
       - run: python -m pytest -q -p no:cacheprovider
       # LOCKBOX RATCHET (2026-07-17 CI policy correction): the release
       # manifest describes the SEALED RELEASE TREE, not evolving main HEAD —
