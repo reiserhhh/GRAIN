@@ -13,6 +13,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 import numpy as np
+
 from grain_research.dialogue_claim_ledger import address
 
 from .liquid_instrument import digest
@@ -287,6 +288,11 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("input", type=Path)
     p.add_argument("--liquid", type=Path)
+    p.add_argument(
+        "--response-profile",
+        action="store_true",
+        help="also estimate natural and common-opportunity behavior profiles",
+    )
     args = p.parse_args()
     data = json.loads(args.input.read_text())
     liquid = json.loads(args.liquid.read_text()) if args.liquid else None
@@ -300,9 +306,16 @@ def main():
         for e, p in zip(events, data["probes"])
         if "later_action" in p
     ]
+    extra = {}
+    if args.response_profile:
+        from .response_profile import correction_profiles
+
+        extra["response_profile"] = correction_profiles(
+            events, data["weights"], data.get("contrast")
+        )
     print(
         json.dumps(
-            {"events": events, "cards": cards, "later_checks": checks},
+            {"events": events, "cards": cards, "later_checks": checks, **extra},
             indent=2,
             ensure_ascii=False,
             allow_nan=False,

@@ -1,0 +1,81 @@
+{
+  "task": "bundle",
+  "sections": {
+    "reader_dif": {
+      "task": "reader_calibration",
+      "observed": {
+        "cue": [0.57, 0.57],
+        "other": [0.22, 0.22]
+      },
+      "reader_calibration": {
+        "cue": {"tp": 99, "fp": 42, "tn": 115, "fn": 113},
+        "other": {"tp": 404, "fp": 459, "tn": 2500, "fn": 423}
+      },
+      "weights": {"cue": 0.5, "other": 0.5},
+      "contrast": ["cue", "other"]
+    },
+    "caps_eb": {
+      "task": "caps_reliability",
+      "event_var_c1": 0.24,
+      "event_var_c0": 0.20,
+      "min_reliability": 0.3,
+      "n_perm": 200,
+      "records": [
+        {"focal": "u1", "mean_1": 0.72, "n_1": 30, "mean_0": 0.21, "n_0": 28},
+        {"focal": "u2", "mean_1": 0.28, "n_1": 24, "mean_0": 0.65, "n_0": 26},
+        {"focal": "u3", "mean_1": 0.55, "n_1": 2, "mean_0": 0.52, "n_0": 2},
+        {"focal": "u4", "mean_1": 0.80, "n_1": 40, "mean_0": 0.15, "n_0": 35}
+      ],
+      "records_b": [
+        {"focal": "u1", "mean_1": 0.69, "n_1": 25, "mean_0": 0.23, "n_0": 24},
+        {"focal": "u2", "mean_1": 0.30, "n_1": 22, "mean_0": 0.61, "n_0": 23},
+        {"focal": "u3", "mean_1": 0.50, "n_1": 3, "mean_0": 0.48, "n_0": 3},
+        {"focal": "u4", "mean_1": 0.77, "n_1": 32, "mean_0": 0.19, "n_0": 30}
+      ]
+    },
+    "ct_lsto": {
+      "task": "ct_lsto",
+      "timestamps": [0.0, 0.2, 20.0, 20.1, 0.0, 0.3, 25.0, 25.2],
+      "author_ids": ["a", "a", "a", "a", "b", "b", "b", "b"],
+      "condition_ids": ["c1", "c1", "c1", "c1", "c1", "c1", "c1", "c1"],
+      "values": [0.85, 0.82, 0.45, 0.44, -0.75, -0.70, -0.30, -0.32]
+    },
+    "irtree": {
+      "task": "irtree_selection_expression",
+      "window_edges": [0.0, 1.0, 2.0, 3.0, 4.0],
+      "min_active_windows": 4,
+      "n_perm": 200,
+      "timestamps": [
+        0.2, 0.4, 1.2, 1.4, 2.2, 2.4, 3.2, 3.4,
+        0.2, 0.4, 1.2, 1.4, 2.2, 2.4, 3.2, 3.4,
+        0.2, 0.4, 1.2, 1.4, 2.2, 2.4, 3.2, 3.4
+      ],
+      "author_ids": [
+        "u1", "u1", "u1", "u1", "u1", "u1", "u1", "u1",
+        "u2", "u2", "u2", "u2", "u2", "u2", "u2", "u2",
+        "u3", "u3", "u3", "u3", "u3", "u3", "u3", "u3"
+      ],
+      "condition_ids": [
+        "cA", "cB", "cA", "cB", "cA", "cB", "cA", "cB",
+        "cA", "cA", "cB", "cB", "cA", "cA", "cB", "cB",
+        "cB", "cB", "cB", "cB", "cA", "cB", "cA", "cB"
+      ],
+      "values": [
+        0.8, 0.1, 0.7, 0.2, 0.8, 0.1, 0.7, 0.2,
+        0.2, 0.3, 0.8, 0.9, 0.2, 0.3, 0.8, 0.9,
+        -0.5, -0.4, -0.5, -0.4, 0.5, -0.4, 0.4, -0.5
+      ]
+    },
+    "hierarchical_mix": {
+      "task": "hierarchical_mix",
+      "prev_cells": [
+        {"focal": "u1", "condition": "c1", "count": 1, "value": 0.2},
+        {"focal": "u1", "condition": "c2", "count": 9, "value": 0.8}
+      ],
+      "cur_cells": [
+        {"focal": "u1", "condition": "c1", "count": 9, "value": 0.3},
+        {"focal": "u1", "condition": "c2", "count": 1, "value": 0.9}
+      ]
+    }
+  }
+}
