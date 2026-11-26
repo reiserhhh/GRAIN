@@ -9,6 +9,8 @@
 
 [新しいツール：訂正後の応答と二視点分解の比較（日本語手引き）](docs/GRAIN_EVENT_AND_VIEW_INCREMENT_JA.md)。付属の二例はオフラインで実行できます。従来の因子得点と参照集団は変更していません。
 
+[観測・分析パネル v1](docs/GRAIN_EVIDENCE_PANEL.md)：テキストの座標、実際の行動ログ、観測範囲を統一形式で取り込み、参加・個人内変化・集団構成を分けて記録します。オフライン実行例と入力仕様を付属しています。
+
 オプションツール：[元の GRAIN ノード地図で液態経路を追跡する（利用マニュアル）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精密流と動的軌跡境界（実務マニュアル）](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 更新ノート](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [理論補遺 V2（日本語）](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_JA_V2.md)。
 
 GRAIN はテキストに基づく測定研究のための基盤分析法である。個人の自然言語

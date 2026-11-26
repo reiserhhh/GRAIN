@@ -9,6 +9,8 @@
 
 [新增工具：对话纠正证据与双视角增量判定（中文手册）](docs/GRAIN_EVENT_AND_VIEW_INCREMENT_ZH.md)。两个示例可离线运行，原生因子计分和参考库不变。
 
+[观测与分析面板 v1](docs/GRAIN_EVIDENCE_PANEL.md)：接入自由选题、独立写作、对话和实际任务记录，分别分析参与、换场、群体构成和已知机会下的行为。附离线示例与输入协议。
+
 可选工具：[在原生 GRAIN 节点上追踪液态路径（使用手册）](docs/GRAIN_LIQUID_TOOL.md) · [Riccati-Möbius 精确流与动态轨迹边界（运行手册）](docs/GRAIN_RICCATI_AND_INTERPERSONAL_UPDATE.md) · [2026-11 更新说明](docs/RELEASE_NOTES_202611_LIQUID_RICCATI.md) · [理论补编 V2（中文）](docs/paper/GRAIN_LIQUID_RICCATI_SUPPLEMENT_ZH_V2.md)。
 
 GRAIN 是面向文本测量研究的基础分析法。它把一个人的自然语言事件看成在

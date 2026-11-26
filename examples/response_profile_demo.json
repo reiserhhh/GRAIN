@@ -1,0 +1,23 @@
+{
+  "reference": {
+    "behavior": "gives a concrete example",
+    "reader": "worked-example annotations v1",
+    "condition_rule": "partner's preceding invitation: open or specific",
+    "unit": "one addressed invitation with a predefined reply window",
+    "frame": "presented_opportunities",
+    "weights": {"open": 0.5, "specific": 0.5},
+    "contrast": ["specific", "open"]
+  },
+  "events": [
+    {"focal":"A","dialogue":"d1","id":"1","condition":"open","status":"refute","response_id":"2"},
+    {"focal":"A","dialogue":"d2","id":"1","condition":"open","status":"no_reply"},
+    {"focal":"A","dialogue":"d3","id":"1","condition":"open","status":"refute","response_id":"2"},
+    {"focal":"A","dialogue":"d4","id":"1","condition":"specific","status":"support","response_id":"2"},
+    {"focal":"B","dialogue":"d5","id":"1","condition":"open","status":"support","response_id":"2"},
+    {"focal":"B","dialogue":"d6","id":"1","condition":"specific","status":"refute","response_id":"2"},
+    {"focal":"B","dialogue":"d7","id":"1","condition":"specific","status":"refute","response_id":"2"},
+    {"focal":"B","dialogue":"d8","id":"1","condition":"specific","status":"refute","response_id":"2"}
+  ],
+  "sampling_cluster": "dialogue",
+  "comparisons": [["A","B"]]
+}

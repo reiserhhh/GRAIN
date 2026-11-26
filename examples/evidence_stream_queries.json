@@ -1,0 +1,5 @@
+[
+  {"id":"forum_flow", "op":"participation_flow", "before":"first", "after":"second", "target":"forum"},
+  {"id":"writing_shift", "op":"context_shift", "before":"first", "after":"second", "actor":"u", "origin":"forum", "destination":"essay", "channel":"writing"},
+  {"id":"paired_choice", "op":"paired_opportunities", "before":"first", "after":"second", "origin":"menu", "destination":"menu", "measure":"choose_reference", "channel":"action"}
+]

@@ -1,0 +1,230 @@
+{
+  "casino": {
+    "annotated_dialogues": 396,
+    "dialogues": 1030,
+    "equal_role_mean_contrast": 0.4498385794995965,
+    "exactly_aligned": 393,
+    "need_word_vs_annotation": {
+      "cue": {
+        "false_positive_rate": 0.267515923566879,
+        "fn": 113,
+        "fp": 42,
+        "sensitivity": 0.4669811320754717,
+        "tn": 115,
+        "tp": 99
+      },
+      "other": {
+        "false_positive_rate": 0.15511997296383914,
+        "fn": 423,
+        "fp": 459,
+        "sensitivity": 0.48851269649334944,
+        "tn": 2500,
+        "tp": 404
+      }
+    },
+    "profile": {
+      "conditions": {
+        "cue": {
+          "behavior_given_reply": [
+            0.5745257452574526,
+            0.5745257452574526
+          ],
+          "confirmed_replies": 369,
+          "counts": {
+            "refute": 157,
+            "support": 212
+          },
+          "given_reply_denominator_may_be_zero": false,
+          "n": 369,
+          "observed_share": 0.0888086642599278,
+          "reading_bounds": [
+            0.5745257452574526,
+            0.5745257452574526
+          ],
+          "reference_weight": 0.5,
+          "reply_rate": null
+        },
+        "other": {
+          "behavior_given_reply": [
+            0.2184363444268357,
+            0.2184363444268357
+          ],
+          "confirmed_replies": 3786,
+          "counts": {
+            "refute": 2959,
+            "support": 827
+          },
+          "given_reply_denominator_may_be_zero": false,
+          "n": 3786,
+          "observed_share": 0.9111913357400722,
+          "reading_bounds": [
+            0.2184363444268357,
+            0.2184363444268357
+          ],
+          "reference_weight": 0.5,
+          "reply_rate": null
+        }
+      },
+      "denominator": "among_replies",
+      "focal": "all observed replies",
+      "mix_gap_natural_minus_standardized": [
+        -0.14642087637042334,
+        -0.14642087637042334
+      ],
+      "n": 4155,
+      "natural": [
+        0.2500601684717208,
+        0.2500601684717208
+      ],
+      "response_contrast": [
+        0.3560894008306169,
+        0.3560894008306169
+      ],
+      "standardized": [
+        0.39648104484214414,
+        0.39648104484214414
+      ],
+      "unconfirmed_excluded": 0,
+      "unsupported_weight": 0.0
+    },
+    "question_mark_prompts_only": {
+      "conditions": {
+        "cue": {
+          "behavior_given_reply": [
+            0.5730659025787965,
+            0.5730659025787965
+          ],
+          "confirmed_replies": 349,
+          "counts": {
+            "refute": 149,
+            "support": 200
+          },
+          "given_reply_denominator_may_be_zero": false,
+          "n": 349,
+          "observed_share": 0.22559793148028442,
+          "reading_bounds": [
+            0.5730659025787965,
+            0.5730659025787965
+          ],
+          "reference_weight": 0.5,
+          "reply_rate": null
+        },
+        "other": {
+          "behavior_given_reply": [
+            0.21285475792988315,
+            0.21285475792988315
+          ],
+          "confirmed_replies": 1198,
+          "counts": {
+            "refute": 943,
+            "support": 255
+          },
+          "given_reply_denominator_may_be_zero": false,
+          "n": 1198,
+          "observed_share": 0.7744020685197156,
+          "reading_bounds": [
+            0.21285475792988315,
+            0.21285475792988315
+          ],
+          "reference_weight": 0.5,
+          "reply_rate": null
+        }
+      },
+      "denominator": "among_replies",
+      "focal": "all observed replies",
+      "mix_gap_natural_minus_standardized": [
+        -0.09884268319551631,
+        -0.09884268319551631
+      ],
+      "n": 1547,
+      "natural": [
+        0.29411764705882354,
+        0.29411764705882354
+      ],
+      "response_contrast": [
+        0.36021114464891335,
+        0.36021114464891335
+      ],
+      "standardized": [
+        0.39296033025433985,
+        0.39296033025433985
+      ],
+      "unconfirmed_excluded": 0,
+      "unsupported_weight": 0.0
+    },
+    "reference": {
+      "behavior": "focal reply annotated self-need or other-need",
+      "condition_rule": "preceding partner utterance annotated elicit-pref",
+      "contrast": [
+        "cue",
+        "other"
+      ],
+      "frame": "observed_replies",
+      "reader": "CaSiNo strategy annotations",
+      "unit": "next adjacent other-speaker utterance",
+      "weights": {
+        "cue": 0.5,
+        "other": 0.5
+      }
+    },
+    "within_dialogue_role_pairs": 295
+  },
+  "rpc": {
+    "dyads": 6839,
+    "eligible_people": 65,
+    "held_partner_contrast_check": {
+      "marginal_baseline_inputs": "panel A only; leave focal out of coefficient fit; linear + squared natural rate + cue share",
+      "own_panel_A_contrast_mse": 0.004461061512391314,
+      "people_lower_error_using_own": 36,
+      "usual_rate_and_cue_mix_mse": 0.005503130377989468
+    },
+    "inclusion": "at least 2 distinct partners and 5 readings per condition in each panel",
+    "partner_precision": [
+      {
+        "estimable": 54,
+        "median_contrast_se": 0.03713480683081598
+      },
+      {
+        "estimable": 60,
+        "median_contrast_se": 0.03091552242760319
+      }
+    ],
+    "reference": {
+      "behavior": "question mark in focal reply",
+      "condition_rule": "question mark in immediately preceding partner message",
+      "contrast": [
+        "cue",
+        "other"
+      ],
+      "frame": "observed_replies",
+      "reader": "unicode-question-mark-v1",
+      "unit": "next adjacent other-speaker utterance",
+      "weights": {
+        "cue": 0.5,
+        "other": 0.5
+      }
+    },
+    "reply_counts": [
+      46540,
+      52964
+    ],
+    "same_person_across_disjoint_partners": {
+      "cue_minus_other": {
+        "pearson_r": 0.7144168794511127,
+        "shuffled_person_median_r": -0.013778673095326679
+      },
+      "natural": {
+        "pearson_r": 0.8582591931060922,
+        "shuffled_person_median_r": -0.006012454682838703
+      },
+      "standardized": {
+        "pearson_r": 0.7812107669527941,
+        "shuffled_person_median_r": -0.009787479727771262
+      },
+      "within_dialogue_excess_contrast": {
+        "pearson_r": 0.6971007264885758,
+        "shuffled_person_median_r": 0.0010762192479679342
+      }
+    }
+  }
+}

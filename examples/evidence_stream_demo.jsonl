@@ -1,0 +1,10 @@
+{"schema_version":"grain.evidence-stream.v1","channels":{"writing":["coordinate"],"action":["clicked_left"]}}
+{"type":"event","id":"e1","window":"first","actor":"u","context":"forum","channel":"writing","values":[0.2]}
+{"type":"event","id":"e2","window":"first","actor":"u","context":"essay","channel":"writing","values":[0.6]}
+{"type":"event","id":"e3","window":"second","actor":"u","context":"essay","channel":"writing","values":[0.7]}
+{"type":"coverage","window":"second","context":"forum","complete":true}
+{"type":"event","id":"a1","window":"first","actor":"u","context":"menu","channel":"action","values":[0]}
+{"type":"event","id":"a2","window":"second","actor":"u","context":"menu","channel":"action","values":[1]}
+{"type":"opportunity","id":"a1","window":"first","actor":"u","context":"menu","measure":"choose_reference","eligible":true,"outcome":false}
+{"type":"opportunity","id":"a2","window":"second","actor":"u","context":"menu","measure":"choose_reference","eligible":true,"outcome":true}
+{"type":"opportunity","id":"a3","window":"second","actor":"u","context":"menu","measure":"choose_reference","eligible":true,"outcome":null}
