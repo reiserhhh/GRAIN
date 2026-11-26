@@ -51,6 +51,7 @@ __pycache__/
 *.pickle
 *.joblib
 *.jsonl
+!/examples/evidence_stream_demo.jsonl
 *.gguf
 *.safetensors
 *.bin

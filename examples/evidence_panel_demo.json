@@ -1,0 +1,29 @@
+{
+  "schema_version": "grain.evidence-panel.v1",
+  "channels": {"writing": ["abstract_coordinate"], "task": ["selected_object_value"]},
+  "events": [
+    {"id": "t1", "window": "first", "actor": "a", "context": "forum", "channel": "writing", "values": [0.2]},
+    {"id": "t2", "window": "first", "actor": "b", "context": "forum", "channel": "writing", "values": [0.8]},
+    {"id": "t3", "window": "first", "actor": "a", "context": "essay", "channel": "writing", "values": [0.4]},
+    {"id": "t4", "window": "second", "actor": "a", "context": "essay", "channel": "writing"},
+    {"id": "t5", "window": "second", "actor": "b", "context": "forum", "channel": "writing", "values": [0.7]},
+    {"id": "t6", "window": "second", "actor": "c", "context": "forum", "channel": "writing", "values": [0.3]},
+    {"id": "a1", "window": "second", "actor": "a", "context": "menu", "channel": "task", "values": [3.0]}
+  ],
+  "coverage": [
+    {"window": "first", "complete": true},
+    {"window": "second", "context": "forum", "complete": true}
+  ],
+  "opportunities": [
+    {"id": "o1", "window": "second", "actor": "a", "context": "menu", "measure": "choose_reference", "eligible": true, "outcome": true},
+    {"id": "o2", "window": "second", "actor": "b", "context": "menu", "measure": "choose_reference", "eligible": true, "outcome": false},
+    {"id": "o3", "window": "second", "actor": "b", "context": "menu", "measure": "choose_reference", "eligible": true, "outcome": null},
+    {"id": "o4", "window": "second", "actor": "c", "context": "menu", "measure": "choose_reference", "eligible": null, "outcome": null}
+  ],
+  "queries": [
+    {"id": "where_a_went", "op": "participation", "window": "second", "actor": "a", "target": "forum", "history": ["first"]},
+    {"id": "forum_change", "op": "compare", "before": "first", "after": "second", "context": "forum", "channel": "writing"},
+    {"id": "uncaptured_move", "op": "context_shift", "before": "first", "after": "second", "actor": "a", "origin": "forum", "destination": "essay", "channel": "writing"},
+    {"id": "choice_not_imputed", "op": "opportunity_card", "window": "second", "context": "menu", "measure": "choose_reference"}
+  ]
+}

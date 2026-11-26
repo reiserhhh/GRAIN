@@ -2,6 +2,10 @@
 
 English · [简体中文](GRAIN_USER_MANUAL_ZH.md) · [日本語](GRAIN_USER_MANUAL_JA.md)
 
+To distinguish habitual behavior from response under the same opportunities, see the [behavior-profile CLI, worked example and dialogue replay](GRAIN_RESPONSE_PROFILE.md).
+
+For changing membership, irregular arrivals or overlapping readers, see [Open-stream operators: comparison and worked example](GRAIN_OPEN_STREAM_OPERATORS_G1_G6.md).
+
 A writer proposes alternatives frequently. Does that mean they revise a plan when its premise changes? These are different studies. Frequency needs an opportunity denominator; revision needs a speaker, a correction, a response and a cutoff. GRAIN lets you keep the same material and ask both questions without treating one answer as the other. This book explains how to build a reference from scratch, apply it to new people, and choose among the static, path, interaction and inverse tools. It does not assume access to the original project's research data.
 
 ## 1. Choose a deliverable before choosing a model

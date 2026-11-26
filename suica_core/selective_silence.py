@@ -63,8 +63,8 @@ def compute_selective_silence_panel(
     ]
     win_cond_total: list[dict[str, int]] = [defaultdict(int) for _ in range(n_windows)]
     win_cond_author_events: list[
-        dict[tuple[str, str], list[tuple[float, np.ndarray]]]
-    ] = [defaultdict(list) for _ in range(n_windows)]
+        dict[str, dict[str, list[tuple[float, np.ndarray]]]]
+    ] = [defaultdict(lambda: defaultdict(list)) for _ in range(n_windows)]
     for i in range(len(ts)):
         w = int(win_idx[i])
         if 0 <= w < n_windows:
@@ -72,12 +72,13 @@ def compute_selective_silence_panel(
             co = str(condition_ids[i])
             win_author_total[w][au] += 1
             win_cond_total[w][co] += 1
-            win_cond_author_events[w][(co, au)].append((float(ts[i]), c_arr[i]))
+            win_cond_author_events[w][co][au].append((float(ts[i]), c_arr[i]))
 
     rows: list[dict[str, Any]] = []
     for w in range(1, n_windows):
-        known_conditions.update(co for co, _ in win_cond_author_events[w - 1])
-        known_conditions.update(co for co, _ in win_cond_author_events[w])
+        current = win_cond_author_events[w]
+        known_conditions.update(win_cond_author_events[w - 1])
+        known_conditions.update(current)
         all_conditions = sorted(known_conditions)
         lb_start = max(0, w - base_lookback_windows)
         lb_wins = range(lb_start, w)
@@ -92,55 +93,50 @@ def compute_selective_silence_panel(
 
         # Bridge authors active in >= 2 conditions during lookback
         lb_author_conds: dict[str, set[str]] = defaultdict(set)
-        lb_author_cond_cnt: dict[tuple[str, str], int] = defaultdict(int)
-        for lw in lb_wins:
-            for co, au in win_cond_author_events[lw]:
-                lb_author_conds[au].add(co)
-                lb_author_cond_cnt[(au, co)] += len(
-                    win_cond_author_events[lw][(co, au)]
-                )
-        bridge_authors = {au for au, cs in lb_author_conds.items() if len(cs) >= 2}
-
-        prev_bridge_tot = sum(
-            lb_author_cond_cnt[(au, co)]
-            for au in bridge_authors
-            for co in all_conditions
+        history: dict[str, dict[str, list[list[tuple[float, np.ndarray]]]]] = (
+            defaultdict(lambda: defaultdict(list))
         )
-        cur_bridge_by_cond: dict[str, int] = {co: 0 for co in all_conditions}
-        cur_bridge_tot = 0
-        for (co, au), evs in win_cond_author_events[w].items():
-            if au in bridge_authors:
-                cur_bridge_by_cond[co] += len(evs)
-                cur_bridge_tot += len(evs)
+        for lw in lb_wins:
+            for co, authors in win_cond_author_events[lw].items():
+                for au, events in authors.items():
+                    lb_author_conds[au].add(co)
+                    history[co][au].append(events)
+        bridge_authors = {au for au, cs in lb_author_conds.items() if len(cs) >= 2}
+        # Count sparse observed pairs, not the cross product of authors and venues.
+        prev_bridge_by_cond = {
+            co: sum(
+                len(evs)
+                for au, bins in authors.items()
+                if au in bridge_authors
+                for evs in bins
+            )
+            for co, authors in history.items()
+        }
+        cur_bridge_by_cond = {
+            co: sum(len(evs) for au, evs in authors.items() if au in bridge_authors)
+            for co, authors in current.items()
+        }
+        prev_bridge_tot = sum(prev_bridge_by_cond.values())
+        cur_bridge_tot = sum(cur_bridge_by_cond.values())
 
         w_rows: list[dict[str, Any]] = []
         raw_bridge_flux = []
         log_vols = []
         for co in all_conditions:
-            # Identify incumbents of co in lookback
-            cond_authors = {
-                au
-                for lw in lb_wins
-                for (c_k, au) in win_cond_author_events[lw]
-                if c_k == co
-            }
+            cond_history = history.get(co, {})
+            cond_current = current.get(co, {})
             p_weights: list[float] = []
             active_flags: list[float] = []
             online_silent_flags: list[float] = []
             offline_flags: list[float] = []
             x_pres: list[np.ndarray] = []
 
-            for au in sorted(cond_authors):
-                ev_list = []
-                active_wins = 0
-                for lw in lb_wins:
-                    evs = win_cond_author_events[lw].get((co, au), [])
-                    if evs:
-                        active_wins += 1
-                        ev_list.extend(evs)
+            for au in sorted(cond_history):
+                bins = cond_history[au]
+                ev_list = [event for evs in bins for event in evs]
                 if len(ev_list) < min_incumbent_events:
                     continue
-                p_uc = float(active_wins) / n_lb
+                p_uc = float(len(bins)) / n_lb
                 dec_w = np.array(
                     [math.exp(-lam * max(0.0, t_cut - t_e)) for t_e, _ in ev_list],
                     dtype=float,
@@ -150,7 +146,7 @@ def compute_selective_silence_panel(
                     dec_w[:, None] * np.stack([vec for _, vec in ev_list]), axis=0
                 )
 
-                cur_in_c = len(win_cond_author_events[w].get((co, au), []))
+                cur_in_c = len(cond_current.get(au, ()))
                 cur_tot = win_author_total[w].get(au, 0)
                 is_act = 1.0 if cur_in_c > 0 else 0.0
                 is_on_sil = 1.0 if (cur_in_c == 0 and cur_tot > 0) else 0.0
@@ -162,12 +158,7 @@ def compute_selective_silence_panel(
                 offline_flags.append(is_off)
                 x_pres.append(x_pre)
 
-            cur_vecs = [
-                vec
-                for (c_k, _), evs in win_cond_author_events[w].items()
-                if c_k == co
-                for _, vec in evs
-            ]
+            cur_vecs = [vec for evs in cond_current.values() for _, vec in evs]
             vis_mean = np.mean(cur_vecs, axis=0) if cur_vecs else np.full(dim, np.nan)
             n_inc = len(p_weights)
             if n_inc > 0:
@@ -193,13 +184,14 @@ def compute_selective_silence_panel(
                 asym_contrast = np.full(dim, math.nan)
 
             prev_sh = (
-                sum(lb_author_cond_cnt[(au, co)] for au in bridge_authors)
-                / prev_bridge_tot
+                prev_bridge_by_cond.get(co, 0) / prev_bridge_tot
                 if prev_bridge_tot > 0
                 else 0.0
             )
             cur_sh = (
-                cur_bridge_by_cond[co] / cur_bridge_tot if cur_bridge_tot > 0 else 0.0
+                cur_bridge_by_cond.get(co, 0) / cur_bridge_tot
+                if cur_bridge_tot > 0
+                else 0.0
             )
             b_flux = cur_sh - prev_sh
             raw_bridge_flux.append(b_flux)

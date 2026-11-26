@@ -10,6 +10,8 @@ Optional instrument: [frozen liquid trajectories on the native GRAIN node map](d
 
 Optional analysis tools: [addressed correction uptake and the two-view incremental-information audit](docs/GRAIN_EVENT_AND_VIEW_INCREMENT.md). Neither changes the frozen factor scores.
 
+[Evidence Panel v1](docs/GRAIN_EVIDENCE_PANEL.md) accepts frozen text coordinates, actual action logs and explicit collection coverage in one versioned format. Run the included offline example to separate participation, measured change and outcome coverage.
+
 GRAIN is a foundational analysis method for text-based measurement research.
 It treats a person's natural-language events as local grains observed at
 multiple resolutions, then studies their reproducible distribution,

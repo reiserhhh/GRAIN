@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GRAIN Evidence Panel v1",
+  "type": "object",
+  "required": ["schema_version"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "grain.evidence-panel.v1"},
+    "channels": {
+      "type": "object",
+      "propertyNames": {"$ref": "#/$defs/id"},
+      "additionalProperties": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}}
+    },
+    "events": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+    "coverage": {"type": "array", "items": {"$ref": "#/$defs/coverage"}},
+    "opportunities": {"type": "array", "items": {"$ref": "#/$defs/opportunity"}},
+    "queries": {"type": "array", "items": {"$ref": "#/$defs/query"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "\\S"},
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "window", "actor", "context", "channel"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "window": {"$ref": "#/$defs/id"}, "actor": {"$ref": "#/$defs/id"},
+        "context": {"$ref": "#/$defs/id"}, "channel": {"$ref": "#/$defs/id"},
+        "values": {"type": ["array", "null"], "items": {"type": "number"}},
+        "observation_id": {"anyOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]}
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["window", "complete"],
+      "properties": {
+        "window": {"$ref": "#/$defs/id"}, "complete": {"type": "boolean"},
+        "context": {"anyOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]}
+      }
+    },
+    "opportunity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "window", "actor", "context", "measure", "eligible", "outcome"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "window": {"$ref": "#/$defs/id"}, "actor": {"$ref": "#/$defs/id"},
+        "context": {"$ref": "#/$defs/id"}, "measure": {"$ref": "#/$defs/id"},
+        "eligible": {"type": ["boolean", "null"]}, "outcome": {"type": ["boolean", "null"]}
+      },
+      "if": {"properties": {"eligible": {"not": {"const": true}}}},
+      "then": {"properties": {"outcome": {"type": "null"}}}
+    },
+    "query": {
+      "type": "object",
+      "required": ["id", "op"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "op": {"enum": ["participation", "compare", "context_shift", "opportunity_card", "participation_flow", "paired_opportunities"]},
+        "window": {"$ref": "#/$defs/id"}, "actor": {"$ref": "#/$defs/id"}, "target": {"$ref": "#/$defs/id"},
+        "history": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "before": {"$ref": "#/$defs/id"}, "after": {"$ref": "#/$defs/id"}, "context": {"$ref": "#/$defs/id"},
+        "origin": {"$ref": "#/$defs/id"}, "destination": {"$ref": "#/$defs/id"},
+        "channel": {"$ref": "#/$defs/id"}, "weighting": {"enum": ["actor", "event"]},
+        "measure": {"$ref": "#/$defs/id"}
+      },
+      "allOf": [
+        {"if": {"properties": {"op": {"const": "participation"}}}, "then": {"required": ["window", "actor", "target"], "propertyNames": {"enum": ["id", "op", "window", "actor", "target", "history"]}}},
+        {"if": {"properties": {"op": {"const": "compare"}}}, "then": {"required": ["before", "after", "context", "channel"], "propertyNames": {"enum": ["id", "op", "before", "after", "context", "channel", "weighting"]}}},
+        {"if": {"properties": {"op": {"const": "context_shift"}}}, "then": {"required": ["before", "after", "actor", "origin", "destination", "channel"], "propertyNames": {"enum": ["id", "op", "before", "after", "actor", "origin", "destination", "channel"]}}},
+        {"if": {"properties": {"op": {"const": "opportunity_card"}}}, "then": {"required": ["window", "context", "measure"], "propertyNames": {"enum": ["id", "op", "window", "context", "measure", "actor"], "type": "string"}}},
+        {"if": {"properties": {"op": {"const": "participation_flow"}}}, "then": {"required": ["before", "after", "target"], "propertyNames": {"enum": ["id", "op", "before", "after", "target", "history"]}}},
+        {"if": {"properties": {"op": {"const": "paired_opportunities"}}}, "then": {"required": ["before", "after", "origin", "destination", "measure"], "propertyNames": {"enum": ["id", "op", "before", "after", "origin", "destination", "measure", "channel"]}}}
+      ]
+    }
+  }
+}
